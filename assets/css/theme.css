@@ -36,9 +36,16 @@
   flex-basis: 1200px;
   padding:20px;
 }
+.flex-content h1 {
+  margin-top: 1rem;
+}
 .flex-content h2 {
   margin-top: 1rem;
 }
+.flex-content h3 {
+  margin-top: 1rem;
+}
+
 .flex::before {
     content: "\a0";
     flex-grow: 1;
