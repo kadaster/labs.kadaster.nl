@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% if page.endpoint %}
+    <div class="container story" data-endpoint="{{ page.endpoint }}" data-output="{{ page.output }}">
+{% else %}
+    <!-- Fallback to default labs endpoint -->
+    <div class="container story" data-endpoint="https://data.labs.pdok.nl/sparql/" data-output="{{ page.output }}">
+{% endif %}
+
+{{ content }}
+
+</div>
+<link href="/assets/css/stories.min.css" rel="stylesheet" type="text/css">
+<!-- removal of the flex tag for the .yasgui .yasr .yasr_btn to improve styling issue. -->
+<script src="/assets/js/stories.min.js"></script>
+<script src="/assets/js/yasgui.polyfill.min.js"></script>
+<script type="text/javascript">
+  window.onload = function () {
+    {% if page.basemap %}
+    window.Yasgui.Yasr.Instance.plugins.geo.defaults.defaults.map = "{{ page.basemap }}";
+    window.Yasgui.Yasr.Instance.plugins.geo3d.defaults.map =  "{{ page.basemap }}";
+    {% else %}
+    window.Yasgui.Yasr.Instance.plugins.geo.defaults.defaults.map = "nlmaps";
+    window.Yasgui.Yasr.Instance.plugins.geo3d.defaults.map =  "nlmaps";
+    {% endif %}
+    window.stories()
+  };
+</script>

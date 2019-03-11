@@ -1,0 +1,14 @@
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+select (count(?buurt) as ?geometry) (count(?o) as ?wkt) (count(?o2) as ?gml) {
+  graph <https://data.pdok.nl/cbs/2015/buurt/> {
+    {
+      ?buurt geo:hasGeometry ?o1
+    } union {
+      ?s ?p ?o
+      filter(datatype(?o) = geo:wktLiteral)
+    } union{
+      ?s2 ?p2 ?o2
+      filter(datatype(?o2) = geo:gmlLiteral)
+    }
+  }
+}

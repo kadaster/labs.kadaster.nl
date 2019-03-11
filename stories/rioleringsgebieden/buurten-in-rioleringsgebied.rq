@@ -1,0 +1,86 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX gwsw: <http://data.gwsw.nl/1.4/totaal/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+PREFIX pdok: <http://data.pdok.nl/def/pdok#>
+PREFIX cbs: <http://betalinkeddata.cbs.nl/def/cbs#>
+PREFIX cbs_dim: <http://betalinkeddata.cbs.nl/def/dimension#>
+PREFIX cbs_slice: <http://betalinkeddata.cbs.nl/83487NED/id/slice/>
+PREFIX cbs_qb: <http://betalinkeddata.cbs.nl/def/cbs-qb#>
+PREFIX cbs_83487: <http://betalinkeddata.cbs.nl/def/83487NED#>
+
+SELECT ?wkt ?wktLabel ?wktColor WHERE {
+  {
+    SERVICE <https://sparql.gwsw.nl/repositories/TestDatastory> {
+
+	  ?rg a gwsw:Rioleringsgebied ;
+		  rdfs:label ?rg_naam ;
+		  gwsw:hasAspect ?ori .
+	  ?ori a gwsw:Gebiedsorientatie ;
+		   gwsw:hasAspect ?bg .
+	  ?bg a gwsw:Buitengrens ;
+		  geo:asWKT ?wkt .
+	  filter(contains(?wktLabel, "Castricum"))
+	  bind (concat("<h3><a target='_blank' href='https://sparql.gwsw.nl/resource?uri=", str(?rg), "'>", str(?rg_naam), "</a></h3>") as ?wktLabel)
+	  bind("green" as ?wktColor)
+    }
+  }
+  UNION {
+    SERVICE <https://sparql.gwsw.nl/repositories/TestDatastory> {
+      ?rg a gwsw:Rioleringsgebied ;
+          rdfs:label ?wktlabel ;
+          gwsw:hasAspect ?ori .
+      ?ori a gwsw:Gebiedsorientatie ;
+           gwsw:hasAspect ?bg .
+      ?bg a gwsw:Buitengrens ;
+          geo:asWKT ?wkt_gwsw .
+      #filter(contains(?wktlabel, "Castricum"))
+    }
+    ?cbs_gemeente rdfs:label "Castricum"@nl .
+    ?cbs_gemeente rdfs:label ?gemeente_naam .
+
+    ?buurt a cbs:Buurt;
+      rdfs:label ?buurt_label ;
+         geo:hasGeometry ?geom ;
+         ?within ?wijk .
+      ?geom geo:asWKT ?wkt .
+    ?wijk a cbs:Wijk;
+          ?within ?cbs_gemeente .
+
+    ?wijk rdfs:label ?wijk_naam .
+	filter(geof:sfIntersects(?wkt, ?wkt_gwsw))
+
+    #?geom geo:asWKT ?wkt_cbsgem .
+    #filter(geof:sfIntersects(?wkt_cbsgem, ?wkt_gwsw))
+
+    # Veelzeggende eigenschappen van de buurt
+    ?aantal_inwoners_obs cbs_dim:regio ?buurt ;
+                         cbs_qb:inObservationGroup cbs_slice:bevolking_AantalInwoners ;
+                         cbs_83487:bevolking_AantalInwoners ?aantal_inwoners .
+
+    ?aantal_huishoudens_obs cbs_dim:regio ?buurt ;
+                            cbs_qb:inObservationGroup cbs_slice:bevolking_ParticuliereHuishoudens_HuishoudensTotaal ;
+                            cbs_83487:bevolking_ParticuliereHuishoudens_HuishoudensTotaal ?aantal_huishoudens .
+
+	  optional {
+		?bedrijven cbs_dim:regio ?buurt ;
+				   cbs_qb:inObservationGroup cbs_slice:bedrijfsvestigingen_Sbi2008_BedrijfsvestigingenTotaal ;
+				   cbs_83487:bedrijfsvestigingen_Sbi2008_BedrijfsvestigingenTotaal ?aantal_bedrijven .
+		?recreatie cbs_dim:regio ?buurt ;
+				   cbs_qb:inObservationGroup cbs_slice:bedrijfsvestigingen_Sbi2008_BedrijfsvestigingenNaarActiviteit_R-uCultuur_Recreatie_OverigeDiensten ;
+				   cbs_83487:bedrijfsvestigingen_Sbi2008_BedrijfsvestigingenNaarActiviteit_R-uCultuur_Recreatie_OverigeDiensten ?aantal_recreatie .
+	  }
+
+    bind(concat(
+        "<a href='", str(?buurt), "' target='_blank'><h3>", str(?buurt_label), "</h3></a>",
+        "<p>Aantal inwoners: <a target='_blank' href='", str(?aantal_inwoners_obs), "'>", str(?aantal_inwoners), "</a></p>",
+        "<p>Aantal huishoudens:  <a target='_blank' href='", str(?aantal_huishoudens_obs), "'>", str(?aantal_huishoudens), "</p>"
+      ) as ?wktLabel)
+
+    bind("purple" as ?wktColor)
+  }
+}

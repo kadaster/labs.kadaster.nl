@@ -1,0 +1,28 @@
+---
+layout: default
+title: SPARQL Stories
+---
+<div class="flex">
+  <div class="flex-content">
+  <h1>Data Stories</h1>
+
+    Data stories zijn HTML presentaties waarin de mogelijkheden van SPARQL, de kracht van datavisualisatie en de eenvoud van beschrijvende tekst worden gedemonstreerd.
+
+    Een uitgebreidere beschrijving van de manier waarop deze technisch tot stand komen is <a href="stories/about">hier</a>  te vinden.
+
+    <h2> Beschikbare data stories</h2>
+    <div style="display:flex; flex-wrap:wrap">
+    {% for page in site.pages %}
+      {% if page.layout == "story" %}
+      <a href="{{page.url}}">
+        <div class="card">
+          <img class="card-image" alt="{{page.title}}" src="{{page.logo}}"/>
+          <div class="card-title">{{page.title}}</div>
+          <div class="card-description">{{page.description}}</div>
+        </div>
+      </a>
+        {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</div>

@@ -1,0 +1,37 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX pdok: <http://data.pdok.nl/def/pdok#>
+PREFIX gwsw: <http://data.gwsw.nl/1.4/totaal/>
+
+SELECT (count(?pand) as ?aantal_panden) WHERE {
+  {
+    ?vbo a bag:Verblijfsobject;
+         bag:hoofdadres ?hoofdadres ;
+         bag:pandrelatering ?pand .
+    ?hoofdadres bag:bijbehorendeOpenbareRuimte ?or .
+    ?or bag:bijbehorendeWoonplaats ?wp .
+    ?wp rdfs:label "Castricum"@nl.
+  }
+  ?pand a bag:Pand ;
+        rdfs:label ?pand_label ;
+        geo:hasGeometry ?geom .
+  ?geom geo:asWKT ?wkt .
+  bind(concat("Pand <a target='_blank' href='", str(?pand), "' target='_blank'><h3>", str(?pand_label), "</h3></a>") as ?wktLabel)
+
+  SERVICE <https://sparql.gwsw.nl/repositories/TestDatastory> {
+    ?rg a gwsw:Rioleringsgebied ;
+        rdfs:label ?wktlabel ;
+        gwsw:hasAspect ?ori .
+    ?ori a gwsw:Gebiedsorientatie ;
+         gwsw:hasAspect ?bg .
+    ?bg a gwsw:Buitengrens ;
+        geo:asWKT ?wkt_gwsw .
+    filter(contains(?wktlabel, "Castricum"))
+    bind("green" as ?wktColor)
+  }
+
+  filter(geof:sfWithin(?wkt, ?wkt_gwsw))
+}

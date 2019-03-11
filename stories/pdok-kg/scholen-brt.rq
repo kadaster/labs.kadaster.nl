@@ -1,0 +1,9 @@
+# School volgens de BRT.
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+select * {
+  ?gebouw
+    a brt:School;
+    geo:hasGeometry/geo:asWKT ?shape.
+}
+limit 250
