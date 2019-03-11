@@ -1,12 +1,12 @@
-#local testing
+# local testing
 
-##Clone this Git repositoy:
+## Clone this Git repositoy:
 
     On Linux: git clone https://github.com/PDOK/data.labs.pdok.nl
 
     On Windows: use Git Bash
 
-##Install ruby:
+## Install ruby:
 
     On Fedora: sudo dnf install ruby ruby-devel rubygem-json
 
@@ -22,7 +22,7 @@ Now, you can run ./serve.sh from should be able to run jekyll serve. If you enco
 
 the site is now available on http://localhost:5000. If you have other services running on this port, you can edit _config.yml to have Jekyll run on a different port.
 
-##Troubleshooting
+## Troubleshooting
 
 If you run into a SSL certificate not found error:
 
