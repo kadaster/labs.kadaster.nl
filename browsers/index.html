@@ -9,8 +9,8 @@ title: Dissemination
     Data stories zijn HTML presentaties waarin de mogelijkheden van SPARQL, de kracht van datavisualisatie en de eenvoud van beschrijvende tekst worden gedemonstreerd.
 
     <h2> Beschikbare facetcheck browsers</h2>
-    <div style="display:flex; flex-wrap:wrap">
-    {% for page in site.pages %}
+    <div class="cards-wrapper">
+      {% for page in site.pages %}
       {% if page.layout == "facetcheck" %}
       <a href="{{page.url}}">
         <div class="card">

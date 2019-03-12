@@ -11,7 +11,7 @@ title: SPARQL Stories
     Een uitgebreidere beschrijving van de manier waarop deze technisch tot stand komen is <a href="stories/about">hier</a>  te vinden.
 
     <h2> Beschikbare data stories</h2>
-    <div style="display:flex; flex-wrap:wrap">
+    <div class="cards-wrapper">
     {% for page in site.pages %}
       {% if page.layout == "story" %}
       <a href="{{page.url}}">

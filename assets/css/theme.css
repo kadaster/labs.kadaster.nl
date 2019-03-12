@@ -119,3 +119,8 @@ a {
 html {
   max-width: 100%
 }
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
