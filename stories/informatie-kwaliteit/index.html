@@ -35,8 +35,8 @@ te meten, kunnen we toch inzicht krijgen in de kwaliteit van de dataset. Met dez
 
 
 Maar er is meer mogelijk met het gebruik van SPARQL. Als er tussen de resultaten van de vorige query wel een geometry zat in de gml notatie, konden we de respectievelijke buurt er gelijk uit prikken.
-We kunnen niet alleen een waarde knopen aan de kwaliteits indicatoren, maar ook aan de instances (of in dit geval buurten) die een negatieve invloed op die waarde hebben, naar boven halen. Om deze instances te kunnen onthouden, gebruiken we de property [flags](http://data.labs.pdok.nl/quality/def#flags).
-Laten we een andere kwaliteits indicator als voorbeeld nemen. De kwaliteits metriek <a href="https://data.labs.pdok.nl/quality/id/surfacearea">surfacearea</a> verteld ons dat we verwachten dat elke buurt in de cbs dataset, ook gebruik maakt van de property [oppervlakte](https://data.pdok.nl/cbs/2015/vocab/oppervlakte).
+We kunnen niet alleen een waarde knopen aan de kwaliteits indicatoren, maar ook aan de instances (of in dit geval buurten) die een negatieve invloed op die waarde hebben, naar boven halen. Om deze instances te kunnen onthouden, gebruiken we de property <a href="http://data.labs.pdok.nl/quality/def#flags">flags</a>.
+Laten we een andere kwaliteits indicator als voorbeeld nemen. De kwaliteits metriek <a href="https://data.labs.pdok.nl/quality/id/surfacearea">surfacearea</a> verteld ons dat we verwachten dat elke buurt in de cbs dataset, ook gebruik maakt van de property <a href="https://data.pdok.nl/cbs/2015/vocab/oppervlakte">oppervlakte</a>.
 Als we de SPARQL-endpoint vragen om de metriek te bescrijven krijgen we het volgende terug.
 
 
@@ -53,10 +53,7 @@ Voor het voorbeeld met de CBS data, is de graaf <a href="https://data.labs.pdok.
 Hierin staat de dataset met alle metingen, definities en vlaggen. Zie hieronder een visuele representatie van de dataset.
 
 
-![alt text][logo]
+<img src="graph-model.png" alt="Quality Measurement Graph">
 
 
 Gebruikers kunnen dus niet alleen de waardes van de metingen bekijken, maar ook wat ze betekenen.
-
-
-[logo]: graph-model.png "Quality Measurement Graph"

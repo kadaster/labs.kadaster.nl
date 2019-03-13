@@ -1,0 +1,101 @@
+---
+layout: presentation
+title: Linking BAG addresses to BRK parcels
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="Erwin Folmer and Wouter Beek">
+    <meta name="description" content="Adding 3D Visualization to the SPARQL Query Loop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../assets/css/presentation.css">
+    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/lib/css/default.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/reveal.js-3.7.0/css/print/pdf.css' : '../assets/reveal.js-3.7.0/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <title>Adding 3D Visualization to the SPARQL Query Loop</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1> Linking BAG and BRK</h1>
+          <ul>
+            <li>Where is it?</li>
+            <li>How did the linkset come about?</li>
+            <li>What is linked?</li>
+            <li>What predicate is used?</li>
+          </ul>
+      </section>
+      <section>
+        <h1>Provenance</h1>
+        <h2>Who did what @Kadaster:</h2>
+        <ul>
+          <li>Ad van Houtum (advisor product & process innovation)</li>
+          <li>Ronald Peeters (sr. test & quality consultant)</li>
+          <li>Tijn van Bussel (advisor operational information management)</li>
+          <li>Peter Schepens (sr. DBA)</li>
+          <li>Erwin Folmer (sr. advisor PPB)</li>
+          <li>Rein van 't Veer (spatial & linked data engineer)</li>
+        </ul>
+        </section>
+
+        <section>
+
+        <h1>Provenance</h1>
+
+          What <a href="https://github.com/PDOK/data.labs.pdok.nl/tree/master/data/bag-brk">ingredients</a> were used?
+        </section>
+
+        <section>
+          <h1>Results</h1>
+          <ul>
+            <li><a href="https://data.labs.pdok.nl/linksets/id/linksets/bag_brk_kennemerland">Graph</a> with data and metadata</li>
+            <li>Uses dcterms:related derived (rdfs:subPropertyOf) <a href="http://data.labs.pdok.nl/linksets/def/bag_brk_kennemerland#relatedParcel">link predicate</a></li>
+            <li>248,951 <a href="http://ec2-34-252-124-184.eu-west-1.compute.amazonaws.com:8443/resource?uri=http:%2F%2Fdata.labs.pdok.nl%2Flinksets%2Fid%2Flinksets%2Fbag_brk_kennemerland&role=context">links</a> for Kennemerland</li>
+            <li>24552 duplicate entries due to 'apartment rights' lookups (not detrimental to quality)</li>
+            <li>Some dropouts due to the difference in link table versus dataset version: 5031 misses (2.02%)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="../assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
+    <script src="../assets/reveal.js-3.7.0/js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+      { src: '../assets/reveal.js-3.7.0/js/classList.js', condition: function() { return !document.body.classList; } },
+      // Interpret Markdown in <section> elements
+      { src: '../assets/reveal.js-3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '../assets/reveal.js-3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      // Syntax highlight for <code> elements
+      { src: '../assets/reveal.js-3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      // Zoom in and out with Alt+click
+      { src: '../assets/reveal.js-3.7.0/plugin/zoom-js/zoom.js', async: true },
+      // Speaker notes
+      { src: '../assets/reveal.js-3.7.0/plugin/notes/notes.js', async: true },
+      // MathJax
+      { src: '../assets/reveal.js-3.7.0/plugin/math/math.js', async: true }
+    ]
+    });
+    </script>
+  </body>
+</html>

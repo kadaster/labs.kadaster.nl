@@ -17,14 +17,14 @@ Deze data story verkent de mogelijkheden om 'federatief' vanuit verschillende br
 <h2> Rioleringsgebied Castricum</h2>
 Een zuiveringsgebied omvat een rioolwaterzuiveringsinstallatie (RWZI) en een aantal rioleringsgebieden die afwateren naar die RWZI. Vaak zitten hier gemalen bij om het transport een handje te helpen.
 
-De datasets gebaseerd op het Gegevenswoordenboek Stedelijk Water [GWSW](https://data.gwsw.nl) bevatten informatie rondom het thema inzameling en transport.
+De datasets gebaseerd op het Gegevenswoordenboek Stedelijk Water <a href="https://data.gwsw.nl">GWSW</a> bevatten informatie rondom het thema inzameling en transport.
 We bekijken hier het rioleringsgebied van Castricum en vragen dit gebied op met de bijbehorende uitlaten en pompen uit het toegangspunt van het GWSW.
 Hieronder wordt een selectie van de beschikbare gegevens getoond. Onder de groene, rode en blauwe markers staat informatie over respectievelijk het rioleringsgebied, het rioolgemaal en de overstorten.
 
 <query data-endpoint="https://sparql.gwsw.nl/repositories/TestDatastory" data-query-ref="rioleringsgebied.rq" data-output="geo"></query>
 
 <h2> Zuiveringsinstallaties in de regio</h2>
-De Basisregistratie Topografie [BRT](https://brt.basisregistraties.overheid.nl), die door het Kadaster ontsloten wordt, biedt informatie omtrent de RWZI's. Het rioleringsgebied Castricum kent zelf geen waterzuiveringsinstallaties, we kennen de geometrie van het zuiveringsgebied niet, maar we kunnen wel de dichtstbijzijnde opvragen.
+De Basisregistratie Topografie <a href="https://brt.basisregistraties.overheid.nl">BRT</a>, die door het Kadaster ontsloten wordt, biedt informatie omtrent de RWZI's. Het rioleringsgebied Castricum kent zelf geen waterzuiveringsinstallaties, we kennen de geometrie van het zuiveringsgebied niet, maar we kunnen wel de dichtstbijzijnde opvragen.
 Zo ook voor deze locatie, de directe omgeving van het zuiveringsgebied kent twee zuiveringsinstallaties in de BRT:
 
 <query data-endpoint="https://data.pdok.nl/sparql" data-query-ref="zuiveringsinstallaties-in-buurt-van-gebied.rq" data-output="geo"></query>
@@ -42,7 +42,7 @@ Die combinatie van gegevens wordt in het vakgebied de "kengetallen" van het riol
 Voor het verzamelen van de kengetallen doen we een beroep op diverse gegevensbronnen (BAG, BGT, CBS, GWSW) die afzonderlijk (zonder duplicatie) worden bijgehouden.
 Het gaat ons om de afvoer binnen de afvalwaterketen, de belasting van de RWZI. Die gegevens over bedrijven en inwoners vinden we onder andere bij het CBS.
 
-**CBS Statistieken**
+<b>CBS Statistieken</b>
 De combinatie is met behulp van locatiegegevens gevonden: het zijn de buurten die binnen het rioleringsgebied vallen en die daarmee afwateren via rioolstelsels naar de RWZI.
 Het CBS verzamelt per buurt vele statistieken, waaronder gegevens over het landgebruik en het aantal mensen dat er woont. We vragen bij het CBS de buurten op die het rioleringsgebied overlappen:
 
@@ -53,8 +53,8 @@ Door genoemde data met elkaar te combineren kunnen we een rapport genereren met 
 Stichting RIONED onderhoudt en ontwikkelt GWSW Geo, dat zijn GIS-toepassingen op het GWSW. Daarmee worden de datasets van gemeentes volgens meerdere thema's (per doelgroep) geografisch gepresenteerd.
 Deze data story vormt de inspiratiebron voor het GWSW Geo-thema "Kengetallen", waarin de federatieve query-vorm verdergaand is toegepast.
 
-De GIS presentatie van de hier gebruikte GWSW-dataset staat op [https://qgiscloud.com/RIONED/Datastory](https://qgiscloud.com/RIONED/Datastory).
-GIS gebruikers kunnen deze testcase conform WFS opvragen op: [https://geodata.gwsw.nl/TestDatastory/kengetallen](https://geodata.gwsw.nl/TestDatastory/kengetallen)
+De GIS presentatie van de hier gebruikte GWSW-dataset staat op <a href="https://qgiscloud.com/RIONED/Datastory">https://qgiscloud.com/RIONED/Datastory</a>.
+GIS gebruikers kunnen deze testcase conform WFS opvragen op: <a href="https://geodata.gwsw.nl/TestDatastory/kengetallen">https://geodata.gwsw.nl/TestDatastory/kengetallen</a>
 
 <!--<query data-endpoint="https://sparql.gwsw.nl/repositories/TestDatastory" data-query-ref="kengetallen.rq" data-output="geo"></query>-->
 
@@ -62,7 +62,7 @@ GIS gebruikers kunnen deze testcase conform WFS opvragen op: [https://geodata.gw
 
 Uit de Basisregistraties Adressen en Gebouwen (BAG) kunnen we nog veel meer relevante gegevens destilleren.
 
-**Woonplaatsen rond het rioleringsgebied**
+<b>Woonplaatsen rond het rioleringsgebied</b>
 Gewapend met de kennis over de gemeentes rond het rioleringsgebied kunnen we de bijbehorende plaatsnamen opvragen.
 Dit doen we door een kleine buffer (in oranje) om de gemeente te leggen en alleen die woonplaatsgebieden te selecteren die hier volledig binnen vallen.
 Het gaat om enkel Castricum, wat Bakkum (volgens de BAG) omvat:
@@ -77,7 +77,7 @@ De CBS Statistieken worden verzameld per buurt. Zoals de eerdere selectie laat z
 
 <!--
 Binnen de BAG kan echter exact worden geselecteerd binnen de contouren van het rioleringsgebied:
-**Panden in het rioleringsgebied**
+<b>Panden in het rioleringsgebied</b>
 Vanuit BAG vragen we op hoeveel panden er binnen het rioleringsgebied vallen. We moeten de panden in de BAG eerst administratief beperken tot de woonplaatsen waarin deze liggen, vervolgens kunnen we geografisch filteren. Het blijkt te gaan om bijna 17000 panden:
 
 <query
