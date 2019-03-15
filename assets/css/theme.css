@@ -10,31 +10,50 @@
   display: flex;
 }
 .navbar-title {
-  padding: 10px;
-  color: #1690c6;
+  padding: 0px 10px;
+  color: #008dc9;
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: #1690c6;
-  padding-bottom: 0px;
+  font-size: 1rem;
 
+}
+.triply-logo{
+  max-height: .75rem;
+  object-fit: cover;
+}
+.powered {
+  font-size: .5rem;
+  color: gray;
+  display: flex;
+  padding-left: 5px;
+  width: 75px;
+  align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .powered {
+    display: none;
+  }
 }
 .content{
   padding-bottom: 20px;
 }
+.space {
+  flex-grow: 1;
+  width: 20px;
+}
 
 .navbar-icon {
-  height: 3rem;
+  height: 2rem;
 }
 .flex {
     display: flex;
     overflow-x: hidden;
 }
 .flex-content  {
-  flex-basis: 1200px;
+  flex-basis: 1600px;
   padding:20px;
+  max-width: 100%;
 }
 .flex-content h1 {
   margin-top: 1rem;
@@ -85,6 +104,9 @@ a {
     text-decoration: none;
     display: contents;
 }
+a:hover {
+  text-decoration: none;
+}
 
 .card-image {
     margin: 0 auto;
@@ -123,4 +145,44 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.table {
+  border: 1px #ccc solid;
+  table-layout: fixed;
+}
+.table td {
+  border: 1px #ccc solid;
+  padding: 0px 10px;
+  word-wrap:break-word;
+}
+.table th {
+  border: 1px #ccc solid;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #eee
+}
+.codeblock {
+  border: 1px #ccc solid;
+  background:#eee;
+  overflow-x: scroll;
+}
+ul {
+  list-style-type: none;
+  /*use padding to move list item from left to right*/
+  padding-left: 1em;
+}
+
+ul li:before {
+  content: "–";
+  position: absolute;
+  /*change margin to move dash around*/
+  margin-left: -1em;
+}
+code.hightlight{
+  background-color: #cce6ff;
+  padding: 2px;
+  color: #007AE9;
+  border-radius: 3px;
 }
