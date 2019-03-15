@@ -166,7 +166,7 @@ html {
 .codeblock {
   border: 1px #ccc solid;
   background:#eee;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 ul {
   list-style-type: none;
