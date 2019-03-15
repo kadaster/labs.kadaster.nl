@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 .powered {
-  font-size: .5rem;
+  font-size: .75rem;
   color: gray;
   display: flex;
   padding-left: 5px;
