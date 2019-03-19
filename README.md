@@ -36,18 +36,11 @@
   4. Use the bundler to install the website:
 
      ```
-     run bundler install
+     bundler install
      ```
 
   5. Start serving the web site with Jekyll:
   
-     ```
-     ./serve.sh
-     ```
-
-     If you encounter trouble running the above command you can try
-     the following alternative:
-
      ```
      bundler exec jekyll serve
      ```
