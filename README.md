@@ -1,31 +1,69 @@
-# local testing
+# Local installation
 
-## Clone this Git repositoy:
+  1. Clone this Git repositoy:
 
-    On Linux: git clone https://github.com/PDOK/data.labs.pdok.nl
+     a. On Linux:
 
-    On Windows: use Git Bash
+        ```
+        git clone https://github.com/PDOK/data.labs.pdok.nl
+        ```
 
-## Install ruby:
+     b. On Windows: use Git Bash.
 
-    On Fedora: sudo dnf install ruby ruby-devel rubygem-json
+  2. Install Ruby:
 
-    On Ubuntu: sudo apt-get install zlib1g-dev libffi-dev ruby-full ruby-dev
+     a. On Fedora:
 
-    On Windows: download and install the default option from https://rubyinstaller.org/downloads
+        ```
+        sudo dnf install ruby ruby-devel rubygem-json
+        ```
 
-Run gem install bundler.
+     b. On Ubuntu:
 
-From the project root directory, run bundler install
+        ```
+        sudo apt-get install zlib1g-dev libffi-dev ruby-full ruby-dev
+        ```
 
-Now, you can run ./serve.sh from should be able to run jekyll serve. If you encounter any trouble on dependencies, you can try alternatively bundler exec jekyll serve.
+     c. On Windows: download and install the default option from
+        <https://rubyinstaller.org/downloads>.
 
-the site is now available on http://localhost:5000. If you have other services running on this port, you can edit _config.yml to have Jekyll run on a different port.
+  3. Install the bundler:
 
-## Troubleshooting
+     ```
+     gem install bundler
+     ```
 
-If you run into a SSL certificate not found error:
+  4. Use the bundler to install the website:
 
-    Add a new system environment variable named SSL_CERT_FILE and set its value to the full file path to the cacert.pem file:
-        In Bash: export SSL_CERT_FILE=$PWD/cert/cacert.pem
+     ```
+     run bundler install
+     ```
 
+  5. Start serving the web site with Jekyll:
+  
+     ```
+     ./serve.sh
+     ```
+
+     If you encounter trouble running the above command you can try
+     the following alternative:
+
+     ```
+     bundler exec jekyll serve
+     ```
+
+  6. The site now run on <http://localhost:5000>.
+  
+     You can edit `_config.yml` in order to configure an different
+     port.
+
+# Troubleshooting
+
+## SSL certificate not found error
+
+Add a new system environment variable named `SSL_CERT_FILE` and set
+its value to the full file path to the `cacert.pem` file, e.g.:
+
+```
+export SSL_CERT_FILE=$PWD/cert/cacert.pem
+```
