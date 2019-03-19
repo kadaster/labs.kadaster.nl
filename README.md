@@ -39,6 +39,12 @@
      bundler install
      ```
 
+     or
+
+     ```
+     bundle install --path vendor/bundle
+     ```
+
   5. Start serving the web site with Jekyll:
   
      ```
