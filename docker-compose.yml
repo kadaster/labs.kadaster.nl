@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  jekyll:
+    image: bretfisher/jekyll-serve
+    volumes:
+      - .:/site
+    ports:
+      - '4000:4000'
+    environment:
+      - JEKYLL_BUILD_REVISION=local

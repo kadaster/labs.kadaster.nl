@@ -1,68 +1,21 @@
 # Local installation
 
-  1. Clone this Git repositoy:
+## Prerequisites
 
-     a. On Linux:
+- [Git](https://git-scm.com/)
+- [Docker](https://docs.docker.com/)
+- [Docker-compose](https://docs.docker.com/compose/install/)
 
-        ```
-        git clone https://github.com/PDOK/data.labs.pdok.nl
-        ```
+1. Clone this Git repositoy:
 
-     b. On Windows: use Git Bash.
+   ```bash
+   git clone https://github.com/PDOK/data.labs.pdok.nl
+   ```
 
-  2. Install Ruby:
+2. Run the container in the directory of the repository
 
-     a. On Fedora:
+   ```bash
+   docker-compose up
+   ```
 
-        ```
-        sudo dnf install ruby ruby-devel rubygem-json
-        ```
-
-     b. On Ubuntu:
-
-        ```
-        sudo apt-get install zlib1g-dev libffi-dev ruby-full ruby-dev
-        ```
-
-     c. On Windows: download and install the default option from
-        <https://rubyinstaller.org/downloads>.
-
-  3. Install the bundler:
-
-     ```
-     gem install bundler
-     ```
-
-  4. Use the bundler to install the website:
-
-     ```
-     bundler install
-     ```
-
-     or
-
-     ```
-     bundle install --path vendor/bundle
-     ```
-
-  5. Start serving the web site with Jekyll:
-  
-     ```
-     bundler exec jekyll serve
-     ```
-
-  6. The site now run on <http://localhost:5000>.
-  
-     You can edit `_config.yml` in order to configure an different
-     port.
-
-# Troubleshooting
-
-## SSL certificate not found error
-
-Add a new system environment variable named `SSL_CERT_FILE` and set
-its value to the full file path to the `cacert.pem` file, e.g.:
-
-```
-export SSL_CERT_FILE=$PWD/cert/cacert.pem
-```
+3. The site now run on <http://localhost:4000>.
