@@ -1,15 +1,17 @@
-prefix dce: <http://purl.org/dc/elements/1.1/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix schema: <http://schema.org/>
-select ?location (count(?image) as ?n) {
-  ?image a schema:Photograph.
+select
+  ?locatie
+  (count(?afbeelding) as ?aantal_afbeeldingen)
+{
+  ?afbeelding a schema:Photograph.
   {
-    ?image schema:contentLocation/rdfs:label ?location.
+    ?afbeelding schema:contentLocation/rdfs:label ?locatie.
   } union {
-    ?image schema:contentLocation ?location.
-    filter(isLiteral(?location))
+    ?afbeelding schema:contentLocation ?locatie.
+    filter(isLiteral(?locatie))
   }
 }
-group by ?location
-order by desc(?n)
-limit 20
+group by ?locatie
+order by desc(?aantal_afbeeldingen)
+limit 15

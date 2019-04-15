@@ -29,13 +29,14 @@ select ?shape ?shapeHeight ?shapeLabel ?shapeName {
             <http://proxy.handle.net/10648/a89063ce-d0b4-102d-bcf8-003048976d84>
             <http://proxy.handle.net/10648/add8fd8c-d0b4-102d-bcf8-003048976d84>
           }
-          ?image dce:date ?dateStr;
-                 dce:description ?description;
-                 dce:format ?format;
-                 dce:subject ?subject;
-                 dce:title ?title;
-                 schema:contentLocation ?location;
-                 schema:thumbnail ?url.
+          ?image
+            dce:date ?dateStr;
+            dce:description ?description;
+            dce:format ?format;
+            dce:subject ?subject;
+            dce:title ?title;
+            schema:contentLocation ?location;
+            schema:thumbnail ?url.
         }
         group by ?image ?dateStr ?description ?pand ?title
         order by desc(?date)
@@ -59,16 +60,21 @@ select ?shape ?shapeHeight ?shapeLabel ?shapeName {
   }
   bind(pand:0392100000065734 as ?pand)
   service <https://data.pdok.nl/sparql> {
-    ?pand geo:hasGeometry/geo:asWKT ?shape;
-          bag:identificatiecode ?pandId.
-    ?verblijfsobject bag:hoofdadres ?nummeraanduiding;
-                     bag:pandrelatering ?pand.
-    ?openbareRuimte bag:naamOpenbareRuimte ?openbareRuimteNaam;
-                    bag:bijbehorendeWoonplaats ?woonplaats.
+    # We are not allowed to use `filter not exists' wuthin this `service' clause.
+    ?pand
+      geo:hasGeometry/geo:asWKT ?shape;
+      bag:identificatiecode ?pandId.
+    ?verblijfsobject
+      bag:hoofdadres ?nummeraanduiding;
+      bag:pandrelatering ?pand.
+    ?openbareRuimte
+      bag:naamOpenbareRuimte ?openbareRuimteNaam;
+      bag:bijbehorendeWoonplaats ?woonplaats.
     ?woonplaats rdfs:label ?woonplaatsNaam.
-    ?nummeraanduiding bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
-                      bag:huisnummer ?huisnummer;
-                      bag:postcode ?zipcode.
+    ?nummeraanduiding
+      bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
+      bag:huisnummer ?huisnummer;
+      bag:postcode ?zipcode.
   }
   bind(concat('⛪ ',str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?woonplaatsNaam)) as ?shapeName)
   bind(concat(
