@@ -106,7 +106,7 @@ WHERE {
       '<a href="',str(?vbo),'">BAG VBO met Kantoorfunctie</a>:</h5>',
       '<ul>',
       '<li>Woonplaats: <a href="',str(?woonplaats),'">',str(?woonplaatsNaam),'</a></li>',
-      '<li>Oppervlakte: ',str(?oppervlakte),'m^2</li>',
+      '<li>Oppervlakte: ',str(?oppervlakte),'m²</li>',
       '<li>Status: <a href="',str(?verblijfsobjectStatus),'">',str(?verblijfsobjectStatusLabel),'</a></li>',
       '</ul>',
       '<h5><a href="',str(?pand),'">Pand</a>:</h5>',

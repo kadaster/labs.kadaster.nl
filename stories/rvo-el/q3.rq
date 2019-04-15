@@ -70,7 +70,7 @@ WHERE {
         }
       }
       group by ?vbo ?voorkomen ?woonplaats ?woonplaatsNaam
-      # is de gebruiksoppervlakte van de verblijfsobjecten met een kantoorfunctie groter dan 100 m^2 en
+      # is de gebruiksoppervlakte van de verblijfsobjecten met een kantoorfunctie groter dan 100 m² en
       # is de gebruiksoppervlakte van de verblijfsobjecten met een functie groter dan de helft van het totale gebruiksoppervlakte van het pand?
       having( sum(?other_kantoor_opp) > 100 && (sum(?other_kantoor_opp) >= (sum(?other_opp) / 2)))
     }
@@ -148,7 +148,7 @@ WHERE {
       '<a href="',str(?vbo),'">BAG VBO met Kantoorfunctie</a>:</h5>',
       '<ul>',
       '<li>Woonplaats: <a href="',str(?woonplaats),'">',str(?woonplaatsNaam),'</a></li>',
-      '<li>Oppervlakte: ',str(?oppervlakte),'m^2</li>',
+      '<li>Oppervlakte: ',str(?oppervlakte),'m²</li>',
       '<li>Status: <a href="',str(?verblijfsobjectStatus),'">',str(?verblijfsobjectStatusLabel),'</a></li>',
       '</ul>',
       '<h5><a href="',str(?pand),'">Pand</a>:</h5>',

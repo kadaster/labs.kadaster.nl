@@ -85,7 +85,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           '<dt>Bouwjaar</dt>',
           '<dd>',str(?bouwjaar),'</dd>',
           '<dt>Status</dt>',
-          '<dd><a href="',str(?pandStatus),'">',str(?panSdtatusLabel),'</a></dd>',
+          '<dd><a href="',str(?pandStatus),'">',str(?pandStatusLabel),'</a></dd>',
         '</dl>',
       '</dd>',
     '</dl>') as ?pandShapeLabel)

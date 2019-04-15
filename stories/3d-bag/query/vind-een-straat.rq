@@ -23,9 +23,9 @@ select ?pand ?shape ?shapeColor ?shapeHeight ?shapeName ?shapeLabel {
       (max(?zipcode) as ?zipcodeMax)
       (min(?zipcode) as ?zipcodeMin)
     {
-      bind("Almelo"@nl as ?woonplaatsNaam)
-      bind("Ootmarsumsestraat"^^xsd:string as ?straatNaam)
-      bind(485 as ?huisnummer)
+      values (?straatNaam ?huisnummer ?woonplaatsNaam) {
+        ( 'Ootmarsumsestraat'^^xsd:string 485 'Almelo'@nl )
+      }
       ?place
         rdfs:isDefinedBy ?graph0;
         rdfs:label ?woonplaatsNaam.
@@ -56,13 +56,13 @@ select ?pand ?shape ?shapeColor ?shapeHeight ?shapeName ?shapeLabel {
       ?functie rdfs:label ?functieLabel.
       filter(?functie!=bag:Verblijfsobject)
       bind(
-        if(?functie=bag:VerblijfsobjectWoonfunctie,"green",
-        if(?functie=bag:VerblijfsobjectWinkelfunctie,"red",
-        if(?functie=bag:VerblijfsobjectKantoorfunctie,"blue",
-        if(?functie=bag:VerblijfsobjectOnderwijsfunctie,"yellow",
-        if(?functie=bag:VerblijfsobjectGezondheidszorgfunctie,"orange",
-        if(?functie=bag:VerblijfsobjectSportfunctie,"violet",
-        "orange")))))) as ?shapeColor)
+        if(?functie=bag:VerblijfsobjectWoonfunctie,'green',
+        if(?functie=bag:VerblijfsobjectWinkelfunctie,'red',
+        if(?functie=bag:VerblijfsobjectKantoorfunctie,'blue',
+        if(?functie=bag:VerblijfsobjectOnderwijsfunctie,'yellow',
+        if(?functie=bag:VerblijfsobjectGezondheidszorgfunctie,'orange',
+        if(?functie=bag:VerblijfsobjectSportfunctie,'violet',
+        'orange')))))) as ?shapeColor)
       ?pand
         bag:geometriePand/geo:asWKT ?shape;
         bag:oorspronkelijkBouwjaar ?bouwjaar;
@@ -88,11 +88,16 @@ select ?pand ?shape ?shapeColor ?shapeHeight ?shapeName ?shapeLabel {
     if(?zipcodeMin=?zipcodeMax,'',concat(' t/m ',str(?zipcodeMax)))) as ?zipcodeLabel)
   bind(concat(str(?straatNaam),' ',?houseNumberLabel,', ',?zipcodeLabel,' ',str(?plaatsNaam)) as ?shapeName)
   bind(concat(
-    '<h2>',str(?shapeName),'</h2><ul>',
-    '<li><b>Oorspronkelijk bouwjaar</b>: ',str(?bouwjaar),'</li>',
-    '<li><b>Hoogte</b>: ',str(?shapeHeight),' m</li>',
-    '<li><b>Oppervlakte</b>: ',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' m^2</li>',
-    '<li><b>Gebruiksfuncties</b>: ',?functieLabels,'</li>',
-    '</ul>') as ?shapeLabel)
+    '<h2>',str(?shapeName),'</h2>',
+    '<dl>',
+    '<dt>Oorspronkelijk bouwjaar</dt>',
+    '<dd>',str(?bouwjaar),'</dd>',
+    '<dt>Hoogte</dt>',
+    '<dd>',str(?shapeHeight),' m</dd>',
+    '<dt>Oppervlakte</dt>',
+    '<dd>',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' m²</dd>',
+    '<dt>Gebruiksfuncties</dt>',
+    '<dd>',str(?functieLabels),'</dd>',
+    '</dl>') as ?shapeLabel)
 }
 limit 500
