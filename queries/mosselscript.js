@@ -6,20 +6,14 @@ prefix geof: <http://www.opengis.net/def/function/geosparql/>
 prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
 select * {
   graph <http://data.pdok.nl/mossel-en-oesterhabitats> {
-    ?s geo:hasGeometry/geo:asWKT ?wkt .
-    bind(geof:distance(
-      ?wkt, "POINT(5 52)"^^geo:wktLiteral, uom:metre) as ?dist_metres
-    )
-    bind(
-      concat("Op slechts ", str(round(?dist_metres / 1000)), " km. (water)fietsen!" )
-      as ?wktLabel)
+    [ geo:hasGeometry/geo:asWKT ?shape ].
+    bind(geof:distance(?shape,'Point(5.0 52.0)'^^geo:wktLiteral, uom:metre) as ?afstand)
+    bind(concat('Op ',str(round(?afstand/1000)),' km afstand.') as ?shapeLabel)
   }
 }
-order by ?dist_metres
+order by ?afstand
 limit 10`;
-
 Yasgui.Yasqe.Instance.defaults.value = query;
-
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(location => {
     Yasgui.Yasqe.Instance.defaults.value = query.replace(

@@ -11,15 +11,15 @@ select ?shape ?shapeLabel ?shapeColor {
     } union {
       ?sub n2k:sitecode_v 'NL9801001'
     }
-    ?sub a n2k:Natura2000 ;
-         geo:hasGeometry/geo:asWKT ?shape ;
-         n2k:bescherming ?bescherming ;
-         rdfs:label ?label .
+    ?sub a n2k:Natura2000;
+      geo:hasGeometry/geo:asWKT ?shape;
+      n2k:bescherming ?bescherming;
+      rdfs:label ?label.
     bind(concat(?label,' | ',?bescherming) as ?shapeLabel)
   } union {
-    ?x a def:mossel-en-oesterhabitats\#Mosselenoesterhabitats ;
+    ?x a def:mossel-en-oesterhabitats\#Mosselenoesterhabitats;
        geo:hasGeometry/geo:asWKT ?shape;
-       rdfs:label ?shapeLabel .
+       rdfs:label ?shapeLabel.
     values (?shapeLabel ?shapeColor) {
       ('mussel' 'red')
       ('oyster' 'blue')
