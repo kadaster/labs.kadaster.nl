@@ -1,0 +1,99 @@
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix labs: <https://data.labs.pdok.nl/bag/def/>
+prefix schema: <http://schema.org/>
+select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
+  {
+    select * {
+      values (?woonplaatsNaam ?straatNaam ?huisnummer) {
+        ("Amsterdam" "Stadhouderskade" 78)
+      }
+      #bind("B" as ?huisletter) # Optioneel: stel een specifieke huisletter in.
+      graph ?openbareRuimteVoorkomen {
+        ?openbareRuimte
+          bag:naamOpenbareRuimte ?straatNaam;
+          bag:bijbehorendeWoonplaats ?woonplaats.
+      }
+      filter not exists {
+        ?openbareRuimteVoorkomen bag:eindGeldigheid _:1.
+      }
+      graph ?woonplaatsVoorkomen {
+        ?woonplaats bag:naamWoonplaats ?woonplaatsNaam.
+      }
+      filter not exists {
+        ?woonplaatsVoorkomen bag:eindGeldigheid _:2.
+      }
+      graph ?nummeraanduidingVoorkomen {
+        ?nummeraanduiding
+          bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
+          bag:huisnummer ?huisnummer;
+          bag:postcode ?postcode.
+        # De huisletter moet worden gematched, maar alleen als deze ook is
+        # ingesteld middels bovenstaande `bind' clausule.
+        optional {
+          ?nummeraanduiding bag:huisletter ?huisletter0.
+        }
+        filter(!bound(?huisletter) || ?huisletter=?huisletter0)
+      }
+      filter not exists {
+        ?nummeraanduidingVoorkomen bag:eindGeldigheid _:3.
+      }
+      graph ?verblijfsobjectVoorkomen {
+        ?verblijfsobject
+          bag:hoofdadres ?nummeraanduiding;
+          bag:oppervlakte ?oppervlakte;
+          bag:pandrelatering ?pand;
+          bag:status ?verblijfsobjectStatus;
+          rdfs:label ?verblijfsobjectLabel.
+      }
+      filter not exists {
+        ?verblijfsobject bag:eindGeldigheid _:4.
+      }
+      ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
+      graph ?pandVoorkomen {
+        ?pand
+          bag:oorspronkelijkBouwjaar ?bouwjaar;
+          bag:geometriePand/geo:asWKT ?pandShape;
+          bag:status ?pandStatus;
+          rdfs:label ?pandLabel.
+      }
+      filter not exists {
+        ?pand bag:eindGeldigheid _:5.
+      }
+      ?pandStatus rdfs:label ?pandStatusLabel.
+    }
+  }
+  service <https://data.labs.pdok.nl/sparql>	{
+    ?pand labs:measuredHeight ?pandShapeHeight.
+  }
+  bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
+  bind(concat(
+    '<h3>',str(?pandShapeName),'</h3>',
+    '<dl>',
+      '<dt>Verblijfsobject</dt>',
+      '<dd>',
+        '<dl>',
+          '<dt>Identifier</dt>',
+          '<dd><a href="',str(?verblijfsobject),'">',str(?verblijfsobjectLabel),'</a>:</dd>',
+          '<dt>Woonplaats</dt>',
+          '<dd><a href="',str(?woonplaats),'">',str(?woonplaatsNaam),'</a></dd>',
+          '<dt>Oppervlakte</dt>',
+          '<dd>',str(?oppervlakte),'m²</dd>',
+          '<dt>Status</dt>',
+          '<dd><a href="',str(?verblijfsobjectStatus),'">',str(?verblijfsobjectStatusLabel),'</a></dd>',
+        '</dl>',
+      '</dd>',
+      '<dt>Pand</dt>',
+      '<dd>',
+        '<dl>',
+          '<dt>Identifier</dt>',
+          '<dd><a href="',str(?pand),'">',str(?pandLabel),'</a>:</dd>',
+          '<dt>Bouwjaar</dt>',
+          '<dd>',str(?bouwjaar),'</dd>',
+          '<dt>Status</dt>',
+          '<dd><a href="',str(?pandStatus),'">',str(?pandStatusLabel),'</a></dd>',
+        '</dl>',
+      '</dd>',
+    '</dl>') as ?pandShapeLabel)
+}

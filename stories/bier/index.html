@@ -10,29 +10,29 @@ description: Een datastory over bier.
 
 <h1>🍺 Bier Data Story 🍺</h1>
 
-<h2> De Brouwerij Tijdreis</h2>
+<h2>De Brouwerij Tijdreis</h2>
 
-Met brouwerijdata als Linked Data, kunnen we ook (in analogie van de
-populaire topotijdreis.nl) de biertijdreis presenteren. Zie de
-explosie van brouwerijen in de afgelopen paar jaar:
+<p>Met brouwerijdata als Linked Data, kunnen we ook (in analogie van
+de populaire topotijdreis.nl) de biertijdreis presenteren. Zie de
+explosie van brouwerijen in de afgelopen paar jaar:</p>
 
-<a href="../../browsers/bier-tijdreis" target="_blank">
+<a href="/browsers/bier-tijdreis">
   <button>Brouwerij Tijdreis</button>
 </a>
 
 <h2>Stakingen bij brouwers</h2>
 
-Stakingen die in Nederland hebben plaatsgevonden worden als Linked
+<p>Stakingen die in Nederland hebben plaatsgevonden worden als Linked
 Data gepubliceerd door het Instituut voor Sociale Geschiedenis (IISG)
-op <a href="https://druid.datalegend.net/dataLegend/strikes">Druid</a>.  We
-kunnen de stakingen per beroep opvragen.  Hieronder de stakingen
-geïnitieerd door brouwers:
+op <a href="https://druid.datalegend.net/dataLegend/strikes">Druid</a>.
+We kunnen de stakingen per beroep opvragen.  Hieronder de stakingen
+geïnitieerd door brouwers:</p>
 
 <query data-endpoint="https://api.druid.datalegend.net/datasets/dataLegend/strikes/services/strikes/sparql"
        data-query-ref="stakingen-brouwers.rq">
 </query>
 
-<h3> Stakingen bij Heineken</h3>
+<h3>Stakingen bij Heineken</h3>
 
 Maar niet alleen brouwers hebben gestaakt bij Heineken.  Hieronder de
 stakingen van *alle* beroepsgroepen bij Heineken door door de jaren
@@ -42,23 +42,19 @@ heen:
        data-query-ref="stakingen-heineken.rq">
 </query>
 
-<h2> De Heineken brouwerij (Kadaster BAG & RCE Monumenten Register)</h2>
+<h2>De Heineken brouwerij (Kadaster BAG & RCE Monumenten Register)</h2>
 
-Laten we eens kijken hoe oud het gebouw van de Heineken Experience /
-de oude Heineken brouwerij is.  We zoeken dit op in zowel de Kadaster
-BAG alsook het RCE Monumenten Register:
+<p>Laten we eens kijken hoe oud het gebouw van de Heineken Experience
+/ de oude Heineken brouwerij is.  We zoeken dit op in zowel de
+Kadaster BAG alsook het RCE Monumenten Register:</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="monument-heineken.rq"
-       data-output="geo">
+<query data-query-ref="heineken-brouwerij.rq" data-output="geo">
 </query>
 
-En wat zegt <a href="https://nl.wikipedia.org/wiki/Heineken_Brouwerij_(Amsterdam)">Wikipedia</a> ?
+<h2>Linked Bier Browser</h2>
 
-<h2> Linked Bier Browser</h2>
+<p>Gebruik Linked Data om te zoeken naar biertjes en brouwerijen:</p>
 
-Gebruik Linked Data om te zoeken naar biertjes en brouwerijen:
-
-<a href="../../browsers/bier-browser" target="_blank">
+<a href="/browsers/bier-browser">
   <button>Linked Bier Browser</button>
 </a>
