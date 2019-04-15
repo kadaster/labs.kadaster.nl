@@ -1,6 +1,0 @@
-prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
-describe ?nummeraanaduiding {
-  ?nummeraanduiding a bag:Nummeraanduiding ;
-                    bag:postcode "1068LE" ;
-                    bag:huisnummer 300 .
-}
