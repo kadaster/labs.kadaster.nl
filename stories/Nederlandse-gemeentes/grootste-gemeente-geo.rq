@@ -7,11 +7,12 @@ prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
 select ?gemeenteWkt ?gemeenteWktLabel {
   {
     select * {
-      ?gemeente bag:naamWoonplaats ?gemeenteNaam ;
-                bag:status begrip:WoonplaatsAangewezen ;
-                geo:hasGeometry/geo:asWKT ?gemeenteWkt .
+      ?gemeente
+        bag:naamWoonplaats ?gemeenteNaam;
+        bag:status begrip:WoonplaatsAangewezen;
+        geo:hasGeometry/geo:asWKT ?gemeenteWkt.
       filter not exists {
-        ?gemeente rdfs:isDefinedBy/bag:eindGeldigheid ?eind .
+        ?gemeente rdfs:isDefinedBy/bag:eindGeldigheid ?eind.
       }
     }
   }
@@ -32,7 +33,7 @@ select ?gemeenteWkt ?gemeenteWktLabel {
   bind(?x * ?y as ?gemeenteOppervlakte)
   bind(concat(
     '<h3><a href="',str(?gemeente),'">',?gemeenteNaam,'</a></h3>',
-    '<p>Oppervlakte: ',str(?gemeenteOppervlakte),'</p>') as ?gemeenteWktLabel)
+    '<p>Oppervlakte: ',str(?gemeenteOppervlakte),' m²</p>') as ?gemeenteWktLabel)
 }
 order by desc(?gemeenteOppervlakte)
 limit 25

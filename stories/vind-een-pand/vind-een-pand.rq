@@ -79,7 +79,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           '<dt>Woonplaats</dt>',
           '<dd><a href="',str(?woonplaats),'">',str(?woonplaatsNaam),'</a></dd>',
           '<dt>Oppervlakte</dt>',
-          '<dd>',str(?oppervlakte),'m^2</dd>',
+          '<dd>',str(?oppervlakte),'m²</dd>',
           '<dt>Status</dt>',
           '<dd><a href="',str(?verblijfsobjectStatus),'">',str(?verblijfsobjectStatusLabel),'</a></dd>',
         '</dl>',

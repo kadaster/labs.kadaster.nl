@@ -7,15 +7,16 @@ prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
 select ?gemeenteOppervlakte ?gemeenteNaam {
   {
     select * {
-      ?gemeente bag:naamWoonplaats ?gemeenteNaam ;
-                bag:status begrip:WoonplaatsAangewezen ;
-                geo:hasGeometry/geo:asWKT ?gemeenteWkt .
+      ?gemeente
+        bag:naamWoonplaats ?gemeenteNaam;
+        bag:status begrip:WoonplaatsAangewezen;
+        geo:hasGeometry/geo:asWKT ?gemeenteShape.
       filter not exists {
-        ?gemeente rdfs:isDefinedBy/bag:eindGeldigheid ?eind  .
+        ?gemeente rdfs:isDefinedBy/bag:eindGeldigheid ?eind.
       }
     }
   }
-  bind(geof:envelope(?gemeenteWkt) as ?gemeenteBoundingBox)
+  bind(geof:envelope(?gemeenteShape) as ?gemeenteBoundingBox)
   bind('^POLYGON\\s\\(\\(([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*).*\\)\\)$' as ?regex)
   bind(replace(str(?gemeenteBoundingBox), ?regex, '$1') as ?x1)
   bind(replace(str(?gemeenteBoundingBox), ?regex, '$2') as ?y1)
@@ -29,7 +30,7 @@ select ?gemeenteOppervlakte ?gemeenteNaam {
     strdt(concat('Point (',str(?x1),' ',str(?y1),')'), geo:wktLiteral),
     strdt(concat('Point (',str(?x1),' ',str(?y2),')'), geo:wktLiteral),
     uom:metre) as ?y)
-  bind(?x * ?y as ?gemeenteOppervlakte)
+  bind(?x*?y as ?gemeenteOppervlakte)
 }
 order by desc(?gemeenteOppervlakte)
 limit 25
