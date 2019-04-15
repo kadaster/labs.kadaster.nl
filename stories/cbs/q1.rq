@@ -3,10 +3,13 @@ prefix dimension: <http://betalinkeddata.cbs.nl/def/dimension#>
 prefix gemeente: <http://betalinkeddata.cbs.nl/regios/2016/id/gemeente-geografisch/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?label ?gouda ?waddinxveen ?zoetermeer {
-  values ?p { def:nabijheidVoorzieningen_Basisonderwijs_AfstandTotSchool def:nabijheidVoorzieningen_AfstandTotKinderdagverblijf }
+  values ?p {
+    def:nabijheidVoorzieningen_Basisonderwijs_AfstandTotSchool
+    def:nabijheidVoorzieningen_AfstandTotKinderdagverblijf
+  }
   ?p rdfs:label ?label.
   ?observatie1
-    ?p ?gouda ;
+    ?p ?gouda;
     dimension:regio gemeente:GM0513.
   ?observatie2
     ?p ?waddinxveen;
