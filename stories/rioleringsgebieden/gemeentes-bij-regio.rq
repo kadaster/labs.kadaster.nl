@@ -1,51 +1,41 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX gwsw: <http://data.gwsw.nl/1.4/totaal/>
-PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-PREFIX brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-
-SELECT ?wktLabel ?wkt ?wktColor WHERE {
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gwsw: <http://data.gwsw.nl/1.4/totaal/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?shape ?shapeColor ?shapeLabel {
   {
-    SELECT ?wktLabel ?wkt ?wktColor WHERE {
-      SERVICE <https://sparql.gwsw.nl/repositories/TestDatastory> {
-        ?rg a gwsw:Rioleringsgebied ;
-           rdfs:label ?wktLabel ;
-           gwsw:hasAspect ?ori .
-        ?ori a gwsw:Gebiedsorientatie ;
-          gwsw:hasAspect ?bg .
-           ?bg a gwsw:Buitengrens ;
-             geo:asWKT ?wkt .
-        filter(contains(?wktLabel, "Castricum"))
+    select ?shape ?shapeColor ?shapeLabel {
+      service <https://sparql.gwsw.nl/repositories/TestDatastory> {
+        ?rg a gwsw:Rioleringsgebied;
+           gwsw:hasAspect ?ori;
+           rdfs:label ?shapeLabel.
+        ?ori a gwsw:Gebiedsorientatie;
+          gwsw:hasAspect ?bg.
+        ?bg a gwsw:Buitengrens;
+          geo:asWKT ?shape.
+        filter(contains(?shapeLabel, 'Castricum'))
       }
-      bind("green" as ?wktColor)
+      bind('green' as ?shapeColor)
     }
-  } UNION {
-    SERVICE <https://sparql.gwsw.nl/repositories/TestDatastory> {
-      ?rg a gwsw:Rioleringsgebied ;
-         rdfs:label ?wktlabel ;
-         gwsw:hasAspect ?ori .
-      ?ori a gwsw:Gebiedsorientatie ;
-        gwsw:hasAspect ?bg .
-         ?bg a gwsw:Buitengrens ;
-           geo:asWKT ?wkt_gwsw .
-      filter(contains(?wktlabel, "Castricum"))
+  } union {
+    service <https://sparql.gwsw.nl/repositories/TestDatastory> {
+      ?rg a gwsw:Rioleringsgebied;
+        gwsw:hasAspect ?ori;
+        rdfs:label ?shapelabel.
+      ?ori a gwsw:Gebiedsorientatie;
+        gwsw:hasAspect ?bg.
+      ?bg a gwsw:Buitengrens;
+        geo:asWKT ?shape_gwsw.
+      filter(contains(?shapelabel, 'Castricum'))
     }
-
-    # Zoek de bijbehorende gemeentenaam erbij
-    ?gem_uri a brt:Gemeente ;
-         rdfs:label ?gem_naam ;
-         brt:geometrie ?geom ;
-    	 brt:nummer ?nummer .
-    ?geom geo:asWKT ?wkt .
-    bind(strlang("Castricum", "nl") as ?castricum)
-    bind(strlang("Bergen", "nl") as ?bergen)
-    bind(strlang("Heemskerk", "nl") as ?heemskerk)
-    bind(strlang("Uitgeest", "nl") as ?uitgeest)
-    filter(?gem_naam=?castricum || ?gem_naam=?bergen || ?gem_naam=?heemskerk || ?gem_naam=?uitgeest)
-    filter(str(?nummer) != "0893")
-    bind(concat("<a target='_blank' href='", str(?gem_uri), "' target='_blank'><h3>", str(?gem_naam), "</h3></a>") as ?wktLabel)
-    bind("orange" as ?wktColor)
+    ?gem_uri a brt:Gemeente;
+      rdfs:label ?gem_naam;
+      brt:geometrie ?geom;
+      brt:nummer ?nummer.
+    ?geom geo:asWKT ?shape.
+    filter(?gem_naam="Castricum"@nl || ?gem_naam="Bergen"@nl || ?gem_naam="Heemskerk"@nl || ?gem_naam="Uitgeest"@nl)
+    filter(str(?nummer) != '0893')
+    bind('orange' as ?shapeColor)
+    bind(concat('<h3><a target="_blank" href="',str(?gem_uri),'" target="_blank">',str(?gem_naam),'</a></h3>') as ?shapeLabel)
   }
 }
