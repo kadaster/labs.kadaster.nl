@@ -1,0 +1,20 @@
+prefix cia: <http://www.daml.org/2001/12/factbook/factbook-ont#>
+prefix iisg: <https://iisg.amsterdam/vocab/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rvo: <https://internationaal.ondernemen.overheid.nl/def/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+select
+  ?name
+  (xsd:integer(?surface_rvo) as ?surface_rvo)
+  (xsd:integer(?surface_cia) as ?surface_cia)
+  (xsd:integer(?surface_cshapes) as ?surface_cshapes)
+{
+  ?land a rvo:Land;
+    owl:sameAs/cia:landArea ?surface_cia;
+    owl:sameAs/iisg:area ?surface_cshapes;
+    rdfs:label ?name;
+    rvo:oppervlakte ?surface_rvo.
+  filter(langMatches(lang(?name), 'nl'))
+}
+order by desc(?surface_rvo) desc(?surface_cia) desc(?surface_cshapes)

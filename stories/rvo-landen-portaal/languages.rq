@@ -1,0 +1,13 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rvo: <https://internationaal.ondernemen.overheid.nl/def/>
+select
+  (str(?taal) as ?taal)
+  (group_concat(?naam; separator=', ') as ?landen)
+{
+  ?land a rvo:Land;
+    rdfs:label ?naam;
+    rvo:taal/rdfs:label ?taal.
+  filter(langMatches(lang(?naam), 'nl'))
+}
+group by ?taal
+order by ?taal ?landen
