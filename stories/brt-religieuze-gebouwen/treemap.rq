@@ -1,0 +1,104 @@
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+select ?child ?parent (count(*) as ?size) (1.0 as ?color) {
+  {
+    values (?child ?parent) {
+      ( "Religieus Gebouw" UNDEF )
+      ( "Kerk" "Religieus Gebouw" )
+      ( "Moskee" "Religieus Gebouw" )
+      ( "Overig Religieus Gebouw" "Religieus Gebouw" )
+      ( "Synagoge" "Religieus Gebouw" )
+    }
+  } union {
+    select ?child ?parent {
+      {
+        # Extract the denominations (stored under property
+        # ‘brt:soortnaam’).  From looking at the data we know that
+        # there are at most 3 concatenated substrings in one
+        # denomination string.
+        select ?first ?second ?third ?fourth ?cLabel {
+          values (?c ?cLabel) {
+            ( brt:Kerk "Kerk" )
+            ( brt:Moskee "Moskee" )
+            ( brt:OverigReligieusGebouw "Overig Religieus Gebouw" )
+            ( brt:Synagoge "Synagoge" )
+          }
+          ?item a ?c;
+            brt:soortnaam ?denominationLiteral.
+          bind(str(?denominationLiteral) as ?denomString)
+          # Filter out a couple of rows where mosques are of type
+          # brt:Kerk.  Leaving these in would mess up the tree, since
+          # some children would have two parents (‘brt:Moskee’ and
+          # ‘brt:Kerk’).
+          filter(!(?c=brt:Kerk && (regex(?denomString,'moskee','i') ||
+                                   regex(?denomString,'boedd','i'))))
+          # multiple soortnaams are joined with '&'
+          bind(" & " as ?and)
+          {
+            # 1 denomination
+            filter(!regex(?denomString, ?and))
+            bind(?denomString as ?first)
+          } union {
+            # >1 denomination
+            filter(regex(?denomString, ?and))
+            bind(strbefore(?denomString, ?and) as ?first)
+            bind(strafter(?denomString, ?and) as ?rest1)
+            {
+              # 2 denominations
+              filter(!regex(?rest, ?and))
+              bind(?rest1 as ?second)
+            } union {
+              # >2 denominations
+              filter(regex(?rest1, ?and))
+              bind(strbefore(?rest1, ?and) as ?second)
+              bind(strafter(?rest1, ?and) as ?rest2)
+              {
+                # 3 denominations
+                filter(!regex(?rest2, ?and))
+                bind(?rest2 as ?third)
+              } union {
+                # 4 denominations
+                filter(regex(?rest2, ?and))
+                bind(strbefore(?rest2, ?and) as ?third)
+                bind(strafter(?rest2, ?and) as ?fourth)
+              }
+            }
+          }
+        }
+      }
+      {
+        bind(?first  as ?denomination)
+      } union {
+        filter(bound(?second))
+        bind(?second as ?denomination)
+      } union {
+        filter(bound(?third))
+        bind(?third  as ?denomination)
+      } union {
+        filter(bound(?fourth))
+        bind(?fourth as ?denomination)
+      }
+      bind(": " as ?sub)
+      {
+        # A subbranch occurs: we have another level of hierarchy.
+        filter(regex(?denomination, ?sub))
+        {
+          # in one set of rows: use the first part of the denomination
+          # as the parent and the second part as the child
+          bind(strbefore(?denomination, ?sub) as ?parent)
+          bind(strafter(?denomination, ?sub) as ?child)
+        } union {
+          # in another set of rows: discard the second part
+          bind(strbefore(?denomination, ?sub) as ?child)
+          bind(?cLabel as ?parent)
+        }
+      } union {
+        # No subbranch occurs: we are already done.
+        filter(!regex(?denomination, ?sub))
+        bind(?denomination as ?child)
+        bind(?cLabel as ?parent)
+      }
+    }
+  }
+}
+group by ?child ?parent
+order by desc(?n)

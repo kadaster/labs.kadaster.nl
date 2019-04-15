@@ -1,0 +1,97 @@
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct
+  ?gebouwShape (?color as ?gebouwShapeColor)
+  ?pandShape (?color as ?pandShapeColor) ?pandShapeHeight ?pandShapeName ?pandShapeLabel
+{
+  {
+    select ?gebouw ?pand ?pandShapeHeight {
+      service <https://data.labs.pdok.nl/migratie/sparql> {
+        graph <http://data.labs.pdok.nl/dataset/3d-bag> {
+          ?pand <https://data.labs.pdok.nl/bag/def/measuredHeight> ?pandShapeHeight
+        }
+        graph <http://data.labs.pdok.nl/dataset/linkset-bag-pand-brt-gebouw> {
+          ?pand geo:sfOverlaps ?gebouw.
+        }
+      }
+    }
+  }
+  graph ?pandVoorkomen {
+    ?pand
+      bag:oorspronkelijkBouwjaar ?bouwjaar;
+      geo:hasGeometry/geo:asWKT ?pandShape;
+      rdfs:label ?pandLbl.
+  }
+  filter not exists { ?pandVoorkomen bag:eindGeldigheid _:1 }
+  graph ?verblijfsobjectVoorkomen {
+    ?verblijfsobject
+      bag:hoofdadres ?nummeraanduiding;
+      bag:oppervlakte ?oppervlakte;
+      bag:pandrelatering ?pand.
+  }
+  filter not exists { ?verblijfsobjectVoorkomen bag:eindGeldigheid _:2 }
+  graph ?nummeraanduidingVoorkomen {
+    ?nummeraanduiding
+      bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
+      bag:huisnummer ?huisnummer;
+      bag:postcode ?postcode.
+  }
+  filter not exists { ?nummeraanduidingVoorkomen bag:eindGeldigheid _:3 }
+  graph ?openbareRuimteVoorkomen {
+    ?openbareRuimte
+      bag:bijbehorendeWoonplaats ?woonplaats;
+      bag:naamOpenbareRuimte ?openbareRuimteNaam.
+  }
+  filter not exists { ?openbareRuimteVoorkomen bag:eindGeldigheid _:4 }
+  graph ?woonplaatsVoorkomen {
+    ?woonplaats bag:naamWoonplaats ?woonplaatsNaam.
+  }
+  filter not exists { ?woonplaatsVoorkomen bag:eindGeldigheid _:5 }
+  ?gebouw a ?c;
+    brt:soortnaam ?soortnaam;
+    geo:hasGeometry/geo:asWKT ?gebouwShape;
+    rdfs:label ?gebouwLbl.
+  ?c rdfs:label ?cLabel.
+  {
+    filter(?c = brt:Kerk)
+    filter(regex(?soortnaam, "Protestant", "i"))
+    bind("blue" as ?color)
+  } union {
+    filter(?c = brt:Kerk)
+    filter(regex(?soortnaam, "Katholiek", "i"))
+    bind("red" as ?color)
+  } union {
+    filter(?c = brt:Moskee)
+    bind("green" as ?color)
+  } union {
+    filter(?c = brt:OverigReligieusGebouw)
+    bind('yellow' as ?color)
+  } union {
+    filter(?c = brt:Synagoge)
+    bind("orange" as ?color)
+  }
+  bind(concat(str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
+  bind(concat(
+'<h3>',
+  '<p>',
+    '<svg width="22px" height="22px">',
+      '<circle cx="11" cy="11" r="10" stroke="black" fill="',str(?color),'">',
+    '</svg>',
+    ' ',str(?cLabel),
+  '</p>',
+  '<p>',str(?pandShapeName),'</p>',
+  '<ul>',
+    '<li>',
+       'BAG: <a href="',str(?pand),'" target="_blank">',str(?pandLbl),'</a>',
+       '<dl>',
+         '<dt>Bouwjaar</dt><dd>',str(?bouwjaar),'</dd>',
+         '<dt>Oppervlakte</dt><dd>',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' m^2</dd>',
+       '</dl>',
+    '</li>',
+    '<li>BRT: <a href="',str(?gebouw),'" target="_blank">',str(?gebouwLbl),'</a></li>',
+  '</ul>',
+'</h3>') as ?pandShapeLabel)
+}
+limit 1000

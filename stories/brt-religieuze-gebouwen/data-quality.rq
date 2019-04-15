@@ -1,0 +1,10 @@
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix gebouw: <http://brt.basisregistraties.overheid.nl/top10nl/id/gebouw/>
+select ?klasse ?soortnaam ?gebouw {
+  bind(brt:Kerk as ?klasse)
+  ?gebouw a ?klasse;
+    brt:soortnaam ?soortnaam.
+  filter(regex(str(?soortnaam),'moskee','i') ||
+         regex(str(?soortnaam),'boedd','i'))
+}
+limit 100

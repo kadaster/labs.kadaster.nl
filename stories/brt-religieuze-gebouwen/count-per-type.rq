@@ -1,0 +1,9 @@
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?cLabel (count(?i) as ?n) {
+  ?i a ?c.
+  ?c rdfs:label ?cLabel.
+  filter(?c in (brt:Kerk, brt:Moskee, brt:OverigReligieusGebouw, brt:Synagoge))
+}
+group by ?cLabel
+order by desc(?n)

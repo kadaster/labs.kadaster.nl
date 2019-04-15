@@ -1,0 +1,22 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select * {
+  [ dct:description ?description;
+    foaf:depicts <https://triply.cc/rce/id/monument/13417>;
+    <https://triply.cc/rce/def/locator> ?image ]
+  {
+    select (group_concat(distinct ?subject;separator='</li><li>') as ?subjects) {
+      [ dct:subject ?subject;
+        foaf:depicts <https://triply.cc/rce/id/monument/13417> ]
+    }
+  }
+  bind('''
+<h3>{{description}}</h3>
+<img width="300" src="{{image}}">
+<figcaption>
+  <ul><li>{{subjects}}</li></ul>
+</figcaption>'''^^rdf:HTML as ?widget)
+}
+offset 10
+limit 10
