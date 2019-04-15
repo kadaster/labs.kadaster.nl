@@ -1,26 +1,25 @@
 ---
 layout: default
-title: Dissemination
+title: Data Browsers
 ---
 <div class="flex">
   <div class="flex-content">
-  <h1>Browsers</h1>
-
-    Data stories zijn HTML presentaties waarin de mogelijkheden van SPARQL, de kracht van datavisualisatie en de eenvoud van beschrijvende tekst worden gedemonstreerd.
-
-    <h2> Beschikbare facetcheck browsers</h2>
+    <h1>Data Browsers</h1>
+    <p>FacetCheck is a faceted browser that uses the semantic
+    properties of Linked Datasets in order to populate a browser
+    UI.</p>
     <div class="cards-wrapper">
       {% for page in site.pages %}
-      {% if page.layout == "facetcheck" %}
-      <a href="{{page.url}}">
-        <div class="card">
-          <img class="card-image" alt="{{page.title}}" src="{{page.logo}}"/>
-          <div class="card-title">{{page.title}}</div>
-          <div class="card-description">{{page.description}}</div>
-        </div>
-      </a>
+        {% if page.layout == "facetcheck" %}
+          <a href="{{page.url}}">
+            <div class="card">
+              <img class="card-image" alt="{{page.title}}" src="{{page.logo}}"/>
+              <div class="card-title">{{page.title}}</div>
+              <div class="card-description">{{page.description}}</div>
+            </div>
+          </a>
         {% endif %}
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
   </div>
 <div>

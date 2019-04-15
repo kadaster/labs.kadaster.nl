@@ -1,26 +1,26 @@
 ---
 layout: default
-title: Home
+title: Kadaster Labs
 ---
 
 <div class="flex">
   <div class="flex-content">
-  <h1>PDOK Labs</h1>
-  Op de Labs omgeving experimenteren we met datasets, opslag- en ontsluitingsmechanismen en applicaties.
-
-  <h2>Use cases</h2>
-  Check onze <a href="/cases">use cases</a>
-
-  <h2>Data Stories</h2>
-  Check onze <a href="/stories">Data Stories</a>
-
-  <h2>SPARQL</h2>
-  We hebben een eigen sparql endpoint. Wil je deze bevragen in de browser, dan hebben we <a href="https://nightly.yasgui.triply.cc">query editor</a> waar je het endpoint met YASGUI kan querien. Hier is ook het adres van het endpoint zelf te vinden.
-
-  <h2>GeoSPARQL</h2>
-  We hosten een apart <a href="/geosparql">GeoSPARQL endpoint</a> . We hebben hier geen eigen <a href="https://nightly.yasgui.triply.cc">yasgui</a>  sectie voor, maar je kan hier wel het endpointadres aanpassen.
-
-  <h2>Demonstrators & apps</h2>
-  Bekijk onze <a href="/browsers">facetcheck browsers</a>
-</div>
+    <h1>Kadaster Labs</h1>
+    <p>Welcome to the Kadaster Labs environment.  This is where the
+    Dutch Cadastre (Kadaster) experiments with Linked Data, Data
+    Science, and Machine Learning / AI.</p>
+    <div class="cards-wrapper">
+      {% for page in site.pages %}
+        {% if page.layout == "case" %}
+          <a href="{{page.url}}">
+            <div class="card">
+              <img class="card-image" alt="{{page.title}}" src="{{page.logo}}"/>
+              <div class="card-title">{{page.title}}</div>
+              <div class="card-description">{{page.description}}</div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>

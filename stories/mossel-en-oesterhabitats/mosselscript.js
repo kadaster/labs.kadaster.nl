@@ -1,12 +1,10 @@
 /* global YASGUI */
 document.addEventListener("DOMContentLoaded", function(event) {
-
 const query = `
-PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
-
-select * where {
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix geof: <http://www.opengis.net/def/function/geosparql/>
+prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+select * {
   graph <http://data.pdok.nl/mossel-en-oesterhabitats> {
     ?s geo:hasGeometry/geo:asWKT ?wkt .
     bind(geof:distance(

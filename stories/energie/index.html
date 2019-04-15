@@ -1,11 +1,23 @@
 ---
 endpoint: https://data.labs.pdok.nl/sparql
 layout: story
-logo: /stories/energie/logo.png
+logo: /assets/images/energy.png
 output: leaflet
 title: Energie Data Story
 description: Met de Energielabel Dataset kunnen we veel meer informatie ontsluiten. Dit wordt getoond in de queries in deze datastory.
 ---
+
+<h2>Windturbineparken in Nederland</h2>
+
+Bron: Wikidata
+
+<query data-endpoint="https://query.wikidata.org/sparql" data-query-ref="wikidata-windfarm.rq" data-output="geo"></query>
+
+<h2>Windturbines in Nederland</h2>
+
+Bron: BRT
+
+<query data-query-ref="brt-turbines.rq" data-output="geo"></query>
 
 <h1>Energie Data Story</h1>
 

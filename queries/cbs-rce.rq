@@ -1,0 +1,32 @@
+prefix dbo: <http://dbpedia.org/ontology/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix graph: <https://data.labs.pdok.nl/graph/>
+prefix rce: <https://data.labs.pdok.nl/rce/def/>
+prefix vcard: <http://www.w3.org/2006/vcard/ns#>
+select * {
+  graph graph:monumenten {
+    ?monument
+      dbo:city "Zwolle"@nl-nl ;
+      geo:hasGeometry/geo:asWKT ?shape ;
+      rce:bouwjaar ?bouwjaar ;
+      rce:huisnummer ?huisnummer ;
+      vcard:postal-code ?postcode .
+  }
+  graph graph:beeldbank {
+    ?monument rce:straat ?straat .
+    ?image
+      foaf:depicts ?monument ;
+      rce:locator ?url .
+  }
+  bind(if(bound(?bouwjaar),concat('<li>Bouwjaar: ',str(?bouwjaar),'</li>'),'') as ?bouwjaarLbl)
+  bind('''
+<h3>{{straat}} {{huisnummer}}</h3>
+<ul>
+  {{bouwjaarLbl}}
+  <li>Postcode: {{postcode}}</p>
+  <img src="{{url}}" style="max-height: 150px;">'''^^rdf:HTML as ?shapeLabel)
+}
+group by ?shape
+limit 100
