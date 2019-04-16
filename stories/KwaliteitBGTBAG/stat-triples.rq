@@ -1,3 +1,0 @@
-select (count(*) as ?n) {
-  ?s ?p ?o .
-}
