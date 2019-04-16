@@ -19,10 +19,12 @@ select ?shape ?shapeLabel {
   }
   filter not exists { ?nummeraanduidingVoorkomen bag:eindGeldigheid [] }
   graph ?verblijfsobjectVoorkomen {
-    ?verblijfsobject bag:hoofdadres ?nummeraanduiding ;
-                     bag:oppervlakte ?oppervlakte ;
-                     bag:pandrelatering ?pand ;
-                     bag:status ?verblijfsobjectStatus .
+    ?verblijfsobject
+      bag:hoofdadres ?nummeraanduiding ;
+      bag:oppervlakte ?oppervlakte ;
+      bag:pandrelatering ?pand ;
+      bag:status ?verblijfsobjectStatus;
+      rdfs:label ?verblijfsobjectLabel
   }
   filter not exists { ?verblijfsobjectVoorkomen bag:eindGeldigheid [] }
   ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel .
@@ -52,18 +54,23 @@ select ?shape ?shapeLabel {
        if(?energielabel="E", "#ff9a35",
        if(?energielabel="F", "#ff7f27",
        if(?energielabel="G", "#ed1c24", "grey")))))))) as ?shapeColor)
-  bind(concat('<h3>',
-              '<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">',
-              '<circle cx="10" cy="10" fill="',str(?shapeColor),'" r="10">',
-              '</svg> Waarderstraat 23, 2729KJ Zoetermeer</h3>',
-              '<h5><a href="',str(?verblijfsobject),'">Verblijfsobject</a>:</h5>',
-              '<ul>',
-              '<li>Oppervlakte: ',str(?oppervlakte),'m²</li>',
-              '<li>Status: <a href="',str(?verblijfsobjectStatus),'">',str(?verblijfsobjectStatusLabel),'</a></li>',
-              '</ul>',
-              '<h5><a href="',str(?pand),'">Pand</a>:</h5>',
-              '<ul>',
-              '<li>Bouwjaar: ',str(?bouwjaar),'</li>',
-              '<li>Status: <a href="',str(?pandStatus),'">',str(?pandStatusLabel),'</a></li>',
-              '</ul>') as ?shapeLabel)
+  bind(concat(
+    '<h3>',
+      '<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">',
+        '<circle cx="10" cy="10" fill="',str(?shapeColor),'" r="10">',
+      '</svg>',
+      ' Waarderstraat 23, 2729KJ Zoetermeer',
+    '</h3>',
+    '<h4>Verblijfsobject</h4>',
+    '<dl>',
+      '<dt>Identifier</dt>',
+      '<dd><a href="',str(?verblijfsobject),'" target="_blank">',str(?verblijfsobjectLabel),'</a></dd>',
+    '<li>Oppervlakte: ',str(?oppervlakte),'m²</li>',
+    '<li>Status: <a href="',str(?verblijfsobjectStatus),'" target="_blank">',str(?verblijfsobjectStatusLabel),'</a></li>',
+    '</ul>',
+    '<h5><a href="',str(?pand),'" target="_blank">Pand</a>:</h5>',
+    '<ul>',
+    '<li>Bouwjaar: ',str(?bouwjaar),'</li>',
+    '<li>Status: <a href="',str(?pandStatus),'" target="_blank">',str(?pandStatusLabel),'</a></li>',
+    '</ul>') as ?shapeLabel)
 }
