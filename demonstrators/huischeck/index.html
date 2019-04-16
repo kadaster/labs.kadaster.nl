@@ -1,0 +1,38 @@
+---
+layout: default
+title: Demonstrators
+---
+<div class="flex">
+  <div class="flex-content">
+    <h1>De Huischeck</h1>
+    <p>Op deze pagina is het mogelijk om nadere informatie te krijgen
+    over uw huis en buurt op basis van onder andere de PDOK
+    Locatieserver.  De informatie over uw huis wordt zowel als tekst
+    weergegeven, maar ook door middel van een QR-code die eenvoudig
+    gescand kan worden.</p>
+    <p>Vul in onderstaande zoekbalk uw adres(straatnaam+huisnummer,
+    woonplaats) in om uw huis te checken!</p>
+    <div>
+      <input name="q" id="adres" value="">
+      <button id='huischeck_now'>Check uw huis</button>
+      <script type="text/javascript" src="fetch.js">
+      </script>
+    </div>
+    <h2>Informatie over uw huis</h2>
+    <p>Als u uw adres heeft ingevoerd, vindt u hieronder de informatie
+    over uw huis:</p>
+    <div>
+      <p id="AdressInfo">
+      </p>
+    </div>
+    <h2>QR-code</h2>
+    <p>De onderstaande QR-code bevat de link naar de URI(Uniform
+    Resource Identifier) van uw huis. Wanneer u deze code scant komt u
+    uit op een pagina met informatie over uw huis uit de
+    basisregistraties van het Kadaster.</p>
+    <div id="qrcode">
+      <canvas id="qrcodeCanvas">
+    </div>
+    <button id="printQRcode">Print de QR-code</button>
+  </div>
+</div>
