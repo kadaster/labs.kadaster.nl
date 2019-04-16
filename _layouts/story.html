@@ -3,10 +3,10 @@ layout: default
 ---
 
 {% if page.endpoint %}
-    <div class="container story" data-endpoint="{{ page.endpoint }}" data-output="{{ page.output }}">
+  <div class="container story" data-endpoint="{{ page.endpoint }}" data-output="{{ page.output }}">
 {% else %}
-    <!-- Fallback to default labs endpoint -->
-    <div class="container story" data-endpoint="https://data.labs.pdok.nl/sparql/" data-output="{{ page.output }}">
+  <!-- Fallback to default labs endpoint -->
+  <div class="container story" data-endpoint="https://data.labs.pdok.nl/sparql/" data-output="{{ page.output }}">
 {% endif %}
 
 {{ content }}

@@ -49,7 +49,8 @@
 }
 
 .navbar-icon {
-  height: 2rem;
+  height: 2.5rem;
+  padding-right: 5px;
 }
 .flex {
     display: flex;
