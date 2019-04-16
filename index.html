@@ -10,17 +10,14 @@ title: Kadaster Data Science
     the Dutch Land Measuring Agency (Kadaster) experiments with Linked
     Data, Data Science, and Machine Learning.</p>
     <div class="cards-wrapper">
-      {% for page in site.pages %}
-        {% if page.layout == "case" %}
-          <a href="{{page.url}}">
-            <div class="card">
-              <img class="card-image" alt="{{page.title}}" src="{{page.logo}}"/>
-              <div class="card-title">{{page.title}}</div>
-              <div class="card-description">{{page.description}}</div>
-            </div>
-          </a>
-        {% endif %}
-      {% endfor %}
+      <a href="/cases/brt/">
+        <div class="card">
+          <img class="card-image" alt="Basisregistratie Topografie (BRT)" src="/assets/images/kadaster-logo.png">
+          <div class="card-title">Basisregistratie Topografie (BRT)</div>
+          <div class="card-description">Data Science activiteiten
+          rondom de Basisregistratie Topografie (BRT).</div>
+        </div>
+      </a>
     </div>
   </div>
 </div>
