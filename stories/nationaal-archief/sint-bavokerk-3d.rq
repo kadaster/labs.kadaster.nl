@@ -78,13 +78,16 @@ select ?shape ?shapeHeight ?shapeLabel ?shapeName {
   }
   bind(concat('⛪ ',str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?woonplaatsNaam)) as ?shapeName)
   bind(concat(
-    '<center><h1>⛪ <a href="',str(?pand),'">',str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?woonplaatsNaam),'</a></h1></center>',
+    '<center><h1>⛪ <a href="',str(?pand),'" target="_blank">',str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?woonplaatsNaam),'</a></h1></center>',
     '<h2>Links uit PDOK hub</h2>',
-    '<ul>',
-      '<li><b>BAG</b>: <a href="',str(?pand),'">',str(?pandId),'</a></li>',
-      '<li><b>RCE</b>: <a href="https://cultureelerfgoed.nl/monumenten/19264">19264</a></li>',
-      '<li><b>Wikidata</b>: <a href="http://www.wikidata.org/entity/Q1545193">Q1545193</a></li>',
-    '</ul>',
+    '<dl>',
+      '<dt>BAG</dt>',
+      '<dd><a href="',str(?pand),'" target="_blank">',str(?pandId),'</a></dd>',
+      '<dt>RCE</dt>',
+      '<dd><a href="https://cultureelerfgoed.nl/monumenten/19264" target="_blank">19264</a></dd>',
+      '<dt>Wikidata</dt>',
+      '<dd><a href="http://www.wikidata.org/entity/Q1545193" target="_blank">Q1545193</a></dd>',
+    '</dl>',
     '<h2>Afbeeldingen van Nationaal Archief</h2>',
     ?widgets
   ) as ?shapeLabel)

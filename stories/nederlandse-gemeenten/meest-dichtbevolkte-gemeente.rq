@@ -16,6 +16,6 @@ select ?woonplaatsShape ?woonplaatsShapeLabel {
   bind(concat(
     '<h2>',str(?woonplaatsNaam),'</h2>',
     if(bound(?vlag),concat('<img src="',replace(str(?vlag),'http://','https://'),'" style="max-width: 125px;">'),''),
-    '<p>Link naar DBpedia: <a href="',str(?woonplaats2),'">link</a></p>') as ?woonplaatsShapeLabel)
+    '<p>Link naar DBpedia: <a href="',str(?woonplaats2),'" target="_blank">link</a></p>') as ?woonplaatsShapeLabel)
 }
 limit 25

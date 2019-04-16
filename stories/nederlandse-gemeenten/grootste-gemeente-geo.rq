@@ -32,7 +32,7 @@ select ?gemeenteWkt ?gemeenteWktLabel {
     uom:metre) as ?y)
   bind(?x * ?y as ?gemeenteOppervlakte)
   bind(concat(
-    '<h3><a href="',str(?gemeente),'">',?gemeenteNaam,'</a></h3>',
+    '<h3><a href="',str(?gemeente),'" target="_blank">',str(?gemeenteNaam),'</a></h3>',
     '<p>Oppervlakte: ',str(?gemeenteOppervlakte),' m²</p>') as ?gemeenteWktLabel)
 }
 order by desc(?gemeenteOppervlakte)
