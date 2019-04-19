@@ -1,46 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site.lang | default: 'nl-NL' }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ site.title }}</title>
-    <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
-    <link rel="apple-touch-icon" href="/assets/images/kadaster-logo.png">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Arvo:400,700,400italic" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
-    <link rel="stylesheet" href="{{ '/assets/css/theme.css?v=' | append: site.github.build_revision }}">
-    <!-- <script src="/assets/js/scale.fix.js"></script> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
-  <body>
-    <div class="content">
-      <nav class="navbar">
-        <div class="navbar-content">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <title>{{ site.title }}</title>
+  <link rel="shortcut icon" href="/assets/images/kadaster-logo.png" />
+  <link rel="apple-touch-icon" href="/assets/images/kadaster-logo.png" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Arvo:400,700,400italic" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="{{
+        '/assets/css/style.css?v=' | append: site.github.build_revision
+      }}" />
+  <link rel="stylesheet" href="{{
+        '/assets/css/theme.css?v=' | append: site.github.build_revision
+      }}" />
+  <!-- <script src="/assets/js/scale.fix.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+
+<body>
+  <div class="content">
+    <nav class="navbar">
+      <div class="navbar-content">
+      {%- comment -%} When adding changes within this make sure that the selector for the mobile menu still works as it traverses each sibling {%- endcomment -%}
+        <input id="mobileNav" type="checkbox" style="display:none" />
+        <label for="mobileNav" class="hamburger">
+          <div class="hamburgerBar"></div>
+          <div class="hamburgerBar"></div>
+          <div class="hamburgerBar"></div>
+        </label>
+
+        <a href="/" class="branding">
           <div class="navbar-title">
-            <a href="/">
-              <img class="navbar-icon" src="/assets/images/kadaster-logo.png">
-              Data Science
-            </a>
+            <img class="navbar-icon" src="/assets/images/kadaster-logo.png" />
+            Data Science
           </div>
-          <div class="navbar-title"><a href="/stories">Stories</a></div>
-          <div class="navbar-title"><a href="/browsers">Browsers</a></div>
-          <div class="navbar-title"><a href="/demonstrators">Demonstrators</a></div>
-          <div class="navbar-title"><a href="/dissemination">Dissemination</a></div>
-          <div class="navbar-title"><a href="/internships">Internships</a></div>
-          <div class="navbar-title"><a href="https://demo.triply.cc">Data ↪</a></div>
-          <!--
+        </a>
+        <div class="navbar-collapsible">
+          <a href="/stories">
+            <div class="navbar-title">Stories</div>
+          </a>
+          <a href="/browsers">
+            <div class="navbar-title">Browsers</div>
+          </a>
+          <a href="/demonstrators">
+            <div class="navbar-title">Demonstrators</div>
+          </a>
+          <a href="/dissemination">
+            <div class="navbar-title">Dissemination</div>
+          </a>
+          <a href="/internships">
+            <div class="navbar-title">Internships</div>
+          </a>
+          <a href="https://demo.triply.cc" target="_blank">
+            <div class="navbar-title">Data</div>
+          </a>
+        </div>
+        <!--
           <div class="space"></div>
           <div class="powered">
             <a href="//triply.cc">Powered by <img class="triply-logo" src="/assets/images/triply-logo-text.svg"></a>
           </div>
           -->
-        </div>
-      </nav>
-      <section class="content">
-        {{ content }}
-      </section>
-      <footer>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </nav>
+    <section class="content">
+      {{ content }}
+    </section>
+    <footer></footer>
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+
 </html>
