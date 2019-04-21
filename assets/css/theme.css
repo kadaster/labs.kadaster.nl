@@ -1,5 +1,5 @@
 html {
-  max-width: 100%
+  max-width: 100%;
 }
 
 a {
@@ -29,7 +29,7 @@ a:hover {
   color: darkslategray;
   outline: none;
   padding: 0.75rem;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 }
 .card:hover {
   background-color: #f8f8f8;
@@ -57,14 +57,14 @@ a:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: .75rem;
-  padding-bottom: .25rem;
+  padding: 0.75rem;
+  padding-bottom: 0.25rem;
   /*text-align: center;*/
 }
 .card-type {
   border-bottom: 1px #ccc solid;
   color: black;
-  padding: .4rem;
+  padding: 0.4rem;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
@@ -75,33 +75,33 @@ a:hover {
   justify-content: center;
 }
 
-code.hightlight{
+code.hightlight {
   background-color: #cce6ff;
   border-radius: 3px;
-  color: #007AE9;
+  color: #007ae9;
   padding: 2px;
 }
 .codeblock {
-  background:#eee;
+  background: #eee;
   border: 1px #ccc solid;
   overflow-x: auto;
 }
 
-.content{
+.content {
   padding-bottom: 20px;
 }
-.content img{
-  max-width: 100%
+.content img {
+  max-width: 100%;
 }
 
 .flex {
   display: flex;
   overflow-x: hidden;
 }
-.flex-content  {
+.flex-content {
   flex-basis: 1600px;
   max-width: 100%;
-  padding:20px;
+  padding: 20px;
 }
 .flex-content h1 {
   margin-top: 1rem;
@@ -138,7 +138,7 @@ code.hightlight{
   height: 2.5rem;
   padding-right: 5px;
 }
-.triply-logo{
+.triply-logo {
   height: 1rem;
   max-height: 1rem;
   object-fit: cover;
@@ -152,12 +152,50 @@ code.hightlight{
   padding: 0px 10px;
   text-decoration: none;
 }
+.navbar-title:hover {
+  transition: background-color 0.2s ease-in;
+  color: #00387d;
+  background-color: #eee;
+}
+.navbar-title.active {
+  color: #00387d;
+}
+.hamburger {
+  cursor: pointer;
+  align-self: center;
+}
+.hamburger:hover .hamburgerBar {
+  background-color: #00387d;
+  text-decoration: none;
+}
+.hamburger .hamburgerBar {
+  width: 35px;
+  height: 4px;
+  background-color: #008dc9;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+#mobileNav:checked + .hamburger .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+#mobileNav:checked + .hamburger .hamburgerBar:first-child {
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+#mobileNav:checked + .hamburger .hamburgerBar:last-child {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+.navbar-collapsible {
+  display: flex;
+}
+.hamburger {
+  display: none;
+}
 
 .powered {
   align-items: center;
   color: gray;
   display: flex;
-  font-size: .75rem;
+  font-size: 0.75rem;
   padding-left: 5px;
 }
 @media only screen and (max-width: 500px) {
@@ -171,12 +209,12 @@ code.hightlight{
   table-layout: fixed;
 }
 .table tbody tr:nth-child(even) {
-  background-color: #eee
+  background-color: #eee;
 }
 .table td {
   border: 1px #ccc solid;
   padding: 0px 10px;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 .table th {
   border: 1px #ccc solid;
@@ -197,4 +235,74 @@ ul li:before {
 .space {
   flex-grow: 1;
   width: 20px;
+}
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+dl dt {
+    grid-column-start: 1;
+    font-weight: bold;
+  }
+  dl dd {
+    grid-column-start: 2;
+    /* margin-left: 20px; */
+}
+.container {
+  max-width: 100%;
+}
+.textbox {
+  background-color: #84bace66;
+  border-color: #00387d;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  color: #00387d;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  position: relative;
+}
+.yasr .yasr_results .galleryWrapper .itemWrapper {
+  width: 333px;
+}
+div.modal-dialog.google-visualization-charteditor-dialog {
+  z-index: 6;
+  width: unset;
+  height: unset;
+}
+div.modal-dialog.google-visualization-charteditor-dialog * {
+  box-sizing: content-box;
+}
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar-collapsible {
+    display: none;
+    position: fixed;
+    background: white;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 56px;
+  }
+  @media all and (-ms-high-contrast: none) {
+    .navbar-collapsible {
+      position: absolute;
+    }
+  }
+  .navbar-collapsible a .navbar-title {
+    padding: 5px;
+    border-bottom: 1px #00387d solid;
+  }
+  .navbar-collapsible a:first-child .navbar-title {
+    border-top: 1px #00387d solid;
+  }
+  .navbar-collapsible a:last-child .navbar-title {
+    box-shadow: 0.5px 1px 5px 2px #ccc;
+  }
+  /* This selector is used to select show the menu on mobile, it keeps selecting the next item. As css does not yet contain a parent selector we need to traverse each sibling*/
+  #mobileNav:checked + .hamburger + .branding + .navbar-collapsible {
+    display: block;
+  }
 }
