@@ -18,9 +18,12 @@ select * {
   ?categorie rdfs:label ?categorieLabel.
   bind(if(?do,'✓','❌') as ?doLabel)
   bind('''
+  <div style="width:275px; max-height:unset">
     <h1>{{categorieLabel}}</h1>
     <h2>{{subcategorieLabel}}</h2>
     <h3>Do or don't: {{doLabel}}</h3>
     {{content}}
-    <img src="{{vlag}}">'''^^rdf:HTML as ?widget)
+    <img src="{{vlag}}">
+  </div>
+    '''^^rdf:HTML as ?widget)
 }

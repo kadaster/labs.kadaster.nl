@@ -236,18 +236,12 @@ ul li:before {
   flex-grow: 1;
   width: 20px;
 }
-dl {
-    display: grid;
-    grid-template-columns: max-content auto;
-}
 
 dl dt {
-    grid-column-start: 1;
     font-weight: bold;
   }
   dl dd {
-    grid-column-start: 2;
-    /* margin-left: 20px; */
+    margin-left: 20px;
 }
 .container {
   max-width: 100%;
@@ -261,9 +255,6 @@ dl dt {
   margin-bottom: 1rem;
   padding: 0.75rem 1.25rem;
   position: relative;
-}
-.yasr .yasr_results .galleryWrapper .itemWrapper {
-  width: 333px;
 }
 div.modal-dialog.google-visualization-charteditor-dialog {
   z-index: 6;
