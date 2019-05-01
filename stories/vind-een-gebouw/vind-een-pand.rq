@@ -48,7 +48,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           rdfs:label ?verblijfsobjectLabel.
       }
       filter not exists {
-        ?verblijfsobject bag:eindGeldigheid _:4.
+        ?verblijfsobjectVoorkomen bag:eindGeldigheid _:4.
       }
       ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
       graph ?pandVoorkomen {
