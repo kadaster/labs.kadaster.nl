@@ -1,0 +1,6 @@
+title: Kadaster Labs
+description: Kadaster research lab
+# theme: theme
+repository: kadaster/labs.kadaster.nl
+port: 5000
+host: 127.0.1.1
