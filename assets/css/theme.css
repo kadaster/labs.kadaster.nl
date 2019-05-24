@@ -186,6 +186,7 @@ code.hightlight {
 }
 .navbar-collapsible {
   display: flex;
+  flex-grow: 1;
 }
 .hamburger {
   display: none;
@@ -238,13 +239,19 @@ ul li:before {
 }
 
 dl dt {
-    font-weight: bold;
-  }
-  dl dd {
-    margin-left: 20px;
+  font-weight: bold;
+}
+dl dd {
+  margin-left: 20px;
+}
+figure {
+  text-align: center;
 }
 .container {
   max-width: 100%;
+}
+.branding .navbar-title   {
+  flex-shrink: 0;
 }
 .textbox {
   background-color: #84bace66;
@@ -264,7 +271,7 @@ div.modal-dialog.google-visualization-charteditor-dialog {
 div.modal-dialog.google-visualization-charteditor-dialog * {
   box-sizing: content-box;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .hamburger {
     display: block;
   }
@@ -272,10 +279,12 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
     display: none;
     position: fixed;
     background: white;
-    width: 100%;
     left: 0;
     right: 0;
     top: 56px;
+  }
+  .navbar-collapsible .space {
+    display: none;
   }
   @media all and (-ms-high-contrast: none) {
     .navbar-collapsible {
