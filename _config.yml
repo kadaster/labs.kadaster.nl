@@ -4,3 +4,9 @@ description: Kadaster research lab
 repository: kadaster/labs.kadaster.nl
 port: 5000
 host: 127.0.1.1
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      banner: /assets/images/banner-placeholder.jpg

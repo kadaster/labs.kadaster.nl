@@ -29,8 +29,7 @@
         </label>
         <a href="/" class="branding">
           <div class="navbar-title">
-            <img class="navbar-icon" src="/assets/images/kadaster-logo.png" />
-            Data Science
+            <img class="navbar-icon" src="/assets/images/kadaster-logo-full.png" />
           </div>
         </a>
         <div class="navbar-collapsible">
@@ -62,6 +61,13 @@
       </div>
     </nav>
     <section class="content">
+      <div class="banner">
+        <span class="banner-overlay"></span>
+        <picture>
+          <img class="banner-image" src={{page.banner}}>
+        </picture>
+        
+      </div>
       {{ content }}
     </section>
     <footer></footer>
