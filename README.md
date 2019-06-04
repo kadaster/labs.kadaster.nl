@@ -9,7 +9,7 @@
 1. Clone this Git repositoy:
 
    ```bash
-   git clone https://github.com/PDOK/data.labs.pdok.nl
+   git clone https://github.com/kadaster/labs.kadaster.nl
    ```
 
 2. Run the container in the directory of the repository
