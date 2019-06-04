@@ -20,7 +20,9 @@
   <div class="content">
     <nav class="navbar">
       <div class="navbar-content">
-      {%- comment -%} When adding changes within this make sure that the selector for the mobile menu still works as it traverses each sibling {%- endcomment -%}
+        {%- comment -%} When adding changes within this make sure that the
+        selector for the mobile menu still works as it traverses each sibling
+        {%- endcomment -%}
         <input id="mobileNav" type="checkbox" style="display:none" />
         <label for="mobileNav" class="hamburger">
           <div class="hamburgerBar"></div>
@@ -33,15 +35,28 @@
           </div>
         </a>
         <div class="navbar-collapsible">
-          <a href="/stories/">
-            <div class="navbar-title">Stories</div>
+          <a href="/" class="branding">
+            <div class="navbar-title">
+              Use Cases
+            </div>
           </a>
-          <a href="/browsers/">
-            <div class="navbar-title">Browsers</div>
-          </a>
-          <a href="/demonstrators/">
-            <div class="navbar-title">Demonstrators</div>
-          </a>
+          <div class="dropdown">
+            <input id="buildingBlockMenu" type="checkbox" style="display: none" />
+            <div class="navbar-title">
+              <label for="buildingBlockMenu">Bouwblokken</label>
+            </div>
+            <div class="dropdown-items">
+              <a href="/stories/">
+                <div class="navbar-title">Data Stories</div>
+              </a>
+              <a href="/browsers/">
+                <div class="navbar-title">Browsers</div>
+              </a>
+              <a href="/demonstrators/">
+                <div class="navbar-title">Demonstrators</div>
+              </a>
+            </div>
+          </div>
           <a href="/dissemination/">
             <div class="navbar-title">Dissemination</div>
           </a>
@@ -54,7 +69,7 @@
           <div class="space"></div>
           <a href="/about">
             <div class="navbar-title">
-            Over ons
+              Over ons
             </div>
           </a>
         </div>
@@ -64,9 +79,8 @@
       <div class="banner">
         <span class="banner-overlay"></span>
         <picture>
-          <img class="banner-image" src={{page.banner}}>
+          <img class="banner-image" src="{{ page.banner }}" />
         </picture>
-        
       </div>
       {{ content }}
     </section>

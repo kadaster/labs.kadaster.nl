@@ -7,7 +7,8 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#333;
+  color: #333;
+  font-size: 16px;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #00387d;
@@ -24,7 +25,7 @@ a:hover {
   height: 400px;
   width: 100vw;
 }
-.banner-image{
+.banner-image {
   height: 400px;
   width: 100vw;
   object-fit: cover;
@@ -36,13 +37,12 @@ a:hover {
   left: 0;
   right: 0;
   background: transparent
-    url(/assets/images/gradient-topbanner-repetitive-horizontal.png)
-    repeat-x 50% 100%;
+    url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x
+    50% 100%;
   background-size: auto;
   background-size: auto 270px;
   z-index: 9;
 }
-
 
 .card {
   display: flex;
@@ -127,6 +127,40 @@ code.hightlight {
 .content img {
   max-width: 100%;
 }
+.dropdown {
+  display: flex;
+}
+.dropdown > .navbar-title :last-child::after {
+  content: '';
+  display: inline-block;
+width: 0;
+height: 0;
+margin-left: 5px;
+vertical-align: middle;
+border-top: 4px dashed;
+border-top: 4px solid;
+border-right: 4px solid transparent;
+border-left: 4px solid transparent;
+  
+}
+.dropdown-items {
+  display: none;
+  position: absolute;
+  background: #00387d;
+  top: 136px;
+  z-index: 10;
+  padding: 12px;
+}
+.dropdown-items .navbar-title {
+  color: white;
+}
+#buildingBlockMenu:checked + .navbar-title + .dropdown-items {
+  display: block;
+}
+#buildingBlockMenu:checked + .navbar-title :last-child::after {
+  transform: rotate(180deg)
+}
+
 
 .flex {
   display: flex;
@@ -182,12 +216,6 @@ code.hightlight {
   /* height: 2.5rem; */
   padding-right: 5px;
 }
-.triply-logo {
-  height: 1rem;
-  max-height: 1rem;
-  object-fit: cover;
-  padding-left: 2px;
-}
 .navbar-title {
   align-items: end;
   color: #00387d;
@@ -232,19 +260,6 @@ code.hightlight {
 }
 .hamburger {
   display: none;
-}
-
-.powered {
-  align-items: center;
-  color: gray;
-  display: flex;
-  font-size: 0.75rem;
-  padding-left: 5px;
-}
-@media only screen and (max-width: 500px) {
-  .powered {
-    display: none;
-  }
 }
 
 .table {
@@ -292,7 +307,7 @@ figure {
 .container {
   max-width: 100%;
 }
-.branding .navbar-title   {
+.branding .navbar-title {
   flex-shrink: 0;
 }
 .textbox {
@@ -339,14 +354,30 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
     padding: 5px;
     border-bottom: 1px #00387d solid;
   }
-  .navbar-collapsible a:first-child .navbar-title {
+  .navbar-collapsible > a:first-child .navbar-title {
     border-top: 1px #00387d solid;
   }
-  .navbar-collapsible a:last-child .navbar-title {
+  .navbar-collapsible > a:last-child .navbar-title {
     box-shadow: 0.5px 1px 5px 2px #ccc;
   }
   /* This selector is used to select show the menu on mobile, it keeps selecting the next item. As css does not yet contain a parent selector we need to traverse each sibling*/
   #mobileNav:checked + .hamburger + .branding + .navbar-collapsible {
     display: block;
+  }
+  /* Make the dropdown menu part of the normal menu again */
+  .dropdown {
+    display: block;
+  }
+  .dropdown-items {
+    display: block;
+    position: unset;
+    background: transparent;
+    padding: 0;
+  }
+  .dropdown > .navbar-title {
+    display: none;
+  }
+  .dropdown .navbar-title {
+    color: #00387d;
   }
 }
