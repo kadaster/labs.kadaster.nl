@@ -53,5 +53,5 @@ Extends from the [default](###Default) template and imports the YASGUI stories d
 | Variable name | Use                                          | default value                       |
 | ------------- | -------------------------------------------- | ----------------------------------- |
 | endpoint      | An endpoint to refer to                      | `https://data.labs.pdok.nl/sparql/` |
-| output        | A image to use as banner                     | `table`                             |
+| output        | Output of story                              | `table`                             |
 | basemap       | The type of chart to use for the geo plugins | `nlmaps`                            |
