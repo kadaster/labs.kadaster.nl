@@ -335,7 +335,7 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
   }
   .navbar-collapsible {
     display: none;
-    position: fixed;
+    position: absolute;
     background: white;
     left: 0;
     right: 0;
