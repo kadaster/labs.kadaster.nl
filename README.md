@@ -20,25 +20,38 @@
 
 3. The site now run on <http://localhost:4000>.
 
-# Issues
+## Templates
 
-## Seemingly random card order on overview pages
+Labs uses templates to generate the site and their elements. Below is a list of which templates are available
 
-While it is nice to generate overview pages automatically, it is
-currently not possible to determine the order in which cards appear in
-the overview, which is very undesirable.  The code that produces these
-seemingly random orders looks like this:
+### Default
 
-```html
-{% for page in site.pages %}
-  {% if page.layout == "story" %}
-    <a href="{{page.url}}">
-      <div class="card">
-        <img class="card-image" alt="{{page.title}}" src="{{page.logo}}">
-        <div class="card-title">{{page.title}}</div>
-        <div class="card-description">{{page.description}}</div>
-      </div>
-    </a>
-  {% endif %}
-{% endfor %}
-```
+The default template contains the navigation bar and a banner, and imports the default style
+
+Variables:
+
+| Variable name | Use                      | default value                           |
+| ------------- | ------------------------ | --------------------------------------- |
+| banner        | A image to use as banner | `/assets/images/banner-placeholder.jpg` |
+
+### Case
+
+Imports from the [default](###Default) template
+
+### Facetcheck
+
+Completely blank template
+
+### Presentation
+
+Imports presentation dependencies
+
+### Story
+
+Extends from the [default](###Default) template and imports the YASGUI stories dependency
+
+| Variable name | Use                                          | default value                       |
+| ------------- | -------------------------------------------- | ----------------------------------- |
+| endpoint      | An endpoint to refer to                      | `https://data.labs.pdok.nl/sparql/` |
+| output        | Output of story                              | `table`                             |
+| basemap       | The type of chart to use for the geo plugins | `nlmaps`                            |
