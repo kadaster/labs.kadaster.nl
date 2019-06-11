@@ -1,16 +1,34 @@
 /* Primary blue: #00387d */
 /* Secondary blue: #007ae9 */
 /* Background blue #d9eef7 */
+@font-face {
+  font-family: "Auto";
+  src: url(/assets/fonts/Auto_1_Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Auto";
+  src: url(/assets/fonts/Auto_1_Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
 html {
   max-width: 100%;
   font-family: "Auto", Verdana, Arial, Helvetica, sans-serif;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Auto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #00387d;
 }
 a {
@@ -131,17 +149,16 @@ code.hightlight {
   display: flex;
 }
 .dropdown > .navbar-title :last-child::after {
-  content: '';
+  content: "";
   display: inline-block;
-width: 0;
-height: 0;
-margin-left: 5px;
-vertical-align: middle;
-border-top: 4px dashed;
-border-top: 4px solid;
-border-right: 4px solid transparent;
-border-left: 4px solid transparent;
-  
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 .dropdown-items {
   display: none;
@@ -158,9 +175,8 @@ border-left: 4px solid transparent;
   display: block;
 }
 #buildingBlockMenu:checked + .navbar-title :last-child::after {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
-
 
 .flex {
   display: flex;
@@ -220,7 +236,7 @@ border-left: 4px solid transparent;
   align-items: end;
   color: #00387d;
   display: flex;
-  font-size: 1rem;
+  font-size: 18px;
   padding: 0px 10px;
   text-decoration: none;
 }
