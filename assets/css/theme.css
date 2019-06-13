@@ -33,6 +33,8 @@ h6 {
 }
 a {
   text-decoration: none;
+  /* IE11 doesn't support contents */
+  display: flex;
   display: contents;
 }
 a:hover {
@@ -170,6 +172,7 @@ code.hightlight {
 }
 .dropdown-items .navbar-title {
   color: white;
+  text-decoration: underline;
 }
 #buildingBlockMenu:checked + .navbar-title + .dropdown-items {
   display: block;
@@ -233,7 +236,7 @@ code.hightlight {
   padding-right: 5px;
 }
 .navbar-title {
-  align-items: end;
+  align-items: flex-end;
   color: #00387d;
   display: flex;
   font-size: 18px;
@@ -386,7 +389,7 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
   }
   .dropdown-items {
     display: block;
-    position: unset;
+    position: static;
     background: transparent;
     padding: 0;
   }
@@ -395,5 +398,10 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
   }
   .dropdown .navbar-title {
     color: #00387d;
+    text-decoration: none;
+  }
+  .navbar-collapsible a {
+    display: block;
+    display: contents;
   }
 }

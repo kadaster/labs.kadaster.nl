@@ -31,5 +31,34 @@ function highlightCurrentPage() {
     }
   }
 }
+/**
+ * Closes menu when clicked anywhere in the document
+ */
+var contextItems = [];
+function closeContextMenu(event) {
+  for (var i = 0; i < contextItems.length; i++) {
+    var checkBox = document.getElementById(contextItems[i]);
+    if (event.target.id !== checkBox.id && checkBox.checked) {
+      var currTarget = event.target;
+      var calledOnLabel = false;
+      while (currTarget) {
+        if (currTarget.id === checkBox.id || currTarget.tagName === "LABEL") {
+          calledOnLabel = true;
+          break;
+        }
+        currTarget = currTarget.parentElement;
+      }
+      if (!calledOnLabel) {
+        checkBox.checked = false;
+      }
+    }
+  }
+}
+var inputs = document.getElementsByTagName("input");
+
+// Add ID's for context-menu's
+contextItems.push("mobileNav");
+contextItems.push("buildingBlockMenu");
+document.addEventListener("click", closeContextMenu, true);
 
 highlightCurrentPage();
