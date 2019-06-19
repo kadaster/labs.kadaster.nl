@@ -85,7 +85,7 @@ $(document).ready(() => {
 <div id="qrcode"><canvas id="qrcodeCanvas"/></div>
 <script>
     'use strict';
-    const logoSrc = 'https://data.labs.pdok.nl/api/v1/text2image?text=${globalLookup.huis_nlt}';
+    const logoSrc = 'https://labs.kadaster.nl/api/v1/text2image?text=${globalLookup.huis_nlt}';
     fetch(logoSrc)
           .then((res) => {
               if (res.status === 200) {
@@ -182,7 +182,7 @@ td {
 </style>
 </head><body>
 <div id="printTable" style=" line-break: anywhere;">
-  <img src="https://data.labs.pdok.nl/assets/images/PDOK_logo.svg" style="background-color: midnightblue; -webkit-print-color-adjust: exact;" />
+  <img src="https://labs.kadaster.nl/assets/images/PDOK_logo.svg" style="background-color: midnightblue; -webkit-print-color-adjust: exact;" />
   <u><h3>Informatie over uw huis</h3>${$('#nummeraanduiding')[0].innerText.replace('.nl', '.nl<br>')}</u>
   <table cellpadding=0 cellspacing=0><tbody>
     <tr><td>Adres:</td><td style="text-align: right">${$('#straatnaam')[0].innerText} ${$('#huisnummer')[0].innerText}</td></tr>
@@ -209,7 +209,7 @@ td {
     <tr><td>Gem. afstand tot school:</td><td style="text-align: right">${$('#school')[0].nextSibling.data}</td></tr>
   </tbody></table>
   <u><h4>Informatie verkregen via de Huischeck van PDOK</h4></u>
-  <a href="https://data.labs.pdok.nl/apps/huischeck">https://data.labs.pdok.nl/apps/huischeck</a>
+  <a href="https:/labs.kadaster.nl/apps/huischeck">https://data.labs.pdok.nl/apps/huischeck</a>
 </div>
 <script>
   const printDiv = document.getElementById("printTable");
