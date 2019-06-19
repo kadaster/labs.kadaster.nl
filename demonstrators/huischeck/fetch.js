@@ -18,7 +18,7 @@ Provincienaam: ${locatieserverLookup.provincienaam}<br>
 Waterschapsnaam: ${locatieserverLookup.waterschapsnaam}<br>
 `);
 
-  const logoSrc = `https://data.labs.pdok.nl/api/v1/text2image?text=${locatieserverLookup.huis_nlt}`;
+  const logoSrc = `https://labs.kadaster.nl/api/v1/text2image?text=${locatieserverLookup.huis_nlt}`;
 
   fetch(logoSrc)
     .then((res) => {
