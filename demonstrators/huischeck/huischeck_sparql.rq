@@ -1,0 +1,144 @@
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix cbs: <http://betalinkeddata.cbs.nl/def/cbs#>
+prefix def: <http://betalinkeddata.cbs.nl/def/83487NED#>
+prefix dimension: <http://betalinkeddata.cbs.nl/def/dimension#>
+prefix energielabels: <https://data.labs.pdok.nl/def/energielabels/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix geof: <http://www.opengis.net/def/function/geosparql/>
+prefix graph: <https://data.labs.pdok.nl/graph/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select * {
+  {
+    select * {
+      bind("Apeldoorn" as ?woonplaatsNaam)
+      bind("Anthonie Duyckstraat" as ?openbareRuimteNaam)
+      bind(1 as ?huisnummer)
+      bind("G1" as ?huisnummertoevoeging)
+      #bind("a" as ?huisletter)
+      graph ?woonplaatsVoorkomen {
+        ?woonplaats bag:naamWoonplaats ?woonplaatsNaam.
+      }
+      filter not exists {
+        ?woonplaatsVoorkomen bag:eindGeldigheid []
+      }
+      graph ?openbareRuimteVoorkomen {
+        ?openbareRuimte bag:bijbehorendeWoonplaats ?woonplaats;
+                        bag:naamOpenbareRuimte ?openbareRuimteNaam.
+      }
+      filter not exists {
+        ?openbareRuimteVoorkomen bag:eindGeldigheid []
+      }
+      graph ?nummeraanduidingVoorkomen {
+        ?nummeraanduiding bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
+                          bag:huisnummer ?huisnummer;
+                          bag:postcode ?postcode.
+      }
+      filter not exists {
+        ?nummeraanduidingVoorkomen bag:eindGeldigheid []
+      }
+      optional {
+        ?nummeraanduiding bag:huisletter ?huisletter.
+      }
+      optional {
+        ?nummeraanduiding bag:huisnummertoevoeging ?huisnummertoevoeging.
+      }
+      graph ?verblijfsobjectVoorkomen {
+        ?verblijfsobject bag:hoofdadres ?nummeraanduiding;
+                         bag:oppervlakte ?oppervlakte;
+                         bag:pandrelatering ?pand;
+                         bag:status ?verblijfsobjectStatus.
+      }
+      filter not exists {
+        ?verblijfsobjectVoorkomen bag:eindGeldigheid []
+      }
+      ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
+      graph ?pandVoorkomen {
+        ?pand bag:geometriePand/geo:asWKT ?wkt_poly;
+              bag:oorspronkelijkBouwjaar ?bouwjaar;
+              bag:status ?pandStatus.
+      }
+      filter not exists {
+        ?pandVoorkomen bag:eindGeldigheid []
+      }
+      ?pandStatus rdfs:label ?pandStatusLabel
+
+      bind(geof:envelope(?wkt_poly) as ?envelope)
+      bind (strbefore(strafter(str(?envelope), "((" ), "))") as ?coords)
+      bind(strbefore(?coords, " ") as ?first_long)
+      bind(strbefore(strafter(?coords, " "), ",") as ?first_lat)
+      bind(strbefore(strafter(?coords, concat(?first_lat, ", ")), ",") as ?second_coordinates)
+      bind(strbefore(strafter(?coords, concat(?second_coordinates, ", ")), " ") as ?third_long)
+      bind(strbefore(strafter(?coords, ?third_long), ",") as ?third_lat)
+      bind((strdt(?first_long, xsd:double) + strdt(?third_long, xsd:double)) / 2 as ?avg_long)
+      bind((strdt(?first_lat, xsd:double) + strdt(?third_lat, xsd:double)) / 2 as ?avg_lat)
+      bind(strdt(concat("POINT(", str(?avg_long), " ", str(?avg_lat), ")"), geo:wktLiteral) as ?wkt)
+    }
+  }
+
+  service <https://betalinkeddata.cbs.nl/sparql> {
+    ?wkt geo:sfWithin ?geometry.
+    _:1 def:nabijheidVoorzieningen_AfstandTotGroteSupermarkt ?supermarkt;
+        dimension:regio ?buurt.
+    _:2 def:nabijheidVoorzieningen_AfstandTotHuisartsenpraktijk ?huisarts;
+        dimension:regio ?buurt.
+    _:3 def:nabijheidVoorzieningen_AfstandTotKinderdagverblijf ?kinderdagverblijf;
+        dimension:regio ?buurt.
+    _:4 def:nabijheidVoorzieningen_Basisonderwijs_AfstandTotSchool ?school;
+        dimension:regio ?buurt.
+    _:5 def:bevolking_AantalInwoners ?aantalinwoners;
+        dimension:regio ?buurt.
+    _:6 def:wonen_GemiddeldeWoningwaarde ?woningwaarde;
+        dimension:regio ?buurt.
+    _:7 def:wonen_WoningenNaarEigendom_Koopwoningen ?koopwoningen;
+        dimension:regio ?buurt.
+    _:8 def:wonen_WoningenNaarEigendom_Huurwoningen_HuurwoningenTotaal ?huurwoningen;
+        dimension:regio ?buurt.
+    _:9 def:energie_GemiddeldElektriciteitsverbruik_GemiddeldElektriciteitsverbruikTotaal ?elektriciteitsverbruik;
+        dimension:regio ?buurt.
+    _:10 def:wonen_WoningenNaarBouwjaar_BouwjaarVoor2000 ?woningenvoor2000;
+         dimension:regio ?buurt.
+    _:11 def:wonen_WoningenNaarBouwjaar_BouwjaarVanaf2000 ?woningenvanaf2000;
+         dimension:regio ?buurt.
+    _:12 def:bevolking_Geslacht_Mannen ?mannen;
+         dimension:regio ?buurt.
+    _:13 def:bevolking_Geslacht_Vrouwen ?vrouwen;
+         dimension:regio ?buurt.
+    ?buurt
+      a cbs:Buurt;
+      geo:hasGeometry ?geometry;
+      rdfs:label ?buurtNaam.
+  }
+  bind(concat(if(bound(?huisnummertoevoeging),concat('-',str(?huisnummertoevoeging)),''),
+              if(bound(?huisletter),concat(' ',str(?huisletter)),'')) as ?huisnummerPlus)
+  bind('''
+	<div id="huischeckTable">
+	  <!-- wat verborgen elementen om de tabelprint op te maken -->
+    <div id="nummeraanduiding" hidden>{{nummeraanduiding}}</div>
+    <div id="straatnaam" hidden>{{openbareRuimteNaam}}</div>
+    <div id="huisnummer" hidden>{{huisnummer}}{{huisnummerPlus}}</div>
+    <div id="buurtnaam" hidden>{{buurtNaam}}</div>
+    <div id="woonplaats" hidden>{{woonplaatsNaam}}</div>
+    <div id="postcode" hidden>{{postcode}}</div>
+    <div id="woningenvoor2000" hidden>{{woningenvoor2000}}%</div>
+    <div id="woningenna2000" hidden>{{woningenvanaf2000}}%</div>
+
+    <h3>{{openbareRuimteNaam}} {{huisnummer}}{{huisnummerPlus}}, {{postcode}}, {{woonplaatsNaam}}</h3>
+
+    <b id="bouwjaar" style="font-weight: bold;">Bouwjaar</b> {{bouwjaar}}<br>
+    <b id="oppervlak" style="font-weight: bold;">Oppervlak</b> {{oppervlakte}} m&sup2;<br>
+    <b id="aantalinwoners" style="font-weight: bold;">Aantal inwoners</b> {{aantalinwoners}}<br>
+    <b id="aantalmannen" style="font-weight: bold;">Aantal mannen</b> {{mannen}}<br>
+    <b id="aantalvrouwen" style="font-weight: bold;">Aantal vrouwen</b> {{vrouwen}}<br>
+    <b id="woningwaarde" style="font-weight: bold;">Gem. woningwaarde</b> &euro;{{woningwaarde}}.000<br>
+    <b id="koopwoningen" style="font-weight: bold;">Percentage koopwoningen</b> {{koopwoningen}}%<br>
+    <b id="huurwoningen" style="font-weight: bold;">Percentage huurwoningen</b> {{huurwoningen}}%<br>
+    <b id="elektriciteitsverbruik" style="font-weight: bold;">Elektriciteitsverbruik</b> {{elektriciteitsverbruik}} kWh/jr.<br>
+    <b id="supermarkt" style="font-weight: bold;">Afstand tot supermarkt</b> {{supermarkt}} km.<br>
+    <b id="huisarts" style="font-weight: bold;">Afstand tot huisarts</b> {{huisarts}} km.<br>
+    <b id="kinderdagverblijf" style="font-weight: bold;">Afstand tot kinderdagverblijf</b> {{kinderdagverblijf}} km.<br>
+    <b id="school" style="font-weight: bold;">Afstand tot school</b> {{school}} km.<br>
+	</div>
+	<button onclick="createPrintTable()">Print!</button>
+''' as ?wktLabel)
+}
+limit 1
