@@ -1,0 +1,41 @@
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+select * {
+  {
+    select ?pand ?gebouw ?soortnaam ?type ?shape {
+      {
+        select * where{
+          graph <http://brt.basisregistraties.overheid.nl/id/dataset/top10nl> {
+            ?gebouw
+              a ?type;
+              brt:soortnaam ?soortnaam;
+              geo:hasGeometry/geo:asWKT ?shape.
+            filter(contains(str(?soortnaam), "Voorm") &&
+                   !(contains(str(?soortnaam), "tolhuis")) &&
+                   !(contains(str(?soortnaam), "Voormalig klooster")) &&
+                   (?type != brt:Gebouw))
+          }
+        }
+      }
+    }
+  }
+  {
+    filter(?type = brt:Overig_gebouw)
+    bind('blue' as ?shapeColor)
+  } union {
+    filter(?type = brt:Huizenblok)
+    bind('red' as ?shapeColor)
+  } union {
+    filter(?type = brt:Toren)
+    bind('green' as ?shapeColor)
+  } union {
+    filter(?type = brt:Moskee)
+    bind('yellow' as ?shapeColor)
+  } union {
+    filter(?type = brt:School)
+    bind('orange' as ?shapeColor)
+  }
+  bind(if(bound(?shapeColor), ?shapeColor, 'purple') as ?shapeColor)
+  bind(concat('<h2>',str(?soortnaam) ,'<br>Omgevormd tot: ',strafter(str(?type),'#'),'</h2>') as ?shapeLabel)
+}

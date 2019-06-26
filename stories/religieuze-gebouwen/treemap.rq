@@ -31,6 +31,7 @@ select ?child ?parent (count(*) as ?size) (1.0 as ?color) {
           # ‘brt:Kerk’).
           filter(!(?c=brt:Kerk && (regex(?denomString,'moskee','i') ||
                                    regex(?denomString,'boedd','i'))))
+          filter(!(?c=brt:OverigReligieusGebouw && (regex(?denomString,'kerk','i'))))
           # multiple soortnaams are joined with '&'
           bind(" & " as ?and)
           {

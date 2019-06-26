@@ -78,4 +78,4 @@ select
   }
 }
 group by ?cLabel ?denomination ?subdenomination
-order by ?cLabel ?denomination ?subdenomination
+order by desc(?n) ?cLabel ?denomination ?subdenomination

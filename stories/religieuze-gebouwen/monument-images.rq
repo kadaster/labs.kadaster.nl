@@ -1,22 +1,36 @@
-prefix dct: <http://purl.org/dc/terms/>
-prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select * {
-  [ dct:description ?description;
-    foaf:depicts <https://triply.cc/rce/id/monument/13417>;
-    <https://triply.cc/rce/def/locator> ?image ]
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix wde: <http://www.wikidata.org/entity/>
+prefix wdn: <http://www.wikidata.org/prop/direct-normalized/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+select distinct * {
   {
-    select (group_concat(distinct ?subject;separator='</li><li>') as ?subjects) {
-      [ dct:subject ?subject;
-        foaf:depicts <https://triply.cc/rce/id/monument/13417> ]
+    select ?pand ?pandId ?wikidata (sample(?label) as ?label) (sample(?img) as ?img) {
+      service <https://query.wikidata.org/sparql> {
+        ?wikidata
+          wdn:P5208 ?pand;
+          wdt:P5208 ?pandId;
+          wdt:P18 ?img;
+          rdfs:label ?label;
+          wdt:P31 wde:Q16970.
+        filter(lang(?label) = 'nl')
+      }
     }
+    group by ?pand ?pandId ?wikidata
   }
+  graph ?pandVoorkomen {
+    ?pand bag:oorspronkelijkBouwjaar ?bouwjaar.
+  }
+  filter not exists {
+    ?pandVoorkomen bag:eindGeldigheid [].
+  }
+  bind(substr(str(?wikidata),32) as ?wikidataId)
   bind('''
-<h3>{{description}}</h3>
-<img width="300" src="{{image}}">
-<figcaption>
-  <ul><li>{{subjects}}</li></ul>
-</figcaption>'''^^rdf:HTML as ?widget)
+<p>Kerk: {{label}}</p>
+<p>BAG bouwjaar: {{bouwjaar}} </p>
+<p>BAG ID: <a href="{{bag}}" target="_blank">{{bagId}}</a></p>
+<p>Wikidata ID: <a href="{{wikidata}}" target="_blank">{{wikidataId}}</a></p>
+<img src="{{img}}" style="width: auto; max-width: none;">'''^^rdf:HTML as ?widget)
 }
-offset 10
 limit 10
