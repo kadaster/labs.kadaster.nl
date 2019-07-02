@@ -55,3 +55,12 @@ Extends from the [default](###Default) template and imports the YASGUI stories d
 | endpoint      | An endpoint to refer to                      | `https://data.labs.pdok.nl/sparql/` |
 | output        | Output of story                              | `table`                             |
 | basemap       | The type of chart to use for the geo plugins | `nlmaps`                            |
+
+## Content requirements
+
+### Tiles
+
+The description field of tiles (HTML class name `card-description`)
+must not contain more than 130 characters (including whitespace).
+Longer texts may be used as introductory text on the page that the
+tile links to.
