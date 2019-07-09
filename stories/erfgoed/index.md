@@ -82,6 +82,11 @@ http://nl.dbpedia.org/page/Keukenhof BAG BRT Wikidata (via opnemen van
 BAG ids van Lisse in wikidata set) Huidige CBS wijk en buurt gegevens
 laten zien… (brouwerij/bier nog even naar kijken; klein duimpje)
 
+<query data-endpoint="https://data.pdok.nl/sparql"
+       data-output="geo"
+       data-query-ref="brk.rq">
+</query>
+
 ## Persoon
 
 Henk/Hans (1 mei) (met hulp van Wouter/Richard voor het tweede

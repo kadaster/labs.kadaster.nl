@@ -1,0 +1,10 @@
+prefix brk: <http://brk.basisregistraties.overheid.nl/def/brk#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select * {
+  ?perceel
+    brk:kadastraleGemeente/rdfs:label "Lisse";
+    brk:begrenzingPerceel/geo:asWKT ?shape.
+  bind('<a href="{{perceel}}">{{perceel}}</a>'^^rdf:HTML as ?shapeLabel)
+}
