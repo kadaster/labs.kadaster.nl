@@ -129,6 +129,9 @@ Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jare
 <query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-hierarchy">
 </query>
 
+<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-gallery">
+</query>
+
 ## Familieboom
 
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
