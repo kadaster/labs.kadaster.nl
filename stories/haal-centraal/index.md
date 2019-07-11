@@ -38,9 +38,13 @@ gemeente Rotterdam en Den Haag.
 
 ## Scholen op de Kaart
 
-We beginnen met het weergeven van alle scholen en gymlocaties op de
-kaart.  Door op een van de locaties te klikken worden de gegevens die
-bekend zijn weergeven.
+<p>We beginnen met het weergeven van alle Rotterdamse scholen (<svg
+height="18" viewBox="0 0 18 18"
+xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="blue"
+r="9"></circle></svg>) en gymlocaties (<svg height="18" viewBox="0 0
+18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9"
+fill="yellow" r="9"></circle></svg>) op de kaart.  Door op een van de
+locaties te klikken worden de gegevens die bekend zijn weergeven.</p>
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-gymlocaties-3d">
 </query>
@@ -76,6 +80,19 @@ we inzicht hebben in de huidige bezettingsgraad van gymlocaties kunnen
 de toekomstige bezettingsgraad van gymlocaties weergeven.
 
 In rood….. in groen….
+
+## Scholen BRT
+
+De [Basisregistratie
+Topografie](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl)
+bevat ook schoolgebouwen.  Onderstaande bevraging toont de Haal
+Centraal
+[schoollocaties](https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/browser?resource=https%3A%2F%2Fkadaster.triply.cc%2Fhaal-centraal%2Fscholen-sportlocaties%2Fvocab%2FSchoollocatie)
+samen met de [BRT
+scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt-topnl#School).
+
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-brt">
+</query>
 
 ## Scholen Rotterdam
 
