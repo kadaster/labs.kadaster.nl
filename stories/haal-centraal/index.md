@@ -121,7 +121,8 @@ Voor iedere school zijn de leerling prognoses tot 2040 bekend.  Omdat
 we inzicht hebben in de huidige bezettingsgraad van gymlocaties kunnen
 de toekomstige bezettingsgraad van gymlocaties weergeven.
 
-In rood….. in groen….
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Nieuw-ratio-calc">
+</query>
 
 ## Scholen BRT
 
