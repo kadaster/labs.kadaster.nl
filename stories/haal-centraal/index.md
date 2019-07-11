@@ -73,6 +73,9 @@ naar gymlocaties te minimaliseren en de gymtijd te maximaliseren?  In
 de kaart hiernaast is voor iedere schoollocatie de sportlocatie
 weergeven en de reistijd te voet, per fiets of per bus.
 
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties-met-analyse">
+</query>
+
 ## Prognoses 2040
 
 Voor iedere school zijn de leerling prognoses tot 2040 bekend.  Omdat
