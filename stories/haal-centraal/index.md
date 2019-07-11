@@ -31,7 +31,8 @@ Vervolgens is deze Linked Open Data gekoppeld aan bestaande Linked
 Open Datasets.  Dit zijn de sets [Basisregistratie Adressen en
 Gebouwen
 (BAG)](https://www.pdok.nl/introductie/-/article/basisregistratie-adressen-en-gebouwen-ba-1)
-en [CBS Wijken en Buurten](https://data.pldn.nl/cbs/wijken-buurten/).
+en [Basisregistratie Topografie
+(BRT)](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl).
 In deze Data Story kijken we naar scholen en gymlocaties in de
 gemeente Rotterdam en Den Haag.
 
