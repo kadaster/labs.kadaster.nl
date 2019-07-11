@@ -1,7 +1,6 @@
 ---
 banner: /assets/images/voetbal.jpg
-description: TODO
-endpoint: https://api.kadaster.triply.cc/datasets/haal-centraal/scholen-sportlocaties/services/virtuoso/sparql
+description: In deze dataset is informatie omtrent scholen en leerlingen gecombineerd met informatie over gymlocaties. Bovengenoemde gegevens zijn omgezet in een experimentele Linked Dataset. Deze Linked Dataset is gemaakt door het Kadaster, gemeente Den Haag en gemeente Rotterdam tijdens een High 5 in juli 2019.
 layout: story
 logo: /assets/images/kadaster-logo.png
 published: true
@@ -54,12 +53,16 @@ locaties te klikken worden de gegevens die bekend zijn weergeven.</p>
 
 Gemeente houden zelf het bouwjaar van gymlocaties bij.  Het is
 interessant om te weten in hoeverre de bouwjaren uit de gemeentelijke
-administratie overeenkomen met de gegevens uit de BAG.
+administratie overeenkomen met de gegevens uit de BAG.  Onderstaande
+grafiek toont het verschil tussen het BAG bouwjaar en het Haal
+Centraal bouwjaar voor gymlocaties.  We zien in de grafiek dat het
+bouwjaar voor veel gymlocaties correct is (verschil 0) en voor veel
+gymlocaties afwezig is (verschil >1950).  Daar tussenin zitten
+verschillen die interessant kunnen zijn vanuit het oogpunt van data
+kwaliteit.
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/bouwjaar-bag-vs-gemeente">
 </query>
-
-<!-- …..Geeft de kwaliteit van bouwjaren weer per wijk….. -->
 
 ## BAG oppervlakte
 
