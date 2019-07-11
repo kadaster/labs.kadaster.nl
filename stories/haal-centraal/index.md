@@ -9,7 +9,40 @@ title: Haal Centraal
 
 # Haal Centraal: School- en gymlocaties
 
-KORTE INTRO TEKST
+## Introductie
+
+Van 8 tot en met 11 juli 2019 heeft het Kadaster samen met de gemeente
+Rotterdam en de gemeente Den Haag gezamenlijk gewerkt om een data
+story te maken voor een casus van onderwijshuisvesting. Dit was in een
+zogenaamde High 5 week, een pressure cooker setting waar we een
+werkende demonstratie oplossing hebben gemaakt binnen een
+week. Hiervoor is echte data gebruikt en de resultaten zijn ook echt,
+al plaatsen we hier een aantal kanttekeningen bij in verband met data
+kwaliteit en beschikbaarheid. Het project is gestart met de gedacht om
+aan te sluiten bij het programma [Haal
+Centraal](https://www.vngrealisatie.nl/nieuws/start-programma-haal-centraal). In
+dit programma wordt beoogd om basisregistraties van een landelijke
+centrale voorziening af te nemen. Hiervoor worden momenteel API’s
+gebouwd. In dit data story tonen we aan dat het afnemen van gegevens
+van basisregistraties kan met Linked Data. Om data analyses en
+visualisaties te maken zonder brondata te kopiëren is het nodig om
+meer flexibiliteit te bieden dan een API normaliter biedt. Dit doen we
+met onze Linked Data aanpak.
+
+## De Casus
+
+Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er
+een vraag om betere visualisaties te maken dan hun huidige
+infrastructuur toelaat. Beide gemeente willen graag de scholen
+visualiseren en hun eigen data kunnen inzien op de kaart. In Rotterdam
+willen ze graag zien hoe leerlingen stromen lopen van scholen naar
+gymzalen. Daarbij willen beide gemeenten (visueel) hun prognoses zien
+en meer inzicht krijgen in hoe scholen, maar ook wijken zich
+ontwikkelen volgens de prognoses. Hier speelt de onderliggende vraag
+hoe de scholen en wijken of buurten gaan ontwikkelen en om hier beleid
+op aan te passen. Dit beleid investeringen in te schatten en aan te
+duiden waar en waarom nieuwe schoolgebouwen of gymzalen geplaatst
+kunnen worden.
 
 [Link](/vocab/haal-centraal/index-en.html) naar de documentatie van
 het vocabulaire.
@@ -25,7 +58,7 @@ de kaart* is ontwikkeld door de PO-Raad en VO-raad in samenwerking met
 informatie beschikbaar omtrent gymlocaties.  Bovengenoemde gegevens
 zijn omgezet in een experimentele Linked Dataset.  Deze Linked Dataset
 is gemaakt door het Kadaster, gemeente Den Haag, en gemeente Rotterdam
-tijdens een High5 in juli 2019.
+tijdens een High 5 in juli 2019.
 
 Vervolgens is deze Linked Open Data gekoppeld aan bestaande Linked
 Open Datasets.  Dit zijn de sets [Basisregistratie Adressen en
@@ -52,30 +85,33 @@ locaties te klikken worden de gegevens die bekend zijn weergeven.</p>
 
 ## BAG bouwjaren
 
-Gemeente houden zelf het bouwjaar van gymlocaties bij.  Het is
+Gemeente houden zelf het bouwjaar van gymlocaties bij. Het is
 interessant om te weten in hoeverre de bouwjaren uit de gemeentelijke
-administratie overeenkomen met de gegevens uit de BAG.  Onderstaande
-grafiek toont het verschil tussen het BAG bouwjaar en het Haal
-Centraal bouwjaar voor gymlocaties.  We zien in de grafiek dat het
-bouwjaar voor veel gymlocaties correct is (verschil 0) en voor veel
-gymlocaties afwezig is (verschil >1950).  Daar tussenin zitten
-verschillen die interessant kunnen zijn vanuit het oogpunt van data
-kwaliteit.
+administratie overeenkomen met de gegevens uit de BAG. Het vershil
+duidt aan hoeveel jaar de gemeentelijke data en de BAG
+verschillen. Wanneer je met de muis over de grafiek heen beweegt
+worden de schoolnamen met de precieze afwijking getoond.
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/bouwjaar-bag-vs-gemeente">
 </query>
 
 ## BAG oppervlakte
 
+We geven weer hoe groot de oppervlakte van alle scholen zijn. Wanneer
+je met de muis over de grafiek heen beweegt worden de schoolnamen met
+de precieze afwijking getoond.
+
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoolgebouw-oppervlakte">
 </query>
 
-## Reisafstand
+## Reisafstand en bezettingsgraad
 
 Wat moeten gemeenten doen om het busvervoer van leerlingen van scholen
-naar gymlocaties te minimaliseren en de gymtijd te maximaliseren?  In
+naar gymlocaties te minimaliseren en de gymtijd te maximaliseren? In
 de volgende kaart is voor iedere schoollocatie de sportlocatie
-weergeven en de reistijd te voet (blauwe lijn) of per bus (gele lijn).
+weergeven en de reistijd te voet (blauwe lijn) of per bus (gele
+lijn). Er wordt ook weergegeven in een kleurcode hoe hoog de
+bezettingsgraad is van de gymzalen.
 
 <table class="txt table" style='width:50%'>
   <thead>
@@ -115,11 +151,13 @@ weergeven en de reistijd te voet (blauwe lijn) of per bus (gele lijn).
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties-met-analyse">
 </query>
 
-## Prognoses 2040
+## Prognoses 2030
 
-Voor iedere school zijn de leerling prognoses tot 2040 bekend.  Omdat
+Voor iedere school zijn de leerling prognoses tot 2030 bekend. Omdat
 we inzicht hebben in de huidige bezettingsgraad van gymlocaties kunnen
-de toekomstige bezettingsgraad van gymlocaties weergeven.
+de toekomstige bezettingsgraad als een ratio op de huidige
+bezettingsgraad worden afgebeeld. Klik op de scholen voor de precieze
+getallen.
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Nieuw-ratio-calc">
 </query>
@@ -138,6 +176,10 @@ scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt
 </query>
 
 ## Scholen Rotterdam
+
+Om een zo compleet mogelijk beeld te geven van de gemeentelijke data
+per school tonen we alle scholen op de kaart met de prognoses en
+gelinkte data.
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/label-scholen">
 </query>
