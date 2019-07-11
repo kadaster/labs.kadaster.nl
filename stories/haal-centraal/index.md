@@ -70,8 +70,43 @@ administratie overeenkomen met de gegevens uit de BAG.
 
 Wat moeten gemeenten doen om het busvervoer van leerlingen van scholen
 naar gymlocaties te minimaliseren en de gymtijd te maximaliseren?  In
-de kaart hiernaast is voor iedere schoollocatie de sportlocatie
-weergeven en de reistijd te voet, per fiets of per bus.
+de volgende kaart is voor iedere schoollocatie de sportlocatie
+weergeven en de reistijd te voet (blauwe lijn) of per bus (gele lijn).
+
+<table class="txt table" style='width:50%'>
+  <thead>
+    <tr><th>Kleur</th><th>Betekenis</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" fill="red" r="9">
+          </circle>
+        </svg>
+      </td>
+      <td>Mogelijk overbelast</td>
+    </tr>
+    <tr>
+      <td>
+        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" fill="yellow" r="9">
+          </circle>
+        </svg>
+      </td>
+      <td>Goed bezet</td>
+    </tr>
+    <tr>
+      <td>
+        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" fill="green" r="9">
+          </circle>
+        </svg>
+      </td>
+      <td>Capaciteit beschikbaar</td>
+    </tr>
+  </tbody>
+</table>
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties-met-analyse">
 </query>
