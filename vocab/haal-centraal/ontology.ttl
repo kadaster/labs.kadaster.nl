@@ -98,9 +98,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar
 <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
                                                                                 rdfs:range xsd:gYear ;
-                                                                                rdfs:comment "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."@nl-nl ;
+                                                                                rdfs:comment "Het bouwjaar van een locatie conform het bouwjaar van de gemeente."@nl-nl ;
                                                                                 rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
                                                                                 rdfs:label "heeft bouwjaar"@nl-nl .
 

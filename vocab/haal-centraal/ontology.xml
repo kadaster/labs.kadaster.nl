@@ -161,9 +161,9 @@
 
 
     <DatatypeProperty rdf:about="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar">
-        <rdfs:domain rdf:resource="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie"/>
+        <rdfs:domain rdf:resource="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
-        <rdfs:comment xml:lang="nl-nl">Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente.</rdfs:comment>
+        <rdfs:comment xml:lang="nl-nl">Het bouwjaar van een locatie conform het bouwjaar van de gemeente.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/"/>
         <rdfs:label xml:lang="nl-nl">heeft bouwjaar</rdfs:label>
     </DatatypeProperty>

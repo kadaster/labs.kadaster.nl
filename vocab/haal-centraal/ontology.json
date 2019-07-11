@@ -250,10 +250,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "nl-nl",
-    "@value" : "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."
+    "@value" : "Het bouwjaar van een locatie conform het bouwjaar van de gemeente."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie"
+    "@id" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/"

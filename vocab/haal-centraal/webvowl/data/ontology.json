@@ -34,7 +34,7 @@
     "id" : "10",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "7",
+    "id" : "8",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "40",
@@ -73,7 +73,7 @@
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -103,7 +103,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "16",
-    "superClasses" : [ "9" ]
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag",
     "baseIri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab",
@@ -132,7 +132,7 @@
     "label" : {
       "IRI-based" : "Geometry"
     },
-    "subClasses" : [ "9" ],
+    "subClasses" : [ "7" ],
     "attributes" : [ "external" ],
     "id" : "29"
   }, {
@@ -194,7 +194,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "7",
+    "id" : "8",
     "label" : {
       "IRI-based" : "gYear"
     }
@@ -345,7 +345,7 @@
       "nl-nl" : "Fysieke locatie van het object."
     },
     "attributes" : [ "external" ],
-    "id" : "9",
+    "id" : "7",
     "superClasses" : [ "29" ]
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie",
@@ -369,7 +369,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "1",
-    "superClasses" : [ "9" ]
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie",
     "baseIri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab",
@@ -403,7 +403,7 @@
     "id" : "6",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "8",
+    "id" : "9",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "11",
@@ -516,7 +516,7 @@
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar",
     "baseIri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab",
-    "range" : "7",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -529,9 +529,9 @@
       "IRI-based" : "bouwjaar",
       "nl-nl" : "heeft bouwjaar"
     },
-    "domain" : "1",
+    "domain" : "7",
     "comment" : {
-      "nl-nl" : "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."
+      "nl-nl" : "Het bouwjaar van een locatie conform het bouwjaar van de gemeente."
     },
     "attributes" : [ "external", "datatype" ],
     "id" : "6"
@@ -551,12 +551,12 @@
       "IRI-based" : "stadsdeel",
       "nl-nl" : "heeft stadsdeel"
     },
-    "domain" : "9",
+    "domain" : "7",
     "comment" : {
       "nl-nl" : "Het stadsdel waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "8"
+    "id" : "9"
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam",
     "baseIri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab",
@@ -594,7 +594,7 @@
       "IRI-based" : "wijk",
       "nl-nl" : "ligt in wijk"
     },
-    "domain" : "9",
+    "domain" : "7",
     "comment" : {
       "nl-nl" : "De wijk waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."
     },
@@ -735,12 +735,12 @@
   }, {
     "range" : "1",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
-    "range" : "9",
+    "range" : "7",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam",
@@ -765,14 +765,14 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "31"
   }, {
-    "range" : "9",
+    "range" : "7",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "range" : "29",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
     "iri" : "https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats",
@@ -922,7 +922,7 @@
       "IRI-based" : "adres",
       "nl-nl" : "heeft adres"
     },
-    "domain" : "9",
+    "domain" : "7",
     "comment" : {
       "nl-nl" : "Het adres van een schoollocatie. Het adres is opgebouwd uit de plaats, postcode, straatnaam, huisnummer en eventuele huisnummer toevoeging het adres."
     },

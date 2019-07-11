@@ -95,9 +95,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar
 <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
 <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
-<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#comment> "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#comment> "Het bouwjaar van een locatie conform het bouwjaar van de gemeente."@nl-nl .
 <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
 <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#label> "heeft bouwjaar"@nl-nl .
 # 
