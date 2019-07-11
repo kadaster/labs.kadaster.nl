@@ -162,6 +162,9 @@ getallen.
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Nieuw-ratio-calc">
 </query>
 
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Aantal-leerlingen-per-jaar">
+</query>
+
 ## Scholen BRT
 
 De [Basisregistratie
