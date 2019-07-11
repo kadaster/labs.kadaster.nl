@@ -1,0 +1,933 @@
+<https://data.muziekweb.nl/Muziekweb/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/unit/SEC
+<http://qudt.org/vocab/unit/SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Genre> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Genre> .
+# 
+# http://www.w3.org/2004/02/skos/core#related
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2004/02/skos/core#related> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/availableMedia
+<https://data.muziekweb.nl/Muziekweb/vocab/availableMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/availableMedia> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/availableMedia> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Media> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/bestTrack
+<https://data.muziekweb.nl/Muziekweb/vocab/bestTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/bestTrack> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/bestTrack> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/catalogue
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogue> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Catalogue> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/catalogueID
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogueID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogueID> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/catalogueID> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/contemporary
+<https://data.muziekweb.nl/Muziekweb/vocab/contemporary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/contemporary> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/contemporary> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Digital> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Media> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Digital> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/distributor
+<https://data.muziekweb.nl/Muziekweb/vocab/distributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/distributor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/distributor> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Distributor> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/follower
+<https://data.muziekweb.nl/Muziekweb/vocab/follower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/follower> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/follower> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasAlias
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlias> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAlias> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Alias> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Annotation> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasArticle
+<https://data.muziekweb.nl/Muziekweb/vocab/hasArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasArticle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#unionOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasArticle> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Article> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasCover
+<https://data.muziekweb.nl/Muziekweb/vocab/hasCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasCover> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasCover> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Cover> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasEAN
+<https://data.muziekweb.nl/Muziekweb/vocab/hasEAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasEAN> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasEAN> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/EAN> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink
+<https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasLabel
+<https://data.muziekweb.nl/Muziekweb/vocab/hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Label> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode
+<https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData
+<https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Orderdata> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasTrack
+<https://data.muziekweb.nl/Muziekweb/vocab/hasTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasTrack> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasTrack> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum
+<https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/influencedBy
+<https://data.muziekweb.nl/Muziekweb/vocab/influencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/influencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/influencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/informationArticle
+<https://data.muziekweb.nl/Muziekweb/vocab/informationArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/informationArticle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/informationArticle> <http://www.w3.org/2000/01/rdf-schema#range> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/NewsItem> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/labelNumber
+<https://data.muziekweb.nl/Muziekweb/vocab/labelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/labelNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/labelNumber> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/livePerformance
+<https://data.muziekweb.nl/Muziekweb/vocab/livePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/livePerformance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Performer> .
+<https://data.muziekweb.nl/Muziekweb/vocab/livePerformance> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/mediaCode
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaCode> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaCode> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/MediaCode> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/mediaType
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaType> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Media> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/musicStyle
+<https://data.muziekweb.nl/Muziekweb/vocab/musicStyle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/musicStyle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/musicStyle> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Genre> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/performer
+<https://data.muziekweb.nl/Muziekweb/vocab/performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/performer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/performer> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue
+<https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation
+<https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Media> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/streamBE
+<https://data.muziekweb.nl/Muziekweb/vocab/streamBE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamBE> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamBE> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/StreamingType> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/streamNL
+<https://data.muziekweb.nl/Muziekweb/vocab/streamNL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamNL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamNL> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/StreamingType> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/titleOwner
+<https://data.muziekweb.nl/Muziekweb/vocab/titleOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/titleOwner> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/titleOwner> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/tracklist
+<https://data.muziekweb.nl/Muziekweb/vocab/tracklist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/tracklist> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/tracklist> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+# 
+# https://schema.org/inAlbum
+<https://schema.org/inAlbum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/inAlbum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+<https://schema.org/inAlbum> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid48 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/ontology/mo/track_number
+<http://purl.org/ontology/mo/track_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/mo/track_number> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://data.muziekweb.nl/Muziekweb/vocab/trackNumber> .
+<http://purl.org/ontology/mo/track_number> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+<http://purl.org/ontology/mo/track_number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Alias> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2004/02/skos/core#hiddenLabel
+<http://www.w3.org/2004/02/skos/core#hiddenLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#hiddenLabel> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Alias> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2004/02/skos/core#hiddenLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Alias> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://xmlns.com/foaf/0.1/depiction
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Article> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating
+<https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/albumTitle
+<https://data.muziekweb.nl/Muziekweb/vocab/albumTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/albumURL
+<https://data.muziekweb.nl/Muziekweb/vocab/albumURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/albumURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/available
+<https://data.muziekweb.nl/Muziekweb/vocab/available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/available> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/available> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating
+<https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/beginYear
+<https://data.muziekweb.nl/Muziekweb/vocab/beginYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/beginYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/beginYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice
+<https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/buyCode
+<https://data.muziekweb.nl/Muziekweb/vocab/buyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/buyCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/buyCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/content
+<https://data.muziekweb.nl/Muziekweb/vocab/content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/content> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Article> .
+<https://data.muziekweb.nl/Muziekweb/vocab/content> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/currency
+<https://data.muziekweb.nl/Muziekweb/vocab/currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/currency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Orderdata> .
+<https://data.muziekweb.nl/Muziekweb/vocab/currency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/date
+<https://data.muziekweb.nl/Muziekweb/vocab/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount
+<https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> .
+<https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/endYear
+<https://data.muziekweb.nl/Muziekweb/vocab/endYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/endYear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/endYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasMedia
+<https://data.muziekweb.nl/Muziekweb/vocab/hasMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasMedia> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasMedia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Work> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/imageURL
+<https://data.muziekweb.nl/Muziekweb/vocab/imageURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/imageURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/imageURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/isAvailable
+<https://data.muziekweb.nl/Muziekweb/vocab/isAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isAvailable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isAvailable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/isBestOf
+<https://data.muziekweb.nl/Muziekweb/vocab/isBestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isBestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isBestOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/isCollection
+<https://data.muziekweb.nl/Muziekweb/vocab/isCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer
+<https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/isOST
+<https://data.muziekweb.nl/Muziekweb/vocab/isOST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isOST> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/isOST> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal
+<https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/likeCount
+<https://data.muziekweb.nl/Muziekweb/vocab/likeCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/likeCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> .
+<https://data.muziekweb.nl/Muziekweb/vocab/likeCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/link
+<https://data.muziekweb.nl/Muziekweb/vocab/link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/link> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/link> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/linkLocation
+<https://data.muziekweb.nl/Muziekweb/vocab/linkLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/linkLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/linkLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/location
+<https://data.muziekweb.nl/Muziekweb/vocab/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/locationName
+<https://data.muziekweb.nl/Muziekweb/vocab/locationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/locationName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/locationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid77 <http://www.w3.org/2002/07/owl#unionOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable
+<https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize
+<https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs
+<https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec
+<https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/price
+<https://data.muziekweb.nl/Muziekweb/vocab/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/price> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Orderdata> .
+<https://data.muziekweb.nl/Muziekweb/vocab/price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/provider
+<https://data.muziekweb.nl/Muziekweb/vocab/provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/provider> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> .
+<https://data.muziekweb.nl/Muziekweb/vocab/provider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount
+<https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/releaseDate
+<https://data.muziekweb.nl/Muziekweb/vocab/releaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/releaseDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/releaseDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/streamExternal
+<https://data.muziekweb.nl/Muziekweb/vocab/streamExternal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamExternal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/streamExternal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/ticketLink
+<https://data.muziekweb.nl/Muziekweb/vocab/ticketLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/ticketLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://data.muziekweb.nl/Muziekweb/vocab/ticketLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec
+<https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/trackNumber
+<https://data.muziekweb.nl/Muziekweb/vocab/trackNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/trackNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+<https://data.muziekweb.nl/Muziekweb/vocab/trackNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle
+<https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+<https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage
+<https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+<https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://schema.org/articleBody
+<https://schema.org/articleBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/articleBody> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Article> .
+<https://schema.org/articleBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+# 
+# https://schema.org/datePublished
+<https://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid80 <http://www.w3.org/2002/07/owl#unionOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Article> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://schema.org/duration
+<https://schema.org/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/duration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid83 <http://www.w3.org/2002/07/owl#unionOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Album> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/Track> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://schema.org/duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/vocab/unit/SEC> .
+# 
+# https://schema.org/location
+<https://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://schema.org/offers
+<https://schema.org/offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/offers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+<https://schema.org/offers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid86 <http://www.w3.org/2002/07/owl#unionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Article> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/mo/Label
+<http://purl.org/ontology/mo/Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/Label> <http://www.w3.org/2002/07/owl#equivalentClass> <https://data.muziekweb.nl/Muziekweb/vocab/Label> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Album
+<https://data.muziekweb.nl/Muziekweb/vocab/Album> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Album> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/MusicAlbum> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Alias
+<https://data.muziekweb.nl/Muziekweb/vocab/Alias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Annotation
+<https://data.muziekweb.nl/Muziekweb/vocab/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Article
+<https://data.muziekweb.nl/Muziekweb/vocab/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Artist
+<https://data.muziekweb.nl/Muziekweb/vocab/Artist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Artist> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/MusicGroup> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/BandMember
+<https://data.muziekweb.nl/Muziekweb/vocab/BandMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/BandMember> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/Performer> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Catalogue
+<https://data.muziekweb.nl/Muziekweb/vocab/Catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID
+<https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Composer
+<https://data.muziekweb.nl/Muziekweb/vocab/Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Concert
+<https://data.muziekweb.nl/Muziekweb/vocab/Concert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Concert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Cover
+<https://data.muziekweb.nl/Muziekweb/vocab/Cover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Digital
+<https://data.muziekweb.nl/Muziekweb/vocab/Digital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner
+<https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights
+<https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Distributor
+<https://data.muziekweb.nl/Muziekweb/vocab/Distributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/EAN
+<https://data.muziekweb.nl/Muziekweb/vocab/EAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink
+<https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Festival
+<https://data.muziekweb.nl/Muziekweb/vocab/Festival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Festival> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/FrontCover
+<https://data.muziekweb.nl/Muziekweb/vocab/FrontCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/FrontCover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/Cover> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/FullCover
+<https://data.muziekweb.nl/Muziekweb/vocab/FullCover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/FullCover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/Cover> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Label
+<https://data.muziekweb.nl/Muziekweb/vocab/Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber
+<https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance
+<https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/MusicEvent> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Media
+<https://data.muziekweb.nl/Muziekweb/vocab/Media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/MediaCode
+<https://data.muziekweb.nl/Muziekweb/vocab/MediaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode
+<https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/NewsItem
+<https://data.muziekweb.nl/Muziekweb/vocab/NewsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/NewsItem> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/Article> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Orderdata
+<https://data.muziekweb.nl/Muziekweb/vocab/Orderdata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Performer
+<https://data.muziekweb.nl/Muziekweb/vocab/Performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Performer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.muziekweb.nl/Muziekweb/vocab/Artist> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue
+<https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue
+<https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode
+<https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode
+<https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/StreamingType
+<https://data.muziekweb.nl/Muziekweb/vocab/StreamingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner
+<https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Track
+<https://data.muziekweb.nl/Muziekweb/vocab/Track> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.muziekweb.nl/Muziekweb/vocab/Track> <http://www.w3.org/2002/07/owl#equivalentClass> <https://schema.org/MusicRecording> .
+# 
+# https://data.muziekweb.nl/Muziekweb/vocab/Work
+<https://data.muziekweb.nl/Muziekweb/vocab/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Article
+<https://schema.org/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Genre
+<https://schema.org/Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/MusicAlbum
+<https://schema.org/MusicAlbum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/MusicEvent
+<https://schema.org/MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/MusicGroup
+<https://schema.org/MusicGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/MusicRecording
+<https://schema.org/MusicRecording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

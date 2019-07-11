@@ -1,0 +1,1352 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/NewsItem"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Alias"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Alias"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Alias"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    }, {
+      "@id" : "https://schema.org/Article"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://schema.org/Article"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"
+    }, {
+      "@id" : "https://schema.org/Article"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+    }, {
+      "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid48"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/Label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Label"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/mo/track_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/trackNumber"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/unit/SEC",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Genre"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid58"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#related",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid70"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://schema.org/MusicAlbum"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Alias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Annotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://schema.org/MusicGroup"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/BandMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Performer"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Catalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Concert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Cover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Digital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Distributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/EAN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Festival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/FrontCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Cover"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/FullCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Cover"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://schema.org/MusicEvent"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/MediaCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/NewsItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://schema.org/Article"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Orderdata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/StreamingType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://schema.org/MusicRecording"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/albumTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/albumURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/available",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/availableMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Media"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/beginYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/bestTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/buyCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/catalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Catalogue"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/catalogueID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/contemporary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Digital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Media"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Digital"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/distributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Distributor"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/endYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/follower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasAlias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Alias"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Annotation"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Article"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Cover"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasEAN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/EAN"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Label"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Work"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid74"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/imageURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/influencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/informationArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/isAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/isBestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/isCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/isOST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/labelNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/likeCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/linkLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/livePerformance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Performer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/locationName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/mediaCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/MediaCode"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid77"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/mediaType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Media"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/musicStyle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Genre"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Media"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid39"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/provider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/releaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/streamBE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/StreamingType"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/streamExternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/streamNL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/StreamingType"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/ticketLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/titleOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid44"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/trackNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/tracklist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://schema.org/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/MusicAlbum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/MusicEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/MusicGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/MusicRecording",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/articleBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://schema.org/Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://schema.org/datePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid80"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://schema.org/duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid83"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qudt.org/vocab/unit/SEC"
+  } ]
+}, {
+  "@id" : "https://schema.org/inAlbum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/Album"
+  } ]
+}, {
+  "@id" : "https://schema.org/location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://schema.org/offers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid86"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+} ]

@@ -1,0 +1,269 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/2000/01/rdf-schema#comment> "Een aanvraag is opgebouwd uit het aantal normuren, aantal toegekende uren en een aanvraagnummer."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> <http://www.w3.org/2000/01/rdf-schema#label> "heeft aanvraag"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/2000/01/rdf-schema#comment> "Het adres van een schoollocatie. Het adres is opgebouwd uit de plaats, postcode, straatnaam, huisnummer en eventuele huisnummer toevoeging het adres."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> <http://www.w3.org/2000/01/rdf-schema#label> "heeft adres"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/2000/01/rdf-schema#comment> "Schoolbesturen besturen en vertegenwoordigen een of meerdere scholen."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> <http://www.w3.org/2000/01/rdf-schema#label> "bestuurt"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/2000/01/rdf-schema#comment> "Elke school heeft een uniek onderwijstype: basisonderwijs, speciaal onderwijs, voortgezet onderwijs, speciaal voortgezet onderwijs, internationaal onderwijs, praktijkonderwijs en internationale schakelklassen."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> <http://www.w3.org/2000/01/rdf-schema#label> "heeft onderwijstype"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/2000/01/rdf-schema#comment> "De locatie van een school, een school kan meerdere schoollocaties hebben."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> <http://www.w3.org/2000/01/rdf-schema#label> "heeft schoollocatie"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/2000/01/rdf-schema#range> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Een sportlocatie is een zwembad, een buitensportaccommodatie of een binnensport accommodatie (hierna: gymlocatie)."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> <http://www.w3.org/2000/01/rdf-schema#label> "heeft sportlocatie"@nl-nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/2000/01/rdf-schema#comment> "Het aantal zalen beschikbaar in een sportlocatie."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> <http://www.w3.org/2000/01/rdf-schema#label> "heeft aantal zalen"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Het unieke nummer van een aanvraag."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> <http://www.w3.org/2000/01/rdf-schema#label> "heeft aanvraagnummer"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#comment> "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> <http://www.w3.org/2000/01/rdf-schema#label> "heeft bouwjaar"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/2000/01/rdf-schema#comment> "Elke school heeft een uniek BRIN nummer, een school met meerdere locaties heeft nog steeds een BRIN nummer. Een BRIN nummer is het ‘BSN’ nummer voor scholen."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> <http://www.w3.org/2000/01/rdf-schema#label> "heeft TODO (BRIN)"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/2000/01/rdf-schema#comment> "Het bruto vloeroppervlakte van een gymlocatie uitgedrukt in m²."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> <http://www.w3.org/2000/01/rdf-schema#label> "heeft bruto vloeroppervlak in m²"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Uniek identificatienummer van een sportlocatie."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> <http://www.w3.org/2000/01/rdf-schema#label> "heeft gebouwnummer"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Een huisnummer is onderdeel van het adres."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> <http://www.w3.org/2000/01/rdf-schema#label> "heeft huisnummer"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/2000/01/rdf-schema#comment> "Een eventuele huisnummer toeveoeging is onderdeel van het adres."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> <http://www.w3.org/2000/01/rdf-schema#label> "heeft huisnummerletter"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/2000/01/rdf-schema#comment> "Elke schoollocatie heeft minimaal  recht op de norm van 2 uur gym per week per groep. De norm is het aantal normuren van de aanvraag."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> <http://www.w3.org/2000/01/rdf-schema#label> "heeft norm"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/2000/01/rdf-schema#comment> "De naam van een gemeente waarin een adres ligt."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> <http://www.w3.org/2000/01/rdf-schema#label> "heeft plaats"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/2000/01/rdf-schema#comment> "Het stadsdel waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> <http://www.w3.org/2000/01/rdf-schema#label> "heeft stadsdeel"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/2000/01/rdf-schema#comment> "De straatnaam vormt samen met de plaats, postcode, huisnummer en eventuele huisnummer toevooeging het adres. van de schoollocatie."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> <http://www.w3.org/2000/01/rdf-schema#label> "heeft straatnaam"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/2000/01/rdf-schema#comment> "Het totaal aantal gymuren dat wordt aangevraagd door een school op een specifieke locatie voor groep 3 tot en met 8."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> <http://www.w3.org/2000/01/rdf-schema#label> "heeft totaal aantal uren"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/2000/01/rdf-schema#comment> "De wijk waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> <http://www.w3.org/2000/01/rdf-schema#label> "ligt in wijk"@nl-nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> <http://www.w3.org/2000/01/rdf-schema#comment> "School vraagt de gemeente om een aantal uren gym te accomoderen, in te roosteren en te faciliteren."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> <http://www.w3.org/2000/01/rdf-schema#label> "aanvraag"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> <http://www.w3.org/2000/01/rdf-schema#comment> "Bezoekadres en vindplaats met straatnaam en huisnummer en toevoeging."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> <http://www.w3.org/2000/01/rdf-schema#label> "adres"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Is een Sportlocatie waar tijdens schooluren binnengym kan worden gegeven en voldoet aan de daarvoor gestelde eisen en wordt ingeroosterd door de gemeente."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> <http://www.w3.org/2000/01/rdf-schema#label> "gymlocatie"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Fysieke locatie van het object."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> <http://www.w3.org/2000/01/rdf-schema#label> "locatie"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> <http://www.w3.org/2000/01/rdf-schema#comment> "Het gaat om soorten scholen waarvoor de gemeente een wettelijke onderwijshuisvestingstaak heeft en bewegingsonderwijs moet faciliteren en waarvoor per soort verschillende regels gelden voor aantallen leerlingen per vierkante meter en afstanden naar gymlocaties. Het gaat om Primair Onderwijs, Speciaal Onderwijs, Voortgezet Onderwijs Speciaal Voortgezet Onderwijs, Pratijkonderwijs, Inertnationaal Onderwijs, Internationale Schakelklassen."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> <http://www.w3.org/2000/01/rdf-schema#label> "onderwijssoort"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> <http://www.w3.org/2000/01/rdf-schema#comment> "School is een organisatie die een soort onderwijs aanbiedt waarvoor de gemeente een wettelijke taak heeft de huisvesting voor het geven van onderwijs en bewegingsonderwijs te faciliteren, elke school heeft een uniek BRIN numer. Per BRIN nummer kunne meerdere locaties vallen. Elke school vraagt jaarlijks een aantal gymuren aan voor de kinderen voor hun verwchillende locaties"@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> <http://www.w3.org/2000/01/rdf-schema#label> "school"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> <http://www.w3.org/2000/01/rdf-schema#comment> "Een schoolbestuur is een bestuursorgaan dat voor zijn scholen de huisvestingsverzoeken aanvraagt bij de gemeente en het budget over zijn scholen verdeeld. Zij gaan over bouw, renovatie verhuizing en schoolgebouwen en gymzalen, maar niet over het aanvragen van het gymrooster."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> <http://www.w3.org/2000/01/rdf-schema#label> "schoolbestuur"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Een schoollocatie is een gebouw waarin onderwijs wordt gegeven, dat wordt bekostigd door de gemeente."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> <http://www.w3.org/2000/01/rdf-schema#label> "schoollocatie"@nl-nl .
+# 
+# https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Een sportlocatie is een locatie waar tijdens schooltijden bewegingsonderwijs kan worden gegeven binnengym, buitengym of schoolzwemmen."@nl-nl .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> <http://www.w3.org/2000/01/rdf-schema#label> "sportlocatie"@nl-nl .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

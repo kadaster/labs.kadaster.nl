@@ -1,0 +1,290 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraag> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                                rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> ;
+                                                                                rdfs:comment "Een aanvraag is opgebouwd uit het aantal normuren, aantal toegekende uren en een aanvraagnummer."@nl-nl ;
+                                                                                rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                rdfs:label "heeft aanvraag"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/adres> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
+                                                                             rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> ;
+                                                                             rdfs:comment "Het adres van een schoollocatie. Het adres is opgebouwd uit de plaats, postcode, straatnaam, huisnummer en eventuele huisnummer toevoeging het adres."@nl-nl ;
+                                                                             rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                             rdfs:label "heeft adres"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bestuurt> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> ;
+                                                                                rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                                rdfs:comment "Schoolbesturen besturen en vertegenwoordigen een of meerdere scholen."@nl-nl ;
+                                                                                rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                rdfs:label "bestuurt"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/onderwijstype> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                                     rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> ;
+                                                                                     rdfs:comment "Elke school heeft een uniek onderwijstype: basisonderwijs, speciaal onderwijs, voortgezet onderwijs, speciaal voortgezet onderwijs, internationaal onderwijs, praktijkonderwijs en internationale schakelklassen."@nl-nl ;
+                                                                                     rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                     rdfs:label "heeft onderwijstype"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/schoollocatie> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                                     rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> ;
+                                                                                     rdfs:comment "De locatie van een school, een school kan meerdere schoollocaties hebben."@nl-nl ;
+                                                                                     rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                     rdfs:label "heeft schoollocatie"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/sportlocatie> rdf:type owl:ObjectProperty ;
+                                                                                    rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> ;
+                                                                                    rdfs:range <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                    rdfs:comment "Een sportlocatie is een zwembad, een buitensportaccommodatie of een binnensport accommodatie (hierna: gymlocatie)."@nl-nl ;
+                                                                                    rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                    rdfs:label "heeft sportlocatie"@nl-nl .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aantalZalen> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                   rdfs:range xsd:nonNegativeInteger ;
+                                                                                   rdfs:comment "Het aantal zalen beschikbaar in een sportlocatie."@nl-nl ;
+                                                                                   rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                   rdfs:label "heeft aantal zalen"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/aanvraagnummer> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> ;
+                                                                                      rdfs:range xsd:string ;
+                                                                                      rdfs:comment "Het unieke nummer van een aanvraag."@nl-nl ;
+                                                                                      rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                      rdfs:label "heeft aanvraagnummer"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/bouwjaar> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                rdfs:range xsd:gYear ;
+                                                                                rdfs:comment "Het bouwjaar van een sportlocatie conform het bouwjaar van de gemeente."@nl-nl ;
+                                                                                rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                rdfs:label "heeft bouwjaar"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brin> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                            rdfs:range xsd:string ;
+                                                                            rdfs:comment "Elke school heeft een uniek BRIN nummer, een school met meerdere locaties heeft nog steeds een BRIN nummer. Een BRIN nummer is het ‘BSN’ nummer voor scholen."@nl-nl ;
+                                                                            rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                            rdfs:label "heeft TODO (BRIN)"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/brutoVloeroppervlak> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> ;
+                                                                                           rdfs:range xsd:nonNegativeInteger ;
+                                                                                           rdfs:comment "Het bruto vloeroppervlakte van een gymlocatie uitgedrukt in m²."@nl-nl ;
+                                                                                           rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                           rdfs:label "heeft bruto vloeroppervlak in m²"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/gebouwnummer> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                    rdfs:range xsd:string ;
+                                                                                    rdfs:comment "Uniek identificatienummer van een sportlocatie."@nl-nl ;
+                                                                                    rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                    rdfs:label "heeft gebouwnummer"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummer> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> ;
+                                                                                  rdfs:range xsd:integer ;
+                                                                                  rdfs:comment "Een huisnummer is onderdeel van het adres."@nl-nl ;
+                                                                                  rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                  rdfs:label "heeft huisnummer"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/huisnummerletter> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> ;
+                                                                                        rdfs:range xsd:string ;
+                                                                                        rdfs:comment "Een eventuele huisnummer toeveoeging is onderdeel van het adres."@nl-nl ;
+                                                                                        rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                        rdfs:label "heeft huisnummerletter"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/naam> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> ;
+                                                                            rdfs:range xsd:string ;
+                                                                            rdfs:comment "TODO"@nl-nl ;
+                                                                            rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/norm> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> ;
+                                                                            rdfs:range xsd:decimal ;
+                                                                            rdfs:comment "Elke schoollocatie heeft minimaal  recht op de norm van 2 uur gym per week per groep. De norm is het aantal normuren van de aanvraag."@nl-nl ;
+                                                                            rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                            rdfs:label "heeft norm"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/plaats> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> ;
+                                                                              rdfs:range xsd:string ;
+                                                                              rdfs:comment "De naam van een gemeente waarin een adres ligt."@nl-nl ;
+                                                                              rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                              rdfs:label "heeft plaats"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/stadsdeel> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
+                                                                                 rdfs:range xsd:string ;
+                                                                                 rdfs:comment "Het stadsdel waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."@nl-nl ;
+                                                                                 rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                 rdfs:label "heeft stadsdeel"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/straatNaam> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> ;
+                                                                                  rdfs:range xsd:string ;
+                                                                                  rdfs:comment "De straatnaam vormt samen met de plaats, postcode, huisnummer en eventuele huisnummer toevooeging het adres. van de schoollocatie."@nl-nl ;
+                                                                                  rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                  rdfs:label "heeft straatnaam"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/urenTotaal> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> ;
+                                                                                  rdfs:range xsd:decimal ;
+                                                                                  rdfs:comment "Het totaal aantal gymuren dat wordt aangevraagd door een school op een specifieke locatie voor groep 3 tot en met 8."@nl-nl ;
+                                                                                  rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                  rdfs:label "heeft totaal aantal uren"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/wijk> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
+                                                                            rdfs:range xsd:string ;
+                                                                            rdfs:comment "De wijk waarin een schoollocatie is gelegen afgeleid uit de CBS Wijken en Buurten datatset."@nl-nl ;
+                                                                            rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                            rdfs:label "ligt in wijk"@nl-nl .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Aanvraag> rdf:type owl:Class ;
+                                                                                rdfs:comment "School vraagt de gemeente om een aantal uren gym te accomoderen, in te roosteren en te faciliteren."@nl-nl ;
+                                                                                rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                rdfs:label "aanvraag"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Adres> rdf:type owl:Class ;
+                                                                             rdfs:comment "Bezoekadres en vindplaats met straatnaam en huisnummer en toevoeging."@nl-nl ;
+                                                                             rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                             rdfs:label "adres"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Gymlocatie> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> ;
+                                                                                  rdfs:comment "Is een Sportlocatie waar tijdens schooluren binnengym kan worden gegeven en voldoet aan de daarvoor gestelde eisen en wordt ingeroosterd door de gemeente."@nl-nl ;
+                                                                                  rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                  rdfs:label "gymlocatie"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                                               rdfs:comment "Fysieke locatie van het object."@nl-nl ;
+                                                                               rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                               rdfs:label "locatie"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Onderwijssoort> rdf:type owl:Class ;
+                                                                                      rdfs:comment "Het gaat om soorten scholen waarvoor de gemeente een wettelijke onderwijshuisvestingstaak heeft en bewegingsonderwijs moet faciliteren en waarvoor per soort verschillende regels gelden voor aantallen leerlingen per vierkante meter en afstanden naar gymlocaties. Het gaat om Primair Onderwijs, Speciaal Onderwijs, Voortgezet Onderwijs Speciaal Voortgezet Onderwijs, Pratijkonderwijs, Inertnationaal Onderwijs, Internationale Schakelklassen."@nl-nl ;
+                                                                                      rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                      rdfs:label "onderwijssoort"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/School> rdf:type owl:Class ;
+                                                                              rdfs:comment "School is een organisatie die een soort onderwijs aanbiedt waarvoor de gemeente een wettelijke taak heeft de huisvesting voor het geven van onderwijs en bewegingsonderwijs te faciliteren, elke school heeft een uniek BRIN numer. Per BRIN nummer kunne meerdere locaties vallen. Elke school vraagt jaarlijks een aantal gymuren aan voor de kinderen voor hun verwchillende locaties"@nl-nl ;
+                                                                              rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                              rdfs:label "school"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoolbestuur> rdf:type owl:Class ;
+                                                                                     rdfs:comment "Een schoolbestuur is een bestuursorgaan dat voor zijn scholen de huisvestingsverzoeken aanvraagt bij de gemeente en het budget over zijn scholen verdeeld. Zij gaan over bouw, renovatie verhuizing en schoolgebouwen en gymzalen, maar niet over het aanvragen van het gymrooster."@nl-nl ;
+                                                                                     rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                     rdfs:label "schoolbestuur"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Schoollocatie> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
+                                                                                     rdfs:comment "Een schoollocatie is een gebouw waarin onderwijs wordt gegeven, dat wordt bekostigd door de gemeente."@nl-nl ;
+                                                                                     rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                     rdfs:label "schoollocatie"@nl-nl .
+
+
+###  https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie
+<https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Sportlocatie> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/vocab/Locatie> ;
+                                                                                    rdfs:comment "Een sportlocatie is een locatie waar tijdens schooltijden bewegingsonderwijs kan worden gegeven binnengym, buitengym of schoolzwemmen."@nl-nl ;
+                                                                                    rdfs:isDefinedBy <https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/> ;
+                                                                                    rdfs:label "sportlocatie"@nl-nl .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

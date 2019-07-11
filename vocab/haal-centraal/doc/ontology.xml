@@ -1,0 +1,1599 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://data.muziekweb.nl/Muziekweb/"
+     xml:base="https://data.muziekweb.nl/Muziekweb/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://data.muziekweb.nl/Muziekweb/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/vocab/unit/SEC -->
+
+
+    <rdfs:Datatype rdf:about="http://qudt.org/vocab/unit/SEC"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <rdfs:domain rdf:resource="https://schema.org/Genre"/>
+        <rdfs:range rdf:resource="https://schema.org/Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/availableMedia -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/availableMedia">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/bestTrack -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/bestTrack">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/catalogue -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/catalogue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Catalogue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/catalogueID -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/catalogueID">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/contemporary -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/contemporary">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/digitalFormat">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Digital"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/digitalLocation">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Digital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/digitalOwner">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/distributor -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/distributor">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Distributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/follower -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/follower">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasAlbum">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasAlias -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasAlias">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Alias"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasAnnotation">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasArticle -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasArticle">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasCover -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasCover">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Cover"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalRights">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasEAN -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasEAN">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/EAN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasExternalLink">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasLabel -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasLabel">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Label"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasNBLCGenreCode">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasOrderData">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasTrack -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasTrack">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasUniformLink">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/importantAlbum">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/influencedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/influencedBy">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/informationArticle -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/informationArticle">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/NewsItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/labelNumber -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/labelNumber">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/livePerformance -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/livePerformance">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Performer"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/mediaCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/mediaCode">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/MediaCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/mediaType -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/mediaType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/musicStyle -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/musicStyle">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://schema.org/Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/performer -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/performer">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/performerCatelogue">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/physicalLocation">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogue">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/primaryCatalogueCode">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/primaryRoleCode">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/streamBE -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/streamBE">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/StreamingType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/streamNL -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/streamNL">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/StreamingType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/titleOwner -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/titleOwner">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/tracklist -->
+
+
+    <owl:ObjectProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/tracklist">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/inAlbum -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/inAlbum">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+        <rdfs:range rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/mo/track_number -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/mo/track_number">
+        <owl:equivalentProperty rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/trackNumber"/>
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Alias"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#hiddenLabel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Alias"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Alias"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                    <rdf:Description rdf:about="https://schema.org/Article"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/albumStarRating">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/albumTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/albumTitle">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/albumURL -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/albumURL">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/available -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/available">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/averageAlbumStarRating">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/beginYear -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/beginYear">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/buyAdvice">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/buyCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/buyCode">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/content -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/content">
+        <rdfs:domain rdf:resource="https://schema.org/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/currency -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/currency">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/date">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/dislikeCount">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/endYear -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/endYear">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasDigitalMedia">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasMedia -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasMedia">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/hasUniformTitle">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/imageURL -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/imageURL">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/isAvailable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/isAvailable">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/isBestOf -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/isBestOf">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/isCollection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/isCollection">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/isImportantPerformer">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/isOST -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/isOST">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/lendingGlobal">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/likeCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/likeCount">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/link -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/link">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/linkLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/linkLocation">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/location -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/location">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/locationName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/locationName">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/mediaDescription">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/noObjectAvailable">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/notPossibleToDigitize">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/numberOfDiscs">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/playTimeInSec">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/price -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/price">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/provider -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/provider">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/ratingAlbumCount">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/releaseDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/releaseDate">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/streamExternal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/streamExternal">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/ticketLink -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/ticketLink">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/totalPlayTimeInSec">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/trackNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/trackNumber">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/uniformTitle">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage -->
+
+
+    <owl:DatatypeProperty rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/userRatingAlbumAverage">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/articleBody -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/articleBody">
+        <rdfs:domain rdf:resource="https://schema.org/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/datePublished -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/datePublished">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://schema.org/Article"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/duration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/duration">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album"/>
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://qudt.org/vocab/unit/SEC"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/location -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/location">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/offers -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/offers">
+        <rdfs:domain rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/url -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/url">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+                    <rdf:Description rdf:about="https://schema.org/Article"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/ontology/mo/Label -->
+
+
+    <owl:Class rdf:about="http://purl.org/ontology/mo/Label">
+        <owl:equivalentClass rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Label"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Album -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Album">
+        <owl:equivalentClass rdf:resource="https://schema.org/MusicAlbum"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Alias -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Alias"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Annotation -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Annotation"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Article -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Article"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Artist -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Artist">
+        <owl:equivalentClass rdf:resource="https://schema.org/MusicGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/BandMember -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/BandMember">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Performer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Catalogue -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Catalogue"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/CatalogueID"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Composer -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Composer">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Concert -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Concert">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Cover -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Cover"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Digital -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Digital"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/DigitalOwner">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/DigitalRights"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Distributor -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Distributor"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/EAN -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/EAN"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/ExternalLink"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Festival -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Festival">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/FrontCover -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/FrontCover">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Cover"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/FullCover -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/FullCover">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Cover"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Label -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Label"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/LabelNumber"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/LivePerformance">
+        <owl:equivalentClass rdf:resource="https://schema.org/MusicEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Media -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Media"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/MediaCode -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/MediaCode"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/NBLCGenreCode"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/NewsItem -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/NewsItem">
+        <owl:equivalentClass rdf:resource="https://schema.org/Article"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Orderdata -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Orderdata"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Performer -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Performer">
+        <rdfs:subClassOf rdf:resource="https://data.muziekweb.nl/Muziekweb/vocab/Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/PerformerCatelogue"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogue"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryCatelogueCode"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/PrimaryRoleCode"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/StreamingType -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/StreamingType"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/TitleOwner"/>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Track -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Track">
+        <owl:equivalentClass rdf:resource="https://schema.org/MusicRecording"/>
+    </owl:Class>
+    
+
+
+    <!-- https://data.muziekweb.nl/Muziekweb/vocab/Work -->
+
+
+    <owl:Class rdf:about="https://data.muziekweb.nl/Muziekweb/vocab/Work"/>
+    
+
+
+    <!-- https://schema.org/Article -->
+
+
+    <owl:Class rdf:about="https://schema.org/Article"/>
+    
+
+
+    <!-- https://schema.org/Genre -->
+
+
+    <owl:Class rdf:about="https://schema.org/Genre"/>
+    
+
+
+    <!-- https://schema.org/MusicAlbum -->
+
+
+    <owl:Class rdf:about="https://schema.org/MusicAlbum"/>
+    
+
+
+    <!-- https://schema.org/MusicEvent -->
+
+
+    <owl:Class rdf:about="https://schema.org/MusicEvent"/>
+    
+
+
+    <!-- https://schema.org/MusicGroup -->
+
+
+    <owl:Class rdf:about="https://schema.org/MusicGroup"/>
+    
+
+
+    <!-- https://schema.org/MusicRecording -->
+
+
+    <owl:Class rdf:about="https://schema.org/MusicRecording"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
