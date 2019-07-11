@@ -144,13 +144,5 @@ scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt
 
 ## Gymzalen Rotterdam
 
-<div class="textbox">
-  <h2>Probeer het uit</h2>
-  <p>De boom kan genavigeerd worden door op de vlakken te klikken
-  met de muis. Klikken met de linker muisknop navigeert naar
-  beneden in de boom. Klikken met de rechter muisknop navigeert
-  naar boven in de boom.</p>
-</div>
-
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties">
 </query>
