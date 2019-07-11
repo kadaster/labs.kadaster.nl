@@ -79,9 +79,30 @@ r="9"></circle></svg>) en gymlocaties (<svg height="18" viewBox="0 0
 fill="yellow" r="9"></circle></svg>) op de kaart.  Door op een van de
 locaties te klikken worden de gegevens die bekend zijn weergeven.</p>
 
+Om een zo compleet mogelijk beeld te geven van de gemeentelijke data
+per school tonen we alle scholen op de kaart met de prognoses en
+gelinkte data.
+
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/label-scholen">
+</query>
+
+## Scholen in de BRT
+
+De [Basisregistratie
+Topografie](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl)
+bevat ook schoolgebouwen.  Onderstaande bevraging toont de Haal
+Centraal
+[schoollocaties](https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/browser?resource=https%3A%2F%2Fkadaster.triply.cc%2Fhaal-centraal%2Fscholen-sportlocaties%2Fvocab%2FSchoollocatie)
+samen met de [BRT
+scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt-topnl#School).
+
+<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-brt">
+</query>
+
+## Scholen + gymzalen
+
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-gymlocaties-3d">
 </query>
-<!--soortzaal,gem_afstand-->
 
 ## BAG bouwjaren
 
@@ -165,29 +186,9 @@ getallen.
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Aantal-leerlingen-per-jaar">
 </query>
 
-## Scholen BRT
-
-De [Basisregistratie
-Topografie](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl)
-bevat ook schoolgebouwen.  Onderstaande bevraging toont de Haal
-Centraal
-[schoollocaties](https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/browser?resource=https%3A%2F%2Fkadaster.triply.cc%2Fhaal-centraal%2Fscholen-sportlocaties%2Fvocab%2FSchoollocatie)
-samen met de [BRT
-scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt-topnl#School).
-
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-brt">
-</query>
-
-## Scholen Rotterdam
-
-Om een zo compleet mogelijk beeld te geven van de gemeentelijke data
-per school tonen we alle scholen op de kaart met de prognoses en
-gelinkte data.
-
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/label-scholen">
-</query>
-
+<!--
 ## Gymzalen Rotterdam
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties">
 </query>
+-->
