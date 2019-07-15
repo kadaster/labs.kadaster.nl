@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" -->
-  <link rel="stylesheet" href="/assets/css/reveal.css">
-  <link rel="stylesheet" href="/assets/css/theme/black.css">
-  <link rel="stylesheet" href="/assets/css/zenburn.css">
-  <link rel="shortcut icon" href="/assets/images/icons/kadaster-logo.png">
-  <link rel="apple-touch-icon" href="/assets/images/icons/kadaster-logo.png">
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
-      {{ content }}
+  <head>
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" -->
+    <link rel="stylesheet" href="/assets/css/reveal.css">
+    <link rel="stylesheet" href="/assets/css/theme/black.css">
+    <link rel="stylesheet" href="/assets/css/zenburn.css">
+    <link rel="shortcut icon" href="/assets/images/icons/kadaster-logo.png">
+    <link rel="apple-touch-icon" href="/assets/images/icons/kadaster-logo.png">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        {{ content }}
+      </div>
     </div>
-  </div>
-  <script src="/assets/js/reveal.js"></script>
-  <script src="/assets/js/head.min.js"></script>
-  <script>
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      dependencies: [
-        { src: '/assets/plugin/markdown/marked.js', async: false },
-        { src: '/assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: '/assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: '/assets/plugin/notes/notes.js', async: true }
-      ]
-    });
-  </script>
-</body>
+    <script src="/assets/js/reveal.js"></script>
+    <script src="/assets/js/head.min.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        dependencies: [
+          { src: '/assets/plugin/markdown/marked.js', async: false },
+          { src: '/assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/assets/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
 </html>
