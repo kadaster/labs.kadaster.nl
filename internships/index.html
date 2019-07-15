@@ -59,5 +59,97 @@ title: Internships and Student Assignments
     (<a href="mailto:Erwin.Folmer@kadaster.nl">Erwin.Folmer@kadaster.nl</a>)
     of direct solliciteren (cv + motivatie) in het Nederlands of
     Engels.</p>
+    <p> Wij werken ook samen met andere afdelingen binnen het Kadaster.
+      Zie hieronder de mogelijkheid voor stage- en afstudeerprojecten bij het
+      Geo Expertise Center </p>
+    <p>De afdeling Maatwerk en Advies bestaat uit vier teams. 
+      Eén daarvan, het Geo Expertise Center, ontwikkelt nieuwe en innoveert bestaande geo-producten en tools, 
+      met name op het gebied van 3D, topografie, objectherkenning door middel van Deep Learning, 
+      EuroGeographics en Ruimtelijke Plannen. </p>
+    
+    <dt>3D</dt>
+<p>Bij het 3D project maken we een actueel 3D-model van Nederland. 
+  Hierbij maken we de buitenwereld zo goed mogelijk na in een computermodel. 
+  Denk aan gebouwen, wegen, bomen etc. Dit model kan gebruikt worden voor visualisatie doeleinden,
+  maar bijvoorbeeld ook voor geluidsberekeningen. 
+  Voor het maken van het 3D-model maken we gebruik van diverse producten: BGT, BAG, Top10NL en 
+  ons eigen hoogtemodel (puntenwolk) dat we maken door middel van dense matching. 
+  Deze puntenwolk kunnen we jaarlijks üpdaten. Er zijn ook hoogtemodellen beschikbaar die met andere technieken, 
+  zoals LIDAR, zijn vervaardigd.</p>
+    
+ <p> Vragen die bij ons spelen zijn:</p>
+<p>•	Wat is de kwaliteit van het 3D-model?</p>
+<p>•	Wat zijn de verschillen tussen hoogtemodellen die op basis van dense matching en LIDAR en 
+  hoe kunnen we ze zo optimaal mogelijk combineren?</p>
+<p>•	Welke datasets en technieken kunnen worden gebruikt voor het optimaliseren van het 3D-model (binnen en buiten)? 
+  Denk bijvoorbeeld aan BIMs en ondergrond kaarten.</p>
+<p>•	Welke mogelijkheden bieden UAV’s (unmanned aerial vehicles) voor hoogtemodellen en wat is de kwaliteit?</p>
+<p>•	Wat zijn precies de verschillen in het hoogtemodel tussen de verschillende percentages overlap bij luchtfoto’s
+  (met name met betrekking tot dakreconstructie)? </p>
+    
+    <dt>Objectherkenning met deep learning</dt>
+<p>Bij objectherkenning zijn we op zoek naar specifieke elementen,
+  zoals groen in tuinen, wegen, gebouwen en water op luchtfoto’s. 
+  Eerder werden hiervoor segmentatie programma’s gebruikt, 
+  waarbij telkens nieuwe parameters moesten worden opgegeven om de juiste objecten te vinden. 
+  Vanwege de diversiteit in luchtfoto’s is dit op grote schaal vrij lastig te doen.  
+  Sinds 2018 houden we ons bezig om beelden te segmenteren met Deep Learning methoden. 
+  We gebruiken verschillende methoden, die we hebben aangepast om met onze eigen data 
+  (RGB + CIR luchtfoto’s, PAN, AHN3 en ons eigen hoogtemodel) te kunnen werken. 
+  Ook creëren we extra data door RGB om te zetten in andere kleurruimten en CIR om de NDVI te bepalen. </pt>
+  
+  <p>Vragen die bij ons rondom dit onderwerp spelen: </pt>
+<p>•	Welke objectherkenningsalgoritmes zijn er beschikbaar binnen Deep Learning en 
+  wat zijn de specifieke kenmerken van en verschillen tussen de algoritmen?</pt>
+<p>•	Welke algoritmes zijn geschikt voor toepassing op onze beelden en 
+  welk type objecten zouden we daar mee kunnen detecteren?</pt>
+<p>•	Wat kunnen we eventueel nog aanpassen aan bestaande algoritmes om betere resultaten te krijgen? </pt>
+<p>•	Wat kunnen we met Change Detection algoritmen?</pt>
+<p>•	Kunnen we onze puntenwolk (hoogtemodel) nog verbeteren met Deep Learning?</pt>
+
+<dt>EuroGeographics</dt>
+
+<p>EuroGeographics is het Europese samenwerkingsverband voor kadasters en 
+  topografische diensten in Europa. De deelnemende landen werken samen aan een 
+  aantal Europese producten waaronder de EuroRegionalMap (ERM). 
+  Dit is een topografische dataset met een schaal van 1:250.000. 
+  Het Kadaster is één van de vijf coördinatoren binnen het ERM-project en 
+  verzorgt daarnaast het kwaliteitsmanagement. Hierbij ligt de nadruk op het ontwikkelen van een validatietool 
+  waarmee alle ERM-data wordt gecontroleerd. </p>
+
+<p>Vragen die bij ons rondom dit onderwerp spelen:</p>
+<p>•	Wat is de kwaliteit van de ERM dataset en hoe is deze veranderd na de invoering van de validatietool?</p>
+<p>•	Hoe kunnen we de kwaliteit van de ERM dataset verbeteren?</p>
+<p>•	Hoe kunnen we de edge matching tussen landen verbeteren?</p>
+<p>•	Hoe kunnen we de validatietool verder ontwikkelen? 
+  Denk bijvoorbeeld aan het geschikt maken voor ArcGIS Pro, Open Source, 
+  het omgaan met false positives en de visualisatie van fouten.</p>
+<p>•	Hoe kunnen we een terugmeldsysteem opzetten zodat 
+  gebruikers van de data kunnen helpen om de kwaliteit van de data te verbeteren?</p>
+
+<dt>Ruimtelijke plannen</dt>
+<p>Kadaster is samen met Geonovum verantwoordelijk voor de Landelijke Voorziening Ruimtelijkeplannen.nl. 
+  Hier zijn bestemmingsplannen, structuurvisies en algemene regels te vinden die door gemeenten, 
+  provincies en het Rijk zijn gemaakt. 
+  Door de inwerkingtreding van de Omgevingswet in 2021 zullen deze plannen uiteindelijk
+  onder het Digitaal Stelsel Omgevingswet (DSO) vallen. 
+  Binnen ons team ontsluiten we de Ruimtelijkeplannen.nl data als bulk om zo interne 
+  en externe maatwerkvragen te kunnen beantwoorden.
+  Vaak wordt er gevraagd om een koppeling te maken tussen de ruimtelijke plannen 
+  en andere data (bijvoorbeeld de BAG of hoogtedata). 
+  Dit doen we door modellen op te stellen en deze op de data los te laten.  </p>
+
+<p>Vragen die bij ons rondom dit onderwerp spelen:</p>
+<p>•	Welke modellen kunnen we opstellen om veelvoorkomende vragen makkelijker te kunnen beantwoorden?</p>
+<p>•	Wat zijn de verschillen in het datamodel tussen Ruimtelijkeplannen.nl en het DSO?</p>
+<p>•	Hoe gaan we om met de overgangssituatie van Ruimtelijkeplannen.nl naar het DSO 
+en hoe kunnen we de data uit beide platforms op een goede manier combineren?</p>
+
+<dt>Eigen ideeën zijn ook altijd welkom.</dt>
+
+<p> Bij interesse voor een van deze onderwerpen van het Geo Expertise Center,
+  kun je een mail sturen naar Diede Nijmeijer (diede.nijmeijer@kadaster.nl) 
+  of Vincent van Altena (vincent.altenavan@kadaster.nl) </pt>
+
   </div>
 <div>
