@@ -39,4 +39,12 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Zoek naar in Nederland vervaardigde biertjes door de zoekcriteria in te stellen. Zoek tevens naar bier brouwerijen die in Nederland gevestigd zijn.</div>
     </div>
   </a>
+  <a href="bevolking/">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <div class="card-title">Bevolkings browser</div>
+      <div class="card-description">Doorzoek Nederlandse gemeenten, wijken, en buurten aan de hand van statistieken.</div>
+    </div>
+  </a>
 </div>
