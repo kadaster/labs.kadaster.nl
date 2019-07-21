@@ -1,9 +1,4 @@
 ---
-custom-javascript-items:
-  - "/assets/js/jquery-3.2.1.min.js"
-  - "/assets/js/qrious.min.js"
-  - "/assets/js/qr-code-with-logo.browser.min.js"
-  
 layout: story
 title: Demonstrator ― Huischeck
 ---
@@ -46,3 +41,7 @@ Een andere manier om informatie van uw huis op te vragen is via SPARQL-queries. 
        data-query-ref="huischeck_sparql.rq"
        data-output="geo">
 </query>
+
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="qrious.min.js"></script>
+<script src="qr-code-with-logo.browser.min.js"></script>

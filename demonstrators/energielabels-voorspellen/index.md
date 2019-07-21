@@ -2,8 +2,8 @@
 layout: page
 title: Energielabels voorspellen
 ---
-<link rel="stylesheet" href="/assets/js/openlayers/v4.6.5-dist/ol.css">
-<script src="/assets/js/openlayers/v4.6.5-dist/ol.js"></script>
+<link rel="stylesheet" href="/assets/openlayers/v4.6.5-dist/ol.css">
+<script src="/assets/openlayers/v4.6.5-dist/ol.js"></script>
 <script src="decisionTree.js"></script>
 
 # Energielabels voorspellen

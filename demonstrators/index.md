@@ -63,4 +63,20 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Vocabulaire visualisatie met WebVOWL.</div>
     </div>
   </a>
+  <a href="/demonstrators/archief-mapviewer">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Archief Mapviewer</div>
+      <div class="card-description">Archief Mapviewer.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/zoeken">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Zoeken</div>
+      <div class="card-description">Zoeken.</div>
+    </div>
+  </a>
 </div>
