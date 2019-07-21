@@ -89,3 +89,24 @@ Within text you can refer to [Figure 1](#figure-1).
   You can **use** Markdown here.
 </div>
 ```
+
+### Definition list in Markdown
+
+```md
+Enterprise Knowledge Graphs
+: Wat is de toegevoegde waarde van de Knowledge Graphs voor Kadaster?
+
+Gamification and Linked Data
+: Hoe kunnen we met gamifiction principes volledigheid en/of kwaliteit van Kadaster data verbeteren?
+```
+
+The above Markdown is translated into the following HTML:
+
+```html
+<dl>
+  <dt>Enterprise Knowledge Graphs</dd>
+  <dt>Wat is de toegevoegde waarde van de Knowledge Graphs voor Kadaster?</dt>
+  <dd>Gamification and Linked Data</dd>
+  <dt>Hoe kunnen we met gamifiction principes volledigheid en/of kwaliteit van Kadaster data verbeteren?</dt>
+</dl>
+```
