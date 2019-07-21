@@ -68,3 +68,13 @@ The description field of tiles (HTML class name `card-description`)
 must not contain more than 130 characters (including whitespace).
 Longer texts may be used as introductory text on the page that the
 tile links to.
+
+## Tips & tricks
+
+### Use of Markdown within an HTML tag
+
+```
+<div markdown="1">
+  You can **use** Markdown here.
+</div>
+```
