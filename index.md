@@ -11,7 +11,7 @@ Kadaster vindt het belangrijk om samen met publieke en private partners te onder
 Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs website gebruiken wij als Data Science team om de resultaten van de verschillende initiatieven te delen.  Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten.  Het Data Science Team werkt vanuit een Use Case.  De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators.  De bouwblokken kun je ook direct via de menu balk benaderen.  Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen.  In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
 <div class="cards-wrapper">
-  <a href="/cases/brt.html">
+  <a href="/cases/brt">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
@@ -19,7 +19,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">De Basisregistratie Topografie (BRT) is beschikbaar als Linked Open Data.  Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
     </div>
   </a>
-  <a href="/cases/loki.html">
+  <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg">
@@ -27,7 +27,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
     </div>
   </a>
-  <a href="/cases/grondmarkt.html">
+  <a href="/cases/grondmarkt">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
@@ -35,7 +35,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
   </a>
-  <a href="/cases/uw-huis.html">
+  <a href="/cases/uw-huis">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/huis.png">
@@ -43,7 +43,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">In deze Use Case staat een huis centraal, en bevragingen naar de BAG.</div>
     </div>
   </a>
-  <a href="/cases/rotterdam-grondgebied.html">
+  <a href="/cases/rotterdam-grondgebied">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
@@ -51,7 +51,15 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
-  <a href="/cases/cbs-nieuwbouw.html">
+  <a href="/cases/haal-centraal">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/voetbal.png">
+      <div class="card-title">Haal Centraal</div>
+      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
+    </div>
+  </a>
+  <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
@@ -59,15 +67,15 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Voor het CBS wordt gekeken of de nieuwbouw van woningen zelfbouw of projectbouw is.  Dit wordt gedaan o.b.v. Machine Learning over aktes.</div>
     </div>
   </a>
-  <a href="/cases/energielabels.html">
+  <a href="/cases/energielabels">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/energylabels.png">
-      <div class="card-title">Energie Labels en Machine Learning</div>
+      <img class="card-image" src="/assets/images/energielabels.png">
+      <div class="card-title">Energielabels en Machine Learning</div>
       <div class="card-description">Voor het Geo Gebruikersfestival 2018 ontwikkelde het Kadaster een demo-applicatie voor het voorspellen van energielabels van panden.</div>
     </div>
   </a>
-  <a href="/cases/pdok-knowledge-graph.html">
+  <a href="/cases/pdok-knowledge-graph">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/pdok-logo-text.png">
@@ -75,15 +83,15 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">In deze use case zijn verschillende PDOK datasets experimenteel met elkaar verbonden in een Knowledge Graph.</div>
     </div>
   </a>
-  <a href="/cases/hoogspanning.html">
+  <a href="/cases/hoogspanning-onderzoek">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Hoogspannings onderzoek</div>
+      <div class="card-title">Hoogspanning Onderzoek</div>
       <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
     </div>
   </a>
-  <a href="/cases/linked-bier.html">
+  <a href="/cases/linked-bier">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bier.jpg">

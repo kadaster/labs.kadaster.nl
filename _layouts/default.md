@@ -14,8 +14,8 @@
     <div class="content">
       <nav class="navbar">
         <div class="navbar-content">
-          {%- comment -%} When adding changes within this make sure that the
-          selector for the mobile menu still works as it traverses each sibling
+          {%- comment -%}
+          When adding changes within this make sure that the selector for the mobile menu still works as it traverses each sibling.
           {%- endcomment -%}
           <input id="mobileNav" type="checkbox" style="display:none">
           <label for="mobileNav" class="hamburger">
@@ -38,24 +38,24 @@
                 <label for="buildingBlockMenu">Bouwblokken</label>
               </div>
               <div class="dropdown-items">
-                <a href="/stories/">
+                <a href="/stories">
                   <div class="navbar-title">Stories</div>
                 </a>
-                <a href="/browsers/">
+                <a href="/browsers">
                   <div class="navbar-title">Browsers</div>
                 </a>
-                <a href="/demonstrators/">
+                <a href="/demonstrators">
                   <div class="navbar-title">Demonstrators</div>
                 </a>
-                <a href="https://demo.triply.cc" target="_blank">
+                <a href="/data" target="_blank">
                   <div class="navbar-title">Data</div>
                 </a>
               </div>
             </div>
-            <a href="/dissemination/">
+            <a href="/dissemination">
               <div class="navbar-title">Dissemination</div>
             </a>
-            <a href="/internships/">
+            <a href="/internships">
               <div class="navbar-title">Internships</div>
             </a>
             <div class="space"></div>
