@@ -26,35 +26,39 @@ Labs uses templates to generate the site and their elements. Below is a list of 
 
 ### Default
 
-The default template contains the navigation bar and a banner, and imports the default style
+The default template contains the navigation bar and a banner.
 
-Variables:
+It defines the following variables:
 
-| Variable name | Use                      | default value                           |
+| Variable name | Use                      | Default value                           |
 | ------------- | ------------------------ | --------------------------------------- |
-| banner        | A image to use as banner | `/assets/images/banner-placeholder.jpg` |
-
-### Case
-
-Imports from the [default](###Default) template
+| `banner`      | A image to use as banner | `/assets/images/banner-placeholder.jpg` |
 
 ### Facetcheck
 
-Completely blank template
+A completely blank template, allowing a FacetCheck browser to take up
+the entire browser pane.
+
+### Page
+
+Imports from the [default template](###Default).
 
 ### Presentation
 
-Imports presentation dependencies
+Imports presentation dependencies.
 
 ### Story
 
-Extends from the [default](###Default) template and imports the YASGUI stories dependency
+Extends the [default template](###Default) and imports the Data
+Stories dependency.
 
-| Variable name | Use                                          | default value                       |
-| ------------- | -------------------------------------------- | ----------------------------------- |
-| endpoint      | An endpoint to refer to                      | `https://data.labs.pdok.nl/sparql/` |
-| output        | Output of story                              | `table`                             |
-| basemap       | The type of chart to use for the geo plugins | `nlmaps`                            |
+It defines the following variables:
+
+| Variable name | Use                                                                    | Default value                       |
+| ------------- | ---------------------------------------------------------------------- | ----------------------------------- |
+| `basemap`     | The default background map for the 2D geospatial visualization plugin. | `nlmaps`                            |
+| `endpoint`    | The default endpoint for queries.                                      | `https://data.labs.pdok.nl/sparql/` |
+| `output`      | The default result set visualization for queries.                      | `table`                             |
 
 ## Content requirements
 
