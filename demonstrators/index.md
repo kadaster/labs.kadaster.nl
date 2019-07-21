@@ -39,4 +39,28 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
     </div>
   </a>
+  <a href="/demonstrators/tableau">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Data exploratie met Tableau</div>
+      <div class="card-description">Data exploratie met Tableau.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/energielabels-voorspellen">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/energielabels.png">
+      <div class="card-title">Energielabels voorspellen</div>
+      <div class="card-description">Energielabels voorspellen.</div>
+    </div>
+  </a>
+  <a href="http://visualdataweb.de/webvowl/#iri=http://ec2-34-252-124-184.eu-west-1.compute.amazonaws.com/model/bag.ttl">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/webvowl.png">
+      <div class="card-title">Vocabulaire visualisatie met WebVOWL</div>
+      <div class="card-description">Vocabulaire visualisatie met WebVOWL.</div>
+    </div>
+  </a>
 </div>

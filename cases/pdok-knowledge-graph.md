@@ -1,4 +1,5 @@
 ---
+banner: /assets/images/bag-in-lod-cloud.png
 layout: page
 title: Use Case ― PDOK Knowledge Graph
 ---
@@ -11,7 +12,7 @@ Om het belang van verbonden data duidelijk te maken, en daarmee het belang van e
     <img src="/assets/images/pdok-kg-simplified.jpg">
   </a>
   <figcaption>
-    Figuur 1: Overzicht van de datasets die in de PDOK Knowledge Graph met elkaar verbonden zijn.
+    Figuur 1 ― Overzicht van de datasets die in de PDOK Knowledge Graph met elkaar verbonden zijn.
   </figcaption>
 </figure>
 
@@ -20,7 +21,7 @@ Om het belang van verbonden data duidelijk te maken, en daarmee het belang van e
     <img src="/assets/images/pdok-kg.png">
   </a>
   <figcaption>
-    Figuur 2: Gedetailleerd overzicht van de verbindingen tussen concepten, zoals gebruikt binnen de PDOK Knowledge Graph.
+    Figuur 2 ― Gedetailleerd overzicht van de verbindingen tussen concepten, zoals gebruikt binnen de PDOK Knowledge Graph.
   </figcaption>
 </figure>
 

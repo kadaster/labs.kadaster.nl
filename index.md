@@ -11,14 +11,6 @@ Kadaster vindt het belangrijk om samen met publieke en private partners te onder
 Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs website gebruiken wij als Data Science team om de resultaten van de verschillende initiatieven te delen.  Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten.  Het Data Science Team werkt vanuit een Use Case.  De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators.  De bouwblokken kun je ook direct via de menu balk benaderen.  Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen.  In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
 <div class="cards-wrapper">
-  <a href="/cases/brt">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">De Basisregistratie Topografie (BRT) is beschikbaar als Linked Open Data.  Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
-    </div>
-  </a>
   <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -78,7 +70,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
   <a href="/cases/pdok-knowledge-graph">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
       <div class="card-title">PDOK Knowledge Graph</div>
       <div class="card-description">In deze use case zijn verschillende PDOK datasets experimenteel met elkaar verbonden in een Knowledge Graph.</div>
     </div>

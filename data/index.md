@@ -23,4 +23,20 @@ Het Data Science team maakt en gebruik verschillende dataseta.
       <div class="card-description">Dataset met scholen en sportlocaties in Rotterdam en Den Haag.</div>
     </div>
   </a>
+  <a href="https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <div class="card-title">Basisregistratie Topografie (BRT)</div>
+      <div class="card-description">De dataset Basisregistratie Topografie (BRT) wordt gepubliceerd op PDOK.</div>
+    </div>
+  </a>
+  <a href="https://data.pldn.nl/cbs/energiebesparing">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <div class="card-title">Energiebesparing</div>
+      <div class="card-description">De CBS dataset over mogelijke energiebesparingen.</div>
+    </div>
+  </a>
 </div>

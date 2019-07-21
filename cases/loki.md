@@ -50,7 +50,7 @@ Vervolgens is het team gaan sparren over hoe een dergelijke oplossing er in tech
     <img src="/assets/images/architectuur-loki.jpg" width="573" height="511">
   </a>
   <figcaption>
-    Figuur 1: Initiële architectuurplaat voor Loki.
+    Figuur 1 ― Initiële architectuurplaat voor Loki.
   </figcaption>
 </figure>
 

@@ -12,7 +12,7 @@ centraal.  Deze resultaten gebruiken we ook om op evenementen en beurzen demonst
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/huis.png">
-      <div class="card-title">Vind een BAG pand</div>
+      <div class="card-title">Vind een gebouw</div>
       <div class="card-description">Vind een of meerdere BAG panden (bv. uw huis) door de bevraging aan te passen.</div>
     </div>
   </a>
