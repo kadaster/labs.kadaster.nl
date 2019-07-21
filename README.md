@@ -71,6 +71,17 @@ tile links to.
 
 ## Tips & tricks
 
+### Refer to Figures
+
+```
+Within text you can refer to [Figure 1](#figure-1).
+
+<figure id="figure-1">
+  <img src="{{URL}}">
+  <figcaption>{{TEXT}}</figcaption>
+</figure>
+```
+
 ### Use of Markdown within an HTML tag
 
 ```
