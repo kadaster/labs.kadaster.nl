@@ -12,6 +12,7 @@ Vul in onderstaande zoekbalk uw adres(straatnaam+huisnummer, woonplaats) in om u
 <div>
   <input name="q" id="adres" value="">
   <button id='huischeck_now'>Check uw huis</button>
+  <script src="/assets/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="fetch.js">
   </script>
 </div>
@@ -28,6 +29,8 @@ Als u uw adres heeft ingevoerd, vindt u hieronder de informatie over uw huis:
 De onderstaande QR-code bevat de link naar de URI(Uniform Resource Identifier) van uw huis. Wanneer u deze code scant komt u uit op een pagina met informatie over uw huis uit de basisregistraties van het Kadaster.
 
 <div id="qrcode">
+  <script src="qrious.min.js"></script>
+  <script src="qr-code-with-logo.browser.min.js"></script>
   <canvas id="qrcodeCanvas">
   </canvas>
 </div>
@@ -41,7 +44,3 @@ Een andere manier om informatie van uw huis op te vragen is via SPARQL-queries. 
        data-query-ref="huischeck_sparql.rq"
        data-output="geo">
 </query>
-
-<script src="/assets/js/jquery-3.2.1.min.js"></script>
-<script src="qrious.min.js"></script>
-<script src="qr-code-with-logo.browser.min.js"></script>
