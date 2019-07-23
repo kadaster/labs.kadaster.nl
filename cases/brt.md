@@ -10,9 +10,9 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
   <a href="/stories/religieuze-gebouwen/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/sint-jan.jpg">
       <div class="card-title">Religieuze Gebouwen</div>
-      <div class="card-description">De Data Story Religieuze Gebouwen geeft je inzicht in de mogelijkheden van visualisaties gebaseerd op de Basisregistratie Topografie (BRT).  Bij iedere visualisatie vind je een toelichting die je kunt gebruiken als inspiratie voor nieuwe vraagstukken.</div>
+      <div class="card-description">Deze Story geeft je een beeld van de mogelijke BRT visualisaties gericht op Religieuze Gebouwen inclusief onze toelichting.</div>
     </div>
   </a>
   <a href="/browsers/brt/">
@@ -28,7 +28,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">De Datasets van de Basisregistratie Topografie is publiekelijk toegankelijk op de kaart via het PDOK platform.  Je vindt hier de TOPNL bestanden en dit zijn objectgerichte topografische bestanden op diverse schaalniveaus.  TOPNL bestanden zijn opgebouwd uit verschillende topografische elementen in het GML formaat.  In een geografisch informatie systeem is het mogelijk om de informatie te bekijken en te bewerken.  Deze Datasets maken gebruik van Linked Data.</div>
+      <div class="card-description">De Datasets van de BRT is toegankelijk via PDOK.  Je vindt hier de TOPNL bestanden. Deze  informatie kun je bekijken en bewerken.</div>
     </div>
   </a>
 </div>

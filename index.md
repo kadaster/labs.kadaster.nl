@@ -16,13 +16,13 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg">
       <div class="card-title">Loki voor GEO Informatieverstrekking</div>
-      <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
+      <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
   <a href="/cases/grondmarkt">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/grondmarkt.jpg">
       <div class="card-title">Grondmarkt</div>
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
@@ -38,7 +38,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
   <a href="/cases/rotterdam-grondgebied">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
@@ -78,7 +78,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
   <a href="/cases/hoogspanning-onderzoek">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/hoogspanning.jpg">
       <div class="card-title">Hoogspanning Onderzoek</div>
       <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
     </div>
@@ -89,6 +89,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <img class="card-image" src="/assets/images/bier.jpg">
       <div class="card-title">Linked Bier</div>
       <div class="card-description">Een Use Case rond een ludiek thema (bier) gemaakt tijdens de Hack-a-LOD.  Deze Use Case bevat de resultaten.</div>
+    </div>
+  </a>
+  <a href="/cases/brt">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/nederland-provincies.jpg">
+      <div class="card-title">Basisregistratie Topografie (BRT)</div>
+      <div class="card-description">De BRT is beschikbaar als Linked Open Data. Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
     </div>
   </a>
 </div>

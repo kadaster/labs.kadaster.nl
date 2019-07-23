@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/energielabels.png
 layout: page
 title: Use Case ― Energielabels
 ---

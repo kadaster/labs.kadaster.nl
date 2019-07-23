@@ -26,7 +26,7 @@ Het Data Science team maakt en gebruik verschillende dataseta.
   <a href="https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl">
     <div class="card">
       <div class="card-type">Data</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <img class="card-image" src="/assets/images/nederland-provincies.png">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
       <div class="card-description">De dataset Basisregistratie Topografie (BRT) wordt gepubliceerd op PDOK.</div>
     </div>

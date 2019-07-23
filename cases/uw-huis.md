@@ -21,7 +21,7 @@ centraal.  Deze resultaten gebruiken we ook om op evenementen en beurzen demonst
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/huis.png">
       <div class="card-title">Huischeck</div>
-      <div class="card-description">Deze demonstrator voor evenementen kan gebruikt worden om de URI van een huis te bepalen en deze te printen.</div>
+      <div class="card-description">Deze demonstrator kun je gebruiken om de URI van een huis te bepalen en deze te printen als QR code voor een evenement.</div>
     </div>
   </a>
 </div>

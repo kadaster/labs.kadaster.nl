@@ -12,13 +12,13 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
-      <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
+      <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
   <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
