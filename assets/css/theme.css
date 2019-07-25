@@ -248,6 +248,7 @@ code.hightlight {
   font-size: 18px;
   padding: 0px 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 .navbar-title:hover {
   text-shadow: 1px 0 0;
