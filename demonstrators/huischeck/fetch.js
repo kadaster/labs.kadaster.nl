@@ -77,8 +77,8 @@ $(document).ready(() => {
 <html lang="nl-NL"><head>
 <title>${document.title}</title>
 <script type="text/javascript" src="/assets/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/assets/js/qrious.min.js"></script>
-<script type="text/javascript" src="/assets/js/qr-code-with-logo.browser.min.js"></script>
+<script type="text/javascript" src="qrious.min.js"></script>
+<script type="text/javascript" src="qr-code-with-logo.browser.min.js"></script>
 <style> @media print {@page { margin: 0; } body { margin: 0.4cm; }}</style>
 </head><body>
 <img alt="Kadaster logo" src="Kadaster_woordmerk_RGB_crop.jpg" width="170" hspace="20mm" vspace="10mm" id="kadasterlogo"/>
