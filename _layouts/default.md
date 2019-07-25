@@ -25,7 +25,7 @@
           </label>
           <a href="/" class="branding">
             <div class="navbar-title">
-              <img class="navbar-icon" src="/assets/images/kadaster-logo-full.png">
+              <img class="navbar-icon" src="/assets/images/kadaster-logo-full.png" alt="Kadaster-Logo">
             </div>
           </a>
           <div class="navbar-collapsible">
@@ -34,9 +34,7 @@
             </a>
             <div class="dropdown">
               <input id="buildingBlockMenu" type="checkbox" style="display: none">
-              <div class="navbar-title">
-                <label for="buildingBlockMenu">Bouwblokken</label>
-              </div>
+                <label class="navbar-title" for="buildingBlockMenu">Bouwblokken</label>
               <div class="dropdown-items">
                 <a href="/stories">
                   <div class="navbar-title">Stories</div>
@@ -69,7 +67,7 @@
         <div class="banner">
           <span class="banner-overlay"></span>
           <picture>
-            <img class="banner-image" src="{{ page.banner }}">
+            <img class="banner-image" src="{{ page.banner }}" alt="{{ page.banner-alt || page.title }}">
           </picture>
         </div>
         {{ content }}

@@ -1,6 +1,7 @@
 /* Primary blue: #00387d */
 /* Secondary blue: #007ae9 */
 /* Background blue #d9eef7 */
+/* Kadaster gray #e1e1e1 */
 @font-face {
   font-family: "Auto";
   src: url(/assets/fonts/Auto_1_Regular.woff);
@@ -30,6 +31,10 @@ h4,
 h5,
 h6 {
   color: #00387d;
+}
+ul, ol {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 a {
   text-decoration: none;
@@ -150,7 +155,7 @@ code.hightlight {
 .dropdown {
   display: flex;
 }
-.dropdown > .navbar-title :last-child::after {
+.dropdown > .navbar-title::after {
   content: "";
   display: inline-block;
   width: 0;
@@ -161,6 +166,7 @@ code.hightlight {
   border-top: 4px solid;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
+  margin-bottom: 0.5em;
 }
 .dropdown-items {
   display: none;
@@ -177,7 +183,7 @@ code.hightlight {
 #buildingBlockMenu:checked + .navbar-title + .dropdown-items {
   display: block;
 }
-#buildingBlockMenu:checked + .navbar-title :last-child::after {
+#buildingBlockMenu:checked + .navbar-title::after {
   transform: rotate(180deg);
 }
 
@@ -186,7 +192,7 @@ code.hightlight {
   overflow-x: hidden;
 }
 .flex-content {
-  flex-basis: 1600px;
+  flex-basis: 1200px;
   max-width: 100%;
   padding: 20px;
 }
@@ -323,8 +329,25 @@ dl dd {
 figure {
   text-align: center;
 }
-.container {
+.story {
   max-width: 100%;
+  display: flex;
+}
+.story > * {
+  max-width: unset;
+}
+.story::before {
+  content: "";
+  flex-basis: 1em;
+  flex-grow: 1;
+}
+.story::after {
+  content: "";
+  flex-basis: 1em;
+  flex-grow: 1;
+}
+.storyContent {
+  display: block;
 }
 .branding .navbar-title {
   flex-shrink: 0;
@@ -364,20 +387,29 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
   .navbar-collapsible .space {
     display: none;
   }
+  /* IE11 Hack position sticky not implemented, fallback is to use absolute */
   @media all and (-ms-high-contrast: none) {
     .navbar-collapsible {
       position: absolute;
     }
   }
-  .navbar-collapsible a .navbar-title {
-    padding: 5px;
-    border-bottom: 1px #00387d solid;
+  .navbar-collapsible .navbar-title {
+    padding: 10px 15px;
+    border-bottom: 1px #e1e1e1 solid;
+  }
+  .navbar-collapsible .navbar-title:hover {
+    background: #d9eef7;
+    text-shadow: none;
+  }
+  .navbar-title.active {
+    background: #d9eef7;
+    text-shadow: none;
   }
   .navbar-collapsible > a:first-child .navbar-title {
-    border-top: 1px #00387d solid;
+    border-top: 1px #e1e1e1 solid;
   }
   .navbar-collapsible > a:last-child .navbar-title {
-    box-shadow: 0.5px 1px 5px 2px #ccc;
+    box-shadow: 0.5px 4px 5px 2px #e1e1e1;
   }
   /* This selector is used to select show the menu on mobile, it keeps selecting the next item. As css does not yet contain a parent selector we need to traverse each sibling*/
   #mobileNav:checked + .hamburger + .branding + .navbar-collapsible {
@@ -387,18 +419,25 @@ div.modal-dialog.google-visualization-charteditor-dialog * {
   .dropdown {
     display: block;
   }
-  .dropdown-items {
+  #buildingBlockMenu:checked + .navbar-title + .dropdown-items {
     display: block;
     position: static;
     background: transparent;
     padding: 0;
   }
-  .dropdown > .navbar-title {
-    display: none;
-  }
   .dropdown .navbar-title {
     color: #00387d;
     text-decoration: none;
+    padding-left: 2em;
+  }
+  .dropdown label.navbar-title {
+    padding-left: 15px;
+  }
+  .dropdown > .navbar-title::after {
+    margin-left: auto;
+    align-self: center;
+    margin-bottom: initial;
+    color: #007db3;
   }
   .navbar-collapsible a {
     display: block;

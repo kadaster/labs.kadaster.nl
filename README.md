@@ -30,9 +30,10 @@ The default template contains the navigation bar and a banner.
 
 It defines the following variables:
 
-| Variable name | Use                      | Default value                           |
-| ------------- | ------------------------ | --------------------------------------- |
-| `banner`      | A image to use as banner | `/assets/images/banner-placeholder.jpg` |
+| Variable name | Use                         | Default value                           |
+| ------------- | --------------------------- | --------------------------------------- |
+| `banner`      | A image to use as banner    | `/assets/images/banner-placeholder.jpg` |
+| `banner-alt`  | The alt text for the banner | The page title                          |
 
 ### Facetcheck
 

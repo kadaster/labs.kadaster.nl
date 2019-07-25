@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <link href="/assets/css/stories.min.css" rel="stylesheet" type="text/css">
 <div
 {% if page.endpoint %}
@@ -9,8 +10,10 @@ layout: default
 {% if page.output %}
      data-output="{{ page.output }}"
 {% endif %}
-     class="container story">
+     class="story flex">
+     <div class="flex-content">
   {{ content }}
+  </div>
 </div>
 <script src="/assets/js/stories.min.js"></script>
 <script src="/assets/js/yasgui.polyfill.min.js"></script>

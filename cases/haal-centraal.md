@@ -1,7 +1,7 @@
 ---
 banner: /assets/images/voetbal.jpg
 layout: page
-title: Use Case ― Haal Centraal: Scholen & Sportlocaties
+title: "Use Case ― Haal Centraal : Scholen & Sportlocaties"
 ---
 # Use Case: Haal Centraal ― Scholen & Sportlocaties
 
