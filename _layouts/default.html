@@ -67,7 +67,7 @@
         <div class="banner">
           <span class="banner-overlay"></span>
           <picture>
-            <img class="banner-image" src="{{ page.banner }}" alt="{{ page.banner-alt || page.title }}">
+            <img class="banner-image" src="{{ page.banner }}" alt="{{ page.banner-alt | default:page.title }}">
           </picture>
         </div>
         {{ content }}
