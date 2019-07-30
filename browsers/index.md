@@ -31,7 +31,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Met deze browser kan de Beeldbank van het Nationaal Archief doorzocht worden.  Afbeeldingen kunnen worden gevonden op basis van hun onderwerp en locatie.</div>
     </div>
   </a>
-  <a href="bier">
+  <a href="dbeerpedia">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/bier.jpg">

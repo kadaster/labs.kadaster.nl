@@ -15,7 +15,7 @@ In het kader van deelname aan de [Hack-a-LOD 2018](http://hackalod.com/index.php
       <div class="card-description">In deze Data Story behandelen we vragen rond bier brouwerijen in Nederland, op basis van verschillende datasets.</div>
     </div>
   </a>
-  <a href="/browsers/bier/">
+  <a href="/browsers/dbeerpedia/">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/bier.jpg">
