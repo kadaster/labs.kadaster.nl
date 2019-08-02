@@ -20,11 +20,11 @@ layout: default
 <script type="text/javascript">
   window.onload = function () {
     {% if page.basemap %}
-    window.Yasgui.Yasr.Instance.plugins.geo.defaults.defaults.map = "{{ page.basemap }}";
-    window.Yasgui.Yasr.Instance.plugins.geo3d.defaults.map = "{{ page.basemap }}";
+    window.Yasgui.Yasr.plugins.geo.defaults.defaults.map = "{{ page.basemap }}";
+    window.Yasgui.Yasr.plugins.geo3d.defaults.map = "{{ page.basemap }}";
     {% else %}
-    window.Yasgui.Yasr.Instance.plugins.geo.defaults.defaults.map = "nlmaps";
-    window.Yasgui.Yasr.Instance.plugins.geo3d.defaults.map = "nlmaps";
+    window.Yasgui.Yasr.plugins.geo.defaults.defaults.map = "nlmaps";
+    window.Yasgui.Yasr.plugins.geo3d.defaults.map = "nlmaps";
     {% endif %}
     window.stories()
   };

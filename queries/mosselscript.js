@@ -13,10 +13,10 @@ select * {
 }
 order by ?afstand
 limit 10`;
-Yasgui.Yasqe.Instance.defaults.value = query;
+Yasgui.Yasqe.defaults.value = query;
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(location => {
-    Yasgui.Yasqe.Instance.defaults.value = query.replace(
+    Yasgui.Yasqe.defaults.value = query.replace(
       'POINT(5 52)', `POINT(${location.coords.longitude} ${location.coords.latitude})`
     );
     Yasgui.stories();
