@@ -77,6 +77,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">In deze use case zijn verschillende PDOK datasets experimenteel met elkaar verbonden in een Knowledge Graph.</div>
     </div>
   </a>
+  <!--
   <a href="/cases/hoogspanning-onderzoek">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -85,6 +86,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
     </div>
   </a>
+  -->
   <a href="/cases/linked-bier">
     <div class="card">
       <div class="card-type">Use Case</div>
