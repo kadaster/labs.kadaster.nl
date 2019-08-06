@@ -22,7 +22,7 @@ Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er een vraag
       <div class="card-description">Data Story over scholen &amp; sportlocaties in Rotterdam en Den Haag.</div>
     </div>
   </a>
-  <a href="haal-centraal-vocab">
+  <a href="/data/haal-centraal-vocab/index-en.html">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/voetbal.png">

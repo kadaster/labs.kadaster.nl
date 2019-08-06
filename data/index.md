@@ -7,7 +7,7 @@ title: Data
 Het Data Science team maakt en gebruik verschillende datasets.
 
 <div class="cards-wrapper">
-  <a href="haal-centraal-vocab/index-en.html">
+  <a href="/data/haal-centraal-vocab/index-en.html">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/voetbal.jpg">
