@@ -101,10 +101,3 @@ In de demonstrator is het mogelijk om een vraag te beantwoorden met gebruikmakin
 
 Klik op onderstaande link om de demo-omgeving te verkennen:
 - [kadaster.appnetwork.nl](https://kadaster.appnetwork.nl)
-
-# Evenementen
-
-## Hackathon Universiteit Twente &amp; Kadaster
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yak9OTOrxNU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>

@@ -95,3 +95,14 @@ Vragen die bij ons rondom dit onderwerp spelen:
 ### Eigen ideeën zijn ook altijd welkom.
 
 Bij interesse voor een van deze onderwerpen van het Geo Expertise Center, kun je een mail sturen naar Diede Nijmeijer ([diede.nijmeijer@kadaster.nl](mailto:diede.nijmeijer@kadaster.nl) of Vincent van Altena ([vincent.altenavan@kadaster.nl](mailto:vincent.altenavan@kadaster.nl)).
+
+## Hackathon
+
+Elk jaar in december organiseert het Kadaster Data Science team ― in
+samenwerking met Universiteit Twente ― een hackathon rondom open
+kadastrale data. Neem contact op met <a
+href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a> als je hieraan
+wil deelnemen.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yak9OTOrxNU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
