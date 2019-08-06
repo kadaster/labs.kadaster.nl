@@ -63,7 +63,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/groene-stroom.png">
       <div class="card-title">Energiebesparing</div>
-      <div class="card-description">Overzicht van de kostenbesparingen als gevolg van energiebesparende maatregelen op buurt niveau.</div>
+      <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
   <!--
