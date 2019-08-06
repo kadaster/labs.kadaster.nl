@@ -20,7 +20,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">Je kunt met de browser Basisregistratie Topografie (BRT) gebouwen doorzoeken op basis van hun de hoogteklasse, de status en het soort gebouw.</div>
+      <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
     </div>
   </a>
   <a href="https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl">
@@ -28,7 +28,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">De Datasets van de BRT is toegankelijk via PDOK.  Je vindt hier de TOPNL bestanden. Deze  informatie kun je bekijken en bewerken.</div>
+      <div class="card-description">De Datasets van de BRT is toegankelijk via PDOK. Je vindt hier de TOPNL bestanden. Deze  informatie kun je bekijken en bewerken.</div>
     </div>
   </a>
 </div>

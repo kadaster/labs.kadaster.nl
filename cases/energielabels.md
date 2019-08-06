@@ -17,7 +17,7 @@ title: Use Case ― Energielabels
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/groene-stroom.png">
-      <div class="card-title">Energiebesparing</div>
+      <div class="card-title">CBS energiebesparingspotentie</div>
       <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
@@ -25,7 +25,7 @@ title: Use Case ― Energielabels
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
-      <div class="card-title">Energiebesparingspotentie</div>
+      <div class="card-title">CBS energiebesparingspotentie</div>
       <div class="card-description">De Linked Dataset met de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>

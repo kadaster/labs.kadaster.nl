@@ -87,20 +87,20 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
     </div>
   </a>
   -->
-  <a href="/cases/linked-bier">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Linked Bier</div>
-      <div class="card-description">Een Use Case rond een ludiek thema (bier) gemaakt tijdens de Hack-a-LOD.  Deze Use Case bevat de resultaten.</div>
-    </div>
-  </a>
   <a href="/cases/brt">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/nederland-provincies.jpg">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
       <div class="card-description">De BRT is beschikbaar als Linked Open Data. Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
+    </div>
+  </a>
+  <a href="/cases/linked-bier">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bier.jpg">
+      <div class="card-title">Linked Bier</div>
+      <div class="card-description">Een Use Case rond een ludiek thema (bier) gemaakt tijdens de Hack-a-LOD.  Deze Use Case bevat de resultaten.</div>
     </div>
   </a>
 </div>

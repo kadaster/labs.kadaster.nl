@@ -9,6 +9,14 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen.  Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
+  <a href="religieuze-gebouwen">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/sint-jan.jpg">
+      <div class="card-title">Religieuze gebouwen in Nederland</div>
+      <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
+    </div>
+  </a>
   <a href="vind-een-gebouw">
     <div class="card">
       <div class="card-type">Story</div>
@@ -26,12 +34,20 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       </div>
     </div>
   </a>
-  <a href="religieuze-gebouwen">
+  <a href="haal-centraal">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/sint-jan.jpg">
-      <div class="card-title">Religieuze gebouwen in Nederland</div>
-      <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
+      <img class="card-image" src="/assets/images/voetbal.jpg">
+      <div class="card-title">Haal Centraal</div>
+      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
+    </div>
+  </a>
+  <a href="energiebesparing">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/groene-stroom.png">
+      <div class="card-title">CBS energiebesparingspotentie</div>
+      <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
   <a href="bier">
@@ -48,22 +64,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Digtaal Erfgoed</div>
       <div class="card-description">PLDN-Werkgroep Digitaal Erfgoed</div>
-    </div>
-  </a>
-  <a href="haal-centraal">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/voetbal.jpg">
-      <div class="card-title">Haal Centraal</div>
-      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
-    </div>
-  </a>
-  <a href="energiebesparing">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/groene-stroom.png">
-      <div class="card-title">Energiebesparing</div>
-      <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
   <!--
