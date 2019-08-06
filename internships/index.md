@@ -5,7 +5,7 @@ title: Internships and Student Assignments
 # Stage- en afstudeeropdrachten
 
 <div class="textbox">
-If you are interested in internships/assignments at Kadaster, but Dutch is not your native language, please contact <a href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a> for possibilities or see this link for a short summary of topics.
+  If you are interested in internships/assignments at Kadaster, but Dutch is not your native language, please contact <a href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a> for possibilities or see <a href="/assets/pdf/kadaster-thesis-assignments.pdf">this document</a> for a short summary of topics.
 </div>
 
 Een belangrijke voedingsbodem voor nieuwe initiatieven op onze labs omgeving is de samenwerking met Universiteiten en Hogescholen.  Het Data Science team bestaat uit Kadaster medewerkers, medewerkers van Partners en studenten.  Als Data Science team hebben wij tal van aantrekkelijke opdrachten op het gebied van Data Science die Kadaster helpen bij het slimmer maken van de organisatie en onze dienstverlening.  Ben jij een student WO- of HBO-niveau in een technische, geo of bedrijfskunde gerelateerde richting neem dan contact op met het Data Science team voor een inspirerende opdracht.  Via de Kadaster website kun je ook andere opdrachten vinden (Werken bij het Kadaster).
