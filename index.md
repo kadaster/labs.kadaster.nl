@@ -51,6 +51,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
     </div>
   </a>
+  <!--
   <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -59,6 +60,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Voor het CBS wordt gekeken of de nieuwbouw van woningen zelfbouw of projectbouw is.  Dit wordt gedaan o.b.v. Machine Learning over aktes.</div>
     </div>
   </a>
+  -->
   <a href="/cases/energielabels">
     <div class="card">
       <div class="card-type">Use Case</div>
