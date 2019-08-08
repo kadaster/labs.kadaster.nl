@@ -116,7 +116,7 @@ Rijksmuseum data…
 
 DBpedia query op beroemde personen…
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/lissenaren">
+<query data-config-ref="https://triplydb.com/dbpedia/core/queries/lissenaren">
 </query>
 
 ## NA
@@ -125,17 +125,17 @@ Erwin vraagt Ed: welk NA setje mag hier niet ontbreken In de
 dataset: gemeentegeschiedenis gebruiken Rein/Erwin/Wouter: maken data
 story aan, kopieren tekst.
 
-<query data-config-ref="https://demo.triply.cc/nationaal-archief/beeldbank/queries/lisse">
+<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/lisse">
 </query>
 
 ## Tulpen
 
 Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jaren 60 ontstaan) Ludiek ideetje: Voornamen met bloemen (fleur, bloem, madelief, …, misschien via voornamenbank) Tulpen die benoemd zijn naar beroemdheden: is er een beroemde lissenaar met een buitenplaats waarna een tulp is genoemd, en dan doorlinken naar dbpedia europeana, etc…  Serpens (marieke) https://www.clariah.nl/projecten/research-pilots/serpens/serpens#abstract Naturalis (leiden): https://www.nederlandsesoorten.nl/ https://www.wikidata.org/wiki/Property:P3405
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-hierarchy">
+<query data-config-ref="https://triplydb.com/dbpedia/core/queries/tulip-hierarchy">
 </query>
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-gallery">
+<query data-config-ref="https://triplydb.com/dbpedia/core/queries/tulip-gallery">
 </query>
 
 ## Familieboom
