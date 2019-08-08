@@ -27,6 +27,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
   </a>
+  <a href="/cases/live-data-in-een-bi-toepassing">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/tableau.jpg">
+      <div class="card-title">Live data in een BI Toepassing</div>
+      <div class="card-description">Hoe we een API aanspreken als bron in een standaard BI toepassing.</div>
+    </div>
+  </a>
   <a href="/cases/uw-huis">
     <div class="card">
       <div class="card-type">Use Case</div>
