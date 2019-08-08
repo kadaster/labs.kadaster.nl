@@ -1,7 +1,7 @@
 ---
 banner: /assets/images/tableau-wdc.png
 layout: page
-title: Use Case ― Loki voor GEO Informatieverstrekking
+title: Use Case ― Live data in een BI-toepassing
 ---
 # Use Case: Live data in een BI-toepassing
 
