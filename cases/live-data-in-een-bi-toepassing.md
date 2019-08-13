@@ -56,4 +56,15 @@ Wanneer we op de knop drukken wordt er achtereenvolgens:
   <li> De ge-transformeerde data als relationele data in Tableau ingelezen </li>
 </ol>
 
+Uitiendelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. Hoe lang lopen bepaalde terugmeldingen al? En worden deze binnen de 
+targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 1](#figuur-1).
+<figure id="figuur-1">
+  <a href="/assets/images/livedatadashboard.png">
+    <img src="/assets/images/livedatadashboard.png">
+  </a>
+  <figcaption>
+    Figuur 2 ― Tableau dashboard voor terugmeldingen, gebruik makende van onze web data connector
+  </figcaption>
+</figure>
+
 
