@@ -57,7 +57,7 @@ Wanneer we op de knop drukken wordt er achtereenvolgens:
 </ol>
 
 Uitiendelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. Hoe lang lopen bepaalde terugmeldingen al? En worden deze binnen de 
-targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 1](#figuur-1).
+targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 2](#figuur-2).
 <figure id="figuur-1">
   <a href="/assets/images/livedatadashboard.png">
     <img src="/assets/images/livedatadashboard.png">
