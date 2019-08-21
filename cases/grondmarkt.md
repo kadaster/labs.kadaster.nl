@@ -20,4 +20,12 @@ percelen.
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
   </a>
+  <a href="https://kadaster.triply.cc/kadaster/grondmarkt">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/grondmarkt.jpg">
+      <div class="card-title">Dataset Grondmarkt</div>
+      <div class="card-description">Dataset met informatie over percelen.</div>
+    </div>
+  </a>
 </div>

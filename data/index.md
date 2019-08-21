@@ -47,4 +47,12 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <div class="card-description">Dataset met scholen en sportlocaties in Rotterdam en Den Haag.</div>
     </div>
   </a>
+  <a href="https://kadaster.triply.cc/kadaster/grondmarkt">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/grondmarkt.jpg">
+      <div class="card-title">Dataset Grondmarkt</div>
+      <div class="card-description">Dataset met informatie over percelen.</div>
+    </div>
+  </a>
 </div>
