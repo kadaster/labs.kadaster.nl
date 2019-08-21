@@ -35,6 +35,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Hoe we een API aanspreken als bron in een standaard BI toepassing.</div>
     </div>
   </a>
+  <a href="/cases/bag-voorspellingen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag.png">
+      <div class="card-title">Missende waarden voorspellen in de BAG</div>
+      <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
+    </div>
+  </a>
   <a href="/cases/uw-huis">
     <div class="card">
       <div class="card-type">Use Case</div>
