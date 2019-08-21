@@ -45,7 +45,7 @@ De [Basisregistratie Topografie](https://www.pdok.nl/introductie/-/article/basis
 
 ## BAG bouwjaren
 
-Gemeente houden zelf het bouwjaar van gymlocaties bij.  Het is interessant om te weten in hoeverre de bouwjaren uit de gemeentelijke administratie overeenkomen met de gegevens uit de BAG.  Het vershil duidt aan hoeveel jaar de gemeentelijke data en de BAG verschillen.  Wanneer je met de muis over de grafiek heen beweegt worden de schoolnamen met de precieze afwijking getoond.
+Gemeente houden handmatig het bouwjaar van gymlocaties bij in een specifieke applicatie. Het is interessant om te weten in hoeverre de bouwjaren bijgehouden in deze applicatie overeenkomen met de gegevens uit de BAG. Het verschil duidt aan hoeveel jaar de applicatie data en de BAG verschillen. Wanneer je met de muis over de grafiek heen beweegt worden de schoolnamen met de precieze afwijking getoond.
 
 <query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/bouwjaar-bag-vs-gemeente">
 </query>
