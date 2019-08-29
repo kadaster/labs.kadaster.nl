@@ -1,7 +1,6 @@
 ---
 banner: /assets/images/lisse.jpg
 layout: story
-output: geo
 published: true
 title: PLDN-Werkgroep Digitaal Erfgoed
 ---
