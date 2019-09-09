@@ -19,6 +19,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
+    <a href="/cases/3d-maptable">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/augmented-reality.jpeg">
+      <div class="card-title">3DMaptable</div>
+      <div class="card-description">Augmented Reality over uw buurt!</div>
+    </div>
+  </a>
   <a href="/cases/grondmarkt">
     <div class="card">
       <div class="card-type">Use Case</div>
