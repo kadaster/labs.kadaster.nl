@@ -69,7 +69,7 @@ Om het belang van verbonden data duidelijk te maken, en daarmee het belang van e
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
       <div class="card-title">PDOK Knowledge Graph Browser</div>
-      <div class="card-description"></div>
+      <div class="card-description">Een demonstrator die de kracht laat zien van het browsen door een Knowledge Graph op instantie (object) niveau.</div>
     </div>
   </a>
 </div>
