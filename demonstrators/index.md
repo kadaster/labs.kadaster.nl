@@ -60,7 +60,15 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/webvowl.png">
       <div class="card-title">Vocabulaire visualisatie met WebVOWL</div>
-      <div class="card-description">Vocabulaire visualisatie met WebVOWL.</div>
+      <div class="card-description"></div>
+    </div>
+  </a>
+  <a href="http://linkeddata.ordina.nl/pdkg/resource?subject=https%3A%2F%2Flinkeddata.cultureelerfgoed.nl%2Fcho-kennis%2Fid%2Frijksmonument%2F19157">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
+      <div class="card-title">PDOK Knowledge Graph Browser</div>
+      <div class="card-description"></div>
     </div>
   </a>
   <a href="/demonstrators/archief-mapviewer">
@@ -68,7 +76,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Archief Mapviewer</div>
-      <div class="card-description">Archief Mapviewer.</div>
+      <div class="card-description"></div>
     </div>
   </a>
   <a href="/demonstrators/zoeken">
@@ -76,7 +84,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Zoeken</div>
-      <div class="card-description">Zoeken.</div>
+      <div class="card-description"></div>
     </div>
   </a>
 </div>
