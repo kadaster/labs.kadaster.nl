@@ -6,6 +6,36 @@ title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 
 # PLDN-Werkgroep Digitaal Erfgoed
+# Data Story "Buitenplaatsen in Lisse"
+
+## Achtergrond
+
+Het Platform Linked Data Nederland (PLDN) is een netwerk waarin experts en 
+belangstellenden kennis delen over Linked Data. De werkgroep Digitaal Erfgoed 
+wil een bijdrage leveren aan de totstandkoming van meer samenhang in 
+digitale bronnen voor erfgoed en de totstandkoming van hulpmiddelen voor 
+eindgebruikers.
+
+Deze pagina bevat een Data Story waarmee de werkgroep wil laten zien dat
+linked data geschikt is om diverse bronnen te verbinden en zo tot nieuwe
+en interessante inzichten te komen.
+
+In een Data Story proberen we een inhoudelijk verhaal te vertellen aan de
+hand van data. In dit geval gaat het om de geschiedenis van buitenplaatsen in 
+Lisse en de bewoners van Lisse.
+
+Voor deze Data Story maken we gebruik van de volgende bronnen:
+
+* data.oudlisse.nl, een SPARQL-endpoint van de Vereniging Oud Lisse met data
+van o.a. percelen, gebouwen, eigenaren, bewoners in Lisse omstreeks 1830
+* linkeddata.cultureelerfgoed.nl, een SPARQ-endpoint van de Rijksdienst voor 
+Cultureel Erfgoed met o.a data over monumenten.
+* Beeldbank van de Rijksdienst voor Cultureel Erfgoed
+* Beeldbank van Erfgoed Leiden en Omstreken
+* pdok labs endpoint, een SPARQL-endpoint van het Kadaster dat o.a. data 
+ontsluit van tekeningen uit het kadastraal archief
+* HISCO, een classificatiesysteem voor beroepen van het Internationaal Instituur voor
+Sociale Geschiedenins 
 
 Dit is een Data Story in ontwikkeling.  In de PLDN werkgroep Erfgoed
 hebben we een idee voor een data story beschreven.  Deze willen we de
