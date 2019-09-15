@@ -6,7 +6,6 @@ title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 
 # PLDN-Werkgroep Digitaal Erfgoed
-# Data Story "Buitenplaatsen in Lisse"
 
 ## Achtergrond
 
@@ -35,13 +34,23 @@ Cultureel Erfgoed met o.a data over monumenten.
 * pdok labs endpoint, een SPARQL-endpoint van het Kadaster dat o.a. data 
 ontsluit van tekeningen uit het kadastraal archief
 * HISCO, een classificatiesysteem voor beroepen van het Internationaal Instituur voor
-Sociale Geschiedenins 
+Sociale Geschiedenis
+* kbresearch.nl 
+* Europeana
+* DBPEDIA
+* Delpher
+* Digitale collectie Nederland
+* Rijksmuseum
 
-Dit is een Data Story in ontwikkeling.  In de PLDN werkgroep Erfgoed
-hebben we een idee voor een data story beschreven.  Deze willen we de
-komende weken stap voor stap gaan vullen.
+# Data Story "Buitenplaatsen in Lisse"
 
 ## Buitenplaatsen
+
+In de 17de eeuw groeide de rijkdom van de Amsterdamse elite. Het aantal rentieniers 
+in deze groep nam sterk toe. Rond 1700 had tenminste een derde van de Amsterdamse elite 
+haar buitenhuizen en landgoederen. Al vroeg in de Gouden Eeuw werden buitenplaatsen 
+aangelegd op door droogbemaling nieuw gewonnen land, maar ook werden ze in grote aantallen 
+achter de duinen en langs bevaarbare waterwegen gebouwd. 
 
 Joop (15 april). Query we plotten de rijksmonumenten van Lisse op een
 kaart (schatting is 34) (steden landhuizen en parken, in de
