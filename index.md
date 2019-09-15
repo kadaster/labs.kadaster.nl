@@ -38,7 +38,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
   <a href="/cases/live-data-in-een-bi-toepassing">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/tableau.jpg">
+      <img class="card-image" src="/assets/images/tableau-logo.jpg">
       <div class="card-title">Live data in een BI Toepassing</div>
       <div class="card-description">Hoe we een API aanspreken als bron in een standaard BI toepassing.</div>
     </div>

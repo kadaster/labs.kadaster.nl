@@ -4,6 +4,10 @@ title: Archiefviewer op de kaart
 ---
 # Archiefviewer op de kaart
 
+Als experiment voor een gebied binnen de gemeente Lisse hebben we veldwerken (minimaal 100 jaar oud) gelinkt aan de percelen, en deze via een viewer beschikbaar gemaakt.
+
+Voor lang niet alle percelen is er een oud veldwerk beschikbaar, dus klik vooral op lage perceelsnummers (bv. 2101).
+
 <link rel="stylesheet" href="/assets/openlayers/v4.6.5-dist/ol.css" type="text/css">
 <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL">

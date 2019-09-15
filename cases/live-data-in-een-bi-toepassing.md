@@ -17,7 +17,6 @@ Business Intelligende (BI) is, volgens <a href="https://www.gartner.com/it-gloss
 Voorbeelden van tooling in deze markt zijn <a href="https://www.qlik.com/us">Qlikview</a>, <a href="https://powerbi.microsoft.com/en-us/">Microsoft PowerBI</a> en <a href="https://www.tableau.com/">Tableau</a>. 
 </div>
 
-
 ## Het doel
 Het doel van deze use case was om een dashboard te maken op een intern beschikbare API, waarin terugmeldingen op de basisregistraties van het Kadaster kunnen worden opgehaald. Dit dashboard moet informatie bevatten
 over de verwerkingstijd en hoeveelheid terugmeldingen die er op enig moment bij de verschillende landelijke voorzieningen staan en kan gebruikt worden om de kwaliteit van dit proces beter in kaart te brengen. 
@@ -38,8 +37,10 @@ Dit is in feite onze eigen server, waar we de verschillende demonstrators gecont
 </div>
 
 ## Het resultaat
+
 In [Figuur 1](#figuur-1) vinden we een beeld van hoe de Terugmelddata web connector er uit ziet. Omdat er geen uitgebreide keuzes zijn in de API over welke data er wel of niet opgehaald moet worden, is er 
 voor gekozen om een niet al te uitgebreide web-pagina neer te zetten waar de data simpelweg met één knop binnen gehaald kan worden. 
+
 <figure id="figuur-1">
   <a href="/assets/images/terugmeld-wdc.png">
     <img src="/assets/images/terugmeld-wdc.png">
@@ -50,14 +51,15 @@ voor gekozen om een niet al te uitgebreide web-pagina neer te zetten waar de dat
 </figure>
 
 Wanneer we op de knop drukken wordt er achtereenvolgens:
+
 <ol>
   <li> De ruwe data binnen gehaald bij de API </li>
   <li> Data transformaties uitgevoerd door Javascript </li>  
   <li> De ge-transformeerde data als relationele data in Tableau ingelezen </li>
 </ol>
 
-Uitiendelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. Hoe lang lopen bepaalde terugmeldingen al? En worden deze binnen de 
-targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 2](#figuur-2).
+Uitiendelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. Hoe lang lopen bepaalde terugmeldingen al?  En worden deze binnen de targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 2](#figuur-2).
+
 <figure id="figuur-1">
   <a href="/assets/images/livedatadashboard.png">
     <img src="/assets/images/livedatadashboard.png">
@@ -66,5 +68,3 @@ targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 2](#figuur-2
     Figuur 2 ― Tableau dashboard voor terugmeldingen, gebruik makende van onze web data connector
   </figcaption>
 </figure>
-
-
