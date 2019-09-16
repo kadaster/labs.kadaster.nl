@@ -37,7 +37,7 @@ ontsluit van tekeningen uit het kadastraal archief
 Sociale Geschiedenis
 * kbresearch.nl 
 * Europeana
-* DBPEDIA
+* DBpedia
 * Delpher
 * Digitale collectie Nederland
 * Rijksmuseum
@@ -57,6 +57,8 @@ Laten we onze aandacht eens richten op Lisse, een dorp dat gelegen is tegen een 
 strandwal (duinen) en al in de 17de eeuw goed toegankelijk via het water en de weg. In Lisse 
 ontstonden vele buitenplaatsen.
 
+## Rijksmonumenten
+
 Wat is er nog te vinden van de buitenplaatsen? We starten onze data story met met een 
 overzicht van de rijksmonumenten van Lisse op een kaart. De data is afkomstig van het 
 linked data platform van de RCE.
@@ -66,34 +68,72 @@ linked data platform van de RCE.
        data-query-ref="rce.rq">
 </query>
 
-Naast de afbeelding op de kaart kunnen we ook gallery view tonen vvan de
-monumenten met beschrijving. 
+Naast de afbeelding op de kaart kunnen we de monumenten met beschrijving ook in een gallery 
+view tonen.
 
 '''Gallery view monumenten'''
 
-In het overzicht van de monumenten komen we Keukenhof tegen. Daarna gaan we focussen op [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+In het overzicht van de monumenten komen we Keukenhof tegen. Keukenhof is van oorsprong
+een buitenplaats die gesticht werd in 1641 door commandeur Adriaen Maertensz Block. Het 
+landgoed groeide uit tot een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het 
+Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het Keukenduin groente en 
+fruit voor de keuken van kasteel Teylingen.
+
+De keukenhof zien we terug als monument op de website van de RCE  
+[Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
 
 
-## Minutenplan
+## Minuutplan
 
-Henk/Hans (1 mei) query oud lisse, minutenplannen, eigenaren. (lisse
-endpoint) Voor alle…bv. Eigenaren van de 20 monumenten Inzoomen op
-keukenhof Hans levert voorlopige query aan Erwin.
+Hoe heeft het terrein van Keukenhof er vroeger uitgezien? De eerste betrouwbare kaarten
+werden door het Kadaster gemaakt tussen 1812 en 1830. Die eerste kaarten werden 
+minuutplans genoemd. De minuutplans van Lisse worden door Erfgoed Leiden en Omstreken
+beschikbaar gesteld. Zie de volgende kaart.
+
+'''Minuutplan Lisse sectie A blad 1'''
+
+Door de Vereniging Oud Lisse zijn de minuutplans gedigitaliseerd en beschikbaar
+gemaakt als linked data. Ook de Oorspronkelijke Aanwijzende Tafels met eigendomsbeschrijving
+zijn opgenomen. Zo kunnen we eenvoudig de kaart van 1812 genereren.
 
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/perceel-achternaam">
 </query>
 
-## Rijksmonumenten
+## Eigendom
 
-Plot rijksmonumenten op een minuutplan. Ellen stuurt WMTS van de
-minuutplan aan Hans. Hans kijkt of we dit er even via leaflet en dan
-in data story (zonder yasgui) Wouter/Hans hoe resultaat in de data
-story te hangen.
+Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een perceel. 
+De percelen van Keukenhof blijken in bezit van Johan Steengracht van Oost Cappelle.
+We kunnen onmiddellijk doorklikken naar DBpedia en zien een portret en zien dat 
+Johan een bekende kunstverzamelaar en museumdirecteur was.
+
+'''Link naar DBpedia op basis van Johan Steengracht van Oost Capelle´´´
+
+Welke percelen waren in bezit van Steengracht van Oost Capelle? Het Lisse-
+endpoint geeft deze informatie.
+
+'''Kaart met percelen die in eigendom waren van Steengracht'''
+
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Door middel van een 
+query op het Lisse-endpoint vinden we een lijst personen die in percelen land 
+bezitten in Lisse en in Amsterdam wonen.
+
+'''Tabel met namen van personen die in Amsterdam wonen en het aantal percelen in bezit'''
+
+''Kunnen we nog iets leuks doen met deze lijst? Bijvoorbeeld Coenraad Jacob 
+Temminck; zie DBpedia; eerste directeur van Museum voor Natuur Historie in Leiden''
 
 ## Veldwerken
 
-Rein (15 april) Query veldwerken erbij (pdok labs endpoint) Welke
-percelen zijn al die tijd hetzelfde gebleven? Voor keukenhof Wouter
+Bij veranderingen aan percelen of gebouwen, wordt door een landmeter van het Kadaster 
+de nieuwe situatie opgenomen. De tekeningen die in het veld gemaakt worden, worden
+Veldwerken genoemd; daarin staat veel meetcijfers en inlichtingen over verkoper en koper. 
+Het Kadaster bewaart de veldwerken in het Kadastraal archief. De volgende query
+levert de veldwerken die gekoppeld zijn aan het perceel van kasteel Keukenhof.
+
+'''Veldwerken van Kasteel Keukenhof - perceel A255'''
+
+Query veldwerken erbij (pdok labs endpoint) Kijk naar percelen waar het 
+kasteel Keukenho op staat. Voor keukenhof Wouter
 vragen om dit eevn over te nemen.
 
 ## Beeldbank
@@ -108,6 +148,14 @@ in de visualisatie meegenomen worden. (handwerk; filter de foto’s; een
 stuk of 10 uitkiezen en URL opnemen)
 
 ## Beroepen
+
+In het Lisse-endpoint is informatie van de Volkstelling 1830 opgenomen. 
+Ieder persoon is aan een adres gekoppeld een deel van de personen heeft een beroep. 
+We kunnen nu een link leggen met de database met beroepenclassificaties van het IISG. 
+
+'''Kaartje met beroepenstructuur'''
+
+'''Kaartje met afbeelding status beroepen op geografie'''
 
 Richard (15 april) Iets met Beroepen. De Beroepen van Lisse op de
 kaart.  Beroepen structuur Lisse (organo-gram) (Binnen Lisse kijken
