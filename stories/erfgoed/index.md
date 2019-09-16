@@ -174,6 +174,8 @@ Op de kaart wordt zichtbaar wie in de huisjes wonen, hoe oud ze zijn en wat hun 
 
 '''Toon foto van monument 511416'''
 
+[Keukenhof](https://cultureelerfgoed.nl/monumenten/511416)
+
 '''Toon kaart met perceel C191 met popup met bewoners, leeftijd, geslacht, beroep'''
 
 ## Familieboom
