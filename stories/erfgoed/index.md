@@ -165,6 +165,28 @@ codering. (evt. Een vergelijking met amsterdam)) Richard levert ld
 bestandje aan Hans/Henk met query: Dinsdag Hans/Henk: publiceren data:
 paar weekjes.
 
+## Bewoners
+
+In het Lisse-endpoint kunnen we ook bewoners vinden. Selecteer bijvoorbeeld perceel C191. 
+Dit perceel behoort bij Keukenhof. Op dit perceel staan een twee dienstwoningen, bekend staand
+als 't Hoogje. Zie de documentatie van het monument (monumentregister 511416). 
+Op de kaart wordt zichtbaar wie in de huisjes wonen, hoe oud ze zijn en wat hun beroep is.
+
+'''Toon foto van monument 511416'''
+
+'''Toon kaart met perceel C191 met popup met bewoners, leeftijd, geslacht, beroep'''
+
+## Familieboom
+
+Aangezien we in het Lisse-endpoint ook beschikken over relatie-gegevens, kunnen we 
+de het familieverband van Nicolaas Berkel afbeelden.
+
+<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
+</query>
+
+
+'''
+
 ## Historische artikelen
 
 Richard (15 april) kijkt erna…Historische krant artikelen? (is dat
