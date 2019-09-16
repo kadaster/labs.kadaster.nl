@@ -23,7 +23,7 @@ In een Data Story proberen we een inhoudelijk verhaal te vertellen aan de
 hand van data. In dit geval gaat het om de geschiedenis van buitenplaatsen in 
 Lisse en de bewoners van Lisse.
 
-Voor deze Data Story maken we gebruik van de volgende bronnen:
+Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
 
 * data.oudlisse.nl, een SPARQL-endpoint van de Vereniging Oud Lisse met data
 van o.a. percelen, gebouwen, eigenaren, bewoners in Lisse omstreeks 1830
@@ -52,15 +52,27 @@ haar buitenhuizen en landgoederen. Al vroeg in de Gouden Eeuw werden buitenplaat
 aangelegd op door droogbemaling nieuw gewonnen land, maar ook werden ze in grote aantallen 
 achter de duinen en langs bevaarbare waterwegen gebouwd. 
 
-Joop (15 april). Query we plotten de rijksmonumenten van Lisse op een
-kaart (schatting is 34) (steden landhuizen en parken, in de
-beschrijving staat buitenplaats). We tonen gallery view van de
-monumenten met beschrijving. Daarna gaan we focussen op [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+Veel buitenplaatsen zijn verdwenen. Wat behouden is, zien we veelal terug als monumenten.
+Laten we onze aandacht eens richten op Lisse, een dorp dat gelegen is tegen een oude 
+strandwal (duinen) en al in de 17de eeuw goed toegankelijk via het water en de weg. In Lisse 
+ontstonden vele buitenplaatsen.
+
+Wat is er nog te vinden van de buitenplaatsen? We starten onze data story met met een 
+overzicht van de rijksmonumenten van Lisse op een kaart. De data is afkomstig van het 
+linked data platform van de RCE.
 
 <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
        data-output="geo"
        data-query-ref="rce.rq">
 </query>
+
+Naast de afbeelding op de kaart kunnen we ook gallery view tonen vvan de
+monumenten met beschrijving. 
+
+'''Gallery view monumenten'''
+
+In het overzicht van de monumenten komen we Keukenhof tegen. Daarna gaan we focussen op [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+
 
 ## Minutenplan
 
