@@ -127,8 +127,9 @@ Temminck; zie DBpedia; eerste directeur van Museum voor Natuur Historie in Leide
 Bij veranderingen aan percelen of gebouwen, wordt door een landmeter van het Kadaster 
 de nieuwe situatie opgenomen. De tekeningen die in het veld gemaakt worden, worden
 Veldwerken genoemd; daarin staat veel meetcijfers en inlichtingen over verkoper en koper. 
-Het Kadaster bewaart de veldwerken in het Kadastraal archief. De volgende query
-levert de veldwerken die gekoppeld zijn aan het perceel van kasteel Keukenhof.
+Het Kadaster bewaart de veldwerken in het Kadastraal archief. Ook het kasteel Keukenhof 
+is regelmatig verbouwd. De volgende query levert de veldwerken die gekoppeld zijn aan 
+het perceel van kasteel Keukenhof.
 
 '''Veldwerken van Kasteel Keukenhof - perceel A255'''
 
@@ -149,7 +150,12 @@ stuk of 10 uitkiezen en URL opnemen)
 
 ## Beroepen
 
-In het Lisse-endpoint is informatie van de Volkstelling 1830 opgenomen. 
+Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen 
+en de bediening. In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen. Via een
+query krijgen we een tabel met de beroepen van de bewoners van Lisse in 1830.
+
+'''Tabel met beroepen en voor ieder beroep het aantal van voorkomen'''
+
 Ieder persoon is aan een adres gekoppeld een deel van de personen heeft een beroep. 
 We kunnen nu een link leggen met de database met beroepenclassificaties van het IISG. 
 
@@ -174,7 +180,7 @@ Op de kaart wordt zichtbaar wie in de huisjes wonen, hoe oud ze zijn en wat hun 
 
 '''Toon foto van monument 511416'''
 
-[Keukenhof](https://cultureelerfgoed.nl/monumenten/511416)
+[Keukenhof 't Hoogje](https://cultureelerfgoed.nl/monumenten/511416)
 
 '''Toon kaart met perceel C191 met popup met bewoners, leeftijd, geslacht, beroep'''
 
