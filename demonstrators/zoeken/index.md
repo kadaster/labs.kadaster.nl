@@ -2,9 +2,9 @@
 layout: page
 title: Zoeken in metadata
 ---
-# Zoek naar dataset op begrip
+# Zoeken in metadata
 
-Geef een begrip op om een bijbehorende dataset te vinden
+Geef een begrip op om een bijbehorende dataset te vinden:
 
 <input id="searchbox">*geef een term op om te zoeken*
 

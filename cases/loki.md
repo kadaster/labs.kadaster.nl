@@ -8,7 +8,7 @@ title: Use Case ― Loki voor GEO Informatieverstrekking
 
 Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.  De [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) is het kloppend hart van Loki.
 
-Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de Kadaster Knowledge Graph, ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
+Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de [Kadaster Knowledge Graph](/cases/kadaster-knowledge-graph.html), ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
 
 <div class="cards-wrapper">
   <a href="/demonstrators/loki/index.html">

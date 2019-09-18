@@ -27,6 +27,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Bekijk hoe we middels Augmented Reality een 3D overzicht geven over uw buurt!</div>
     </div>
   </a>
+  <a href="/cases/landbouwverkeer">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/weiland.jpg">
+      <div class="card-title">Routering Landbouwverkeer</div>
+      <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
+    </div>
+  </a>  
   <a href="/cases/grondmarkt">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -38,7 +46,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
   <a href="/cases/live-data-in-een-bi-toepassing">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/tableau.jpg">
+      <img class="card-image" src="/assets/images/tableau-logo.jpg">
       <div class="card-title">Live data in een BI Toepassing</div>
       <div class="card-description">Hoe we een API aanspreken als bron in een standaard BI toepassing.</div>
     </div>

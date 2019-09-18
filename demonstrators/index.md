@@ -42,9 +42,9 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/tableau">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/tableau-logo.jpg">
       <div class="card-title">Data exploratie met Tableau</div>
-      <div class="card-description">Data exploratie met Tableau.</div>
+      <div class="card-description">Kunnen we actuele data bij de bron gebruiken in mooie data visualisatie tools zoals Tableau?</div>
     </div>
   </a>
   <a href="/demonstrators/energielabels-voorspellen">
@@ -60,23 +60,31 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/webvowl.png">
       <div class="card-title">Vocabulaire visualisatie met WebVOWL</div>
-      <div class="card-description">Vocabulaire visualisatie met WebVOWL.</div>
+      <div class="card-description">Met deze demo laten we zien dat onze datamodellen ook te visualiseren zijn met tools op het Web.</div>
+    </div>
+  </a>
+  <a href="http://linkeddata.ordina.nl/pdkg/resource?subject=https%3A%2F%2Flinkeddata.cultureelerfgoed.nl%2Fcho-kennis%2Fid%2Frijksmonument%2F19157">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
+      <div class="card-title">PDOK Knowledge Graph Browser</div>
+      <div class="card-description">Een demonstrator die de kracht laat zien van het browsen door een Knowledge Graph op instantie (object) niveau.</div>
     </div>
   </a>
   <a href="/demonstrators/archief-mapviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/gemeente-lisse.jpg">
       <div class="card-title">Archief Mapviewer</div>
-      <div class="card-description">Archief Mapviewer.</div>
+      <div class="card-description">Experiment om veldwerken te linken aan huidige percelen.</div>
     </div>
   </a>
   <a href="/demonstrators/zoeken">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Zoeken</div>
-      <div class="card-description">Zoeken.</div>
+      <img class="card-image" src="/assets/images/lov.jpg">
+      <div class="card-title">Zoeken in metadata</div>
+      <div class="card-description">Waar zoekt een data gebruiker naar?</div>
     </div>
   </a>
 </div>

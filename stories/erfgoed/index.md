@@ -1,49 +1,140 @@
 ---
 banner: /assets/images/lisse.jpg
 layout: story
-output: geo
 published: true
 title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 
 # PLDN-Werkgroep Digitaal Erfgoed
 
-Dit is een Data Story in ontwikkeling.  In de PLDN werkgroep Erfgoed
-hebben we een idee voor een data story beschreven.  Deze willen we de
-komende weken stap voor stap gaan vullen.
+## Achtergrond
+
+Het Platform Linked Data Nederland (PLDN) is een netwerk waarin experts en 
+belangstellenden kennis delen over Linked Data. De werkgroep Digitaal Erfgoed 
+wil een bijdrage leveren aan de totstandkoming van meer samenhang in 
+digitale bronnen voor erfgoed en de totstandkoming van hulpmiddelen voor 
+eindgebruikers.
+
+Deze pagina bevat een Data Story waarmee de werkgroep wil laten zien dat
+linked data geschikt is om diverse bronnen te verbinden en zo tot nieuwe
+en interessante inzichten te komen.
+
+In een Data Story proberen we een inhoudelijk verhaal te vertellen aan de
+hand van data. In dit geval gaat het om de geschiedenis van buitenplaatsen in 
+Lisse en de bewoners van Lisse.
+
+Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
+
+* data.oudlisse.nl, een SPARQL-endpoint van de Vereniging Oud Lisse met data
+van o.a. percelen, gebouwen, eigenaren, bewoners in Lisse omstreeks 1830
+* linkeddata.cultureelerfgoed.nl, een SPARQ-endpoint van de Rijksdienst voor 
+Cultureel Erfgoed met o.a data over monumenten.
+* Beeldbank van de Rijksdienst voor Cultureel Erfgoed
+* Beeldbank van Erfgoed Leiden en Omstreken
+* pdok labs endpoint, een SPARQL-endpoint van het Kadaster dat o.a. data 
+ontsluit van tekeningen uit het kadastraal archief
+* HISCO, een classificatiesysteem voor beroepen van het Internationaal Instituur voor
+Sociale Geschiedenis
+* kbresearch.nl 
+* Europeana
+* DBpedia
+* Delpher
+* Digitale collectie Nederland
+* Rijksmuseum
+
+# Data Story “Buitenplaatsen in Lisse”
 
 ## Buitenplaatsen
 
-Joop (15 april). Query we plotten de rijksmonumenten van Lisse op een
-kaart (schatting is 34) (steden landhuizen en parken, in de
-beschrijving staat buitenplaats). We tonen gallery view van de
-monumenten met beschrijving. Daarna gaan we focussen op [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+In de 17de eeuw groeide de rijkdom van de Amsterdamse elite. Het aantal rentieniers 
+in deze groep nam sterk toe. Rond 1700 had tenminste een derde van de Amsterdamse elite 
+haar buitenhuizen en landgoederen. Al vroeg in de Gouden Eeuw werden buitenplaatsen 
+aangelegd op door droogbemaling nieuw gewonnen land, maar ook werden ze in grote aantallen 
+achter de duinen en langs bevaarbare waterwegen gebouwd. 
+
+Veel buitenplaatsen zijn verdwenen. Wat behouden is, zien we veelal terug als monumenten.
+Laten we onze aandacht eens richten op Lisse, een dorp dat gelegen is tegen een oude 
+strandwal (duinen) en al in de 17de eeuw goed toegankelijk via het water en de weg. In Lisse 
+ontstonden vele buitenplaatsen.
+
+## Rijksmonumenten
+
+Wat is er nog te vinden van de buitenplaatsen? We starten onze data story met met een 
+overzicht van de rijksmonumenten van Lisse op een kaart. De data is afkomstig van het 
+linked data platform van de RCE.
 
 <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
        data-output="geo"
        data-query-ref="rce.rq">
 </query>
 
-## Minutenplan
+Naast de afbeelding op de kaart kunnen we de monumenten met beschrijving ook in een gallery 
+view tonen.
 
-Henk/Hans (1 mei) query oud lisse, minutenplannen, eigenaren. (lisse
-endpoint) Voor alle…bv. Eigenaren van de 20 monumenten Inzoomen op
-keukenhof Hans levert voorlopige query aan Erwin.
+'''Gallery view monumenten'''
+
+In het overzicht van de monumenten komen we Keukenhof tegen. Keukenhof is van oorsprong
+een buitenplaats die gesticht werd in 1641 door commandeur Adriaen Maertensz Block. Het 
+landgoed groeide uit tot een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het 
+Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het Keukenduin groente en 
+fruit voor de keuken van kasteel Teylingen.
+
+De keukenhof zien we terug als monument op de website van de RCE  
+[Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+
+
+## Minuutplan
+
+Hoe heeft het terrein van Keukenhof er vroeger uitgezien? De eerste betrouwbare kaarten
+werden door het Kadaster gemaakt tussen 1812 en 1830. Die eerste kaarten werden 
+minuutplans genoemd. De minuutplans van Lisse worden door Erfgoed Leiden en Omstreken
+beschikbaar gesteld. Zie de volgende kaart.
+
+'''Minuutplan Lisse sectie A blad 1'''
+
+Door de Vereniging Oud Lisse zijn de minuutplans gedigitaliseerd en beschikbaar
+gemaakt als linked data. Ook de Oorspronkelijke Aanwijzende Tafels met eigendomsbeschrijving
+zijn opgenomen. Zo kunnen we eenvoudig de kaart van 1812 genereren.
 
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/perceel-achternaam">
 </query>
 
-## Rijksmonumenten
+## Eigendom
 
-Plot rijksmonumenten op een minuutplan. Ellen stuurt WMTS van de
-minuutplan aan Hans. Hans kijkt of we dit er even via leaflet en dan
-in data story (zonder yasgui) Wouter/Hans hoe resultaat in de data
-story te hangen.
+Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een perceel. 
+De percelen van Keukenhof blijken in bezit van Johan Steengracht van Oost Cappelle.
+We kunnen onmiddellijk doorklikken naar DBpedia en zien een portret en zien dat 
+Johan een bekende kunstverzamelaar en museumdirecteur was.
+
+'''Link naar DBpedia op basis van Johan Steengracht van Oost Capelle´´´
+
+Welke percelen waren in bezit van Steengracht van Oost Capelle? Het Lisse-
+endpoint geeft deze informatie.
+
+'''Kaart met percelen die in eigendom waren van Steengracht'''
+
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Door middel van een 
+query op het Lisse-endpoint vinden we een lijst personen die in percelen land 
+bezitten in Lisse en in Amsterdam wonen.
+
+'''Tabel met namen van personen die in Amsterdam wonen en het aantal percelen in bezit'''
+
+''Kunnen we nog iets leuks doen met deze lijst? Bijvoorbeeld Coenraad Jacob 
+Temminck; zie DBpedia; eerste directeur van Museum voor Natuur Historie in Leiden''
 
 ## Veldwerken
 
-Rein (15 april) Query veldwerken erbij (pdok labs endpoint) Welke
-percelen zijn al die tijd hetzelfde gebleven? Voor keukenhof Wouter
+Bij veranderingen aan percelen of gebouwen, wordt door een landmeter van het Kadaster 
+de nieuwe situatie opgenomen. De tekeningen die in het veld gemaakt worden, worden
+Veldwerken genoemd; daarin staat veel meetcijfers en inlichtingen over verkoper en koper. 
+Het Kadaster bewaart de veldwerken in het Kadastraal archief. Ook het kasteel Keukenhof 
+is regelmatig verbouwd. De volgende query levert de veldwerken die gekoppeld zijn aan 
+het perceel van kasteel Keukenhof.
+
+'''Veldwerken van Kasteel Keukenhof - perceel A255'''
+
+Query veldwerken erbij (pdok labs endpoint) Kijk naar percelen waar het 
+kasteel Keukenho op staat. Voor keukenhof Wouter
 vragen om dit eevn over te nemen.
 
 ## Beeldbank
@@ -59,6 +150,19 @@ stuk of 10 uitkiezen en URL opnemen)
 
 ## Beroepen
 
+Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen 
+en de bediening. In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen. Via een
+query krijgen we een tabel met de beroepen van de bewoners van Lisse in 1830.
+
+'''Tabel met beroepen en voor ieder beroep het aantal van voorkomen'''
+
+Ieder persoon is aan een adres gekoppeld een deel van de personen heeft een beroep. 
+We kunnen nu een link leggen met de database met beroepenclassificaties van het IISG. 
+
+'''Kaartje met beroepenstructuur'''
+
+'''Kaartje met afbeelding status beroepen op geografie'''
+
 Richard (15 april) Iets met Beroepen. De Beroepen van Lisse op de
 kaart.  Beroepen structuur Lisse (organo-gram) (Binnen Lisse kijken
 naar de variatie. (alleen de sjieke beroepen?) Wat is de meest
@@ -66,6 +170,30 @@ welgestelde straat/wijk van Lisse? Een plaat met kleur
 codering. (evt. Een vergelijking met amsterdam)) Richard levert ld
 bestandje aan Hans/Henk met query: Dinsdag Hans/Henk: publiceren data:
 paar weekjes.
+
+## Bewoners
+
+In het Lisse-endpoint kunnen we ook bewoners vinden. Selecteer bijvoorbeeld perceel C191. 
+Dit perceel behoort bij Keukenhof. Op dit perceel staan een twee dienstwoningen, bekend staand
+als 't Hoogje. Zie de documentatie van het monument (monumentregister 511416). 
+Op de kaart wordt zichtbaar wie in de huisjes wonen, hoe oud ze zijn en wat hun beroep is.
+
+'''Toon foto van monument 511416'''
+
+[Keukenhof 't Hoogje](https://cultureelerfgoed.nl/monumenten/511416)
+
+'''Toon kaart met perceel C191 met popup met bewoners, leeftijd, geslacht, beroep'''
+
+## Familieboom
+
+Aangezien we in het Lisse-endpoint ook beschikken over relatie-gegevens, kunnen we 
+de het familieverband van Nicolaas Berkel afbeelden.
+
+<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
+</query>
+
+
+'''
 
 ## Historische artikelen
 
@@ -116,7 +244,7 @@ Rijksmuseum data…
 
 DBpedia query op beroemde personen…
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/lissenaren">
+<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/lissenaren">
 </query>
 
 ## NA
@@ -125,17 +253,17 @@ Erwin vraagt Ed: welk NA setje mag hier niet ontbreken In de
 dataset: gemeentegeschiedenis gebruiken Rein/Erwin/Wouter: maken data
 story aan, kopieren tekst.
 
-<query data-config-ref="https://demo.triply.cc/nationaal-archief/beeldbank/queries/lisse">
+<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/lisse">
 </query>
 
 ## Tulpen
 
 Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jaren 60 ontstaan) Ludiek ideetje: Voornamen met bloemen (fleur, bloem, madelief, …, misschien via voornamenbank) Tulpen die benoemd zijn naar beroemdheden: is er een beroemde lissenaar met een buitenplaats waarna een tulp is genoemd, en dan doorlinken naar dbpedia europeana, etc…  Serpens (marieke) https://www.clariah.nl/projecten/research-pilots/serpens/serpens#abstract Naturalis (leiden): https://www.nederlandsesoorten.nl/ https://www.wikidata.org/wiki/Property:P3405
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-hierarchy">
+<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/tulip-hierarchy">
 </query>
 
-<query data-config-ref="https://demo.triply.cc/dbpedia/core/queries/tulip-gallery">
+<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/tulip-gallery">
 </query>
 
 ## Familieboom
