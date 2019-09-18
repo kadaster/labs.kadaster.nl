@@ -49,8 +49,20 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 		  </figcaption>
 		</figure></li>
 	<li> Mocht je de instelling niet kunnen vinden op bovenstaande plekken, dan kan dat komen doordat je over een nieuwere versie van  Android beschikt. Sinds Android 8.0 (Oreo) moet je de toestemming om onbekende apps
-	te installeren verlenen aan de exacte app vanaf waar je de APK hebt gedownload. Download je de APK bijvoorbeeld met Google Chrome, dan moet je de machtiging om onbekende apps te installeren verlenen aan Chrome.
-	Deze machtiging zet je onder <b>Apps and Notifications-->Special App Access-->Onbekende Apps Installeren</b>. Daar verleen je de toegang aan de specifieke app waarmee je de APK installeert (bijv. Chrome). Zie ook Figuur 2. </li>
+	te installeren verlenen aan de exacte app vanaf waar je de APK hebt gedownload. Download je de APK bijvoorbeeld met Google Chrome, dan moet je de machtiging om onbekende apps te installeren verlenen aan Chrome. Zie ook de foutmelding in Figuur 2 (Links). 
+	Door op instellingen te drukken brengen de meeste Android telefoons je hiervoor direct naar de juiste plek. Alternatief kun je deze machtinging vinden onder <b>Apps en meldingen-->Speciale app-toegang-->Onbekende Apps Installeren</b>. 
+	Daar verleen je de toegang aan de specifieke app waarmee je de APK installeert (bijv. Chrome), zoals getoond in Figuur 2 (Rechts).  
+		<figure id="figuur-2">
+		  <a href="/assets/images/error-chrome-install.jpg">
+			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%">
+			     
+			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%">
+		  </a>
+		  <figcaption>
+			Figuur 2 ― Foutmelding die Chrome geeft als het installeren van onbekende apps nog niet is toegestaan en het scherm waarin je dat kunt toestaan. 
+		  </figcaption>
+		</figure>
+	</li>
 	<li> Installeer de applicatie.</li>
 	<li> Open de applicatie en richt je camera op <a href="/demonstrators/3d_map/3d-map.html">de kaart</a>. Enjoy! </li>
 </ol>
