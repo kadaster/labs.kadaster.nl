@@ -68,6 +68,6 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 		</figure>
 	</li>
 	<li> Installeer de applicatie.</li>
-	<li> Open de applicatie en richt je camera op <a href="/demonstrators/3d_map/3d-map.html">de kaart</a>. Enjoy! </li>
+	<li> Open de applicatie en richt je camera op <a href="/demonstrators/3d-map/3d-map.html">de kaart</a>. Enjoy! </li>
 </ol>
 			
