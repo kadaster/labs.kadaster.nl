@@ -5,6 +5,25 @@ title: Use Case ― Live data in een BI-toepassing
 ---
 # Use Case: Live data in een BI-toepassing
 
+<div class="cards-wrapper">
+  <a href="/demonstrators/legacydemonstrator/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/tableau-wdc.png">
+      <div class="card-title">Tableau Web Data Connector</div>
+      <div class="card-description">Spreek deze demonstrator aan vanuit Tableau om live data te ontvangen van onze demo API.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/livedatadashboard.png">
+      <div class="card-title">Tableau dashboard</div>
+      <div class="card-description">Dit is het dashboard dat gebruik maakt van de data in de Tableau WDC</div>
+    </div>
+  </a>
+</div>
+
 ## Introductie
 Bedrijven worden meer en meer gedwongen om data-gedreven te werken. Niet alleen verzamelen we met zijn allen meer en meer informatie, we raken ook steeds meer gewend aan het gebruik van data in onze 
 dagelijkse activiteiten en processen. Een belangrijke stap daarin is het gebruik van een Business Intelligence (BI) toepassing om de data op een intuitieve manier te ontsluiten en visualiseren. 
