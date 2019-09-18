@@ -38,14 +38,17 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 	<li> Download de APK (Android Package) bovenaan deze pagina of <a href = "/download/KadasterMapTable_InnovationHub.apk">door op deze link te klikken</a></li>
 	<li> Omdat dit een package is die niet uit de Google Play Store komt, zul je bij je Android telefoon moeten aangeven dat het OK is om de app te installeren. 
 	Dit doe je door de functionaliteit "Allow installation of apps from sources other than the Play Store" aan te zetten (NL: Installeren van apps met onbekende bronnen toestaan). 
-	Voor oudere versies van android software (Voor Android 8.0) kun je dit doen door <b>Settings-->Security-->Unknown sources</b> aan te zetten. Zie ook Figuur 1. Let op dat de precieze instelling afhankelijk is van het model van je telefoon. Indien deze stap lukt, sla de volgende stap over. 
-	Zoniet, ga naar de volgende stap.
+	Voor oudere versies van android software (Voor Android 8.0) kun je dit doen door <b>Instellingen-->Beveiliging-->Onbekende bronnen</b> aan te zetten. Zie ook Figuur 1. Let op dat de precieze instelling afhankelijk is van het model van je telefoon. Indien deze stap lukt, sla stap 3 over. 
+	Zoniet, ga naar stap 3.
 		<figure id="figuur-1">
-		  <a href="/assets/images/unknown_sources_settings.jpg">
-			<img src="/assets/images/unknown_sources_settings.jpg">
+		  <a href="/assets/images/nl-unknown-sources-1.jpg">
+			<img src="/assets/images/nl-unknown-sources-1.jpg" width = "306" height="543">
+		  </a>
+		  <a href="/assets/images/nl-unknown-sources-2.jpg">
+			<img src="/assets/images/nl-unknown-sources-2.jpg" width = "306" height="543">
 		  </a>
 		  <figcaption>
-			Figuur 1 ― Settings voor unknown sources in Android
+			Figuur 1 ― Settings voor unknown sources in Android, in het Nederlands.
 		  </figcaption>
 		</figure></li>
 	<li> Mocht je de instelling niet kunnen vinden op bovenstaande plekken, dan kan dat komen doordat je over een nieuwere versie van  Android beschikt. Sinds Android 8.0 (Oreo) moet je de toestemming om onbekende apps
@@ -55,7 +58,8 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 		<figure id="figuur-2">
 		  <a href="/assets/images/error-chrome-install.jpg">
 			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%">
-			     
+		</a>
+			<a href = "/assets/images/allow-chrome-access.jpg">
 			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%">
 		  </a>
 		  <figcaption>
