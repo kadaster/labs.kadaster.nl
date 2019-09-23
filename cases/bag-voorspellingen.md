@@ -8,7 +8,7 @@ title: Use Case ― Missende BAG-waarden voorspellen
   <a href="/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.png">
+      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG">
       <div class="card-title">R Shiny Dashboard</div>
       <div class="card-description">Bekijk de resultaten van dit voorspellend model ook in een interactief dashboard!</div>
     </div>
