@@ -59,6 +59,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
     </div>
   </a>
+  <a href="/cases/cbs-lod-demo">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kwb.jpg">
+      <div class="card-title">Kerncijfers Wijken- en Buurten (CBS) toegankelijk middels LOD</div>
+      <div class="card-description">In deze case bekijken we hoe we data van het CBS laagdrempelig beschikbaar kunnen stellen mbv Linked Open Data.</div>
+    </div>
+  </a>
   <a href="/cases/uw-huis">
     <div class="card">
       <div class="card-type">Use Case</div>
