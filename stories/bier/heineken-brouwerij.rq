@@ -140,5 +140,4 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
       '</dl>',
       '</dd>',
       '</dl>') as ?pandShapeLabel)
-  bind(?omschrijving as ?pandShapeTooltip)
 }
