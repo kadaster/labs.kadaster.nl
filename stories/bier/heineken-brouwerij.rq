@@ -3,7 +3,40 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix labs: <https://data.labs.pdok.nl/bag/def/>
 prefix schema: <http://schema.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rce: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
 select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
+  service <https://linkeddata.cultureelerfgoed.nl/sparql> {
+    {
+      SELECT ?naam ?monument ?omschrijving (group_concat(concat("Fase ",substr(str(?startdatum),3,1), ": de ", ?bouwLabel ," ",substr(str(?startdatum),1,4), " tot ",substr(str(?einddatum),1,4),"<br>")) as ?constructie)  WHERE {
+        {
+          select * where {
+            {
+              select distinct ?monument  where {
+                values (?woonplaatsNaamRCE ?straatNaamRCE ?huisnummerRCE) {
+                  ("Amsterdam" "Stadhouderskade" "78")
+                }
+                ?monument rce:heeftRijksmonument [ rce:heeftLocatieAanduiding
+                      [ rce:locatienaam ?woonplaatsNaamRCE ;
+                        rce:heeftLocatieAdres [ rce:huisnummer ?huisnummerRCE ;
+                                                rce:openbareRuimte ?straatNaamRCE ] ] ].
+              }
+            }
+            ?monument rce:heeftNaam [rce:naam ?naam] ;
+                      rce:heeftOmschrijving [rce:omschrijving ?omschrijving] ;
+                      rce:heeftRijksmonument [rce:rijksmonumentnummer ?monumentLabel ;
+                                              rce:heeftOorspronkelijkeFunctie [rce:hoofdfunctie "true"^^xsd:boolean ;
+                                                                               rce:heeftFunctieNaam [ skos:prefLabel ?bouwLabel ] ] ;
+                                              rce:heeftGebeurtenis ?gebeurtenis ] .
+            ?gebeurtenis rce:heeftGebeurtenisNaam  [ skos:prefLabel ?label] ;
+                         rce:heeftDatering/rce:heeftTijdvak/rce:einddatum ?einddatum ;
+                         rce:heeftDatering/rce:heeftTijdvak/rce:startdatum ?startdatum .
+          } ORDER BY ?startdatum
+        }
+      }
+      GROUP BY ?naam ?monument ?omschrijving
+    }
+  }
   {
     select * {
       values (?woonplaatsNaam ?straatNaam ?huisnummer) {
@@ -48,7 +81,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           rdfs:label ?verblijfsobjectLabel.
       }
       filter not exists {
-        ?verblijfsobject bag:eindGeldigheid _:4.
+        ?verblijfsobjectVoorkomen bag:eindGeldigheid _:4.
       }
       ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
       graph ?pandVoorkomen {
@@ -59,7 +92,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           rdfs:label ?pandLabel.
       }
       filter not exists {
-        ?pand bag:eindGeldigheid _:5.
+        ?pandVoorkomen bag:eindGeldigheid _:5.
       }
       ?pandStatus rdfs:label ?pandStatusLabel.
     }
@@ -69,31 +102,43 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
   }
   bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
   bind(concat(
-    '<h3>',str(?pandShapeName),'</h3>',
-    '<dl>',
-      '<dt>Verblijfsobject</dt>',
+      '<h3>',str(?pandShapeName),'</h3>',
+      '<dl>',
+      '<dt>Verblijfsobject (Kadaster)</dt>',
       '<dd>',
-        '<dl>',
-          '<dt>Identifier</dt>',
-          '<dd><a href="',str(?verblijfsobject),'" target="_blank">',str(?verblijfsobjectLabel),'</a>:</dd>',
-          '<dt>Woonplaats</dt>',
-          '<dd><a href="',str(?woonplaats),'" target="_blank">',str(?woonplaatsNaam),'</a></dd>',
-          '<dt>Oppervlakte</dt>',
-          '<dd>',str(?oppervlakte),'m²</dd>',
-          '<dt>Status</dt>',
-          '<dd><a href="',str(?verblijfsobjectStatus),'" target="_blank">',str(?verblijfsobjectStatusLabel),'</a></dd>',
-        '</dl>',
+      '<dl>',
+      '<dt>Identifier</dt>',
+      '<dd><a href="',str(?verblijfsobject),'" target="_blank">',str(?verblijfsobjectLabel),'</a></dd>',
+      '<dt>Woonplaats</dt>',
+      '<dd><a href="',str(?woonplaats),'" target="_blank">',str(?woonplaatsNaam),'</a></dd>',
+      '<dt>Oppervlakte</dt>',
+      '<dd>',str(?oppervlakte),'m2</dd>',
+      '<dt>Status</dt>',
+      '<dd><a href="',str(?verblijfsobjectStatus),'" target="_blank">',str(?verblijfsobjectStatusLabel),'</a></dd>',
+      '</dl>',
       '</dd>',
-      '<dt>Pand</dt>',
+      '<br>',
+      '<dt>Pand (Kadaster)</dt>',
       '<dd>',
-        '<dl>',
-          '<dt>Identifier</dt>',
-          '<dd><a href="',str(?pand),'" target="_blank">',str(?pandLabel),'</a>:</dd>',
-          '<dt>Bouwjaar</dt>',
-          '<dd>',str(?bouwjaar),'</dd>',
-          '<dt>Status</dt>',
-          '<dd><a href="',str(?pandStatus),'" target="_blank">',str(?pandStatusLabel),'</a></dd>',
-        '</dl>',
+      '<dl>',
+      '<dt>Identifier</dt>',
+      '<dd><a href="',str(?pand),'" target="_blank">',str(?pandLabel),'</a></dd>',
+      '<dt>Bouwjaar</dt>',
+      '<dd>',str(?bouwjaar),'</dd>',
+      '<dt>Status</dt>',
+      '<dd><a href="',str(?pandStatus),'" target="_blank">',str(?pandStatusLabel),'</a></dd>',
+      '</dl>',
       '</dd>',
-    '</dl>') as ?pandShapeLabel)
+      '<br>',
+      '<dt>Monument (RCE)</dt>',
+      '<dd>',
+      '<dl>',
+      '<dt>Identifier</dt>',
+      '<dd><a href="',str(?monument),'" target="_blank">',str(?naam),'</a></dd>',
+      '<dt>Constructie</dt>',
+      '<dd>',?constructie,'</dd>',
+      '</dl>',
+      '</dd>',
+      '</dl>') as ?pandShapeLabel)
+  bind(?omschrijving as ?pandShapeTooltip)
 }
