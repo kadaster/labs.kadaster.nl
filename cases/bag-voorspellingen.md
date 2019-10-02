@@ -4,7 +4,16 @@ layout: page
 title: Use Case ― Missende BAG-waarden voorspellen
 ---
 # Use Case: Missende BAG-waarden voorspellen
-
+<div class="cards-wrapper">
+  <a href="/demonstrators/bagdemonstrator/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG">
+      <div class="card-title">R Shiny Dashboard</div>
+      <div class="card-description">Bekijk de resultaten van dit voorspellend model ook in een interactief dashboard!</div>
+    </div>
+  </a>
+</div>
 ## Introductie
 Kadaster is beheerder van de Basisadministratie Adressen & Gebouwen (BAG). Deze administratie wordt door de bronhouders, de gemeenten, bijgehouden en gebruikt voor een scala aan (maatschappelijke) toepassingen. Deze gemeenten streven
 er natuurlijk naar om alle informatie die in deze administratie gaat zo goed mogelijk te onderhouden en dus kijkt het ook doorlopend naar mogelijkheden om de kwaliteit van zijn data te verbeteren. 
@@ -52,15 +61,8 @@ Er is nog geprobeert het model te verrijken met een Google Streetview foto's van
 Echter bleek dit een te tijdrovend en computationeel zware uitdaging te zijn om te doen in de tijd die de student voor dit onderzoek had. Dit zou nog wel een aandachtspunt zijn voor de toekomst om het model nog verder te verbeteren. 
 
 We hebben ervoor gekozen de uiteindelijke resultaten te delen met de gemeente Amsterdam in de vorm van een (Excel)-lijst met voorspellingen en een interactief R Shiny dashboard, waarin ze op een gebruiksvriendelijke manier de resultaten voor hun stad kunnen inzien.
-Een screenshot van deze demonstrator vind je in [Figuur 1](#figuur-1). Dit dashboard volgt nog als live demonstrator op deze website. 
-<figure id="figuur-1">
-  <a href="/assets/images/bag-voorspellingen.png">
-    <img src="/assets/images/bag-voorspellingen.png">
-  </a>
-  <figcaption>
-    Figuur 1 ― R Shiny dashboard van de resultaten.
-  </figcaption>
-</figure>
+Een live demo van deze resultaten kun je vinden via <a href="/demonstrators/bagdemonstrator/">deze link</a>.  
+
 
 <div class="textbox" markdown="1">
 ## R, RStudio & R Shiny dashboards

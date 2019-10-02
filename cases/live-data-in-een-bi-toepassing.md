@@ -5,6 +5,25 @@ title: Use Case ― Live data in een BI-toepassing
 ---
 # Use Case: Live data in een BI-toepassing
 
+<div class="cards-wrapper">
+  <a href="/demonstrators/legacydemonstrator/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/tableau-wdc.png">
+      <div class="card-title">Tableau Web Data Connector</div>
+      <div class="card-description">Spreek deze demonstrator aan vanuit Tableau om live data te ontvangen van onze demo API.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/livedatadashboard.png">
+      <div class="card-title">Tableau dashboard</div>
+      <div class="card-description">Dit is het dashboard dat gebruik maakt van de data in de Tableau WDC</div>
+    </div>
+  </a>
+</div>
+
 ## Introductie
 Bedrijven worden meer en meer gedwongen om data-gedreven te werken. Niet alleen verzamelen we met zijn allen meer en meer informatie, we raken ook steeds meer gewend aan het gebruik van data in onze 
 dagelijkse activiteiten en processen. Een belangrijke stap daarin is het gebruik van een Business Intelligence (BI) toepassing om de data op een intuitieve manier te ontsluiten en visualiseren. 
@@ -58,13 +77,6 @@ Wanneer we op de knop drukken wordt er achtereenvolgens:
   <li> De ge-transformeerde data als relationele data in Tableau ingelezen </li>
 </ol>
 
-Uitiendelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. Hoe lang lopen bepaalde terugmeldingen al?  En worden deze binnen de targets afgehandeld? Visueel kun je het dashboard vinden in [Figuur 2](#figuur-2).
-
-<figure id="figuur-1">
-  <a href="/assets/images/livedatadashboard.png">
-    <img src="/assets/images/livedatadashboard.png">
-  </a>
-  <figcaption>
-    Figuur 2 ― Tableau dashboard voor terugmeldingen, gebruik makende van onze web data connector
-  </figcaption>
-</figure>
+Uiteindelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen. 
+Hoe lang lopen bepaalde terugmeldingen al?  En worden deze binnen de targets afgehandeld? Visueel kun je het dashboard vinden via <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">deze link</a>. 
+Let wel dat deze resultaten gebaseerd zijn op dummy data met eenzelfde structuur als de originele data. 
