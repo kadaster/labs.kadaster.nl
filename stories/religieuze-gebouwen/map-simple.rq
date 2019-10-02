@@ -22,5 +22,5 @@ select ?shape ?shapeColor ?shapeLabel {
  	  filter(?c = brt:Synagoge)
     bind('orange' as ?shapeColor)
   }
-  bind(concat('<h2>',strafter(str(?c),'#'),' - ',str(?soortnaam),'</h2>') as ?shapeLabel)
+  bind(concat('<h2><a href="',str(?building),'">',strafter(str(?c),'#'),' - ',str(?soortnaam),'</a></h2>') as ?shapeLabel)
 }
