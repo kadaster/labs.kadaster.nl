@@ -25,12 +25,8 @@ select
         ceo:heeftLocatieAanduiding/ceo:heeftLocatieAdres/ceo:heeftGemeente <http://standaarden.overheid.nl/owms/terms/Lisse_(gemeente)>;
         ceo:heeftGeometrie/geo:asWKT ?shape;
         ceo:heeftOorspronkelijkeFunctie/ceo:heeftFunctieNaam/skos:prefLabel ?functie.
-      optional {
-        ?monument ceo:heeftNaam/ceo:naam ?naam.
-      }
-      optional {
-        ?monument ceo:heeftType/ceo:heeftTypeNaam/skos:prefLabel ?type.
-      }
+      optional { ?monument ceo:heeftNaam/ceo:naam ?naam. }
+      optional { ?monument ceo:heeftType/ceo:heeftTypeNaam/skos:prefLabel ?type. }
     }
     group by ?monument ?naam ?nummer ?shape ?type
   }

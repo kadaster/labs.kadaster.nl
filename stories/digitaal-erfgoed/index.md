@@ -25,51 +25,57 @@ Lisse en de bewoners van Lisse.
 
 Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
 
-* data.oudlisse.nl, een SPARQL-endpoint van de Vereniging Oud Lisse met data
-van o.a. percelen, gebouwen, eigenaren, bewoners in Lisse omstreeks 1830
-* linkeddata.cultureelerfgoed.nl, een SPARQ-endpoint van de Rijksdienst voor 
-Cultureel Erfgoed met o.a data over monumenten.
-* Beeldbank van de Rijksdienst voor Cultureel Erfgoed
-* Beeldbank van Erfgoed Leiden en Omstreken
-* pdok labs endpoint, een SPARQL-endpoint van het Kadaster dat o.a. data 
-ontsluit van tekeningen uit het kadastraal archief
-* HISCO, een classificatiesysteem voor beroepen van het Internationaal Instituur voor
-Sociale Geschiedenis
+* [data.oudlisse.nl](https://data.oudlisse.nl), een SPARQL-endpoint
+  van de Vereniging Oud Lisse met data van o.a. percelen, gebouwen,
+  eigenaren, bewoners in Lisse omstreeks 1830.
+* [linkeddata.cultureelerfgoed.nl](https://linkeddata.cultureelerfgoed.nl),
+  een SPARQL-endpoint van de Rijksdienst voor Cultureel Erfgoed met
+  o.a data over monumenten.
+* Beeldbank van de Rijksdienst voor Cultureel Erfgoed.
+* Beeldbank van Erfgoed Leiden en Omstreken.
+* PDOK, een SPARQL-endpoint van het Kadaster dat o.a. de
+  basisregistraties ontsluit, alsook informatie uit het Kadastraal
+  archief.
+* HISCO, een classificatiesysteem voor beroepen van het Internationaal
+  Instituur voor Sociale Geschiedenis (IISG).
 * kbresearch.nl 
 * Europeana
 * DBpedia
 * Delpher
-* Digitale collectie Nederland
+* Digitale Collectie Nederland
 * Rijksmuseum
 
 # Data Story “Buitenplaatsen in Lisse”
 
 ## Buitenplaatsen
 
-In de 17de eeuw groeide de rijkdom van de Amsterdamse elite. Het aantal rentieniers 
-in deze groep nam sterk toe. Rond 1700 had tenminste een derde van de Amsterdamse elite 
-haar buitenhuizen en landgoederen. Al vroeg in de Gouden Eeuw werden buitenplaatsen 
-aangelegd op door droogbemaling nieuw gewonnen land, maar ook werden ze in grote aantallen 
-achter de duinen en langs bevaarbare waterwegen gebouwd. 
+In de 17<sup>de</sup> eeuw groeide de rijkdom van de Amsterdamse
+elite.  Het aantal rentieniers in deze groep nam sterk toe.  Rond 1700
+had tenminste een derde van de Amsterdamse elite één of meer
+buitenhuizen en/of landgoederen.  Al vroeg in de Gouden Eeuw werden
+buitenplaatsen aangelegd op door droogbemaling nieuw gewonnen land,
+maar ook werden ze in grote aantallen achter de duinen en langs
+bevaarbare waterwegen gebouwd.
 
-Veel buitenplaatsen zijn verdwenen. Wat behouden is, zien we veelal terug als monumenten.
-Laten we onze aandacht eens richten op Lisse, een dorp dat gelegen is tegen een oude 
-strandwal (duinen) en al in de 17de eeuw goed toegankelijk via het water en de weg. In Lisse 
-ontstonden vele buitenplaatsen.
+Veel buitenplaatsen zijn verdwenen.  Wat behouden is, zien we veelal
+terug als monumenten.  Laten we onze aandacht eens richten op Lisse,
+een dorp dat gelegen is tegen een oude strandwal (duinen) en al in de
+17<sup>de</sup> eeuw goed toegankelijk via het water en de weg.  In
+Lisse ontstonden vele buitenplaatsen.
 
 ## Rijksmonumenten
 
-Wat is er nog te vinden van de buitenplaatsen? We starten onze data story met met een 
-overzicht van de rijksmonumenten van Lisse op een kaart. De data is afkomstig van het 
-linked data platform van de RCE.
+Wat is er nog te vinden van de buitenplaatsen?  We starten onze Data
+Story met een overzicht van de rijksmonumenten van Lisse op een
+kaart.  De data is afkomstig van het Linked Data platform van de RCE.
 
 <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
        data-output="geo"
        data-query-ref="rce.rq">
 </query>
 
-Naast de afbeelding op de kaart kunnen we de monumenten met beschrijving ook in een gallery 
-view tonen.
+Naast de afbeelding op de kaart kunnen we de monumenten met
+beschrijving ook in een gallerij tonen.
 
 '''Gallery view monumenten'''
 
