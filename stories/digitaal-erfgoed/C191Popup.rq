@@ -1,0 +1,20 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX def: <http://data.oudlisse.nl/def#>
+SELECT  ?shape (concat(
+          '<table style="width:100%" border="1">',
+          "<h2>Bewoners van 't Hoogje</h2>",
+          '<tr><th>Naam</th><th>beroep</th><th>leeftijd</th><th>gezindte</th></tr>',
+          group_concat(distinct ?row;separator=""),
+          '</table>') as ?shapeLabel) WHERE {
+  ?Perceel geo:asWKT ?shape ;
+           a def:Perceel ;
+           def:nummerPerceel "C191" .
+  ?bewoners def:woontOpAdres/def:gekoppeldAanPerceel ?Perceel .
+  ?bewoners rdfs:label ?fullName ;
+            def:beroep ?beroep ;
+            def:leeftijd ?leeftijd ;
+            def:gezindte ?gezindte .
+  bind(concat('<tr><td>',?fullName,'</td><td>',if(bound(?beroep),?beroep,''),'</td><td>',if(bound(?leeftijd),?leeftijd,''),'</td><td>',if(bound(?gezindte),?gezindte,''),'</td></tr>') as ?row)
+}
+group by ?shape
