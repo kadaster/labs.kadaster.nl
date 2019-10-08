@@ -126,7 +126,7 @@ Leiden en Omstreken beschikbaar gesteld.
 
 <!-- '''Minuutplan Lisse sectie A blad 1''' -->
 <figure id="figuur-4">
-  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="400">
+  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="600">
   <figcaption>
     Figuur 4 ― Minuutplan van Keukenhof.
   </figcaption>
@@ -139,9 +139,7 @@ Aanwijzende Tafels met eigendomsbeschrijving zijn opgenomen.  [Figuur
 is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
 
 <figure id="perceel-achternaam">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="perceel-achternaam.rq">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/perceel-achternaam">
   </query>
   <figcaption>
     Figuur 5 ― Percelen en hun eigenaren in Lisse in 1812.
@@ -163,9 +161,7 @@ op basis van Johan Steengracht van Oost Capelle.
 gegevens uit het Lisse-endpoint.
 
 <figure id="JohanPerceel">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="johan-perceel.rq">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/johan-perceel">
   </query>
   <figcaption>
     Figuur 6 ― Percelen die in het bezit waren van Steengracht van Oost Capelle.
@@ -180,9 +176,7 @@ die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
 7](#AmsterdamPerceel)).
 
 <figure id="AmsterdamPerceel">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="amsterdam-perceel.rq">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/amsterdam-perceel">
   </query>
   <figcaption>
     Figuur 7 ― Amsterdammers die percelen in Lisse bezaten.
@@ -240,9 +234,7 @@ in 1830.
 <!-- '''Tabel met beroepen en voor ieder beroep het aantal van voorkomen''' -->
 
 <figure id="BeroepenOudLisse">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="beroepen-oud-lisse.rq">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/beroepen-oud-lisse">
   </query>
   <figcaption>
     Figure 8 ― Beroepen in Lisse in 1830.
@@ -258,10 +250,10 @@ de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 <figure id="KaartStatusBeroep">
   <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
          data-output="geo"
-         data-query-ref="KaartStatusBeroep.rq">
+         data-query-ref="kaart-status-beroep.rq">
   </query>
   <figcaption>
-    Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
+    TODO Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
   </figcaption>
 </figure>
 
@@ -276,22 +268,22 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 
 <figure id="Lisse_Stationsweg_164-166_01">
   <a href="https://cultureelerfgoed.nl/monumenten/511416" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg" height="400">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg" height="600">
   </a>
   <figcaption>
     Figuur 10 ― Afbeelding van monument 't Hoogje.
   </figcaption>
 </figure>
 
-[Figuur 11](#C191Popup) toont perceel C191 met de bijbehorende bewoners in een popup.
+[Figuur 11](#c191-popup) toont perceel C191 met de bijbehorende bewoners in een popup.
 
-<figure id="C191Popup">
+<figure id="c191-popup">
   <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
          data-output="geo"
-         data-query-ref="C191Popup.rq">
+         data-query-ref="c191-popup.rq">
   </query>
   <figcaption>
-    Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
+    TODO Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
   </figcaption>
 </figure>
 
@@ -299,32 +291,28 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 
 Aangezien we in het Lisse-endpoint ook beschikken over
 relatie-gegevens, kunnen we de familieverbanden van Willem de Koning
-afbeelden.
+afbeelden in [Figuur 12](#family-tree).
 
 <figure id="family-tree">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="family-tree.rq">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
   </query>
   <figcaption>
     Figuur 12 ― Familieverbanden van Willem de Koning.
   </figcaption>
 </figure>
 
-## Tijdslijn
+## Tijdlijn
 
 Niet alleen een familieverband kan worden weergegeven, ook een
-tijdslijn voor de bewoners in een huis kan worden weergegeven.
-[Figuur 13](#woonTijdlijn) toont de bewoners die door de tijd heen op
-adres Broekweg 180 gewoond hebben.
+tijdlijn voor de bewoners in een huis kan worden weergegeven.  [Figuur
+13](#woon-tijdlijn) toont de bewoners die door de tijd heen op adres
+Broekweg 180 gewoond hebben.
 
-<figure id="woonTijdlijn">
-  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-         data-output="geo"
-         data-query-ref="woon-tijdlijn.rq">
+<figure id="woon-tijdlijn">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/woon-tijdlijn">
   </query>
   <figcaption>
-    Figuur 13 ― Tijdslijn van bewoners van Broekweg 180.
+    Figuur 13 ― Tijdlijn van bewoners van Broekweg 180.
   </figcaption>
 </figure>
 
@@ -368,17 +356,6 @@ https://data.collectienederland.nl/snorql/ (Richard / Wouter gaan Ivo
 Zandhuis nog even navragen)
 
 Richard gaat hier volgende week naar kijken.
-
-## Rijksmuseum
-
-Rijksmuseum data…
-
-## DBpedia
-
-DBpedia bevraging op beroemde personen…
-
-<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/lissenaren">
-</query>
 
 ## NA
 

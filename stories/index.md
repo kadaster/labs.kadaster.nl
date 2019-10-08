@@ -9,7 +9,7 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen.  Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
-  <a href="religieuze-gebouwen">
+  <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/sint-jan.jpg">
@@ -17,7 +17,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
     </div>
   </a>
-  <a href="vind-een-gebouw">
+  <a href="./vind-een-gebouw/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/huis.png">
@@ -25,7 +25,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Vind een of meerdere BAG panden (bv. uw huis) door de bevraging aan te passen.</div>
     </div>
   </a>
-  <a href="pdok-knowledge-graph">
+  <a href="./pdok-knowledge-graph/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/pdok-logo-text.png">
@@ -34,7 +34,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       </div>
     </div>
   </a>
-  <a href="haal-centraal">
+  <a href="./haal-centraal/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/voetbal.jpg">
@@ -42,7 +42,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
     </div>
   </a>
-  <a href="energiebesparing">
+  <a href="./energiebesparing/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/groene-stroom.png">
@@ -50,7 +50,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
-  <a href="bier">
+  <a href="./bier/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bier.jpg">
@@ -58,7 +58,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">In deze Data Story behandelen we vragen rond bier brouwerijen in Nederland, op basis van verschillende datasets.</div>
     </div>
   </a>
-  <a href="digitaal-erfgoed">
+  <a href="./digitaal-erfgoed/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
@@ -67,7 +67,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
     </div>
   </a>
   <!--
-  <a href="nationaal-archief">
+  <a href="./nationaal-archief/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/nationaal-archief-logo.jpg">
