@@ -251,7 +251,7 @@ de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/kaart-status-beroep">
   </query>
   <figcaption>
-    TODO Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
+    Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
   </figcaption>
 </figure>
 
@@ -279,7 +279,7 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/c191-popup">
   </query>
   <figcaption>
-    TODO Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
+    Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
   </figcaption>
 </figure>
 
