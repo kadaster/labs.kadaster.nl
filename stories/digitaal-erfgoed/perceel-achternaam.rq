@@ -1,0 +1,10 @@
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix pnv: <https://w3id.org/pnv#>
+prefix vocab: <http://data.oudlisse.nl/def#>
+select ?shape ?shapeLabel {
+  ?parcel vocab:vanPerceel/geo:asWKT ?shape;
+    pnv:givenName ?firstName;
+    pnv:surname ?lastName.
+  bind(concat('https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/browser?resource=',encode_for_uri(str(?parcel))) as ?url)
+  bind(concat('<p><a href="',str(?url),'">',str(?firstName),' ',str(?lastName),'</a></p>') as ?shapeLabel)
+}

@@ -1,0 +1,13 @@
+prefix pnv: <https://w3id.org/pnv#>
+prefix vocab: <http://data.oudlisse.nl/def#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?name (count(?parcel) as ?n) {
+  ?parcel
+    vocab:vanPerceel ?shape;
+    pnv:givenName ?firstName;
+    pnv:surname ?lastName;
+    vocab:woonplaats "Amsterdam".
+  bind(concat(?firstName," ",?lastName) as ?name)
+}
+group by ?name

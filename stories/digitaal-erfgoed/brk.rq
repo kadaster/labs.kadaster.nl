@@ -1,4 +1,3 @@
-PREFIX br: <http://vocab.deri.ie/br#>
 prefix brk: <http://brk.basisregistraties.overheid.nl/def/brk#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -7,7 +6,7 @@ select * {
   {
     select * {
       service <https://api.data.pldn.nl/datasets/werkgroep-digitaal-erfgoed/oud-lisse/services/backup/sparql> {
-        ?x <http://data.oudlisse.nl/def#idNummer> ?nummer.
+        [ <http://data.oudlisse.nl/def#idNummer> ?nummer ].
       }
     }
   }

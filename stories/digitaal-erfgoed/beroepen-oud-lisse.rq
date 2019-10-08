@@ -1,0 +1,7 @@
+prefix vocab: <http://data.oudlisse.nl/def#>
+select ?profession (count(?person) as ?n) {
+  ?person vocab:beroep ?o.
+  bind(if(strbefore(?o,",")="",?o,strbefore(?o,",")) as ?profession)
+}
+group by ?profession
+order by desc(?n)

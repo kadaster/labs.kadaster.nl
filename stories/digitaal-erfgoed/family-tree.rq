@@ -1,0 +1,33 @@
+prefix id: <http://data.oudlisse.nl/id#>
+prefix pnv: <https://w3id.org/pnv#>
+prefix vocab: <http://data.oudlisse.nl/def#>
+select ?childLabel ?parentLabel {
+  ?child (vocab:heeftMoeder|vocab:heeftVader) ?parent.
+ #?parent (vocab:heeftMoeder|vocab:heeftVader)* id:Persoon35.
+  ?parent (vocab:heeftMoeder|vocab:heeftVader)* id:Persoon15.
+  # child label
+  ?child a vocab:Persoon;
+    pnv:givenName ?first1;
+    vocab:geslacht ?geslacht1.
+  optional { ?child pnv:surname ?last1. }
+  optional { ?child vocab:doopDatum ?begin1. }
+  optional { ?child vocab:overlijdenDatum ?end1. }
+  bind(concat(
+      str(?first1),
+      if(bound(?last1),concat(' ',str(?last1)),''),
+      if(bound(?begin1),concat(' *',str(?begin1)),''),
+      if(bound(?end1),concat(' ☨',str(?end1)),'')) as ?childLabel)
+  # parent label
+  ?parent a vocab:Persoon;
+    pnv:givenName ?first2;
+    vocab:geslacht ?geslacht2.
+  optional { ?parent pnv:surname ?last2. }
+  optional { ?parent vocab:doopDatum ?begin2. }
+  optional { ?parent vocab:overlijdenDatum ?end2. }
+  bind(concat(
+      str(?first2),
+      if(bound(?last2),concat(' ',str(?last2)),''),
+      if(bound(?begin2),concat(' *',str(?begin2)),''),
+      if(bound(?end2),concat(' ☨',str(?end2)),'')) as ?parentLabel)
+}
+limit 100

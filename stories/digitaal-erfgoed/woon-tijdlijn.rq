@@ -1,0 +1,49 @@
+prefix id: <http://data.oudlisse.nl/id#>
+prefix pnv: <https://w3id.org/pnv#>
+prefix vocab: <http://data.oudlisse.nl/def#>
+select
+  ("red" as ?eventColor)
+  ?eventEnd
+  ?eventLabel
+  ?eventStart
+  ?eventDescription
+  ?person
+  ?inhabitant
+{
+  bind(id:Adres176 as ?adres)
+ #bind(id:Adres101 as ?adres)
+ #bind(id:Adres15 as ?adres)
+  ?person
+    vocab:geboorteDatum ?eventStart;
+    vocab:geboortePlaats ?Gplaats;
+    pnv:givenName ?givenName;
+    pnv:surname ?surName;
+    vocab:overlijdenDatum ?eventEnd;
+    vocab:gezindte ?gezindte;
+    vocab:beroep ?beroep;
+    vocab:overlijdenPlaats ?OPlaats.
+  ?inhabitant
+    vocab:isPersoon ?person;
+    vocab:woontOpAdres ?adres.
+  ?adres
+    vocab:nummeraanduiding ?nummer;
+    vocab:gebouwnummer ?straat.
+  optional {
+    ?person
+      vocab:doopDatum ?doop;
+      vocab:doopPlaats ?Dplaats.
+  }
+  optional {
+    ?person
+      vocab:begrafenisDatum ?begrafenis;
+      vocab:begrafenisPlaats ?Bplaats.
+  }
+  bind(concat(str(?givenName),' ',str(?surName)) as ?eventLabel)
+  bind(concat(
+    'Geboren op ',str(?eventStart),' in ',str(?Gplaats),
+    if(bound(?Dplaats),concat('. Gedoopt als ',str(?gezindte),' in ',str(?Dplaats),' op ',str(?doop)),''),
+    '.  Woonachtig op ',str(?straat),' ',str(?nummer),
+    '.  Na jarenlang als ',str(?beroep),' gewerkt te hebben is deze persoon overleden in ',str(?OPlaats),' op de datum ',str(?eventEnd),
+    if(bound(?Bplaats),concat('.  Uiteindelijk is deze persoon begraven in ',str(?Bplaats),' op de datum ',str(?begrafenis)),''),'.')
+    as ?eventDescription)
+}

@@ -58,7 +58,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">In deze Data Story behandelen we vragen rond bier brouwerijen in Nederland, op basis van verschillende datasets.</div>
     </div>
   </a>
-  <a href="erfgoed">
+  <a href="digitaal-erfgoed">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">

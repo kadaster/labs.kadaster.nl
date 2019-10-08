@@ -328,7 +328,15 @@ dl dd {
   margin-left: 20px;
 }
 figure {
+  margin: 0;
+}
+figure,
+figure figcaption,
+figure img {
   text-align: center;
+}
+figure query {
+  text-align: left;
 }
 .story {
   max-width: 100%;

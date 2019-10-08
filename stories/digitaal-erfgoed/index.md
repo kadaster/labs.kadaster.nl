@@ -16,7 +16,7 @@ digitale bronnen voor erfgoed en de totstandkoming van hulpmiddelen voor
 eindgebruikers.
 
 Deze pagina bevat een Data Story waarmee de werkgroep wil laten zien dat
-linked data geschikt is om diverse bronnen te verbinden en zo tot nieuwe
+Linked Data geschikt is om diverse bronnen te verbinden en zo tot nieuwe
 en interessante inzichten te komen.
 
 In een Data Story proberen we een inhoudelijk verhaal te vertellen aan de
@@ -66,89 +66,147 @@ Lisse ontstonden vele buitenplaatsen.
 ## Rijksmonumenten
 
 Wat is er nog te vinden van de buitenplaatsen?  We starten onze Data
-Story met een overzicht van de rijksmonumenten van Lisse op een
-kaart.  De data is afkomstig van het Linked Data platform van de RCE.
+Story met een overzicht van de rijksmonumenten van Lisse op een kaart
+([Figuur 1](#rce)).  De data is afkomstig van het Linked Data platform
+van de RCE.
 
-<query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
-       data-output="geo"
-       data-query-ref="rce.rq">
-</query>
+<figure id="rce">
+  <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
+         data-output="geo"
+         data-query-ref="rce.rq">
+  </query>
+  <figcaption>
+    Figuur 1 ― Kaart met monumenten in Lisse.
+  </figcaption>
+</figure>
 
-Naast de afbeelding op de kaart kunnen we de monumenten met beschrijving ook in een gallery
-view tonen.
+Naast de afbeelding op de kaart ([Figuur 1](#rce)) kunnen we de
+monumenten met beschrijving ook in een gallerij ([Figuur
+2](#viewMonumenten)) tonen.
 
-<query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
-       data-output="gallery"
-       data-query-ref="viewMonumenten.rq">
-</query>
+<figure id="viewMonumenten">
+  <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
+         data-output="gallery"
+         data-query-ref="viewMonumenten.rq">
+  </query>
+  <figcaption>
+    Figuur 2 ― Gallerij met beschrijvingen van monumenten in Lisse.
+  </figcaption>
+</figure>
 
-In het overzicht van de monumenten komen we Keukenhof tegen. Keukenhof is van oorsprong
-een buitenplaats die gesticht werd in 1641 door commandeur Adriaen Maertensz Block. Het
-landgoed groeide uit tot een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het
-Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het Keukenduin groente en
-fruit voor de keuken van kasteel Teylingen.
+## Keukenhof
 
-De keukenhof zien we terug als monument op de website van de RCE  
-[Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) de query:
+In het overzicht van de monumenten komen we
+[Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) tegen.
+Keukenhof is van oorsprong een buitenplaats die gesticht werd in 1641
+door commandeur Adriaen Maertensz Block.  Het landgoed groeide uit tot
+een gebied van ruim 200 ha.  De naam Keukenhof is afgeleid van het
+Keukenduyn.  Gravin Jacoba van Beieren (1401-1436) haalde uit het
+Keukenduin groente en fruit voor de keuken van kasteel Teylingen.
+[Figuur 3](#keukenhof) toont de monumenten die deel uitmaken van
+Keukenhof op een kaart.
 
-<query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
-       data-output="geo"
-       data-query-ref="keukenhof.rq">
-</query>
+<figure>
+  <query data-endpoint="https://linkeddata.cultureelerfgoed.nl/sparql"
+         data-output="geo"
+         data-query-ref="keukenhof.rq">
+  </query>
+  <figcaption>
+    Figuur 3 ― Monumenten die deel uitmaken van Keukenhof op een kaart.
+  </figcaption>
+</figure>
 
 ## Minuutplan
 
-Hoe heeft het terrein van Keukenhof er vroeger uitgezien? De eerste betrouwbare kaarten
-werden door het Kadaster gemaakt tussen 1812 en 1830. Die eerste kaarten werden
-minuutplans genoemd. De minuutplans van Lisse worden door Erfgoed Leiden en Omstreken
-beschikbaar gesteld. Zie de volgende kaart.
+[Figuur 4](#figuur-4) laat zien hoe het terrein van Keukenhof er
+vroeger heeft uitgezien.  De eerste betrouwbare kaarten werden door
+het Kadaster gemaakt tussen 1812 en 1830.  Die eerste kaarten werden
+minuutplans genoemd.  De minuutplans van Lisse worden door Erfgoed
+Leiden en Omstreken beschikbaar gesteld.
 
 <!-- '''Minuutplan Lisse sectie A blad 1''' -->
-<img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg">
+<figure id="figuur-4">
+  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="400">
+  <figcaption>
+    Figuur 4 ― Minuutplan van Keukenhof.
+  </figcaption>
+</figure>
 
-Door de Vereniging Oud Lisse zijn de minuutplans gedigitaliseerd en beschikbaar
-gemaakt als linked data. Ook de Oorspronkelijke Aanwijzende Tafels met eigendomsbeschrijving
-zijn opgenomen. Zo kunnen we eenvoudig de kaart van 1812 genereren.
+Door de Vereniging Oud Lisse zijn de minuutplans gedigitaliseerd en
+beschikbaar gemaakt als Linked Data.  Ook de Oorspronkelijke
+Aanwijzende Tafels met eigendomsbeschrijving zijn opgenomen.  [Figuur
+5](#perceel-achternaam) toont de kaart die op basis van deze bronnen
+is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/perceel-achternaam">
-</query>
+<figure id="perceel-achternaam">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="perceel-achternaam.rq">
+  </query>
+  <figcaption>
+    Figuur 5 ― Percelen en hun eigenaren in Lisse in 1812.
+  </figcaption>
+</figure>
 
 ## Eigendom
 
-Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een perceel.
-De percelen van Keukenhof blijken in bezit van Johan Steengracht van Oost Cappelle.
-We kunnen onmiddellijk doorklikken naar DBpedia en zien een portret en zien dat
-Johan een bekende kunstverzamelaar en museumdirecteur was.
-<a href="http://nl.dbpedia.org/resource/Johan_Steengracht_van_Oostcapelle">Link naar DBpedia op basis van Johan Steengracht van Oost Capelle</a>
+Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een
+perceel.  De percelen van Keukenhof blijken in bezit van Johan
+Steengracht van Oost Cappelle.  We kunnen onmiddellijk doorklikken
+naar DBpedia en zien een portret en zien dat Johan een bekende
+kunstverzamelaar en museumdirecteur was.  [Link naar
+DBpedia](http://nl.dbpedia.org/resource/Johan_Steengracht_van_Oostcapelle)
+op basis van Johan Steengracht van Oost Capelle.
 
-Welke percelen waren in bezit van Steengracht van Oost Capelle? Het Lisse-
-endpoint geeft deze informatie.
+“Welke percelen waren in bezit van Steengracht van Oost Capelle?”
+[Figuur 6](#JohanPerceel) geeft deze informatie op basis van de
+gegevens uit het Lisse-endpoint.
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/JohanPerceel">
-</query>
+<figure id="JohanPerceel">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="johan-perceel.rq">
+  </query>
+  <figcaption>
+    Figuur 6 ― Percelen die in het bezit waren van Steengracht van Oost Capelle.
+  </figcaption>
+</figure>
 
-Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Door middel van een
-query op het Lisse-endpoint vinden we een lijst personen die in percelen land
-bezitten in Lisse en in Amsterdam wonen.
+## Amsterdammers in Lisse
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/AmsterdamPerceel">
-</query>
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse?  Door middel
+van een bevraging op het Lisse-endpoint vinden we een lijst personen
+die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
+7](#AmsterdamPerceel)).
+
+<figure id="AmsterdamPerceel">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="amsterdam-perceel.rq">
+  </query>
+  <figcaption>
+    Figuur 7 ― Amsterdammers die percelen in Lisse bezaten.
+  </figcaption>
+</figure>
 
 <!-- ''Kunnen we nog iets leuks doen met deze lijst? Bijvoorbeeld Coenraad Jacob
 Temminck; zie DBpedia; eerste directeur van Museum voor Natuur Historie in Leiden'' -->
 
+<!--
 ## Veldwerken
 
-Bij veranderingen aan percelen of gebouwen, wordt door een landmeter van het Kadaster
-de nieuwe situatie opgenomen. De tekeningen die in het veld gemaakt worden, worden
-Veldwerken genoemd; daarin staat veel meetcijfers en inlichtingen over verkoper en koper.
-Het Kadaster bewaart de veldwerken in het Kadastraal archief. Ook het kasteel Keukenhof
-is regelmatig verbouwd. De volgende query levert de veldwerken die gekoppeld zijn aan
-het perceel van kasteel Keukenhof.
+Bij veranderingen aan percelen of gebouwen, wordt door een landmeter
+van het Kadaster de nieuwe situatie opgenomen.  De tekeningen die in
+het veld gemaakt worden, worden Veldwerken genoemd; daarin staat veel
+meetcijfers en inlichtingen over verkoper en koper.  Het Kadaster
+bewaart de veldwerken in het Kadastraal archief.  Ook het kasteel
+Keukenhof is regelmatig verbouwd.  De volgende bevraging levert de
+veldwerken die gekoppeld zijn aan het perceel van kasteel Keukenhof.
+--->
 
 <!-- '''Veldwerken van Kasteel Keukenhof - perceel A255
 
-Query veldwerken erbij (pdok labs endpoint) Kijk naar percelen waar het
+Bevraging veldwerken erbij (pdok labs endpoint) Kijk naar percelen waar het
 kasteel Keukenhof op staat. Voor keukenhof Wouter
 vragen om dit even over te nemen.
 Zit momenteel niet in de data pdok labs
@@ -173,67 +231,107 @@ stuk of 10 uitkiezen en URL opnemen) -->
 
 ## Beroepen
 
-Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen
-en de bediening. In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen. Via een
-query krijgen we een tabel met de beroepen van de bewoners van Lisse in 1830.
+Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de
+landerijen, de tuinen en de bediening.  In het Lisse-endpoint is
+informatie over beroepen uit de Volkstelling 1830 opgenomen.  Via een
+bevraging krijgen we een tabel met de beroepen van de bewoners van Lisse
+in 1830.
 
 <!-- '''Tabel met beroepen en voor ieder beroep het aantal van voorkomen''' -->
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/BeroepenOudLisse">
-</query>
+<figure id="BeroepenOudLisse">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="beroepen-oud-lisse.rq">
+  </query>
+  <figcaption>
+    Figure 8 ― Beroepen in Lisse in 1830.
+  </figcaption>
+</figure>
 
-Ieder persoon is aan een adres gekoppeld een deel van de personen heeft een beroep.
-We kunnen nu een link leggen met de database met beroepenclassificaties van het IISG.
+Iedere persoon is aan een adres gekoppeld; een deel van de personen
+heeft een beroep.  We kunnen nu een link leggen met de database met
+beroepenclassificaties van het Instituut voor Sociale Geschiedenis
+(IISG).  Hierdoor kunnen we de kaart van Lisse inkleuren op basis van
+de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 
-<!-- '''Kaartje met beroepenstructuur''' -->
-
-<!-- <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/beroepenStructuur">
-</query> -->
-
-<!-- '''Kaartje met afbeelding status beroepen op geografie''' -->
-<query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-       data-output="geo"
-       data-query-ref="KaartStatusBeroep.rq">
-</query>
+<figure id="KaartStatusBeroep">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="KaartStatusBeroep.rq">
+  </query>
+  <figcaption>
+    Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
+  </figcaption>
+</figure>
 
 ## Bewoners
 
-In het Lisse-endpoint kunnen we ook bewoners vinden. Selecteer bijvoorbeeld perceel C191.
-Dit perceel behoort bij Keukenhof. Op dit perceel staan een twee dienstwoningen, bekend staand
-als 't Hoogje. Zie de documentatie van het monument (monumentregister 511416).
-Op de kaart wordt zichtbaar wie in de huisjes wonen, hoe oud ze zijn en wat hun beroep is.
+In het Lisse-endpoint kunnen we ook bewoners vinden.  Selecteer
+bijvoorbeeld perceel C191.  Dit perceel behoort bij Keukenhof.  Op dit
+perceel staan twee dienstwoningen, bekend als ['t
+Hoogje](https://cultureelerfgoed.nl/monumenten/511416).  Op de kaart
+([Figuur 10](#Lisse_Statuinsweg_164-166_01)) wordt zichtbaar wie in de
+huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 
-<!-- '''Toon foto van monument 511416''' -->
+<figure id="Lisse_Stationsweg_164-166_01">
+  <a href="https://cultureelerfgoed.nl/monumenten/511416" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg" height="400">
+  </a>
+  <figcaption>
+    Figuur 10 ― Afbeelding van monument 't Hoogje.
+  </figcaption>
+</figure>
 
-[Keukenhof 't Hoogje](https://cultureelerfgoed.nl/monumenten/511416)
+[Figuur 11](#C191Popup) toont perceel C191 met de bijbehorende bewoners in een popup.
 
-<a href="https://cultureelerfgoed.nl/monumenten/511416" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg"></a>
-
-<!-- '''Toon kaart met perceel C191 met popup met bewoners, leeftijd, geslacht, beroep''' -->
-<query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
-       data-output="geo"
-       data-query-ref="C191Popup.rq">
-</query>
+<figure id="C191Popup">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="C191Popup.rq">
+  </query>
+  <figcaption>
+    Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
+  </figcaption>
+</figure>
 
 ## Familieboom
 
-Aangezien we in het Lisse-endpoint ook beschikken over relatie-gegevens, kunnen we
-de het familieverband van Willem de Koning afbeelden.
+Aangezien we in het Lisse-endpoint ook beschikken over
+relatie-gegevens, kunnen we de familieverbanden van Willem de Koning
+afbeelden.
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
-</query>
+<figure id="family-tree">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="family-tree.rq">
+  </query>
+  <figcaption>
+    Figuur 12 ― Familieverbanden van Willem de Koning.
+  </figcaption>
+</figure>
 
 ## Tijdslijn
 
-Niet alleen een familieverband kan worden weergegeven, ook een tijdslijn over de bewoners in een huis kunnen worden weergegeven. Hieronder worden de bewoners van Broekweg 180 getoond die over de tijd heen hebben gewoond in het huis.
+Niet alleen een familieverband kan worden weergegeven, ook een
+tijdslijn voor de bewoners in een huis kan worden weergegeven.
+[Figuur 13](#woonTijdlijn) toont de bewoners die door de tijd heen op
+adres Broekweg 180 gewoond hebben.
 
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/woonTijdlijn/3">
-</query>
+<figure id="woonTijdlijn">
+  <query data-endpoint="http://data.oudlisse.nl:7200/repositories/ltr"
+         data-output="geo"
+         data-query-ref="woon-tijdlijn.rq">
+  </query>
+  <figcaption>
+    Figuur 13 ― Tijdslijn van bewoners van Broekweg 180.
+  </figcaption>
+</figure>
 
 <!-- ## Historische artikelen
 
 Richard (15 april) kijkt erna…Historische krant artikelen? (is dat
-linked data?)
+Linked Data?)
 [link](https://www.delpher.nl/nl/platform/results?query=keukenhof&coll=platform),
 [link](https://kbresearch.nl/xportal/) Richard kijkt. Deadline: paar
 weekjes.
@@ -277,7 +375,7 @@ Rijksmuseum data…
 
 ## DBpedia
 
-DBpedia query op beroemde personen…
+DBpedia bevraging op beroemde personen…
 
 <query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/lissenaren">
 </query>
@@ -304,4 +402,5 @@ Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jare
 ## Familieboom
 
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
-</query> -->
+</query>
+-->

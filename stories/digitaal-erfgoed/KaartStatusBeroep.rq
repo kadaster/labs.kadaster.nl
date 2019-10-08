@@ -1,46 +1,46 @@
-
-PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX vocab: <http://data.oudlisse.nl/def#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?geoShape ?geoShapeColor ?geoShapeLabel ?hiscoCode WHERE {
-  ?vocabBewoner vocab:isPersoon ?Persoon ;
-                vocab:woontOpAdres/vocab:gekoppeldAanPerceel/geo:asWKT ?geoShape .
-  ?Persoon vocab:beroep ?geoShapeLabel .
-  ?beroepID a vocab:Beroep ;
-           vocab:hiscoCode ?hiscoCode ;
-           vocab:beroep ?beroepNaam .
-  FILTER(lcase(?beroepNaam) = lcase(?geoShapeLabel))
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix vocab: <http://data.oudlisse.nl/def#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?geoShape ?geoShapeColor ?geoShapeLabel ?hiscoCode {
+  ?vocabBewoner
+    vocab:isPersoon ?Persoon;
+    vocab:woontOpAdres/vocab:gekoppeldAanPerceel/geo:asWKT ?geoShape.
+  ?Persoon vocab:beroep ?geoShapeLabel.
+  ?beroepID a vocab:Beroep;
+    vocab:hiscoCode ?hiscoCode;
+    vocab:beroep ?beroepNaam.
+  filter(lcase(?beroepNaam) = lcase(?geoShapeLabel))
   bind(if(strbefore(?obj, ",")="",?obj,strbefore(?obj, ",")) as ?beroep)
-   {
- 	filter(substr(?hiscoCode,1,1) = "1")
+  {
+    filter(substr(?hiscoCode,1,1) = "1")
     bind('white' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "2")
+    filter(substr(?hiscoCode,1,1) = "2")
     bind('black' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "3")
+    filter(substr(?hiscoCode,1,1) = "3")
     bind('pink' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "4")
+    filter(substr(?hiscoCode,1,1) = "4")
     bind('yellow' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "5")
+    filter(substr(?hiscoCode,1,1) = "5")
     bind('orange' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "6")
+    filter(substr(?hiscoCode,1,1) = "6")
     bind('blue' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "7")
+    filter(substr(?hiscoCode,1,1) = "7")
     bind('red' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "8")
+    filter(substr(?hiscoCode,1,1) = "8")
     bind('purple' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "9")
+    filter(substr(?hiscoCode,1,1) = "9")
     bind('green' as ?geoShapeColor)
   } union {
- 	filter(substr(?hiscoCode,1,1) = "0")
+    filter(substr(?hiscoCode,1,1) = "0")
     bind('brown' as ?geoShapeColor)
   }
 }

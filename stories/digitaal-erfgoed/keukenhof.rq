@@ -1,16 +1,15 @@
-prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix labs: <https://data.labs.pdok.nl/bag/def/>
-prefix schema: <http://schema.org/>
-prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix rce: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
-SELECT ?shape ?shapeLabel WHERE {
-  <https://linkeddata.cultureelerfgoed.nl/cho-kennis/id/complex/64053> rce:heeftNaam [rce:naam ?naam] ;
-                                                                       rce:heeftOmschrijving [rce:omschrijving ?omschrijving] ;
-                                                                       rce:heeftRijksmonument [rce:rijksmonumentnummer ?monumentLabel ;
-                                                                                               rce:heeftGeometrie/geo:asWKT ?shape ;
-                                                                                               rce:heeftOorspronkelijkeFunctie [rce:hoofdfunctie "true"^^xsd:boolean ;
-                                                                                                                                rce:heeftFunctieNaam [ skos:prefLabel ?bouwLabel ] ] ] .
-  bind(concat(?naam, " : ", ?bouwLabel) as ?shapeLabel)
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+select ?shape ?shapeLabel {
+  <https://linkeddata.cultureelerfgoed.nl/cho-kennis/id/complex/64053>
+    rce:heeftNaam/rce:naam ?naam;
+    rce:heeftOmschrijving/rce:omschrijving ?omschrijving;
+    rce:heeftRijksmonument
+      [ rce:rijksmonumentnummer ?monumentLabel;
+        rce:heeftGeometrie/geo:asWKT ?shape;
+        rce:heeftOorspronkelijkeFunctie
+          [ rce:hoofdfunctie true;
+            rce:heeftFunctieNaam/skos:prefLabel ?bouwLabel ] ].
+  bind(concat(?naam,': ',?bouwLabel) as ?shapeLabel)
 }
