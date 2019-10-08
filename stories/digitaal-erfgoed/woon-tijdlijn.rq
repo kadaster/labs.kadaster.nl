@@ -10,7 +10,7 @@ select
   ?person
   ?inhabitant
 {
-  bind(id:Adres176 as ?adres)
+  bind(id:Adres181 as ?adres)
  #bind(id:Adres101 as ?adres)
  #bind(id:Adres15 as ?adres)
   ?person
@@ -27,7 +27,7 @@ select
     vocab:woontOpAdres ?adres.
   ?adres
     vocab:nummeraanduiding ?nummer;
-    vocab:gebouwnummer ?straat.
+    vocab:openbareRuimte ?straat.
   optional {
     ?person
       vocab:doopDatum ?doop;

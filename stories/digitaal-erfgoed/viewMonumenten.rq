@@ -23,6 +23,6 @@ select ?widget {
   }
   bind(concat('https://monumentenregister.cultureelerfgoed.nl/monumenten/',str(?nummer)) as ?url)
   bind(concat(
-    '<div style="width: 18vw;"><h1><a href="',str(?url),'" target="_blank">',if(bound(?naam),str(?naam),'Geen naam'),'</a></h1>',
-    '<p style="max-length: 100%;">',if(strlen(?omschrijving)>370, concat(substr(str(?omschrijving),1,370),'... <a href="',str(?url),'" target="_blank">Toon meer</a>'),?omschrijving),'</p></div>') as ?widget)
+    '<div style="min-width: 18vw;max-height: none;height: auto;"><h1><a href="',str(?url),'" target="_blank">',if(bound(?naam),str(?naam),'Geen naam'),'</a></h1>',
+    '<p style="max-height: 100%;">',if(strlen(?omschrijving)>370, concat(substr(str(?omschrijving),1,370),'... <a href="',str(?url),'" target="_blank">Toon meer</a>'),?omschrijving),'</p></div>') as ?widget)
 }
