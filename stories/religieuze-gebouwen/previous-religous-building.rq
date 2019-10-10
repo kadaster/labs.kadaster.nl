@@ -1,22 +1,17 @@
 prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
-select * {
+select ?shape ?shapeColor ?shapeLabel {
   {
     select ?pand ?gebouw ?soortnaam ?type ?shape {
-      {
-        select * where{
-          graph <http://brt.basisregistraties.overheid.nl/id/dataset/top10nl> {
-            ?gebouw
-              a ?type;
-              brt:soortnaam ?soortnaam;
-              geo:hasGeometry/geo:asWKT ?shape.
-            filter(contains(str(?soortnaam), "Voorm") &&
-                   !(contains(str(?soortnaam), "tolhuis")) &&
-                   !(contains(str(?soortnaam), "Voormalig klooster")) &&
-                   (?type != brt:Gebouw))
-          }
-        }
+      graph <http://brt.basisregistraties.overheid.nl/id/dataset/top10nl> {
+        ?gebouw a ?type;
+          brt:soortnaam ?soortnaam;
+          geo:hasGeometry/geo:asWKT ?shape.
+        filter(contains(str(?soortnaam), "Voorm") &&
+               !(contains(str(?soortnaam), "tolhuis")) &&
+               !(contains(str(?soortnaam), "Voormalig klooster")) &&
+               (?type != brt:Gebouw))
       }
     }
   }
@@ -37,5 +32,5 @@ select * {
     bind('orange' as ?shapeColor)
   }
   bind(if(bound(?shapeColor), ?shapeColor, 'purple') as ?shapeColor)
-  bind(concat('<h2>',str(?soortnaam) ,'<br>Omgevormd tot: ',strafter(str(?type),'#'),'</h2>') as ?shapeLabel)
+  bind(concat('<p style="font-size: 140%;"><a href="',str(?gebouw),'" target="_blank">',str(?soortnaam) ,'</a>, omgevormd tot ',strafter(str(?type),'#'),'</p>') as ?shapeLabel)
 }

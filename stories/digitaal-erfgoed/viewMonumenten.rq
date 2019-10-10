@@ -1,0 +1,28 @@
+prefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+select ?widget {
+  {
+    select
+    (group_concat(distinct ?functie; separator=', ') as ?functies)
+    ?monument
+    ?naam
+    ?nummer
+    ?type
+    ?omschrijving
+    {
+      ?monument
+        ceo:rijksmonumentnummer ?nummer;
+        ceo:heeftLocatieAanduiding/ceo:heeftLocatieAdres/ceo:heeftGemeente <http://standaarden.overheid.nl/owms/terms/Lisse_(gemeente)>;
+        ceo:heeftOorspronkelijkeFunctie/ceo:heeftFunctieNaam/skos:prefLabel ?functie;
+        ceo:heeftNaam/ceo:naam ?naam.
+      optional { ?monument ceo:heeftType/ceo:heeftTypeNaam/skos:prefLabel ?type. }
+      optional { ?monument ceo:heeftOmschrijving/ceo:omschrijving ?omschrijving . }
+    }
+    group by ?monument ?naam ?nummer ?type ?omschrijving
+  }
+  bind(concat('https://monumentenregister.cultureelerfgoed.nl/monumenten/',str(?nummer)) as ?url)
+  bind(concat(
+    '<div style="min-width: 18vw;max-height: none;height: auto;"><h1><a href="',str(?url),'" target="_blank">',if(bound(?naam),str(?naam),'Geen naam'),'</a></h1>',
+    '<p style="max-height: 100%;">',if(strlen(?omschrijving)>370, concat(substr(str(?omschrijving),1,370),'... <a href="',str(?url),'" target="_blank">Toon meer</a>'),?omschrijving),'</p></div>') as ?widget)
+}

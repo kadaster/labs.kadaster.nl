@@ -29,7 +29,7 @@ select distinct * {
   bind('''
 <p>Kerk: {{label}}</p>
 <p>BAG bouwjaar: {{bouwjaar}} </p>
-<p>BAG ID: <a href="{{bag}}" target="_blank">{{bagId}}</a></p>
+<p>BAG ID: <a href="{{pand}}" target="_blank">{{pandId}}</a></p>
 <p>Wikidata ID: <a href="{{wikidata}}" target="_blank">{{wikidataId}}</a></p>
 <img src="{{img}}" style="width: auto; max-width: none;">'''^^rdf:HTML as ?widget)
 }
