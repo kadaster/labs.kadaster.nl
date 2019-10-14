@@ -32,9 +32,10 @@ h5,
 h6 {
   color: #00387d;
 }
-ul, ol {
-  margin-top: .5em;
-  margin-bottom: .5em;
+ul,
+ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 a {
   text-decoration: none;
@@ -61,9 +62,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: transparent
-    url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x
-    50% 100%;
+  background: transparent url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x 50% 100%;
   background-size: auto;
   background-size: auto 270px;
   z-index: 9;
@@ -288,6 +287,11 @@ code.hightlight {
   display: none;
 }
 
+/* Override normalize.css */
+table {
+  border-collapse: separate;
+}
+
 .table {
   border: 1px #ccc solid;
   table-layout: fixed;
@@ -341,9 +345,6 @@ figure query {
 .story {
   max-width: 100%;
   display: flex;
-}
-.story > * {
-  max-width: unset;
 }
 .story::before {
   content: "";
