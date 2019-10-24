@@ -4,6 +4,9 @@ title: Dissemination
 ---
 # Publicaties
 
+Kadaster Knowledge Graph: Beyond the Fifth Star of Open Data
+: Stanislav Ronzhin, Erwin Folmer, Pano Maria, Marco Brattinga, Wouter Beek, Rob Lemmens, Rein van't Veer.  In: _Information_, Vol. 10, No. 10, [online toegang](https://www.mdpi.com/2078-2489/10/10/310).
+
 Enhancing the Usefulness of Open Governmental Data with Linked Data Viewing Techniques
 : Erwin Folmer, Wouter Beek, Laurens Rietveld, Stanislav Ronzhin, Rutger Geerling, Davey den Haan.  In: _Proceedings of the 52<sup>nd</sup> Hawaii International Conference on System Sciences_, 2019, [online toegang](https://scholarspace.manoa.hawaii.edu/handle/10125/59728).
 
