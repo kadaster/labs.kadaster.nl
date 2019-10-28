@@ -247,7 +247,7 @@ in 1830.
 <!-- '''Tabel met beroepen en voor ieder beroep het aantal van voorkomen''' -->
 
 <figure id="BeroepenOudLisse">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/beroepen-oud-lisse">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Beroepen-HISCO-aantal">
   </query>
   <figcaption>
     Figure 8 ― Beroepen in Lisse in 1830.
