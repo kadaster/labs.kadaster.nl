@@ -9,10 +9,10 @@ title: PLDN-Werkgroep Digitaal Erfgoed
 
 ## Achtergrond
 
-Het Platform Linked Data Nederland (PLDN) is een netwerk waarin experts en 
-belangstellenden kennis delen over Linked Data. De werkgroep Digitaal Erfgoed 
-wil een bijdrage leveren aan de totstandkoming van meer samenhang in 
-digitale bronnen voor erfgoed en de totstandkoming van hulpmiddelen voor 
+Het Platform Linked Data Nederland (PLDN) is een netwerk waarin experts en
+belangstellenden kennis delen over Linked Data. De werkgroep Digitaal Erfgoed
+wil een bijdrage leveren aan de totstandkoming van meer samenhang in
+digitale bronnen voor erfgoed en de totstandkoming van hulpmiddelen voor
 eindgebruikers.
 
 Deze pagina bevat een Data Story waarmee de werkgroep wil laten zien dat
@@ -20,54 +20,54 @@ Linked Data geschikt is om diverse bronnen te verbinden en zo tot nieuwe
 en interessante inzichten te komen.
 
 In een Data Story proberen we een inhoudelijk verhaal te vertellen aan de
-hand van data. In dit geval gaat het om de geschiedenis van buitenplaatsen in 
+hand van data. In dit geval gaat het om de geschiedenis van buitenplaatsen in
 Lisse en de bewoners van Lisse.
 
 Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
 
-* [data.oudlisse.nl](https://data.oudlisse.nl), een SPARQL-endpoint
+- [data.oudlisse.nl](https://data.oudlisse.nl), een SPARQL-endpoint
   van de Vereniging Oud Lisse met data van o.a. percelen, gebouwen,
   eigenaren, bewoners in Lisse omstreeks 1830.
-* [linkeddata.cultureelerfgoed.nl](https://linkeddata.cultureelerfgoed.nl),
+- [linkeddata.cultureelerfgoed.nl](https://linkeddata.cultureelerfgoed.nl),
   een SPARQL-endpoint van de Rijksdienst voor Cultureel Erfgoed met
   o.a data over monumenten.
-* Beeldbank van de Rijksdienst voor Cultureel Erfgoed.
-* Beeldbank van Erfgoed Leiden en Omstreken.
-* PDOK, een SPARQL-endpoint van het Kadaster dat o.a. de
+- Beeldbank van de Rijksdienst voor Cultureel Erfgoed.
+- Beeldbank van Erfgoed Leiden en Omstreken.
+- PDOK, een SPARQL-endpoint van het Kadaster dat o.a. de
   basisregistraties ontsluit, alsook informatie uit het Kadastraal
   archief.
-* HISCO, een classificatiesysteem voor beroepen van het Internationaal
+- HISCO, een classificatiesysteem voor beroepen van het Internationaal
   Instituur voor Sociale Geschiedenis (IISG).
-* kbresearch.nl 
-* Europeana
-* DBpedia
-* Delpher
-* Digitale Collectie Nederland
-* Rijksmuseum
+- kbresearch.nl
+- Europeana
+- DBpedia
+- Delpher
+- Digitale Collectie Nederland
+- Rijksmuseum
 
 # Data Story “Buitenplaatsen in Lisse”
 
 ## Buitenplaatsen
 
 In de 17<sup>de</sup> eeuw groeide de rijkdom van de Amsterdamse
-elite.  Het aantal rentieniers in deze groep nam sterk toe.  Rond 1700
+elite. Het aantal rentieniers in deze groep nam sterk toe. Rond 1700
 had tenminste een derde van de Amsterdamse elite één of meer
-buitenhuizen en/of landgoederen.  Al vroeg in de Gouden Eeuw werden
+buitenhuizen en/of landgoederen. Al vroeg in de Gouden Eeuw werden
 buitenplaatsen aangelegd op door droogbemaling nieuw gewonnen land,
 maar ook werden ze in grote aantallen achter de duinen en langs
 bevaarbare waterwegen gebouwd.
 
-Veel buitenplaatsen zijn verdwenen.  Wat behouden is, zien we veelal
-terug als monumenten.  Laten we onze aandacht eens richten op Lisse,
+Veel buitenplaatsen zijn verdwenen. Wat behouden is, zien we veelal
+terug als monumenten. Laten we onze aandacht eens richten op Lisse,
 een dorp dat gelegen is tegen een oude strandwal (duinen) en al in de
-17<sup>de</sup> eeuw goed toegankelijk via het water en de weg.  In
+17<sup>de</sup> eeuw goed toegankelijk via het water en de weg. In
 Lisse ontstonden vele buitenplaatsen.
 
 ## Rijksmonumenten
 
-Wat is er nog te vinden van de buitenplaatsen?  We starten onze Data
+Wat is er nog te vinden van de buitenplaatsen? We starten onze Data
 Story met een overzicht van de rijksmonumenten van Lisse op een kaart
-([Figuur 1](#rce)).  De data is afkomstig van het Linked Data platform
+([Figuur 1](#rce)). De data is afkomstig van het Linked Data platform
 van de RCE.
 
 <figure id="rce">
@@ -99,9 +99,9 @@ monumenten met beschrijving ook in een gallerij ([Figuur
 In het overzicht van de monumenten komen we
 [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) tegen.
 Keukenhof is van oorsprong een buitenplaats die gesticht werd in 1641
-door commandeur Adriaen Maertensz Block.  Het landgoed groeide uit tot
-een gebied van ruim 200 ha.  De naam Keukenhof is afgeleid van het
-Keukenduyn.  Gravin Jacoba van Beieren (1401-1436) haalde uit het
+door commandeur Adriaen Maertensz Block. Het landgoed groeide uit tot
+een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het
+Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het
 Keukenduin groente en fruit voor de keuken van kasteel Teylingen.
 [Figuur 3](#keukenhof) toont de monumenten die deel uitmaken van
 Keukenhof op een kaart.
@@ -119,9 +119,9 @@ Keukenhof op een kaart.
 ## Minuutplan
 
 [Figuur 4](#figuur-4) laat zien hoe het terrein van Keukenhof er
-vroeger heeft uitgezien.  De eerste betrouwbare kaarten werden door
-het Kadaster gemaakt tussen 1812 en 1830.  Die eerste kaarten werden
-minuutplans genoemd.  De minuutplans van Lisse worden door Erfgoed
+vroeger heeft uitgezien. De eerste betrouwbare kaarten werden door
+het Kadaster gemaakt tussen 1812 en 1830. Die eerste kaarten werden
+minuutplans genoemd. De minuutplans van Lisse worden door Erfgoed
 Leiden en Omstreken beschikbaar gesteld.
 
 <!-- '''Minuutplan Lisse sectie A blad 1''' -->
@@ -133,8 +133,8 @@ Leiden en Omstreken beschikbaar gesteld.
 </figure>
 
 Door de Vereniging Oud Lisse zijn de minuutplans gedigitaliseerd en
-beschikbaar gemaakt als Linked Data.  Ook de Oorspronkelijke
-Aanwijzende Tafels met eigendomsbeschrijving zijn opgenomen.  [Figuur
+beschikbaar gemaakt als Linked Data. Ook de Oorspronkelijke
+Aanwijzende Tafels met eigendomsbeschrijving zijn opgenomen. [Figuur
 5](#perceel-achternaam) toont de kaart die op basis van deze bronnen
 is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
 
@@ -146,13 +146,26 @@ is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
   </figcaption>
 </figure>
 
+Daarnaast is het mogelijk om de percelen van 1812 af te zetten tegen de huidige informatie die beschikbaar wordt gesteld door Kadaster.
+Hierdoor is het mogelijk om te zien hoe Oud Lisse is veranderd naar het huidige Lisse.
+[Figuur 5A](#perceel-kadaster) toont de kaart op basis van de bronnen van Oud Lisse met de huidige kaarten van de kadaster.
+In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. de blauwe percelen tonen de percelen uit 1812.
+
+<figure id="perceel-achternaam">
+  <query data-config-ref="https://kadaster.triply.cc/kadaster/brt/queries/BRT-oudlisse">
+  </query>
+  <figcaption>
+    Figuur 5A ― Percelen uit 1812 en de huidige kaart van Lisse.
+  </figcaption>
+</figure>
+
 ## Eigendom
 
 Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een
-perceel.  De percelen van Keukenhof blijken in bezit van Johan
-Steengracht van Oost Cappelle.  We kunnen onmiddellijk doorklikken
+perceel. De percelen van Keukenhof blijken in bezit van Johan
+Steengracht van Oost Cappelle. We kunnen onmiddellijk doorklikken
 naar DBpedia en zien een portret en zien dat Johan een bekende
-kunstverzamelaar en museumdirecteur was.  [Link naar
+kunstverzamelaar en museumdirecteur was. [Link naar
 DBpedia](http://nl.dbpedia.org/resource/Johan_Steengracht_van_Oostcapelle)
 op basis van Johan Steengracht van Oost Capelle.
 
@@ -170,7 +183,7 @@ gegevens uit het Lisse-endpoint.
 
 ## Amsterdammers in Lisse
 
-Hoe zit het eigenlijk verder met Amsterdammers in Lisse?  Door middel
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Door middel
 van een bevraging op het Lisse-endpoint vinden we een lijst personen
 die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
 7](#AmsterdamPerceel)).
@@ -226,8 +239,8 @@ stuk of 10 uitkiezen en URL opnemen) -->
 ## Beroepen
 
 Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de
-landerijen, de tuinen en de bediening.  In het Lisse-endpoint is
-informatie over beroepen uit de Volkstelling 1830 opgenomen.  Via een
+landerijen, de tuinen en de bediening. In het Lisse-endpoint is
+informatie over beroepen uit de Volkstelling 1830 opgenomen. Via een
 bevraging krijgen we een tabel met de beroepen van de bewoners van Lisse
 in 1830.
 
@@ -242,9 +255,9 @@ in 1830.
 </figure>
 
 Iedere persoon is aan een adres gekoppeld; een deel van de personen
-heeft een beroep.  We kunnen nu een link leggen met de database met
+heeft een beroep. We kunnen nu een link leggen met de database met
 beroepenclassificaties van het Instituut voor Sociale Geschiedenis
-(IISG).  Hierdoor kunnen we de kaart van Lisse inkleuren op basis van
+(IISG). Hierdoor kunnen we de kaart van Lisse inkleuren op basis van
 de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 
 <figure id="KaartStatusBeroep">
@@ -257,10 +270,10 @@ de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 
 ## Bewoners
 
-In het Lisse-endpoint kunnen we ook bewoners vinden.  Selecteer
-bijvoorbeeld perceel C191.  Dit perceel behoort bij Keukenhof.  Op dit
+In het Lisse-endpoint kunnen we ook bewoners vinden. Selecteer
+bijvoorbeeld perceel C191. Dit perceel behoort bij Keukenhof. Op dit
 perceel staan twee dienstwoningen, bekend als ['t
-Hoogje](https://cultureelerfgoed.nl/monumenten/511416).  Op de kaart
+Hoogje](https://cultureelerfgoed.nl/monumenten/511416). Op de kaart
 ([Figuur 10](#Lisse_Statuinsweg_164-166_01)) wordt zichtbaar wie in de
 huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 
@@ -300,7 +313,7 @@ afbeelden in [Figuur 12](#family-tree).
 ## Tijdlijn
 
 Niet alleen een familieverband kan worden weergegeven, ook een
-tijdlijn voor de bewoners in een huis kan worden weergegeven.  [Figuur
+tijdlijn voor de bewoners in een huis kan worden weergegeven. [Figuur
 13](#woon-tijdlijn) toont de bewoners die door de tijd heen op adres
 Broekweg 180 gewoond hebben.
 
