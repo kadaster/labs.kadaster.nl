@@ -4,20 +4,18 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 select
   ?shape
   (concat(
-    '<h1>',if(bound(?naam),str(?naam),'Geen naam'),'</h1>',
-    '<dl>',
-    if(bound(?type),concat('<dt>Type</dt><dd>',str(?type),'</dd>'),''),
-    '<dt>Functies</dt><dd>',str(?functies),'</dd>',
-    '<dt>Nummer</dt><dd><a href="',str(?monument),'" target="_blank">',str(?nummer),'</a></dd>') as ?shapeLabel)
+    '<h1>',IF(STRLEN(GROUP_CONCAT(DISTINCT ?naam;separator=', ')),GROUP_CONCAT(DISTINCT ?naam;separator=', '),'Geen Naam'),'</h1>','<dl>',
+    '<dt>Type(s)</dt><dd>',GROUP_CONCAT(DISTINCT ?type;separator=', '),'</dd>',
+    '<dt>Functie(s)</dt><dd>',GROUP_CONCAT(DISTINCT ?functies;separator=', '),'</dd>',
+    '<dt>Nummer(s)</dt><dd>',GROUP_CONCAT(?href;separator=', '),'</dd>') as ?shapeLabel)
 {
   {
     select
       (group_concat(distinct ?functie;separator=', ') as ?functies)
-      ?monument
-      ?naam
-      ?nummer
+	  ?naam
       ?shape
       ?type
+      ?href
     {
       ?monument
         ceo:rijksmonumentnummer ?nummer;
@@ -26,7 +24,10 @@ select
         ceo:heeftOorspronkelijkeFunctie/ceo:heeftFunctieNaam/skos:prefLabel ?functie.
       optional { ?monument ceo:heeftNaam/ceo:naam ?naam. }
       optional { ?monument ceo:heeftType/ceo:heeftTypeNaam/skos:prefLabel ?type. }
+      BIND(concat('<a href="',str(?monument),'" target="_blank">',str(?nummer),'</a>') as ?href)
     }
-    group by ?monument ?naam ?nummer ?shape ?type
+    group by ?naam ?href ?shape ?type
   }
 }
+GROUP BY ?shape
+ORDER BY DESC(?shapeLabel)

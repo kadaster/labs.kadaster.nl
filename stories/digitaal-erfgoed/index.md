@@ -103,6 +103,8 @@ door commandeur Adriaen Maertensz Block. Het landgoed groeide uit tot
 een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het
 Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het
 Keukenduin groente en fruit voor de keuken van kasteel Teylingen.
+Daarnaast zijn er verschillende krantenartikelen beschikbaar op [Delpher](https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010517091:mpeg21:a0009).
+
 [Figuur 3](#keukenhof) toont de monumenten die deel uitmaken van
 Keukenhof op een kaart.
 
@@ -183,8 +185,9 @@ gegevens uit het Lisse-endpoint.
 
 ## Amsterdammers in Lisse
 
-Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Door middel
-van een bevraging op het Lisse-endpoint vinden we een lijst personen
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck Groot grond bezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
+Zijn benoeming staat ook op de website van [Delpher](https://resolver.kb.nl/resolve?urn=ddd:010119517).
+Door middel van een bevraging op het Lisse-endpoint vinden we een lijst personen
 die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
 7](#AmsterdamPerceel)).
 
@@ -260,14 +263,59 @@ beroepenclassificaties van het Instituut voor Sociale Geschiedenis
 (IISG). Hierdoor kunnen we de kaart van Lisse inkleuren op basis van
 de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 
-<figure id="KaartStatusBeroep">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/kaart-status-beroep">
-  </query>
-  <figcaption>
-    Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
-  </figcaption>
-</figure>
-
+<p>De kaart hiernaast toont de werkende bevolking van Lisse. De
+  kleur geeft aan in welke categorie de werkende valt, volgens de legenda:</p>
+<ul>
+    <li>
+      <svg width="12px" height="12px">
+        <circle cx="6" cy="6" r="5" stroke="black" fill="green"></circle>
+      </svg>
+      Professional, technical and related workers
+    </li>
+  <li>
+    <svg width="12px" height="12px">
+      <circle cx="6" cy="6" r="5" stroke="black" fill="black"></circle>
+    </svg>
+    Administrative and managerial workers
+  </li>
+  <li>
+    <svg width="12px" height="12px">
+      <circle cx="6" cy="6" r="5" stroke="black" fill="pink"></circle>
+    </svg>
+    Clerical and related workers
+  </li>
+  <li>
+    <svg width="12px" height="12px">
+      <circle cx="6" cy="6" r="5" stroke="black" fill="yellow"></circle>
+    </svg>
+    Sales workers
+  </li>
+  <li>
+    <svg width="12px" height="12px">
+      <circle cx="6" cy="6" r="5" stroke="black" fill="orange"></circle>
+    </svg>
+    Service workers
+  </li>
+    <li>
+      <svg width="12px" height="12px">
+        <circle cx="6" cy="6" r="5" stroke="black" fill="blue"></circle>
+      </svg>
+      Agricultural, animal husbandry and forestry workers, fishermen and hunters
+    </li>
+    <li>
+      <svg width="12px" height="12px">
+        <circle cx="6" cy="6" r="5" stroke="black" fill="red"></circle>
+      </svg>
+      Production and related workers, transport equipment operators and labourers
+    </li>
+</ul>
+  <figure id="KaartStatusBeroep">
+    <query class="aside-figure" data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/kaart-status-beroep">
+    </query>
+    <figcaption>
+      Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
+    </figcaption>
+  </figure>
 ## Bewoners
 
 In het Lisse-endpoint kunnen we ook bewoners vinden. Selecteer
