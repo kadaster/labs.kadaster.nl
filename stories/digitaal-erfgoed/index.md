@@ -185,7 +185,7 @@ gegevens uit het Lisse-endpoint.
 
 ## Amsterdammers in Lisse
 
-Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck Groot grond bezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck, groot grondbezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
 Zijn benoeming staat ook op de website van [Delpher](https://resolver.kb.nl/resolve?urn=ddd:010119517).
 Door middel van een bevraging op het Lisse-endpoint vinden we een lijst personen
 die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
