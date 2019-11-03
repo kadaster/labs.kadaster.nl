@@ -25,9 +25,8 @@ Lisse en de bewoners van Lisse.
 
 Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
 
-- [data.oudlisse.nl](https://data.oudlisse.nl), een SPARQL-endpoint
-  van de Vereniging Oud Lisse met data van o.a. percelen, gebouwen,
-  eigenaren, bewoners in Lisse omstreeks 1830.
+- Een SPARQL-endpoint van de Vereniging Oud Lisse met data van o.a. percelen,
+  gebouwen, eigenaren, bewoners in Lisse omstreeks 1830.
 - [linkeddata.cultureelerfgoed.nl](https://linkeddata.cultureelerfgoed.nl),
   een SPARQL-endpoint van de Rijksdienst voor Cultureel Erfgoed met
   o.a data over monumenten.
@@ -37,23 +36,20 @@ Voor deze Data Story maken we gebruik van o.a. de volgende bronnen:
   basisregistraties ontsluit, alsook informatie uit het Kadastraal
   archief.
 - HISCO, een classificatiesysteem voor beroepen van het Internationaal
-  Instituur voor Sociale Geschiedenis (IISG).
-- kbresearch.nl
-- Europeana
-- DBpedia
+  Instituut voor Sociale Geschiedenis (IISG).
+- WikiData
+- Wikipedia
 - Delpher
-- Digitale Collectie Nederland
-- Rijksmuseum
 
 # Data Story “Buitenplaatsen in Lisse”
 
 ## Buitenplaatsen
 
 In de 17<sup>de</sup> eeuw groeide de rijkdom van de Amsterdamse
-elite. Het aantal rentieniers in deze groep nam sterk toe. Rond 1700
+elite. Het aantal renteniers in deze groep nam sterk toe. Rond 1700
 had tenminste een derde van de Amsterdamse elite één of meer
 buitenhuizen en/of landgoederen. Al vroeg in de Gouden Eeuw werden
-buitenplaatsen aangelegd op door droogbemaling nieuw gewonnen land,
+buitenplaatsen aangelegd op door droogbemaling nieuwgewonnen land,
 maar ook werden ze in grote aantallen achter de duinen en langs
 bevaarbare waterwegen gebouwd.
 
@@ -81,7 +77,7 @@ van de RCE.
 </figure>
 
 Naast de afbeelding op de kaart ([Figuur 1](#rce)) kunnen we de
-monumenten met beschrijving ook in een gallerij ([Figuur
+monumenten met beschrijving ook in een galerij ([Figuur
 2](#viewMonumenten)) tonen.
 
 <figure id="viewMonumenten">
@@ -90,7 +86,7 @@ monumenten met beschrijving ook in een gallerij ([Figuur
          data-query-ref="viewMonumenten.rq">
   </query>
   <figcaption>
-    Figuur 2 ― Gallerij met beschrijvingen van monumenten in Lisse.
+    Figuur 2 ― Galerij met beschrijvingen van monumenten in Lisse.
   </figcaption>
 </figure>
 
@@ -100,10 +96,10 @@ In het overzicht van de monumenten komen we
 [Keukenhof](https://cultureelerfgoed.nl/monumenten/511406) tegen.
 Keukenhof is van oorsprong een buitenplaats die gesticht werd in 1641
 door commandeur Adriaen Maertensz Block. Het landgoed groeide uit tot
-een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van het
-Keukenduyn. Gravin Jacoba van Beieren (1401-1436) haalde uit het
-Keukenduin groente en fruit voor de keuken van kasteel Teylingen.
-Daarnaast zijn er verschillende krantenartikelen beschikbaar op [Delpher](https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010517091:mpeg21:a0009).
+een gebied van ruim 200 ha. De naam Keukenhof is afgeleid van de naam
+van het daar gelegenKeukenduyn. Gravin Jacoba van Beieren (1401-1436)
+haalde uit het Keukenduin groente en fruit voor de keuken van kasteel
+Teylingen.
 
 [Figuur 3](#keukenhof) toont de monumenten die deel uitmaken van
 Keukenhof op een kaart.
@@ -124,13 +120,15 @@ Keukenhof op een kaart.
 vroeger heeft uitgezien. De eerste betrouwbare kaarten werden door
 het Kadaster gemaakt tussen 1812 en 1830. Die eerste kaarten werden
 minuutplans genoemd. De minuutplans van Lisse worden door Erfgoed
-Leiden en Omstreken beschikbaar gesteld.
+Leiden en Omstreken beschikbaar gesteld. [Figuur 4](#figuur-4) laat een minuutplan
+van Lisse zien; op deze kaart is het terrein van Keukenhof rond 1812
+te zien.
 
 <!-- '''Minuutplan Lisse sectie A blad 1''' -->
 <figure id="figuur-4">
   <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="600">
   <figcaption>
-    Figuur 4 ― Minuutplan van Keukenhof.
+    Figuur 4 ― Minuutplan Lisse Sectie C, blad 2 met daarop het terrein van Keukenhof.
   </figcaption>
 </figure>
 
@@ -150,8 +148,8 @@ is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
 
 Daarnaast is het mogelijk om de percelen van 1812 af te zetten tegen de huidige informatie die beschikbaar wordt gesteld door Kadaster.
 Hierdoor is het mogelijk om te zien hoe Oud Lisse is veranderd naar het huidige Lisse.
-[Figuur 5A](#perceel-kadaster) toont de kaart op basis van de bronnen van Oud Lisse met de huidige kaarten van de kadaster.
-In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. de blauwe percelen tonen de percelen uit 1812.
+[Figuur 5A](#perceel-kadaster) toont de kaart op basis van de bronnen van Oud Lisse met de huidige kaarten van het Kadaster.
+In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. De blauwe percelen tonen de percelen uit 1812.
 
 <figure id="perceel-achternaam">
   <query data-config-ref="https://kadaster.triply.cc/kadaster/brt/queries/BRT-oudlisse">
@@ -163,17 +161,13 @@ In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. de 
 
 ## Eigendom
 
-Het Lisse-endpoint geeft ook eigendomsinformatie. Klik daarvoor op een
-perceel. De percelen van Keukenhof blijken in bezit van Johan
-Steengracht van Oost Cappelle. We kunnen onmiddellijk doorklikken
-naar DBpedia en zien een portret en zien dat Johan een bekende
-kunstverzamelaar en museumdirecteur was. [Link naar
-DBpedia](http://nl.dbpedia.org/resource/Johan_Steengracht_van_Oostcapelle)
-op basis van Johan Steengracht van Oost Capelle.
+Tot het begin van de 18de eeuw was Keukenhof in bezit van Amsterdammers. Daar kwam in 1809 een eind aan. Via [Delpher](https://www.delpher.nl/nl/kranten/view?coll=ddd&identifier=ddd:010077613:mpeg21:a0006) vinden we een advertentie in de oprechte Haarlemse Courant; op 14 september 1809 vindt een verkoping plaats van een hofstede genaamd Keukenhof, in het Regthuis ‘de Zwaan’.
 
-“Welke percelen waren in bezit van Steengracht van Oost Capelle?”
-[Figuur 6](#JohanPerceel) geeft deze informatie op basis van de
-gegevens uit het Lisse-endpoint.
+De nieuwe eigenaar van Keukenhof vinden we terug in het Lisse-endpoint. Klik daarvoor op een
+perceel in [Figuur 6](#JohanPerceel). De percelen van Keukenhof blijken in bezit van Johan
+Steengracht van Oost Cappelle, een Hagenaar. We kunnen ook doorklikken
+naar Wikipedia en zien dat Johan een bekende
+kunstverzamelaar en museumdirecteur was.
 
 <figure id="JohanPerceel">
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/johan-perceel">
@@ -185,7 +179,7 @@ gegevens uit het Lisse-endpoint.
 
 ## Amsterdammers in Lisse
 
-Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck, groot grondbezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
+Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck, grootgrondbezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
 Zijn benoeming staat ook op de website van [Delpher](https://resolver.kb.nl/resolve?urn=ddd:010119517).
 Door middel van een bevraging op het Lisse-endpoint vinden we een lijst personen
 die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
@@ -253,7 +247,7 @@ in 1830.
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Beroepen-HISCO-aantal">
   </query>
   <figcaption>
-    Figure 8 ― Beroepen in Lisse in 1830.
+    Figuur 8 ― Beroepen van bewoners in Lisse in 1830.
   </figcaption>
 </figure>
 
@@ -347,14 +341,14 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 ## Familieboom
 
 Aangezien we in het Lisse-endpoint ook beschikken over
-relatie-gegevens, kunnen we de familieverbanden van Willem de Koning
+relatie-gegevens, kunnen we de nakomelingen van Petronella Berkel
 afbeelden in [Figuur 12](#family-tree).
 
 <figure id="family-tree">
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
   </query>
   <figcaption>
-    Figuur 12 ― Familieverbanden van Willem de Koning.
+    Figuur 12 ― Nakomelingen van Petronella Berkel.
   </figcaption>
 </figure>
 
@@ -438,3 +432,15 @@ Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jare
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
 </query>
 -->
+
+## Tot besluit
+
+De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).
+
+<figure id="Fotos-endpoint Lisse">
+<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Fotos-uit-endpoint/">
+</query>
+  <figcaption>
+    Figuur 14 ― Foto's van het Oud-Lisse endpoint.
+  </figcaption>
+</figure>
