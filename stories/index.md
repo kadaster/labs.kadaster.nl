@@ -12,7 +12,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
    <a href="./openels/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/logo.png">
+      <img class="card-image" src="/assets/images/openelslogo.png">
       <div class="card-title">OpenELS</div>
       <div class="card-description">Usually, the territory of a country is divided into a number of areas that are administered by local government. Such areas are called administrative units. The systems of such administrative division are hierarchical with several levels of progressively smaller units. Municipalities, regions and provinces are examples of administrative units at different levels. However, often it is difficult to compare structures of administrative division between countries because they use language-specific names for levels of administrative division.</div>
     </div>
