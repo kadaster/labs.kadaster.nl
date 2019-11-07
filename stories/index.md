@@ -9,7 +9,15 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen.  Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
-  <a href="./religieuze-gebouwen/index.html">
+   <a href="./openels/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/logo.png">
+      <div class="card-title">OpenELS</div>
+      <div class="card-description">Usually, the territory of a country is divided into a number of areas that are administered by local government. Such areas are called administrative units. The systems of such administrative division are hierarchical with several levels of progressively smaller units. Municipalities, regions and provinces are examples of administrative units at different levels. However, often it is difficult to compare structures of administrative division between countries because they use language-specific names for levels of administrative division.</div>
+    </div>
+  </a>  
+ <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/sint-jan.jpg">
