@@ -14,7 +14,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/openelslogo.png">
       <div class="card-title">OpenELS</div>
-      <div class="card-description">Usually, the territory of a country is divided into a number of areas that are administered by local government. Such areas are called administrative units. The systems of such administrative division are hierarchical with several levels of progressively smaller units. Municipalities, regions and provinces are examples of administrative units at different levels. However, often it is difficult to compare structures of administrative division between countries because they use language-specific names for levels of administrative division.</div>
+      <div class="card-description">In deze datastory laten we de verschillen zien van de administratieve eenheden tussen de landen Nederland, Noorwegen, Spanje en en Finland</div>
     </div>
   </a>  
  <a href="./religieuze-gebouwen/index.html">
