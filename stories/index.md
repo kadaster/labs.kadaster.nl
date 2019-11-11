@@ -14,7 +14,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/openelslogo.png">
       <div class="card-title">OpenELS</div>
-      <div class="card-description">In deze datastory laten we de verschillen zien van de administratieve eenheden tussen de landen Nederland, Noorwegen, Spanje en en Finland</div>
+      <div class="card-description">This datastory shows the names which are used to refer to the corresponding administrative levels in the Netherlands, Norway, Spain and Finland.</div>
     </div>
   </a>  
  <a href="./religieuze-gebouwen/index.html">
