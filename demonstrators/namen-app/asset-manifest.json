@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/namen-app/static/css/main.a5a6f989.chunk.css",
-    "main.js": "/namen-app/static/js/main.b515382c.chunk.js",
-    "main.js.map": "/namen-app/static/js/main.b515382c.chunk.js.map",
-    "runtime-main.js": "/namen-app/static/js/runtime-main.bf28738d.js",
-    "runtime-main.js.map": "/namen-app/static/js/runtime-main.bf28738d.js.map",
-    "static/js/2.4ac789ca.chunk.js": "/namen-app/static/js/2.4ac789ca.chunk.js",
-    "static/js/2.4ac789ca.chunk.js.map": "/namen-app/static/js/2.4ac789ca.chunk.js.map",
-    "index.html": "/namen-app/index.html",
-    "precache-manifest.7468e78e7a98e9be6c804cf75d2c48aa.js": "/namen-app/precache-manifest.7468e78e7a98e9be6c804cf75d2c48aa.js",
-    "service-worker.js": "/namen-app/service-worker.js",
-    "static/css/main.a5a6f989.chunk.css.map": "/namen-app/static/css/main.a5a6f989.chunk.css.map",
-    "static/media/Logo-kadaster.png": "/namen-app/static/media/Logo-kadaster.5d975e1b.png"
+    "main.css": "/demonstrators/namen-app/static/css/main.a5a6f989.chunk.css",
+    "main.js": "/demonstrators/namen-app/static/js/main.9cf92c35.chunk.js",
+    "main.js.map": "/demonstrators/namen-app/static/js/main.9cf92c35.chunk.js.map",
+    "runtime-main.js": "/demonstrators/namen-app/static/js/runtime-main.64f633c4.js",
+    "runtime-main.js.map": "/demonstrators/namen-app/static/js/runtime-main.64f633c4.js.map",
+    "static/js/2.4ac789ca.chunk.js": "/demonstrators/namen-app/static/js/2.4ac789ca.chunk.js",
+    "static/js/2.4ac789ca.chunk.js.map": "/demonstrators/namen-app/static/js/2.4ac789ca.chunk.js.map",
+    "index.html": "/demonstrators/namen-app/index.html",
+    "precache-manifest.c628b032c222b5e93ee08618ef04a03d.js": "/demonstrators/namen-app/precache-manifest.c628b032c222b5e93ee08618ef04a03d.js",
+    "service-worker.js": "/demonstrators/namen-app/service-worker.js",
+    "static/css/main.a5a6f989.chunk.css.map": "/demonstrators/namen-app/static/css/main.a5a6f989.chunk.css.map",
+    "static/media/Logo-kadaster.png": "/demonstrators/namen-app/static/media/Logo-kadaster.5d975e1b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf28738d.js",
+    "static/js/runtime-main.64f633c4.js",
     "static/js/2.4ac789ca.chunk.js",
     "static/css/main.a5a6f989.chunk.css",
-    "static/js/main.b515382c.chunk.js"
+    "static/js/main.9cf92c35.chunk.js"
   ]
 }
