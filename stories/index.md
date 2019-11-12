@@ -9,6 +9,7 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen.  Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
+  <!--
   <a href="./verkaufsbucher/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -16,7 +17,8 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-title">Verkaufsbucher</div>
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. Deze data story vertelt hun verhaal.</div>
     </div>
-  </a>  
+  </a>
+  -->
   <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
