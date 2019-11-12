@@ -55,12 +55,14 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <div class="card-description">Dataset met informatie over percelen.</div>
     </div>
   </a>
-    <a href="https://kadaster.triply.cc/kadaster/transacties-apeldoorn/">
-      <div class="card">
-        <div class="card-type">Data</div>
-        <img class="card-image" src="/assets/images/kadaster-logo.png">
-        <div class="card-title">Kadaster transactie data</div>
-        <div class="card-description">Dataset met transactie data over verschillende verkoop en koop aktes van het kadaster.</div>
-      </div>
-    </a>
+  <!--
+  <a href="https://kadaster.triply.cc/kadaster/transacties-apeldoorn/">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Kadaster transactie data</div>
+      <div class="card-description">Dataset met transactie data over verschillende verkoop en koop aktes van het kadaster.</div>
+    </div>
+  </a>
+  -->
 </div>

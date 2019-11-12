@@ -17,7 +17,15 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">This datastory shows the names which are used to refer to the corresponding administrative levels in the Netherlands, Norway, Spain and Finland.</div>
     </div>
   </a>  
- <a href="./religieuze-gebouwen/index.html">
+  <a href="./verkaufsbucher/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png">
+      <div class="card-title">Verkaufsbucher</div>
+      <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. Deze data story vertelt hun verhaal.</div>
+    </div>
+  </a>
+  <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/sint-jan.jpg">
