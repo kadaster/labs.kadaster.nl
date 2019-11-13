@@ -110,5 +110,13 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Zoeken in metadata</div>
       <div class="card-description">Waar zoekt een data gebruiker naar?</div>
     </div>
+  </a> 
+  <a href="/demonstrators/namen-app">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+      <div class="card-title">BRT Namenzoeker</div>
+      <div class="card-description"> In de BRT Namenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
+    </div>
   </a>
 </div>
