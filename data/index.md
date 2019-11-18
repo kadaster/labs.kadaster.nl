@@ -4,7 +4,7 @@ title: Data
 ---
 # Data
 
-Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan.  Op deze pagina wordt een overzicht van deze datasets gegeven.
+Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan.  Op deze pagina wordt een overzicht van deze datasets gegeven.  Datasets die door het Data Science team als Linked Data worden aangeboden zijn te vinden op <https://data.labs.kadaster.nl>.
 
 <div class="cards-wrapper">
   <a href="https://lod-cloud.net/dataset/bag">
