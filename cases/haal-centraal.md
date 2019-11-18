@@ -30,7 +30,7 @@ Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er een vraag
       <div class="card-description">Vocabulaire voor de dataset met scholen en sportlocaties.</div>
     </div>
   </a>
-  <a href="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties">
+  <a href="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/voetbal.png">

@@ -39,7 +39,7 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <div class="card-description">Vocabulaire voor de dataset met scholen en sportlocaties.</div>
     </div>
   </a>
-  <a href="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties">
+  <a href="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/voetbal.png">
@@ -47,7 +47,7 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <div class="card-description">Dataset met scholen en sportlocaties in Rotterdam en Den Haag.</div>
     </div>
   </a>
-  <a href="https://kadaster.triply.cc/kadaster/grondmarkt">
+  <a href="https://data.labs.kadaster.nl/kadaster/grondmarkt">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/grondmarkt.jpg">
@@ -56,7 +56,7 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
     </div>
   </a>
   <!--
-  <a href="https://kadaster.triply.cc/kadaster/transacties-apeldoorn/">
+  <a href="https://data.labs.kadaster.nl/kadaster/transacties-apeldoorn/">
     <div class="card">
       <div class="card-type">Data</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">

@@ -28,33 +28,33 @@ Vervolgens is deze Linked Open Data gekoppeld aan bestaande Linked Open Datasets
 
 Om een zo compleet mogelijk beeld te geven van de gemeentelijke data per school tonen we alle scholen op de kaart met de prognoses en gelinkte data.
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/label-scholen">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/label-scholen">
 </query>
 
 ## Scholen in de BRT
 
-De [Basisregistratie Topografie](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl) bevat ook schoolgebouwen.  Onderstaande bevraging toont de Haal Centraal [schoollocaties](https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/browser?resource=https%3A%2F%2Fkadaster.triply.cc%2Fhaal-centraal%2Fscholen-sportlocaties%2Fvocab%2FSchoollocatie) samen met de [BRT scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt-topnl#School).
+De [Basisregistratie Topografie](https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl) bevat ook schoolgebouwen.  Onderstaande bevraging toont de Haal Centraal [schoollocaties](https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/browser?resource=https%3A%2F%2Fdata.labs.kadaster.nl%2Fhaal-centraal%2Fscholen-sportlocaties%2Fvocab%2FSchoollocatie) samen met de [BRT scholen](https://www.pdok.nl/datamodel/-/article/basisregistratie-topografie-brt-topnl#School).
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-brt">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/scholen-brt">
 </query>
 
 ## Scholen + gymzalen
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/scholen-gymlocaties-3d">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/scholen-gymlocaties-3d">
 </query>
 
 ## BAG bouwjaren
 
 Gemeente houden handmatig het bouwjaar van gymlocaties bij in een specifieke applicatie. Het is interessant om te weten in hoeverre de bouwjaren bijgehouden in deze applicatie overeenkomen met de gegevens uit de BAG. Het verschil duidt aan hoeveel jaar de applicatie data en de BAG verschillen. Wanneer je met de muis over de grafiek heen beweegt worden de schoolnamen met de precieze afwijking getoond.
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/bouwjaar-bag-vs-gemeente">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/bouwjaar-bag-vs-gemeente">
 </query>
 
 ## BAG oppervlakte
 
 We geven weer hoe groot de oppervlakte van alle scholen zijn.  Wanneer je met de muis over de grafiek heen beweegt worden de schoolnamen met de precieze afwijking getoond.
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoolgebouw-oppervlakte">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/schoolgebouw-oppervlakte">
 </query>
 
 ## Reisafstand en bezettingsgraad
@@ -96,7 +96,7 @@ Wat moeten gemeenten doen om het busvervoer van leerlingen van scholen naar gyml
   </tbody>
 </table>
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties-met-analyse">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/schoollocaties-gymlocaties-met-analyse">
 </query>
 
 ## Prognoses 2030
@@ -104,8 +104,8 @@ Wat moeten gemeenten doen om het busvervoer van leerlingen van scholen naar gyml
 Voor iedere school zijn de leerling prognoses tot 2030 bekend.  Omdat we inzicht hebben in de huidige bezettingsgraad van gymlocaties kunnen de toekomstige bezettingsgraad als een ratio op de huidige bezettingsgraad worden afgebeeld.  Klik op de scholen voor de precieze
 getallen.
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Nieuw-ratio-calc">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/Nieuw-ratio-calc">
 </query>
 
-<query data-config-ref="https://kadaster.triply.cc/haal-centraal/scholen-sportlocaties/queries/Aantal-leerlingen-per-jaar">
+<query data-config-ref="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties/queries/Aantal-leerlingen-per-jaar">
 </query>

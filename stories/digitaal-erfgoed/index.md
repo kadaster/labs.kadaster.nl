@@ -152,7 +152,7 @@ Hierdoor is het mogelijk om te zien hoe Oud Lisse is veranderd naar het huidige 
 In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. De blauwe percelen tonen de percelen uit 1812.
 
 <figure id="perceel-achternaam">
-  <query data-config-ref="https://kadaster.triply.cc/kadaster/brt/queries/BRT-oudlisse">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/brt/queries/oudlisse">
   </query>
   <figcaption>
     Figuur 5A ― Percelen uit 1812 en de huidige kaart van Lisse.
