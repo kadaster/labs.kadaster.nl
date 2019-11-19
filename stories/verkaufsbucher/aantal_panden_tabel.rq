@@ -7,35 +7,35 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
-PREFIX naa:	<http://archief.nl/def/>
+PREFIX naa:  <http://archief.nl/def/>
 
 SELECT ?plaatsnaamObject (count(?tradeaction) AS ?numVerkochtePanden) (count(?transactieObjectInPlaats) AS ?numKopersInPlaats) (count(?transactieObjectBuitenPlaats) AS ?numKopersBuitenPlaats) (xsd:integer(sum(?prijsObject)/100000) AS ?totWaarde_x100K) WHERE 
 {
-  		{
-    		?tradeaction a schema:TradeAction ;
+      {
+        ?tradeaction a schema:TradeAction ;
                  schema:object/dct:type hg:Building ;
                  schema:object/vcard:hasAddress/vcard:locality ?plaatsnaamObject ;
-    			 naa:sellingPrice ?prijsObject .
-  		}
-  		UNION
-		{
-		    ?transactieObjectInPlaats a schema:TradeAction ;
+           naa:sellingPrice ?prijsObject .
+      }
+      UNION
+    {
+        ?transactieObjectInPlaats a schema:TradeAction ;
                  schema:object/dct:type hg:Building ;
                  schema:buyer/vcard:hasAddress/vcard:locality ?plaatsnaamObject . 
 
-		}
-    	UNION
-		{
-		    ?transactieObjectBuitenPlaats a schema:TradeAction ;
+    }
+      UNION
+    {
+        ?transactieObjectBuitenPlaats a schema:TradeAction ;
                  schema:object/dct:type hg:Building ;
                  schema:object/vcard:hasAddress/vcard:locality ?plaatsnaamObject ;
                  schema:buyer/vcard:hasAddress/vcard:locality ?plaatsnaamKoperObject . 
     
-    		filter (?plaatsnaamObject != ?plaatsnaamKoperObject)
-		}
+        filter (?plaatsnaamObject != ?plaatsnaamKoperObject)
+    }
   
 } 
-GROUPBY ?plaatsnaamObject
-ORDERBY desc(?numVerkochtePanden)
+GROUP BY ?plaatsnaamObject
+ORDER BY desc(?numVerkochtePanden)
 OFFSET 0
 LIMIT 20
