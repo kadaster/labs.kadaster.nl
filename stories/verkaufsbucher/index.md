@@ -1,10 +1,7 @@
 ---
-endpoint: https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql
 layout: story
-logo: /stories/verkaufsbucher/NA_Logo_PRIM_CMYK.png
-title: Verkaufsbücher - Nationaal Archief
-logo: verkaufsbucher/NA_Logo_PRIM_CMYK.png
 published: true
+title: Verkaufsbücher - Nationaal Archief
 ---
 
 # Verkaufsbücher - Nationaal Archief
