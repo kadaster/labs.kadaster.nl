@@ -20,14 +20,14 @@ Hieronder worden de volgende resultaten getoond: De onteigende panden op de kaar
 
 Een overzicht van de verhandelde objecten waarvan het adres gevonden is in de Basisregistraties Adressen en Gebouwen (BAG).
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q1">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-1">
 </query>
         
 In de hieronder staande kaart wordt voor een specifieke woonplaats weergegeven welke objecten (woningen, bouwland etc.) onteigend zijn. Wanneer je op een marker op de kaart klikt wordt er voor dat object informatie getoond, afkomstig van het Nationaal Archief en van het Kadaster.
 
 We zoomen nu in op Utrecht, maar de query kan aangepast worden naar een willekeurige woonplaats. Dit kan door via de pijl-symbool boven de onderstaande kaart de query open te klappen en op regel 32 de woonplaats aan te passen. Daarna druk je op de play-knop om de nieuwe query te draaien.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q2">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-2">
 </query>
 
 ## Relatie tussen koper en verkoper visueel weergeven op de kaart
@@ -36,7 +36,7 @@ In de Verkaufsbücher is per pand bijgehouden wie de eigenaar was en zijn woonad
 
 Als je op de kaart een eigenaar bekijkt (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#008000" r="9"/></svg>), dan kun je de lijntjes volgen naar de panden (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#808080" r="9"/></svg>) en door naar de adressen van de kopers (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#800080" r="9"/></svg>) en vice versa.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q3">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-3">
 </query>
 
 ### De casus Hermans-Helsloot
@@ -48,7 +48,7 @@ Piersma en Kemperman (2105) beschrijven een interessante casus betreffende de on
 Begin 1941 raakte Hermans betrokken bij de liquidatie van door de Duitsers verboden organisaties. Het kostte hem een kantoorruit, die met een steen aan diggelen werd gegooid. Hermans verklaarde tegenover de politie dat deze daad waarschijnlijk te maken had met zijn bemoeienis met de opheffing van de vrijmetselarij. Dit genootschap werd door de Duitsers als volksvijandig en Joods gezien, en moest daarom het veld ruimen. Hermans zou er als liquidateur zo’n 25.000 gulden mee verdienen. Met een dergelijk kapitaal was het niet moeilijk huizen van onteigende Joden op te kopen. Dat deed Hermans dan ook veelvuldig. Hij was betrokken bij de verkoop van zo’n tweehonderd panden. Hierbij werkte hij nauw samen met zijn echtgenote en de makelaar A. Groenewegen. Ook al regelde Hermans alle praktische zaken zelf, naar buiten toe opereerden mevrouw Hermans-Helsloot en Groenewegen als duo, waarbij Groenewegen de verkoper was en Hermans-Helsloot de eigenaresse van de panden die ze zogenaamd al jaren in haar bezit had. 
 Op de panden die werden gekocht en doorverkocht werden forse winsten gemaakt, ook omdat het trio erin slaagde om in tal van gevallen de kopers ervan te overtuigen dat er geen sprake was van Joods eigendom. Een aantal panden kocht het echtpaar om zelf te houden. Hermans-Helsloot noemde er na de oorlog twee in de Utrechtsestraat (de nummers 72 en 74). Hermans kocht tevens een dubbelhuis aan het Albert Hahnplantsoen dat eigendom was van de koopman Jacob Polak. Ook al was ‘arisering’ het officiële doel van de verkoop van Joods onroerend goed, het maakte het drietal in de praktijk weinig uit met wie zij zaken deden. Volgens een getuige in het naoorlogse gerechtelijke onderzoek tegen Everout had met name Groenewegen een grote diversiteit aan klanten. Ze varieerden van ‘Italiaanse ijsventers’ tot ‘Chinese zwarthandelaren’, die hij niet kon verstaan, ‘maar die hem waarschijnlijk ook niet verstonden, want hij [Groenewegen] heeft een heel ernstig spraakgebrek’. Een vreemd team derhalve: een advocaat met een glazen oog en een verkoper met een spraakstoornis."
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q1">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-4">
 </query>
 
 Ook in het Historisch Nieuwsblad is een artikel verschenen over het criminele vastgoed circuit en de Jodenvervolging in de tweede wereldoorlog. [https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html](https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html)
@@ -63,7 +63,7 @@ In onderstaande tabel is een overzicht gegeven per plaats over het aantal panden
 
 In de tabel is Amsterdam dominant aanwezig waardoor inzicht in de andere plaatsen wordt beperkt. Het is voor de gebruiker mogelijk om via de pijl-symbool boven de tabel de query aan te passen. Nadat de query zichtbaar is kunt u onderaan de query de “ OFFSET” verhogen van 0 naar 1. Wanneer de query via het pijl-symbool rechtsboven aan opnieuw wordt uitgevoerd verschijnt een nieuwe weergave van de tabel zonder Amsterdam. De resterende plaatsen geven nu meer inzicht in de  transacties.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q5">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-5">
 </query>
 
 ### Maatschappelijke relevantie
@@ -73,20 +73,8 @@ Ook andere gemeenten zoals Rotterdam en Utrecht werken aan een schaderegeling. M
 
 Voorbeeld: In de gemeente Utrecht zijn 81 panden met in totaal een oppervlakte van 13.559 m2 verkocht. Bij 100 euro per m2 is dat ruim 1,3 miljoen euro, te verdelen over de eigenaren of hun nabestaanden.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/q6">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/kdp-labs/queries/verkaufsbucher-6">
 </query>
-
-<!--
-### Kopers met de meeste panden
-
-Dit is een Top20-lijst van de kopers met de meeste panden/transacties. Hierbij is per record in de Verkaufsbücher bekeken welke koper een transactie heeft gedaan waarna vervolgens het totaal van de transacties per koper is berekend. Hiernaast is in de Verkaufsbucher ook aangegeven welk bedrag de koper heeft betaald voor de transactie. Het totaalbedrag van de transacties is per koper aangegeven.
-In de tabel zijn er een aantal opvallendheden. Zo is bijvoorbeeld de persoon B.E.M. Hermans-Helsloot ook bekend onder de namen B.P.M. Hermans-Helsloot en E.T.A. Hermans. Dit zijn dezelfde personen maar komen voor op aparte regels in de tabel.
-
-<query  data-config= "http://yasgui.org/#query=PREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+naa%3A%09%3Chttp%3A%2F%2Farchief.nl%2Fdef%2F%3E%0A%0ASELECT+%3Fkoper+(xsd%3Ainteger(sum(%3FprijsObject)%2F100000)+AS+%3Ftotaal_waarde_100K)+(count(%3Ftransactie)+AS+%3Ftransacties)+WHERE+%7B%0A+%0A%09%3Ftransactie+a+schema%3ATradeAction%3B%09%0A+++++++++++++naa%3AsellingPrice+%3FprijsObject%3B%0A+++++++++++++schema%3Abuyer+%3FkoperURI.%09%0A++++%3FkoperURI+skos%3AprefLabel+%3Fkoper%3B%0A++++FILTER(%3Fkoper+!%3D+%22%22)++++++%0A%0A%7D+%0AGROUPBY+%3Fkoper%0AORDERBY+desc(%3Ftotaal_waarde_100K)%0ALIMIT+25&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.labs.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Koper%2FTransacties&headers=%7B%7D&outputFormat=gchart&outputSettings=%7B%22chartConfig%22%3A%7B%22options%22%3A%7B%22hAxis%22%3A%7B%22useFormatFromData%22%3Atrue%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22viewWindow%22%3Anull%2C%22viewWindowMode%22%3Anull%7D%2C%22legacyScatterChartLabels%22%3Atrue%2C%22vAxes%22%3A%5B%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22logScale%22%3Afalse%7D%2C%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22logScale%22%3Afalse%7D%5D%2C%22isStacked%22%3Atrue%2C%22booleanRole%22%3A%22certainty%22%2C%22legend%22%3A%22right%22%2C%22width%22%3A600%2C%22height%22%3A371%7D%2C%22state%22%3A%7B%7D%2C%22view%22%3A%7B%22columns%22%3Anull%2C%22rows%22%3Anull%7D%2C%22isDefaultVisualization%22%3Afalse%2C%22chartType%22%3A%22ColumnChart%22%7D%2C%22motionChartState%22%3Anull%7D"
-        data-query-ref="kopers_panden.rq"
-        data-output="gchart">
-</query>
--->
 
 ### Verkoopbedrag versus WOZ-waarde
 
