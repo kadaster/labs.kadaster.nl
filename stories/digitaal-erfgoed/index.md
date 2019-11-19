@@ -435,7 +435,7 @@ Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jare
 
 ## Tot besluit
 
-De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).
+De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).  We nemen nu in gepaste vorm afscheid met een paar oude ansichtkaarten van het Kasteel keukenhof, allen afkomstig uit linked data van het Lisse-endpoint.
 
 <figure id="Fotos-endpoint Lisse">
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Fotos-uit-endpoint/">
