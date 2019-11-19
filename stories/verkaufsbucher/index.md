@@ -32,8 +32,7 @@ In de hieronder staande kaart wordt voor een specifieke woonplaats weergegeven w
 
 We zoomen nu in op Utrecht, maar de query kan aangepast worden naar een willekeurige woonplaats. Dit kan door via de pijl-symbool boven de onderstaande kaart de query open te klappen en op regel 32 de woonplaats aan te passen. Daarna druk je op de play-knop om de nieuwe query te draaien.
 
-<query  data-query-ref="regio-transactie-overzicht.rq"
-        data-output="geo"> 
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/verkaufsbucher-story/queries/q2">
 </query>
 
 ## Relatie tussen koper en verkoper visueel weergeven op de kaart
@@ -55,8 +54,7 @@ Piersma en Kemperman (2105) beschrijven een interessante casus betreffende de on
 Begin 1941 raakte Hermans betrokken bij de liquidatie van door de Duitsers verboden organisaties. Het kostte hem een kantoorruit, die met een steen aan diggelen werd gegooid. Hermans verklaarde tegenover de politie dat deze daad waarschijnlijk te maken had met zijn bemoeienis met de opheffing van de vrijmetselarij. Dit genootschap werd door de Duitsers als volksvijandig en Joods gezien, en moest daarom het veld ruimen. Hermans zou er als liquidateur zo’n 25.000 gulden mee verdienen. Met een dergelijk kapitaal was het niet moeilijk huizen van onteigende Joden op te kopen. Dat deed Hermans dan ook veelvuldig. Hij was betrokken bij de verkoop van zo’n tweehonderd panden. Hierbij werkte hij nauw samen met zijn echtgenote en de makelaar A. Groenewegen. Ook al regelde Hermans alle praktische zaken zelf, naar buiten toe opereerden mevrouw Hermans-Helsloot en Groenewegen als duo, waarbij Groenewegen de verkoper was en Hermans-Helsloot de eigenaresse van de panden die ze zogenaamd al jaren in haar bezit had. 
 Op de panden die werden gekocht en doorverkocht werden forse winsten gemaakt, ook omdat het trio erin slaagde om in tal van gevallen de kopers ervan te overtuigen dat er geen sprake was van Joods eigendom. Een aantal panden kocht het echtpaar om zelf te houden. Hermans-Helsloot noemde er na de oorlog twee in de Utrechtsestraat (de nummers 72 en 74). Hermans kocht tevens een dubbelhuis aan het Albert Hahnplantsoen dat eigendom was van de koopman Jacob Polak. Ook al was ‘arisering’ het officiële doel van de verkoop van Joods onroerend goed, het maakte het drietal in de praktijk weinig uit met wie zij zaken deden. Volgens een getuige in het naoorlogse gerechtelijke onderzoek tegen Everout had met name Groenewegen een grote diversiteit aan klanten. Ze varieerden van ‘Italiaanse ijsventers’ tot ‘Chinese zwarthandelaren’, die hij niet kon verstaan, ‘maar die hem waarschijnlijk ook niet verstonden, want hij [Groenewegen] heeft een heel ernstig spraakgebrek’. Een vreemd team derhalve: een advocaat met een glazen oog en een verkoper met een spraakstoornis."
 
-<query  data-query-ref="persoon-focus.rq"
-        data-output="geo">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/verkaufsbucher-story/queries/q4">
 </query>
 
 Ook in het Historisch Nieuwsblad is een artikel verschenen over het criminele vastgoed circuit en de Jodenvervolging in de tweede wereldoorlog. [https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html](https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html)
@@ -83,7 +81,8 @@ Ook andere gemeenten zoals Rotterdam en Utrecht werken aan een schaderegeling. M
 
 Voorbeeld: In de gemeente Utrecht zijn 81 panden met in totaal een oppervlakte van 13.559 m2 verkocht. Bij 100 euro per m2 is dat ruim 1,3 miljoen euro, te verdelen over de eigenaren of hun nabestaanden.
 
-<query  data-query-ref="oppervlakte_objecten_plaats.rq">
+<query data-query-ref="oppervlakte_objecten_plaats.rq"
+       data-query-endpoint="https://data.pdok.nl/sparql">
 </query>
 
 <!--
