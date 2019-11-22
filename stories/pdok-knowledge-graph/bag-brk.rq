@@ -64,7 +64,7 @@ select * {
         }
         group by ?pand
       }
-      service <https://data.labs.pdok.nl/migratie/sparql> {
+      service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
         ?nummeraanduiding <http://data.labs.pdok.nl/linksets/def/bag_brk#relatedParcel> ?perceel.
         ?pand labs:measuredHeight ?pandShapeHeight.
         ?gebouwdeel

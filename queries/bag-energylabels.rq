@@ -28,7 +28,7 @@ select * {
     }
   }
   bind(str(?huisnummer) as ?huisnummerString)
-  service <https://data.labs.pdok.nl/sparql> {
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
     graph graph:energylabels {
       optional {
         [ energylabels:ep ?ep;

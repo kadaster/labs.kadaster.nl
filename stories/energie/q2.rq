@@ -33,7 +33,7 @@ select ?shape ?shapeColor (min(?shapeLabel) as ?shapeLabel) {
       ?pandStatus rdfs:label ?pandStatusLabel
     }
   }
-  service <https://data.labs.pdok.nl/sparql> {
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
     graph graph:energielabels {
       optional {
         _:0 energielabels:e_label ?energielabel ;

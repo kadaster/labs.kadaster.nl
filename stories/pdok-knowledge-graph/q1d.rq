@@ -80,7 +80,7 @@ select * {
       limit 1000
     }
   }
-  service <https://data.labs.pdok.nl/migratie/sparql> {
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
     ?pand <https://data.labs.pdok.nl/bag/def/measuredHeight> ?shapeHeight.
     ?gebouwdeel
       epbd:energieprestatie-indicator ?energieprestatie;

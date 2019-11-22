@@ -8,7 +8,7 @@ select distinct
 {
   {
     select ?gebouw ?pand ?pandShapeHeight {
-      service <https://data.labs.pdok.nl/migratie/sparql> {
+      service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
         graph <http://data.labs.pdok.nl/dataset/3d-bag> {
           ?pand <https://data.labs.pdok.nl/bag/def/measuredHeight> ?pandShapeHeight
         }

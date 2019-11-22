@@ -64,7 +64,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
       ?pandStatus rdfs:label ?pandStatusLabel.
     }
   }
-  service <https://data.labs.pdok.nl/sparql>	{
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql>	{
     ?pand labs:measuredHeight ?pandShapeHeight.
   }
   bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)

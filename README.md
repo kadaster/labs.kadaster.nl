@@ -58,7 +58,7 @@ It defines the following variables:
 | Variable name | Use                                                                    | Default value                       |
 | ------------- | ---------------------------------------------------------------------- | ----------------------------------- |
 | `basemap`     | The default background map for the 2D geospatial visualization plugin. | `nlmaps`                            |
-| `endpoint`    | The default endpoint for queries.                                      | `https://data.labs.pdok.nl/sparql/` |
+| `endpoint`    | The default endpoint for queries.                                      | `https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql` |
 | `output`      | The default result set visualization for queries.                      | `table`                             |
 
 ## Content requirements

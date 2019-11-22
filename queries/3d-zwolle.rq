@@ -62,7 +62,7 @@ select ?shape ?shapeColor ?shapeHeight ?shapeName (sample(?shapeLabel) as ?shape
                 monumenten:hasStreetNumber ?huisnummer.
     }
 
-    # service <https://data.labs.pdok.nl/migratie/sparql>	{
+    # service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql>	{
     #   ?pand labs:measuredHeight ?pandWktHeight.
     # }
     bind(IRI(concat('https://cultureelerfgoed.nl/id/monument/',str(?code))) as ?x)

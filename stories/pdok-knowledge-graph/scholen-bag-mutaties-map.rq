@@ -75,7 +75,7 @@ select ?pandShape ?pandShapeColor ?pandShapeLabel ?pandShapeName ?perceelShape ?
         group by ?pandShape ?pandShapeName
       }
       bind(concat('<h3>Status veranderingen voor ',str(?pandShapeName),'</h3>',str(?body)) as ?pandShapeLabel)
-      service <https://data.labs.pdok.nl/migratie/sparql> {
+      service <https://api.labs.kadaster.nl/datasets/kadaster-dev/kdp-labs/services/kdp-labs/sparql> {
         ?nummeraanduiding <http://data.labs.pdok.nl/linksets/def/bag_brk#relatedParcel> ?perceel.
       }
     }
