@@ -65,7 +65,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/groene-stroom.png">
       <div class="card-title">CBS energiebesparingspotentie</div>
-      <div class="card-description">Deze Data Story geeft een overzicht van de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
+      <div class="card-description">Data Story over de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
     </div>
   </a>
   <a href="./bier/index.html">
