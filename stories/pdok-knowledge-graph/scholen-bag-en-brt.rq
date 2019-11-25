@@ -5,13 +5,9 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 select ?gebouwShape ?gebouwShapeColor ?pandShape ?pandShapeColor ?pandShapeHeight ?pandShapeName ?pandShapeLabel ?pand {
   {
     select ?gebouw ?pand ?pandShapeHeight {
-      service <https://data.labs.pdok.nl/migratie/sparql> {
-        graph <http://data.labs.pdok.nl/dataset/3d-bag> {
-          ?pand <https://data.labs.pdok.nl/bag/def/measuredHeight> ?pandShapeHeight
-        }
-        graph <http://data.labs.pdok.nl/dataset/linkset-bag-pand-brt-gebouw> {
-          ?pand geo:sfOverlaps ?gebouw.
-        }
+      service <https://api.labs.kadaster.nl/datasets/kadaster-dev/labs/services/labs/sparql> {
+        ?pand <https://data.labs.kadaster.nl/kadaster/bag-25d/vocab/measuredHeight> ?pandShapeHeight.
+        ?pand geo:sfOverlaps ?gebouw.
       }
     }
   }

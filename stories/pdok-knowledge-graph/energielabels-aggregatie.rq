@@ -66,8 +66,8 @@ select * {
             }
             limit 10000
           }
-          service <https://data.labs.pdok.nl/migratie/sparql> {
-            ?pand labs:measuredHeight ?shapeHeight0.
+          service <https://api.labs.kadaster.nl/datasets/kadaster-dev/labs/services/labs/sparql> {
+            ?pand <https://data.labs.kadaster.nl/kadaster/bag-25d/vocab/measuredHeight> ?shapeHeight0.
             ?gebouwdeel
               epbd:energieprestatie-indicator ?energieprestatie;
               epbd:heeftAdresseerbaarObject ?verblijfsobject;

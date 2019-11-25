@@ -15,7 +15,7 @@ prefix geof: <http://www.opengis.net/def/function/geosparql/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix waardeklasse: <https://data.labs.pdok.nl/woz/def/waardeklasse/>
 prefix woz: <https://data.labs.pdok.nl/woz/def/>
-select * {
+select ?shape ?shapeColor ?shapeHeight ?shapeLabel ?shapeName {
   {
     {
       select
@@ -80,8 +80,8 @@ select * {
       limit 1000
     }
   }
-  service <https://data.labs.pdok.nl/migratie/sparql> {
-    ?pand <https://data.labs.pdok.nl/bag/def/measuredHeight> ?shapeHeight.
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/labs/services/labs/sparql> {
+    ?pand <https://data.labs.kadaster.nl/kadaster/bag-25d/vocab/measuredHeight> ?shapeHeight.
     ?gebouwdeel
       epbd:energieprestatie-indicator ?energieprestatie;
       epbd:heeftAdresseerbaarObject ?verblijfsobject;
@@ -125,20 +125,19 @@ select * {
     if(?energieprestatie=begrip_energielabel:F_Energielabel,'F',
     if(?energieprestatie=begrip_energielabel:G_Energielabel,'G',
                           'unknown'))))))))))) as ?label)
-  bind('''
-{{prefix}}
-<h3>
-  <svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="10" cy="10" fill="{{shapeColor}}" r="10">
-  </svg>
-  Energielabel {{label}}
-</h3>
-<dl>
-  <dt>Opnamedatum</dt>
-  <dd>{{opnamedatum}}</dd>
-  <dt>Registratiedatum</dt>
-  <dd>{{registratiedatum}}</ddt>
-</dl>''' as ?shapeLabel)
-  bind(?shapeLabel as ?widget)
+  bind(concat(
+    str(?prefix),
+    '<h3>',
+      '<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">',
+        '<circle cx="10" cy="10" fill="{{shapeColor}}" r="10">',
+      '</svg>',
+      'Energielabel ',str(?label),
+    '</h3>',
+    '<dl>',
+      '<dt>Opnamedatum</dt>',
+      '<dd>',str(?opnamedatum),'</dd>',
+      '<dt>Registratiedatum</dt>',
+      '<dd>',str(?registratiedatum),'</ddt>',
+    '</dl>') as ?shapeLabel)
 }
 limit 1000

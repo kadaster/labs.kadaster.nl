@@ -1,9 +1,8 @@
 prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix labs: <https://data.labs.pdok.nl/bag/def/>
 prefix schema: <http://schema.org/>
-select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
+select distinct ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
   {
     select * {
       values (?woonplaatsNaam ?straatNaam) {
@@ -57,9 +56,10 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
       ?pandStatus rdfs:label ?pandStatusLabel
     }
   }
-  service <https://api.labs.kadaster.nl/datasets/kadaster/bag-25d/services/bag-25d/sparql>	{
-    ?pand labs:measuredHeight ?pandShapeHeight.
-  }
+  bind(30 as ?pandShapeHeight)
+  #service <https://api.labs.kadaster.nl/datasets/kadaster/bag-25d/services/bag-25d/sparql>	{
+  #  ?pand <https://data.labs.kadaster.nl/kadaster/bag-25d/vocab/measuredHeight> ?pandShapeHeight.
+  #}
   bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
   bind(concat(
     '<h3>',str(?pandShapeName),'</h3>',
@@ -72,7 +72,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           '<dt>Woonplaats</dt>',
           '<dd><a href="',str(?woonplaats),'" target="_blank">',str(?woonplaatsNaam),'</a></dd>',
           '<dt>Oppervlakte</dt>',
-          '<dd>',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' m²</dd>',
+          '<dd>',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' m2</dd>',
           '<dt>Status</dt>',
           '<dd><a href="',str(?verblijfsobjectStatus),'" target="_blank">',str(?verblijfsobjectStatusLabel),'</a></dd>',
         '</dl>',
