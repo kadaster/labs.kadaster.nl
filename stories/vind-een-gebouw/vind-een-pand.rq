@@ -64,7 +64,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
       ?pandStatus rdfs:label ?pandStatusLabel.
     }
   }
-  service <https://api.labs.kadaster.nl/datasets/kadaster/bag-25d/services/bag-25d/sparql> {
+  service <https://api.labs.kadaster.nl/datasets/kadaster-dev/labs/services/labs/sparql> {
     ?pand <https://data.labs.kadaster.nl/kadaster/bag-25d/vocab/measuredHeight> ?pandShapeHeight.
   }
   bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
@@ -79,7 +79,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
           '<dt>Woonplaats</dt>',
           '<dd><a href="',str(?woonplaats),'" target="_blank">',str(?woonplaatsNaam),'</a></dd>',
           '<dt>Oppervlakte</dt>',
-          '<dd>',str(?oppervlakte),'m²</dd>',
+          '<dd>',str(?oppervlakte),'m2</dd>',
           '<dt>Status</dt>',
           '<dd><a href="',str(?verblijfsobjectStatus),'" target="_blank">',str(?verblijfsobjectStatusLabel),'</a></dd>',
         '</dl>',
