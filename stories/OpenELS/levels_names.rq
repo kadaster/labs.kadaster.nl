@@ -11,7 +11,7 @@ SELECT DISTINCT
 
 WHERE {
   {
-    VALUES (?g ?country) {(<http://data.labs.pdok.nl/dataset/openels/au> "The Netherlands")}
+    VALUES (?g ?country) {(<https://data.labs.kadaster.nl/kadaster-dev/openels/au> "The Netherlands")}
     GRAPH ?g {
       ?au1st au:AdministrativeUnit.nationalLevel ?levels;
              au:AdministrativeUnit.nationalLevelName ?inNetherlands_.
