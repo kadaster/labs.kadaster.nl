@@ -1,5 +1,5 @@
 ---
-banner: /assets/images/lisse.jpg
+banner: /assets/images/hack-a-lod.jpg
 layout: story
 published: true
 title: Hack-a-LOD 2019
@@ -7,17 +7,17 @@ title: Hack-a-LOD 2019
 
 # Hack-a-LOD 2019
 
-TODO
+Voor deze Hack-a-LOD zijn we geïnspireerd door het werk van de kunstenaar [Günter Demnig](http://www.stolpersteine.eu/faq/) die Joden die gedeporteerd zijn tijdens de Tweede Wereldoorlog probeert te herdenken via zogeheten ‘Stolpersteine’ of ‘Struikelstenen’.  Voor de Hack-a-LOD focusen we ons op de Joden die gedeporteerd zijn uit Zutphen, maar de struikelstenen liggen door heel Europa, zoals Linked Databron Wikidata ons laat [zien](https://query.wikidata.org/#%23Cats%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Flocation%20%3Fimg%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ26703203%20.%0A%20%20OPTIONAL%20%7B%3Fitem%20wdt%3AP625%20%3Flocation%7D%0A%20%20OPTIONAL%20%7B%3Fitem%20wdt%3AP18%20%3Fimg%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D).
 
 ## Stolpersteine
 
-[Figuur 1](#figuur-1) TODO
+In Zutphen liggen 131 Stolpersteinen. In [Figuur 1](#figuur-1) wordt getoond waar de stenen precies liggen en welke mensen in herinnering worden geroepen.  Deze dataset is door ons als naar Linked Data omgezet en online gepubliceert.
 
 <figure id="figuur-1">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner/queries/adressen">
   </query>
   <figcaption>
-    Figuur 1 ― TODO
+    Figuur 1 ― De 131 Stolpersteinen die in Zutphen liggen.
   </figcaption>
 </figure>
 
