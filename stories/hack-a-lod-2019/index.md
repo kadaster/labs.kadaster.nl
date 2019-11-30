@@ -35,16 +35,33 @@ TODO
 
 ## Kadaster gebruikt als link
 
-Basisregistratie Adressen en Gebouwen (BAG).
+Alle data is als Linked Data beschikbaar gesteld in de Kadaster Labs
+omgeving.  Hierbij worden de volgende datasets bebruikt:
 
-[Figuur 3](#figuur-3) TODO
+  - Basisregistratie Adressen en Gebouwen (BAG)
+  - Verkaufsbücher (Nationaal Archief)
+  - Stolpersteine (Nieuw!)
+  - Linkset Stolpersteine ↔ BAG (Nieuw!)
+  - Linkset Verkaufsbücher ↔ BAG
+
+Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https://data.labs.kadaster.nl/hack-a-lod</a> voor alle bronnen.
 
 <figure id="figuur-3">
-  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="600">
+  <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">
+    <img src="kadaster-labs.png">
+  </a>
   <figcaption>
-    Figuur 4 ― Minuutplan Lisse Sectie C, blad 2 met daarop het terrein van Keukenhof.
+    Figuur 3 ― Klik op het plaatje om naar de gebruikte Linked Datasets te gaan.
   </figcaption>
 </figure>
+
+Hergebruikte schema's:
+
+  - Schema.org
+  - GeoSPARQL
+  - Nationaal Archief
+  - Kadaster
+  - RDF(S), OWL, SKOS, Dublin Core Terms
 
 ### Dimensie: locatie
 
@@ -54,7 +71,7 @@ Basisregistratie Adressen en Gebouwen (BAG).
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/kaart-zutphen">
   </query>
   <figcaption>
-    Figuur 1 ― Kaart van Zutphen XYZ.
+    Figuur 4 ― Kaart van Zutphen XYZ.
   </figcaption>
 </figure>
 
@@ -66,6 +83,6 @@ Basisregistratie Adressen en Gebouwen (BAG).
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
   </query>
   <figcaption>
-    Figuur 2 ― Galerij met XYZ.
+    Figuur 5 ― Galerij met XYZ.
   </figcaption>
 </figure>
