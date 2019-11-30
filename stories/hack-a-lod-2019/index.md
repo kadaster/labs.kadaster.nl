@@ -33,7 +33,34 @@ Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werde
   </figcaption>
 </figure>
 
-## Kadaster gebruikt als link
+## Link tussen Stolpersteine & Verkaufsbücher
+
+In de Verkaufsbücher is gedurende de Tweede Wereldoorlog nauwkeurig geregistreerd welke panden van voornamelijk Joodse eigenaren zijn ‘verkocht’. In werkelijkheid ging het om onteigende panden die voor lage bedragen werden doorverkocht.
+Met de koppeling van de Stolpersteine aan verkochte panden krijgen de slachtoffers letterlijk een gezicht. Bovendien wordt duidelijk bij welke onteigende panden de oorspronkelijke eigenaar niet is teruggekeerd en er waarschijnlijk dus geen aanspraak is gemaakt op rechtsherstel.
+
+### Stolpersteine & Verkaufsbücher: Panden
+
+<figure id="figuur-3">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/kaart-zutphen">
+  </query>
+  <figcaption>
+    Figuur 3 ― Kaart van panden die voorkomen in de Stolpersteine én in de Verkaufsbücher.
+  </figcaption>
+</figure>
+
+## Stolpersteine & Verkaufsbücher: Personen
+
+De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrijft bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basis Administratie Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar bijvoorbeeld de notarissen die bij de transacties betrokken waren.
+
+<figure id="figuur-4">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
+  </query>
+  <figcaption>
+    Figuur 4 ― Galerij van personen die in de Stolpersteine én in de Verkaufsbücher voorkomen.
+  </figcaption>
+</figure>
+
+## Tot slot
 
 Alle data is als Linked Data beschikbaar gesteld in de Kadaster Labs
 omgeving.  Hierbij worden de volgende datasets bebruikt:
@@ -46,35 +73,11 @@ omgeving.  Hierbij worden de volgende datasets bebruikt:
 
 Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https://data.labs.kadaster.nl/hack-a-lod</a> voor alle bronnen.
 
-<figure id="figuur-3">
+<figure id="figuur-5">
   <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">
     <img src="kadaster-labs.png">
   </a>
   <figcaption>
-    Figuur 3 ― Klik op het plaatje om naar de gebruikte Linked Datasets te gaan.
-  </figcaption>
-</figure>
-
-### Dimensie: locatie
-
-[Figuur 4](#figuur-4) TODO
-
-<figure id="figuur-4">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/kaart-zutphen">
-  </query>
-  <figcaption>
-    Figuur 4 ― Kaart van Zutphen XYZ.
-  </figcaption>
-</figure>
-
-## Dimensie: persoon
-
-[Figuur 5](#figuur-5) laat zien dat XYZ.
-
-<figure id="figuur-5">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
-  </query>
-  <figcaption>
-    Figuur 5 ― Galerij met XYZ.
+    Figuur 5 ― Klik op het plaatje om de gebruikte Linked Datasets te bezoeken.
   </figcaption>
 </figure>
