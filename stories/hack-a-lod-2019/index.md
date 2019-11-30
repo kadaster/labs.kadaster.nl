@@ -23,7 +23,7 @@ In Zutphen liggen 131 Stolpersteinen. In [Figuur 1](#figuur-1) wordt getoond waa
 
 ## Verkaufsbücher
 
-[Figuur 2](#figuur-2) TODO
+Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werden geconfisqueerd door de bezetter en doorverkocht. In de bron van de 'Verkaufsbücher' zijn deze transacties bij gehouden. We kunnen zien, wanneer de huizen van Joden werden verkocht, maar ook aan wie. Een aantal mensen kocht een flink aantal huizen aan.  De tijdlijn hieronder ([Figuur 2](#figuur-2)) geeft weer wanneer deze huizen werden verkocht. De verkopen zijn niet gelijk verspreid over de oorlogsjaren, maar geclusterd in de tijd. Wat opvallend is, is dat deze clusteringen niet samen vallen met grote razzia's, zoals die van [17/18 november 1942](https://www.omroepgelderland.nl/nieuws/2148359/Jodenjacht-in-Gelderland-de-nacht-dat-honderden-Joden-worden-afgevoerd-naar-Westerbork).
 
 <figure id="figuur-2">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher/queries/timeline-sold-property">
