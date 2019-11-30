@@ -38,11 +38,11 @@ Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werde
 Alle data is als Linked Data beschikbaar gesteld in de Kadaster Labs
 omgeving.  Hierbij worden de volgende datasets bebruikt:
 
-  - Basisregistratie Adressen en Gebouwen (BAG)
-  - Verkaufsbücher (Nationaal Archief)
-  - Stolpersteine (Nieuw!)
-  - Linkset Stolpersteine ↔ BAG (Nieuw!)
-  - Linkset Verkaufsbücher ↔ BAG
+  - [Basisregistratie Adressen en Gebouwen (BAG)](https://data.labs.kadaster.nl/kadaster/bag) (Kadaster)
+  - [Verkaufsbücher](https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher) (Nationaal Archief)
+  - [Stolpersteine](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner) (Nieuw!)
+  - [Linkset Stolpersteine ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner-bag) (Nieuw!)
+  - [Linkset Verkaufsbücher ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher) (Nationaal Archief & Kadaster)
 
 Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https://data.labs.kadaster.nl/hack-a-lod</a> voor alle bronnen.
 
@@ -54,14 +54,6 @@ Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https:
     Figuur 3 ― Klik op het plaatje om naar de gebruikte Linked Datasets te gaan.
   </figcaption>
 </figure>
-
-Hergebruikte schema's:
-
-  - Schema.org
-  - GeoSPARQL
-  - Nationaal Archief
-  - Kadaster
-  - RDF(S), OWL, SKOS, Dublin Core Terms
 
 ### Dimensie: locatie
 
