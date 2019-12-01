@@ -1,0 +1,135 @@
+* {
+  font-size: 95%;
+}
+
+/*
+For some reason, textual content in <code> tags is always displayed
+larger.  We therefore reduce the font size inside all <code> tags.
+*/
+.reveal code {
+  font-size: 80% !important;
+}
+.reveal pre {
+  padding: 5px !important;
+  width: 100% !important;
+}
+
+/*
+The following ensures that images do not run off the screen in the
+most common cases.
+*/
+.reveal figure figcaption {
+  font-size: 80% !important;
+}
+.reveal figure img,
+.reveal figure video {
+  max-height: 475px !important;
+}
+
+/*
+We do not like the ALL-CAPS default for headers in Reveal.js.
+*/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none !important;
+}
+
+/*
+Images have an ugly black border.
+*/
+.reveal img {
+  border: none !important;
+  box-shadow: none !important;
+  margin: 5px auto !important;
+}
+
+/*
+Allow informational text boxes that stand out.
+*/
+.reveal .info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb !important;
+  border-radius: .25rem;
+  border: 1px solid transparent !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  color: #0c5460;
+  margin-bottom: 1rem !important;
+  padding: .75rem 1.25rem !important;
+  position: relative;
+}
+
+/*
+Keyboard key styling is absent in Reveal.
+*/
+.reveal kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  color: #333;
+  display: inline-block;
+  line-height: 1 !important;
+  padding: 2px 4px !important;
+  white-space: nowrap;
+}
+
+/*
+The following allows a slide to be (partially) split into a left and a
+right column.  When full width content appears underneath such a two
+column layout, use `clear:both;'.
+*/
+.reveal .left {
+  float: left;
+  width: 50%;
+}
+.reveal .right {
+  float: right;
+  width: 50%;
+}
+
+/*
+Sometimes textual content is too large to fit a slide.  E.g., a table
+with multiple columns and rows, or a figure caption that is part of
+figure that is part of a column in a two column layout.  In such
+cases, the following class can be added, which reduces the size of the
+text a bit.
+*/
+.reveal .size-10 {
+  font-size: 10% !important;
+}
+.reveal .size-20 {
+  font-size: 20% !important;
+}
+.reveal .size-30 {
+  font-size: 30% !important;
+}
+.reveal .size-40 {
+  font-size: 40% !important;
+}
+.reveal .size-50 {
+  font-size: 50% !important;
+}
+.reveal .size-60 {
+  font-size: 60% !important;
+}
+.reveal .size-70 {
+  font-size: 70% !important;
+}
+.reveal .size-80 {
+  font-size: 80% !important;
+}
+.reveal .size-90 {
+  font-size: 90% !important;
+}
+
+/*
+Sometimes we want text to have a white font color, e.g., when we use a
+background image.
+*/
+.reveal .white {
+  color: white !important;
+}

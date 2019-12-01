@@ -8,14 +8,14 @@
     <meta name="description" content="Kadaster SPARQL Tutorial">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/assets/css/presentation.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/lib/css/default.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/css/reveal.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/lib/css/default.css">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/reveal.css">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/theme/simple.css" id="theme">
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js-3.7.0/css/print/pdf.css' : '/assets/reveal.js-3.7.0/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js-3.8.0/css/print/pdf.css' : '/assets/reveal.js-3.8.0/css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
     <title>Kadaster SPARQL Tutorial</title>
@@ -34,34 +34,25 @@
             de <kbd>ESC</kbd> toets voor een overzicht.
           </p>
           <hr>
-          <div>
-            <h4>Door</h4>
-            <a href="https://kadaster.nl" target="_blank">
-              <figure class="left">
-                <img src="/assets/images/kadaster.jpg" height="80">
-                <figcaption class="size-80">Kadaster</figcaption>
-              </figure>
-            </a>
-            <a href="https://triply.cc" target="_blank">
-              <figure class="right">
-                <img src="/assets/images/triply.svg" height="80">
-                <figcaption class="size-80">Triply B.V.</figcaption>
-              </figure>
-            </a>
-          </div>
+          <a href="https://labs.kadaster.nl" target="_blank">
+            <figure class="left">
+              <img src="/assets/images/kadaster-logo.png" height="80">
+              <figcaption class="size-80">Kadaster Data Science Team</figcaption>
+            </figure>
+          </a>
         </section>
         <section>
           <section>
             <h1>Wat is Linked Data?</h1>
           </section>
           <section>
-            <h3>World Wide Web 🖺</h3>
+            <h3>World Wide Web</h3>
             <a href="/assets/images/before_sw_conversion.png">
               <img height="400" src="/assets/images/before_sw_conversion.png">
             </a>
           </section>
           <section>
-            <h3>Linked Data 🖼</h3>
+            <h3>Linked Data</h3>
             <a href="/assets/images/after_sw_conversion.png">
               <img height="400" src="/assets/images/after_sw_conversion.png">
             </a>
@@ -786,8 +777,8 @@ limit 100</code></pre>
 
       </div>
     </div>
-    <script src="/assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
-    <script src="/assets/reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="/assets/reveal.js-3.8.0/lib/js/head.min.js"></script>
+    <script src="/assets/reveal.js-3.8.0/js/reveal.js"></script>
     <script>
 			// More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -799,18 +790,18 @@ limit 100</code></pre>
 				// More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
           // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-		      { src: '/assets/reveal.js-3.7.0/js/classList.js', condition: function() { return !document.body.classList; } },
+		      { src: '/assets/reveal.js-3.8.0/js/classList.js', condition: function() { return !document.body.classList; } },
 		      // Interpret Markdown in <section> elements
-		      { src: '/assets/reveal.js-3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		      { src: '/assets/reveal.js-3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		      { src: '/assets/reveal.js-3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 		      // Syntax highlight for <code> elements
-		      { src: '/assets/reveal.js-3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		      { src: '/assets/reveal.js-3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 		      // Zoom in and out with Alt+click
-		      { src: '/assets/reveal.js-3.7.0/plugin/zoom-js/zoom.js', async: true },
+		      { src: '/assets/reveal.js-3.8.0/plugin/zoom-js/zoom.js', async: true },
 		      // Speaker notes
-		      { src: '/assets/reveal.js-3.7.0/plugin/notes/notes.js', async: true },
+		      { src: '/assets/reveal.js-3.8.0/plugin/notes/notes.js', async: true },
 		      // MathJax
-		      { src: '/assets/reveal.js-3.7.0/plugin/math/math.js', async: true }
+		      { src: '/assets/reveal.js-3.8.0/plugin/math/math.js', async: true }
         ]
       });
     </script>

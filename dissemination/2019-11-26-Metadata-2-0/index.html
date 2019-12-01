@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="Erwin Folmer and Wouter Beek">
+    <meta name="description" content="Kadaster ― Metadata 2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/assets/css/presentation.css">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/lib/css/zenburn.css">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/reveal.css">
+    <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/theme/simple.css" id="theme">
+    <link rel="shortcut icon" href="kadaster-logo.png">
+    <script src="/assets/js/presentation.js">
+    </script>
+    <style type="text/css">
+      .attention {
+        animation: blinker 5s linear infinite;
+        color: red;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+    <title>Kadaster ― Metadata 2.0</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>Kadaster ― Metadata 2.0</h2>
+          <div>
+            <a href="https://labs.kadaster.nl" target="_blank">
+              <img src="/assets/images/kadaster-logo.png" height="200">
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h2>6 proeven</h2>
+          <table>
+            <thead>
+              <tr><th></th><th>A. Dataset</th><th>B. Model</th><th>C. Instanties</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>1. Vindbaarheid</th><td>1A. Dataset metadata</td><td>1B. Model metadata</td><td>1C. Instantie metadata</td></tr>
+              <tr><th>2. Kwaliteit (fitness for use)</th><td>2A. Dataset kwaliteit</td><td>2B. Model kwaliteit</td><td>2C. Instantie kwaliteit</td></tr>
+              <tr><th>3. Knowledge Graph</th><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>1A. Dataset metadata voor vindbaarheid</h3>
+          <div class="left">
+            <h4>Open standaarden</h4>
+            <ul class="size-90">
+              <li><a href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT2: Data Catalog Vocabulary</a></li>
+              <li><a href="https://www.dublincore.org/" target="_blank">Dublin Core</a></li>
+              <li><a href="https://www.w3.org/TR/void/" target="_blank">VoID: Describing Linked Datasets</a></li>
+              <li><a href="https://www.w3.org/TR/vcard-rdf/" target="_blank">vCard</a></li>
+            </ul>
+          </div>
+          <div class="right size-90">
+            <h4>De-facto standaarden</h4>
+            <ul>
+              <li><a href="https://schema.org/" target="_blank">Schema.org</a></li>
+              <li><a href="https://ogp.me" target="_blank">Open Graph Protocol</a></li>
+              <li>HTML 5 <code>meta</code> tags</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>1A. Dataset metadata die Google ziet: NGR</h3>
+          <div class="left">
+            <a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/aa3b5e6e-7baa-40c0-8972-3353e927ec2f" target="_blank">
+              <img src="ngr.png">
+            </a>
+          </div>
+          <div class="right">
+            <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fwww.nationaalgeoregister.nl%2Fgeonetwork%2Fsrv%2Fdut%2Fcatalog.search%23%2Fmetadata%2Faa3b5e6e-7baa-40c0-8972-3353e927ec2f" target="_blank">
+              <img src="empty.png">
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h3>1A. Dataset metadata die Google ziet: Labs</h3>
+          <div class="left">
+            <a href="https://data.labs.kadaster.nl/kadaster/bag" target="_blank">
+              <img src="dataset-labs.png">
+            </a>
+          </div>
+          <div class="right">
+            <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdata.labs.kadaster.nl%2Fkadaster%2Fbag" target="_blank">
+              <img src="dataset-labs-metadata.png">
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h3>1A. Dataset metadata in sociale media</h3>
+          <figure>
+            <img src="dataset-labs-social.png">
+            <figcaption>
+              Plak URL <code>https://data.labs.kadaster.nl/kadaster/bag</code> in <a href="https://cards-dev.twitter.com/validator" target="_blank">Twitter</a>.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1A. Dataset metadata in zoekmachines</h3>
+          <figure>
+            <a href="https://toolbox.google.com/datasetsearch/search?query=kadaster%20triply&docid=%2Bz32ii%2BUaFedWhqdAAAAAA%3D%3D" target="_blank">
+              <img src="dataset-labs-search.png">
+            </a>
+            <figcaption class="attention">
+              Pas op! Tussentijdse resultaten!! ;-)
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1B. Model metadata die Google ziet</h3>
+          <figure>
+            <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdata.labs.kadaster.nl%2Fkadaster%2Fbag-vocab%2Fdef%2FPand" target="_blank">
+              <img src="model-labs-metadata.png">
+            </a>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1B. Model metadata in sociale media</h3>
+          <figure>
+            <img src="model-labs-social.png">
+            <figcaption>
+              Plak URL <code>https://data.labs.kadaster.nl/kadaster/bag-vocab/def/Pand</code> in <a href="https://cards-dev.twitter.com/validator" target="_blank">Twitter</a>.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata voor vindbaarheid</h3>
+          <div class="left">
+            <h4>Open standaarden</h4>
+            <ul>
+              <li>RDF</li>
+              <li>RDFS</li>
+              <li>OWL</li>
+              <li>SKOS</li>
+              <li>SHACL</li>
+            </ul>
+          </div>
+          <div class="right">
+            <h4>De-facto standaarden</h4>
+            <ul>
+              <li><a href="https://schema.org/" target="_blank">Schema.org</a></li>
+              <li><a href="https://ogp.me" target="_blank">Open Graph Protocol</a></li>
+              <li>HTML 5 <code>meta</code> tags</li>
+            </ul>
+          </div>
+          <p>Schema.org beschrijvingen worden automatisch aangemaakt o.b.v. open standaarden versie.</p>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata voor vindbaarheid</h3>
+          <div class="left">
+            <h4>BAG instanties lastig te vinden:</h4>
+            <ul class="size-90">
+              <li>Huisnummer zit op nummeraanduiding…</li>
+              <li>Straatnaam zit op openbare ruimte…</li>
+              <li>Plaatsnaam zit op woonplaats…</li>
+              <li>Geometrie volgens OGC/GIS standaarden…</li>
+            </ul>
+          </div>
+          <div class="right">
+            <h4>Zoekmachines prefereren eenvoud:</h4>
+            <ul class="size-90">
+              <li>Alle eigenschappen waar mensen op zoeken zijn verbonden aan 1 object.</li>
+              <li>Eenvoudige geometrie.</li>
+              <li>Maar, well gelinked met de gedetailleerde BAG objecten (<code>prov:wasDerivedFrom</code>).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata voor vindbaarheid</h3>
+          <figure>
+            <img src="bag-schema-org.png">
+            <figcaption>
+              Schema.org beschrijvingen worden automatisch aangemaakt o.b.v. de officiële KDP versie.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata: Labs</h3>
+          <figure>
+            <a href="https://data.labs.kadaster.nl/kadaster/kg/browser?resource=https://data.labs.kadaster.nl/kadaster/kg/id/place/0200200000007079" target="_blank">
+              <img src="instantie-labs.png">
+            </a>
+            <figcaption>
+              Alle eigenschappen op 1 simpel object.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata die Google ziet: PDOK</h3>
+          <div class="left">
+            <a href="https://bag.basisregistraties.overheid.nl/bag/doc/verblijfsobject/0363010012086591" target="_blank">
+              <img src="instantie-pdok.png">
+            </a>
+          </div>
+          <div class="right">
+            <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fdoc%2Fverblijfsobject%2F0363010012086591" target="_blank">
+            <img src="empty.png">
+          </div>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata die Google ziet: Labs</h3>
+          <div class="left">
+            <a href="https://data.labs.kadaster.nl/kadaster/bag/browser?resource=http%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fid%2Fverblijfsobject%2F0363010012086591" target="_blank">
+              <img src="instantie-pdok-labs.png">
+            </a>
+          </div>
+          <div class="right">
+            <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdata.labs.kadaster.nl%2Fkadaster%2Fbag%2Fbrowser%3Fresource%3Dhttp%253A%252F%252Fbag.basisregistraties.overheid.nl%252Fbag%252Fid%252Fverblijfsobject%252F0363010012086591" target="_blank">
+              <img src="instantie-labs-metadata.png">
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h3>1C. Instanties vindbaar in Google Search</h3>
+          <figure>
+            <a href="https://www.google.com/search?q=pand+0518100000221107" target="_blank">
+              <img src="instantie-labs-search.png">
+            </a>
+            <figcaption class="attention">
+              Pas op! Tussentijdse resultaten!! ;-)
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>1C. Instantie metadata in sociale media</h3>
+          <h4>KDP versie</h4>
+          <img src="instantie-pdok-social.png">
+          <h4>KDP versie binnen Labs</h4>
+          <img src="instantie-pdok-labs-social.png">
+          <h4>Labs versie</h4>
+          <img src="instantie-labs-social.png">
+        </section>
+
+        <section>
+          <h2>Doelen</h2>
+          <ol>
+            <li>Verbeterde vindbaarheid</li>
+            <li>Laagdrempelige toegang</li>
+            <li>Geïntegreerde weergave</li>
+          </ol>
+        </section>
+
+        <section>
+          <section>
+            <h2>1. Verbeterde vindbaarheid</h2>
+            <ul>
+              <li>(Geo)portaal</li>
+              <li>Zoekmachine</li>
+              <li>Virtuele Assistent</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>1a. Data portaal</h2>
+            <ul>
+              <li><a href="https://nationaalgeoregister.nl" target="_blank">Nationaal Georegister</a></li>
+              <li><a href="https://data.overheid.nl" target="_blank">data.overheid.nl</a></li>
+              <li><a href="https://inspire.ec.europa.eu" target="_blank">INSPIRE</a></li>
+              <li><a href="tot kadastrale informatie" target="_blank">LOD Cloud</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>1b. Zoekmachine</h2>
+            <ul>
+              <li>Google Dataset Search</li>
+              <li>Google Search</li>
+              <li>Mobile</li>
+              <li>Andere?</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>1c. Virtuele Assistent</h2>
+            <ul>
+              <li>Alle metadata die ook wordt gebruikt voor <i>Text Search</i>, plus…</li>
+              <li>Metadata voor spraak</li>
+              <li>Metadata voor taal (Engels, Nederlands, …)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Dataset metadata (1/2)</h3>
+            <figure>
+              <img src="ngr-bag.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <img src="empty.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <figcaption>
+                De officiële Linked Data versie van de BAG, zoals gepubliceerd op PDOK:
+                <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fwww.nationaalgeoregister.nl%2Fgeonetwork%2Fsrv%2Fdut%2Fcatalog.search%23%2Fmetadata%2Faa3b5e6e-7baa-40c0-8972-3353e927ec2f" target="_blank">dataset</a>,
+                <a href="" target="_blank">metadata</a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3>1a. Dataset metadata die Google ziet: Labs</h3>
+            <figure>
+              <img src="data-science-bag.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <img src="data-science-bag-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <figcaption>
+                Kopie van de Linked Data BAG in de Data Science triple store:
+                <a href="http://data.labs.kadaster.nl/kadaster/bag" target="_blank">dataset</a>,
+                <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fkadaster.triply.cc%2Fkadaster%2Fbag" target="_blank">metadata</a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3>Voorbeeld portaal: LOD Cloud</h3>
+            <figure>
+              <a href="https://lod-cloud.net/dataset/bag" target="_blank">
+                <img src="bag-in-lod-cloud.png">
+              </a>
+              <figcaption>
+                <a href="https://lod-cloud.net/dataset/bag" target="_blank">Zoek op “BAG”.</a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h4>Voorbeeld zoekmachine: Google Dataset Search</h4>
+            <figure>
+              <a href="https://toolbox.google.com/datasetsearch/search?query=kadaster%20brt" target="_blank">
+                <img src="google-dataset-search.png">
+              </a>
+              <figcaption>
+                <b>Let op! tussentijdse resultaten.</b><br/> <a href="https://toolbox.google.com/datasetsearch" target="_blank">
+                  Zoek op “kadaster brt”.
+                </a>
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h3>Instance metadata (1/2)</h3>
+            <figure>
+              <img src="instance-pdok.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <img src="instance-pdok-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <figcaption>
+                De officiële Linked Data versie van een instantie, hier het verblijfsobject 0363010012086591:
+                <a href="https://bag.basisregistraties.overheid.nl/bag/doc/verblijfsobject/0363010012086591" target="_blank">instance</a>,
+                <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fdoc%2Fverblijfsobject%2F0363010012086591" target="_blank">metadata</a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section>
+            <h3>Instance metadata (2/2)</h3>
+            <figure>
+              <img src="instance.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <img src="instance-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
+              <figcaption>
+                Kopie van het verblijfsobject 0363010012086591 in de Data Science triple store:
+                <a href="https://kadaster.triply.cc/kadaster/bag/browser?resource=http%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fid%2Fverblijfsobject%2F0363010012086591&focus=forward" target="_blank">instance</a>,
+                <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fkadaster.triply.cc%2Fkadaster%2Fbag%2Fbrowser%3Fresource%3Dhttp%253A%252F%252Fbag.basisregistraties.overheid.nl%252Fbag%252Fid%252Fverblijfsobject%252F0363010012086591" target="_blank">metadata</a>
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <h3>Google Search</h3>
+
+            <figure>
+              <a
+                href="https://www.google.com/search?q=pand+0518100000221107"
+                target="_blank"
+              >
+                <img src="google-search.png" />
+              </a>
+              <figcaption>
+                <b>Let op! tussentijdse resultaten.</b><br/> <a href="https://www.google.com/search?q=pand+0518100000221107"
+                   target="_blank">
+                   Zoek op “pand 0518100000221107”.
+                </a>
+              </figcaption>
+            </figure>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>2. Laagdrempelige toegang</h2>
+          </section>
+
+          <section>
+            <h2>Data Summary</h2>
+            <p>Een versimpelde weergave (‘view‘) van een data silo.</p>
+          </section>
+
+          <section>
+            <h3>Data Summary van de BAG</h3>
+              <figure>
+                <img src="kkg-bag.svg" target="_blank">
+                <figcaption>
+                  Volledig Google-interpreteerbaar (Schema.org).
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>3. Geïntegreerde weergave</h2>
+          </section>
+
+          <section>
+            <h3>Intern</h3>
+            <ul>
+              <li>BAG</li>
+              <li>BRT/TOP10NL</li>
+              <li>BRK/DKK</li>
+              <li>Ruimtelijke Plannen</li>
+              <li>Etc.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Extern</h3>
+            <ul>
+              <li>CBS</li>
+              <li>DUO</li>
+              <li>Nationaal Archief</li>
+              <li>KvK</li>
+              <li>RCE</li>
+              <li>RVO</li>
+              <li>IISG (Gemeentegeschiedenis, AMCO, CShapes)</li>
+              <li>Wikidata, DBpedia, GeoNames</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Data-integratie</h3>
+            <p>Gebruik Linked Data voor low cost data integratie.</p>
+            <p><a href="https://kadaster.triply.cc" target="_blank">data.labs.kadaster.nl</a></p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Andere initiatieven</h2>
+          </section>
+
+          <section>
+            <h3>Online team</h3>
+            <figure>
+              <a href="https://www.google.com/search?source=hp&ei=tXqAXZiqI4X7kwWHkLXABg&q=Wat+is+een+aanwijs%3F&btnK=Google+Search" target="_blank">
+                <img src="wat-is-een-aanwijs.png">
+              </a>
+              <figcaption>
+                “Wat is een aanwijs?”
+              </figcaption>
+            </figure>
+          </section>
+          <section>
+            <ul>
+              <li>1-op-1-op-1</li>
+              <li>Sociale Verzekeringsbank</li>
+            </ul>
+          </section>
+        </section>
+
+      </div>
+    </div>
+    <script src="/assets/reveal.js-3.8.0/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({center: true,
+                         controls: true,
+                         history: true,
+                         progress: true,
+                         transition: "slide"
+                        });
+    </script>
+  </body>
+</html>
