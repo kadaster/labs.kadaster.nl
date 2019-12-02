@@ -2,6 +2,11 @@
 layout: page
 title: Dissemination
 ---
+# Presentaties
+
+[Metadata 2.0](./2019-11-26-Metadata-2-0/index.html)
+: Erwin Folmer & Wouter Beek, 26 November 2019.
+
 # Publicaties
 
 Kadaster Knowledge Graph: Beyond the Fifth Star of Open Data
