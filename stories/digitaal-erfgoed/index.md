@@ -152,7 +152,7 @@ Hierdoor is het mogelijk om te zien hoe Oud Lisse is veranderd naar het huidige 
 In het rood wordt het RegistratieGebied en de stadskernen van Lisse getoond. De blauwe percelen tonen de percelen uit 1812.
 
 <figure id="perceel-achternaam">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/brt/queries/oudlisse">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/brt/queries/oud-lisse">
   </query>
   <figcaption>
     Figuur 5A ― Percelen uit 1812 en de huidige kaart van Lisse.
@@ -235,15 +235,11 @@ stuk of 10 uitkiezen en URL opnemen) -->
 
 ## Beroepen
 
-Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de
-landerijen, de tuinen en de bediening. In het Lisse-endpoint is
-informatie over beroepen uit de Volkstelling 1830 opgenomen. Via een
-bevraging krijgen we een tabel met de beroepen van de bewoners van Lisse
-in 1830.
+Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen en de bediening.  In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen.  Via een bevraging krijgen we een tabel ([Figuur 8](#beroepen-oud-lisse)) met de beroepen van de bewoners van Lisse in 1830.
 
 <!-- '''Tabel met beroepen en voor ieder beroep het aantal van voorkomen''' -->
 
-<figure id="BeroepenOudLisse">
+<figure id="beroepen-oud-lisse">
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Beroepen-HISCO-aantal">
   </query>
   <figcaption>
