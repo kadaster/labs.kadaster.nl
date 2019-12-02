@@ -18,6 +18,7 @@
       .attention {
         animation: blinker 5s linear infinite;
         color: red;
+        font-weight: bold;
       }
       @keyframes blinker {
         50% {
@@ -145,6 +146,16 @@
         </section>
 
         <section>
+          <h3>1B. Model metadata in zoekmachines</h3>
+          <figure>
+            <img src="model-labs-search.png">
+            <figcaption class="attention">
+              Pas op! Tussentijdse resultaten!! ;-)
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
           <h3>1C. Instantie metadata voor vindbaarheid</h3>
           <div class="left">
             <h4>Open standaarden</h4>
@@ -164,7 +175,6 @@
               <li>HTML 5 <code>meta</code> tags</li>
             </ul>
           </div>
-          <p>Schema.org beschrijvingen worden automatisch aangemaakt o.b.v. open standaarden versie.</p>
         </section>
 
         <section>
@@ -205,7 +215,7 @@
               <img src="instantie-labs.png">
             </a>
             <figcaption>
-              Alle eigenschappen op 1 simpel object.
+              Google-first BAG: simpele, maar correcte, samenvatting van de BAG.
             </figcaption>
           </figure>
         </section>
@@ -260,231 +270,114 @@
         </section>
 
         <section>
-          <h2>Doelen</h2>
+          <h3>2A. Dataset kwaliteit</h3>
+          <div class="left">
+            <h4>Open standaarden</h4>
+            <ul>
+              <li><a href="https://www.w3.org/TR/vocab-dqv" target="_blank">Data Quality Vocabulary</a> (DQV)</li>
+              <li><a href="http://www.w3.org/ns/prov#" target="_blank">Provenance Vocabulary</a> (PROV)</li>
+              <li><a href="https://www.w3.org/TR/annotation-vocab" target="_blank">Open Annotations</a> (OA)</li>
+            </ul>
+          </div>
+          <figure class="right">
+            <a href="dqv.svg" target="_blank">
+              <img src="dqv.svg">
+            </a>
+          </figure>
+        </section>
+
+        <section>
+          <h3>2B. Model kwaliteit</h3>
+          <figure>
+            <blockquote>
+              “Amsterdamse panden hebben soms bouwjaar 1005.”
+            </blockquote>
+            <figcaption>
+              <p>Annotatie op type niveau: bijv. <a href="" target="_blank">pand</a></p>
+              <p>Annotatie op eigenschap niveau: bijv. <a href="" target="_blank">bouwjaar</a></p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>2C. Instantie kwaliteit</h3>
+          <figure>
+            <img src="kwaliteit-instantie.png">
+            <figcaption>
+              Alle Amsterdamse panden met bouwjaar 1005.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h4>Bereikte resultaten</h4>
+          <ul class="size-80">
+            <li>Verbeterde <b>metadata</b> publicatie voor datasets, model, en instanties.</li>
+            <li>Verbeterde <b>indexeerbaarheid</b> voor datasets, model, en instanties.</li>
+            <li>Verbeterde <b>kwaliteits annotaties</b> voor datasets, model, en instanties.</li>
+            <li>Verbeterde <b>deelbaarheid</b> op sociale media.</li>
+          </ul>
+          <h4>En als we hiermee verder gaan:</h4>
+          <ul class="size-80">
+            <li>Verbeterde <b>vindbaarheid</b> van datasets in Google Dataset Search.</li>
+            <li>Verbeterde <b>vindbaarheid</b> van model en instanties in Google Search.</li>
+            <li>Verbeterd <b>hergebruik</b> door kwaliteits annotaties/</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Advies</h3>
+          <ul>
+            <li>De standaard “geo-ogc” weg is niet de oplossing: attitude: “We can do it better than google. We are going to beat google…” (wrong. If you can’t beat them, join them)</li>
+            <li>Je ziet dat kwartje bij data.overheid.nl wel gevallen is (op dataset niveau/vindbaarheid). Maar zouden we dat niet zelf willen doen?</li>
+            <li>Je kunt dit stap voor stap aanpakken.</li>
+          </ul>
+        </section>
+
+        <section>
+          <table>
+            <thead>
+              <tr><th></th><th>A. Dataset</th><th>B. Model</th><th>C. Instanties</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>1. Vindbaarheid</th><td>1A. handmatig; quick-win; high-impact</td><td>1B. automatische transformatie; kleinschalig</td><td>1C. automatische transformatie; grootschalig</td></tr>
+              <tr><th>2. Kwaliteit (fitness for use)</th><td>2A. handmatig</td><td>2B. handmatig</td><td>2C. kleinschalig en handmatig óf grootschalig o.b.v. regels</td></tr>
+              <tr><th>3. Knowledge Graph</th><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Advies o.b.v. tabel</h3>
           <ol>
-            <li>Verbeterde vindbaarheid</li>
-            <li>Laagdrempelige toegang</li>
-            <li>Geïntegreerde weergave</li>
+            <li>Quick win: Dataset niveau in NGR: onze ruwe inschatting 120 uur werk.</li>
+            <li>PMs: PDOK/KDP overtuigen: het is “BASIS”</li>
+            <li>Niet alleen focussen op vindbaarheid, maar ook op kwaliteit en knowledge graph.</li>
           </ol>
         </section>
 
         <section>
-          <section>
-            <h2>1. Verbeterde vindbaarheid</h2>
-            <ul>
-              <li>(Geo)portaal</li>
-              <li>Zoekmachine</li>
-              <li>Virtuele Assistent</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>1a. Data portaal</h2>
-            <ul>
-              <li><a href="https://nationaalgeoregister.nl" target="_blank">Nationaal Georegister</a></li>
-              <li><a href="https://data.overheid.nl" target="_blank">data.overheid.nl</a></li>
-              <li><a href="https://inspire.ec.europa.eu" target="_blank">INSPIRE</a></li>
-              <li><a href="tot kadastrale informatie" target="_blank">LOD Cloud</a></li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>1b. Zoekmachine</h2>
-            <ul>
-              <li>Google Dataset Search</li>
-              <li>Google Search</li>
-              <li>Mobile</li>
-              <li>Andere?</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>1c. Virtuele Assistent</h2>
-            <ul>
-              <li>Alle metadata die ook wordt gebruikt voor <i>Text Search</i>, plus…</li>
-              <li>Metadata voor spraak</li>
-              <li>Metadata voor taal (Engels, Nederlands, …)</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Dataset metadata (1/2)</h3>
-            <figure>
-              <img src="ngr-bag.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <img src="empty.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <figcaption>
-                De officiële Linked Data versie van de BAG, zoals gepubliceerd op PDOK:
-                <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fwww.nationaalgeoregister.nl%2Fgeonetwork%2Fsrv%2Fdut%2Fcatalog.search%23%2Fmetadata%2Faa3b5e6e-7baa-40c0-8972-3353e927ec2f" target="_blank">dataset</a>,
-                <a href="" target="_blank">metadata</a>
-              </figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h3>1a. Dataset metadata die Google ziet: Labs</h3>
-            <figure>
-              <img src="data-science-bag.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <img src="data-science-bag-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <figcaption>
-                Kopie van de Linked Data BAG in de Data Science triple store:
-                <a href="http://data.labs.kadaster.nl/kadaster/bag" target="_blank">dataset</a>,
-                <a href="https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fkadaster.triply.cc%2Fkadaster%2Fbag" target="_blank">metadata</a>
-              </figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h3>Voorbeeld portaal: LOD Cloud</h3>
-            <figure>
-              <a href="https://lod-cloud.net/dataset/bag" target="_blank">
-                <img src="bag-in-lod-cloud.png">
-              </a>
-              <figcaption>
-                <a href="https://lod-cloud.net/dataset/bag" target="_blank">Zoek op “BAG”.</a>
-              </figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h4>Voorbeeld zoekmachine: Google Dataset Search</h4>
-            <figure>
-              <a href="https://toolbox.google.com/datasetsearch/search?query=kadaster%20brt" target="_blank">
-                <img src="google-dataset-search.png">
-              </a>
-              <figcaption>
-                <b>Let op! tussentijdse resultaten.</b><br/> <a href="https://toolbox.google.com/datasetsearch" target="_blank">
-                  Zoek op “kadaster brt”.
-                </a>
-              </figcaption>
-            </figure>
-          </section>
-          <section>
-            <h3>Instance metadata (1/2)</h3>
-            <figure>
-              <img src="instance-pdok.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <img src="instance-pdok-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <figcaption>
-                De officiële Linked Data versie van een instantie, hier het verblijfsobject 0363010012086591:
-                <a href="https://bag.basisregistraties.overheid.nl/bag/doc/verblijfsobject/0363010012086591" target="_blank">instance</a>,
-                <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fdoc%2Fverblijfsobject%2F0363010012086591" target="_blank">metadata</a>
-              </figcaption>
-            </figure>
-          </section>
-
-          <section>
-            <h3>Instance metadata (2/2)</h3>
-            <figure>
-              <img src="instance.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <img src="instance-metadata.png" style="float: left; width: 50%; height: 22vw; margin-right: 1%; margin-bottom: 0.5em;" target="_blank">
-              <figcaption>
-                Kopie van het verblijfsobject 0363010012086591 in de Data Science triple store:
-                <a href="https://kadaster.triply.cc/kadaster/bag/browser?resource=http%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fbag%2Fid%2Fverblijfsobject%2F0363010012086591&focus=forward" target="_blank">instance</a>,
-                <a href="https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fkadaster.triply.cc%2Fkadaster%2Fbag%2Fbrowser%3Fresource%3Dhttp%253A%252F%252Fbag.basisregistraties.overheid.nl%252Fbag%252Fid%252Fverblijfsobject%252F0363010012086591" target="_blank">metadata</a>
-              </figcaption>
-            </figure>
-          </section>
-          <section>
-            <h3>Google Search</h3>
-
-            <figure>
-              <a
-                href="https://www.google.com/search?q=pand+0518100000221107"
-                target="_blank"
-              >
-                <img src="google-search.png" />
-              </a>
-              <figcaption>
-                <b>Let op! tussentijdse resultaten.</b><br/> <a href="https://www.google.com/search?q=pand+0518100000221107"
-                   target="_blank">
-                   Zoek op “pand 0518100000221107”.
-                </a>
-              </figcaption>
-            </figure>
-          </section>
+          <h3>Toetje: Voice Assistants</h3>
+          <figure>
+            <img src="google-assistant.png">
+            <figcaption>
+            </figcaption>
+          </figure>
         </section>
 
+        <!--
         <section>
-          <section>
-            <h2>2. Laagdrempelige toegang</h2>
-          </section>
-
-          <section>
-            <h2>Data Summary</h2>
-            <p>Een versimpelde weergave (‘view‘) van een data silo.</p>
-          </section>
-
-          <section>
-            <h3>Data Summary van de BAG</h3>
-              <figure>
-                <img src="kkg-bag.svg" target="_blank">
-                <figcaption>
-                  Volledig Google-interpreteerbaar (Schema.org).
-                </figcaption>
-              </figure>
-            </section>
-          </section>
+          <h3>Andere initiatieven: Online team</h3>
+          <figure>
+            <a href="https://www.google.com/search?source=hp&ei=tXqAXZiqI4X7kwWHkLXABg&q=Wat+is+een+aanwijs%3F&btnK=Google+Search" target="_blank">
+              <img src="wat-is-een-aanwijs.png">
+            </a>
+            <figcaption>
+              “Wat is een aanwijs?”
+            </figcaption>
+          </figure>
         </section>
-
-        <section>
-          <section>
-            <h2>3. Geïntegreerde weergave</h2>
-          </section>
-
-          <section>
-            <h3>Intern</h3>
-            <ul>
-              <li>BAG</li>
-              <li>BRT/TOP10NL</li>
-              <li>BRK/DKK</li>
-              <li>Ruimtelijke Plannen</li>
-              <li>Etc.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Extern</h3>
-            <ul>
-              <li>CBS</li>
-              <li>DUO</li>
-              <li>Nationaal Archief</li>
-              <li>KvK</li>
-              <li>RCE</li>
-              <li>RVO</li>
-              <li>IISG (Gemeentegeschiedenis, AMCO, CShapes)</li>
-              <li>Wikidata, DBpedia, GeoNames</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Data-integratie</h3>
-            <p>Gebruik Linked Data voor low cost data integratie.</p>
-            <p><a href="https://kadaster.triply.cc" target="_blank">data.labs.kadaster.nl</a></p>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>Andere initiatieven</h2>
-          </section>
-
-          <section>
-            <h3>Online team</h3>
-            <figure>
-              <a href="https://www.google.com/search?source=hp&ei=tXqAXZiqI4X7kwWHkLXABg&q=Wat+is+een+aanwijs%3F&btnK=Google+Search" target="_blank">
-                <img src="wat-is-een-aanwijs.png">
-              </a>
-              <figcaption>
-                “Wat is een aanwijs?”
-              </figcaption>
-            </figure>
-          </section>
-          <section>
-            <ul>
-              <li>1-op-1-op-1</li>
-              <li>Sociale Verzekeringsbank</li>
-            </ul>
-          </section>
-        </section>
+        -->
 
       </div>
     </div>

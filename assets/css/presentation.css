@@ -84,11 +84,11 @@ column layout, use `clear:both;'.
 */
 .reveal .left {
   float: left;
-  width: 50%;
+  width: 45%;
 }
 .reveal .right {
   float: right;
-  width: 50%;
+  width: 45%;
 }
 
 /*
