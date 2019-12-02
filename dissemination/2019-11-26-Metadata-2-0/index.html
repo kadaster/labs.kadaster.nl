@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/reveal.css">
     <link rel="stylesheet" href="/assets/reveal.js-3.8.0/css/theme/simple.css" id="theme">
     <link rel="shortcut icon" href="kadaster-logo.png">
-    <script src="/assets/js/presentation.js">
-    </script>
     <style type="text/css">
       .attention {
         animation: blinker 5s linear infinite;
@@ -34,25 +32,160 @@
 
         <section>
           <h2>Kadaster ― Metadata 2.0</h2>
-          <div>
+          <figure>
             <a href="https://labs.kadaster.nl" target="_blank">
               <img src="/assets/images/kadaster-logo.png" height="200">
             </a>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+          <ol>
+            <li>Probleem</li>
+            <li>Wat willen we?</li>
+            <li>Ervaren & Laten zien ― Wat kunnen we?</li>
+            <li>Advies</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Maak kennis met Gerwin</h3>
+          <figure>
+            <img src="gerwin.png" height="400">
+            <figcaption class="size-70">
+              <p>Gerwin gaat een app maken over woningen en kerken.</p>
+              <p>Gerwin is Software Engineer (en net zoals 99% van de SE geen geo achtergrond).</p>
+              <p>Gerwin heeft data nodig…</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3><b>Waar</b> gaat Gerwin als eerste zoeken?</h3>
+          <ol>
+            <li>Nationaal Georegister</li>
+            <li>European Data Portaal</li>
+            <li>Google Dataset Search</li>
+            <li>Data.overheid.nl</li>
+            <li>Google/Bing</li>
+            <li>Iets anders</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3><b>Wat</b> gaat Gerwin zoeken?</h3>
+          <ol>
+            <li>De BAG (natuurlijk)</li>
+            <li>Verblijfsobjecten / Panden</li>
+            <li>Huizen / Woningen / Gebouwen</li>
+            <li>Bouwjaren / Status</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Maak kennis met Elvira</h3>
+          <figure>
+            <img src="elvira.jpg">
+            <figcaption class="size-70">
+              <p>Elvira weet niks van IT, maar is wel geïnteresseerd in de officiële informatie over haar huis, dichtstbijzijnde scholen, kerken, etc.</p>
+              <p>Waar zal Elvira gaan zoeken naar informatie over haar huis?</p>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section data-background-image="tu-delft-1.png" data-background-size="contain">
+        </section>
+        <section data-background-image="tu-delft-2.png" data-background-size="contain">
+        </section>
+        <section data-background-image="tu-delft-3.png" data-background-size="contain">
+        </section>
+        <section data-background-image="ogc-problem.png" data-background-size="contain">
+        </section>
+        <section data-background-image="ogc-findings.png" data-background-size="contain">
+        </section>
+        <section data-background-image="ogc-archetypes.png" data-background-size="contain">
+        </section>
+
+        <section>
+          <h3>Mijn frustratie</h3>
+          <p>Waarom spenderen we 100% van de tijd om metadata op orde te krijgen voor het “last resort”???</p>
+          <p>Waarom doen we niks? Interesseert ons de gebruiker niks?</p>
+          <p>“De opdrachtgevers vinden het niet belangrijk.”</p>
+          <p>Hoort dit niet gewoon bij service <i>publiceren van data</i>?</p>
+          <p>Er is <i>sense of urgency</i>: op het web is de eerste vaak uiteindelijk de enige…</p>
+        </section>
+
+        <section>
+          <h3>Wat willen we?</h3>
+          <p>De kwaliteit van metadata moet omhoog!</p>
+          <div class="left">
+            <h4>3 Doelen</h4>
+            <ol class="size-90">
+              <li>Vindbaarheid</li>
+              <li>Bruikbaarheid (fitness for use)</li>
+              <li>Samenstellen KG</li>
+            </ol>
+          </div>
+          <div class="right">
+            <h4>3 Niveaus</h4>
+            <ol class="size-90">
+              <li>Dataset</li>
+              <li>Model</li>
+              <li>Instantie</li>
+            </ol>
           </div>
         </section>
 
         <section>
+          <h3>Experiment Data Science Team</h3>
+          <p>Knip tussen <b>ability</b> en <b>result</b></p>
+          <p>Result is ook afhankelijk van:</p>
+          <ul>
+            <li>Het woord (“moskee” of “mosselbank”)</li>
+            <li>Betrouwbaarheid website (<code>labs.kadaster.nl</code> of <code>kadaster.nl</code>)</li>
+            <li>Dominantie marktpartij (betaald)</li>
+            <li>Tijd…</li>
+          </ul>
+          <p>Dus Ability is nu belangrijker dan Result!</p>
+        </section>
+
+        <section>
+          <h2>Ervaren & Laten Zien</h2>
+          <p>Wat kunnen we… in drie delen:</p>
+          <ul>
+            <li>Huidige situatie ervaren</li>
+            <li>Metadata die google ziet?</li>
+            <li>Resultaten so far…</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Huidige situatie NGR</h3>
+          <ul>
+            <li>Basisregistratie Adressen en Gebouwen</li>
+            <li>Bouwjaar panden</li>
+            <li>Oppervlakte gebouwen</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>6 proeven</h2>
-          <table>
-            <thead>
-              <tr><th></th><th>A. Dataset</th><th>B. Model</th><th>C. Instanties</th></tr>
-            </thead>
-            <tbody>
-              <tr><th>1. Vindbaarheid</th><td>1A. Dataset metadata</td><td>1B. Model metadata</td><td>1C. Instantie metadata</td></tr>
-              <tr><th>2. Kwaliteit (fitness for use)</th><td>2A. Dataset kwaliteit</td><td>2B. Model kwaliteit</td><td>2C. Instantie kwaliteit</td></tr>
-              <tr><th>3. Knowledge Graph</th><td></td><td></td><td></td></tr>
-            </tbody>
-          </table>
+          <figure>
+            <table class="size-90">
+              <thead>
+                <tr><th></th><th>A. Dataset</th><th>B. Model</th><th>C. Instanties</th></tr>
+              </thead>
+              <tbody>
+                <tr><th>1. Vindbaarheid</th><td>1A. Dataset metadata</td><td>1B. Model metadata</td><td>1C. Instantie metadata</td></tr>
+                <tr><th>2. Kwaliteit (fitness for use)</th><td>2A. Dataset kwaliteit</td><td>2B. Model kwaliteit</td><td>2C. Instantie kwaliteit</td></tr>
+                <tr><th>3. Knowledge Graph</th><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+            <figcaption>
+              Uitgevoerd door het Kadaster Data Science team.
+            </figcaption>
+          </figure>
         </section>
 
         <section>
@@ -293,8 +426,8 @@
               “Amsterdamse panden hebben soms bouwjaar 1005.”
             </blockquote>
             <figcaption>
-              <p>Annotatie op type niveau: bijv. <a href="" target="_blank">pand</a></p>
-              <p>Annotatie op eigenschap niveau: bijv. <a href="" target="_blank">bouwjaar</a></p>
+              <p>Annotatie op type niveau: bijv. pand</p>
+              <p>Annotatie op eigenschap niveau: bijv. bouwjaar</p>
             </figcaption>
           </figure>
         </section>
@@ -310,14 +443,14 @@
         </section>
 
         <section>
-          <h4>Bereikte resultaten</h4>
+          <h3>Bereikte resultaten</h3>
           <ul class="size-80">
             <li>Verbeterde <b>metadata</b> publicatie voor datasets, model, en instanties.</li>
             <li>Verbeterde <b>indexeerbaarheid</b> voor datasets, model, en instanties.</li>
             <li>Verbeterde <b>kwaliteits annotaties</b> voor datasets, model, en instanties.</li>
             <li>Verbeterde <b>deelbaarheid</b> op sociale media.</li>
           </ul>
-          <h4>En als we hiermee verder gaan:</h4>
+          <h3>En als we hiermee verder gaan</h3>
           <ul class="size-80">
             <li>Verbeterde <b>vindbaarheid</b> van datasets in Google Dataset Search.</li>
             <li>Verbeterde <b>vindbaarheid</b> van model en instanties in Google Search.</li>
@@ -335,7 +468,9 @@
         </section>
 
         <section>
-          <table>
+          <h3>Adviestabel</h3>
+          <br>
+          <table class="size-80">
             <thead>
               <tr><th></th><th>A. Dataset</th><th>B. Model</th><th>C. Instanties</th></tr>
             </thead>
@@ -351,16 +486,32 @@
           <h3>Advies o.b.v. tabel</h3>
           <ol>
             <li>Quick win: Dataset niveau in NGR: onze ruwe inschatting 120 uur werk.</li>
-            <li>PMs: PDOK/KDP overtuigen: het is “BASIS”</li>
+            <li>PMs: PDOK/KDP overtuigen: het is ‘basis’</li>
             <li>Niet alleen focussen op vindbaarheid, maar ook op kwaliteit en knowledge graph.</li>
           </ol>
         </section>
 
         <section>
           <h3>Toetje: Voice Assistants</h3>
+          <p>Alle in deze presentatie getoonde datasets, modellen, en instanties hebben ook speakable metadata.</p>
           <figure>
-            <img src="google-assistant.png">
+            <a href="https://services.google.com/fb/forms/speakablenewsinterest/" target="_blank">
+              <img src="google-assistant.png" height="300">
+            </a>
             <figcaption>
+              Maar nog even wachten…
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Dank voor Uw aandacht!</h2>
+          <figure>
+            <a href="https://labs.kadaster.nl" target="_blank">
+              <img src="/assets/images/kadaster-logo.png" height="200">
+            </a>
+            <figcaption>
+              <a href="https://labs.kadaster.nl">https://labs.kadaster.nl</a>
             </figcaption>
           </figure>
         </section>
