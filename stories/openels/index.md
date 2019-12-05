@@ -1,7 +1,6 @@
 ---
 layout: story
 logo: /stories/OpenELS/logo.png
-output: leaflet
 title: OpenELS
 ---
 
