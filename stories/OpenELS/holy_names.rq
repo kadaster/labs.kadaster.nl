@@ -9,7 +9,7 @@ SELECT DISTINCT
 ?wkt
 WHERE {
   {
-    GRAPH <http://data.labs.pdok.nl/dataset/openels/gn> {
+    GRAPH <https://data.labs.kadaster.nl/kadaster-dev/openels/gn> {
       ?namedPlace gn:NamedPlace.name/rdfs:label ?wktLabel;
                   geo:hasGeometry/geo:asWKT ?wkt.
       FILTER regex(?wktLabel, "heilig", "i")

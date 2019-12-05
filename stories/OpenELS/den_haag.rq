@@ -3,18 +3,21 @@ PREFIX au: <http://inspire.ec.europa.eu/ont/au#>
 PREFIX geonames: <http://www.geonames.org/ontology#>
 
 SELECT DISTINCT
-?language
-?name
+?Spanish
+?Norwegian
+?Finish
 WHERE {
   ?s rdfs:label "'s-Gravenhage"@nl;
      rdfs:label ?dutchName;
      rdfs:seeAlso ?inDb.
 
   SERVICE <http://factforge.net/repositories/ff-news> {
-    ?inDb geonames:alternateName ?name.
-    FILTER (( lang(?name) = "es" ) || ( lang(?name) = "fi" ) || ( lang(?name) = "no" ))
-    BIND (if(lang(?name) = "es", "Spanish", if (lang(?name) = "no", "Norwegian", if (lang(?name) = "fi", "Finnish", ""))) as ?language)
+    ?inDb geonames:alternateName ?Spanish.
+    ?inDb geonames:alternateName ?Norwegian.
+    ?inDb geonames:alternateName ?Finish.
+    FILTER ( lang(?Spanish) = "es" )
+      Filter ( lang(?Finish) = "fi" )
+    Filter ( lang(?Norwegian) = "no" )
   }
 }
-ORDER BY ?language
-LIMIT 10
+Limit 10

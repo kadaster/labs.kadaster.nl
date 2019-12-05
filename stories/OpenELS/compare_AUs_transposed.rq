@@ -12,7 +12,7 @@ SELECT
 (count(?inFinland) as ?Finland)
 WHERE {
   {
-    GRAPH <http://data.labs.pdok.nl/dataset/openels/au> {
+    GRAPH <https://data.labs.kadaster.nl/kadaster-dev/openels/au> {
       ?inNetherlands au:AdministrativeUnit.nationalLevel ?level. }
   }
     Union
