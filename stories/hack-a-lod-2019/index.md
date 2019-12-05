@@ -11,7 +11,7 @@ Voor deze Hack-a-LOD zijn we geïnspireerd door het werk van de kunstenaar [Gün
 
 ## Stolpersteine
 
-In Zutphen liggen 131 Stolpersteinen. In [Figuur 1](#figuur-1) wordt getoond waar de stenen precies liggen en welke mensen in herinnering worden geroepen.  Deze dataset is door ons als naar Linked Data omgezet en online gepubliceert.
+In Zutphen liggen 131 Stolpersteine. In [Figuur 1](#figuur-1) wordt getoond waar de stenen precies liggen en welke mensen in herinnering worden geroepen.  Deze dataset is door ons als naar Linked Data omgezet en online gepubliceerd.
 
 <figure id="figuur-1">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner/queries/adressen">
@@ -47,7 +47,7 @@ Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbüche
 
 ## Stolpersteine & Verkaufsbücher: Personen
 
-De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrijft bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basis Administratie Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar bijvoorbeeld de notarissen die bij de transacties betrokken waren.
+De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrift bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basis Administratie Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar personen die bij de transacties betrokken waren.
 
 <figure id="figuur-4">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
