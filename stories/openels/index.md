@@ -1,5 +1,4 @@
 ---
-endpoint: https://data.labs.pdok.nl/openels/sparql
 layout: story
 logo: /stories/OpenELS/logo.png
 output: leaflet
