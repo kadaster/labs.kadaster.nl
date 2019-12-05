@@ -19,7 +19,7 @@ title: OpenELS
 
 Usually, the territory of a country is divided into a number of areas that are administered by local government.  Such areas are called administrative units.  The systems of such administrative division are hierarchical with several levels of progressively smaller units.  Municipalities, regions and provinces are examples of administrative units at different levels.  However, often it is difficult to compare structures of administrative division between countries because they use language-specific names for levels of administrative division.
 
-### “Sorry, *what* do you call that?”
+## “Sorry, *what* do you call that?”
 
 Let's see what names are used to refer to the corresponding administrative levels in the Netherlands, Norway, Spain and Finland.
 
@@ -31,7 +31,7 @@ Let's see what names are used to refer to the corresponding administrative level
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/openels/queries/q1">
 </query>
 
-### Comparing the structures of administrative division
+## Comparing the structures of administrative division
 
 Linked Data brings semantic interoperability by means of ontologies. Ontologies are collections of concepts, and the relations between them, described in a formal way.  With the help of a common ontology (in the case of this project, the INSPIRE ontologies), it's possible to model national systems of administrative units and draw comparisons between them, avoiding misinterpretation caused by language specific notions.  In this example, we'll compare the structure of administrative systems in the Netherlands, Spain, Norway and Finland.
 
@@ -43,7 +43,7 @@ Linked Data brings semantic interoperability by means of ontologies. Ontologies 
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/openels/queries/q2">
 </query>
 
-### It's linked.  Lets's grab some data
+## It's linked.  Lets's grab some data
 
 In the example above, we used the power of linked data to map national administrative systems to generic levels.  This was done at the level of concepts or ontological level (similar to T-box in descriptive logic).  Linked Data allows for even more ― interrelating data at the instance level between data sets.  For example, if two different data sets contain information about the same object (e.g information about the same municipality) we can link them and enrich one description of the municipality with attributes coming from the other data set.  The example below uses links between administrative units and corresponding objects in the [DBpedia](https://wiki.dbpedia.org/) data base.  In this case DBpedia serves as a ‘linking node’, providing access to other resources and information.  Therefore we can, for example, traverse those links to retrieve the name of an administrative unit in another language.  Lets find out how to spell what the Dutch call “'s-Gravenhage”, in the other languages of the project.
 
@@ -55,7 +55,7 @@ In the example above, we used the power of linked data to map national administr
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/openels/queries/q3">
 </query>
 
-## Geolocator: a URI gazetteer
+## Geolocator: A URI gazetteer
 
 The SPARQL query language is a very powerful and flexible way to retrieve data based on graph patterns.  However, SPARQL lacks functionality for a fuzzy search of literal values.  In other words, if there is a need to find the location of Amsterdam, SPARQL requires proper spelling of this name.  It is not possible to retrieve the location of Amsterdam if there is a typo (e.g “Asterdam”) in the spelling of the name.  In addition, for lay users it is very difficult to master SPARQL.  For these reasons, we have created a gazetteer service that returns enriched data with Linked Data URIs for toponyms.
 
