@@ -4,9 +4,10 @@ logo: /stories/OpenELS/logo.png
 title: OpenELS
 ---
 
-<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css">
+<!--
 <link rel="stylesheet" type="text/css" href="/assets/css/datatables.min.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+-->
 <script type="text/javascript" src="leaflet/leaflet.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
