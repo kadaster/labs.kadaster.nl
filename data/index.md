@@ -33,7 +33,7 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
   </a>
   <a href="/data/haal-centraal-vocab/index-en.html">
     <div class="card">
-      <div class="card-type">Data</div>
+      <div class="card-type">Vocabulaire</div>
       <img class="card-image" src="/assets/images/voetbal.jpg">
       <div class="card-title">Vocabulaire Scholen &amp; Sportlocaties</div>
       <div class="card-description">Vocabulaire voor de dataset met scholen en sportlocaties.</div>
