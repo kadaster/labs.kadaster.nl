@@ -24,7 +24,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/hackalod2018.jpg">
       <div class="card-title">Hackalod</div>
-      <div class="card-description">Tijdens de Hack-a-LOD ging een team van Kadaster & Friends aan de slag met Linked Open Data. Zie hier hun resultaten.</div>
+      <div class="card-description">Tijdens de HackaLOD ging een team van Kadaster & Friends aan de slag met Erfgoed Linked Open Data. Zie hier hun resultaten.</div>
     </div>
   </a>
   <a href="/cases/3d-maptable">
