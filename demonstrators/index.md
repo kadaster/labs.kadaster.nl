@@ -26,7 +26,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/telegram.svg">
+      <img class="card-image" src="/assets/images/telegram.png">
       <div class="card-title">HackaLOD-Bot</div>
       <div class="card-description">Hier laten we een bot zien welke op basis vanlinked data routes genereert langs stolpersteine. </div>
     </div>
