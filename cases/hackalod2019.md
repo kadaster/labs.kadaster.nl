@@ -6,7 +6,7 @@ title: Use Case ― Hack-a-LOD 2019
 
 ## Introductie
 
-In de nacht van vrijdag op zaterdag 29 en 30 november nam het Kadaster deel aan de Hack-a-LOD [ link: https://hackalod.com/ ] van het Netwerk Digitaal Erfgoed. Iedereen die met data nieuwe toepassingen kan en wil maken, werd uitgedaagd om in minder dan 24 uur applicaties te ontwikkelen op basis van Linked Open Data.
+In de nacht van vrijdag op zaterdag 29 en 30 november nam het Kadaster deel aan de Hack-a-LOD [https://hackalod.com/] van het Netwerk Digitaal Erfgoed. Iedereen die met data nieuwe toepassingen kan en wil maken, werd uitgedaagd om in minder dan 24 uur applicaties te ontwikkelen op basis van Linked Open Data. Een aardige impressie geeft deze "nachtboek" film [https://www.youtube.com/watch?v=TPrypiAl9ko&feature=youtu.be]. 
 
 ### Stolpersteine
 Voor deze Hack-a-LOD liet het Kadaster zich inspireren door het werk van de kunstenaar Günter Demnig die Joden die gedeporteerd zijn tijdens de Tweede Wereldoorlog herdenkt via zogeheten ‘Stolpersteine’ of ‘Struikelstenen’. Voor de Hack-a-LOD kozen we ervoor ons op de Joden die gedeporteerd zijn uit Zutphen te richten, maar de struikelstenen liggen door heel Europa. In Zutphen zijn op dit moment voor 131 slachtoffers Stolpersteine geplaatst.
@@ -14,7 +14,7 @@ Voor deze Hack-a-LOD liet het Kadaster zich inspireren door het werk van de kuns
 ### Resultaten
 Om langs de Stolpersteine te wandelen, ontwikkelde een subteam een chatbot die eenvoudig is toe te voegen aan Telegram of WhatsApp. Op basis van locaties zet de chatbot een route uit langs de Stolpersteine die binnen een straal van 100 meter van de opgegeven locaties liggen. 
 
-Een tweede team koppelde biografische gegevens uit de Stolpersteine via de BAG aan de Verkaufsbücher. Ze gaven daarmee een vervolg aan de High5 met het Nationaal Archief [ url naar verkaufsbucher data story] door de slachtoffers uit de Verkaufsbücher een gezicht te geven. 
+Een tweede team koppelde biografische gegevens uit de Stolpersteine via de BAG aan de Verkaufsbücher. Ze gaven daarmee een vervolg aan de High5 met het Nationaal Archief [https://labs.kadaster.nl/stories/verkaufsbucher/index.html] door de slachtoffers uit de Verkaufsbücher een gezicht te geven. 
 
 Ook werd er geëxperimenteerd met Virtual Reality. In een 3D wereld ontdek je met een VR-bril op de geschiedenis van voormalige bewoners van een onteigend pand. 
  
