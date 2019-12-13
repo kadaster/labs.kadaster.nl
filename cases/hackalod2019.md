@@ -21,8 +21,8 @@ Ook werd er geëxperimenteerd met Virtual Reality. In een 3D wereld ontdek je me
 Alle demonstrators (De VR demo volgt nog) zijn onderaan deze pagina te vinden. 
  
  <figure id="figuur-1">
-  <a href="/assets/images/groepsfoto_hackalod.jpg">
-    <img src="/assets/images/groepsfoto_hackalod.jpg" >
+  <a href="/assets/images/groepsfoto_hackalod.JPG">
+    <img src="/assets/images/groepsfoto_hackalod.JPG" >
   </a>
   <figcaption>
     Figuur 1 ― Groepsfoto van Kadaster & Friends. Foto: Jacqueline van der Kort | KB. 
