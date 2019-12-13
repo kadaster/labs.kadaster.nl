@@ -23,6 +23,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
+    <a href="/demonstrators/hackalodbot/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/telegram.png">
+      <div class="card-title">HackaLOD-Bot</div>
+      <div class="card-description">Hier laten we een bot zien welke op basis vanlinked data routes genereert langs stolpersteine. </div>
+    </div>
+  </a>
   <a href="/demonstrators/huischeck">
     <div class="card">
       <div class="card-type">Demonstrator</div>
