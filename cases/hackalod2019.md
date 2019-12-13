@@ -25,7 +25,7 @@ Een team van Kadaster & Friends deed ook dit jaar weer mee aan de Hack-a-LOD. Da
       <div class="card-description">Hier bouwen we verder op ons werk met de verkaufsbucher en koppelen we het aan zgn. Stolpersteine.</div>
     </div>
   </a>
-  <a href="https://telegram.me/HackaLODBot">
+  <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/telegram.png">
