@@ -35,6 +35,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster.  Deze Labs websi
       <div class="card-description">Bekijk hoe we middels Augmented Reality een 3D overzicht geven over uw buurt!</div>
     </div>
   </a>
+  <a href="/cases/verkaufsbucher">
+      <div class="card">
+        <div class="card-type">Use Case</div>
+        <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png">
+        <div class="card-title">Verkaufsbucher</div>
+        <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
+      </div>
+    </a>
   <a href="/cases/landbouwverkeer">
     <div class="card">
       <div class="card-type">Use Case</div>
