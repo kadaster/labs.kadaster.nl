@@ -6,7 +6,8 @@ title: Use Case ― Verkaufsbücher
 
 ## Introductie
 
-Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. Deze use case vertelt hun verhaal.
+De verkaufsbucher is een indrukwekkende dataset met verkooptransacties van (voornamelijk) joodse huizen tijdens de tweede wereld oorlog. 
+Deze dataset is in samenwerking tussen het Nationaal Archief en Kadaster omgezet naar Linked Open Data, op basis waarvan de Verkaufsbucher Data Story en Verkaufsbucher zoeker is ontwikkeld.
 
 <div class="cards-wrapper">
   <a href="/stories/verkaufsbucher/index.html">
