@@ -27,8 +27,8 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/telegram.svg">
-      <div class="card-title">Hack-a-LOD-Bot</div>
-      <div class="card-description">Hier laten we een bot zien welke obv linked data routes genereert langs stolpersteine. </div>
+      <div class="card-title">HackaLOD-Bot</div>
+      <div class="card-description">Hier laten we een bot zien welke op basis vanlinked data routes genereert langs stolpersteine. </div>
     </div>
   </a>
   <a href="/demonstrators/huischeck">
