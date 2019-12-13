@@ -21,7 +21,7 @@ title: Use Case ― HackaLOD-Bot
 Het idee is eenvoudig: Kunnen we een gebruiker op basis van zijn of haar locatie een route voorschotelen langs points-of-interests. 
 En specifieker voor de Hackalod willen we toeristen in Zutphen op basis van de locatie een route aanbieden langs stolpersteine. 
 
-Telegram-gebruikers kunnen een gesprek aan gaan met de bot door te zoeken in Telegram op @HackaLODBot, maar handiger is om een hyperlink te gebruiken: https://telegram.me/HackaLODBot
+Telegram-gebruikers kunnen een gesprek aan gaan met de bot door te zoeken in Telegram op @HackaLODBot, maar handiger is om een hyperlink te gebruiken: [Klik hier of op het tegeltje bovenaan deze pagina](https://telegram.me/HackaLODBot)
 
 Vervolgens: 
 1.	Als een gebruiker al Telegram gebruikt / de URL herkend wordt: opent de Telegram applicatie
