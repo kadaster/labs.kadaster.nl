@@ -54,7 +54,7 @@ function closeContextMenu(event) {
       if (!calledOnLabel) {
         checkBox.checked = false;
       }
-    } 
+    }
   }
 }
 var inputs = document.getElementsByTagName("input");
@@ -62,6 +62,7 @@ var inputs = document.getElementsByTagName("input");
 // Add ID's for context-menu's
 contextItems.push("buildingBlockMenu");
 contextItems.push("mobileNav");
+contextItems.push("educationMenu");
 document.addEventListener("click", closeContextMenu, true);
 
 highlightCurrentPage();
