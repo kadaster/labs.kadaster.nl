@@ -23,7 +23,7 @@ Deze dataset is in samenwerking tussen het Nationaal Archief en Kadaster omgezet
         <div class="card-type">Demonstrator</div>
         <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
         <div class="card-title">Verkaufsbücher zoeker</div>
-        <div class="card-description">De Verkaufsbücher zijn gekoppeld aan gegevens van het Kadaster, waardoor deze onrechtmatige verhandelingen in kaart kunnen worden gebracht.</div>
+        <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
       </div>
     </a>
 </div>
