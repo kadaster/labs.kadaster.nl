@@ -1,24 +1,17 @@
 ---
 description: Wat zijn de Nederlandse gemeenten met de grootste oppervlakte?  En welke gemeenten hebben de meeste inwoners?
-endpoint: https://data.pdok.nl/sparql
 layout: story
 logo: /assets/images/gemeente.png
-output: geo
-published: false
 title: Nederlandse gemeenten
 ---
 
 <h1>Nederlandse gemeenten</h1>
 
-<p>Deze data story geeft een overzicht van de grootste Nederlandse
-gemeenten (op basis van oppervlakte), en de meest dichtbevolkte
-Nederlandse gemeenten.</p>
+<p>Deze data story geeft een overzicht van de grootste Nederlandse gemeenten (op basis van oppervlakte), en de meest dichtbevolkte Nederlandse gemeenten.</p>
 
 <h2>De grootste Nederlandse gemeente</h2>
 
-<p>De gemeenten kunnen gesorteerd worden op basis van hun oppervlakte.
-Hieronder volgt een overzicht van de 25 grootste gemeenten.  Omdat
-water wordt meegerekend is Zeewolde groter dan Amsterdam!</p>
+<p>De gemeenten kunnen gesorteerd worden op basis van hun oppervlakte.  Hieronder volgt een overzicht van de 25 grootste gemeenten.  Omdat water wordt meegerekend is Zeewolde groter dan Amsterdam!</p>
 
 <query data-endpoint="https://data.pdok.nl/sparql"
        data-query-ref="grootste-gemeente.rq"

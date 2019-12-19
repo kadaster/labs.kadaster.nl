@@ -1,5 +1,4 @@
 ---
-endpoint: https://data.labs.pdok.nl/sparql
 layout: story
 logo: /assets/images/energy.png
 title: Energie Data Story
@@ -9,27 +8,27 @@ title: Energie Data Story
 
 <h2>Windturbineparken in Nederland</h2>
 
-<p>Bron: Wikidata</p>
-
-<query data-endpoint="https://query.wikidata.org/sparql"
-       data-query-ref="wikidata-windfarm.rq">
-</query>
+<figure>
+  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/wikidata-windfarms">
+  </query>
+  <figcaption>
+    Bron: Wikidata
+  </figcaption>
+</figure>
 
 <h2>Windturbines in Nederland</h2>
 
-<p>Bron: BRT</p>
-
-<query data-query-ref="brt-turbines.rq">
-</query>
+<figure>
+  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/brt-windturbines">
+  </query>
+  <figcaption>
+    Bron: BRT
+  </figcaption>
+</figure>
 
 <h2>TODO</h2>
 
-<p>Deze data story laat zien welke mogelijkheden er ontstaan als de
-Energielabel Dataset (RVO) beschikbaar gesteld wordt als Linked Data.
-Daarbij wordt vooral gefocust op de toegevoegde waarde door
-combinaties te leggen met andere datasets, zoals de BAG (Kadaster),
-Energieverbruik (Gemeente Amsterdam), en Energiebesparingspotentieel
-(CBS).  Data interoperabiliteit in de praktijk.</p>
+<p>Deze data story laat zien welke mogelijkheden er ontstaan als de Energielabel Dataset (RVO) beschikbaar gesteld wordt als Linked Data.  Daarbij wordt vooral gefocust op de toegevoegde waarde door combinaties te leggen met andere datasets, zoals de BAG (Kadaster), Energieverbruik (Gemeente Amsterdam), en Energiebesparingspotentieel (CBS).  Data interoperabiliteit in de praktijk.</p>
 
 <h2>Woning</h2>
 

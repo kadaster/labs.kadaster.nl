@@ -193,51 +193,9 @@ die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
   </figcaption>
 </figure>
 
-<!-- ''Kunnen we nog iets leuks doen met deze lijst? Bijvoorbeeld Coenraad Jacob
-Temminck; zie DBpedia; eerste directeur van Museum voor Natuur Historie in Leiden'' -->
-
-<!--
-## Veldwerken
-
-Bij veranderingen aan percelen of gebouwen, wordt door een landmeter
-van het Kadaster de nieuwe situatie opgenomen.  De tekeningen die in
-het veld gemaakt worden, worden Veldwerken genoemd; daarin staat veel
-meetcijfers en inlichtingen over verkoper en koper.  Het Kadaster
-bewaart de veldwerken in het Kadastraal archief.  Ook het kasteel
-Keukenhof is regelmatig verbouwd.  De volgende bevraging levert de
-veldwerken die gekoppeld zijn aan het perceel van kasteel Keukenhof.
---->
-
-<!-- '''Veldwerken van Kasteel Keukenhof - perceel A255
-
-Bevraging veldwerken erbij (pdok labs endpoint) Kijk naar percelen waar het
-kasteel Keukenhof op staat. Voor keukenhof Wouter
-vragen om dit even over te nemen.
-Zit momenteel niet in de data pdok labs
-''' -->
-
-<!--
-<query data-endpoint="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/sparql/virtuoso"
-       data-output="table"
-       data-query-ref="veldwerkenKeukenhof.rq">
-</query> -->
-
-<!-- ## Beeldbank
-
-Ellen/Henk/Richard (1 mei) Beeldbanken (rce en lisse/leiden)
-[link](https://beeldbank.cultureelerfgoed.nl/alle-afbeeldingen/?q=keukenhof&mode=gallery&view=horizontal), [link](https://beeldbank.cultureelerfgoed.nl/alle-afbeeldingen/?q=511406&mode=gallery&view=horizontal&page=1&reverse=0). Op een kaart met popups… Of een gallery… (mocht er een audio/video fragment erbij zijn…het kan)
-[link](https://beeldbank.cultureelerfgoed.nl/alle-afbeeldingen/?q=keukenhof&mode=gallery&view=horizontal), [link](https://beeldbank.cultureelerfgoed.nl/alle-afbeeldingen/?q=511406&mode=gallery&view=horizontal&page=1&reverse=0). Lisse/ELO:
-[link](http://webservices.picturae.pro/mediabank/media?apiKey=c8bf841e-24cc-11e7-a2f6-4394354bd8f8&fq[]=search_t_collection:%22Vereniging%20Oud%20Lisse%22&q=Keukenhof&CC-O).
-
-Deze urls komen bij in de data van lisse (Hans), en kunnen dan wel
-in de visualisatie meegenomen worden. (handwerk; filter de foto’s; een
-stuk of 10 uitkiezen en URL opnemen) -->
-
 ## Beroepen
 
 Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen en de bediening.  In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen.  Via een bevraging krijgen we een tabel ([Figuur 8](#beroepen-oud-lisse)) met de beroepen van de bewoners van Lisse in 1830.
-
-<!-- '''Tabel met beroepen en voor ieder beroep het aantal van voorkomen''' -->
 
 <figure id="beroepen-oud-lisse">
   <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Beroepen-HISCO-aantal">
@@ -247,21 +205,17 @@ Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de
   </figcaption>
 </figure>
 
-Iedere persoon is aan een adres gekoppeld; een deel van de personen
-heeft een beroep. We kunnen nu een link leggen met de database met
-beroepenclassificaties van het Instituut voor Sociale Geschiedenis
-(IISG). Hierdoor kunnen we de kaart van Lisse inkleuren op basis van
-de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
+Iedere persoon is aan een adres gekoppeld; een deel van de personen heeft een beroep. We kunnen nu een link leggen met de database met beroepenclassificaties van het Instituut voor Sociale Geschiedenis (IISG). Hierdoor kunnen we de kaart van Lisse inkleuren op basis van de HISCO beroepenclassificatie ([Figuur 9](#KaartStatusBeroep)).
 
-<p>De kaart hiernaast toont de werkende bevolking van Lisse. De
-  kleur geeft aan in welke categorie de werkende valt, volgens de legenda:</p>
+De kaart hiernaast toont de werkende bevolking van Lisse.  De kleur geeft aan in welke categorie de werkende valt, volgens de legenda:
+
 <ul>
-    <li>
-      <svg width="12px" height="12px">
-        <circle cx="6" cy="6" r="5" stroke="black" fill="green"></circle>
-      </svg>
-      Professional, technical and related workers
-    </li>
+  <li>
+    <svg width="12px" height="12px">
+      <circle cx="6" cy="6" r="5" stroke="black" fill="green"></circle>
+    </svg>
+    Professional, technical and related workers
+  </li>
   <li>
     <svg width="12px" height="12px">
       <circle cx="6" cy="6" r="5" stroke="black" fill="black"></circle>
@@ -362,72 +316,6 @@ Broekweg 180 gewoond hebben.
     Figuur 13 ― Tijdlijn van bewoners van Broekweg 180.
   </figcaption>
 </figure>
-
-<!-- ## Historische artikelen
-
-Richard (15 april) kijkt erna…Historische krant artikelen? (is dat
-Linked Data?)
-[link](https://www.delpher.nl/nl/platform/results?query=keukenhof&coll=platform),
-[link](https://kbresearch.nl/xportal/) Richard kijkt. Deadline: paar
-weekjes.
-
-## PDOK
-
-Wouter (1 mei) - Huidige data? (BAG?) (betrouwbaarheid door lisse)
-http://nl.dbpedia.org/page/Keukenhof BAG BRT Wikidata (via opnemen van
-BAG ids van Lisse in wikidata set) Huidige CBS wijk en buurt gegevens
-laten zien… (brouwerij/bier nog even naar kijken; klein duimpje)
-
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-output="geo"
-       data-query-ref="brk.rq">
-</query>
-
-## Persoon
-
-Henk/Hans (1 mei) (met hulp van Wouter/Richard voor het tweede
-deel) Focus op persoon: starten bij een persoon (die meerdere
-percelen/buitenhuizen bezit in lisse) (met een mooi fotootje uit de
-beeldbank van lisse) Wie zijn de beroemde lissenaren? Hebben die een
-portret in musea (collectie in amsterdamse musea; en dan
-gestandaardiseerd op personen, zodat je verder kan zoeken in
-bv. DBpedia)
-
-## Digitale Collectie Nederland
-
-Digitale Collectie Nederland. Europeana. Bijvoorbeeld:
-https://www.europeana.eu/portal/en/record/2021663/memorix_3f05695a_c460_9349_71d3_a5532ff69894.html?q=lisse#dcId=1553596917257&p=1
-https://data.collectienederland.nl/search/?q=keukenhof SPARQL endpoint
-op: https://data.collectienederland.nl/sparql en grafische schil op
-https://data.collectienederland.nl/snorql/ (Richard / Wouter gaan Ivo
-Zandhuis nog even navragen)
-
-Richard gaat hier volgende week naar kijken.
-
-## NA
-
-Erwin vraagt Ed: welk NA setje mag hier niet ontbreken In de
-dataset: gemeentegeschiedenis gebruiken Rein/Erwin/Wouter: maken data
-story aan, kopieren tekst.
-
-<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/lisse">
-</query>
-
-## Tulpen
-
-Erwin-Wouter (15 mei) Iets met namen en bloemennamen….(keukenhof is in de jaren 60 ontstaan) Ludiek ideetje: Voornamen met bloemen (fleur, bloem, madelief, …, misschien via voornamenbank) Tulpen die benoemd zijn naar beroemdheden: is er een beroemde lissenaar met een buitenplaats waarna een tulp is genoemd, en dan doorlinken naar dbpedia europeana, etc… Serpens (marieke) https://www.clariah.nl/projecten/research-pilots/serpens/serpens#abstract Naturalis (leiden): https://www.nederlandsesoorten.nl/ https://www.wikidata.org/wiki/Property:P3405
-
-<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/tulip-hierarchy">
-</query>
-
-<query data-config-ref="https://triplydb.com/wikimedia/dbpedia/queries/tulip-gallery">
-</query>
-
-## Familieboom
-
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
-</query>
--->
 
 ## Tot besluit
 
