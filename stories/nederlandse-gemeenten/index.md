@@ -24,6 +24,7 @@ dat de grootste gemeenten inderdaad vaak een groot wateroppervlak
 bezitten.</p>
 
 <query data-endpoint="https://data.pdok.nl/sparql"
+       data-output="geo"
        data-query-ref="grootste-gemeente-geo.rq">
 </query>
 
@@ -34,5 +35,6 @@ informatie over gemeenten opvragen uit andere datasets.  Hieronder
 tonen we voor 25 gemeenten een externe identifier in DBpedia.</p>
 
 <query data-endpoint="https://data.pdok.nl/sparql"
+       data-output="geo"
        data-query-ref="meest-dichtbevolkte-gemeente.rq">
 </query>

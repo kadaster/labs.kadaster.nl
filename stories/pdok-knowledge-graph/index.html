@@ -2,45 +2,24 @@
 banner: /assets/images/bag-in-lod-cloud.png
 layout: story
 logo: /assets/images/pdok-logo-text.png
-published: true
 title: PDOK Knowledge Graph
 ---
 
 <h1>PDOK Knowledge Graph</h1>
 
-<p> In deze Data Story bevragen we de Knowledge Graph, en in het
-bijzonder de combinaties in datasets.  We laten daarmee de toegevoegde
-waarde van een Knowledge Graph zien.</p>
+<p>In deze Data Story bevragen we de Knowledge Graph, en in het bijzonder de combinaties in datasets.  We laten daarmee de toegevoegde waarde van een Knowledge Graph zien.</p>
 
 <h2>Casus 1: Mogelijkheden voor projectontwikkeling</h2>
 
-<p>We willen dat er meer huizen worden verkocht.  Één manier om dat
-voor elkaar te krijgen is door meer huizen te bouwen.  Buitenstedelijk
-bouwen is echter lastig: dit tast groen aan en is mogelijk minder
-duurzaam.  Randstedelijk en binnenstedelijk bouwen is ook lastig, want
-vaak moeten bestaande woningen eerst worden afgebroken alvorens
-verbeterde nieuwbouw kan worden gepleegd.  Daarom deze Data Story: we
-combineren data uit verschillende PDOK bronnen en gebruiken de PDOK
-Knowledge Graph om te zoeken naar die plekken in Nederland waar de
-meeste potentie voor projectontwikkeling is.</p>
+<p>We willen dat er meer huizen worden verkocht.  Één manier om dat voor elkaar te krijgen is door meer huizen te bouwen.  Buitenstedelijk bouwen is echter lastig: dit tast groen aan en is mogelijk minder duurzaam.  Randstedelijk en binnenstedelijk bouwen is ook lastig, want vaak moeten bestaande woningen eerst worden afgebroken alvorens verbeterde nieuwbouw kan worden gepleegd.  Daarom deze Data Story: we combineren data uit verschillende PDOK bronnen en gebruiken de PDOK Knowledge Graph om te zoeken naar die plekken in Nederland waar de meeste potentie voor projectontwikkeling is.</p>
 
 <h3>Bevraging 1A: Vind een geschikte buurt</h3>
 
-<p>We beginnen te zoeken naar buurten in Nederland waar de
-omstandigheden gunstig zijn voor verbeterde nieuwbouw.  Het CBS houdt
-gedetailleerde statistieken bij van alle Nederlandse buurten.  We
-beginnen met het in beeld brengen van alle buurten waar matige
-stedelijkheid is: daarmee sluiten we groengebieden waar niet gebouwd
-mag worden en sterk stedelijke gebieden waar niet gebouwd kan worden
-uit.</p>
+<p>We beginnen te zoeken naar buurten in Nederland waar de omstandigheden gunstig zijn voor verbeterde nieuwbouw.  Het CBS houdt gedetailleerde statistieken bij van alle Nederlandse buurten.  We beginnen met het in beeld brengen van alle buurten waar matige stedelijkheid is: daarmee sluiten we groengebieden waar niet gebouwd mag worden en sterk stedelijke gebieden waar niet gebouwd kan worden uit.</p>
 
 <div class="textbox">
   <h2>Probeer het uit</h2>
-  <p>Op deze kaart zijn de kandidaat buurten gegroepeerd weergegeven.
-  Door op de met getallen aangeduide groepen te klikken worden de
-  buurten binnen die groepering zichtbaar gemaakt.  Op het laagste
-  niveau worden de individuele buurten zichtbaar.  Door op deze
-  buurten te klikken kan de naam van de buurten getoond worden.</p>
+  <p>Op deze kaart zijn de kandidaat buurten gegroepeerd weergegeven.  Door op de met getallen aangeduide groepen te klikken worden de buurten binnen die groepering zichtbaar gemaakt.  Op het laagste niveau worden de individuele buurten zichtbaar.  Door op deze buurten te klikken kan de naam van de buurten getoond worden.</p>
 </div>
 
 <query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-1">
@@ -51,39 +30,28 @@ uit.</p>
 <p>Laten we hier nog enkele zoekcriteria aan toevoegen:</p>
 
 <ul>
-  <li>De buurt moet woningen met een lage gemiddelde woningwaarde
-  bevatten.</li>
+  <li>De buurt moet woningen met een lage gemiddelde woningwaarde bevatten.</li>
   <li>De buurt moet een relatief hoge woningvoorraad hebben.</li>
   <li>De buurt moet woningen bevatten die vóór 2000 gebouwd zijn.</li>
 </ul>
 
-<p>Wanneer we alle buurten in Nederland op basis van deze criteria
-sorteren komen de volgende buurten boven drijven:</p>
+<p>Wanneer we alle buurten in Nederland op basis van deze criteria sorteren komen de volgende buurten boven drijven:</p>
 
 <query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-2">
 </query>
 
 <h3>Bevraging 1C: Kandidaat buurten in Dordrecht</h3>
 
-<p>Twee van de kandidaat buurten blijken in Dordrecht te liggen, dus
-laten we daar eens verder kijken.  Dit zijn de buurten in Dordrecht
-met in de weergave hun gemiddelde woningwaardes.  Deze waardes zijn
-afkomstig van het Centraal Bureau van de Statistiek (CBS).</p>
+<p>Twee van de kandidaat buurten blijken in Dordrecht te liggen, dus laten we daar eens verder kijken.  Dit zijn de buurten in Dordrecht met in de weergave hun gemiddelde woningwaardes.  Deze waardes zijn afkomstig van het Centraal Bureau van de Statistiek (CBS).</p>
 
 <div class="textbox">
   <h2>Probeer het uit</h2>
-  <p>In deze 3D omgeving zijn de kandidaat buurten weergegeven.  De
-  hoogte en kleur van de buurten duidt de hoogte van de gemiddelde
-  woningwaarde aan.  Door op de 3D objecten te klikken wordt de naam
-  van de buurt getoond samen met de gemiddelde woningwaarde voor die
-  buurt.  Navigatie binnen de 3D omgeving functioneert door gebruik te
-  maken van de muis en de <kbd>Ctrl</kbd> toets.</p>
+  <p>In deze 3D omgeving zijn de kandidaat buurten weergegeven.  De hoogte en kleur van de buurten duidt de hoogte van de gemiddelde woningwaarde aan.  Door op de 3D objecten te klikken wordt de naam van de buurt getoond samen met de gemiddelde woningwaarde voor die buurt.  Navigatie binnen de 3D omgeving functioneert door gebruik te maken van de muis en de <kbd>Ctrl</kbd> toets.</p>
 </div>
 
 <query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-3">
 </query>
 
-<!--
 <h3>Bevraging 1D: BAG panden die aan de criteria voldoen</h3>
 
 <p>Dan gecombineerd met BAG panden van vóór 1970, WOZ waarde in de
@@ -98,11 +66,8 @@ laagste klasse (t/m € 150.000,-), en energielabel D of hoger.  De
   door de editor te openen en weergave optie “Gallery” te kiezen.</p>
 </div>
 
-<query data-config="http://localhost:5000/stories/pdok-kg/#query=%23%201.%20BAG%20bouwjaar%20tussen%201960%20en%201970%2C%0A%23%202.%20RVO%20energielabel%20D%20of%20slechter%2C%0A%23%203.%20WOZ%20in%20de%20laagste%20klasse%0Aprefix%20bag%3A%20%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix%20begrip_bag%3A%20%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fid%2Fbegrip%2F%3E%0Aprefix%20begrip_energielabel%3A%20%3Chttp%3A%2F%2Fenergielabels.gebouwen.overheid.nl%2Fepbd%2Fid%2Fbegrip%2F%3E%0Aprefix%20cbs%3A%20%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fdef%2Fcbs%23%3E%0Aprefix%20def%3A%20%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fdef%2F83487NED%23%3E%0Aprefix%20dimension%3A%20%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fdef%2Fdimension%23%3E%0Aprefix%20energielabels%3A%20%3Chttps%3A%2F%2Fdata.labs.pdok.nl%2Fdef%2Fenergielabels%2F%3E%0Aprefix%20epbd%3A%20%3Chttp%3A%2F%2Fenergielabels.gebouwen.overheid.nl%2Fdef%2Fepbd%23%3E%0Aprefix%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0Aprefix%20geo%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix%20geof%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Ffunction%2Fgeosparql%2F%3E%0Aprefix%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix%20waardeklasse%3A%20%3Chttps%3A%2F%2Fdata.labs.pdok.nl%2Fwoz%2Fdef%2Fwaardeklasse%2F%3E%0Aprefix%20woz%3A%20%3Chttps%3A%2F%2Fdata.labs.pdok.nl%2Fwoz%2Fdef%2F%3E%0Aselect%20*%20%7B%0A%20%20%7B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20select%0A%20%20%20%20%20%20%20%20%3Fpand%0A%20%20%20%20%20%20%20%20%3Fshape%0A%20%20%20%20%20%20%20%20(sample(%3Fprefix0)%20as%20%3Fprefix)%0A%20%20%20%20%20%20%20%20(sample(%3FshapeName0)%20as%20%3FshapeName)%0A%20%20%20%20%20%20%20%20(sample(%3Fverblijfsobject0)%20as%20%3Fverblijfsobject)%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20graph%20%3FwoonplaatsVoorkomen%20%7B%0A%20%20%20%20%20%20%20%20%20%20%3Fwoonplaats%20bag%3AnaamWoonplaats%20%22Dordrecht%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20filter%20not%20exists%20%7B%20%3FwoonplaatsVoorkomen%20bag%3AeindGeldigheid%20%5B%5D%20%7D%0A%20%20%20%20%20%20%20%20graph%20%3FopenbareRuimteVoorkomen%20%7B%0A%20%20%20%20%20%20%20%20%20%20%3FopenbareRuimte%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3AbijbehorendeWoonplaats%20%3Fwoonplaats%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3AnaamOpenbareRuimte%20%3FopenbareRuimteNaam.%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20filter%20not%20exists%20%7B%20%3FopenbareRuimteVoorkomen%20bag%3AeindGeldigheid%20%5B%5D%20%7D%0A%20%20%20%20%20%20%20%20graph%20%3FnummeraanduidingVoorkomen%20%7B%0A%20%20%20%20%20%20%20%20%20%20%3Fnummeraanduiding%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3AbijbehorendeOpenbareRuimte%20%3FopenbareRuimte%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Ahuisnummer%20%3Fhuisnummer%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Apostcode%20%3Fpostcode.%0A%20%20%20%20%20%20%20%20%20%20optional%20%7B%20%3Fnummeraanduiding%20bag%3Ahuisletter%20%3Fhuisletter%20%7D%0A%20%20%20%20%20%20%20%20%20%20optional%20%7B%20%3Fnummeraanduiding%20bag%3Ahuisnummertoevoeging%20%3Fhuisnummertoevoeging%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20filter%20not%20exists%20%7B%20%3FnummeraanduidingVoorkomen%20bag%3AeindGeldigheid%20%5B%5D%20%7D%0A%20%20%20%20%20%20%20%20graph%20%3FverblijfsobjectVoorkomen%20%7B%0A%20%20%20%20%20%20%20%20%20%20%3Fverblijfsobject0%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Ahoofdadres%20%3Fnummeraanduiding%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Aoppervlakte%20%3Foppervlakte%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Apandrelatering%20%3Fpand%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Astatus%20%3FverblijfsobjectStatus.%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3FverblijfsobjectStatus%20rdfs%3Alabel%20%3FverblijfsobjectStatusLabel.%0A%20%20%20%20%20%20%20%20filter%20not%20exists%20%7B%20%3FverblijfsobjectVoorkomen%20bag%3AeindGeldigheid%20%5B%5D%20%7D%0A%20%20%20%20%20%20%20%20graph%20%3FpandVoorkomen%20%7B%0A%20%20%20%20%20%20%20%20%20%20%3Fpand%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3AgeometriePand%2Fgeo%3AasWKT%20%3Fshape%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3AoorspronkelijkBouwjaar%20%3Fbouwjaar%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20bag%3Astatus%20%3FpandStatus.%0A%20%20%20%20%20%20%20%20%20%20filter(%3Fbouwjaar%20%3E%201950%20%26%26%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Fbouwjaar%20%3C%201960%20%26%26%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3FpandStatus%20not%20in%20(begrip_bag%3APandGesloopt%2C%20begrip_bag%3ASloopvergunningVerleend))%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20filter%20not%20exists%20%7B%20%3FpandVoorkomen%20bag%3AeindGeldigheid%20%5B%5D%20%7D%0A%20%20%20%20%20%20%20%20%3FpandStatus%20rdfs%3Alabel%20%3FpandStatusLabel%0A%20%20%20%20%20%20%20%20bind(concat(str(%3FopenbareRuimteNaam)%2C'%20'%2Cstr(%3Fhuisnummer)%2C'%2C%20'%2Cstr(%3Fpostcode)%2C'%20Dordrecht')%20as%20%3FshapeName0)%0A%20%20%20%20%20%20%20%20bind(concat(%0A'%3Ch3%3E'%2Cstr(%3FopenbareRuimteNaam)%2C'%20'%2Cstr(%3Fhuisnummer)%2C'%3C%2Fh3%3E'%2C%0A'%3Cdl%3E'%2C%0A%20%20'%3Cdt%3EPand%20oppervlakte%3C%2Fdt%3E'%2C%0A%20%20'%3Cdd%3E'%2Cstr(%3Foppervlakte)%2C'%20m2%3C%2Fdd%3E'%2C%0A%20%20'%3Cdt%3EPand%20status%3C%2Fdt%3E'%2C%0A%20%20'%3Cdd%3E'%2Cstr(%3FpandStatusLabel)%2C'%3C%2Fdd%3E'%2C%0A%20%20'%3Cdt%3EBouwjaar%3C%2Fdt%3E'%2C%0A%20%20'%3Cdd%3E'%2Cstr(%3Fbouwjaar)%2C'%3C%2Fdd%3E'%2C%0A'%3C%2Fdl%3E')%20as%20%3Fprefix0)%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20group%20by%20%3Fpand%20%3Fshape%0A%20%20%20%20%20%20limit%201000%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20service%20%3Chttps%3A%2F%2Fdata.labs.pdok.nl%2Fmigratie%2Fsparql%3E%20%7B%0A%20%20%20%20%3Fpand%20%3Chttps%3A%2F%2Fdata.labs.pdok.nl%2Fbag%2Fdef%2FmeasuredHeight%3E%20%3FshapeHeight.%0A%20%20%20%20%3Fgebouwdeel%0A%20%20%20%20%20%20epbd%3Aenergieprestatie-indicator%20%3Fenergieprestatie%3B%0A%20%20%20%20%20%20epbd%3AheeftAdresseerbaarObject%20%3Fverblijfsobject%3B%0A%20%20%20%20%20%20foaf%3AisPrimaryTopicOf%20%3Fenergielabel.%0A%20%20%20%20%3Fenergielabel%0A%20%20%20%20%20%20epbd%3Aopnamedatum%20%3Fopnamedatum%3B%0A%20%20%20%20%20%20epbd%3Aregistratiedatum%20%3Fregistratiedatum.%0A%20%20%20%20%3Fwoz%0A%20%20%20%20%20%20woz%3Aaotvboandidentificatie%20%3Fverblijfsobject%3B%0A%20%20%20%20%20%20woz%3Awaardeklasse%20waardeklasse%3A1.%0A%20%20%20%20filter(%0A%20%20%20%20%20%20%3Fenergieprestatie%3Dbegrip_energielabel%3AD_Energielabel%20%7C%7C%0A%20%20%20%20%20%20%3Fenergieprestatie%3Dbegrip_energielabel%3AE_Energielabel%20%7C%7C%0A%20%20%20%20%20%20%3Fenergieprestatie%3Dbegrip_energielabel%3AF_Energielabel%20%7C%7C%0A%20%20%20%20%20%20%3Fenergieprestatie%3Dbegrip_energielabel%3AG_Energielabel%0A%20%20%20%20)%0A%20%20%7D%0A%20%20bind(%0A%20%20%20%20if(!(bound(%3Fenergieprestatie))%2C'grey'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_Energielabel%2C'%2322b14c'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p_Energielabel%2C'%2322b14c'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p__p_Energielabel%2C'%2322b14c'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p__p__p_Energielabel%2C'%2322b14c'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AB_Energielabel%2C'%238ff334'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AC_Energielabel%2C'%23bdfc2c'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AD_Energielabel%2C'%23fff200'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AE_Energielabel%2C'%23ff9a35'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AF_Energielabel%2C'%23ff7f27'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AG_Energielabel%2C'%23ed1c24'%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'grey')))))))))))%20as%20%3FshapeColor)%0A%20%20bind(%0A%20%20%20%20if(!(bound(%3Fenergieprestatie))%2C'none'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_Energielabel%2C'A'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p_Energielabel%2C'A'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p__p_Energielabel%2C'A'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AA_p__p__p_Energielabel%2C'A'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AB_Energielabel%2C'B'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AC_Energielabel%2C'C'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AD_Energielabel%2C'D'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AE_Energielabel%2C'E'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AF_Energielabel%2C'F'%2C%0A%20%20%20%20if(%3Fenergieprestatie%3Dbegrip_energielabel%3AG_Energielabel%2C'G'%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20'unknown')))))))))))%20as%20%3Flabel)%0A%20%20bind('''%0A%7B%7Bprefix%7D%7D%0A%3Ch3%3E%0A%20%20%3Csvg%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20fill%3D%22%7B%7BshapeColor%7D%7D%22%20r%3D%2210%22%3E%0A%20%20%3C%2Fsvg%3E%0A%20%20Energielabel%20%7B%7Blabel%7D%7D%0A%3C%2Fh3%3E%0A%3Cdl%3E%0A%20%20%3Cdt%3EOpnamedatum%3C%2Fdt%3E%0A%20%20%3Cdd%3E%7B%7Bopnamedatum%7D%7D%3C%2Fdd%3E%0A%20%20%3Cdt%3ERegistratiedatum%3C%2Fdt%3E%0A%20%20%3Cdd%3E%7B%7Bregistratiedatum%7D%7D%3C%2Fddt%3E%0A%3C%2Fdl%3E'''%20as%20%3FshapeLabel)%0A%20%20bind(%3FshapeLabel%20as%20%3Fwidget)%0A%7D%0Alimit%201000%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=geo&outputSettings=%7B%22map%22%3A%22nlmaps%22%2C%22visualization%22%3A%22heatmap%22%2C%22grouped%22%3Afalse%7D"
-       data-query-ref="q1d.rq"
-       data-output="geo">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-1d"
 </query>
--->
 
 <h2>Casus 2: Herbenutten van schoolgebouwen</h2>
 
@@ -122,7 +87,6 @@ onderwijsfunctie van status is veranderd.</p>
        data-output="gchart">
 </query>
 
-<!--
 <h3>Bevraging 2B: Mutaties voor BAG panden met onderwijsfunctie</h3>
 
 <p>We kunnen deze panden op de kaart zetten, samen met hun recente
@@ -131,11 +95,8 @@ volgens de BRK.  Dit laatste is van belang omdat het laat zien hoeveel
 bouwgrond er mogelijk vrij zou kunnen komen wanneer een voormalig
 schoolgebouw vrijkomt voor nieuwbouw.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="scholen-bag-mutaties-map.rq"
-       data-output="geo">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-2b">
 </query>
--->
 
 <h3>Bevraging 2C: BRT school én BAG pand met onderwijsfunctie</h3>
 
@@ -143,9 +104,7 @@ schoolgebouw vrijkomt voor nieuwbouw.</p>
 Slechts één van de BAG panden met een onderwijsfunctie komt ook als
 zodanig in de BRT voor.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="scholen-bag-en-brt.rq"
-       data-output="geo3d">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-2c">
 </query>
 
 <!--
