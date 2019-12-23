@@ -33,6 +33,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
     </div>
   </a>
+  <a href="./hack-a-lod-2019/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/hack-a-lod.jpg">
+      <div class="card-title">Stolpersteine</div>
+      <div class="card-description">Hier bouwen we verder op ons werk met de verkaufsbucher en koppelen we het aan zgn. Stolpersteine.</div>
+    </div>
+  </a>
   <a href="./vind-een-gebouw/index.html">
     <div class="card">
       <div class="card-type">Story</div>

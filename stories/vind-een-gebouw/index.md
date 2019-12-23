@@ -1,9 +1,5 @@
 ---
-endpoint: https://data.pdok.nl/sparql
 layout: story
-logo: /assets/images/huis.png
-output: geo3d
-published: true
 title: Vind een gebouw
 ---
 
@@ -18,8 +14,7 @@ pand kan worden opgevraagd door de query editor te openen en de
 <code class="hightlight">values</code> operatoren aan het begin van de
 query aan te passen.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="vind-een-pand.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/vind-een-huis">
 </query>
 
 <h2>Vind een straat</h2>
@@ -29,8 +24,7 @@ te openen en de
 <code class="hightlight">values</code> operatoren aan het begin van de
 query aan te passen.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="vind-een-straat.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/vind-een-straat">
 </query>
 
 <p>Voor sommige panden zijn meerdere registraties door de tijd heen

@@ -2,7 +2,6 @@
 description: Data Story waarin gegevensbronnen in de afvalwaterketen op nieuwe manieren gecombineerd worden..
 endpoint: https://data.pdok.nl/sparql
 layout: story
-logo: /assets/images/riool.jpg
 output: geo
 published: false
 title: Rioleringsgebieden

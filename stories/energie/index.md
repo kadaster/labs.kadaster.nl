@@ -1,6 +1,7 @@
 ---
 layout: story
 logo: /assets/images/energy.png
+published: false
 title: Energie Data Story
 ---
 

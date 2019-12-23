@@ -1,7 +1,6 @@
 ---
 banner: /assets/images/bag-in-lod-cloud.png
 layout: story
-logo: /assets/images/pdok-logo-text.png
 title: PDOK Knowledge Graph
 ---
 

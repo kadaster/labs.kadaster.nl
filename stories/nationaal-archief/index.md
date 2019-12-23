@@ -1,6 +1,5 @@
 ---
 layout: story
-logo: /assets/images/nationaal-archief-logo.png
 published: true
 title: Nationaal Archief Beeldbank
 ---

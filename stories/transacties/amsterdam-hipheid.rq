@@ -1,8 +1,7 @@
 prefix cbs_def: <https://data.pdok.nl/cbs/def/>
 prefix cbs_gem: <https://data.pdok.nl/cbs/id/gemeente/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
-
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 select
 # ?buurt ?hipheid
 ?wkt ?wktColor ?gemeente ?transacties
@@ -14,14 +13,13 @@ where {
   bind(?transacties / ?woningvoorraad as ?hipheid)
   filter(?hipheid <= 1)
   # filter(?woningvoorraad > 100)
-
   graph <https://data.pdok.nl/cbs/graph/2016> {
-  ?buurt geo:sfWithin/geo:sfWithin ?gemeente .
+    ?buurt geo:sfWithin/geo:sfWithin ?gemeente.
   }
   filter(?gemeente=cbs_gem:2016GM0363)
 
   graph <https://data.pdok.nl/cbs/wijken_buurten_2016> {
-     ?buurt geo:hasGeometry/geo:asWKT ?wkt .
+    ?buurt geo:hasGeometry/geo:asWKT ?wkt.
   }
   bind(xsd:integer(?transacties / 100 * 255) as ?green)
   bind(xsd:integer(255 - (?transacties / 100 * 255)) as ?red)

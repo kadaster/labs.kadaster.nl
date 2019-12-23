@@ -1,7 +1,6 @@
 ---
 banner: /assets/images/sint-jan.jpg
 layout: story
-logo: /assets/images/kadaster-logo.png
 title: Religieuze gebouwen in Nederland
 ---
 
@@ -13,26 +12,13 @@ title: Religieuze gebouwen in Nederland
   <div class="content side-by-side">
     <div>
       <h2>Introductie</h2>
-      <p>De <a href="https://zakelijk.kadaster.nl/brt" target="_blank">Basisregistratie Topografie (BRT)</a> bestaat
-        uit digitale topografische bestanden op verschillende
-        schaalniveaus. Deze verzameling topografische bestanden is
-        beschikbaar als Linked Open Data. In deze Data Story kijken we
-        naar de religieuze gebouwen die in de BRT dataset worden
-        beschreven. De BRT wordt beheerd door
-        het <a href="https://kadaster.nl" target="_blank">Kadaster</a>.</p>
+      <p>De <a href="https://zakelijk.kadaster.nl/brt" target="_blank">Basisregistratie Topografie (BRT)</a> bestaat uit digitale topografische bestanden op verschillende schaalniveaus.  Deze verzameling topografische bestanden is beschikbaar als Linked Open Data.  In deze Data Story kijken we naar de religieuze gebouwen die in de BRT dataset worden beschreven.  De BRT wordt beheerd door het <a href="https://kadaster.nl" target="_blank">Kadaster</a>.</p>
 
-      <p>We beginnen met het tellen van het aantal religieuze gebouwen
-        in Nederland in combinatie met hun gebouwsoort. Het volgende
-        cirkeldiagram laat de gebouwsoorten zien die in de Linked Data
-        gebruikt worden om de verschillende soorten religieuze gebouwen
-        mee aan te duiden, samen met het aantal instanties voor iedere
-        soort.</p>
+      <p>We beginnen met het tellen van het aantal religieuze gebouwen in Nederland in combinatie met hun gebouwsoort.  Het volgende cirkeldiagram laat de gebouwsoorten zien die in de Linked Data gebruikt worden om de verschillende soorten religieuze gebouwen mee aan te duiden, samen met het aantal instanties voor iedere soort.</p>
     </div>
     <div>
       <query
-        data-config="https://nightly.yasgui.triply.cc/#query=prefix%20brt%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect%20%3FcLabel%20(count(%3Fi)%20as%20%3Fn)%20%7B%0A%20%20%3Fi%20a%20%3Fc.%0A%20%20%3Fc%20rdfs%3Alabel%20%3FcLabel.%0A%20%20filter(%3Fc%20in%20(brt%3AKerk%2C%20brt%3AMoskee%2C%20brt%3ASynagoge))%0A%7D%0Agroup%20by%20%3FcLabel%0Aorder%20by%20desc(%3Fn)%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query%207&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=gchart&outputSettings=%7B%22chartConfig%22%3A%7B%22dataTable%22%3A%7B%22cols%22%3A%5B%7B%22id%22%3A%22%22%2C%22label%22%3A%22cLabel%22%2C%22pattern%22%3A%22%22%2C%22type%22%3A%22string%22%7D%2C%7B%22id%22%3A%22%22%2C%22label%22%3A%22n%22%2C%22pattern%22%3A%22%22%2C%22type%22%3A%22number%22%7D%5D%2C%22rows%22%3A%5B%7B%22c%22%3A%5B%7B%22v%22%3A%22Kerk%22%7D%2C%7B%22v%22%3A8366%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A%22Moskee%22%7D%2C%7B%22v%22%3A351%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A%22Synagoge%22%7D%2C%7B%22v%22%3A29%7D%5D%7D%5D%7D%2C%22options%22%3A%7B%22hAxis%22%3A%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%2C%22legacyScatterChartLabels%22%3Atrue%2C%22vAxes%22%3A%5B%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22logScale%22%3Afalse%7D%2C%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22logScale%22%3Afalse%7D%5D%2C%22is3D%22%3Atrue%2C%22pieHole%22%3A0%2C%22booleanRole%22%3A%22certainty%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22theme%22%3A%22maximized%22%2C%22legend%22%3A%22right%22%2C%22pieSliceTextStyle%22%3A%7B%22fontSize%22%3A%2215%22%7D%7D%2C%22state%22%3A%7B%7D%2C%22view%22%3A%7B%22columns%22%3Anull%2C%22rows%22%3Anull%7D%2C%22isDefaultVisualization%22%3Afalse%2C%22chartType%22%3A%22PieChart%22%7D%7D"
-        data-endpoint="https://data.pdok.nl/sparql"
-        data-query-ref="count-per-type.rq">
+        data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-1">
       </query>
     </div>
 
@@ -49,16 +35,8 @@ title: Religieuze gebouwen in Nederland
     </div>
     <div>
       <h2>Religieuze denominaties</h2>
-      <p>Religieuze gebouwen worden geassocieerd met in die gebouwen
-        gepraktiseerde religies. Religies vormen een hiërarchie,
-        waarbij de wereldreligies vertakken in verschillende
-        denominaties, die vervolgens weer verder kunnen vertakken in
-        subdenominaties.</p>
-      <p>Religies worden in de BRT niet gemodelleerd als een hiërarchie,
-        maar hiërarchische informatie kan wel worden geëxtraheerd op
-        basis van de <i>soortnaam</i> eigenschap. Onderstaande tabel
-        toont de drie niveaus in deze hiërarchie, met per hiërarchie het
-        aantal geassocieerde religieuze gebouwen.</p>
+      <p>Religieuze gebouwen worden geassocieerd met in die gebouwen gepraktiseerde religies.  Religies vormen een hiërarchie, waarbij de wereldreligies vertakken in verschillende denominaties, die vervolgens weer verder kunnen vertakken in subdenominaties.</p>
+      <p>Religies worden in de BRT niet gemodelleerd als een hiërarchie, maar hiërarchische informatie kan wel worden geëxtraheerd op basis van de <i>soortnaam</i> eigenschap.  Onderstaande tabel toont de drie niveaus in deze hiërarchie, met per hiërarchie het aantal geassocieerde religieuze gebouwen.</p>
 
     </div>
   </div>
@@ -67,47 +45,31 @@ title: Religieuze gebouwen in Nederland
 <div class="flex">
   <div class="content">
     <h2>Reconstructie van de religie hiërarchie</h2>
-    <p>We kunnen de religies en hun (sub)denominaties visualiseren in
-      een <a href="https://en.wikipedia.org/wiki/Treemapping" target="_blank">TreeMap</a>. De grootte van de vlakken
-      correspondeert met het aantal religieuze gebouwen dat met de
-      bijbehorende (sub)denominatie geassocieerd is.</p>
+    <p>We kunnen de religies en hun (sub)denominaties visualiseren in een <a href="https://en.wikipedia.org/wiki/Treemapping" target="_blank">TreeMap</a>.  De grootte van de vlakken correspondeert met het aantal religieuze gebouwen dat met de bijbehorende (sub)denominatie geassocieerd is.</p>
     <div class="textbox">
       <h2>Probeer het uit</h2>
-      <p>De boom kan genavigeerd worden door op de vlakken te klikken
-        met de muis. Klikken met de linker muisknop navigeert naar
-        beneden in de boom. Klikken met de rechter muisknop navigeert
-        naar boven in de boom.</p>
+      <p>De boom kan genavigeerd worden door op de vlakken te klikken met de muis.  Klikken met de linker muisknop navigeert naar beneden in de boom.  Klikken met de rechter muisknop navigeert naar boven in de boom.</p>
     </div>
     <query
-      data-config="http://localhost:4000/kadaster/brt-religieuze-gebouwen/#query=prefix%20brt%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aselect%20%3Fchild%20%3Fparent%20(count(*)%20as%20%3Fsize)%20(1.0%20as%20%3Fcolor)%20%7B%0A%20%20%7B%0A%20%20%20%20values%20(%3Fchild%20%3Fparent)%20%7B%0A%20%20%20%20%20%20(%20%22Religieus%20Gebouw%22%20UNDEF%20)%0A%20%20%20%20%20%20(%20%22Kerk%22%20%22Religieus%20Gebouw%22%20)%0A%20%20%20%20%20%20(%20%22Moskee%22%20%22Religieus%20Gebouw%22%20)%0A%20%20%20%20%20%20(%20%22Overig%20Religieus%20Gebouw%22%20%22Religieus%20Gebouw%22%20)%0A%20%20%20%20%20%20(%20%22Synagoge%22%20%22Religieus%20Gebouw%22%20)%0A%20%20%20%20%7D%0A%20%20%7D%20union%20%7B%0A%20%20%20%20select%20%3Fchild%20%3Fparent%20%7B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%23%20Extract%20the%20denominations%20(stored%20under%20property%0A%20%20%20%20%20%20%20%20%23%20%E2%80%98brt%3Asoortnaam%E2%80%99).%20%20From%20looking%20at%20the%20data%20we%20know%20that%0A%20%20%20%20%20%20%20%20%23%20there%20are%20at%20most%203%20concatenated%20substrings%20in%20one%0A%20%20%20%20%20%20%20%20%23%20denomination%20string.%0A%20%20%20%20%20%20%20%20select%20%3Ffirst%20%3Fsecond%20%3Fthird%20%3Ffourth%20%3FcLabel%20%7B%0A%20%20%20%20%20%20%20%20%20%20values%20(%3Fc%20%3FcLabel)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20(%20brt%3AKerk%20%22Kerk%22%20)%0A%20%20%20%20%20%20%20%20%20%20%20%20(%20brt%3AMoskee%20%22Moskee%22%20)%0A%20%20%20%20%20%20%20%20%20%20%20%20(%20brt%3AOverigReligieusGebouw%20%22Overig%20Religieus%20Gebouw%22%20)%0A%20%20%20%20%20%20%20%20%20%20%20%20(%20brt%3ASynagoge%20%22Synagoge%22%20)%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%3Fitem%20a%20%3Fc%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20brt%3Asoortnaam%20%3FdenominationLiteral.%0A%20%20%20%20%20%20%20%20%20%20bind(str(%3FdenominationLiteral)%20as%20%3FdenomString)%0A%20%20%20%20%20%20%20%20%20%20%23%20Filter%20out%20a%20couple%20of%20rows%20where%20mosques%20are%20of%20type%0A%20%20%20%20%20%20%20%20%20%20%23%20brt%3AKerk.%20%20Leaving%20these%20in%20would%20mess%20up%20the%20tree%2C%20since%0A%20%20%20%20%20%20%20%20%20%20%23%20some%20children%20would%20have%20two%20parents%20(%E2%80%98brt%3AMoskee%E2%80%99%20and%0A%20%20%20%20%20%20%20%20%20%20%23%20%E2%80%98brt%3AKerk%E2%80%99).%0A%20%20%20%20%20%20%20%20%20%20filter(!(%3Fc%3Dbrt%3AKerk%20%26%26%20(regex(%3FdenomString%2C'moskee'%2C'i')%20%7C%7C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20regex(%3FdenomString%2C'boedd'%2C'i'))))%0A%20%20%20%20%20%20%20%20%20%20%23%20multiple%20soortnaams%20are%20joined%20with%20'%26'%0A%20%20%20%20%20%20%20%20%20%20bind(%22%20%26%20%22%20as%20%3Fand)%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%201%20denomination%0A%20%20%20%20%20%20%20%20%20%20%20%20filter(!regex(%3FdenomString%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20bind(%3FdenomString%20as%20%3Ffirst)%0A%20%20%20%20%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%23%20%3E1%20denomination%0A%20%20%20%20%20%20%20%20%20%20%20%20filter(regex(%3FdenomString%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20bind(strbefore(%3FdenomString%2C%20%3Fand)%20as%20%3Ffirst)%0A%20%20%20%20%20%20%20%20%20%20%20%20bind(strafter(%3FdenomString%2C%20%3Fand)%20as%20%3Frest1)%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%202%20denominations%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter(!regex(%3Frest%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(%3Frest1%20as%20%3Fsecond)%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20%3E2%20denominations%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter(regex(%3Frest1%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(strbefore(%3Frest1%2C%20%3Fand)%20as%20%3Fsecond)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(strafter(%3Frest1%2C%20%3Fand)%20as%20%3Frest2)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%203%20denominations%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter(!regex(%3Frest2%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(%3Frest2%20as%20%3Fthird)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%204%20denominations%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20filter(regex(%3Frest2%2C%20%3Fand))%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(strbefore(%3Frest2%2C%20%3Fand)%20as%20%3Fthird)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bind(strafter(%3Frest2%2C%20%3Fand)%20as%20%3Ffourth)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20bind(%3Ffirst%20%20as%20%3Fdenomination)%0A%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20filter(bound(%3Fsecond))%0A%20%20%20%20%20%20%20%20bind(%3Fsecond%20as%20%3Fdenomination)%0A%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20filter(bound(%3Fthird))%0A%20%20%20%20%20%20%20%20bind(%3Fthird%20%20as%20%3Fdenomination)%0A%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20filter(bound(%3Ffourth))%0A%20%20%20%20%20%20%20%20bind(%3Ffourth%20as%20%3Fdenomination)%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20bind(%22%3A%20%22%20as%20%3Fsub)%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%23%20A%20subbranch%20occurs%3A%20we%20have%20another%20level%20of%20hierarchy.%0A%20%20%20%20%20%20%20%20filter(regex(%3Fdenomination%2C%20%3Fsub))%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%23%20in%20one%20set%20of%20rows%3A%20use%20the%20first%20part%20of%20the%20denomination%0A%20%20%20%20%20%20%20%20%20%20%23%20as%20the%20parent%20and%20the%20second%20part%20as%20the%20child%0A%20%20%20%20%20%20%20%20%20%20bind(strbefore(%3Fdenomination%2C%20%3Fsub)%20as%20%3Fparent)%0A%20%20%20%20%20%20%20%20%20%20bind(strafter(%3Fdenomination%2C%20%3Fsub)%20as%20%3Fchild)%0A%20%20%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20%20%20%23%20in%20another%20set%20of%20rows%3A%20discard%20the%20second%20part%0A%20%20%20%20%20%20%20%20%20%20bind(strbefore(%3Fdenomination%2C%20%3Fsub)%20as%20%3Fchild)%0A%20%20%20%20%20%20%20%20%20%20bind(%3FcLabel%20as%20%3Fparent)%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%20union%20%7B%0A%20%20%20%20%20%20%20%20%23%20No%20subbranch%20occurs%3A%20we%20are%20already%20done.%0A%20%20%20%20%20%20%20%20filter(!regex(%3Fdenomination%2C%20%3Fsub))%0A%20%20%20%20%20%20%20%20bind(%3Fdenomination%20as%20%3Fchild)%0A%20%20%20%20%20%20%20%20bind(%3FcLabel%20as%20%3Fparent)%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0Agroup%20by%20%3Fchild%20%3Fparent%0Aorder%20by%20desc(%3Fn)%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query%2010&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=gchart&outputSettings=%7B%22chartConfig%22%3A%7B%22options%22%3A%7B%22annotations%22%3A%7B%22domain%22%3A%7B%22style%22%3A%22line%22%7D%7D%2C%22hAxis%22%3A%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%2C%22legacyScatterChartLabels%22%3Atrue%2C%22vAxes%22%3A%5B%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%5D%2C%22booleanRole%22%3A%22certainty%22%2C%22fontColor%22%3A%22%23fff%22%2C%22fontSize%22%3A%2214%22%2C%22headerColor%22%3A%22%233d85c6%22%2C%22maxDepth%22%3A3%2C%22headerHeight%22%3A15%2C%22showTooltips%22%3Afalse%2C%22minColor%22%3A%22%23DC3912%22%2C%22midColor%22%3A%22%236aa84f%22%2C%22maxColor%22%3A%22%23109618%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D%2C%22state%22%3A%7B%7D%2C%22view%22%3A%7B%22columns%22%3A%5B0%2C%7B%22sourceColumn%22%3A1%2C%22properties%22%3A%7B%22role%22%3A%22annotation%22%7D%2C%22label%22%3A%22parent%22%7D%2C2%2C3%5D%2C%22rows%22%3Anull%7D%2C%22isDefaultVisualization%22%3Afalse%2C%22chartType%22%3A%22TreeMap%22%7D%7D"
-      data-endpoint="https://data.pdok.nl/sparql" data-query-ref="treemap.rq">
+      data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-3">
     </query>
 
     <h2>Uitgesloten denominatie informatie</h2>
-    <p>Bij het maken van bovenstaande TreeMap hebben we de volgende
-      relaties weggelaten, omdat deze de hiërarchische structuur
-      verbreken.</p>
+    <p>Bij het maken van bovenstaande TreeMap hebben we de volgende relaties weggelaten, omdat deze de hiërarchische structuur verbreken.</p>
     <query
-      data-config="https://nightly.yasgui.triply.cc/#query=prefix%20brt%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix%20gebouw%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Ftop10nl%2Fid%2Fgebouw%2F%3E%0Aselect%20%3Fklasse%20%3Fsoortnaam%20%3Fgebouw%20%7B%0A%20%20bind(brt%3AKerk%20as%20%3Fklasse)%0A%20%20%3Fgebouw%20a%20%3Fklasse%3B%0A%20%20%20%20brt%3Asoortnaam%20%3Fsoortnaam.%0A%20%20filter(regex(str(%3Fsoortnaam)%2C'moskee'%2C'i'))%0A%7D%0Alimit%20100%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table"
-      data-endpoint="https://data.pdok.nl/sparql" data-query-ref="data-quality.rq">
+      data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-4">
     </query>
   </div>
 </div>
 <hr>
 <div class="aside fold-right">
   <query class="aside-figure"
-         data-config="http://thomasdegroot.local.triply.cc:4000/kadaster/brt-religieuze-gebouwen/#query=PREFIX%20bag%3A%20%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aprefix%20brt%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix%20geo%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect%20*%20%7B%0A%20%20%7B%0A%20%20%20%20select%20%3Fpand%20%3Fgebouw%20%3Fsoortnaam%20%3Ftype%20%3Fshape%20%7B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20select%20*%20where%7B%0A%20%20%20%20%20%20%20%20%20%20graph%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fid%2Fdataset%2Ftop10nl%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Fgebouw%20brt%3Asoortnaam%20%3Fsoortnaam%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20geo%3AhasGeometry%2Fgeo%3AasWKT%20%3Fshape%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20rdf%3Atype%20%3Ftype%20.%0A%20%20%20%20%20%20%20%20%20%20%20%20filter%20(contains(str(%3Fsoortnaam)%2C%20%22Voorm%22))%0A%20%20%20%20%20%20%20%20%20%20%20%20filter%20(!(contains(str(%3Fsoortnaam)%2C%20%22tolhuis%22)))%0A%20%20%20%20%20%20%20%20%20%20%20%20filter(%3Ftype%20!%3D%20brt%3AGebouw)%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20OPTIONAL%7B%0A%20%20%7B%0A%20%09filter(%3Ftype%20%3D%20brt%3AOverig_gebouw)%0A%20%20%20%20bind('blue'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Ftype%20%3D%20brt%3AHuizenblok)%0A%20%20%20%20bind('red'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Ftype%20%3D%20brt%3AToren)%0A%20%20%20%20bind('green'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%20%20%20filter(%3Ftype%20%3D%20brt%3AMoskee)%0A%20%20%20%20bind('yellow'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Ftype%20%3D%20brt%3ASchool)%0A%20%20%20%20bind('orange'%20as%20%3FshapeColor)%0A%20%20%7D%0A%20%20%7D%0A%20%20BIND(IF(BOUND(%3FshapeColor)%2C%20%3FshapeColor%2C%20'purple')%20as%20%3FshapeColor)%0A%0A%20%20bind(concat('%3Ch2%3E'%2Cstrafter(str(%3Ftype)%2C'%23')%2C'%20-%20'%2Cstr(%3Fsoortnaam)%2C'%3C%2Fh2%3E')%20as%20%3FshapeLabel)%0A%7D%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=geo&outputSettings=%7B%22map%22%3A%22nlmaps%22%2C%22visualization%22%3A%22vanilla%22%7D"
-         data-endpoint="https://data.pdok.nl/sparql" data-query-ref="previous-religous-building.rq">
+         data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-5">
   </query>
   <div class="aside-text ">
     <h2>Religieuze gebouwen herontwikkeld</h2>
-    <p>Een aantal voormalig religieuze gebouwen worden niet langer
-      gebruikt voor religieuze doeleinden.  Een groot aantal van
-      deze gebouwen heeft nu een ander doel.  In totaal zijn meer
-      dan 2.000 religieuze gebouwen van functie veranderd.</p>
-    <p>De kaart hiernaast toont deze voormalige gebouwen.  De
-      kleur geeft aan wat de huidige functie van het gebouw
-      is, volgens de legenda:</p>
+    <p>Een aantal voormalig religieuze gebouwen worden niet langer gebruikt voor religieuze doeleinden.  Een groot aantal van deze gebouwen heeft nu een ander doel.  In totaal zijn meer dan 2.000 religieuze gebouwen van functie veranderd.</p>
+    <p>De kaart hiernaast toont deze voormalige gebouwen.  De kleur geeft aan wat de huidige functie van het gebouw is, volgens de legenda:</p>
     <ul style="list-style-type: none">
       <li>
         <svg width="12px" height="12px">
@@ -146,9 +108,7 @@ title: Religieuze gebouwen in Nederland
 <div class="aside fold">
   <div class="aside-text ">
     <h2>Religieuze gebouwen op de kaart</h2>
-    <p>Op de volgende kaart worden de religieuze gebouwen in Nederland
-      op de kaart gezet.  De kleuren van de gebouwen geven de
-      gebouwsoorten aan volgens de legenda:</p>
+    <p>Op de volgende kaart worden de religieuze gebouwen in Nederland op de kaart gezet.  De kleuren van de gebouwen geven de gebouwsoorten aan volgens de legenda:</p>
     <ul style="list-style-type: none">
       <li>
         <svg width="12px" height="12px">
@@ -183,31 +143,20 @@ title: Religieuze gebouwen in Nederland
     </ul>
     <div class="textbox">
       <h2>Probeer het uit</h2>
-      <p>Gebruik de plus en min knop (of <kbd>Ctrl</kbd> toets ingedrukt te houden en
-        tegelijkertijd met het muiswiel scrollen) om in en uit te
-        zoomen op de kaart. Door op de gebouwen te klikken wordt meer
-        informatie over het bijbehorende gebouw getoond.</p>
+      <p>Gebruik de plus en min knop (of <kbd>Ctrl</kbd> toets ingedrukt te houden en tegelijkertijd met het muiswiel scrollen) om in en uit te zoomen op de kaart.  Door op de gebouwen te klikken wordt meer informatie over het bijbehorende gebouw getoond.</p>
     </div>
   </div>
   <query class="aside-figure"
-         data-config="http://localhost:3000/kadaster/brt-religieuze-gebouwen/#query=prefix%20geo%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix%20brt%3A%20%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aselect%20%3Fshape%20%3FshapeColor%20%3FshapeLabel%20%7B%0A%20%20%3Fbuilding%20a%20%3Fc%3B%0A%20%20%20%20geo%3AhasGeometry%2Fgeo%3AasWKT%20%3Fshape%3B%0A%20%20%20%20brt%3Asoortnaam%20%3Fsoortnaam.%0A%20%20%7B%0A%20%09%20%20filter(%3Fc%20%3D%20brt%3AMoskee)%0A%20%20%20%20bind('green'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Fc%20%3D%20brt%3AKerk)%0A%20%20%20%20filter(regex(%3Fsoortnaam%2C'Protestant'%2C'i'))%0A%20%20%20%20bind('blue'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Fc%20%3D%20brt%3AKerk)%0A%20%20%20%20filter(regex(%3Fsoortnaam%2C'Katholiek'%2C'i'))%0A%20%20%20%20bind('red'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Fc%20%3D%20brt%3ASchool)%0A%20%20%20%20bind('yellow'%20as%20%3FshapeColor)%0A%20%20%7D%20union%20%7B%0A%20%09%20%20filter(%3Fc%20%3D%20brt%3ASynagoge)%0A%20%20%20%20bind('orange'%20as%20%3FshapeColor)%0A%20%20%7D%0A%20%20bind(concat('%3Ch2%3E'%2Cstrafter(str(%3Fc)%2C'%23')%2C'%20-%20'%2Cstr(%3Fsoortnaam)%2C'%3C%2Fh2%3E')%20as%20%3FshapeLabel)%0A%7D%0A&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query%208&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=geo&outputSettings=%7B%22map%22%3A%22nlmaps%22%2C%22visualization%22%3A%22vanilla%22%7D"
-         data-endpoint="https://data.pdok.nl/sparql" data-query-ref="map-simple.rq">
+         data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-6">
   </query>
 </div>
 <hr>
 <div class="flex">
   <div class="content">
     <h2>Religieuze gebouwen</h2>
-    <p>Zoals we al zagen bevat de BRT informatie over religieuze
-      gebouwen. Het Kadaster beheert meer data over gebouwen in
-      Nederland ― inclusief religieuze gebouwen ― bijvoorbeeld
-      bouwjaar en oppervlakte zijn beschreven in
-      de <a href="https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen" target="_blank">Basisregistratie Adressen en Gebouwen
-        (BAG)</a>.</p>
-    <p>De hoogte van de gebouwen is de daadwerkelijke hoogste hoogte
-      van dat gebouw.</p>
-    <p>De kleur van de gebouwen geeft de gebouwsoort aan middels de
-      volgende legenda:</p>
+    <p>Zoals we al zagen bevat de BRT informatie over religieuze gebouwen.  Het Kadaster beheert meer data over gebouwen in Nederland ― inclusief religieuze gebouwen ― bijvoorbeeld bouwjaar en oppervlakte zijn beschreven in de <a href="https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen" target="_blank">Basisregistratie Adressen en Gebouwen (BAG)</a>.</p>
+    <p>De hoogte van de gebouwen is de daadwerkelijke hoogste hoogte van dat gebouw.</p>
+    <p>De kleur van de gebouwen geeft de gebouwsoort aan middels de volgende legenda:</p>
     <ul style="list-style-type: none">
       <li>
         <svg width="12px" height="12px">
@@ -242,32 +191,14 @@ title: Religieuze gebouwen in Nederland
     </ul>
     <div class="textbox">
       <h2>Experimentele data</h2>
-      <p>In de volgende bevraging wordt gebruik gemaakt van een
-        experimentele dataset die links bevat tussen gebouwen in de
-        BRT en panden in de BAG. Hierdoor wordt het mogelijk om
-        informatie uit twee verschillende basisregistraties
-        gecombineerd te bevragen en weer te geven. De links tussen
-        BRT gebouwen en BAG panden is gemaakt door het Kadaster Data
-        Science team.</p>
-      <p>De hoogte van de gebouwen is afkomstig uit de experimentele
-        3D BAG dataset. Deze dataset bevat de hoogte van alle
-        gebouwen in Nederland die ook in de BAG voorkomen. Deze
-        dataset is gemaakt door het Kadaster Data Science team in
-        samenwerking met Tony Baving (Kadaster Maatwerk en
-        Advies).</p>
+      <p>In de volgende bevraging wordt gebruik gemaakt van een experimentele dataset die links bevat tussen gebouwen in de BRT en panden in de BAG.  Hierdoor wordt het mogelijk om informatie uit twee verschillende basisregistraties gecombineerd te bevragen en weer te geven.  De links tussen BRT gebouwen en BAG panden is gemaakt door het Kadaster Data Science team.</p>
+      <p>De hoogte van de gebouwen is afkomstig uit de experimentele 3D BAG dataset.  Deze dataset bevat de hoogte van alle gebouwen in Nederland die ook in de BAG voorkomen.  Deze dataset is gemaakt door het Kadaster Data Science team in samenwerking met Tony Baving (Kadaster Maatwerk en Advies).</p>
     </div>
     <div class="textbox">
       <h2>Probeer het uit</h2>
-      <p>Gebruik het muiswiel om in en uit te zoomen op de 3D kaart.
-        Door de <kbd>Ctrl</kbd> toets ingedrukt te houden en
-        tegelijkertijd met de muis te slepen kan de 3D camera worden
-        aangepast. Door op een gebouw te klikken wordt informatie op
-        dat gebouw getoond.</p>
+      <p>Gebruik het muiswiel om in en uit te zoomen op de 3D kaart.  Door de <kbd>Ctrl</kbd> toets ingedrukt te houden en tegelijkertijd met de muis te slepen kan de 3D camera worden aangepast.  Door op een gebouw te klikken wordt informatie op dat gebouw getoond.</p>
     </div>
-
-    <query data-endpoint="https://data.pdok.nl/sparql"
-           data-output="geo3d"
-           data-query-ref="map-federated.rq">
+    <query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-7">
     </query>
   </div>
 </div>
@@ -275,27 +206,12 @@ title: Religieuze gebouwen in Nederland
 <div class="flex">
   <div class="content">
     <h2>Crowdsourced data</h2>
-    <p>In aanvulling op de data die het Kadaster over kerken
-      beheerd, wordt op het Internet dor hobbyisten steeds meer data
-      over kerken gepubliceerd.  Hieronder wordt een gallerij
-      getoond met kerken
-      uit <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page"
-             target="_blank">Wikidata</a>, een crowdsourcing initiatief
-      rondom Linked Open Data.  Het publiceren van de BAG als Linked
-      Open Data stelt de ‘crowd’ van hobbyisten in staat om de door
-      hun verzamelde gegevens aan het corresponderende BAG pand te
-      verbinden.</p>
+    <p>In aanvulling op de data die het Kadaster over kerken beheerd, wordt op het Internet dor hobbyisten steeds meer data over kerken gepubliceerd.  Hieronder wordt een gallerij getoond met kerken uit <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank">Wikidata</a>, een crowdsourcing initiatief rondom Linked Open Data.  Het publiceren van de BAG als Linked Open Data stelt de ‘crowd’ van hobbyisten in staat om de door hun verzamelde gegevens aan het corresponderende BAG pand te verbinden.</p>
     <div class="textbox">
       <h2>Experimentele data</h2>
-      <p>Alhoewel crowdsourcing data gebruikt kan worden om extra
-        context te verschaffen aan Kadastrale data, is deze data van
-        onzekere kwaliteit en niet rechtsgeldig.  Crowdsourced data
-        moet dan ook niet als vervanging voor Kadastrale data gezien
-        worden, maar uitsluitend als een extra verrijking.</p>
+      <p>Alhoewel crowdsourcing data gebruikt kan worden om extra context te verschaffen aan Kadastrale data, is deze data van onzekere kwaliteit en niet rechtsgeldig.  Crowdsourced data moet dan ook niet als vervanging voor Kadastrale data gezien worden, maar uitsluitend als een extra verrijking.</p>
     </div>
   </div>
 </div>
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-output="gallery"
-       data-query-ref="monument-images.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/religieuze-gebouwen-8">
 </query>

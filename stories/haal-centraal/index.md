@@ -1,8 +1,6 @@
 ---
 banner: /assets/images/voetbal.jpg
-description: In deze dataset is informatie omtrent scholen en leerlingen gecombineerd met informatie over gymlocaties.  Bovengenoemde gegevens zijn omgezet in een experimentele Linked Dataset.  Deze Linked Dataset is gemaakt door het Kadaster, gemeente Den Haag en gemeente Rotterdam tijdens een High 5 in juli 2019.
 layout: story
-published: true
 title: Haal Centraal
 ---
 

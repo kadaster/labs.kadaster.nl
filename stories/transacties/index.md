@@ -1,9 +1,7 @@
 ---
-description: TODO
 endpoint: https://data.labs.pdok.nl/sparql
 output: geo
 layout: story
-logo: /stories/transacties/logo.jpg
 published: false
 title: Hipheidsindex
 ---

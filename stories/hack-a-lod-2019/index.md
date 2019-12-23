@@ -1,7 +1,6 @@
 ---
 banner: /assets/images/hack-a-lod.jpg
 layout: story
-published: true
 title: Hack-a-LOD 2019
 ---
 
