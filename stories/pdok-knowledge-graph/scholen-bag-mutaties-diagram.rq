@@ -2,13 +2,14 @@ prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix begrip: <http://bag.basisregistraties.overheid.nl/id/begrip/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select
   (str(?year) as ?x)
-  ?bouwGestart (str(?bouwGestart) as ?bouwGestartLabel) (concat('In ',str(?year),' waren er ',str(?bouwGestart),' BAG panden met een onderwijsfunctie met status "bouw gestart".') as ?bouwGestartHover)
-  ?bouwvergunningVerleend (str(?bouwvergunningVerleend) as ?bouwvergunningVerleendLabel) (concat('In ',str(?year),' waren er ',str(?bouwvergunningVerleend),' BAG panden met een onderwijsfunctie met status "bouwvergunning verleend".') as ?bouwvergunningVerleendHover)
-  ?pandInGebruik (str(?pandInGebruik) as ?pandInGebruikLabel) (concat('In ',str(?year),' waren er ',str(?pandInGebruik),' BAG panden met een onderwijsfunctie met status "pand in gebruik".') as ?pandInGebruikHover)
-  ?pandInGebruikNietIngemeten (str(?pandInGebruikNietIngemeten) as ?pandInGebruikNietIngemetenLabel) (concat('In ',str(?year),' waren er ',str(?pandInGebruikNietIngemeten),' BAG panden met een onderwijsfunctie met status "pand in gebruik, niet ingemeten".') as ?pandInGebruikNietIngemetenHover)
-  ?sloopvergunningVerleend (str(?sloopvergunningVerleend) as ?sloopvergunningVerleendLabel) (concat('In ',str(?year),' waren er ',str(?sloopvergunningVerleend),' BAG panden met een onderwijsfunctie met status "sloopvergunning verleend".') as ?sloopvergunningVerleendHover)
+  ?bouwGestart (strdt(?bouwGestart,rdf:HTML) as ?bouwGestartLabel) (strdt(concat('In ',str(?year),' waren er ',str(?bouwGestart),' BAG panden met een onderwijsfunctie met status "bouw gestart".'),rdf:HTML) as ?bouwGestartHover)
+  ?bouwvergunningVerleend (strdt(?bouwvergunningVerleend,rdf:HTML) as ?bouwvergunningVerleendLabel) (strdt(concat('In ',str(?year),' waren er ',str(?bouwvergunningVerleend),' BAG panden met een onderwijsfunctie met status "bouwvergunning verleend".'),rdf:HTML) as ?bouwvergunningVerleendHover)
+  ?pandInGebruik (strdt(?pandInGebruik,rdf:HTML) as ?pandInGebruikLabel) (strdt(concat('In ',str(?year),' waren er ',str(?pandInGebruik),' BAG panden met een onderwijsfunctie met status "pand in gebruik".'),rdf:HTML) as ?pandInGebruikHover)
+  ?pandInGebruikNietIngemeten (strdt(?pandInGebruikNietIngemeten,rdf:HTML) as ?pandInGebruikNietIngemetenLabel) (strdt(concat('In ',str(?year),' waren er ',str(?pandInGebruikNietIngemeten),' BAG panden met een onderwijsfunctie met status "pand in gebruik, niet ingemeten".'),rdf:HTML) as ?pandInGebruikNietIngemetenHover)
+  ?sloopvergunningVerleend (strdt(?sloopvergunningVerleend,rdf:HTML) as ?sloopvergunningVerleendLabel) (strdt(concat('In ',str(?year),' waren er ',str(?sloopvergunningVerleend),' BAG panden met een onderwijsfunctie met status "sloopvergunning verleend".'),rdf:HTML) as ?sloopvergunningVerleendHover)
 {
   optional {
     select ?year (count(*) as ?bouwGestart0) {

@@ -2,6 +2,7 @@ prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix begrip: <http://bag.basisregistraties.overheid.nl/id/begrip/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 select ?shape ?shapeLabel {
   {
@@ -70,5 +71,5 @@ select ?shape ?shapeLabel {
     }
     group by ?shape ?head
   }
-  bind(concat('<h1>',str(?head),'</h1>',str(?body)) as ?shapeLabel)
+  bind(strdt(concat('<h1>',str(?head),'</h1>',str(?body)),rdf:HTML) as ?shapeLabel)
 }

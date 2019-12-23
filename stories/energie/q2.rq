@@ -3,6 +3,7 @@ prefix energielabels: <https://data.labs.pdok.nl/def/energielabels/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeColor (min(?shapeLabel) as ?shapeLabel) {
   {
     select * {
@@ -52,7 +53,7 @@ select ?shape ?shapeColor (min(?shapeLabel) as ?shapeLabel) {
        if(?energielabel="E", "#ff9a35",
        if(?energielabel="F", "#ff7f27",
        if(?energielabel="G", "#ed1c24", "grey")))))))) as ?shapeColor)
-  bind(concat('<h3>',
+  bind(strdt(concat('<h3>',
               if(bound(?energielabel),
                  concat('<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" fill="',str(?shapeColor),'" r="10"></svg> '),
                  ''),
@@ -65,6 +66,6 @@ select ?shape ?shapeColor (min(?shapeLabel) as ?shapeLabel) {
                  ''),
               '<li>Pand status: <a href="',str(?pandStatus),'">',str(?pandStatusLabel),'</a></li>',
               '<li>Bouwjaar: ',str(?bouwjaar) ,'</li>',
-              '</ul>') as ?shapeLabel)
+              '</ul>'),rdf:HTML) as ?shapeLabel)
 }
 group by ?shape ?shapeColor

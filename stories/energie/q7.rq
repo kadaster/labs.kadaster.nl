@@ -5,6 +5,7 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeColor ?shapeLabel {
   bind(strdt("Amsterdam",xsd:string) as ?gemeenteNaam)
   graph graph:wijkbuurt-2015 {
@@ -27,7 +28,7 @@ select ?shape ?shapeColor ?shapeLabel {
   bind(xsd:float(?noemer)/?deler as ?jaren)
   bind(if(?deler>0, (22.0-(xsd:float(?noemer)/?deler-8.0))/22.0, 0) as ?normalized)
   bind(concat("bluered,",str(?normalized)) as ?shapeColor)
-  bind(concat('<h3>Amsterdam 》 ',str(?buurtNaam),'</h3>',
+  bind(strdt(concat('<h3>Amsterdam 》 ',str(?buurtNaam),'</h3>',
       '<p>🗲 Energiegebruik:</p>',
       '<ul>',
       '<li>Elektriciteit: ',replace(str(?gemElektra),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),'kWh per jaar</li>',
@@ -45,6 +46,6 @@ select ?shape ?shapeColor ?shapeLabel {
       '</ul>',
       if(bound(?normalized),
          concat('<p>🕗 Positief rendement na ',substr(str(?jaren), 1, 4),' jaar.</p>'),
-         '')) as ?shapeLabel)
+         '')),rdf:HTML) as ?shapeLabel)
 }
 limit 75

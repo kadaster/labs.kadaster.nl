@@ -2,6 +2,7 @@ prefix cbs_def: <https://data.pdok.nl/cbs/def/>
 prefix cbs_gem: <https://data.pdok.nl/cbs/id/gemeente/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select
 # ?buurt ?hipheid
 ?wkt ?wktColor ?gemeente ?transacties
@@ -24,6 +25,6 @@ where {
   bind(xsd:integer(?transacties / 100 * 255) as ?green)
   bind(xsd:integer(255 - (?transacties / 100 * 255)) as ?red)
   bind(concat('rgb(', str(?red), ',', str(?green), ',0)') as ?wktColor)
-  bind(concat(?transacties, ' transacties') as ?wktLabel)
+  bind(strdt(concat(?transacties, ' transacties'),rdf:HTML) as ?wktLabel)
 }
 order by desc(?hipheid)

@@ -3,6 +3,7 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?woonplaatsShape ?woonplaatsShapeLabel {
   ?woonplaats1
     brt:isBAGwoonplaats true;
@@ -13,9 +14,9 @@ select ?woonplaatsShape ?woonplaatsShapeLabel {
       foaf:depiction ?vlag;
       rdfs:label ?woonplaatsNaam.
   }
-  bind(concat(
+  bind(strdt(concat(
     '<h2>',str(?woonplaatsNaam),'</h2>',
     if(bound(?vlag),concat('<img src="',replace(str(?vlag),'http://','https://'),'" style="max-width: 125px;">'),''),
-    '<p>Link naar DBpedia: <a href="',str(?woonplaats2),'" target="_blank">link</a></p>') as ?woonplaatsShapeLabel)
+    '<p>Link naar DBpedia: <a href="',str(?woonplaats2),'" target="_blank">link</a></p>'),rdf:HTML) as ?woonplaatsShapeLabel)
 }
 limit 25

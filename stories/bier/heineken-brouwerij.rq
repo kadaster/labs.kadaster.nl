@@ -5,6 +5,7 @@ prefix labs: <https://data.labs.pdok.nl/bag/def/>
 prefix schema: <http://schema.org/>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix rce: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
   service <https://linkeddata.cultureelerfgoed.nl/sparql> {
     {
@@ -98,7 +99,7 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
     }
   }
   bind(concat(str(?straatNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
-  bind(concat(
+  bind(strdt(concat(
       '<h3>',str(?pandShapeName),'</h3>',
       '<dl>',
       '<dt>Verblijfsobject (Kadaster)</dt>',
@@ -136,5 +137,5 @@ select ?pandShape ?pandShapeHeight ?pandShapeLabel ?pandShapeName {
       '<dd>',?constructie,'</dd>',
       '</dl>',
       '</dd>',
-      '</dl>') as ?pandShapeLabel)
+      '</dl>'),rdf:HTML) as ?pandShapeLabel)
 }

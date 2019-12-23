@@ -2,7 +2,8 @@ prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix gwsw: <http://data.gwsw.nl/1.4/totaal/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-select ?shape ?shapeColor ?shapeLabel {
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?shape ?shapeColor (strdt(?shapeLabel,rdf:HTML) as ?shapeLabel) {
   {
     select ?shape ?shapeColor ?shapeLabel {
       service <https://sparql.gwsw.nl/repositories/TestDatastory> {

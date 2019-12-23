@@ -5,7 +5,8 @@ prefix wdn: <http://www.wikidata.org/prop/direct-normalized/>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-select (CONCAT(?widgetPart1,str(SAMPLE(?img)),?widgetPart2) as ?widget ) {
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select (strdt(CONCAT(?widgetPart1,str(SAMPLE(?img)),?widgetPart2),rdf:HTML) as ?widget ) {
   {
     select
     (group_concat(distinct ?functie;

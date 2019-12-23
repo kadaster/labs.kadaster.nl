@@ -4,6 +4,7 @@ prefix brk: <http://brk.basisregistraties.overheid.nl/def/brk#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?pandShape ?pandShapeColor ?pandShapeLabel ?pandShapeName ?perceelShape ?perceelShapeColor ?perceelShapeLabel ?perceelShapeName {
   {
     select * {
@@ -74,7 +75,7 @@ select ?pandShape ?pandShapeColor ?pandShapeLabel ?pandShapeName ?perceelShape ?
         }
         group by ?pandShape ?pandShapeName
       }
-      bind(concat('<h3>Status veranderingen voor ',str(?pandShapeName),'</h3>',str(?body)) as ?pandShapeLabel)
+      bind(strdt(concat('<h3>Status veranderingen voor ',str(?pandShapeName),'</h3>',str(?body)),rdf:HTML) as ?pandShapeLabel)
       service <https://api.labs.kadaster.nl/datasets/kadaster-dev/labs/services/labs/sparql> {
         ?nummeraanduiding <http://data.labs.kadaster.nl/kadaster/bag-brk/vocab/gerelateerdPerceel> ?perceel.
       }
@@ -87,13 +88,13 @@ select ?pandShape ?pandShapeColor ?pandShapeLabel ?pandShapeName ?perceelShape ?
     brk:kadastraleGrootte ?grootte.
   bind(concat('Perceel ',str(?perceelnummer)) as ?perceelShapeName)
   bind(replace(str(?grootte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.') as ?groottePrint)
-  bind(concat(
+  bind(strdtconcat(
     '<h1>',str(?perceelShapeName),'</h1>',
     '<ul>',
       '<li><b>Sectie</b>: ',str(?sectie),'</li>',
       '<li><b>Nummber</b>: ',str(?perceelnummer),'</li>',
       '<li><b>Grootte</b>: ',str(?groottePrint),' m2</li>',
-    '</ul>') as ?perceelShapeLabel)
+    '</ul>'),rdf:HTML) as ?perceelShapeLabel)
   bind("blue" as ?pandShapeColor)
   bind("white" as ?perceelShapeColor)
 }

@@ -6,6 +6,7 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix labs: <https://data.labs.pdok.nl/bag/def/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 #select ?pandShape ("blue" as ?pandShapeColor) ?pandShapeLabel { # pand-only
 #select ?perceelShape ("green" as ?perceelShapeColor) ?perceelShapeLabel { # perceel-only
 select * {
@@ -98,9 +99,9 @@ select * {
             if(?energieprestatie=begrip:E_Energielabel,'E',
             if(?energieprestatie=begrip:F_Energielabel,'F',
             if(?energieprestatie=begrip:G_Energielabel,'G','unknown'))))))))))) as ?energieLabel)
-          bind(concat(
+          bind(strdt(concat(
             '<h1><svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" fill="',str(?pandShapeColor),'" r="10"></svg> ',
-            ?pandShapeLabel2,'<li><b>Energielabel</b>: ',str(?energieLabel),'</li></ul>') as ?pandShapeLabel)
+            ?pandShapeLabel2,'<li><b>Energielabel</b>: ',str(?energieLabel),'</li></ul>'),rdf:HTML) as ?pandShapeLabel)
       }
     }
   }
@@ -111,12 +112,12 @@ select * {
     brk:kadastraleGrootte ?grootte.
   bind(concat('Perceel ',str(?perceelnummer)) as ?perceelShapeName)
   bind(replace(str(?grootte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.') as ?groottePrint)
-  bind(concat(
+  bind(strdt(concat(
     '<h1>',str(?perceelShapeName),'</h1>',
     '<ul>',
       '<li><b>Sectie</b>: ',str(?sectie),'</li>',
       '<li><b>Nummber</b>: ',str(?perceelnummer),'</li>',
       '<li><b>Grootte</b>: ',str(?groottePrint),' m2</li>',
-    '</ul>') as ?perceelShapeLabel)
+    '</ul>'),rdf:HTML) as ?perceelShapeLabel)
   bind("white" as ?perceelShapeColor)
 }

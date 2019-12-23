@@ -7,6 +7,7 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix geof: <http://www.opengis.net/def/function/geosparql/>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select * {
   {
     select * {
@@ -110,7 +111,7 @@ select * {
   }
   bind(concat(if(bound(?huisnummertoevoeging),concat('-',str(?huisnummertoevoeging)),''),
               if(bound(?huisletter),concat(' ',str(?huisletter)),'')) as ?huisnummerPlus)
-  bind('''
+  bind(strdt('''
 	<div id="huischeckTable">
 	  <!-- wat verborgen elementen om de tabelprint op te maken -->
     <div id="nummeraanduiding" hidden>{{nummeraanduiding}}</div>
@@ -139,6 +140,6 @@ select * {
     <b id="school" style="font-weight: bold;">Afstand tot school</b> {{school}} km.<br>
 	</div>
 	<button onclick="createPrintTable()">Print!</button>
-''' as ?wktLabel)
+''',rdf:HTML) as ?wktLabel)
 }
 limit 1

@@ -4,6 +4,7 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix gg: <http://www.gemeentegeschiedenis.nl/provincie/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix verblijfsobject: <http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeColor ?shapeLabel {
   graph <https://data.pdok.nl/cbs/wijken_buurten_2016> {
     ?gemeente a cbs:Gemeente;
@@ -23,5 +24,5 @@ select ?shape ?shapeColor ?shapeLabel {
   # cbs:vrijetijdencultuur_Recreatie_Afstandtotattractie_km rdfs:label ?label; rdfs:comment ?desc.
   bind('Afstand tot attractie' as ?label)
   bind('De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde attractie, berekend over de weg.<br /><br />Attractie: Pretpark, dierentuin en binnenspeeltuin.' as ?desc)
-  bind(concat('<h3>', ?label, ': ', str(?afstand), ' km</h3><p>', ?desc, '</p>') as ?shapeLabel)
+  bind(strdt(concat('<h3>', ?label, ': ', str(?afstand), ' km</h3><p>', ?desc, '</p>'),rdf:HTML) as ?shapeLabel)
 }

@@ -4,6 +4,7 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix geof: <http://www.opengis.net/def/function/geosparql/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?gemeenteWkt ?gemeenteWktLabel {
   {
     select * {
@@ -31,9 +32,9 @@ select ?gemeenteWkt ?gemeenteWktLabel {
     strdt(concat('Point (',str(?x1),' ',str(?y2),')'),geo:wktLiteral),
     uom:metre) as ?y)
   bind(?x * ?y as ?gemeenteOppervlakte)
-  bind(concat(
+  bind(strdt(concat(
     '<h3><a href="',str(?gemeente),'" target="_blank">',str(?gemeenteNaam),'</a></h3>',
-    '<p>Oppervlakte: ',str(?gemeenteOppervlakte),' m²</p>') as ?gemeenteWktLabel)
+    '<p>Oppervlakte: ',str(?gemeenteOppervlakte),' m²</p>'),rdf:HTML) as ?gemeenteWktLabel)
 }
 order by desc(?gemeenteOppervlakte)
 limit 25

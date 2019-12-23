@@ -1,13 +1,14 @@
 prefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select
   ?shape
-  (concat(
+  (strdt(concat(
     '<h1>',IF(STRLEN(GROUP_CONCAT(DISTINCT ?naam;separator=', ')),GROUP_CONCAT(DISTINCT ?naam;separator=', '),'Geen Naam'),'</h1>','<dl>',
     '<dt>Type(s)</dt><dd>',GROUP_CONCAT(DISTINCT ?type;separator=', '),'</dd>',
     '<dt>Functie(s)</dt><dd>',GROUP_CONCAT(DISTINCT ?functies;separator=', '),'</dd>',
-    '<dt>Nummer(s)</dt><dd>',GROUP_CONCAT(?href;separator=', '),'</dd>') as ?shapeLabel)
+    '<dt>Nummer(s)</dt><dd>',GROUP_CONCAT(?href;separator=', '),'</dd>'),rdf:HTML) as ?shapeLabel)
 {
   {
     select

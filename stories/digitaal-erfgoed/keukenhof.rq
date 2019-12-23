@@ -11,5 +11,5 @@ select ?shape ?shapeLabel {
         rce:heeftOorspronkelijkeFunctie
           [ rce:hoofdfunctie true;
             rce:heeftFunctieNaam/skos:prefLabel ?bouwLabel ] ].
-  bind(concat(?naam,': ',?bouwLabel) as ?shapeLabel)
+  bind(strdt(concat(?naam,': ',?bouwLabel),rdf:HTML) as ?shapeLabel)
 }
