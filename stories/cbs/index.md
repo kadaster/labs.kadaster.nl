@@ -1,7 +1,5 @@
 ---
-endpoint: https://betalinkeddata.cbs.nl/sparql
 layout: story
-logo: /assets/images/cbs-logo.png
 title: CBS/Kadaster Data Story
 ---
 

@@ -66,6 +66,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
     </div>
   </a>
+  <a href="./cbs/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <div class="card-title">CBS/Kadaster</div>
+      <div class="card-description">Data Story waarin data van CBS en het Kadaster gecombineerd wordt.</div>
+    </div>
+  </a>
   <a href="./energiebesparing/index.html">
     <div class="card">
       <div class="card-type">Story</div>
