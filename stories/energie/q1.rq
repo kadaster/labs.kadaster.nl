@@ -3,6 +3,7 @@ prefix energielabels: <https://data.labs.pdok.nl/def/energielabels/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeLabel {
   graph ?openbareRuimteVoorkomen {
     ?openbareRuimte bag:bijbehorendeWoonplaats ?woonplaats ;
@@ -54,7 +55,7 @@ select ?shape ?shapeLabel {
        if(?energielabel="E", "#ff9a35",
        if(?energielabel="F", "#ff7f27",
        if(?energielabel="G", "#ed1c24", "grey")))))))) as ?shapeColor)
-  bind(concat(
+  bind(strdt(concat(
     '<h3>',
       '<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">',
         '<circle cx="10" cy="10" fill="',str(?shapeColor),'" r="10">',
@@ -72,5 +73,5 @@ select ?shape ?shapeLabel {
     '<ul>',
     '<li>Bouwjaar: ',str(?bouwjaar),'</li>',
     '<li>Status: <a href="',str(?pandStatus),'" target="_blank">',str(?pandStatusLabel),'</a></li>',
-    '</ul>') as ?shapeLabel)
+    '</ul>'),rdf:HTML) as ?shapeLabel)
 }

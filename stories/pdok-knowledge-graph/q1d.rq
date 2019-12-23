@@ -15,6 +15,7 @@ prefix geof: <http://www.opengis.net/def/function/geosparql/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix waardeklasse: <https://data.labs.pdok.nl/woz/def/waardeklasse/>
 prefix woz: <https://data.labs.pdok.nl/woz/def/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeColor ?shapeHeight ?shapeLabel ?shapeName {
   {
     {
@@ -125,7 +126,7 @@ select ?shape ?shapeColor ?shapeHeight ?shapeLabel ?shapeName {
     if(?energieprestatie=begrip_energielabel:F_Energielabel,'F',
     if(?energieprestatie=begrip_energielabel:G_Energielabel,'G',
                           'unknown'))))))))))) as ?label)
-  bind(concat(
+  bind(strdt(concat(
     str(?prefix),
     '<h3>',
       '<svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">',
@@ -138,6 +139,6 @@ select ?shape ?shapeColor ?shapeHeight ?shapeLabel ?shapeName {
       '<dd>',str(?opnamedatum),'</dd>',
       '<dt>Registratiedatum</dt>',
       '<dd>',str(?registratiedatum),'</ddt>',
-    '</dl>') as ?shapeLabel)
+    '</dl>'),rdf:HTML) as ?shapeLabel)
 }
 limit 1000

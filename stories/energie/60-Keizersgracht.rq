@@ -9,6 +9,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix wibu: <https://data.pdok.nl/cbs/vocab/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select distinct ?geo_location ?geo_locationLabel
 ?woonplaatsNaam ?postcode ?straatNaam ?huisnummer
 ?pand_status ?build_year ?building_type
@@ -64,7 +65,7 @@ select distinct ?geo_location ?geo_locationLabel
     bind(xsd:double(?PandVanMeting_elektraverbuik_kWh) as ?elektraverbuik_kWh)
     bind(xsd:double(?PandVanMeting_energieverbuik_MJ) as ?energieverbuik_MJ)
     bind(xsd:double(?PandVanMeting_gasverbuik_m3) as ?gasverbuik_m3)
-    bind(concat(
+    bind(strdt(concat(
       '<h3>',str(?woonplaatsNaam),' ',str(?postcode),'  ',str(?straatNaam),'  ',str(?huisnummer) ,'</h3>',
       '<ul><li>Pand status: ',str(?pand_status),'</li>',
       '<li>Pand oppervlakte: ',str(?oppervlakte),' m²','</li>',
@@ -75,7 +76,7 @@ select distinct ?geo_location ?geo_locationLabel
       '<li>Energieverbruik: ',str(?energieverbuik_MJ) ,' MJ</li>',
       '<li>Gasverbruik: ',str(?gasverbuik_m3) ,' m³</li>',
       '<li>Energielabel: ',str(?energieklasse) ,'</li></ul>'
-      ) as ?geo_locationLabel)
+      ),rdf:HTML) as ?geo_locationLabel)
   }
 
 }

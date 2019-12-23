@@ -3,7 +3,8 @@ PREFIX gwsw: <http://data.gwsw.nl/1.4/totaal/>
 PREFIX brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
-SELECT ?wkt ?wktLabel ?wktColor WHERE {
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?wkt (strdt(?wktLabel,rdf:HTML) as ?wktLabel) ?wktColor WHERE {
   {
     SELECT ?wkt ?wktLabel ("red" as ?wktColor) WHERE {
       ?gem a brt:Gemeente ;

@@ -8,7 +8,7 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix energie: <http://data.labs.pdok.nl/dataset/energie#>
 prefix schema: <http://schema.org/>
-
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?wkt ?wktLabel
 
 # ?Eigenaar
@@ -42,7 +42,7 @@ where {
    # filter some data outliers where radius can be bigger than a mast tower
    filter(xsd:double(?windmolen_ashoogte) > xsd:double(?rotordiameter)/2)
 
-   bind(concat(
+   bind(strdt(concat(
      '<p>',
      'owner: ', str(?Eigenaar) ,'<br>',
      'windpark: ', str(?windpark),'<br>',
@@ -52,7 +52,7 @@ where {
      '<b>energy production (MWh):</b> ', str(?productie_MWh) , '<br>',
      '<b>power (kW):</b> ', str(?vermogen_kW) , '<br>',
      '</p>'
-    ) as ?wktLabel)
+    ),rdf:HTML) as ?wktLabel)
 
   }
 

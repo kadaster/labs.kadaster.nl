@@ -2,6 +2,7 @@
 prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?gebouwShape ?gebouwShapeColor ?pandShape ?pandShapeColor ?pandShapeHeight ?pandShapeName ?pandShapeLabel ?pand {
   {
     select ?gebouw ?pand ?pandShapeHeight {
@@ -24,6 +25,6 @@ select ?gebouwShape ?gebouwShapeColor ?pandShape ?pandShapeColor ?pandShapeHeigh
   filter not exists { ?woonplaatsVoorkomen bag:eindGeldigheid ?eind5 }
   values (?gebouwShapeColor ?pandShapeColor) { ("blue" "red") }
   bind(concat(str(?openbareRuimteNaam),' ',str(?huisnummer),', ',str(?postcode),' ',str(?woonplaatsNaam)) as ?pandShapeName)
-  bind(concat(?pandShapeName,'<br><a href="',str(?pand),'" target="_blank">',str(?pand),'</a>') as ?pandShapeLabel)
+  bind(strdt(concat(?pandShapeName,'<br><a href="',str(?pand),'" target="_blank">',str(?pand),'</a>'),rdf:HTML) as ?pandShapeLabel)
 }
 limit 10

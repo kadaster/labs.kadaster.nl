@@ -3,6 +3,7 @@ prefix cbs: <https://data.labs.pdok.nl/cbs/def/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?shape ?shapeLabel {
   bind(buurt:BU06370601 as ?buurt)
   graph graph:wijkbuurt-2015 {
@@ -20,7 +21,7 @@ select ?shape ?shapeLabel {
            cbs:theoretischeEenmaligBenodigdeInvesteringInstallatietechnischeMaatregelen ?installatieInvestering .
   }
   bind((?bouwfysischeInvestering + ?installatieInvestering) / (?bouwfysischeBesparing + ?installatieBesparing) as ?jaren)
-  bind(concat('<h3>Zoetermeer 》 ',str(?buurtNaam),'</h3>',
+  bind(strdt(concat('<h3>Zoetermeer 》 ',str(?buurtNaam),'</h3>',
       '<p>🗲 Energiegebruik:</p>',
       '<ul>',
       '<li>Elektriciteit: ',replace(str(?gemElektra),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),'kWh per jaar</li>',
@@ -36,6 +37,6 @@ select ?shape ?shapeLabel {
       '<li>Bouwfysisch: € ',replace(str(?bouwfysischeInvestering),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),'</li>',
       '<li>Installatietechnisch: € ',replace(str(?installatieInvestering),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),'</li>',
       '</ul>',
-      '<p>🕗 Positief rendement na ',replace(str(?jaren),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' jaar</p>') as ?shapeLabel)
+      '<p>🕗 Positief rendement na ',replace(str(?jaren),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),' jaar</p>'),rdf:HTML) as ?shapeLabel)
 }
 limit 1

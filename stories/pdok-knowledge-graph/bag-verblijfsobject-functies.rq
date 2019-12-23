@@ -3,6 +3,7 @@ prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix labs: <https://data.labs.pdok.nl/bag/def/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select * {
   {
     select ?bouwjaar (group_concat(distinct concat('<li>',substr(str(?functie0),65),'</li>');
@@ -86,14 +87,14 @@ select * {
   bind(if(?huisnummerMin=?huisnummerMax,str(?huisnummerMin),concat(str(?huisnummerMin),'-',str(?huisnummerMax),if(bound(?huisnummertoevoeging),concat('-',str(?huisnummertoevoeging)),''),if(bound(?huisletter),concat(' ',str(?huisletter)),''))) as ?huisnummerLabel)
   bind(if(?postcodeMin=?postcodeMax,str(?postcodeMin),concat(str(?postcodeMin),'-',str(?postcodeMax))) as ?postcodeLabel)
   bind(concat(str(?straatNaam),' ',?huisnummerLabel) as ?shapeName)
-  bind(concat(
+  bind(strdt(concat(
       '<h2>',str(?shapeName),'<br>',str(?postcodeLabel),' ',str(?woonplaatsNaam),'</h2><ul>',
       '<li><b>Oorspronkelijk bouwjaar</b>: ',str(?bouwjaar),'</li>',
       '<li><b>Pand hoogte</b>: ',if(bound(?hoogte),concat(?hoogte,'m'),'onbekend'),'</li>',
       '<li><b>Pand status</b>: ',str(?pandStatusLabel),'</li>',
       '<li><b>Verblijfsobject oppervlakte</b>: ',replace(str(?oppervlakte),'[0-9](?=(?:[0-9]{3})+(?![0-9]))','$0.'),'m2</li>',
       '<li><b>Verblijfsobject functies</b>:<ul>',str(?functie),
-      '</ul></li></ul>') as ?shapeLabel)
+      '</ul></li></ul>'),rdf:HTML) as ?shapeLabel)
   #bind(if(?c=bag:VerblijfsobjectWoonfunctie,"green",
   #     if(?c=bag:VerblijfsobjectWinkelfunctie,"red",
   #     if(?c=bag:VerblijfsobjectKantoorfunctie,"blue",

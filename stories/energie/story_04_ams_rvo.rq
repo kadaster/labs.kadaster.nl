@@ -5,6 +5,7 @@ prefix energielabels: <https://data.labs.pdok.nl/def/energielabels/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix graph: <https://data.labs.pdok.nl/graph/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 # This still returns the same ?pand multiple times, once for each
 # energy label that has been assigned to a ?verblijfsobject within
 # that ?pand.
@@ -71,13 +72,13 @@ select ?shape ?shapeColor ?shapeLabel {
       ?voorkomen4 bag:eindGeldigheid ?eind4 .
     }
     ?woonplaats rdfs:label ?woonplaatsLabel .
-    bind(concat(
+    bind(strdt(concat(
       '<p>address: ',str(?woonplaatsLabel),',  ',str(?postcode),'<br>',str(?straatnaam),',',str(?huisnummer),if(bound(?huisnummerToevoeging),concat(' ',str(?huisnummerToevoeging)),''),'<br>',
       'Pand status: ',str(?pandStatusLabel),'<br>',
       'Bouwjaar: ',str(?bouwjaar) ,'<br>',
       'Oppervlakte: ',str(?oppervlakte),'m²<br>',
       'Opnamedatum: ',str(?opnamedatum),'<br>',
-      'Registratiedatum: ',str(?registratiedatum),'</p>') as ?shapeLabel)
+      'Registratiedatum: ',str(?registratiedatum),'</p>'),rdf:HTML) as ?shapeLabel)
   }
 }
 limit 5
