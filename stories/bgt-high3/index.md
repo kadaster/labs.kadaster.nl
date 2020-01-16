@@ -152,3 +152,15 @@ Naast de kaart weergave kunnen we ook een tabel weergave maken (<a href="#werkza
     Tabel 1 ― Overzicht van de adressen (BAG) die moeten worden aangeschreven wanneer het geïdentificeerde wegdeel (BGT/BRT) moet worden vervangen.
   </figcaption>
 </figure>
+
+# En dan even iets anders…
+
+<a href="#bier">Figuur 10</a>
+
+<figure id="bier">
+  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/kennisgraaf/queries/bier">
+  </query>
+  <figcaption>
+    Figuur 10 ― 
+  </figcaption>
+</figure>
