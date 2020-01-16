@@ -100,7 +100,8 @@ this.onmessage = function (e) {
     let returnobject = {
         resultaat: res,
         clusters: clusters,
-        text : e.data.text
+        text : e.data.text,
+        isMax : e.data.isMax,
     };
 
     this.postMessage(returnobject);
