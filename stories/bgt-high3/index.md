@@ -56,9 +56,11 @@ Nu we de BGT als Linked Data voorhanden hebben, is het eenvoudig om deze te comb
 <a href="#3-basisregistraties">Figuur 3</a> geeft een overzicht van de 3 Linked Datasets BAG, BGT, en BRT.  De grootte van de cirkels correspondeert met het aantal instanties.
 
 <figure id="3-basisregistraties">
+  <!--
   <a href="https://data.labs.kadaster.nl/bgt-high3/kennisgraaf/insights/classHierarchy?type=bubbles" target="_blank">
     <img src="/assets/images/bag-bgt-brt.png">
   </a>
+  -->
   <figcaption>
     Figuur 3 ― Drie basisregistraties samengebracht middels Linked Data: BAG, BGT, en BRT.
   </figcaption>
