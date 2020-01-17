@@ -76,6 +76,13 @@ Laten we eens kijken naar een voorbeeld van hoe de 3 basisregistraties hetzelfde
   </figcaption>
 </figure>
 
+<figure id="foto-havenplein">
+  <img src="/assets/images/Havenplein_5.png">
+  <figcaption>
+    Figuur 4a ― Havenplein 5 Verkeerscentrale Den Helder
+  </figcaption>
+</figure>
+
 ## BGT: de sleutel tot veel databronnen
 
 Maar waarvoor kunnen we die Linked Data BGT nu in de praktijk gebruiken?
@@ -155,12 +162,12 @@ Naast de kaart weergave kunnen we ook een tabel weergave maken (<a href="#werkza
 
 # En dan even iets anders…
 
-<a href="#bier">Figuur 10</a>
+Data verlinken gaat niet alleen met data uit de basis registraties. Maar het is ook mogelijk om de data te verrijken met verbindingen uit andere domeinen. In <a href="#bier">Figuur 10</a> zoeken we de dichtstbijzijnde brouwerij op waar na de werkzaamheden het (alcholvrije)-biertje kan worden gedronken.  
 
 <figure id="bier">
   <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/kennisgraaf/queries/bier">
   </query>
   <figcaption>
-    Figuur 10 ― 
+    Figuur 10 ― dichtstbijzijnde brouwerij van de werkzaamheden
   </figcaption>
 </figure>
