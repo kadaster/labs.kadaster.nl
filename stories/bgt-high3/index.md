@@ -11,8 +11,6 @@ De BGT is de enige geo Basisregistratie die niet als Linked Data beschikbaar is.
 
 Allereerst zijn we gestart met het omzetten van de BGT naar Linked Data. <a href="#bgt-klasse-histogram">Figuur 1</a> geeft een overzicht van de omvang en het soort objecten dat door ons is omgezet.
 
-Op basis van ons werk is het relatief eenvoudig om de volledige BGT als Linked Data te publiceren.  Een landsdekkende omzetting van de BGT duur met de huidige implementatie ongeveer 2 uur.  Dit kan eventueel sneller gemaakt worden door de code te verbeteren.  Deze 2 uur betreft een éénmalige omzetting.  Dagelijkse updates zouden vervolgens middels delta's kunnen worden toegevoegd.  Dit laatste onderdeel hebben we binnen dit experiment niet geïmplementeerd.
-
 <figure id="bgt-klasse-histogram">
   <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/kennisgraaf/queries/bgt-klasse-histogram">
   </query>
@@ -20,6 +18,9 @@ Op basis van ons werk is het relatief eenvoudig om de volledige BGT als Linked D
     Figuur 1 ― Object types die voorkomen in de Linked Data BGT.
   </figcaption>
 </figure>
+
+Op basis van ons werk is het relatief eenvoudig om de volledige BGT als Linked Data te publiceren.  Een landsdekkende omzetting van de BGT duur met de huidige implementatie ongeveer 2 uur.  Dit kan eventueel sneller gemaakt worden door de code te verbeteren.  Deze 2 uur betreft een éénmalige omzetting.  Dagelijkse updates zouden vervolgens middels delta's kunnen worden toegevoegd.  Dit laatste onderdeel hebben we binnen dit experiment niet geïmplementeerd.
+
 
 ## Gebruik van semantiek
 
