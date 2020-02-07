@@ -2,19 +2,20 @@
 layout: page
 title: Data Stories
 ---
+
 # Data Stories
 
-Het Data Science team vertelt met behulp van de Data Stories het verhaal van onze data.  We lichten toe wat we in de data zien en geven voorbeelden van onze inzichten en/of visualisaties.  Per inzicht en/of visualisatie vertellen we welke datasets zijn gebruikt en geven we waar mogelijk ook tips en toelichting met het oog op toekomstig gebruik.
+Het Data Science team vertelt met behulp van de Data Stories het verhaal van onze data. We lichten toe wat we in de data zien en geven voorbeelden van onze inzichten en/of visualisaties. Per inzicht en/of visualisatie vertellen we welke datasets zijn gebruikt en geven we waar mogelijk ook tips en toelichting met het oog op toekomstig gebruik.
 
-Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen.  Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
+Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen. Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
   <a href="./bgt-high3/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title"></div>
-      <div class="card-description">Data Story voor de BGT High3 week.</div>
+      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <div class="card-title">Basisregistratie Topografie Datastory</div>
+      <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
     </div>
   </a>
   <a href="./openels/index.html">

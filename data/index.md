@@ -2,9 +2,10 @@
 layout: page
 title: Data
 ---
+
 # Data
 
-Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan.  Op deze pagina wordt een overzicht van deze datasets gegeven.  Datasets die door het Data Science team als Linked Data worden aangeboden zijn te vinden op <https://data.labs.kadaster.nl>.
+Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan. Op deze pagina wordt een overzicht van deze datasets gegeven. Datasets die door het Data Science team als Linked Data worden aangeboden zijn te vinden op <https://data.labs.kadaster.nl>.
 
 <div class="cards-wrapper">
   <a href="https://lod-cloud.net/dataset/bag">
@@ -53,6 +54,14 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <img class="card-image" src="/assets/images/grondmarkt.jpg">
       <div class="card-title">Dataset Grondmarkt</div>
       <div class="card-description">Dataset met informatie over percelen.</div>
+    </div>
+  </a>
+  <a href="https://data.labs.kadaster.nl/bgt-high3">
+    <div class="card">
+      <div class="card-type">Dataset</div>
+      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <div class="card-title">Basisregistratie Topografie (BGT)</div>
+      <div class="card-description">De Datasets van die gebruikt zijn tijdens de BGT high 3 week zijn hier te vinden. De datasets zijn ook toegankelijk via data.labs.kadaster.nl.</div>
     </div>
   </a>
   <!--
