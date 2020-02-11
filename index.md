@@ -149,7 +149,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Basisregistratie Grootschalige Topografie (BGT)</div>
-      <div class="card-description">Voor de High 3 week heeft het kadaster de BGT als linked data omgezet. In deze usecase beschrijven de uitkomsten van de High3 week.</div>
+      <div class="card-description">De resultaten van het omzetten van de BGT naar Linked Data, uitgevoerd i.s.m. provincie Noord-Holland.</div>
     </div>
   </a>
   <a href="/cases/brt">
