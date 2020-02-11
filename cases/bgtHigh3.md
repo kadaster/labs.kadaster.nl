@@ -5,11 +5,11 @@ title: Use Case ― Basisregistratie Grootschalige Topografie (BGT)
 
 # Use Case: Basisregistratie Grootschalige Topografie (BGT)
 
-De Basisregistratie Grootschalige Topografie is als enige van de grote basisregistraties die het Kadaster onder zich heeft nog niet beschikbaar als Linked data. Tijdens de High3 van 13 tot en met 16 januari 202 heeft het Kadaster samen met de provincie Noord-Holland de Basisregistratie Grootschalige Topografie omgezet naar linked data.
+De Basisregistratie Grootschalige Topografie (BGT) is de laatste grote kadastrale basisregistratie die nog niet beschikbaar was als Linked data.  Tijdens de High 3 sessie die plaatsvond van 13 t/m 16 januari 2020 heeft het Kadaster in samenwerking met de provincie Noord-Holland deze basisregistratie alsnog omgezet naar Linked Data.
 
-Het doel van dit project is om aan te tonen dat het mogelijk is om de Basisregistratie Grootschalige Topografie om te zetten naar Linked data. Daarnaast toont dit project ook aan wat de mogelijkheden zijn als de Basisregistratie Grootschalige Topografie is omgezet naar linked data. Aangezien het nu mogelijk is om data uit andere bronnen gemakkelijk te koppelen aan de Basisregistratie Grootschalige Topografie.
+Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basisregistratie als Linked data beschikbaar te stellen.  Het tweede doel van dit project is om aan te tonen wat de mogelijkheden zijn als de BGT als Linked Data bevraagd kan worden.  Dit is gedaan door de BGT met andere bronnen te koppelen (‘linken’).
 
-Een van de datasets waarmee de Basisregistratie Grootschalige Topografie gecombineerd wordt zijn de IMBOR gegevens vanuit de provincie. Data dat geen open data is, maar wel verrijkt kan worden met de Basisregistratie Grootschalige Topografie. Deze usecases kunnen terug gevonden worden in de datastory.
+Één voorbeeld van zo'n gecombineerde dataset is de IMBOR dataset van de provincie Noord-Holland.  Deze dataset is niet openbaar beschikbaar, maar kan wel binnen een gesloten omgeving als Linked Data bevraagd worden.  De resultaten van deze sessie zijn hieronder te bekijken in een Data Story en in een data browser.
 
 <div class="cards-wrapper">
   <a href="/stories/bgt-high3/">
@@ -17,7 +17,7 @@ Een van de datasets waarmee de Basisregistratie Grootschalige Topografie gecombi
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Basisregistratie Topografie Datastory</div>
-      <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
+      <div class="card-description">Data Story die toont wat er mogelijk is wanneer de Basisregistratie Grootschalige Topografie (BGT) als Linked Data beschikbaar wordt gemaakt.</div>
     </div>
   </a>
   <a href="/browsers/areaal">
@@ -25,7 +25,7 @@ Een van de datasets waarmee de Basisregistratie Grootschalige Topografie gecombi
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Areaal data browser</div>
-      <div class="card-description">Met deze databrowser kun je Areaal data van Noord-holland doorzoeken. Hierin vind je alle wegdelen, borden en kunstwerken.</div>
+      <div class="card-description">Data browser waarin de Areaal dataset van provincie Noord-Holland doorzoekbaar wordt gemaakt.  De dataset bevat o.a. wegdelen en kunstwerken.</div>
     </div>
   </a>
   <a href="https://data.labs.kadaster.nl/bgt-high3">
@@ -33,7 +33,7 @@ Een van de datasets waarmee de Basisregistratie Grootschalige Topografie gecombi
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Basisregistratie Topografie (BGT)</div>
-      <div class="card-description">De Datasets van die gebruikt zijn tijdens de BGT high 3 week zijn hier te vinden. De datasets zijn ook toegankelijk via data.labs.kadaster.nl.</div>
+      <div class="card-description">Overzicht van de Linked Datasets die tijdens deze activiteit zijn aangemaakt.  Alleen datasets die open data bevatten zijn zonder login zichtbaar.</div>
     </div>
   </a>
 </div>
