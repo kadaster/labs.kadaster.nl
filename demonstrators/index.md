@@ -2,9 +2,10 @@
 layout: page
 title: Demonstrators
 ---
+
 # Demonstrators
 
-Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen.  Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen.  Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator.  Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
+Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
   <a href="/demonstrators/loki/index.html">
@@ -118,7 +119,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Zoeken in metadata</div>
       <div class="card-description">Waar zoekt een data gebruiker naar?</div>
     </div>
-  </a> 
+  </a>
   <a href="/demonstrators/namen-app">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -127,4 +128,12 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description"> In de BRT Namenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
   </a>
+  <a href="/demonstrators/verkaufsbucher-zoeken">
+      <div class="card">
+        <div class="card-type">Demonstrator</div>
+        <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+        <div class="card-title">Verkaufsbücher zoeker</div>
+        <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
+      </div>
+    </a>
 </div>

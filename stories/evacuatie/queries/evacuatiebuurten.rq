@@ -1,0 +1,100 @@
+PREFIX brt-begrip: <http://brt.basisregistraties.overheid.nl/id/begrip/>
+PREFIX brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bag-begrip: <http://bag.basisregistraties.overheid.nl/id/begrip/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geosf: <http://www.opengis.net/def/function/geosparql/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX cbs: <https://data.pldn.nl/cbs/wijken-buurten/def/cbs#>
+PREFIX cbs-concept: <https://data.pldn.nl/cbs/wijken-buurten/cbs/id/concept/>
+prefix buurt: <https://data.pldn.nl/cbs/wijken-buurten/regios/2016/id/buurt/>
+SELECT ?buurtId (substr(str(?afstand),0,4) as ?afstandSTR) ?afstand ?regioCode ?naam ?BuurtShape ?BuurtShapeLabel WHERE {
+  {
+    SELECT ?buurtId ?afstand ?regioCode ?naam ?BuurtShape ?BuurtShapeLabel ?radius WHERE {
+      {
+        SELECT  ?radius ?pointAccident  WHERE {
+          # Set the radius in km.
+          bind(10 as ?radius)
+          # Set PointAccident ifyou want to use a PointGeometry. Important is that the other part of this query needs to be removed. between the lines: =====
+          # values (?pointAccident) {
+          #   ("POINT(4.58623 56.1928374)")
+          # }
+          #
+          # Set the values for Woonplaats, straatnaam and huisnummer of the accident.
+          # REMOVE FROM HERE: =====================================
+          values (?woonPlaatsAccident ?StraatNaamAccident ?huisNummerAccident ?huisNummerLetterAccident) {
+            ("Amsterdam"  "Carolina MacGillavrylaan"  UNDEF UNDEF )
+          }
+          # Or set the values for postcode and huisnummer of the accident.
+          values (?postcodeAccident ?huisNummerAccident ?huisNummerLetterAccident)
+          {
+            ("1098XA" 24 UNDEF )
+          }
+          OPTIONAL {
+            FILTER(?woonPlaatsAccident &&?StraatNaamAccident && ?huisNummerAccident)
+            # Get the information from the object.
+            ?NummerAanduidingAccident bag:huisnummer ?huisNummerAccident;
+                                      bag:bijbehorendeOpenbareRuimte ?openbareRuimteAccident .
+            optional {
+              ?NummerAanduidingAccident bag:huisletter ?huisNummerLetterAccident.
+            }
+            ?openbareRuimteAccident bag:naamOpenbareRuimte ?StraatNaamAccident ;
+                                    bag:bijbehorendeWoonplaats [ bag:naamWoonplaats ?woonPlaatsAccident ] .
+            ?bagPandAccident bag:hoofdadres ?NummerAanduidingAccident ;
+                             geo:hasGeometry/geo:asWKT ?pointAccident .
+          }
+          OPTIONAL {
+            FILTER(?postcodeAccident && ?huisNummerAccident)
+            # Get the information from the object.
+            ?NummerAanduidingAccident bag:postcode ?postcodeAccident;
+                                      bag:huisnummer ?huisNummerAccident.
+            optional {
+              ?NummerAanduidingAccident bag:huisletter ?huisNummerLetterAccident.
+            }
+            ?bagPandAccident bag:hoofdadres ?NummerAanduidingAccident ;
+                             geo:hasGeometry/geo:asWKT ?pointAccident .
+          }
+          # REMOVE TO HERE: ==============================================
+        }
+        limit 1
+      }
+      # Get the BAG panden in the radius
+      ?buurtId a cbs:Buurt;
+                             rdfs:label ?naam;
+                             cbs:regiocode ?regioCode;
+                             geo:hasGeometry/geo:asWKT ?locationSurround .
+      FILTER( bif:st_may_intersect( ?pointAccident, ?locationSurround, 0.1) )
+      BIND(str(?locationSurround) as ?substringSplit)
+      BIND(IF((bif:GeometryType(?locationSurround) = "POLYGON"),strdt(concat("POINT(",strafter(strbefore(?substringSplit,","),"(("),")"),<http://www.openlinksw.com/schemas/virtrdf#Geometry>),UNDEF) as ?FirstPointlocationSurroundP1)
+      BIND(IF((bif:GeometryType(?locationSurround) = "MULTIPOLYGON"),strdt(concat("POINT(",strafter(strbefore(?substringSplit,","),"((("),")"),<http://www.openlinksw.com/schemas/virtrdf#Geometry>),UNDEF) as ?FirstPointlocationSurroundP2)
+      BIND(IF(((bif:GeometryType(?locationSurround) = "POINT")),
+          bif:haversine_deg_km(bif:st_x(?locationSurround),bif:st_y(?locationSurround) ,bif:st_x(?pointAccident),bif:st_y(?pointAccident)),
+          IF(((bif:GeometryType(?FirstPointlocationSurroundP1) = "POINT")),
+            bif:haversine_deg_km(bif:st_x(?FirstPointlocationSurroundP1),bif:st_y(?FirstPointlocationSurroundP1) ,bif:st_x(?pointAccident),bif:st_y(?pointAccident)),
+            IF(((bif:GeometryType(?FirstPointlocationSurroundP2) = "POINT")),
+              bif:haversine_deg_km(bif:st_x(?FirstPointlocationSurroundP2),bif:st_y(?FirstPointlocationSurroundP2) ,bif:st_x(?pointAccident),bif:st_y(?pointAccident)),
+              ?radius+0.01
+            )
+          )
+        )
+        as ?afstand)
+      BIND(strdt('''<h3>{{naam}}</h3>
+<dd>
+<dl>
+<dt>Regio code</dt>
+<dd>{{regioCode}}</dd>
+<dt>Afstand tot calamiteit</dt>
+<dd>{{afstandSTR}} km</dd>
+</dl>
+</dd>
+''',rdf:HTML) as ?BuurtShapeLabel)
+      BIND(?locationSurround as ?BuurtShape)
+    }
+    ORDER BY ?afstand
+    limit 50
+  }
+  FILTER(?afstand < ?radius)
+}
