@@ -104,7 +104,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Digtaal Erfgoed</div>
-      <div class="card-description">PLDN-Werkgroep Digitaal Erfgoed</div>
+      <div class="card-description">PLDN-Werkgroep Digitaal Erfgoed.</div>
     </div>
   </a>
   <!--
