@@ -5,7 +5,7 @@ title: Use Case ― Basisregistratie Grootschalige Topografie (BGT)
 
 # Use Case: Basisregistratie Grootschalige Topografie (BGT)
 
-De Basisregistratie Grootschalige Topografie (BGT) is de laatste grote kadastrale basisregistratie die nog niet beschikbaar was als Linked data.  Tijdens de High 3 sessie die plaatsvond van 13 t/m 16 januari 2020 heeft het Kadaster in samenwerking met de provincie Noord-Holland deze basisregistratie alsnog omgezet naar Linked Data.
+De Basisregistratie Grootschalige Topografie (BGT) is de laatste grote kadastrale basisregistratie die nog niet beschikbaar was als Linked data.  Op initiatief van het Kadaster en de Provincie Noord-Holland heeft een High 3 sessie plaatsgevonden van 13 t/m 16 januari 2020 waarin, in samenwerking met CROW en CGI, deze basisregistratie alsnog eenmalig omgezet is naar Linked Data.
 
 Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basisregistratie als Linked data beschikbaar te stellen.  Het tweede doel van dit project is om aan te tonen wat de mogelijkheden zijn als de BGT als Linked Data bevraagd kan worden.  Dit is gedaan door de BGT met andere bronnen te koppelen (‘linken’).
 
