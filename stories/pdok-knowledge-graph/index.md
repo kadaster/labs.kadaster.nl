@@ -21,7 +21,7 @@ title: PDOK Knowledge Graph
   <p>Op deze kaart zijn de kandidaat buurten gegroepeerd weergegeven.  Door op de met getallen aangeduide groepen te klikken worden de buurten binnen die groepering zichtbaar gemaakt.  Op het laagste niveau worden de individuele buurten zichtbaar.  Door op deze buurten te klikken kan de naam van de buurten getoond worden.</p>
 </div>
 
-<query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-1">
+<query data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-1">
 </query>
 
 <h3>Bevraging 1B: Voeg meer criteria toe</h3>
@@ -36,7 +36,7 @@ title: PDOK Knowledge Graph
 
 <p>Wanneer we alle buurten in Nederland op basis van deze criteria sorteren komen de volgende buurten boven drijven:</p>
 
-<query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-2">
+<query data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-2">
 </query>
 
 <h3>Bevraging 1C: Kandidaat buurten in Dordrecht</h3>
@@ -48,7 +48,7 @@ title: PDOK Knowledge Graph
   <p>In deze 3D omgeving zijn de kandidaat buurten weergegeven.  De hoogte en kleur van de buurten duidt de hoogte van de gemiddelde woningwaarde aan.  Door op de 3D objecten te klikken wordt de naam van de buurt getoond samen met de gemiddelde woningwaarde voor die buurt.  Navigatie binnen de 3D omgeving functioneert door gebruik te maken van de muis en de <kbd>Ctrl</kbd> toets.</p>
 </div>
 
-<query data-config-ref="https://data.pldn.nl/cbs/wijken-buurten/queries/pdok-kg-3">
+<query data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-3">
 </query>
 
 <h3>Bevraging 1D: BAG panden die aan de criteria voldoen</h3>
