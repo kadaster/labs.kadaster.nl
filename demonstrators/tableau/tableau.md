@@ -15,7 +15,7 @@ This is a Web Data Connector that helps to consume BAG data from within Tableau 
 In order ot access the data in Tableau Desktop:
 
   1. Navigate to <em>Data>New Data Source>WebDataConnector</em> or just press <em>Ctr+D</em>.
-  2. In the Web Data Connector window enter the URL of current page (https://data.labs.pdok.nl/apps/TableauWDC.html) and press <em>Enter</em>
+  2. In the Web Data Connector window enter the URL of current page (https://labs.kadaster.nl/demonstrators/tableau/tableau.html) and press <em>Enter</em>
   3. Scroll dawn the page to see the form and the <em>Get The Buildings!</em> button
   4. Type name of a neighbourhood you are interested in, e.g <em>Twekkelerveld</em> and click the button
 
