@@ -138,7 +138,7 @@ Aanwijzende Tafels met eigendomsbeschrijving zijn opgenomen. [Figuur
 is opgebouwd, waarop de eigenaren van percelen in 1812 te zien zijn.
 
 <figure id="perceel-achternaam">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/perceel-achternaam">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/perceel-achternaam">
   </query>
   <figcaption>
     Figuur 5 ― Percelen en hun eigenaren in Lisse in 1812.
@@ -169,7 +169,7 @@ naar Wikipedia en zien dat Johan een bekende
 kunstverzamelaar en museumdirecteur was.
 
 <figure id="JohanPerceel">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/johan-perceel">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/johan-perceel">
   </query>
   <figcaption>
     Figuur 6 ― Percelen die in het bezit waren van Steengracht van Oost Capelle.
@@ -185,7 +185,7 @@ die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
 7](#AmsterdamPerceel)).
 
 <figure id="AmsterdamPerceel">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/amsterdam-perceel">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/amsterdam-perceel">
   </query>
   <figcaption>
     Figuur 7 ― Amsterdammers die percelen in Lisse bezaten.
@@ -197,7 +197,7 @@ die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
 Buitenplaatsen zorgen voor werkgelegenheid: op de boerderijen, de landerijen, de tuinen en de bediening.  In het Lisse-endpoint is informatie over beroepen uit de Volkstelling 1830 opgenomen.  Via een bevraging krijgen we een tabel ([Figuur 8](#beroepen-oud-lisse)) met de beroepen van de bewoners van Lisse in 1830.
 
 <figure id="beroepen-oud-lisse">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Beroepen-HISCO-aantal">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/Beroepen-HISCO-aantal">
   </query>
   <figcaption>
     Figuur 8 ― Beroepen van bewoners in Lisse in 1830.
@@ -253,7 +253,7 @@ De kaart hiernaast toont de werkende bevolking van Lisse.  De kleur geeft aan in
     </li>
 </ul>
   <figure id="KaartStatusBeroep">
-    <query class="aside-figure" data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/kaart-status-beroep">
+    <query class="aside-figure" data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/kaart-status-beroep">
     </query>
     <figcaption>
       Figuur 9 ― Kaart ingekleurd op basis van de beroepen van de eigenaren van de verschillende percelen.
@@ -280,7 +280,7 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 [Figuur 11](#c191-popup) toont perceel C191 met de bijbehorende bewoners in een popup.
 
 <figure id="c191-popup">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/c191-popup">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/c191-popup">
   </query>
   <figcaption>
     Figure 11 ― Perceel C191 in Lisse.  Klik op het perceel om een overzicht te zien van de bewoners.
@@ -294,7 +294,7 @@ relatie-gegevens, kunnen we de nakomelingen van Petronella Berkel
 afbeelden in [Figuur 12](#family-tree).
 
 <figure id="family-tree">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/family-tree">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/family-tree">
   </query>
   <figcaption>
     Figuur 12 ― Nakomelingen van Petronella Berkel.
@@ -309,7 +309,7 @@ tijdlijn voor de bewoners in een huis kan worden weergegeven. [Figuur
 Broekweg 180 gewoond hebben.
 
 <figure id="woon-tijdlijn">
-  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/woon-tijdlijn">
+  <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/woon-tijdlijn">
   </query>
   <figcaption>
     Figuur 13 ― Tijdlijn van bewoners van Broekweg 180.
@@ -321,7 +321,7 @@ Broekweg 180 gewoond hebben.
 De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).  We nemen nu in gepaste vorm afscheid met een paar oude ansichtkaarten van het Kasteel keukenhof, allen afkomstig uit linked data van het Lisse-endpoint.
 
 <figure id="Fotos-endpoint Lisse">
-<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/oud-lisse/queries/Fotos-uit-endpoint/">
+<query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/Fotos-uit-endpoint/">
 </query>
   <figcaption>
     Figuur 14 ― Foto's van het Oud-Lisse endpoint.
