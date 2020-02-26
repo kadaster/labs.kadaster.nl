@@ -8,10 +8,10 @@ title: When was your neighbourhood built?
 <script type="text/javascript" src="moment.min.js"></script>
 <script type="text/javascript" src="awesomplete.min.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
-<link href="./index.css" rel="stylesheet">
+<link href="./index.css" rel="stylesheet"> 
 
 
-# Get Building Footprints for a Neighbourhood 
+# Getting Building Footprints for a Neighbourhood 
                 
 This is a Web Data Connector that helps to consume BAG data from within Tableau Desktop. 
 
