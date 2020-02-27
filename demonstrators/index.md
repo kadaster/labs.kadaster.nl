@@ -88,7 +88,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Energielabels voorspellen met behulp van Machine Learning.</div>
     </div>
   </a>
-  <a href="http://visualdataweb.de/webvowl/#iri=http://ec2-34-252-124-184.eu-west-1.compute.amazonaws.com/model/bag.ttl">
+  <a href="http://www.visualdataweb.de/webvowl/#iri=https://triplydb.com/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/webvowl.png">

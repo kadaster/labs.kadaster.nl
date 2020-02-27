@@ -24,7 +24,7 @@ title: Data exploratie met Tableau
   </object>
 </div>
 
-This visualisation shows 130000 buildings.  Despite of the data size Tableau performs with ease proving its usability.  The latter motivated us to design and develop a [Web Data Connector](/apps/TableauWDC.html) allowing access to BAG data from within Tableau.  The Web Data Connector uses SPARQL endpoint to serve the data.  Example visualisation of the data can be seen below:
+This visualisation shows 130000 buildings.  Despite of the data size Tableau performs with ease proving its usability.  The latter motivated us to design and develop a [Web Data Connector](/demonstrators/tableau/tableau.html) allowing access to BAG data from within Tableau.  The Web Data Connector uses SPARQL endpoint to serve the data.  Example visualisation of the data can be seen below:
 
 <div class="tableauPlaceholder">
   <object class="tableauViz" style="display:none; height:800px; width:100%;">
