@@ -24,7 +24,5 @@ title: Bier Data Story
 
 <p>Laten we eens kijken hoe oud het gebouw van de Heineken Experience / de oude Heineken brouwerij is.  We zoeken dit op in zowel de Kadaster BAG alsook het RCE Monumenten Register:</p>
 
-<query data-query-ref="heineken-brouwerij.rq"
-       data-endpoint="https://data.pdok.nl/sparql"
-       data-output="geo">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/bier">
 </query>
