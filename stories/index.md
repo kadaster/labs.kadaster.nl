@@ -102,9 +102,9 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
   <a href="./digitaal-erfgoed/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg">
       <div class="card-title">Digtaal Erfgoed</div>
-      <div class="card-description">PLDN-Werkgroep Digitaal Erfgoed.</div>
+      <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
     </div>
   </a>
   <!--
