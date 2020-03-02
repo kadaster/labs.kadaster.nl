@@ -18,6 +18,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
     </div>
   </a>
+  <a href="./evacuatie/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/lucht-alarm.jpg">
+      <div class="card-title">Evacuatie datastory</div>
+      <div class="card-description">Welke huizen vallen binnen de radius van de calamiteit? vind het uit in deze evacuatie datastory.</div>
+    </div>
+  </a>
   <a href="./openels/index.html">
     <div class="card">
       <div class="card-type">Story</div>
