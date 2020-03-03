@@ -31,4 +31,12 @@ In het kader van deelname aan de [Hack-a-LOD 2018](http://hackalod.com/index.php
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
     </div>
   </a>
+  <a href="https://data.pldn.nl/pldn/bier">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/bier.jpg">
+      <div class="card-title">PLDN DBeerPedia</div>
+      <div class="card-description">Linked Dataset over bieren en bierbrouwerijen in Nederland.</div>
+    </div>
+  </a>
 </div>

@@ -64,6 +64,14 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <div class="card-description">De Datasets van die gebruikt zijn tijdens de BGT high 3 week zijn hier te vinden. De datasets zijn ook toegankelijk via data.labs.kadaster.nl.</div>
     </div>
   </a>
+  <a href="https://data.pldn.nl/pldn/bier">
+    <div class="card">
+      <div class="card-type">Data</div>
+      <img class="card-image" src="/assets/images/bier.jpg">
+      <div class="card-title">PLDN DBeerPedia</div>
+      <div class="card-description">Linked Dataset over bieren en bierbrouwerijen in Nederland.</div>
+    </div>
+  </a>
   <!--
   <a href="https://data.labs.kadaster.nl/kadaster/transacties-apeldoorn/">
     <div class="card">
