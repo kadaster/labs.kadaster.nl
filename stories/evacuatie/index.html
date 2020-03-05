@@ -6,6 +6,7 @@ title: Evacuatie datastory
 
 <script src="./index.js" type="text/javascript"></script>
 <link href="./index.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/prism.css" />
 <h1>Evacuatie datastory</h1>
 <div class="flex">
   <div class="content">
@@ -25,6 +26,35 @@ title: Evacuatie datastory
       is een must. Om deze vragen te beantwoorden gebruiken we een SPARQL query
       die de data direct uit de dataset ophaalt.
     </p>
+    <p>
+      Iedere bevraging kan worden aangepast naar het eigen adres. Hiervoor kunt
+      u de bevraging openen door op de grote blauwe pijl te drukken en naar
+      volgende blok te scrollen:
+    </p>
+    <figure id="code-adaptation">
+      <pre>
+      <code class="language-sparql">
+  ### ====================================================================
+  # FILL HERE your postcode, huisnummer and if needed huisnummerLetter + the radius
+  ### ====================================================================
+  # Set the radius in km.
+  bind(3 as ?radius)
+  # Set the values for postcode and huisnummer of the accident.
+  values (?postcodeAccident ?huisNummerAccident ?huisNummerLetterAccident) {
+    ("7311KZ" 110 UNDEF )
+  }
+  ### ====================================================================
+      </code></pre>
+      <figcaption>
+        Figuur 1A ― Uitleg voor het aanpassen van de queries.
+      </figcaption>
+    </figure>
+    <p>
+      Hierin is het mogelijk om je postcode, huisnummer en mogelijk
+      huisnummerLetter in te vullen. Met deze gegevens samen met de radius,
+      wordt het beginpunt van de evacuatie bepaald plus de radius.
+    </p>
+
     <p>
       In <a href="#bag-evacuatieGebouwen">Figuur 1</a> beantwoorden we deze
       vraag door de BAG dataset te bevragen op gebouwen die in het gebied
@@ -167,3 +197,4 @@ title: Evacuatie datastory
     </figure>
   </div>
 </div>
+<script src="/assets/js/prism.min.js"></script>

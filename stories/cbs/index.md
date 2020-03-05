@@ -7,7 +7,7 @@ title: CBS/Kadaster Data Story
 
 <h2>Gemeente uitzoeken</h2>
 
-We zijn op zoek naar een geschikte locatie in de Randstad om te gaan wonen.  We denken aan Gouda, Waddinxveen, of Zoetermeer, want dat ligt in de buurt van ons werk.  De afstand tot een kinderdagverblijf is heel belangrijk, en de afstand tot een school is ook belangrijk, maar in mindere mate.  Op basis van de CBS Wijk- en Buurtkaart vergelijken we deze drie gemeenten op basis van deze twee criteria:
+We zijn op zoek naar een geschikte locatie in de Randstad om te gaan wonen. We denken aan Gouda, Waddinxveen, of Zoetermeer, want dat ligt in de buurt van ons werk. De afstand tot een kinderdagverblijf is heel belangrijk, en de afstand tot een school is ook belangrijk, maar in mindere mate. Op basis van de CBS Wijk- en Buurtkaart vergelijken we deze drie gemeenten op basis van deze twee criteria:
 
 <query data-config-ref="https://data.pldn.nl/cbs/-/queries/kadaster-cbs-1">
 </query>
@@ -18,7 +18,7 @@ kijken of we want meer over Zoetermeer te weten kunnen komen.
 <h2>Bevolkingssamenstelling in Zoetermeer</h2>
 
 Laten we eens kijken naar de bevolkingssamenstelling in Zoetermeer
-naar leeftijdscategorie.  We kunnen dit per wijk opvragen, samen met
+naar leeftijdscategorie. We kunnen dit per wijk opvragen, samen met
 het landelijk gemiddelde:
 
 <query data-config-ref="https://data.pldn.nl/cbs/-/queries/kadaster-cbs-2">
@@ -26,7 +26,7 @@ het landelijk gemiddelde:
 
 <h2>Gemiddelde woningwaarde in Zoetermeer</h2>
 
-Wat is de gemiddelde woningwaarde per buurt in Zoetermeer?  Op
+Wat is de gemiddelde woningwaarde per buurt in Zoetermeer? Op
 onderstaande kaart loopt de schaal van blauw (goedkoper), naar geel
 (gemiddeld), naar rood (duurder).
 
@@ -41,7 +41,7 @@ Laten we daar eens verder gaan kijken.
 We zoomen in op het stadscentrum van Zoetermeer (buurt <a
 href="http://betalinkeddata.cbs.nl/regios/2016/id/buurt/BU06370002">BU06370002</a>).
 Naast informatie uit de CBS Wijk- en Buurtkaart tonen we nu ook
-informatie uit de Basisregistratie Gebouwen (BAG).  De kleuren geven
+informatie uit de Basisregistratie Gebouwen (BAG). De kleuren geven
 de bouwjaren van de gebouwen weer: van blauw (ouder), naar rood
 (nieuwer).
 
@@ -52,9 +52,9 @@ de bouwjaren van de gebouwen weer: van blauw (ouder), naar rood
 
 Laten we ten slotte nog even terugkeren naar de reden waarom we in
 Zoetermeer zijn gaan kijken: de goede toegankelijkheid van
-voorzieningen zoals kinderdagopvang en scholen.  Laten we daar nog de
-toegankelijkheid van huisartsen en supermarkten aan toevoegen.  Welke
-buurt in Zoetermeer biedt de beste toegang tot deze voorzieningen?  De
+voorzieningen zoals kinderdagopvang en scholen. Laten we daar nog de
+toegankelijkheid van huisartsen en supermarkten aan toevoegen. Welke
+buurt in Zoetermeer biedt de beste toegang tot deze voorzieningen? De
 kleuren op de kaart lopen nu van donkerblauw (dicht bij), via
 lichtblauw en geel (iets minder dicht bij), naar rood (ver weg).
 
