@@ -70,7 +70,7 @@ Nu we de BGT als Linked Data voorhanden hebben, is het eenvoudig om deze te comb
 Laten we eens kijken naar een voorbeeld van hoe de 3 basisregistraties hetzelfde object beschrijven.  <a href="#bag-bgt-brt">Figuur 4</a> toont hetzelfde pand volgens de BAG, BGT, en BRT.  Door op de 3 verschillende geometriën te klikken kunnen we naar de respectievelijke basisregistraties doorklikken.  De informatie op één object wordt zo geïntegreerd getoond.
 
 <figure id="bag-bgt-brt">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bgt-bag-brt-2">
+  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bgt-bag-brt">
   </query>
   <figcaption>
     Figuur 4 ― Drie Basisregistraties: drie weergaves van hetzelfde gebouw.
