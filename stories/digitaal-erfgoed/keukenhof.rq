@@ -1,5 +1,6 @@
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix rce: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 select ?shape ?shapeLabel {
   <https://linkeddata.cultureelerfgoed.nl/cho-kennis/id/complex/64053>
