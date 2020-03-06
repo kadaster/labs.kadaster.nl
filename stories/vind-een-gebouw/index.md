@@ -14,7 +14,7 @@ pand kan worden opgevraagd door de query editor te openen en de
 <code class="hightlight">values</code> operatoren aan het begin van de
 query aan te passen.</p>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/vind-een-huis">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/vind-een-huis">
 </query>
 
 <h2>Vind een straat</h2>
@@ -24,7 +24,7 @@ te openen en de
 <code class="hightlight">values</code> operatoren aan het begin van de
 query aan te passen.</p>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/vind-een-straat">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/vind-een-straat">
 </query>
 
 <p>Voor sommige panden zijn meerdere registraties door de tijd heen

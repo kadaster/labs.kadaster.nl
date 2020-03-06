@@ -10,7 +10,7 @@ title: Energie Data Story
 <h2>Windturbineparken in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/wikidata-windfarms">
+  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/wikidata-windfarms">
   </query>
   <figcaption>
     Bron: Wikidata
@@ -20,7 +20,7 @@ title: Energie Data Story
 <h2>Windturbines in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/brt-windturbines">
+  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-windturbines">
   </query>
   <figcaption>
     Bron: BRT

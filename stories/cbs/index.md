@@ -45,7 +45,7 @@ informatie uit de Basisregistratie Gebouwen (BAG). De kleuren geven
 de bouwjaren van de gebouwen weer: van blauw (ouder), naar rood
 (nieuwer).
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/kadaster-cbs-4">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/kadaster-cbs-4">
 </query>
 
 <h2>Toegankelijkheid voorzieningen</h2>
@@ -58,7 +58,7 @@ buurt in Zoetermeer biedt de beste toegang tot deze voorzieningen? De
 kleuren op de kaart lopen nu van donkerblauw (dicht bij), via
 lichtblauw en geel (iets minder dicht bij), naar rood (ver weg).
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/kadaster-cbs-5">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/kadaster-cbs-5">
 </query>
 
 <h2>Appendix</h2>

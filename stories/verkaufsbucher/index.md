@@ -19,23 +19,23 @@ Hieronder worden de volgende resultaten getoond: De onteigende panden op de kaar
 
 Een overzicht van de verhandelde objecten waarvan het adres gevonden is in de Basisregistraties Adressen en Gebouwen (BAG).
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-1">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-1">
 </query>
-        
+
 In de hieronder staande kaart wordt voor een specifieke woonplaats weergegeven welke objecten (woningen, bouwland etc.) onteigend zijn. Wanneer je op een marker op de kaart klikt wordt er voor dat object informatie getoond, afkomstig van het Nationaal Archief en van het Kadaster.
 
 We zoomen nu in op Utrecht, maar de query kan aangepast worden naar een willekeurige woonplaats. Dit kan door via de pijl-symbool boven de onderstaande kaart de query open te klappen en op regel 45 de woonplaats aan te passen. Daarna druk je op de play-knop om de nieuwe query te draaien.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-2">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-2">
 </query>
 
 ## Relatie tussen koper en verkoper visueel weergeven op de kaart
 
-In de Verkaufsbücher is per pand bijgehouden wie de eigenaar was en zijn woonadres. Ook de adresgegevens en de naam van de koper van het object zijn genoteerd. Door deze gegevens op de kaart te visualiseren wordt de relatie tussen kopers en verkopers zichtbaar. Woonden kopers en verkopers bijvoorbeeld in elkaars nabijheid? Oftewel, kochten kopers de huizen van hun buurtgenoten? 
+In de Verkaufsbücher is per pand bijgehouden wie de eigenaar was en zijn woonadres. Ook de adresgegevens en de naam van de koper van het object zijn genoteerd. Door deze gegevens op de kaart te visualiseren wordt de relatie tussen kopers en verkopers zichtbaar. Woonden kopers en verkopers bijvoorbeeld in elkaars nabijheid? Oftewel, kochten kopers de huizen van hun buurtgenoten?
 
 Als je op de kaart een eigenaar bekijkt (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#008000" r="9"/></svg>), dan kun je de lijntjes volgen naar de panden (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#808080" r="9"/></svg>) en door naar de adressen van de kopers (<svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" fill="#800080" r="9"/></svg>) en vice versa.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-3">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-3">
 </query>
 
 ### De casus Hermans-Helsloot
@@ -44,10 +44,10 @@ Piersma en Kemperman (2015) beschrijven een interessante casus betreffende de on
 [https://pure.knaw.nl/portal/files/1637622/PiersmaKemperman_2015_OpenstaandeRekeningen.pdf](https://pure.knaw.nl/portal/files/1637622/PiersmaKemperman_2015_OpenstaandeRekeningen.pdf)
 
 "Als gevolg van de ontrechting van Joden ontstond er een levendige tussenhandel in Joods eigendom. Deze handel trok mensen aan van allerlei slag, soms met een louche achtergrond. Dat blijkt uit de dossiers die ten behoeve van hun naoorlogse berechting werden opgemaakt. Een van die tussenhandelaren was de advocaat E.Th.A. (Emile) Hermans. Het was hem voor de oorlog financieel niet voor de wind gegaan, maar met de Duitse bezetting rook hij zijn kansen op de nieuwe markt van geroofd Joods onroerend goed. Met Everout zou hij gedurende de bezettingsjaren goede zaken doen. Hermans was vanaf 1933 lid van de nsb en was een hardliner en een vechtersbaas – in 1935 verloor hij tijdens een vechtpartij in Laren een oog. Sindsdien ging hij met een glazen exemplaar door het leven. Hoewel Hermans na de oorlog zou verklaren dat hij geen ‘Jodenhater’ was, bleek hij niet te beroerd om de Duitsers behulpzaam te zijn bij hun anti-Joodse politiek. [...]  
-Begin 1941 raakte Hermans betrokken bij de liquidatie van door de Duitsers verboden organisaties. Het kostte hem een kantoorruit, die met een steen aan diggelen werd gegooid. Hermans verklaarde tegenover de politie dat deze daad waarschijnlijk te maken had met zijn bemoeienis met de opheffing van de vrijmetselarij. Dit genootschap werd door de Duitsers als volksvijandig en Joods gezien, en moest daarom het veld ruimen. Hermans zou er als liquidateur zo’n 25.000 gulden mee verdienen. Met een dergelijk kapitaal was het niet moeilijk huizen van onteigende Joden op te kopen. Dat deed Hermans dan ook veelvuldig. Hij was betrokken bij de verkoop van zo’n tweehonderd panden. Hierbij werkte hij nauw samen met zijn echtgenote en de makelaar A. Groenewegen. Ook al regelde Hermans alle praktische zaken zelf, naar buiten toe opereerden mevrouw Hermans-Helsloot en Groenewegen als duo, waarbij Groenewegen de verkoper was en Hermans-Helsloot de eigenaresse van de panden die ze zogenaamd al jaren in haar bezit had. 
+Begin 1941 raakte Hermans betrokken bij de liquidatie van door de Duitsers verboden organisaties. Het kostte hem een kantoorruit, die met een steen aan diggelen werd gegooid. Hermans verklaarde tegenover de politie dat deze daad waarschijnlijk te maken had met zijn bemoeienis met de opheffing van de vrijmetselarij. Dit genootschap werd door de Duitsers als volksvijandig en Joods gezien, en moest daarom het veld ruimen. Hermans zou er als liquidateur zo’n 25.000 gulden mee verdienen. Met een dergelijk kapitaal was het niet moeilijk huizen van onteigende Joden op te kopen. Dat deed Hermans dan ook veelvuldig. Hij was betrokken bij de verkoop van zo’n tweehonderd panden. Hierbij werkte hij nauw samen met zijn echtgenote en de makelaar A. Groenewegen. Ook al regelde Hermans alle praktische zaken zelf, naar buiten toe opereerden mevrouw Hermans-Helsloot en Groenewegen als duo, waarbij Groenewegen de verkoper was en Hermans-Helsloot de eigenaresse van de panden die ze zogenaamd al jaren in haar bezit had.
 Op de panden die werden gekocht en doorverkocht werden forse winsten gemaakt, ook omdat het trio erin slaagde om in tal van gevallen de kopers ervan te overtuigen dat er geen sprake was van Joods eigendom. Een aantal panden kocht het echtpaar om zelf te houden. Hermans-Helsloot noemde er na de oorlog twee in de Utrechtsestraat (de nummers 72 en 74). Hermans kocht tevens een dubbelhuis aan het Albert Hahnplantsoen dat eigendom was van de koopman Jacob Polak. Ook al was ‘arisering’ het officiële doel van de verkoop van Joods onroerend goed, het maakte het drietal in de praktijk weinig uit met wie zij zaken deden. Volgens een getuige in het naoorlogse gerechtelijke onderzoek tegen Everout had met name Groenewegen een grote diversiteit aan klanten. Ze varieerden van ‘Italiaanse ijsventers’ tot ‘Chinese zwarthandelaren’, die hij niet kon verstaan, ‘maar die hem waarschijnlijk ook niet verstonden, want hij [Groenewegen] heeft een heel ernstig spraakgebrek’. Een vreemd team derhalve: een advocaat met een glazen oog en een verkoper met een spraakstoornis."
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-4">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-4">
 </query>
 
 Ook in het Historisch Nieuwsblad is een artikel verschenen over het criminele vastgoed circuit en de Jodenvervolging in de tweede wereldoorlog. [https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html](https://www.historischnieuwsblad.nl/nl/artikel/24891/crimineel-vastgoedcircuit-verdiende-grof-geld-aan-jodenvervolging.html)
@@ -62,7 +62,7 @@ In onderstaande tabel is een overzicht gegeven per plaats over het aantal panden
 
 In de tabel is Amsterdam dominant aanwezig waardoor inzicht in de andere plaatsen wordt beperkt. Het is voor de gebruiker mogelijk om via de pijl-symbool boven de tabel de query aan te passen. Nadat de query zichtbaar is kunt u onderaan de query de “ OFFSET” verhogen van 0 naar 1. Wanneer de query via het pijl-symbool rechtsboven aan opnieuw wordt uitgevoerd verschijnt een nieuwe weergave van de tabel zonder Amsterdam. De resterende plaatsen geven nu meer inzicht in de  transacties.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-5">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-5">
 </query>
 
 ### Maatschappelijke relevantie
@@ -72,7 +72,7 @@ Ook andere gemeenten zoals Rotterdam en Utrecht werken aan een schaderegeling. M
 
 Voorbeeld: In de gemeente Utrecht zijn 81 panden met in totaal een oppervlakte van 13.559 m2 verkocht. Bij 100 euro per m2 is dat ruim 1,3 miljoen euro, te verdelen over de eigenaren of hun nabestaanden.
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-6">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-6">
 </query>
 
 ### Verkoopbedrag versus WOZ-waarde
@@ -96,7 +96,7 @@ Als eerste hebben we ons gebogen over de mogelijke userstories. De volgende kwam
 - Statistieken over totaal aantal verhandelde panden en de waarde ervan
 - Een link naar biografische gegevens en Stolpersteine
 
-De volgende acties hebben we (moeten) doen om de koppeling tussen de 7100 records met informatie over onteigende panden van het NA en de Basisregistratie Adressen en Gebouwen (BAG) van het Kadaster te realiseren. 
+De volgende acties hebben we (moeten) doen om de koppeling tussen de 7100 records met informatie over onteigende panden van het NA en de Basisregistratie Adressen en Gebouwen (BAG) van het Kadaster te realiseren.
 
 Met behulp van OpenRefine waren de adressen al ‘opgepoetst’, maar er bleven nog steeds lastige gevallen over:
 - plaatsnamen met een andere spellingswijze
@@ -107,11 +107,11 @@ Met behulp van OpenRefine waren de adressen al ‘opgepoetst’, maar er bleven 
 
 Handmatig zijn tijdens de High5 160 plaatsnamen gekoppeld aan plaatsnamen in de BAG, een locatie uit Wikidata of aan de gemeentecode.
 
-Met behulp van een script is de Locatieserver gevraagd naar suggesties voor de adressen uit de Verkaufsbücher, zodat die kunnen worden aangevuld met een postcode. Na een eerste actie werden 6923  adressen ‘gematcht’. Transacties uit de Verkaufsbücher met een combinatie van panden zoals Amstel 216-318 of straatnamen die uit twee delen bestaan zoals de Nieuwe Keizersgracht 74 leverden geen betrouwbaar resultaat op. Hiervoor was een tweede actie nodig om de afzonderlijke adressen te genereren. Ruim twee derde van de adressen uit de Verkaufsbücher met een afwijkende schrijfwijze zijn uiteindelijk achterhaald en daarmee te tonen op de kaart. Van de 13051 adressen hebben we er uiteindelijk 10581 gematcht. 
+Met behulp van een script is de Locatieserver gevraagd naar suggesties voor de adressen uit de Verkaufsbücher, zodat die kunnen worden aangevuld met een postcode. Na een eerste actie werden 6923  adressen ‘gematcht’. Transacties uit de Verkaufsbücher met een combinatie van panden zoals Amstel 216-318 of straatnamen die uit twee delen bestaan zoals de Nieuwe Keizersgracht 74 leverden geen betrouwbaar resultaat op. Hiervoor was een tweede actie nodig om de afzonderlijke adressen te genereren. Ruim twee derde van de adressen uit de Verkaufsbücher met een afwijkende schrijfwijze zijn uiteindelijk achterhaald en daarmee te tonen op de kaart. Van de 13051 adressen hebben we er uiteindelijk 10581 gematcht.
 
-Het bleek dat De Construct query die het NA gebruikt om de Verkaufsbücher te maken andere kolomnamen bevatte dan in de dataset zelf. Een header in het csv-bestand gooide roet in het eten. Dit is uiteindelijk gefixt. 
+Het bleek dat De Construct query die het NA gebruikt om de Verkaufsbücher te maken andere kolomnamen bevatte dan in de dataset zelf. Een header in het csv-bestand gooide roet in het eten. Dit is uiteindelijk gefixt.
 
-Controle in de originele scan van de Verkaufsbücher om een afwijkende waarde te controleren. Deze afwijking dook op bij de visualisatie van de relaties (pand, koper, verkoper) op aan de Amstel (no. 216 -318) en bleek bij een extra check op de originele data een typefout te zijn. Het correcte adres betreft Amstel 316 -318. 
+Controle in de originele scan van de Verkaufsbücher om een afwijkende waarde te controleren. Deze afwijking dook op bij de visualisatie van de relaties (pand, koper, verkoper) op aan de Amstel (no. 216 -318) en bleek bij een extra check op de originele data een typefout te zijn. Het correcte adres betreft Amstel 316 -318.
 
 Er is uitgezocht wat de WOZ waarde tegenwoordig is van de onteigende panden per plaats om zo inzichtelijk te krijgen hoeveel de  panden toen onder de daadwerkelijke waarde verkocht zijn. Dit is berekend voor zo’n 60% van alle panden oftewel de 30 gemeenten met de meeste panden.
 

@@ -65,7 +65,7 @@ laagste klasse (t/m € 150.000,-), en energielabel D of hoger.  De
   door de editor te openen en weergave optie “Gallery” te kiezen.</p>
 </div>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-1d"
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-1d"
 </query>
 
 <h2>Casus 2: Herbenutten van schoolgebouwen</h2>
@@ -94,7 +94,7 @@ volgens de BRK.  Dit laatste is van belang omdat het laat zien hoeveel
 bouwgrond er mogelijk vrij zou kunnen komen wanneer een voormalig
 schoolgebouw vrijkomt voor nieuwbouw.</p>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-2b">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-2b">
 </query>
 
 <h3>Bevraging 2C: BRT school én BAG pand met onderwijsfunctie</h3>
@@ -103,7 +103,7 @@ schoolgebouw vrijkomt voor nieuwbouw.</p>
 Slechts één van de BAG panden met een onderwijsfunctie komt ook als
 zodanig in de BRT voor.</p>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/knowledge-graph-2c">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-2c">
 </query>
 
 <!--

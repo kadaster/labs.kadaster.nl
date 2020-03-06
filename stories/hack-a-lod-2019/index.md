@@ -13,7 +13,7 @@ Voor deze Hack-a-LOD zijn we geïnspireerd door het werk van de kunstenaar [Gün
 In Zutphen liggen 131 Stolpersteine. In [Figuur 1](#figuur-1) wordt getoond waar de stenen precies liggen en welke mensen in herinnering worden geroepen.  Deze dataset is door ons als naar Linked Data omgezet en online gepubliceerd.
 
 <figure id="figuur-1">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner/queries/adressen">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/-/queries/adressen">
   </query>
   <figcaption>
     Figuur 1 ― De 131 Stolpersteinen die in Zutphen liggen.
@@ -25,7 +25,7 @@ In Zutphen liggen 131 Stolpersteine. In [Figuur 1](#figuur-1) wordt getoond waar
 Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werden geconfisqueerd door de bezetter en doorverkocht.  In de Verkaufsbücher is gedurende de Tweede Wereldoorlog nauwkeurig geregistreerd welke panden van voornamelijk Joodse eigenaren zijn ‘verkocht’.  We kunnen zien, wanneer de huizen van Joden werden verkocht, maar ook aan wie. Een aantal mensen kocht een flink aantal huizen aan.  De tijdlijn hieronder ([Figuur 2](#figuur-2)) geeft weer wanneer deze huizen werden verkocht. De verkopen zijn niet gelijk verspreid over de oorlogsjaren, maar geclusterd in de tijd. Wat opvallend is, is dat deze clusteringen niet samen vallen met grote razzia's, zoals die van [17/18 november 1942](https://www.omroepgelderland.nl/nieuws/2148359/Jodenjacht-in-Gelderland-de-nacht-dat-honderden-Joden-worden-afgevoerd-naar-Westerbork).
 
 <figure id="figuur-2">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher/queries/timeline-sold-property">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/-/queries/timeline-sold-property">
   </query>
   <figcaption>
     Figuur 2 ― Tijdslijn die aangeeft wanneer huizen zijn verkocht.
@@ -37,7 +37,7 @@ Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werde
 Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbücher krijgen de slachtoffers letterlijk een gezicht.  De biografische gegevens zijn afkomstig uit de dataset van Stolpersteine Zutphen.  Bovendien wordt op de kaart ([Figuur 3](#figuur-3)) duidelijk bij welke onteigende panden de oorspronkelijke eigenaar niet is teruggekeerd en er waarschijnlijk nooit aanspraak is gemaakt op rechtsherstel.
 
 <figure id="figuur-3">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/kaart-zutphen">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/-/queries/kaart-zutphen">
   </query>
   <figcaption>
     Figuur 3 ― Kaart van panden die voorkomen in de Stolpersteine én in de Verkaufsbücher.
@@ -49,7 +49,7 @@ Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbüche
 De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrift bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basisregistratie Adressen en Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar personen die bij de transacties betrokken waren.
 
 <figure id="figuur-4">
-  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
+  <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/-/queries/gallerij-zutphen">
   </query>
   <figcaption>
     Figuur 4 ― Galerij van personen die in de Stolpersteine én in de Verkaufsbücher voorkomen.
