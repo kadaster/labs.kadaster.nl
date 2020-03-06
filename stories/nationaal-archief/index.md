@@ -12,7 +12,7 @@ title: Nationaal Archief Beeldbank
 
 <p>Hieronder tonen we de meest voorkomende locaties die in de Beeldbank zijn vastgelegd.</p>
 
-<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/kadaster-nationaal-archief-1">
+<query data-config-ref="https://triplydb.com/nationaal-archief/-/queries/kadaster-nationaal-archief-1">
 </query>
 
 <h2>Kerken: Beeldbank (Nationaal Archief) & BAG (Kadaster)</h2>
@@ -24,14 +24,14 @@ afbeeldingen van die kerk uit de Beeldbank.</p>
 
 <h3>Sint Bavokerk</h3>
 
-<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/kadaster-nationaal-archief-2">
+<query data-config-ref="https://triplydb.com/nationaal-archief/-/queries/kadaster-nationaal-archief-2">
 </query>
 
 <h2>Galerij</h2>
 
 <p>De Beeldbank van het Nationaal Archief leent zich goed voor het tonen van een galerij De volgende query toont de onderwerpen met de meeste afbeeldingen, samen met het aantal afbeeldingen met dat onderwerp.</p>
 
-<query data-config-ref="https://triplydb.com/nationaal-archief/beeldbank/queries/kadaster-nationaal-archief-3">
+<query data-config-ref="https://triplydb.com/nationaal-archief/-/queries/kadaster-nationaal-archief-3">
 </query>
 
 <h2>Nationaal Archief Beeldbank Browser</h2>
