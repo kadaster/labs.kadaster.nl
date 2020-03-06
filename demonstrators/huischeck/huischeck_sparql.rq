@@ -76,8 +76,8 @@ select * {
     }
   }
 
-  service <https://betalinkeddata.cbs.nl/sparql> {
-    ?wkt geo:sfWithin ?geometry.
+  service <https://api.data.pldn.nl/datasets/cbs/wijken-buurten/services/wijken-buurten-1/sparql> {
+
     _:1 def:nabijheidVoorzieningen_AfstandTotGroteSupermarkt ?supermarkt;
         dimension:regio ?buurt.
     _:2 def:nabijheidVoorzieningen_AfstandTotHuisartsenpraktijk ?huisarts;
@@ -109,6 +109,7 @@ select * {
       geo:hasGeometry ?geometry;
       rdfs:label ?buurtNaam.
   }
+  ?wkt geo:sfWithin ?geometry.
   bind(concat(if(bound(?huisnummertoevoeging),concat('-',str(?huisnummertoevoeging)),''),
               if(bound(?huisletter),concat(' ',str(?huisletter)),'')) as ?huisnummerPlus)
   bind(strdt('''

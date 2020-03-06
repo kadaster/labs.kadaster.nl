@@ -19,7 +19,7 @@ Let's see what names are used to refer to the corresponding administrative level
   <p>You can see the exact query used to retrieve the data by clicking the blue arrow button below this box.  The query is running over the 4 national sparql endpoints of the project and retrieving the different names used for the varying administrative levels.  You can view the returned data in different presentation formats by clicking on the options at the bottom of the query.  The data can also be downloaded in CSV format.</p>
 </div>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q1">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q1-openELS">
 </query>
 
 ## Comparing the structures of administrative division
@@ -31,7 +31,7 @@ Linked Data brings semantic interoperability by means of ontologies. Ontologies 
   <p>Because the data being returning here is numerical, the ‘Google Chart’ option is used by default.  The chart can be customised by clicking on the ‘config chart’ button on the right.</p>
 </div>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q2">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q2-openELS">
 </query>
 
 ## It's linked.  Lets's grab some data
@@ -43,7 +43,7 @@ In the example above, we used the power of linked data to map national administr
   <p>This query can be changed to obtain the alternative languages for other placenames.  Simply substitute <code>'s-Gravenhage</code> for another placename, for example “Amsterdam”, and click on the ‘play arrow’ on the right of the query box.  If the placename is in a different country, and the Dutch language should be requested, that can be added or replace an existing language, in the <code>bind</code> string.</p>
 </div>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q3">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q3-openELS">
 </query>
 
 ## Holy Geographical Names Batman
@@ -71,5 +71,5 @@ In the example below, the following spellings are used:
   <p>Since this query returns geometries (they can be viewed in plain text by selecting the 'Table' option), a map visualisation has been chosen. To see the background map for a specific country (Netherlands is the default), click on the blue arrow beneath and then choose the national background map from the dropdown box. Heatmaps and grouped point representations are also available. Again, the query is editable if you wish to search for another name part.</p>
 </div>
 
-<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q4">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/q4-openELS">
 </query>
