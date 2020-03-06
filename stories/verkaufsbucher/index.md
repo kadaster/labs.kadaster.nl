@@ -24,7 +24,7 @@ Een overzicht van de verhandelde objecten waarvan het adres gevonden is in de Ba
         
 In de hieronder staande kaart wordt voor een specifieke woonplaats weergegeven welke objecten (woningen, bouwland etc.) onteigend zijn. Wanneer je op een marker op de kaart klikt wordt er voor dat object informatie getoond, afkomstig van het Nationaal Archief en van het Kadaster.
 
-We zoomen nu in op Utrecht, maar de query kan aangepast worden naar een willekeurige woonplaats. Dit kan door via de pijl-symbool boven de onderstaande kaart de query open te klappen en op regel 32 de woonplaats aan te passen. Daarna druk je op de play-knop om de nieuwe query te draaien.
+We zoomen nu in op Utrecht, maar de query kan aangepast worden naar een willekeurige woonplaats. Dit kan door via de pijl-symbool boven de onderstaande kaart de query open te klappen en op regel 45 de woonplaats aan te passen. Daarna druk je op de play-knop om de nieuwe query te draaien.
 
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/knowledge-graph/queries/verkaufsbucher-2">
 </query>
@@ -40,7 +40,7 @@ Als je op de kaart een eigenaar bekijkt (<svg height="18" viewBox="0 0 18 18" xm
 
 ### De casus Hermans-Helsloot
 
-Piersma en Kemperman (2105) beschrijven een interessante casus betreffende de onteigening van Joods bezit en de verkoop van panden.
+Piersma en Kemperman (2015) beschrijven een interessante casus betreffende de onteigening van Joods bezit en de verkoop van panden.
 [https://pure.knaw.nl/portal/files/1637622/PiersmaKemperman_2015_OpenstaandeRekeningen.pdf](https://pure.knaw.nl/portal/files/1637622/PiersmaKemperman_2015_OpenstaandeRekeningen.pdf)
 
 "Als gevolg van de ontrechting van Joden ontstond er een levendige tussenhandel in Joods eigendom. Deze handel trok mensen aan van allerlei slag, soms met een louche achtergrond. Dat blijkt uit de dossiers die ten behoeve van hun naoorlogse berechting werden opgemaakt. Een van die tussenhandelaren was de advocaat E.Th.A. (Emile) Hermans. Het was hem voor de oorlog financieel niet voor de wind gegaan, maar met de Duitse bezetting rook hij zijn kansen op de nieuwe markt van geroofd Joods onroerend goed. Met Everout zou hij gedurende de bezettingsjaren goede zaken doen. Hermans was vanaf 1933 lid van de nsb en was een hardliner en een vechtersbaas – in 1935 verloor hij tijdens een vechtpartij in Laren een oog. Sindsdien ging hij met een glazen exemplaar door het leven. Hoewel Hermans na de oorlog zou verklaren dat hij geen ‘Jodenhater’ was, bleek hij niet te beroerd om de Duitsers behulpzaam te zijn bij hun anti-Joodse politiek. [...]  

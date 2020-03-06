@@ -34,7 +34,7 @@ Wanneer Joden werden afgevoerd, kwamen hun huizen leeg te staan. De huizen werde
 
 ## Link tussen Stolpersteine & Verkaufsbücher
 
-Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbücher krijgen de slachtoffers letterlijk een gezicht.  De biografische gegevens zijn afkomstig uit de Stolpersteine, en gecombineerd met foto's afkomstig uit het Erfgoed Centrum Zutphen.  Bovendien wordt op de kaart ([Figuur 3](#figuur-3)) duidelijk bij welke onteigende panden de oorspronkelijke eigenaar niet is teruggekeerd en er waarschijnlijk nooit aanspraak is gemaakt op rechtsherstel.
+Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbücher krijgen de slachtoffers letterlijk een gezicht.  De biografische gegevens zijn afkomstig uit de dataset van Stolpersteine Zutphen.  Bovendien wordt op de kaart ([Figuur 3](#figuur-3)) duidelijk bij welke onteigende panden de oorspronkelijke eigenaar niet is teruggekeerd en er waarschijnlijk nooit aanspraak is gemaakt op rechtsherstel.
 
 <figure id="figuur-3">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/kaart-zutphen">
@@ -46,7 +46,7 @@ Met de koppeling van de Stolpersteine aan verkochte panden uit de Verkaufsbüche
 
 ## Stolpersteine & Verkaufsbücher: Personen
 
-De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrift bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basis Administratie Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar personen die bij de transacties betrokken waren.
+De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden herdacht middels een Struikelsteen, hebben een plaats in de galerij hieronder ([Figuur 4](#figuur-4)). Het bijschrift bevat links, die direct dieper in de Linked Data inleiden. Zo kan men door klikken naar de adressen die gelinkt zijn aan de Basisregistratie Adressen en Gebouwen ([BAG](https://www.geobasisregistraties.nl/basisregistraties/adressen-en-gebouwen)), maar ook op links naar personen die bij de transacties betrokken waren.
 
 <figure id="figuur-4">
   <query data-config-ref="https://data.labs.kadaster.nl/hack-a-lod/hack-a-lod/queries/gallerij-zutphen">
