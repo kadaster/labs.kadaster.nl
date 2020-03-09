@@ -16,137 +16,146 @@ title: Evacuatie datastory
       omgeving van belangrijke locaties. Dit lukt door het huisnummer en adres
       in te voeren in de queries die hieronder staan.
     </p>
-
     <h2>Evacuaties BAG</h2>
     <p>
-      Welke huizen vallen binnen de radius van de calamiteit? En welke huizen
-      staan er het dichtste bij? Dat zijn bijna de altijd een van de eerste
-      vragen die gesteld worden als er evacuatie nodig is. Om deze vragen te
-      beantwoorden is actuele informatie noodzakelijk. Dicht op de bron zitten
-      is een must. Om deze vragen te beantwoorden gebruiken we een SPARQL query
-      die de data direct uit de dataset ophaalt.
+      Welke huizen vallen binnen de radius van de calamiteit?  En
+      welke huizen staan er het dichtste bij?  Dat zijn de eerste
+      vragen die gesteld worden als er een calamiteit in Nederland
+      optreed waarbij evacuatie nodig is.  Om deze vragen te kunnen
+      beantwoorden is actuele informatie essentieel.  Het Kadaster
+      ontsluit steeds meer datasets bij de bron, met behulp van Linked
+      Data.  Één van deze bronnen is de Basisregistratie Adressen en
+      Gebouwen (BAG).  We gebruiken een live database bevraging
+      (SPARQL) om de actuele data op te halen.
     </p>
-        <p>
-          In <a href="#BAG-evacuatieGebouwen">Figuur 1</a> is de kaart te zien met
-          de BAG-gebouwen die binnen het radius vallen. De kleur geeft aan in welke
-          functie het gebouw heeft, volgens de legenda:
-        </p>
-        <ul>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="green"></circle>
-            </svg>
-            Woonfunctie, Kantoorfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="black"></circle>
-            </svg>
-            Sportfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="yellow"></circle>
-            </svg>
-            Bijeenkomstfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="orange"></circle>
-            </svg>
-            Onderwijsfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="blue"></circle>
-            </svg>
-            Winkelfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="white"></circle>
-            </svg>
-            Gezondheidszorgfunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="red"></circle>
-            </svg>
-            Industriefunctie
-          </li>
-          <li>
-            <svg width="12px" height="12px">
-              <circle cx="6" cy="6" r="5" stroke="black" fill="grey"></circle>
-            </svg>
-            Overige functies
-          </li>
-        </ul>
-        <figure id="BAG-evacuatieGebouwen">
-          <query
-            data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/evacuatieBAGkaart/"
-          ></query>
-          <figcaption>
-            Figuur 1 ― kaart met gebouwen uit de BAG binnen het evacuatie gebied.
-          </figcaption>
-        </figure>
-        <br />
     <p>
-      Iedere bevraging kan worden aangepast naar het eigen adres. Hiervoor kunt
-      u de bevraging openen door op de grote blauwe pijl te drukken en naar
-      volgende blok te scrollen:
+      In <a href="#BAG-evacuatieGebouwen">Figuur 1</a> worden de BAG
+      panden getoond die binnen een radius van 1 kilometer rondom een
+      als calamiteit aangemerkt punt liggen.  De kleur geeft de BAG
+      gebruiksfunctie weer.  Deze functie kan van belang zijn tijdens
+      het uitvoeren van een evacuatie.  De kleuren legenda is als
+      volgt:
+    </p>
+    <ul>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="green"></circle>
+        </svg>
+        Woonfunctie, Kantoorfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="black"></circle>
+        </svg>
+        Sportfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="yellow"></circle>
+        </svg>
+        Bijeenkomstfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="orange"></circle>
+        </svg>
+        Onderwijsfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="blue"></circle>
+        </svg>
+        Winkelfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="white"></circle>
+        </svg>
+        Gezondheidszorgfunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="red"></circle>
+        </svg>
+        Industriefunctie
+      </li>
+      <li>
+        <svg width="12px" height="12px">
+          <circle cx="6" cy="6" r="5" stroke="black" fill="grey"></circle>
+        </svg>
+        Overige functies
+      </li>
+    </ul>
+    <figure id="BAG-evacuatieGebouwen">
+      <query
+        data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/evacuatieBAGkaart/"
+        ></query>
+      <figcaption>
+        Figuur 1 ― BAG panden binnen het evacuatie gebied.
+      </figcaption>
+    </figure>
+    <br>
+    <p>
+      Alle bevraging op deze pagina zijn live en kunnen worden
+      aangepast naar een zelf in te voeren adres.  Klik op de blauwe
+      pijl om de SPARQL vraag te tonen.  Scroll in de vraag omlaag tot
+      aan het volgende gedeelte:
     </p>
     <figure id="code-adaptation">
       <pre>
-      <code class="language-sparql">
-      ### ==============================================================================================
-      # Vul hier de locatie van het ongeval en de impactradius in.
-      ### ==============================================================================================
-      # Vul hier de locatie van het ongeval in, op basis van postcode, huisnummer.
-      values (?postcodeOngeluk ?huisNummerOngeluk) {
-        ("7311KZ" 110 )
-      }
-      # Vul de impactradius van het ongeval in kilometers in.
-      bind(1 as ?radius)
-      ### ==============================================================================================
-      </code></pre>
+        <code class="language-sparql">
+          ### ==============================================================================================
+          # Vul hier de locatie van het ongeval en de impactradius in.
+          ### ==============================================================================================
+          # Vul hier de locatie van het ongeval in, op basis van postcode, huisnummer.
+          values (?postcodeOngeluk ?huisNummerOngeluk) {
+            ("7311KZ" 110 )
+          }
+          # Vul de impactradius van het ongeval in kilometers in.
+          bind(1 as ?radius)
+          ### ==============================================================================================
+        </code>
+      </pre>
       <figcaption>
-        Figuur 2A ― Uitleg voor het aanpassen van de queries.
+        Figuur 2 ― Uitleg voor het aanpassen van de queries.
       </figcaption>
     </figure>
     <p>
       Hierin is het mogelijk om je postcode, huisnummer en mogelijk
-      huisnummerLetter in te vullen. Met deze gegevens samen met de radius,
-      wordt het beginpunt van de evacuatie bepaald plus de radius.
+      huisnummerLetter in te vullen.  Met deze gegevens samen met de
+      radius, wordt het beginpunt van de evacuatie bepaald plus de
+      radius.
     </p>
-
     <p>
-      In <a href="#bag-evacuatieGebouwen">Figuur 2</a> beantwoorden we deze
-      vraag door de BAG dataset te bevragen op gebouwen die in het gebied
-      liggen.
+      In <a href="#bag-evacuatieGebouwen">Tabel 1</a> geeft de
+      adressen weer die binnen het evacuatiegebied liggen.  Deze tabel
+      kan als spreadsheet gedownload worden (klik op de blauwe pijl en
+      dan op het download icoon).
     </p>
-
     <figure id="bag-evacuatieGebouwen">
       <query
         data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/bag-evacuatieGebouwen-circle/"
-      ></query>
+        ></query>
       <figcaption>
-        Figuur 2 ― tabel met gebouwen uit de BAG binnen het evacuatie gebied.
+        Tabel 1 ― Tabel met BAG panden die binnen het evacuatiegebied liggen.
+        gebied.
       </figcaption>
     </figure>
     <h2>Evacuaties BRT</h2>
     <p>
-      Niet alleen de BAG heeft informatie over de gebouwen in Nederland, er
-      staat ook gebouw informatie in de BRT. Om een goed overzicht te krijgen
-      welke gebouwen binnen de radius van de calamiteit valt is het noodzakelijk
-      dat deze twee bronnen allebei bevraagd worden. Zodat er een vollediger
-      overzicht gecreeerd kan worden. In de BRT staan niet de individuele huizen
-      centraal zoals dat is gebeurd in de BAG, maar gaat het hier over
-      huizenblokken, sportcentra, etc.
+      Niet alleen de BAG heeft informatie over de gebouwen in
+      Nederland, er staat ook gebouw informatie in de Basisregistratie
+      Topografie (BRT).  Om een goed overzicht te krijgen welke
+      gebouwen binnen de radius van de calamiteit valt is het
+      noodzakelijk dat deze twee bronnen allebei bevraagd worden.  In
+      de BRT staan niet de individuele huizen centraal zoals dat is
+      gebeurd in de BAG, maar gaat het hier over huizenblokken,
+      sportcentra, etc.
     </p>
     <p>
-      In <a href="#brt-evacuatieGebouwen">Figuur 3</a> is de kaart te zien met
-      de BRT-gebouwen die binnen het radius vallen. De kleur geeft aan in welke
-      type gebouw het is, volgens de legenda:
+      In <a href="#brt-evacuatieGebouwen">Figuur 3</a> is de kaart te
+      zien met de BRT gebouwen die binnen de opgegeven radius vallen.
+      De kleur geeft het gebouwtype aan, volgens de legenda:
     </p>
     <ul>
       <li>
@@ -201,30 +210,28 @@ title: Evacuatie datastory
     <figure id="brt-evacuatieGebouwen">
       <query
         data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/evacuatieBRTkaart/"
-      ></query>
+        ></query>
       <figcaption>
-        Figuur 3 ― kaart met gebouwen uit de BRT binnen het evacuatie gebied.
+        Figuur 3 ― Kaart met BRT gebouwen die binnen het evacuatie gebied liggen.
       </figcaption>
     </figure>
-    <br />
-
-
+    <br>
     <figure id="code-adaptation">
       <pre>
-      <code class="language-sparql">
-      ### ==============================================================================================
-      # Vul hier de locatie van het ongeval en de impactradius in.
-      ### ==============================================================================================
-      # Vul hier de locatie van het ongeval in, op basis van postcode, huisnummer.
-      values (?postcodeOngeluk ?huisNummerOngeluk) {
-        ("7311KZ" 110 )
-      }
-      # Vul de impactradius van het ongeval in kilometers in.
-      bind(1 as ?radius)
-      ### ==============================================================================================
+        <code class="language-sparql">
+          ### ==============================================================================================
+          # Vul hier de locatie van het ongeval en de impactradius in.
+          ### ==============================================================================================
+          # Vul hier de locatie van het ongeval in, op basis van postcode, huisnummer.
+          values (?postcodeOngeluk ?huisNummerOngeluk) {
+            ("7311KZ" 110 )
+          }
+          # Vul de impactradius van het ongeval in kilometers in.
+          bind(1 as ?radius)
+          ### ==============================================================================================
       </code></pre>
       <figcaption>
-        Figuur 4A ― Uitleg voor het aanpassen van de queries.
+        Figuur 4 ― Uitleg voor het aanpassen van de vragen.
       </figcaption>
     </figure>
     <p>
@@ -232,23 +239,21 @@ title: Evacuatie datastory
       huisnummerLetter in te vullen. Met deze gegevens samen met de radius,
       wordt het beginpunt van de evacuatie bepaald plus de radius.
     </p>
-
     <p>
-      In <a href="#brt-evacuatieGebouwen">Figuur 4</a> is de lijst te zien met
+      In <a href="#brt-evacuatieGebouwen">Tabel 2</a> is de lijst te zien met
       de BRT-gebouwen die binnen het radius vallen van het evacuatiegebied.
     </p>
     <figure id="brt-evacuatieGebouwen">
       <query
         data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-evacuatieGebouwen/"
-      ></query>
+        ></query>
       <figcaption>
-        Figuur 4 ― tabel met gebouwen uit de BRT binnen het evacuatie gebied.
+        Tabel 2 ― tabel met gebouwen uit de BRT binnen het evacuatie gebied.
       </figcaption>
     </figure>
-
-    <h2>Evacuaties straten</h2>
+    <h2>Evacuatie van straten</h2>
     <p>
-      Als er eenmaal geevacueerd gaat worden is het van belang dat het zo netjes
+      Als er eenmaal geëvacueerd gaat worden is het van belang dat het zo netjes
       mogelijk en geordend gaat. Hierdoor kunnen zo veel mogelijk mensen in
       veiligheid gebracht worden. Om dit in goede banen te leiden is het
       noodzakelijk om te weten welke straten in het getroffen gebied liggen. Om
@@ -257,13 +262,12 @@ title: Evacuatie datastory
       gebied gevonden en gekleurd weergegeven. De straten geven informatie over
       de hoeveelheid gebouwen dat aan die straat staan.
     </p>
-
     <figure id="evacuatieStraten">
       <query
         data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/evacuatieStraten/"
-      ></query>
+        ></query>
       <figcaption>
-        Figuur 5 ― kaart top 750 straatdelen in en rondom het evacuatie gebied.
+        Figuur 5 ― Kaart met de top 750 straatdelen in en rondom het evacuatie gebied.
       </figcaption>
     </figure>
     <h2>Evacuaties Buurten</h2>
@@ -276,11 +280,10 @@ title: Evacuatie datastory
       het getroffen gebied liggen. Zodat deze snel gecommuniceerd kunnen worden
       met de burgers.
     </p>
-
     <figure id="evacuatiebuurten">
       <query
         data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/evacuatiebuurten/"
-      ></query>
+        ></query>
       <figcaption>
         Figuur 6 ― kaart met top 20 buurten rondom het evacuatie gebied.
       </figcaption>
