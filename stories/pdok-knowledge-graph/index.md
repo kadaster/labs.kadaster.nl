@@ -106,7 +106,6 @@ zodanig in de BRT voor.</p>
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-2c">
 </query>
 
-<!--
 <h2>Casus 3: Energielabel verplichting kantoren</h2>
 
 <p>Vanaf 2023 moet ieder kantoorpand in Nederland met een oppervlakte
@@ -192,8 +191,5 @@ aanwezig is.</p>
   kantoren en daarbij behorende energielabels binnen dat pand.</p>
 </div>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="energielabels-aggregatie.rq"
-       data-output="geo3d">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-3">
 </query>
--->
