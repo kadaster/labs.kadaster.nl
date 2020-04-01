@@ -113,8 +113,8 @@ groter dan 100 m² minimaal energielabel C hebben.  Een kantoor dat per
 1 januari 2023 energielabel E of slechter heeft mag dan niet meer als
 zodanig worden gebruikt.  Deze bepaling is een wijziging van het
 Bouwbesluit 2012 en is op 2 november
-2018 <a href="https://zoek.officielebekendmakingen.nl/stb-2018-380.html"
-target="_blank">gepubliceerd in het Staatsblad</a>.
+<!-- 2018 <a href="https://zoek.officielebekendmakingen.nl/stb-2018-380.html"
+target="_blank">gepubliceerd in het Staatsblad</a>. -->
 
 <table class="txt table" style='width:50%'>
   <thead>
@@ -123,57 +123,57 @@ target="_blank">gepubliceerd in het Staatsblad</a>.
   <tbody>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#22b14c" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#22b14c"></circle>
+      </svg>
       </td>
       <td>A, A+, A++, A+++</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#8ff334" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#8ff334"></circle>
+      </svg>
       </td>
       <td>B</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#bdfc2c" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#bdfc2c"></circle>
+      </svg>
       </td>
       <td>C</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#fff200" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#fff200"></circle>
+      </svg>
       </td>
       <td>D</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#ff9a35" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#ff9a35"></circle>
+      </svg>
       </td>
       <td>E</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#ff7f27" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#ff7f27"></circle>
+      </svg>
       </td>
       <td>F</td>
     </tr>
     <tr>
       <td>
-        <svg height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" fill="#ed1c24" r="9">
-        </svg>
+      <svg width="18px" height="18px">
+        <circle cx="9" cy="9" r="9" stroke="black" fill="#ed1c24"></circle>
+      </svg>
       </td>
       <td>G</td>
     </tr>
