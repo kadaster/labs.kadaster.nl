@@ -73,6 +73,6 @@ Voor de Linked Data beschrijvingen wordt gebruik gemaakt van de internationale [
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid-19-overzicht">
   </query>
   <figcaption>
-    Figure 6 ― Overzicht van de statistische verzamelingen (Data Cubes) die worden aangeboden in de [COVID-19](https://data.labs.kadaster.nl/rivm/covid-19) dataset.
+    Figure 6 ― Overzicht van de statistische verzamelingen (Data Cubes) die worden aangeboden in de <a href="https://data.labs.kadaster.nl/rivm/covid-19" target="_blank">COVID-19</a> dataset.
   </figcaption>
 </figure>
