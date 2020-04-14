@@ -7,8 +7,9 @@ title: Corona (COVID-19) Data Story
 
 Deze Data Story voert live bevragingen uit over de Linked Data versie van de Corona statistieken voor Nederland (gepubliceerd in [deze dataset](https://data.labs.kadaster.nl/rivm/covid-19)).
 
-[Figuur 1a](#kaart-a) geeft het aantal Corona ziekenhuisopnames per gemeente weer.  [Figuur 1b](#kaart-b) toont het aantal infecties per gemeente.
+[Figuur 1a](#kaart-a) geeft het aantal Corona ziekenhuisopnames per gemeente weer.
 <!--
+[Figuur 1b](#kaart-b) toont het aantal infecties per gemeente.
 Hier wordt het aantal in het ziekenhuis opgenomen patiënten weegegeven per gemeente waar de patiënten woonachtig zijn.
 -->
 
@@ -20,6 +21,7 @@ Hier wordt het aantal in het ziekenhuis opgenomen patiënten weegegeven per geme
   </figcaption>
 </figure>
 
+<!--
 <figure id="kaart-b">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-infecties-kaart">
   </query>
@@ -27,6 +29,7 @@ Hier wordt het aantal in het ziekenhuis opgenomen patiënten weegegeven per geme
     Figuur 1b ― Overzicht van het aantal infecties per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png">
   </figcaption>
 </figure>
+-->
 
 ## Locatie
 

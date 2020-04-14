@@ -1,14 +1,17 @@
 ---
+banner: /assets/images/covid-19.jpg
 layout: page
 title: Use Case ― Corona (COVID-19)
 ---
 # Use Case: Corona (COVID-19)
 
+
+
 <div class="cards-wrapper">
   <a href="/stories/covid-19/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/rivm.png">
+      <img class="card-image" src="/assets/images/covid-19.jpg">
       <div class="card-title">Corona (COVID-19) Data Story</div>
       <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
     </div>
@@ -24,7 +27,7 @@ title: Use Case ― Corona (COVID-19)
   <a href="https://data.labs.kadaster.nl/rivm/covid-19">
     <div class="card">
       <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/rivm.png">
+      <img class="card-image" src="/assets/images/covid-19.jpg">
       <div class="card-title">RIVM Corona (COVID-19) statistieken</div>
       <div class="card-description">De door het RIVM gepubliceerde Corona statistieken voor Nederland.  Deze worden elke dag geüpdate.</div>
     </div>
