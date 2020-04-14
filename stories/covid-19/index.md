@@ -25,7 +25,7 @@ De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor ho
 </figure>
 
 <figure id="kaart-b">
-  <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-ziekenhuisopnames-kaart">
+  <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-infecties-kaart">
   </query>
   <figcaption>
     Figuur 1b ― Overzicht van het aantal infecties per gemeente.
