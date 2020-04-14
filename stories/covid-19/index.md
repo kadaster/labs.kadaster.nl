@@ -76,6 +76,25 @@ De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor ho
   </figcaption>
 </figure>
 
+## Kadaster data
+
+In het geval van een epidemie is het mogelijk dat ziekenhuizen overbelast raken en capaciteitsproblemen krijgen.  In zulke gevallen kan het interessant zijn om te kijken naar nabijgelegen leegstaande gebouwen van een specifiek type.  [Figuur 6](#leegstaand-hotel-nabij-ziekenhuis) toont het meest nabijgelegen leegstaande hotel per ziekenhuis in Nederland.
+
+<div class="textbox">
+  <h2>Probeer het uit</h2>
+  <p>Open de query door op de blauwe pijl te klikken.  Onderaan in de tekstuele query, verander het getal `offset 0` om een ander resultaat te bekijken.</p>
+</div>
+
+De status van een gebouw (o.a. of het wel of niet leeg staat) wordt door het Kadaster bijgehouden in de [Basisregistratie Adressen en Gebouwen (BAG)](https://data.labs.kadaster.nl/kadaster/bag) en het gebouwtype (o.a. ziekenhuis, hotel) word door het Kadaster bijgehouden in de [Basisregistratie Topografie (BRT)](https://data.labs.kadaster.nl/kadaster/brt).
+
+<figure id="leegstaand-hotel-nabij-ziekenhuis">
+  <query data-config-ref="https://data.labs.kadaster.nl/wouter/-/queries/leegstaande-hotels-nabij-ziekenhuizen">
+  </query>
+  <figcaption>
+    Figuur 6 ― Leegstaand hotel nabij ziekenhuis.
+  </figcaption>
+</figure>
+
 # Appendix
 
 Deze Data Story voert live bevragingen uit over de Linked Data versie van de Corona statistieken voor Nederland: [dataset](https://data.labs.kadaster.nl/rivm/covid-19)
