@@ -12,15 +12,11 @@ Deze Data Story voert live bevragingen uit over de Linked Data versie van de Cor
 Hier wordt het aantal in het ziekenhuis opgenomen patiënten weegegeven per gemeente waar de patiënten woonachtig zijn.
 -->
 
-De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen:
-
-<table><tr><td>minimum</td><td><img src="/assets/images/jet.png"></td><td>maximum</td></tr></table>
-
 <figure id="kaart-a">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-ziekenhuisopnames-kaart">
   </query>
   <figcaption>
-    Figuur 1a ― Overzicht van het aantal ziekenhuisopnames per gemeente.
+    Figuur 1a ― Overzicht van het aantal ziekenhuisopnames per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png">
   </figcaption>
 </figure>
 
@@ -28,7 +24,7 @@ De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor ho
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-infecties-kaart">
   </query>
   <figcaption>
-    Figuur 1b ― Overzicht van het aantal infecties per gemeente.
+    Figuur 1b ― Overzicht van het aantal infecties per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png">
   </figcaption>
 </figure>
 
@@ -54,7 +50,7 @@ De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor ho
 
 ## Leeftijd
 
-[Figuur 4](#leeftijd) geeft een overzicht van het aantal overleden patiënten per leeftijdscategorie.
+[Figuur 4](#leeftijd) geeft een overzicht van het aantal overleden patiënten van 50 jaar of ouder.
 
 <figure id="covid19-leeftijd-gebaseerd">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-leeftijd">
@@ -102,6 +98,8 @@ Deze Data Story voert live bevragingen uit over de Linked Data versie van de Cor
 Deze data zijn gebaseerd op de door het RIVM gepubliceerde statistieken, zoals aangeboden door het [CoronaWatchNL](https://github.com/J535D165/CoronaWatchNL) project.
 
 Voor de Linked Data beschrijvingen wordt gebruik gemaakt van de internationale [DataCube](https://www.w3.org/TR/vocab-data-cube) standaard, in combinatie met door SDMX vastgelegde terminologie.  Dit geldt voor zowel de data, alsook de metadata.  [Figuur 6](#overzicht) toont de verschillende statistische verzamelingen (Data Cubes) die worden aangeboden.
+
+Je kunt zelf (her)gebruik maken van de door ons gepubliceerde Linked Data bronnen.  De queries in de deze Data Story kunnne worden aangepast door op de blauwe pijl te klikken.
 
 <figure id="overzicht">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid-19-overzicht">
