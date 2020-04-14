@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/covid-19.jpg
 layout: page
 title: Use Case ― Corona (COVID-19)
 ---

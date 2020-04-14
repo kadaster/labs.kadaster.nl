@@ -1,4 +1,5 @@
 ---
+banner: /assets/images/covid-19.jpg
 layout: story
 title: Corona (COVID-19) Data Story
 ---
