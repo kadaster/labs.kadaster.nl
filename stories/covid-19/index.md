@@ -99,7 +99,7 @@ Deze data zijn gebaseerd op de door het RIVM gepubliceerde statistieken, zoals a
 
 Voor de Linked Data beschrijvingen wordt gebruik gemaakt van de internationale [DataCube](https://www.w3.org/TR/vocab-data-cube) standaard, in combinatie met door SDMX vastgelegde terminologie.  Dit geldt voor zowel de data, alsook de metadata.  [Figuur 6](#overzicht) toont de verschillende statistische verzamelingen (Data Cubes) die worden aangeboden.
 
-Je kunt zelf (her)gebruik maken van de door ons gepubliceerde Linked Data bronnen.  De queries in de deze Data Story kunnne worden aangepast door op de blauwe pijl te klikken.
+Je kunt zelf (her)gebruik maken van de door ons gepubliceerde Linked Data bronnen.  De queries in de deze Data Story kunnne worden aangepast door op de blauwe pijl te klikken.  Zie ook de <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">Kadaster SPARQL Tutorial</a>.
 
 <figure id="overzicht">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid-19-overzicht">
