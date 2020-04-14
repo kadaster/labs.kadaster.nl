@@ -5,7 +5,12 @@ title: Use Case ― Corona (COVID-19)
 ---
 # Use Case: Corona (COVID-19)
 
-
+In deze use case worden open data bronnen van de Nederlandse overheid
+gecombineerd om aspecten van (de verspreiding van) het Corona virus in
+kaart te brengen.  De gebruikte datasets zijn afkomstig van het
+Rijksinstituut voor Volksgezondheid en Milieu (RIVM), het Centraal
+Bureau voor de Statistiek (CBS), en het Kadaster.  De datasets worden
+met elkaar in verband gebracht door gebruik te maken van Linked Data.
 
 <div class="cards-wrapper">
   <a href="/stories/covid-19/">
@@ -37,7 +42,7 @@ title: Use Case ― Corona (COVID-19)
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
       <div class="card-title">CBS Wijk- en Buurtkaart 2017-2019</div>
-      <div class="card-description">De door het CBS gepubliceerde statistieken voor Nederandse buurten, wijken, en gemeenten.</div>
+      <div class="card-description">De door het CBS gepubliceerde statistieken voor Nederlandse buurten, wijken, en gemeenten.</div>
     </div>
   </a>
 </div>
