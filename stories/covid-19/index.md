@@ -6,9 +6,9 @@ title: Corona (COVID-19) Data Story
 
 # Corona (COVID-19) Data Story
 
-Deze Data Story voert live bevragingen uit op de Linked Data versie van de Corona statistieken voor Nederland (gepubliceerd in [deze dataset](https://data.labs.kadaster.nl/rivm/covid-19)).  Deze statistieken worden dagelijks up-to-date gehouden.
+Deze Data Story voert live bevragingen uit over de Corona statistieken voor Nederland (gepubliceerd in [deze dataset](https://data.labs.kadaster.nl/rivm/covid-19)).  Deze statistieken worden dagelijks up-to-date gehouden.
 
-## Overzicht
+## Landelijk overzicht
 
 [Figuur 1a](#kaart-a) geeft het totale aantal Corona ziekenhuisopnames per gemeente weer.  Hiervoor wordt de gemeente waarin het ziekenhuis gevestigd is gebruikt.  [Figuur 1b](#kaart-b) geeft het aantal infecties per gemeente weer, waarbij de gemeente waarin de geïnfecteerde patiënt woonachtig is is gebruikt.
 
@@ -30,7 +30,7 @@ Deze Data Story voert live bevragingen uit op de Linked Data versie van de Coron
 
 ## Locatie
 
-Het aantal Corona besmettingen verschilt sterk per locatie.  [Figuur 2](#besmettingspercentage) toont de Nederlandse gemeentes met het hoogste Corona besmettingspercentage.  Het aantal besmettingen is gebaseerd op de laatste door het RIVM gepubliceerde statistieken.  Het inwoneraantal, gebruikt om het besmettingspercentage mee vast te stellen, is ontleed aan de [CBS Wijk- en Buurtkaart 2019](https://data.labs.kadaster.nl/cbs/wbk) die eveneens als Linked Data gepubliceerd is.  [Figuur 3](#grootste-gemeenten) toont het aantal Corona infecties voor de 5 grootste gemeenten in Nederland door de tijd heen.  Zoals zichtbaar is in de figuur neemt het aantal besmettingen per gemeente steeds in stapjes toe of af.  Deze ‘getrapte’ weergave is afkomstig uit de brondata, waardoor het soms lijkt alsof verschillende gemeentes hetzelfde aantal besmettingen hebben.
+Het aantal Corona besmettingen verschilt sterk per locatie.  [Figuur 2](#besmettingspercentage) toont de Nederlandse gemeentes met het hoogste Corona besmettingspercentage.  Het aantal besmettingen is gebaseerd op de laatste door het RIVM gepubliceerde statistieken.  Het inwoneraantal, gebruikt om het besmettingspercentage mee vast te stellen, is ontleed aan de [CBS Wijk- en Buurtkaart 2019](https://data.labs.kadaster.nl/cbs/wbk) die eveneens als Linked Data gepubliceerd is.
 
 <figure id="besmettingspercentage">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-besmettingspercentage">
@@ -39,6 +39,8 @@ Het aantal Corona besmettingen verschilt sterk per locatie.  [Figuur 2](#besmett
     Figuur 2 ― Overzicht van de gemeentes met het hoogste besmettingspercentage.
   </figcaption>
 </figure>
+
+[Figuur 3](#grootste-gemeenten) toont het aantal Corona infecties voor de 5 grootste gemeenten in Nederland door de tijd heen.  Zoals zichtbaar is in de figuur neemt het aantal besmettingen per gemeente steeds in stapjes toe of af.  Deze ‘getrapte’ weergave is afkomstig uit de brondata, waardoor het soms lijkt alsof verschillende gemeentes hetzelfde aantal besmettingen hebben.
 
 <figure id="grootste-gemeenten">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-grootste-gemeenten">
@@ -107,7 +109,7 @@ Deze data zijn gebaseerd op de door het RIVM gepubliceerde statistieken, zoals a
 
 Voor de Linked Data beschrijvingen wordt gebruik gemaakt van de internationale [DataCube](https://www.w3.org/TR/vocab-data-cube) standaard, in combinatie met door SDMX vastgelegde terminologie.  Dit geldt voor zowel de data, alsook de metadata.  [Figuur 6](#overzicht) toont de verschillende statistische verzamelingen (Data Cubes) die worden aangeboden.
 
-Je kunt zelf (her)gebruik maken van de door ons gepubliceerde Linked Data bronnen.  De queries in de deze Data Story kunnne worden aangepast door op de blauwe pijl te klikken.  Zie ook de <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">Kadaster SPARQL Tutorial</a>.
+Je kunt zelf (her)gebruik maken van de door ons gepubliceerde Linked Data bronnen.  De queries in de deze Data Story kunnen worden aangepast door op de blauwe pijl te klikken.  Zie ook de <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">Kadaster SPARQL Tutorial</a>.
 
 <figure id="overzicht">
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid-19-overzicht">
