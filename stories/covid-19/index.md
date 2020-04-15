@@ -82,7 +82,7 @@ In het geval van een epidemie is het mogelijk dat ziekenhuizen overbelast raken 
 </div>
 
 <figure id="hotel">
-  <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/leegstaande-hotels-nabij-ziekenhuizen">
+  <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/hotels-nabij-ziekenhuizen">
   </query>
   <figcaption>
     Figuur 6 ― Hotels nabij ziekenhuizen.
