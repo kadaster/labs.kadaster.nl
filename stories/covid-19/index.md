@@ -64,7 +64,7 @@ Het aantal Corona besmettingen verschilt sterk per locatie.  [Figuur 2](#besmett
 
 ## Sekse
 
-[Figuur 5](#sekse) toont het verschil in het aantal ziekenhuisopnames en overlijdensgevallen tussen mannen en vrouwen.
+[Figuur 5](#sekse) toont het verschil in het aantal overlijdensgevallen tussen mannen en vrouwen.
 
 <figure>
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-sekse">
