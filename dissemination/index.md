@@ -8,6 +8,8 @@ title: Dissemination
 : Erwin Folmer & Wouter Beek, 26 November 2019.
 
 # Publicaties
+Business Rationale for Linked Data at Governments: a case study at the Netherlands’ Kadaster Data Platform
+: Erwin Folmer, Stanislav Ronzhin, Jos Van Hillegersberg, Wouter Beek, Rob Lemmens. In: _Access_,  [online toegang](https://ieeexplore.ieee.org/abstract/document/9051837).
 
 Kadaster Knowledge Graph: Beyond the Fifth Star of Open Data
 : Stanislav Ronzhin, Erwin Folmer, Pano Maria, Marco Brattinga, Wouter Beek, Rob Lemmens, Rein van't Veer.  In: _Information_, Vol. 10, No. 10, [online toegang](https://www.mdpi.com/2078-2489/10/10/310).
