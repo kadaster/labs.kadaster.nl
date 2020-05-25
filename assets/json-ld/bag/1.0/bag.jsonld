@@ -1,0 +1,41 @@
+{
+    "@version": 1.1,
+    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "beginGeldigheid": {
+      "@type": "xsd:date"
+    },
+    "naamOpenbareRuimte": {
+      "@language": "nl"
+    },
+    "naamWoonplaats": {
+      "@language": "nl"
+    },
+    "nummeraanduiding" : {
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/",
+        "identificatiecode": "@id"
+      }
+    },
+    "OpenbareRuimte": {
+      "@id": "openbareRuimte",
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
+        "identificatiecode": "@id"
+      }
+    },
+    "status": {
+      "@language": "nl"
+    },
+    "woonplaats": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "data": "@nest"
+  }
+}
