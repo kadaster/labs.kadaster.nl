@@ -1,4 +1,4 @@
-{
+{ "@context": {
     "@version": 1.1,
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
     "beginGeldigheid": {
@@ -37,4 +37,5 @@
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "data": "@nest"
+}
 }
