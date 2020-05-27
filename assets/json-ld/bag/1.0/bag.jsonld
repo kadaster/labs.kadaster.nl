@@ -39,6 +39,14 @@
         "identificatiecode": "@id"
       }
     },
+    "bijbehorendeWoonplaats": {
+      "@type": "@id", 
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
+      
+    },
     "Pand": {
       "@type": "@id",
       "@context": {
