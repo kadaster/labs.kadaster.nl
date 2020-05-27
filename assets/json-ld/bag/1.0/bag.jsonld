@@ -5,6 +5,9 @@
     "beginGeldigheid": {
       "@type": "xsd:date"
     },
+    "bijbehorendeWoonplaats" : {
+      "@type": "xsd:date"
+    },
     "naamOpenbareRuimte": {
       "@language": "nl"
     },
