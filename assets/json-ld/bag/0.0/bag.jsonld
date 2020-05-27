@@ -1,0 +1,47 @@
+  
+{ 
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "beginGeldigheid": {
+      "@type": "xsd:date"
+    },
+    "bijbehorendeWoonplaats" : {
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
+      }
+    },
+    "naamOpenbareRuimte": {
+      "@language": "nl"
+    },
+    "naamWoonplaats": {
+      "@language": "nl"
+    },
+    "nummeraanduiding" : {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      }
+    },
+    "OpenbareRuimte": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+      }
+    },
+    "status": {
+      "@language": "nl"
+    },
+    "woonplaats": {
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
+      }
+    },
+    "Pand": {
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/pand/",
+        "identificatiecode": "@id"
+      }
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "data": "@nest"
+  }
+}
