@@ -3,6 +3,7 @@
   "@context": {
     "@version": 1.1,
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "identificatiecode" : null,
     "beginGeldigheid": {
       "@type": "xsd:date"
     },
