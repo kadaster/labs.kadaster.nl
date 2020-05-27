@@ -37,6 +37,7 @@
       }
     },
     "bijbehorendeWoonplaats": {
+      "@id": "Woonplaats",
       "@type": "@id",
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
