@@ -24,6 +24,9 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
         "identificatiecode": "@id"
+            "bijbehorendeWoonplaats": {
+      "@reverse": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
+    },
       }
     },
     "status": {
@@ -35,9 +38,6 @@
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
         "identificatiecode": "@id"
       }
-    },
-    "bijbehorendeWoonplaats": {
-      "@reverse": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
     },
     "Pand": {
       "@type": "@id",
