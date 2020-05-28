@@ -1,5 +1,5 @@
 {
-  "@context": "https://labs.kadaster.nl/assets/json-ld/bag/0.0/bag.jsonld",
+  "@context": "https://labs.kadaster.nl/assets/json-ld/bag/1.0/bag.jsonld",
   "data": {
     "woonplaats": [
       {
