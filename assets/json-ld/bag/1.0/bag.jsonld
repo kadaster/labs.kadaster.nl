@@ -12,7 +12,7 @@
         "identificatiecode": "@id"
       }
     },
-    "bijeenkostfunctie": "VerblijfsobjectBijeenkomstfunctie",
+    "bijeenkomstfunctie": "VerblijfsobjectBijeenkomstfunctie",
     "celfunctie": "VerblijfsobjectCelfunctie",
     "data": "@nest",
     "gebruiksdoel": "@type",
