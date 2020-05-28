@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "adresseerbaarobject": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/adresseerbaar-object/",
+        "identificatiecode": "@id"
+      }
+    },
+    "beginGeldigheid": {
+      "@type": "xsd:date"
+    },
+    "bijeenkomstfunctie": "VerblijfsobjectBijeenkomstfunctie",
+    "celfunctie": "VerblijfsobjectCelfunctie",
+    "data": "@nest",
+    "gebruiksdoel": "@type",
+    "gezondheidszorgfunctie": "VerblijfsobjectGezondheidszorgfunctie",
+    "industriefunctie" : "VerblijfsobjectIndustriefunctie",
+    "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
+    "logiesfunctie": "VerblijfsobjectLogiesfunctie",
+    "naamOpenbareRuimte": {
+      "@language": "nl"
+    },
+    "naamWoonplaats": {
+      "@language": "nl"
+    },
+    "nummeraanduiding" : {
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/",
+        "identificatiecode": "@id",
+            "bijbehorendeWoonplaats" : {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
+    }
+      }
+    },
+    "onderwijsfunctie": "VerblijfsobjectOnderwijsfunctie",
+    "openbareRuimte": {
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
+        "identificatiecode": "@id"
+      }
+    },
+    "overigegebruiksfunctie":"VerblijfsobjectOverigeGebruiksfunctie",
+    "pand": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/pand/",
+        "identificatiecode": "@id"
+      }
+    },
+    "sportfunctie": "VerblijfsobjectSportfunctie",
+    "status": {
+      "@language": "nl"
+    },
+    "winkelfunctie": "VerblijfsobjectWinkelfunctie",
+    "woonfunctie": "VerblijfsobjectWoonfunctie",
+    "woonplaats": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}
