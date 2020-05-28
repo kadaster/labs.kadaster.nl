@@ -1,0 +1,41 @@
+{
+  "@context": "https://labs.kadaster.nl/assets/json-ld/bag/0.0/bag.jsonld",
+  "data": {
+    "woonplaats": [
+      {
+        "@type": "Woonplaats",
+        "identificatiecode": "2254",
+        "beginGeldigheid": "2012-06-15",
+        "eindGeldigheid": null,
+        "openbareRuimte": [
+          {
+            "@type": "OpenbareRuimte",
+            "identificatiecode": "0200300000225441",
+            "bijbehorendeWoonplaats": [
+              {
+                "@type": "Woonplaats",
+                "identificatiecode": "2254",
+                "beginGeldigheid": "2012-06-15",
+                "eindGeldigheid": null,
+                "gemeenteCode": "0200"
+              }
+            ]
+          },
+          {
+            "@type": "OpenbareRuimte",
+            "identificatiecode": "0200300002254297",
+            "bijbehorendeWoonplaats": [
+              {
+                "@type": "Woonplaats",
+                "identificatiecode": "2254",
+                "beginGeldigheid": "2012-06-15",
+                "eindGeldigheid": null,
+                "gemeenteCode": "0200"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
