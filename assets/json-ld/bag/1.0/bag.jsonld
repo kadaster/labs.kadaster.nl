@@ -21,8 +21,7 @@
         "identificatiecode": "@id"
       }
     },
-    "OpenbareRuimte": {
-      "@id": "openbareRuimte",
+    "openbareRuimte": {
       "@type" : "@id",
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
@@ -39,8 +38,7 @@
         "identificatiecode": "@id"
       }
     },
-
-    "Pand": {
+    "pand": {
       "@type": "@id",
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/pand/",
