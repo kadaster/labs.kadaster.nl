@@ -21,11 +21,13 @@
     "nummeraanduiding" : {
       "@context": {
         "@base": "https://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+        
       }
     },
     "OpenbareRuimte": {
       "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
+        "@type" : "type"
       }
     },
     "status": {
