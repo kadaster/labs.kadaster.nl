@@ -6,7 +6,11 @@
       "@type": "xsd:date"
     },
     "bijbehorendeWoonplaats" : {
-      "@type": "xsd:date"
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
     },
     "data": "@nest",
     "gebruiksdoel": "@type",
