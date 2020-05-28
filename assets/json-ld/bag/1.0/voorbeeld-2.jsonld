@@ -1,0 +1,1692 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "beginGeldigheid": {
+      "@type": "xsd:date"
+    },
+    "bijbehorendeWoonplaats" : {
+      "@type": "xsd:date"
+    },
+    "data": "@nest",
+    "naamOpenbareRuimte": {
+      "@language": "nl"
+    },
+    "naamWoonplaats": {
+      "@language": "nl"
+    },
+    "nummeraanduiding" : {
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/",
+        "identificatiecode": "@id"
+      }
+    },
+    "openbareRuimte": {
+      "@type" : "@id",
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
+        "identificatiecode": "@id"
+      }
+    },
+    "pand": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/pand/",
+        "identificatiecode": "@id"
+      }
+    },
+    "status": {
+      "@language": "nl"
+    },
+    "woonplaats": {
+      "@type": "@id",
+      "@context": {
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "identificatiecode": "@id"
+      }
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "data": {
+    "woonplaats": [
+      {
+        "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+        "identificatiecode": "2254",
+        "beginGeldigheid": "2012-06-15",
+        "eindGeldigheid": null,
+        "OpenbareRuimte": [
+          {
+            "@type": "https://bag.basisregistraties.overheid.nl/def/bag#OpenbareRuimte",
+            "identificatiecode": "0200300000225441",
+            "Nummeraanduiding": [
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000000605",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000005385",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000068645",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000005386",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000000607",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000005390",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              }
+            ],
+            "bijbehorendeWoonplaats": [
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                "identificatiecode": "2254",
+                "beginGeldigheid": "2012-06-15",
+                "eindGeldigheid": null,
+                "gemeenteCode": "0200"
+              }
+            ]
+          },
+          {
+            "@type": "https://bag.basisregistraties.overheid.nl/def/bag#OpenbareRuimte",
+            "identificatiecode": "0200300002254297",
+            "Nummeraanduiding": [
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000004994",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000474200",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie",
+                    "winkelfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000099665",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003926174",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000004995",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021741",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000004996",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000474201",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000004997",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021742",
+                  "gebruiksdoel": [
+                    "bijeenkomstfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000004999",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021745",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005000",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021751",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005003",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021754",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005005",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021763",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005006",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021765",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005004",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021772",
+                  "gebruiksdoel": [
+                    "winkelfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005007",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021773",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005008",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021777",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005009",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021778",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005011",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021785",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005012",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021787",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005013",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021788",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005017",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021811",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000090413",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003906717",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005014",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021791",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005016",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021798",
+                  "gebruiksdoel": [
+                    "bijeenkomstfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005015",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021799",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005018",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021803",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005019",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021817",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005020",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021824",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "winkelfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005021",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021828",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005022",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021833",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005023",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021835",
+                  "gebruiksdoel": [
+                    "onderwijsfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005024",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021837",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005025",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021838",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005028",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021858",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000066356",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021839",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000066357",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021841",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000066358",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021846",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005026",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021843",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005027",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021853",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005029",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021869",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005030",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021879",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005032",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021882",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005034",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021883",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005035",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021888",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005037",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021891",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005038",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021894",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000086559",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003900465",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000081223",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021898",
+                  "gebruiksdoel": [
+                    "overige gebruiksfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000086558",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003900464",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005040",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021907",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005041",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021916",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005042",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021919",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005043",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021924",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005044",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021925",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005045",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021926",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005046",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021930",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005047",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021936",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005049",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021940",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005050",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021949",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005054",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021952",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005052",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021954",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005056",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021955",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005055",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021958",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005057",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021963",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005059",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021973",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005061",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021984",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005064",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022003",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "industriefunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005065",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022008",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000076826",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022024",
+                  "gebruiksdoel": [
+                    "industriefunctie",
+                    "kantoorfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000094046",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003912837",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000079675",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021933",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000079676",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021939",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000079678",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022027",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000079677",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022048",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000084209",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021943",
+                  "gebruiksdoel": [
+                    "overige gebruiksfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000084210",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021951",
+                  "gebruiksdoel": [
+                    "overige gebruiksfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000090373",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003906642",
+                  "gebruiksdoel": [
+                    "overige gebruiksfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000090376",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010003906645",
+                  "gebruiksdoel": [
+                    "overige gebruiksfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000068067",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021968",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000068068",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021969",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000067919",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021988",
+                  "gebruiksdoel": [
+                    "woonfunctie",
+                    "logiesfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000067918",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000021995",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005066",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022009",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005067",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022014",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005068",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022020",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005070",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022037",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000005072",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022054",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              },
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+                "identificatiecode": "0200200000082502",
+                "bijbehorendeWoonplaats": [
+                  {
+                    "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                    "identificatiecode": "2254",
+                    "naamWoonplaats": "Nog Niet"
+                  }
+                ],
+                "adresseerbaarobject": {
+                  "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject",
+                  "identificatiecode": "0200010000022022",
+                  "gebruiksdoel": [
+                    "woonfunctie"
+                  ]
+                }
+              }
+            ],
+            "bijbehorendeWoonplaats": [
+              {
+                "@type": "https://bag.basisregistraties.overheid.nl/def/bag#Woonplaats",
+                "identificatiecode": "2254",
+                "beginGeldigheid": "2012-06-15",
+                "eindGeldigheid": null,
+                "gemeenteCode": "0200"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

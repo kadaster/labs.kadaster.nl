@@ -9,6 +9,7 @@
       "@type": "xsd:date"
     },
     "data": "@nest",
+    "gebruiksdoel": "@type",
     "naamOpenbareRuimte": {
       "@language": "nl"
     },
