@@ -40,6 +40,15 @@
     "status": {
       "@language": "nl"
     },
+    "bijeenkostfunctie": "VerblijfsobjectBijeenkomstfunctie",
+    "celfunctie": "VerblijfsobjectCelfunctie", 
+    "gezondheidszorgfunctie": "VerblijfsobjectGezondheidszorgfunctie",
+    "industriefunctie" : "VerblijfsobjectIndustriefunctie", 
+    "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
+    "logiesfunctie": "VerblijfsobjectLogiesfunctie", 
+    "onderwijsfunctie" : "VerblijfsobjectOnderwijsfunctie", 
+    "overigegebruiksfunctie":"VerblijfsobjectOverigeGebruiksfunctie",
+    "sportfunctie": "VerblijfsobjectSportfunctie", 
     "winkelfunctie": "VerblijfsobjectWinkelfunctie",
     "woonfunctie": "VerblijfsobjectWoonfunctie",
     "woonplaats": {
