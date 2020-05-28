@@ -16,6 +16,7 @@ We delen ze op in vier categorieen:
 
 2. Analytics (eenvoudige UI)
 * inspiratie waarstaatjegemeente.nl
+* Facetcheck ook als filterdownload tool
 
 
 3. Advanced Analytics
