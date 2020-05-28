@@ -5,7 +5,7 @@
     "adresseerbaarobject": {
       "@type": "@id",
       "@context": {
-        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/adresseerbaar-object/",
         "identificatiecode": "@id"
       }
     },
