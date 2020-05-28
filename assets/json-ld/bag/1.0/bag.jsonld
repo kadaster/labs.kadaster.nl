@@ -23,7 +23,6 @@
       }
     },
     "openbareRuimte": {
-      "@id": "openbareRuimte",
       "@type" : "@id",
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
