@@ -10,6 +10,9 @@
     },
     "data": "@nest",
     "gebruiksdoel": "@type",
+    "industriefunctie": "VerblijfsobjectIndustriefunctie",
+    "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
+    "logiesfunctie": "VerblijfsobjectLogiesfunctie",
     "naamOpenbareRuimte": {
       "@language": "nl"
     },
@@ -23,6 +26,7 @@
         "identificatiecode": "@id"
       }
     },
+    "onderwijsfunctie": "VerblijfsobjectOnderwijsfunctie",
     "openbareRuimte": {
       "@type" : "@id",
       "@context": {
@@ -37,6 +41,7 @@
         "identificatiecode": "@id"
       }
     },
+    "sportfunctie": "VerblijfsobjectSportfunctie",
     "status": {
       "@language": "nl"
     },
