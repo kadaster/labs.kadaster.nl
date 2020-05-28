@@ -40,6 +40,7 @@
     "status": {
       "@language": "nl"
     },
+    "woonfunctie": "VerblijfsobjectWoonfunctie",
     "woonplaats": {
       "@type": "@id",
       "@context": {
