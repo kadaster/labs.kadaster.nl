@@ -12,9 +12,12 @@
         "identificatiecode": "@id"
       }
     },
+    "bijeenkostfunctie": "VerblijfsobjectBijeenkomstfunctie",
+    "celfunctie": "VerblijfsobjectCelfunctie",
     "data": "@nest",
     "gebruiksdoel": "@type",
-    "industriefunctie": "VerblijfsobjectIndustriefunctie",
+    "gezondheidszorgfunctie": "VerblijfsobjectGezondheidszorgfunctie",
+    "industriefunctie" : "VerblijfsobjectIndustriefunctie",
     "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
     "logiesfunctie": "VerblijfsobjectLogiesfunctie",
     "naamOpenbareRuimte": {
@@ -38,6 +41,7 @@
         "identificatiecode": "@id"
       }
     },
+    "overigegebruiksfunctie":"VerblijfsobjectOverigeGebruiksfunctie",
     "pand": {
       "@type": "@id",
       "@context": {
