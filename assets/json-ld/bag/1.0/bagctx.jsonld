@@ -1,7 +1,32 @@
 {
   "@context": {
     "@version": 1.1,
+    "Feature": "https://purl.org/geojson/vocab#Feature",
+    "FeatureCollection": "https://purl.org/geojson/vocab#FeatureCollection",
+    "GeometryCollection": "https://purl.org/geojson/vocab#GeometryCollection",
+    "LineString": "https://purl.org/geojson/vocab#LineString",
+    "MultiLineString": "https://purl.org/geojson/vocab#MultiLineString",
+    "MultiPoint": "https://purl.org/geojson/vocab#MultiPoint",
+    "MultiPolygon": "https://purl.org/geojson/vocab#MultiPolygon",
+    "Point": "https://purl.org/geojson/vocab#Point",
+    "Polygon": "https://purl.org/geojson/vocab#Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "https://purl.org/geojson/vocab#bbox"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "https://purl.org/geojson/vocab#coordinates"
+    },
+    "features": {
+      "@container": "@set",
+      "@id": "https://purl.org/geojson/vocab#features"
+    },
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
+    "geometriePand": "https://purl.org/geojson/vocab#:geometry",
+    "geomtrieLigplaats": "https://purl.org/geojson/vocab#geometry",
+    "geomtrieStandplaats": "https://purl.org/geojson/vocab#:geometry",
+    "geomtrieVerblijfsobject": "https://purl.org/geojson/vocab#:geometry",
     "adresseerbaarobject": {
       "@type": "@id",
       "@context": {
@@ -31,13 +56,13 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/",
         "identificatiecode": "@id",
-            "bijbehorendeWoonplaats" : {
-      "@type": "@id",
-      "@context": {
-        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
-        "identificatiecode": "@id"
-      }
-    }
+        "bijbehorendeWoonplaats" : {
+             "@type": "@id",
+             "@context": {
+                "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+                 "identificatiecode": "@id"
+             }
+        }
       }
     },
     "onderwijsfunctie": "VerblijfsobjectOnderwijsfunctie",
@@ -45,7 +70,14 @@
       "@type" : "@id",
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
-        "identificatiecode": "@id"
+        "identificatiecode": "@id",
+        "bijbehorendeWoonplaats" : {
+            "@type": "@id",
+            "@context": {
+                "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+                "identificatiecode": "@id"
+            }
+        }
       }
     },
     "overigegebruiksfunctie":"VerblijfsobjectOverigeGebruiksfunctie",
@@ -66,7 +98,13 @@
       "@type": "@id",
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
-        "identificatiecode": "@id"
+        "identificatiecode": "@id",
+        "geometrieWoonplaats": {
+          "@type": "@id",
+          "@context" : {
+          "@base": "https://purl.org/geojson/vocab#geometry"
+          }
+        }
       }
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
