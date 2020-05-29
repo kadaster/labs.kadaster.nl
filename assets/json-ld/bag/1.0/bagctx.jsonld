@@ -25,7 +25,6 @@
     },
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
     "geometriePand": "geojson:geometry",
-    "geometrieWoonplaats": "geojson:geometry",
     "geomtrieLigplaats": "geojson:geometry",
     "geomtrieStandplaats": "geojson:geometry",
     "geomtrieVerblijfsobject": "geojson:geometry",
@@ -100,7 +99,8 @@
       "@type": "@id",
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
-        "identificatiecode": "@id"
+        "identificatiecode": "@id",
+        "geometrieWoonplaats": "geojson:geometry",
       }
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
