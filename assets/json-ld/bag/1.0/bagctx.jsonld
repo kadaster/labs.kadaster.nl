@@ -3,7 +3,6 @@
     "@version": 1.1,
     "geojson": "https://purl.org/geojson/vocab#", 
     "Feature": "geojson:Feature",
-     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
     "LineString": "geojson:LineString",
@@ -24,12 +23,12 @@
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
     "geometriePand": "geojson:geometry",
     "geometrieWoonplaats": "geojson:geometry",
     "geomtrieLigplaats": "geojson:geometry",
     "geomtrieStandplaats": "geojson:geometry",
     "geomtrieVerblijfsobject": "geojson:geometry",
-    "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
     "adresseerbaarobject": {
       "@type": "@id",
       "@context": {
