@@ -31,13 +31,13 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/",
         "identificatiecode": "@id",
-            "bijbehorendeWoonplaats" : {
-      "@type": "@id",
-      "@context": {
-        "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
-        "identificatiecode": "@id"
-      }
-    }
+        "bijbehorendeWoonplaats" : {
+             "@type": "@id",
+             "@context": {
+                "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+                 "identificatiecode": "@id"
+             }
+        }
       }
     },
     "onderwijsfunctie": "VerblijfsobjectOnderwijsfunctie",
@@ -45,7 +45,14 @@
       "@type" : "@id",
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
-        "identificatiecode": "@id"
+        "identificatiecode": "@id",
+        "bijbehorendeWoonplaats" : {
+            "@type": "@id",
+            "@context": {
+                "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
+                "identificatiecode": "@id"
+            }
+        }
       }
     },
     "overigegebruiksfunctie":"VerblijfsobjectOverigeGebruiksfunctie",
