@@ -100,7 +100,7 @@
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
         "identificatiecode": "@id",
-        "geometrieWoonplaats": "geojson:geometry",
+        "geometrieWoonplaats": "geojson:geometry"
       }
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
