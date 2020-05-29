@@ -1,33 +1,32 @@
 {
   "@context": {
     "@version": 1.1,
-    "geojson": "https://purl.org/geojson/vocab#", 
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
+    "Feature": "https://purl.org/geojson/vocab#Feature",
+    "FeatureCollection": "https://purl.org/geojson/vocab#FeatureCollection",
+    "GeometryCollection": "https://purl.org/geojson/vocab#GeometryCollection",
+    "LineString": "https://purl.org/geojson/vocab#LineString",
+    "MultiLineString": "https://purl.org/geojson/vocab#MultiLineString",
+    "MultiPoint": "https://purl.org/geojson/vocab#MultiPoint",
+    "MultiPolygon": "https://purl.org/geojson/vocab#MultiPolygon",
+    "Point": "https://purl.org/geojson/vocab#Point",
+    "Polygon": "https://purl.org/geojson/vocab#Polygon",
     "bbox": {
       "@container": "@list",
-      "@id": "geojson:bbox"
+      "@id": "https://purl.org/geojson/vocab#bbox"
     },
     "coordinates": {
       "@container": "@list",
-      "@id": "geojson:coordinates"
+      "@id": "https://purl.org/geojson/vocab#coordinates"
     },
     "features": {
       "@container": "@set",
-      "@id": "geojson:features"
+      "@id": "https://purl.org/geojson/vocab#features"
     },
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
-    "geometriePand": "geojson:geometry",
-    "geomtrieLigplaats": "geojson:geometry",
-    "geomtrieStandplaats": "geojson:geometry",
-    "geomtrieVerblijfsobject": "geojson:geometry",
+    "geometriePand": "https://purl.org/geojson/vocab#:geometry",
+    "geomtrieLigplaats": "https://purl.org/geojson/vocab#geometry",
+    "geomtrieStandplaats": "https://purl.org/geojson/vocab#:geometry",
+    "geomtrieVerblijfsobject": "https://purl.org/geojson/vocab#:geometry",
     "adresseerbaarobject": {
       "@type": "@id",
       "@context": {
