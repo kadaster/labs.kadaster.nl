@@ -18,6 +18,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
     </div>
   </a>
+  <a href="./bag-selectie/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/kadaster-logo-full.png">
+      <div class="card-title">BAG data selectie datastory</div>
+      <div class="card-description">Een Data Story die laat zien hoe je op verschillende manieren BAG data kan selecteren.</div>
+    </div>
+  </a>
   <a href="./bgt-high3/index.html">
     <div class="card">
       <div class="card-type">Story</div>
