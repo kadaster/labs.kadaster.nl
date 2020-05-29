@@ -22,7 +22,14 @@
     },
     "bijeenkomstfunctie": "VerblijfsobjectBijeenkomstfunctie",
     "celfunctie": "VerblijfsobjectCelfunctie",
+    "coordinates": {
+      "type": "@type",
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
     "data": "@nest",
+    "geojson": "https://purl.org/geojson/vocab#",
+    "geometrieWoonplaats": "geojson:geometry",
     "gezondheidszorgfunctie": "VerblijfsobjectGezondheidszorgfunctie",
     "industriefunctie" : "VerblijfsobjectIndustriefunctie",
     "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
