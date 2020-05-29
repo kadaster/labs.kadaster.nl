@@ -99,7 +99,12 @@
       "@context": {
         "@base" : "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/",
         "identificatiecode": "@id",
-        "geometrieWoonplaats": "https://purl.org/geojson/vocab#geometry"
+        "geometrieWoonplaats": {
+          "@type": "@id",
+          "@context" : {
+          "@base": "https://purl.org/geojson/vocab#geometry"
+          }
+        }
       }
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
