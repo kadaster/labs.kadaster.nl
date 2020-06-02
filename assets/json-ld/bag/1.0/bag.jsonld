@@ -3,6 +3,14 @@
     "@version": 1.1,
     "@vocab": "http://bag.basisregistraties.overheid.nl/def/bag#",
     "gebruiksdoel": "@type",
+    "geometrieWoonplaats": "geojson:geometry",
+    "type": "@type",
+
+    "Polygon": "geojson:Polygon",
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
     "adresseerbaarobject": {
       "@type": "@id",
       "@context": {
@@ -23,6 +31,7 @@
     "bijeenkomstfunctie": "VerblijfsobjectBijeenkomstfunctie",
     "celfunctie": "VerblijfsobjectCelfunctie",
     "data": "@nest",
+    "geojson": "https://purl.org/geojson/vocab#",
     "gezondheidszorgfunctie": "VerblijfsobjectGezondheidszorgfunctie",
     "industriefunctie" : "VerblijfsobjectIndustriefunctie",
     "kantoorfunctie": "VerblijfsobjectKantoorfunctie",
