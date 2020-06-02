@@ -5,7 +5,7 @@ title: Verkaufsbücher - Nationaal Archief
 
 # Verkaufsbücher - Nationaal Archief
 
-Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. De administratie hiervan staat in de zogeheten Verkaufsbücher die het Nationaal Archief bewaart. De bijgehouden administratie in de Verkaufsbücher bevat  7107 objecten: panden, bouwkavels, bos en heidegrond zijn te herleiden tot 1891 individuele (veelal Joodse) eigenaren waaruit - zoals het een gedegen administratie betaamt - onder andere naam eigenaar, straatnaam en woonplaats zijn te herleiden. Daar zijn de adressen en de namen van de betrokken notarissen en oorlogskopers en de verkoopprijzen van het onteigende pand toegevoegd.
+Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. De administratie hiervan staat in de zogeheten Verkaufsbücher die het Nationaal Archief bewaart. De bijgehouden administratie in de Verkaufsbücher bevat 7107 objecten: panden, bouwkavels, bos en heidegrond zijn te herleiden tot 1891 individuele (veelal Joodse) eigenaren waaruit - zoals het een gedegen administratie betaamt - onder andere naam eigenaar, straatnaam en woonplaats zijn te herleiden. Daar zijn de adressen en de namen van de betrokken notarissen en oorlogskopers en de verkoopprijzen van het onteigende pand toegevoegd. De 7107 panden zijn niet alle door de Duitsers geroofde panden. Het zijn er veel meer maar deze zijn niet in de Verkaufsbücher geadministreerd. Ook heeft het Nationaal Archief niet alle Verkaufsbücher in haar collectie omdat deze tijdens of na de oorlog vernietigd zijn.
 
 ![verkaufsbucher](Verkaufsbuch_record_Amstel_316-318.jpg)
 
@@ -65,12 +65,8 @@ In de tabel is Amsterdam dominant aanwezig waardoor inzicht in de andere plaatse
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-5">
 </query>
 
-### Maatschappelijke relevantie
-De gemeente Den Haag heeft onlangs 2,6 miljoen euro gereserveerd voor schadevergoedingen aan Joodse slachtoffers die na de oorlog een aanslag kregen om alsnog hun erfpacht te betalen. Zie het artikel hierover in de Volkskrant: [https://www.volkskrant.nl/a-b7e75c47](https://www.volkskrant.nl/a-b7e75c47)
-
-Ook andere gemeenten zoals Rotterdam en Utrecht werken aan een schaderegeling. Met de gegevens die we nu hebben kunnen we het mogelijk maken om op basis van het aantal m2  van de panden de hoogte van de vergoeding vast te stellen. Met een link tussen de adressen en eigenaren van geroofde panden uit de Verkaufsbücher en de oppervlakte uit de BAG is een inschatting te maken van het totaal uit te keren (en reserveren) bedrag.
-
-Voorbeeld: In de gemeente Utrecht zijn 81 panden met in totaal een oppervlakte van 13.559 m2 verkocht. Bij 100 euro per m2 is dat ruim 1,3 miljoen euro, te verdelen over de eigenaren of hun nabestaanden.
+### Geroofd onroerend goed in m2 
+Om een nadere indicatie te geven van de omvang (aantal en grootte) van het geroofde en verkochte onroerend goed hebben we de adressen uit de Verkaufsbücher gekoppeld aan de registratie van het aantal vierkante meters per pand die bij het Kadaster te vinden is. Dit geeft een goed beeld van de daadwerkelijke oppervlakte van de inschrijvingen in de Verkaufsbücher.
 
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/verkaufsbucher-6">
 </query>
