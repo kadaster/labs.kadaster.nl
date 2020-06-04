@@ -4,14 +4,14 @@ prefix gwsw: <http://data.gwsw.nl/1.4/totaal/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sesame: <http://www.openrdf.org/schema/sesame#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select ?shape ?shapeColor (strdt(?shapeLabel,rdf:HTML) as ?shapeLabel) {
+select ?shape ?shapeColor ?shapeLabel {
   {
     service <https://sparql.gwsw.nl/repositories/TestDatastory> {
       select
         ?rg
         ?shape
-        (concat('<h2><a target="_blank" href="',str(?rg),'">',str(?label),'</a></h2>',
-                '<p>Totale leidinglengte: ',str(sum(?lengte)),'</p>') as ?shapeLabel)
+        (strdt(concat('<h2><a target="_blank" href="',str(?rg),'">',str(?label),'</a></h2>',
+                '<p>Totale leidinglengte: ',str(sum(?lengte)),'</p>'),rdf:HTML) as ?shapeLabel)
       {
         ?rg a gwsw:Rioleringsgebied;
           rdfs:label ?label;
@@ -34,7 +34,7 @@ select ?shape ?shapeColor (strdt(?shapeLabel,rdf:HTML) as ?shapeLabel) {
       select
         ?shape
         ("blue" as ?shapeColor)
-        (concat("<h3><a target='_blank' href='https://sparql.gwsw.nl/resource?uri=", str(?put), "'>", str(?naam), "</a></h3><br>Stelsel: ", str(?rs_naam), "<br>Type uitlaat: <a target='_blank' href='" , str(?type), "'>", str(?type), "</a>") as ?shapeLabel)
+        (strdt(concat("<h3><a target='_blank' href='https://sparql.gwsw.nl/resource?uri=", str(?put), "'>", str(?naam), "</a></h3><br>Stelsel: ", str(?rs_naam), "<br>Type uitlaat: <a target='_blank' href='" , str(?type), "'>", str(?type), "</a>"),rdf:HTML) as ?shapeLabel)
       {
         ?rg a gwsw:Rioleringsgebied;
           rdfs:label ?label;
@@ -57,7 +57,7 @@ select ?shape ?shapeColor (strdt(?shapeLabel,rdf:HTML) as ?shapeLabel) {
     select
       ?shape
       ("red" as ?shapeColor)
-      (concat("<h3><a target='_blank' href='https://sparql.gwsw.nl/resource?uri=", str(?put), "'>", str(?naam), "</a></h3><br>Stelsel: ", str(?rs_naam), "<br>Type pomp: <a target='_blank' href='" , str(?type), "'>", str(?type), "</a>") as ?shapeLabel)
+      (strdt(concat("<h3><a target='_blank' href='https://sparql.gwsw.nl/resource?uri=", str(?put), "'>", str(?naam), "</a></h3><br>Stelsel: ", str(?rs_naam), "<br>Type pomp: <a target='_blank' href='" , str(?type), "'>", str(?type), "</a>"),rdf:HTML) as ?shapeLabel)
     {
       ?rg a gwsw:Rioleringsgebied;
         rdfs:label ?label;

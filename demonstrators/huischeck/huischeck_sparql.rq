@@ -16,51 +16,34 @@ select * {
       bind(1 as ?huisnummer)
       bind("G1" as ?huisnummertoevoeging)
       #bind("a" as ?huisletter)
-      graph ?woonplaatsVoorkomen {
+
         ?woonplaats bag:naamWoonplaats ?woonplaatsNaam.
-      }
-      filter not exists {
-        ?woonplaatsVoorkomen bag:eindGeldigheid []
-      }
-      graph ?openbareRuimteVoorkomen {
+
+
         ?openbareRuimte bag:bijbehorendeWoonplaats ?woonplaats;
                         bag:naamOpenbareRuimte ?openbareRuimteNaam.
-      }
-      filter not exists {
-        ?openbareRuimteVoorkomen bag:eindGeldigheid []
-      }
-      graph ?nummeraanduidingVoorkomen {
+
         ?nummeraanduiding bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
                           bag:huisnummer ?huisnummer;
                           bag:postcode ?postcode.
-      }
-      filter not exists {
-        ?nummeraanduidingVoorkomen bag:eindGeldigheid []
-      }
+
       optional {
         ?nummeraanduiding bag:huisletter ?huisletter.
       }
       optional {
         ?nummeraanduiding bag:huisnummertoevoeging ?huisnummertoevoeging.
       }
-      graph ?verblijfsobjectVoorkomen {
+
         ?verblijfsobject bag:hoofdadres ?nummeraanduiding;
                          bag:oppervlakte ?oppervlakte;
                          bag:pandrelatering ?pand;
                          bag:status ?verblijfsobjectStatus.
-      }
-      filter not exists {
-        ?verblijfsobjectVoorkomen bag:eindGeldigheid []
-      }
+
       ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
-      graph ?pandVoorkomen {
+
         ?pand bag:geometriePand/geo:asWKT ?wkt_poly;
               bag:oorspronkelijkBouwjaar ?bouwjaar;
               bag:status ?pandStatus.
-      }
-      filter not exists {
-        ?pandVoorkomen bag:eindGeldigheid []
-      }
       ?pandStatus rdfs:label ?pandStatusLabel
 
       bind(geof:envelope(?wkt_poly) as ?envelope)
@@ -105,7 +88,10 @@ select * {
     _:13 def:bevolking_Geslacht_Vrouwen ?vrouwen;
          dimension:regio ?buurt.
     ?buurt
-      a cbs:Buurt;
+      a cbs:Buurt;      }
+      filter not exists {
+        ?pandVoorkomen bag:eindGeldigheid []
+      }
       geo:hasGeometry ?geometry;
       rdfs:label ?buurtNaam.
   }

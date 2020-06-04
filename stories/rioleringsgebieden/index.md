@@ -1,6 +1,5 @@
 ---
 description: Data Story waarin gegevensbronnen in de afvalwaterketen op nieuwe manieren gecombineerd worden..
-endpoint: https://data.pdok.nl/sparql
 layout: story
 output: geo
 published: false
@@ -21,7 +20,7 @@ rondom het thema afvalwaterketen.</p>
 
 <h2>Rioleringsgebied Castricum</h2>
 
-<p>Een zuiveringsgebied omvat een rioolwaterzuiveringsinstallatie
+<p>Een zuiveringsgebied omvat een rioolwaterzuiveringsinstallatieequiv
 (RWZI) en een aantal rioleringsgebieden die afwateren naar die RWZI.
 Vaak zitten hier gemalen bij om het transport een handje te
 helpen.</p>
@@ -52,7 +51,8 @@ zuiveringsgebied niet, maar we kunnen wel de dichtstbijzijnde
 opvragen.  Zo ook voor deze locatie, de directe omgeving van het
 zuiveringsgebied kent twee zuiveringsinstallaties in de BRT:</p>
 
-<query data-output="geo"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
+       data-output="geo"
        data-query-ref="zuiveringsinstallaties-in-buurt-van-gebied.rq">
 </query>
 
@@ -66,7 +66,8 @@ de Basisregistratie Topografie (BRT), vragen we de bijbehorende
 gemeentes op.  Als je goed inzoomt, blijkt dat er naast Castricum een
 kleine overlap is met de gemeentes Bergen, Heemskerk en Uitgeest:</p>
 
-<query data-output="geo"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
+       data-output="geo"
        data-query-ref="gemeentes-bij-regio.rq">
 </query>
 
@@ -92,7 +93,7 @@ vele statistieken, waaronder gegevens over het landgebruik en het
 aantal mensen dat er woont.  We vragen bij het CBS de buurten op die
 het rioleringsgebied overlappen:</p>
 
-<query data-endpoint="https://betalinkeddata.cbs.nl/sparql"
+<query  data-endpoint="https://betalinkeddata.cbs.nl/sparql"
        data-output="geo"
        data-query-ref="buurten-in-rioleringsgebied.rq">
 </query>
@@ -127,7 +128,8 @@ kleine buffer (in oranje) om de gemeente te leggen en alleen die
 woonplaatsgebieden te selecteren die hier volledig binnen vallen.  Het
 gaat om enkel Castricum, wat Bakkum (volgens de BAG) omvat:</p>
 
-<query data-output="geo"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
+       data-output="geo"
        data-query-ref="woonplaatsen-in-rioleringsgebied.rq">
 </query>
 
