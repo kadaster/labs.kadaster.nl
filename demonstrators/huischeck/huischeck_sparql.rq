@@ -13,8 +13,8 @@ select * {
     select * {
       bind("Apeldoorn" as ?woonplaatsNaam)
       bind("Anthonie Duyckstraat" as ?openbareRuimteNaam)
-      bind(1 as ?huisnummer)
-      bind("G1" as ?huisnummertoevoeging)
+     bind(1 as ?huisnummer)
+     bind("G1" as ?huisnummertoevoeging)
       #bind("a" as ?huisletter)
 
         ?woonplaats bag:naamWoonplaats ?woonplaatsNaam.
@@ -41,61 +41,57 @@ select * {
 
       ?verblijfsobjectStatus rdfs:label ?verblijfsobjectStatusLabel.
 
-        ?pand bag:geometriePand/geo:asWKT ?wkt_poly;
+        ?pand geo:hasGeometry/geo:asWKT ?wkt_poly;
               bag:oorspronkelijkBouwjaar ?bouwjaar;
               bag:status ?pandStatus.
       ?pandStatus rdfs:label ?pandStatusLabel
 
       bind(geof:envelope(?wkt_poly) as ?envelope)
-      bind (strbefore(strafter(str(?envelope), "((" ), "))") as ?coords)
-      bind(strbefore(?coords, " ") as ?first_long)
-      bind(strbefore(strafter(?coords, " "), ",") as ?first_lat)
-      bind(strbefore(strafter(?coords, concat(?first_lat, ", ")), ",") as ?second_coordinates)
-      bind(strbefore(strafter(?coords, concat(?second_coordinates, ", ")), " ") as ?third_long)
-      bind(strbefore(strafter(?coords, ?third_long), ",") as ?third_lat)
-      bind((strdt(?first_long, xsd:double) + strdt(?third_long, xsd:double)) / 2 as ?avg_long)
-      bind((strdt(?first_lat, xsd:double) + strdt(?third_lat, xsd:double)) / 2 as ?avg_lat)
+  bind('^BOX\\(([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*),([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\)$' as ?regex)
+      bind(replace(str(?envelope), ?regex, '$1') as ?x1)
+      bind(replace(str(?envelope), ?regex, '$2') as ?y1)
+      bind(replace(str(?envelope), ?regex, '$3') as ?x2)
+      bind(replace(str(?envelope), ?regex, '$4') as ?y2)
+      bind((strdt(?x1, xsd:double) + strdt(?x1, xsd:double)) / 2 as ?avg_long)
+      bind((strdt(?y1, xsd:double) + strdt(?y2, xsd:double)) / 2 as ?avg_lat)
       bind(strdt(concat("POINT(", str(?avg_long), " ", str(?avg_lat), ")"), geo:wktLiteral) as ?wkt)
     }
   }
 
-  service <https://api.data.pldn.nl/datasets/cbs/wijken-buurten/services/wijken-buurten-1/sparql> {
-
-    _:1 def:nabijheidVoorzieningen_AfstandTotGroteSupermarkt ?supermarkt;
-        dimension:regio ?buurt.
-    _:2 def:nabijheidVoorzieningen_AfstandTotHuisartsenpraktijk ?huisarts;
-        dimension:regio ?buurt.
-    _:3 def:nabijheidVoorzieningen_AfstandTotKinderdagverblijf ?kinderdagverblijf;
-        dimension:regio ?buurt.
-    _:4 def:nabijheidVoorzieningen_Basisonderwijs_AfstandTotSchool ?school;
-        dimension:regio ?buurt.
-    _:5 def:bevolking_AantalInwoners ?aantalinwoners;
-        dimension:regio ?buurt.
-    _:6 def:wonen_GemiddeldeWoningwaarde ?woningwaarde;
-        dimension:regio ?buurt.
-    _:7 def:wonen_WoningenNaarEigendom_Koopwoningen ?koopwoningen;
-        dimension:regio ?buurt.
-    _:8 def:wonen_WoningenNaarEigendom_Huurwoningen_HuurwoningenTotaal ?huurwoningen;
-        dimension:regio ?buurt.
-    _:9 def:energie_GemiddeldElektriciteitsverbruik_GemiddeldElektriciteitsverbruikTotaal ?elektriciteitsverbruik;
-        dimension:regio ?buurt.
-    _:10 def:wonen_WoningenNaarBouwjaar_BouwjaarVoor2000 ?woningenvoor2000;
-         dimension:regio ?buurt.
-    _:11 def:wonen_WoningenNaarBouwjaar_BouwjaarVanaf2000 ?woningenvanaf2000;
-         dimension:regio ?buurt.
-    _:12 def:bevolking_Geslacht_Mannen ?mannen;
-         dimension:regio ?buurt.
-    _:13 def:bevolking_Geslacht_Vrouwen ?vrouwen;
-         dimension:regio ?buurt.
-    ?buurt
-      a cbs:Buurt;      }
-      filter not exists {
-        ?pandVoorkomen bag:eindGeldigheid []
-      }
-      geo:hasGeometry ?geometry;
-      rdfs:label ?buurtNaam.
-  }
-  ?wkt geo:sfWithin ?geometry.
+#  service <https://api.data.pldn.nl/datasets/cbs/wijken-buurten/services/wijken-buurten-1/sparql> {
+#
+#    _:1 def:nabijheidVoorzieningen_AfstandTotGroteSupermarkt ?supermarkt;
+#        dimension:regio ?buurt.
+#    _:2 def:nabijheidVoorzieningen_AfstandTotHuisartsenpraktijk ?huisarts;
+#        dimension:regio ?buurt.
+#    _:3 def:nabijheidVoorzieningen_AfstandTotKinderdagverblijf ?kinderdagverblijf;
+#        dimension:regio ?buurt.
+#    _:4 def:nabijheidVoorzieningen_Basisonderwijs_AfstandTotSchool ?school;
+#        dimension:regio ?buurt.
+#    _:5 def:bevolking_AantalInwoners ?aantalinwoners;
+#        dimension:regio ?buurt.
+#    _:6 def:wonen_GemiddeldeWoningwaarde ?woningwaarde;
+#        dimension:regio ?buurt.
+#    _:7 def:wonen_WoningenNaarEigendom_Koopwoningen ?koopwoningen;
+#        dimension:regio ?buurt.
+#    _:8 def:wonen_WoningenNaarEigendom_Huurwoningen_HuurwoningenTotaal ?huurwoningen;
+#        dimension:regio ?buurt.
+#    _:9 def:energie_GemiddeldElektriciteitsverbruik_GemiddeldElektriciteitsverbruikTotaal ?elektriciteitsverbruik;
+#        dimension:regio ?buurt.
+#    _:10 def:wonen_WoningenNaarBouwjaar_BouwjaarVoor2000 ?woningenvoor2000;
+#         dimension:regio ?buurt.
+#    _:11 def:wonen_WoningenNaarBouwjaar_BouwjaarVanaf2000 ?woningenvanaf2000;
+#         dimension:regio ?buurt.
+#    _:12 def:bevolking_Geslacht_Mannen ?mannen;
+#         dimension:regio ?buurt.
+#    _:13 def:bevolking_Geslacht_Vrouwen ?vrouwen;
+#         dimension:regio ?buurt.
+#    ?buurt
+#      a cbs:Buurt;
+#      geo:hasGeometry ?geometry;
+#      rdfs:label ?buurtNaam.
+#  }
+#  ?wkt geo:sfWithin ?geometry.
   bind(concat(if(bound(?huisnummertoevoeging),concat('-',str(?huisnummertoevoeging)),''),
               if(bound(?huisletter),concat(' ',str(?huisletter)),'')) as ?huisnummerPlus)
   bind(strdt('''

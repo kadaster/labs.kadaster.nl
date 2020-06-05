@@ -73,7 +73,7 @@ laagste klasse (t/m € 150.000,-), en energielabel D of hoger.  De
 <p>Een andere mogelijkheid voor het realiseren van nieuwe woningen
 zijn leegstaande schoolgebouwen.</p>
 
-<h3>Bevraging 2A: BAG panden met onderwijsfunctie door de tijd heen</h3>
+<!-- <h3>Bevraging 2A: BAG panden met onderwijsfunctie door de tijd heen</h3>
 
 <p>Het volgende diagram toont een overzicht van het aantal BAG panden
 met een onderwijsfunctie, geteld per jaar en per status categorie.  We
@@ -84,9 +84,9 @@ onderwijsfunctie van status is veranderd.</p>
        data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="scholen-bag-mutaties-diagram.rq"
        data-output="gchart">
-</query>
+</query> -->
 
-<h3>Bevraging 2B: Mutaties voor BAG panden met onderwijsfunctie</h3>
+<h3>Bevraging 2A: Mutaties voor BAG panden met onderwijsfunctie</h3>
 
 <p>We kunnen deze panden op de kaart zetten, samen met hun recente
 mutaties volgens de BAG, en in relatie tot hun bijbehorende perceel
@@ -97,7 +97,7 @@ schoolgebouw vrijkomt voor nieuwbouw.</p>
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-2b">
 </query>
 
-<h3>Bevraging 2C: BRT school én BAG pand met onderwijsfunctie</h3>
+<h3>Bevraging 2B: BRT school én BAG pand met onderwijsfunctie</h3>
 
 <p>De BRT bevat ook schoolgebouwen, maar deze set is onvolledig.
 Slechts één van de BAG panden met een onderwijsfunctie komt ook als
