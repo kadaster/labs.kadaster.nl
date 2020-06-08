@@ -5,7 +5,7 @@ title: Demonstrator ― Huischeck
 
 # Huischeck Demonstrator
 
-Op deze pagina is het mogelijk om nadere informatie te krijgen over uw huis en buurt op basis van onder andere de PDOK Locatieserver.  De informatie over uw huis wordt zowel als tekst weergegeven, maar ook door middel van een QR-code die eenvoudig gescand kan worden.
+Op deze pagina is het mogelijk om nadere informatie te krijgen over uw huis en buurt op basis van onder andere de PDOK Locatieserver. De informatie over uw huis wordt zowel als tekst weergegeven, maar ook door middel van een QR-code die eenvoudig gescand kan worden.
 
 Vul in onderstaande zoekbalk uw adres(straatnaam+huisnummer, woonplaats) in om uw huis te checken!
 
@@ -40,7 +40,7 @@ De onderstaande QR-code bevat de link naar de URI(Uniform Resource Identifier) v
 
 Een andere manier om informatie van uw huis op te vragen is via SPARQL-queries. Dit kan door uw adres in te vullen bij de `values` operatoren in de onderstaande query.
 
-<query data-endpoint="https://data.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="huischeck_sparql.rq"
        data-output="geo">
 </query>

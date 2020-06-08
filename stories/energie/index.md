@@ -1,7 +1,7 @@
 ---
 layout: story
 logo: /assets/images/energy.png
-published: false
+published: true
 title: Energie Data Story
 ---
 
@@ -10,7 +10,7 @@ title: Energie Data Story
 <h2>Windturbineparken in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/wikidata-windfarms">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/wikidata-windfarms">
   </query>
   <figcaption>
     Bron: Wikidata
@@ -20,7 +20,7 @@ title: Energie Data Story
 <h2>Windturbines in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-windturbines">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-windturbines">
   </query>
   <figcaption>
     Bron: BRT
@@ -36,7 +36,7 @@ title: Energie Data Story
 <p>We beginnen bij een specifieke woning in Zoetermeer: Waarderstraat
 23.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql"
        data-query-ref="q1.rq">
 </query>
 
@@ -57,7 +57,7 @@ panden in deze straat hebben energielabel A (
 </svg>
 ).</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql"
        data-query-ref="q2.rq">
 </query>
 
@@ -106,7 +106,7 @@ besparingen?  Het CBS heeft hier gegevens over.  Voor buurt
 Daarvoor zijn éénmalige investeringen van €4.100,- nodig.  Dat
 betekent dat er pas na 41 jaar een positief rendement optreed…</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
+<query data-endpoint="hhttps://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="q4.rq">
 </query>
 
@@ -118,7 +118,7 @@ wanneer alle energiebesparende maatregelen die nog kunnen worden
 toegepast in de woning worden gerealiseerd.  Besparingen liggen
 landelijk tussen €0 (blauw/koud) en €2.280 (rood/warm).</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="q5.rq">
 </query>
 
@@ -128,7 +128,7 @@ landelijk tussen €0 (blauw/koud) en €2.280 (rood/warm).</p>
 zien.  Landelijk ligt dit besparingspotentieel tussen €0 en €1.900 per
 koopwoning per jaar.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="q6.rq">
 </query>
 
@@ -144,7 +144,7 @@ kaart gelegen) bijna geen energiebesparingen mogelijk zijn. Maar in de
 oude buurten in de binnenstad zijn aanzienlijke energiesparingen van
 duizenden euros per jaar mogelijk.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="q7.rq">
 </query>
 
@@ -153,7 +153,7 @@ duizenden euros per jaar mogelijk.</p>
 <p>We zijn wel benieuwd welke gebouwen in Amsterdam veel energie
 verbruiken, en welk energielabel daar dan bij hoort.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
+<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="q8.rq">
 </query>
 

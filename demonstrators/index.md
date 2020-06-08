@@ -40,14 +40,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Vraag informatie op over uw huis en buurt door middel van de PDOK Locatieserver.  Naast een informatief overzicht wordt ook een unieke QR-code voor uw huis aangemaakt.</div>
     </div>
   </a>
-  <a href="/demonstrators/cbsloddemonstrator/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screen-kwb.PNG">
-      <div class="card-title">CBS KWB Dashboard</div>
-      <div class="card-description">Gebruik dit dashboard om laagdrempelig de Kerncijfers Wijken- en Buurten (KWB) van het CBS te bevragen!</div>
-    </div>
-  </a>
 	<a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -62,14 +54,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/bier.jpg">
       <div class="card-title">Brouwerij Tijdreis</div>
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/bagdemonstrator/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG">
-      <div class="card-title">BAG Waarden voorspellen</div>
-      <div class="card-description">Bekijk de resultaten van een voorspellend model op missende waarden in de BAG ook in een interactief dashboard!</div>
     </div>
   </a>
   <a href="/demonstrators/tableau">
