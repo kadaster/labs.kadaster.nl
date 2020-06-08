@@ -1,25 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="author" content="Wouter Beek">
-    <meta name="description" content="Kadaster SPARQL Tutorial">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
     <link rel="stylesheet" href="/assets/css/presentation.css">
     <link rel="stylesheet" href="/assets/css/prism.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.9.2/css/reveal.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.9.2/css/theme/simple.css" id="theme">
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js-3.9.2/css/print/pdf.css' : '/assets/reveal.js-3.9.2/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-    <script src="/assets/js/presentation.js"></script>
+    <link rel="stylesheet" href="/assets/css/reveal/reset.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reveal.css">
+    <link rel="stylesheet" href="/assets/css/reveal/simple.css" id="theme">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="Erwin Folmer & Wouter Beek">
+    <meta name="description" content="Kadaster Metadata 2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadaster ― Metadata 2.0</title>
     <style type="text/css">
       .attention {
@@ -543,23 +536,16 @@
 
       </div>
     </div>
-    <script src="/assets/reveal.js-3.9.2/js/reveal.js"></script>
+    <script src="/assets/js/reveal/highlight.js"></script>
+    <script src="/assets/js/reveal/reveal.js"></script>
     <script src="/assets/js/prism.min.js"></script>
     <script>
       Reveal.initialize({
         center: true,
         controls: true,
-        dependencies: [
-		      { src: '/assets/reveal.js-3.9.2/js/classList.js', condition: function() { return !document.body.classList; } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true },
-		      { src: '/assets/reveal.js-3.9.2/plugin/notes/notes.js', async: true },
-		      { src: '/assets/reveal.js-3.9.2/plugin/math/math.js', async: true }
-        ],
-        history: true,
-        progress: true,
-        transition: 'slide'
+        hash: true,
+        plugins: [ RevealHighlight ],
+        progress: true
       });
     </script>
   </body>

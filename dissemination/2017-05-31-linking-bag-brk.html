@@ -3,25 +3,20 @@ layout: presentation
 title: Linking BAG addresses to BRK parcels
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
+    <link rel="stylesheet" href="/assets/css/presentation.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reset.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reveal.css">
+    <link rel="stylesheet" href="/assets/css/reveal/simple.css" id="theme">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="author" content="Erwin Folmer and Wouter Beek">
     <meta name="description" content="Adding 3D Visualization to the SPARQL Query Loop">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../assets/css/presentation.css">
-    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/css/reveal.css">
-    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/css/theme/simple.css" id="theme">
-    <link rel="stylesheet" href="../assets/reveal.js-3.7.0/lib/css/default.css">
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/reveal.js-3.7.0/css/print/pdf.css' : '../assets/reveal.js-3.7.0/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding 3D Visualization to the SPARQL Query Loop</title>
   </head>
   <body>
@@ -36,25 +31,24 @@ title: Linking BAG addresses to BRK parcels
             <li>What is linked?</li>
             <li>What predicate is used?</li>
           </ul>
-      </section>
-      <section>
-        <h1>Provenance</h1>
-        <h2>Who did what @Kadaster:</h2>
-        <ul>
-          <li>Ad van Houtum (advisor product & process innovation)</li>
-          <li>Ronald Peeters (sr. test & quality consultant)</li>
-          <li>Tijn van Bussel (advisor operational information management)</li>
-          <li>Peter Schepens (sr. DBA)</li>
-          <li>Erwin Folmer (sr. advisor PPB)</li>
-          <li>Rein van 't Veer (spatial & linked data engineer)</li>
-        </ul>
         </section>
 
         <section>
+          <h1>Provenance</h1>
+          <h2>Who did what @Kadaster:</h2>
+          <ul>
+            <li>Ad van Houtum (advisor product & process innovation)</li>
+            <li>Ronald Peeters (sr. test & quality consultant)</li>
+            <li>Tijn van Bussel (advisor operational information management)</li>
+            <li>Peter Schepens (sr. DBA)</li>
+            <li>Erwin Folmer (sr. advisor PPB)</li>
+            <li>Rein van 't Veer (spatial & linked data engineer)</li>
+          </ul>
+        </section>
 
-        <h1>Provenance</h1>
-
-          What <a href="https://github.com/PDOK/data.labs.pdok.nl/tree/master/data/bag-brk">ingredients</a> were used?
+        <section>
+          <h1>Provenance</h1>
+          <p>What <a href="https://github.com/PDOK/data.labs.pdok.nl/tree/master/data/bag-brk">ingredients</a> were used?</p>
         </section>
 
         <section>
@@ -67,35 +61,20 @@ title: Linking BAG addresses to BRK parcels
             <li>Some dropouts due to the difference in link table versus dataset version: 5031 misses (2.02%)</li>
           </ul>
         </section>
+
       </div>
     </div>
-    <script src="../assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
-    <script src="../assets/reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="/assets/js/reveal/highlight.js"></script>
+    <script src="/assets/js/reveal/reveal.js"></script>
+    <script src="/assets/js/prism.min.js"></script>
     <script>
-    // More info https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-    controls: true,
-    progress: true,
-    history: true,
-    center: true,
-    transition: 'slide', // none/fade/slide/convex/concave/zoom
-    // More info https://github.com/hakimel/reveal.js#dependencies
-    dependencies: [
-      // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-      { src: '../assets/reveal.js-3.7.0/js/classList.js', condition: function() { return !document.body.classList; } },
-      // Interpret Markdown in <section> elements
-      { src: '../assets/reveal.js-3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '../assets/reveal.js-3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      // Syntax highlight for <code> elements
-      { src: '../assets/reveal.js-3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      // Zoom in and out with Alt+click
-      { src: '../assets/reveal.js-3.7.0/plugin/zoom-js/zoom.js', async: true },
-      // Speaker notes
-      { src: '../assets/reveal.js-3.7.0/plugin/notes/notes.js', async: true },
-      // MathJax
-      { src: '../assets/reveal.js-3.7.0/plugin/math/math.js', async: true }
-    ]
-    });
+      Reveal.initialize({
+        center: true,
+        controls: true,
+        hash: true,
+        plugins: [ RevealHighlight ],
+        progress: true
+      });
     </script>
   </body>
 </html>
