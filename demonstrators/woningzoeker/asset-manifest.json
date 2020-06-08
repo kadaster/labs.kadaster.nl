@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/namen-app/static/css/main.dba41ac2.chunk.css",
+    "main.js": "/namen-app/static/js/main.1ecb9fbf.chunk.js",
+    "main.js.map": "/namen-app/static/js/main.1ecb9fbf.chunk.js.map",
+    "runtime-main.js": "/namen-app/static/js/runtime-main.bf28738d.js",
+    "runtime-main.js.map": "/namen-app/static/js/runtime-main.bf28738d.js.map",
+    "static/css/2.c1210ddd.chunk.css": "/namen-app/static/css/2.c1210ddd.chunk.css",
+    "static/js/2.9922a953.chunk.js": "/namen-app/static/js/2.9922a953.chunk.js",
+    "static/js/2.9922a953.chunk.js.map": "/namen-app/static/js/2.9922a953.chunk.js.map",
+    "index.html": "/namen-app/index.html",
+    "precache-manifest.ce42a0e0f6418b14c421a7f1204e5aff.js": "/namen-app/precache-manifest.ce42a0e0f6418b14c421a7f1204e5aff.js",
+    "service-worker.js": "/namen-app/service-worker.js",
+    "static/css/2.c1210ddd.chunk.css.map": "/namen-app/static/css/2.c1210ddd.chunk.css.map",
+    "static/css/main.dba41ac2.chunk.css.map": "/namen-app/static/css/main.dba41ac2.chunk.css.map",
+    "static/media/Logo-kadaster.png": "/namen-app/static/media/Logo-kadaster.5d975e1b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf28738d.js",
+    "static/css/2.c1210ddd.chunk.css",
+    "static/js/2.9922a953.chunk.js",
+    "static/css/main.dba41ac2.chunk.css",
+    "static/js/main.1ecb9fbf.chunk.js"
+  ]
+}
