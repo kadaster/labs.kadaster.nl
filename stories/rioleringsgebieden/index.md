@@ -2,7 +2,7 @@
 description: Data Story waarin gegevensbronnen in de afvalwaterketen op nieuwe manieren gecombineerd worden..
 layout: story
 output: geo
-published: false
+published: true
 title: Rioleringsgebieden
 ---
 
@@ -35,9 +35,7 @@ Onder de groene, rode en blauwe markers staat informatie over
 respectievelijk het rioleringsgebied, het rioolgemaal en de
 overstorten.</p>
 
-<query data-endpoint="https://sparql.gwsw.nl/repositories/TestDatastory"
-       data-output="geo"
-       data-query-ref="rioleringsgebied.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/Rioleringsgebieden/-/queries/rioleringsgebied">
 </query>
 
 <h2>Zuiveringsinstallaties in de regio</h2>
@@ -51,9 +49,7 @@ zuiveringsgebied niet, maar we kunnen wel de dichtstbijzijnde
 opvragen.  Zo ook voor deze locatie, de directe omgeving van het
 zuiveringsgebied kent twee zuiveringsinstallaties in de BRT:</p>
 
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
-       data-output="geo"
-       data-query-ref="zuiveringsinstallaties-in-buurt-van-gebied.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/Rioleringsgebieden/-/queries/zuiveringsinstallaties-in-buurt">
 </query>
 
 <h2>Gemeentes rond het rioleringsgebied</h2>
@@ -66,9 +62,7 @@ de Basisregistratie Topografie (BRT), vragen we de bijbehorende
 gemeentes op.  Als je goed inzoomt, blijkt dat er naast Castricum een
 kleine overlap is met de gemeentes Bergen, Heemskerk en Uitgeest:</p>
 
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
-       data-output="geo"
-       data-query-ref="gemeentes-bij-regio.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/Rioleringsgebieden/-/queries/gemeentes-bij-regio">
 </query>
 
 <h2>Afvalwater vanuit het rioleringsgebied</h2>
@@ -93,9 +87,8 @@ vele statistieken, waaronder gegevens over het landgebruik en het
 aantal mensen dat er woont.  We vragen bij het CBS de buurten op die
 het rioleringsgebied overlappen:</p>
 
-<query  data-endpoint="https://betalinkeddata.cbs.nl/sparql"
-       data-output="geo"
-       data-query-ref="buurten-in-rioleringsgebied.rq">
+<query data-output="geo"
+       data-config-ref="https://data.labs.kadaster.nl/Rioleringsgebieden/-/queries/cbs">
 </query>
 
 <h2>Combineren van data naar kengetallen met het GWSW</h2>
@@ -128,9 +121,7 @@ kleine buffer (in oranje) om de gemeente te leggen en alleen die
 woonplaatsgebieden te selecteren die hier volledig binnen vallen.  Het
 gaat om enkel Castricum, wat Bakkum (volgens de BAG) omvat:</p>
 
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql"
-       data-output="geo"
-       data-query-ref="woonplaatsen-in-rioleringsgebied.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/Rioleringsgebieden/-/queries/woonplaatsen-in-rioleringsgebied">
 </query>
 
 <p>De CBS Statistieken worden verzameld per buurt.  Zoals de eerdere

@@ -131,6 +131,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
     </div>
   </a>
+  <a href="./rioleringsgebieden/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Rioleringsgebieden</div>
+      <div class="card-description">Combineren van gegevensbronnen in de afvalwaterketen.</div>
+    </div>
+  </a>
   <!--
   <a href="./nationaal-archief/index.html">
     <div class="card">
