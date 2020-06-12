@@ -1,0 +1,6 @@
+.yasgui .controlbar {
+  max-height: none;
+}
+.yasgui .tabContextButton .svgImg{
+  font-size:14px;
+}
