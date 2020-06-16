@@ -19,12 +19,12 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
     </div>
   </a>
   <!--
-  <a href="./bag-selectie/index.html">
+  <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">BAG data selectie datastory</div>
-      <div class="card-description">Een Data Story die laat zien hoe je op verschillende manieren BAG data kan selecteren.</div>
+      <div class="card-title">BAG Data Story</div>
+      <div class="card-description">Een Data Story waarin de Basisregistratie Adressen en Gebouwen (BAG) op verschillende manieren bevraagd wordt.</div>
     </div>
   </a>
   -->
