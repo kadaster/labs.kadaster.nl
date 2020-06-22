@@ -23,6 +23,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
+  <a href="https://arcg.is/11uvDD">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/landscape-water.jpg">
+      <div class="card-title">Het Effect van Natura 2000-Gebieden</div>
+      <div class="card-description">De onderzoeksvraag: "Wat is het effect van de Natura 2000-gebieden op grond- en woningwaarde?", wordt in deze applicatie gevisualiseerd.</div>
+    </div>
+  </a>
   </a>
     <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
