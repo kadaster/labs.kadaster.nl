@@ -87,6 +87,8 @@ $.jStorage
 				    'http://bag.basisregistraties.overheid.nl/def/bag#naamWoonplaats',
 				    'https://data.labs.kadaster.nl/kadaster/woz/vocab/wozobjectnummer',
 				    'http://data.labs.kadaster.nl/kadaster/woz/vocab/wozobjectnummer',
+				    'http://bag.basisregistraties.overheid.nl/def/bag/id/verblijfsobject',
+				    'http://bag.basisregistraties.overheid.nl/def/bag/id/pand',
 				    'http://bag.basisregistraties.overheid.nl/def/bag#naamOpenbareRuimte',
 				    'http://bag.basisregistraties.overheid.nl/def/bag#huisnummer',
 				    'http://brt.basisregistraties.overheid.nl/def/top10nl#naam',
