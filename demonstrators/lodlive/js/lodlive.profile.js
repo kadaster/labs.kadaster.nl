@@ -74,8 +74,6 @@ $.jStorage
                             className : 'standard',
                             titleProperties : [
                                     'http://www.w3.org/2004/02/skos/core#notation',
-				    'http://www.w3.org/2004/02/skos/core#Collection',
-				    'http://www.w3.org/2004/02/owl#Class',
                                     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
 				    'http://www.opengis.net/ont/geosparql#', 
                                     'http://www.geonames.org/ontology#name',
