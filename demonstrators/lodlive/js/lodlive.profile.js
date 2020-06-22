@@ -4,7 +4,7 @@ $.jStorage
                 {
                     // parametri di connessione agli endpoint
                     'connection' : {
-			'http://bag.basisregistraties.overheid.nl,http://brk.basisregistraties.overheid.nl,https://data.labs.kadaster.nl,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
+			'http://bag.basisregistraties.overheid.nl,http://brk.basisregistraties.overheid.nl,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
 			description : {
 				en : 'Dit is de BAG!' 
 			},
