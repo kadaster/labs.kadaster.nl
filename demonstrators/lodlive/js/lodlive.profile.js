@@ -4,7 +4,7 @@ $.jStorage
                 {
                     // parametri di connessione agli endpoint
                     'connection' : {
-			'http://bag.basisregistraties.overheid.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org/,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
+			'http://bag.basisregistraties.overheid.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
 			description : {
 				en : 'Dit is de BAG!' 
 			},
@@ -74,6 +74,8 @@ $.jStorage
                             className : 'standard',
                             titleProperties : [
                                     'http://www.w3.org/2004/02/skos/core#notation',
+				    'http://www.w3.org/2004/02/skos/core#Collection',
+				    'http://www.w3.org/2004/02/owl#Class',
                                     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
                                     'http://www.geonames.org/ontology#name',
                                     'http://purl.org/dc/elements/1.1/title',
