@@ -77,6 +77,7 @@ $.jStorage
 				    'http://www.w3.org/2004/02/skos/core#Collection',
 				    'http://www.w3.org/2004/02/owl#Class',
                                     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
+				    'http://www.opengis.net/ont/geosparql#Feature', 
                                     'http://www.geonames.org/ontology#name',
                                     'http://purl.org/dc/elements/1.1/title',
                                     'http://purl.org/dc/terms/title',
