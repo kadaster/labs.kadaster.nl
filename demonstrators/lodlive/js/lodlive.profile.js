@@ -4,7 +4,7 @@ $.jStorage
                 {
                     // parametri di connessione agli endpoint
                     'connection' : {
-			'http://bag.basisregistraties.overheid.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
+			'http://bag.basisregistraties.overheid.nl,http://archief.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
 			description : {
 				en : 'Dit is de BAG!' 
 			},
@@ -77,7 +77,7 @@ $.jStorage
 				    'http://www.w3.org/2004/02/skos/core#Collection',
 				    'http://www.w3.org/2004/02/owl#Class',
                                     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
-				    'http://www.opengis.net/ont/geosparql#Feature', 
+				    'http://www.opengis.net/ont/geosparql#', 
                                     'http://www.geonames.org/ontology#name',
                                     'http://purl.org/dc/elements/1.1/title',
                                     'http://purl.org/dc/terms/title',
@@ -141,9 +141,8 @@ $.jStorage
                     'http://www.w3.org/2002/07/owl#Class' : {
 	                    document : {
 		                    className : 'Class'
-	/*
-	 * , titleProperties : ['http://purl.org/dc/elements/1.1/title', 'http://www.w3.org/2000/01/rdf-schema#label']
-         */
+	
+	 , titleProperties : ['http://www.openfix.net/ont/geosparql#', 'http://www.w3.org/2000/01/rdf-schema#label']
 	                    }
                     },
                     'http://www.w3.org/2002/07/owl#ObjectProperty' : {
