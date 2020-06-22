@@ -36,6 +36,9 @@ $.jStorage
 				, {
 				label : 'OpenbareRuimte',
 				uri : 'http://bag.basisregistraties.overheid.nl/def/bag#OpenbareRuimte'
+			} , {
+				label : 'VerkaufsBucher',
+				uri : 'http://archief.nl/def/ArchivalReference'
 			} 
 			]
 		},
