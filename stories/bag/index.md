@@ -5,12 +5,20 @@ title: BAG Data Story
 
 # BAG Data Story
 
+
 De Basisregistratie Adressen en Gebouwen (BAG) bevat informatie over
-alle adressen en gebouwen in Nederland.  Deze gegevens worden via
-verschillende diensten ontsloten.  Één van deze diensten is Linked
-Data, waarmee de BAG bevraagd kan worden.  Hieronder volgen enkele
-voorbeeld, waarbij gebruik gemaakt wordt van de SPARQL taal voor
-Linked Data bevraging.
+alle adressen en gebouwen in Nederland.  De data uit de BAG wordt op
+verschillende manieren ontsloten.  Één van deze manier is Linked Data,
+waarmee de BAG bevraagd kan worden.  Linked Data is een nieuwe manier
+om gegevens te representeren, combineren, en op het Internet te
+ontsluiten.  Om Linked Data te kunnen bevragen maken wij gebruik van
+SPARQL.  SPARQL is de gestandaardiseerde bevragingstaal voor Linked
+Data.
+
+Hieronder zijn enkele voorbeelden van bevragingen over de BAG.  Het
+mogelijk is om de bevraging aan te passen door waardes in te vullen in
+de invoervelden.  Het is ook mogelijk om de bevraging direct aan te
+passen, door de ‘editor’ component te openen.
 
 ## Bevraging op basis van postcode
 
@@ -23,6 +31,20 @@ en/of huisnummertoevoeging.
   <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-postcode"></query>
   <figcaption>
     Bevraging 1 ― Postcode-gebaseerde bevraging van de BAG.
+  </figcaption>
+</figure>
+
+## Bevraging op basis van een numerieke filter
+
+Gevens kunnen op verschillende manieren worden opgevraagd.  In
+[Bevraging 4](#filter) is het ook mogelijk om adressen en gebouwen met
+een specifieke oppervlakte of met een specifiek bouwjaar te op te
+vragen.
+
+<figure id="filter">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-range"></query>
+  <figcaption>
+    Bevraging 4 ― Bouwjaar- en/of oppervlakte-gebaseerde bevraging van de BAG.
   </figcaption>
 </figure>
 
@@ -51,17 +73,6 @@ daarbinnengelegen panden teruggegeven.
   <query data-row data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-buurt"></query>
   <figcaption>
     Bevraging 3 ― Buurt-gebaseerde bevraging van de BAG.
-  </figcaption>
-</figure>
-
-## Bevraging op basis van een numerieke range
-
-[Bevraging 4](#range)
-
-<figure id="range">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-range"></query>
-  <figcaption>
-    Bevraging 4 ― Bouwjaar- en/of oppervlakte-gebaseerde bevraging van de BAG.
   </figcaption>
 </figure>
 
