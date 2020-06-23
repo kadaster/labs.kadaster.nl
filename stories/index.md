@@ -18,7 +18,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
     </div>
   </a>
-  <!--
   <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -27,7 +26,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Een Data Story waarin de Basisregistratie Adressen en Gebouwen (BAG) op verschillende manieren bevraagd wordt.</div>
     </div>
   </a>
-  -->
   <a href="./bgt-high3/index.html">
     <div class="card">
       <div class="card-type">Story</div>
