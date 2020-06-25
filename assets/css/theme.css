@@ -48,11 +48,11 @@ a:hover {
 }
 .banner {
   position: relative;
-  height: 200px;
+  height: 400px;
   width: 100%;
 }
 .banner-image {
-  height: 200px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -63,7 +63,7 @@ a:hover {
   left: 0;
   right: 0;
   background: transparent url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x 50% 100%;
-  background-size: auto 150px;
+  background-size: auto 270px;
   z-index: 9;
 }
 
