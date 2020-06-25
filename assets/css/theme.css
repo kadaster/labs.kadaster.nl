@@ -48,11 +48,11 @@ a:hover {
 }
 .banner {
   position: relative;
-  height: 400px;
+  height: 200px;
   width: 100%;
 }
 .banner-image {
-  height: 400px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -63,8 +63,7 @@ a:hover {
   left: 0;
   right: 0;
   background: transparent url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x 50% 100%;
-  background-size: auto;
-  background-size: auto 270px;
+  background-size: auto 150px;
   z-index: 9;
 }
 
@@ -133,6 +132,10 @@ a:hover {
   justify-content: center;
 }
 
+.tech-radar {
+  overflow: hidden;
+}
+
 code.hightlight {
   background-color: #d9eef7;
   border-radius: 3px;
@@ -197,7 +200,7 @@ code.hightlight {
   overflow-x: hidden;
 }
 .flex-content {
-  flex-basis: 1200px;
+  flex-basis: 1600px;
   max-width: 100%;
   padding: 20px;
 }
