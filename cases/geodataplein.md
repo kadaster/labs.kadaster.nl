@@ -16,6 +16,26 @@ van het Kadaster om zich (verder) te ontwikkelen tot een sleutelspeler in de inf
 Het concept achter GEO informatie voor iedereen geven wij een concrete invulling met het GEO-Dataplein. Het Data Science Team van het Kadaster kreeg als opdracht mee
 om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontsluiting richting een eindgebruiker eruit kan zien en welke technische bouwstenen hiervoor nodig zijn.
 
+<div class="cards-wrapper">
+  <a href="/demonstrators/integrale-explorer/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/logoexplorer.PNG">
+      <div class="card-title">Integrale Explorer</div>
+      <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+      <div class="card-title">Generiek Kwaliteitsdashboard</div>
+      <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
+    </div>
+  </a>
+</div>
+
+
 ## Demonstrators voor het GEO-Dataplein
 
 Concreet heeft het Data Science Team hierbij de volgende demomstrators opgeleverd:
@@ -41,6 +61,6 @@ Concreet heeft het Data Science Team hierbij de volgende demomstrators opgelever
 ## Samengestelde API's / GraphQL
 
 In de introductie spreken wij over samengestelde API's. Voor de demonstrators waarover gesproken wordt in deze use case betreft dit een samengestelde API op basis van de 
-tooling GraphQL. Over wat GraphQL precies inhoudt en wat de relatie is met andere bekende data-ontsluitingstechnieken zoals REST en Linked Data verwijzen we de geinteresseerde
-lezer naar onze visie op geintegreerde dataontsluiting. *(Link nog toe te voegen)*
+tooling GraphQL. Wil je meer weten over wat GraphQL precies inhoudt en wat de relatie is met andere bekende data-ontsluitingstechnieken zoals REST en Linked Data, neem dan contact met ons op! 
+We delen graag onze visie op dit stuk.
 </div>

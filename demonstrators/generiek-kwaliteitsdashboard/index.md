@@ -47,8 +47,8 @@ Het antwoord luidt als volgt. Kunnen wij de opzet neerzetten voor een generiek k
 ### Scope van Demonstrator
 
 Voor deze demonstrator is gekozen een beperkte scope te hanteren. In de analyse die we uitvoeren beperken we onszelf tot de volgende bronnen:
-- **BAG**
-- **WOZ**
+- **Basisadministratie Adressen & Gebouwen (BAG)**
+- **Waardering Onroerende Zaken (WOZ)**
 
 Een integrale koppeling tussen deze bronnen is tot dusver nog niet eerder gelegd in een kwaliteitsdashboard. Daarnaast is voor deze keuze gegaan omdat de combinatie een perfect 
 voorbeeld is van twee bronnen die direct naar elkaar verwijzen (Immers, de WOZ aanslag wordt naar een adres verstuurd), maar beide bronnen worden in de huidige situatie als silo's 
@@ -79,6 +79,8 @@ Figuur 2.
     Figuur 2 ― Het gebruikte datamodel gevisualiseerd met behulp van <a href = "https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a>
   </figcaption>
 </figure>
+</br>
+
 
 In GraphQL, net als in een reguliere REST API, is het belangrijk een bepaalde ingang te definiëren. Neem als voorbeeld de <a href = "https://bag.basisregistraties.overheid.nl/restful-api?articleid=1927964">BAG-API</a>.
 Ook hier is het gemakkelijk om informatie op te vragen over één object, zoals de informatie van één Pand of Nummeraanduiding. In GraphQL is dit in theorie niet anders. 
@@ -96,7 +98,7 @@ Hiervoor voegen we een extra ingang toe, zijnde de ingang voor een gemeente. Omd
     Figuur 3 ― Een GraphQL batch bevraging voor een gemeente.
   </figcaption>
 </figure>
-
+</br>
 
 <div class="textbox" markdown="1">
 ## Mutaties bevragen versus een full check over een gemeente
@@ -113,5 +115,45 @@ die de daadwerkelijke vergelijking over de gevraagde objecten uitvoert. Dit is e
 Het doel is om de business regels hier veelal een vorm van configuratie te laten zijn. Immers, het datamodel is bekend en gekoppeld aan de bevraging. 
 Initieel zijn er een aantal regels in de software gezet door de developers, lijkend op de huidige situatie bij het Kadaster. Dit werkt voor de standaard regels, maar is weinig innovatief.
 Daarom is er in het laatste stuk van deze demonstrator gewerkt aan een zgn, Rule Engine. Om business regels generiek te implementeren is momenteel de huidige informatie nodg:
-- De ingang waarover de vergelijking moet worden gedaan (Willen we alle nummeraanduidingen langslopen? Of juist alle panden? Of wellicht alle WOZ-objecten). Deze keuze bepaalt welke objecten er wel en niet worden overwogen.
-- 
+- **INGANG**: De ingang waarover de vergelijking moet worden gedaan (Willen we alle nummeraanduidingen langslopen? Of juist alle panden? Of wellicht alle WOZ-objecten). Deze keuze bepaalt welke objecten er wel en niet worden overwogen.
+- **OBJECT1**: Het object waarover je wil vergelijken
+- **OBJECT2**: (Evt.) het object waarmee je het wil vergelijken
+- **ATTRIBUTE1**: Het attribuut van het object wat je wil vergelijken
+- **ATTRIBUTE2**: (Evt.) Het attribuut waarmee je het wil vergelijken (van een ander object of bijvoorbeeld een scalar
+- **VERGELIJKING**: Hoe je het wil vergelijken. Moet het gelijk zijn? Of juist niet gelijk? Of moet de ene waarde lager zijn dan de ander? Etc.
+
+We hebben deze kennis omgezet naar een eerste versie van een Rule Engine, dat over alle WOZ Objecten en over alle Nummeraanduidingen heen kan lopen. 
+Hierop leest de engine de beschikbare objecten en attributen uit uit het schema en vraagt het de gebruiker een keuze te maken tussen de objecten en attributen welke vergeleken moeten worden. 
+Hierbij doet hij op dit moment standaard een vergelijking of de gekozen attributen gelijk zijn, maar dit is in de toekomst gemakkelijk uit te breiden naar gecompliceerdere vergelijkingen.
+
+Een visuele weergave van de Rule Engine vind je in Figuur 4.
+
+<figure id="figuur-4">
+  <a href="/assets/images/ruleengine.gif">
+    <img src="/assets/images/ruleengine.gif">
+  </a>
+  <figcaption>
+    Figuur 4 ― De Rule Engine in werking.
+  </figcaption>
+</figure>
+
+## Visualiseren van de kwaliteitsanalyse
+Wanneer de bevraging mogelijk is en een framework staat voor de business rules kunnen we toe naar het daadwerkelijke dashboard. We hebben gekozen voor een standaard BI 
+tool om dit te bewerkstelligen. Immers, het doel is een **generiek** kwaliteitsdashboard en iedere afnemer/bronhouder zal in de praktijk zijn eigen tools en processen hebben om 
+zijn kwaliteit te verbeteren. In deze demonstrator benadrukken we dat het Kadaster primair moet zorgen dat het de middelen levert om kwaliteitsanalyses te kunnen doen richting een gemeente
+en daarbij de vrijheid moet laten aan de bronhouder om dit in zijn eigen proces te passen. Voor deze demonstrator hebben we gebruik gemaakt van PowerBI. 
+
+Een screenshot van het dashboard is te vinden in Figuur 5. Hierbij vind je een uitknipsel van het dashboard zelf, maar ook van de ververs knop voor een gegeven gemeente. 
+Deze ververs knop staat in connectie met de Microservice dat de bevragingen en vernieuwing van de data realiseert. Op deze manier kan een bronhouder real-time zijn verbeteringen 
+aan zijn registratie terug zijn in het kwaliteitsdashboard.   
+<a href="/assets/images/gemeentebevraging.gif"><img src="/assets/images/gemeentebevraging.gif"></a>
+
+<figure id="figuur-5">
+  <a href="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+    <img src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+  </a>
+  <figcaption>
+    Figuur 5 ― Een screenshot van het opgeleverde dashboard.
+  </figcaption>
+</figure>
+
