@@ -1,23 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
+    <link rel="stylesheet" href="/assets/css/presentation.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reset.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reveal.css">
+    <link rel="stylesheet" href="/assets/css/reveal/simple.css" id="theme">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="author" content="Wouter Beek and Erwin Folmer">
+    <meta name="author" content="Erwin Folmer & Wouter Beek">
     <meta name="description" content="Kadaster SPARQL Webinar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/assets/css/presentation.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/lib/css/default.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/css/reveal.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.7.0/css/theme/simple.css" id="theme">
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js-3.7.0/css/print/pdf.css' : '/assets/reveal.js-3.7.0/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadaster SPARQL Webinar</title>
   </head>
   <body>
@@ -37,12 +32,12 @@
           <div>
             <a href="https://kadaster.nl" target="_blank">
               <figure class="left">
-                <img src="/assets/images/kadaster.jpg" height="120">
+                <img src="/assets/images/kadaster-logo.png" height="120">
               </figure>
             </a>
             <a href="https://pdok.nl" target="_blank">
               <figure class="right">
-                <img src="/assets/images/pdok-square-logo.png" height="120">
+                <img src="/assets/images/pdok-logo.png" height="120">
               </figure>
             </a>
           </div>
@@ -79,7 +74,7 @@
             <h3>De 5 sterren van Linked Data</h3>
             <figure>
               <a href="https://5stardata.info">
-                <img src="/assets/images/5star.png">
+                <img src="/assets/images/5-stars.png">
               </a>
               <figcaption>Source: Tim Berners-Lee (<a href="https://5stardata.info">http://5stardata.info</a>)</figcaption>
             </figure>
@@ -111,11 +106,13 @@
             </figure>
           </section>
           <section>
-            <a href="https://data.pdok.nl/sparql" target="_blank">
-              <h3>https://data.pdok.nl/sparql</h3>
-            </a>
+            <h4>
+              <a href="https://bag.basisregistraties.overheid.nl/sparql" target="_blank">
+                https://bag.basisregistraties.overheid.nl/sparql
+              </a>
+            </h4>
             <figure>
-              <a href="https://data.pdok.nl/next" target="_blank">
+              <a href="https://bag.basisregistraties.overheid.nl/sparql" target="_blank">
                 <img src="/assets/images/sparql-spo.png">
               </a>
             </figure>
@@ -127,16 +124,17 @@
             <h1>Hands-on met SPARQL</h1>
           </section>
           <section>
-            <h3>Vraag 1/3: <a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+brt%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+distinct+*+%7B%0A+++%3Fkasteel+a+brt%3AKasteel%3B%0A+++++++geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+1%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Kastelen+in+Nederland&headers=%7B%7D&outputFormat=table">Kastelen in Nederland</a></h3>
+            <h3>Vraag 1/3: <a target="_blank" href="https://bag.basisregistraties.overheid.nl/sparql#query=prefix+brt%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+distinct+*+%7B%0A+++%3Fkasteel+a+brt%3AKasteel%3B%0A+++++++geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+1%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fsparql&requestMethod=POST&tabTitle=Kastelen+in+Nederland&headers=%7B%7D&outputFormat=table">Kastelen in Nederland</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
+              <pre><code class="language-sparql" data-trim>
+prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 select * {
   ?gebouw a brt:Kasteel;
           geo:hasGeometry/geo:asWKT ?shape.
 }
 limit 1
-</code></pre>
+              </code></pre>
             </figure>
             <!--
             <dl class="size-70">
@@ -148,9 +146,10 @@ limit 1
             -->
           </section>
           <section>
-            <h3>Vraag 2/3: <a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+*+%7B%0A++%3Fhoofdadres+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte%3B%0A++++++++++++++bag%3Ahuisnummer+110%3B%0A++++++++++++++bag%3Apostcode+%227311KZ%22.%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fhoofdadres%3B%0A+++++++++++++++++++bag%3Apandrelatering%2Fgeo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table">BAG pand</a></h3>
+            <h3>Vraag 2/3: <a target="_blank" href="https://bag.basisregistraties.overheid.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+*+%7B%0A++%3Fhoofdadres+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte%3B%0A++++++++++++++bag%3Ahuisnummer+110%3B%0A++++++++++++++bag%3Apostcode+%227311KZ%22.%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fhoofdadres%3B%0A+++++++++++++++++++bag%3Apandrelatering%2Fgeo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=table">BAG pand</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>
+prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 select * {
   ?hoofdadres bag:bijbehorendeOpenbareRuimte ?openbareRuimte;
@@ -159,13 +158,15 @@ select * {
   ?verblijfsobject bag:hoofdadres ?hoofdadres;
                    bag:pandrelatering/geo:hasGeometry/geo:asWKT ?shape.
 }
-limit 10</code></pre>
+limit 10
+              </code></pre>
             </figure>
           </section>
           <section>
-            <h3>Vraag 3/3: <a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+%3Fbegin+%3Feind+%7B%0A++graph+%3FhoofdadresVoorkomen+%7B%0A++++%3Fhoofdadres+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte%3B%0A++++++++++++++++bag%3Ahuisnummer+110%3B%0A++++++++++++++++bag%3Apostcode+%227311KZ%22.%0A++%7D%0A++%3FhoofdadresVoorkomen+bag%3AbeginGeldigheid+%3Fbegin.%0A++optional+%7B+%3FhoofdadresVoorkomen+bag%3AeindGeldigheid+%3Feind.+%7D%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fhoofdadres%3B%0A+++++++++++++++++++bag%3Apandrelatering%2Fgeo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+mutatie&headers=%7B%7D&outputFormat=table">BAG mutatie</a></h3>
+            <h3>Vraag 3/3: <a target="_blank" href="https://bag.basisregistraties.overheid.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+%3Fbegin+%3Feind+%7B%0A++graph+%3FhoofdadresVoorkomen+%7B%0A++++%3Fhoofdadres+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte%3B%0A++++++++++++++++bag%3Ahuisnummer+110%3B%0A++++++++++++++++bag%3Apostcode+%227311KZ%22.%0A++%7D%0A++%3FhoofdadresVoorkomen+bag%3AbeginGeldigheid+%3Fbegin.%0A++optional+%7B+%3FhoofdadresVoorkomen+bag%3AeindGeldigheid+%3Feind.+%7D%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fhoofdadres%3B%0A+++++++++++++++++++bag%3Apandrelatering%2Fgeo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Alimit+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+mutatie&headers=%7B%7D&outputFormat=table">BAG mutatie</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>
+prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 select ?begin ?eind {
   graph ?hoofdadresVoorkomen {
@@ -178,7 +179,8 @@ select ?begin ?eind {
   ?verblijfsobject bag:hoofdadres ?hoofdadres;
                    bag:pandrelatering/geo:hasGeometry/geo:asWKT ?shape.
 }
-limit 10</code></pre>
+limit 10
+              </code></pre>
             </figure>
           </section>
         </section>
@@ -190,10 +192,10 @@ limit 10</code></pre>
             <li>Vind een gebouw (pas het adres aan) [TODO]</li>
             <li>Doe de huischeck (op een adres dat iemand via de chat mag aanleveren; bedrijfsgebouw) [TODO]</li>
             -->
-            <li>De 10 oudste BAG panden (<a href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+*+%7B%0A++%3Fverblijfsobject+bag%3Ahoofdadres%2Fbag%3AbijbehorendeOpenbareRuimte%2Fbag%3AbijbehorendeWoonplaats%2Fbag%3AnaamWoonplaats+%22Apeldoorn%22%3B%0A+++++++++++++++++++bag%3Apandrelatering+%3Fpand.%0A++%3Fpand+bag%3AoorspronkelijkBouwjaar+%3FshapeLabel%3B%0A++++++++bag%3AgeometriePand%2Fgeo%3AasWKT+%3Fshape.%0A%7D%0Aorder+by+%3FshapeLabel%0Alimit+10&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Oudste+gebouwen&headers=%7B%7D&outputFormat=leaflet" target="_blank">voer uit</a>)</li>
-            <li>Data Stories (<a href="https://data.labs.pdok.nl/stories/pdok-kg/" target="_blank">voorbeeld</a>)</li>
-            <li>FacetCheck (<a href="https://data.labs.pdok.nl/presentations/bevolkings-browser/" target="_blank">voorbeeld</a>)</li>
-            <li><a href="http://www.irisa.fr/LIS/ferre/sparklis/osparklis.html?title=PDOK&endpoint=https%3A//data.pdok.nl/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">Sparklis</a></li>
+            <li>De 5 oudste BAG panden in Apeldoorn (<a href="https://data.labs.kadaster.nl/kadaster/-/queries/5-oudste-bag-panden-in-apeldoorn" target="_blank">voer uit</a>)</li>
+            <li>Data Stories (<a href="https://labs.kadaster.nl/stories" target="_blank">voorbeeld</a>)</li>
+            <li>FacetCheck (<a href="https://labs.kadaster.nl/browsers/bevolking" target="_blank">voorbeeld</a>)</li>
+            <li><a href="http://www.irisa.fr/LIS/ferre/sparklis/osparklis.html?title=PDOK&endpoint=https%3A//bag.basisregistraties.overheid.nl/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">Sparklis</a></li>
           </ul>
         </section>
 
@@ -207,7 +209,7 @@ limit 10</code></pre>
                 <li>
                   Email Ewin (<a href="mailto:Erwin.Folmer@kadaster.nl">Erwin.Folmer@kadaster.nl</a>)
                   <br>
-                  of Wouter (<a href="mailto:wouter@triply.cc">wouter@triply.cc</a>)
+                  of Wouter (<a href="mailto:Wouter.Beek@kadaster.nl">Wouter.Beek@kadaster.nl</a>)
                 </li>
             </figcaption>
           </figure>
@@ -216,23 +218,25 @@ limit 10</code></pre>
         <section>
           <h2>Dank voor het meedoen!</h2>
           <dl class="size-80">
-            <dt>PDOK, PDOK Next</dt>
-            <dd><a href="https://pdok.nl">https://pdok.nl</a>, <a href="https://pdok.nl/next">https://pdok.nl/next</a></dd>
-            <dt>SPARQL endpoint</dt>
-            <dd><a href="https://data.pdok.nl/sparql">https://data.pdok.nl/sparql</a></dd>
-            <dt>PDOK Labs</dt>
-            <dd><a href="https://data.labs.pdok.nl">https://data.labs.pdok.nl</a></dd>
+            <dt>PDOK & PDOK Next</dt>
+            <dd><a href="https://pdok.nl" target="_blank">https://pdok.nl</a> & <a href="https://pdok.nl/next" target="_blank">https://pdok.nl/next</a></dd>
+            <dt>BAG SPARQL endpoint</dt>
+            <dd><a href="https://bag.basisregistraties.overheid.nl/sparql" target="_blank">https://bag.basisregistraties.overheid.nl/sparql</a></dd>
+            <dt>Kadaster Labs</dt>
+            <dd><a href="https://labs.kadaster.nl" target="_blank">https://labs.kadaster.nl</a></dd>
+            <dt>Kadaster Labs triple store</dt>
+            <dd><a href="https://data.labs.kadaster.nl" target="_blank">https://data.labs.kadaster.nl</a></dd>
           </dl>
           <hr>
           <div>
             <a href="https://kadaster.nl" target="_blank">
               <figure class="left">
-                <img src="/assets/images/kadaster.jpg" height="120">
+                <img src="/assets/images/kadaster-logo.png" height="120">
               </figure>
             </a>
             <a href="https://pdok.nl" target="_blank">
               <figure class="right">
-                <img src="/assets/images/pdok-square-logo.png" height="120">
+                <img src="/assets/images/pdok-logo.png" height="120">
               </figure>
             </a>
           </div>
@@ -240,32 +244,16 @@ limit 10</code></pre>
 
       </div>
     </div>
-    <script src="/assets/reveal.js-3.7.0/lib/js/head.min.js"></script>
-    <script src="/assets/reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="/assets/js/reveal/highlight.js"></script>
+    <script src="/assets/js/reveal/reveal.js"></script>
+    <script src="/assets/js/prism.min.js"></script>
     <script>
-			// More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
         center: true,
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-				// More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-		      { src: '/assets/reveal.js-3.7.0/js/classList.js', condition: function() { return !document.body.classList; } },
-		      // Interpret Markdown in <section> elements
-		      { src: '/assets/reveal.js-3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      // Syntax highlight for <code> elements
-		      { src: '/assets/reveal.js-3.7.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-		      // Zoom in and out with Alt+click
-		      { src: '/assets/reveal.js-3.7.0/plugin/zoom-js/zoom.js', async: true },
-		      // Speaker notes
-		      { src: '/assets/reveal.js-3.7.0/plugin/notes/notes.js', async: true },
-		      // MathJax
-		      { src: '/assets/reveal.js-3.7.0/plugin/math/math.js', async: true }
-        ]
+        controls: true,
+        hash: true,
+        plugins: [ RevealHighlight ],
+        progress: true
       });
     </script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

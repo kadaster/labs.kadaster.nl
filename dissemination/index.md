@@ -5,7 +5,19 @@ title: Dissemination
 # Presentaties
 
 [Metadata 2.0](./2019-11-26-Metadata-2-0/index.html)
-: Erwin Folmer & Wouter Beek, 26 November 2019.
+: Erwin Folmer & Wouter Beek, 26 november 2019.
+
+[Adding 3D Visualization to the SPARQL Query Loop](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html)
+: Erwin Folmer & Wouter Beek, 30 augustus 2019.
+
+[Kasaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html)
+: Wouter Beek, 18 juni 2019.
+
+[Kadaster SPARQL Webinar](./Kadaster-SPARQL-Webinar.html)
+: Erwin Folmer & Wouter Beek
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oyH8YFVy37Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
 # Publicaties
 Business Rationale for Linked Data at Governments: a case study at the Netherlands’ Kadaster Data Platform
@@ -27,7 +39,7 @@ Linked Data Viewing as part of the Spatial Data Platform of the Future
 : Erwin Folmer, Wouter Beek, Laurens Rietveld.  In: _International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences_, Vol. 42, No. 4, 2018, pp. 49-52, [online toegang](https://ris.utwente.nl/ws/portalfiles/portal/76803233/isprs_archives_XLII_4_W8_49_2018.pdf).
 
 Adding 3D GIS Visualization and Navigation to the SPARQL Query Loop
-: Wouter Beek, Erwin Folmer, Laurens Rietveld, Tony Baving, Vincent Van Altena.  In: _International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences_, Vol. 42, 2018, [online toegang](https://research.utwente.nl/files/76803170/isprs_archives_XLII_4_W8_11_2018.pdf).
+: Wouter Beek, Erwin Folmer, Laurens Rietveld, Tony Baving, Vincent Van Altena.  In: _International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences_, Vol. 42, 2018, [online toegang](https://research.utwente.nl/files/76803170/isprs_archives_XLII_4_W8_11_2018.pdf), [presentatie](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html).
 
 Kadaster Data Platform ― Overview Archicture
 : Erwin Folmer, Wouter Beek.  In: _Free and Open Source Software for Geospatial (FOSS4G) Conference Proceedings_, Vol. 17, No. 1, 2017, [online toegang](https://scholarworks.umass.edu/foss4g/vol17/iss1/23).

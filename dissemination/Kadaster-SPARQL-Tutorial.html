@@ -1,25 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
+    <link rel="stylesheet" href="/assets/css/presentation.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reset.css">
+    <link rel="stylesheet" href="/assets/css/reveal/reveal.css">
+    <link rel="stylesheet" href="/assets/css/reveal/simple.css" id="theme">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="author" content="Wouter Beek">
     <meta name="description" content="Kadaster SPARQL Tutorial">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="/assets/images/kadaster-logo.png">
-    <link rel="stylesheet" href="/assets/css/presentation.css">
-    <link rel="stylesheet" href="/assets/css/prism.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.9.2/css/reveal.css">
-    <link rel="stylesheet" href="/assets/reveal.js-3.9.2/css/theme/simple.css" id="theme">
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js-3.9.2/css/print/pdf.css' : '/assets/reveal.js-3.9.2/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-    <script src="/assets/js/presentation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadaster SPARQL Tutorial</title>
   </head>
   <body>
@@ -60,7 +53,7 @@
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=select+%3Fs+%3Fp+%3Fo+%7B%0A++%3Fs+%3Fp+%3Fo%0A%7D%0Alimit+5&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=De+eerste+SPARQL+vraag&headers=%7B%7D&outputFormat=table">De eerste SPARQL vraag</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>select ?s ?p ?o {
+              <pre><code class="language-sparql" data-trim>select ?s ?p ?o {
   ?s ?p ?o
 }
 limit 5</code></pre>
@@ -78,7 +71,7 @@ limit 5</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=select+%3Fo+%3Fp+%3Fs+%7B%0A++%3Fs+%3Fp+%3Fo%0A%7D%0Alimit+5%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Verander+de+projectie&headers=%7B%7D&outputFormat=table">Verander de projectie</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>select <mark>?o ?p ?s</mark> {
+              <pre><code class="language-sparql" data-trim>select <mark>?o ?p ?s</mark> {
   ?s ?p ?o
 }
 limit 5</code></pre>
@@ -88,7 +81,7 @@ limit 5</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=select+%3Fs+%3Fp+%3Fo+%7B%0A++%3Fs+%3Fp+%3Fo%0A%7D%0Alimit+10%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Verander+de+limiet&headers=%7B%7D&outputFormat=table">Verander de limiet</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>select ?s ?p ?o {
+              <pre><code class="language-sparql" data-trim>select ?s ?p ?o {
   ?s ?p ?o
 }
 limit <mark>10</mark></code></pre>
@@ -98,7 +91,7 @@ limit <mark>10</mark></code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=select+%3Fs+%3Fp+%3Fo+%7B%0A++%3Fs+%3Fp+%3Fo%0A%7D%0Alimit+5%0Aoffset+5&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Voeg+een+offset+toe&headers=%7B%7D&outputFormat=table">Voeg een offset toe</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>select ?s ?p ?o {
+              <pre><code class="language-sparql" data-trim>select ?s ?p ?o {
   ?s ?p ?o
 }
 limit 5
@@ -122,7 +115,7 @@ limit 5
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=select+%3Fs+%7B%0A++%3Fs+%3Fp+%22De+Brug%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string%3E+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=🌉+Wat+is+‘De+Brug’%3F&headers=%7B%7D&outputFormat=table">Wat is ‘De Brug’? 🌉</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>select ?s {
+              <pre><code class="language-sparql" data-trim>select ?s {
   ?s ?p "De Brug"^^&lt;http://www.w3.org/2001/XMLSchema#string&gt; .
 }
 limit 100</code></pre>
@@ -144,7 +137,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0Aselect+%3Fs+%7B%0A++%3Fs+%3Fp+%22De+Brug%22%5E%5Exsd%3Astring+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=🌉+Wat+is+‘De+Brug’%3F&headers=%7B%7D&outputFormat=table">Wat is ‘De Brug’? 🌉</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+              <pre><code class="language-sparql" data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 select ?s {
   ?s ?p "De Brug"^^xsd:string .
 }
@@ -160,7 +153,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0Aselect+%3Fs+%7B%0A++%7B%0A++++%3Fs+%3Fp+%22De+Brug%22%5E%5Exsd%3Astring+.%0A++%7D+union+%7B%0A++++%3Fs+%3Fp+%22De+Brug%22%40nl+.%0A++%7D%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Nog+meer+dingen+die+%E2%80%98‘De+Brug’%E2%80%99+heten%E2%80%A6&headers=%7B%7D&outputFormat=table">Nog meer dingen die ‘De Brug’ heten…</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+              <pre><code class="language-sparql" data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 select ?s {
   {
     ?s ?p "De Brug"^^xsd:string .
@@ -189,7 +182,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0Aselect+distinct+%3Fklasse+%7B%0A++%7B%0A++++%3Fs+%3Fp+%22De+Brug%22%5E%5Exsd%3Astring+%3B+a+%3Fklasse+.%0A++%7D+union+%7B%0A++++%3Fs+%3Fp+%22De+Brug%22%40nl+%3B+a+%3Fklasse+.%0A++%7D%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Wat+iets+is+kunnen+we+zien+aan+de+klasse&headers=%7B%7D&outputFormat=table">Wat iets is kunnen we zien aan de <i>klasse</i></a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+              <pre><code class="language-sparql" data-trim>prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 select distinct ?klasse {
   {
     ?s ?p "De Brug"^^xsd:string ; a ?klasse .
@@ -228,7 +221,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fs+%7B%0A++%3Fs+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=%F0%9F%8F%99+Wat+is+Apeldoorn%3F&headers=%7B%7D&outputFormat=table">🏙 Wat is Apeldoorn?</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+              <pre><code class="language-sparql" data-trim>prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?s {
   ?s rdfs:label "Apeldoorn"@nl .
 }
@@ -244,7 +237,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fs+%3Flabel+%7B%0A++%3Fs+rdfs%3Alabel+%22Apeldoorn%22%40nl+%3B+a+%3Fklasse+.%0A++%3Fklasse+rdfs%3Alabel+%3Flabel+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Ook+klasses+hebben+een+label&headers=%7B%7D&outputFormat=table">Ook klasses hebben een label</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+              <pre><code class="language-sparql" data-trim>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?s ?label {
   ?s rdfs:label "Apeldoorn"@nl ; a ?klasse .
   ?klasse rdfs:label ?label .
@@ -260,7 +253,7 @@ select ?s ?label {
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fs+%3Flabel+%7B%0A++%3Fs+rdfs%3Alabel+%22Apeldoorn%22%40nl+%3B+a%2Frdfs%3Alabel+%3Flabel+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Wat+we+niet+gebruiken+mogen+we+overslaan&headers=%7B%7D&outputFormat=table">Wat we niet gebruiken mogen we overslaan</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+              <pre><code class="language-sparql" data-trim>prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?s ?label {
   ?s rdfs:label "Apeldoorn"@nl ; a/rdfs:label ?label .
 }
@@ -280,7 +273,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%3FwktLabel+%7B%0A++%3Finstantie+rdfs%3Alabel+%22Apeldoorn%22%40nl+%3B%0A+++++++++++++geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fwkt+%3B%0A+++++++++++++a%2Frdfs%3Alabel+%3FwktLabel+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Ambigu%C3%AFteit+%2B+geografie&headers=%7B%7D&outputFormat=table">Ambiguïteit + geografie</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
+              <pre><code class="language-sparql" data-trim>prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?wkt ?wktLabel {
   ?s rdfs:label "Apeldoorn"@nl ;
@@ -309,7 +302,7 @@ limit 100</code></pre>
               <a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+brt%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%3FwktLabel+%7B%0A++%3Finstantie+rdfs%3Alabel+%22Apeldoorn%22%40nl+%3B%0A+++++++++++++geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fwkt+%3B%0A+++++++++++++a+brt%3ARegistratiefGebied+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Ik+bedoel+het+registratief+gebied&headers=%7B%7D&outputFormat=leaflet">“Ik bedoel het registratief gebied”</a>
             </p>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
+              <pre><code class="language-sparql" data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?wkt ?wktLabel {
@@ -329,7 +322,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aselect+%3FopenbareRuimte+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+openbare+ruimte&headers=%7B%7D&outputFormat=table">BAG openbare ruimte</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 select ?openbareRuimte {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat"
 }
@@ -341,7 +334,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aselect+%3FopenbareRuimte+%3Fwoonplaats+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+openbare+ruimte+%2B+woonplaats&headers=%7B%7D&outputFormat=table">BAG openbare ruimte + woonplaats</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 select ?openbareRuimte ?woonplaats {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
                   bag:bijbehorendeWoonplaats ?woonplaats .
@@ -354,7 +347,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3FopenbareRuimte+%3Fwoonplaats+%3Flabel+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%3Flabel+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Menselijk+leesbare+labels&headers=%7B%7D&outputFormat=table">Menselijk leesbare labels</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 select ?openbareRuimte ?woonplaats ?label {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
                   bag:bijbehorendeWoonplaats ?woonplaats .
@@ -372,7 +365,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3FopenbareRuimte+%3Fwoonplaats+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Maak+het+patroon+specifieker&headers=%7B%7D&outputFormat=table">Maak het patroon specifieker</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?openbareRuimte ?woonplaats {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
@@ -387,7 +380,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fnummeraanduiding+%3FopenbareRuimte+%3Fnummeraanduiding+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats%2Frdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+110+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Voeg+nummeraanduiding+toe&headers=%7B%7D&outputFormat=table">Voeg nummeraanduiding toe</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?nummeraanduiding ?openbareRuimte {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
@@ -407,7 +400,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats%2Frdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+110+.%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fnummeraanduiding+%3B%0A+++++++++++++++++++bag%3Apandrelatering+%3Fpand+.%0A++%3Fpand+bag%3AgeometriePand%2Fgeo%3AasWKT+%3Fwkt+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Voeg+verblijfsobject+en+pand+toe&headers=%7B%7D&outputFormat=leaflet">Voeg verblijfsobject en pand toe</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select <mark>?wkt</mark> {
@@ -425,7 +418,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%3FwktLabel+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats%2Frdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+%3FwktLabel+.%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fnummeraanduiding+%3B%0A+++++++++++++++++++bag%3Apandrelatering%2Fbag%3AgeometriePand%2Fgeo%3AasWKT+%3Fwkt+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Maak+patroon+generieker&headers=%7B%7D&outputFormat=leaflet">Maak patroon generieker</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?wkt <mark>?wktLabel</mark> {
@@ -447,7 +440,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3FwktVerblijfsobject+%3FwktVerblijfsobjectColor+%3FwktVerblijfsobjectLabel+%3FwktPand+%3FwktPandLabel+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats%2Frdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Apostcode+%3Fpostcode+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+%3Fhuisnummer+.%0A++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fnummeraanduiding+%3B%0A+++++++++++++++++++geo%3AhasGeometry%2Fgeo%3AasWKT+%3FwktVerblijfsobject+%3B%0A+++++++++++++++++++bag%3Apandrelatering+%3Fpand+%3B%0A+++++++++++++++++++a%2Frdfs%3Alabel+%3Flabel+.%0A++%3Fpand+bag%3AgeometriePand%2Fgeo%3AasWKT+%3FwktPand+.%0A++bind+(concat('Hofstraat+'%2Cstr(%3Fhuisnummer))+as+%3FwktPandLabel)%0A++bind+(concat(%3FwktPandLabel%2C'+'%2Cstr(%3Fpostcode)%2C'%3Cbr%3E'%2Cstr(%3Flabel))+as+%3FwktVerblijfsobjectLabel)%0A++bind+(%22red%22+as+%3FwktVerblijfsobjectColor)%0A%7D%0Alimit+1000%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=%C3%89%C3%A9n+pand+kan+meerdere+verblijfsobjecten+hebben&headers=%7B%7D&outputFormat=leaflet">Één pand kan meerdere verblijfsobjecten hebben</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?wktVerblijfsobject ?wktVerblijfsobjectColor ?wktVerblijfsobjectLabel ?wktPand ?wktPandLabel {
@@ -519,7 +512,7 @@ limit 1000</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+brt%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fshape+%3FshapeLabel+%7B%0A++bind(%22Amsterdam%22%40nl+as+%3Fnaam)%0A++%3Fplaats1+rdfs%3Alabel+%3Fnaam+%3B+brt%3AisBAGwoonplaats+true+%3B+geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape%0A++service+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0A++++%3Fplaats2+rdfs%3Alabel+%3Fnaam+%3B+foaf%3Adepiction+%3Fvlag%0A++%7D%0A++bind(concat(%0A++++'%3Ch2%3E'%2Cstr(%3Fnaam)%2C'%3C%2Fh2%3E'%2C%0A++++if(bound(%3Fvlag)%2Cconcat('%3Cimg+src%3D%22'%2Creplace(str(%3Fvlag)%2C%22http%3A%2F%2F%22%2C%22https%3A%2F%2F%22)%2C'%22+style%3D%22max-width%3A+150px%3B%22%3E')%2C'')%2C%0A++++'%3Cp%3EExterne+representatie%3A+%3Ca+href%3D%22'%2Cstr(%3Fplaats2)%2C'%22%3E%5BDBpedia%5D%3C%2Fa%3E%3C%2Fp%3E'%0A++)+as+%3FshapeLabel)%0A%7D%0Alimit+1%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BRT%2FBAG+gemeente+%E2%86%92+DBpedia+%F0%9F%95%B8&headers=%7B%7D&outputFormat=leaflet">BRT/BAG gemeente → DBpedia 🕸</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
+              <pre><code class="language-sparql" data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
 prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -549,7 +542,7 @@ limit 1</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+brt%3A+%3Chttp%3A%2F%2Fbrt.basisregistraties.overheid.nl%2Fdef%2Ftop10nl%23%3E%0Aprefix+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fshape+%3FshapeLabel+%7B%0A++bind(%22Apeldoorn%22%40nl+as+%3Fnaam)%0A++%3Fplaats1+rdfs%3Alabel+%3Fnaam+%3B+brt%3AisBAGwoonplaats+true+%3B+geo%3AhasGeometry%2Fgeo%3AasWKT+%3Fshape%0A++service+%3Chttps%3A%2F%2Fdbpedia.org%2Fsparql%3E+%7B%0A++++%3Fplaats2+rdfs%3Alabel+%3Fnaam%0A++++optional+%7B+%3Fplaats2+foaf%3Adepiction+%3Fvlag+%7D%0A++%7D%0A++bind(concat(%0A++++'%3Ch2%3E'%2Cstr(%3Fnaam)%2C'%3C%2Fh2%3E'%2C%0A++++if(bound(%3Fvlag)%2Cconcat('%3Cimg+src%3D%22'%2Cstr(%3Fvlag)%2C'%22+style%3D%22max-width%3A+150px%3B%22%3E')%2C'')%2C%0A++++'%3Cp%3EExterne+representatie%3A+%3Ca+href%3D%22'%2Cstr(%3Fplaats2)%2C'%22%3E%5BDBpedia%5D%3C%2Fa%3E%3C%2Fp%3E'%0A++)+as+%3FshapeLabel)%0A%7D%0Alimit+1%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Apeldoorn+heeft+geen+vlag&headers=%7B%7D&outputFormat=leaflet">Apeldoorn heeft geen vlag</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
+              <pre><code class="language-sparql" data-trim>prefix brt: &lt;http://brt.basisregistraties.overheid.nl/def/top10nl#&gt;
 prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -591,7 +584,7 @@ limit 1
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aselect+%3Fwkt+%3FwktLabel+%7B%0A++%3Fverblijfsobject+bag%3Ahoofdadres%2Fbag%3AbijbehorendeOpenbareRuimte%2Fbag%3AbijbehorendeWoonplaats%2Fbag%3AnaamWoonplaats+%22Apeldoorn%22+%3B%0A+++++++++++++++++++bag%3Apandrelatering+%3Fpand+.%0A++%3Fpand+bag%3AoorspronkelijkBouwjaar+%3FwktLabel+%3B%0A++++++++bag%3AgeometriePand%2Fgeo%3AasWKT+%3Fwkt+.%0A%7D%0Aorder+by+asc(%3FwktLabel)%0Alimit+50%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Oudste+pand+in+Apeldoorn+👵👴&headers=%7B%7D&outputFormat=leaflet">Oudste pand in Apeldoorn 👵👴</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+              <pre><code class="language-sparql" data-trim>prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 select ?wkt ?wktLabel {
   ?verblijfsobject bag:hoofdadres/bag:bijbehorendeOpenbareRuimte/bag:bijbehorendeWoonplaats/bag:naamWoonplaats "Apeldoorn" ;
@@ -612,7 +605,7 @@ limit 50</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3FopenbareRuimte+%3Fwoonplaats+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Zijn+er+meerdere+Apeldoorns%3F&headers=%7B%7D&outputFormat=table">Zijn er meerdere Apeldoorns?</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?openbareRuimte ?woonplaats {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
@@ -632,7 +625,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwoonplaats+%3Fstatus+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+%3B%0A++++++++++++++bag%3Astatus+%3Fstatus+.%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+status&headers=%7B%7D&outputFormat=leaflet">BAG status</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?woonplaats <mark>?status</mark> {
   ?openbareRuimte bag:naamOpenbareRuimte "Hofstraat" ;
@@ -654,7 +647,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+begrip%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fid%2Fbegrip%2F%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3FopenbareRuimte+%3Fwoonplaats+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++filter+not+exists+%7B%0A++++%3Fwoonplaats+bag%3Astatus+begrip%3AWoonplaatsIngetrokken+.%0A++%7D%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=Alleen+huidige+woonplaatsen&headers=%7B%7D&outputFormat=table">Alleen huidige woonplaatsen</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix begrip: &lt;http://bag.basisregistraties.overheid.nl/id/begrip/&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 select ?openbareRuimte ?woonplaats {
@@ -672,7 +665,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+begrip%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fid%2Fbegrip%2F%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%3Fbegin+%3Feind+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++filter+not+exists+%7B%0A++++%3Fwoonplaats+bag%3Astatus+begrip%3AWoonplaatsIngetrokken+.%0A++%7D%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+110+.%0A++graph+%3Fvoorkomen+%7B%0A++++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fnummeraanduiding+.%0A++%7D%0A++%3Fverblijfsobject+bag%3Apandrelatering%2Fbag%3AgeometriePand%2Fgeo%3AasWKT+%3Fwkt+.%0A++%3Fvoorkomen+bag%3AbeginGeldigheid+%3Fbegin+.%0A++optional+%7B%0A++++%3Fvoorkomen+bag%3AeindGeldigheid+%3Feind+.%0A++%7D%0A%7D%0Alimit+100&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+voorkomen&headers=%7B%7D&outputFormat=table">BAG voorkomen</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix begrip: &lt;http://bag.basisregistraties.overheid.nl/id/begrip/&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -707,7 +700,7 @@ limit 100</code></pre>
           <section>
             <h3><a target="_blank" href="https://data.pdok.nl/sparql#query=prefix+bag%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix+begrip%3A+%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fid%2Fbegrip%2F%3E%0Aprefix+geo%3A+%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+%3Fwkt+%3Fbegin+%7B%0A++%3FopenbareRuimte+bag%3AnaamOpenbareRuimte+%22Hofstraat%22+%3B%0A++++++++++++++++++bag%3AbijbehorendeWoonplaats+%3Fwoonplaats+.%0A++%3Fwoonplaats+rdfs%3Alabel+%22Apeldoorn%22%40nl+.%0A++filter+not+exists+%7B%0A++++%3Fwoonplaats+bag%3Astatus+begrip%3AWoonplaatsIngetrokken+.%0A++%7D%0A++%3Fnummeraanduiding+bag%3AbijbehorendeOpenbareRuimte+%3FopenbareRuimte+%3B%0A++++++++++++++++++++bag%3Ahuisnummer+110+.%0A++graph+%3Fvoorkomen+%7B%0A++++%3Fverblijfsobject+bag%3Ahoofdadres+%3Fnummeraanduiding+.%0A++%7D%0A++%3Fverblijfsobject+bag%3Apandrelatering%2Fbag%3AgeometriePand%2Fgeo%3AasWKT+%3Fwkt+.%0A++%3Fvoorkomen+bag%3AbeginGeldigheid+%3Fbegin+.%0A++filter+not+exists+%7B%0A++++%3Fvoorkomen+bag%3AeindGeldigheid+%3Feind+.%0A++%7D%0A%7D%0Alimit+100%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fdata.pdok.nl%2Fsparql&requestMethod=POST&tabTitle=BAG+voorkomen&headers=%7B%7D&outputFormat=table">Huidig voorkomen</a></h3>
             <figure>
-              <pre><code class="sparql" data-noescape data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
+              <pre><code class="language-sparql" data-trim>prefix bag: &lt;http://bag.basisregistraties.overheid.nl/def/bag#&gt;
 prefix begrip: &lt;http://bag.basisregistraties.overheid.nl/id/begrip/&gt;
 prefix geo: &lt;http://www.opengis.net/ont/geosparql#&gt;
 prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
@@ -753,23 +746,16 @@ limit 100</code></pre>
 
       </div>
     </div>
-    <script src="/assets/reveal.js-3.9.2/js/reveal.js"></script>
+    <script src="/assets/js/reveal/highlight.js"></script>
+    <script src="/assets/js/reveal/reveal.js"></script>
     <script src="/assets/js/prism.min.js"></script>
     <script>
       Reveal.initialize({
         center: true,
         controls: true,
-        dependencies: [
-		      { src: '/assets/reveal.js-3.9.2/js/classList.js', condition: function() { return !document.body.classList; } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		      { src: '/assets/reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true },
-		      { src: '/assets/reveal.js-3.9.2/plugin/notes/notes.js', async: true },
-		      { src: '/assets/reveal.js-3.9.2/plugin/math/math.js', async: true }
-        ],
-        history: true,
-        progress: true,
-        transition: 'slide'
+        hash: true,
+        plugins: [ RevealHighlight ],
+        progress: true
       });
     </script>
   </body>

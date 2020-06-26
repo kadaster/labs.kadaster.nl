@@ -9,7 +9,7 @@ title: CBS/Kadaster Data Story
 
 We zijn op zoek naar een geschikte locatie in de Randstad om te gaan wonen. We denken aan Gouda, Waddinxveen, of Zoetermeer, want dat ligt in de buurt van ons werk. De afstand tot een kinderdagverblijf is heel belangrijk, en de afstand tot een school is ook belangrijk, maar in mindere mate. Op basis van de CBS Wijk- en Buurtkaart vergelijken we deze drie gemeenten op basis van deze twee criteria:
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/kadaster-cbs-1">
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/kadaster-cbs-1/1">
 </query>
 
 We zien dat Zoetermeer als beste uit de bus komt, dus laten we eens
@@ -21,7 +21,7 @@ Laten we eens kijken naar de bevolkingssamenstelling in Zoetermeer
 naar leeftijdscategorie. We kunnen dit per wijk opvragen, samen met
 het landelijk gemiddelde:
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/kadaster-cbs-2">
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/kadaster-cbs-2">
 </query>
 
 <h2>Gemiddelde woningwaarde in Zoetermeer</h2>
@@ -30,7 +30,7 @@ Wat is de gemiddelde woningwaarde per buurt in Zoetermeer? Op
 onderstaande kaart loopt de schaal van blauw (goedkoper), naar geel
 (gemiddeld), naar rood (duurder).
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/kadaster-cbs-3">
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/kadaster-cbs-3">
 </query>
 
 We zien dat het stadscentrum van Zoetermeer relatief goedkoop is.

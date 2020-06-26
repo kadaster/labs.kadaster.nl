@@ -10,12 +10,16 @@ larger.  We therefore reduce the font size inside all <code> tags.
   width: 100% !important;
 }
 
+.reveal .footnote {
+  font-size: 50% !important;
+}
+
 /*
 The following ensures that images do not run off the screen in the
 most common cases.
 */
 .reveal figure figcaption {
-  font-size: 80% !important;
+  font-size: 70% !important;
 }
 .reveal figure img,
 .reveal figure video {

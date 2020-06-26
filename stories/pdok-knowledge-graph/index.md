@@ -21,7 +21,7 @@ title: PDOK Knowledge Graph
   <p>Op deze kaart zijn de kandidaat buurten gegroepeerd weergegeven.  Door op de met getallen aangeduide groepen te klikken worden de buurten binnen die groepering zichtbaar gemaakt.  Op het laagste niveau worden de individuele buurten zichtbaar.  Door op deze buurten te klikken kan de naam van de buurten getoond worden.</p>
 </div>
 
-<query data-show-query="advanced" data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-1">
+<query  data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/pdok-kg-1">
 </query>
 
 <h3>Bevraging 1B: Voeg meer criteria toe</h3>
@@ -36,7 +36,7 @@ title: PDOK Knowledge Graph
 
 <p>Wanneer we alle buurten in Nederland op basis van deze criteria sorteren komen de volgende buurten boven drijven:</p>
 
-<query data-show-query="advanced" data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-2">
+<query  data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/pdok-kg-2">
 </query>
 
 <h3>Bevraging 1C: Kandidaat buurten in Dordrecht</h3>
@@ -48,7 +48,7 @@ title: PDOK Knowledge Graph
   <p>In deze 3D omgeving zijn de kandidaat buurten weergegeven.  De hoogte en kleur van de buurten duidt de hoogte van de gemiddelde woningwaarde aan.  Door op de 3D objecten te klikken wordt de naam van de buurt getoond samen met de gemiddelde woningwaarde voor die buurt.  Navigatie binnen de 3D omgeving functioneert door gebruik te maken van de muis en de <kbd>Ctrl</kbd> toets.</p>
 </div>
 
-<query data-show-query="advanced" data-config-ref="https://data.pldn.nl/cbs/-/queries/pdok-kg-3">
+<query  data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/pdok-kg-3">
 </query>
 
 <h3>Bevraging 1D: BAG panden die aan de criteria voldoen</h3>
@@ -65,7 +65,7 @@ laagste klasse (t/m € 150.000,-), en energielabel D of hoger.  De
   door de editor te openen en weergave optie “Gallery” te kiezen.</p>
 </div>
 
-<query data-show-query="advanced" data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-1d">
+<query  data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-1d">
 </query>
 
 <h2>Casus 2: Herbenutten van schoolgebouwen</h2>
@@ -73,7 +73,7 @@ laagste klasse (t/m € 150.000,-), en energielabel D of hoger.  De
 <p>Een andere mogelijkheid voor het realiseren van nieuwe woningen
 zijn leegstaande schoolgebouwen.</p>
 
-<h3>Bevraging 2A: BAG panden met onderwijsfunctie door de tijd heen</h3>
+<!-- <h3>Bevraging 2A: BAG panden met onderwijsfunctie door de tijd heen</h3>
 
 <p>Het volgende diagram toont een overzicht van het aantal BAG panden
 met een onderwijsfunctie, geteld per jaar en per status categorie.  We
@@ -84,9 +84,9 @@ onderwijsfunctie van status is veranderd.</p>
        data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
        data-query-ref="scholen-bag-mutaties-diagram.rq"
        data-output="gchart">
-</query>
+</query> -->
 
-<h3>Bevraging 2B: Mutaties voor BAG panden met onderwijsfunctie</h3>
+<h3>Bevraging 2A: Mutaties voor BAG panden met onderwijsfunctie</h3>
 
 <p>We kunnen deze panden op de kaart zetten, samen met hun recente
 mutaties volgens de BAG, en in relatie tot hun bijbehorende perceel
@@ -97,7 +97,7 @@ schoolgebouw vrijkomt voor nieuwbouw.</p>
 <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/knowledge-graph-2b">
 </query>
 
-<h3>Bevraging 2C: BRT school én BAG pand met onderwijsfunctie</h3>
+<h3>Bevraging 2B: BRT school én BAG pand met onderwijsfunctie</h3>
 
 <p>De BRT bevat ook schoolgebouwen, maar deze set is onvolledig.
 Slechts één van de BAG panden met een onderwijsfunctie komt ook als

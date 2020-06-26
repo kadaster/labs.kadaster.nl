@@ -12,7 +12,7 @@ Deze Data Story gaat over de gemiddelde energiebesparingspotentie voor koopwonin
 
 De volgende kaart toont de totale besparing in energieverbruik (uitgedrukt in euro per jaar) die in koopwoningen behaald kan worden wanneer alle energiebesparende maatregelen die nog kunnen worden toegepast in de woning worden gerealiseerd.  Besparingen liggen landelijk tussen € 0,- (blauw) en € 2.280,- (rood).
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/reele-energiebesparing-totaal">
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/reele-energiebesparing-totaal">
 </query>
 
 ## Opbrengst bouwfysische besparing
@@ -26,7 +26,7 @@ Bouwfysische maatregelen bestaan uit:
 - isolatie van gevels
 - kierdichting en HR beglazing
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/reele-energiebesparing-bouwfysisch"></query>
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/reele-energiebesparing-bouwfysisch"></query>
 
 ## Opbrengst installatietechnische besparingen
 
@@ -38,5 +38,5 @@ Installatietechnische maatregelen bestaan uit:
 - zonneboiler
 - zonnepanelen
 
-<query data-config-ref="https://data.pldn.nl/cbs/-/queries/reele-energiebesparing-installatietech">
+<query data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/reele-energiebesparing-installatietech">
 </query>

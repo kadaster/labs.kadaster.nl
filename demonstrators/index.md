@@ -23,8 +23,24 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
+  <a href="https://arcg.is/11uvDD">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/landscape-water.jpg">
+      <div class="card-title">Het Effect van Natura 2000-Gebieden</div>
+      <div class="card-description">De onderzoeksvraag: "Wat is het effect van de Natura 2000-gebieden op grond- en woningwaarde?", wordt in deze applicatie gevisualiseerd.</div>
+    </div>
   </a>
-    <a href="/demonstrators/hackalodbot/index.html">
+  </a>
+  <a href="/tech-radar/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/radar-banner.png">
+      <div class="card-title">ETC Tech Radar</div>
+      <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
+    </div>
+  </a>
+  <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/telegram.png">
@@ -38,14 +54,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/huis.png">
       <div class="card-title">Huischeck</div>
       <div class="card-description">Vraag informatie op over uw huis en buurt door middel van de PDOK Locatieserver.  Naast een informatief overzicht wordt ook een unieke QR-code voor uw huis aangemaakt.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/cbsloddemonstrator/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screen-kwb.PNG">
-      <div class="card-title">CBS KWB Dashboard</div>
-      <div class="card-description">Gebruik dit dashboard om laagdrempelig de Kerncijfers Wijken- en Buurten (KWB) van het CBS te bevragen!</div>
     </div>
   </a>
 	<a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
@@ -64,14 +72,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
     </div>
   </a>
-  <a href="/demonstrators/bagdemonstrator/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG">
-      <div class="card-title">BAG Waarden voorspellen</div>
-      <div class="card-description">Bekijk de resultaten van een voorspellend model op missende waarden in de BAG ook in een interactief dashboard!</div>
-    </div>
-  </a>
   <a href="/demonstrators/tableau">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -88,7 +88,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Energielabels voorspellen met behulp van Machine Learning.</div>
     </div>
   </a>
-  <a href="http://www.visualdataweb.de/webvowl/#iri=https://triplydb.com/kadaster/bag-vocab/download.trig.gz">
+  <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/webvowl.png">

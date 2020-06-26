@@ -17,10 +17,10 @@ select ?gemeenteOppervlakte ?gemeenteNaam {
     }
   }
   bind(geof:envelope(?gemeenteShape) as ?gemeenteBoundingBox)
-  bind('^POLYGON\\s\\(\\(([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\,\\s([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*).*\\)\\)$' as ?regex)
+  bind('^BOX\\(([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*),([0-9]*\\.[0-9]*)\\s([0-9]*\\.[0-9]*)\\)$' as ?regex)
   bind(replace(str(?gemeenteBoundingBox), ?regex, '$1') as ?x1)
   bind(replace(str(?gemeenteBoundingBox), ?regex, '$2') as ?y1)
-  bind(replace(str(?gemeenteBoundingBox), ?regex, '$5') as ?x2)
+  bind(replace(str(?gemeenteBoundingBox), ?regex, '$3') as ?x2)
   bind(replace(str(?gemeenteBoundingBox), ?regex, '$4') as ?y2)
   bind(geof:distance(
     strdt(concat('Point (',str(?x1),' ',str(?y1),')'), geo:wktLiteral),

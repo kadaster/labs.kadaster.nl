@@ -1,7 +1,7 @@
 ---
 layout: story
 logo: /assets/images/energy.png
-published: false
+published: true
 title: Energie Data Story
 ---
 
@@ -10,7 +10,7 @@ title: Energie Data Story
 <h2>Windturbineparken in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/wikidata-windfarms">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/wikidata-windfarms">
   </query>
   <figcaption>
     Bron: Wikidata
@@ -20,7 +20,7 @@ title: Energie Data Story
 <h2>Windturbines in Nederland</h2>
 
 <figure>
-  <query data-conf-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-windturbines">
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/brt-windturbines">
   </query>
   <figcaption>
     Bron: BRT
@@ -33,32 +33,31 @@ title: Energie Data Story
 
 <h2>Woning</h2>
 
-<p>We beginnen bij een specifieke woning in Zoetermeer: Waarderstraat
-23.</p>
+<p>We beginnen bij een specifieke woning in Dordrecht: Noordendijk 248.</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="q1.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/Dordrecht-Noordendijk">
 </query>
 
 <h2>Straat</h2>
 
-<p>Hoe zit het eigenlijk met de energielabels op de Waarderstraat?  De
+<p>
+Hoe zit het eigenlijk met de energielabels op de Noordendijk?  De
 panden in deze straat hebben energielabel A (
 <svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="10" cy="10" fill="#22b14c" r="10">
+  <circle cx="10" cy="10" fill="#22b14c" r="10"></circle>
 </svg>
 ), energielabel B (
 <svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="10" cy="10" fill="#8ff334" r="10">
+  <circle cx="10" cy="10" fill="#8ff334" r="10"></circle>
 </svg>
 ), of geen energielabel (
 <svg height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="10" cy="10" fill="grey" r="10">
+  <circle cx="10" cy="10" fill="grey" r="10"></circle>
 </svg>
-).</p>
+).
+</p>
 
-<query data-endpoint="https://data.pdok.nl/sparql"
-       data-query-ref="q2.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q2-dordrecht">
 </query>
 
 <h2>Hoe zit het dan in zo'n wijk qua energie verbruik?</h2>
@@ -66,10 +65,7 @@ panden in deze straat hebben energielabel A (
 <p>Gasverbruik is gemeten in kubieke meters (m³).
 Elektriciteitsverbruik is gemeten in kilowattuur (kWh).</p>
 
-<query data-endpoint="https://betalinkeddata.cbs.nl/sparql"
-       data-output="gchart"
-       data-query-ref="q3.rq"
-       data-config="http://localhost:4000/stories/energie/#query=prefix+buurt%3A+%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fregios%2F2016%2Fid%2Fbuurt%2F%3E%0Aprefix+def%3A+%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fdef%2F83487NED%23%3E%0Aprefix+dimension%3A+%3Chttp%3A%2F%2Fbetalinkeddata.cbs.nl%2Fdef%2Fdimension%23%3E%0Aselect+%3Fwoningtype+%3Fgas_m3+%3Felektra_kWh+%7B%0A++bind(buurt%3ABU03010500+as+%3Fbuurt)%0A++%7B%0A++++_%3A1a+def%3Aenergie_GemiddeldAardgasverbruik_NaarWoningtype_Appartement+%3Fgas_m3+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++_%3A1b+def%3Aenergie_GemiddeldElektriciteitsverbruik_NaarWoningtype_Appartement+%3Felektra_kWh+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++bind(%22appartement%22+as+%3Fwoningtype)%0A++%7D+union+%7B%0A++++_%3A2a+def%3Aenergie_GemiddeldAardgasverbruik_NaarWoningtype_Hoekwoning+%3Fgas_m3+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++_%3A2b+def%3Aenergie_GemiddeldElektriciteitsverbruik_NaarWoningtype_Hoekwoning+%3Felektra_kWh+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++bind(%22hoekwoning%22+as+%3Fwoningtype)%0A++%7D+union+%7B%0A++++_%3A3a+def%3Aenergie_GemiddeldAardgasverbruik_NaarWoningtype_Tussenwoning+%3Fgas_m3+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++_%3A3b+def%3Aenergie_GemiddeldElektriciteitsverbruik_NaarWoningtype_Tussenwoning+%3Felektra_kWh+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++bind(%22tussenwoning%22+as+%3Fwoningtype)%0A++%7D+union+%7B%0A++++_%3A4a+def%3Aenergie_GemiddeldAardgasverbruik_NaarWoningtype_Twee-onder-een-kap-woning+%3Fgas_m3+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++_%3A4b+def%3Aenergie_GemiddeldElektriciteitsverbruik_NaarWoningtype_Twee-onder-een-kap-woning+%3Felektra_kWh+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++bind(%22twee+onder+%C3%A9%C3%A9n+kap%22+as+%3Fwoningtype)%0A++%7D+union+%7B%0A++++_%3A5a+def%3Aenergie_GemiddeldAardgasverbruik_NaarWoningtype_VrijstaandeWoning+%3Fgas_m3+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++_%3A5b+def%3Aenergie_GemiddeldElektriciteitsverbruik_NaarWoningtype_VrijstaandeWoning+%3Felektra_kWh+%3B%0A+++++++++dimension%3Aregio+%3Fbuurt+.%0A++++bind(%22vrijstaande+woning%22+as+%3Fwoningtype)%0A++%7D%0A%7D%0A&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fbetalinkeddata.cbs.nl%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&outputFormat=gchart&outputSettings=%7B%22chartConfig%22%3A%7B%22options%22%3A%7B%22hAxis%22%3A%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3Anull%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22viewWindowMode%22%3Anull%7D%2C%22legacyScatterChartLabels%22%3Atrue%2C%22vAxes%22%3A%5B%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%7D%5D%2C%22isStacked%22%3Afalse%2C%22booleanRole%22%3A%22certainty%22%2C%22legend%22%3A%22right%22%2C%22width%22%3A600%2C%22height%22%3A371%7D%2C%22state%22%3A%7B%7D%2C%22view%22%3A%7B%22columns%22%3Anull%2C%22rows%22%3Anull%7D%2C%22isDefaultVisualization%22%3Afalse%2C%22chartType%22%3A%22ColumnChart%22%7D%2C%22motionChartState%22%3Anull%7D">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q3-cbs">
 </query>
 
 <h2>Zij-stap: BAG data in Tableau</h2>
@@ -106,11 +102,10 @@ besparingen?  Het CBS heeft hier gegevens over.  Voor buurt
 Daarvoor zijn éénmalige investeringen van €4.100,- nodig.  Dat
 betekent dat er pas na 41 jaar een positief rendement optreed…</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
-       data-query-ref="q4.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q4-energie">
 </query>
 
-<h2>Reële energiebesparing</h2>
+<!-- <h2>Reële energiebesparing</h2>
 
 <p>De volgende kaart toont de totale besparing in energieverbruik
 (uitgedrukt in euro per jaar) die in koopwoningen behaald kan worden
@@ -118,19 +113,16 @@ wanneer alle energiebesparende maatregelen die nog kunnen worden
 toegepast in de woning worden gerealiseerd.  Besparingen liggen
 landelijk tussen €0 (blauw/koud) en €2.280 (rood/warm).</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
-       data-query-ref="q5.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q5-energie">
 </query>
-
 <h2> Theoretische energiebesparing</h2>
 
 <p>De volgende thematische kaart laat de theoretische energiebesparing
 zien.  Landelijk ligt dit besparingspotentieel tussen €0 en €1.900 per
 koopwoning per jaar.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
-       data-query-ref="q6.rq">
-</query>
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q6-energie">
+</query> -->
 
 <h2>Besparingspotentie voor een gemeente</h2>
 
@@ -144,18 +136,16 @@ kaart gelegen) bijna geen energiebesparingen mogelijk zijn. Maar in de
 oude buurten in de binnenstad zijn aanzienlijke energiesparingen van
 duizenden euros per jaar mogelijk.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
-       data-query-ref="q7.rq">
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q7-energie">
 </query>
 
-<h2>Hoog Energieverbruik?</h2>
+<!-- <h2>Hoog Energieverbruik?</h2>
 
 <p>We zijn wel benieuwd welke gebouwen in Amsterdam veel energie
 verbruiken, en welk energielabel daar dan bij hoort.</p>
 
-<query data-endpoint="https://data.labs.pdok.nl/sparql"
-       data-query-ref="q8.rq">
-</query>
+<query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/q8-energie">
+</query> -->
 
 <h2>Energie browser</h2>
 

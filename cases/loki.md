@@ -2,11 +2,22 @@
 layout: page
 title: Use Case ― Loki voor GEO Informatieverstrekking
 ---
+<script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
+<iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
+  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html"> 
+</iframe>
+<script>
+  iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
+</script>
+
+
 # Use Case: Loki voor GEO Informatieverstrekking
 
 ## Introductie
 
-Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.  De [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) is het kloppend hart van Loki.
+Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.  De [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) is het kloppend hart van Loki. 
+
+Na dit experiment ontstond de wens voor een tesbare versie voor de eindgebruiker. Deze versie zou Loki 1.0 heette en is door een student als afstudeeropdracht ontwikkeld. Loki 1.0 is te gebruiken door op het chat-icoon rechts onderaan het scherm te klikken. Meer informatie over Loki 1.0 is onderaan deze pagina te lezen.
 
 Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de [Kadaster Knowledge Graph](/cases/kadaster-knowledge-graph.html), ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
 
@@ -124,3 +135,26 @@ En gebruik onderstaande link om meteen te gaan testen!
     </div>
   </a>
 </div>
+
+
+## Loki 1.0
+Omdat de eerste versie van Loki slechts een experiment was zijn er verschillende “shortcuts” genomen tijdens de ontwikkeling. Hiermee is het concept bewezen maar betekende dit wel dat het niet bruikbaar was voor de eindgebruiker. Dit is wel de vervolg stap die het Kadaster graag met Loki wil zetten. Daarom was de opdracht om Loki door te ontwikkelen tot een testbare versie voor de eindgebruiker ofwel: Loki 1.0. Hierbij was het een vereiste dat er een nieuw front-end gerealiseerd zou worden
+
+#### Onderzoek
+Om tot Loki 1.0 te kunnen komen is eerst een onderzoek gedaan waarin de volgende hoofdvraag werd beantwoord:
+• Wat is er nodig om Loki beschikbaar te stellen voor eindgebruikers?
+Uit dit onderzoek is gebleken dat, Rasa; het chatbot framework waar de experimentele versie van Loki gebruikt van maakte, nog steeds een goede optie was om te blijven gebruiken. De reden hiervoor zijn:
+• Er waren geen grote verschillen te zien in performance tussen Rasa en andere frameworks zoals Dialogflow van Google of Watson van IBM.
+• Rasa bood meer mogelijkheden voor het configureren van de chatbot en het doen van toevoegingen zoals een kaartweergave.
+
+#### Realisatie
+Met de kennis van het onderzoek is begonnen aan de realisatie. Hierbij werd eerst een ontwerp gemaakt dat weergaf hoe Loki 1.0 eruit zou zien en welke functionaliteiten de chatbot zou hebben. Tijdens deze realisatie werd al snel duidelijk dat het veel tijd en werk zou kosten om van de experimentele versie van Loki een robuuste testbare versie te maken voor de eindgebruiker. Dit had de volgende redenen:
+• Matige kwaliteit van code
+• Keuzes die niet in lijn lagen met wat Rasa beschreef
+• Geen documentatie van de code
+• Responses speciaal voor Mendix
+• Niet gebruikersvriendelijk
+Daarom is besloten om net als met de front-end de backend ook opnieuw te maken. Dit betekende dat niet alle functionaliteiten konden worden geïmplementeerd maar zorgde wel voor een betere basis voor de testbare versie waar in de toekomst mogelijk op verder gebouwd kan worden.
+
+#### Afstudeerverslag
+Voor meer informatie over deze afstudeerooracht is <a href="/assets/pdf/Afstudeerverslag - Kadaster - Loki 1.0.pdf">hier</a> het afstudeerverslag te downloaden. 
