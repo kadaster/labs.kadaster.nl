@@ -4,22 +4,16 @@ layout: story
 title: Graafschades in Nederland
 ---
 
-# Graafschades in Nederland
+# Graafschades in Nederland 2019
 
 ## Graafschades in Nederland
 
-In Nederland ligt er ongeveer 1.7 miljoen kilometer aan kabels,
-buizen, en leidingen onder de grond verspreid.  Het gaat hier om
-leidingen voor het transport van olie, water, gas en riolering, maar
-ook om datatransport en electriciteit.  Tijdens graafwerkzaamheden in
-Nederland kunnen deze kabels en leidingen beschadigen.  Om schade
-hieraan te voorkomen, heeft de overheid regels opgesteld met
-betrekking to deze graafwerkzaamheden.
+Via KLIC verstrekt het Kadaster informatie over de ligging van kabels en leidingen. Het doel van KLIC is graafschade te voorkomen. In elk geval in januari geven netbeheerders aan of zij in het voorgaande jaar wel of geen schade heeft gehad aan hun net(ten). In 2019 zijn er bijna 41.000 schademeldingen ontvangen.
 
-In Nederland zijn er bijna 41.000 schademeldingen gedaan in 2019.
-Deze hoeveelheid schademeldingen kost niet alleen veel geld, maar kan
-ook overlast veroorzaken aan omwonenden, bij bijvoorbeeld schade aan
-internet- of electriciteitskabels.
+De schadegegevens van alle netbeheerders worden verzameld om te kijken of de Wet informatie-uitwisseling bovengrondse en ondergrondse netten en netwerken (WIBON) ook echt zorgt voor het verminderen van graafschade.
+
+De hieronder weergegeven visualisaties zijn een proof of concept en gemaakt in samenwerking met het Agentschap Telecom. Ze hebben als doel te onderzoeken of er andere manieren zijn om de schadecijfers te presenteren.
+
 
 ## Schademelding per provincie
 
@@ -40,13 +34,8 @@ provinciën.
 
 ## Het aantal schademeldingen per thema
 
-De dataset bevat 10 verschillende thema's.  Deze hebben betrekking tot
-het type leiding of buis waar de schade over gemeld is.  Het grootste
-aantal schades wordt gemeld met betrekking tot het beschadigen van
-datatransportkabels ([Figuur 2](#2)).  Hieronder vallen alle kabels
-die data transporteren, zoals internet, telefonie en televisie.  Het
-kleinste aantal schademeldingen is gerelateerd aan gevaarlijke
-leidingen en hoogspanning.
+De dataset bevat 13 van de 15 KLIC thema’s. Het thema met de grootste aantal gemelde schades is datatransport ([Figuur 2](#2)).  Hieronder vallen alle netten voor het elektrische overbrengen van signaalinformatie. Denk hierbij aan: Internet, telefonie en televisie. 
+Het kleinste aantal schademeldingen is gerelateerd aan het thema buisleiding gevaarlijke inhoud. Dit zijn leidingen bedoeld voor de transport van aardgas, brandbare vloeistoffen of andere gevaarlijke stoffen. 
 
 <figure id="2">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/Per-Thema">
@@ -60,7 +49,7 @@ leidingen en hoogspanning.
 
 Naast thema's zijn graafschades voorzien van oorzaken.  Deze geven aan
 hoe de graafschades veroorzaakt zijn.  In [Figuur 3](#3) wordt een
-Pivot Table gebruikt om een eventueel verband tussen thema's en
+tabel gebruikt om een eventueel verband tussen thema's en
 oorzaken inzichtelijk te maken.  De kleurcode rood geeft een grote
 relatief verband aan.
 
@@ -77,7 +66,7 @@ relatief verband aan.
 Graafschades kunnen ook per gemeente getoond worden. Hiervoor linken
 we de graafschades aan de [CBS Wijk- en buurtkaart
 2019](https://data.labs.kadaster.nl/cbs/wbk).  In [Figuur 4](#4) komen
-de grote gemeenten (steden) naar voren, mogelijk omdat daar met
+de grote gemeenten (steden) naar voren, mogelijk omdat daar meer
 werkzaamheden worden verricht, en de situatie in de ondergrond over
 het algemeen complexer is (meer kabels en leidingen binnen een klein
 gebied).  Het is interessant om te zien dat het aantal meldingen in
@@ -91,22 +80,13 @@ Eindhoven relatief laag is, met slechts 19 schademeldingen in 2019.
   </figcaption>
 </figure>
 
-## Aantal melding per week van het jaar & per dag van de week
+## Aantal schademelding per week van het jaar & per dag van de week
 
-We willen inzicht verkrijgen in de fluctuatie in het aantal meldingen
-door de tijd. In onderstaande figuren wordt het aantal meldingen per
-dag van de week (maandag t/m zondag, [Figuur 5a](#5a)), alsook het
-aantal meldingen per week van het jaar weergegeven (week 1 t/m 52,
-[Figuur 5b](#5b)).
+In onderstaande figuren wordt het aantal schademeldingen per dag van de week (maandag t/m zondag,  [Figuur 5a](#5a)), alsook het aantal schademeldingen per week van het jaar weergegeven (week 1 t/m 52, [Figuur 5b](#5b)).
 
-Hierdoor is goed te zien wanneer de meeste graafschades worden
-veroorzaakt.  In het overzicht in weken kunnen de lage aantal
-verklaard worden door de vakanties die in die weken plaatsvinden,
-o.a. de dip in de mei vakantie en de bouwvak.
+Hierdoor is goed te zien wanneer de meeste graafschades worden veroorzaakt. In het overzicht in weken kunnen de lage aantal verklaard worden door de vakanties die in die weken plaatsvinden, o.a. de dip in de mei vakantie en de bouwvak.
+De meeste schades worden gemaakt op dinsdag, woensdag en donderdag. Op maandag en vrijdag is het aantal schades duidelijk lager.
 
-De meeste meldingen worden gedaan op dinsdag, woensdag en
-donderdag. Op maandag en vrijdag is het aantal meldingen duidelijk
-lager.
 
 <figure id="5a">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/meldingen-door-de-tijd-dag">
@@ -124,18 +104,14 @@ lager.
   </figcaption>
 </figure>
 
-## Niet altijd op tijd gemeld
+## Schadejaar Vs. Jaar KLIC-melding
 
-Niet alle meldingen van graafschades worden op tijd doorgegeven.
-[Figuur 6](#6) laat zien dat soms zit er meerdere jaren vertraging zit
-tussen het tijdstip van de werkzaamheden en het tijdstip van de
-schademelding.  In het ergste geval wordt een graafschade 19 jaar
-later pas gemeld.
+Niet alle KLIC-meldingen waar schade op geregistreerd is zijn uit 2019. Figuur 6 [Figuur 6](#6) laat zien dat er soms grote verschillen zitten tussen het jaar waarop de schade gemeld wordt en het jaar waarin de KLIC-melding is gedaan. 
 
 <figure id="6">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/Delay-taartdiagram">
   </query>
   <figcaption>
-    Figuur 6 ― Het aantal graafschades voor elk aantal jaren verschil tussen het veroorzaken en melden van de graafschade (van 0 tot 19 jaar).  De schaal is logarithmisch.
+    Figuur 6 ― Leeftijd van KLIC-meldingen waarop in 2019 schade is geregistreerd.
   </figcaption>
 </figure>
