@@ -63,7 +63,6 @@ a:hover {
   left: 0;
   right: 0;
   background: transparent url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x 50% 100%;
-  background-size: auto;
   background-size: auto 270px;
   z-index: 9;
 }
@@ -131,6 +130,10 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.tech-radar {
+  overflow: hidden;
 }
 
 code.hightlight {
