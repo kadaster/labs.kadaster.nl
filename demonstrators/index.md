@@ -32,7 +32,15 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     </div>
   </a>
   </a>
-    <a href="/demonstrators/hackalodbot/index.html">
+  <a href="/tech-radar/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/radar-banner.png">
+      <div class="card-title">ETC Tech Radar</div>
+      <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
+    </div>
+  </a>
+  <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/telegram.png">
