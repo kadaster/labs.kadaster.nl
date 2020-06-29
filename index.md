@@ -29,7 +29,31 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
-   <a href="/cases/hackalod2019">
+  <a href="/cases/covid-19">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/covid-19.jpg">
+      <div class="card-title">Corona (COVID-19)</div>
+      <div class="card-description">Het gebruik van open data, inclusief Kadaster data, om de verspreiding van het Corona virus inzichtelijk te maken.</div>
+    </div>
+  </a>
+  <a href="/tech-radar/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/radar-banner.png">
+      <div class="card-title">ETC Tech Radar</div>
+      <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
+    </div>
+  </a>
+  <a href="/cases/verkaufsbucher">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png">
+      <div class="card-title">Verkaufsbucher</div>
+      <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
+    </div>
+  </a>
+  <a href="/cases/hackalod2019">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/hackalod2018.jpg">
@@ -45,22 +69,6 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">Bekijk hoe we middels Augmented Reality een 3D overzicht geven over uw buurt!</div>
     </div>
   </a>
-  <a href="/cases/covid-19">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg">
-      <div class="card-title">Corona (COVID-19)</div>
-      <div class="card-description">Het gebruik van open data, inclusief Kadaster data, om de verspreiding van het Corona virus inzichtelijk te maken.</div>
-    </div>
-  </a>
-  <a href="/cases/verkaufsbucher">
-      <div class="card">
-        <div class="card-type">Use Case</div>
-        <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png">
-        <div class="card-title">Verkaufsbucher</div>
-        <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
-      </div>
-    </a>
   <a href="/cases/landbouwverkeer">
     <div class="card">
       <div class="card-type">Use Case</div>
