@@ -1,5 +1,5 @@
 ---
-banner: graafschades.webp
+banner: /assets/images/graafschades.webp
 layout: story
 title: Graafschades in Nederland
 ---

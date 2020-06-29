@@ -10,6 +10,14 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen. Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
+  <a href="./graafschades/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/graafschades.webp">
+      <div class="card-title">Graafschades 2019</div>
+      <div class="card-description">Overzicht van alle graafschades die in 2019 veroorzaakt zijn aan kabels en leidingen in Nederland.  De gegevens zijn afkomstig van het Agentschap Telecom.</div>
+    </div>
+  </a>
   <a href="/stories/covid-19/">
     <div class="card">
       <div class="card-type">Story</div>
