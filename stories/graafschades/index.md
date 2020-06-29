@@ -14,21 +14,22 @@ De schadegegevens van alle netbeheerders worden verzameld om te kijken of de Wet
 
 De hieronder weergegeven visualisaties zijn een proof of concept en gemaakt in samenwerking met het Agentschap Telecom. Ze hebben als doel te onderzoeken of er andere manieren zijn om de schadecijfers te presenteren.
 
+## Schademelding per gemeente
 
-## Schademelding per provincie
-
-Op de kaart in [Figuur 1](#1) zijn de provincies van Nederland
-afgebeeld, en wordt het aantal schades per provincie getoond.  De
-meeste schademeldingen worden gedaan in de provincie Noord-Brabant,
-met 7.661 meldingen 2019.  In datzelfde jaar zijn slechts 664
-graafschades gemeld in Flevoland, het kleinste aantal van alle
-provinciën.
+Graafschades kunnen ook per gemeente getoond worden. Hiervoor linken
+we de graafschades aan de [CBS Wijk- en buurtkaart
+2019](https://data.labs.kadaster.nl/cbs/wbk).  In [Figuur 1](#1) komen
+de grote gemeenten (steden) naar voren, mogelijk omdat daar meer
+werkzaamheden worden verricht, en de situatie in de ondergrond over
+het algemeen complexer is (meer kabels en leidingen binnen een klein
+gebied).  Het is interessant om te zien dat het aantal meldingen in
+Eindhoven relatief laag is, met slechts 19 schademeldingen in 2019.
 
 <figure id="1">
-  <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/Per-Provincie">
+  <query data-row data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/aantal-meldingen-per-gemeente">
   </query>
   <figcaption>
-    Figuur 1 ― Het aantal schademeldingen per provincie in 2019.
+    Figuur 1 ― Het aantal schademeldingen per gemeente.
   </figcaption>
 </figure>
 
@@ -61,57 +62,54 @@ relatief verband aan.
   </figcaption>
 </figure>
 
-## Schademelding per gemeente
+## Aantal schademelding per dag van de week & per week van het jaar
 
-Graafschades kunnen ook per gemeente getoond worden. Hiervoor linken
-we de graafschades aan de [CBS Wijk- en buurtkaart
-2019](https://data.labs.kadaster.nl/cbs/wbk).  In [Figuur 4](#4) komen
-de grote gemeenten (steden) naar voren, mogelijk omdat daar meer
-werkzaamheden worden verricht, en de situatie in de ondergrond over
-het algemeen complexer is (meer kabels en leidingen binnen een klein
-gebied).  Het is interessant om te zien dat het aantal meldingen in
-Eindhoven relatief laag is, met slechts 19 schademeldingen in 2019.
-
-<figure id="4">
-  <query data-row data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/aantal-meldingen-per-gemeente">
-  </query>
-  <figcaption>
-    Figuur 4 ― Het aantal schademeldingen per gemeente.
-  </figcaption>
-</figure>
-
-## Aantal schademelding per week van het jaar & per dag van de week
-
-In onderstaande figuren wordt het aantal schademeldingen per dag van de week (maandag t/m zondag,  [Figuur 5a](#5a)), alsook het aantal schademeldingen per week van het jaar weergegeven (week 1 t/m 52, [Figuur 5b](#5b)).
+In onderstaande figuren wordt het aantal schademeldingen per dag van de week (maandag t/m zondag,  [Figuur 4a](#4a)), alsook het aantal schademeldingen per week van het jaar weergegeven (week 1 t/m 52, [Figuur 4b](#4b)).
 
 Hierdoor is goed te zien wanneer de meeste graafschades worden veroorzaakt. In het overzicht in weken kunnen de lage aantal verklaard worden door de vakanties die in die weken plaatsvinden, o.a. de dip in de mei vakantie en de bouwvak.
 De meeste schades worden gemaakt op dinsdag, woensdag en donderdag. Op maandag en vrijdag is het aantal schades duidelijk lager.
 
-
-<figure id="5a">
+<figure id="4a">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/meldingen-door-de-tijd-dag">
   </query>
   <figcaption>
-    Figuur 5a ― Het aantal meldingen van graafschades per dag in de week.
+    Figuur 4a ― Het aantal meldingen van graafschades per dag in de week.
   </figcaption>
 </figure>
 
-<figure id="5b">
+<figure id="4b">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/meldingen-door-de-tijd-week">
   </query>
   <figcaption>
-    Figuur 5b ― Het aantal meldingen van graafschades per week in het jaar.
+    Figuur 4b ― Het aantal meldingen van graafschades per week in het jaar.
   </figcaption>
 </figure>
 
 ## Schadejaar Vs. Jaar KLIC-melding
 
-Niet alle KLIC-meldingen waar schade op geregistreerd is zijn uit 2019. Figuur 6 [Figuur 6](#6) laat zien dat er soms grote verschillen zitten tussen het jaar waarop de schade gemeld wordt en het jaar waarin de KLIC-melding is gedaan. 
+Niet alle KLIC-meldingen waar schade op geregistreerd is zijn uit 2019. Figuur 5 [Figuur 5](#5) laat zien dat er soms grote verschillen zitten tussen het jaar waarop de schade gemeld wordt en het jaar waarin de KLIC-melding is gedaan. 
 
-<figure id="6">
+<figure id="5">
   <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/Delay-taartdiagram">
   </query>
   <figcaption>
-    Figuur 6 ― Leeftijd van KLIC-meldingen waarop in 2019 schade is geregistreerd.
+    Figuur 5 ― Leeftijd van KLIC-meldingen waarop in 2019 schade is geregistreerd.
+  </figcaption>
+</figure>
+
+## Schademelding per provincie
+
+Op de kaart in [Figuur 6](#6) zijn de provincies van Nederland
+afgebeeld, en wordt het aantal schades per provincie getoond.  De
+meeste schademeldingen worden gedaan in de provincie Noord-Brabant,
+met 7.661 meldingen 2019.  In datzelfde jaar zijn slechts 664
+graafschades gemeld in Flevoland, het kleinste aantal van alle
+provinciën.
+
+<figure id="6">
+  <query data-config-ref="https://data.labs.kadaster.nl/agentschap-telecom/-/queries/Per-Provincie">
+  </query>
+  <figcaption>
+    Figuur 6 ― Het aantal schademeldingen per provincie in 2019.
   </figcaption>
 </figure>
