@@ -181,7 +181,7 @@ kunstverzamelaar en museumdirecteur was.
 Hoe zit het eigenlijk verder met Amsterdammers in Lisse? Bijvoorbeeld Coenraad Jacob Temminck, grootgrondbezitter in Lisse. Daarnaast ook bioloog en de oprichter en eerste directeur van het Rijksmuseum van Natuurlijke Historie in Leiden.
 Zijn benoeming staat ook op de website van [Delpher](https://resolver.kb.nl/resolve?urn=ddd:010119517).
 Door middel van een bevraging op het Lisse-endpoint vinden we een lijst personen
-die in percelen in Lisse bezitten en in Amsterdam wonen ([Figuur
+die percelen in Lisse bezitten én in Amsterdam wonen ([Figuur
 7](#AmsterdamPerceel)).
 
 <figure id="AmsterdamPerceel">
