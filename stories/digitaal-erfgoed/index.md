@@ -318,7 +318,10 @@ Broekweg 180 gewoond hebben.
 
 ## Tot besluit
 
-De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).  We nemen nu in gepaste vorm afscheid met een paar oude ansichtkaarten van het Kasteel keukenhof, allen afkomstig uit linked data van het Lisse-endpoint.
+De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samengesteld. We hopen dat deze webpagina laat zien dat met relatief weinig moeite veel samenhang gebracht kan worden in digitale bronnen voor erfgoed. Wilt u ook bijdragen, meldt u dan aan bij [PLDN](http://www.pilod.nl/wiki/Contact).
+
+<!--
+We nemen nu in gepaste vorm afscheid met een paar oude ansichtkaarten van het Kasteel keukenhof, allen afkomstig uit linked data van het Lisse-endpoint.
 
 <figure id="Fotos-endpoint Lisse">
 <query data-config-ref="https://data.pldn.nl/werkgroep-digitaal-erfgoed/-/queries/Fotos-uit-endpoint/">
@@ -327,3 +330,4 @@ De PLDN-werkgroep Digitaal Erfgoed heeft met veel plezier deze webpagina samenge
     Figuur 14 ― Foto's van het Oud-Lisse endpoint.
   </figcaption>
 </figure>
+-->
