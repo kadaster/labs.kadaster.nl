@@ -21,14 +21,6 @@ Kadaster vindt het belangrijk om samen met publieke en private partners te onder
 Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs website gebruiken wij als Data Science team om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Het Data Science Team werkt vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
 <div class="cards-wrapper">
-    <a href="/cases/geodataplein">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/radar-banner.png">
-      <div class="card-title">Geodataplein</div>
-      <div class="card-description">In het geodataplein geven we handen en voeten aan onze visie rondom **Geo-informatie voor iedereen** en tonen we enkele demonstrators over de toepassingen die een ge-integreerde data ontstrekking kan bieden.</div>
-    </div>
-  </a>
   <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
