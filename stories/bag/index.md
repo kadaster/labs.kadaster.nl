@@ -37,14 +37,15 @@ en/of huisnummertoevoeging.
 ## Bevraging op basis van een numerieke filter
 
 Gevens kunnen op verschillende manieren worden opgevraagd.  In
-[Bevraging 4](#filter) is het ook mogelijk om adressen en gebouwen met
+[Bevraging 2](#filter) is het ook mogelijk om adressen en gebouwen met
 een specifieke oppervlakte of met een specifiek bouwjaar te op te
 vragen.
 
 <figure id="filter">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-range"></query>
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-range">
+  </query>
   <figcaption>
-    Bevraging 4 ― Bouwjaar- en/of oppervlakte-gebaseerde bevraging van de BAG.
+    Bevraging 2 ― Bouwjaar- en/of oppervlakte-gebaseerde bevraging van de BAG.
   </figcaption>
 </figure>
 
@@ -52,12 +53,13 @@ vragen.
 
 Een andere veel voorkomende manier om BAG gegevens op te vragen is
 door een combinatie van woonplaats, straat en huisnummer op te geven
-([Bevraging 2](#woonplaats)).
+([Bevraging 3](#woonplaats)).
 
 <figure id="woonplaats">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-woonplaats"></query>
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-woonplaats">
+  </query>
   <figcaption>
-    Bevraging 2 ― Woonplaats-gebaseerde bevraging van de BAG.
+    Bevraging 3 ― Woonplaats-gebaseerde bevraging van de BAG.
   </figcaption>
 </figure>
 
@@ -65,14 +67,15 @@ door een combinatie van woonplaats, straat en huisnummer op te geven
 
 Één van de voordelen van Linked Data is dat het mogelijk is om
 verschillende gegevensbronnen geïntegreerd te bevragen.  [Bevraging
-3](#buurt) laat zien hoe de BAG in combinatie met de CBS Wijk- en
+4](#buurt) laat zien hoe de BAG in combinatie met de CBS Wijk- en
 Buurtkaart bevraagd kan worden: voor elke buurt worden de
 daarbinnengelegen panden teruggegeven.
 
 <figure id="buurt">
-  <query data-row data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-buurt"></query>
+  <query data-row data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-functie-cbs-buurt">
+  </query>
   <figcaption>
-    Bevraging 3 ― Buurt-gebaseerde bevraging van de BAG.
+    Bevraging 4 ― Buurt-gebaseerde bevraging van de BAG.
   </figcaption>
 </figure>
 
@@ -83,7 +86,8 @@ Adressen in Nederland hebben één of meerdere verblijfsfuncties.  In
 geretourneerd die een specifieke gebruiksfunctie bezitten.
 
 <figure id="functie">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-functie"></query>
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-functie">
+  </query>
   <figcaption>
     Bevraging 5 ― Gebruiksfunctie-gebaseerde bevraging van de BAG.
   </figcaption>
@@ -97,7 +101,7 @@ bevraging kunnen hiervoor te inspiratie dienen.  Klik op “Show editor“
 om de specifieke SPARQL bevraging in te bekijken.  Daarnaast kunnen de
 volgende bronnen behulpzaam zijn:
 
-  - Het officiële SPARQL endpoint voor de BAG: https://bag.basisregistraties.overheid.nl/sparql
+  - Het officiële SPARQL endpoint voor de BAG: <https://bag.basisregistraties.overheid.nl/sparql>
 
   - Slides voor de [Kasaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html).
 
