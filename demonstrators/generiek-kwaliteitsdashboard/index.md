@@ -79,7 +79,7 @@ Figuur 2.
     Figuur 2 ― Het gebruikte datamodel gevisualiseerd met behulp van <a href = "https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a>
   </figcaption>
 </figure>
-</br>
+<br>
 
 
 In GraphQL, net als in een reguliere REST API, is het belangrijk een bepaalde ingang te definiëren. Neem als voorbeeld de <a href = "https://bag.basisregistraties.overheid.nl/restful-api?articleid=1927964">BAG-API</a>.
@@ -98,7 +98,7 @@ Hiervoor voegen we een extra ingang toe, zijnde de ingang voor een gemeente. Omd
     Figuur 3 ― Een GraphQL batch bevraging voor een gemeente.
   </figcaption>
 </figure>
-</br>
+<br>
 
 <div class="textbox" markdown="1">
 ## Mutaties bevragen versus een full check over een gemeente
