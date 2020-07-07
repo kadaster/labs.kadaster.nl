@@ -96,6 +96,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Energielabels voorspellen met behulp van Machine Learning.</div>
     </div>
   </a>
+  <!--
   <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -104,6 +105,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Met deze demo laten we zien dat onze datamodellen ook te visualiseren zijn met tools op het Web.</div>
     </div>
   </a>
+  -->
   <a href="http://linkeddata.ordina.nl/pdkg/resource?subject=https%3A%2F%2Flinkeddata.cultureelerfgoed.nl%2Fcho-kennis%2Fid%2Frijksmonument%2F19157">
     <div class="card">
       <div class="card-type">Demonstrator</div>
