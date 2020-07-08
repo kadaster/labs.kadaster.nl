@@ -106,14 +106,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     </div>
   </a>
   -->
-  <a href="http://linkeddata.ordina.nl/pdkg/resource?subject=https%3A%2F%2Flinkeddata.cultureelerfgoed.nl%2Fcho-kennis%2Fid%2Frijksmonument%2F19157">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
-      <div class="card-title">PDOK Knowledge Graph Browser</div>
-      <div class="card-description">Een demonstrator die de kracht laat zien van het browsen door een Knowledge Graph op instantie (object) niveau.</div>
-    </div>
-  </a>
   <a href="/demonstrators/archief-mapviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
