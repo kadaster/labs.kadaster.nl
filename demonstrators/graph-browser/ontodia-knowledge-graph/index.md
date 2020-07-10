@@ -1,4 +1,7 @@
-
+---
+layout: page
+title: Demonstrator - Ontodia over Knowledge Graph
+---
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -10,4 +13,3 @@
   <script src='explorer.js'></script>
   
 </body>
-</html>
