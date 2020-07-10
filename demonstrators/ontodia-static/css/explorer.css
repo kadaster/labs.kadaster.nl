@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#onto-container {
+	height: calc(100vh - 160px);
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+}
+
+#onto-container .ontodia {
+	overflow: hidden;
+}
+
+.content-inner.fullscreen #onto-container {
+	height: calc(100vh - 85px);
+
+}
+
+.ontodia-paper-area__watermark {
+	display: none !important;
+}
+
+.ontodia-toolbar__language-selector label {
+	margin-left: 10px;
+}
+
+.ontodia-toolbar button::after {
+	content: " "
+}
+
+.geo_point {
+	height: 300px;
+	width: 300px;
+}
