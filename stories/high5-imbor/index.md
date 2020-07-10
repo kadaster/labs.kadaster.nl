@@ -12,7 +12,7 @@ Met linked data kunnen we gegevens uit de SOR in samenhang met aanvullende regis
 
 <figure id="figuur-1">
   <a href="/assets/images/sor-houtskoolschets.png">
-    <img src="/assets/images/sor-houtskoolschets.png"">
+    <img src="/assets/images/sor-houtskoolschets.png">
   </a>
   <figcaption>
     Figuur 1 ― Houtskoolschets van Samenhangende Objecten Registratie
