@@ -1,0 +1,25 @@
+PREFIX gwsw: <http://data.gwsw.nl/1.4/totaal/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+prefix data: <http://sparql.gwsw.nl/bim/juinen#>
+prefix geof: <http://www.opengis.net/def/function/geosparql/>
+prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+
+select ?shape ?opShape ?opShapeColor ?shapeColor (?rg as ?shapeLabel) (?opLabel as ?opShapeLabel) {
+bind(<http://sparql.gwsw.nl/bim/juinen#Inspectieput_5218> as ?rg)
+        ?rg a gwsw:Rioolput;
+            rdfs:label ?label ;
+           gwsw:hasAspect ?ori.
+    		?ori gwsw:hasAspect ?po .
+    		?po geo:asWKT ?shape .
+  			?st gwsw:hasPart ?rg .
+      		?st a gwsw:Stelsel .
+  			?st gwsw:hasPart ?op .
+  			?op a gwsw:Overstortput .
+  			?op rdfs:label ?opLabel .
+  			?op gwsw:hasAspect/gwsw:hasAspect/geo:asWKT ?opShape .
+  			bind(geof:distance(?shape, ?opShape, uom:metre) as ?afstand)
+     		bind('green' as ?shapeColor)
+  			bind('blue' as ?opShapeColor)
+  }
+  order by ?afstand
