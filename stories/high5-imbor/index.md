@@ -30,9 +30,9 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
 ### Queries
 
 1) Zoek de corresponderende GWSW Rioolput bij de IMGEO put (gebruikt dus de linkset tussen IMGeo en GWSW)
-(https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw/5)
+
 <figure id="2">
-  <query data-row data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw/5">
+  <query data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw">
   </query>
   <figcaption>
     Figuur 2 - Titel nader in te vullen
@@ -42,7 +42,7 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
 2) Zoek in GWSW de dichtstbijzijnde Overstortput die via het rioolstelsel verbonden is met de betreffende rioolput (dus niet alleen hemelsbreed)
 (gwsw-rioolput-stelsel-overstortput.rq)
 <figure id="3">
-  <query data-row data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw/5">
+  <query data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw">
   </query>
   <figcaption>
     Figuur 3 - Titel nader in te vullen
@@ -50,9 +50,9 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
 </figure>
 
 3) Zoek in de BGT welke terreindelen er bij deze overstortput liggen (zou een gefedereerde geosparql query moeten zijn, maar die werkt dus niet...) 
-    (https://data.labs.kadaster.nl/disgeo/-/queries/dichtstbijzijnde-vlak-bij-punt/2)
+
 <figure id="4">
-  <query data-row data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/dichtstbijzijnde-vlak-bij-punt/2">
+  <query data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/dichtstbijzijnde-vlak-bij-punt">
   </query>
   <figcaption>
     Figuur 4 - Titel nader in te vullen
@@ -69,12 +69,14 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
   </figcaption>
 </figure>
 
+# Temporary queries
+
 ## KvK
 
 Toon SBI codes voor een specifieke omgeving.
 
 <figure>
-  <query data-config-ref="https://data.labs.kadaster.nl/wouter/-/queries/test">
+  <query data-config-ref="https://data.labs.kadaster.nl/kvk/-/queries/sbi-codes-opzoeken">
   </query>
   <figcaption>
     Figuur X ― TBD
