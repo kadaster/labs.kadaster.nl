@@ -3,25 +3,35 @@ layout: story
 title: DiS-Geo High 5 - IMBOR & BGT Data
 ---
 
-# Samenhangende Objecten Registratie en aanvullende domein modellen
+# DiS-Geo High 5: Integratie Linked Data & Geo-data
 
-Deze datastory laat zien hoe de Samenhangende Objecten Registratie (SOR) kan werken in combinatie met aanvullende domein modellen.
-Met linked data kunnen we gegevens uit de SOR in samenhang met aanvullende registraties gebruiken. In dit voorbeeld worden GWSW en IMBOR gebruikt in combinatie met de BGT.
+## Geo-informatie en Linked Data
+Binnen gemeenten, overheden en provincies wordt al jaren gewerkt met data, waarvan het veelal een geo-component bevat. Tools zoals ArcGIS en QGIS zijn bij menige afdeling een 
+vertrouwde tool in de gereedsschapskoffer. Geo data kan veel waarde brengen in dergelijke analyses, maar kan ook misleidend zijn. De informatie die getoond wordt is 
+een aaneenschakeling van kaartlagen die over elkaar heen liggen. Deze koppeling is vaak volledig, maar mist ook bepaalde onderdelen:
+- Het is onduidelijk wat de daadwerkelijke (semantische) relatie is tussen de gerelateerde objecten
+- De interpretatie is een menselijke actie
+- Relaties die alleen administratief te leggen zijn ontbreken vaak in het geheel.
 
-<figure id="figuur-1">
-  <a href="/assets/images/sor-houtskoolschets.png">
-    <img src="/assets/images/sor-houtskoolschets.png">
-  </a>
+[Figuur 1](#1) toont de bijbehorende percelen en diens informatie voor een gegeven adres. Dit is een typische koppeling waarbij de administratieve werkelijkheid anders (kan) zijn dan de geometrische 
+koppeling zou suggereren. Deze link beschrijft percelen welke toebehoren (in een akte van overschrijving benoemd zijn) aan een adres. Deze domeinkennis en ownership op het koppelvlak is van vitaal belang.
+Vanuit de bronnen DKK (Het open gedeelte van de Basisregistratie Kadaster) wordt deze koppeling met de BAG (Basisadministratie Adressen en Gebouwen) bijgehouden. 
+
+(Vul hier ook een ander postcode + huisnummer in om de koppeling te bekijken).
+
+<figure>
+  <query data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/perceel-selectie">
+  </query>
   <figcaption>
-    Figuur 1 ― Houtskoolschets van Samenhangende Objecten Registratie
+    Figuur 1 ― De (Administratieve) koppeling tussen percelen (Kadastrale Kaart) en Adressen (BAG) gevisualiseerd.
   </figcaption>
 </figure>
 
 ## Scenario
 
-Er is een incident (brand) waar een grote hoeveelheid bluswater bij vrijkomt. We willen weten waar dit eventueel vervuilde bluswater in de omgeving terecht komt.
-Hiervoor beginnen we onze analyse in de SOR om de betreffende Put te vinden in IMGeo. Dan zoeken we aanvullende informatie in GWSW. 
-Op basis van de informatie in GWSW kunnen we de overstortput vinden waar het bluswater in de omgeving terecht zou komen.
+We brengen deze problematiek terug naar een scenario waarbinnen een provincie acteert. Er is een incident (brand) waar een grote hoeveelheid bluswater bij vrijkomt. We willen weten waar dit eventueel vervuilde bluswater in de omgeving terecht komt.
+Hiervoor beginnen we onze analyse in de Samenhangende Objecten Registratie om de betreffende Put te vinden in IMGeo. Dan zoeken we aanvullende informatie in GWSW. 
+Op basis van de informatie in GWSW kunnen we de overstortput vinden waar het bluswater in de omgeving terecht zou komen. Dit kan enkel doordat deze overstortput administratief is verbonden aan onze put uit IMGEO.
 Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte bevragen we via Ontodia de organisatie specifieke IMBOR kennisgraph over aanvullende informatie van dit terreindeel. 
 
 <figure id="figuur-1b">
@@ -62,5 +72,15 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
     Figuur 5 - Bijbehorende BGT Terreindeel
   </figcaption>
 </figure>
+
+
+<div class="textbox" markdown="1">
+## Federatie in Linked Data
+De boodschap achter deze data story is tweeledig. Enerzijds zien we dat een administratieve koppeling tussen objecten kansen biedt om meer integraal analyses uit te voeren over onze data. 
+Anderszijds zien we dat de waarde pas echt significant is als de centrale (open) data te koppelen is aan de interne (gesloten) data zonder dat hiervoor een kopieslag nodig is. Dit kan enkel 
+indien de onderliggende databases een dergelijke integrale federatieve query ondersteunen. Voor deze high 5 is het een lessons learned dat dit opgenomen moet worden in de standaarden waarmee open 
+data beschikbaar moet worden gesteld. Bovenstaande query(s) zouden met de techniek Linked Data in theorie in één query moeten kunnen plaatsvinden.
+</div>
+
 
 
