@@ -68,17 +68,3 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
     Figuur 5 - Titel nader in te vullen
   </figcaption>
 </figure>
-
-# Temporary queries
-
-## KvK
-
-Toon SBI codes voor een specifieke omgeving.
-
-<figure>
-  <query data-config-ref="https://data.labs.kadaster.nl/kvk/-/queries/sbi-codes-opzoeken">
-  </query>
-  <figcaption>
-    Figuur X ― TBD
-  </figcaption>
-</figure>
