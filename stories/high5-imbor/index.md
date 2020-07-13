@@ -69,3 +69,14 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
   </figcaption>
 </figure>
 
+## KvK
+
+Toon SBI codes voor een specifieke omgeving.
+
+<figure>
+  <query data-config-ref="https://data.labs.kadaster.nl/wouter/-/queries/test">
+  </query>
+  <figcaption>
+    Figuur X ― TBD
+  </figcaption>
+</figure>
