@@ -41,7 +41,7 @@ uit de beschikbare data. Hiermee kan de brandweer actief beslissingen nemen over
   <a href="/stories/disgeo">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/voyager_logo.PNG">
+      <img class="card-image" src="/assets/images/disgeo-logo.jpg">
       <div class="card-title">Brand - Analyse achteraf</div>
       <div class="card-description">In deze data story pakken we de brand uit de 3D  omgeving en voeren we een analyse uit op de impact van de brand op de omgeving</div>
     </div>
