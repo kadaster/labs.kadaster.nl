@@ -37,14 +37,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
-  <!-- <a href="/cases/proeftuin">
+  <a href="/cases/proeftuin">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Proeftuin BGT mutatiesignalering</div>
       <div class="card-description">Deelnemers gezocht voor de BGT proeftuin mutatiesignalering!</div>
     </div>
-  </a> -->
+  </a>
   <a href="/cases/covid-19">
     <div class="card">
       <div class="card-type">Use Case</div>
