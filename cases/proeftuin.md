@@ -24,3 +24,6 @@ Leveranciers krijgen de kans om hun product of dienst te trainen, te beproeven e
 
 Bekijk [hier](/assets/pdf/Kadaster proeftuin bgt mutatiesignalering uitleg.pdf) de werkwijze en de voorwaarden voor deelname. Tot en met 16 september kun je, je aanmelden door te mailen naar proeftuin@kadaster.nl. Met ieder bedrijf wordt contact opgenomen om een eventuele samenwerking te bespreken. 
 Let op! Er kunnen maximaal tien bedrijven in de proeftuin toegelaten worden zodat het Kadaster de juiste kwaliteit kan leveren betreft samenwerking, correspondentie en kwaliteitsbeoordeling. Je wordt toegelaten op basis van “first come, first serve”. Hiervoor moet je wel aan de voorwaarden voldoen, vermeld in de [werkwijze](/assets/pdf/Kadaster proeftuin bgt mutatiesignalering uitleg.pdf).
+
+## For english
+Click [here](/cases/proeftuin_eng)
