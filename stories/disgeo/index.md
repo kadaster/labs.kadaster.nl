@@ -4,20 +4,12 @@ layout: story
 title: Doorontwikkeling in Samenhang van de geo-basisregistraties (Dis-Geo)
 ---
 
-# Doorontwikkeling in Samenhang van de geo-basisregistraties (Dis-Geo)
-
-De afgelopen jaren is er hard gewerkt aan de opbouw van maatschappelijk waardevolle basisregistraties en andere voorzieningen in het geo-informatiedomein. Het resultaat van deze inspanningen mag er zijn.  Zie de [Dis-Geo website](https://www.geobasisregistraties.nl/basisregistraties/doorontwikkeling-in-samenhang) voor meer informatie over dit initiatief.
-
-<figure id="1">
-  <video controls loop width="1200">
-    <source src="/assets/videos/disgeo.mp4" type="video/mp4">
-      Helaas, uw browser kan deze webm video niet weergeven.
-    </source>
-  </video>
-  <figcaption>
-    Figuur 1 ― Geïntegreerde Dis-Geo informatie bevraagd vanuit een 3D omgeving.
-  </figcaption>
-</figure>
+# Introductie
+ Linked Data loont zich uitstekend voor het doen van uitgebreide (statische analyses). Eén van de tools die je veel op deze website 
+kunt vinden zijn onze data stories rondom Linked Data. Hiermee pakken we een combinatie aan SPARQL Queries (en de bijbehorende live resultaten) en tekst om een verhaal te vertellen. 
+Ook bij deze story laten we in zien hoe de onderliggende linked data over mobiliteit (middels NDW gegevens) gebruikt kan worden om de impact van de brand te bepalen.
+Het kan echter ook dienen als data selectie, waarbij een gebruiker (bijvoorbeeld een Data Analist of Data Scientist) de data verder oppakt in zijn eigen tool. We laten zien dat het SPARQL resultaat terug gebracht kan worden
+naar een CSV en gebruikt kan worden in een (open-source) BI Tool zoals <a href="http://vega.github.io/voyager/">Voyager</a>.
 
 ## Omgeving selecteren in linked data
 
