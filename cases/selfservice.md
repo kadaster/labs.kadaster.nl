@@ -1,4 +1,9 @@
-Self Service Hulpmiddelen
+---
+layout: page
+title: Use Case ― Loki voor GEO Informatieverstrekking
+---
+
+# Self Service Hulpmiddelen
 
 In het meerjaren beleidsplan van Kadaster is opgenomen dat we "geo-informatie voor iedereen" willen bieden. Veel van de data bieden we aan in technische formaten waar GIS developers mee aan de slag kunnen, maar door meer gebruik te maken van Web technologie kunnen ook andere gebruikers van deze data gebruik maken.
 De uiteindelijke droom is dat burgers op het web analyses kunnen uitvoeren met zowel Kadaster data als andere open data die beschikbaar is, en zo zelf de antwoorden op hun vragen kunnen verzamelen.

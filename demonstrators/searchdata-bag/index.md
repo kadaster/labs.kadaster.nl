@@ -17,7 +17,7 @@ over de bestaande bronnen of de technische kennis van de BI tool waarin het zit 
 
 
 <div class="cards-wrapper">
-  <a href="https://kadaster.searchdata.com/">
+  <a href="https://searchdata.com/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/magnifier.png">
