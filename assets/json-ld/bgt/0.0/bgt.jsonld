@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "bgtpand": "@nest",
+    "bronhouder": {
+      "@context": {
+        "@base": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie_vlak": {
+      "@type": "geo:wktLiteral"
+    },
+    "identificatiebagpnd": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+      "@type": "@id"
+    },
+    "lokaalid": "@id",
+    "lv_publicatiedatum": {
+      "@type": "xsd:dateTime"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
+    "@version": 1.1,
+    "@vocab": "https://bgt.basisregistraties.overheid.nl/def/"
+  }
+}
