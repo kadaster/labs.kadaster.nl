@@ -15,7 +15,8 @@ title: Use Case ― Missende BAG-waarden voorspellen
   </a>
 </div>
 ## Introductie
-Kadaster is beheerder van de Basisadministratie Adressen & Gebouwen (BAG). Deze administratie wordt door de bronhouders, de gemeenten, bijgehouden en gebruikt voor een scala aan (maatschappelijke) toepassingen. Deze gemeenten streven
+Hier ga ik dingen wijzingen
+toepassingen. Deze gemeenten streven
 er natuurlijk naar om alle informatie die in deze administratie gaat zo goed mogelijk te onderhouden en dus kijkt het ook doorlopend naar mogelijkheden om de kwaliteit van zijn data te verbeteren. 
 Daarbij kijkt het ook naar opkomende technologiën zoals Machine Learning en Artifical Intelligence. Deze use richt zich op de gemeente Amsterdam, dat voor een aantal adressen in zijn gemeente niet de precieze oppervlakte en/of het bouwjaar
 weet. Denk hierbij aan panden met een bouwjaar van <b>5</b>. Een afstudeerder bij het Kadaster heeft zich bezig gehouden met de vraag: Kunnen we onwaarschijnlijke of missende BAG-waarden omtrent oppervlakte en bouwjaar voorspellen aan de hand van een voorspellend model?
