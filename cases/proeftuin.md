@@ -27,3 +27,5 @@ Let op! Er kunnen maximaal tien bedrijven in de proeftuin toegelaten worden zoda
 
 ## For english
 Click [here](/cases/proeftuin_eng)
+
+Ook een wijziging

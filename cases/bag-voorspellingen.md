@@ -22,7 +22,7 @@ Daarbij kijkt het ook naar opkomende technologiën zoals Machine Learning en Art
 weet. Denk hierbij aan panden met een bouwjaar van <b>5</b>. Een afstudeerder bij het Kadaster heeft zich bezig gehouden met de vraag: Kunnen we onwaarschijnlijke of missende BAG-waarden omtrent oppervlakte en bouwjaar voorspellen aan de hand van een voorspellend model?
 
 ## Het doel
-Doel was ds
+Doel was ds.
 Het doel van deze use case was om een voorspellend model te maken dat, gegeven een combinatie van interne en externe gegevens, het bouwjaar en oppervlakte van BAG-objecten kan voorspellen. Deze voorspellingen kunnen we dan weer gebruiken om:
 <ol>
   <li> Missende waarden in de BAG alsnog van waarden te voorzien </li>
