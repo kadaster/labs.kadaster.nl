@@ -45,6 +45,22 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">Deelnemers gezocht voor de BGT proeftuin mutatiesignalering!</div>
     </div>
   </a>
+  <a href="/cases/akte-ocr">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/ocr-header.jpg">
+      <div class="card-title">Akte OCR</div>
+      <div class="card-description">In dit onderzoek bespreken we de kwaliteit van akteteksten resulterend uit OCR toegepast op de akten van het Kadaster.</div>
+    </div>
+  </a>
+    <a href="/cases/geodata-voor-iedereen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/geodataplein.PNG">
+      <div class="card-title">GEO data voor iedereen</div>
+      <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
+    </div>
+  </a>
   <a href="/cases/covid-19">
     <div class="card">
       <div class="card-type">Use Case</div>

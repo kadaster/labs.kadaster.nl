@@ -3,7 +3,7 @@ banner: /assets/images/geodataplein.PNG
 layout: page
 title: Kadaster GEO-Dataplein
 ---
-# Use Case: Kadaster GEO-Dataplein 
+# Use Case: Kadaster GEO-informatie voor iedereen
 
 ## Introductie
 
@@ -13,7 +13,7 @@ is een gedegen analyse mogelijk en ontstaan visuele (ruimtelijke) beelden die ku
 De ambitie van het Kadaster is samengevat in het speerpunt **‘GEO informatie voor iedereen’**. Het past in de doelstelling
 van het Kadaster om zich (verder) te ontwikkelen tot een sleutelspeler in de informatiewaarde keten voor publiek maatschappelijke vragen.
 
-Het concept achter GEO informatie voor iedereen geven wij een concrete invulling met het GEO-Dataplein. Het Data Science Team van het Kadaster kreeg als opdracht mee
+Het concept achter GEO informatie voor iedereen geven wij een concrete invulling middels een aantal demonstrators. Het Data Science Team van het Kadaster kreeg als opdracht mee
 om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontsluiting richting een eindgebruiker eruit kan zien en welke technische bouwstenen hiervoor nodig zijn.
 
 <div class="cards-wrapper">
@@ -27,7 +27,7 @@ om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontslu
   </a>
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
-      <div class="card-type">Use Case</div>
+      <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
       <div class="card-title">Generiek Kwaliteitsdashboard</div>
       <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
@@ -36,7 +36,7 @@ om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontslu
 </div>
 
 
-## Demonstrators voor het GEO-Dataplein
+## Demonstrators 
 
 Concreet heeft het Data Science Team hierbij de volgende demomstrators opgeleverd:
 1. **Integrale Explorer** - We maken het mogelijk om verschillende (basis)registraties integraal te bevragen op basis van een object (Adres, Pand, WOZ Object, etc.) welke als ingang voor de bevraging dient. De Integrale Explorer toont daarbij alle data die beschikbaar is in de API’s van de verschillende basisregistraties en richt zich hierbij ook nadrukkelijk op de data lineage; Waar komt de data vandaan en hoe is deze aan elkaar gekoppeld?

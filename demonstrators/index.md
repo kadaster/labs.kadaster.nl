@@ -15,6 +15,21 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
+  <a href="/demonstrators/integrale-explorer/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/logoexplorer.PNG">
+      <div class="card-title">Integrale Explorer</div>
+      <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+      <div class="card-title">Generiek Kwaliteitsdashboard</div>
+      <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
+    </div>
   </a>
   <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
     <div class="card">
