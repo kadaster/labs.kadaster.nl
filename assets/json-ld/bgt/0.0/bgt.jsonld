@@ -1,5 +1,10 @@
 {
   "@context": {
+    "asWKT": {
+      "@id": "geo:asWKT",
+      "@type": "geo:wktLiteral"
+    },
+    "bgtfull_pand_v": "@nest",
     "bronhouder": {
       "@context": {
         "@base": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/"
@@ -7,20 +12,42 @@
       "@type": "@id"
     },
     "data": "@nest",
+    "eindregistratie": "prov:invalidatedAtTime",
+    "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geometrie_vlak": {
-      "@type": "geo:wktLiteral"
-    },
+    "geometrie_vlak": "geo:hasGeometry",
+    "gml_id": "@id",
+    "identificatie": "nen3610:identificatie",
     "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
       },
+      "@id": "bagPand",
       "@type": "@id"
     },
-    "lokaalid": "@id",
+    "lokaalid": "nen3610:lokaalID",
     "lv_publicatiedatum": {
+      "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "objectbegintijd": {
+      "@id": "nen3610:beginGeldigheid",
+      "@type": "xsd:date"
+    },
+    "objecteindtijd": {
+      "@id": "nen3610:eindGeldigheid",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
+    "peilDatum": null,
+    "prov": "http://www.w3.org/ns/prov#",
+    "tijdstipregistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "voorkomen": "foaf:isPrimaryTopicOf",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
