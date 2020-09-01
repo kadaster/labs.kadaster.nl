@@ -5,6 +5,7 @@
       "@type": "geo:wktLiteral"
     },
     "bgtfull_pand_v": "@nest",
+    "bgtpand": "@nest",
     "bronhouder": {
       "@context": {
         "@base": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/"
