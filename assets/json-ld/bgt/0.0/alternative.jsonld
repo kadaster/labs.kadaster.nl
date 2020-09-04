@@ -3,10 +3,7 @@
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
-    "wkt": {
-      "@id": "geo:asWKT",
-      "@type": "geo:wktLiteral"
-    },
+    "__typename": "@type",
     "bagPand": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
@@ -17,15 +14,24 @@
     "bgtPand": "@nest",
     "bronhouder": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/id/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/id/bronhouder/"
       },
       "@type": "@id"
     },
     "data": "@nest",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "Geometrie": "geo:Geometry",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": "geo:hasGeometry",
-    "identificatie": "nen3610:identificatie",
+    "Identificatie": "nen3610:Identificatie",
+    "id": "@id",
+    "identificatie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/id/identificatie/"
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
+    },
     "lokaalID": "nen3610:lokaalID",
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
@@ -42,7 +48,14 @@
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
-    "registratie": "foaf:isPrimaryTopicOf",
+    "Registratie": "foaf:Document",
+    "registratie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/id/registratie/"
+      },
+      "@id": "foaf:isPrimaryTopicOf",
+      "@type": "@id"
+    },
     "registratieBegin": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
@@ -57,32 +70,10 @@
       },
       "@type": "@id"
     },
+    "wkt": {
+      "@id": "geo:asWKT",
+      "@type": "geo:wktLiteral"
+    },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
-  },
-  "data": {
-    "bgtPand": [
-      {
-        "@id": "NL.IMGeo.G0716.8abeacd5439b75760000000a13151880",
-        "@type": "Pand",
-        "bagPand": "0716100000178800",
-        "bronhouder": "gemeente/0716",
-        "geometrie": {
-          "wkt": "<http://www.opengis.net/def/crs/EPSG/0/28992> MULTISURFACE(((72465.637 398199.433,72466.068 398202.54,72454.947 398204.077,72454.078 398197.952,72462.516 398196.78,72462.936 398199.808,72465.637 398199.433)))"
-        },
-        "identificatie": {
-          "lokaalID": "G0716.8abeacd5439b75760000000a13151880",
-          "namespace": "NL.IMGeo"
-        },
-        "registratie": {
-          "objectBegin": "2016-10-25",
-          "objectEind": null,
-          "publicatie": "2016-12-22T10:52:20Z",
-          "registratieBegin": "2016-10-27T06:46:48Z",
-          "registratieEind": null
-        },
-        "relatieveHoogteligging": 0,
-        "status": "bestaand"
-      }
-    ]
   }
 }
