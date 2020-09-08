@@ -3,7 +3,6 @@
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
-    "jsonldtype": "@type",
     "asWKT": {
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
