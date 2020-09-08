@@ -27,7 +27,6 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie_vlak": "geo:hasGeometry",
-    "jsonldid": "@id",
     "identificatie": "nen3610:identificatie",
     "identificatiebagpnd": {
       "@context": {
