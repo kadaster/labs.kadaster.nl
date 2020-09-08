@@ -3,6 +3,7 @@
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
+    "jsonldtype": "@type",
     "asWKT": {
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
@@ -14,7 +15,7 @@
       "@id": "status",
       "@type": "@id"
     },
-    "bgtpand": "@nest",
+    "nieuw": "@nest",
     "bronhouder": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/id/bronhouder/"
@@ -26,7 +27,7 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie_vlak": "geo:hasGeometry",
-    "gml_id": "@id",
+    "jsonldid": "@id",
     "identificatie": "nen3610:identificatie",
     "identificatiebagpnd": {
       "@context": {
@@ -36,20 +37,26 @@
       "@type": "@id"
     },
     "lokaalid": "nen3610:lokaalID",
-    "lv_publicatiedatum": {
-      "@id": "publicatiedatumLandelijkeVoorzieningen",
-      "@type": "xsd:dateTime"
-    },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "objectbegintijd": {
-      "@id": "nen3610:beginGeldigheid",
-      "@type": "xsd:date"
+    "registratie": {
+        "@context": {
+           "@base": "https://bgt.basisregistraties.overheid.nl/id/registratie/"
+        }
     },
-    "objecteindtijd": {
-      "@id": "nen3610:eindGeldigheid",
-      "@type": "xsd:date"
-    },
+        "objectbegintijd": {
+          "@id": "nen3610:beginGeldigheid",
+          "@type": "xsd:date"
+         },
+        "objecteindtijd": {
+          "@id": "nen3610:eindGeldigheid",
+          "@type": "xsd:date"
+        },
+        "lv_publicatiedatum": {
+          "@id": "publicatiedatumLandelijkeVoorzieningen",
+          "@type": "xsd:dateTime"
+       },
+
     "ogc_fid": null,
     "peilDatum": null,
     "prov": "http://www.w3.org/ns/prov#",
