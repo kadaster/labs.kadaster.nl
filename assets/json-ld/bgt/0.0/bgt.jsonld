@@ -40,7 +40,9 @@
     "registratie": {
         "@context": {
            "@base": "https://bgt.basisregistraties.overheid.nl/id/registratie/"
-        }
+        },
+        "@id": "Registratie",
+        "@type": "@id"
     },
         "objectbegintijd": {
           "@id": "nen3610:beginGeldigheid",
@@ -54,7 +56,6 @@
           "@id": "publicatiedatumLandelijkeVoorzieningen",
           "@type": "xsd:dateTime"
        },
-
     "ogc_fid": null,
     "peilDatum": null,
     "prov": "http://www.w3.org/ns/prov#",
