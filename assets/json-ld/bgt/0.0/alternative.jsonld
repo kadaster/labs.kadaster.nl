@@ -2,8 +2,7 @@
   "@context": {
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
-    "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
-    "jsonldtype": "@type",
+    "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",,
     "bagPand": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
@@ -71,7 +70,7 @@
       },
       "@type": "@id"
     },
-    "wkt": {
+    "asWKT": {
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
