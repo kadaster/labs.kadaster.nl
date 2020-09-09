@@ -10,9 +10,6 @@
       "@id": "bagPand",
       "@type": "@id"
     },
-    "bgtPand": "@nest",
-    "nieuw": "@nest",
-    "vervallen": "@nest", 
     "bronhouder": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/id/bronhouder/"
