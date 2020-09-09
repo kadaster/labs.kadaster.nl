@@ -26,7 +26,6 @@
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": "geo:hasGeometry",
     "Identificatie": "nen3610:Identificatie",
-    "id": "@id",
     "identificatie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/id/identificatie/"
