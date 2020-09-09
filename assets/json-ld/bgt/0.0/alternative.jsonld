@@ -29,7 +29,6 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/id/identificatie/"
       },
-      "@id": "nen3610:identificatie",
     },
     "lokaalID": "nen3610:lokaalID",
     "namespace": "nen3610:namespace",
