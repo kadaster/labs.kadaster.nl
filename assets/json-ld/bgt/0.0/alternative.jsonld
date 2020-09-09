@@ -3,11 +3,11 @@
     "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
-    "bagPand": {
+    "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
       },
-      "@id": "bagPand",
+      "@id": "identificatiebagpnd",
       "@type": "@id"
     },
     "bronhouder": {
