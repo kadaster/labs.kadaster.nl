@@ -30,7 +30,6 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/id/identificatie/"
       },
       "@id": "nen3610:identificatie",
-      "@type": "@id"
     },
     "lokaalID": "nen3610:lokaalID",
     "namespace": "nen3610:namespace",
@@ -54,7 +53,6 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/id/registratie/"
       },
       "@id": "foaf:isPrimaryTopicOf",
-      "@type": "@id"
     },
     "registratieBegin": {
       "@id": "prov:invalidatedAtTime",
