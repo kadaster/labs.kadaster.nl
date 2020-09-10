@@ -4,17 +4,19 @@
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
     "bgtbak": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/bak/"
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/bak/"
       },
+      "@type": "@id"
     },
     "bgtbegroeidterreindeel": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/begroeidterreindeel/"
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/begroeidterreindeel/"
       },        
+     "@type": "@id"
     },
     "bgtpand": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/pand/"
       },
     },
     "identificatiebagpnd": {
