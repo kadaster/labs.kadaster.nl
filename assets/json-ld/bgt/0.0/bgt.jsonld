@@ -17,7 +17,7 @@
     "bgtpand": {
       "@context": {
         "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/pand/"
-      },
+      }
     },
     "identificatiebagpnd": {
       "@context": {
