@@ -49,6 +49,12 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/id/identificatie/"
       }
     },
+    "inonderzoek": {
+       "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/def/inonderzoek/"
+      },
+      "@type": "@id"
+    },
     "lokaalID": "nen3610:lokaalID",
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
@@ -61,7 +67,7 @@
       "@type": "xsd:date"
     },
     "prov": "http://www.w3.org/ns/prov#",
-    "publicatie": {
+    "lv_publicatiedatum": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
@@ -80,9 +86,27 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "status": {
+    "bgt_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/id/status/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/def/status/"
+      },
+      "@type": "@id"
+    },
+    "bgt_type": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/def/type/"
+      },
+      "@type": "@id"
+    },
+    "plus_status": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/def/plusstatus/"
+      },
+      "@type": "@id"
+    },
+    "plus_type": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/def/plustype/"
       },
       "@type": "@id"
     },
