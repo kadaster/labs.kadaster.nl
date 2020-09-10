@@ -14,6 +14,54 @@
       },        
      "@type": "@id"
     },
+    "bgtbord": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/bord/"
+      },        
+     "@type": "@id"
+    },
+    "bgtbuurt": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/buurt/"
+      },        
+     "@type": "@id"
+    },
+    "bgtfunctioneelgebied": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/functioneelgebied/"
+      },        
+     "@type": "@id"
+    },
+    "bgtgebouwinstallatie": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/gebouwinstallatie/"
+      },        
+     "@type": "@id"
+    },
+    "bgtinstallatie": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/installatie/"
+      },        
+     "@type": "@id"
+    },
+    "bgtkast": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/kast/"
+      },        
+     "@type": "@id"
+    },
+    "bgtkunstwerkdeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/kunstwerkdeel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtmast": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/mast/"
+      },        
+     "@type": "@id"
+    },
     "bgtpand": {
       "@context": {
         "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/pand/"
