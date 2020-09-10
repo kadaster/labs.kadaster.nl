@@ -53,16 +53,16 @@
        "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/def/inonderzoek/"
       },
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "lokaalID": "nen3610:lokaalID",
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "objectBegin": {
+    "objectbegintijd": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
-    "objectEind": {
+    "objecteindtijd": {
       "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
@@ -78,11 +78,11 @@
       },
       "@id": "foaf:isPrimaryTopicOf"
     },
-    "registratieBegin": {
+    "tijdstipregistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "registratieEind": {
+    "eindregistratie": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
