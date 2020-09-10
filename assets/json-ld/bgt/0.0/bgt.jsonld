@@ -2,6 +2,21 @@
 "@context": {
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
+    "bgtbak": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/bak/"
+      },
+    },
+    "bgtbegroeidterreindeel": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/begroeidterreindeel/"
+      },        
+    },
+    "bgtpand": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+    },
     "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
