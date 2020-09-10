@@ -62,10 +62,143 @@
       },        
      "@type": "@id"
     },
+    "bgtonbegroeidterreindeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeidterreindeel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtondersteunendwaterdeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/ondersteunendwaterdeel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtondersteunendwegdeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/ondersteunendwegdeel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtongeclassificeerdobject": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/ongeclassificeerdobject/"
+      },        
+     "@type": "@id"
+    },
+    "bgtopenbareruimte": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/openbareruimte/"
+      },        
+     "@type": "@id"
+    },
+    "bgtopenbareruimtelabel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/openbareruimtelabel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtoverbruggingsdeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/overbruggingsdeel/"
+      },        
+     "@type": "@id"
+    },
+    "bgtoverigbouwwerk": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/overigbouwwerk/"
+      },        
+     "@type": "@id"
+    },
+    "bgtoverigescheiding": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/overigescheiding/"
+      },        
+     "@type": "@id"
+    },
+    "bgtpaal": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/paal/"
+      },        
+     "@type": "@id"
+    },
     "bgtpand": {
       "@context": {
         "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/pand/"
-      }
+      },
+      "@type": "@id"
+    },
+    "bgtpand_nummeraanduiding": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/pand_nummeraanduiding/"
+      },
+      "@type": "@id"
+    },
+    "bgtput": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/put/"
+      },
+      "@type": "@id"
+    },  
+    "bgtscheiding": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/scheiding/"
+      },
+      "@type": "@id"
+    },  
+    "bgtsensor": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/sensor/"
+      },
+      "@type": "@id"
+    }, 
+    "bgtspoor": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/spoor/"
+      },
+      "@type": "@id"
+    },
+    "bgtstadseel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/stadsdeel/"
+      },
+      "@type": "@id"
+    }, 
+    "bgtstraatmeubilair": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/straatmeubilair/"
+      },
+      "@type": "@id"
+    },
+    "bgttunneldeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/tunneldeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtvegetatieobject": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/vegetatieobject/"
+      },
+      "@type": "@id"
+    },
+    "bgtwaterdeel": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/waterdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtwaterinrichtingselement": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/waterinrichtingselement/"
+      },
+      "@type": "@id"
+    },
+     "bgtwaterschap": {
+      "@context": {
+        "@base": "http://bgt.basisregistraties.overheid.nl/bgt/id/waterschap/"
+      },
+      "@type": "@id"
     },
     "identificatiebagpnd": {
       "@context": {
