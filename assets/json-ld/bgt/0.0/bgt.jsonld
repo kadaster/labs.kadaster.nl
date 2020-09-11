@@ -280,6 +280,20 @@
       "@id": "bagPand",
       "@type": "@id"
     },
+    "identificatiebagvbohoogstehuisnummer": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+      },
+      "@id": "bagVerblijfsobject",
+      "@type": "@id"
+    },
+    "identificatiebagvbolaagstehuisnummer": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+      },
+      "@id": "bagVerblijfsobject",
+      "@type": "@id"
+    },
     "inonderzoek": {
       "@id": "inOnderzoek",
       "@type": "xsd:boolean"
