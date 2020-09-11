@@ -6,6 +6,10 @@
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
+    "begroeidterreindeeloptalud": {
+      "@id": "inOnderzoek",
+      "@type": "xsd:boolean"
+    },
     "bgt_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
@@ -16,6 +20,12 @@
     "bgt_type": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/type/"
+      },
+      "@type": "@id"
+    },
+    "bgt_fysiekvoorkomen": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/fysiekvoorkomen/"
       },
       "@type": "@id"
     },
@@ -261,6 +271,8 @@
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
+    "naam":  {
+    },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
@@ -272,6 +284,7 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
+    "peilDatum": null,
     "plus_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
@@ -285,6 +298,12 @@
       "@id": "rdf:type",
       "@type": "@id"
     },
+    "plus_fysiekvoorkomen": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
+      },
+      "@type": "@id"
+    },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "Registratie": "foaf:Document",
@@ -292,6 +311,12 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/"
       }
+    },
+    "relatievehoogteligging": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
+      },
+      "@type": "@id"
     },
     "tijdstipregistratie": {
       "@id": "prov:invalidatedAtTime",
