@@ -1,33 +1,250 @@
 {
   "@context": {
-    "@base": "https://bgt.basisregistraties.overheid.nl/id/pand/",
     "@version": 1.1,
-    "@vocab": "https://bgt.basisregistraties.overheid.nl/def/",
+    "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
     "asWKT": {
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
     "bgt_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/id/status/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
       },
       "@id": "status",
       "@type": "@id"
     },
-    "bgtpand": "@nest",
+    "bgt_type": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/type/"
+      },
+      "@type": "@id"
+    },
+    "bgtbak": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bak/"
+      },
+      "@type": "@id"
+    },
+    "bgtbegroeidterreindeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/begroeid-terreindeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtbord": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bord/"
+      },
+      "@type": "@id"
+    },
+    "bgtbuurt": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/buurt/"
+      },
+      "@type": "@id"
+    },
+    "bgtfunctioneelgebied": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/functioneel-gebied/"
+      },
+      "@type": "@id"
+    },
+    "bgtgebouwinstallatie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/gebouwinstallatie/"
+      },
+      "@type": "@id"
+    },
+    "bgtinstallatie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/installatie/"
+      },
+      "@type": "@id"
+    },
+    "bgtkast": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/kast/"
+      },
+      "@type": "@id"
+    },
+    "bgtkunstwerkdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/kunstwerkdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtmast": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/mast/"
+      },
+      "@type": "@id"
+    },
+    "bgtonbegroeidterreindeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeid-terreindeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtondersteunendwaterdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/ondersteunend-waterdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtondersteunendwegdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/ondersteunend-wegdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtongeclassificeerdobject": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/ongeclassificeerd-object/"
+      },
+      "@type": "@id"
+    },
+    "bgtopenbareruimte": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/openbare-ruimte/"
+      },
+      "@type": "@id"
+    },
+    "bgtopenbareruimtelabel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/openbare-ruimte-label/"
+      },
+      "@type": "@id"
+    },
+    "bgtoverbruggingsdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/overbruggingsdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtoverigbouwwerk": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/overig-bouwwerk/"
+      },
+      "@type": "@id"
+    },
+    "bgtoverigescheiding": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/overige-scheiding/"
+      },
+      "@type": "@id"
+    },
+    "bgtpaal": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/paal/"
+      },
+      "@type": "@id"
+    },
+    "bgtpand": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/pand/"
+      },
+      "@type": "@id"
+    },
+    "bgtpand_nummeraanduiding": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/nummeraanduiding/"
+      },
+      "@type": "@id"
+    },
+    "bgtput": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/put/"
+      },
+      "@type": "@id"
+    },
+    "bgtscheiding": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/scheiding/"
+      },
+      "@type": "@id"
+    },
+    "bgtsensor": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/sensor/"
+      },
+      "@type": "@id"
+    },
+    "bgtspoor": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/spoor/"
+      },
+      "@type": "@id"
+    },
+    "bgtstadseel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/stadsdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtstraatmeubilair": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/straatmeubilair/"
+      },
+      "@type": "@id"
+    },
+    "bgttunneldeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/tunneldeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtvegetatieobject": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/vegetatie-object/"
+      },
+      "@type": "@id"
+    },
+    "bgtwaterdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/waterdeel/"
+      },
+      "@type": "@id"
+    },
+    "bgtwaterinrichtingselement": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/waterinr-ichtingselement/"
+      },
+      "@type": "@id"
+    },
+    "bgtwaterschap": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/waterschap/"
+      },
+      "@type": "@id"
+    },
     "bronhouder": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/id/bronhouder/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/"
       },
       "@type": "@id"
     },
     "data": "@nest",
-    "eindregistratie": "prov:invalidatedAtTime",
+    "eindregistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": "geo:hasGeometry",
+    "geometrie_kruinlijn": "geo:hasGeometrie",
+    "geometrie_lijn": "geo:hasGeometry",
+    "geometrie_multipunt": "geo:hasGeometrie",
+    "geometrie_multivlak": "geo:hasGeometrie",
+    "geometrie_nummeraanduiding": "geo:hasGeometrie",
+    "geometrie_punt": "geo:hasGeometry",
     "geometrie_vlak": "geo:hasGeometry",
-    "gml_id": "@id",
-    "identificatie": "nen3610:identificatie",
+    "gml_id": null,
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
+      }
+    },
     "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
@@ -35,7 +252,11 @@
       "@id": "bagPand",
       "@type": "@id"
     },
-    "lokaalid": "nen3610:lokaalID",
+    "inonderzoek": {
+      "@id": "inOnderzoek",
+      "@type": "xsd:boolean"
+    },
+    "lokaalID": "nen3610:lokaalID",
     "lv_publicatiedatum": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
@@ -51,17 +272,31 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
-    "peilDatum": null,
+    "plus_status": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+      },
+      "@type": "@id"
+    },
+    "plus_type": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "prov": "http://www.w3.org/ns/prov#",
-    "relatievehoogteligging": {
-      "@id": "relatieveHoogteligging",
-      "@type": "xsd:integer"
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Registratie": "foaf:Document",
+    "registratie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/"
+      }
     },
     "tijdstipregistratie": {
-      "@id": "prov:generatedAtTime",
+      "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "voorkomen": "foaf:isPrimaryTopicOf",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
