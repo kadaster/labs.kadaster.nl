@@ -303,9 +303,6 @@
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
-    "naam":  {
-       "@type": "xsd:String"
-    },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
@@ -320,9 +317,9 @@
     "peilDatum": null,
     "plus_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/plusstatus/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
       },
-      "@id": "plusstatus",
+      "@id": "rdf:type",
       "@type": "@id"
     },
     "plus_type": {
