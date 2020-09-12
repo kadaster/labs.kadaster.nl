@@ -320,8 +320,9 @@
     "peilDatum": null,
     "plus_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/plusstatus/"
       },
+      "@id": "plusstatus",
       "@type": "@id"
     },
     "plus_type": {
