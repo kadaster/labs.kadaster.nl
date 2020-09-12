@@ -259,11 +259,11 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": "geo:hasGeometry",
-    "geometrie_kruinlijn": "geo:hasGeometrie",
+    "geometrie_kruinlijn": "geo:hasGeometry",
     "geometrie_lijn": "geo:hasGeometry",
-    "geometrie_multipunt": "geo:hasGeometrie",
-    "geometrie_multivlak": "geo:hasGeometrie",
-    "geometrie_nummeraanduiding": "geo:hasGeometrie",
+    "geometrie_multipunt": "geo:hasGeometry",
+    "geometrie_multivlak": "geo:hasGeometry",
+    "geometrie_nummeraanduiding": "geo:hasGeometry",
     "geometrie_punt": "geo:hasGeometry",
     "geometrie_vlak": "geo:hasGeometry",
     "gml_id": null,
@@ -304,6 +304,7 @@
       "@type": "xsd:dateTime"
     },
     "naam":  {
+       "@type": "xsd:String"
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
