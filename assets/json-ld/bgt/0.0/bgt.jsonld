@@ -7,7 +7,7 @@
       "@type": "geo:wktLiteral"
     },
     "begroeidterreindeeloptalud": {
-      "@id": "inOnderzoek",
+      "@id": "opTalud",
       "@type": "xsd:boolean"
     },
     "bgt_status": {
@@ -319,7 +319,7 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
       },
-      "@id": "rdf:type",
+      "@id": "status",
       "@type": "@id"
     },
     "plus_type": {
@@ -332,6 +332,7 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
       },
+      "@id": "fysiekVoorkomen",
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
