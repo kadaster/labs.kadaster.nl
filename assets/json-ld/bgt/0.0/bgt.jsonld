@@ -324,9 +324,9 @@
     },
     "plus_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/type/"
       },
-      "@type": "rdf:type"
+      "@type": "@id"
     },
     "plus_fysiekvoorkomen": {
       "@context": {
