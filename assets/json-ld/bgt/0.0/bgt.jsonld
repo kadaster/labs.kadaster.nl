@@ -6,10 +6,7 @@
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
-    "begroeidterreindeeloptalud": {
-      "@id": "opTalud",
-      "@type": "xsd:boolean"
-    },
+    "begroeidterreindeeloptalud": "opTalud",
     "bgt_functie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
@@ -152,6 +149,7 @@
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
+    "wegdeeloptalud": "opTalud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
