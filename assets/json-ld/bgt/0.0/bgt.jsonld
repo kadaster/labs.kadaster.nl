@@ -19,8 +19,9 @@
     },
     "bgt_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/type/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
+      "@id": "rdf:type",
       "@type": "@id"
     },
     "bgt_fysiekvoorkomen": {
@@ -108,9 +109,9 @@
     },
     "plus_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/type/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "type",
+      "@id": "rdf:type",
       "@type": "@id"
     },
     "plus_fysiekvoorkomen": {
