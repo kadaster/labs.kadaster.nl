@@ -10,6 +10,13 @@
       "@id": "opTalud",
       "@type": "xsd:boolean"
     },
+    "bgt_functie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "bgt_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
@@ -101,6 +108,13 @@
     },
     "ogc_fid": null,
     "peilDatum": null,
+    "plus_functie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "plus_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
