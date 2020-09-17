@@ -26,8 +26,9 @@
     },
     "bgt_fysiekvoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/fysiekvoorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
+      "@id": "fysiekVoorkomen",
       "@type": "@id"
     },
     "bronhouder": {
@@ -116,7 +117,7 @@
     },
     "plus_fysiekvoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
       "@id": "fysiekVoorkomen",
       "@type": "@id"
@@ -130,10 +131,8 @@
       }
     },
     "relatievehoogteligging": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
-      },
-      "@type": "@id"
+      "@id": "relatieveHoogteligging",
+      "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
       "@id": "prov:invalidatedAtTime",
