@@ -82,7 +82,7 @@
       "@id": "inOnderzoek",
       "@type": "xsd:boolean"
     },
-    "lokaalID": "nen3610:lokaalID",
+    "lokaalid": "nen3610:lokaalID",
     "lv_publicatiedatum": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
