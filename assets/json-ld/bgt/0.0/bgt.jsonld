@@ -6,9 +6,13 @@
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
-    "begroeidterreindeeloptalud": {
-      "@id": "opTalud",
-      "@type": "xsd:boolean"
+    "begroeidterreindeeloptalud": "opTalud",
+    "bgt_functie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
     },
     "bgt_status": {
       "@context": {
@@ -19,14 +23,16 @@
     },
     "bgt_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/type/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
+      "@id": "rdf:type",
       "@type": "@id"
     },
     "bgt_fysiekvoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/fysiekvoorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
+      "@id": "fysiekVoorkomen",
       "@type": "@id"
     },
     "bronhouder": {
@@ -99,6 +105,13 @@
     },
     "ogc_fid": null,
     "peilDatum": null,
+    "plus_functie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "plus_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
@@ -108,14 +121,14 @@
     },
     "plus_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/type/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "type",
+      "@id": "rdf:type",
       "@type": "@id"
     },
     "plus_fysiekvoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
       "@id": "fysiekVoorkomen",
       "@type": "@id"
@@ -129,15 +142,14 @@
       }
     },
     "relatievehoogteligging": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiekvoorkomen/"
-      },
-      "@type": "@id"
+      "@id": "relatieveHoogteligging",
+      "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
+    "wegdeeloptalud": "opTalud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
