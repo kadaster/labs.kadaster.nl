@@ -65,7 +65,7 @@
     },
     "identificatiebagopr": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbareruimte/"
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
       "@id": "bagOpenbareRuimte",
       "@type": "@id"
