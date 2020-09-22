@@ -104,6 +104,8 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
+    "onbegroeidterreindeeloptalud": "opTalud",
+    "ondersteunendwegdeeloptalud": "opTalud",
     "peilDatum": null,
     "plus_functie": {
       "@context": {
