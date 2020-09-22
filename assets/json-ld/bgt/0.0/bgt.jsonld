@@ -70,6 +70,13 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
       }
     },
+    "identificatiebagopr": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+      },
+      "@id": "bagOpenbareRuimte",
+      "@type": "@id"
+    },
     "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
@@ -111,6 +118,15 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
+    "onbegroeidterreindeeloptalud": "opTalud",
+    "ondersteunendwegdeeloptalud": "opTalud",
+    "openbareruimtetype": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/" 
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "peilDatum": null,
     "plus_functie": {
       "@context": {
