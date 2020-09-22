@@ -122,11 +122,12 @@
     "ondersteunendwegdeeloptalud": "opTalud",
     "openbareruimtetype": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/" 
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
       "@id": "rdf:type",
       "@type": "@id"
     },
+    "overbruggingisbeweegbaar": "beweegbaar",
     "peilDatum": null,
     "plus_functie": {
       "@context": {
