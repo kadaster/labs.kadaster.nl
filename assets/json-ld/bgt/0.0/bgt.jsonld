@@ -57,6 +57,13 @@
     "geometrie_punt": "geo:hasGeometry",
     "geometrie_vlak": "geo:hasGeometry",
     "gml_id": null,
+    "hoortbijtypeoverbrugging": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "hoortBijTypeOverbrugging",
+      "@type": "@id"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
