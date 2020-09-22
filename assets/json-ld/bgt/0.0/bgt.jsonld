@@ -113,6 +113,13 @@
     "ogc_fid": null,
     "onbegroeidterreindeeloptalud": "opTalud",
     "ondersteunendwegdeeloptalud": "opTalud",
+    "openbareruimtetype": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
     "peilDatum": null,
     "plus_functie": {
       "@context": {
