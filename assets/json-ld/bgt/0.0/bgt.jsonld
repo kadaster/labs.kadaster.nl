@@ -63,6 +63,13 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
       }
     },
+    "identificatiebagopr": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbareruimte/"
+      },
+      "@id": "bagOpenbareRuimte",
+      "@type": "@id"
+    },
     "identificatiebagpnd": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
