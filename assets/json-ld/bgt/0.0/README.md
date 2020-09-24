@@ -6,6 +6,20 @@ In onderstaande stappen noemen we zo'n type bijvoorbeeld `NAAM = bak`.
 
 We bouwen een GraphQL query in een file `NAAM.graphql`, op basis van wat we in de GraphQL editor zien.  Kijk naar het bestand `bak.graphql` voor een voorbeeld.
 
+We halen de resultaten van de enhancer op in N-Quads:
+
+```sh
+curl -X POST -H "Content-Type: application/json" -H "Accept: application/n-quads" --data-binary @NAAM.graphql https://labs.kadaster.nl/enhancer > NAAM.jsonld
+```
+
+Het N-Quads bestand (`NAAM.nq`) kan worden geupload in de triple store: <https://data.labs.kadaster.nl/bgt-test-omgeving>
+
+Het BGT vocabulaire daar daar worden bijgeladen middels de import functionaliteit: (1) Ga naar "Graphs", (2) Klik op "Import a new graph", (3) Selecteer `kadaster/bgt` in het veld "Add data from an existing dataset".
+
+# Optioneel: Detail stappen
+
+Bovenstaande stappen kunnen ook in meer detail gevolgd worden.
+
 We halen de resultaten op van de GraphQL endpoint in reguliere JSON:
 
 ```sh
@@ -25,7 +39,3 @@ Van die JSON-LD kan automatisch N-Quads (een RDF formaat) gemaakt worden:
 ```sh
 jsonld format -q NAAM.jsonld > NAAM.nq
 ```
-
-Het N-Quads bestand (`NAAM.nq`) kan worden geupload in de triple store: <https://data.labs.kadaster.nl/bgt-test-omgeving>
-
-Het BGT vocabulaire daar daar worden bijgeladen middels de import functionaliteit: (1) Ga naar "Graphs", (2) Klik op "Import a new graph", (3) Selecteer `kadaster/bgt` in het veld "Add data from an existing dataset".

@@ -1,0 +1,7 @@
+*.graphql.jsonld
+*.graphql.jsonld.nq
+*.graphql.nq
+.client.js.err
+bgt.jsonld.nq
+upload.sh
+uploadFiles-linux
