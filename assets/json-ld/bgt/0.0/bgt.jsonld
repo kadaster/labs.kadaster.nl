@@ -6,6 +6,7 @@
       "@id": "geo:asWKT",
       "@type": "geo:wktLiteral"
     },
+    "bagOpenbareRuimte": "geo:sfWithin",
     "begroeidterreindeeloptalud": "opTalud",
     "bgt_functie": {
       "@context": {
