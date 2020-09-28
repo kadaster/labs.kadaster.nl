@@ -43,7 +43,7 @@
     },
     "data": "@nest",
     "eindregistratie": {
-      "@id": "prov:generatedAtTime",
+      "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -170,7 +170,7 @@
       "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
-      "@id": "prov:invalidatedAtTime",
+      "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
     "typeoverbruggingsdeel": {
