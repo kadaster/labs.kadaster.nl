@@ -1,0 +1,31 @@
+citygml:Building
+
+citygml:Object
+  a owl:Class;
+  rdfs:isDefinedBy citygml:;
+  rdfs:label "Object"@en;
+  rdfs:subClassOf owl:Thing;
+  skos:definition "Type describing the abstract superclass of most CityGML features.  Its purpose is to provide a creation and a termination date as well as a reference to corresponding objects in other information systems.  A generalization relation may be used to relate features, which represent the same real-world object in different Levels-of-Detail, i.e. a feature and its generalized counterpart(s).  The direction of this relation is from the feature to the corresponding generalized feature."@en.
+
+citygml:Site
+  a owl:Class;
+  rdfs:isDefinedBy citygml:;
+  rdfs:label "Site"@nl;
+  rdfs:subClassOf citygml:Object;
+  skos:definition "Type describing the abstract superclass for buildings, facilities, etc.  Future extensions of CityGML like bridges and tunnels would be modelled as subclasses of _Site.  As subclass of _CityObject, a _Site inherits all attributes and relations, in particular an id, names, external references, and generalization relations."@en.
+
+citygml:Tunnel
+  a owl:Class;
+  rdfs:isDefinedBy citygml:;
+  rdfs:label "Tunnel"@en;
+  rdfs:subClassOf citygml:Site;
+  skos:definition
+    [ dct:creator "ISO 6707-1";
+      rdf:value "Horizontal or sloping underground or partly underground, enclosed way of some length."@en ].
+
+citygml:TunnelPart
+  a owl:Class;
+  rdfs:isDefinedBy citygml:;
+  rdfs:label "Tunnel part"@en;
+  rdfs:subClassOf citygml:Tunnel;
+  skos:definition "A Tunnel composed of structural segments differing in important geometrical or semantical properties can be separated into one Tunnel and additional TunnelParts."@en.

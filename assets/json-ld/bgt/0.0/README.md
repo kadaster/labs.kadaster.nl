@@ -1,5 +1,19 @@
 # Documentatie BGT LD
 
+Voer het volgende script uit om voor alle BGT types linked data te downloaden:
+
+```sh
+./convert.sh
+```
+
+De N-Quads bestanden (`NAAM.graphql.nq`)  kunnen worden geupload in de triple store: <https://data.labs.kadaster.nl/bgt-test-omgeving>
+
+Het BGT vocabulaire kan daar worden bijgeladen middels de import functionaliteit: (1) Ga naar "Graphs", (2) Klik op "Import a new graph", (3) Selecteer `kadaster/bgt` in het veld "Add data from an existing dataset".
+
+# Optioneel: Detail stappen
+
+Bovenstaande stappen kunnen ook in meer detail gevolgd worden.
+
 Zie welke types ondersteund worden door naar de GraphQL editor te gaan: <https://labs.kadaster.nl/gateway/>
 
 In onderstaande stappen noemen we zo'n type bijvoorbeeld `NAAM = bak`.
@@ -11,14 +25,6 @@ We halen de resultaten van de enhancer op in N-Quads:
 ```sh
 curl -X POST -H "Content-Type: application/json" -H "Accept: application/n-quads" --data-binary @NAAM.graphql https://labs.kadaster.nl/enhancer > NAAM.jsonld
 ```
-
-Het N-Quads bestand (`NAAM.nq`) kan worden geupload in de triple store: <https://data.labs.kadaster.nl/bgt-test-omgeving>
-
-Het BGT vocabulaire daar daar worden bijgeladen middels de import functionaliteit: (1) Ga naar "Graphs", (2) Klik op "Import a new graph", (3) Selecteer `kadaster/bgt` in het veld "Add data from an existing dataset".
-
-# Optioneel: Detail stappen
-
-Bovenstaande stappen kunnen ook in meer detail gevolgd worden.
 
 We halen de resultaten op van de GraphQL endpoint in reguliere JSON:
 

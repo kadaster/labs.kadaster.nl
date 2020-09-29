@@ -1,0 +1,344 @@
+prefix graph: <https://bgt.basisregistraties.overheid.nl/bgt/id/graph/>
+
+graph:context {
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2002/07/owl#disjointWith><http://www.opengis.net/ont/geosparql#Feature> .
+  <https://triplydb.com/.well-known/genid/aabb51cf1678badc3a4f2b5ee1bf394b><http://www.w3.org/2002/07/owl#hasValue><http://www.w3.org/ns/dqv#qualityAssessment> .
+  <http://definities.geostandaarden.nl/def/nen3610#Identificatie><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Identificatie> .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://www.w3.org/2000/01/rdf-schema#seeAlso><http://schema.org/Place> .
+  <http://www.opengis.net/ont/gml#OrientableCurve><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2000/01/rdf-schema#comment>"skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#SymmetricProperty> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2002/07/owl#disjointWith><http://xmlns.com/foaf/0.1/Organization> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2002/07/owl#disjointWith><http://xmlns.com/foaf/0.1/Project> .
+  <http://www.opengis.net/ont/gml#MultiGeometry><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://www.opengis.net/ont/gml#Curve><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> .
+  <http://www.opengis.net/ont/gml#AbstractGeometry><http://www.w3.org/2000/01/rdf-schema#label>"Abstract Geometry"@en .
+  <http://www.opengis.net/ont/gml#Curve><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#OrientableCurve> .
+  <https://schema.org/image><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2000/01/rdf-schema#comment>"\n      A Well-known Text serialization of a geometry object.\n    "@en .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <http://purl.org/dc/terms/creator><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://purl.org/dc/terms/> .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2000/01/rdf-schema#Class> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://www.w3.org/2000/01/rdf-schema#label>"Geo-object"@nl .
+  <http://www.opengis.net/ont/geosparql#Feature><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2003/06/sw-vocab-status/ns#term_status>"stable" .
+  <http://www.opengis.net/ont/gml#AbstractGeometry><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid><http://www.w3.org/2000/01/rdf-schema#label>"validTo"@en .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#domain><http://www.w3.org/2002/07/owl#Thing> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <http://definities.geostandaarden.nl/def/nen3610#Kunstwerk><http://www.w3.org/2000/01/rdf-schema#label>"Kunstwerk"@nl .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2003/06/sw-vocab-status/ns#term_status>"stable" .
+  <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.w3.org/ns/oa#hasBody><http://www.w3.org/2000/01/rdf-schema#label>"hasBody" .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://www.w3.org/2000/01/rdf-schema#label>"Building"@en .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#comment>"\n      The class represents the top-level geometry type. This class is \n      equivalent to the UML class GM_Object defined in ISO 19107, and \n      it is superclass of all geometry types.\n    "@en .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.opengis.net/ont/gml#OrientableCurve><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2004/02/skos/core#prefLabel>"has serialization"@en .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://xmlns.com/foaf/0.1/> .
+  <https://triplydb.com/.well-known/genid/c97743398f6bfec7c4bbe77a641bd15d><http://www.w3.org/2002/07/owl#inverseOf><http://www.w3.org/ns/oa#hasTarget> .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.opengis.net/ont/gml#MultiGeometry><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.w3.org/ns/oa#hasBody><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/ns/oa#> .
+  <http://definities.geostandaarden.nl/def/nen3610#identificatie><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#ObjectProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/2004/02/skos/core#scopeNote>"Het attribuut 'namespace' is een unieke verwijzing naar de registratie die de identificatie uitdeelt. Deze lijst van registraties wordt beheerd binnen de context van NEN 3610. Binnen Nederland zal deze namespace vrijwel altijd met 'NL' beginnen." .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2004/02/skos/core#prefLabel>"SpatialObject"@en .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/2000/01/rdf-schema#comment>"The time at which an entity was invalidated (i.e., no longer usable)."@en .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://www.w3.org/2000/01/rdf-schema#label>"Spoorbaan"@nl .
+  <http://definities.geostandaarden.nl/def/nen3610#vorigeGeldigeVersie><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#ObjectProperty> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2004/02/skos/core#prefLabel>"asWKT"@en .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/2000/01/rdf-schema#label>"has related"@en .
+  <https://schema.org/caption><https://schema.org/rangeIncludes><https://schema.org/MediaObject> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2004/02/skos/core#definition>"\n      The class spatial-object represents everything that can have \n      a spatial representation. It is superclass of feature and geometry.\n    "@en .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2000/01/rdf-schema#comment>"The primary topic of some page or document." .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/2004/02/skos/core#definition>"unieke verwijzing naar een registratie van objecten" .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2004/02/skos/core#definition>"unieke identificatiecode binnen een registratie" .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2004/02/skos/core#example>"Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en .
+  <http://www.opengis.net/ont/gml#Point><http://www.w3.org/2000/01/rdf-schema#label>"Point"@en .
+  <https://schema.org/contentUrl><https://schema.org/domainIncludes><https://schema.org/MediaObject> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#AnnotationProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2001/XMLSchema#string> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <http://www.opengis.net/ont/gml#MultiGeometry><http://www.w3.org/2000/01/rdf-schema#label>"Multi-Geometry"@en .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/ns/prov#component>"entities-activities" .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2002/07/owl#Thing> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#label>"Geometry"@en .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2001/XMLSchema#string> .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#FunctionalProperty> .
+  <http://purl.org/dc/terms/creator><http://purl.org/dc/terms/issued>"2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://www.w3.org/2000/01/rdf-schema#label>"Weg"@nl .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2000/01/rdf-schema#Datatype> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://purl.org/dc/elements/1.1/description>"\n      A Well-known Text serialization of a geometry object.\n    "@en .
+  <http://definities.geostandaarden.nl/def/nen3610#identificatie><http://www.w3.org/2000/01/rdf-schema#label>"identification"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/2004/02/skos/core#definition>"A note that helps to clarify the meaning and/or the use of a concept."@en .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/geosparql#SpatialObject> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#domain><http://www.opengis.net/ont/geosparql#Geometry> .
+  <https://schema.org/ImageObject><http://www.w3.org/2000/01/rdf-schema#label>"ImageObject" .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/2004/02/skos/core#definition>"Relates a concept to a concept with which there is an associative semantic relationship."@en .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/2000/01/rdf-schema#domain><http://www.w3.org/ns/prov#Entity> .
+  <http://definities.geostandaarden.nl/def/nen3610#Kunstwerk><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Kunstwerk> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2001/XMLSchema#dateTime> .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2002/07/owl#inverseOf><http://xmlns.com/foaf/0.1/primaryTopic> .
+  <https://schema.org/contentUrl><http://www.w3.org/2000/01/rdf-schema#label>"contentUrl" .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/ns/prov-o#> .
+  <http://www.w3.org/ns/dqv#hasQualityAnnotation><http://www.w3.org/2000/01/rdf-schema#label>"has quality annotation"@en .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2000/01/rdf-schema#label> .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/GeoObject> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2004/02/skos/core#note> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2004/02/skos/core#definition>"An alternative lexical label for a resource."@en .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2004/02/skos/core#definition>"\n      Connects a geometry object with its text-based serialization.\n    "@en .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2004/02/skos/core#prefLabel>"Feature"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Terrein> .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Water> .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2000/01/rdf-schema#label>"primary topic" .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2001/XMLSchema#dateTime> .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#label>"preferred label"@en .
+  <https://schema.org/ImageObject><http://www.w3.org/2000/01/rdf-schema#comment>"An image file." .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2004/02/skos/core#definition>"\n      This class represents the top-level feature type. This class is \n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is \n      superclass of all feature types.\n    "@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Weg> .
+  <http://definities.geostandaarden.nl/def/nen3610#Identificatie><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#comment>"skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise\n      disjoint properties."@en .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#comment>"\n      Connects a geometry object with its text-based serialization.\n    "@en .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2004/02/skos/core#scopeNote>"By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://purl.org/dc/elements/1.1/description>"\n      The class represents the top-level geometry type. This class is \n      equivalent to the UML class GM_Object defined in ISO 19107, and \n      it is superclass of all geometry types.\n    "@en .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2000/01/rdf-schema#comment>"A document." .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2004/02/skos/core#definition>"Relates a concept to a concept that is more specific in meaning."@en .
+  <http://www.w3.org/ns/oa#hasBody><http://www.w3.org/2000/01/rdf-schema#comment>"The object of the relationship is a resource that is a body of the Annotation." .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2000/01/rdf-schema#label>"localID"@en .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/ns/prov#qualifiedForm><http://www.w3.org/ns/prov#Generation> .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/ns/prov#qualifiedForm><http://www.w3.org/ns/prov#atTime> .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.w3.org/ns/oa#Annotation> .
+  <https://schema.org/image><https://schema.org/rangeIncludes><https://schema.org/ImageObject> .
+  <http://www.opengis.net/ont/gml#AbstractGeometry><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/geosparql#Geometry> .
+  <https://schema.org/image><http://www.w3.org/2000/01/rdf-schema#comment>"An image of the item. This can be a <a class=\"localLink\" href=\"https://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"https://schema.org/ImageObject\">ImageObject</a>." .
+  <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometry> .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/2002/07/owl#equivalentClass><https://triplydb.com/.well-known/genid/aabb51cf1678badc3a4f2b5ee1bf394b> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <https://schema.org/caption><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/2000/01/rdf-schema#domain><http://www.w3.org/ns/prov#Entity> .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/ns/prov#component>"entities-activities" .
+  <https://schema.org/contentUrl><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/2000/01/rdf-schema#label>"definition"@en .
+  <http://www.opengis.net/ont/gml#Surface><http://www.w3.org/2000/01/rdf-schema#label>"Surface"@en .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/ns/prov-o#> .
+  <http://www.opengis.net/ont/gml#MultiGeometry><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometry> .
+  <http://definities.geostandaarden.nl/def/nen3610#Identificatie><http://www.w3.org/2000/01/rdf-schema#label>"Identificatie"@nl .
+  <https://schema.org/caption><https://schema.org/domainIncludes><https://schema.org/VideoObject> .
+  <http://www.opengis.net/ont/gml#OrientableCurve><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2000/01/rdf-schema#label>"Well-known Text Literal"@en .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://www.w3.org/2000/01/rdf-schema#label>"Water"@en .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://www.w3.org/ns/dqv#hasQualityAnnotation><http://www.w3.org/2000/01/rdf-schema#comment>"Refers to a quality annotation. Quality annotation can be applied to any kind of resource, e.g., a dataset, a linkset, a graph, a set of triples. However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/ns/prov#qualifiedForm><http://www.w3.org/ns/prov#Invalidation> .
+  <https://schema.org/caption><http://www.w3.org/2000/01/rdf-schema#comment>"The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class=\"localLink\" href=\"https://schema.org/encodingFormat\">encodingFormat</a>." .
+  <https://schema.org/caption><https://schema.org/domainIncludes><https://schema.org/AudioObject> .
+  <http://www.opengis.net/ont/gml#Point><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2000/01/rdf-schema#domain><http://definities.geostandaarden.nl/def/nen3610#Identificatie> .
+  <https://schema.org/contentUrl><https://schema.org/rangeIncludes><https://schema.org/URL> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/ns/prov#qualifiedForm><http://www.w3.org/ns/prov#atTime> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://www.opengis.net/ont/gml#Curve><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <https://schema.org/caption><https://schema.org/rangeIncludes><https://schema.org/Text> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/spec/geosparql/1.0> .
+  <https://schema.org/ImageObject><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2000/01/rdf-schema#Class> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/geosparql> .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.opengis.net/ont/gml#Surface><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.opengis.net/ont/gml#Curve><http://www.w3.org/2000/01/rdf-schema#label>"Curve"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#identificatie><http://www.w3.org/2000/01/rdf-schema#range><http://definities.geostandaarden.nl/def/nen3610#Identificatie> .
+  <http://www.w3.org/2004/02/skos/core#scopeNote><http://www.w3.org/2000/01/rdf-schema#label>"scope note"@en .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/2000/01/rdf-schema#label>"invalidatedAtTime" .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#label>"is primary topic of" .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.opengis.net/ont/gml#MultiSurface><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/2000/01/rdf-schema#label>"Quality Annotation"@en .
+  <http://purl.org/dc/terms/creator><http://www.w3.org/2000/01/rdf-schema#label>"Creator"@en .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://purl.org/dc/elements/1.1/description>"\n      The WKT serialization of a geometry\n    "@en .
+  <http://www.opengis.net/ont/gml#Surface><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2000/01/rdf-schema#label>"SpatialObject"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/2000/01/rdf-schema#domain><http://definities.geostandaarden.nl/def/nen3610#Identificatie> .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://www.w3.org/2000/01/rdf-schema#label>"Gebouw"@nl .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://www.w3.org/2000/01/rdf-schema#label>"Railroad"@en .
+  <http://www.opengis.net/ont/gml#MultiSurface><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://definities.geostandaarden.nl/def/nen3610#identificatie><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Identificatie> .
+  <http://definities.geostandaarden.nl/def/nen3610#Kunstwerk><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2000/01/rdf-schema#label> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2004/02/skos/core#prefLabel>"Well-known Text Literal"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#namespace><http://www.w3.org/2000/01/rdf-schema#label>"namespace"@nl .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://purl.org/dc/elements/1.1/contributor>"Matthew Perry" .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/Spoorbaan> .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://definities.geostandaarden.nl/def/nen3610#GeoObject> .
+  <http://www.w3.org/ns/dqv#hasQualityAnnotation><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/ns/dqv#QualityAnnotation> .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://purl.org/dc/elements/1.1/description>"\n      This class represents the top-level feature type. This class is \n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is \n      superclass of all feature types.\n    "@en .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#range><http://xmlns.com/foaf/0.1/Document> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/geosparql#SpatialObject> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2000/01/rdf-schema#comment>"The range of skos:altLabel is the class of RDF plain literals."@en .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://www.w3.org/2000/01/rdf-schema#comment>"\n      The class spatial-object represents everything that can have \n      a spatial representation. It is superclass of feature and geometry.\n    "@en .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.opengis.net/ont/geosparql#SpatialObject><http://purl.org/dc/elements/1.1/description>"\n      The class spatial-object represents everything that can have \n      a spatial representation. It is superclass of feature and geometry.\n    "@en .
+  <http://definities.geostandaarden.nl/def/nen3610#vorigeGeldigeVersie><http://www.w3.org/2000/01/rdf-schema#label>"previous valid version"@en .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://purl.org/dc/elements/1.1/creator>"OGC GeoSPARQL 1.0 Standard Working Group" .
+  <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive><http://www.w3.org/2000/01/rdf-schema#label>"Abstract Geometric Primitive"@en .
+  <http://purl.org/dc/terms/creator><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2002/07/owl#inverseOf><http://www.w3.org/2004/02/skos/core#broader> .
+  <http://www.w3.org/ns/dqv#hasQualityAnnotation><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><https://triplydb.com/.well-known/genid/c97743398f6bfec7c4bbe77a641bd15d> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#AnnotationProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#comment>"A document that this thing is the primary topic of." .
+  <https://schema.org/image><http://www.w3.org/2000/01/rdf-schema#label>"image" .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2004/02/skos/core#note> .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#ObjectProperty> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2004/02/skos/core#definition>"\n      The class represents the top-level geometry type. This class is \n      equivalent to the UML class GM_Object defined in ISO 19107, and \n      it is superclass of all geometry types.\n    "@en .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2000/01/rdf-schema#label>"has narrower"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://www.w3.org/2000/01/rdf-schema#label>"Geo-object"@en .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2004/02/skos/core#narrowerTransitive> .
+  <http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid><http://www.w3.org/2000/01/rdf-schema#label>"eindGeldigheid"@nl .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#range><http://www.opengis.net/ont/geosparql#wktLiteral> .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#ObjectProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#Kunstwerk><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <https://triplydb.com/.well-known/genid/aabb51cf1678badc3a4f2b5ee1bf394b><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Restriction> .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/2002/07/owl#equivalentClass><http://purl.org/eis/vocab/daq#Dimension> .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.w3.org/2004/02/skos/core#semanticRelation> .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#comment>"\n      This class represents the top-level feature type. This class is \n      equivalent to GFI_Feature defined in ISO 19156:2011, and it is \n      superclass of all feature types.\n    "@en .
+  <http://www.opengis.net/ont/gml#Point><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2004/02/skos/core#scopeNote>"'lokaalID' is de identificatiecode die een object heeft binnen een (lokale) registratie." .
+  <http://purl.org/dc/terms/creator><http://purl.org/dc/terms/description>"Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en .
+  <http://definities.geostandaarden.nl/def/nen3610#vorigeGeldigeVersie><http://www.w3.org/2000/01/rdf-schema#label>"vorige geldige versie"@nl .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/gml#Curve><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.opengis.net/ont/gml> .
+  <http://purl.org/dc/terms/creator><http://purl.org/dc/dcam/rangeIncludes><http://purl.org/dc/terms/Agent> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#label>"Feature"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/ns/prov#editorialNote>"It is the intent that the property chain holds: (prov:qualifiedInvalidation o prov:atTime) rdfs:subPropertyOf prov:invalidatedAtTime."@en .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2004/02/skos/core#definition>"The preferred lexical label for a resource, in a given language."@en .
+  <http://definities.geostandaarden.nl/def/nen3610#GeoObject><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/geosparql#Feature> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#label>"has serialization"@en .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.w3.org/2004/02/skos/core#Concept> .
+  <http://definities.geostandaarden.nl/def/nen3610#Gebouw><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://www.w3.org/2000/01/rdf-schema#label>"Terrain"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2000/01/rdf-schema#label>"Document" .
+  <http://www.opengis.net/ont/gml#OrientableCurve><http://www.w3.org/2000/01/rdf-schema#label>"Orientable Curve"@en .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/2000/01/rdf-schema#comment>"skos:related is disjoint with skos:broaderTransitive"@en .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://xmlns.com/foaf/0.1/page> .
+  <http://definities.geostandaarden.nl/def/nen3610#Kunstwerk><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#subPropertyOf><http://www.opengis.net/ont/geosparql#hasSerialization> .
+  <http://purl.org/dc/terms/creator><http://www.w3.org/2002/07/owl#equivalentProperty><http://xmlns.com/foaf/0.1/maker> .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2000/01/rdf-schema#Class> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://purl.org/dc/elements/1.1/description>"\n      Connects a geometry object with its text-based serialization.\n    "@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2000/01/rdf-schema#label>"alternative label"@en .
+  <https://schema.org/image><https://schema.org/domainIncludes><https://schema.org/Thing> .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <http://www.w3.org/ns/prov#invalidatedAtTime><http://www.w3.org/ns/prov#category>"expanded" .
+  <http://xmlns.com/foaf/0.1/isPrimaryTopicOf><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://xmlns.com/foaf/0.1/> .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/2000/01/rdf-schema#comment>"Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property."@en .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2000/01/rdf-schema#domain><http://xmlns.com/foaf/0.1/Document> .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://xmlns.com/foaf/0.1/> .
+  <http://www.w3.org/ns/dqv#hasQualityAnnotation><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://definities.geostandaarden.nl/def/nen3610#lokaalID><http://www.w3.org/2000/01/rdf-schema#label>"lokaalID"@nl .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/ns/prov#editorialNote>"It is the intent that the property chain holds: (prov:qualifiedGeneration o prov:atTime) rdfs:subPropertyOf prov:generatedAtTime."@en .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://schema.org/Place> .
+  <https://schema.org/caption><https://schema.org/domainIncludes><https://schema.org/ImageObject> .
+  <http://definities.geostandaarden.nl/def/nen3610#Terrein><http://www.w3.org/2000/01/rdf-schema#label>"Terrein"@nl .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/2004/02/skos/core#prefLabel>"Geometry"@en .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/2000/01/rdf-schema#comment>"The time at which an entity was completely created and is available for use."@en .
+  <http://www.opengis.net/ont/gml#MultiSurface><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#MultiGeometry> .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/2004/02/skos/core#definition>"A statement or formal explanation of the meaning of a concept."@en .
+  <http://www.w3.org/2004/02/skos/core#definition><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#AnnotationProperty> .
+  <http://definities.geostandaarden.nl/def/nen3610#identificatie><http://www.w3.org/2000/01/rdf-schema#label>"identificatie"@nl .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2002/07/owl#inverseOf><http://xmlns.com/foaf/0.1/isPrimaryTopicOf> .
+  <http://www.opengis.net/ont/gml#Surface><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> .
+  <http://definities.geostandaarden.nl/def/nen3610#Weg><http://www.w3.org/2000/01/rdf-schema#label>"Street"@en .
+  <http://www.w3.org/2004/02/skos/core#related><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://www.w3.org/2004/02/skos/core#narrower><http://www.w3.org/2000/01/rdf-schema#comment>"Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#AnnotationProperty> .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#ObjectProperty> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/2002/07/owl#equivalentClass><http://schema.org/CreativeWork> .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/2000/01/rdf-schema#label>"generatedAtTime" .
+  <http://definities.geostandaarden.nl/def/nen3610#Water><http://www.w3.org/2000/01/rdf-schema#label>"Water"@nl .
+  <http://purl.org/dc/terms/creator><http://www.w3.org/2000/01/rdf-schema#comment>"An entity responsible for making the resource."@en .
+  <https://schema.org/caption><http://www.w3.org/2000/01/rdf-schema#label>"caption" .
+  <http://definities.geostandaarden.nl/def/nen3610#Identificatie><http://www.w3.org/2000/01/rdf-schema#label>"Identification"@en .
+  <http://www.opengis.net/ont/gml#MultiSurface><http://www.w3.org/2000/01/rdf-schema#label>"Multi-Surface"@en .
+  <http://www.w3.org/ns/oa#hasBody><http://www.w3.org/2000/01/rdf-schema#domain><http://www.w3.org/ns/oa#Annotation> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#domain><http://www.opengis.net/ont/geosparql#Geometry> .
+  <http://www.w3.org/ns/dqv#Dimension><http://www.w3.org/2000/01/rdf-schema#label>"Dimension"@en .
+  <https://schema.org/contentUrl><http://www.w3.org/2000/01/rdf-schema#comment>"Actual bytes of the media object, for example the image file or video file." .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#comment>"A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag."@en .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/2000/01/rdf-schema#comment>"Represents quality annotations, including ratings, quality certificates or feedback that can be associated to datasets or distributions. Quality annotations must have one oa:motivatedBy statement with an instance of oa:Motivation (and skos:Concept) that reflects a quality assessment purpose. We define this instance as dqv:qualityAssessment."@en .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#label>"asWKT"@en .
+  <http://definities.geostandaarden.nl/def/nen3610#Spoorbaan><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://purl.org/dc/elements/1.1/date>"2011-06-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+  <http://www.opengis.net/ont/gml#Surface><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#OrientableSurface> .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.opengis.net/ont/geosparql#wktLiteral><http://www.w3.org/2004/02/skos/core#definition>"\n      A Well-known Text serialization of a geometry object.\n    "@en .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2000/01/rdf-schema#comment>"This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en .
+  <http://www.w3.org/2004/02/skos/core#prefLabel><http://www.w3.org/2000/01/rdf-schema#comment>"The range of skos:prefLabel is the class of RDF plain literals."@en .
+  <https://schema.org/ImageObject><http://www.w3.org/2002/07/owl#equivalentClass><http://purl.org/dc/dcmitype/Image> .
+  <http://www.opengis.net/ont/geosparql#Geometry><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/EindGeldigheid> .
+  <http://xmlns.com/foaf/0.1/Document><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2000/01/rdf-schema#Class> .
+  <http://www.w3.org/ns/dqv#QualityAnnotation><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <https://schema.org/image><https://schema.org/rangeIncludes><https://schema.org/URL> .
+  <http://definities.geostandaarden.nl/def/nen3610#vorigeGeldigeVersie><http://purl.org/dc/terms/subject><http://definities.geostandaarden.nl/nen3610/id/begrip/VorigGeldigeVersie> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2000/01/rdf-schema#comment>"\n      The WKT serialization of a geometry\n    "@en .
+  <http://www.w3.org/ns/oa#hasBody><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#DatatypeProperty> .
+  <http://www.opengis.net/ont/geosparql#hasSerialization><http://www.w3.org/2000/01/rdf-schema#range><http://www.w3.org/2000/01/rdf-schema#Literal> .
+  <https://schema.org/ImageObject><http://www.w3.org/2000/01/rdf-schema#subClassOf><https://schema.org/MediaObject> .
+  <http://www.opengis.net/ont/gml#AbstractGeometry><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/2003/06/sw-vocab-status/ns#term_status>"stable" .
+  <http://xmlns.com/foaf/0.1/primaryTopic><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+  <http://www.opengis.net/ont/geosparql#Feature><http://www.w3.org/2002/07/owl#disjointWith><http://www.opengis.net/ont/geosparql#Geometry> .
+  <http://www.opengis.net/ont/gml#Point><http://www.w3.org/2000/01/rdf-schema#subClassOf><http://www.opengis.net/ont/gml#AbstractGeometricPrimitive> .
+  <http://www.opengis.net/ont/gml#AbstractGeometricPrimitive><http://www.w3.org/1999/02/22-rdf-syntax-ns#type><http://www.w3.org/2002/07/owl#Class> .
+  <http://www.opengis.net/ont/geosparql#asWKT><http://www.w3.org/2004/02/skos/core#definition>"\n      The WKT serialization of a geometry\n    "@en .
+  <http://www.w3.org/2004/02/skos/core#altLabel><http://www.w3.org/2000/01/rdf-schema#isDefinedBy><http://www.w3.org/2004/02/skos/core> .
+  <http://www.w3.org/ns/prov#generatedAtTime><http://www.w3.org/ns/prov#category>"expanded" .
+  <https://triplydb.com/.well-known/genid/aabb51cf1678badc3a4f2b5ee1bf394b><http://www.w3.org/2002/07/owl#onProperty><http://www.w3.org/ns/oa#motivation> .
+}

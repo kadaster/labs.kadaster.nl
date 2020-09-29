@@ -1,0 +1,352 @@
+# TBD: OpenbareRuimte
+# TBD: OpenbareRuimteLabel
+# TBD: identificatieBAGOPR
+# TBD: naamEnIdOpenbareRuimte
+# TBD: openbareRuimteNaam
+# TBD: openbareRuimteType
+
+prefix absence-reason: <https://bgt.basisregistraties.overheid.nl/bgt/id/absense-reason/>
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bag-pand: <http://bag.basisregistraties.overheid.nl/bag/id/pand/>
+prefix begroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/begroeid-terreindeel/>
+prefix bgt: <https://bgt.basisregistraties.overheid.nl/bgt/def/>
+prefix bronhouder: <https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix cbs-gemeente: <https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/>
+prefix collectie: <https://bgt.basisregistraties.overheid.nl/bgt/id/collectie/>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dcm: <http://purl.org/dc/dcmitype/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix dqv: <http://www.w3.org/ns/dqv#>
+prefix entailment: <http://www.w3.org/ns/entailment/>
+prefix fmt: <http://www.w3.org/ns/formats/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix fysiek-voorkomen: <https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix graph: <https://bgt.basisregistraties.overheid.nl/bgt/id/graph/>
+prefix img: <https://bgt.basisregistraties.overheid.nl/bgt/id/img/>
+prefix inwinningsmethode: <https://bgt.basisregistraties.overheid.nl/bgt/id/inwinningsmethode/>
+prefix ldqd: <http://www.w3.org/2016/05/ldqd#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix oa: <http://www.w3.org/ns/oa#>
+prefix onbegroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeid-terreindeel/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix pand: <https://bgt.basisregistraties.overheid.nl/bgt/id/pand/>
+prefix plaatsbepalingspunt: <https://bgt.basisregistraties.overheid.nl/bgt/id/plaatsbepalingspunt/>
+prefix profile: <http://www.w3.org/ns/owl-profile/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix quality-annotation: <https://data.label.kadaster.nl/kadaster/bgt/id/quality-annotation/>
+prefix quality-dimension: <https://bgt.basisregistraties.overheid.nl/bgt/concept/quality-dimension/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix registratief-gebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/registratief-gebied/>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix shape: <https://bgt.basisregistraties.overheid.nl/bgt/id/shape/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix status: <https://bgt.basisregistraties.overheid.nl/bgt/id/status/>
+prefix stelselcatalogus: <https://opendata.stelselcatalogus.nl/stelselcatalogus/def#>
+prefix tbd: <https://example.com/>
+prefix value: <https://triplydb.com/Triply/value/>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix wet: <https://bgt.basisregistraties.overheid.nl/bgt/id/wet/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+#<>
+#  a void:DatasetDescription;
+#  foaf:primaryTopic <https://bgt.basisregistraties.overheid.nl/bgt>;
+#  dct:creator <https://data.labs.kadaster.nl/wouter>;
+#  dct:title "Een VoID metadata beschrijving voor de BGT dataset."@nl.
+
+# TODO: https://issues.triply.cc/issues/4448
+# The dataset is identified by the location of that dataset on the web.
+<https://bgt.basisregistraties.overheid.nl/bgt> {
+  # The default graph is identical to the dataset: the default graph describes the dataset.
+  <https://bgt.basisregistraties.overheid.nl/bgt>
+    a
+      dcat:Dataset,
+      sdo:Dataset,
+      void:Dataset;
+    dct:contributor
+      <https://data.labs.kadaster.nl/erwin>,
+      <https://data.labs.kadaster.nl/rob-wenneker>,
+      <https://data.labs.kadaster.nl/wouter>;
+    dct:creator <https://data.labs.kadaster.nl/wouter>;
+    # DEFINITION: First publication date of the linked data version.
+    dct:created "2020-08-11"^^xsd:date;
+    # DEFINITION: A point or period of time associated with an event in the life-cycle of the resource.
+    # SOURCE: NGR
+    dct:date "2015-03-24"^^xsd:date;
+    dct:description """
+<section lang="nl">
+  <p>De Basisregistratie Grootschalige Topografie (BGT) is een gedetailleerde digitale kaart van Nederland.  In de BGT worden objecten zoals gebouwen, wegen, water, spoorlijnen en groen op eenduidige manier vastgelegd.</p>
+  <p>De BGT wordt wettelijk geregeld.  Op 1 januari 2016 is de wet in werking getreden voor bronhouders en de Landelijke Voorziening (LV BGT).  Iedereen kan de informatie uit de BGT vrij gebruiken.  Voor overheden en andere wettelijke gebruikers is het gebruik verplicht.  Zie <a href="https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bgt">deze pagina</a> voor meer informatie.</p>
+</section>"""^^rdf:HTML;
+    # DEFINITION: First issuance date for the linked data version.
+    dct:issued "2020-08-11"^^xsd:date;
+    dct:license "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI;
+    dct:modified "2020-08-11"^^xsd:date;
+    # TODO: https://issues.triply.cc/issues/4448
+    dct:publisher <https://data.labs.kadaster.nl/kadaster>;
+    # TODO: Dit moet een IRI worden, maar welke?  Misschien een PROV beschrijving?
+    dct:source "https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/2cb4769c-b56e-48fa-8685-c48f61b9a319"^^xsd:anyURI;
+    dct:subject
+      # TODO: https://issues.triply.cc/issues/4448
+      # TODO: https://issues.triply.cc/issues/4450
+      <https://data.labs.kadaster.nl/topics/e-overheid>,
+      <https://data.labs.kadaster.nl/topics/e-overheid/basisregistratie>,
+      <https://data.labs.kadaster.nl/topics/geo>,
+      <https://data.labs.kadaster.nl/topics/geo/nederland>,
+      <https://data.labs.kadaster.nl/topics/semantiek>,
+      <https://data.labs.kadaster.nl/topics/semantiek/basisregistratie>;
+    dct:title "Basisregistratie Grootschalige Topografie"@nl;
+    foaf:homepage "https://bgt.basisregistraties.overheid.nl/bgt"^^xsd:anyURI;
+    owl:versionNumber "0.1";
+    rdfs:comment "De BGT, Basisregistratie Grootschalige Topografie, wordt de gedetailleerde grootschalige basiskaart (digitale kaart) van heel Nederland, waarin op een eenduidige manier de ligging van alle fysieke objecten zoals gebouwen, wegen, water, spoorlijnen en (landbouw)terreinen is geregistreerd."@nl;
+    # TODO: abbreviation
+    rdfs:label "Basisregistratie Grootschalige Topografie (BGT)"@nl;
+    sdo:about
+      # TODO: https://issues.triply.cc/issues/4448
+      # TODO: https://issues.triply.cc/issues/4450
+      <https://data.labs.kadaster.nl/kadaster/topics/e-overheid>,
+      <https://data.labs.kadaster.nl/kadaster/topics/e-overheid/basisregistratie>,
+      <https://data.labs.kadaster.nl/kadaster/topics/geo>,
+      <https://data.labs.kadaster.nl/kadaster/topics/geo/nederland>,
+      <https://data.labs.kadaster.nl/kadaster/topics/semantiek>,
+      <https://data.labs.kadaster.nl/kadaster/topics/semantiek/basisregistratie>;
+    sdo:additionalType dcm:Dataset;
+    sdo:dateModified "2020-08-11"^^xsd:date;
+    sdo:datePublished "2020-07-21"^^xsd:date;
+    # TODO: Markdown
+    sdo:description "De Basisregistratie Grootschalige Topografie (BGT) is een gedetailleerde digitale kaart van Nederland.  In de BGT worden objecten zoals gebouwen, wegen, water, spoorlijnen en groen op eenduidige manier vastgelegd.\n\nDe BGT wordt wettelijk geregeld.  Op 1 januari 2016 is de wet in werking getreden voor bronhouders en de Landelijke Voorziening (LV BGT).  Iedereen kan de informatie uit de BGT vrij gebruiken.  Voor overheden en andere wettelijke gebruikers is het gebruik verplicht.  Zie [deze pagina](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bgt) voor meer informatie.\n\n# Data model\n\nHet data model voor de BGT is vastgelegd in de volgende documenten:\n- [Basisregistratie Grootschalige Topografie Gegegevenscatalogus BGT 1.2](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/), vastgesteld door Geonovum op 1 juli 2020.\n- [Basisregistratie Grootschalige Topografie Gegevenscatalogus IMGeo 2.2](https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/), vastgesteld door Geonovum op 1 juli 2020.\n- Tevens wordt gebruik gemaakt van de [NEN 3610 - Linked Data Standaard](https://docs.geostandaarden.nl/nen3610/nldp/), vastgesteld door Geonovum op 23 maart 2020.\n- Er wordt aangesloten op de [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/), zoals vastgesteld door de Open Geospatial Community (OGC) en de World Wide Web Consortium (W3C) op 28 September 2017.\n\n# Metadata eigenschappen (in ontwikkeling)\n\n- Licentie: <http://creativecommons.org/licenses/by/4.0>\n- Ruimtelijke dekking: Nederland\n- Tijdelijke dekking: onbekend\n- Update frequentie: wekelijks (volgens [Nationaal Georegister](https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/2cb4769c-b56e-48fa-8685-c48f61b9a319?tab=general))\n- Kwaliteit:\n    - Actualiteit: 6 maanden (volgens [Stelselcatalogus](https://www.stelselcatalogus.nl/registraties/BGT/Pand))\n    - Geometrische relatieve precisie: 30 cm (volgens [Stelselcatalogus](https://www.stelselcatalogus.nl/registraties/BGT/Pand))\n\n# In ontwikkeling\n\nDeze dataset maakt nog geen gebruik van stabiele IRIs.  Deze zullen binnenkort onder de IRI prefix `https://bgt.basisregistraties.overheid.nl` worden uitgegeven.  Zie het [logboek](https://data.labs.kadaster.nl/kadaster/-/stories/bgt-log) voor informatie over de IRI strategie ontwikkeling.\n\nDeze dataset is nog onder ontwikkeling, zie het [logboek](https://data.labs.kadaster.nl/kadaster/-/stories/bgt-log) waarin de ontwikkeling wordt beschreven.";
+    sdo:distribution
+      [ a sdo:DataDownload;
+        sdo:contentUrl "https://bgt.basisregistraties.overheid.nl/bgt/download.trig.gz"^^xsd:anyURI;
+        sdo:encodingFormat "application/trig";
+        sdo:name "BGT download in TriG" ],
+      [ a sdo:DataDownload;
+        sdo:contentUrl "https://bgt.basisregistraties.overheid.nl/bgt/download.nt.gz"^^xsd:anyURI;
+        sdo:encodingFormat "application/n-triples";
+        sdo:name "BGT download in N-Triples" ],
+      [ a sdo:DataDownload;
+        sdo:contentUrl "https://bgt.basisregistraties.overheid.nl/bgt/download.nq.gz"^^xsd:anyURI;
+        sdo:encodingFormat "application/n-quads";
+        sdo:name "BGT download in N-Quads" ],
+      [ a sdo:DataDownload;
+        sdo:contentUrl "https://bgt.basisregistraties.overheid.nl/bgt/download.ttl.gz"^^xsd:anyURI;
+        sdo:encodingFormat "application/turtle";
+        sdo:name "BGT download in Turtle" ];
+    sdo:image "https://data.labs.kadaster.nl/imgs/avatars/d/5f16c3c3b536eb0383db4b52.png?v=1"^^xsd:anyURI;
+    sdo:inLanguage "iso639-1:en";
+    sdo:includedInDataCatalog <https://data.labs.kadaster.nl>;
+    sdo:keywords:
+      "Basisregistratie",
+      "Geografie",
+      "Nederland",
+      "Semantiek",
+      "eOverheid";
+    # TODO: licenses
+    #sdo:license <http://creativecommons.org/licenses/by-sa/3.0/>;
+    sdo:license
+      [ a sdo:CreativeWork;
+        sdo:name "CC-BY 4.0";
+        sdo:url "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI ];
+    sdo:name "Basisregistratie Grootschalige Topografie (BGT)";
+    sdo:publisher <https://data.labs.kadaster.nl/kadaster>;
+    sdo:spatialCoverage
+      [ a sdo:Place;
+        sdo:geo
+          [ a sdo:Geoshape;
+            sdo:polygon "3.37087 50.7539 3.37087 53.4658 7.21097 53.4658 7.21097 50.7539 3.37087 50.7539" ] ];
+    sdo:temporal "Wordt iedere drie maanden bijgewerkt.";
+    sdo:url "https://bgt.basisregistraties.overheid.nl/bgt"^^xsd:anyURI;
+    skos:notation "https://bgt.basisregistraties.overheid.nl/bgt"^^xsd:anyURI;
+    skos:scopeNote """
+<section lang="nl">
+  <p>De Basisregistratie Grootschalige Topografie (BGT) is een topografisch objectenbestand dat voor heel Nederland uniform is wat betreft inhoud en kwaliteit.  Dat betekent dat het bestand gebiedsdekkend is en voldoet aan beschreven kwaliteitsaspecten voor volledigheid, actualiteit en nauwkeurigheid.  De BGT is bedoeld voor gebruik op een schaal van 1:500 tot 1:5.000.  Het gaat over topografische objecten, zoals gebouwen, wegen, spoorwegen, waterlopen, parken en bossen.</p>
+  <p>De inhoud van de BGT is afgestemd op de gezamenlijke informatiebehoefte van de verschillende gebruikers van het bestand.  Een belangrijk uitgangspunt hierbij is dat sprake moet zijn van meervoudig gebruik.  Het gaat hierbij zowel om de bronhouders zoals staat vermeld in artikel 10 van de Wet basisregistratie grootschalige topografie, als om andere gebruikers en basisregistraties in het stelsel.  Gebruikers kunnen via de Landelijke Voorziening BGT-informatie opvragen en downloaden.</p>
+  <p>Een belangrijk onderdeel van het ontwerp van de BGT is de gegevenscatalogus.  Bij het opstellen ervan is zoveel mogelijk rekening gehouden met de actuele richtlijnen voor de Europese richtlijn INSPIRE, het Basismodel Geo-informatie (NEN 3610) en de stelselcatalogus voor basisregistraties.</p>
+  <p>BGT-gebruikers vinden in deze gegevenscatalogus informatie over de BGT over het doel, het gebruik, de inhoud en kwaliteit.</p>
+</section>"""^^rdf:HTML;
+    void:dataDump
+      "https://bgt.basisregistraties.overheid.nl/bgt/download.nq.gz"^^xsd:anyURI,
+      "https://bgt.basisregistraties.overheid.nl/bgt/download.nt.gz"^^xsd:anyURI,
+      "https://bgt.basisregistraties.overheid.nl/bgt/download.trig.gz"^^xsd:anyURI,
+      "https://bgt.basisregistraties.overheid.nl/bgt/download.ttl.gz"^^xsd:anyURI;
+    void:exampleResource <https://bgt.basisregistraties.overheid.nl/bgt/id/pand/fe246f2e5351d6d6e0400a0a35020533>;
+    void:feature
+      fmt:N-Quads,
+      fmt:N-Triples,
+      fmt:TriG,
+      fmt:Turtle;
+    void:sparqlEndpoint <https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql>;
+    void:subSet
+      graph:data,
+      graph:shape,
+      bgt:;
+    # TDOO: stats
+    void:triples "123"^^xsd:nonNegativeInteger;
+    void:uriRegexPattern "^https://bgt.basisregistraties.overheid.nl/bgt/";
+    void:uriSpace "https://bgt.basisregistraties.overheid.nl/bgt/"^^xsd:anyURI;
+    void:vocabulary
+      dcat:,
+      dct:,
+      dqv:,
+      fmt:,
+      foaf:,
+      geo:,
+      gml:,
+      ldqd:,
+      nen3610:,
+      oa:,
+      owl:,
+      prov:,
+      rdf:,
+      rdfs:,
+      sdo:,
+      sh:,
+      skos:,
+      vann:.
+
+  # The SPARQL graph collection is identified by the location on the web where these graphs are displayed.
+  <https://bgt.basisregistraties.overheid.nl/bgt/graphs>
+    a sd:GraphCollection;
+    sd:namedGraph
+      [ a sd:NamedGraph;
+        sd:name bgt:;
+        sd:graph bgt: ],
+      [ a sd:NamedGraph;
+        sd:name graph:data;
+        sd:graph graph:data ],
+      [ a sd:NamedGraph;
+        sd:name graph:shape;
+        sd:graph graph:shape ];
+    rdfs:label "Graph collection of dataset ‘bgt’".
+
+  # Services are identified by the location on the web where they can be used.
+  <https://bgt.basisregistraties.overheid.nl/bgt/sparql/bgt>
+    a
+      sd:Service,
+      sdo:WebAPI;
+    rdfs:label "SPARQL service ‘bgt’"@en;
+    # The dataset's graph collection is available in each SPARQL service.
+    sd:availableGraphs <https://bgt.basisregistraties.overheid.nl/bgt/graphs>;
+    sd:defaultEntailmentRegime entailment:Simple;
+    # The SPARQL endpoint location is a property of the SPARQL service.
+    sd:endpoint "https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql"^^xsd:anyURI;
+    # The RDF serialization formats that can be read by the SPARQL service (e.g., in FROM [NAMED] and USING [NAMED] clauses).
+    sd:inputFormat
+      fmt:N-Quads,
+      fmt:N-Triples,
+      fmt:RDF_XML,
+      fmt:TriG,
+      fmt:Turtle;
+    # The result formats that be emitted by the SPARQL service.
+    sd:resultFormat
+      fmt:N-Quads,
+      fmt:N-Triples,
+      fmt:RDF_XML,
+      fmt:SPARQL_Results_CSV,
+      fmt:SPARQL_Results_JSON,
+      fmt:SPARQL_Results_TSV,
+      fmt:SPARQL_Results_XML,
+      fmt:TriG,
+      fmt:Turtle;
+    sd:supportedLanguage sd:SPARQL11Query;
+    sdo:name "bgt".
+
+  <https://bgt.basisregistraties.overheid.nl/bgt/sparql/reasoning>
+    a
+      sd:Service,
+      sdo:WebAPI;
+    rdfs:label "SPARQL service ‘reasoning’"@en;
+    sd:availableGraphs <https://bgt.basisregistraties.overheid.nl/bgt>;
+    sd:defaultDataset <https://bgt.basisregistraties.overheid.nl/bgt>;
+    sd:defaultEntailmentRegime entailment:Simple;
+    sd:defaultSupportedEntailmentProfile profile:DL;
+    sd:endpoint "https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql"^^xsd:anyURI;
+    sd:inputFormat
+      fmt:N-Quads,
+      fmt:N-Triples,
+      fmt:RDF_XML,
+      fmt:TriG,
+      fmt:Turtle;
+    sd:resultFormat
+      fmt:N-Quads,
+      fmt:N-Triples,
+      fmt:RDF_XML,
+      fmt:SPARQL_Results_CSV,
+      fmt:SPARQL_Results_JSON,
+      fmt:SPARQL_Results_TSV,
+      fmt:SPARQL_Results_XML,
+      fmt:TriG,
+      fmt:Turtle;
+    sd:supportedLanguage sd:SPARQL11Query;
+    sdo:name "reasoning".
+
+  <https://bgt.basisregistraties.overheid.nl/bgt/search/search>
+    a sdo:WebAPI;
+    rdfs:label "ElasticSearch service ‘search’"@en;
+    sdo:name "search".
+
+  bgt:
+    a
+      owl:Ontology,
+      sd:Graph,
+      void:Dataset;
+    foaf:homepage "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/"^^xsd:anyURI;
+    owl:imports
+      #<file:/home/wouter/etl/etl-bgt/context/dce.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/dct.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/dqv.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/fmt.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/foaf.ttl>,
+      <file:/home/wouter/etl/etl-bgt/context/geo.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/gml.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/ldqd.ttl>,
+      <file:/home/wouter/etl/etl-bgt/context/nen3610.ttl>;
+      #<file:/home/wouter/etl/etl-bgt/context/oa.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/owl.ttl>, # ERRORS IN HERMIT
+      #<file:/home/wouter/etl/etl-bgt/context/prov.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/rdf.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/rdfs.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/sdo.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/sh.ttl>,
+      #<file:/home/wouter/etl/etl-bgt/context/skos.ttl>;
+    owl:versionInfo "0.1";
+    rdfs:comment """
+<section lang="nl">
+  <p>De BGT hanteert het Basismodel Geo-informatie (NEN 3610:2011) voor de modellering.  NEN 3610:2011 conformeert zich aan de ISO 19100 standaarden voor geo-informatie.  Deze gelden daarom ook voor de BGT.</p>
+  <p>De BGT is een tweedimensionale objectenverzameling.  Om de stap naar 3D op een later moment te kunnen maken, is het BGT-model gebaseerd op CityGML 2.0.  CityGML is de internationale standaard voor groot­scha­lige topografie in 3D van het Open Geospatial Consortium (OGC).</p>
+</section>"""^^rdf:HTML;
+    rdfs:label "Semantisch model voor de BGT"@nl;
+    sd:name bgt:;
+    sdo:license "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI;
+    vann:preferredNamespacePrefix "bgt";
+    vann:preferredNamespaceUri "https://bgt.basisregistraties.overheid.nl/bgt/def/";
+    void:triples "123"^^xsd:nonNegativeInteger.
+
+  graph:data
+    a
+      sd:Graph,
+      void:Dataset;
+    owl:versionInfo "0.1";
+    rdfs:label "Instantiedata BGT"@nl;
+    sd:name graph:data;
+    sdo:license "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI;
+    sh:shapesGraph graph:shape;
+    void:triples "123"^^xsd:nonNegativeInteger.
+
+  graph:shape
+    a
+      sd:Graph,
+      void:Dataset;
+    owl:versionInfo "0.1";
+    rdfs:label "Informatie model voor de BGT"@nl;
+    sd:name graph:shape;
+    sdo:license "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI;
+    void:triples "123"^^xsd:nonNegativeInteger.
+}

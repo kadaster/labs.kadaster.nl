@@ -1,0 +1,831 @@
+prefix absence-reason: <https://bgt.basisregistraties.overheid.nl/bgt/id/absense-reason/>
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bag-pand: <http://bag.basisregistraties.overheid.nl/bag/id/pand/>
+prefix begroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/begroeid-terreindeel/>
+prefix bgt: <https://bgt.basisregistraties.overheid.nl/bgt/def/>
+prefix bronhouder: <https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix cbs-gemeente: <https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/>
+prefix collectie: <https://bgt.basisregistraties.overheid.nl/bgt/id/collectie/>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dcm: <http://purl.org/dc/dcmitype/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix dqv: <http://www.w3.org/ns/dqv#>
+prefix entailment: <http://www.w3.org/ns/entailment/>
+prefix fmt: <http://www.w3.org/ns/formats/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix fysiek-voorkomen: <https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix graph: <https://bgt.basisregistraties.overheid.nl/bgt/id/graph/>
+prefix img: <https://bgt.basisregistraties.overheid.nl/bgt/id/img/>
+prefix inwinningsmethode: <https://bgt.basisregistraties.overheid.nl/bgt/id/inwinningsmethode/>
+prefix ldqd: <http://www.w3.org/2016/05/ldqd#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix oa: <http://www.w3.org/ns/oa#>
+prefix onbegroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeid-terreindeel/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix pand: <https://bgt.basisregistraties.overheid.nl/bgt/id/pand/>
+prefix plaatsbepalingspunt: <https://bgt.basisregistraties.overheid.nl/bgt/id/plaatsbepalingspunt/>
+prefix profile: <http://www.w3.org/ns/owl-profile/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix quality-annotation: <https://data.label.kadaster.nl/kadaster/bgt/id/quality-annotation/>
+prefix quality-dimension: <https://bgt.basisregistraties.overheid.nl/bgt/concept/quality-dimension/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix registratief-gebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/registratief-gebied/>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix shape: <https://bgt.basisregistraties.overheid.nl/bgt/id/shape/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix status: <https://bgt.basisregistraties.overheid.nl/bgt/id/status/>
+prefix stelselcatalogus: <https://opendata.stelselcatalogus.nl/stelselcatalogus/def#>
+prefix tbd: <https://example.com/>
+prefix value: <https://triplydb.com/Triply/value/>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix wet: <https://bgt.basisregistraties.overheid.nl/bgt/id/wet/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+graph:shape {
+  shape:Bak
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#bak-0"^^xsd:anyURI;
+    sh:property shape:puntgeometrie;
+    sh:targetClass bgt:Bak.
+
+  shape:BegroeidTerreindeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#begroeidterreindeel-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#begroeidterreindeel"^^xsd:anyURI;
+    sh:property
+      shape:fysiekVoorkomenBegroeidTerreindeel,
+      shape:kruinlijn,
+      shape:multivlakgeometrie,
+      shape:opTalud,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:BegroeidTerreindeel.
+
+  shape:Buurt
+    a sh:NodeShape;
+    rdfs:isDefineBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#buurt-0"^^xsd:anyURI;
+    sh:property
+      shape:buurtcode,
+      shape:wijk;
+    sh:targetClass bgt:Buurt.
+
+  shape:FunctioneelGebied
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functioneelgebied-0"^^xsd:anyURI;
+    sh:property
+      shape:naam,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:FunctioneelGebied.
+
+  shape:Geometry
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#geometrietypen"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#geometrietypen"^^xsd:anyURI;
+    sh:description "GEEN BESCHRIJVING"@nl;
+    sh:name "Geometrie"@nl;
+    sh:property shape:asWKT;
+    sh:targetClass geo:Geometry.
+
+  shape:Identificatie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nen3610id"^^xsd:anyURI;
+    sh:name "Identificatie"@nl;
+    sh:property
+      shape:lokaalID,
+      shape:namespace;
+    sh:targetClass nen3610:Identificatie;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Identificatiegegevens voor de universeel unieke identificatie van een object."@nl ];
+    skos:scopeNote "De combinatie van namespace van een registratie, lokale identificatie en versie informatie maken een object uniek identificeerbaar. Met het NEN3610ID kun je daardoor met zekerheid verwijzen naar het geïdentificeerde object."@nl.
+
+  shape:Object
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#imgeo-object"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#imgeo-object-0"^^xsd:anyURI;
+    sh:name "IMGeo-Object"@nl;
+    sh:property
+      shape:bronhouder,
+      shape:identificatieObject,
+      shape:registratie,
+      shape:relatieveHoogteligging,
+      shape:status;
+    sh:targetClass nen3610:GeoObject;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De gemeenschappelijke eigenschappen van een grootschalig topografisch object, al dan niet uit de basisregistratie."@nl ].
+
+  shape:OnbegroeidTerreindeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#onbegroeidterreindeel-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#onbegroeidterreindeel"^^xsd:anyURI;
+    sh:property
+      shape:fyiekVoorkomenOnbegroeidTerrein,
+      shape:geometrie,
+      shape:opTalud,
+      shape:kruinlijn;
+    sh:targetClass bgt:OnbegroeidTerreindeel.
+
+  shape:OndersteunendWaterdeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#ondersteunendwaterdeel-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#ondersteunendwaterdeel"^^xsd:anyURI;
+    sh:property shape:vlakgeometrie;
+    sh:targetClass bgt:OndersteunendWaterdeel.
+
+  shape:OndersteunendWegdeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#ondersteunendwegdeel-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#ondersteunendwegdeel"^^xsd:anyURI;
+    sh:property
+      shape:fysiekVoorkomenOndersteunendWegdeel,
+      shape:kruinlijn,
+      shape:opTalud,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:OndersteunendWegdeel.
+
+  shape:OpenbareRuimteLabel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtelabel-0"^^xsd:anyURI;
+    sh:property
+      shape:identificatieBagOpenbareRuimte,
+      shape:openbareRuimteNaam,
+      shape:openbareRuimteType;
+    sh:targetClass bgt:OpenbareRuimteLabel.
+
+  shape:Overbruggingsdeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#overbruggingsdeel"^^xsd:anyURI;
+    sh:property
+      shape:beweegbaar,
+      shape:hoortBijTypeOverbrugging,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:Overbruggingsdeel.
+
+  shape:OverigeConstructie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#overigeconstructie-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#overigeconstructie"^^xsd:anyURI;
+    sh:property shape:geometrie;
+    sh:targetClass bgt:OverigeConstructie.
+
+  shape:Paal
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#paal-0"^^xsd:anyURI;
+    sh:property shape:hectometeraanduiding;
+    sh:targetClass bgt:Paal.
+
+  shape:Pand
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#pand-0"^^xsd:anyURI;
+    sh:property
+      shape:identificatieBagPand,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:Pand.
+
+  shape:Plaatsbepalingspunt
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#plaatsbepalingspunt-1"^^xsd:anyURI;
+    sh:property
+      shape:datumInwinning,
+      shape:identificatiePlaatsbepalingspunt,
+      shape:inwinnendeInstantie,
+      shape:inwinningsmethode,
+      shape:nauwkeurigheid,
+      shape:puntgeometrie;
+    sh:targetClass bgt:Plaatsbepalingspunt;
+    skos:scopeNote "Dit objecttype wordt geregistreerd ten behoeve van kwaliteits-doeleinden."@nl.
+
+  shape:Registratie
+    a sh:NodeShape;
+    rdfs:comment "GEEN BESCHRIJVING"@nl;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:label "Registratie"@nl;
+    rdfs:seeAlso "GEEN BRON"^^xsd:anyURI;
+    sh:property
+      shape:eindRegistratie,
+      shape:inOnderzoek,
+      shape:objectBeginTijd,
+      shape:objectEindTijd,
+      shape:publicatiedatumLandelijkeVoorzieningen,
+      shape:tijdstipRegistratie;
+    sh:targetClass foaf:Document.
+
+  shape:RegistratiefGebied
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#registratiefgebied-0"^^xsd:anyURI;
+    sh:property shape:naam;
+    sh:targetClass bgt:RegistratiefGebied.
+
+  shape:Spoor
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#spoor-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#spoor"^^xsd:anyURI;
+    sh:property
+      shape:lijngeometrie,
+      shape:vlakgeometrie;
+    sh:targetClass bgt:Spoor.
+
+  shape:Tunneldeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#tunneldeel"^^xsd:anyURI;
+    sh:property shape:vlakgeometrie;
+    sh:targetClass bgt:Tunneldeel.
+
+  shape:Waterdeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#waterdeel-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#waterdeel"^^xsd:anyURI;
+    sh:property shape:vlakgeometrie;
+    sh:targetClass bgt:Waterdeel.
+
+  shape:Wegdeel
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#wegdeel-0"^^xsd:anyURI;
+    sh:property
+      shape:fysiekVoorkomenWegdeel,
+      shape:kruinlijn,
+      shape:opTalud,
+      shape:vlakGeometrie;
+    sh:targetClass bgt:Wegdeel.
+
+  shape:Wijk
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#wijk-0"^^xsd:anyURI;
+    sh:property
+      shape:stadsdeel,
+      shape:wijkcode;
+    sh:targetClass bgt:Wijk.
+
+  shape:asWKT
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:datatype geo:wktLiteral;
+    sh:description "De Well-Known Text (WKT) serialisatie voor een geometrie."@nl;
+    sh:minCount 1;
+    sh:name "Heeft WKT serialisatie"@nl;
+    sh:path geo:asWKT.
+
+  shape:beweegbaar
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#overbruggingisbeweegbaar"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:path bgt:beweegbaar.
+
+  shape:bronhouder
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bronhouder"^^xsd:anyURI;
+    sh:class bgt:Bronhouder;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:bronhouder.
+
+  shape:buurtcode
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#buurtcode"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft buurt code"@nl;
+    sh:path sdo:identifier;
+    skos:definition
+      [ dct:creator "IMGeo";
+        rdf:value "De code behorende bij de naam van de buurt."@nl ].
+
+  shape:datumInwinning
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#datuminwinning"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:datumInwinning.
+
+  shape:eindRegistratie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#eindregistratie"^^xsd:anyURI;
+    sh:datatype xsd:dateTime;
+    sh:maxCount 1;
+    sh:name "Heeft eind registratie"@nl;
+    sh:path prov:invalidatedAtTime;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Eind van de periode waarop deze instantie van het object geldig is bij de bronhouder. Wanneer deze waarde niet is ingevuld is de instantie nog geldig."@nl ].
+
+  shape:fysiekVoorkomenBegroeidTerreindeel
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-fysiekvoorkomen-2"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-fysiekvoorkomen-0"^^xsd:anyURI;
+    sh:class bgt:FysiekVoorkomenBegroeidTerrein;
+    sh:description "Nadere classificatie van het vegetatiedek, ingedeeld naar soort vegetatie."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Fysiek voorkomen begroeid terrein"@nl;
+    sh:path bgt:fysiekVoorkomen;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Classificatie van het vegetatiedek, ingedeeld naar soort vegetatie."@nl ].
+
+  shape:fysiekVoorkomenOnbegroeidTerreindeel
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-fysiekvoorkomen-1"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenonbegroeidterrein"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-fysiekvoorkomen"^^xsd:anyURI;
+    sh:class bgt:FysiekVoorkomenOnbegroeidTerrein;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Fysiek voorkomen onbegroeid terrein"@nl;
+    sh:path bgt:fysiekVoorkomen;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Classificatie van het soort terrein, ingedeeld naar de uiterlijke verschijningsvorm."@nl ].
+
+  shape:fysiekVoorkomenOndersteunendWegdeel
+    a sh:PropertyShape;
+    dct:created "2012-11-28"^^xsd:date;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-fysiekvoorkomen-0"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI;
+    sh:class bgt:FysiekVoorkomenOndersteunendWegdeel;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Fysiek voorkomen ondersteunend wegdeel"@nl;
+    sh:path bgt:fysiekVoorkomen;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Mate waarin het ondersteunend wegdeel al of niet verhard is."@nl ].
+
+  shape:fysiekVoorkomenWegdeel
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-fysiekvoorkomen"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenweg"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-fysiekvoorkomenwegdeel"^^xsd:anyURI;
+    sh:class bgt:FysiekVoorkomenWeg;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Fysiek voorkomen weg"@nl;
+    sh:path bgt:fysiekVoorkomen;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Mate waarin het wegdeel al of niet verhard is."@nl ].
+
+  shape:geometrie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#geometrietypen"^^xsd:anyURI;
+    sh:class
+      gml:Curve,
+      gml:MultiSurface,
+      gml:Point,
+      gml:Surface;
+    sh:description """
+<section lang="nl">
+  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Een generieke geometrie in de BGT wordt aangeduid met een curve (klasse <code>gml:Curve</code>), een multi-vlak (klasse <code>gml:MultiSurface</code>), een punt (klasse <code>gml:Point</code> of een vlak (klasse <code>gml:Surface</code>).</p>
+</section>"""^^rdf:HTML;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft tweedimensinale punt-, lijn-, vlak- of multivlakgeometrie"@nl;
+    sh:path geo:hasDefaultGeometry.
+
+  shape:hectometeraanduiding
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#hectometeraanduiding"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:name "Hectometeraanduiding"@nl;
+    sh:path bgt:hectometeraanduiding.
+
+  shape:hoek
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#hoek"^^xsd:anyURI;
+    sh:datatype xsd:double;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:hoek.
+
+  shape:hoortBijTypeOverbrugging
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#hoortbijtypeoverbrugging"^^xsd:anyURI;
+    sh:class
+      [ a owl:Class;
+        owl:oneOf
+          ( bgt:Aquaduct
+            bgt:Brug
+            bgt:Ecoduct
+            bgt:Flyover
+            bgt:Viaduct ) ];
+    sh:maxCount 1;
+    sh:path bgt:hoortBijTypeOverbrugging.
+
+  shape:identificatieBagOpenbareRuimte
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatiebagopr"^^xsd:anyURI;
+    sh:class bag:OpenbareRuimte;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft BAG openbare ruimte"@nl;
+    sh:path geo:sfWithin;
+    skos:definition
+      [ dct:creator "BAG";
+        rdf:value "De unieke identificatie van het object zoals is toegekend in de BAG-administratie."@nl ].
+
+  shape:identificatieBagPand
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatiebagpnd"^^xsd:anyURI;
+    sh:class bag:Pand;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:bagPand.
+
+  shape:identificatieObject
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie-en-historie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft identificatie"@nl;
+    sh:path nen3610:identificatie;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Uniek identificatienummer voor het object dat onveranderlijk is zolang het object bestaat."@nl ].
+
+  shape:identificatiePlaatsbepalingspunt
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie-1"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft identificatie"@nl;
+    sh:path nen3610:identificatie;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Uniek identificatienummer voor het object dat onveranderlijk is zolang het object bestaat."@nl ].
+
+  shape:inOnderzoek
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inonderzoek"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:inOnderzoek.
+
+  shape:inwinnendeInstantie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinnendeinstantie"^^xsd:anyURI;
+    sh:class tbd:;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:inwinnendeInstantie.
+
+  shape:inwinningsmethode
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    sh:class bgt:InwinningsMethode;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:inwinningsmethode.
+
+  shape:kruinlijn
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnbegroeidterreindeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnonbegroeidterreindeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnwegdeel"^^xsd:anyURI;
+    sh:class gml:Curve;
+    sh:maxCount 1;
+    sh:path bgt:kruinlijn.
+
+  shape:lijngeometrie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:class gml:Curve;
+    sh:description """
+<section lang="nl">
+  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Lijngeometrieën worden aangeduid met de <code>gml:Curve</code> klasse.</p>
+</section>"""^^rdf:HTML;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft tweedimensionale lijngeometrie"@nl;
+    sh:path geo:hasDefaultGeometry.
+
+  shape:lokaalID
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#lokaalid"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Lokaal ID"@nl;
+    sh:path nen3610:lokaalID;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Unieke identificatiecode binnen een registratie."@nl ];
+    skos:scopeNote "LokaalID is de identificatiecode die een object heeft binnen een (lokaal) registratie. De volgende karakters mogen in een lokaalID voorkomen: {A…Z, a…z, 0…9, “_”, “-“, “,”, ”.”}  Dit is de IMGeo identificatie. Een betekenisloos nummer."@nl.
+
+  shape:multivlakgeometrie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:class gml:MultiSurface;
+    sh:description """
+<section lang="nl">
+  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Multivlakgeometrieën worden aangeduid met de <code>gml:MultiSurface</code> klasse.</p>
+</section>"""^^rdf:HTML;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft tweedimensionale multivalkgeometrie"@nl;
+    sh:path geo:hasDefaultGeometry.
+
+  shape:naam
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam-0"^^xsd:anyURI;
+    sh:datatype rdf:langString;
+    sh:maxCount 1;
+    sh:name "Naam"@nl;
+    sh:path sdo:name;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "De benaming van het gebied."@nl ].
+
+  shape:namespace
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#namespace"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Namespace"@nl;
+    sh:path nen3610:namespace;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Unieke verwijzing naar een registratie van objecten."@nl ];
+    skos:scopeNote "Het attribuut ‘namespace’ is een unieke verwijzing naar de registratie die de identificatie uitdeelt. Deze lijst van registraties wordt beheerd door de beheerder van NEN3610. Binnen Nederland zal deze namespace vrijwel altijd met ‘NL.’ beginnen. De volgende karakters mogen in een namespace aanduiding voorkomen: {”A” …”Z”, “a”…”z”,”0”…”9”, “_”, “-“, “,”,”.”}"@nl.
+
+  shape:nauwkeurigheid
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nauwkeurigheid"^^xsd:anyURI;
+    sh:class value:MaybeInteger;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:nauwkeurigheid.
+
+  shape:objectBegintijd
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objectbegintijd"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft object begintijd"@nl;
+    sh:path nen3610:beginGeldigheid;
+    skos:definition
+      [ dct:creator "NEN 3610:2011";
+        rdf:value "Datum waarop het object bij de bronhouder is ontstaan."@nl ];
+    skos:scopeNote
+      [ dct:source "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#levensduur-en-historie"^^xsd:anyURI;
+        rdf:value """
+<div lang="nl">
+  <p>De formele levensduur wordt per object vastgelegd met de <code>shape:objectBegintijd</code> en <code>shape:objectEindtijd</code>, met als onderdeel daarvan de datum, die is bepaald door de bronhouder.</p>
+</div>"""^^rdf:HTML ],
+      [ dct:source "GEEN BRON";
+        rdf:value "Deze datum moet altijd gelijk zijn aan de datum uit de tijdstipregistratie van het eerste voorkomen van het object."@nl ].
+
+  shape:objectEindtijd
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objecteindtijd"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:name "Heeft object eindtijd"@nl;
+    sh:path nen3610:eindGeldigheid;
+    skos:definition
+      [ dct:creator "NEN 3610:2011";
+        rdf:value "Datum waarop het object bij de bronhouder niet meer geldig is."@nl ];
+    skos:scopeNote
+      [ dct:source "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#levensduur-en-historie"^^xsd:anyURI;
+        rdf:value """
+<div lang="nl">
+  <p>De formele levensduur wordt per object vastgelegd met de <code>shape:objectBegintijd</code> en <code>shape:objectEindtijd</code>, met als onderdeel daarvan de datum, die is bepaald door de bronhouder.</p>
+</div>"""^^rdf:HTML ].
+
+  shape:opTalud
+    a sh:PropertyShape;
+    dct:created "2011-11-21"^^xsd:date;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#begroeidterreindeeloptalud"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#onbegroeidterreindeeloptalud"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#ondersteunendwegdeeloptalud"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#wegdeeloptalud"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:opTalud.
+
+  shape:openbareRuimteNaam
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtenaam"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path tbd:;
+    skos:definition
+      [ dct:creator "BAG";
+        rdf:value "Een door het bevoegde gemeentelijke orgaan aan een OPENBARE RUIMTE toegekende benaming."@nl ];
+    skos:scopeNote "Bij dit attribuut is aangegeven dat zowel materiële als formele historie worden bijgehouden. De openbare ruimtenaam is opgenomen in het BGT informatiemodel ten behoeve van visualisatie maar wordt overgenomen uit de BAG."@nl.
+
+  shape:openbareRuimteType
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtetype"^^xsd:anyURI;
+    sh:class bgt:TypeOpenbareRuimte;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path rdf:type;
+    skos:definition
+      [ dct:creator "BAG";
+        rdf:value "De aard van de als zodanig benoemde OPENBARE RUIMTE."@nl ];
+    skos:scopeNote "Bij dit attribuut is aangegeven dat zowel materiële als formele historie worden bijgehouden. De openbare ruimtenaam is opgenomen in het BGT informatiemodel ten behoeve van visualisatie maar wordt overgenomen uit de BAG."@nl.
+
+  shape:publicatiedatumLandelijkeVoorzieningen
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#lv-publicatiedatum"^^xsd:anyURI;
+    sh:datatype xsd:dateTime;
+    sh:maxCount 1;
+    sh:path bgt:publicatiedatumLandelijkeVoorzieningen.
+
+  shape:puntgeometrie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:class gml:Point;
+    sh:description "De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Pointgeometrieën worden aangeduid met de <code>gml:Point</code> klasse."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft tweedimensionale puntgeometrie"@nl;
+    sh:path geo:hasDefaultGeometry.
+
+  shape:registratie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:class foaf:Document;
+    sh:minCount 1;
+    sh:node shape:Registratie;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:relatieveHoogteligging
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#relatievehoogteligging"^^xsd:anyURI;
+    sh:datatype xsd:integer;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:relatieveHoogteligging.
+
+  shape:stadsdeel
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#associatie-stadsdeel"^^xsd:anyURI;
+    sh:class bgt:Stadsdeel;
+    sh:maxCount 1;
+    sh:path bgt:stadsdeel.
+
+  shape:status
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-status"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#plus-status"^^xsd:anyURI;
+    sh:class bgt:Status;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:status.
+
+  shape:tekst
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#tekst"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bgt:tekst.
+
+  shape:tijdstipRegistratie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#tijdstipregistratie"^^xsd:anyURI;
+    sh:datatype xsd:dateTime;
+    sh:name "Heeft tijdstip registratie"@nl;
+    sh:path prov:generatedAtTime;
+    skos:definition
+      [ dct:creator "NEN 3610:2011";
+        rdf:value "Tijdstip waarop deze instantie van het object is opgenomen door de bronhouder."@nl ];
+    skos:scopeNote """<p lang="nl">Als een mutatie niet resulteert in een nieuw object, dan ontstaat een nieuwe versie van het object.  In deze situatie verandert het <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/tijdstipRegistratie">tijdstip registratie</a> van het object, terwijl de <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/objectBeginTijd">object begintijd</a> gelijk blijft.</p>"""^^rdf:HTML.
+
+  shape:vlakgeometrie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:class gml:Surface;
+    sh:description """
+<section lang="nl">
+  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Vlakgeometrieën worden aangeduid met de <code>gml:Surface</code> klasse.</p>
+</section>"""^^rdf:HTML;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft tweedimensionale valkgeometrie"@nl;
+    sh:path geo:hasDefaultGeometry.
+
+  shape:wijk
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#associatie-wijk"^^xsd:anyURI;
+    sh:class bgt:Wijk;
+    sh:maxCount 1;
+    sh:name "Ligt in wijk"@nl;
+    sh:path geo:sfWithin;
+    skos:definition
+      [ dct:creator "ONBEKEND";
+        rdf:value "De wijk waarin de buurt gelegen is."@nl ].
+
+  shape:wijkcode
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#wijkcode"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft wijkcode"@nl;
+    sh:path sdo:identifier;
+    skos:definition
+      [ dct:creator "IMGeo";
+        rdf:value "De code behorende bij de naam van de wijk."@nl ].
+}
