@@ -12,7 +12,7 @@ title: Use Case ― Github Bootcamp
 </script>
 
 ## Favorite Beer story by Jorrit Overeem
-<img src=""/>
+<img src="./assets/images/bier_grandprestige.png"/>
  My favorite beer is the Grand Prestige from the Hertog Jan Brewery in Arcen (Limburg). Its a beer that is brewed from four different species of malt. It has the bitter taste of chocolate and coffee but also sweet tones of caramel and raisins. It is more of a barley wine, so you can stall it for years to get an even better taste. Eventually the taste comes close to the taste of port. 
 
  A fun fact is that the Hertog Jan Brewery started a Vatgerijpt-program to mature the Grand Prestige on different types of kegs like Bourbon or Cognac to actually get different taste outcomes when the beer is stalled for a few years. 
