@@ -16,6 +16,8 @@ Assigmnent: Erwin done: untappd....now lets see how to break this.
 
 
 ## Musicals (Cathelijne)
+<img src=".assets/images/Singing_in_the_rain.jpeg"/>
+
 My favourite movie en series genre is musical. I grew up with a lot of music in my life. I am the type of person that could 
 listen to music all day, every day. This has effected my choice in movies that I like to watch. The fact that there is a 
 possibility to combine music and movies makes me very happy. 
