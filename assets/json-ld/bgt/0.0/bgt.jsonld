@@ -2,17 +2,12 @@
   "@context": {
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
-    "asWKT": {
-      "@id": "geo:asWKT",
-      "@type": "geo:wktLiteral"
-    },
-    "bagOpenbareRuimte": "geo:sfWithin",
-    "begroeidterreindeeloptalud": "opTalud",
+    "begroeidterreindeeloptalud": "talud",
     "bgt_functie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "rdf:type",
+      "@id": "functie",
       "@type": "@id"
     },
     "bgt_status": {
@@ -26,7 +21,7 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "rdf:type",
+      "@id": "type",
       "@type": "@id"
     },
     "bgt_fysiekvoorkomen": {
@@ -49,14 +44,37 @@
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geometrie": "geo:hasGeometry",
-    "geometrie_kruinlijn": "geo:hasGeometry",
-    "geometrie_lijn": "geo:hasGeometry",
-    "geometrie_multipunt": "geo:hasGeometry",
-    "geometrie_multivlak": "geo:hasGeometry",
-    "geometrie_nummeraanduiding": "geo:hasGeometry",
-    "geometrie_punt": "geo:hasGeometry",
-    "geometrie_vlak": "geo:hasGeometry",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_kruinlijn": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_lijn": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_multipunt": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_multivlak": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_nummeraanduiding": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_punt": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_vlak": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
     "gml_id": null,
     "hoortbijtypeoverbrugging": {
       "@context": {
@@ -100,7 +118,7 @@
       "@type": "@id"
     },
     "inonderzoek": {
-      "@id": "inOnderzoek",
+      "@id": "onderzoek",
       "@type": "xsd:boolean"
     },
     "lokaalid": "nen3610:lokaalID",
@@ -111,16 +129,14 @@
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
-      "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
     "objecteindtijd": {
-      "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
     "ogc_fid": null,
-    "onbegroeidterreindeeloptalud": "opTalud",
-    "ondersteunendwegdeeloptalud": "opTalud",
+    "onbegroeidterreindeeloptalud": "talud",
+    "ondersteunendwegdeeloptalud": "talud",
     "openbareruimtetype": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
@@ -134,40 +150,39 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "rdf:type",
+      "@id": "plusFunctie",
       "@type": "@id"
     },
     "plus_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
       },
-      "@id": "status",
+      "@id": "plusStatus",
       "@type": "@id"
     },
     "plus_type": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "rdf:type",
+      "@id": "plusType",
       "@type": "@id"
     },
     "plus_fysiekvoorkomen": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
-      "@id": "fysiekVoorkomen",
+      "@id": "plusFysiekVoorkomen",
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "Registratie": "foaf:Document",
+    "Registratie": "IMGeoObjectRegistratie",
     "registratie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/"
       }
     },
     "relatievehoogteligging": {
-      "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
@@ -178,10 +193,10 @@
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
-      "@id": "rdf:type",
+      "@id": "typeOverbruggingsdeel",
       "@type": "@id"
     },
-    "wegdeeloptalud": "opTalud",
+    "wegdeeloptalud": "talud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }

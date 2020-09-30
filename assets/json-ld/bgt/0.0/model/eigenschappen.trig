@@ -1,0 +1,404 @@
+# https://wetten.overheid.nl/BWBR0034026/2018-07-01
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bag-pand: <http://bag.basisregistraties.overheid.nl/bag/id/pand/>
+prefix begroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/begroeid-terreindeel/>
+prefix bgt: <https://bgt.basisregistraties.overheid.nl/bgt/def/>
+prefix bronhouder: <https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix cbs-gemeente: <https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/>
+prefix collectie: <https://bgt.basisregistraties.overheid.nl/bgt/id/collectie/>
+prefix concept: <http://www.geostandaarden.nl/imgeo/def/2.1#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dcm: <http://purl.org/dc/dcmitype/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix dqv: <http://www.w3.org/ns/dqv#>
+prefix entailment: <http://www.w3.org/ns/entailment/>
+prefix fmt: <http://www.w3.org/ns/formats/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix fysiek-voorkomen: <https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix graph: <https://bgt.basisregistraties.overheid.nl/bgt/id/graph/>
+prefix img: <https://bgt.basisregistraties.overheid.nl/bgt/id/img/>
+prefix inwinningsmethode: <https://bgt.basisregistraties.overheid.nl/bgt/id/inwinningsmethode/>
+prefix ldqd: <http://www.w3.org/2016/05/ldqd#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix oa: <http://www.w3.org/ns/oa#>
+prefix onbegroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeid-terreindeel/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix pand: <https://bgt.basisregistraties.overheid.nl/bgt/id/pand/>
+prefix plaatsbepalingspunt: <https://bgt.basisregistraties.overheid.nl/bgt/id/plaatsbepalingspunt/>
+prefix profile: <http://www.w3.org/ns/owl-profile/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix quality-annotation: <https://data.label.kadaster.nl/kadaster/bgt/id/quality-annotation/>
+prefix quality-dimension: <https://bgt.basisregistraties.overheid.nl/bgt/concept/quality-dimension/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix registratief-gebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/registratief-gebied/>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix shape: <https://bgt.basisregistraties.overheid.nl/bgt/id/shape/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix status: <https://bgt.basisregistraties.overheid.nl/bgt/id/status/>
+prefix stelselcatalogus: <https://opendata.stelselcatalogus.nl/stelselcatalogus/def#>
+prefix tbd: <https://example.com/>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix wet: <https://bgt.basisregistraties.overheid.nl/bgt/id/wet/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+bgt: {
+  bgt:authentiek
+    a owl:DatatypeProperty;
+    rdfs:comment "GEEN BESCHRIJVING"@nl;
+    rdfs:domain nen3610:GeoObject;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Is authentiek?"@nl;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "GEEN BRON"^^xsd:anyURI.
+
+  bgt:bagPand
+    a owl:ObjectProperty;
+    rdfs:domain bgt:PandRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft BAG pand"@nl;
+    rdfs:range bag:Pand;
+    skos:definition "De unieke identificatie van het object zoals is toegekend in de BAG-administratie."@nl.
+
+  bgt:beweegbaar
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:OverbruggingsdeelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Is beweegbaar?"@nl;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#overbruggingisbeweegbaar"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Aanduiding of de brug waar het overbruggingsdeel bij hoort al dan niet beweegbaar is."@nl ].
+
+  bgt:bronhouder
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft bronhouder"@nl;
+    rdfs:range bgt:Bronhouder;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bronhouder"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De bronhoudercode van het object."@nl ];
+    skos:scopeNote "Per object (dus niet per objecttype) moet de bronhouder worden vastgelegd zodat hiernaar kan worden gerefereerd bij terugmeldingen.  Een object valt altijd geheel binnen het gebied van één bronhouder."@nl.
+
+  bgt:datumInwinning
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:PlaatsbepalingspuntRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft inwinningsdatum"@nl;
+    rdfs:range xsd:date;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#datuminwinning"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Datum waarop het punt is ingewonnen."@nl ].
+
+  bgt:functie
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft functie"@nl;
+    rdfs:range owl:Class.
+
+  bgt:fysiekVoorkomen
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    #rdfs:domain
+    #  [ a owl:Class;
+    #    owl:unionOf
+    #      ( bgt:BegroeidTerreindeelRegistratie
+    #        bgt:OnbegroeidTerreindeelRegistratie
+    #        bgt:WaterdeelRegistratie
+    #        bgt:WegdeelRegistratie) ];
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft fysiek voorkomen"@nl;
+    rdfs:range bgt:FysiekVoorkomen;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#bgt-fysiekvoorkomen"^^xsd:anyURI.
+
+  bgt:geometrie
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "heeft geometrie"@nl;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#geometrietypen"^^xsd:anyURI.
+
+  bgt:hectometeraanduiding
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:PaalRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft hectometeraanduiding"@nl;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#hectometeraanduiding"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Code van de paal die kan worden gebruikt voor afstandsaanduiding, zoals bij hectometerpaaltjes en dijkpalen."@nl ].
+
+  bgt:hoek
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:OpenbareRuimteLabelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft hoek"@nl;
+    rdfs:range xsd:double;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#hoek"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De rotatie van het label bij visualisatie, met de klok mee ten opzichte van de normale tekstrichting."@nl ].
+
+  bgt:hoortBijTypeOverbrugging
+    a owl:ObjectProperty;
+    rdfs:domain bgt:OverbruggingsdeelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Hoort bij type overbrugging"@nl;
+    rdfs:range
+      [ a owl:Class;
+        owl:oneOf
+          ( bgt:Aquaduct
+            bgt:Brug
+            bgt:Ecoduct
+            bgt:Flyover
+            bgt:Viaduct ) ];
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#hoortbijtypeoverbrugging"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Nadere classificatie van de overbrugging waar het overbruggingsdeel een onderdeel van is."@nl ].
+
+  bgt:inwinnendeInstantie
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:PlaatsbepalingspuntRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft inwinnende instantie"@nl;
+    rdfs:range tbd:;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinnendeinstantie"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De organisatie die namens de bronhouder het object inwint."@nl ];
+    skos:scopeNote "De inwinnende instantie kan de bronhouder zelf zijn of een organisatie aan wie dit is gedelegeerd. De Codelist is dezelfde lijst als die van de bronhouder van het BGTObject, maar dan uitgebreid met de inwinnende instanties. Indien de inwinnende instantie voor haar uitvoerende taak gebruik maakt van externe organisaties (zoals landmeetkundige bureaus) dan worden deze laatsten NIET aan de CodeList toegevoegd maar vullen zij de inwinnende instantie in voor wie zij het werk uitvoeren."@nl.
+
+  bgt:inwinningsmethode
+    a owl:ObjectProperty;
+    dct:subject concept:Inwinningsmethode;
+    rdfs:domain bgt:PlaatsbepalingspuntRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft inwinningsmethode"@nl;
+    rdfs:range bgt:Inwinningsmethode;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De wijze waarop het punt is ingewonnen."@nl ].
+
+  bgt:kruinlijn
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    #rdfs:domain
+    #  [ owl:unionOf
+    #     ( bgt:BegroeidTerreindeelRegistratie
+    #       bgt:OnbegroeidTerreindeelRegistratie
+    #       bgt:OndersteunendWegdeelRegistratie
+    #       bgt:WegdeelRegistratie) ];
+    rdfs:label "Heeft kruinlijn"@nl;
+    rdfs:range geo:Geometry;
+    rdfs:subClassOf geo:hasGeometry;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Lijngeometrie van de hoogstgelegen begrenzing van een kunstmatig aangelegd en onderhouden helling."@nl ].
+
+  bgt:nauwkeurigheid
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:PlaatsbepalingspuntRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft nauwkeurigheid"@nl;
+    rdfs:range xsd:integer;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nauwkeurigheid"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Gerealiseerde geometrische nauwkeurigheid van het punt als het resultaat van het inwinnings- en verwerkingsproces, uitgedrukt in centimeters."@nl ].
+
+  bgt:nummeraanduidingreeks
+    a owl:ObjectProperty;
+    rdfs:domain bgt:PandRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "heeft nummeraanduidingreeks"@nl;
+    rdfs:range bgt:Nummeraanduidingreeks;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nummeraanduidingreeks"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Bevat de reeks nummeraanduidingen behorend bij het pand ten behoeve van visualisatie."@nl ].
+
+  bgt:onderzoek
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "In onderzoek?"@nl;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inonderzoek"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "Stelselcatalogus";
+        rdf:value "Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object."@nl ].
+
+  bgt:plusFunctie
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft plus functie"@nl;
+    rdfs:range owl:Class.
+
+  bgt:plusFysiekVoorkomen
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft plus fysiek voorkomen"@nl;
+    rdfs:range bgt:FysiekVoorkomen.
+
+  bgt:plusType
+    a owl:ObjectProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft plus type"@nl;
+    rdfs:range owl:Class.
+
+  bgt:publicatiedatumLandelijkeVoorzieningen
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft publicatiedatum Landelijke Voorzieningen"@nl;
+    rdfs:range xsd:dateTime;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#lv-publicatiedatum"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Het tijdstip waarop de betreffende processtap is geëffectueerd in de Landelijke Voorziening voor een object."@nl ];
+    skos:scopeNote "Het gegeven is optioneel omdat een nieuw object pas een LV-publicatiedatum krijgt als het voor de eerste keer wordt opgenomen in de Landelijke Voorziening.  Voor en tijdens aanlevering van een nieuw object aan de Landelijke Voorziening ontbreekt dit gegeven nog."@nl.
+
+  bgt:relatieveHoogteligging
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Relatieve hoogteligging"@nl;
+    rdfs:range xsd:integer;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#relatievehoogteligging"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Aanduiding voor de relatieve hoogte van het object."@nl ];
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inleiding</h1>
+  <p>De BGT en IMGeo zijn 3D voorbereid, maar door het gebruik van bestaande grootschalige bestanden bij de opbouw ervan, op dit moment nog steeds een platte, 2D dataset.  Omdat er bij inwinning en beheer van objecten overlap in verticale zin optreedt, zijn afspraken gemaakt op welke wijze deze verticale informatie in de dataset wordt vastgelegd.</p>
+  <p>De BGT Gegevenscatalogus 1.1.1 schrijft daarover in §3.8:</p>
+  <blockquote>
+    <h2>Niveauaanduidingen per object</h2>
+    <p>De BGT, het verplichte deel van IMGeo dus, is een tweedimensionale objectverzameling.  Daarom is het noodzakelijk om de relatieve hoogteligging van objecten ten opzichte van elkaar vast te leggen.  Hiervoor wordt gebruik gemaakt van niveaus die aangeven of een object zich op maaiveldniveau (niveau 0) bevindt of op een onder- of bovenliggend niveau.  Het niveau wordt vastgelegd met het attribuut ‘relatieveHoogteligging’, verder rH genoemd.  Dit kan elk willekeurig geheel getal (integer) aannemen.  Het niveaugetal geeft geen informatie over de absolute hoogte van een object.</p>
+  </blockquote>
+  <p>Open, bovengronds water heeft altijd rH 0.  Objecten op een bovenliggend niveau, bijvoorbeeld een overbrugging over water, hebben een hoger niveaugetal.  Objecten op een onderliggend niveau, bijvoorbeeld een tunnel, hebben een lager niveaugetal.</p>
+  <p>De BGT stelt de volgende eisen aan de niveauwaarden:</p>
+  <ul>
+    <li>Het is alleen toegestaan om gehele getallen (bijvoorbeeld -1, 0, 2) als niveauwaarde toe te kennen, dus geen ‘halve niveaus’ (bijvoorbeeld niveau 1½);</li>
+    <li>Het is mogelijk dat de niveauwaarden elkaar niet opvolgen, dus dat er waarden worden overgeslagen (bijvoorbeeld -2, 0, 1, 3). Alleen de volgorde van de niveauwaarden is van belang;</li>
+    <li>De niveauwaarden worden toegekend aan objecten, niet aan etages. Een object, dat uit meerdere etages bestaat, krijgt in principe één niveau toegekend.</li>
+    <li>Open, bovengrondse waterdelen hebben altijd het niveau 0.</li>
+  </ul>
+  <h2>Praktijk</h2>
+  <p>Bij het toekennen van de waarde voor de rH moet men zich wel realiseren dat de rH ≠ 0 uitsluitend lokaal en alleen in verticale zin geldt en dat alleen bij de waarde rH = 0 de aanliggende objecten een rol spelen in de topologische regels:</p>
+  <ol>
+    <li>NL 100% landsdekkend, en</li>
+    <li>Geen gaten of overlap.</li>
+  </ol>
+  <p>De verschillende waarden voor de rH dienen er alleen voor om te beoordelen welk object boven of onder een ander object ligt.  Een 100% correcte oplossing voor deze problematiek bereikt men uitsluitend met 3D inwinning, beheer en opslag.  Met de huidige 2D modellering moeten er soms begrenzingen van objecten worden gekozen waar ogenschijnlijk geen (topografische) begrenzing zichtbaar is.</p>
+  <h2>Oplossing</h2>
+  <p>Er gelden twee specifieke algemene principes (hfdstk. 3 BGT Geg.cat.):</p>
+  <ol>
+    <li>elk object bezit één geometrie op één niveau;</li>
+    <li>open, bovengronds water heeft niveau 0.</li>
+  </ol>
+  <p>Dat is in dit (en in sommige andere gevallen) een beperking omdat idealiter per object meerder geometrieën op meerdere niveaus mogelijk zouden moeten zijn.</p>
+  <p>Uitgaande van de huidige regelgeving geldt bij een aquaduct:</p>
+  <p>Het water ‘bovenop’ (en evt. de overbruggingsdelen daarnaast): rH = 0.  Dit waterdeel mag gewoon 'doorlopen' en mag maar hoeft dus niet begrensd te zijn door de koppen van het aquaduct.</p>
+  <p>Evt. het overbruggingsdeel daar onder (de onderkant van de bak=buitenomtrek aquaduct): afzonderlijk object op rH = -1.</p>
+  <p>De weg- en/of terreindelen daar weer onder met de evt. pilaren van het aquaduct: afzonderlijke objecten op rH = -2.</p>
+  <p>De projectie van de waterbegrenzing (of evt. de buitenzijde van de overbruggingsdelen daarnaast) op het object daaronder vormt daar een virtuele objectbegrenzing vanwege de overgang daar van de relatieve hoogte -2 naar 0.</p>
+  <p>Het gehele aquaduct incl. zijwanden op rH = -1 en de objecten daaronder op rH = -2 is niet mogelijk omdat dan een situatie ontstaat waarbij een objectdeel onder het aquaduct (terrein en/of weg) met rH = 0 een object daarboven krijgt met rH = -1.</p>
+  <p>Bij een tunnel is het volgende van kracht:</p>
+  <p>De maaiveldsituatie heeft rH = 0.  Daar waar het tunneldeel begint wordt de bovenzijde van de tunnel(rand) geprojecteerd op het object daaronder en fungeert dan als objectbegrenzing waar de overgang optreedt van rH = 0 naar een rH met een lagere waarde.  Wegdelen in tunneldelen hebben dezelfde waarde voor rH.</p>
+  <p>De afbeeldingen tonen probleemsituaties en wordt de oplossing er van beschreven.</p>
+</section>"""^^rdf:HTML.
+
+  bgt:stadsdeel
+    a owl:ObjectProperty;
+    rdfs:domain bgt:WijkRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft stadsdeel"@nl;
+    rdfs:range bgt:Stadsdeel;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#associatie-stadsdeel"^^xsd:anyURI;
+    skos:definition "Het stadsdeel waarin de wijk gelegen is."@nl.
+
+  bgt:status
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    rdfs:label "Heeft status"@nl;
+    rdfs:range bgt:Status;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#status"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Situatie waarin het object wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd."@nl ],
+      [ dct:creator "IMGeo";
+        rdf:value "De status gekoppeld aan de levenscyclus van een geo-object, indien dit een uitbreiding van de populatie betreft."@nl ].
+
+  bgt:talud
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:IMGeoObjectRegistratie;
+    #rdfs:domain
+    #  [ owl:unionOf
+    #     ( bgt:BegroeidTerreindeelRegistratie
+    #       bgt:OnbegroeidTerreindeelRegistratie
+    #       bgt:OndersteunendWegdeelRegistratie
+    #       bgt:WegdeelRegistratie) ];
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Ligt op talud?"@nl;
+    rdfs:range xsd:boolean;
+     rdfs:seeAlso
+       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#begroeidterreindeeloptalud"^^xsd:anyURI,
+       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#onbegroeidterreindeeloptalud"^^xsd:anyURI,
+       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#ondersteunendwegdeeloptalud"^^xsd:anyURI,
+       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#talud"^^xsd:anyURI,
+       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#wegdeeloptalud"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Indicatie of een object wel of niet op een hellend vlak ligt."@nl ].
+
+  bgt:tekst
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:OpenbareRuimteLabelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft tekst"@nl;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#tekst"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Tekst voor het label."@nl ].
+
+  bgt:wijk
+    a owl:ObjectProperty;
+    rdfs:domain bgt:BuurtRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Ligt in wijk"@nl;
+    rdfs:range bgt:Wijk;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#associatie-wijk"^^xsd:anyURI;
+    skos:definition "De wijk waarin de buurt gelegen is."@nl.
+
+  bgt:wijkcode
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:WijkRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft wijkcode"@nl;
+    rdfs:range rdf:langString;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#wijkcode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo";
+        rdf:value "De code behorende bij de naam van de wijk."@nl ].
+}

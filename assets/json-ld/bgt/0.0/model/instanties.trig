@@ -1,0 +1,1522 @@
+prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bag-pand: <http://bag.basisregistraties.overheid.nl/bag/id/pand/>
+prefix begroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/begroeid-terreindeel/>
+prefix bgt: <https://bgt.basisregistraties.overheid.nl/bgt/def/>
+prefix bronhouder: <https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/>
+prefix brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>
+prefix cbs-gemeente: <https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/>
+prefix collectie: <https://bgt.basisregistraties.overheid.nl/bgt/id/collectie/>
+prefix concept: <http://www.geostandaarden.nl/imgeo/def/2.1#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dcm: <http://purl.org/dc/dcmitype/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix dqv: <http://www.w3.org/ns/dqv#>
+prefix entailment: <http://www.w3.org/ns/entailment/>
+prefix fmt: <http://www.w3.org/ns/formats/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix fysiek-voorkomen: <https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix graph: <https://bgt.basisregistraties.overheid.nl/bgt/id/graph/>
+prefix img: <https://bgt.basisregistraties.overheid.nl/bgt/id/img/>
+prefix inwinningsmethode: <https://bgt.basisregistraties.overheid.nl/bgt/id/inwinningsmethode/>
+prefix ldqd: <http://www.w3.org/2016/05/ldqd#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix oa: <http://www.w3.org/ns/oa#>
+prefix onbegroeid-terreindeel: <https://bgt.basisregistraties.overheid.nl/bgt/id/onbegroeid-terreindeel/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix pand: <https://bgt.basisregistraties.overheid.nl/bgt/id/pand/>
+prefix plaatsbepalingspunt: <https://bgt.basisregistraties.overheid.nl/bgt/id/plaatsbepalingspunt/>
+prefix profile: <http://www.w3.org/ns/owl-profile/>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix quality-annotation: <https://data.label.kadaster.nl/kadaster/bgt/id/quality-annotation/>
+prefix quality-dimension: <https://bgt.basisregistraties.overheid.nl/bgt/concept/quality-dimension/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix registratief-gebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/registratief-gebied/>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix shape: <https://bgt.basisregistraties.overheid.nl/bgt/id/shape/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix status: <https://bgt.basisregistraties.overheid.nl/bgt/id/status/>
+prefix stelselcatalogus: <https://opendata.stelselcatalogus.nl/stelselcatalogus/def#>
+prefix tbd: <https://example.com/>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix wet: <https://bgt.basisregistraties.overheid.nl/bgt/id/wet/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+bgt: {
+  [ a owl:AllDifferentFrom;
+    owl:distinctMembers
+      ( fysiek-voorkomen:agrarischGrasland
+        fysiek-voorkomen:akkerbouw
+        fysiek-voorkomen:asfalt
+        fysiek-voorkomen:betonElement
+        fysiek-voorkomen:betonstraatstenen
+        fysiek-voorkomen:bodembedekkers
+        fysiek-voorkomen:bollenteelt
+        fysiek-voorkomen:boomschors
+        fysiek-voorkomen:boomteelt
+        fysiek-voorkomen:bosplantsoen
+        fysiek-voorkomen:bouwland
+        fysiek-voorkomen:braakliggend
+        fysiek-voorkomen:cementbeton
+        fysiek-voorkomen:duin
+        fysiek-voorkomen:erf
+        fysiek-voorkomen:fruitteelt
+        fysiek-voorkomen:gebakkenKlinkers
+        fysiek-voorkomen:gemengdBos
+        fysiek-voorkomen:geslotenDuinvegetatie
+        fysiek-voorkomen:geslotenVerharding
+        fysiek-voorkomen:grasEnKruidachtigen
+        fysiek-voorkomen:grasklinkers
+        fysiek-voorkomen:gravel
+        fysiek-voorkomen:griendEnHakhout
+        fysiek-voorkomen:grind
+        fysiek-voorkomen:groenvoorziening
+        fysiek-voorkomen:halfVerhard
+        fysiek-voorkomen:heesters
+        fysiek-voorkomen:heide
+        fysiek-voorkomen:hoogstamBoomgaarden
+        fysiek-voorkomen:houtwal
+        fysiek-voorkomen:kleinFruit
+        fysiek-voorkomen:kunststof
+        fysiek-voorkomen:kwelder
+        fysiek-voorkomen:laagstamBoomgaarden
+        fysiek-voorkomen:loofbos
+        fysiek-voorkomen:moeras
+        fysiek-voorkomen:naaldbos
+        fysiek-voorkomen:onverhard
+        fysiek-voorkomen:openDuinvegetatie
+        fysiek-voorkomen:openVerharding
+        fysiek-voorkomen:overigGrasland
+        fysiek-voorkomen:planten
+        fysiek-voorkomen:puin
+        fysiek-voorkomen:rietland
+        fysiek-voorkomen:schelpen
+        fysiek-voorkomen:sierbestrating
+        fysiek-voorkomen:strandEnStrandwal
+        fysiek-voorkomen:struiken
+        fysiek-voorkomen:struikrozen
+        fysiek-voorkomen:tegels
+        fysiek-voorkomen:vollegrondsteelt
+        fysiek-voorkomen:wijngaarden
+        fysiek-voorkomen:zand
+        fysiek-voorkomen:zandverstuiving
+        fysiek-voorkomen:zandvlakte ) ].
+
+  fysiek-voorkomen:agrarischGrasland
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_grasland_agrarisch;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Agrarisch grasland"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/grasland-agrarisch"^^xsd:anyURI;
+    sdo:image img:agrarischGrasland;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel met een vegetatie bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, zijnde cultuurgrasland dat in gebruik is voor de veeteelt, bijvoorbeeld als weiland of als hooiland."@nl ].
+  img:agrarischGrasland
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding agrarisch grasland"@nl;
+    sdo:caption "Voorbeeld van agrarisch grasland."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=agrarischGrasland.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:akkerbouw
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_akkerbouw;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Akkerbouw"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/bouwland/akkerbouw-niet-bgt"^^xsd:anyURI;
+    sdo:image img:akkerbouw;
+    skos:broader fysiek-voorkomen:bouwland;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel in gebruik als akker, voor de teelt van akkerbouwgewassen."@nl ].
+  img:akkerbouw
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding akkerbouw"@nl;
+    sdo:caption "Voorbeeld van akkerbouw."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=akkerbouw.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:asfalt
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_asfalt,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_asfalt,
+      concept:FysiekVoorkomenWegPlus_asfalt;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Asfalt"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/gesloten-verharding/asfalt-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/gesloten-verharding/asfalt-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/gesloten-verharding/asfalt-niet-bgt"^^xsd:anyURI;
+    sdo:image img:asfalt;
+    skos:broader fysiek-voorkomen:geslotenVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Gesloten verharding bestaande uit asfaltbeton of andere met bitumen gebonden materialen."@nl ].
+  img:asfalt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding asfalt"@nl;
+    sdo:caption "Voorbeeld van asfalt."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=asfalt.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:betonElement
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_beton_element,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_beton_element,
+      concept:FysiekVoorkomenWegPlus_beton_element;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Beton element"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding/betonelement-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/open-verharding/beton-element-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding/beton-element-niet-bgt"^^xsd:anyURI;
+    skos:broader fysiek-voorkomen:openVerharding;
+    skos:definition
+      [ dct:creator "IMGeo 2.1";
+        rdf:value "Geprepareerde elementen van beton zoals, trottoirbanden, opsluitbanden en stelconplaten."@nl ].
+
+  fysiek-voorkomen:betonstraatstenen
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_betonstraatstenen,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_betonstraatstenen,
+      concept:FysiekVoorkomenWegPlus_betonstraatstenen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Betonstraatstenen"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding/betonstraatstenen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/open-verharding/betonstraatstenen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding/betonstraatstenen-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:betonstraatstenen-1,
+      img:betonstraatstenen-2;
+    skos:broader fysiek-voorkomen:openVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Verharding gemaakt van betonstraatstenen. Straatsteen die als goedkope vervanging van de gebakken klinkers is ontwikkeld."@nl ].
+  img:betonstraatstenen-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding betonstraatstenen"@nl;
+    sdo:caption "Voorbeeld van betonstraatstenen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=betonstraatstenen-1.jpg"^^xsd:anyURI.
+  img:betonstraatstenen-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding betonstraatstenen"@nl;
+    sdo:caption "Voorbeeld van betonstraatstenen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=betonstraatstenen-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:bodembedekkers
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_bodembedekkers,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_bodembedekkers;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bodembedekkers"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/bodembedekkers-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/bodembedekkers-niet-bgt"^^xsd:anyURI;
+    sdo:image img:bodembedekkers;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Beheerde beplanting van groenvak in de openbare ruimte, zijnde bodembedekkers."@nl ].
+  img:bodembedekkers
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding bodembedekkers"@nl;
+    sdo:caption "Voorbeeld van bodembedekkers."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=bodembedekkers.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:bollenteelt
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_bollenteelt;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bollenteelt"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/bouwland/bollenteelt-niet-bgt"^^xsd:anyURI;
+    sdo:image img:bollenteelt;
+    skos:broader fysiek-voorkomen:bouwland;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel in gebruik als akker, voor de teelt van bloembollen."@nl ].
+  img:bollenteelt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding bollenteelt"@nl;
+    sdo:caption "Voorbeeld van bollenteelt."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=bollenteelt.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:boomschors
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_boomschors,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_boomschors,
+      concept:FysiekVoorkomenWegPlus_boomschors;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Boomschors"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/onverhard/boomschors-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/onverhard/boomschors-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/onverhard/boomschors-niet-bgt"^^xsd:anyURI;
+    sdo:image img:boomschors;
+    skos:broader fysiek-voorkomen:onverhard;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Onverhard met als deklaag boomschors."@nl ].
+  img:boomschors
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding boomschors"@nl;
+    sdo:caption "Voorbeeld van boomschors."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=boomschors.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:boomteelt
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_boomteelt;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Boomteelt"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/boomteelt"^^xsd:anyURI;
+    sdo:image img:boomteelt;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Grond in gebruik voor het kweken van jonge siergewassen, bomen enz. ten behoeve van een later gebruik elders."@nl ].
+  img:boomteelt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding boomteelt"@nl;
+    sdo:caption "Voorbeeld van boomteelt."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=boomteelt.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:bosplantsoen
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_bosplantsoen,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_bosplantsoen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bosplantsoen"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/bosplantsoen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/bosplantsoen-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:bosplantsoen-1,
+      img:bosplantsoen-2;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Opgaande beplanting van houtachtige gewassen die struikvormend en/of boomvormend zijn. De soorten zijn als bosplantsoen opgekweekt en aangeplant.De beplanting kan open of gesloten zijn en bestaat vaak uit inheemse soorten. Onderscheidt zich van heesters omdat de sierkenmerken niet voorop staan."@nl ].
+  img:bosplantsoen-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding bosplantsoen"@nl;
+    sdo:caption "Voorbeeld van bosplantsoen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=bosplantsoen-1.jpg"^^xsd:anyURI.
+  img:bosplantsoen-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding bosplantsoen"@nl;
+    sdo:caption "Voorbeeld van bosplantsoen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=bosplantsoen-2.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:bouwland
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_bouwland;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bouwland"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/bouwland"^^xsd:anyURI;
+    sdo:image img:bouwland;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel in gebruik als akker, met gewassen die in een teelt roulatieschema zijn opgenomen. Kan tijdelijk zonder gewas zijn of braak liggen."@nl ].
+  img:bouwland
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding bouwland"@nl;
+    sdo:caption "Vlak A is bouwland."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=bouwland.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:braakliggend
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_braakliggend;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Braakliggend"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/bouwland/braakliggend-niet-bgt"^^xsd:anyURI;
+    sdo:image img:braakliggend;
+    skos:broader fysiek-voorkomen:bouwland;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terrein in gebruik als akker, maar tijdelijk niet beteeld met een landbouwgewas."@nl ].
+  img:braakliggend
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding braakliggend"@nl;
+    sdo:caption "Voorbeeld van braakliggend bouwland."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=braakliggend.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:cementbeton
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_cementbeton,
+      concept:FysiekVoorkomenWegPlus_cementbeton;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Cementbeton"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/gesloten-verharding/cementbeton-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/gesloten-verharding/cementbeton-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/gesloten-verharding/cementbeton-niet-bgt"^^xsd:anyURI;
+    sdo:image img:cementbeton;
+    skos:broader fysiek-voorkomen:geslotenVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Gesloten verharding bestaande uit gewapend of ongewapend beton."@nl ].
+  img:cementbeton
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding cementbeton"@nl;
+    sdo:caption "Voorbeeld van cementbeton."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=cementbeton.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:duin
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_duin;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Duin"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/duin"^^xsd:anyURI;
+    sdo:image img:duin;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Verhoging of heuvel van zand of fijne losse aarde en verpulverd gesteente opgeworpen door wind of door stromend water."@nl ].
+  img:duin
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding duin"@nl;
+    sdo:caption "Vlak B is een duin."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=duin.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:erf
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenOnbegroeidTerrein_erf;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Erf"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenonbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/erf"^^xsd:anyURI;
+    sdo:image img:erf;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Terreindeel dat bij een pand of overig bouwwerk hoort, dat niet nader wordt ingewonnen en dat bestaat uit een mengvorm van begroeiing, verharding, en/of water."@nl ].
+  img:erf
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding erf"@nl;
+    sdo:caption "Voorbeeld van een erf."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=erf.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:fruitteelt
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_fruitteelt;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Fruitteelt"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/fruitteelt"^^xsd:anyURI;
+    sdo:image img:fruitteelt;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel begroeid met fruitbomen in de vorm van hoogstam en laagstamboomgaard, druiven of kleinfruit."@nl ].
+  img:fruitteelt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding fruitteelt"@nl;
+    sdo:caption "Vlak A is fruitteelt."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=fruitteelt.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:gebakkenKlinkers
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_gebakken_klinkers,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_gebakken_klinkers,
+      concept:FysiekVoorkomenWegPlus_gebakken_klinkers;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gebakken klinkers"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding/gebakken-klinkers-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/open-verharding/gebakken-klinkers-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding/gebakken-klinkers-niet-bgt"^^xsd:anyURI;
+    sdo:image img:gebakkenKlinkers;
+    skos:broader fysiek-voorkomen:openVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Verharding gemaakt van straatbakstenen. Gebakken klinkers worden voornamelijk geproduceerd uit grondstof van eigen bodem; de beddingen van onze rivieren."@nl ].
+  img:gebakkenKlinkers
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gebakken klinkers"@nl;
+    sdo:caption "Voorbeeld van gebakken klinkers."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=gebakkenKlinkers.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:gemengdBos
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_gemengd_bos;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gemengd bos"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/gemengd-bos"^^xsd:anyURI;
+    sdo:image img:gemengdBos;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel begroeid met een dusdanige aantal naald- en loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen."@nl ];
+    skos:scopeNote "Om een terreindeel als gemengd bos af te bakenen dient het maximum percentage naaldboom of het maximum percentage loofboom kleiner dan 90% te zijn."@nl.
+  img:gemengdBos
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gemengd bos"@nl;
+    sdo:caption "Voorbeeld van gemengd bos."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=gemengdBos.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:geslotenDuinvegetatie
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_gesloten_duinvegetatie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gesloten duinvegetatie"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/duin/gesloten-duinvegetatie-niet-bgt"^^xsd:anyURI;
+    sdo:image img:geslotenDuinvegetatie;
+    skos:broader fysiek-voorkomen:duin;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Duin met een overwegend opgaande vegetatie van struiken en of bomen."@nl ].
+  img:geslotenDuinvegetatie
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gesloten duinvegetatie"@nl;
+    sdo:caption "Voorbeeld van gesloten duinvegetatie."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=geslotenDuinvegetatie.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:geslotenVerharding
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerrein_gesloten_verharding,
+      concept:FysiekVoorkomenOndersteunendWegdeel_gesloten_verharding,
+      concept:FysiekVoorkomenWeg_gesloten_verharding;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gesloten verharding"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/gesloten-verharding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/gesloten-verharding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/gesloten-verharding"^^xsd:anyURI;
+    sdo:image img:geslotenVerharding;
+    skos:definition
+      [ dct:creator "IMGeo 1.0"; # CONFLICT
+        rdf:value "Verharding bestaande uit een materiaal dat niet verwijderbaar is zonder definitieve destructie, zoals bijvoorbeeld bitumen, cement of kunststof."@nl ].
+  img:geslotenVerharding
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gesloten verharding"@nl;
+    sdo:caption "Vlak A is een voetpad met open verharding.  Blak B en D zijn lokale wegen met gesloten verharding.  Vlak C is een wegdeel met open verharding.  Vlak E is een begroeid terreindeel en groenvoorziening."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=geslotenVerharding.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:grasEnKruidachtigen
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_gras_en_kruidachtigen,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_gras_en_kruidachtigen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gras- en kruidachtigen"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/gras-en-kruidachtigen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/gras-en-kruidachtigen-niet-bgt"^^xsd:anyURI;
+    sdo:image img:grasEnKruidachtigen;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "(Grond met) een laagblijvende, aaneengesloten kruidachtige vegetatie."@nl ].
+  img:grasEnKruidachtigen
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gras- en kruidachtigen"@nl;
+    sdo:caption "Grasland met een talud, kruinlijngeometrie en fysiek voorkomen gras- en kruidachtigen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=grasEnKruidachtigen.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:grasklinkers
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_grasklinkers,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_grasklinkers,
+      concept:FysiekVoorkomenWegPlus_grasklinkers;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Grasklinkers"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard/grasklinkers-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard/grasklinkers-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard/grasklinkers-niet-bgt"^^xsd:anyURI;
+    sdo:image img:grasklinkers;
+    skos:broader fysiek-voorkomen:halfVerhard;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Elementenverharding bestaande uit elementen van beperkte afmetingen die ten behoeve van de doorgroei van grassen en kruiden, zijn voorzien van openingen of met tussenruimten aangebracht."@nl ].
+  img:grasklinkers
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding grasklinkers"@nl;
+    sdo:caption "Voorbeeld van half verharde groensteen (grasklinkers)."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=grasklinkers.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:gravel
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_gravel,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_gravel,
+      concept:FysiekVoorkomenWegPlus_gravel;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Gravel"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard/gravel-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard/gravel-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard/gravel-niet-bgt"^^xsd:anyURI;
+    sdo:image img:gravel;
+    skos:broader fysiek-voorkomen:halfVerhard;
+    skos:definition
+      [ dct:creator "Wikipedia";
+        rdf:value "Gravel is een ondergrond van gemalen baksteen die veel wordt gebruikt bij tennis en ook wel op atletiekbanen."@nl ].
+  img:gravel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding gravel"@nl;
+    sdo:caption "Voorbeeld van gravel met halve verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=gravel.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:griendEnHakhout
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_griend_en_hakhout;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Griend en hakhout"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI;
+    sdo:image
+      img:griendEnHakhout-1,
+      img:griendEnHakhout-2;
+    skos:broader fysiek-voorkomen:loofbos;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel met opgaande begroeiing van loofbomen, in een dicht groeiverband, en die periodiek wordt afgezet."@nl ].
+  img:griendEnHakhout-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding griend en hakhout"@nl;
+    sdo:caption "Voorbeeld van griend en hakhout."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=griendEnHakhout-1.png"^^xsd:anyURI.
+  img:griendEnHakhout-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding griend en hakhout"@nl;
+    sdo:caption "Voorbeeld van griend en hakhout."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=griendEnHakhout-2.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:grind
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_grind,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_grind,
+      concept:FysiekVoorkomenWegPlus_grind;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Grind"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard/grind-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard/grind-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard/grind-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:grind-1,
+      img:grind-2;
+    skos:broader fysiek-voorkomen:halfVerhard;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Ongebonden verharding bestaande uit kiezelmateriaal, waarvan de stenen in doorsnede variëren van 1 tot 5 cm."@nl ].
+  img:grind-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding grind"@nl;
+    sdo:caption "Voorbeeld van grind met halve verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=grind-1.jpg"^^xsd:anyURI.
+  img:grind-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding grind"@nl;
+    sdo:caption "Voorbeeld van grind."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=grind-2.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:groenvoorziening
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerrein_groenvoorziening,
+      concept:FysiekVoorkomenOndersteunendWegdeel_groenvoorziening;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Groenvoorziening"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening"^^xsd:anyURI;
+    sdo:image
+      img:groenvoorziening-1,
+      img:groenvoorziening-2;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel met aangelegde beplanting, meestal gras, heesters of struiken."@nl ].
+  img:groenvoorziening-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding groenvoorziening"@nl;
+    sdo:caption "Vlak A en B zijn voetpaden met open verharding.  Vlak C en D zijn groenvoorziening."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=groenvoorziening-1.jpg"^^xsd:anyURI.
+  img:groenvoorziening-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding groenvoorziening"@nl;
+    sdo:caption "Vlak A is een lokale weg met openverharding.  Vlak B is een groenvoorziening."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=groenvoorziening-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:halfVerhard
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerrein_half_verhard,
+      concept:FysiekVoorkomenOndersteunendWegdeel_half_verhard,
+      concept:FysiekVoorkomenWeg_half_verhard;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Half verhard"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard"^^xsd:anyURI;
+    sdo:image img:halfVerhard;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Verharding bestaande uit een door verdichting gebonden materiaal, of onsamenhangend materiaal."@nl ].
+  img:halfVerhard
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hald verhard"@nl;
+    sdo:caption "Voorbeeld van een half verhard voetpad."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=halfVerhard.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:heesters
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_heesters,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_heesters;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heesters"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/heesters-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/heesters-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:heesters-1,
+      img:heesters-2;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Beplanting van houtige gewassen die struikvormend zijn en die al dan niet een gesloten geheel vormen. Het accent ligt op de sierwaarde, de beplanting kan uit één soort of uit meerdere soorten bestaan. Onder de heesters kan een houtachtige of kruidachtige onderbegroeiing aanwezig zijn. Het oppervlak met struikachtige gewassen is meer dan 50% van de totale oppervlakte van het vak."@nl ].
+  img:heesters-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding heesters"@nl;
+    sdo:caption "Voorbeeld van heesters."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=heesters-1.png"^^xsd:anyURI.
+  img:heesters-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding heesters"@nl;
+    sdo:caption "Voorbeeld van heesters."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=heesters-2.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:heide
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_heide;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heide"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/heide"^^xsd:anyURI;
+    sdo:image img:heide;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel overwegend begroeid met heide en heideachtige vegetaties."@nl ].
+  img:heide
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding heide"@nl;
+    sdo:caption "Voorbeeld van heide."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=heide.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:hoogstamBoomgaarden
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_hoogstam_boomgaarden;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Hoogstam boomgaarden"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/fruitteelt/hoogstam-boomgaarden-niet-bgt"^^xsd:anyURI;
+    sdo:image img:hoogstamBoomgaarden;
+    skos:broader fysiek-voorkomen:fruitteelt;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel begroeid met hoogstamfruitbomen."@nl ].
+  img:hoogstamBoomgaarden
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogstam boomgaarden"@nl;
+    sdo:caption "Voorbeeld hoogstam boomgaarden."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogstamBoomgaarden.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:houtwal
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_houtwal;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Houtwal"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/houtwal"^^xsd:anyURI;
+    sdo:image img:houtwal;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel zijnde een afscheiding met beperkte breedte en beplant met bomen of struiken."@nl ].
+  img:houtwal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding houtwal"@nl;
+    sdo:caption "Vlak A is een greppel / droge sloot.  Vlak B is een houtwal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=houtwal.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:kleinFruit
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_klein_fruit;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Klein fruit"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/fruitteelt/klein-fruit-niet-bgt"^^xsd:anyURI;
+    sdo:image img:kleinFruit;
+    skos:broader fysiek-voorkomen:fruitteelt;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel begroeid met heesters voor zachtfruit zoals bessen of frambozen."@nl ].
+  img:kleinFruit
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding klein fruit"@nl;
+    sdo:caption "Voorbeeld van klein fruit."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kleinFruit.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:kunststof
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenOnbegroeidTerreinPlus_kunststof;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Kunststof"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenonbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/gesloten-verharding/cementbeton-niet-bgt/kunststof-niet-bgt"^^xsd:anyURI;
+    skos:broader fysiek-voorkomen:geslotenVerharding;
+    skos:definition
+      [ dct:creator "IMGeo 2.1";
+        rdf:value "Synthetisch vervaardigd materiaal dat als verharding dient, zoals kunstgras of kunststof toplagen op atletiekbanen."@nl ].
+
+  fysiek-voorkomen:kwelder
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_kwelder;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Kwelder"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/kwelder"^^xsd:anyURI;
+    sdo:image img:kwelder;
+    skos:definition
+      [ dct:creator "Aquo";
+        rdf:value "Buitendijks gelegen aangeslibd land van een wad, dat bij gewone vloed niet meer onder loopt."@nl ].
+  img:kwelder
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kwelder"@nl;
+    sdo:caption "Vlak A is kwelder.  Vlak B is een waterloop."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kwelder.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:laagstamBoomgaarden
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_laagstam_boomgaarden;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Laagstam boomgaarden"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/fruitteelt/laagstam-boomgaarden-niet-bgt"^^xsd:anyURI;
+    sdo:image img:laagstamBoomgaarden;
+    skos:broader fysiek-voorkomen:fruitteelt;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel begroeid met laagstamfruitbomen."@nl ].
+  img:laagstamBoomgaarden
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding laagstam boomgaarden"@nl;
+    sdo:caption "Voorbeeld van laagstam boomgaarden."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=laagstamBoomgaarden.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:loofbos
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_loofbos;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Loofbos"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/loofbos"^^xsd:anyURI;
+    sdo:image
+      img:loofbos-1,
+      img:loofbos-2;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel begroeid met een dusdanige aantal loofbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen."@nl ];
+    skos:scopeNote "Om een terreindeel als loofbos af te bakenen dient het minimimum percentage loofboom groter dan of gelijk aan 90% te zijn."@nl.
+  img:loofbos-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding loofbos"@nl;
+    sdo:caption "Voorbeeld loofbos."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=loofbos-1.jpg"^^xsd:anyURI.
+  img:loofbos-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding loofbos"@nl;
+    sdo:caption "Voorbeeld van loofbos."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=loofbos-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:moeras
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_moeras;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Moeras"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/moeras"^^xsd:anyURI;
+    sdo:image img:moeras;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel met moerasvegetatie in stilstaand water van geringe diepte zonder merkbare toe- of afvloeiing."@nl ].
+  img:moeras
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding moeras"@nl;
+    sdo:caption "Vlak A is moeras."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=moeras.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:naaldbos
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_naaldbos;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Naaldbos"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/naaldbos"^^xsd:anyURI;
+    sdo:image img:naaldbos;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel begroeid met een dusdanige aantal naaldbomen dat deze een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen."@nl ];
+    skos:scopeNote "Om een terreindeel als naaldbos af te bakenen dient het minimum percentage naaldboom groter dan of gelijk aan 90% te zijn."@nl.
+  img:naaldbos
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding naaldbos"@nl;
+    sdo:caption "Voorbeeld van naaldbos."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=naaldbos.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:onverhard
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerrein_onverhard,
+      concept:FysiekVoorkomenOndersteunendWegdeel_onverhard,
+      concept:FysiekVoorkomenWeg_onverhard;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Onverhard"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/onverhard"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/onverhard"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/onverhard"^^xsd:anyURI;
+    sdo:image
+      img:onverhard-1,
+      img:onverhard-2;
+    skos:definition
+      [ dct:creator "IMGeo 1.0"; # CONFLICT
+        rdf:value "Terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is, niet zijnde zand. Braakliggend valt hier wel onder."@nl ].
+  img:onverhard-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding onverhard"@nl;
+    sdo:caption "Voorbeeld van onverharde lokale weg."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=onverhard-1.png"^^xsd:anyURI.
+  img:onverhard-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding onverhard onbegroeid terreindeel"@nl;
+    sdo:caption "Vlak A is een onverhard onbegroeid terreindeel.  Vlak B is een waterloop.  Vlak C is een slootkant."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=onverhard-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:openDuinvegetatie
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_open_duinvegetatie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Open duinvegetatie"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/duin/open-duinvegetatie-niet-bgt"^^xsd:anyURI;
+    sdo:image img:openDuinvegetatie;
+    skos:broader fysiek-voorkomen:duin;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Duin met een overwegend grasachtige vegetatie."@nl ].
+  img:openDuinvegetatie
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open duinvegetatie"@nl;
+    sdo:caption "Voorbeeld van open duinvegetatie."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openDuinvegetatie.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:openVerharding
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerrein_open_verharding,
+      concept:FysiekVoorkomenOndersteunendWegdeel_open_verharding,
+      concept:FysiekVoorkomenWeg_open_verharding;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Open verharding"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/gesloten-verharding/open-verharding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding"^^xsd:anyURI;
+    sdo:image
+      img:openVerharding-1,
+      img:openVerharding-2,
+      img:openVerharding-3,
+      img:openVerharding-4,
+      img:openVerharding-5,
+      img:openVerharding-6;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Verharding gevormd door in verband aangebrachte elementen van beperkte afmetingen, zoals bijvoorbeeld klinkers en tegels."@nl ].
+  img:openVerharding-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:caption "Vlak C is een lokale weg met open verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-1.jpg"^^xsd:anyURI.
+  img:openVerharding-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:caption "Goten vormen geen BGT inhoud en worden gerekend tot het wegdeel waar ze in liggen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-2.png"^^xsd:anyURI.
+  img:openVerharding-3
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:caption "Zebrapad heeft hetzelfde fysiek voorkomen als rest wegdeel en hoort daarom voor de BGT bij A.  Vlak A is een lokale web met open verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-3.jpg"^^xsd:anyURI.
+  img:openVerharding-4
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:caption "Vlak A heeft talud en open verharding.  Vlak B is een voetpad met open verharding.  Vlak C is een voetpad op trap met gesloten verharding.  Vlak D is een lokale weg met open verharding.  Vlak E is een verkeerseiland met open verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-4.jpg"^^xsd:anyURI.
+  img:openVerharding-5
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-5.jpg"^^xsd:anyURI.
+  img:openVerharding-6
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding open verharding"@nl;
+    sdo:caption "Vlak B is een verkeerseiland met open verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openVerharding-6.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:overigGrasland
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_grasland_overig;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Overig grasland"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI;
+    sdo:image img:overigGrasland;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel met een vegetatie bestaande uit grassen en of grasachtigen, en met de in graslanden voorkomende kruiden, dat niet in gebruik is voor agrarische doeleinden."@nl ].
+  img:overigGrasland
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding grasland overig"@nl;
+    sdo:caption "Vlak A en C zijn grasland overig.  Vlak B is grasland overig met een talud met kruinlijngeometrie."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=graslandOverig.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:planten
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_planten,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_planten;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Planten"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/planten-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/planten-niet-bgt"^^xsd:anyURI;
+    sdo:image img:planten;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Beheerde niet nader gespecificeerde beplanting van groenvak in de openbare ruimte."@nl ].
+  img:planten
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding planten"@nl;
+    sdo:caption "Voorbeeld van planten."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=planten.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:puin
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_puin,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_puin,
+      concept:FysiekVoorkomenWegPlus_puin;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Puin"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard/puin-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard/puin-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard/puin-niet-bgt"^^xsd:anyURI;
+    sdo:image img:puin;
+    skos:broader fysiek-voorkomen:halfVerhard;
+    skos:definition
+      [ dct:creator "Wikipedia";
+        rdf:value "Puin is afvalmateriaal dat bestaat uit losse brokstukken, grotendeels bestaande uit stenen en beton, van gesloopte of ingestorte gebouwen, viaducten, bruggen en andere objecten."@nl ].
+  img:puin
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding puin"@nl;
+    sdo:caption "Voorbeeld van puin met halve verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=puin.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:rietland
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_rietland;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Rietland"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/rietland"^^xsd:anyURI;
+    sdo:image img:rietland;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel overwegend begroeid met rietvegetatie."@nl ].
+  img:rietland
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding rietland"@nl;
+    sdo:caption "Vlak A is rietland."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=rietland.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:schelpen
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_schelpen,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_schelpen,
+      concept:FysiekVoorkomenWegPlus_schelpen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Schelpen"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/half-verhard/schelpen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/half-verhard/schelpen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/half-verhard/schelpen-niet-bgt"^^xsd:anyURI;
+    sdo:image img:schelpen;
+    skos:broader fysiek-voorkomen:halfVerhard;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Ongebonden verharding bestaande uit schelpenmateriaal."@nl ].
+  img:schelpen
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding schelpen"@nl;
+    sdo:caption "Voorbeeld van schelpen met halve verharding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=schelpen.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:sierbestrating
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_sierbestrating,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_sierbestrating,
+      concept:FysiekVoorkomenWegPlus_sierbestrating;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Sierbestrating"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding/sierbestrating-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/open-verharding/sierbestrating-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding/sierbestrating-niet-bgt"^^xsd:anyURI;
+    sdo:image img:sierbestrating;
+    skos:broader fysiek-voorkomen:openVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Bestrating, uitgevoerd in verschillende bestratingsverbanden en -materialen, of in een sierverband, die vooral wordt toegepast uit esthetische overwegingen."@nl ].
+  img:sierbestrating
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding sierbestrating"@nl;
+    sdo:caption "Voorbeeld van sierbestrating."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=sierbestrating.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:strandEnStrandwal
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenOnbegroeidTerreinPlus_strand_en_strandwal;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Strand en strandwal"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenonbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/zand/strand-en-strandwal-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:strandEnStrandwal-1,
+      img:strandEnStrandwal-2;
+    skos:broader fysiek-voorkomen:zand;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Onbegroeide zandige kustvlakte op de overgang van zee met land. Staat onder invloed van het zeewater en de wind."@nl ].
+  img:strandEnStrandwal-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding strand en strandwal"@nl;
+    sdo:caption "Voorbeeld van strand en strandwal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=strandEnStrandwal-1.jpg"^^xsd:anyURI.
+  img:strandEnStrandwal-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding strand en strandwal"@nl;
+    sdo:caption "Voorbeeld van strand en strandwal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=strandEnStrandwal-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:struiken
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerrein_struiken;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Struiken"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/struiken"^^xsd:anyURI;
+    sdo:image img:struiken;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel bedekt met niet-gecultiveerde (natuurlijke), lage, houtachtige, overblijvende planten gekenmerkt door verschillende vertakkingen dicht bij de wortel en afwezigheid van opvallende stammen."@nl ].
+  img:struiken
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding struiken"@nl;
+    sdo:caption "Vlak B is een berm met fysiek voorkomen groenvoorziening.  Vlak C zijn struiken."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=struiken.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:struikrozen
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenBegroeidTerreinPlus_struikrozen,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_struikrozen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Struikrozen"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/groenvoorziening/struikrozen-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/groenvoorziening/struikrozen-niet-bgt"^^xsd:anyURI;
+    sdo:image img:struikrozen;
+    skos:broader fysiek-voorkomen:groenvoorziening;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Beheerde beplanting van groenvak in de openbare ruimte, zijnde in struikvorm groeiende rozen."@nl ].
+  img:struikrozen
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding struikrozen"@nl;
+    sdo:caption "Voorbeeld van struikrozen."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=struikrozen.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:tegels
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_tegels,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_tegels,
+      concept:FysiekVoorkomenWegPlus_tegels;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Tegels"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/open-verharding/tegels-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/open-verharding/tegels-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/open-verharding/tegels-niet-bgt"^^xsd:anyURI;
+    sdo:image img:tegels;
+    skos:broader fysiek-voorkomen:openVerharding;
+    skos:definition
+      [ dct:creator "CROW";
+        rdf:value "Bestrating van tegels, een platte vaak vierkante betonnen steen; veelal gebruikt voor trottoirbestrating."@nl ].
+  img:tegels
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding tegels"@nl;
+    sdo:caption "Voorbeeld van tegels."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=tegels.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:vollegrondsteelt
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_vollegrondsteelt;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Vollegrondsteelt"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/bouwland/vollegrondsteelt-niet-bgt"^^xsd:anyURI;
+    sdo:image img:vollegrondsteelt;
+    skos:broader fysiek-voorkomen:bouwland;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel in gebruik als akker, voor de teelt van tuinbouwgewassen."@nl ].
+  img:vollegrondsteelt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding vollegrondsteelt"@nl;
+    sdo:caption "Voorbeeld van vollegrondsteelt."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=vollegrondsteelt.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:wijngaarden
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenBegroeidTerreinPlus_wijngaarden;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Wijngaarden"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/begroeidterreindeel/fruitteelt/wijngaarden-niet-bgt"^^xsd:anyURI;
+    sdo:image img:wijngaarden;
+    skos:broader fysiek-voorkomen:fruitteelt;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Terreindeel begroeid met druivenstokken voor wijnbouw."@nl ].
+  img:wijngaarden
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding wijngaarden"@nl;
+    sdo:caption "Voorbeeld wijngaarden."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=wijngaarden.png"^^xsd:anyURI.
+
+  fysiek-voorkomen:zand
+    a bgt:FysiekVoorkomen;
+    dct:subject
+      concept:FysiekVoorkomenOnbegroeidTerreinPlus_zand,
+      concept:FysiekVoorkomenOnbegroeidTerrein_zand,
+      concept:FysiekVoorkomenOndersteunendWegdeelPlus_zand,
+      concept:FysiekVoorkomenWegPlus_zand;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Zand"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenwegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/onverhard/zand-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel/onverhard/zand-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/onverhard/zand-niet-bgt"^^xsd:anyURI;
+    sdo:image
+      img:zand-1,
+      img:zand-2;
+    skos:broader fysiek-voorkomen:onverhard;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Onverhard met als deklaag zand."@nl ].
+  img:zand-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding zand"@nl;
+    sdo:caption "Voorbeeld van onverhard zand."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=zand-1.jpg"^^xsd:anyURI.
+  img:zand-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding zand"@nl;
+    sdo:caption "Voorbeeld van zand.  Dit terreindeel is aan de zeezijde begrensd door de UNCLOS-lijn en aan de andere zijde door de teenlijn van het begroeide terreindeel Duin."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=zand-2.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:zandverstuiving
+    a bgt:FysiekVoorkomen;
+    dct:subject concept:FysiekVoorkomenOnbegroeidTerreinPlus_zandverstuiving;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Zandverstuiving"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#fysiekvoorkomenonbegroeidterreinplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/zand/zandverstuiving-niet-bgt"^^xsd:anyURI;
+    sdo:image img:zandverstuiving;
+    skos:broader fysiek-voorkomen:zand;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "Een gebied met zandige bodem waarvan delen van het gebied zonder vegetatie zijn, door invloed van wind."@nl ].
+  img:zandverstuiving
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding zandverstuiving"@nl;
+    sdo:caption "Voorbeeld van zandverstuiving."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=zandverstuiving.jpg"^^xsd:anyURI.
+
+  fysiek-voorkomen:zandvlakte
+    a bgt:FysiekVoorkomen;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Zand"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenonbegroeidterrein"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "Terreindeel dat grotendeels bedekt is met zand."@nl ].
+
+  ## Inwinningsmethode
+
+  [ a owl:AllDifferentFrom;
+    owl:distinctMembers
+      ( inwinningsmethode:bouwtekening
+        inwinningsmethode:digitaliseren
+        inwinningsmethode:fotogrammetrisch
+        inwinningsmethode:geconstrueerd
+        inwinningsmethode:laser
+        inwinningsmethode:panoramabeelden
+        inwinningsmethode:scannen
+        inwinningsmethode:terrestrisch ) ].
+
+  inwinningsmethode:bouwtekening
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_bouwtekening;
+    owl:deprecated true;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bouwtekening"@nl;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is van een bouwtekening afgeleid."@nl ];
+    skos:editorialRole "Niet aanwezig in de BGT Gegevenscatalogus (https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)."@nl.
+
+  inwinningsmethode:digitaliseren
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_digitaliseren;
+    owl:deprecated true;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Digitaliseren"@nl;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is handmatig van analoog naar digitale informatie omgezet."@nl ];
+    skos:editorialRole "Niet aanwezig in de BGT Gegevenscatalogus (https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)."@nl.
+
+  inwinningsmethode:fotogrammetrisch
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_fotogrammetrisch;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Fotogrammetrisch"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is ingewonnen vanaf daartoe geschikte (digitale) foto's, meestal luchtfoto's."@nl ].
+
+  inwinningsmethode:geconstrueerd
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_geconstrueerd;
+    owl:deprecated true;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Geconstrueerd"@nl;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is in een GIS of CAD systeem geconstrueerd."@nl ];
+    skos:editorialRole "Niet aanwezig in de BGT Gegevenscatalogus (https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)."@nl.
+
+  inwinningsmethode:laser
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_laser;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Laser"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is met behulp van een laserscanner ingewonnen."@nl ].
+
+  inwinningsmethode:panoramabeelden
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_panoramabeelden;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Panoramabeelden"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is vanaf panoramafoto's ingewonnen."@nl ].
+
+  inwinningsmethode:scannen
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_scannen;
+    owl:deprecated true;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Scannen"@nl;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is geautomatiseerd van analoog naar digitale informatie omgezet."@nl ];
+    skos:editorialRole "Niet aanwezig in de BGT Gegevenscatalogus (https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)."@nl.
+
+  inwinningsmethode:terrestrisch
+    a bgt:Inwinningsmethode;
+    dct:subject concept:Inwinningsmethode_terrestrisch;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Terrestrisch"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#inwinningsmethode"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BGT";
+        rdf:value "De geometrie is ingewonnen middels terreinbezoek."@nl ].
+
+  # Kwaliteit
+
+  ldqd:precision
+    a dqv:Dimension;
+    rdfs:comment "De accuraatheid van het gegeven"@nl;
+    rdfs:label "Accuraatheid"@nl.
+
+  ldqd:recency
+    a dqv:Dimension;
+    rdfs:comment "De actualiteit van een gegeven.  Hoe up-to-date is het gegeven ten opzichte van mogelijke wijzigingen?"@nl;
+    rdfs:label "Actualiteit"@nl.
+
+  quality-annotation:pand
+    a dqv:QualityAnnotation;
+    dqv:inDimension
+      ldqd:recency,
+      quality-dimension:geografischePrecisie;
+    oa:hasBody
+      [ rdf:value "Actualiteit: 6 mndn, relatieve precisie: 30 cm, voor overig zie hoofdstuk 4 Gegevenscatalogus BGT."@nl ];
+    #oa:hasTarget bgt:Pand; # IMPLICIT
+    rdfs:comment "Actualiteit: 6 mndn, relatieve precisie: 30 cm, voor overig zie hoofdstuk 4 Gegevenscatalogus BGT."@nl;
+    rdfs:label "Kwaliteitsannotatie voor BGT Pand"@nl.
+
+  quality-annotation:wegdeel
+    a dqv:QualityAnnotation;
+    dqv:inDimension
+      ldqd:recency,
+      quality-dimension:geografischePrecisie;
+    oa:hasBody
+      [ rdf:value "Actualiteit: 6 mndn, relatieve precisie: 30 cm, voor overig zie hoofdstuk 4 Gegevenscatalogus BGT."@nl ];
+    #oa:hasTarget bgt:Wegdeel; # IMPLICIT
+    rdfs:comment "Actualiteit: 6 mndn, relatieve precisie: 30 cm, voor overig zie hoofdstuk 4 Gegevenscatalogus BGT."@nl;
+    rdfs:label "Kwaliteitsannotatie voor BGT Wegdeel"@nl.
+
+  quality-dimension:geografischePrecisie
+    a dqv:Dimension;
+    rdfs:comment "De geografische accuraatheid van een gegeven.  Met welke precisie worden geografische gegevens ingewonnen en ontsloten?"@nl;
+    rdfs:label "Positionele nauwkeurigheid"@nl;
+    skos:altLabel "Positionele nauwkeurigheid"@nl;
+    skos:narrower ldqd:precision;
+    skos:prefLabel "Relatieve precisie"@nl.
+
+  # Status
+
+  [ a owl:AllDifferentFrom;
+    owl:distinctMembers
+      ( status:bestaand
+        status:historie
+        status:plan ) ].
+
+  status:bestaand
+    a bgt:Status;
+    dct:subject concept:Status_bestaand;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Bestaand"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#status"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Situatie waarin het object wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd."@nl ].
+
+  status:historie
+    a bgt:Status;
+    dct:subject concept:StatusPlus_historie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Historie"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#statusplus"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Situatie waarin het geregistreerde object fysiek niet meer bestaat."@nl ].
+
+  status:plan
+    a bgt:Status;
+    dct:subject concept:StatusPlus_plan;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Plan"@nl;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#statusplus"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 1.0";
+        rdf:value "Situatie die ontstaat op het moment van verlening van een beschikking voor bouw of aanleg en duurt tot het moment waarop het object gereed is voor het beoogde gebruik."@nl ].
+}

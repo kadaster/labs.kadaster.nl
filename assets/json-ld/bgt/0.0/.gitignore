@@ -1,6 +1,5 @@
-*.graphql.jsonld
-*.graphql.jsonld.nq
-*.graphql.nq
+*.gz
+*.nq
 .client.js.err
 bgt.jsonld.nq
 upload.sh
