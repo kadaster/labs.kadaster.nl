@@ -39,3 +39,4 @@ We delen ze op in vier categorieen:
 
 
 this is my test message.
+this is my 2nd test message.
