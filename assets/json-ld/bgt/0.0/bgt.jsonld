@@ -142,7 +142,7 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
-      "@id": "rdf:type",
+      "@id": "openbareRuimteType",
       "@type": "@id"
     },
     "overbruggingisbeweegbaar": "beweegbaar",
