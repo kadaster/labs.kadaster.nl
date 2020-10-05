@@ -130,9 +130,11 @@
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
+      "@id": "objectBegintijd",
       "@type": "xsd:date"
     },
     "objecteindtijd": {
+      "@id": "objectEindtijd",
       "@type": "xsd:date"
     },
     "ogc_fid": null,
@@ -176,7 +178,6 @@
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "Registratie": "IMGeoObjectRegistratie",
     "registratie": {
       "@context": {
