@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
     "begroeidterreindeeloptalud": "talud",
