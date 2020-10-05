@@ -185,6 +185,7 @@
       }
     },
     "relatievehoogteligging": {
+      "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
