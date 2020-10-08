@@ -86,7 +86,7 @@ bgt: {
         rdf:value "Al dan niet verwijderbare paal in de grond om de weg of een gedeelte hiervan af te sluiten."@nl ].
   img:afsluitpaal-1
     a sdo:ImageObject;
-    rdfs:label "Afbeelding afslutpaal"@nl;
+    rdfs:label "Afbeelding afsluitpaal"@nl;
     sdo:caption "Voorbeeld van een afsluitpaal."@nl;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=afsluitpaal-1.jpg"^^xsd:anyURI.
   img:afsluitpaal-2
@@ -151,7 +151,7 @@ bgt: {
     rdfs:label "Afbeelding aquaduct"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Voorbeeld van een aquaduct met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
+  <p>Voorbeeld van een aquaduct met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=aquaduct.jpg"^^xsd:anyURI.
 
@@ -159,7 +159,7 @@ bgt: {
     a owl:Class;
     dct:subject concept:FunctieWeg_baan_voor_vliegverkeer;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Baan voor vliefverkeer"@nl;
+    rdfs:label "Baan voor vliegverkeer"@nl;
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functieweg"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/baan-voor-vliegverkeer"^^xsd:anyURI;
@@ -173,7 +173,7 @@ bgt: {
     rdfs:label "Afbeelding baan voor vliegverkeer"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een baan voor vliegverkeer met <a href="bgt:geslotenVerharding">gesloten verharding</a> en <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
+  <p>Vlak A is een baan voor vliegverkeer met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/geslotenVerharding">gesloten verharding</a> en <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
   <p>Vlak B, C en D zijn <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/OverigGrasland">overig grasland</a>.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=baanVoorVliegverkeer.jpg"^^xsd:anyURI.
@@ -185,7 +185,9 @@ bgt: {
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#bak"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/bak"^^xsd:anyURI;
-    rdfs:subClassOf bgt:IMGeoObject;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Object met een permanent karakter dat dient om iets in te bergen of te verzamelen."@nl ].
@@ -214,7 +216,7 @@ bgt: {
     rdfs:label "Afbeelding baan voor vliegverkeer"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Voorbeeld van een balustrade wiens <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> gelijk is aan die van het object waarop de balustrade staat.</p>
+  <p>Voorbeeld van een balustrade wiens <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> gelijk is aan die van het object waarop de balustrade staat.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=balustrade.jpg"^^xsd:anyURI.
 
@@ -360,7 +362,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding benzine-/olieput"@nl;
     sdo:caption "Voorbeeld van een benzine-/olieput."@nl;
-    sdo:contentUrl "https://imgeo.geostandaarden.nl/def/imgeo-object/put/benzine-olieput-niet-bgt"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=benzineOlieput.jpg"^^xsd:anyURI.
 
   bgt:Benzinestation
     a owl:Class;
@@ -692,7 +694,7 @@ bgt: {
     rdfs:seeAlso "https://wetten.overheid.nl/jci1.3:c:BWBR0034026&hoofdstuk=1&artikel=1&z=2018-07-01&g=2018-07-01"^^xsd:anyURI;
     skos:definition
       [ dct:creator "Wet basisregistratie grootschalige topografie";
-        rdf:value "Bestuursorgaan of rechtspersoon aan wie de wet basisregistratie grootschalige topografie de verantwoordelijkheid voor het bijhouden van geografische gegevens opgedraagt."@nl ].
+        rdf:value "Bestuursorgaan of rechtspersoon aan wie de wet basisregistratie grootschalige topografie de verantwoordelijkheid voor het bijhouden van geografische gegevens opdraagt."@nl ].
 
   bgt:Brug
     a owl:Class;
@@ -713,12 +715,12 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding brug"@nl;
     sdo:caption "Vlak A is een brug met type overbruggingsdeel dek, is beweegbaar, en heeft relatieve hoogteligging 1.  Vlak B en C zijn bruggen met tpye overbruggingsdeel pijler, zijn beweegbaar, en hebben relatieve hoogteligging 0."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=brug-1.jpg"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=brug-1.png"^^xsd:anyURI.
   img:brug-2
     a sdo:ImageObject;
     rdfs:label "Afbeelding brug"@nl;
     sdo:caption "Vlak A is een brug met type overbruggingsdeel dek, is beweegbaar, en heeft relatieve hoofteligging 1.  Vlak B en C zijn overbruggingsdelen met type overbrugging brug en type overbruggingsdeel landhoofd, en relatieve hoogteligging 0.  Vlak D is een waterloop met relatieve hoogteligging 0."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=brug-2.jpg"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=brug-2.png"^^xsd:anyURI.
 
   bgt:Bungalowpark
     a owl:Class;
@@ -810,13 +812,16 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding CAI-kast"@nl;
     sdo:caption "Voorbeeld van een CAI-kast."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=caiKast.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=caiKast.jpg"^^xsd:anyURI.
 
   bgt:Calamiteitendoorsteek
     a owl:Class;
     dct:subject concept:FunctieWegPlus_calamiteitendoorsteek;
     rdfs:isDefinedBy bgt:;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#functiewegplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#functiewegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-autosnelweg/calamiteitendoorsteek-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-autoweg/calamiteitendoorsteek-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Wegdeel;
     sdo:image
       img:calamiteitendoorsteek-1,
@@ -886,7 +891,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding carpoolplaats"@nl;
     sdo:caption "Voorbeeld van een carpoolplaats."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=carpoolplaats.jpg"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=carpoolplaats.png"^^xsd:anyURI.
 
   bgt:Container
     a owl:Class;
@@ -1185,7 +1190,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding elektrakast"@nl;
     sdo:caption "Voorbeeld van een elektrakast."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=elektrakast.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=elektrakast.jpg"^^xsd:anyURI.
 
   bgt:Faunaraster
     a owl:Class;
@@ -1204,7 +1209,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding faunaraster"@nl;
     sdo:caption "Voorbeeld van een faunaraster."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=faunaraster.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=faunaraster.jpg"^^xsd:anyURI.
 
   bgt:Faunavoorziening
     a owl:Class;
@@ -1223,7 +1228,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding faunavoorziening"@nl;
     sdo:caption "Voorbeeld van een faunavoorziening met relatieve hoogteligging -1."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=faunavoorziening.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=faunavoorziening.jpg"^^xsd:anyURI.
 
   bgt:Fietsenkluis
     a owl:Class;
@@ -1242,7 +1247,7 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding fietsenkluis"@nl;
     sdo:caption "Voorbeeld van een fietsenkluis."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=fietsenkluis.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=fietsenkluis.jpg"^^xsd:anyURI.
 
   bgt:Fietspad
     a owl:Class;
@@ -1345,8 +1350,8 @@ bgt: {
         rdf:value "Kunstwerk in de vorm van een viaduct dat deel uitmaakt van een verkeersbaan en waarmee een verkeersstroom over twee of meer ongelijkvloerse verkeersstromen wordt geleid."@nl ].
   img:flyover
     a sdo:ImageObject;
-    rdfs:label "Afbeelding flyover"@nl;
-    sdo:caption "Voorbeeld van een flyover met relatieve hoogteligging 1."@nl;
+    rdfs:label "Afbeelding fly-over"@nl;
+    sdo:caption "Voorbeeld van een fly-over met relatieve hoogteligging 1."@nl;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=flyover.jpg"^^xsd:anyURI.
 
   bgt:Fontein
@@ -1389,10 +1394,18 @@ bgt: {
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functioneelgebied"^^xsd:anyURI,
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functioneelgebied-0"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied"^^xsd:anyURI;
-    rdfs:subClassOf bgt:ImGeoObject;
+    rdfs:subClassOf
+      bgt:ImGeoObject,
+      city:LandUse;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Begrensd en benoemd gebied dat door een functionele eenheid beschreven wordt."@nl ].
+
+  bgt:FunctioneelGebiedRegistratie
+    a owl:Class;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Functioneel gebied registratie"@nl;
+    rdfs:subClassOf bgt:GeoObjectRegistratie.
 
   bgt:FysiekVoorkomen
     a owl:Class;
@@ -1620,22 +1633,38 @@ bgt: {
     dct:subject concept:TypeKastPlus_GMS_kast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "GMS kast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/gms-kast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:gmsKast;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Kast ten behoeve van het meten van weers- en wegdekomstandigheden."@nl ].
+  img:gmsKast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding GMS kast"@nl;
+    sdo:caption "Voorbeeld van een GMS kast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=gmsKast.jpg"^^xsd:anyURI.
 
   bgt:GmsSensor
     a owl:Class;
     dct:subject concept:TypeSensorPlus_GMS_sensor;
     rdfs:isDefinedBy bgt:;
     rdfs:label "GMS sensor"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/sensor/gms-sensor-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Sensor;
+    sdo:image img:gmsSensor;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Gladheidsmeldsysteem (GMS) waarmee de kans op gladheid wordt voorspeld aan de hand van meting en interpretatie van de parameters die een rol spelen bij het ontstaan van gladheid."@nl ].
+  img:gmsSensor
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding GMS sensor"@nl;
+    sdo:caption "Voorbeeld van een GMS sensor."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=gmsSensor.png"^^xsd:anyURI.
 
   bgt:Gracht
     a owl:Class;
@@ -1661,11 +1690,19 @@ bgt: {
     dct:subject concept:TypePaalPlus_grensmarkering;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Grensmarkering"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/grensmarkering-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:grensmarkering;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Paal ter afbakening van een grens."@nl ].
+  img:grensmarkering
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding grensmarkering"@nl;
+    sdo:caption "Voorbeeld van een grensmarkering."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=grensmarkering.jpg"^^xsd:anyURI.
 
   bgt:Greppel
     a owl:Class;
@@ -1686,7 +1723,7 @@ bgt: {
     rdfs:label "Afbeelding greppel"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een <a href="bgt:agrarischGrasland">agrarisch grasland</a>.  Vlak B is een <a href="bgt:Greppel">greppel / droge sloot</a>.  Vlak C is een <a href="bgt:Loofbos">loofbos</a>.</p>
+  <p>Vlak A is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/agrarischGrasland">agrarisch grasland</a>.  Vlak B is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Greppel">greppel / droge sloot</a>.  Vlak C is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Loofbos">loofbos</a>.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=greppel.jpg"^^xsd:anyURI.
 
@@ -1695,22 +1732,45 @@ bgt: {
     dct:subject concept:TypeVegetatieObjectPlus_haag;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Haag"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typevegetatieobjectplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typevegetatieobjectplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/vegetatieobject/haag-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:VegetatieObject;
+    sdo:image
+      img:haag-1,
+      img:haag-2;
     skos:definition
       [ dct:creator "IMGeo";
         rdf:value "Een rijvormige afscheiding van zeer beperkte breedte bestaande uit aangeplante aaneengesloten struiken."@nl ].
+  img:haag-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding haag"@nl;
+    sdo:caption "Voorbeeld van een haag."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=haag-1.jpg"^^xsd:anyURI.
+  img:haag-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding haag"@nl;
+    sdo:caption "Voorbeeld van een haag."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=haag-2.jpg"^^xsd:anyURI.
 
   bgt:Haltepaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_haltepaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Haltepaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/haltepaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:haltepaal;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Paal met daarop de dienstregeling ten behoeve van het openbaar vervoer."@nl ].
+  img:haltepaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding haltepaal"@nl;
+    sdo:caption "Voorbeeld van een haltepaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=haltepaal.jpg"^^xsd:anyURI.
 
   bgt:Haven
     a owl:Class;
@@ -1736,40 +1796,72 @@ bgt: {
     dct:subject concept:TypePaalPlus_hectometerpaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hectometerpaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/hectometerpaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:hectometerpaal;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Paaltje of bordje geplaatst langs de weg, waarop een hectometerwaarde (weg) of kilometrering (vaarweg) is vermeld eventueel gevolgd door een letter."@nl ].
+  img:hectometerpaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hectometerpaal"@nl;
+    sdo:caption "Voorbeeld van een hectometerpaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hectometerpaal.jpg"^^xsd:anyURI.
 
   bgt:Hek
     a owl:Class;
     dct:subject concept:TypeScheiding_hek;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hek"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/scheiding/hek"^^xsd:anyURI;
     rdfs:subClassOf bgt:Scheiding;
+    sdo:image img:hek;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Een hekwerk of schutting, typisch ten behoeve van erfafscheiding."@nl ].
+  img:hek
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hek"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak A is een erf.<p>
+  <p>Vlak B is een hek met relatieve hoogteligging 0.</p>
+  <p>Vlak C is een een berm, met fysiek voorkomen groenvoorziening.</p>
+  <p>Vlak D is een voetpad met open verharding.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=herdenkingsmonument.jpg"^^xsd:anyURI.
 
   bgt:Herdenkingsmonument
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_herdenkingsmonument;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Herdenkingsmonument"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/herdenkingsmonument-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:herdenkingsmonument;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Langs de weg of elders in het terrein aangelegd object ter herdenking van personen of evenementen."@nl ].
+  img:herdenkingsmonument
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding herdenkingsmonument"@nl;
+    sdo:caption "Voorbeeld van een herdenkingsmonument."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=herdenkingsmonument.jpg"^^xsd:anyURI.
 
   bgt:Hondenuitlaatplaats
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_functioneel_beheer_hondenuitlaatplaats;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hondenuitlaatplaats"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt-0"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo 2.0";
@@ -1780,33 +1872,85 @@ bgt: {
     dct:subject concept:TypeKunstwerk_hoogspanningsmast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hoogspanningsmast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/hoogspanningsmast"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image
+      img:hoogspanningsmast-1,
+      img:hoogspanningsmast-2;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Metalen mast of stellage ter ondersteuning van geleidedraden voor het transport van elektriciteit met een hoog voltage."@nl ].
+  img:hoogspanningsmast-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogspanningsmast"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Wanneer er geen afzonderlijke afmeting van de mastvoeten beschikbaar is, wordt elk hoekpunt van de omtrek om de mastvoeten als multipunt van de hoogspanningsmast geclassificeerd.</p>
+  <p>Vlak A is een hoogspanningsmast met relatieve hoogteligging 0.</p>
+  <p>Vlak B is een lokale weg met gesloten verharding.</p>
+  <p>Vlak C is overig grasland.</p>
+  <p>Vlak D en E zijn bermen met fysiek voorkomen groenvoorziening.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogspanningsmast-1.jpg"^^xsd:anyURI.
+  img:hoogspanningsmast-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogspanningsmast"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Wanneer een hoogspanningsmast op meerdere plaatsen op het maaiveld steunt en er zijn afzonderlijke afmetingen van elke mastvoet bekend dan wordt de geometrie van elke mastvoet afzonderlijk geclassificeerd als multivlak-geometrie van de mast.</p>
+  <p>Vlak A is een hoogspanningsmast met relatieve hoogteligging 0.</p>
+  <p>Vlak B is een lokale weg met gesloten verharding.</p>
+  <p>Vlak C en E zijn overig grasland.</p>
+  <p>Vlak D is een berm met fysiek voorkomen groenvoorziening.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogspanningsmast-2.jpg"^^xsd:anyURI.
 
   bgt:Hoogtedetectieapparaat
     a owl:Class;
     dct:subject concept:TypeSensorPlus_hoogtedetectieapparaat;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hoogtedetectieapparaat"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/sensor/hoogtedetectieapparaat-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Sensor;
+    sdo:image img:hoogtedetectieapparaat;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een mechanisch of elektronisch waarschuwingssysteem, dat in werking treedt bij overschrijding van de aangegeven maximale doorrijhoogte."@nl ].
+  img:hoogtedetectieapparaat
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogtedetectieapparaat"@nl;
+    sdo:caption "Voorbeeld van een hoogtedetectieapparaat met relatieve hoogteligging 1."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogtedetectieapparaat.jpg"^^xsd:anyURI.
 
   bgt:Hoogtemerk
     a owl:Class;
     dct:subject concept:TypeWaterinrichtingPlus_hoogtemerk;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Hoogtemerk"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/waterinrichtingselement/hoogtemerk-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Waterinrichtingselement;
+    sdo:image
+      img:hoogtemerk-1,
+      img:hoogtemerk-2;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Relatief permanent merk, natuurlijk of kunstmatig, met daarin een punt met een bekende hoogte ten opzichte van een bepaald referentievlak."@nl ].
+  img:hoogtemerk-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogtemerk"@nl;
+    sdo:caption "Voorbeeld van een hoogtemerk."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogtemerk-1.jpg"^^xsd:anyURI.
+  img:hoogtemerk-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding hoogtemerk"@nl;
+    sdo:caption "Voorbeeld van een hoogtemerk."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=hoogtemerk-2.jpg"^^xsd:anyURI.
 
   bgt:IMGeoObject
     a owl:Class;
@@ -1815,7 +1959,9 @@ bgt: {
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#imgeo-object"^^xsd:anyURI,
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#imgeo-object-0"^^xsd:anyURI;
-    rdfs:subClassOf city:CityObject;
+    rdfs:subClassOf
+      city:Object,
+      nen3610:GeoObject;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "De gemeenschappelijke eigenschappen van een grootschalig topografisch object, al dan niet uit de basisregistratie."@nl ].
@@ -1831,18 +1977,35 @@ bgt: {
     dct:subject concept:TypeBordPlus_informatiebord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Informatiebord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/informatiebord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image
+      img:informatiebord-1,
+      img:informatiebord-2;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Een bord met daarop specifieke actuele informatie, zoals plattegronden of vertrektijden."@nl ].
+  img:informatiebord-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding informatiebord"@nl;
+    sdo:caption "Voorbeeld van een informatiebord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=informatiebord-1.jpg"^^xsd:anyURI.
+  img:informatiebord-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding informatiebord"@nl;
+    sdo:caption "Voorbeeld van een informatiebord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=informatiebord-2.jpg"^^xsd:anyURI.
 
   bgt:InfrastructuurVerkeerEnVervoer
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_infrastructuur_verkeer_en_vervoer;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Infrastructuur verkeer en vervoer"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/infrastructuur-verkeer-en-vervoer-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo";
@@ -1853,17 +2016,27 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_infrastructuur_waterstaatswerken;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Waterstaatswerken"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/infrastructuur-waterstaatswerken-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
+    sdo:image img:infrastructuurWaterstaatswerken;
     skos:definition
       [ dct:creator "IMGeo";
         rdf:value "Gebied grenzend aan oppervlaktewater, primair in gebruik voor de oppervlaktewaterhuishouding (waterafvoer, wateraanvoer en waterconservering)."@nl ].
+  img:infrastructuurWaterstaatswerken
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding infrastructuur waterstaatswerken"@nl;
+    sdo:caption "Voorbeeld van infrastructuur waterstaatswerken."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=infrastructuurWaterstaatswerken.png"^^xsd:anyURI.
 
   bgt:Inrichtingselement
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Inrichtingselement"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#inrichtingselement"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#inrichtingselement"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/inrichtingselement"^^xsd:anyURI;
     rdfs:subClassOf
       bgt:IMGeoObject,
       city:Furniture,
@@ -1905,11 +2078,19 @@ bgt: {
     dct:subject concept:TypePutPlus_inspectie_rioolput;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Inspectie-/rioolput"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeputplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeputplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/put/inspectie-rioolput-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Put;
+    sdo:image img:inspectieRioolput;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Deksel van een constructie die toegang geeft tot een rioolstelsel."@nl ].
+  img:inspectieRioolput
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding inspectie-/rioolput"@nl;
+    sdo:caption "Afbeelding van een inspectie-/rioolput."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=inspectieRioolput.jpg"^^xsd:anyURI.
 
   bgt:Installatie
     a owl:Class;
@@ -1918,7 +2099,9 @@ bgt: {
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#installatie"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/installatie"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Samenhangend systeem dat een bepaald doel dient."@nl ].
@@ -1926,7 +2109,7 @@ bgt: {
   bgt:InstallatieRegistratie
     a owl:Class;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Instaatie registratie"@nl;
+    rdfs:label "Installatie registratie"@nl;
     rdfs:subClassOf bgt:InrichtingselementRegistratie.
 
   bgt:Inwinningsmethode
@@ -1950,11 +2133,35 @@ bgt: {
     dct:subject concept:TypeScheiding_kademuur;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kademuur"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/overigescheiding/faunaraster-niet-bgt/muur-voldoet-niet-aan-bgt-afmetingen/kademuur"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/scheiding/kademuur"^^xsd:anyURI;
     rdfs:subClassOf bgt:Scheiding;
+    sdo:image
+      img:kademuur-1,
+      img:kademuur-2;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Verticale wand ter scheiding van land en water, opgebouwd uit een muur van gemetselde stenen of gestort beton."@nl ].
+  img:kademuur-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kademuur"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak C is een kademuur met relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kademuur-1.jpg"^^xsd:anyURI.
+  img:kademuur-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kademuur"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Hek C wordt <em>niet</em> opgenomen in de BGT omdat het op scheiding kademuur staat, deze gaat voor in de hiërarchie bij scheidingen.</p>
+  <p>Vlak A is een kademuur met relatieve hoogteligging 0.</p>
+  <p>Vlak B is een overbruggingsdeel en wegdeel, beide met relatieve hoogteligging 1.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kademuur-2.jpg"^^xsd:anyURI.
 
   bgt:Kanaal
     a owl:Class;
@@ -1979,8 +2186,13 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#kast"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#kast"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-attribuut/kast-plus-type"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Object met een permanent karakter dat dient om iets in te bergen en te beschermen."@nl ].
@@ -1996,18 +2208,28 @@ bgt: {
     dct:subject concept:TypeKunstwerkPlus_keermuur;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Keermuur"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/keermuur-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:keermuur;
     skos:definition
       [ dct:creator "Wikipedia";
         rdf:value "Een keermuur of keerwand is een stijf, grond- of waterkerend kunstwerk dat door een groot gewicht en een brede voet een grote standzekerheid kan bereiken. Een keermuur is meestal van gewapend beton, maar er kan ook ander materiaal gebruikt worden."@nl ].
+  img:keermuur
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding keermuur"@nl;
+    sdo:caption "Voorbeeld van een keermuur."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=keermuur.jpg"^^xsd:anyURI.
 
   bgt:Kering
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebied_kering;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kering"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typefunctioneelgebied"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typefunctioneelgebied"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/kering"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "Aquo";
@@ -2018,11 +2240,26 @@ bgt: {
     dct:subject concept:TypePutPlus_kolk;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kolk"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeputplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeputplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/put/kolk-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Put;
+    sdo:image
+      img:kolk-1,
+      img:kolk-2;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Deksel van een ingegraven bak voor de opvang en afvoer van neerslag afkomstig van erop aangesloten oppervlakken."@nl ].
+  img:kolk-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kolk"@nl;
+    sdo:caption "Voorbeeld van een kolk."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kolk-1.jpg"^^xsd:anyURI.
+  img:kolk-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kolk"@nl;
+    sdo:caption "Voorbeeld van een kolk."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kolk-2.jpg"^^xsd:anyURI.
 
   bgt:Kraan
     a owl:Class;
@@ -2048,17 +2285,29 @@ bgt: {
     dct:subject concept:TypeStraatmeubilairPlus_kunstobject;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kunstobject"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/kunstobject-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:kunstobject;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Een object dat als kunst gezien wordt en een bepaalde schoonheid heeft, niet door de natuur gemaakt."@nl ].
+  img:kunstobject
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding kunstobject"@nl;
+    sdo:caption "Voorbeeld van een kunstobject."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=kunstobject.jpg"^^xsd:anyURI.
 
   bgt:Kunstwerkdeel
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Kunstwerkdeel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#kunstwerkdeel"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#kunstwerkdeel"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-attribuut/kunstwerkdeel-bgt-type"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-attribuut/kunstwerkdeel-plus-type"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel"^^xsd:anyURI;
     rdfs:subClassOf bgt:OverigeConstructie;
     skos:definition
       [ dct:creator "IMGeo 1.0";
@@ -2093,11 +2342,19 @@ bgt: {
     dct:subject concept:TypeMastPlus_laagspanningsmast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Laagspanningsmast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/mast/laagspanningsmast-niet-bgt"^^xsd:anyURI;
     rdfs:sbuClassOf bgt:Mast;
+    sdo:image img:laagspanningsmast;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Houten of metalen mast waaraan kabels voor het transport van elektrische energie met een spanning lager dan 500 V zijn bevestigd."@nl ].
+  img:laagspanningsmast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding laagspanningsmast"@nl;
+    sdo:caption "Voorbeeld van een laagspanningsmast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=laagspanningsmast.jpg"^^xsd:anyURI.
 
   bgt:LageTrafo
     a owl:Class;
@@ -2123,11 +2380,19 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_landbouw;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Landbouw"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/landbouw-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
+    sdo:image img:landbouw;
     skos:definition
       [ dct:creator "IMGeo";
         rdf:value "Gebied primair in gebruik voor land- en tuinbouwproductie."@nl ].
+  img:landbouw
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding landbouw"@nl;
+    sdo:caption "Voorbeeld van landbouw."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=landbouw.png"^^xsd:anyURI.
 
   bgt:LandelijkeOrganisatie
     a owl:Class;
@@ -2142,73 +2407,129 @@ bgt: {
     dct:subject concept:TypeOverbruggingsdeel_landhoofd;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Landhoofd"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel/overbruggingsdeel/landhoofd-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Overbruggingsdeel;
+    sdo:image img:landhoofd;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Ondersteuningsconstructie ter plaatse van een overgang van de aardebaan naar een kunstwerk."@nl ].
+  img:landhoofd
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding landhoofd"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak D is een landhoofd met relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=landhoofd.jpg"^^xsd:anyURI.
 
   bgt:Lichtcel
     a owl:Class;
     dct:subject concept:TypeSensorPlus_lichtcel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Lichtcel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/sensor/lichtcel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Sensor;
+    sdo:image img:lichtcel;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Lichtcel waarmee het verlichtingsniveau naar een lager verlichtingsniveau omgeschakeld wordt (dimmen) wanneer de situatie dit toelaat."@nl ].
+  img:lichtcel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding lichtcel"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Voorbeeld van een lichtcel met relatieve hoogteligging 1.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=lichtcel.png"^^xsd:anyURI.
 
   bgt:Lichtmast
     a owl:Class;
     dct:subject concept:TypePaalPlus_lichtmast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Lichtmast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/lichtmast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:lichtmast;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Mast bestemd voor het dragen van een of meer verlichtingsarmaturen."@nl ].
+  img:lichtmast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding lichtmast"@nl;
+    sdo:caption "Voorbeeld van een lichtmast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=lichtmast.jpg"^^xsd:anyURI.
 
   bgt:Lichtpunt
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_lichtpunt;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Lichtpunt"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/lichtpunt-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:lichtpunt;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een lichtpunt is een lamp die licht uitzendt niet verbonden met een mast die het maaiveld raakt."@nl ].
+  img:lichtpunt
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding lichtpunt"@nl;
+    sdo:caption "Voorbeeld van een lichtpunt met relatieve hoogteligging 1."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=lichtpunt.jpg"^^xsd:anyURI.
 
   bgt:Lijnafwatering
     a owl:Class;
     dct:subject concept:TypeWeginrichtingPlus_lijnafwatering;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Lijnafwatering"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/weginrichtingselement/lijnafwatering-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Weginrichtingselement;
+    sdo:image img:lijnafwatering;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Goot in de lengterichting van de verharding, niet zijnde molgoot. Bijvoorbeeld roostergoot en verholen goot."@nl ].
+  img:lijnafwatering
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding lijnafwatering"@nl;
+    sdo:caption "Voorbeeld van een lijnafwatering."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=lijnafwatering.jpg"^^xsd:anyURI.
 
   bgt:Luifel
     a owl:Class;
     dct:subject concept:TypeGebouwInstallatiePlus_luifel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Luifel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typegebouwinstallatieplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typegebouwinstallatieplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/gebouwinstallatie/luifel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:GebouwInstallatie;
+    sdo:image img:luifel;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Afdak aangebracht aan de gevel van een pand, eventueel rustend op kolommen."@nl ].
+  img:luifel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding luifel"@nl;
+    sdo:caption "Voorbeeld van een luifel met relatieve hoogteligging 1."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=luifel.jpg"^^xsd:anyURI.
 
   bgt:MaatschappelijkeEnOfPublieksvoorziening
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_maatschappelijke_en_of_publieksvoorziening;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Maatschappelijke en/of publieksvoorziening"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-en-of-publieksvoorziening-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo";
@@ -2218,8 +2539,12 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Mast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#mast"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#mast"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/mast"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Hoge draagconstructie."@nl ].
@@ -2264,7 +2589,7 @@ bgt: {
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=ven.jpg"^^xsd:anyURI.
   img:vijver
     a sdo:ImageObject;
-    rdfs:label "Afbeelding vijer"@nl;
+    rdfs:label "Afbeelding vijver"@nl;
     sdo:caption "Voorbeeld van een vijver."@nl;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=vijver.jpg"^^xsd:anyURI.
 
@@ -2273,40 +2598,89 @@ bgt: {
     dct:subject concept:TypeWaterinrichtingPlus_meerpaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Meerpaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/waterinrichtingselement/meerpaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Waterinrichtingselement;
+    sdo:image img:meerpaal;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Paal voor een kade of in een haven waaraan een schip kan worden afgemeerd."@nl ].
+  img:meerpaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding meerpaal"@nl;
+    sdo:caption "Voorbeeld van een meerpaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=meerpaal.jpg"^^xsd:anyURI.
 
   bgt:Molgoot
     a owl:Class;
     dct:subject concept:TypeWeginrichtingPlus_molgoot;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Molgoot"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/weginrichtingselement/molgoot-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Weginrichtingselement;
+    sdo:image img:molgoot;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Smalle goot (lijngeometrie) in de lengterichting van de verharding, met veelal een cirkelsegment als dwarsprofiel."@nl ].
+  img:molgoot
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding molgoot"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Voor de BGT is de molgoot geen inhoud en wordt bij wegdeel A gerekend.  In IMGeo kan de molgoot als weginrichtingselement met lijngeometrie worden opgenomen.</p>
+  <p>Vlak C is een molgoot.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=molgoot.jpg"^^xsd:anyURI.
 
   bgt:Muur
     a owl:Class;
     dct:subject concept:TypeScheiding_muur;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Muur"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typescheiding"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/scheiding/muur"^^xsd:anyURI;
     rdfs:subClassOf bgt:Scheiding;
+    sdo:image
+      img:muur-1,
+      img:muur-2;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Een scheiding gemaakt van steen."@nl ].
+  img:muur-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding muur"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak A is een lokale weg met open verharding.</p>
+  <p>Vlak B is een pand.</p>
+  <p>Vlak C is een erf.</p>
+  <p>Vlak D is een muur met relatieve hoogteligging 0 en een hek dat meer dan één meter hoog is.  De voet van de muur aan de straatzijde is BGT inhoud.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=muur-1.jpg"^^xsd:anyURI.
+  img:muur-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding muur"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak A is een onbegroeid terreindeel met open verharding.</p>
+  <p>Vlak B is een voetpad met open verharding.</p>
+  <p>Vlak C en D zijn BGT inhoud, want de muur is hoger dan 0.5 meter.  Het zijn afzonderlijke objecten omdat de onderbreking bij vlak A hoger is dan één meter.</p>
+  <p>Vlak C en D zijn muren muur met een lijn geometrie (want minder breed dan 0.3 meter) en relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=muur-2.jpg"^^xsd:anyURI.
 
   bgt:NatuurEnLandschap
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_natuur_en_landschap;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Natuur en landschap"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/natuur-en-landschap-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo";
@@ -2314,7 +2688,6 @@ bgt: {
 
   bgt:Nummeraanduigingreeks
     a owl:Class;
-    #dct:subject tbd:;
     rdfs:isDefinedBy bgt:;
     rdfs:seeAlo "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nummeraanduidingreeks-0"^^xsd:anyURI;
     skos:definition "Samengesteld attribuut ten behoeve van opname van een reeks nummeraanduidingen van verblijfsobjecten in een pand."@nl;
@@ -2346,7 +2719,7 @@ bgt: {
     rdfs:label "Afbeelding oever"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een <a href="bgt:Waterloop">waterloop</a>.  Vlak B en C zijn <a href="bgt:overigGrasland">overig grasland</a>.  Vlak D en E zijn <a href="bgt:Slootkant">slootkanten</a>.</p>
+  <p>Vlak A is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Waterloop">waterloop</a>.  Vlak B en C zijn <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/overigGrasland">overig grasland</a>.  Vlak D en E zijn <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Slootkant">slootkanten</a>.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=oever-2.png"^^xsd:anyURI.
 
@@ -2421,9 +2794,10 @@ bgt: {
       "https://imgeo.geostandaarden.nl/def/imgeo-object/ondersteunendwegdeel"^^xsd:anyURI;
     rdfs:subClassOf
       bgt:IMGeoObject,
+      city:AuxiliaryTrafficArea,
       nen3610:Weg;
     skos:definition
-      [ dct:creator "BGT";
+      [ dct:creator "CityGML";
         rdf:value "Een deel van de weg dat niet primair bedoeld is voor gebruik door het verkeer."@nl ];
     skos:scopeNote """
 <section lang="nl">
@@ -2454,28 +2828,51 @@ bgt: {
               owl:onProperty bgt:fysiekVoorkomen ] ) ];
     rdfs:isDefinedBy bgt:;
     rdfs:label "Onverhard onbegroeid terreindeel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenonbegroeidterrein"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#fysiekvoorkomenonbegroeidterrein"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/onbegroeidterreindeel/onverhard"^^xsd:anyURI;
     rdfs:subClassOf bgt:OnbegroeidTerreindeel;
+    sdo:image img:onverhardOnbegroeidTerreindeel;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Onbegroeid terreindeel waar geen verharding of aaneengesloten vegetatie aanwezig is."@nl ].
+  img:onverhardOnbegroeidTerreindeel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding onverhard onbegroeid terreindeel"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak A heeft fysiek voorkomen onverhard en relatieve hoogteligging 0.</p>
+  <p>Vlak B is een waterloop.</p>
+  <p>Vlak C is een oever en slootkant.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=onverhardOnbegroeidTerreindeel.jpg"^^xsd:anyURI.
 
   bgt:OpenbaarToilet
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_openbaar_toilet;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Openbaar toilet"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/openbaar-toilet-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:openbaarToilet;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Voor mensen bedoeld toilet niet zijnde een pand, langs de openbare weg."@nl ].
+  img:openbaarToilet
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding openbaar toilet"@nl;
+    sdo:caption "Voorbeeld van een openbaar toilet."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openbaarToilet.jpg"^^xsd:anyURI.
 
   bgt:OpenbareRuimte
     a owl:Clkass;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Openbare ruimte"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#openbareruimte"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#openbareruimte"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/openbareruimte"^^xsd:anyURI;
     rdfs:subClassOf bgt:RegistratiefGebied;
     skos:definition
       [ dct:creator "BAG";
@@ -2495,7 +2892,9 @@ bgt: {
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtelabel"^^xsd:anyURI,
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtelabel-0"^^xsd:anyURI;
-    rdfs:subClassOf bgt:IMGeoObject;
+    rdfs:subClassOf
+      bgt:IMGeoObject,
+      city:Object;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Naam en plaatsingspunten van een in de BAG geregistreerde OPENBARE RUIMTE."@nl ];
@@ -2512,11 +2911,19 @@ bgt: {
     dct:subject concept:TypeKastPlus_openbare_verlichtingkast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Openbare verlichtingkast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/openbare-verlichtingkast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:openbareVerlichtingkast;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Kast ten behoeve van de regeling van de openbare verlichting."@nl ].
+  img:openbareVerlichtingkast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding openbare verlichtingkast"@nl;
+    sdo:caption "Voorbeeld van een openbare verlichtingkast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=openbareVerlichtingkast.jpg"^^xsd:anyURI.
 
   bgt:OpenLoods
     a owl:Class;
@@ -2601,7 +3008,9 @@ bgt: {
       "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#overbruggingsdeel-0"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel/overbruggingsdeel"^^xsd:anyURI;
-    rdfs:subClassOf bgt:IMGeoObject;
+    rdfs:subClassOf
+      bgt:IMGeoObject,
+      city:BridgeConstructionElement;
     sdo:image
       img:overbruggingsdeel-1,
       img:overbruggingsdeel-2,
@@ -2667,7 +3076,7 @@ bgt: {
     rdfs:label "Afbeelding overbruggingsdeel"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een <a href="bgt:Overbruggingsdeel">overbruggingsdeel</a> met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 1.  Spoorbaan en spoorrails ter hoogte van A liggen op hetzelfde niveau als het overbruggingsdeel: niveau 1.  Vlak B en C zijn <a href="bgt:Spoorbaan">spoorbanen</a> met relatieve hoogteligging 0.  Vlak D is een <a href="bgt:Fietspad">fietspad</a> met relatieve hoogteligging 0.  Vlak E is een <a href="bgt:Voetpad">voetpad</a> met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 0.  Vlak F en G zijn <a href="bgt:overigGrasland">overig grasland</a> op <a href="bgt:talud">talud</a> en met relatieve hoogteligging 0.  Vlak H is een <a href="bgt:Landhoofd">landhoofd</a> met relatieve hoogteligging 0.</p>
+  <p>Vlak A is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Overbruggingsdeel">overbruggingsdeel</a> met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 1.  Spoorbaan en spoorrails ter hoogte van A liggen op hetzelfde niveau als het overbruggingsdeel: niveau 1.  Vlak B en C zijn <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Spoorbaan">spoorbanen</a> met relatieve hoogteligging 0.  Vlak D is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Fietspad">fietspad</a> met relatieve hoogteligging 0.  Vlak E is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Voetpad">voetpad</a> met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 0.  Vlak F en G zijn <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/overigGrasland">overig grasland</a> op <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/talud">talud</a> en met relatieve hoogteligging 0.  Vlak H is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Landhoofd">landhoofd</a> met relatieve hoogteligging 0.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=overbruggingsdeel-4.jpg"^^xsd:anyURI.
 
@@ -2690,7 +3099,9 @@ bgt: {
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Met de aarde verbonden duurzaam bouwwerk, dat niet valt onder de definities van een pand of kunstwerk."@nl ];
-    skos:scopeNote """
+    skos:scopeNote
+      "Een Overig Bouwwerk heeft in de BGT altijd vlakgeometrie. Een overkapping heeft multivlakgeometrie."@nl,
+      """
 <section lang="nl">
   <h1>Regels voor opname</h1>
   <p>De geometrie is waar het grondvlak van het overig bouwwerk de ondergrond raakt.</p>
@@ -2701,6 +3112,12 @@ bgt: {
   <p>Bij overkappingen wordt de grondvlakgeometrie van de pilaren (footprint) waarop de overkapping rust geregistreerd wanneer de afmetingen (rechthoekzijde of middellijn) ≥ 0,30 m bedraagt.</p>
   <p>Het afdak van de overkapping is eventueel IMGeo inhoud.</p>
 </section>"""^^rdf:HTML.
+
+  bgt:OverigBouwwerkRegistratie
+    a owl:Class;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Overig bouwwerk registratie"@nl;
+    rdfs:subClassOf bgt:GeoObjectRegistratie.
 
   bgt:OverigeConstructie
     a owl:Class;
@@ -2779,8 +3196,12 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Paal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#paal"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#paal"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Langwerpig stuk hout, ijzer, steen enz., dat in de grond staat."@nl ];
@@ -2833,7 +3254,9 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_recreatie_park;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Park"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt/park-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "CROW";
@@ -2844,11 +3267,19 @@ bgt: {
     dct:subject concept:TypeStraatmeubilairPlus_parkeerbeugel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Parkeerbeugel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/parkeerbeugel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:parkeerbeugel;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een omklapbare beugel voor het afschermen van een parkeerplaats."@nl ].
+  img:parkeerbeugel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding parkeerbeugel"@nl;
+    sdo:caption "Voorbeeld van een parkeerbeugel."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=parkeerbeugel.jpg"^^xsd:anyURI.
 
   bgt:Parkeervlak
      a owl:Class;
@@ -2883,33 +3314,76 @@ bgt: {
     dct:subject concept:TypeKunstwerk_perron;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Perron"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/perron"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image
+      img:perron-1,
+      img:perron-2;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Verhoogde constructie langs een spoorrail of tramrail voor het in- en uitstappen van passagiers of voor het laden en lossen van goederen."@nl ].
+  img:perron-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding perron"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak A is een spoorbaan.</p>
+  <p>Vlak B is een treinspoor.</p>
+  <p>Vlak C is een perron met relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=perron-1.jpg"^^xsd:anyURI.
+  img:perron-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding perron"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Dit is <em>geen</em> perron.  Perrons worden alleen opgenomen als ze langs een spoor van trein of sneltram liggen.  Vlak A is voor de BGT een wegdeel, in IMGeo kan het tevens worden geclassificeerd als een bushalte.</p>
+  <p>Vlak A is een voetpad met fysiek voorkomen open verharding en relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=perron-2.jpg"^^xsd:anyURI.
 
   bgt:Picknicktafel
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_picknicktafel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Picknicktafel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/picknicktafel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:picknicktafel;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een ‘picknicktafel’ is een tafel met vaak daaraan gemonteerde zitbanken of stoelen die kan gebruikt worden om te picknicken."@nl ].
+  img:picknicktafel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding picknicktafel"@nl;
+    sdo:caption "Voorbeeld van een picknicktafel."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=picknicktafel.jpg"^^xsd:anyURI.
 
   bgt:Pijler
     a owl:Class;
     dct:subject concept:TypeOverbruggingsdeel_pijler;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Pijler"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel/overbruggingsdeel/pijler-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Overbruggingsdeel;
+    sdo:image img:pijler;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Ondersteuningsconstructie van bruggen en soortgelijke kunstwerken."@nl ].
+  img:pijler
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding pijler"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak B heeft type overbruggingsdeel pijler en relatieve hoogteligging 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=pijler.jpg"^^xsd:anyURI.
 
   bgt:Plaatsbepalingspunt
     a owl:Class;
@@ -2934,22 +3408,38 @@ bgt: {
     dct:subject concept:TypeBordPlus_plaatsnaambord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Plaatsnaambord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/plaatsnaambord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image img:plaatsnaambord;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Een bord waarop een naam van een (woon)plaats of locatie is vermeld."@nl ].
+  img:plaatsnaambord
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding plaatsnaambord"@nl;
+    sdo:caption "Voorbeeld van een plaatsnaambord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=plaatsnaambord.jpg"^^xsd:anyURI.
 
   bgt:Poller
     a owl:Class;
     dct:subject concept:TypePaalPlus_poller;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Poller"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/poller-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:poller;
     skos:definition
       [ dct:creator "Wikipedia";
         rdf:value "Een poller of inzinkbare paal is een paal die door een elektrische of hydraulische aandrijving uit een wegdek omhoog wordt gestuurd en die dient om het autoverkeer te reguleren."@nl ].
+  img:poller
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding poller"@nl;
+    sdo:caption "Voorbeeld van een poller."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=poller.jpg"^^xsd:anyURI.
 
   bgt:Pomp
     a owl:Class;
@@ -2975,33 +3465,57 @@ bgt: {
     dct:subject concept:TypeKunstwerkPlus_ponton;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Ponton"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/ponton-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:ponton;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Drijvende, dichte bak, waarover soms een dek is gelegd."@nl ].
+  img:ponton
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding ponton"@nl;
+    sdo:caption "Voorbeeld van een ponton."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=ponton.jpg"^^xsd:anyURI.
 
   bgt:Portaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_portaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Portaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/portaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:portaal;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Geheel van twee of meer ondersteuningsconstructies die door een ligger zijn verbonden, bedoelt voor het aanbrengen van verkeersaanduidingen."@nl ].
+  img:portaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding portaal"@nl;
+    sdo:caption "Voorbeeld van een portaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=portaal.jpg"^^xsd:anyURI.
 
   bgt:Praatpaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_praatpaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Praatpaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/praatpaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:praatpaal;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Stalen of kunststof paal langs verkeerswegen welke bedoeld is telefonisch contact te leggen met een centrale meldkamer (ANWB)."@nl ].
+  img:praatpaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding praatpaal"@nl;
+    sdo:caption "Voorbeeld van een praatpaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=praatpaal.jpg"^^xsd:anyURI.
 
   bgt:Provincie
     a owl:Class;
@@ -3015,8 +3529,12 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Put"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#put"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#put"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/put"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Gegraven of geboorde kokervormige diepte waarin zich (vloei)stoffen bevinden."@nl ].
@@ -3032,62 +3550,127 @@ bgt: {
     dct:subject concept:TypeOverbruggingsdeel_pyloon;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Pyloon"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel/overbruggingsdeel/pyloon-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Overbruggingsdeel;
+    sdo:image img:pyloon;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Boven de bovenbouw uitstekende draagconstructie voor tuien (kabels)."@nl ].
+  img:pyloon
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding pyloon"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Voorbeeld van een pyloon met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteliggin">relatieve hoogteligging</a> 0.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=pyloon.png"^^xsd:anyURI.
 
   bgt:RadarDetector
     a owl:Class;
     dct:subject concept:TypeSensorPlus_radar_detector;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Radar detector"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typesensorplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/sensor/radar-detector-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Sensor;
+    sdo:image
+      img:radarDetector-1,
+      img:radarDetector-2;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Met een radardetector wordt het verkeer gedetecteerd, bijvoorbeeld voor het beïnvloeden van verkeerslichten."@nl ].
+  img:radarDetector-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding radar detector"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Voorbeeld van een radar detector met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteliggin">relatieve hoogteligging</a> 1.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=radarDetector-1.jpg"^^xsd:anyURI.
+  img:radarDetector-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding radar detector"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Voorbeeld van een radar detector met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteliggin">relatieve hoogteligging</a> 1.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=radarDetector-2.jpg"^^xsd:anyURI.
 
   bgt:Radarmast
     a owl:Class;
     dct:subject concept:TypeMastPlus_radarmast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Radarmast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/mast/radarmast-niet-bgt"^^xsd:anyURI;
     rdfs:sbuClassOf bgt:Mast;
+    sdo:image img:radarmast;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Vaste of neerklapbare constructie waarop de radarantenne bevestigd is."@nl ].
+  img:radarmast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding radarmast"@nl;
+    sdo:caption "Voorbeeld van een radarmast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=radarmast.jpg"^^xsd:anyURI.
 
   bgt:Reclamebord
     a owl:Class;
     dct:subject concept:TypeBordPlus_reclamebord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Reclamebord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/reclamebord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image
+      img:reclamebord-1,
+      img:reclamebord-2;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Vrijstaand bord/zuil waarop rondom of aan één of meer zijden affiches kunnen worden (of zijn) geplakt."@nl ].
+  img:reclamebord-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding reclamebord"@nl;
+    sdo:caption "Voorbeeld van een reclamebord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=reclamebord-1.jpg"^^xsd:anyURI.
+  img:reclamebord-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding reclamebord"@nl;
+    sdo:caption "Voorbeeld van een reclamebord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=reclamebord-2.jpg"^^xsd:anyURI.
 
   bgt:Reclamezuil
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_reclamezuil;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Reclamezuil"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/reclamezuil-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:reclamezuil;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Vrijstaand bord/zuil waarop rondom of aan één of meer zijden affiches kunnen worden (of zijn) geplakt."@nl ].
+  img:reclamezuil
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding reclamezuil"@nl;
+    sdo:caption "Voorbeeld van een reclamezuil."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=reclamezuil.jpg"^^xsd:anyURI.
 
   bgt:Recreatie
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_recreatie;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Recreatie"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#registratiefgebied"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#registratiefgebied"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt/recreatie-niet"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo";
@@ -3097,7 +3680,9 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Registratief gebied"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#registratiefgebied"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#registratiefgebied"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/registratiefgebied"^^xsd:anyURI;
     rdfs:subClassOf
       bgt:IMGeoObject,
       city:LandUse,
@@ -3120,18 +3705,28 @@ bgt: {
     dct:subject concept:TypeWaterinrichtingPlus_remmingswerk;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Remmingswerk"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/waterinrichtingselement/remmingswerk-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Waterinrichtingselement;
+    sdo:image img:remmingswerk;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Constructie langs de opstelruimte en wachtruimte bedoeld voor het afmeren van schepen."@nl ].
+  img:remmingswerk
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding remmingswerk"@nl;
+    sdo:caption "Voorbeeld van een remmingswerk."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=remmingswerk.jpg"^^xsd:anyURI.
 
   bgt:RijbaanAutosnelweg
     a owl:Class;
     dct:subject concept:FunctieWeg_rijbaan_autosnelweg;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Rijbaan autosnelweg"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functieweg"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functieweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-autosnelweg"^^xsd:anyURI;
     rdfs:subClassOf bgt:Wegdeel;
     sdo:image img:rijbaanAutosnelweg;
     skos:definition
@@ -3175,7 +3770,9 @@ bgt: {
     dct:subject concept:FunctieWeg_rijbaan_lokale_weg;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Rijbaan lokale weg"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functieweg"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#functieweg"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-lokale-weg"^^xsd:anyURI;
     rdfs:subClassOf bgt:Wegdeel;
     sdo:image
       img:rijbaanLokaleWeg-1,
@@ -3228,11 +3825,19 @@ bgt: {
     dct:subject concept:TypeKastPlus_rioolkast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Rioolkast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/rioolkast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:rioolkast;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Kast ten behoeve van de regeling van het transport van rioolwater."@nl ].
+  img:rioolkast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding rioolkast"@nl;
+    sdo:caption "Voorbeeld van een rioolkast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=rioolkast.jpg"^^xsd:anyURI.
 
   bgt:Rivier
     a owl:Class;
@@ -3258,11 +3863,19 @@ bgt: {
     dct:subject concept:TypeWeginrichtingPlus_rooster;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Rooster"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/weginrichtingselement/rooster-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Weginrichtingselement;
+    sdo:image img:rooster;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een rooster niet zijnde lijnafwatering of wildrooster."@nl ].
+  img:rooster
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding rooster"@nl;
+    sdo:caption "Voorbeeld van een rooster."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=rooster.jpg"^^xsd:anyURI.
 
   bgt:Ruiterpad
     a owl:Class;
@@ -3288,11 +3901,19 @@ bgt: {
     dct:subject concept:TypeBordPlus_scheepvaartbord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Scheepvaartbord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/scheepvaartbord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image img:scheepvaartbord;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Bord waarop een scheepvaartteken is aangebracht en waarvan de uitvoering als richtlijn is voorgeschreven volgens 'Richtlijnen Scheepvaarttekens (RST 2008)'."@nl ].
+  img:scheepvaartbord
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding scheepvaartbord"@nl;
+    sdo:caption "Voorbeeld van een scheepvaartbord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=scheepvaartbord.jpg"^^xsd:anyURI.
 
   bgt:Scheiding
     a owl:Class;
@@ -3349,8 +3970,12 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Sensor"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#sensor"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#sensor"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/sensor"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Apparaat voor de meting van een fysieke grootheid (bijv. temperatuur, licht, druk, elektriciteit)."@nl ].
@@ -3366,22 +3991,38 @@ bgt: {
     dct:subject concept:TypePaalPlus_sirene;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Sirene"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/sirene-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:sirene;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een apparaat dat geluiden van variabele toonhoogte kan voortbrengen met als functie waarschuwingsdoeleinden."@nl ].
+  img:sirene
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding sirene"@nl;
+    sdo:caption "Voorbeeld van een sirene."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=sirene.jpg"^^xsd:anyURI.
 
   bgt:Slagboom
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_slagboom;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Slagboom"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/slagboom-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:slagboom;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Boom of balk om de weg of een gedeelte hiervan af te sluiten."@nl ].
+  img:slagboom
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding slagboom"@nl;
+    sdo:caption "Voorbeeld van een slagboom."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=slagboom.jpg"^^xsd:anyURI.
 
   bgt:Slik
     a owl:Class;
@@ -3407,11 +4048,19 @@ bgt: {
     dct:subject concept:TypeOverbruggingsdeel_sloof;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Sloof"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel-0"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/overbruggingsdeel/overbruggingsdeel/sloof-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Overbruggingsdeel;
+    sdo:image img:sloof;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Deel van de pijler voor de overdracht van krachten naar de ondergrond of de fundering."@nl ].
+  img:sloof
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding sloof"@nl;
+    sdo:caption "Voorbeeld van sloof."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=sloof.jpg"^^xsd:anyURI.
 
   bgt:Sloot
     a owl:Class;
@@ -3432,26 +4081,27 @@ bgt: {
     sdo:caption "Voorbeeld van een sloot."@nl;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=sloot.jpg"^^xsd:anyURI.
 
-  bgt:Sluis
-    a owl:Class;
-    dct:subject concept:TypeKunstwerk_sluis;
-    rdfs:isDefinedBy bgt:;
-    rdfs:label "Sluis"@nl;
-    rdfs:seeAlso "GEEN BRON"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Kunstwerkdeel;
-    skos:definition
-      [ dct:creator "GEEN BRON";
-        rdf:value "GEEN DEFINITIE"@nl ].
-
   bgt:Sluisdeur
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Sluisdeur"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/sluis"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:sluis;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Het beweegbare deel van een kunstmatige waterkering die de verbinding tussen twee wateren kan afsluiten of openstellen en daartoe van deuren of schuiven is voorzien."@nl ].
+  img:sluisdeur
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding sluisdeur"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>De waterloop wordt door de sluis E opgeknipt in twee waterdelen D en F.  Overige objecten behoren als afzonderlijke typen tot BGT-inhoud, zoals o.a. de kademuren als type scheiding.</p>
+  <p>Vlak E is een sluis met relatieve hoogteligging 0</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=sluisdeur.jpg"^^xsd:anyURI.
 
   bgt:Sneltram
     a owl:Class;
@@ -3477,7 +4127,9 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_recreatie_speeltuin;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Speeltuin"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt/speeltuin-niet"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "CROW";
@@ -3488,11 +4140,26 @@ bgt: {
     dct:subject concept:TypeStraatmeubilairPlus_speelvoorziening;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Speelvoorziening"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/speelvoorziening-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image
+      img:speelvoorziening-1,
+      img:speelvoorziening-2;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Aard en nagelvast met de grond verbonden constructie in de openbare ruimte, bedoeld als speelmateriaal voor kinderen."@nl ].
+  img:speelvoorziening-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding speelvoorziening"@nl;
+    sdo:caption "Voorbeeld van een speelvoorziening."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=speelvoorziening-1.jpg"^^xsd:anyURI.
+  img:speelvoorziening-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding speelvoorziening"@nl;
+    sdo:caption "Voorbeeld van een speelvoorziening."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=speelvoorziening-2.jpg"^^xsd:anyURI.
 
   bgt:Spoor
     a owl:Class;
@@ -3528,7 +4195,9 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_recreatie_sportterrein;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Sportterrein"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt/sportterrein-niet"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "CROW";
@@ -3538,8 +4207,10 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Stadsdeel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#stadsdeel"^^xsd:anyURI;
-    rdfs:subClassOf bgt:IMGeoObject;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#stadsdeel"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/stadsdeel"^^xsd:anyURI;
+    rdfs:subClassOf bgt:RegistratiefGebied;
     skos:definition
       [ dct:creator "BRT stelselcatalogus";
         rdf:value "Deel van een stad, wijk."@nl ].
@@ -3570,37 +4241,67 @@ bgt: {
     dct:subject concept:TypeKunstwerk_steiger;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Steiger"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/steiger"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image
+      img:steiger-1,
+      img:steiger-2;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Vaste (niet drijvende) waterbouwkundige constructie voor het aanleggen van schepen en bedoeld om deze schepen vanaf de wal te laden en te lossen."@nl ].
+  img:steiger-1
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding steiger"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>Vlak B is een steiger met relatieve hoogteligging 1.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=steiger-1.jpg"^^xsd:anyURI.
+  img:steiger-2
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding steiger"@nl;
+    sdo:caption "Drijvende steigers zijn geen BGT inhoud."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=steiger-2.jpg"^^xsd:anyURI.
 
   bgt:Straalzender
     a owl:Class;
     dct:subject concept:TypeMastPlus_straalzender;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Straalzender"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typemastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/mast/straalzender-niet-bgt"^^xsd:anyURI;
     rdfs:sbuClassOf bgt:Mast;
+    sdo:image img:straalzender;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Zender voor radio, televisie en telecommunicatie signalen die in smalle stralenbundels uitzendt."@nl ].
+  img:straalzender
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding straalzender"@nl;
+    sdo:caption "Voorbeeld van een straalzender."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=straalzender.jpg"^^xsd:anyURI.
 
-  bgt:Straatmeubulair
+  bgt:Straatmeubilair
     a owl:Class;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Straatmeubulair"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#straatmeubilair"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:label "Straatmeubilair"@nl;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#straatmeubilair"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Een ruimtelijk object ter inrichting van de openbare ruimte."@nl ].
 
-  bgt:StraatmeubulairRegistratie
+  bgt:StraatmeubilairRegistratie
     a owl:Class;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Straatmeubulair registratie"@nl;
+    rdfs:label "Straatmeubilair registratie"@nl;
     rdfs:subClassOf bgt:InrichtingselementRegistratie.
 
   bgt:Straatnaambord
@@ -3608,88 +4309,157 @@ bgt: {
     dct:subject concept:TypeBordPlus_straatnaambord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Straatnaambord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/straatnaambord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image img:straatnaambord;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Bord waarop de door de gemeente vastgestelde naam van de straat is vermeld. Bord kan zich op een paal of aan de gevel bevinden."@nl ].
+  img:straatnaambord
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding straatnaambord"@nl;
+    sdo:caption "Voorbeeld van een straatnaambord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=straatnaambord.jpg"^^xsd:anyURI.
 
   bgt:Strekdam
     a owl:Class;
     dct:subject concept:TypeKunstwerk_strekdam;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Strekdam"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/strekdam"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:strekdam;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Constructie in het water ter verdediging van de kust/oever."@nl ].
+  img:strekdam
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding strekdam"@nl;
+    sdo:caption "Voorbeeld van een strekdam met relatieve hoogteligging 0."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=strekdam.jpg"^^xsd:anyURI.
 
   bgt:Stuw
     a owl:Class;
     dct:subject concept:TypeKunstwerk_stuw;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Stuw"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#typekunstwerk"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/stuw"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:stuw;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Een constructie met een vaste drempel of een beweegbare klep, die dient om de waterstand boven- en benedenstrooms te regelen."@nl ].
+  img:stuw
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding stuw"@nl;
+    sdo:caption """
+<section lang="nl">
+  <p>De waterloop wordt door de stuw D opgeknipt in twee waterdelen A en E.</p>
+  <p>Vlak D is een stuw met breedte < 0.30 m dus lijngeometrie, en heeft relatieve hoogteligging 0.</p>
+  <p>Vlak B en C zijn ondersteunende waterdelen, oever, slootkant.</p>
+</section>"""^^rdf:HTML;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=stuw.jpg"^^xsd:anyURI.
 
   bgt:TelecomKast
     a owl:Class;
     dct:subject concept:TypeKastPlus_telecom_kast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Telecom kast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/telecom-kast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:telecomKast;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Kast ten behoeve van de regeling van telecommunicatie."@nl ].
+  img:telecomKast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding telecom kast"@nl;
+    sdo:caption "Voorbeeld van een telecom kast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=telecomKast.jpg"^^xsd:anyURI.
 
   bgt:Telefooncel
     a owl:Class;
     dct:subject concept:TypeStraatmeubilairPlus_telefooncel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Telefooncel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typestraatmeubilairplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/straatmeubilair/telefooncel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Straatmeubilair;
+    sdo:image img:telefooncel;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Niet-inpandige ruimte in openbaar gebied louter bestemd voor telefoneren."@nl ].
+  img:telefooncel
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding telefooncel"@nl;
+    sdo:caption "Voorbeeld van een telefooncel."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=telefooncel.jpg"^^xsd:anyURI.
 
   bgt:Telkast
     a owl:Class;
     dct:subject concept:TypeKastPlus_telkast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Telkast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/telkast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:telkast;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Kast ten behoeve van het meten van permanente verkeertellingen."@nl ].
+  img:telkast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding telkast"@nl;
+    sdo:caption "Voorbeeld van een telkast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=telkast.jpg"^^xsd:anyURI.
 
   bgt:Telpaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_telpaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Telpaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/telpaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:telpaal;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Paal waaraan de verkeersteller is bevestigd."@nl ].
+  img:telpaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding telpaal"@nl;
+    sdo:caption "Voorbeeld van een telpaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=telpaal.jpg"^^xsd:anyURI.
 
   bgt:Toegangstrap
     a owl:Class;
     dct:subject concept:TypeGebouwInstallatiePlus_toegangstrap;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Toegangstrap"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typegebouwinstallatieplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typegebouwinstallatieplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/gebouwinstallatie/toegangstrap-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:GebouwInstallatie;
+    sdo:image img:toegangstrap;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Niet afsluitbare trap (of trappenhuis) die toegang biedt aan een gebouw."@nl ].
+  img:toegangstrap
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding toegangstrap"@nl;
+    sdo:caption "Voorbeeld van een toegangstrap met relatieve hoogteligging 1."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=toegangstrap.jpg"^^xsd:anyURI.
 
   bgt:Tram
     a owl:Class;
@@ -3764,16 +4534,18 @@ bgt: {
     a owl:Class;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Vegetatie"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#vegetatieobject"^^xsd:anyURI;
-    rdfs:subClassOf bgt:IMGeoObject;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#vegetatieobject"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/vegetatieobject"^^xsd:anyURI;
+    rdfs:subClassOf
+      bgt:IMGeoObject,
+      city:SolitaryVegitationObject;
     skos:definition
       [ dct:creator "CityGML 1.0";
         rdf:value "Solitair vegetatieobject of lijn- of vlakvormige groep gelijksoortige vegetatieobjecten met een beperkte omvang."@nl ];
     skos:scopeNote
-      [ dct:source "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#vegetatieobject"^^xsd:anyURI;
-        rdf:value "Individuele bomen hoeven alleen te worden opgenomen indien dit gewenst is. Vaak zal dit in het stedelijk gebied wel gebeuren en in landelijk gebied niet, uitzonderingen daargelaten."@nl ],
-      [ dct:source "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#vegetatieobject"^^xsd:anyURI;
-        rdf:value "Onder vrijstaande vegetatieobjecten worden niet alleen die vegetatieobjecten opgenomen die strikt genomen solitair zijn, zoals bomen, maar ook vegetatieobjecten die samen één geheel vormen zoals een heg."@nl ].
+      "Individuele bomen hoeven alleen te worden opgenomen indien dit gewenst is. Vaak zal dit in het stedelijk gebied wel gebeuren en in landelijk gebied niet, uitzonderingen daargelaten."@nl,
+      "Onder vrijstaande vegetatieobjecten worden niet alleen die vegetatieobjecten opgenomen die strikt genomen solitair zijn, zoals bomen, maar ook vegetatieobjecten die samen één geheel vormen zoals een heg."@nl.
 
   bgt:VegetatieObjectRegistratie
     a owl:Class;
@@ -3806,40 +4578,67 @@ bgt: {
     dct:subject concept:TypeWeginrichtingPlus_verblindingswering;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verblindingswering"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeweginrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/weginrichtingselement/verblindingswering-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Weginrichtingselement;
+    sdo:image img:verblindingswering;
     skos:definition
       [ dct:creator "CROW";
         rdf:value "Constructie bedoeld om verblinding van weggebruikers door tegenlicht te voorkomen."@nl ].
+  img:verblindingswering
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verblindingswering"@nl;
+    sdo:caption "Voorbeeld van een verblindingswering."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verblindingswering.jpg"^^xsd:anyURI.
 
   bgt:Verkeersbord
     a owl:Class;
     dct:subject concept:TypeBordPlus_verkeersbord;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verkeersbord"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/verkeersbord-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image img:verkeersbord;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Bord waarop een verkeersteken is aangebracht en waarvan de uitvoering wettelijk is voorgeschreven volgens het 'Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)'."@nl ].
+  img:verkeersbord
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verkeersbord"@nl;
+    sdo:caption "Voorbeeld van een verkeersbord."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verkeersbord.jpg"^^xsd:anyURI.
 
   bgt:Verkeersbordpaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_verkeersbordpaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verkeersbordpaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/verkeersbordpaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:verkeersbordpaal;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Paal waaraan een of meerdere verkeersborden zijn bevestigd."@nl ].
+  img:verkeersbordpaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verkeersbordpaal"@nl;
+    sdo:caption "Voorbeeld van een verkeersbordpaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verkeersbordpaal.jpg"^^xsd:anyURI.
 
   bgt:Verkeersdrempel
     a owl:Class;
     dct:subject concept:FunctieWegPlus_verkeersdrempel;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verkeersdrempel"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#functiewegplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#functiewegplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-lokale-weg/verkeersdrempel-niet-bgt"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/wegdeel/rijbaan-regionale-weg/verkeersdrempel-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Wegdeel;
     sdo:image img:verkeersdrempel;
     skos:definition
@@ -3875,40 +4674,66 @@ bgt: {
     dct:subject concept:TypeKastPlus_verkeersregelinstallatiekast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verkeersregelinstallatiekast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekastplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kast/verkeersregelinstallatiekast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kast;
+    sdo:image img:verkeersregelinstallatiekast;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Kast ten behoeve van de regeling van het verkeer."@nl ].
+  img:verkeersregelinstallatiekast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verkeersregelinstallatiekast"@nl;
+    sdo:caption "Voorbeeld van een verkeersregelinstallatiekast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verkeersregelinstallatiekast.jpg"^^xsd:anyURI.
 
   bgt:Verkeersregelinstallatiepaal
     a owl:Class;
     dct:subject concept:TypePaalPlus_verkeersregelinstallatiepaal;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verkeersregelinstallatiepaal"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/verkeersregelinstallatiepaal-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:verkeersregelinstallatiepaal;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Paal met daaraan bevestigd de verkeersregelinstallatie."@nl ].
+  img:verkeersregelinstallatiepaal
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verkeersregelinstallatiepaal"@nl;
+    sdo:caption "Voorbeeld van een verkeersregelinstallatiepaal."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verkeersregelinstallatiepaal.jpg"^^xsd:anyURI.
 
   bgt:VerklikkerTransportleiding
     a owl:Class;
     dct:subject concept:TypeBordPlus_verklikker_transportleiding;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verklikker transportleiding"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typebordplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/bord/verklikker-transportleiding-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Bord;
+    sdo:image img:verklikkerTransportleiding;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Bovengrondse voorziening om een ondergrondse transportleiding te markeren."@nl ].
+  img:verklikkerTransportleiding
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding verklikker transportleiding"@nl;
+    sdo:caption "Voorbeeld van een verklikker transportleiding."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=verklikkerTransportleiding.jpg"^^xsd:anyURI.
 
   bgt:Verzorgingsplaats
     a owl:Class;
     dct:subject concept:TypeFunctioneelGebiedPlus_verzorgingsplaats;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Verzorgingsplaats"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/infrastructuur-verkeer-en-vervoer-niet-bgt/verzorgingsplaats-niet"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "IMGeo 2.1";
@@ -3932,22 +4757,38 @@ bgt: {
     dct:subject concept:TypeKunstwerkPlus_vispassage;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Vispassage"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/vispassage-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:vispassage;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Een kunstmatige passage ten behoeve van de vistrek bij kunstwerken in wateren."@nl ].
+  img:vispassage
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding vispassage"@nl;
+    sdo:caption "Voorbeeld van een vispassage met relatieve hoogteligging 0."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=vispassage.jpg"^^xsd:anyURI.
 
   bgt:Vlaggenmast
     a owl:Class;
     dct:subject concept:TypePaalPlus_vlaggenmast;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Vlaggenmast"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typepaalplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/paal/vlaggenmast-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Paal;
+    sdo:image img:vlaggenmast;
     skos:definition
       [ dct:creator "IMGeo 1.0";
         rdf:value "Paal bedoeld om vlaggen aan te hangen."@nl ].
+  img:vlaggenmast
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding vlaggenmast"@nl;
+    sdo:caption "Voorbeeld van een vlaggenmast."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=vlaggenmast.jpg"^^xsd:anyURI.
 
   bgt:Voedersilo
     a owl:Class;
@@ -4043,7 +4884,9 @@ bgt: {
     dct:subject concept:TypeFunctioneelGebiedPlus_recreatie_volkstuin;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Volkstuin"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typefunctioneelgebiedplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/functioneelgebied/maatschappelijke-publieksvoorzieningen-niet-bgt/volkstuin-niet"^^xsd:anyURI;
     rdfs:subClassOf bgt:FunctioneelGebied;
     skos:definition
       [ dct:creator "CROW";
@@ -4054,22 +4897,38 @@ bgt: {
     dct:subject concept:TypeKunstwerkPlus_voorde;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Voorde"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typekunstwerkplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/kunstwerkdeel/voorde-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Kunstwerkdeel;
+    sdo:image img:voorde;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Een doorwaadbare, doorgaans verharde, plaats in de waterloop, die dient voor de oversteek van die waterloop."@nl ].
+  img:voorde
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding voorde"@nl;
+    sdo:caption "Voorbeeld van een voorde."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=voorde.jpg"^^xsd:anyURI.
 
   bgt:Vuilvang
     a owl:Class;
     dct:subject concept:TypeWaterinrichtingPlus_vuilvang;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Vuilvang"@nl;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typewaterinrichtingplus"^^xsd:anyURI,
+      "https://imgeo.geostandaarden.nl/def/imgeo-object/waterinrichtingselement/vuilvang-niet-bgt"^^xsd:anyURI;
     rdfs:subClassOf bgt:Waterinrichtingselement;
+    sdo:image img:vuilvang;
     skos:definition
       [ dct:creator "Aquo";
         rdf:value "Een voorziening om de waterloop dan wel één of meerdere objecten benedenstrooms te vrijwaren van drijvend vuil en dergelijke."@nl ].
+  img:vuilvang
+    a sdo:ImageObject;
+    rdfs:label "Afbeelding vuilvang"@nl;
+    sdo:caption "Voorbeeld van een vuilvang."@nl;
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=vuilvang.jpg"^^xsd:anyURI.
 
   bgt:Waarschuwingshek
     a owl:Class;
@@ -4090,12 +4949,12 @@ bgt: {
     a sdo:ImageObject;
     rdfs:label "Afbeelding waarschuwingshek"@nl;
     sdo:caption "Voorbeeld van een waarschuwingshek."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=waarschuwingshek-1.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=waarschuwingshek-1.jpg"^^xsd:anyURI.
   img:waarschuwingshek-2
     a sdo:ImageObject;
     rdfs:label "Afbeelding waarschuwingshek"@nl;
     sdo:caption "Voorbeeld van een waarschuwingshek."@nl;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=waarschuwingshek-2.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=waarschuwingshek-2.jpg"^^xsd:anyURI.
 
   bgt:Walbescherming
     a owl:Class;
@@ -4166,7 +5025,9 @@ bgt: {
     rdfs:seeAlso
       "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#waterinrichtingselement"^^xsd:anyURI,
       "https://imgeo.geostandaarden.nl/def/imgeo-object/waterinrichtingselement"^^xsd:anyURI;
-    rdfs:subClassOf bgt:Inrichtingselement;
+    rdfs:subClassOf
+      bgt:Inrichtingselement,
+      city:Furniture;
     skos:definition
       [ dct:creator "IMGeo 2.0";
         rdf:value "Een ruimtelijk object ter inrichting van het water."@nl ].
@@ -4258,7 +5119,7 @@ bgt: {
     rdfs:subClassOf bgt:RegistratiefGebiedRegistratie.
 
   bgt:Waterstandmeter
-    a owl:Class;
+      a owl:Class;
     dct:subject concept:TypeSensorPlus_waterstandmeter;
     rdfs:isDefinedBy bgt:;
     rdfs:label "Waterstandmeter"@nl;
@@ -4294,8 +5155,8 @@ bgt: {
     rdfs:label "Afbeelding watervlakte"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een watervlakte met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
-  <p>Vlak B is een <a href="bgt:Slootkant">slootkant</a>.</p>
+  <p>Vlak A is een watervlakte met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 0.</p>
+  <p>Vlak B is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Slootkant">slootkant</a>.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=watervlakte.png"^^xsd:anyURI.
 
@@ -4317,9 +5178,9 @@ bgt: {
     rdfs:label "Afbeelding weerstation"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Voorbeeld van een weerstation met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a>.</p>
+  <p>Voorbeeld van een weerstation met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a>.</p>
 </section>"""^^rdf:HTML;
-    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=weerstation.png"^^xsd:anyURI.
+    sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=weerstation.jpg"^^xsd:anyURI.
 
   bgt:Wegdeel
     a owl:Class;
@@ -4557,8 +5418,8 @@ bgt: {
     rdfs:label "Afbeelding woonerf"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Het <a href="bgt:Woonerf">woonerf</a> wordt hier begrensd door de <a href="bgt:Pand">panden</a> en bevat geen afzonderlijk voetpad.</p>
-  <p>Vlak A is een <a href="bgt:Woonerf">woonerf</a> met <a href="fysiek-voorkomen:openVerharding">open verharding</a> en <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a>.</p>
+  <p>Het <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Woonerf">woonerf</a> wordt hier begrensd door de <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Pand">panden</a> en bevat geen afzonderlijk voetpad.</p>
+  <p>Vlak A is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Woonerf">woonerf</a> met <a href="fysiek-voorkomen:openVerharding">open verharding</a> en <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a>.</p>
   <p>De perken met <a href="fysiek-voorkomen:groenvoorziening">groenvoorziening</a> zijn &lt;5m² en daarom eventueel IMGeo inhoud.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=woonerf.jpg"^^xsd:anyURI.
@@ -4616,9 +5477,9 @@ bgt: {
     rdfs:label "Afbeelding zee"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Vlak A is een <a href="bgt:BegroeidTerreindeel">begroeid terreindeel</a> met fysiek voorkomen <a href="fysiek-voorkomen:duin">duin</a>.</p>
-  <p>Vlak B is een <a href="bgt:OnbegroeidTerreindeel">onbegroeid terreindeel</a> met fysiek voorkomen <a href="fysiek-voorkomen:zand">zand</a>.</p>
-  <p>Vlak C is <a href="bgt:Zee">zee</a>.</p>
+  <p>Vlak A is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/BegroeidTerreindeel">begroeid terreindeel</a> met fysiek voorkomen <a href="fysiek-voorkomen:duin">duin</a>.</p>
+  <p>Vlak B is een <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/OnbegroeidTerreindeel">onbegroeid terreindeel</a> met fysiek voorkomen <a href="fysiek-voorkomen:zand">zand</a>.</p>
+  <p>Vlak C is <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/Zee">zee</a>.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=zee.jpg"^^xsd:anyURI.
 
@@ -4659,7 +5520,7 @@ bgt: {
     rdfs:label "Afbeelding zonnepaneel"@nl;
     sdo:caption """
 <section lang="nl">
-  <p>Voorbeeld van een zonnepaneel met <a href="bgt:relatieveHoogteligging">relatieve hoogteligging</a> 1.</p>
+  <p>Voorbeeld van een zonnepaneel met <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/relatieveHoogteligging">relatieve hoogteligging</a> 1.</p>
 </section>"""^^rdf:HTML;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=zonnepaneel.png"^^xsd:anyURI.
 }

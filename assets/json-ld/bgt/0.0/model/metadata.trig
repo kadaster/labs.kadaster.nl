@@ -345,7 +345,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
       sd:Graph,
       void:Dataset;
     owl:versionInfo "0.1";
-    rdfs:label "Informatie model voor de BGT"@nl;
+    rdfs:label "Informatiemodel voor de BGT"@nl;
     sd:name graph:shape;
     sdo:license "http://creativecommons.org/licenses/by/4.0"^^xsd:anyURI;
     void:triples "123"^^xsd:nonNegativeInteger.

@@ -58,12 +58,22 @@ bgt: {
     rdfs:range xsd:boolean;
     rdfs:seeAlso "GEEN BRON"^^xsd:anyURI.
 
+  bgt:bagOpenbareRuimte
+    a owl:ObjectProperty;
+    rdfs:domain bgt:OpenbareRuimteLabelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Is gerelateerd aan BAG openbare ruimte"@nl;
+    rdfs:range bag:OpenbareRuimte;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatiebagopr"^^xsd:anyURI;
+    skos:definition "De unieke identificatie van het object zoals is toegekend in de BAG-administratie."@nl.
+
   bgt:bagPand
     a owl:ObjectProperty;
     rdfs:domain bgt:PandRegistratie;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Heeft BAG pand"@nl;
+    rdfs:label "Is gerelateerd aan BAG pand"@nl;
     rdfs:range bag:Pand;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatiebagpnd"^^xsd:anyURI;
     skos:definition "De unieke identificatie van het object zoals is toegekend in de BAG-administratie."@nl.
 
   bgt:beweegbaar
@@ -204,11 +214,28 @@ bgt: {
     #       bgt:OndersteunendWegdeelRegistratie
     #       bgt:WegdeelRegistratie) ];
     rdfs:label "Heeft kruinlijn"@nl;
-    rdfs:range geo:Geometry;
-    rdfs:subClassOf geo:hasGeometry;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnbegroeidterreindeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnonbegroeidterreindeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnondersteunendwegdeel"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnwegdeel"^^xsd:anyURI;
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Lijngeometrie van de hoogstgelegen begrenzing van een kunstmatig aangelegd en onderhouden helling."@nl ].
+
+  bgt:naam
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:FunctioneelGebiedRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft naam"@nl;
+    rdfs:range rdf:langString;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam-0"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "IMGeo 2.0";
+        rdf:value "De benaming van het gebied."@nl ].
 
   bgt:nauwkeurigheid
     a owl:DatatypeProperty;
@@ -242,6 +269,39 @@ bgt: {
     skos:definition
       [ dct:creator "Stelselcatalogus";
         rdf:value "Een aanduiding waarmee wordt aangegeven dat een onderzoek wordt uitgevoerd naar de juistheid van een of meer gegevens van het betreffende object."@nl ].
+
+  bgt:openbareRuimteNaam
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:OpenbareRuimteLabelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft openbare ruimte naam"@nl;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtenaam"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BAG";
+        rdf:value "Een door het bevoegde gemeentelijke orgaan aan een OPENBARE RUIMTE toegekende benaming."@nl ];
+    skos:scopeNote "Bij dit attribuut is aangegeven dat zowel materiële als formele historie worden bijgehouden. De openbare ruimtenaam is opgenomen in het BGT informatiemodel ten behoeve van visualisatie maar wordt overgenomen uit de BAG."@nl.
+
+  bgt:openbareRuimteType
+    a owl:DatatypeProperty;
+    rdfs:domain bgt:OpenbareRuimteLabelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft openbare ruimte naam"@nl;
+    rdfs:range
+      [ a owl:Class;
+        owl:oneOf
+          ( bag:AdministratiefGebied
+            bag:Kunstwerk
+            bag:LandschappelijkGebied
+            bag:Spoorbaan
+            bag:Terrein
+            bag:Water
+            bag:Weg ) ];
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#openbareruimtetype"^^xsd:anyURI;
+    skos:definition
+      [ dct:creator "BAG";
+        rdf:value "De aard van de als zodanig benoemde OPENBARE RUIMTE."@nl ];
+    skos:scopeNote "Bij dit attribuut is aangegeven dat zowel materiële als formele historie worden bijgehouden. De openbare ruimtenaam is opgenomen in het BGT informatiemodel ten behoeve van visualisatie maar wordt overgenomen uit de BAG."@nl.
 
   bgt:plusFunctie
     a owl:ObjectProperty;
@@ -280,7 +340,7 @@ bgt: {
     a owl:DatatypeProperty;
     rdfs:domain bgt:IMGeoObjectRegistratie;
     rdfs:isDefinedBy bgt:;
-    rdfs:label "Relatieve hoogteligging"@nl;
+    rdfs:label "Heeft relatieve hoogteligging"@nl;
     rdfs:range xsd:integer;
     rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#relatievehoogteligging"^^xsd:anyURI;
     skos:definition
@@ -344,10 +404,8 @@ bgt: {
     rdfs:range bgt:Status;
     rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#status"^^xsd:anyURI;
     skos:definition
-      [ dct:creator "IMGeo 1.0";
-        rdf:value "Situatie waarin het object wordt / kan worden gebruikt voor het doel waarvoor het is gebouwd / aangelegd."@nl ],
       [ dct:creator "IMGeo";
-        rdf:value "De status gekoppeld aan de levenscyclus van een geo-object, indien dit een uitbreiding van de populatie betreft."@nl ].
+        rdf:value "De status gekoppeld aan de levenscyclus van een geo-object."@nl ].
 
   bgt:talud
     a owl:DatatypeProperty;
@@ -381,6 +439,15 @@ bgt: {
     skos:definition
       [ dct:creator "BGT";
         rdf:value "Tekst voor het label."@nl ].
+
+  bgt:typeOverbruggingsdeel
+    a owl:ObjectProperty;
+    rdfs:domain bgt:OverbruggingsdeelRegistratie;
+    rdfs:isDefinedBy bgt:;
+    rdfs:label "Heeft type overbruggingsdeel"@nl;
+    rdfs:range tbd:;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#typeoverbruggingsdeel"^^xsd:anyURI;
+    skos:definition "Het soort onderdeel van de brugconstructie."@nl.
 
   bgt:wijk
     a owl:ObjectProperty;

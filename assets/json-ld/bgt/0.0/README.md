@@ -1,3 +1,7 @@
+- nummeraanduidingen checken met de BAG
+- bag links checken op null waardes
+- foute naamaanduidingreeks: 0141100000093424
+
 # Documentatie BGT LD
 
 Voer het volgende script uit om voor alle BGT types linked data te downloaden:

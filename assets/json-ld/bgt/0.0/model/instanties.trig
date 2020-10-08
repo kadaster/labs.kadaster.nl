@@ -703,7 +703,7 @@ bgt: {
         rdf:value "Verharding bestaande uit een door verdichting gebonden materiaal, of onsamenhangend materiaal."@nl ].
   img:halfVerhard
     a sdo:ImageObject;
-    rdfs:label "Afbeelding hald verhard"@nl;
+    rdfs:label "Afbeelding half verhard"@nl;
     sdo:caption "Voorbeeld van een half verhard voetpad."@nl;
     sdo:contentUrl "https://api.labs.kadaster.nl/datasets/kadaster/bgt/assets/download?fileName=halfVerhard.jpg"^^xsd:anyURI.
 

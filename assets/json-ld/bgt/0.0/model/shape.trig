@@ -53,8 +53,8 @@ graph:shape {
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:plusType,
-      shape:puntgeometrie,
       shape:type;
     sh:targetClass bgt:BakRegistratie.
 
@@ -63,18 +63,18 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:property
       shape:fysiekVoorkomen,
+      shape:geometrie,
       shape:kruinlijn,
-      shape:multivlakgeometrie,
-      shape:talud,
-      shape:vlakgeometrie;
+      shape:plusFysiekVoorkomen,
+      shape:talud;
     sh:targetClass bgt:BegroeidTerreindeelRegistratie.
 
   shape:BordRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:plusType,
-      shape:puntGeometrie,
       shape:type;
     sh:targetClass bgt:BordRegistratie.
 
@@ -90,19 +90,19 @@ graph:shape {
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:naam,
       shape:plusType,
-      shape:type,
-      shape:vlakgeometrie;
+      shape:type;
     sh:targetClass bgt:FunctioneelGebiedRegistratie.
 
   shape:GebouwinstallatieRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:plusType,
-      shape:type,
-      shape:vlakGeometrie;
+      shape:type;
     sh:targetClass bgt:GebouwinstallatieRegistratie.
 
   shape:Identificatie
@@ -130,18 +130,61 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:property
       shape:eindRegistratie,
+      shape:identificatie,
       shape:inOnderzoek,
       shape:object,
       shape:objectBeginTijd,
       shape:objectEindTijd,
       shape:publicatiedatumLandelijkeVoorzieningen,
+      shape:relatieveHoogteligging,
+      shape:status,
       shape:tijdstipRegistratie;
     sh:targetClass bgt:IMGeoObjectRegistratie.
+
+  shape:InrichtingselementRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property shape:type;
+    sh:targetClass bgt:InrichtingselementRegistratie.
+
+  shape:InstallatieRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:InstallatieRegistratie.
+
+  shape:KastRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:KastRegistratie.
+
+  shape:MastRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:MastRegistratie.
+
+  shape:KunstwerkdeelRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:KunstwerkdeelRegistratie.
 
   shape:Nummeraanduidingreeks
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nummeraanduidingreeks-0"^^xsd:anyURI;
     sh:property
       # nummeraanduidingreeks/identificatieBAGVBOLaagsteHuisnummer
       shape:bagEersteVerblijfsobject,
@@ -156,24 +199,37 @@ graph:shape {
       shape:fyiekVoorkomen,
       shape:geometrie,
       shape:kruinlijn,
+      shape:plusFysiekVoorkomen,
       shape:talud;
     sh:targetClass bgt:OnbegroeidTerreindeelRegistratie.
 
   shape:OndersteunendWaterdeelRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
-    sh:property shape:vlakgeometrie;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
     sh:targetClass bgt:OndersteunendWaterdeelRegistratie.
 
   shape:OndersteunendWegdeelRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:functie,
       shape:fysiekVoorkomen,
+      shape:geometrie,
       shape:kruinlijn,
-      shape:talud,
-      shape:vlakgeometrie;
+      shape:plusFunctie,
+      shape:plusFysiekvoorkomen,
+      shape:talud;
     sh:targetClass bgt:OndersteunendWegdeelRegistratie.
+
+  shape:OpenbareRuimteRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property shape:naamEnIdOpenbareRuimte;
+    sh:targetClass bgt:OpenbareRuimteRegistratie.
 
   shape:OpenbareRuimteLabelRegistratie
     a sh:NodeShape;
@@ -189,9 +245,18 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:property
       shape:beweegbaar,
+      shape:geometrie,
       shape:hoortBijTypeOverbrugging,
-      shape:vlakgeometrie;
+      shape:typeOverbruggingsdeel;
     sh:targetClass bgt:OverbruggingsdeelRegistratie.
+
+  shape:OverigBouwwerkRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:OverigBouwwerkRegistratie.
 
   shape:OverigeConstructieRegistratie
     a sh:NodeShape;
@@ -202,16 +267,20 @@ graph:shape {
   shape:PaalRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
-    sh:property shape:hectometeraanduiding;
+    sh:property
+      shape:geometrie,
+      shape:hectometeraanduiding,
+      shape:plusType,
+      shape:type;
     sh:targetClass bgt:PaalRegistratie.
 
   shape:PandRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:nummeraanduidingreeks,
-      shape:identificatieBagPand,
-      shape:vlakgeometrie;
+      shape:identificatieBagPand;
     sh:targetClass bgt:PandRegistratie.
 
   shape:PlaatsbepalingspuntRegistratie
@@ -219,41 +288,107 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:property
       shape:datumInwinning,
-      shape:identificatiePlaatsbepalingspunt,
+      shape:geometrie,
+      shape:identificatie,
       shape:inwinnendeInstantie,
       shape:inwinningsmethode,
-      shape:nauwkeurigheid,
-      shape:puntgeometrie;
+      shape:nauwkeurigheid;
     sh:targetClass bgt:PlaatsbepalingspuntRegistratie.
+
+  shape:PutRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:PutRegistratie.
 
   shape:RegistratiefGebiedRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
-    sh:property shape:naam;
+    sh:property
+      shape:geometrie,
+      shape:naam;
     sh:targetClass bgt:RegistratiefGebiedRegistratie.
+
+  shape:ScheidingRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:ScheidingRegistratie.
+
+  shape:SensorRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:SensorRegistratie.
 
   shape:SpoorRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
-      shape:lijngeometrie,
-      shape:vlakgeometrie;
+      shape:functie,
+      shape:geometrie,
+      shape:plusFunctie;
     sh:targetClass bgt:SpoorRegistratie.
+
+  shape:StadsdeelRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:targetClass bgt:StadsdeelRegistratie.
+
+  shape:StraatmeubilairRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:StraatmeubilairRegistratie.
 
   shape:TunneldeelRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
-    sh:property shape:vlakgeometrie;
+    sh:property shape:geometrie;
     sh:targetClass bgt:TunneldeelRegistratie.
+
+  shape:VegetatieObjectRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:VegetatieObjectRegistratie.
+
+  shape:WaterinrichtingselementRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:property
+      shape:geometrie,
+      shape:plusType,
+      shape:type;
+    sh:targetClass bgt:WaterinrichtingselementRegistratie.
 
   shape:WaterdeelRegistratie
     a sh:NodeShape;
     rdfs:isDefinedBy graph:shape;
     sh:property
+      shape:geometrie,
       shape:plusType,
-      shape:type,
-      shape:vlakgeometrie;
+      shape:type;
     sh:targetClass bgt:WaterdeelRegistratie.
+
+  shape:WaterschapRegistratie
+    a sh:NodeShape;
+    rdfs:isDefinedBy graph:shape;
+    sh:targetClass bgt:WaterschapRegistratie.
 
   shape:WegdeelRegistratie
     a sh:NodeShape;
@@ -261,11 +396,11 @@ graph:shape {
     sh:property
       shape:functie,
       shape:fysiekVoorkomen,
+      shape:geometrie,
       shape:kruinlijn,
       shape:plusFunctie,
       shape:plusFysiekVoorkomen,
-      shape:talud,
-      shape:vlakGeometrie;
+      shape:talud;
     sh:targetClass bgt:WegdeelRegistratie.
 
   shape:WeginrichtingselementRegistratie
@@ -290,6 +425,7 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:datatype xsd:boolean;
     sh:maxCount 1;
+    sh:minCount 0;
     sh:path bgt:beweegbaar.
 
   shape:bronhouder
@@ -319,6 +455,9 @@ graph:shape {
   shape:eindRegistratie
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#eindregistratie"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/nen3610/nldp/#regels-attributen-formeleHistorie"^^xsd:anyURI;
     sh:datatype xsd:dateTime;
     sh:maxCount 1;
     sh:minCount 0;
@@ -357,7 +496,7 @@ graph:shape {
     sh:datatype geo:wktLiteral;
     sh:maxCount 1;
     sh:minCount 1;
-    sh:name "Heeft tweedimensinale punt-, lijn-, vlak- of multivlakgeometrie"@nl;
+    sh:name "Heeft tweedimensionale punt-, lijn-, vlak- of multivlakgeometrie"@nl;
     sh:path bgt:geometrie.
 
   shape:hectometeraanduiding
@@ -365,6 +504,7 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     sh:datatype xsd:string;
     sh:maxCount 1;
+    sh:minCount 0;
     sh:path bgt:hectometeraanduiding.
 
   shape:hoek
@@ -390,6 +530,17 @@ graph:shape {
     sh:minCount 0;
     sh:path bgt:hoortBijTypeOverbrugging.
 
+  shape:identificatie
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie-0"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:description "Uniek identificatienummer voor het object dat onveranderlijk is zolang het object bestaat."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "Heeft identificatie"@nl;
+    sh:path nen3610:identificatie.
+
   shape:identificatieBagOpenbareRuimte
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
@@ -398,7 +549,7 @@ graph:shape {
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "Heeft BAG openbare ruimte"@nl;
-    sh:path geo:sfWithin;
+    sh:path bgt:bagOpenbareRuimte;
     skos:definition
       [ dct:creator "BAG";
         rdf:value "De unieke identificatie van het object zoals is toegekend in de BAG-administratie."@nl ].
@@ -406,39 +557,10 @@ graph:shape {
   shape:identificatieBagPand
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatiebagpnd"^^xsd:anyURI;
     sh:class bag:Pand;
     sh:maxCount 1;
     sh:minCount 1;
     sh:path bgt:bagPand.
-
-  shape:identificatieObject
-    a sh:PropertyShape;
-    rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie"^^xsd:anyURI,
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie-en-historie"^^xsd:anyURI;
-    sh:class nen3610:Identificatie;
-    sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft identificatie"@nl;
-    sh:path nen3610:identificatie;
-    skos:definition
-      [ dct:creator "BGT";
-        rdf:value "Uniek identificatienummer voor het object dat onveranderlijk is zolang het object bestaat."@nl ].
-
-  shape:identificatiePlaatsbepalingspunt
-    a sh:PropertyShape;
-    rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#identificatie-1"^^xsd:anyURI;
-    sh:class nen3610:Identificatie;
-    sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft identificatie"@nl;
-    sh:path nen3610:identificatie;
-    skos:definition
-      [ dct:creator "BGT";
-        rdf:value "Uniek identificatienummer voor het object dat onveranderlijk is zolang het object bestaat."@nl ].
 
   shape:inOnderzoek
     a sh:PropertyShape;
@@ -470,28 +592,10 @@ graph:shape {
   shape:kruinlijn
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnbegroeidterreindeel"^^xsd:anyURI,
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnonbegroeidterreindeel"^^xsd:anyURI,
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnondersteunendwegdeel"^^xsd:anyURI,
-      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#associatie-kruinlijnwegdeel"^^xsd:anyURI;
-    sh:class gml:Curve;
-    sh:maxCount 1;
-    sh:path bgt:kruinlijn.
-
-  shape:lijngeometrie
-    a sh:PropertyShape;
-    rdfs:isDefinedBy graph:shape;
-    # gml:Curve;
     sh:datatype geo:wktLiteral;
-    sh:description """
-<section lang="nl">
-  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Lijngeometrieën worden aangeduid met de <code>gml:Curve</code> klasse.</p>
-</section>"""^^rdf:HTML;
     sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft tweedimensionale lijngeometrie"@nl;
-    sh:path bgt:geometrie.
+    sh:minCount 0;
+    sh:path bgt:kruinlijn.
 
   shape:lokaalID
     a sh:PropertyShape;
@@ -507,33 +611,13 @@ graph:shape {
         rdf:value "Unieke identificatiecode binnen een registratie."@nl ];
     skos:scopeNote "LokaalID is de identificatiecode die een object heeft binnen een (lokaal) registratie. De volgende karakters mogen in een lokaalID voorkomen: {A…Z, a…z, 0…9, “_”, “-“, “,”, ”.”}  Dit is de IMGeo identificatie. Een betekenisloos nummer."@nl.
 
-  shape:multivlakgeometrie
-    a sh:PropertyShape;
-    rdfs:isDefinedBy graph:shape;
-    # gml:MultiSurface;
-    sh:datatype geo:wktLiteral;
-    sh:description """
-<section lang="nl">
-  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Multivlakgeometrieën worden aangeduid met de <code>gml:MultiSurface</code> klasse.</p>
-</section>"""^^rdf:HTML;
-    sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft tweedimensionale multivalkgeometrie"@nl;
-    sh:path bgt:geometrie.
-
   shape:naam
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso
-      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam"^^xsd:anyURI,
-      "https://docs.geostandaarden.nl/imgeo/catalogus/imgeo/#naam-0"^^xsd:anyURI;
     sh:datatype rdf:langString;
     sh:maxCount 1;
-    sh:name "Naam"@nl;
-    sh:path sdo:name;
-    skos:definition
-      [ dct:creator "IMGeo 2.0";
-        rdf:value "De benaming van het gebied."@nl ].
+    sh:minCount 0;
+    sh:path bgt:naam.
 
   shape:namespace
     a sh:PropertyShape;
@@ -562,7 +646,17 @@ graph:shape {
     rdfs:isDefinedBy graph:shape;
     rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#nummeraanduidingreeks"^^xsd:anyURI;
     sh:class bgt:Nummeraanduidingreeks;
+    # [0-*]
     sh:path bgt:nummeraanduidingreeks.
+
+  shape:object
+    a sh:PropertyShape;
+    rdfs:isDefinedBy graph:shape;
+    rdfs:seeAlso "https://docs.geostandaarden.nl/nen3610/nldp/#provenance"^^xsd:anyURI;
+    sh:class bgt:IMGeoObject;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path foaf:primaryTopic.
 
   shape:objectBegintijd
     a sh:PropertyShape;
@@ -591,6 +685,7 @@ graph:shape {
     rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#objecteindtijd"^^xsd:anyURI;
     sh:datatype xsd:date;
     sh:maxCount 1;
+    sh:minCount 0;
     sh:name "Heeft object eindtijd"@nl;
     sh:path nen3610:eindGeldigheid;
     skos:definition
@@ -661,19 +756,6 @@ graph:shape {
     sh:minCount 0;
     sh:path bgt:publicatiedatumLandelijkeVoorzieningen.
 
-  shape:puntgeometrie
-    a sh:PropertyShape;
-    rdfs:isDefinedBy graph:shape;
-    sh:datatype geo:wktLiteral; # gml:Point;
-    sh:description """
-<section lang="nl">
-  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Pointgeometrieën worden aangeduid met de <code>gml:Point</code> klasse.</p>
-</section>"""^^rdf:HTML;
-    sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft tweedimensionale puntgeometrie"@nl;
-    sh:path bgt:geometrie.
-
   shape:registratie
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
@@ -682,9 +764,7 @@ graph:shape {
     sh:minCount 1;
     sh:name "Heeft registratie"@nl;
     sh:node shape:GeoObjectRegistratie;
-    sh:path
-      foaf:isPrimaryTopicOf,
-      [ sh:inversePath foaf:primaryTopic ].
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:relatieveHoogteligging
     a sh:PropertyShape;
@@ -730,40 +810,44 @@ graph:shape {
   shape:tijdstipRegistratie
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
-    rdfs:seeAlso "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#tijdstipregistratie"^^xsd:anyURI;
+    rdfs:seeAlso
+      "https://docs.geostandaarden.nl/imgeo/catalogus/bgt/#tijdstipregistratie"^^xsd:anyURI,
+      "https://docs.geostandaarden.nl/nen3610/nldp/#regels-attributen-formeleHistorie"^^xsd:anyURI;
     sh:datatype xsd:dateTime;
+    sh:maxCount 1;
+    sh:minCount 1;
     sh:name "Heeft tijdstip registratie"@nl;
     sh:path prov:generatedAtTime;
     skos:definition
       [ dct:creator "NEN 3610:2011";
         rdf:value "Tijdstip waarop deze instantie van het object is opgenomen door de bronhouder."@nl ];
-    skos:scopeNote """<p lang="nl">Als een mutatie niet resulteert in een nieuw object, dan ontstaat een nieuwe versie van het object.  In deze situatie verandert het <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/tijdstipRegistratie">tijdstip registratie</a> van het object, terwijl de <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/objectBeginTijd">object begintijd</a> gelijk blijft.</p>"""^^rdf:HTML.
+    skos:scopeNote """
+<section lang="nl">
+  <p>Als een mutatie niet resulteert in een nieuw object, dan ontstaat een nieuwe versie van het object.  In deze situatie verandert het <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/tijdstipRegistratie">tijdstip registratie</a> van het object, terwijl de <a href="https://bgt.basisregistraties.overheid.nl/bgt/def/objectBeginTijd">object begintijd</a> gelijk blijft.</p>
+</section>"""^^rdf:HTML.
 
   shape:type
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
     sh:class owl:Class;
     sh:maxCount 1;
+    sh:minCount 0;
     sh:path bgt:type.
 
-  shape:vlakgeometrie
+  shape:typeOverbruggingsdeel
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
-    sh:datatype geo:wktLiteral; # gml:Surface;
-    sh:description """
-<section lang="nl">
-  <p>De linked data BGT gebruikt GeoSPARQL voor het representeren van de geometrieën.  Vlakgeometrieën worden aangeduid met de <code>gml:Surface</code> klasse.</p>
-</section>"""^^rdf:HTML;
+    sh:class tbd:;
     sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "Heeft tweedimensionale valkgeometrie"@nl;
-    sh:path bgt:geometrie.
+    sh:minCount 0;
+    sh:path bgt:typeOverbruggingsdeel.
 
   shape:wijk
     a sh:PropertyShape;
     rdfs:isDefinedBy graph:shape;
     sh:class bgt:Wijk;
     sh:maxCount 1;
+    sh:minCount 0;
     sh:path bgt:wijk.
 
   shape:wijkcode
