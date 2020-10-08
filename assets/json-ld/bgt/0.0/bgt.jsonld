@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
     "begroeidterreindeeloptalud": "talud",
@@ -129,9 +130,11 @@
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
+      "@id": "objectBegintijd",
       "@type": "xsd:date"
     },
     "objecteindtijd": {
+      "@id": "objectEindtijd",
       "@type": "xsd:date"
     },
     "ogc_fid": null,
@@ -141,7 +144,7 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
-      "@id": "rdf:type",
+      "@id": "openbareRuimteType",
       "@type": "@id"
     },
     "overbruggingisbeweegbaar": "beweegbaar",
@@ -175,7 +178,6 @@
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "Registratie": "IMGeoObjectRegistratie",
     "registratie": {
       "@context": {
@@ -183,6 +185,7 @@
       }
     },
     "relatievehoogteligging": {
+      "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
     "tijdstipregistratie": {
