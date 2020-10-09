@@ -42,7 +42,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bgtHigh3.jpg">
       <div class="card-title">Proeftuin BGT mutatiesignalering</div>
-      <div class="card-description">Deelnemers gezocht voor de BGT proeftuin mutatiesignalering!</div>
+      <div class="card-description">Kadaster proeftuin BGT mutatiesignalering van start</div>
     </div>
   </a>
   <a href="/cases/akte-ocr">
