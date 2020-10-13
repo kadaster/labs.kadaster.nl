@@ -129,6 +129,7 @@
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "nieuw": "@nest",
     "objectbegintijd": {
       "@id": "objectBegintijd",
       "@type": "xsd:date"
@@ -206,6 +207,7 @@
       "@id": "typeOverbruggingsdeel",
       "@type": "@id"
     },
+    "vervallen": "@nest",
     "wegdeeloptalud": "talud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
