@@ -195,7 +195,7 @@
       "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
-    "tijdstipregistratie": {
+   "tijdstipregistratie": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
