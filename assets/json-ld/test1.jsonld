@@ -4,6 +4,10 @@
     "label_en": { "@id": "http://www.w3.org/2000/01/rdf-schema#label", "@language": "en" },
     "starring": "http://dbpedia.org/ontology/starring",
     "writer": "http://dbpedia.org/ontology/writer",
-    "artist": "http://dbpedia.org/ontology/musicalArtist"
+    "artist": "http://dbpedia.org/ontology/musicalArtist",
+    "name": { "@id": "http://purl.org/dc/terms/title", "@language": "en" },
+    "description": "http://purl.org/dc/terms/description",
+    "developer": { "@id": "http://dbpedia.org/ontology/developer" },
+    "country": { "@id": "http://dbpedia.org/ontology/locationCountry" }
   }
 }
