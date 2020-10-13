@@ -4,6 +4,13 @@
 
 # Documentatie BGT LD
 
+De eenvoudigste manier om BGT LD data om te zetting is door in de
+triple store een dataset aan te maken en de volgende URL op te geven
+bij het toevoegen van nieuwe grafen:
+https://labs.kadaster.nl/enhancer-bgt/bak/1/2000
+
+# Optioneel: Lokale stapen
+
 Voer het volgende script uit om voor alle BGT types linked data te downloaden:
 
 ```sh
