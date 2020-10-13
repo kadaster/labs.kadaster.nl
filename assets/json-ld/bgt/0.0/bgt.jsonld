@@ -177,6 +177,13 @@
       "@id": "plusFysiekVoorkomen",
       "@type": "@id"
     },
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
     "prov": "http://www.w3.org/ns/prov#",
     "Registratie": "IMGeoObjectRegistratie",
     "registratie": {
