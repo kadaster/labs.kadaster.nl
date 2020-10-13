@@ -43,6 +43,10 @@
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
+    "tijdstipregistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": {
@@ -195,10 +199,7 @@
       "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
-   "tijdstipregistratie": {
-      "@id": "prov:generatedAtTime",
-      "@type": "xsd:dateTime"
-    },
+
     "typeoverbruggingsdeel": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
