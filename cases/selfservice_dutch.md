@@ -3,7 +3,7 @@ layout: page
 title: Self Service Tooling	
 ---
 
-# Gebruiksgeval: Self Service GIS - Een Visioen
+# Use Case: Self Service GIS - Een Visie
 
 ## Introductie
 Het strategische meerjarenplan van het Kadaster is bedoeld om ‘geo-informatie voor iedereen’ te bieden, om het beantwoorden van de meest relevante maatschappelijke vragen te ondersteunen. Hoewel we veel van de data die we momenteel hebben in een voor ontwikkelaars goed bruikbaar technisch format kunnen aanbieden, zal het beschikbaar stellen van data in andere formats en via andere middelen een breder scala aan gebruikers toegang geven om de data van het Kadaster te gebruiken.
@@ -19,7 +19,7 @@ Deze gebruikersgroep is doorgaans niet goed thuis in de technische fijne kneepje
 
 ## Wat zijn de kenmerken van Self-Service GIS?
 <div class="textbox" markdown="1">
-## Zelfbediening GIS gedefinieerd
+## Self-Service GIS defined
 Esri, de toonaangevende commerciële leverancier van geospatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden.  Over het algemeen is een self-service GIS een applicatie die een gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
 </div>
 
@@ -34,7 +34,9 @@ Om de technologische benadering van deze use case te ontwerpen, moeten we eerst 
 
 De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieën. Waar mogelijk zijn voorbeelden voor elke categorie opgenomen om de functionaliteiten die voor ons onderzoek van belang zijn, te demonstreren.
 
- - Data Browsers en Viewers
+*the following is a work in progress
+
+###Data Browsers en Viewers
 
 <div class="cards-wrapper">
   <a href="/browsers/bevolking/">
@@ -55,7 +57,7 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
   </a>
 </div>
   
-- Analytics Dashboards
+###Analytics Dashboards
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
@@ -79,9 +81,8 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
   </figcaption>
 </figure>
 
-- Querying Interfaces
+###Querying Interfaces
 
 ## Self-Service GIS Architecture
-
 
 ## Het Resultaat
