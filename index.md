@@ -37,6 +37,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
+    <a href="/cases/selfservice_dutch">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Self-Service GIS</div>
+      <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
+    </div>
+  </a>
   <a href="/cases/proeftuin">
     <div class="card">
       <div class="card-type">Use Case</div>
