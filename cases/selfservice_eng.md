@@ -5,7 +5,7 @@ title: Self Service Tooling
 
 # Use Case: Self Service GIS - A Vision
 
-Voor de Nederlandse versie, <a href="/cases/selfservice_eng">klik hier</a>.
+Voor de Nederlandse versie, <a href="/cases/selfservice_dutch">klik hier</a>.
 
 ## Introduction 
 Kadaster's multi-year strategy plan seeks to provide "geo-information for everyone" to support the answering of the most pertinent societal questions. 
