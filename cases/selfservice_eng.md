@@ -5,6 +5,8 @@ title: Self Service Tooling
 
 # Use Case: Self Service GIS - A Vision
 
+Voor de Nederlandse versie, <a href="/cases/selfservice_eng">klik hier</a>.
+
 ## Introduction 
 Kadaster's multi-year strategy plan seeks to provide "geo-information for everyone" to support the answering of the most pertinent societal questions. 
 While we are able to offer much of the data we currently have in a technical format which suits developers well, making data available in order formats and through other means will allow a wider range of users to access and interact with Kadaster's data. 
@@ -42,7 +44,7 @@ Our investigation take us beyond GIS specific tooling and also looks at other ex
 
 The tooling examples are divided into three categories as below. Where possible, demonstrators for each category have been included to showcase the functionalities of interest in our investigation. 
 
- - Data Browsers and Viewers
+### Data Browsers and Viewers
 
 <div class="cards-wrapper">
   <a href="/browsers/bevolking/">
@@ -63,7 +65,7 @@ The tooling examples are divided into three categories as below. Where possible,
   </a>
 </div>
   
-- Analytics Dashboards
+### Analytics Dashboards
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
@@ -76,6 +78,8 @@ The tooling examples are divided into three categories as below. Where possible,
   </figcaption>
 </figure>
 
+<!-- 
+TODO: Fix .webm file later
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
     <source src="/assets/videos/gruff_bag.mp4" type="video/mp4">
@@ -85,11 +89,13 @@ The tooling examples are divided into three categories as below. Where possible,
   <figcaption>
     Figure 2 ― Demonstration of the use of the BAG dataset within a Graphical Browser and Querying Tool (<a href="https://allegrograph.com/products/gruff/" target="_blank">Gruff</a>).
   </figcaption>
-</figure>
+</figure> -->
 
-- Querying Interfaces
+### Querying Interfaces
+Work in Progress..
 
 ## Self-Service GIS Architecture
+Work in Progress..
 
-
-## The Result
+## Het Resultaat
+Work in Progress..

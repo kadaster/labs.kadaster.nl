@@ -5,6 +5,8 @@ title: Self Service Tooling
 
 # Use Case: Self Service GIS - Een Visie
 
+For the english version, see <a href="/cases/selfservice_eng">the english version here</a>.
+
 ## Introductie
 Het strategische meerjarenplan van het Kadaster is bedoeld om ‘geo-informatie voor iedereen’ te bieden, om het beantwoorden van de meest relevante maatschappelijke vragen te ondersteunen. Hoewel we veel van de data die we momenteel hebben in een voor ontwikkelaars goed bruikbaar technisch format kunnen aanbieden, zal het beschikbaar stellen van data in andere formats en via andere middelen een breder scala aan gebruikers toegang geven om de data van het Kadaster te gebruiken.
 
@@ -36,7 +38,7 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
 
 *the following is a work in progress
 
-###Data Browsers en Viewers
+### Data Browsers en Viewers
 
 <div class="cards-wrapper">
   <a href="/browsers/bevolking/">
@@ -57,7 +59,7 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
   </a>
 </div>
   
-###Analytics Dashboards
+### Analytics Dashboards
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
@@ -70,6 +72,8 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
   </figcaption>
 </figure>
 
+<!-- 
+TODO: Fix .webm file later.
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
     <source src="/assets/videos/gruff_bag.mp4" type="video/mp4">
@@ -80,9 +84,13 @@ De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieë
     Figuur 2 ― Demonstratie van het gebruik van de BAG-dataset binnen een grafische browser en querytool (<a href="https://allegrograph.com/products/gruff/" target="_blank">Gruff</a>).
   </figcaption>
 </figure>
-
-###Querying Interfaces
+ -->
+ 
+### Querying Interfaces
+Work in Progress..
 
 ## Self-Service GIS Architecture
+Work in Progress..
 
 ## Het Resultaat
+Work in Progress..
