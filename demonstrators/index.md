@@ -23,6 +23,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
     </div>
   </a>
+  <a href="/demonstrators/sensrnet/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/SensRNet-logo.png">
+      <div class="card-title">Ontwikkeling Sensorenregister</div>
+      <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
+    </div>
+  </a>
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
