@@ -7,7 +7,9 @@
 De eenvoudigste manier om BGT LD data om te zetting is door in de
 triple store een dataset aan te maken en de volgende URL op te geven
 bij het toevoegen van nieuwe grafen:
-https://labs.kadaster.nl/enhancer-bgt/bak/1/2000
+https://labs.kadaster.nl/enhancer-bgt/{object-type}/{eerste-id}/{laatste-id}
+
+Bijvoorbeeld: https://labs.kadaster.nl/enhancer-bgt/bak/1/2000
 
 # Optioneel: Lokale stapen
 
