@@ -103,6 +103,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
     </div>
   </a>
+  <a href="/demonstrators/flitser-tijdreis">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/flitser.svg">
+      <div class="card-title">Flitser Tijdreis</div>
+      <div class="card-description">Het ontstaan van flitser registraties in de Basisregistratie Grootschalige Topografie (BGT).  Steeds meer gemeenten in NL registreren hun ruimtelijke objecten.</div>
+    </div>
+  </a>
   <a href="/demonstrators/tableau">
     <div class="card">
       <div class="card-type">Demonstrator</div>
