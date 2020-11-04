@@ -2,15 +2,20 @@
 layout: page
 title: Kadaster Data Science
 ---
-<script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
-<iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html"> 
+
+<script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js">
+</script>
+<iframe
+  allowtransparency="true"
+  frameborder="0"
+  id="loki-chat"
+  scrolling="no"
+  src="/demonstrators/loki-1.0/index.html"
+  style="z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;">
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
 </script>
-
-
 
 # Kadaster Data Science Labs
 
@@ -21,6 +26,16 @@ Kadaster vindt het belangrijk om samen met publieke en private partners te onder
 Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs website gebruiken wij als Data Science team om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Het Data Science Team werkt vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
 <div class="cards-wrapper">
+  <!--
+  <a href="/cases/bgt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bgt.jpg">
+      <div class="card-title">Basisregistratie Topografie Datastory</div>
+      <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
+    </div>
+  </a>
+  -->
   <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -48,7 +63,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
   <a href="/cases/proeftuin">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg">
       <div class="card-title">Proeftuin BGT mutatiesignalering</div>
       <div class="card-description">Kadaster proeftuin BGT mutatiesignalering van start</div>
     </div>
@@ -116,7 +131,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-title">Routering Landbouwverkeer</div>
       <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
     </div>
-  </a>  
+  </a>
   <a href="/cases/grondmarkt">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -212,7 +227,7 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
   <a href="/cases/bgtHigh3">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg">
       <div class="card-title">Basisregistratie Grootschalige Topografie (BGT)</div>
       <div class="card-description">De resultaten van het omzetten van de BGT naar Linked Data, uitgevoerd i.s.m. provincie Noord-Holland.</div>
     </div>

@@ -67,7 +67,7 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
   <a href="https://data.labs.kadaster.nl/bgt-high3">
     <div class="card">
       <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg">
       <div class="card-title">Basisregistratie Topografie (BGT)</div>
       <div class="card-description">De Datasets van die gebruikt zijn tijdens de BGT high 3 week zijn hier te vinden. De datasets zijn ook toegankelijk via data.labs.kadaster.nl.</div>
     </div>
