@@ -13,30 +13,44 @@ waarin, in samenwerking met CROW en CGI, deze basisregistratie alsnog
 eenmalig omgezet is naar Linked Data.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/bgt">
-    <div class="card">
-      <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
-      <div class="card-title">Basisregistratie Topografie (BGT)</div>
-      <div class="card-description"></div>
-    </div>
-  </a>
   <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bgt-overzicht">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
+      <img class="card-image" src="/assets/images/geo.jpg">
       <div class="card-title">BGT-LD Overzicht</div>
       <div class="card-description">Data Story die een overzicht van de BGT-LD geeft.</div>
     </div>
   </a>
-  <!--
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/windturbines">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/windturbines.jpg">
+      <div class="card-title">Windturbines</div>
+      <div class="card-description">Data Story die een overzicht van de windturbines in Nederland geeft.</div>
+    </div>
+  </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bgt-wegwerkzaamheden">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/wegwerkzaamheden.jpg">
+      <div class="card-title">BGT Wegwerkzaamheden</div>
+      <div class="card-description">Data Story die laat zien hoe de BGT de planning van wegwerkzaamheden kan ondersteunen.</div>
+    </div>
+  </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/bgt">
+    <div class="card">
+      <div class="card-type">Dataset</div>
+      <img class="card-image" src="/assets/images/bgt-ld.png">
+      <div class="card-title">Basisregistratie Grootschalige Topografie als linked data (BGT-LD)</div>
+      <div class="card-description">De officiële publicatie van de Basisregistratie Grootschalige Topografie (BGT) als linked data.</div>
+    </div>
+  </a>
   <a href="/browsers/areaal">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
-      <div class="card-title">BGT data browser</div>
-      <div class="card-description">Data browser waarin de Areaal dataset van provincie Noord-Holland doorzoekbaar wordt gemaakt.  De dataset bevat o.a. wegdelen en kunstwerken.</div>
+      <img class="card-image" src="/assets/images/weaver.png">
+      <div class="card-title">BGT data model browser</div>
+      <div class="card-description">Data browser waarin het BGT-LD data model kan worden opgezocht.</div>
     </div>
   </a>
-  -->
--</div>
+</div>
