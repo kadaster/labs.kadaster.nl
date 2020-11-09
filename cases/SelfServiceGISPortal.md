@@ -33,7 +33,7 @@ Via onderstaande knop is de demonstrator te bereiken. Hier kan de tool op zich u
   <a href="/demonstrators/ldmapTest/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.PNG">
+      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png">
       <div class="card-title">LDMaps</div>
       <div class="card-description"> Omschrijving toevoegen</div>
     </div>
@@ -45,7 +45,7 @@ Via onderstaande knop is de demonstrator te bereiken. Hier kan de tool op zich u
   <a href="/demonstrators/LDMaps_BGT/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.PNG">
+      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png">
       <div class="card-title">LDMaps voor de BGT</div>
       <div class="card-description"> Omschrijving toevoegen</div>
     </div>
