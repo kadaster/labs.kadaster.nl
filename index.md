@@ -30,8 +30,8 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bgt.jpg">
-      <div class="card-title">Basisregistratie Topografie Datastory</div>
-      <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
+      <div class="card-title">Basisregistratie Grootschalige Topografie </div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
     </div>
   </a>
   <a href="/cases/loki">
