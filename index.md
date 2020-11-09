@@ -45,6 +45,14 @@ Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs websit
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
+   <a href="/cases/SelfServiceGISPortal">
+      <div class="card">
+        <div class="card-type">Use Case</div>
+        <img class="card-image" src="/assets/images/selfserviceGIS.jpg">
+        <div class="card-title">Self-Service GIS Portaal</div>
+        <div class="card-description">In deze case wordt een voorbeeld gegeven van een Self-Service GIS platform.</div>
+      </div>
+    </a>
   <a href="/cases/proeftuin">
     <div class="card">
       <div class="card-type">Use Case</div>
