@@ -45,7 +45,15 @@ eenmalig omgezet is naar Linked Data.
       <div class="card-description">De officiële publicatie van de Basisregistratie Grootschalige Topografie (BGT) als linked data.</div>
     </div>
   </a>
-  <a href="/browsers/areaal">
+  <a href="/demonstrators/LDMaps_BGT">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/ld-maps.png">
+      <div class="card-title">LD Maps browser voor BGT-LD</div>
+      <div class="card-description">LD Maps is een browser voor geospatiële linked data.  Deze browser kan worden gebruikt om de BGT-LD te bevragen.</div>
+    </div>
+  </a>
+  <a href="https://kadaster.wvr.io/bgt/elements">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/weaver.png">
