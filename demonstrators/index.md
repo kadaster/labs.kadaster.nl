@@ -170,12 +170,12 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
   </a>
-    <a href="/demonstrators/LD-Spatialwizard">
+    <a href="/demonstrators/spatialwizard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
       <div class="card-title">LD Spatial Wizard</div>
-      <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
     </div>
   </a>
 </div>
