@@ -17,13 +17,14 @@ title: Kadaster Data Science
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
 </script>
 
-# Kadaster Data Science Labs
+# Kadaster Labs
 
 Onze samenleving staat voor een aantal grote uitdagingen om de wereld in de toekomst leefbaar te houden. We moeten de overgang maken naar duurzame energie en het hergebruik van grondstoffen. We hebben te maken met verstedelijking en vergrijzing en daardoor veranderende eisen aan huisvesting en de inrichting van ruimte. De technologische ontwikkelingen gaan razendsnel. Data en het combineren daarvan tot zinvolle informatie speelt daarin een belangrijke rol.
 
-Kadaster vindt het belangrijk om samen met publieke en private partners te onderzoeken en experimenteren met Data en Data Science, zodat Kadaster samen mogelijke oplossingen kan verkennen voor onze ruimtelijke uitdagingen. Het Kadaster Data Science team speelt een cruciale rol bij deze ontwikkeling en werkt samen met partners aan Data Science vraagstukken. Het Data Science team regiseert en begeleidt een initiatief gedurende de volgende fasen Herkennen, Verkennen en Experimenteren. Het Data Science team draagt de resultaten van een initiatief over aan de reguliere organisatie, zodat Kadaster of één van de (keten)partners deze waar mogelijk kan operationaliseren.
+Kadaster vindt het belangrijk om samen met publieke en private partners te onderzoeken en experimenteren met Data, zodat Kadaster samen mogelijke oplossingen kan verkennen voor onze ruimtelijke uitdagingen. De Kadaster innovatie teams spelen een cruciale rol bij deze ontwikkeling en werken samen met partners aan innovatie vraagstukken. De innovatie teams team dragen de resultaten van een initiatief over aan de reguliere organisatie, zodat Kadaster of één van de (keten)partners deze waar mogelijk kan operationaliseren.
 
-Dit is de Labs omgeving van het Data Science Team van Kadaster. Deze Labs website gebruiken wij als Data Science team om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Het Data Science Team werkt vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
+Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wij om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Wij werken hier vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers en/of Demonstrators. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken
+
 
 <div class="cards-wrapper">
   <a href="/cases/bgt-ld">
