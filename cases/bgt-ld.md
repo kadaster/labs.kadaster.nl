@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Use Case ― BGT-LD: Basisregistratie Grootschalige Topografie als Linked Data
+title: Use Case ― BGT-LD Basisregistratie Grootschalige Topografie als Linked Data
 ---
 
 # BGT-LD: Basisregistratie Grootschalige Topografie als Linked Data
