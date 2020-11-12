@@ -1,0 +1,345 @@
+# Exposes a URL that specifies the behaviour of this scalar.
+directive @specifiedBy(
+  # The URL that specifies the behaviour of this scalar.
+  url: String!
+) on SCALAR
+# specificeer wat voor jsonld er voor dit type aangemaakt moet worden
+directive @jsonld(
+  context: String = ""
+  graph: String = ""
+  alias: String = ""
+  vocab: String = ""
+  type: String = ""
+  id: [String] = []
+  base: String = ""
+  label: String = ""
+  ctxbase: String = ""
+  ctxvocab: String = ""
+) on QUERY | FIELD
+union BAGAdresseerbaarObject =
+    BAGVerblijfsobject
+  | BAGLigplaats
+  | BAGStandplaats
+type BAGLigplaats implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  gid: Int
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  hoofdadres(filter: String): [BAGNummeraanduiding!]
+  ligplaatsstatus: String
+  geovlak: String
+  geom_valid: String
+  peilDatum: Date
+  uoi: String
+}
+
+type BAGNummeraanduiding implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  gid: Int
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  huisnummer: Int!
+  huisletter: String
+  huisnummertoevoeging: String
+  postcode: String
+  nummeraanduidingstatus: String
+  bijbehorendeOpenbareRuimte(filter: String): [BAGOpenbareRuimte]
+  hoofdadresVan(filter: String): [BAGVerblijfsobject]
+  peilDatum: Date
+  uoi: String
+}
+
+interface BAGobject {
+  identificatiecode: String
+  peilDatum: Date
+  geconstateerd: Boolean
+  status: String
+  documentdatum: String
+  documentnummer: String
+  beginGeldigheid: Date!
+  eindGeldigheid: Date
+  aanduidingCorrectie: Int
+  aanduidingInactief: Boolean
+  inOnderzoek: Boolean
+  isDefinedBy: String
+  uoi: String
+}
+
+type BAGOpenbareRuimte implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  gid: Int
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  openbareruimtenaam: String
+  openbareruimtestatus: String
+  openbareruimtetype: String
+  gerelateerdewoonplaats: String
+  nummeraanduidingen(
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGNummeraanduiding]
+  bijbehorendeWoonplaats(filter: String): [BAGWoonplaats]
+  verkorteopenbareruimtenaam: String
+  peilDatum: Date
+  uoi: String
+}
+
+type BAGPand implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  geovlak: String
+  geom_valid: Boolean
+  bouwjaar: Int!
+  # De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevindt.
+  # Domeinverzameling:
+  # - Bouw gestart
+  # - Bouwvergunning verleend
+  # - Niet gerealiseerd pand
+  # - Pand buiten gebruik
+  # - Pand gesloopt
+  # - Pand in gebruik
+  # - Pand in gebruik (niet ingemeten)
+  # - Sloopvergunning verleend
+  pandstatus: String!
+  peilDatum: Date
+  vbosinpand(first: Int, offset: Int, filter: String): [BAGVerblijfsobject]
+  isDefinedBy: String
+  uoi: String
+}
+
+type BAGStandplaats implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  identificatiecode: String!
+  geconstateerd: Boolean
+  status: String!
+  type: String!
+  hoofdadres(filter: String): [BAGNummeraanduiding!]
+  nevenadres(filter: String): [BAGNummeraanduiding]
+  geometrieStandplaats: String
+  beginGeldigheid: Date!
+  eindGeldigheid: Date
+  documentdatum: String
+  documentnummer: String
+  aanduidingCorrectie: Int
+  aanduidingInactief: Boolean
+  inOnderzoek: Boolean
+  peilDatum: Date
+  isDefinedBy: String
+  uoi: String
+}
+
+type BAGVerblijfsobject implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  hoofdadres(filter: String): [BAGNummeraanduiding!]
+  ligtinpand(filter: String): [BAGPand!]!
+  geopunt: String
+  geom_valid: Boolean
+  # Een categorisering van de gebruiksdoelen van het betreffende verblijfsobject,
+  # zodat dit door de overheid als zodanig is toegestaan.
+  # gebruiksdoel:
+  # - bijeenkomstfunctie
+  # - celfunctie
+  # - gezondheidszorgfunctie
+  # - industriefunctie
+  # - kantoorfunctie
+  # - logiesfunctie
+  # - onderwijsfunctie
+  # - overige gebruiksfunctie
+  # - sportfunctie
+  # - winkelfunctie
+  # - woonfunctie
+  gebruiksdoel: [String]
+  oppervlakteverblijfsobject: Int!
+  # status:
+  # - Niet gerealiseerd verblijfsobject
+  # - Verblijfsobject buiten gebruik
+  # - Verblijfsobject gevormd
+  # - Verblijfsobject in gebruik
+  # - Verblijfsobject in gebruik (niet ingemeten)
+  # - Verblijfsobject ingetrokken
+  verblijfsobjectstatus: String!
+  peilDatum: Date
+  isDefinedBy: String
+  uoi: String
+}
+
+type BAGWoonplaats implements JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+  identificatiecode: String!
+  aanduidingrecordinactief: Boolean
+  aanduidingrecordcorrectie: Int
+  officieel: Boolean
+  inonderzoek: Boolean
+  begindatumtijdvakgeldigheid: DateTime
+  einddatumtijdvakgeldigheid: DateTime
+  documentnummer: String
+  documentdatum: Date
+  woonplaatsnaam: String
+  woonplaatsstatus: String
+  openbareruimten(first: Int, offset: Int, filter: String): [BAGOpenbareRuimte]
+  geom_valid: Boolean
+  geovlak: String
+  peilDatum: DateTime
+  uoi: String
+}
+
+interface Brondocument {
+  documentdatum: Date
+  documentnummer: String
+}
+
+type CountRec {
+  aantal: Int
+  peilDatum: Date
+}
+
+# Date custom scalar type for Date
+scalar Date
+
+# DateTime custom scalar type for DateTime
+scalar DateTime
+
+enum geoFormaat {
+  WGS84
+  RD28992
+  WKT
+  WKT_RD
+}
+
+interface JSONLD {
+  jsonldtype: String
+  jsonldbase: String
+  jsonldvocab: String
+  jsonldid: String
+  jsonldlabel: String
+}
+
+type JSONLDContext {
+  jsonldbase: String
+  jsonldvocab: String
+}
+
+scalar JSONObject
+
+type Query {
+  bagpand(
+    identificatiecode: String
+    uoi: String
+    peilDatum: Date
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGPand]
+  bagwoonplaats(
+    _id: String
+    identificatiecode: String
+    uoi: String
+    peilDatum: Date
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGWoonplaats]
+  bagnummeraanduiding(
+    _id: String
+    identificatiecode: String
+    uoi: String
+    peilDatum: Date
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGNummeraanduiding]
+  bagopenbareruimte(
+    _id: String
+    identificatiecode: String
+    uoi: String
+    peilDatum: Date
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGOpenbareRuimte]
+  bagverblijfsobject(
+    _id: String
+    identificatiecode: String
+    uoi: String
+    peilDatum: Date
+    first: Int
+    offset: Int
+    filter: String
+  ): [BAGVerblijfsobject]
+}
+
+enum Role {
+  ADMIN
+  PUBLIC
+  KADASTER
+  OVERHEID
+  UNKNOWN
+}
+
