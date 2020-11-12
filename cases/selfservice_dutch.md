@@ -104,7 +104,7 @@ Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruf
  </figure>
  
 ### Querying Interfaces
-Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen van Linked Data. We laten het gebruik van deze klanten het beste zien in onze gegevensverhalen. Bekijk enkele van de onderstaande voorbeelden.
+Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen van Linked Data. We laten het gebruik van deze klanten het beste zien in onze Data Stories. Bekijk enkele van de onderstaande voorbeelden.
 
 <div class="cards-wrapper">
   <a href="/stories/covid-19/">
