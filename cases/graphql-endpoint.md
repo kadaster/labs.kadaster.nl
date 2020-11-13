@@ -2,10 +2,12 @@
 layout: page
 title: GraphQL Open endpoint
 ---
-# Use Case: Kadaster GEO-informatie voor iedereen
+# Use Case: GraphQL Open endpoint
+
+For the English version, <a href = "/cases/graphql-endpoint-eng">click here</a>.
 
 ### Disclaimer
-Deze pagina beschrijft het eerste open GraphQL endpoint wat het Kadaster bij wijze van experiment beschikbaar stelt. Dit endpoint wordt met een onderhouden met een 'best-effort' service level en betreft alleen open data bronnen bij het Kadaster. Wij kunnen voor dit endpoint niet garanderen dat de data altijd actueel is en zullen af en toe (onaangekondigd) het endpoint vernieuwen in het kader van doorontwikkeling. Heb je hier vragen of opmerkingen over? Neem dan <a href=/about> contact met ons op</a>.
+Deze pagina beschrijft het eerste open GraphQL endpoint wat het Kadaster bij wijze van experiment beschikbaar stelt. Dit endpoint wordt met een onderhouden met een 'best-effort' service level en betreft alleen open data bronnen bij het Kadaster. Wij kunnen voor dit endpoint niet garanderen dat de data altijd actueel is en zullen af en toe (onaangekondigd) het endpoint vernieuwen in het kader van doorontwikkeling. Heb je hier vragen of opmerkingen over? Neem dan <a href="/about"> contact met ons op</a>.
 
 <div class="cards-wrapper">
   <a href="/odysseyhackathon">
@@ -35,11 +37,70 @@ Met GraphQL definiëren we een model van onze data in zogenoemde objecten en die
 </figure>
 
 Voor dit endpoint zijn hiervan de volgende objecten beschikbaar gesteld:
-- Woonplaats
-- Openbare Ruimte 
-- Pand
-- Verblijfsobject
-- Nummeraanduiding
+<details>
+  <summary>Woonplaats</summary>
+
+  <b>Woonplaats</b> kent de volgende attributen: <br>
+  - <b>identificatiecode</b> <br>
+  - <b>uoi</b> <br>
+  - <b>woonplaatsnaam</b> <br>
+  - <b>woonplaatsstatus</b> <br>
+  - <b>geovlak</b>; geometrie, in RD-coordinatensysteem <br>
+  - <b>openbareruimten</b>; alle openbare ruimten in deze woonplaats <br>
+</details>
+
+<details>
+  <summary>Openbare Ruimte</summary>
+
+  <b>Openbare ruimte</b> (oa. straat) kent de volgende attributen: <br>
+  - <b>identificatiecode</b> <br>
+  - <b>uoi</b> <br>
+  - <b>openbareruimtenaam</b> <br>
+  - <b>openbareruimtestatus</b> <br>
+  - <b>openbareruimtetype</b> <br>
+  - <b>gerelateerdeWoonplaats</b>; de woonplaats waarin deze openbare ruimte ligt <br>
+  - <b>nummeraanduidingen</b>; alle nummeraanduidingen (adressen) in deze openbare ruimte <br>
+</details>
+
+<details>
+  <summary>Nummeraanduiding</summary>
+
+  <b>Nummeraanduiding</b> (ookwel: adres) kent de volgende attributen: <br>
+  - <b>identificatiecode</b> <br>
+  - <b>uoi</b> <br>
+  - <b>postcode</b> <br>
+  - <b>huisnummer</b> <br>
+  - <b>huisletter</b> <br>
+  - <b>huisnummertoevoeging</b> <br>
+  - <b>nummeraanduidingstatus</b> <br>
+  - <b>bijbehorendeOpenbareRuimte</b>; openbare ruimte (straat) waarin dit adres ligt <br>
+  - <b>hoofdadresVan</b>; het verblijfsobject (woning/vestiging) waarvan dit adres het hoofdadres is <br>
+</details>
+
+<details>
+  <summary>Verblijfsobject</summary>
+
+  <b>Verblijfsobject</b> (ookwel: woning/vestiging) kent de volgende attributen: <br>
+  - <b>identificatiecode</b> <br>
+  - <b>uoi</b> <br>
+  - <b>oppervlakteverblijfsobject</b> <br>
+  - <b>verblijfsobjectstatus</b> <br>
+  - <b>geopunt</b>; geometrie, in RD-coordinatensysteem <br>
+  - <b>hoofdadres</b>; het primaire nummeraanduiding (adres) van het verblijfsobject <br>
+  - <b>ligtinpand</b>; het pand waarin dit verblijfsobject ligt <br>
+</details>
+
+<details>
+  <summary>Pand</summary>
+
+  <b>Pand</b> (ookwel: gebouw) kent de volgende attributen: <br>
+  - <b>identificatiecode</b> <br>
+  - <b>uoi</b> <br>
+  - <b>bouwjaar</b> <br>
+  - <b>pandstatus</b> <br>
+  - <b>geovlak</b>; geometrie, in RD-coordinatensysteem <br>
+  - <b>vbosinpand</b>; alle verblijfsobjecten (woningen/vestigingen) die in dit pand gevestigd zijn <br>
+</details>
 
 Deze objecten zijn landsdekkend. Er kan dus over heel Nederland bevragingen worden uitgevoerd op de beschikbare data middels dit endpoint. 
 
@@ -166,3 +227,68 @@ query InfoVoorEenAdres {
 ``` 
 
 Deze query bevraagt (een set aan bagnummeraanduidingen) zonder first en offset. Het neemt de twee attributen van een bagnummeraanduiding (**postcode** en **huisnummer**) en plaatst een filter op deze attributen. Let op dat omdat postcode een string betreft, aanhalingstekens ('') noodzakelijk zijn in het filter. Omdat huisnummer een getal betreft is dat hier niet nodig. Deze query bevraagt dus alle nummeraanduidingen met postcode 2585BG en huisnummer 35. Van deze nummeraanduiding wordt ook het betreffende verblijfsobject en pand erbij gezocht, inclusief de voor ons relevante attributen van deze objecten. 
+
+## Bevragingen in een programmeertaal (Python)
+Wil je bovenstaand endpoint nu bevragen met iets anders dan de user interface? Dat kan! Het endpoint dient ook als een traditioneel HTTP endpoint waar GET requests op kunnen worden uitgevoerd om de benodigde data op te halen. Een voorbeeld in Python over hoe dit te doen vind je hieronder:
+``` python
+from six.moves import urllib
+import json
+
+class GraphQLClient:
+    """
+    In deze class wordt connectie gelegd met onze GraphQL endpoint en kan een bevraging worden uitgevoerd
+    """
+    def __init__(self, endpoint):
+        self.endpoint = endpoint
+        self.token = None
+        self.headername = None
+
+    def execute(self, query, variables=None, return_json = True):
+        return self._send(query, variables, return_json)
+
+    def inject_token(self, token, headername='Authorization'):
+        self.token = token
+        self.headername = headername
+
+    def _send(self, query, variables, return_json = True):
+        data = {'query': query,
+                'variables': variables}
+        headers = {'Accept': 'application/json',
+                   'Content-Type': 'application/json'}
+
+        if self.token is not None:
+            headers[self.headername] = '{}'.format(self.token)
+
+        req = urllib.request.Request(self.endpoint, json.dumps(data).encode('utf-8'), headers)
+
+        try:
+            response = urllib.request.urlopen(req)
+            if return_json:
+                return json.loads(response.read().decode('utf-8'))
+            else:
+                return response.read().decode('utf-8')
+        except urllib.error.HTTPError as e:
+            raise e
+
+```
+Importeer bovenstaande class in een nieuw script en voer de volgende statements uit. 
+
+``` python
+GRAPHQL_ENDPOINT = "https://labs.kadaster.nl/odysseyhackathon"
+client = GraphQLClient(GRAPHQL_ENDPOINT)
+graphql_query = """ query informatieVoorEenUOI {
+                      bagnummeraanduiding(uoi: "NL.550e8400-e29b-na0a-0307-200000495314", peilDatum: "2020-11-13")
+                      {
+                        uoi
+                        postcode
+                        huisnummer
+                        huisletter
+                        huisnummertoevoeging    
+                        identificatiecode
+                        
+                      }
+                    }"""
+result = client.execute(graphql_query)
+print(result['data'])
+
+```
