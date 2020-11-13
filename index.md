@@ -43,6 +43,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
+    <a href="/cases/graphql-endpoint">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/graphql-logo.png">
+      <div class="card-title">GraphQL endpoint </div>
+      <div class="card-description">Middels dit endpoint bevraag je de (open) databronnen van het Kadaster met GraphQL.</div>
+    </div>
+  </a>
     <a href="/cases/disgeo-high5">
     <div class="card">
       <div class="card-type">Use Case</div>
