@@ -67,7 +67,7 @@ The following objects have been made available for this endpoint:
 </details>
 
 <details>
-  <summary>Nummeraanduiding</summary>
+  <summary>Nummeraanduiding (Address)</summary>
 
   <b>Nummeraanduiding</b> (or: address) has the following attributes: <br>
   - <b>identificatiecode (Identification Code)</b> <br>
@@ -82,7 +82,7 @@ The following objects have been made available for this endpoint:
 </details>
 
 <details>
-  <summary>Verblijfsobject</summary>
+  <summary>Verblijfsobject (residence object)</summary>
 
   <b>Verblijfsobject</b> (or: residence/establishment) has the following attributes: <br>
   - <b>identificatiecode (Identification Code)</b> <br>
@@ -95,7 +95,7 @@ The following objects have been made available for this endpoint:
 </details>
 
 <details>
-  <summary>Pand</summary>
+  <summary>Pand (Building)</summary>
 
   <b>Pand</b> (or: building) has the following attributes: <br>
   - <b>identificatiecode (Identification Code)</b> <br>
