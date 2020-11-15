@@ -9,26 +9,26 @@ title: Self Service GIS
 For the english version, see <a href="/cases/selfservice_eng">the English version here</a>.
 
 ## Introductie
-Het strategische meerjarenplan van het Kadaster is bedoeld om ‘geo-informatie voor iedereen’ te bieden, om het beantwoorden van de meest relevante maatschappelijke vragen te ondersteunen. Hoewel we veel van de data die we momenteel hebben in een voor ontwikkelaars goed bruikbaar technisch format kunnen aanbieden, zal het beschikbaar stellen van data in andere formats en via andere middelen een breder scala aan gebruikers toegang geven om de data van het Kadaster te gebruiken.
+Een belangrijke peiler het strategische meerjarenplan van het Kadaster is ‘geo-informatie voor iedereen’ te bieden en hiermee het beantwoorden van de meest relevante maatschappelijke vragen te ondersteunen. Hoewel we veel van de data die we momenteel hebben in een voor ontwikkelaars goed bruikbaar technisch format kunnen aanbieden, zal het beschikbaar stellen van data in andere formats en via andere middelen een breder scala aan gebruikers toegang geven om de data van het Kadaster te gebruiken.
 
-Onze langetermijnstrategie is om burgers de mogelijkheid te bieden om zowel kadastergegevens als gegevens uit andere (open) bronnen te gebruiken, zodat gebruikers de gegevens van Kadaster gemakkelijk kunnen verkennen en deze kunnen combineren met hun eigen gegevens en voor ruimtelijke analyses van een bepaald niveau die gemakkelijk online kunnen worden uitgevoerd.  Dit brengt de gegevens dichter bij de gebruiker, waardoor klanten zelf antwoorden op hun vragen kunnen vinden.
+Onze langetermijnsvisie is om burgers de mogelijkheid te geven om zowel kadastergegevens als gegevens uit andere (open) bronnen te gebruiken, zodanig dat gebruikers de gegevens van Kadaster gemakkelijk kunnen verkennen en deze kunnen combineren met hun eigen gegevens. Daarnaast willen we ruimtelijke analyses van een bepaald niveau die gemakkelijk online (in de browser) kunnen worden uitgevoerd. Dit brengt de gegevens dichter bij de gebruiker, waardoor klanten zelf antwoorden op hun (ruimtelijke) vragen kunnen vinden.
 
-Een oplossing hiervoor, die het meest van toepassing is op de strategie van Kadaster, is het gebruik van webtechnologieën om deze "self-service" tool naar de eindgebruikers van het Kadaster te brengen in de vorm van een interactieve web mapping interface of web GIS.  De volgende pagina geeft enig inzicht in hoe "self-service GIS" kan worden bereikt binnen Kadaster.
+Een oplossing hiervoor is het gebruik van webtechnologieën om deze "self-service" tool naar de eindgebruikers van het Kadaster te brengen in de vorm van een interactieve web mapping interface of web GIS (Geospatial Information System). De volgende pagina geeft enig inzicht in hoe "self-service GIS" kan worden bereikt binnen het Kadaster.
 
 ## Doelgroep
 Het doel van de ontwikkeling van deze self-service tool is om de betrokken gebruiker en actieve burger te voorzien van de middelen om ruimtelijke analyse uit te voeren, als ze proberen om een vraag te beantwoorden. Tot deze gebruikersgroep kan bijvoorbeeld een data- of onderzoeksjournalist behoren, die op zoek is naar een gedragspatroon, een potentiële nieuwe huiseigenaar die op zoek is naar milieu-informatie over zijn nieuwe woning of een lid van een woningcorporatie die de criminaliteit in zijn buurt wil onderzoeken.
 
-Deze gebruikersgroep is doorgaans niet goed thuis in de technische fijne kneepjes van ruimtelijke analyse van de mogelijkheden van GIS, maar is gewoon geïnteresseerd in het gebruik van een combinatie van door het Kadaster verstrekte gegevens en de gegevens van andere aanbieders of hun eigen gegevens om een bepaalde ruimtelijke vraag, die ruimtelijke analysefunctionaliteit vereist, te beantwoorden.
+Deze gebruikersgroep is doorgaans niet goed thuis in de technische fijne kneepjes van ruimtelijke analyse en de mogelijkheden van een volwaardig GIS pakket, maar is gewoon geïnteresseerd in het gebruik van (een combinatie van) door het Kadaster verstrekte gegevens en de gegevens van andere aanbieders of hun eigen gegevens om een bepaalde ruimtelijke vraag te beantwoorden.
 
 ## Wat zijn de kenmerken van Self-Service GIS?
 <div class="textbox" markdown="1">
 ## Self-Service GIS defined
-Esri, de toonaangevende commerciële leverancier van geospatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden.  Over het algemeen is een self-service GIS een applicatie die een gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
+Esri, de toonaangevende commerciële leverancier van geospatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden. Over het algemeen is een self-service GIS een applicatie die gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
 </div>
 
-Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing.  Om te bepalen wat de features van self-service GIS zijn voor het doel en de doelgroep van het Kadaster, kijken we naar onze klanten om te zien welke features nuttig kunnen zijn.
+Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing. Om te bepalen wat de belangrijke features van self-service GIS zijn voor ons doel en de doelgroep van het Kadaster, kijken we ook naar de wenzen vanuit onze klanten.
 
-Een analyse van welke ruimtelijke vragen de klanten van het Kadaster stellen, wordt uitgevoerd als onderdeel van een interne analyse van de gebruikersbehoeften. Welke vragen worden gesteld, zal benadrukken welke functionaliteit nuttig kan zijn voor de gebruikers in een selfservice GIS-toepassing.  Het geeft ook inzicht in hoe gebruikers gebruik willen maken van de gegevens van het Kadaster en met welke andere gegevens de Kadastergegevens meestal worden gecombineerd bij het beantwoorden van ruimtelijke vragen.
+Een analyse van welke ruimtelijke vragen de klanten van het Kadaster stellen, wordt uitgevoerd als onderdeel van een interne analyse van de gebruikersbehoeften. Welke vragen worden gesteld, zal benadrukken welke functionaliteit nuttig kan zijn voor de gebruikers in een selfservice GIS-toepassing. Het geeft ook inzicht in hoe gebruikers gebruik willen maken van de gegevens van het Kadaster en met welke andere gegevens de Kadastergegevens meestal worden gecombineerd bij het beantwoorden van ruimtelijke vragen.
 
 De features in de visie van het Kadaster voor self-service GIS, zijn ook afhankelijk van de technologische mogelijkheden en toekomstvisie voor het Kadaster als geheel.
 
@@ -70,7 +70,6 @@ Hieronder volgen voorbeelden van browsers en viewers die door het Kadaster zijn 
   
 ### Analytics Dashboards
 
-
 Hieronder volgen voorbeelden van meer geavanceerde toolingvoorbeelden of dashboards die de gebruiker een bepaald niveau van analytische functionaliteit bieden.
 
 #### Voyager
@@ -90,7 +89,7 @@ Het eerste voorbeeld is een korte gebruikssessie van gegevens uit deze case die 
 
 #### Gruff
 
-Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruff, een tool die het bladeren door kennisgrafieken en de analyse van bedrijfsgegevens ondersteunt. De interessante functie voor self-service GIS is de grafische query-editor.
+Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruff, een tool die het bladeren door Knowledge Graphs (Linked Data) en de analyse van bedrijfsgegevens ondersteunt. De interessante functie voor self-service GIS is de grafische query-editor.
 
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
@@ -99,7 +98,7 @@ Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruf
     </source>
   </video>
   <figcaption>
-    Figuur 2 ― Demonstratie van het gebruik van de BAG dataset binnen en Graphical Browser en Querying Tool (<a href="https://allegrograph.com/products/gruff/" target="_blank">Gruff</a>).
+    Figuur 2 ― Demonstratie van het gebruik van de BAG dataset binnen een Graphical Browser en Querying Tool (<a href="https://allegrograph.com/products/gruff/" target="_blank">Gruff</a>).
   </figcaption>
  </figure>
  
@@ -136,7 +135,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
 
 ## Bereiken Self Service GIS 
 
-Bij het Kadaster werken we aan de ontwikkeling van onze Kennisgrafiek door de gegevens die we bijhouden te integreren in één bron. Met dit centraal, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot en betrokkenheid bij geospatiale en niet-ruimtelijke gegevens voor onze gebruikers.
+Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de gegevens die we bijhouden te integreren in één bron. Met deze centrale ontsluiting, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot- en betrokkenheid bij geospatiale en niet-ruimtelijke gegevens voor onze gebruikers.
 
 <figure id="3">
 	<a href="/assets/images/self-serviceGISarchitecture.jpg">
