@@ -9,10 +9,10 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
 
 <div class="cards-wrapper">
   </a>
-    <a href="/demonstrators/LD-Spatialwizard">
+    <a href="/demonstrators/spatialwizard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/spatialwizard.logo.png">
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
       <div class="card-title">LD Spatial Wizard</div>
       <div class="card-description">De Spatial Wizard kan ingezet worden om uw dataset om te zetten naar linked data.</div>
     </div>
@@ -186,8 +186,5 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
-<<<<<<< HEAD
-=======
   </a>
->>>>>>> master
 </div>
