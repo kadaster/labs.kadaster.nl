@@ -1,6 +1,7 @@
 ---
+banner: /assets/images/handen.jpg
 layout: page
-title: Self Service Tooling	
+title: Self Service GIS
 ---
 
 # Use Case: Self Service GIS - A Vision
@@ -46,16 +47,10 @@ The tooling examples are divided into three categories as below. Where possible,
 
 ### Data Browsers and Viewers
 
+The following are examples of browsers and viewers developed by Kadaster for browsing and viewing Linked Data. These three examples highlight the range of visualisation and interactivity features available to the end user for data browsing. 
+
 <div class="cards-wrapper">
-  <a href="/browsers/bevolking/">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/cbs-lod.png">
-      <div class="card-title">CBS Bevolking Data Browser</div>
-      <div class="card-description">With the population browswer, Dutch municipalities, districts and neighbourhoods can be searched based on population statistics.</div>
-    </div>
-  </a>
-    <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
+  <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/ld-vowl.png">
@@ -63,9 +58,30 @@ The tooling examples are divided into three categories as below. Where possible,
       <div class="card-description">The data model of the Key Register of Addresses and Buildings (BAG) in the online visualization tool LD-VOWL.</div>
 	</div>
   </a>
+  <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <div class="card-title">Kadaster's Knowledge Graph</div>
+      <div class="card-description">Move through all the Linked Data store integrally as open data and discover the relationships between the different sources.</div>
+	</div>
+  </a>
+  <a href="/demonstrators/graph-browser/namen-app">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+      <div class="card-title">Toponamenzoeker</div>
+      <div class="card-description">In the toponamenzoeker you can search all the names contained within the topography database and maps that Kadaster maintains.</div>
+	</div>
+  </a>
 </div>
   
 ### Analytics Dashboards
+
+The following are examples of more advanced tooling examples or dashboards which offer the user some level of analytical functionality. 
+
+#### Voyager
+The first example is a short usage session of a data from this case loaded into a Business Intelligence tool. The importance of this demonstration for self-service GIS is the features that this tool offers the user for data interaction. These include graph visualisation, temporal fields and filtering.
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
@@ -78,24 +94,62 @@ The tooling examples are divided into three categories as below. Where possible,
   </figcaption>
 </figure>
 
-<!-- 
-TODO: Fix .webm file later
+#### Gruff
+The second example demonstrators the browsing and querying of BAG data within Gruff, a tool which supports knowledge graph browsing and the analysis of enterprise data. The interesting feature for the purpose of self-service GIS is the graphical query editor. 
+
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
-    <source src="/assets/videos/gruff_bag.mp4" type="video/mp4">
+    <source src="/assets/videos/gruff.webm" type="video/webm">
       Helaas, uw browser kan deze webm video niet weergeven.
     </source>
   </video>
   <figcaption>
     Figure 2 ― Demonstration of the use of the BAG dataset within a Graphical Browser and Querying Tool (<a href="https://allegrograph.com/products/gruff/" target="_blank">Gruff</a>).
   </figcaption>
-</figure> -->
+ </figure>
 
 ### Querying Interfaces
-Work in Progress..
+There are a range of SPARQL clients available to the end user for the purpose of querying Linked Data. We best showcase the use of these clients in our data stories. Please look at some of the examples below. 
 
-## Self-Service GIS Architecture
-Work in Progress..
+<div class="cards-wrapper">
+  <a href="/stories/covid-19/">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/covid-19.jpg">
+      <div class="card-title">Corona (COVID-19) Data Story</div>
+      <div class="card-description">This data story provides an overview of the Dutch Corona statistics in combination with Kadaster data.</div>
+	</div>
+  </a>
+  <a href="/stories/digitaal-erfgoed/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg">
+      <div class="card-title">Digital Heritage</div>
+      <div class="card-description">A data story about Oud Lisse made by the PLDN working group Digital Heritage.</div>
+	</div>
+  </a>
+  <a href="/stories/pdok-knowledge-graph/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <div class="card-title">PDOK Knowledge Graph</div>
+      <div class="card-description">In this data story we question combinations of datasets. With this we show the added value of a Knowledge Graph.</div>
+	</div>
+  </a>
+</div>
 
-## Het Resultaat
-Work in Progress..
+## Achieving Self-Service GIS
+At Kadaster, we are working on the development of our Knowledge Graph by integrating the data we maintain into one source. With this at the centre, our self-service GIS would be able to provide our users with easier access to all our datasets simultaneously and in real-time; improving accessibility to and engagement with geospatial and non-spatial data for our users. 
+
+<figure id="3">
+	<a href="/assets/images/self-serviceGISarchitecture.jpg">
+		<img src="/assets/images/self-serviceGISarchitecture.jpg">
+	</a>
+  <figcaption>
+    Figure 3 ― Self-Service GIS Architecture. 
+  </figcaption>
+ </figure>
+
+
+## The Result
+For more information on Kadaster's progress with achieving self-service GIS, see <a href="/cases/SelfServiceGISPortal">our progress page.</a>

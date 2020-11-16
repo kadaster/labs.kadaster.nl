@@ -41,6 +41,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
     </div>
   </a>
+    <a href="/demonstrators/spatialwizard/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
+    </div>
+  </a>
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -178,4 +186,8 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
+<<<<<<< HEAD
+=======
+  </a>
+>>>>>>> master
 </div>

@@ -19,9 +19,19 @@ zal uitgewerkt worden welke componenten er gebruikt zullen worden en hoe dit gaa
 ## Component 1 Data uploaden: LD Wizard
 Het self-service portaal zal gebruik maken van data in de vorm van Linked Data. Aangezien niet alle datasets beschikbaar 
 zijn in deze vorm, moet er een tool komen die van data sets linked data kan maken. Deze tool is ontwikkeld door het data 
-science team en heet LDWizard. Van deze tool komt in de toekomst een demonstrator. Wanneer deze beschikbaar is, zal de 
-demonstrator hieronder gelinkt worden. 
+science team en heet LDWizard.
+<div class="cards-wrapper">
+   <a href="/demonstrators/spatialwizard/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
+    </div>
+  </a>
+</div>
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VO61pqKWw7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Component 2 Data weergeven: LDMaps
 Aangezien dit portaal met GEO-data werkt, zal een visuele weergave op een kaart een goede toevoeging zijn. Dit zal 
