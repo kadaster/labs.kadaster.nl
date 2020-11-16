@@ -8,6 +8,15 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
+  </a>
+    <a href="/demonstrators/LD-Spatialwizard">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatialwizard.logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">De Spatial Wizard kan ingezet worden om uw dataset om te zetten naar linked data.</div>
+    </div>
+  </a>
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -169,13 +178,4 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
-  </a>
-    <a href="/demonstrators/LD-Spatialwizard">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
-      <div class="card-title">LD Spatial Wizard</div>
-      <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
-    </div>
-  </a>
 </div>
