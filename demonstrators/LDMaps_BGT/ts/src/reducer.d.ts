@@ -8,7 +8,6 @@ export interface State {
     coordinateQuery: CoordinateQuery;
     isFetching: boolean;
     mapClustered: boolean;
-    searchQuery: string;
     searchResults: Array<SingleObject>;
     selectedObject: SingleObject;
     zoomLevel: number;
