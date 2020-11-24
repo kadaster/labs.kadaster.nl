@@ -1,1 +1,1 @@
-export declare function getFromCoordinates(lat: String, lng: String): Promise<import("../reducer").SingleObject[]>;
+export declare function getFromCoordinates(lat: string, lng: string, zoomlevel: number): Promise<import("../reducer").SingleObject[]>;

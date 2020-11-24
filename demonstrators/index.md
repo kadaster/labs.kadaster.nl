@@ -8,6 +8,22 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
+  <a href="/demonstrators/LDMaps_BGT/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/ld-maps.png">
+      <div class="card-title">LDMaps voor de BGT</div>
+      <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/spatialwizard">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">De Spatial Wizard kan ingezet worden om uw dataset om te zetten naar linked data.</div>
+    </div>
+  </a>
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -30,6 +46,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/SensRNet-logo.png">
       <div class="card-title">Ontwikkeling Sensorenregister</div>
       <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
+    </div>
+  </a>
+    <a href="/demonstrators/spatialwizard/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
     </div>
   </a>
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
