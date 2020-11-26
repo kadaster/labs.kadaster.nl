@@ -13,7 +13,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
       <div class="card-title">LD Spatial Wizard</div>
-      <div class="card-description">De Spatial Wizard kan ingezet worden om uw dataset om te zetten naar linked data.</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
   </a>
   <a href="/demonstrators/loki/index.html">
@@ -38,14 +38,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/SensRNet-logo.png">
       <div class="card-title">Ontwikkeling Sensorenregister</div>
       <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
-    </div>
-  </a>
-    <a href="/demonstrators/spatialwizard/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
-      <div class="card-title">LD Spatial Wizard</div>
-      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
     </div>
   </a>
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
