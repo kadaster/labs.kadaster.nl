@@ -42,10 +42,10 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 	Zoniet, ga naar stap 3.
 		<figure id="figuur-1">
 		  <a href="/assets/images/nl-unknown-sources-1.jpg">
-			<img src="/assets/images/nl-unknown-sources-1.jpg" width = "306" height="543">
+			<img src="/assets/images/nl-unknown-sources-1.jpg" width = "306" height="543" alt="Screenshot beveiliging">
 		  </a>
 		  <a href="/assets/images/nl-unknown-sources-2.jpg">
-			<img src="/assets/images/nl-unknown-sources-2.jpg" width = "306" height="543">
+			<img src="/assets/images/nl-unknown-sources-2.jpg" width = "306" height="543" alt="Screenshot onbekende bronnen">
 		  </a>
 		  <figcaption>
 			Figuur 1 ― Settings voor unknown sources in Android, in het Nederlands.
@@ -57,10 +57,10 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 	Daar verleen je de toegang aan de specifieke app waarmee je de APK installeert (bijv. Chrome), zoals getoond in Figuur 2 (Rechts).  
 		<figure id="figuur-2">
 		  <a href="/assets/images/error-chrome-install.jpg">
-			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%">
+			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%" alt="Screenshot Chrome error">
 		</a>
 			<a href = "/assets/images/allow-chrome-access.jpg">
-			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%">
+			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%" alt="Screenshot Chrome toestemming geven">
 		  </a>
 		  <figcaption>
 			Figuur 2 ― Foutmelding die Chrome geeft als het installeren van onbekende apps nog niet is toegestaan en het scherm waarin je dat kunt toestaan. 
