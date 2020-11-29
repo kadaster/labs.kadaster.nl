@@ -60,8 +60,18 @@
       }
     },
     "heeftalshoofdadres" : {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "bagNummeraanduiding",
+      "@type": "@id"
     },
     "heeftalsnevenadres" : {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "bagNummeraanduiding",
+      "@type": "@id"
     },
     "inonderzoek": {
       "@id": "onderzoek",
