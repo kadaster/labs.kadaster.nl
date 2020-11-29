@@ -1,10 +1,8 @@
-  
-{
+  {
   "@context": {
     "@base": "https://bag.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bag.basisregistraties.overheid.nl/bag/def/",
-    "begroeidterreindeeloptalud": "talud",
     "bgt_functie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
@@ -19,7 +17,7 @@
       "@id": "status",
       "@type": "@id"
     },
-    "bgt_type": {
+    "woonplaatsstatus": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
