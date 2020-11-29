@@ -17,7 +17,7 @@
       "@id": "status",
       "@type": "@id"
     },
-    "oepnbareruimtestatus": {
+    "openbareruimtestatus": {
       "@context": {
         "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
       },
