@@ -24,6 +24,20 @@
       "@id": "status",
       "@type": "@id"
     }, 
+    "maaktdeeluitvan": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+      "@id": "bagPand",
+      "@type": "@id"
+    },
+    "ligtin": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
+      },
+      "@id": "bagWoonplaats",
+      "@type": "@id"
+    },
     "bronhouder": {
       "@context": {
         "@base": "https://bag.basisregistraties.overheid.nl/bag/id/bronhouder/"
