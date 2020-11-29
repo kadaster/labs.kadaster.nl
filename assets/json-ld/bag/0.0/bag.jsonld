@@ -1,50 +1,184 @@
   
-{ 
+{
   "@context": {
+    "@base": "https://bag.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bag.basisregistraties.overheid.nl/def/bag#",
-    "identificatiecode" : null,
-    "beginGeldigheid": {
+    "@vocab": "https://bag.basisregistraties.overheid.nl/bag/def/",
+    "begroeidterreindeeloptalud": "talud",
+    "bgt_functie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "functie",
+      "@type": "@id"
+    },
+    "bgt_status": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "bgt_type": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "bgt_fysiekvoorkomen": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
+      },
+      "@id": "fysiekVoorkomen",
+      "@type": "@id"
+    },
+    "bronhouder": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "tijdstipeindregistratie": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipeindregistratielv": {
+      "@id": "publicatiedatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratielv": {
+      "@id": "vervallendatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "gml_id": null,
+    "hoortbijtypeoverbrugging": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "hoortBijTypeOverbrugging",
+      "@type": "@id"
+    },
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
+      }
+    },
+    "identificatiebagopr": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+      },
+      "@id": "bagOpenbareRuimte",
+      "@type": "@id"
+    },
+    "identificatiebagpnd": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+      "@id": "bagPand",
+      "@type": "@id"
+    },
+    "identificatiebagvbohoogstehuisnummer": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+      },
+      "@id": "bagVerblijfsobject",
+      "@type": "@id"
+    },
+    "identificatiebagvbolaagstehuisnummer": {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+      },
+      "@id": "bagVerblijfsobject",
+      "@type": "@id"
+    },
+    "inonderzoek": {
+      "@id": "onderzoek",
+      "@type": "xsd:boolean"
+    },
+    "lokaalid": "nen3610:lokaalID",
+    "lv_publicatiedatum": {
+      "@id": "publicatiedatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "objectbegintijd": {
+      "@id": "objectBegintijd",
       "@type": "xsd:date"
     },
-    "bijbehorendeWoonplaats" : {
+    "objecteindtijd": {
+      "@id": "objectEindtijd",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
+    "openbareruimtetype": {
       "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+      },
+      "@id": "openbareRuimteType",
+      "@type": "@id"
     },
-    "naamOpenbareRuimte": {
-      "@language": "nl"
-    },
-    "naamWoonplaats": {
-      "@language": "nl"
-    },
-    "nummeraanduiding" : {
+    "peilDatum": null,
+    "plus_functie": {
       "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
-        
-      }
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "plusFunctie",
+      "@type": "@id"
     },
-    "OpenbareRuimte": {
+    "plus_status": {
       "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
-        "@type" : "type"
-      }
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+      },
+      "@id": "plusStatus",
+      "@type": "@id"
     },
-    "status": {
-      "@language": "nl"
-    },
-    "woonplaats": {
+    "plus_type": {
       "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "plusType",
+      "@type": "@id"
     },
-    "Pand": {
+    "plus_fysiekvoorkomen": {
       "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/pand/",
-        "identificatiecode": "@id"
-      }
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
+      },
+      "@id": "plusFysiekVoorkomen",
+      "@type": "@id"
     },
-    "xsd": "https://www.w3.org/2001/XMLSchema#",
-    "data": "@nest"
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "relatievehoogteligging": {
+      "@id": "relatieveHoogteligging",
+      "@type": "xsd:integer"
+    },
+    "typeoverbruggingsdeel": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "typeOverbruggingsdeel",
+      "@type": "@id"
+    },
+    "wegdeeloptalud": "talud",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
