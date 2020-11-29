@@ -10,6 +10,20 @@
       "@id": "status",
       "@type": "@id"
     },
+    "ligplaatsstatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "standplaatsstatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    }, 
     "bronhouder": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/"
@@ -17,7 +31,7 @@
       "@type": "@id"
     },
     "data": "@nest",
-    "tijdstipeindregistratie": {
+    "eindregistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
