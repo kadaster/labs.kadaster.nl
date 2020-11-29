@@ -35,14 +35,14 @@
      "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
       },
-      "@id": "bagPand",
+      "@id": "maaktdeeluitvan",
       "@type": "@id"
     },
     "ligtin": {
      "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
       },
-      "@id": "bagWoonplaats",
+      "@id": "ligtin",
       "@type": "@id"
     },
     "bronhouder": {
@@ -84,14 +84,14 @@
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
       },
-      "@id": "bagNummeraanduiding",
+      "@id": "heeftalshoofdadres",
       "@type": "@id"
     },
     "heeftalsnevenadres" : {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
       },
-      "@id": "bagNummeraanduiding",
+      "@id": "heeftalsnevenadres",
       "@type": "@id"
     },
     "inonderzoek": {
