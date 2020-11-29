@@ -26,7 +26,7 @@
     }, 
     "bronhouder": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/bronhouder/"
       },
       "@type": "@id"
     },
@@ -56,8 +56,12 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/identificatie/"
       }
+    },
+    "heeftalshoofdadres" : {
+    },
+    "heeftalsnevenadres" : {
     },
     "inonderzoek": {
       "@id": "onderzoek",
