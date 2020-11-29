@@ -3,32 +3,11 @@
     "@base": "https://bag.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bag.basisregistraties.overheid.nl/bag/def/",
-    "bgt_functie": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "functie",
-      "@type": "@id"
-    },
-    "bgt_status": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
-      },
-      "@id": "status",
-      "@type": "@id"
-    },
     "woonplaatsstatus": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
       },
-      "@id": "type",
-      "@type": "@id"
-    },
-    "bgt_fysiekvoorkomen": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
-      },
-      "@id": "fysiekVoorkomen",
+      "@id": "status",
       "@type": "@id"
     },
     "bronhouder": {
@@ -60,46 +39,11 @@
       "@type": "geo:wktLiteral"
     },
     "gml_id": null,
-    "hoortbijtypeoverbrugging": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "hoortBijTypeOverbrugging",
-      "@type": "@id"
-    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
       }
-    },
-    "identificatiebagopr": {
-      "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
-      },
-      "@id": "bagOpenbareRuimte",
-      "@type": "@id"
-    },
-    "identificatiebagpnd": {
-      "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
-      },
-      "@id": "bagPand",
-      "@type": "@id"
-    },
-    "identificatiebagvbohoogstehuisnummer": {
-      "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
-      },
-      "@id": "bagVerblijfsobject",
-      "@type": "@id"
-    },
-    "identificatiebagvbolaagstehuisnummer": {
-      "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
-      },
-      "@id": "bagVerblijfsobject",
-      "@type": "@id"
     },
     "inonderzoek": {
       "@id": "onderzoek",
@@ -129,34 +73,6 @@
       "@type": "@id"
     },
     "peilDatum": null,
-    "plus_functie": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "plusFunctie",
-      "@type": "@id"
-    },
-    "plus_status": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
-      },
-      "@id": "plusStatus",
-      "@type": "@id"
-    },
-    "plus_type": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "plusType",
-      "@type": "@id"
-    },
-    "plus_fysiekvoorkomen": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
-      },
-      "@id": "plusFysiekVoorkomen",
-      "@type": "@id"
-    },
     "primaryTopic": {
       "@context": {
         "@base": "https://bag.basisregistraties.overheid.nl/bag/id/object/"
@@ -165,18 +81,6 @@
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
-    "relatievehoogteligging": {
-      "@id": "relatieveHoogteligging",
-      "@type": "xsd:integer"
-    },
-    "typeoverbruggingsdeel": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "typeOverbruggingsdeel",
-      "@type": "@id"
-    },
-    "wegdeeloptalud": "talud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
