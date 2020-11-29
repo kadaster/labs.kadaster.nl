@@ -38,6 +38,13 @@
       "@id": "maaktdeeluitvan",
       "@type": "@id"
     },
+    "gebruiksdoel": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "gebruiksdoel",
+      "@type": "@id"
+    },
     "ligtin": {
      "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
