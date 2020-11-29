@@ -17,6 +17,13 @@
       "@id": "status",
       "@type": "@id"
     },
+    "oepnbareruimtestatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
     "standplaatsstatus": {
       "@context": {
         "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
