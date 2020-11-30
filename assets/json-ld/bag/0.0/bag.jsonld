@@ -1,50 +1,142 @@
-  
-{ 
+  {
   "@context": {
+    "@base": "https://bag.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bag.basisregistraties.overheid.nl/def/bag#",
-    "identificatiecode" : null,
-    "beginGeldigheid": {
+    "@vocab": "https://bag.basisregistraties.overheid.nl/bag/def/",
+    "woonplaatsstatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "ligplaatsstatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "openbareruimtestatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "standplaatsstatus": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    }, 
+    "maaktdeeluitvan": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+      "@id": "maaktdeeluitvan",
+      "@type": "@id"
+    },
+    "gebruiksdoel": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "gebruiksdoel",
+      "@type": "@id"
+    },
+    "ligtin": {
+     "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
+      },
+      "@id": "ligtin",
+      "@type": "@id"
+    },
+    "bronhouder": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/bronhouder/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "eindregistratie": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipeindregistratielv": {
+      "@id": "publicatiedatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratielv": {
+      "@id": "vervallendatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "gml_id": null,
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/identificatie/"
+      }
+    },
+    "heeftalshoofdadres" : {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "heeftalshoofdadres",
+      "@type": "@id"
+    },
+    "heeftalsnevenadres" : {
+      "@context": {
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "heeftalsnevenadres",
+      "@type": "@id"
+    },
+    "inonderzoek": {
+      "@id": "onderzoek",
+      "@type": "xsd:boolean"
+    },
+    "lokaalid": "nen3610:lokaalID",
+    "lv_publicatiedatum": {
+      "@id": "publicatiedatumLandelijkeVoorzieningen",
+      "@type": "xsd:dateTime"
+    },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "objectbegintijd": {
+      "@id": "objectBegintijd",
       "@type": "xsd:date"
     },
-    "bijbehorendeWoonplaats" : {
+    "objecteindtijd": {
+      "@id": "objectEindtijd",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
+    "openbareruimtetype": {
       "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
+        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+      },
+      "@id": "openbareRuimteType",
+      "@type": "@id"
     },
-    "naamOpenbareRuimte": {
-      "@language": "nl"
-    },
-    "naamWoonplaats": {
-      "@language": "nl"
-    },
-    "nummeraanduiding" : {
+    "peilDatum": null,
+    "primaryTopic": {
       "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
-        
-      }
+        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
     },
-    "OpenbareRuimte": {
-      "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
-        "@type" : "type"
-      }
-    },
-    "status": {
-      "@language": "nl"
-    },
-    "woonplaats": {
-      "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
-    },
-    "Pand": {
-      "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/pand/",
-        "identificatiecode": "@id"
-      }
-    },
-    "xsd": "https://www.w3.org/2001/XMLSchema#",
-    "data": "@nest"
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
