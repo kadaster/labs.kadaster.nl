@@ -1,5 +1,7 @@
 
 bag: {
+  # Klassen
+
   bag:Pand
     a owl:Class;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#74-pand"^^xsd:anyURI;
@@ -9,44 +11,17 @@ bag: {
     skos:prefLabel "Pand"@nl;
     skos:scopeNote "Elk pand waarvan gegevens zijn opgenomen in de BAG wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
-  bag:documentDatum
-    a owl:DatatypeProperty;
-    rdfs:domain bag:Pand;
-    rdfs:range xsd:date;
-    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#746-documentdatum"^^xsd:anyURI;
+  bag:Woonplaats
+    a owl:Class;
+    rdfs:seeAlso
+      "http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=1&artikel=1&opsommingsonderdeel=r&z=2012-10-01&g=2012-10-01"^^xsd:anyURI;
     skos:definition
-      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
-        rdf:value "De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden."@nl ];
-    skos:prefLabel "heeft document datum"@nl;
-    skos:scopeNote "Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen. In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+      [ dct:source ""@nl;
+        rdf:value "Een woonplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorzien gedeelte van het grondgebied van de gemeente."@nl
 
-  bag:documentnummer
-    a owl:DatatypeProperty;
-    rdfs:domain bag:Pand;
-    rdfs:range xsd:string;
-    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#747-documentnummer"^^xsd:anyURI;
-    skos:definition
-      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
-        rdf:value "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente."@nl ];
-    skos:prefLabel "heeft documentnummer"@nl.
+  # Eigenschappen
 
-  bag:geconstateerd
-    a owl:DatatypeProperty;
-    rdfs:domain bag:Pand;
-    rdfs:range xsd:boolean;
-    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#745-geconstateerd"^^xsd:anyURI;
-    skos:definition
-      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
-        rdf:value "Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl ];
-    skos:prefLabel "is geconstateerd"@nl;
-    skos:scopeNote "Het feitelijk bestaan van een pand dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen panden, vanwege het ontbreken van de voor de bouw benodigde vergunning."@nl.
-
-  bag:geometrie
-    a owl:DatatypeProperty;
-    rdfs:domain bag:Pand;
-    rdfs:range geo:wktLiteral.
-
-  bag:oorspronkelijkBouwjaar
+  bag:bouwjaar
     a owl:DatatypeProperty;
     rdfs:domain bag:Pand;
     rdfs:range xsd:gYear;
@@ -57,6 +32,87 @@ bag: {
     skos:prefLabel "heeft oorspronkelijk bouwjaar"@nl;
     skos:scopeNote "Bij het initieel opvoeren van een PAND wordt door de gemeente een reële inschatting gemaakt van het waarschijnlijke bouwjaar van het PAND. Bij het bouwkundig gereed opleveren van het PAND wordt deze waarde in voorkomende gevallen aangepast. Indien in latere jaren wijzigingen aan een pand worden aangebracht, leidt dit niet tot wijziging van het bouwjaar."@nl.
 
+  bag:documentdatum
+    a owl:DatatypeProperty;
+    rdfs:domain bag:Pand;
+    rdfs:range xsd:date;
+    rdfs:seeAlso
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#716-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#726-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#739-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#746-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#765-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#775-documentdatum"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#787-documentdatum"^^xsd:anyURI;
+    skos:definition
+      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+        rdf:value "De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden."@nl ];
+    skos:prefLabel "heeft document datum"@nl;
+    skos:scopeNote "Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen. In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  bag:documentnummer
+    a owl:DatatypeProperty;
+    rdfs:domain bag:Registratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#747-documentnummer"^^xsd:anyURI;
+    skos:definition
+      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+        rdf:value "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente."@nl ];
+    skos:prefLabel "heeft documentnummer"@nl.
+
+  bag:geconstateerd
+    a owl:DatatypeProperty;
+    rdfs:domain bag:Registratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#715-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#725-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#738-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#745-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#764-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#774-geconstateerd"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#786-geconstateerd"^^xsd:anyURI;
+    skos:definition
+      [ dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+        rdf:value "Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl ];
+    skos:prefLabel "is geconstateerd"@nl;
+    skos:scopeNote """
+<article lang="nl">
+  <section>
+    <h1>Ligplaats</h1>
+    <p>Het feitelijk bestaan van een ligplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk permanent gebruik van een plaats in het water dat binnen andere processen aan het licht is gekomen.</p>
+  </section>
+  <section>
+    <h1>Nummeraanduiding</h1>
+    <p>Het feitelijk bestaan van een nummeraanduiding dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte nummeraanduidingen die binnen andere processen aan het licht zijn gekomen.</p>
+  </section>
+  <section>
+    <h1>Openbare ruimte</h1>
+    <p>Het feitelijk bestaan van een naam van een openbare ruimte dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte benamingen die binnen andere processen aan het licht zijn gekomen.</p>
+  </section>
+  <section>
+    <h1>Pand</h1>
+    <p>Het feitelijk bestaan van een pand dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen panden, vanwege het ontbreken van de voor de bouw benodigde vergunning.</p>
+  </section>
+  <section>
+    <h1>Standplaats</h1>
+    <p>Het feitelijk bestaan van een standplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk gebruik van (een gedeelte van) een terrein dat binnen andere processen aan het licht is gekomen.</p>
+  </section>
+  <section>
+    <h1>Verblijfsobject</h1>
+    <p>Het feitelijk bestaan van een verblijfsobject dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen verblijfsobjecten, vanwege het ontbreken van de voor de bouw benodigde vergunning of vanwege het niet benodigd zijn van een dergelijke vergunning.</p>
+  </section>
+  <section>
+    <h1>Woonplaats</h1>
+    <p>Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen.</p>
+  </section>
+</article>"""^^rdf:HTML.
+
+  bag:geometrie
+    a owl:DatatypeProperty;
+    rdfs:domain bag:Pand;
+    rdfs:range geo:wktLiteral.
+
   bag:status
     a owl:ObjectProperty;
     rdfs:domain bag:Pand;
@@ -64,7 +120,43 @@ bag: {
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#744-status"^^xsd:anyURI;
     skos:definition
       [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
-        rdf:value "De fase van de levenscyclus van een pand waarin het betreffende pand zich bevindt."@nl ];
+        rdf:value "De fase van de levenscyclus van een object waarin het betreffende object zich bevindt."@nl ];
     skos:prefLabel "heeft status"@nl;
-    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel daadwerkelijk aanwezige panden, als nog tot stand te brengen en verdwenen panden. Om het onderscheid tussen de stadia in de levenscyclus van het pand te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+    skos:scopeNote """
+<article lang="nl">
+  <section>
+    <h1>Ligplaats</h1>
+    <p>De BAG bevat gegevens over zowel daadwerkelijk aanwezige ligplaatsen als ingetrokken ligplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de ligplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Nummeraanduiding</h1>
+    <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande nummeraanduidingen als ingetrokken nummeraanduidingen. Om het onderscheid tussen de stadia in de levenscyclus van de nummeraanduiding te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Openbare ruimte</h1>
+    <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande openbare ruimten als ingetrokken openbare ruimten. Om het onderscheid tussen de stadia in de levenscyclus van de openbare ruimte te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Pand</h1>
+    <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel daadwerkelijk aanwezige panden, als nog tot stand te brengen en verdwenen panden. Om het onderscheid tussen de stadia in de levenscyclus van het pand te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Standplaats</h1>
+    <p>De BAG bevat gegevens over zowel daadwerkelijk aanwezige standplaatsen als ingetrokken standplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de standplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Verblijfsobject</h1>
+    <p>De BAG bevat gegevens over zowel daadwerkelijk aanwezige verblijfsobjecten, als nog tot stand te brengen en verdwenen verblijfsobjecten. Om het onderscheid tussen de stadia in de levenscyclus van het verblijfsobject te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+  <section>
+    <h1>Woonplaats</h1>
+    <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
+  </section>
+</article>"""^^rdf:HTML.
+
+  # Waardelijsten
+
+  status:pandInGebruik
+    a bag:Status;
+    skos:prefLabel "pand in gebruik"@nl.
 }

@@ -14,6 +14,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix bag: <https://data.labs.kadaster.nl/kadaster/bag/def>
 prefix graph: <https://data.labs.kadaster.nl/kadaster/bag/id/graph/>
 prefix shape: <https://data.labs.kadaster.nl/kadaster/bag/id/shape/>
+prefix status: <https://data.labs.kadaster.nl/kadaster/bag/id/status/>
 
 graph:shapes {
   shape:Document
@@ -57,7 +58,12 @@ graph:shapes {
       [ sh:datatype xsd:string;
         sh:maxCount 1;
         sh:minCount 1;
-        sh:path nen3610:lokaalID ];
+        sh:path nen3610:lokaalID ],
+      [ sh:datatype xsd:string;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path nen3610:namespace;
+        sh:pattern "^NL.IMBAG." ];
     sh:targetClass nen3610:Identificatie.
 
   shape:Geometry
@@ -77,6 +83,12 @@ graph:shapes {
         sh:path nen3610:identificatie ];
     sh:targetClass nen3610:GeoObject.
 
+  #shape:OpenbareRuimteRegistratie
+  #  sh:property
+  #    [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#725-geconstateerd"^^xsd:anyURI;
+  #      sh:datatype;
+  #      sh:description @nl;
+
   shape:Pand
     sh:property
       [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#742-geometrie"^^xsd:anyURI;
@@ -88,4 +100,81 @@ graph:shapes {
       [ sh:datatype xsd:gYear;
         sh:path bag:oorspronkelijkBouwjaar ];
     sh:targetClass bag:Pand.
+
+  shape:Woonplaats
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#71-woonplaats"^^xsd:anyURI;
+    sh:property
+      [ sh:class bag:WoonplaatsRegistratie;
+        sh:minCount 1;
+        sh:path foaf:isPrimaryTopicOf ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#711-identificatie"^^xsd:anyURI;
+        sh:class nen3610:identificatie;
+        sh:description "Een natuurlijk getal tussen 0001 en 9999."@nl;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path nen3610:identificatie;
+        sh:pattern "[0-9]{4}";
+        skos:definition
+          [ dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+            rdf:value "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl ];
+        skos:scopeNote "De woonplaatsen worden vastgesteld door de gemeenten. De vastgestelde woonplaatsen worden voorzien van een unieke aanduiding, te vergelijken met de gemeentecode volgens Tabel 33 Gemeententabel van de Landelijke Tabellen GBA. Deze aanduiding wordt verstrekt door de Dienst voor het kadaster en de openbare registers."@nl ],
+    sh:targetClass bag:Woonplaats.
+
+  shape:WoonplaatsRegistratie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#71-woonplaats"^^xsd:anyURI;
+    sh:property
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#716-documentdatum"^^xsd:anyURI;
+        sh:datatype xsd:date;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path bag:documentdatum;
+        skos:definition
+          [ dct:source "Grondslagen Basis Gebouwen Registratie versie 3.0"@nl;
+            rdf:value "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden."@nl ];
+        skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#717-documentnummer"^^xsd:anyURI;
+        sh:datatype xsd:string;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path bag:documentdatum;
+        sh:pattern "\\p{S}{1,40}";
+        skos:definition
+          [ dct:source "Grondslagen Basis Gebouwen Registratie versie 3.0"@nl;
+            rdf:value "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente."@nl ] ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#715-geconstateerd"^^xsd:anyURI;
+        sh:datatype xsd:boolean;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path bag:geconstateerd;
+        skos:definition
+          [ dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+            rdf:value "Een aanduiding waarmee kan worden aangegeven dat een woonplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl ];
+        skos:scopeNote "Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen."@nl ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#713-geometrie"^^xsd:anyURI;
+        sh:datatype geo:wktLiteral;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path bag:geometrie;
+        skos:definition
+          [ dct:source ""@nl;
+            rdf:value "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl ] ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
+        sh:in ( status:pandInGebruik );
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path bag:status;
+        skos:definition
+          [ dct:source "Herkomst definitie	Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+            rdf:value "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl ];
+        skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl ],
+      [ rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#712-naam"^^xsd:anyURI;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:path sdo:name;
+        sh:pattern "\\p{S}{1,80}";
+        skos:definition
+          [ dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+            rdf:value "De benaming van een door het gemeentebestuur aangewezen woonplaats."@nl ];
+        skos:scopeNote "Het maximale aantal te gebruiken tekens voor een benaming is tachtig. Het verdient aanbeveling te streven naar korte benamingen."@nl ];
+    sh:targetClass bag:WoonplaatsRegistratie.
 }
