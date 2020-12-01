@@ -13,7 +13,7 @@ Deze pagina beschrijft het eerste open GraphQL endpoint wat het Kadaster bij wij
   <a href="/odysseyhackathon">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/graphql-logo.png">
+      <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">
       <div class="card-title">GraphQL endpoint</div>
       <div class="card-description">Middels dit endpoint bevraag je de (open) databronnen van het Kadaster met GraphQL.</div>
     </div>
@@ -29,7 +29,7 @@ Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de servic
 Met GraphQL definiëren we een model van onze data in zogenoemde objecten en diens attributen. Voor dit endpoint bevat dit momenteel enkel data uit de Basisadministratie Adressen & Gebouwen (BAG). Een volledig datamodel van deze bron is te vinden in Figuur 1. 
 <figure id="figuur-1">
   <a href="/assets/images/schema_bag_ams.png">
-    <img src="/assets/images/schema_bag_ams.png">
+    <img src="/assets/images/schema_bag_ams.png" alt="Schema BAG">
   </a>
   <figcaption>
     Figuur 1 ― Het volledige datamodel van de BAG (Bron: Gemeente Amsterdam)
@@ -40,66 +40,66 @@ Voor dit endpoint zijn hiervan de volgende objecten beschikbaar gesteld:
 <details>
   <summary>Woonplaats</summary>
 
-  <b>Woonplaats</b> kent de volgende attributen: <br>
-  - <b>identificatiecode</b> <br>
-  - <b>uoi</b> <br>
-  - <b>woonplaatsnaam</b> <br>
-  - <b>woonplaatsstatus</b> <br>
-  - <b>geovlak</b>; geometrie, in RD-coordinatensysteem <br>
-  - <b>openbareruimten</b>; alle openbare ruimten in deze woonplaats <br>
+  <strong>Woonplaats</strong> kent de volgende attributen: <br>
+  - <strong>identificatiecode</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>woonplaatsnaam</strong> <br>
+  - <strong>woonplaatsstatus</strong> <br>
+  - <strong>geovlak</strong>; geometrie, in RD-coordinatensysteem <br>
+  - <strong>openbareruimten</strong>; alle openbare ruimten in deze woonplaats <br>
 </details>
 
 <details>
   <summary>Openbare Ruimte</summary>
 
-  <b>Openbare ruimte</b> (oa. straat) kent de volgende attributen: <br>
-  - <b>identificatiecode</b> <br>
-  - <b>uoi</b> <br>
-  - <b>openbareruimtenaam</b> <br>
-  - <b>openbareruimtestatus</b> <br>
-  - <b>openbareruimtetype</b> <br>
-  - <b>gerelateerdeWoonplaats</b>; de woonplaats waarin deze openbare ruimte ligt <br>
-  - <b>nummeraanduidingen</b>; alle nummeraanduidingen (adressen) in deze openbare ruimte <br>
+  <strong>Openbare ruimte</strong> (oa. straat) kent de volgende attributen: <br>
+  - <strong>identificatiecode</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>openbareruimtenaam</strong> <br>
+  - <strong>openbareruimtestatus</strong> <br>
+  - <strong>openbareruimtetype</strong> <br>
+  - <strong>gerelateerdeWoonplaats</strong>; de woonplaats waarin deze openbare ruimte ligt <br>
+  - <strong>nummeraanduidingen</strong>; alle nummeraanduidingen (adressen) in deze openbare ruimte <br>
 </details>
 
 <details>
   <summary>Nummeraanduiding</summary>
 
-  <b>Nummeraanduiding</b> (ookwel: adres) kent de volgende attributen: <br>
-  - <b>identificatiecode</b> <br>
-  - <b>uoi</b> <br>
-  - <b>postcode</b> <br>
-  - <b>huisnummer</b> <br>
-  - <b>huisletter</b> <br>
-  - <b>huisnummertoevoeging</b> <br>
-  - <b>nummeraanduidingstatus</b> <br>
-  - <b>bijbehorendeOpenbareRuimte</b>; openbare ruimte (straat) waarin dit adres ligt <br>
-  - <b>hoofdadresVan</b>; het verblijfsobject (woning/vestiging) waarvan dit adres het hoofdadres is <br>
+  <strong>Nummeraanduiding</strong> (ookwel: adres) kent de volgende attributen: <br>
+  - <strong>identificatiecode</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>postcode</strong> <br>
+  - <strong>huisnummer</strong> <br>
+  - <strong>huisletter</strong> <br>
+  - <strong>huisnummertoevoeging</strong> <br>
+  - <strong>nummeraanduidingstatus</strong> <br>
+  - <strong>bijbehorendeOpenbareRuimte</strong>; openbare ruimte (straat) waarin dit adres ligt <br>
+  - <strong>hoofdadresVan</strong>; het verblijfsobject (woning/vestiging) waarvan dit adres het hoofdadres is <br>
 </details>
 
 <details>
   <summary>Verblijfsobject</summary>
 
-  <b>Verblijfsobject</b> (ookwel: woning/vestiging) kent de volgende attributen: <br>
-  - <b>identificatiecode</b> <br>
-  - <b>uoi</b> <br>
-  - <b>oppervlakteverblijfsobject</b> <br>
-  - <b>verblijfsobjectstatus</b> <br>
-  - <b>geopunt</b>; geometrie, in RD-coordinatensysteem <br>
-  - <b>hoofdadres</b>; het primaire nummeraanduiding (adres) van het verblijfsobject <br>
-  - <b>ligtinpand</b>; het pand waarin dit verblijfsobject ligt <br>
+  <strong>Verblijfsobject</strong> (ookwel: woning/vestiging) kent de volgende attributen: <br>
+  - <strong>identificatiecode</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>oppervlakteverblijfsobject</strong> <br>
+  - <strong>verblijfsobjectstatus</strong> <br>
+  - <strong>geopunt</strong>; geometrie, in RD-coordinatensysteem <br>
+  - <strong>hoofdadres</strong>; het primaire nummeraanduiding (adres) van het verblijfsobject <br>
+  - <strong>ligtinpand</strong>; het pand waarin dit verblijfsobject ligt <br>
 </details>
 
 <details>
   <summary>Pand</summary>
 
-  <b>Pand</b> (ookwel: gebouw) kent de volgende attributen: <br>
-  - <b>identificatiecode</b> <br>
-  - <b>uoi</b> <br>
-  - <b>bouwjaar</b> <br>
-  - <b>pandstatus</b> <br>
-  - <b>geovlak</b>; geometrie, in RD-coordinatensysteem <br>
-  - <b>vbosinpand</b>; alle verblijfsobjecten (woningen/vestigingen) die in dit pand gevestigd zijn <br>
+  <strong>Pand</strong> (ookwel: gebouw) kent de volgende attributen: <br>
+  - <strong>identificatiecode</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>bouwjaar</strong> <br>
+  - <strong>pandstatus</strong> <br>
+  - <strong>geovlak</strong>; geometrie, in RD-coordinatensysteem <br>
+  - <strong>vbosinpand</strong>; alle verblijfsobjecten (woningen/vestigingen) die in dit pand gevestigd zijn <br>
 </details>
 
 Deze objecten zijn landsdekkend. Er kan dus over heel Nederland bevragingen worden uitgevoerd op de beschikbare data middels dit endpoint. 
@@ -142,7 +142,7 @@ We hebben in bovenstaande specifieke bevraging een expliciete peildatum meegegev
 Recent heeft Kadaster in samenwerking met het Ministerie van BZK en Fibree gewerkt aan een Unique Object Identifier (UOI). Deze is voor dit open endpoint geintegreerd in de BAG dataset.
 <figure id="figuur-2">
   <a href="/assets/images/uoi-schema.PNG">
-    <img src="/assets/images/uoi-schema.PNG">
+    <img src="/assets/images/uoi-schema.PNG" alt="UOI schema">
   </a>
   <figcaption>
     Figuur 2 ― De structuur van een Unique Object Identificer (UOI)

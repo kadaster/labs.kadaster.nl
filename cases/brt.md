@@ -10,7 +10,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
   <a href="/stories/religieuze-gebouwen/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/sint-jan.jpg">
+      <img class="card-image" src="/assets/images/sint-jan.jpg" alt="Sint-Janskathedraal">
       <div class="card-title">Religieuze Gebouwen</div>
       <div class="card-description">Deze Story geeft je een beeld van de mogelijke BRT visualisaties gericht op Religieuze Gebouwen inclusief onze toelichting.</div>
     </div>
@@ -18,7 +18,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
   <a href="/browsers/brt/">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
       <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
     </div>
@@ -26,7 +26,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
   <a href="https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl">
     <div class="card">
       <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
       <div class="card-description">De Datasets van de BRT is toegankelijk via PDOK. Je vindt hier de TOPNL bestanden. Deze  informatie kun je bekijken en bewerken.</div>
     </div>

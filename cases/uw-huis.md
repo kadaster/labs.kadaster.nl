@@ -11,7 +11,7 @@ centraal.  Deze resultaten gebruiken we ook om op evenementen en beurzen demonst
   <a href="/stories/vind-een-gebouw">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/huis.png">
+      <img class="card-image" src="/assets/images/huis.png" alt="Huis">
       <div class="card-title">Vind een gebouw</div>
       <div class="card-description">Vind een of meerdere BAG panden (bv. uw huis) door de bevraging aan te passen.</div>
     </div>
@@ -19,7 +19,7 @@ centraal.  Deze resultaten gebruiken we ook om op evenementen en beurzen demonst
   <a href="/demonstrators/huischeck">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/huis.png">
+      <img class="card-image" src="/assets/images/huis.png" alt="Huis">
       <div class="card-title">Huischeck</div>
       <div class="card-description">Deze demonstrator kun je gebruiken om de URI van een huis te bepalen en deze te printen als QR code voor een evenement.</div>
     </div>

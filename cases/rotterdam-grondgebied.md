@@ -10,7 +10,7 @@ title: Use Case ― Big Data Evaluatie Rotterdam Grondgebied
   <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg">
+      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg" alt="Skyline Rotterdam">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
