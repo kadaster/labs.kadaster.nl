@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl-bag-extract:bagStand xmlns:DatatypenNEN3610="www.kadaster.nl/schemas/lvbag/imbag/datatypennen3610/v20200601" xmlns:Objecten="www.kadaster.nl/schemas/lvbag/imbag/objecten/v20200601" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:Historie="www.kadaster.nl/schemas/lvbag/imbag/historie/v20200601" xmlns:Objecten-ref="www.kadaster.nl/schemas/lvbag/imbag/objecten-ref/v20200601" xmlns:nen5825="www.kadaster.nl/schemas/lvbag/imbag/nen5825/v20200601" xmlns:KenmerkInOnderzoek="www.kadaster.nl/schemas/lvbag/imbag/kenmerkinonderzoek/v20200601" xmlns:selecties-extract="http://www.kadaster.nl/schemas/lvbag/extract-selecties/v20200601" xmlns:sl-bag-extract="http://www.kadaster.nl/schemas/lvbag/extract-deelbestand-lvc/v20200601" xmlns:sl="http://www.kadaster.nl/schemas/standlevering-generiek/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.kadaster.nl/schemas/lvbag/extract-deelbestand-lvc/v20200601 http://www.kadaster.nl/schemas/bag-verstrekkingen/extract-deelbestand-lvc/v20200601/BagvsExtractDeelbestandExtractLvc-2.1.0.xsd">
+  <sl-bag-extract:bagInfo>
+    <selecties-extract:Gebied-Registratief>
+      <selecties-extract:Gebied-GEM>
+        <selecties-extract:GemeenteCollectie>
+          <selecties-extract:Gemeente>
+            <selecties-extract:GemeenteIdentificatie>0119</selecties-extract:GemeenteIdentificatie>
+          </selecties-extract:Gemeente>
+        </selecties-extract:GemeenteCollectie>
+      </selecties-extract:Gebied-GEM>
+    </selecties-extract:Gebied-Registratief>
+    <selecties-extract:LVC-Extract>
+      <selecties-extract:StandTechnischeDatum>2020-10-15</selecties-extract:StandTechnischeDatum>
+    </selecties-extract:LVC-Extract>
+  </sl-bag-extract:bagInfo>
+  <sl:standBestand>
+<!-- LV = Landelijke Voorzieningen -->
+    <sl:dataset>LVBAG</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>GEMEENTE</sl:gebied>
+      <sl:leveringsId>0000000001</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>PND</sl:objectType> <!-- pand -->
+      </sl:objectTypen>
+    </sl:inhoud>
+
+<!-- Object (met alleen in gebruik)-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <!-- Object properties -->
+            <!-- http://bag.basisregistraties.overheid.nl/bag/id/pand/0119100000014388 -->
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014388</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="7">209882.568 524385.976 0.0 209882.915 524381.819 0.0 209886.052 524382.115 0.0 209885.66 524386.267 0.0 209884.76 524386.182 0.0 209883.422 524386.056 0.0 209882.568 524385.976 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand in gebruik</Objecten:status>
+
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12172</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                    <Historie:tijdstipRegistratie>2010-03-02T14:03:11.000</Historie:tijdstipRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2010-03-04T09:12:48.265</Historie:tijdstipRegistratieLV>
+                        </Historie:BeschikbaarLV>
+                    </Historie:Voorkomen>
+                </Objecten:voorkomen>
+            </Objecten:Pand>
+        </sl-bag-extract:bagObject>
+    </sl:stand>
+
+
+
+<!-- Object (met gesloopt)-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <!-- Object properties -->
+            <!-- http://bag.basisregistraties.overheid.nl/bag/id/pand/0119100000014389 -->
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014389</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="6">208567.124 524793.943 0.0 208567.175 524793.867 0.0 208568.53 524791.86 0.0 208572.683 524794.542 0.0 208571.417 524796.86 0.0 208567.124 524793.943 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand in gebruik</Objecten:status>
+
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12172</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                    <Historie:eindGeldigheid>2009-08-05</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2010-03-02T14:03:12.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2013-04-25T12:53:35.000</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2010-03-04T09:12:48.267</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2013-04-25T13:04:23.564</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014389</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="6">208567.124 524793.943 0.0 208567.175 524793.867 0.0 208568.53 524791.86 0.0 208572.683 524794.542 0.0 208571.417 524796.86 0.0 208567.124 524793.943 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand gesloopt</Objecten:status>
+            
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12172</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>2</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                    <Historie:tijdstipRegistratie>2013-04-25T12:53:35.000</Historie:tijdstipRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2013-04-25T13:04:23.564</Historie:tijdstipRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+
+<!-- Object (met verbouwing pand)-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+        <!-- http://bag.basisregistraties.overheid.nl/bag/id/pand/0119100000016994 -->
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000016994</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="5">211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0 211389.896 523101.935 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1979</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand in gebruik</Objecten:status>
+            
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12172</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid> <!-- -->
+                    <Historie:eindGeldigheid>2015-01-07</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2010-03-02T14:05:56.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2015-01-08T11:12:02.000</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2010-03-04T09:12:56.657</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2015-01-08T11:31:37.590</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+<sl:stand>
+    <sl-bag-extract:bagObject> 
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000016994</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="5">211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0 211389.896 523101.935 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1983</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand in gebruik</Objecten:status>
+            
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2015-01-07</Objecten:documentdatum>
+            <Objecten:documentnummer>265363</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>2</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2015-01-07</Historie:beginGeldigheid>
+                    <Historie:eindGeldigheid>2019-07-02</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2015-01-08T11:12:02.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2019-07-02T16:17:27.771</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2015-01-08T11:31:37.590</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2019-07-02T16:18:02.444</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000016994</Objecten:identificatie>
+                <Objecten:geometrie>
+                    <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList count="5">211388.871 523104.039 0.0 211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0</gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1983</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Verbouwing pand</Objecten:status>
+
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2019-07-02</Objecten:documentdatum>
+            <Objecten:documentnummer>19213822</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>3</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2019-07-02</Historie:beginGeldigheid>
+                    <Historie:tijdstipRegistratie>2019-07-02T16:17:27.771</Historie:tijdstipRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2019-07-02T16:18:02.444</Historie:tijdstipRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+
+<!-- Object (met sloopvergunning verleend)-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014697</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="6">209726.473 524482.596 0.0 209729.455 524482.851 0.0 209729.189 524486.588 0.0 209727.749 524486.447 0.0 209726.21 524486.296 0.0 209726.473 524482.596 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand in gebruik</Objecten:status>
+                        
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12172</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                    <Historie:eindGeldigheid>2010-10-27</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2010-03-02T14:03:24.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2011-06-07T08:22:38.000</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2010-03-04T09:12:49.140</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2011-06-07T08:31:30.119</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014697</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="6">209726.473 524482.596 0.0 209729.455 524482.851 0.0 209729.189 524486.588 0.0 209727.749 524486.447 0.0 209726.21 524486.296 0.0 209726.473 524482.596 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Sloopvergunning verleend</Objecten:status>
+            
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2010-10-27</Objecten:documentdatum>
+            <Objecten:documentnummer>1015351</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>2</Historie:voorkomenidentificatie>
+                        <Historie:beginGeldigheid>2010-10-27</Historie:beginGeldigheid>
+                        <Historie:eindGeldigheid>2011-06-07</Historie:eindGeldigheid>
+                        <Historie:tijdstipRegistratie>2011-06-07T08:22:38.000</Historie:tijdstipRegistratie>
+                        <Historie:eindRegistratie>2011-06-07T08:33:01.000</Historie:eindRegistratie>
+                        <Historie:BeschikbaarLV>
+                            <Historie:tijdstipRegistratieLV>2011-06-07T08:31:30.119</Historie:tijdstipRegistratieLV>
+                            <Historie:tijdstipEindRegistratieLV>2011-06-07T09:01:33.763</Historie:tijdstipEindRegistratieLV>
+                        </Historie:BeschikbaarLV>
+                    </Historie:Voorkomen>
+                </Objecten:voorkomen>
+            </Objecten:Pand>
+        </sl-bag-extract:bagObject>
+    </sl:stand>
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Pand>
+            <Objecten:identificatie domein="NL.IMBAG.Pand">0119100000014697</Objecten:identificatie>
+            <Objecten:geometrie>
+                <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList count="6">209726.473 524482.596 0.0 209729.455 524482.851 0.0 209729.189 524486.588 0.0 209727.749 524486.447 0.0 209726.21 524486.296 0.0 209726.473 524482.596 0.0</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+            <Objecten:oorspronkelijkBouwjaar>1987</Objecten:oorspronkelijkBouwjaar>
+            <Objecten:status>Pand gesloopt</Objecten:status>
+            
+            <!-- Registration properties -->
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2011-06-07</Objecten:documentdatum>
+            <Objecten:documentnummer>const1</Objecten:documentnummer>
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>3</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2011-06-07</Historie:beginGeldigheid>
+                    <Historie:tijdstipRegistratie>2011-06-07T08:33:01.000</Historie:tijdstipRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2011-06-07T09:01:33.763</Historie:tijdstipRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        </Objecten:Pand>
+    </sl-bag-extract:bagObject>
+</sl:stand>
