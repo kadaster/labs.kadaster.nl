@@ -53,7 +53,7 @@ The following are examples of browsers and viewers developed by Kadaster for bro
   <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png">
+      <img class="card-image" src="/assets/images/ld-vowl.png" alt="Linked data vowl">
       <div class="card-title">LD-VOWL</div>
       <div class="card-description">The data model of the Key Register of Addresses and Buildings (BAG) in the online visualization tool LD-VOWL.</div>
 	</div>
@@ -61,7 +61,7 @@ The following are examples of browsers and viewers developed by Kadaster for bro
   <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
       <div class="card-title">Kadaster's Knowledge Graph</div>
       <div class="card-description">Move through all the Linked Data store integrally as open data and discover the relationships between the different sources.</div>
 	</div>
@@ -69,7 +69,7 @@ The following are examples of browsers and viewers developed by Kadaster for bro
   <a href="/demonstrators/graph-browser/namen-app">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+      <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Toponamenzoeker">
       <div class="card-title">Toponamenzoeker</div>
       <div class="card-description">In the toponamenzoeker you can search all the names contained within the topography database and maps that Kadaster maintains.</div>
 	</div>
@@ -115,7 +115,7 @@ There are a range of SPARQL clients available to the end user for the purpose of
   <a href="/stories/covid-19/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg">
+      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Weergave Covid-19 virus">
       <div class="card-title">Corona (COVID-19) Data Story</div>
       <div class="card-description">This data story provides an overview of the Dutch Corona statistics in combination with Kadaster data.</div>
 	</div>
@@ -123,7 +123,7 @@ There are a range of SPARQL clients available to the end user for the purpose of
   <a href="/stories/digitaal-erfgoed/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg">
+      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg" alt="Lisse">
       <div class="card-title">Digital Heritage</div>
       <div class="card-description">A data story about Oud Lisse made by the PLDN working group Digital Heritage.</div>
 	</div>
@@ -131,7 +131,7 @@ There are a range of SPARQL clients available to the end user for the purpose of
   <a href="/stories/pdok-knowledge-graph/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <img class="card-image" src="/assets/images/pdok-logo-text.png" alt="PDOK logo">
       <div class="card-title">PDOK Knowledge Graph</div>
       <div class="card-description">In this data story we question combinations of datasets. With this we show the added value of a Knowledge Graph.</div>
 	</div>
@@ -143,7 +143,7 @@ At Kadaster, we are working on the development of our Knowledge Graph by integra
 
 <figure id="3">
 	<a href="/assets/images/self-serviceGISarchitecture.jpg">
-		<img src="/assets/images/self-serviceGISarchitecture.jpg">
+		<img src="/assets/images/self-serviceGISarchitecture.jpg" alt="Self-service GIS architectuur">
 	</a>
   <figcaption>
     Figure 3 ― Self-Service GIS Architecture. 

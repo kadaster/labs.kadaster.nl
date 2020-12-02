@@ -14,7 +14,7 @@ This page describes the first open GraphQL endpoint that the Cadastre Land Regis
   <a href="/odysseyhackathon">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/graphql-logo.png">
+      <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">
       <div class="card-title">GraphQL endpoint</div>
       <div class="card-description">You use this endpoint to query the (open) data sources of the Land Registry with GraphQL.</div>
     </div>
@@ -33,7 +33,7 @@ With GraphQL we define a model of our data in so-called objects and their attrib
  
 <figure id="figuur-1">
   <a href="/assets/images/schema_bag_ams.png">
-    <img src="/assets/images/schema_bag_ams.png">
+    <img src="/assets/images/schema_bag_ams.png" alt="Schema BAG">
   </a>
   <figcaption>
     Figuur 1 ― The full datamodel of the BAG (Source: Municipality of Amsterdam)
@@ -44,66 +44,66 @@ The following objects have been made available for this endpoint:
 <details>
   <summary>Woonplaats (City)</summary>
 
-  <b>Woonplaats</b> has the following attributes: <br>
-  - <b>identificatiecode (Identification Code)</b> <br>
-  - <b>uoi</b> <br>
-  - <b>woonplaatsnaam (City name)</b> <br>
-  - <b>woonplaatsstatus (City status)</b> <br>
-  - <b>geovlak (Geometry)</b>; geometry, in the RD (Dutch) coordinate system <br>
-  - <b>openbareruimten (Public Areas)</b>; all public areas (streets) in this city <br>
+  <strong>Woonplaats</strong> has the following attributes: <br>
+  - <strong>identificatiecode (Identification Code)</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>woonplaatsnaam (City name)</strong> <br>
+  - <strong>woonplaatsstatus (City status)</strong> <br>
+  - <strong>geovlak (Geometry)</strong>; geometry, in the RD (Dutch) coordinate system <br>
+  - <strong>openbareruimten (Public Areas)</strong>; all public areas (streets) in this city <br>
 </details>
 
 <details>
   <summary>Openbare Ruimte (Public Area)</summary>
 
-  <b>Openbare ruimte</b> (or: street) has the following attributes: <br>
-  - <b>identificatiecode (Identification Code)</b> <br>
-  - <b>uoi</b> <br>
-  - <b>openbareruimtenaam (Public Area Name)</b> <br>
-  - <b>openbareruimtestatus (Public Area Status)</b> <br>
-  - <b>openbareruimtetype (Public Area Type)</b> <br>
-  - <b>gerelateerdeWoonplaats (Related City)</b>; the city in which this public area resides <br>
-  - <b>nummeraanduidingen (Addresses)</b>; all addresses in this public area <br>
+  <strong>Openbare ruimte</strong> (or: street) has the following attributes: <br>
+  - <strong>identificatiecode (Identification Code)</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>openbareruimtenaam (Public Area Name)</strong> <br>
+  - <strong>openbareruimtestatus (Public Area Status)</strong> <br>
+  - <strong>openbareruimtetype (Public Area Type)</strong> <br>
+  - <strong>gerelateerdeWoonplaats (Related City)</strong>; the city in which this public area resides <br>
+  - <strong>nummeraanduidingen (Addresses)</strong>; all addresses in this public area <br>
 </details>
 
 <details>
   <summary>Nummeraanduiding (Address)</summary>
 
-  <b>Nummeraanduiding</b> (or: address) has the following attributes: <br>
-  - <b>identificatiecode (Identification Code)</b> <br>
-  - <b>uoi</b> <br>
-  - <b>postcode (Postal Code)</b> <br>
-  - <b>huisnummer (House Number)</b> <br>
-  - <b>huisletter (House Letter)</b> <br>
-  - <b>huisnummertoevoeging (House Number Addition)</b> <br>
-  - <b>nummeraanduidingstatus (Address Status)</b> <br>
-  - <b>bijbehorendeOpenbareRuimte (Related Public Area)</b>; public area (steet) in which this address resides <br>
-  - <b>hoofdadresVan (Main Address of)</b>; the house of which this address is the main address<br>
+  <strong>Nummeraanduiding</strong> (or: address) has the following attributes: <br>
+  - <strong>identificatiecode (Identification Code)</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>postcode (Postal Code)</strong> <br>
+  - <strong>huisnummer (House Number)</strong> <br>
+  - <strong>huisletter (House Letter)</strong> <br>
+  - <strong>huisnummertoevoeging (House Number Addition)</strong> <br>
+  - <strong>nummeraanduidingstatus (Address Status)</strong> <br>
+  - <strong>bijbehorendeOpenbareRuimte (Related Public Area)</strong>; public area (steet) in which this address resides <br>
+  - <strong>hoofdadresVan (Main Address of)</strong>; the house of which this address is the main address<br>
 </details>
 
 <details>
   <summary>Verblijfsobject (residence object)</summary>
 
-  <b>Verblijfsobject</b> (or: residence/establishment) has the following attributes: <br>
-  - <b>identificatiecode (Identification Code)</b> <br>
-  - <b>uoi</b> <br>
-  - <b>oppervlakteverblijfsobject (Surface Area)</b> <br>
-  - <b>verblijfsobjectstatus (Residence Status)</b> <br>
-  - <b>geopunt (Geometry)</b>; geometry, in the RD (Dutch) coordinate system <br>
-  - <b>hoofdadres (Primary Address)</b>; the primary address of this residence <br>
-  - <b>ligtinpand (Resides in building)</b>; the building in which this residence lies <br>
+  <strong>Verblijfsobject</strong> (or: residence/establishment) has the following attributes: <br>
+  - <strong>identificatiecode (Identification Code)</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>oppervlakteverblijfsobject (Surface Area)</strong> <br>
+  - <strong>verblijfsobjectstatus (Residence Status)</strong> <br>
+  - <strong>geopunt (Geometry)</strong>; geometry, in the RD (Dutch) coordinate system <br>
+  - <strong>hoofdadres (Primary Address)</strong>; the primary address of this residence <br>
+  - <strong>ligtinpand (Resides in building)</strong>; the building in which this residence lies <br>
 </details>
 
 <details>
   <summary>Pand (Building)</summary>
 
-  <b>Pand</b> (or: building) has the following attributes: <br>
-  - <b>identificatiecode (Identification Code)</b> <br>
-  - <b>uoi</b> <br>
-  - <b>bouwjaar (Building Year)</b> <br>
-  - <b>pandstatus (Building status)</b> <br>
-  - <b>geovlak (Geometry)</b>; geometry, in the RD (Dutch) coordinate system<br>
-  - <b>vbosinpand (Residences in Building)</b>; all residences residing in this building <br>
+  <strong>Pand</strong> (or: building) has the following attributes: <br>
+  - <strong>identificatiecode (Identification Code)</strong> <br>
+  - <strong>uoi</strong> <br>
+  - <strong>bouwjaar (Building Year)</strong> <br>
+  - <strong>pandstatus (Building status)</strong> <br>
+  - <strong>geovlak (Geometry)</strong>; geometry, in the RD (Dutch) coordinate system<br>
+  - <strong>vbosinpand (Residences in Building)</strong>; all residences residing in this building <br>
 </details>
 
 These objects cover the entire country. Queries can therefore be conducted throughout the Netherlands on the available data through this endpoint.
@@ -148,7 +148,7 @@ and Fibree. This is integrated in the BAG dataset for this open endpoint.
 
 <figure id="figuur-2">
   <a href="/assets/images/uoi-schema.PNG">
-    <img src="/assets/images/uoi-schema.PNG">
+    <img src="/assets/images/uoi-schema.PNG" alt="UOI schema">
   </a>
   <figcaption>
     Figuur 2 ― The structure of the  Unique Object Identificer (UOI)

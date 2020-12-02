@@ -9,7 +9,7 @@ title: Use Case ― Kerncijfers Wijken- en Buurten (CBS) toegankelijk middels LO
   <a href="/demonstrators/cbsloddemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screen-kwb.PNG">
+      <img class="card-image" src="/assets/images/screen-kwb.PNG" alt="Screenshot KWB">
       <div class="card-title">CBS KWB Dashboard</div>
       <div class="card-description">Gebruik dit dashboard om laagdrempelig de Kerncijfers Wijken- en Buurten (KWB) van het CBS te bevragen!</div>
     </div>
@@ -17,7 +17,7 @@ title: Use Case ― Kerncijfers Wijken- en Buurten (CBS) toegankelijk middels LO
     <a href="/browsers/bevolking/">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/cbs-lod.png">
+      <img class="card-image" src="/assets/images/cbs-lod.png" alt="CBS Lod">
       <div class="card-title">CBS Bevolking Data Browser</div>
       <div class="card-description">Met de bevolkings browser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
     </div>

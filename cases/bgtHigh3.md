@@ -15,7 +15,7 @@ Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basi
   <a href="/stories/bgt-high3/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
       <div class="card-title">Basisregistratie Topografie Datastory</div>
       <div class="card-description">Data Story die toont wat er mogelijk is wanneer de Basisregistratie Grootschalige Topografie (BGT) als Linked Data beschikbaar wordt gemaakt.</div>
     </div>
@@ -23,7 +23,7 @@ Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basi
   <a href="/browsers/areaal">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
       <div class="card-title">Areaal data browser</div>
       <div class="card-description">Data browser waarin de Areaal dataset van provincie Noord-Holland doorzoekbaar wordt gemaakt.  De dataset bevat o.a. wegdelen en kunstwerken.</div>
     </div>
@@ -31,7 +31,7 @@ Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basi
   <a href="https://data.labs.kadaster.nl/bgt-high3">
     <div class="card">
       <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
       <div class="card-title">Basisregistratie Topografie (BGT)</div>
       <div class="card-description">Overzicht van de Linked Datasets die tijdens deze activiteit zijn aangemaakt.  Alleen datasets die open data bevatten zijn zonder login zichtbaar.</div>
     </div>

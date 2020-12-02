@@ -43,6 +43,15 @@ a {
   display: flex;
   display: contents;
 }
+ol > a,
+ul > a,
+li > a,
+p > a{
+  text-decoration: underline;
+  /* IE11 doesn't support contents */
+  display: flex;
+  display: contents;
+}
 a:hover {
   text-decoration: none;
 }

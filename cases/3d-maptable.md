@@ -8,7 +8,7 @@ title: Use Case ― Grondmarkt
     <a href="/demonstrators/3d-map/3d-map.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/full_brt_map.png">
+      <img class="card-image" src="/assets/images/full_brt_map.png" alt="Achtergrondkaart">
       <div class="card-title">Achtergrondkaart voor de Maptable</div>
       <div class="card-description">Gebruik de Augmented Reality app van het Kadaster op deze ondergrondkaart en krijg een uniek beeld van de wijk Ughelen Buiten in Apeldoorn.</div>
     </div>
@@ -16,7 +16,7 @@ title: Use Case ― Grondmarkt
   <a href="/download/KadasterMapTable_InnovationHub.apk">
     <div class="card">
       <div class="card-type">Download</div>
-      <img class="card-image" src="/assets/images/android_icon.png">
+      <img class="card-image" src="/assets/images/android_icon.png" alt="Android logo">
       <div class="card-title">Android Augmented Reality App</div>
       <div class="card-description">Download hier de Augmented Reality app voor Android. Voor instructies, zie onder.</div>
     </div>
@@ -38,14 +38,14 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 	<li> Download de APK (Android Package) bovenaan deze pagina of <a href = "/download/KadasterMapTable_InnovationHub.apk">door op deze link te klikken</a></li>
 	<li> Omdat dit een package is die niet uit de Google Play Store komt, zul je bij je Android telefoon moeten aangeven dat het OK is om de app te installeren. 
 	Dit doe je door de functionaliteit "Allow installation of apps from sources other than the Play Store" aan te zetten (NL: Installeren van apps met onbekende bronnen toestaan). 
-	Voor oudere versies van android software (Voor Android 8.0) kun je dit doen door <b>Instellingen-->Beveiliging-->Onbekende bronnen</b> aan te zetten. Zie ook Figuur 1. Let op dat de precieze instelling afhankelijk is van het model van je telefoon. Indien deze stap lukt, sla stap 3 over. 
+	Voor oudere versies van android software (Voor Android 8.0) kun je dit doen door <strong>Instellingen-->Beveiliging-->Onbekende bronnen</strong> aan te zetten. Zie ook Figuur 1. Let op dat de precieze instelling afhankelijk is van het model van je telefoon. Indien deze stap lukt, sla stap 3 over. 
 	Zoniet, ga naar stap 3.
 		<figure id="figuur-1">
 		  <a href="/assets/images/nl-unknown-sources-1.jpg">
-			<img src="/assets/images/nl-unknown-sources-1.jpg" width = "306" height="543">
+			<img src="/assets/images/nl-unknown-sources-1.jpg" width = "306" height="543" alt="Screenshot beveiliging">
 		  </a>
 		  <a href="/assets/images/nl-unknown-sources-2.jpg">
-			<img src="/assets/images/nl-unknown-sources-2.jpg" width = "306" height="543">
+			<img src="/assets/images/nl-unknown-sources-2.jpg" width = "306" height="543" alt="Screenshot onbekende bronnen">
 		  </a>
 		  <figcaption>
 			Figuur 1 ― Settings voor unknown sources in Android, in het Nederlands.
@@ -53,14 +53,14 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 		</figure></li>
 	<li> Mocht je de instelling niet kunnen vinden op bovenstaande plekken, dan kan dat komen doordat je over een nieuwere versie van  Android beschikt. Sinds Android 8.0 (Oreo) moet je de toestemming om onbekende apps
 	te installeren verlenen aan de exacte app vanaf waar je de APK hebt gedownload. Download je de APK bijvoorbeeld met Google Chrome, dan moet je de machtiging om onbekende apps te installeren verlenen aan Chrome. Zie ook de foutmelding in Figuur 2 (Links). 
-	Door op instellingen te drukken brengen de meeste Android telefoons je hiervoor direct naar de juiste plek. Alternatief kun je deze machtinging vinden onder <b>Apps en meldingen-->Speciale app-toegang-->Onbekende Apps Installeren</b>. 
+	Door op instellingen te drukken brengen de meeste Android telefoons je hiervoor direct naar de juiste plek. Alternatief kun je deze machtinging vinden onder <strong>Apps en meldingen-->Speciale app-toegang-->Onbekende Apps Installeren</strong>. 
 	Daar verleen je de toegang aan de specifieke app waarmee je de APK installeert (bijv. Chrome), zoals getoond in Figuur 2 (Rechts).  
 		<figure id="figuur-2">
 		  <a href="/assets/images/error-chrome-install.jpg">
-			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%">
+			<img src="/assets/images/error-chrome-install.jpg" width="30%" height="30%" alt="Screenshot Chrome error">
 		</a>
 			<a href = "/assets/images/allow-chrome-access.jpg">
-			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%">
+			<img src="/assets/images/allow-chrome-access.jpg" width="30%" height="30%" alt="Screenshot Chrome toestemming geven">
 		  </a>
 		  <figcaption>
 			Figuur 2 ― Foutmelding die Chrome geeft als het installeren van onbekende apps nog niet is toegestaan en het scherm waarin je dat kunt toestaan. 
