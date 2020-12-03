@@ -67,17 +67,23 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "tijdstipeindregistratielv": {
+    "tijdstipdregistratielv": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
-    "tijdstipregistratielv": {
+    "tijdstipeindregistratielv": {
       "@id": "vervallendatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_vlak": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_punt": {
       "@type": "geo:wktLiteral"
     },
     "gml_id": null,
