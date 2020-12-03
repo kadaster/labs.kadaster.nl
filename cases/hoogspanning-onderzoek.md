@@ -10,7 +10,7 @@ Bekijk voor een willekeurig adres of er dichtbij een hoogspanning kabel of verde
   <a href="/stories/hoogspanning/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
       <div class="card-title">Hoogspanning Onderzoek</div>
       <div class="card-description">Hoogspanning Onderzoek</div>
     </div>

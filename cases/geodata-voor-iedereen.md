@@ -20,7 +20,7 @@ om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontslu
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/logoexplorer.PNG">
+      <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Integrale explorer logo">
       <div class="card-title">Integrale Explorer</div>
       <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
     </div>
@@ -28,7 +28,7 @@ om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontslu
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG" alt="Screenshot kwaliteitsdashboard">
       <div class="card-title">Generiek Kwaliteitsdashboard</div>
       <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
     </div>
@@ -50,7 +50,7 @@ Concreet heeft het Data Science Team hierbij de volgende demomstrators opgelever
 
 <figure id="figuur-1">
   <a href="/assets/images/architectuur-platformstrategie.PNG">
-    <img src="/assets/images/architectuur-platformstrategie.PNG">
+    <img src="/assets/images/architectuur-platformstrategie.PNG" alt="Architectuur platformstrategie">
   </a>
   <figcaption>
     Figuur 1 ― Simpele architectuurplaat van de gemaakte demonstrators.

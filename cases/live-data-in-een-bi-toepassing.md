@@ -10,7 +10,7 @@ title: Use Case ― Live data in een BI-toepassing
   <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/livedatadashboard.png">
+      <img class="card-image" src="/assets/images/livedatadashboard.png" alt="Live data dashboard">
       <div class="card-title">Tableau dashboard</div>
       <div class="card-description">Dit is het dashboard dat gebruik maakt van de data in de Tableau WDC</div>
     </div>
@@ -58,7 +58,7 @@ voor gekozen om een niet al te uitgebreide web-pagina neer te zetten waar de dat
 
 <figure id="figuur-1">
   <a href="/assets/images/terugmeld-wdc.png">
-    <img src="/assets/images/terugmeld-wdc.png">
+    <img src="/assets/images/terugmeld-wdc.png" alt="Marker op de kaart">
   </a>
   <figcaption>
     Figuur 1 ― Web-pagina van de Web Data Connector

@@ -8,7 +8,7 @@ title: Use Case ― Missende BAG-waarden voorspellen
   <a href="/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG">
+      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Kaart Amsterdam met markers">
       <div class="card-title">R Shiny Dashboard</div>
       <div class="card-description">Bekijk de resultaten van dit voorspellend model ook in een interactief dashboard!</div>
     </div>
@@ -18,7 +18,7 @@ title: Use Case ― Missende BAG-waarden voorspellen
 Kadaster is beheerder van de Basisadministratie Adressen & Gebouwen (BAG). Deze administratie wordt door de bronhouders, de gemeenten, bijgehouden en gebruikt voor een scala aan (maatschappelijke) toepassingen. Deze gemeenten streven
 er natuurlijk naar om alle informatie die in deze administratie gaat zo goed mogelijk te onderhouden en dus kijkt het ook doorlopend naar mogelijkheden om de kwaliteit van zijn data te verbeteren. 
 Daarbij kijkt het ook naar opkomende technologiën zoals Machine Learning en Artifical Intelligence. Deze use richt zich op de gemeente Amsterdam, dat voor een aantal adressen in zijn gemeente niet de precieze oppervlakte en/of het bouwjaar
-weet. Denk hierbij aan panden met een bouwjaar van <b>5</b>. Een afstudeerder bij het Kadaster heeft zich bezig gehouden met de vraag: Kunnen we onwaarschijnlijke of missende BAG-waarden omtrent oppervlakte en bouwjaar voorspellen aan de hand van een voorspellend model?
+weet. Denk hierbij aan panden met een bouwjaar van <strong>5</strong>. Een afstudeerder bij het Kadaster heeft zich bezig gehouden met de vraag: Kunnen we onwaarschijnlijke of missende BAG-waarden omtrent oppervlakte en bouwjaar voorspellen aan de hand van een voorspellend model?
 
 ## Het doel
 Het doel van deze use case was om een voorspellend model te maken dat, gegeven een combinatie van interne en externe gegevens, het bouwjaar en oppervlakte van BAG-objecten kan voorspellen. Deze voorspellingen kunnen we dan weer gebruiken om:

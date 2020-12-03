@@ -13,7 +13,7 @@ Deze dataset is in samenwerking tussen het Nationaal Archief en Kadaster omgezet
   <a href="/stories/verkaufsbucher/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png">
+      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png" alt="Nationaal Archief logo">
       <div class="card-title">Verkaufsbücher</div>
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn. Deze data story vertelt hun verhaal.</div>
     </div>
@@ -21,7 +21,7 @@ Deze dataset is in samenwerking tussen het Nationaal Archief en Kadaster omgezet
   <a href="/demonstrators/verkaufsbucher-zoeken">
       <div class="card">
         <div class="card-type">Demonstrator</div>
-        <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+        <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png" alt="Verkaufsbucher">
         <div class="card-title">Verkaufsbücher zoeker</div>
         <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
       </div>

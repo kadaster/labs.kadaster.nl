@@ -4,7 +4,7 @@ title: Use Case ― Loki voor GEO Informatieverstrekking
 ---
 <script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
 <iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html"> 
+  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="loki"> 
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
@@ -25,7 +25,7 @@ Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent e
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg">
+      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
     </div>
@@ -33,7 +33,7 @@ Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent e
   <a href="/cases/pdok-knowledge-graph.html">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/pdok-kg-simplified.jpg">
+      <img class="card-image" src="/assets/images/pdok-kg-simplified.jpg" alt="Knowledge graph">
       <div class="card-title">PDOK Knowledge Graph</div>
       <div class="card-description">Loki gebruikt de PDOK knowledge graph om de juiste antwoorden bij jouw vraag te zoeken!</div>
     </div>
@@ -58,7 +58,7 @@ Vervolgens is het team gaan sparren over hoe een dergelijke oplossing er in tech
 
 <figure id="figuur-1">
   <a href="/assets/images/architectuur-loki.jpg">
-    <img src="/assets/images/architectuur-loki.jpg" width="573" height="511">
+    <img src="/assets/images/architectuur-loki.jpg" width="573" height="511" alt="Architectuur loki">
   </a>
   <figcaption>
     Figuur 1 ― Initiële architectuurplaat voor Loki.
@@ -129,7 +129,7 @@ En gebruik onderstaande link om meteen te gaan testen!
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg">
+      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
     </div>

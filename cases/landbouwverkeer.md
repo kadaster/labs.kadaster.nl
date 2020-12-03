@@ -15,7 +15,7 @@ Ter illustratie, bekijk de situatie zoals getekend in [Figuur 1](#figuur-1) en [
 
 <figure id="figuur-1">
   <a href="/assets/images/landbouwverkeer/1-initial.png">
-    <img src="/assets/images/landbouwverkeer/1-initial.png">
+    <img src="/assets/images/landbouwverkeer/1-initial.png" alt="Initiële situatie">
   </a>
   <figcaption>
     Figuur 1 ― Initiële situatie, met een straal van 5km rondom een perceel.
@@ -24,7 +24,7 @@ Ter illustratie, bekijk de situatie zoals getekend in [Figuur 1](#figuur-1) en [
 
 <figure id="figuur-2">
   <a href="/assets/images/landbouwverkeer/2-snapping.png">
-    <img src="/assets/images/landbouwverkeer/2-snapping.png">
+    <img src="/assets/images/landbouwverkeer/2-snapping.png" alt="Voorbeeldsituatie">
   </a>
   <figcaption>
     Figuur 2 ― Voorbeeldsituatie van een perceel omringd door blokkades op basis van een 2x2km bounding box en de weg naar welke het huidige model snapt.
@@ -61,7 +61,7 @@ Zoals met bijna iedere data-gedreven oplossing zal er eerst data cleaning moeten
 
 <figure id="figuur-3">
   <a href="/assets/images/landbouwverkeer/3-pre-preprocessing.png">
-    <img src="/assets/images/landbouwverkeer/3-pre-preprocessing.png">
+    <img src="/assets/images/landbouwverkeer/3-pre-preprocessing.png" alt="Pre-processing">
   </a>
   <figcaption>
     Figuur 3 ― Alle hoekpunten van de blokkades op de kaart, voor data cleaning
@@ -72,7 +72,7 @@ Om beide uitdagingen aan te pakken passen we twee manieren toe om de data op te 
 
 <figure id="figuur-4">
   <a href="/assets/images/landbouwverkeer/4-post-processing.png">
-    <img src="/assets/images/landbouwverkeer/4-post-processing.png">
+    <img src="/assets/images/landbouwverkeer/4-post-processing.png" alt="Post-processing">
   </a>
   <figcaption>
     Figuur 4 ― De kaart en resulterende hoekpunten, na het transformeren van de data.
@@ -86,7 +86,7 @@ en de kortst mogelijke afstand tot een weg (de euclidsiche afstand naar de dicht
 
 <figure id="figuur-5">
   <a href="/assets/images/landbouwverkeer/5-routes.gif">
-    <img src="/assets/images/landbouwverkeer/5-routes.gif">
+    <img src="/assets/images/landbouwverkeer/5-routes.gif" alt="Routes">
   </a>
   <figcaption>
     Figuur 5 ― Het algoritme aan het werk, met de uiteindelijke optimale route

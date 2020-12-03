@@ -22,7 +22,7 @@ Alle demonstrators (De VR demo volgt nog) zijn onderaan deze pagina te vinden.
  
  <figure id="figuur-1">
   <a href="/assets/images/groepsfoto_hackalod.JPG">
-    <img src="/assets/images/groepsfoto_hackalod.JPG" >
+    <img src="/assets/images/groepsfoto_hackalod.JPG" alt="groepsfoto van Kadaster en friends">
   </a>
   <figcaption>
     Figuur 1 ― Groepsfoto van Kadaster & Friends. Foto: Jacqueline van der Kort | KB. 
@@ -33,7 +33,7 @@ Alle demonstrators (De VR demo volgt nog) zijn onderaan deze pagina te vinden.
   <a href="/stories/hack-a-lod-2019/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/hack-a-lod.jpg">
+      <img class="card-image" src="/assets/images/hack-a-lod.jpg" alt="Hack-a-lod">
       <div class="card-title">Stolpersteine</div>
       <div class="card-description">Hier bouwen we verder op ons werk met de verkaufsbucher en koppelen we het aan zgn. Stolpersteine.</div>
     </div>
@@ -41,7 +41,7 @@ Alle demonstrators (De VR demo volgt nog) zijn onderaan deze pagina te vinden.
   <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/telegram.png">
+      <img class="card-image" src="/assets/images/telegram.png" alt="Telegram">
       <div class="card-title">Hack-a-LOD-Bot</div>
       <div class="card-description">Hier laten we een bot zien welke obv linked data routes genereert langs stolpersteine. </div>
     </div>

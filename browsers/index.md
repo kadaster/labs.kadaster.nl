@@ -67,7 +67,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="areaal">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgtHigh3.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg">
       <div class="card-title">Areaal data browser</div>
       <div class="card-description">Met deze databrowser kun je Areaal data van Noord-holland doorzoeken. Hierin vind je alle wegdelen, borden en kunstwerken.</div>
     </div>

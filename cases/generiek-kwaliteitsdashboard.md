@@ -30,7 +30,7 @@ Concreet heeft het Data Science Team hierbij de volgende demomstrators opgelever
 
 <figure id="figuur-1">
   <a href="/assets/images/architectuur-platformstrategie.PNG">
-    <img src="/assets/images/architectuur-platformstrategie.PNG">
+    <img src="/assets/images/architectuur-platformstrategie.PNG" alt="Architectuur platformstrategie">
   </a>
   <figcaption>
     Figuur 1 ― Simpele architectuurplaat van de gemaakte demonstrators.

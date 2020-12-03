@@ -8,6 +8,22 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
+  <a href="/demonstrators/LDMaps_BGT/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/ld-maps.png">
+      <div class="card-title">LDMaps voor de BGT</div>
+      <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/spatialwizard">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">LD Spatial Wizard</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
+    </div>
+  </a>
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -15,6 +31,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
+  </a>
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -46,6 +63,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
+  </a>
   <a href="https://arcg.is/11uvDD">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -53,7 +71,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Het Effect van Natura 2000-Gebieden</div>
       <div class="card-description">De onderzoeksvraag: "Wat is het effect van de Natura 2000-gebieden op grond- en woningwaarde?", wordt in deze applicatie gevisualiseerd.</div>
     </div>
-  </a>
   </a>
   <a href="/tech-radar/index.html">
     <div class="card">
@@ -87,7 +104,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Vraag informatie op over uw huis en buurt door middel van de PDOK Locatieserver.  Naast een informatief overzicht wordt ook een unieke QR-code voor uw huis aangemaakt.</div>
     </div>
   </a>
-	<a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
+    <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/livedatadashboard.png">
@@ -101,6 +118,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/bier.jpg">
       <div class="card-title">Brouwerij Tijdreis</div>
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/flitser-tijdreis">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/flitser.svg">
+      <div class="card-title">Flitser Tijdreis</div>
+      <div class="card-description">Het ontstaan van flitser registraties in de Basisregistratie Grootschalige Topografie (BGT).  Steeds meer gemeenten in NL registreren hun ruimtelijke objecten.</div>
     </div>
   </a>
   <a href="/demonstrators/tableau">
@@ -154,11 +179,11 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     </div>
   </a>
   <a href="/demonstrators/verkaufsbucher-zoeken">
-      <div class="card">
-        <div class="card-type">Demonstrator</div>
-        <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
-        <div class="card-title">Verkaufsbücher zoeker</div>
-        <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
-      </div>
-    </a>
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+      <div class="card-title">Verkaufsbücher zoeker</div>
+      <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
+    </div>
+  </a>
 </div>

@@ -17,7 +17,7 @@ Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er een vraag
   <a href="/stories/haal-centraal">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/voetbal.jpg">
+      <img class="card-image" src="/assets/images/voetbal.jpg" alt="Voetbal">
       <div class="card-title">Scholen &amp; Sportlocaties</div>
       <div class="card-description">Data Story over scholen &amp; sportlocaties in Rotterdam en Den Haag.</div>
     </div>
@@ -25,7 +25,7 @@ Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er een vraag
   <a href="/data/haal-centraal-vocab/index-en.html">
     <div class="card">
       <div class="card-type">Data</div>
-      <img class="card-image" src="/assets/images/voetbal.png">
+      <img class="card-image" src="/assets/images/voetbal.png" alt="Voetbal">
       <div class="card-title">Vocabulaire Scholen &amp; Sportlocaties</div>
       <div class="card-description">Vocabulaire voor de dataset met scholen en sportlocaties.</div>
     </div>
@@ -33,7 +33,7 @@ Vanuit Onderwijshuisvesting bij gemeenten Rotterdam en Den Haag lag er een vraag
   <a href="https://data.labs.kadaster.nl/haal-centraal/scholen-sportlocaties">
     <div class="card">
       <div class="card-type">Data</div>
-      <img class="card-image" src="/assets/images/voetbal.png">
+      <img class="card-image" src="/assets/images/voetbal.png" alt="Voetbal">
       <div class="card-title">Dataset Scholen &amp; Sportlocaties</div>
       <div class="card-description">Dataset met scholen en sportlocaties in Rotterdam en Den Haag.</div>
     </div>

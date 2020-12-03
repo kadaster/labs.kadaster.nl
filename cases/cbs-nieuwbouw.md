@@ -10,7 +10,7 @@ Het Kadaster is houder van de [Basisregistratie Topografie (BRT)](https://zakeli
   <a href="/stories/cbs-nieuwbouw/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <img class="card-image" src="/assets/images/cbs-logo.png" alt="CBS logo">
       <div class="card-title">CBS Nieuwbouw Analyse</div>
       <div class="card-description">CBS Nieuwbouw Analyse</div>
     </div>

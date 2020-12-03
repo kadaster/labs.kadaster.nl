@@ -5,7 +5,7 @@ title: Use Case ― Akte OCR
 ---
 <script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
 <iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html"> 
+  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="Loki"> 
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
@@ -39,7 +39,7 @@ Voor een simpele visuele samenvatting verwijzen we de lezer naar Figuur 0. Voor 
 datgene wat we met dit onderzoek hebben gedaan.  
 <figure id="figuur-0">
   <a href="/assets/images/akteocr-samenvatting.jpg">
-    <img src="/assets/images/akteocr-samenvatting.jpg">
+    <img src="/assets/images/akteocr-samenvatting.jpg" alt="Samenvatting resultaten">
   </a>
   <figcaption>
     Figuur 0 ― Samenvatting van de behaalde resultaten. 
@@ -58,7 +58,7 @@ Voor dit onderzoek is grootschalig gebruik gemaakt van de Azure cloud omgeving. 
 
 <figure id="figuur-1">
   <a href="/assets/images/architectuur-akteocr.png">
-    <img src="/assets/images/architectuur-akteocr.png">
+    <img src="/assets/images/architectuur-akteocr.png" alt="MS Azure architectuur">
   </a>
   <figcaption>
     Figuur 1 ― Architectuurplaat voor dit onderzoek
@@ -87,7 +87,7 @@ Hunspell werkt met een Nederlandse woordenlijst en met een lijst met vervoeginge
 De controle op de Nederlandse taal ziet er schematisch als volgt uit:
 <figure id="figuur-2">
   <a href="/assets/images/nederlandse-taalcheck.png">
-    <img src="/assets/images/nederlandse-taalcheck.png">
+    <img src="/assets/images/nederlandse-taalcheck.png" alt="Schematische weergave taalcheck">
   </a>
   <figcaption>
     Figuur 2 ― Schematische weergave van de Nederlandse taalcheck
@@ -111,7 +111,7 @@ Eén van de zaken die ook naar boven kwam is dat er soms relatief veel ruis in e
 ### Resultaten tastbaar maken
 Om de resultaten over de gehele set aan aktes kwantitatief te maken zijn de volgende twee kwaliteitsindicatoren opgesteld:
 <figure id="figuur-tekst-1">
-    <img src="/assets/images/indicatoren-akteocr.PNG">
+    <img src="/assets/images/indicatoren-akteocr.PNG" alt="Indicatoren">
 </figure>
 
 Hierbij dienen de grenzen als indicator om iets te kunnen roepen over de kwaliteit van de akten. Om de grenzen te bepalen is gebruik gemaakt van twee methodieken:
@@ -122,16 +122,16 @@ Ruwweg kunnen we over de betekenis van kleuren het volgende zeggen: Groen beteke
 
 Op basis van de twee indicatoren kan er een algemene kwaliteitsindicator worden opgesteld. Zie onderstaande tabel:
 <figure id="figuur-tekst-2">
-    <img src="/assets/images/akteocr-kwaliteit-tabel.PNG">
+    <img src="/assets/images/akteocr-kwaliteit-tabel.PNG" alt="Tabel kwaliteit">
 </figure>
 
-Om de resultaten op steekproefniveau inzichtelijk te maken is gebruik gemaakt van een variant op een user-interface die momenteel al bij Kadaster in gebruik is. Daarbij werd ook een bestaand algoritme op de resulterende akteteksten 
+Om de resultaten op steekproefniveau inzichtelijk te maken is gebruik gemaakt van een variant op een user interface die momenteel al bij Kadaster in gebruik is. Daarbij werd ook een bestaand algoritme op de resulterende akteteksten 
 losgelaten om te zien of deze - zonder specifieke training of aanvullingen - de eerste personalia en kadastrale objecten uit de akteteksten kan vinden. Dit is een belangrijk onderdeel gebleken om iets te kunnen roepen 
 over de bruikbaarheid van de resulterende akteteksten voor een domeinexpert. Een screenshot van deze viewer met ge-anonimiseerde akte is te vinden in Figuur 3.  
 
 <figure id="figuur-3">
   <a href="/assets/images/akte-ai-viewer-screenshot-redacted.png">
-    <img src="/assets/images/akte-ai-viewer-screenshot-redacted.png">
+    <img src="/assets/images/akte-ai-viewer-screenshot-redacted.png" alt="Screenshot user interface">
   </a>
   <figcaption>
     Figuur 3 ― Screenshot van de gebruikte user interface (klik voor een groter beeld)
@@ -166,7 +166,7 @@ Om inzicht te krijgen in de kwaliteit van de akteteksten is gebruik gemaakt van 
 In onderstaande tabel wordt de verdeling voor de eerste twee indicatoren getoond.
 
 <figure id="figuur-tekst-3">
-    <img src="/assets/images/akteocr-kwaliteit-tabel-resultaat.PNG">
+    <img src="/assets/images/akteocr-kwaliteit-tabel-resultaat.PNG" alt="Kwaliteit tabel resultaat">
 </figure>
 
 In deze tabel is te zien dat het merendeel van de akteteksten, ongeveer 1,5 miljoen, het label groen heeft gekregen en dus wordt beschouwd als goede akteteksten. Ongeveer 11% van de akteteksten heeft groen op de ruisindicator maar oranje op de indicator voor gevonden woorden. 
@@ -177,7 +177,7 @@ Het is te verwachten dat een oudere akte vaak een slechtere scan heeft en daardo
 
 <figure id="figuur-4">
   <a href="/assets/images/akteocr-resultaten-jaar.png">
-    <img src="/assets/images/akteocr-resultaten-jaar.png">
+    <img src="/assets/images/akteocr-resultaten-jaar.png" alt="Resultaten per jaar">
   </a>
   <figcaption>
     Figuur 4 ― Resultaten voor akteteksten uitgezet per jaar van aanbieding
@@ -195,10 +195,10 @@ Over het algemeen kan er worden geconcludeerd dat de kwaliteitsscore vooral een 
 Wel is er nog een kanttekening te plaatsen over de bruikbaarheid van akten, ook als de leesbaarheid zeer hoog is. Vaak zit de waarde in een akte in het vinden van de meest belangrijke feiten en essentialia uit de gegeven aktetekst. In de praktijk komt het nog wel eens voor dat juist deze essentialia door de notaris werd benadrukt door bijvoorbeeld de eigennamen te onderstrepen. 
 We zien in de resultaten terug dat dit soms precies een stuk is waar de OCR-techniek over struikelde, ook als de rest van de akte van zeer hoge kwaliteit is. 
 Daarom kan er met een hoge kwaliteit voor een akte nog niet per se een foutloos en volledig bruikbare akte worden geconcludeerd. 
-Een voorbeeld van een akte met een dergelijke nadruk op essentialia vind je hieronder in Figuur 5(geanonimiseerd).
+Een voorbeeld van een akte met een dergelijke nadruk op essentialia vind je hieronder in Figuur 5 (geanonimiseerd).
 <figure id="figuur-5">
   <a href="/assets/images/akteocr-voorbeeld-bruikbaarheid.png">
-    <img src="/assets/images/akteocr-voorbeeld-bruikbaarheid.png">
+    <img src="/assets/images/akteocr-voorbeeld-bruikbaarheid.png" alt="Voorbeeld bruikbaarheid">
   </a>
   <figcaption>
     Figuur 5 ― Voorbeeld van een aktetekst waarbij juist de personalia slecht leesbaar waren
@@ -213,7 +213,7 @@ groen, oranje en rood respectievelijk.
 
 <figure id="figuur-6">
   <a href="/assets/images/akteocr-resultaat-groen.png">
-    <img src="/assets/images/akteocr-resultaat-groen.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-groen.png" width="692" height="320" alt="Resultaten groen">
   </a>
   <figcaption>
     Figuur 6 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse groen scoorden.
@@ -222,16 +222,16 @@ groen, oranje en rood respectievelijk.
 
 <figure id="figuur-7">
   <a href="/assets/images/akteocr-resultaat-oranje.png">
-    <img src="/assets/images/akteocr-resultaat-oranje.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-oranje.png" width="692" height="320" alt="Resultaten oranje">
   </a>
   <figcaption>
     Figuur 7 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse oranje scoorden.
   </figcaption>
 </figure>
 
-<figure id="figuur-7">
+<figure id="figuur-8">
   <a href="/assets/images/akteocr-resultaat-rood.png">
-    <img src="/assets/images/akteocr-resultaat-rood.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-rood.png" width="692" height="320" alt="Resultaten rood">
   </a>
   <figcaption>
     Figuur 5 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse rood scoorden.
