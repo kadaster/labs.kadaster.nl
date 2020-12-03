@@ -52,6 +52,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Middels dit endpoint bevraag je de (open) databronnen van het Kadaster met GraphQL.</div>
     </div>
   </a>
+    <a href="/cases/hackalittle2020">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/hackaLOD2020.jpg" alt="hackaLOD2020">
+      <div class="card-title">Hack-a-Little 2020</div>
+      <div class="card-description">Resultaten van de Hack-a-Little evenement</div>
+    </div>
+  </a>
     <a href="/cases/disgeo-high5">
     <div class="card">
       <div class="card-type">Use Case</div>
