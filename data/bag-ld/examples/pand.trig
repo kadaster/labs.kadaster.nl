@@ -8,6 +8,10 @@ graph:instanties {
     nen3610:lokaalID "0003100000117485";
     nen3610:namespace "NL.IMBAG.Pand".
 
+  registratie:1234
+    a bag:WoonplaatsRegistratie;
+    bag:documentdatum "2020-01-02"^^xsd:date.
+
   registratie:0003100000117485
     a bag:PandRegistratie;
     bag:bouwjaar "1991"^^xsd:gYear;
