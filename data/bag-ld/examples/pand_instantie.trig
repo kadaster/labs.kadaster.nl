@@ -32,7 +32,7 @@ graph:instanties {
     bag:documentdatum "2020-01-02"^^xsd:date.
 
 #voorkomen1 
-  registratie:1
+  registratie:0119100000016994.1
     a bag:PandRegistratie;
     bag:documentdatum "2009-08-05"^^xsd:date;
     bag:documentnummber "2009-12172";
@@ -48,7 +48,7 @@ graph:instanties {
     prov:invalidatedAtTime "2015-01-08T11:31:37.590"^^xsd:dateTime.
 
 #voorkomen2
-  registratie:2
+  registratie:0119100000016994.2
     a bag:PandRegistratie;
     bag:documentdatum "2015-01-07"^^xsd:date;
     bag:documentnummber "265363";
@@ -60,13 +60,13 @@ graph:instanties {
     bag:eindRegistratie "2019-07-02T16:17:27.771"^^xsd:dateTime;
     nen3610:beginGeldigheid "2015-01-07"^^xsd:date;
     nen3610:eindGeldigheid "2019-07-02"^^xsd:date;
-    nen3610:vorigeGeldigeVersie registratie:1;
-    nen3610:vorigeGeregistreerdeVersie registratie:1;
+    nen3610:vorigeGeldigeVersie registratie:0119100000016994.1;
+    nen3610:vorigeGeregistreerdeVersie registratie:0119100000016994.1;
     prov:generatedAtTime "2015-01-08T11:31:37.590"^^xsd:dateTime;
     prov:invalidatedAtTime "2019-07-02T16:18:02.444"^^xsd:dateTime.
 
 #voorkomen3
-  registratie:3
+  registratie:0119100000016994.3
     a bag:PandRegistratie;
     bag:documentdatum "2019-07-02"^^xsd:date;
     bag:documentnummber "19213822";
@@ -76,7 +76,7 @@ graph:instanties {
     bag:status status:verbouwingPand;
     bag:tijdstipRegistratie "2019-07-02T16:17:27.771"^^xsd:dateTime;
     nen3610:beginGeldigheid "2019-07-02"^^xsd:date;
-    nen3610:vorigeGeldigeVersie registratie:2;
-    nen3610:vorigeGeregistreerdeVersie registratie:2;
+    nen3610:vorigeGeldigeVersie registratie:0119100000016994.2;
+    nen3610:vorigeGeregistreerdeVersie registratie:0119100000016994.2;
     prov:generatedAtTime "2019-07-02T16:18:02.444"^^xsd:dateTime.
 }
