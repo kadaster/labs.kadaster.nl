@@ -1,0 +1,61 @@
+@prefix bag: <https://data.labs.kadaster.nl/kadaster/bag/def/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+@prefix graph: <https://data.labs.kadaster.nl/kadaster/bag/id/graph/>.
+@prefix identificatie: <https://data.labs.kadaster.nl/kadaster/bag/id/identificatie/>.
+@prefix pand: <https://data.labs.kadaster.nl/kadaster/bag/id/pand/>.
+@prefix status: <https://data.labs.kadaster.nl/kadaster/bag/id/status/>.
+@prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>. #added
+@prefix registratie: <https://bag2.basisregistraties.overheid.nl/bag/id/registratie/>. #added
+@prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>. #added
+
+graph:instanties {
+  pand:0119100000014389
+    a bag:Pand;
+    foaf:isPrimaryTopicOf registratie:0119100000014389.
+
+  identificatie:0119100000014389
+    a nen3610:Identificatie;
+    nen3610:lokaalID "0119100000014389";
+    nen3610:namespace "NL.IMBAG.Pand".
+
+  registratie:1234 #not sure what this is in reference to
+    a bag:WoonplaatsRegistratie;
+    bag:documentdatum "2020-01-02"^^xsd:date.
+
+#voorkomen1 ?do we need to put this in the shape?
+  registratie:0119100000014389
+    a bag:PandRegistratie;
+    bag:oorspronkelijkBouwjaar "1987"^^xsd:gYear;
+    bag:geconstateerd "N";
+    bag:documentdatum "2009-08-05"^^xsd:date;
+    bag:documentnummber "2009-12172";
+    bag:geometrie "<todo> Polygon((208567.124 524793.943 0.0 208567.175 524793.867 0.0 208568.53 524791.86 0.0 208572.683 524794.542 0.0 208571.417 524796.86 0.0 208567.124 524793.943 0.0))"^^geo:wktLiteral;
+    bag:status status:pandInGebruik;
+    bag:tijdstipRegistratieLV "2010-03-04T09:12:48.267"^^xsd:dateTime;
+    bag:tijstipEindRegistratieLV "2013-04-25T13:04:23.564"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
+    nen3610:eindGeldigheid "2009-08-05"^^xsd:date;
+    nen3610:identificatie identificatie:0003100000117485;
+    prov:generatedAtTime "2010-03-04T09:12:48.267"^^xsd:dateTime;
+    prov:invalidatedAtTime "2013-04-25T13:04:23.564"^^xsd:dateTime.
+
+#voorkomen 2
+  registratie:0119100000014389
+    a bag:PandRegistratie;
+    bag:bouwjaar "1987"^^xsd:gYear;
+    bag:documentdatum "2009-08-05"^^xsd:date;
+    bag:documentnummber "2009-12172";
+    bag:geometrie "<todo> Polygon((208567.124 524793.943 0.0 208567.175 524793.867 0.0 208568.53 524791.86 0.0 208572.683 524794.542 0.0 208571.417 524796.86 0.0 208567.124 524793.943 0.0))"^^geo:wktLiteral;
+    bag:status status:pandGesloopt;
+    bag:tijdstipRegistratieLV "2013-04-25T13:04:23.564"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
+    nen3610:identificatie identificatie:0119100000014389;
+    prov:generatedAtTime "2013-04-25T13:04:23.564"^^xsd:dateTime.
+}
+
+#VALIDATION FAILURE: Cannot find validator for constraint component http://www.w3.org/ns/shacl#MaxCountConstraintComponent
