@@ -52,7 +52,7 @@ bag: {
     dct:source
       [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
         sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
-    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#62-openbare-ruimte"^^xsd:anyURI;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#63-nummeraanduiding"^^xsd:anyURI;
     rdfs:subClassOf nen3610:GeoObject;
     skos:definition "Een Nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats."@nl;
     skos:prefLabel "Nummeraanduiding"@nl;
@@ -90,6 +90,10 @@ bag: {
   <p>Als een nummeraanduiding is gelegen aan een openbare ruimte in het buitenland, registreert de gemeente de buitenlandse openbare ruimte alsof deze in de woonplaats van de nummeraanduiding is gelegen.</p>
 </section>"""^^rdf:HTML.
 
+  bag:OpenbareRuimteRegistratie
+    rdfs:label "Openbare ruimte registratie"@nl;
+    rdfs:subClassOf foaf:Document.
+
   bag:Pand
     dct:source
       [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
@@ -104,6 +108,9 @@ bag: {
   image:pand
     a sdo:ImageObject;
     sdo:contentUrl "assets/pand.svg"^^xsd:anyURI.
+
+  bag:PandRegistratie
+    rdfs:subClassOf foaf:Document.
 
   bag:Status
     rdfs:subClassOf rdfs:Resource;
@@ -452,4 +459,13 @@ bag: {
     <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
   </section>
 </article>"""^^rdf:HTML.
+
+  bag:woonplaats
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:domain bag:OpenbareRuimte;
+    rdfs:range bag:Woonplaats;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
+    skos:definition "Unieke aanduiding van de Woonplaats waarbinnen een Openbare ruimte is gelegen."@nl;
+    skos:prefLabel "heeft woonplaats"@nl;
+    skos:scopeNote "De woonplaats behorende bij de nummeraanduiding prevaleert boven de woonplaats behorende bij de openbare ruimte. Achtergrond hiervan is dat de locatie van het object bepalend is voor de vraag in welke woonplaats een adres is gelegen."@nl.
 }
