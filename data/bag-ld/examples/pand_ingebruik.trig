@@ -1,0 +1,43 @@
+@prefix bag: <https://data.labs.kadaster.nl/kadaster/bag/def/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+@prefix graph: <https://data.labs.kadaster.nl/kadaster/bag/id/graph/>.
+@prefix identificatie: <https://data.labs.kadaster.nl/kadaster/bag/id/identificatie/>.
+@prefix pand: <https://data.labs.kadaster.nl/kadaster/bag/id/pand/>.
+@prefix registratie: <https://data.labs.kadaster.nl/kadaster/bag/id/registratie/>.
+@prefix status: <https://data.labs.kadaster.nl/kadaster/bag/id/status/>.
+@prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>.
+@prefix registratie: <https://bag2.basisregistraties.overheid.nl/bag/id/registratie/>.
+@prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>.
+
+graph:instanties {
+  pand:0003100000117485
+    a bag:Pand;
+    foaf:isPrimaryTopicOf registratie:0003100000117485.
+
+  identificatie:0003100000117485
+    a nen3610:Identificatie;
+    nen3610:lokaalID "0003100000117485";
+    nen3610:namespace "NL.IMBAG.Pand".
+
+  registratie:1234
+    a bag:WoonplaatsRegistratie;
+    bag:documentdatum "2020-01-02"^^xsd:date.
+
+  registratie:0003100000117485
+    a bag:PandRegistratie;
+    bag:oorspronkelijkBouwjaar "1991"^^xsd:gYear;
+    bag:documentdatum "2010-07-20"^^xsd:date;
+    bag:documentnummber "FB 2010/PANDEN001";
+    bag:geometrie "<todo> Polygon((254059.737 593504.637 0.0 254059.227 593500.0 0.0 254059.216 593499.899 0.0 254058.242 593500.0 0.0 254057.914 593500.034 0.0 254057.893 593500.0 0.0 254057.807 593499.863 0.0 254052.074 593490.692 0.0 254052.182 593490.639 0.0 254058.138 593490.002 0.0 254057.932 593488.165 0.0 254074.487 593486.413 0.0 254075.981 593500.0 0.0 254076.265 593502.583 0.0 254076.561 593502.55 0.0 254076.594 593502.847 0.0 254059.737 593504.637 0.0))"^^geo:wktLiteral;
+    bag:status status:pandInGebruik;
+    bag:tijdstipRegistratieLV "2010-10-25T09:34:06.490"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2020-07-20"^^xsd:date;
+    nen3610:identificatie identificatie:0003100000117485;
+    prov:generatedAtTime "2010-10-20T08:29:45.00"^^xsd:dateTime.
+}
+# VALIDATION FAILURE: Cannot find validator for constraint component http://www.w3.org/ns/shacl#MaxCountConstraintComponent
