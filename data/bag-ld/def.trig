@@ -452,4 +452,4 @@ bag: {
     <p>De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven.</p>
   </section>
 </article>"""^^rdf:HTML.
-#}
+}

@@ -24,6 +24,7 @@ graph:shapes {
       shape:Document_invalidatedAtTime,
       shape:Document_vorigeGeldigeVersie,
       shape:Document_vorigeGeregistreerdeVersie;
+    sh:targetClass foaf:Document.
 
   shape:formeleHistorieBegin
     sh:datatype xsd:dateTime;
@@ -39,7 +40,6 @@ graph:shapes {
     sh:maxCount 1;
     sh:name "heeft eind registratie"@nl;
     sh:path prov:invalidatedAtTime.
-    sh:targetClass foaf:Document.
 
   shape:formeleLevensduur
     sh:class foaf:Document;
@@ -113,7 +113,7 @@ graph:shapes {
     sh:minCount 1;
     sh:path nen3610:identificatie.
 
-  shape:isPrimaryTopicOf,
+  shape:isPrimaryTopicOf
     sh:class foaf:Document;
     sh:minCount 1;
     sh:path foaf:isPrimaryTopicOf.
@@ -175,7 +175,7 @@ graph:shapes {
     sh:path bag:geometrie;
     skos:definition
       [ dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3";
-        rdf:value "De minimaal tweedimensionale geometrische representatie van het bovenzicht van de omtrekken van een pand."@nl ];
+        rdf:value "De minimaal tweedimensionale geometrische representatie van het bovenzicht van de omtrekken van een pand."@nl ].
 
   shape:PandRegistratie_oorspronkelijkBouwjaar
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#743-oorspronkelijk-bouwjaar"^^xsd:anyURI;
@@ -202,6 +202,9 @@ graph:shapes {
       shape:Woonplaats_identificatie,
       shape:Woonplaats_isPrimaryTopicOf;
     sh:targetClass bag:Woonplaats.
+
+  #shape:WoonplaatsRegistratie
+  #  sh:class nen3610:
 
   shape:WoonplaatsRegistratie_identificatie
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#711-identificatie"^^xsd:anyURI;

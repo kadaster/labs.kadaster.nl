@@ -1,3 +1,16 @@
+prefix bag: <https://data.labs.kadaster.nl/kadaster/bag/def/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix graph: <https://data.labs.kadaster.nl/kadaster/bag/id/graph/>
+prefix identificatie: <https://data.labs.kadaster.nl/kadaster/bag/id/identificatie/>
+prefix pand: <https://data.labs.kadaster.nl/kadaster/bag/id/pand/>
+prefix registratie: <https://data.labs.kadaster.nl/kadaster/bag/id/registratie/>
+prefix status: <https://data.labs.kadaster.nl/kadaster/bag/id/status/>
+
 graph:instanties {
   pand:0003100000117485
     a bag:Pand;
