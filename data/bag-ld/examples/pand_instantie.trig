@@ -1,0 +1,82 @@
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
+prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>
+prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>
+prefix registratie: <https://bag2.basisregistraties.overheid.nl/bag/id/registratie/>
+prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>
+
+graph:instanties {
+  pand:0119100000016994
+    a bag:Pand;
+    foaf:isPrimaryTopicOf
+      registratie:1,
+      registratie:2,
+      registratie:3;
+    nen3610:identificatie identificatie:0119100000016994.
+
+  identificatie:0119100000016994
+    a nen3610:Identificatie;
+    nen3610:lokaalID "0119100000016994";
+    nen3610:namespace "NL.IMBAG.Pand".
+
+  registratie:1234 
+    a bag:WoonplaatsRegistratie;
+    bag:documentdatum "2020-01-02"^^xsd:date.
+
+#voorkomen1 
+  registratie:1
+    a bag:PandRegistratie;
+    bag:documentdatum "2009-08-05"^^xsd:date;
+    bag:documentnummber "2009-12172";
+    bag:geconstateerd false;
+    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon Z ((211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0 211389.896 523101.935 0.0))"^^geo:wktLiteral;
+    bag:oorspronkelijkBouwjaar "1979"^^xsd:gYear;
+    bag:status status:pandInGebruik;
+    bag:tijdstipRegistratie "2010-03-02T14:05:56.000"^^xsd:dateTime;
+    bag:eindRegistratie "2015-01-08T11:12:02.000"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
+    nen3610:eindGeldigheid "2015-01-07"^^xsd:date;
+    prov:generatedAtTime "2010-03-04T09:12:56.657"^^xsd:dateTime;
+    prov:invalidatedAtTime "2015-01-08T11:31:37.590"^^xsd:dateTime.
+
+#voorkomen2
+  registratie:2
+    a bag:PandRegistratie;
+    bag:documentdatum "2015-01-07"^^xsd:date;
+    bag:documentnummber "265363";
+    bag:geconstateerd false;
+    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0 211389.896 523101.935 0.0))"^^geo:wktLiteral;
+    bag:oorspronkelijkBouwjaar "1983"^^xsd:gYear;
+    bag:status status:pandInGebruik;
+    bag:tijdstipRegistratie "2015-01-08T11:12:02.000"^^xsd:dateTime;
+    bag:eindRegistratie "2019-07-02T16:17:27.771"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2015-01-07"^^xsd:date;
+    nen3610:eindGeldigheid "2019-07-02"^^xsd:date;
+    nen3610:vorigeGeldigeVersie registratie:1;
+    nen3610:vorigeGeregistreerdeVersie registratie:1;
+    prov:generatedAtTime "2015-01-08T11:31:37.590"^^xsd:dateTime;
+    prov:invalidatedAtTime "2019-07-02T16:18:02.444"^^xsd:dateTime.
+
+#voorkomen3
+  registratie:3
+    a bag:PandRegistratie;
+    bag:documentdatum "2019-07-02"^^xsd:date;
+    bag:documentnummber "19213822";
+    bag:geconstateerd false;
+    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((211388.871 523104.039 0.0 211389.896 523101.935 0.0 211392.379 523103.064 0.0 211391.38 523105.27 0.0 211388.871 523104.039 0.0))"^^geo:wktLiteral;
+    bag:oorspronkelijkBouwjaar "1983"^^xsd:gYear;
+    bag:status status:verbouwingPand;
+    bag:tijdstipRegistratie "2019-07-02T16:17:27.771"^^xsd:dateTime;
+    nen3610:beginGeldigheid "2019-07-02"^^xsd:date;
+    nen3610:vorigeGeldigeVersie registratie:2;
+    nen3610:vorigeGeregistreerdeVersie registratie:2;
+    prov:generatedAtTime "2019-07-02T16:18:02.444"^^xsd:dateTime.
+}
