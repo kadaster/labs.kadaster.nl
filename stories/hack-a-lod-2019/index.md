@@ -63,8 +63,8 @@ omgeving.  Hierbij worden de volgende datasets bebruikt:
 
   - [Basisregistratie Adressen en Gebouwen (BAG)](https://data.labs.kadaster.nl/kadaster/bag) (Kadaster)
   - [Verkaufsbücher](https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher) (Nationaal Archief)
-  - [Stolpersteine](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner) (Nieuw!)
-  - [Linkset Stolpersteine ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner-bag) (Nieuw!)
+  - [Stolpersteine](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner) (Hack-a-LOD)
+  - [Linkset Stolpersteine ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner-bag) (Hack-a-LOD)
   - [Linkset Verkaufsbücher ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher) (Nationaal Archief & Kadaster)
 
 Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https://data.labs.kadaster.nl/hack-a-lod</a> voor alle bronnen.
