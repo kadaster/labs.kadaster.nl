@@ -5,7 +5,7 @@ title: Use Case ― Kadaster Knowledge Graph
 ---
 # Kadaster Knowledge Graph
 
-Voor de Kadaster Knowledge Graph maken we gebruik van het door Google ontwikkelde Schema.org vocaulaire (<https://schema.org>).
+Voor de Kadaster Knowledge Graph maken we gebruik van het door Google ontwikkelde Schema.org vocabulaire (<https://schema.org>).
 [Figuur 1](#figuur-1)
 
 <figure id="figuur-1">

@@ -42,7 +42,7 @@ Het dashboard maakt voornamelijk gebruik van de data set “Kerncijfers wijken e
 
 ## Het resultaat
 Het dashboard bestaat uit drie verschillende hoofdpagina’s, “Ontdek Nederland”, “Ontdek uw buurt” en “Zoek verbanden”. Op de startpagina “Ontdek Nederland” kan men metingen en regio’s selecteren waarover men meer inzicht wil krijgen. 
-Dit betreft data voor een enkel jaar. Op de pagina “Ontdek uw buurt” worden meerderen jaartallen in één lijndiagram geplot. Hierdoor worden de ontwikkelingen van desbetrefde metingen zichtbaar. 
+Dit betreft data voor een enkel jaar. Op de pagina “Ontdek uw buurt” worden meerderen jaartallen in één lijndiagram geplot. Hierdoor worden de ontwikkelingen van desbetreffende metingen zichtbaar. 
 Ook is het hier mogelijk om specifieker naar één gemeente te kijken en de ontwikkelingen binnen de desbetreffende wijken / buurten. 
 De laatste pagina “Zoek verbanden” biedt de mogelijkheid om twee verschillende metingen tegen elkaar uit te zetten, om zo te kijken over er relaties tussen zitten. Dit extraatje is voornamelijk voor data verkenning voor onderzoekers. 
 

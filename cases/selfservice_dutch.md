@@ -23,10 +23,10 @@ Deze gebruikersgroep is doorgaans niet goed thuis in de technische fijne kneepje
 ## Wat zijn de kenmerken van Self-Service GIS?
 <div class="textbox" markdown="1">
 ## Self-Service GIS defined
-Esri, de toonaangevende commerciële leverancier van geospatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden. Over het algemeen is een self-service GIS een applicatie die gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
+Esri, de toonaangevende commerciële leverancier van geo-spatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden. Over het algemeen is een self-service GIS een applicatie die gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
 </div>
 
-Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing. Om te bepalen wat de belangrijke features van self-service GIS zijn voor ons doel en de doelgroep van het Kadaster, kijken we ook naar de wenzen vanuit onze klanten.
+Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing. Om te bepalen wat de belangrijke features van self-service GIS zijn voor ons doel en de doelgroep van het Kadaster, kijken we ook naar de wensen vanuit onze klanten.
 
 Een analyse van welke ruimtelijke vragen de klanten van het Kadaster stellen, wordt uitgevoerd als onderdeel van een interne analyse van de gebruikersbehoeften. Welke vragen worden gesteld, zal benadrukken welke functionaliteit nuttig kan zijn voor de gebruikers in een selfservice GIS-toepassing. Het geeft ook inzicht in hoe gebruikers gebruik willen maken van de gegevens van het Kadaster en met welke andere gegevens de Kadastergegevens meestal worden gecombineerd bij het beantwoorden van ruimtelijke vragen.
 
@@ -135,7 +135,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
 
 ## Bereiken Self Service GIS 
 
-Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de gegevens die we bijhouden te integreren in één bron. Met deze centrale ontsluiting, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot- en betrokkenheid bij geospatiale en niet-ruimtelijke gegevens voor onze gebruikers.
+Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de gegevens die we bijhouden te integreren in één bron. Met deze centrale ontsluiting, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot- en betrokkenheid bij geo-spatiale en niet-ruimtelijke gegevens voor onze gebruikers.
 
 <figure id="3">
 	<a href="/assets/images/self-serviceGISarchitecture.jpg">

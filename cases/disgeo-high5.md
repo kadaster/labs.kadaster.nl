@@ -103,7 +103,7 @@ naar een CSV en gebruikt kan worden in een (open-source) BI Tool zoals <a href="
 
 Om in het thema te blijven van het integreren van de Linked Data in het eigen werkproces kijken we ook naar een data story rondom Provincie data in relatie tot bestaande Linked Data zoals de BGT 
 uit een <a href="/stories/bgt-high3/">eerdere high 5</a>. In deze case focussen we ons op data in verschillende endpoints (federatie) en de waarde die dit brengt voor een bestaand proces.
-We zoomen ook in op de waarde van administratieve links tussen geometrische datasets, waarbij de administratieve koppeling een (semantisch) betere beschrijving biedt van hoe de objecten gerelateert zijn.
+We zoomen ook in op de waarde van administratieve links tussen geometrische datasets, waarbij de administratieve koppeling een (semantisch) betere beschrijving biedt van hoe de objecten gerelateerd zijn.
 Deze demonstrator kun je <a href="/stories/high5-imbor">hier</a> vinden. 
 
 ### Conclusies

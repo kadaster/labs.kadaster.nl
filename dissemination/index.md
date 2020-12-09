@@ -10,7 +10,7 @@ title: Dissemination
 [Adding 3D Visualization to the SPARQL Query Loop](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html)
 : Erwin Folmer & Wouter Beek, 30 augustus 2019.
 
-[Kasaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html)
+[Kadaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html)
 : Wouter Beek, 18 juni 2019.
 
 [Kadaster SPARQL Webinar](./Kadaster-SPARQL-Webinar.html)

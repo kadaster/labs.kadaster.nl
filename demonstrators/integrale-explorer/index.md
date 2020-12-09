@@ -36,12 +36,12 @@ Zoals bij ieder innovatie traject beginnen we door onszelf de vraag te stellen: 
 
 Het antwoord luidt als volgt. Kunnen wij de opzet neerzetten voor een integrale explorer waarbij:
 - Objectinformatie over een adres integraal wordt ontsloten
-- De data bij de bron blijft staan; Er worden geen onnodige kopiëen van de data gemaakt
+- De data bij de bron blijft staan; Er worden geen onnodige kopieën van de data gemaakt
 - Middels Data Lineage / tracing duidelijk wordt welke data uit welke bron komt en hoe deze aan elkaar verbonden is. 
 
 **Daarnaast hanteren we de volgende uitgangspunten:**
 -  De demonstrators worden gevoed door (samengestelde) APIs over de verschillende basisregistraties in scope.
--  De data waarover wordt ge-visualiseerd en ge-analyseerd blijft bij de bron. Voor deze toepassingen wordt geen kopie van de data gemaakt.
+-  De data waarover wordt gevisualiseerd en geanalyseerd blijft bij de bron. Voor deze toepassingen wordt geen kopie van de data gemaakt.
 -  De demonstrators tonen een doorkijkje naar de toekomst vanuit de architectuur/back-end, maar richten zich primair op de toepassing en waarde voor de eindgebruiker. Het toont een voorbeelduitwerking van hoe het Kadaster zijn data in de toekomst kan organiseren.
 
 ### Scope van Demonstrator
@@ -60,9 +60,9 @@ tot de data die wij bieden, maar ook tot alle andere data die (semi-)overheden, 
 ## Datamodel van de registraties en integrale bevraging
 
 In bovenstaande introductie praten we voornamelijk over functionele eisen die wij aan onze demonstrator stellen. Uiteraard is er ook een techniek waarmee we deze demonstrator bewerkstelligen.
-Om ge-integreerd en real-time bevragingen te kunnen uitvoeren maken wij gebruik van de querytaal <a href = "https://graphql.org/">GraphQL</a>. GraphQL is een graaf-gebaseerde API waarmee
+Om geïntegreerd en real-time bevragingen te kunnen uitvoeren maken wij gebruik van de querytaal <a href = "https://graphql.org/">GraphQL</a>. GraphQL is een graaf-gebaseerde API waarmee
 een verscheidenheid aan bronnen integraal mee beschikbaar wordt gesteld. GraphQL is een **federatieve** en **virtualisatie** laag. Dat wil zeggen dat 
-1. De data uit verschillende back-ends mag komen, waarbij GraphQL de verdeling van de vraag naar deze endpoints orchestreert.
+1. De data uit verschillende back-ends mag komen, waarbij GraphQL de verdeling van de vraag naar deze endpoints orkestreert.
 2. De data alleen virtueel integraal ontsloten wordt. Geen enkele data wordt gekopieerd, maar de data wordt alleen tussen de virtuele laag en de eindgebruiker doorgegeven. 
 
 Een voorbeeld van een GraphQL bevraging waarbij meerdere objecten en diens informatie worden bevraagd vind je in Figuur 1.
@@ -78,7 +78,7 @@ Een voorbeeld van een GraphQL bevraging waarbij meerdere objecten en diens infor
 <br>
 In GraphQL, net als in een reguliere REST API, is het belangrijk een bepaalde ingang te definiëren. Neem als voorbeeld de <a href = "https://bag.basisregistraties.overheid.nl/restful-api?articleid=1927964">BAG-API</a>.
 Ook hier is het gemakkelijk om informatie op te vragen over één object, zoals de informatie van één Pand of Nummeraanduiding. In GraphQL is dit in theorie niet anders. 
-Het is dan ook gemakkelijk om te zien hoe GraphQL, net als een reguliere REST-API, goed om kan gaan met enkelvoudige object-georienteerde bevragingen.
+Het is dan ook gemakkelijk om te zien hoe GraphQL, net als een reguliere REST-API, goed om kan gaan met enkelvoudige object-georiënteerde bevragingen.
 
 Voor deze specifieke use case gebruiken we als ingang de PDOK Locatieserver. Het idee hierachter is triviaal. Deze server biedt de mogelijkheid om vanuit vrije tekst (Postcode + huisnummer)
 het relevante BAG Adres er bij te zoeken. We willen de gebruiker niet belasten met de kennis die noodzakelijk is om te weten dat de BAG het ingangspunt is voor een adres. Het resultaat van de de locatieserver bevat een verwijzing naar de BAG. 
@@ -87,8 +87,8 @@ het relevante BAG Adres er bij te zoeken. We willen de gebruiker niet belasten m
 ## PDOK Locatieserver
 
 Adressen en stadsnamen zijn voorbeelden van concepten waar vaak typfouten in ontstaan, maar tegelijkertijd van levensbelang zijn om een (unieke) locatie aan een vraag toe te wijzen.
-De Locatieserver van Publieke Dienstverlening Op de Kaart(PDOK) biedt een API om adressen te verificeren aan de hand van de bestaande adressen in de BAG.  Deze biedt tevens standaardisatie voor de gegevens waarin ze officieel in de bron zitten.  
-Zo kent hij Den Haag als 's Gravenshage en maken we mbv deze service van de Kogelaan in Zwolle de Koggelaan, in lijn met het adres wat we daar kunnen vinden.
+De Locatieserver van Publieke Dienstverlening Op de Kaart(PDOK) biedt een API om adressen te verifiëren aan de hand van de bestaande adressen in de BAG.  Deze biedt tevens standaardisatie voor de gegevens waarin ze officieel in de bron zitten.  
+Zo kent hij Den Haag als 's-Gravenshage en maken we mbv deze service van de Kogelaan in Zwolle de Koggelaan, in lijn met het adres wat we daar kunnen vinden.
 </div>
 
 
@@ -125,7 +125,7 @@ Een voorbeeld van het resultaat vind je in Figuur 4.
 
 ## Tracability en Data Lineage
 
-Een belangrijk onderdeel van het tonen van ge-integreerde data is de manier waarop deze data integraal met elkaar verbonden is. Over welke facetten is er gekoppeld? Waar komt de data vandaan?
+Een belangrijk onderdeel van het tonen van geïntegreerde data is de manier waarop deze data integraal met elkaar verbonden is. Over welke facetten is er gekoppeld? Waar komt de data vandaan?
 Heeft deze data wel het kwaliteitskeurmerk dat we van het Kadaster kunnen verwachten. Om deze vragen te kunnen beantwoorden ligt een belangrijke focus op het inzichtelijk maken van de herkomst van de data. 
 Zo weet de gebruiker wie er verantwoordelijk is voor de onderliggende data, en weten we hoe het aan elkaar is verbonden. Figuur 5 toont een simplistisch beeld van hoe de lineage in deze specifieke bevraging
 inzichtelijk kan worden gemaakt. 

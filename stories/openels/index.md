@@ -34,7 +34,7 @@ Linked Data brings semantic interoperability by means of ontologies. Ontologies 
 <query data-config-ref="https://data.labs.kadaster.nl/openels/-/queries/open-els-2">
 </query>
 
-## It's linked.  Lets's grab some data
+## It's linked.  Let's grab some data
 
 In the example above, we used the power of linked data to map national administrative systems to generic levels.  This was done at the level of concepts or ontological level (similar to T-box in descriptive logic).  Linked Data allows for even more ― interrelating data at the instance level between data sets.  For example, if two different data sets contain information about the same object (e.g information about the same municipality) we can link them and enrich one description of the municipality with attributes coming from the other data set.  The example below uses links between administrative units and corresponding objects in the [DBpedia](https://wiki.dbpedia.org/) data base.  In this case DBpedia serves as a ‘linking node’, providing access to other resources and information.  Therefore we can, for example, traverse those links to retrieve the name of an administrative unit in another language.  Lets find out how to spell what the Dutch call “'s-Gravenhage”, in the other languages of the project.
 
@@ -56,7 +56,7 @@ Seamless access to such rich data allows for conducting interesting research. Fo
 linguists could potentially use this data to analyse the spatial distribution of common toponym roots.
 The following example shows locations of places that have "holy" as part of the name.
 Obviously, the root "holy" is spelled differently in different languages.
-The Linked Data technology makes it possible to formulate a single query that can interogate the national endpoints in their native
+The Linked Data technology makes it possible to formulate a single query that can interrogate the national endpoints in their native
 languages.
 In the example below, the following spellings are used:
 

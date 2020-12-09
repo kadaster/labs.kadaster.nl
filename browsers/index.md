@@ -12,8 +12,8 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
-      <div class="card-title">Bevolkings browser</div>
-      <div class="card-description">Met de bevolkings browser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
+      <div class="card-title">Bevolkingsbrowser</div>
+      <div class="card-description">Met de bevolkingsbrowser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
     </div>
   </a>
   <a href="nationaal-archief">

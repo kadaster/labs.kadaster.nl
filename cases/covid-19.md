@@ -25,7 +25,7 @@ met elkaar in verband gebracht door gebruik te maken van Linked Data.
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
       <div class="card-title">Corona (COVID-19) Browser</div>
-      <div class="card-description">Met deze browser kunnen regio's op basis van Corona statistieken gefiltered worden.</div>
+      <div class="card-description">Met deze browser kunnen regio's op basis van Corona statistieken gefilterd worden.</div>
     </div>
   </a>
   <a href="https://data.labs.kadaster.nl/rivm/covid-19">

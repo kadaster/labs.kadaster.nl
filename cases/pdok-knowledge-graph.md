@@ -5,7 +5,7 @@ title: Use Case ― PDOK Knowledge Graph
 ---
 # Use Case: PDOK Knowledge Graph
 
-Om het belang van verbonden data duidelijk te maken, en daarmee het belang van een Knowledge Graph, hebben we datasets experimenteeel met elkaar verbonden en vervolgens gebruiken we die in zowel een Data Story als een Demonstrator.  De datasets die we met elkaar verbonden hebben staan weergegeven in [Figuur 1](#figuur-1).  [Figuur 2](#figuur-2) geeft in meer detail aan hoe de koppelingen tussen de datasets te leggen zijn.  De Knowledge Graph is experimenteel en hopelijk als opmaat om uiteindelijk een Geo/Kadaster/PDOK Knowledge Graph te kunnen bouwen.  De ontwikkelde Demonstrator is een zogenaamde Instance Browser; je begint bij 1 object en gaat vervolgens de Graph door browsen om steeds meer informatie uit verschillende bronnen erbij te halen. Deze demonstrator is niet online beschikbaar.
+Om het belang van verbonden data duidelijk te maken, en daarmee het belang van een Knowledge Graph, hebben we datasets experimenteel met elkaar verbonden en vervolgens gebruiken we die in zowel een Data Story als een Demonstrator.  De datasets die we met elkaar verbonden hebben staan weergegeven in [Figuur 1](#figuur-1).  [Figuur 2](#figuur-2) geeft in meer detail aan hoe de koppelingen tussen de datasets te leggen zijn.  De Knowledge Graph is experimenteel en hopelijk als opmaat om uiteindelijk een Geo/Kadaster/PDOK Knowledge Graph te kunnen bouwen.  De ontwikkelde Demonstrator is een zogenaamde Instance Browser; je begint bij 1 object en gaat vervolgens de Graph door browsen om steeds meer informatie uit verschillende bronnen erbij te halen. Deze demonstrator is niet online beschikbaar.
 
 <figure id="figuur-1">
   <a href="/assets/images/pdok-kg-simplified.jpg">

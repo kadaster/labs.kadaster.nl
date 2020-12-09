@@ -21,7 +21,7 @@ Naast broodroosters en wasmachines kunnen ook panden over een energielabel besch
 *Aangepast van [Wikipedia](https://en.wikipedia.org/wiki/Energy_Performance_Certificate_(United_Kingdom))*
 
 ## Energielabels en Machine Learning
-Het blijkt niet eenvoudig om een model voor energielabels van woningen handmatig te *tunen* zodanig dat er betrouwbare voorspellingen uit komen.  Toch is het met behulp van automatisch lerende algoritmes te doen: met behulp van een eenvoudige [decision tree](https://en.wikipedia.org/wiki/Decision_tree) en slechts het bouwjaar en oppervlak van een woonhuis is met een nauwkeurigheid van 81% een energielabel te voorspellen dat maximaal één label naast het daadwerkelijke label zit.  Een exacte match is lastiger: op basis van enkel bouwjaar en oppervlak is slechts een nauwkeurigheid van 40% te geven.  Let wel dat het model is getraind op enkel woningen, die voornamelijk door woningbouwcoorporaties zijn verzameld.  Inschattingen met dit model op andere typen panden zoals fabrieksgebouwen of kantoren zijn onvoorspelbaar, maar waarschijnlijk zeer onbetrouwbaar.
+Het blijkt niet eenvoudig om een model voor energielabels van woningen handmatig te *tunen* zodanig dat er betrouwbare voorspellingen uit komen.  Toch is het met behulp van automatisch lerende algoritmes te doen: met behulp van een eenvoudige [decision tree](https://en.wikipedia.org/wiki/Decision_tree) en slechts het bouwjaar en oppervlak van een woonhuis is met een nauwkeurigheid van 81% een energielabel te voorspellen dat maximaal één label naast het daadwerkelijke label zit.  Een exacte match is lastiger: op basis van enkel bouwjaar en oppervlak is slechts een nauwkeurigheid van 40% te geven.  Let wel dat het model is getraind op enkel woningen, die voornamelijk door woningbouwcorporaties zijn verzameld.  Inschattingen met dit model op andere typen panden zoals fabrieksgebouwen of kantoren zijn onvoorspelbaar, maar waarschijnlijk zeer onbetrouwbaar.
 
 **Beweeg de kaart om de voorspellingen te genereren.**
 <div id="map"></div>
@@ -29,7 +29,7 @@ Het blijkt niet eenvoudig om een model voor energielabels van woningen handmatig
 
 ## Hoe werkt het?
 
-Deze demo is gemaakt met enkel **open data en open source software**.  We hebben een een eenvoudig decision tree model met een maximum diepte van 6 beslisstappen getraind op het zo goed mogelijk voorspellen van energielabels op basis van bouwjaar en pandoppervlak.  Daartoe zijn energielabels gebruikt die de [Rijkdsdienst voor Ondernemend Nederland (RVO)](https://rvo.nl) verzamelt en ter beschikking heeft gesteld.  Er is gewerkt met de energielabels van juni 2017.
+Deze demo is gemaakt met enkel **open data en open source software**.  We hebben een een eenvoudig decision tree model met een maximum diepte van 6 beslisstappen getraind op het zo goed mogelijk voorspellen van energielabels op basis van bouwjaar en pandoppervlak.  Daartoe zijn energielabels gebruikt die de [Rijksdienst voor Ondernemend Nederland (RVO)](https://rvo.nl) verzamelt en ter beschikking heeft gesteld.  Er is gewerkt met de energielabels van juni 2017.
 
 In kort bestek hebben we het volgende gedaan:
 - Een decision tree [model](https://github.com/SPINLab/energy-performance-prediction/blob/master/model/energy_label_decision_tree_demo_model.py) is getraind, met behulp van [scikit-learn](http://scikit-learn.org).

@@ -145,7 +145,7 @@ Recent heeft Kadaster in samenwerking met het Ministerie van BZK en Fibree gewer
     <img src="/assets/images/uoi-schema.PNG" alt="UOI schema">
   </a>
   <figcaption>
-    Figuur 2 ― De structuur van een Unique Object Identificer (UOI)
+    Figuur 2 ― De structuur van een Unique Object Identifier (UOI)
   </figcaption>
 </figure>
 Een object is dan ook middels eenzelfde bevraging met een uoi als identificatiecode te gebruiken. Een voorbeeld van een bevraging rondom hetzelfde object als in bovengenoemde query doe je als volgt.

@@ -20,13 +20,13 @@ title: Use Case ― Live data in een BI-toepassing
 ## Introductie
 
 Bedrijven worden meer en meer gedwongen om data-gedreven te werken. Niet alleen verzamelen we met zijn allen meer en meer informatie, we raken ook steeds meer gewend aan het gebruik van data in onze
-dagelijkse activiteiten en processen. Een belangrijke stap daarin is het gebruik van een Business Intelligence (BI) toepassing om de data op een intuitieve manier te ontsluiten en visualiseren.
+dagelijkse activiteiten en processen. Een belangrijke stap daarin is het gebruik van een Business Intelligence (BI) toepassing om de data op een intuïtieve manier te ontsluiten en visualiseren.
 Deze data kan dan komen van het welbekende Microsoft Excel, database warehouses, triple stores of andere data-opslag methodieken. Bij het Kadaster geloven we dat de data direct bij de bron vandaan moet komen,
 en ontsluiten we deze vaak met Application Programming Interface (APIs). En dus is het de moeite waard om uit te zoeken hoe we live data in een BI-toepassing, Tableau, kunnen realiseren.
 
 <div class="textbox" markdown="1">
 ## BI Toepassingen en Tableau
-Business Intelligende (BI) is, volgens <a href="https://www.gartner.com/it-glossary/business-intelligence-bi/">Gartner</a>, de verzamelnaam voor de applicaties, infrastructuur, tooling en best-practices noodzakelijk voor de analyse van data, met als doel optimale beslissingen te doen en kwaliteit te verbeteren.
+Business Intelligence (BI) is, volgens <a href="https://www.gartner.com/it-glossary/business-intelligence-bi/">Gartner</a>, de verzamelnaam voor de applicaties, infrastructuur, tooling en best-practices noodzakelijk voor de analyse van data, met als doel optimale beslissingen te doen en kwaliteit te verbeteren.
 Voorbeelden van tooling in deze markt zijn <a href="https://www.qlik.com/us">Qlikview</a>, <a href="https://powerbi.microsoft.com/en-us/">Microsoft PowerBI</a> en <a href="https://www.tableau.com/">Tableau</a>.
 </div>
 
@@ -40,7 +40,7 @@ daarmee live beschikbaar te stellen, alsof het een directe connectie met de data
 ## Aanpak
 
 Allereerst moet er gekozen worden met welke BI toepassing er gewerkt gaat worden. De keuze valt hierbij al snel op Tableau, dat de mogelijkheid biedt om data op te halen vanuit een <a href="https://help.tableau.com/current/pro/desktop/en-gb/examples_web_data_connector.htm">Web Data Connector</a>.
-Hiervoor is naast kennis van de BI toepassing ook kennis van Javascript vereist. Deze web data connector is een combinatie van een web-pagina met scripting om de relevante data op te halen.
+Hiervoor is naast kennis van de BI toepassing ook kennis van Javascript vereist. Deze web data connector is een combinatie van een webpagina met scripting om de relevante data op te halen.
 Wanneer we deze web data connector (lokaal) hebben gebouwd, moet hij tevens beschikbaar worden gesteld naar de buitenwereld. Dit doen we door de web data connector neer te zetten in een <a href="https://www.docker.com/">Docker</a> container en deze te draaien op
 een Virtual Machine in de <a href = "https://azure.microsoft.com/en-us/">Microsoft Azure cloud</a>. Zodra de web data connector beschikbaar is en we de data hiermee kunnen ophalen, bouwen we een dashboard op de opgehaalde data.
 
@@ -54,14 +54,14 @@ Dit is in feite onze eigen server, waar we de verschillende demonstrators gecont
 ## Het resultaat
 
 In [Figuur 1](#figuur-1) vinden we een beeld van hoe de Terugmelddata web connector er uit ziet. Omdat er geen uitgebreide keuzes zijn in de API over welke data er wel of niet opgehaald moet worden, is er
-voor gekozen om een niet al te uitgebreide web-pagina neer te zetten waar de data simpelweg met één knop binnen gehaald kan worden.
+voor gekozen om een niet al te uitgebreide webpagina neer te zetten waar de data simpelweg met één knop binnen gehaald kan worden.
 
 <figure id="figuur-1">
   <a href="/assets/images/terugmeld-wdc.png">
     <img src="/assets/images/terugmeld-wdc.png" alt="Marker op de kaart">
   </a>
   <figcaption>
-    Figuur 1 ― Web-pagina van de Web Data Connector
+    Figuur 1 ― Webpagina van de Web Data Connector
   </figcaption>
 </figure>
 
@@ -73,6 +73,6 @@ Wanneer we op de knop drukken wordt er achtereenvolgens:
   <li> De ge-transformeerde data als relationele data in Tableau ingelezen </li>
 </ol>
 
-Uiteindelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficientie van ons terugmeldproces in kaart kunnen brengen.
+Uiteindelijk resulteert zich dat in een dataset waarin we - met deze web data connector - de efficiëntie van ons terugmeldproces in kaart kunnen brengen.
 Hoe lang lopen bepaalde terugmeldingen al? En worden deze binnen de targets afgehandeld? Visueel kun je het dashboard vinden via <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">deze link</a>.
 Let wel dat deze resultaten gebaseerd zijn op dummy data met eenzelfde structuur als de originele data.

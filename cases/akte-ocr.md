@@ -15,7 +15,7 @@ title: Use Case ― Akte OCR
 # Use Case: Kwaliteit van aktes uit een OCR traject
 
 ## Introductie
-Binnen het Kadaster heeft een aantal jaren terug een grootschalig onderzoek plaatsgevonden waarbij de bestaande akten sinds 1950 ge-analyseerd werden. 
+Binnen het Kadaster heeft een aantal jaren terug een grootschalig onderzoek plaatsgevonden waarbij de bestaande akten sinds 1950 geanalyseerd werden. 
 Het doel was de erfdienstbaarheden uit deze akten te herkennen en hiermee het onderzoekend werk van de bewaarder te vergemakkelijken. 
 In de laatste jaren zijn er - mede ingegeven door de huidige technologische vernieuwingen - meer en meer standaarden en eisen aan een akte opgesteld. Vroeger was dit een stuk minder vanzelfsprekend. 
 Zo waren veel akten handgeschreven of kwam het van een ouderwetse typmachine, en werd er regelmatig het een of ander buiten de lijntjes bij de aktetekst opgeschreven. Al deze akten zijn bij 
@@ -30,7 +30,7 @@ in deze akteteksten gedoken om te zien of deze wellicht voor nieuwe toepassingen
 
 <div class="textbox" markdown="1">
 ## Optical Character Recognition (OCR)
-Optical Character Recognition is de techniek waarmee een computer scans of foto's omzet naar een leesbare gestructureerde tekst. In dit specifieke geval betreft het scans van fotokopiën van akten
+Optical Character Recognition is de techniek waarmee een computer scans of foto's omzet naar een leesbare gestructureerde tekst. In dit specifieke geval betreft het scans van fotokopieën van akten
 uit het openbaar register bij het Kadaster. 
 </div>
 
@@ -49,8 +49,8 @@ datgene wat we met dit onderzoek hebben gedaan.
 
 ## Aanpak
 De eerste uitdaging ontstond rond de grote hoeveelheid data binnen dit onderzoek. In totaal had het team te maken met ruwweg 16,7 miljoen akteteksten in XML-formaat, welke op een lokale Kadaster omgeving stonden. 
-Deze(n) zijn ge-upload naar de Azure cloud omgeving en geconverteerd naar het meer bruikbare JSON formaat. Vanuit daar werd het vervolgens verder getransformeerd en ge-analyseerd. 
-De akteteksten zijn middels een check op de Nederlandse taal (bestaat het gevonden woord wel/niet in een Nederlands woordenboek) ge-analyseerd op de leesbaarheid van de akteteksten. De resultaten van deze 
+Deze(n) zijn ge-upload naar de Azure cloud omgeving en geconverteerd naar het meer bruikbare JSON formaat. Vanuit daar werd het vervolgens verder getransformeerd en geanalyseerd. 
+De akteteksten zijn middels een check op de Nederlandse taal (bestaat het gevonden woord wel/niet in een Nederlands woordenboek) geanalyseerd op de leesbaarheid van de akteteksten. De resultaten van deze 
 analyse zijn in combinatie met een steekproef op een visuele manier getoetst bij de eindgebruikers. 
 
 ### Gebruik van de Microsoft Azure cloudomgeving
@@ -79,7 +79,7 @@ Het uitpakken en converteren van de aktes is omgeschreven naar een set taken voo
 Op deze manier kunnen we in parallel het proces uitvoeren in een automatisch schalende omgeving. Dit heeft de doorlooptijd significant kunnen versnellen.
 
 ### De Nederlandse taalcheck
-In de volgende stap wordt de taalanalyse uitgevoerd op de uitgepakte aktes. Ook hier is er voor een parallell proces in Azure Batch gekozen. 
+In de volgende stap wordt de taalanalyse uitgevoerd op de uitgepakte aktes. Ook hier is er voor een parallel proces in Azure Batch gekozen. 
 De analyse is geschreven in een Python script. In de analyse wordt er gebruik gemaakt van de HunSpell library voor de controle op de Nederlandse taal. 
 Deze spellingcontrole heeft <a href="https://taaluniebericht.org/artikel/een-betere-spellingscontrole-voor-een-miljard-mensen">van de Taalunie het “Keurmerk Spelling” gekregen</a>. 
 Hunspell werkt met een Nederlandse woordenlijst en met een lijst met vervoegingen. Op basis daarvan wordt gekeken of een woord een goed Nederlands woord is. 
@@ -248,7 +248,7 @@ Deze scoren allebei overwegend beter dan de oude akteteksten. Tesseract en ABBYY
 De verschillende akteteksten laten daarnaast zien dat Google en Azure ook daadwerkelijk de leesbaarheid en bruikbaarheid kunnen verbeteren. 
 We hebben verschillende resultanten bekeken en vergeleken en Google en Azure herkennen meer woorden correct. Ook hebben zij bijvoorbeeld minder moeite met onderstreepte woorden waardoor zij ook vaker de essentialia correct uit de akte halen.
 
-Ook in de rode aktetensten weten Azure en Google een grote kwaliteitssprong te realiseren en scoort Azure weer het beste. 
+Ook in de rode akteteksten weten Azure en Google een grote kwaliteitssprong te realiseren en scoort Azure weer het beste. 
 Tesseract en ABBYY weten hier ook iets beter te scoren dan de oude akteteksten maar scoren beduidend minder dan Google en Azure. 
 Azure scoort voor slechts 1% van de aktes rood. Deze aktes zijn bekeken en hieruit werd duidelijk dat de scans van dermate slechte kwaliteit zijn dat deze voor een persoon ook lastig tot niet te lezen zijn. Hetzelfde geldt voor de rode aktes van Google en een deel van de oranje aktes van Azure. De mindere scores op deze aktes liggen dus niet aan de kwaliteit van de OCR maar eerder aan de kwaliteit van de scan.   
 
