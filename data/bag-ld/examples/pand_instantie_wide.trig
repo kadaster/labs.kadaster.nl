@@ -8,10 +8,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
 prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>
 prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>
-prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
-prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>
 prefix registratie: <https://bag2.basisregistraties.overheid.nl/bag/id/registratie/>
-prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
 graph:instanties {
   pand:0119100000000478
@@ -28,33 +26,37 @@ graph:instanties {
     nen3610:lokaalID "0119100000000478";
     nen3610:namespace "NL.IMBAG.Pand".
 
-  #voorkomen1 
+  #voorkomen1
   registratie:0119100000000478.1
     a bag:PandRegistratie;
-    bag:documentdatum "2003-05-28"^^xsd:date;
-    bag:documentnummber "2003-3909";
+    bag:bouwjaar "1965"^^xsd:gYear;
+    bag:eindRegistratie "2013-11-06T12:49:01.000"^^xsd:dateTime;
     bag:geconstateerd false;
-    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon Z ((206483.104 530177.783 0.0 206491.78 530181.313 0.0 206489.398 530187.165 0.0 206485.004 530185.377 0.0 206483.913 530188.058 0.0 206491.966 530191.335 0.0 206485.264 530207.806 0.0 206472.933 530202.788 0.0 206455.254 530195.801 0.0 206461.803 530179.182 0.0 206481.074 530187.024 0.0 206482.171 530184.328 0.0 206480.686 530183.724 0.0 206483.104 530177.783 0.0))"^^geo:wktLiteral;
-    bag:oorspronkelijkBouwjaar "1965"^^xsd:gYear;
+    bag:geometrie
+      [ a gml:Polygon;
+        geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon ((206483.104 530177.783 206491.78 530181.313 206489.398 530187.165 206485.004 530185.377 206483.913 530188.058 206491.966 530191.335 206485.264 530207.806 206472.933 530202.788 206455.254 530195.801 206461.803 530179.182 206481.074 530187.024 206482.171 530184.328 206480.686 530183.724 206483.104 530177.783))"^^geo:wktLiteral ];
     bag:status status:pandInGebruik;
     bag:tijdstipRegistratie "2010-03-02T13:45:07.000"^^xsd:dateTime;
-    bag:eindRegistratie "2013-11-06T12:49:01.000"^^xsd:dateTime;
+    dct:created "2003-05-28"^^xsd:date;
+    dct:identifier "2003-3909";
     nen3610:beginGeldigheid "2003-05-28"^^xsd:date;
     nen3610:eindGeldigheid "2013-11-05"^^xsd:date;
     prov:generatedAtTime "2010-03-04T09:11:48.951"^^xsd:dateTime;
     prov:invalidatedAtTime "2013-11-06T13:04:07.241"^^xsd:dateTime.
 
-#voorkomen2
+  #voorkomen2
   registratie:0119100000000478.2
     a bag:PandRegistratie;
-    bag:documentdatum "2013-11-05"^^xsd:date;
-    bag:documentnummber "13210537";
+    bag:bouwjaar "1965"^^xsd:gYear;
+    bag:eindRegistratie "2016-04-12T14:34:03.000"^^xsd:dateTime;
     bag:geconstateerd false;
-    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 0.0 206491.78 530181.313 0.0 206489.398 530187.165 0.0 206485.004 530185.377 0.0 206483.913 530188.058 0.0 206491.966 530191.335 0.0 206485.264 530207.806 0.0 206472.933 530202.788 0.0 206455.254 530195.801 0.0 206461.803 530179.182 0.0 206481.074 530187.024 0.0 206482.171 530184.328 0.0 206480.686 530183.724 0.0 206483.104 530177.783 0.0))"^^geo:wktLiteral;
-    bag:oorspronkelijkBouwjaar "1965"^^xsd:gYear;
+    bag:geometrie
+      [ a gml:Polygon;
+        geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 206491.78 530181.313 206489.398 530187.165 206485.004 530185.377 206483.913 530188.058 206491.966 530191.335 206485.264 530207.806 206472.933 530202.788 206455.254 530195.801 206461.803 530179.182 206481.074 530187.024 206482.171 530184.328 206480.686 530183.724 206483.104 530177.783))"^^geo:wktLiteral ];
     bag:status status:pandInGebruikNietIngemeten;
     bag:tijdstipRegistratie "2013-11-06T12:49:01.000"^^xsd:dateTime;
-    bag:eindRegistratie "2016-04-12T14:34:03.000"^^xsd:dateTime;
+    dct:created "2013-11-05"^^xsd:date;
+    dct:identifier "13210537";
     nen3610:beginGeldigheid "2013-11-05"^^xsd:date;
     nen3610:eindGeldigheid "2016-04-12"^^xsd:date;
     nen3610:vorigeGeldigeVersie registratie:0119100000000478.1;
@@ -62,17 +64,19 @@ graph:instanties {
     prov:generatedAtTime "2013-11-06T13:04:07.241"^^xsd:dateTime;
     prov:invalidatedAtTime "2016-04-12T15:00:05.190"^^xsd:dateTime.
 
-#voorkomen3
+  #voorkomen3
   registratie:0119100000000478.3
     a bag:PandRegistratie;
-    bag:documentdatum "2016-04-12"^^xsd:date;
-    bag:documentnummber "973530";
+    bag:bouwjaar "1965"^^xsd:gYear;
     bag:geconstateerd false;
-    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 0.0 206491.78 530181.313 0.0 206489.398 530187.165 0.0 206485.004 530185.377 0.0 206483.913 530188.058 0.0 206491.966 530191.335 0.0 206485.264 530207.806 0.0 206472.933 530202.788 0.0 206455.254 530195.801 0.0 206461.803 530179.182 0.0 206481.074 530187.024 0.0 206482.171 530184.328 0.0 206480.686 530183.724 0.0 206483.104 530177.783 0.0))"^^geo:wktLiteral;
-    bag:oorspronkelijkBouwjaar "1965"^^xsd:gYear;
+    bag:geometrie
+      [ a gml:Polygon;
+        geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 206491.78 530181.313 206489.398 530187.165 206485.004 530185.377 206483.913 530188.058 206491.966 530191.335 206485.264 530207.806 206472.933 530202.788 206455.254 530195.801 206461.803 530179.182 206481.074 530187.024 206482.171 530184.328 206480.686 530183.724 206483.104 530177.783))"^^geo:wktLiteral ];
     bag:status status:pandInGebruik;
     bag:tijdstipRegistratie "2016-04-12T14:34:03.000"^^xsd:dateTime;
     bag:eindRegistratie "2019-11-28T08:51:09.541"^^xsd:dateTime;
+    dct:created "2016-04-12"^^xsd:date;
+    dct:identifier "973530";
     nen3610:beginGeldigheid "2016-04-12"^^xsd:date;
     nen3610:eindGeldigheid "2019-11-28"^^xsd:date;
     nen3610:vorigeGeldigeVersie registratie:0119100000000478.2;
@@ -80,16 +84,18 @@ graph:instanties {
     prov:generatedAtTime "2016-04-12T15:00:05.190"^^xsd:dateTime.
     prov:invalidatedAtTime "2019-11-28T08:51:23.795"^^xsd:dateTime.
 
-#voorkomen4
+  #voorkomen4
   registratie:0119100000000478.4
     a bag:PandRegistratie;
-    bag:documentdatum "2019-11-28"^^xsd:date;
-    bag:documentnummber "19214050";
+    bag:bouwjaar "1965"^^xsd:gYear;
     bag:geconstateerd false;
-    bag:geometrie "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 0.0 206491.78 530181.313 0.0 206489.398 530187.165 0.0 206485.004 530185.377 0.0 206483.913 530188.058 0.0 206491.966 530191.335 0.0 206485.264 530207.806 0.0 206472.933 530202.788 0.0 206455.254 530195.801 0.0 206461.803 530179.182 0.0 206481.074 530187.024 0.0 206482.171 530184.328 0.0 206480.686 530183.724 0.0 206483.104 530177.783 0.0))"^^geo:wktLiteral;
-    bag:oorspronkelijkBouwjaar "1965"^^xsd:gYear;
+    bag:geometrie
+      [ a gml:Polygon;
+        geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((206483.104 530177.783 206491.78 530181.313 206489.398 530187.165 206485.004 530185.377 206483.913 530188.058 206491.966 530191.335 206485.264 530207.806 206472.933 530202.788 206455.254 530195.801 206461.803 530179.182 206481.074 530187.024 206482.171 530184.328 206480.686 530183.724 206483.104 530177.783))"^^geo:wktLiteral ];
     bag:status status:verbouwingPand;
     bag:tijdstipRegistratie "2019-11-28T08:51:09.541"^^xsd:dateTime;
+    dct:created "2019-11-28"^^xsd:date;
+    dct:identifier "19214050";
     nen3610:beginGeldigheid "2019-11-28"^^xsd:date;
     nen3610:vorigeGeldigeVersie registratie:0119100000000478.3;
     nen3610:vorigeGeregistreerdeVersie registratie:0119100000000478.3;
@@ -97,25 +103,25 @@ graph:instanties {
 
   verblijfsobject:0119010000004265
     a bag:Verblijfsobject;
-    bag:pandrelatering pand:0119100000000478;
-    bag:hoofdadres nummeraanduiding:0119200000001484.
-  
+    bag:hoofdadres nummeraanduiding:0119200000001484;
+    bag:pand pand:0119100000000478.
+
   identificatie:0119010000004265
     a bag:VerblijfsobjectRegistratie.
 
-  nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation. 
+  nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
     a bag:Nummeraanduiding;
     bag:openbareRuimte openbareruimte:0119300000000058.
 
   identificatie:0119200000001484
-      a bag:NummeraainduidingRegistratie.
-  
+    a bag:NummeraainduidingRegistratie.
+
   openbareruimte:0119300000000058
     a bag:openbareRuimte;
     bag:woonplaats woonplaats:1083.
 
   identificatie:0119300000000058
-    a bag:openbareRuimteRegistratie. 
-    #bag:documentdatum "2008-11-18"^^xsd:dateTime;
-    #bag:documentnummber "2008-19535"^^xsd:dateTime. 
+    a bag:openbareRuimteRegistratie.
+    #dct:created "2008-11-18"^^xsd:dateTime;
+    #dct:identifier "2008-19535"^^xsd:dateTime.
 }
