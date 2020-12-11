@@ -1,60 +1,60 @@
 {
   "@context": {
-    "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/registratie/",
+    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://data.labs.kadaster.nl/kadaster/bag/def/",
+    "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
     "woonplaatsstatus": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/def/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
       "@id": "status",
       "@type": "@id"
     },
     "ligplaatsstatus": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/def/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
       "@id": "status",
       "@type": "@id"
     },
     "openbareruimtestatus": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/def/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
       "@id": "status",
       "@type": "@id"
     },
     "standplaatsstatus": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/def/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
       "@id": "status",
       "@type": "@id"
-    }, 
+    },
     "maaktdeeluitvan": {
      "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/pand/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
       },
       "@id": "maaktdeeluitvan",
       "@type": "@id"
     },
     "gebruiksdoel": {
      "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/def/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
       "@id": "gebruiksdoel",
       "@type": "@id"
     },
     "ligtin": {
      "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/woonplaats/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/"
       },
       "@id": "ligtin",
       "@type": "@id"
     },
     "bronhouder": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/bronhouder/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/"
       },
       "@type": "@id"
     },
@@ -90,19 +90,19 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/identificatie/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/"
       }
     },
     "heeftalshoofdadres" : {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/nummeraanduiding/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
       },
       "@id": "heeftalshoofdadres",
       "@type": "@id"
     },
     "heeftalsnevenadres" : {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/nummeraanduiding/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
       },
       "@id": "heeftalsnevenadres",
       "@type": "@id"
@@ -129,7 +129,7 @@
     "ogc_fid": null,
     "openbareruimtetype": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/openbare-ruimte/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
       "@id": "openbareRuimteType",
       "@type": "@id"
@@ -137,7 +137,7 @@
     "peilDatum": null,
     "primaryTopic": {
       "@context": {
-        "@base": "https://data.labs.kadaster.nl/kadaster/bag/id/object/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "foaf:primaryTopic",
       "@type": "@id"
