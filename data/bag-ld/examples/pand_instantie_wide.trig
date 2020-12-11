@@ -103,6 +103,10 @@ graph:instanties {
 
   verblijfsobject:0119010000004265
     a bag:Verblijfsobject;
+    foaf:isPrimaryTopicOf
+      registratie:0119010000004265.1,
+      registratie:0119010000004265.2,
+      registratie:0119010000004265.3;
     bag:hoofdadres nummeraanduiding:0119200000001484;
     bag:pandrelateringsId pand:0119100000000478.
 
@@ -112,7 +116,7 @@ graph:instanties {
     nen3610:namespace "NL.IMBAG.Verblifsobject".
 
 #voorkomen1-verblijfsobject https://bag.basisregistraties.overheid.nl/bag/doc/2009080500000000/verblijfsobject/0119010000004265
-registratie:0119010000004265.3
+registratie:0119010000004265.1
   a bag:VerblijfsobjectRegistratie.
   nen3610:beginGeldigheid "2009-08-05T00:00:00+02:00"^^xsd:dateTime;
   nen3610:eindGeldigheid "2013-11-05T00:00:00+01:00"^^xsd:dateTime;
@@ -150,19 +154,34 @@ registratie:0119010000004265.3
       geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Point((6.149860952 52.756506116))"^^geo:wktLiteral ];
   bag:status bag:VerblijfsobjectInGebruik;
   bag:gebruikersdoel bag:Industriefunctie;
-  bag:oppervlakte "1100".
+  bag:oppervlakte 1100.
 
 
-  nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
-    a bag:Nummeraanduiding;
-    bag:openbareRuimte openbareruimte:0119300000000058.
+nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
+  a bag:Nummeraanduiding;
+  foaf:isPrimaryTopicOf
+    registratie:0119200000001484.1;
+  bag:openbareRuimte openbareruimte:0119300000000058.
 
-  identificatie:0119200000001484
-    a bag:NummeraainduidingRegistratie.
+identificatie:0119200000001484
+  a nen3610:Identificatie;
+  nen3610:lokaalID "0119200000001484"
+  nen3610:namespace "NL.IMBAG.Nummeraanduiding".
 
-  openbareruimte:0119300000000058
-    a bag:openbareRuimte;
-    bag:woonplaats woonplaats:1083.
+#voorkomen1 - nummeraanduiding https://bag.basisregistraties.overheid.nl/bag/doc/2009080500000000/nummeraanduiding/0119200000001484
+  registratie:0119200000001484.1
+  a bag:NummeraainduidingRegistratie.
+  nen3610:beginGeldigheid "2009-08-05T00:00:00+02:00"^^xsd:dateTime;
+  dct:identifier "2009080500000000";
+  bag:geconstateerd false;
+  bag:status bag:NaamgevingUitgegeven;
+  bag:huisnummer 13
+  bag:postcode "7948LM". 
+
+
+openbareruimte:0119300000000058
+  a bag:openbareRuimte;
+  bag:woonplaats woonplaats:1083.
 
   identificatie:0119300000000058
     a bag:openbareRuimteRegistratie.
