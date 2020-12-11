@@ -1,0 +1,32 @@
+.main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #00387d;
+}
+.button {
+    display: block;
+    width: 250px;
+    height: 25px;
+    background: #008296;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.button:hover {
+    text-shadow: none;
+}
+.button i {
+    margin-left: 15px;
+    font-size: 15px;
+}
