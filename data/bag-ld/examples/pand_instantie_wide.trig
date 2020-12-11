@@ -26,6 +26,8 @@ prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
 graph:instanties {
   # TODO: Add nesting structure to GraphQL resolvers. @Bob
+  # Anjo: Dit moest nog aan de graphql query toegevoegd worden bij de enhancer (dateascience-grapqhl-enhancer/query/bag/pand.graphql bijvoorbeeld) 
+  # Anjo: Dit ontbrak/ontbreekt voor alle queries on query/bag/*.graphql
   #  {
   #   "identificatie": {
   #     "lokaalID": "0119100000000478"
@@ -36,6 +38,8 @@ graph:instanties {
     foaf:isPrimaryTopicOf
       # TODO: Check whether the 1, 2, 3, 4 can indeed be used identification.
       # FALLBACK: Add the value of `prov:generatedAtTime' as suffix instead,
+      # Anjo: Ben in een presentatie bag2.0 tegen gekomen dat identificatie,voorkomen en tijdstip registatrie onderdel van de sleutel/id kunnen zijn (zal hem eens proberen terug te vinden), stond in een powerpoint
+      # 
       #           (see BGT).
       # LET OP: Dit moet self-contained. @Rob
       registratie:0119100000000478.1,
@@ -58,6 +62,8 @@ graph:instanties {
     bag:geometrie
       [ a gml:Polygon;
         # CHECK: Hoe wordt dit ontsloten in GraphQL? (JSON, JSON-LD) @Bob
+        # Anjo: de geometrie werd in eerste instantie niet geladen, maar nu wel (zie ook datascience-graphql-extract/bag2/bag2load/gml.py)
+        # Anjo: ze worden nu per type opgeslagen (dus vlak of punt en in een aparte geometrie kolom en 3D als dat ook zo was aangeleverd.
         geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon ((206483.104 530177.783 206491.78 530181.313 206489.398 530187.165 206485.004 530185.377 206483.913 530188.058 206491.966 530191.335 206485.264 530207.806 206472.933 530202.788 206455.254 530195.801 206461.803 530179.182 206481.074 530187.024 206482.171 530184.328 206480.686 530183.724 206483.104 530177.783))"^^geo:wktLiteral ];
     bag:status status:pandInGebruik;
     bag:tijdstipRegistratie "2010-03-02T13:45:07.000"^^xsd:dateTime;
