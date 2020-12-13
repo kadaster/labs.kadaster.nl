@@ -1,0 +1,205 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def>
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
+prefix image: <https://bag2.basisregistraties.overheid.nl/bag/id/image/>
+prefix shape: <https://bag2.basisregistraties.overheid.nl/bag/id/shape/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+
+bag: {
+  bag:AdresseerbaarObject
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#65-adresseerbaar-object"^^xsd:anyURI;
+    rdfs:subClassOf nen3610:GeoObject;
+    skos:definition "Een Adresseerbaar object is een (abstract) object waaraan adressen kunnen worden toegekend."@nl;
+    skos:prefLabel "Adresseerbaar object"@nl;
+    skos:scopeNote "Een Adresseerbaar object is een Standplaats, een Ligplaats of een Verblijfsobject."@nl.
+
+  bag:Ligplaats
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#66-ligplaats"^^xsd:anyURI;
+    rdfs:subClassOf bag:AdresseerbaarObject;
+    skos:definition "Een Ligplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen plaats in het water al dan niet aangevuld met een op de oever aanwezig terrein of een gedeelte daarvan, die bestemd is voor het permanent afmeren van een voor woon-, bedrijfsmatige of recreatieve doeleinden geschikt drijvend object."@nl;
+    skos:prefLabel "Ligplaats"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen omvat gegevens over alle ligplaatsen op het Nederlands grondgebied, die daartoe officieel als zodanig zijn aangewezen.  Nieuwe ligplaatsen worden in de basisregistratie adressen en gebouwen opgenomen op basis van daartoe aangewezen brondocumenten, waarin het ontstaan van de ligplaats als zodanig is vastgelegd.  Daarnaast bevat de basisregistratie adressen en gebouwen alle geconstateerde ligplaatsen in de zin van artikel 2, tweede lid, onderdeel b, sub 2 van de wet.  De gegevens over ligplaatsen blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien de ligplaats als zodanig wordt ingetrokken.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over ligplaatsen die voor 1 juli 2009 zijn ingetrokken.</p>
+  <h1>Kwaliteit</h1>
+  <p>Een Ligplaats bestaat op het moment dat er sprake is van een aanwijzing als ligplaats door het bevoegde gemeentelijke orgaan.</p>
+  <h1>Toelichting</h1>
+  <p>De afbakening van een ligplaats volgt uit de formele aanwijzing van de ligplaats door het bevoegde gemeentelijke orgaan.</p>
+  <p>Voor de afbakening van een ligplaats is het niet relevant of de plaats in het water als zodanig in gebruik is.</p>
+</section>"""^^rdf:HTML.
+
+  bag:LigplaatsRegistratie
+    rdfs:label "Ligplaats registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:Nummeraanduiding
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#63-nummeraanduiding"^^xsd:anyURI;
+    rdfs:subClassOf rdfs:Resource;
+    skos:definition "Een Nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats."@nl;
+    skos:prefLabel "Nummeraanduiding"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen bevat alle officieel als zodanig toegekende nummeraanduidingen op het Nederlandse grondgebied.  Nieuwe nummeraanduidingen worden in de basisregistratie adressen en gebouwen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de nummeraanduiding als zodanig is vastgelegd.  Daarnaast bevat de basisregistratie adressen en gebouwen alle geconstateerde nummeraanduidingen in de zin van artikel 2, tweede lid, onderdeel b, sub 5 van de wet.  De gegevens over nummeraanduidingen blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien de nummeraanduiding als zodanig wordt ingetrokken.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over nummeraanduidingen die voor 1 juli 2009 zijn ingetrokken.</p>
+  <h1>Kwaliteit</h1>
+  <p>Een Nummeraanduiding bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen.  Een Nummeraanduiding heeft altijd betrekking op een enkel adresseerbaar object.</p>
+  <h1>Toelichting</h1>
+  <p>Nummeraanduidingen kunnen alleen worden toegekend aan als zodanig aangewezen adresseerbare objecttypen.  De thans aangewezen adresseerbare objecttypen zijn verblijfsobjecten, standplaatsen en ligplaatsen.</p>
+  <p>Een verblijfsobject, standplaats of ligplaats heeft een nummeraanduiding voor het hoofdadres en kan een of meer nummeraanduidingen voor nevenadressen hebben.  Een nevenadres mag alleen worden toegekend wanneer er meerdere relevante toegangen zijn en een toegang een wezenlijke betekenis heeft bij het aanduiden van het object, zoals een leveranciersingang.</p>
+  <p>Een nevenadres is een eigenschap van het geheel van hetzelfde verblijfsobject of dezelfde standplaats of ligplaats als het hoofdadres en niet van slechts een gedeelte ervan.</p>
+</section>"""^^rdf:HTML.
+
+  bag:NummeraanduidingRegistratie
+    rdfs:label "Nummeraanduiding registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:OpenbareRuimte
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#62-openbare-ruimte"^^xsd:anyURI;
+    rdfs:subClassOf nen3610:GeoObject;
+    skos:definition "Een Openbare ruimte is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorziene buitenruimte die binnen één woonplaats is gelegen."@nl;
+    skos:prefLabel "Openbare ruimte"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  De basisregistratie adressen en gebouwen bevat alle officieel als zodanig aangewezen openbare ruimten op het Nederlands grondgebied.  Nieuwe openbare ruimten worden in de basisregistratie adressen en gebouwen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de openbare ruimte als zodanig is vastgelegd.  Daarnaast bevat de basisregistratie adressen en gebouwen alle geconstateerde openbare ruimten in de zin van artikel 2, tweede lid, onderdeel b, sub 4 van de wet.  De gegevens over openbare ruimten blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien de openbare ruimte als zodanig wordt ingetrokken.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over openbare ruimten die voor 1 juli 2009 zijn ingetrokken.</p>
+  <h1>Kwaliteit</h1>
+  <p>Een Openbare ruimte bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen.</p>
+  <h1>Toelichting</h1>
+  <p>Als openbare ruimte worden onder meer aangemerkt wegen, water, spoorbanen en landschappelijke gebieden.</p>
+  <p>De vaststelling van een openbare ruimte volgt uit de formele aanwijzing van de openbare ruimte door het bevoegde gemeentelijke orgaan.</p>
+  <p>Als een nummeraanduiding is gelegen aan een openbare ruimte in het buitenland, registreert de gemeente de buitenlandse openbare ruimte alsof deze in de woonplaats van de nummeraanduiding is gelegen.</p>
+</section>"""^^rdf:HTML.
+
+  bag:OpenbareRuimteRegistratie
+    rdfs:label "Openbare ruimte registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:Pand
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#64-pand"^^xsd:anyURI;
+    sdo:image image:pand;
+    skos:definition "De unieke aanduiding van een pand."@nl;
+    skos:prefLabel "Pand"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen omvat gegevens over alle panden op het Nederlands grondgebied, die voldoen aan bovenstaande objectdefinitie.  Gegevens over een nieuw pand worden in de basisregistratie adressen en gebouwen opgenomen bij verlening van de voor het realiseren van het pand benodigde toestemming of het opmaken van een in artikel 10, onderdeel b van de wet genoemd document van constatering.  De gegevens over panden blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien het pand als zodanig niet meer aanwezig is.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over panden die op 1 juli 2009 niet meer als zodanig aanwezig waren.</p>
+</section>"""^^rdf:HTML.
+  image:pand
+    a sdo:ImageObject;
+    sdo:contentUrl "assets/pand.svg"^^xsd:anyURI.
+
+  bag:PandRegistratie
+    rdfs:label "Pand registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:PuntOfVlak
+    owl:unionOf
+      gml:Point,
+      gml:Polygon.
+
+  bag:Status
+    owl:unionOf
+      bag:StatusPand,
+      bag:StatusPlaats,
+      bag:StatusVerblijfsobject,
+      bag:StatusWoonplaats;
+    skos:prefLabel "Status"@nl.
+
+  bag:Standplaats
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#67-standplaats"^^xsd:anyURI;
+    rdfs:subClassOf bag:AdresseerbaarObject;
+    skos:definition "Een Standplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen terrein of gedeelte daarvan dat bestemd is voor het permanent plaatsen van een niet direct en niet duurzaam met de aarde verbonden en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte ruimte."@nl;
+    skos:prefLabel "Standplaats"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen omvat gegevens over alle panden op het Nederlands grondgebied, die voldoen aan bovenstaande objectdefinitie.  Gegevens over een nieuw pand worden in de basisregistratie adressen en gebouwen opgenomen bij verlening van de voor het realiseren van het pand benodigde toestemming of het opmaken van een in artikel 10, onderdeel b van de wet genoemd document van constatering.  De gegevens over panden blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien het pand als zodanig niet meer aanwezig is.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over panden die op 1 juli 2009 niet meer als zodanig aanwezig waren.</p>
+"""^^rdf:HTML.
+
+  bag:StandplaatsRegistratie
+    rdfs:label "Standplaats registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:Verblijfsobject
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#68-verblijfsobject"^^xsd:anyURI;
+    rdfs:subClassOf bag:AdresseerbaarObject;
+    sdo:image image:verblijfsobject;
+    skos:definition "Een Verblijfsobject is de kleinste binnen een of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is."@nl;
+    skos:prefLabel "Verblijfsobject"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen omvat gegevens over alle verblijfsobjecten op het Nederlands grondgebied die voldoen aan bovenstaande objectdefinitie.  Gegevens over een nieuw verblijfsobject worden in de basisregistratie adressen en gebouwen opgenomen bij verlening van de voor het realiseren van het verblijfsobject benodigde toestemming of het opmaken van een in artikel 10, onderdeel b van de wet genoemd document van constatering.  De gegevens over verblijfsobjecten blijven in de basisregistratie adressen en gebouwen aanwezig, ook indien het verblijfsobject als zodanig niet meer aanwezig is.  De basisregistratie adressen en gebouwen bevat in principe geen gegevens over verblijfsobjecten die op 1 juli 2009 niet meer als zodanig aanwezig waren.</p>
+</section>"""^rdf:HTML.
+  image:verblijfsobject
+    a sdo:ImageObject;
+    sdo:contentUrl "asset/verblijfsobject.svg"^^xsd:anyURI.
+
+  bag:VerblijfsobjectRegistratie
+    rdfs:label "Verblijfsobject registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+
+  bag:VlakOfMultivlak
+    owl:unionOf
+      gml:MuliPolygon,
+      gml:Polygon;
+    rdfs:subClassOf geo:Geometry;
+    skos:prefLabel "Vlak of multivlak"@nl.
+
+  bag:Woonplaats
+    dct:source
+      [ sdo:contentUrl "https://wetten.overheid.nl/BWBR0023466/2012-10-01/#Hoofdstuk1_Artikel1"^^xsd:anyURI;
+        sdo:name "Artikel 1 Wet basisregistratie adressen en gebouwen"@nl ];
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#61-woonplaats"^^xsd:anyURI;
+    rdfs:subClassOf nen3610:RegistratiefGebied;
+    skos:definition "Een woonplaats is een door het bevoegde gemeentelijke orgaan als zodanig aangewezen en van een naam voorzien gedeelte van het grondgebied van de gemeente."@nl;
+    skos:prefLabel "Woonplaats"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Populatie</h1>
+  <p>De basisregistratie adressen en gebouwen bevat alle officieel als zodanig vastgestelde woonplaatsen op het Nederlandse grondgebied.  Nieuwe woonplaatsen worden in de basisregistratie adressen en gebouwen opgenomen op basis van daartoe aangewezen brondocumenten waarin het ontstaan van de woonplaats als zodanig is vastgelegd.  Daarnaast bevat de basisregistratie adressen en gebouwen alle geconstateerde woonplaatsen in de zin van artikel 2, tweede lid, onderdeel b, sub 3 van de wet.  De gegevens over woonplaatsen blijven in de basisregistratie aanwezig, ook indien de woonplaats als zodanig wordt opgeheven.  De basisregistratie bevat in principe geen gegevens over woonplaatsen die voor 1 juli 2009 zijn opgeheven.</p>
+  <h1>Kwaliteit</h1>
+  <p>Een Woonplaats bestaat als hiertoe door het bevoegde gemeentelijke orgaan als zodanig een besluit is genomen.</p>
+  <h1>Toelichting</h1>
+  <p>De indeling in woonplaatsen volgt uit de formele aanwijzing van woonplaatsen door het bevoegde gemeentelijke orgaan.</p>
+</section>"""^^rdf:HTML.
+
+  bag:WoonplaatsRegistratie
+    rdfs:label "Woonplaats registratie"@nl;
+    rdfs:subClassOf bag:Registratie.
+}

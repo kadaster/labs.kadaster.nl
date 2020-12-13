@@ -101,11 +101,11 @@ bevraging kunnen hiervoor te inspiratie dienen.  Klik op “Show editor“
 om de specifieke SPARQL bevraging in te bekijken.  Daarnaast kunnen de
 volgende bronnen behulpzaam zijn:
 
-  - Het officiële SPARQL endpoint voor de BAG: <https://bag.basisregistraties.overheid.nl/sparql>
+  - Het officiële SPARQL endpoint voor de BAG: <https://data.labs.kadaster.nl/kadaster/bag/sparql/bag>
 
-  - Slides voor de [Kadaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html).
+  - Slides voor de [Kasaster SPARQL Tutorial](/dissemination/Kadaster-SPARQL-Tutorial.html).
 
-  - Het [Kadaster SPARQL Webinar](./Kadaster-SPARQL-Webinar.html):
+  - Het [Kadaster SPARQL Webinar](/dissemination/Kadaster-SPARQL-Webinar.html):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oyH8YFVy37Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>

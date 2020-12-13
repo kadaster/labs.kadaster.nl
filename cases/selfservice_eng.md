@@ -66,7 +66,7 @@ The following are examples of browsers and viewers developed by Kadaster for bro
       <div class="card-description">Move through all the Linked Data store integrally as open data and discover the relationships between the different sources.</div>
 	</div>
   </a>
-  <a href="/demonstrators/graph-browser/namen-app">
+  <a href="https://labs.kadaster.nl/demonstrators/namen-app/#/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Toponamenzoeker">

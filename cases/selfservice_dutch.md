@@ -58,7 +58,7 @@ Hieronder volgen voorbeelden van browsers en viewers die door het Kadaster zijn 
       <div class="card-description">Beweeg door alle Linked Data die wij integraal ontsluiten en ontdek relaties tussen de verschillende bronnen.</div>
 	</div>
   </a>
-  <a href="/demonstrators/graph-browser/namen-app">
+  <a href="https://labs.kadaster.nl/demonstrators/namen-app/#/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Screenshot Toponamenzoeker">

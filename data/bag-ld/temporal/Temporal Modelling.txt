@@ -1,0 +1,51 @@
+History:
+individual modifications (or occurences?) to a building = status changes?
+
+1. Material History
+"Expresses the history of how the object changes in a reality" = (some of the) status changes?
+
+= bouwjaar
+= status changes 
+
+Status:
+- In gebruik
+- Pand gesloopt (only begindgeldigheid?)
+- Verbouwing Pand (only begingeldigheid?)
+- Sloop Vergunning Verleend
+- Bouw Vergunning Verleend
+- Pand niet gerealiseerd
+- Pand ten onrechte
+
+2. Formal History
+"Expresses the history of how the object changes in a registration"
+
+For each occurrence we have these which make up the formal history. 
+
+Bronhouder 
+= historie:tijdstipRegistratie 
+= historie:tijdstipEindRegistratie 
+LV
+= historie:tijdstipRegistratieLV 
+= historie:tijdstipEindRegistratieLV 
+
+Lifecycle: Focus on Temporal Data
+temporal validity of the object in a registration = begin and end dates
+
+3. Material Lifecycle
+Expresses the complete temporal duration of the validity of the object in reality. 
+
+= historie:beginGeldigheid (voorkomen 1)
+= historie:eindGeldigheid (voorkomen 1+n where n = number of occurences -1 ) in the case of multiple occurences
+
+4. Formal Lifecycle
+2 types of registrations = LV and Bronhouder
+
+Bronhouder 
+= historie:tijdstipRegistratie (voorkomen 1)
+= historie:tijdstipEindRegistratie (voorkomen 1+n) in case of multiple occurrences
+
+LV
+= historie:tijdstipRegistratieLV (voorkomen 1)
+= historie:tijdstipEindRegistratieLV (voorkomen 1+n) in case of multiple occurrences
+
+Problem: only has eindregistratie if there is another occurrence (gesloopt) or if it is still in progress (verbouwing). 
