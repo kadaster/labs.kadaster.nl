@@ -351,3 +351,131 @@
         </Objecten:Pand>
     </sl-bag-extract:bagObject>
 </sl:stand>
+
+<!-- This is the connected verblijfsobject for pand: 0119100000000478-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Verblijfsobject>
+            <Objecten:heeftAlsHoofdadres>
+                <Objecten-ref:NummeraanduidingRef domein="NL.IMBAG.Nummeraanduiding">0119200000001484</Objecten-ref:NummeraanduidingRef>
+            </Objecten:heeftAlsHoofdadres>
+            
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                    <Historie:eindGeldigheid>2013-11-05</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2011-09-05T08:54:21.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2013-11-06T12:49:03.000</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2011-09-05T09:03:43.222</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2013-11-06T13:04:07.405</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+            
+            <Objecten:identificatie domein="NL.IMBAG.Verblijfsobject">0119010000004265</Objecten:identificatie>
+                <Objecten:geometrie>
+                    <Objecten:punt>
+                        <gml:Point srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                            <gml:pos>206486.218 530180.399 0.0</gml:pos>
+                        </gml:Point
+                    ></Objecten:punt>
+                </Objecten:geometrie>
+            
+            <Objecten:gebruiksdoel>woonfunctie</Objecten:gebruiksdoel>
+            <Objecten:gebruiksdoel>industriefunctie</Objecten:gebruiksdoel>
+            <Objecten:oppervlakte>135</Objecten:oppervlakte>
+            <Objecten:status>Verblijfsobject in gebruik</Objecten:status>
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+            <Objecten:documentnummer>2009-12173</Objecten:documentnummer>
+            <Objecten:maaktDeelUitVan>
+                <Objecten-ref:PandRef domein="NL.IMBAG.Pand">0119100000000478</Objecten-ref:PandRef>
+            </Objecten:maaktDeelUitVan>
+        </Objecten:Verblijfsobject>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Verblijfsobject>
+            <Objecten:heeftAlsHoofdadres>
+                <Objecten-ref:NummeraanduidingRef domein="NL.IMBAG.Nummeraanduiding">0119200000001484</Objecten-ref:NummeraanduidingRef>
+            </Objecten:heeftAlsHoofdadres>
+            
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                <Historie:voorkomenidentificatie>2</Historie:voorkomenidentificatie>
+                <Historie:beginGeldigheid>2013-11-05</Historie:beginGeldigheid>
+                <Historie:eindGeldigheid>2016-04-12</Historie:eindGeldigheid>
+                <Historie:tijdstipRegistratie>2013-11-06T12:49:03.000</Historie:tijdstipRegistratie>
+                <Historie:eindRegistratie>2016-04-12T14:35:03.000</Historie:eindRegistratie>
+                <Historie:BeschikbaarLV>
+                    <Historie:tijdstipRegistratieLV>2013-11-06T13:04:07.405</Historie:tijdstipRegistratieLV>
+                    <Historie:tijdstipEindRegistratieLV>2016-04-12T15:00:05.819</Historie:tijdstipEindRegistratieLV>
+                </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+            
+            <Objecten:identificatie domein="NL.IMBAG.Verblijfsobject">0119010000004265</Objecten:identificatie>
+                <Objecten:geometrie>
+                    <Objecten:punt>
+                        <gml:Point srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                            <gml:pos>206486.218 530180.399 0.0</gml:pos>
+                        </gml:Point>
+                    </Objecten:punt>
+                </Objecten:geometrie>
+            
+            <Objecten:gebruiksdoel>woonfunctie</Objecten:gebruiksdoel>
+            <Objecten:gebruiksdoel>industriefunctie</Objecten:gebruiksdoel>
+            <Objecten:oppervlakte>1100</Objecten:oppervlakte>
+            <Objecten:status>Verblijfsobject in gebruik (niet ingemeten)</Objecten:status>
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2013-11-05</Objecten:documentdatum>
+            <Objecten:documentnummer>13210537</Objecten:documentnummer>
+            
+            <Objecten:maaktDeelUitVan>
+                <Objecten-ref:PandRef domein="NL.IMBAG.Pand">0119100000000478</Objecten-ref:PandRef>
+            </Objecten:maaktDeelUitVan>
+        </Objecten:Verblijfsobject>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Verblijfsobject>
+            <Objecten:heeftAlsHoofdadres>
+                <Objecten-ref:NummeraanduidingRef domein="NL.IMBAG.Nummeraanduiding">0119200000001484</Objecten-ref:NummeraanduidingRef>
+            </Objecten:heeftAlsHoofdadres>
+            
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>3</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2016-04-12</Historie:beginGeldigheid>
+                    <Historie:tijdstipRegistratie>2016-04-12T14:35:03.000</Historie:tijdstipRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2016-04-12T15:00:05.819</Historie:tijdstipRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+        
+        <Objecten:identificatie domein="NL.IMBAG.Verblijfsobject">0119010000004265</Objecten:identificatie>
+        <Objecten:geometrie>
+        <Objecten:punt>
+            <gml:Point srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="3">
+                <gml:pos>206486.218 530180.399 0.0</gml:pos>
+            </gml:Point>
+        </Objecten:punt>
+    </Objecten:geometrie>
+    
+    <Objecten:gebruiksdoel>woonfunctie</Objecten:gebruiksdoel>
+    <Objecten:gebruiksdoel>industriefunctie</Objecten:gebruiksdoel>
+    <Objecten:oppervlakte>1100</Objecten:oppervlakte>
+    <Objecten:status>Verblijfsobject in gebruik</Objecten:status>
+    <Objecten:geconstateerd>N</Objecten:geconstateerd>
+    <Objecten:documentdatum>2016-04-12</Objecten:documentdatum>
+    <Objecten:documentnummer>973530</Objecten:documentnummer>
+    <Objecten:maaktDeelUitVan>
+    <Objecten-ref:PandRef domein="NL.IMBAG.Pand">0119100000000478</Objecten-ref:PandRef>
+    </Objecten:maaktDeelUitVan></Objecten:Verblijfsobject></sl-bag-extract:bagObject></sl:stand>
