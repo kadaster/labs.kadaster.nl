@@ -572,3 +572,76 @@
         </Objecten:Woonplaats>
     </sl-bag-extract:bagObject>
 </sl:stand>
+
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Standplaats>
+            <Objecten:heeftAlsHoofdadres>
+                <Objecten-ref:NummeraanduidingRef domein="NL.IMBAG.Nummeraanduiding">0119200000010961</Objecten-ref:NummeraanduidingRef>
+            </Objecten:heeftAlsHoofdadres>
+            
+            <Objecten:voorkomen>
+                <Historie:Voorkomen>
+                    <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                    <Historie:beginGeldigheid>2010-02-10</Historie:beginGeldigheid>
+                    <Historie:eindGeldigheid>2014-04-08</Historie:eindGeldigheid>
+                    <Historie:tijdstipRegistratie>2010-03-02T14:38:53.000</Historie:tijdstipRegistratie>
+                    <Historie:eindRegistratie>2014-04-08T13:23:25.000</Historie:eindRegistratie>
+                    <Historie:BeschikbaarLV>
+                        <Historie:tijdstipRegistratieLV>2010-03-04T09:15:43.692</Historie:tijdstipRegistratieLV>
+                        <Historie:tijdstipEindRegistratieLV>2014-04-08T13:35:33.150</Historie:tijdstipEindRegistratieLV>
+                    </Historie:BeschikbaarLV>
+                </Historie:Voorkomen>
+            </Objecten:voorkomen>
+            
+            <Objecten:identificatie domein="NL.IMBAG.Standplaats">0119030000000001</Objecten:identificatie>
+            <Objecten:status>Plaats aangewezen</Objecten:status>
+            <Objecten:geometrie><gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList count="5">210948.938 523944.189 210949.619 523938.839 210967.129 523940.979 210966.545 523946.134 210948.938 523944.189</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+                </gml:Polygon>
+            </Objecten:geometrie>
+        
+        <Objecten:geconstateerd>J</Objecten:geconstateerd>
+        <Objecten:documentdatum>2010-02-10</Objecten:documentdatum>
+        <Objecten:documentnummer>2010-sta-01</Objecten:documentnummer>
+        </Objecten:Standplaats>
+    </sl-bag-extract:bagObject>
+</sl:stand>
+
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Standplaats>
+            <Objecten:heeftAlsHoofdadres>
+                <Objecten-ref:NummeraanduidingRef domein="NL.IMBAG.Nummeraanduiding">0119200000010961</Objecten-ref:NummeraanduidingRef></Objecten:heeftAlsHoofdadres>
+                <Objecten:voorkomen>
+                    <Historie:Voorkomen>
+                        <Historie:voorkomenidentificatie>2</Historie:voorkomenidentificatie>
+                        <Historie:beginGeldigheid>2014-04-08</Historie:beginGeldigheid>
+                        <Historie:tijdstipRegistratie>2014-04-08T13:23:25.000</Historie:tijdstipRegistratie>
+                        <Historie:BeschikbaarLV>
+                            <Historie:tijdstipRegistratieLV>2014-04-08T13:35:33.150</Historie:tijdstipRegistratieLV>
+                        </Historie:BeschikbaarLV>
+                    </Historie:Voorkomen>
+                </Objecten:voorkomen>
+                
+                <Objecten:identificatie domein="NL.IMBAG.Standplaats">0119030000000001</Objecten:identificatie>
+                <Objecten:status>Plaats aangewezen</Objecten:status>
+                <Objecten:geometrie>
+                    <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992" srsDimension="2">
+                        <gml:exterior>
+                            <gml:LinearRing>
+                                <gml:posList count="5">210948.938 523944.189 210949.619 523938.839 210967.129 523940.979 210966.545 523946.134 210948.938 523944.189</gml:posList>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </Objecten:geometrie>
+            <Objecten:geconstateerd>N</Objecten:geconstateerd>
+            <Objecten:documentdatum>2014-04-08</Objecten:documentdatum>
+            <Objecten:documentnummer>228124</Objecten:documentnummer>
+        </Objecten:Standplaats>
+    </sl-bag-extract:bagObject>
+</sl:stand>
