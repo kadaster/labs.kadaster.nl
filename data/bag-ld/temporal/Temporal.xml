@@ -506,3 +506,21 @@
                     </Objecten:voorkomen>
             
             <Objecten:ligtAan><Objecten-ref:OpenbareRuimteRef domein="NL.IMBAG.Openbareruimte">0119300000000058</Objecten-ref:OpenbareRuimteRef></Objecten:ligtAan></Objecten:Nummeraanduiding></sl-bag-extract:bagObject></sl:stand>
+
+<!-- This is the connected openbareruimte for pand: 0119100000000478-->
+ <sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:OpenbareRuimte>
+            <Objecten:identificatie domein="NL.IMBAG.Openbareruimte">0119300000000058</Objecten:identificatie>
+                <Objecten:naam>Bramenweg</Objecten:naam>
+                <Objecten:type>Weg</Objecten:type>
+                
+                <Objecten:status>Naamgeving uitgegeven</Objecten:status>
+                <Objecten:geconstateerd>N</Objecten:geconstateerd>
+                
+                <Objecten:documentdatum>2008-11-18</Objecten:documentdatum>
+                <Objecten:documentnummer>2008-19535</Objecten:documentnummer>
+                
+            <Objecten:ligtIn><Objecten-ref:WoonplaatsRef domein="NL.IMBAG.Woonplaats">1083</Objecten-ref:WoonplaatsRef></Objecten:ligtIn>
+            
+            <Objecten:voorkomen><Historie:Voorkomen><Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie><Historie:beginGeldigheid>2008-11-18</Historie:beginGeldigheid><Historie:tijdstipRegistratie>2010-03-02T13:44:22.000</Historie:tijdstipRegistratie><Historie:BeschikbaarLV><Historie:tijdstipRegistratieLV>2010-03-04T09:11:45.386</Historie:tijdstipRegistratieLV></Historie:BeschikbaarLV></Historie:Voorkomen></Objecten:voorkomen></Objecten:OpenbareRuimte></sl-bag-extract:bagObject></sl:stand>

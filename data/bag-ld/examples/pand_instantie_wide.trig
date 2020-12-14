@@ -238,8 +238,7 @@ nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same open
     prov:generatedAtTime "2011-09-05T09:03:43.220"^^xsd:dateTime.
 
 
- # TODO: Finalize this example (almost done). @Lexi
-  openbareRuimte:0119300000000058
+openbareRuimte:0119300000000058
     a bag:openbareRuimte;
     bag:woonplaats woonplaats:1083;
     foaf:isPrimaryTopicOf registratie:0119300000000058.1.
@@ -247,17 +246,21 @@ nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same open
   identificatie:0119300000000058
     a nen3610:Identificatie;
     nen3610:lokaalID "0119300000000058";
-    nen3610:namespace "NL.IMBAG.Openbare-Ruimte".
+    nen3610:namespace "NL.IMBAG.Openbareruimte".
 
-  #voorkomen1 - openbare-ruimte https://bag.basisregistraties.overheid.nl/bag/doc/2008111800000000/openbare-ruimte/0119300000000058
-  registratie:0119300000000058.1
+  #voorkomen1 
     a bag:openbareRuimteRegistratie;
     bag:geconstateerd false;
-    #bag:geometrie (this is not directly available from the openbare-ruimte object)
+    bag:naam "Bramenweg";
+    bag:type "Weg";
     bag:status bag:NaamgevingUitgegeven;
-    dct:identifier "2008111800000000";
-    nen3610:beginGeldigheid "2008-11-18T00:00:00+01:00"^^xsd:dateTime.
+    dct:created "2008-11-18"^^xsd:date;
+    dct:identifier "2008-19535";
+    nen3610:beginGeldigheid "2008-11-18"^^xsd:date;
+    bag:tijdstipRegistratie "2010-03-02T13:44:22.000"^^xsd:dateTime;
+    prov:generatedAtTime "2010-03-04T09:11:45.386"^^xsd:dateTime. 
 
+ # TODO: Finalize this example (almost done). @Lexi
   woonplaats:1083
     a bag:Woonplaats;
     foaf:isPrimaryTopicOf registratie:1083.1.
