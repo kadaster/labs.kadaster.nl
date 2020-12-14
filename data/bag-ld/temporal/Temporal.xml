@@ -479,3 +479,30 @@
     <Objecten:maaktDeelUitVan>
     <Objecten-ref:PandRef domein="NL.IMBAG.Pand">0119100000000478</Objecten-ref:PandRef>
     </Objecten:maaktDeelUitVan></Objecten:Verblijfsobject></sl-bag-extract:bagObject></sl:stand>
+
+<!-- This is the connected nummeraanduiding for pand: 0119100000000478-->
+<sl:stand>
+    <sl-bag-extract:bagObject>
+        <Objecten:Nummeraanduiding>
+            <Objecten:identificatie domein="NL.IMBAG.Nummeraanduiding">0119200000001484</Objecten:identificatie>
+                <Objecten:huisnummer>13</Objecten:huisnummer>
+                    <Objecten:postcode>7948LM</Objecten:postcode>
+                    
+                    <Objecten:typeAdresseerbaarObject>Verblijfsobject</Objecten:typeAdresseerbaarObject>
+                    <Objecten:status>Naamgeving uitgegeven</Objecten:status>
+                    <Objecten:geconstateerd>N</Objecten:geconstateerd>
+                    <Objecten:documentdatum>2009-08-05</Objecten:documentdatum>
+                    <Objecten:documentnummer>2009-12171</Objecten:documentnummer>
+                    
+                    <Objecten:voorkomen>
+                        <Historie:Voorkomen>
+                        <Historie:voorkomenidentificatie>1</Historie:voorkomenidentificatie>
+                        <Historie:beginGeldigheid>2009-08-05</Historie:beginGeldigheid>
+                        <Historie:tijdstipRegistratie>2011-09-05T08:54:21.000</Historie:tijdstipRegistratie>
+                        <Historie:BeschikbaarLV>
+                            <Historie:tijdstipRegistratieLV>2011-09-05T09:03:43.220</Historie:tijdstipRegistratieLV>
+                        </Historie:BeschikbaarLV>
+                        </Historie:Voorkomen>
+                    </Objecten:voorkomen>
+            
+            <Objecten:ligtAan><Objecten-ref:OpenbareRuimteRef domein="NL.IMBAG.Openbareruimte">0119300000000058</Objecten-ref:OpenbareRuimteRef></Objecten:ligtAan></Objecten:Nummeraanduiding></sl-bag-extract:bagObject></sl:stand>

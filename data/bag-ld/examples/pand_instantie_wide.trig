@@ -214,8 +214,7 @@ graph:instanties {
     prov:generatedAtTime "2016-04-12T15:00:05.819"^^xsd:dateTime.
 
 
- # TODO: Finalize this example (almost done). @Lexi
-  nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
+nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
     a bag:Nummeraanduiding;
     bag:openbareRuimte openbareRuimte:0119300000000058;
     foaf:isPrimaryTopicOf registratie:0119200000001484.1.
@@ -225,16 +224,21 @@ graph:instanties {
     nen3610:lokaalID "0119200000001484";
     nen3610:namespace "NL.IMBAG.Nummeraanduiding".
 
-  #voorkomen1 - nummeraanduiding https://bag.basisregistraties.overheid.nl/bag/doc/2009080500000000/nummeraanduiding/0119200000001484
+  #voorkomen1 
   registratie:0119200000001484.1
     a bag:NummeraanduidingRegistratie;
     bag:geconstateerd false;
     bag:status bag:NaamgevingUitgegeven;
     bag:huisnummer "13"^^xsd:positiveInteger;
     bag:postcode "7948LM";
-    dct:identifier "2009080500000000";
-    nen3610:beginGeldigheid "2009-08-05T00:00:00+02:00"^^xsd:dateTime.
+    dct:created "2009-08-05"^^xsd:date;
+    dct:identifier "2009-12171";
+    nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
+    bag:tijdstipRegistratie "2011-09-05T08:54:21.000"^^xsd:dateTime;
+    prov:generatedAtTime "2011-09-05T09:03:43.220"^^xsd:dateTime.
 
+
+ # TODO: Finalize this example (almost done). @Lexi
   openbareRuimte:0119300000000058
     a bag:openbareRuimte;
     bag:woonplaats woonplaats:1083;
