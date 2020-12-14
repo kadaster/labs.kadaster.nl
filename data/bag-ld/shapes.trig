@@ -18,12 +18,6 @@ prefix shape: <https://bag2.basisregistraties.overheid.nl/bag/id/shape/>
 prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
 graph:shapes {
-  shape:isPrimaryTopicOf
-    sh:class bag:Registratie;
-    sh:minCount 1;
-    sh:path foaf:isPrimaryTopicOf.
-
-
   shape:AdresseerbaarObject
     sh:property
       sh:hoofdadres,
@@ -77,8 +71,13 @@ graph:shapes {
   shape:Ligplaats
     sh:property
       shape:Ligplaats_identificatie,
-      shape:isPrimaryTopicOf;
+      shape:Ligplaats_isPrimaryTopicOf;
     sh:targetClass bag:Ligplaats.
+
+  shape:Ligplaats_isPrimaryTopicOf
+    sh:class bag:LigplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:Ligplaats_identificatie
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
@@ -89,7 +88,6 @@ graph:shapes {
     sh:path nen3610:identificatie;
     skos:definition "De unieke aanduiding van een ligplaats."@nl;
     skos:scopeNote "Elke Ligplaats waarvan gegevens zijn opgenomen in de basisregistratie adressen en gebouwen wordt uniek aangeduid door middel van een identificatiecode."@nl.
-
 
   shape:LigplaatsRegistratie
     sh:property
@@ -159,7 +157,7 @@ graph:shapes {
       shape:materiëleHistorieEind,
       shape:materiëleLevensduur,
       shape:primaryTopic;
-    sh:targetClass bag:Registratie.
+    sh:targetClass foaf:Document.
 
   shape:formeleHistorieBegin
     sh:datatype xsd:dateTime;
@@ -177,7 +175,7 @@ graph:shapes {
     sh:path prov:invalidatedAtTime.
 
   shape:formeleLevensduur
-    sh:class bag:Registratie;
+    sh:class foaf:Document;
     sh:description "Wordt gebruikt om de formele levensduur mee aan de duiden."@nl;
     sh:maxCount 1;
     sh:name "heeft vorige geregistreerde versie"@nl;
@@ -199,7 +197,7 @@ graph:shapes {
     sh:path nen3610:eindGeldigheid.
 
   shape:materiëleLevensduur
-    sh:class bag:Registratie;
+    sh:class foaf:Document;
     sh:description "Wordt gebruikt om de materiële levensduur mee aan de duiden."@nl;
     sh:maxCount 1;
     sh:name "heeft vorige geldige versie"@nl;
@@ -216,7 +214,7 @@ graph:shapes {
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#77-standplaats"^^xsd:anyURI;
     sh:property
       shape:Standplaats_identificatie,
-      shape:isPrimaryTopicOf;
+      shape:Standplaats_isPrimaryTopicOf;
     sh:targetClass bag:Standplaats.
 
   shape:Standplaats_identificatie
@@ -229,6 +227,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een standplaats."@nl;
     skos:scopeNote "Elke standplaats waarvan gegevens zijn opgenomen in de BAG wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
+  shape:Standplaats_isPrimaryTopicOf
+    sh:class bag:StandplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:StandplaatsRegistratie
     sh:property
@@ -291,8 +293,7 @@ graph:shapes {
   shape:Nummeraanduiding
     sh:property
       shape:Nummeraanduiding_identificatie,
-      shape:isPrimaryTopicOf,
-      shape:openbareRuimte;
+      shape:Nummeraanduiding_isPrimaryTopicOf;
     sh:targetClass bag:Nummeraanduiding.
 
   shape:Nummeraanduiding_identificatie
@@ -305,12 +306,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een nummeraanduiding."@nl;
     skos:scopeNote "Elke nummeraanduiding waarvan gegevens zijn opgenomen in de basisregistratie adressen en gebouwen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
-  shape:openbareRuimte
-    sh:class bag:OpenbareRuimte;
-    sh:maxCount 1;
+  shape:Nummeraanduiding_isPrimaryTopicOf
+    sh:class bag:NummeraanduidingRegistratie;
     sh:minCount 1;
-    sh:path bag:openbareRuimte.
-
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:NummeraanduidingRegistratie
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#73-nummeraanduiding"^^xsd:anyURI;
@@ -322,6 +321,7 @@ graph:shapes {
       shape:huisletter,
       shape:huisnummer,
       shape:huisnummertoevoeging,
+      shape:openbareRuimte,
       shape:postcode;
     sh:targetClass bag:NummeraanduidingRegistratie.
 
@@ -386,6 +386,12 @@ graph:shapes {
     sh:path bag:huisnummertoevoeging;
     sh:pattern "[0-9A-Za-z]{1,4}".
 
+  shape:openbareRuimte
+    sh:class bag:OpenbareRuimte;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:openbareRuimte.
+
   shape:postcode
     sh:datatype xsd:string;
     sh:description "Combinatie van vier cijfers (0 – 9) en twee hoofdletters (A – Z)."@nl;
@@ -397,8 +403,7 @@ graph:shapes {
   shape:OpenbareRuimte
     sh:property
       shape:OpenbareRuimte_identificatie,
-      shape:isPrimaryTopicOf,
-      shape:woonplaats;
+      shape:OpenbareRuimte_isPrimaryTopicOf;
     sh:targetClass bag:OpenbareRuimte.
 
   shape:OpenbareRuimte_identificatie
@@ -412,12 +417,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een openbare ruimte."@nl;
     skos:scopeNote "Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
-  shape:woonplaats
-    sh:class bag:Woonplaats;
-    sh:maxCount 1;
+  shape:OpenbareRuimte_isPrimaryTopicOf
+    sh:class bag:OpenbareRuimteRegistratie;
     sh:minCount 1;
-    sh:path bag:woonplaats.
-
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:OpenbareRuimteRegistratie
     sh:property
@@ -425,7 +428,9 @@ graph:shapes {
       shape:OpenbareRuimteRegistratie_documentnummer,
       shape:OpenbareRuimteRegistratie_geconstateerd,
       shape:OpenbareRuimteRegistratie_geometrie,
-      shape:OpenbareRuimteRegistratie_status;
+      shape:OpenbareRuimteRegistratie_status,
+      shape:OpenbareRuimteRegistratie_type,
+      shape:woonplaats;
     sh:targetClass bag:OpenbareRuimteRegistratie.
 
   shape:OpenbareRuimteRegistratie_documentdatum
@@ -485,11 +490,52 @@ graph:shapes {
     skos:definition "De fase van de levenscyclus van een openbare ruimte waarin de betreffende openbare ruimte zich bevindt."@nl;
     skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande openbare ruimten als ingetrokken openbare ruimten. Om het onderscheid tussen de stadia in de levenscyclus van de openbare ruimte te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
 
+  shape:OpenbareRuimteRegistratie_type
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#723-type"^^xsd:anyURI;
+    sh:in
+      ( nen3610:AdministratiefGebied
+        nen3610:Kunstwerk
+        nen3610:LandschappelijkGebied
+        nen3610:Spoorbaan
+        nen3610:Terrein
+        nen3610:Water
+        nen3610:Weg );
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:type;
+    skos:definition "De aard van de als zodanig benoemde openbare ruimte."@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <dl>
+    <dt>Administratief gebied</dt>
+    <dd>Oftewel 'registratief gebied': op basis van wet- en regelgeving afgebakend gebied dat als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering (bijvoorbeeld stadsdeel) (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Kunstwerk</dt>
+    <dd>Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen en niet bedoeld voor permanent menselijk verblijf. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Landschappelijk gebied</dt>
+    <dd>Te verdelen in (NEN 3610): 'Geografisch gebied': geografisch benoemd of aangeduid gebied. De grenzen zijn niet altijd exact vastgesteld (bijvoorbeeld Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied) en 'Functioneel gebied': begrensd en benoemd gebied dat door een functionele eenheid wordt beschreven (bijvoorbeeld bedrijventerrein, bungalowpark, plantsoen, begraafplaats, jachthaven, windmolenpark en recreatiegebied) (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Spoorbaan</dt>
+    <dd>Gebaand gedeelte voor het verkeer over rails. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Terrein</dt>
+    <dd>Door een fysiek voorkomen gekarakteriseerd zichtbaar begrensd stuk grond (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Water</dt>
+    <dd>Grondoppervlak in principe bedekt met water. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Weg</dt>
+    <dd>Gebaand gedeelte voor het wegverkeer en vliegverkeer te land (bron: NEN 3610:2011/A1:2016 nl).</dd>
+  </dl>
+</section>"""^^rdf:HTML.
+
+  shape:woonplaats
+    sh:class bag:Woonplaats;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:woonplaats.
+
 
   shape:Pand
     sh:property
       shape:Pand_identificatie,
-      shape:isPrimaryTopicOf;
+      shape:Pand_isPrimaryTopicOf;
     sh:targetClass bag:Pand.
 
   shape:Pand_identificatie
@@ -504,6 +550,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een openbare ruimte."@nl;
     skos:scopeNote "Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
+  shape:Pand_isPrimaryTopicOf
+    sh:class bag:PandRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:PandRegistratie
     sh:property
@@ -574,8 +624,7 @@ graph:shapes {
   shape:Verblijfsobject
     sh:property
       shape:Verblijfsobject_identificatie,
-      shape:isPrimaryTopicOf,
-      shape:pand;
+      shape:Verblijfsobject_isPrimaryTopicOf;
     sh:targetClass bag:Verblijfsobject.
 
   shape:Verblijfsobject_identificatie
@@ -588,11 +637,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een verblijfsobject."@nl;
     skos:scopeNote "Elk verblijfsobject waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
-  shape:pand
-    sh:class bag:Pand;
+  shape:Verblijfsobject_isPrimaryTopicOf
+    sh:class bag:VerblijfsobjectRegistratie;
     sh:minCount 1;
-    sh:path bag:pand.
-
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:VerblijfsobjectRegistratie
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#782-geometrie"^^xsd:anyURI;
@@ -603,7 +651,8 @@ graph:shapes {
       shape:VerblijfsobjectRegistratie_geometrie,
       shape:VerblijfsobjectRegistratie_status,
       shape:gebruiksdoel,
-      shape:oppervlakte;
+      shape:oppervlakte,
+      shape:pand;
     sh:targetClass bag:VerblijfsobjectRegistratie.
 
   shape:VerblijfsobjectRegistratie_documentdatum
@@ -668,12 +717,17 @@ graph:shapes {
     sh:path bag:oppervlakte;
     sh:pattern "[0-9]{1,6}".
 
+  shape:pand
+    sh:class bag:Pand;
+    sh:minCount 1;
+    sh:path bag:pand.
+
 
   shape:Woonplaats
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#61-woonplaats"^^xsd:anyURI;
     sh:property
       shape:Woonplaats_identificatie,
-      shape:isPrimaryTopicOf;
+      shape:Woonplaats_isPrimaryTopicOf;
     sh:targetClass bag:Woonplaats.
 
   shape:Woonplaats_identificatie
@@ -688,6 +742,10 @@ graph:shapes {
     skos:definition "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl;
     skos:scopeNote "De woonplaatsen worden vastgesteld door de gemeenten. De vastgestelde woonplaatsen worden voorzien van een unieke aanduiding, te vergelijken met de gemeentecode volgens Tabel 33 Gemeententabel van de Landelijke Tabellen GBA. Deze aanduiding wordt verstrekt door de Dienst voor het kadaster en de openbare registers."@nl.
 
+  shape:Woonplaats_isPrimaryTopicOf
+    sh:class bag:WoonplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
 
   shape:WoonplaatsRegistratie
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#71-woonplaats"^^xsd:anyURI;
