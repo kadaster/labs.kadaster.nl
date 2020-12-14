@@ -67,6 +67,7 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
+
     "tijdstipdregistratielv": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"

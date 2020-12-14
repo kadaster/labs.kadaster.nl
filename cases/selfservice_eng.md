@@ -27,7 +27,7 @@ This user group is typically not well versed in the technical intricacies of spa
 ## What are the features of Self-Service GIS?
 <div class="textbox" markdown="1">
 ## Self-Service GIS Defined
-Esri, the leading commerical provider of geospatial software and cloud services for geoinformation, defines self-service GIS as an extension to the typical functionality found within a web GIS. 
+Esri, the leading commercial provider of geospatial software and cloud services for geoinformation, defines self-service GIS as an extension to the typical functionality found within a web GIS. 
 Generally, a self-service GIS is an application which allows for easier user interaction and simple analysis of geospatial data through web-based geographical applications. 
 </div>
 

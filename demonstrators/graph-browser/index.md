@@ -24,8 +24,8 @@ title: Ontodia Graph Browser
 </div>
 
 ## Introductie
-Als onderdeel van de DiS-Geo High5 hebben we ge-experimenteerd met de Ontodia Graph Browser om door het model en de instanties in onze Linked Data bronnen te browsen. 
-Hier zijn voor verschillende doeleinden en databronnen verschillende Ontodia instanties ge-configureerd. 
+Als onderdeel van de DiS-Geo High5 hebben we geëxperimenteerd met de Ontodia Graph Browser om door het model en de instanties in onze Linked Data bronnen te browsen. 
+Hier zijn voor verschillende doeleinden en databronnen verschillende Ontodia instanties geconfigureerd. 
 
 
 

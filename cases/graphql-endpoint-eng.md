@@ -77,7 +77,7 @@ The following objects have been made available for this endpoint:
   - <strong>huisletter (House Letter)</strong> <br>
   - <strong>huisnummertoevoeging (House Number Addition)</strong> <br>
   - <strong>nummeraanduidingstatus (Address Status)</strong> <br>
-  - <strong>bijbehorendeOpenbareRuimte (Related Public Area)</strong>; public area (steet) in which this address resides <br>
+  - <strong>bijbehorendeOpenbareRuimte (Related Public Area)</strong>; public area (street) in which this address resides <br>
   - <strong>hoofdadresVan (Main Address of)</strong>; the house of which this address is the main address<br>
 </details>
 
@@ -151,7 +151,7 @@ and Fibree. This is integrated in the BAG dataset for this open endpoint.
     <img src="/assets/images/uoi-schema.PNG" alt="UOI schema">
   </a>
   <figcaption>
-    Figuur 2 ― The structure of the  Unique Object Identificer (UOI)
+    Figuur 2 ― The structure of the  Unique Object Identifier (UOI)
   </figcaption>
 </figure>
 An object can therefore be used as identification code by means of the same query with an uoi. An example of a query around the same object as in the above query is done as follows.

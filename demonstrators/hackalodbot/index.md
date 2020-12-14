@@ -46,7 +46,7 @@ Ook draait de applicatie op een gratis server/container (dit noemt Heroku een "d
  
 ## Toekomst
 
-Er zijn genoeg ideeen om dit "chatbot" kanaal verder te gebruiken om open data te ontsluiten, denk dan aan:
+Er zijn genoeg ideeën om dit "chatbot" kanaal verder te gebruiken om open data te ontsluiten, denk dan aan:
 1.	Naast struikelsteentjes andere Points-of-Interests laten verkennen. Het leuke is dat het werkt via SPARQL, dus andere POI's zoals kerken, monumenten, etc. zijn eenvoudig toe te voegen. 
 2.	Naast de Telegram bot ook andere bots ondersteunen (Skype, Facebook, Slack, WhatsApp)
 3.	Op basis van "live locatie delen" laten werken
