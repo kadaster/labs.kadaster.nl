@@ -5,11 +5,11 @@
   },
   "explore": {
     "order": 1,
-    "desc": "Dit zijn technologieën die toegepast kunnen worden maar waar het Kadaster nog weinig tot geen ervaring mee heeft. We denken dat we deze technologieën verder moeten onderzoeken en kennis moeten opbouwen omtrent deze technologieën d.m.v. bijvoorbeeld PoCs en pilots."
+    "desc": "Dit zijn technologieën die toegepast kunnen worden maar waar het Kadaster nog weinig tot geen ervaring mee heeft. We denken dat we deze technologieën verder moeten onderzoeken en kennis moeten opbouwen door het toe te passen op projecten waar het risico aanvaardbaar is."
   },
   "assess": {
     "order": 2,
-    "desc": "Dit zijn technologieën die interessant zijn om je verder in te verdiepen om te kijken of deze relevant zouden kunnen zijn voor het Kadaster. In deze fase zal dat met name door middel van desk research gebeuren."
+    "desc": "Dit zijn technologieën die interessant zijn om je verder in te verdiepen om te kijken of deze relevant zouden kunnen zijn voor het Kadaster. In deze fase zal dat met name door middel van desk research en experimenten gebeuren."
   },
   "monitor": {
     "order": 3,
