@@ -161,7 +161,7 @@ graph:instanties {
         geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/28992> Point((206486.218 530180.399 0.0))"^^geo:wktLiteral ];
     bag:status status:verblifsobjectInGebruik;
     bag:gebruikersdoel "woonfunctie";
-    bag:gebruikersdoel "industriefunctie"; #there are two of these for each registration. Not sure of the syntax maybe - bag:industrieFunctie?
+    bag:gebruikersdoel "industriefunctie"; #@Wouter there are two of these for each registration. Not sure of the syntax maybe - bag:industrieFunctie?
     bag:oppervlakte "135"^^xsd:positiveInteger;
     bag:tijdstipRegistratie "2011-09-05T08:54:21.000"^^xsd:dateTime;
     bag:eindRegistratie "2013-11-06T12:49:03.000"^^xsd:dateTime;
@@ -214,7 +214,7 @@ graph:instanties {
     prov:generatedAtTime "2016-04-12T15:00:05.819"^^xsd:dateTime.
 
 
-nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same openbareruimte relation.
+nummeraanduiding:0119200000001484 
     a bag:Nummeraanduiding;
     bag:openbareRuimte openbareRuimte:0119300000000058;
     foaf:isPrimaryTopicOf 
@@ -238,6 +238,8 @@ nummeraanduiding:0119200000001484 #multiple nummeraanduidings have the same open
     nen3610:beginGeldigheid "2009-08-05"^^xsd:date;
     bag:tijdstipRegistratie "2011-09-05T08:54:21.000"^^xsd:dateTime;
     prov:generatedAtTime "2011-09-05T09:03:43.220"^^xsd:dateTime.
+    #huisnummertoevoeging
+    #huisletter
 
 
 openbareRuimte:0119300000000058
