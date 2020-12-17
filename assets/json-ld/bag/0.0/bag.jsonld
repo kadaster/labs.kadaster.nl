@@ -10,6 +10,13 @@
       "@id": "status",
       "@type": "@id"
     },
+    "nummeraanduidingstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
     "ligplaatsstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
@@ -24,7 +31,21 @@
       "@id": "status",
       "@type": "@id"
     },
+    "pandstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
     "standplaatsstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "verblijfsobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/def/"
       },
