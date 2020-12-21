@@ -10,11 +10,22 @@
       "@type": "@id"
     },
     "data": "@nest",
+    "dct": "http://purl.org/dc/terms/",
+    "documentdatum": {
+      "@id": "dct:created",
+      "@type": "xsd:date"
+    },
+    "documentnummer": {
+      "@id": "dct:identifier"
+    },
     "eindregistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "geconstateerd": {
+      "@type": "xsd:boolean"
+    },
     "gebruiksdoel": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/"
@@ -49,6 +60,9 @@
       "@id": "nevenadres",
       "@type": "@id"
     },
+    "huisnummer": {
+      "@type": "xsd:positiveInteger"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
@@ -65,8 +79,15 @@
       "@id": "status",
       "@type": "@id"
     },
+    "ligtaan": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbareRuimte/"
+      },
+      "@id": "ligtAan",
+      "@type": "@id"
+    },
     "ligtin": {
-     "@context": {
+      "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/"
       },
       "@id": "ligtIn",
@@ -100,7 +121,7 @@
       "@id": "status",
       "@type": "@id"
     },
-    "lv_publicatiedatum": {
+    "tijdstipregistratielv": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
@@ -131,6 +152,7 @@
       "@type": "@id"
     },
     "prov": "http://www.w3.org/ns/prov#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "standplaatsstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -148,6 +170,10 @@
       },
       "@id": "status",
       "@type": "@id"
+    },
+    "woonplaatsnaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
     },
     "woonplaatsstatus": {
       "@context": {
