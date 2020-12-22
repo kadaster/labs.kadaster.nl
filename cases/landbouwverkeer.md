@@ -7,7 +7,7 @@ title: Use Case ― Routering Landbouwverkeer
 
 ## Introductie
 
-Het Kadaster levert op reguliere basis informatie aan de provincies over verwacht landbouwverkeer in Nederland.  Dit verkeer, wat veelal bestaat uit zware en grote apparaten, heeft een grote impact op de infrastructuur.  Deshalve is het voor de provincie van belang een beeld te krijgen van het (groot) landbouwverkeer wat zich over het wegennet begeefd.  Deze gebruiken zij vervolgens om beslissingen te maken over nieuwe wegen of het onderhoud van de bestaande infrastructuur.
+Het Kadaster levert op reguliere basis informatie aan de provincies over verwacht landbouwverkeer in Nederland.  Dit verkeer, wat veelal bestaat uit zware en grote apparaten, heeft een grote impact op de infrastructuur.  Derhalve is het voor de provincie van belang een beeld te krijgen van het (groot) landbouwverkeer wat zich over het wegennet begeeft.  Deze gebruiken zij vervolgens om beslissingen te maken over nieuwe wegen of het onderhoud van de bestaande infrastructuur.
 
 Met de eigendomsgegevens van de percelen, de ligplaatsen van boerderijen en het weggennet uit de [Basisregistratie Topografie (BRT)](https://labs.kadaster.nl/cases/brt) gebruikt het Kadaster een wiskundig model om de kortste route van de landbouwpercelen naar de boerderij te bepalen.  Vanuit het perceel werd er eens een ‘snap’ gemaakt naar de dichtstbijzijnde weg, om daarna over de weg de kortste route te berekenen.  Deze eerste stap is er één die er vaak voor zorgt dat de dichtstbijzijnde weg van het perceel wordt gevonden, maar soms zorgt deze simpele snapping er ook voor dat er onrealistische verbindingen worden gemaakt naar de weg.  Deze snapping houdt namelijk geen rekening met onpasseerbare objecten zoals een spoorlijn of een rivier.
 
@@ -15,7 +15,7 @@ Ter illustratie, bekijk de situatie zoals getekend in [Figuur 1](#figuur-1) en [
 
 <figure id="figuur-1">
   <a href="/assets/images/landbouwverkeer/1-initial.png">
-    <img src="/assets/images/landbouwverkeer/1-initial.png">
+    <img src="/assets/images/landbouwverkeer/1-initial.png" alt="Initiële situatie">
   </a>
   <figcaption>
     Figuur 1 ― Initiële situatie, met een straal van 5km rondom een perceel.
@@ -24,7 +24,7 @@ Ter illustratie, bekijk de situatie zoals getekend in [Figuur 1](#figuur-1) en [
 
 <figure id="figuur-2">
   <a href="/assets/images/landbouwverkeer/2-snapping.png">
-    <img src="/assets/images/landbouwverkeer/2-snapping.png">
+    <img src="/assets/images/landbouwverkeer/2-snapping.png" alt="Voorbeeldsituatie">
   </a>
   <figcaption>
     Figuur 2 ― Voorbeeldsituatie van een perceel omringd door blokkades op basis van een 2x2km bounding box en de weg naar welke het huidige model snapt.
@@ -61,7 +61,7 @@ Zoals met bijna iedere data-gedreven oplossing zal er eerst data cleaning moeten
 
 <figure id="figuur-3">
   <a href="/assets/images/landbouwverkeer/3-pre-preprocessing.png">
-    <img src="/assets/images/landbouwverkeer/3-pre-preprocessing.png">
+    <img src="/assets/images/landbouwverkeer/3-pre-preprocessing.png" alt="Pre-processing">
   </a>
   <figcaption>
     Figuur 3 ― Alle hoekpunten van de blokkades op de kaart, voor data cleaning
@@ -72,7 +72,7 @@ Om beide uitdagingen aan te pakken passen we twee manieren toe om de data op te 
 
 <figure id="figuur-4">
   <a href="/assets/images/landbouwverkeer/4-post-processing.png">
-    <img src="/assets/images/landbouwverkeer/4-post-processing.png">
+    <img src="/assets/images/landbouwverkeer/4-post-processing.png" alt="Post-processing">
   </a>
   <figcaption>
     Figuur 4 ― De kaart en resulterende hoekpunten, na het transformeren van de data.
@@ -81,12 +81,12 @@ Om beide uitdagingen aan te pakken passen we twee manieren toe om de data op te 
 
 ## Optimalisatie
 
-De data is nu klaar om te transformeren in een wiskundige graaf en te optimaliseren met (bestaande) algoritmen.  We construeren de graaf door het startpunt en alle hoekpunten als nodes te evalueren en verbindingen te berekenen op basis van de euclidische afstand.  Indien deze verbinding door een blokkade (i.e. water) gaat is er geen verbinding tussen deze punten.  Echter, om van tevoren alle mogelijke verbindingen tussen alle hoekpunten te berekenen is een computationeel zwaar probleem, waar veel tijd in gaat zitten.  In plaats daarvan bouwen we de graaf procedureel op vanuit ons startpunt, om uiteindelijk met zo min mogelijk stappen bij een weg uit te komen.  Hiervoor gebruiken we een variant op het [A-Ster algoritme](https://nl.wikipedia.org/wiki/A*-algoritme).  Startend bij het perceel onder consideratie evalueren we alle aanliggende punten.  Hierbij bekijken we de daadwerkelijke kortste afstand van het pad tot nu toe
-en de kortst mogelijke afstand tot een weg (de euclidsiche afstand naar de dichtstbijzijnde weg, ongeacht eventuele blokkades).  Een visualisatie van het algoritme vind je in [Figuur 5](#figuur-5).
+De data is nu klaar om te transformeren in een wiskundige graaf en te optimaliseren met (bestaande) algoritmen.  We construeren de graaf door het startpunt en alle hoekpunten als nodes te evalueren en verbindingen te berekenen op basis van de euclidische afstand.  Indien deze verbinding door een blokkade (i.e. water) gaat is er geen verbinding tussen deze punten.  Echter, om van tevoren alle mogelijke verbindingen tussen alle hoekpunten te berekenen is een computrationeel zwaar probleem, waar veel tijd in gaat zitten.  In plaats daarvan bouwen we de graaf procedureel op vanuit ons startpunt, om uiteindelijk met zo min mogelijk stappen bij een weg uit te komen.  Hiervoor gebruiken we een variant op het [A-Ster algoritme](https://nl.wikipedia.org/wiki/A*-algoritme).  Startend bij het perceel onder consideratie evalueren we alle aanliggende punten.  Hierbij bekijken we de daadwerkelijke kortste afstand van het pad tot nu toe
+en de kortst mogelijke afstand tot een weg (de euclidische afstand naar de dichtstbijzijnde weg, ongeacht eventuele blokkades).  Een visualisatie van het algoritme vind je in [Figuur 5](#figuur-5).
 
 <figure id="figuur-5">
   <a href="/assets/images/landbouwverkeer/5-routes.gif">
-    <img src="/assets/images/landbouwverkeer/5-routes.gif">
+    <img src="/assets/images/landbouwverkeer/5-routes.gif" alt="Routes">
   </a>
   <figcaption>
     Figuur 5 ― Het algoritme aan het werk, met de uiteindelijke optimale route

@@ -7,7 +7,7 @@ title: DiS-Geo High 5 - IMBOR & BGT Data
 
 ## Geo-informatie en Linked Data
 Binnen gemeenten, overheden en provincies wordt al jaren gewerkt met data, waarvan het veelal een geo-component bevat. Tools zoals ArcGIS en QGIS zijn bij menige afdeling een 
-vertrouwde tool in de gereedsschapskoffer. Geo data kan veel waarde brengen in dergelijke analyses, maar kan ook misleidend zijn. De informatie die getoond wordt is 
+vertrouwde tool in de gereedschapskoffer. Geo data kan veel waarde brengen in dergelijke analyses, maar kan ook misleidend zijn. De informatie die getoond wordt is 
 een aaneenschakeling van kaartlagen die over elkaar heen liggen. Deze koppeling is vaak volledig, maar mist ook bepaalde onderdelen:
 - Het is onduidelijk wat de daadwerkelijke (semantische) relatie is tussen de gerelateerde objecten
 - De interpretatie is een menselijke actie
@@ -50,7 +50,7 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
   <query data-config-ref="https://data.labs.kadaster.nl/disgeo/-/queries/Select-put-imbor-rioolput-gwsw">
   </query>
   <figcaption>
-    Figuur 3 - Inzicht in het correspondere GWSW object bijbehorend aan de IMBOR data
+    Figuur 3 - Inzicht in het corresponderende GWSW object bijbehorend aan de IMBOR data
   </figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
 <div class="textbox" markdown="1">
 ## Federatie in Linked Data
 De boodschap achter deze data story is tweeledig. Enerzijds zien we dat een administratieve koppeling tussen objecten kansen biedt om meer integraal analyses uit te voeren over onze data. 
-Anderszijds zien we dat de waarde pas echt significant is als de centrale (open) data te koppelen is aan de interne (gesloten) data zonder dat hiervoor een kopieslag nodig is. Dit kan enkel 
+Anderzijds zien we dat de waarde pas echt significant is als de centrale (open) data te koppelen is aan de interne (gesloten) data zonder dat hiervoor een kopieslag nodig is. Dit kan enkel 
 indien de onderliggende databases een dergelijke integrale federatieve query ondersteunen. Voor deze high 5 is het een lessons learned dat dit opgenomen moet worden in de standaarden waarmee open 
 data beschikbaar moet worden gesteld. Bovenstaande query(s) zouden met de techniek Linked Data in theorie in één query moeten kunnen plaatsvinden.
 </div>

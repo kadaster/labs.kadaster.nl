@@ -1,0 +1,127 @@
+prefix bag: <https://data.labs.kadaster.nl/kadaster/bag/def/>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
+prefix entailment: <http://www.w3.org/ns/entailment/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vann: <http://purl.org/vocab/vann/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix graph: <https://data.labs.kadaster.nl/kadaster/bag/id/graph/>
+
+<https://data.labs.kadaster.nl/kadaster/bag> {
+  <https://data.labs.kadaster.nl> dcat:dataset <https://data.labs.kadaster.nl/kadaster/bag>.
+
+  <https://data.labs.kadaster.nl/kadaster/bag>
+    a void:Dataset;
+    dct:contributor
+      <https://data.labs.kadaster.nl/Bob-Scheer>,
+      <https://data.labs.kadaster.nl/anjo-kolk>,
+      <https://data.labs.kadaster.nl/erwin>,
+      <https://data.labs.kadaster.nl/lexi-rowland>,
+      <https://data.labs.kadaster.nl/tony-baving>,
+      <https://data.labs.kadaster.nl/wouter>;
+    dct:creator <https://data.labs.kadaster.nl/kadaster>;
+    # When was the linked dataset created?
+    dct:created "2021-01"^^xsd:gYearMonth;
+    dct:description """
+<section lang="nl">
+  <p>De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens.</p>
+  <p>De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen.</p>
+  <p>Aangezien niet alle BAG gegevens worden geleverd, adviseren wij u om de actuele gegevens in één van de BAG producten te controleren.  Raadpleeg de BAG Viewer voor enkele bevragingen van BAG gegevens.  Een overzicht van alle beschikbare producten kunt u vinden op de website <https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag>.</p>
+  <p>Deze dataset wordt ook gebruikt voor het ontsluiten van het INSPIRE thema Gebouwen. Het betreft gebouwcontouren, constructieve onderdelen van gebouwen en ruimtelijke barrieres. Dit betreft niet-geharmoniseerde data uit de basisregistratie Adressen en Gebouwen (BAG).
+</section>"""^^rdf:HTML;
+    # When was the linked dataset published?
+    dct:issued "2021-01"^^xsd:gYearMonth;
+    dct:language "iso639-1:nl";
+    dct:license <https://creativecommons.org/publicdomain/mark/1.0/deed>;
+    # When was the linked dataset last modified?
+    dct:modified "2021-01"^^xsd:gYearMonth;
+    dct:publisher <https://data.labs.kadaster.nl/kadaster>;
+    dct:source "https://extracten.bag.kadaster.nl/lvbag/extracten/"^^xsd:anyURI;
+    dct:subject
+      "Adres"@nl,
+      "Gebouw"@nl,
+      "Ligplaats"@nl,
+      "Nummeraanduiding"@nl,
+      "Pand"@nl,
+      "Standplaats"@nl,
+      "Verblijfsobject"@nl,
+      "Woonplaats"@nl;
+    # Engineering Documentatie Management Systeem
+    dct:title "Basisregistraties Adressen en Gebouwen (BAG)";
+    foaf:depiction "https://data.labs.kadaster.nl/imgs/avatars/d/5dee135a13c31b03595e2d4d.png?v=0"^^xsd:anyURI;
+    foaf:homepage "https://imbag.github.io/catalogus/"^^xsd:anyURI;
+    sdo:distribution
+      [ sdo:contentUrl "https://data.labs.kadaster.nl/kadaster/bag/download.trig.gz"^^xsd:anyURI ],
+      [ sdo:contentUrl "https://data.labs.kadaster.nl/kadaster/bag/download.nq.gz"^^xsd:anyURI ],
+      [ sdo:contentUrl "https://data.labs.kadaster.nl/kadaster/bag/download.nt.gz"^^xsd:anyURI ],
+      [ sdo:contentUrl "https://data.labs.kadaster.nl/kadaster/bag/download.ttl.gz"^^xsd:anyURI ];
+    sdo:spatialCoverage
+      [ a sdo:Place;
+        sdo:geo
+          [ a sdo:Geoshape;
+            sdo:polygon "3.37087 50.7539 3.37087 53.4658 7.21097 53.4658 7.21097 50.7539 3.37087 50.7539" ] ];
+   #sdo:temporal "todo"@nl;
+    sdo:version "2.0.0";
+   #void:exampleResource pand:123;
+    void:sparqlEndpoint <https://data.labs.kadaster.nl/kadaster/bag/sparql/default>;
+    void:subSet
+      bag:,
+      graph:instanties,
+      graph:pand2gebouw,
+      graph:shapes;
+    void:uriSpace "https://data.labs.kadaster.nl/kadaster/bag/";
+    void:vocabulary
+      dcat:,
+      dct:,
+      foaf:,
+      geo:,
+      owl:,
+      rdf:,
+      rdfs:,
+      sdo:,
+      sh:,
+      skos:,
+      vann:.
+
+  graph:pand2gebouw
+    void:linkPredicate geo:sfWithin;
+    void:objectsTarget <https://brt.basisregistraties.overheid.nl>;
+    void:subjectsTarget graph:instanties.
+
+  graph:instanties sh:shapesGraph graph:shapes.
+
+  bag:
+    a owl:Ontology;
+    owl:imports
+      dct:,
+      foaf:,
+      geo:,
+      nen3610:,
+      owl:,
+      prov:,
+      rdf:,
+      rdfs:,
+      sdo:,
+      sh:,
+      skos:;
+    vann:preferredNamespacePrefix "bag";
+    vann:preferredNamespaceUri "https://data.labs.kadaster.nl/kadaster/bag/def/".
+
+  <https://data.labs.kadaster.nl/kadaster/bag/sparql/default>
+    dct:title "default";
+    sd:availableGraphs <https://data.labs.kadaster.nl/kadaster/bag/graphs>;
+    sd:defaultEntailmentRegime entailment:Simple;
+    sd:endpoint "https://api.labs.kadaster.nl/datasets/kadaster/bag/services/default/sparql"^^xsd:anyURI.
+}

@@ -36,7 +36,7 @@ en/of huisnummertoevoeging.
 
 ## Bevraging op basis van een numerieke filter
 
-Gevens kunnen op verschillende manieren worden opgevraagd.  In
+Tevens kunnen op verschillende manieren worden opgevraagd.  In
 [Bevraging 2](#filter) is het ook mogelijk om adressen en gebouwen met
 een specifieke oppervlakte of met een specifiek bouwjaar te op te
 vragen.
@@ -69,7 +69,7 @@ door een combinatie van woonplaats, straat en huisnummer op te geven
 verschillende gegevensbronnen geïntegreerd te bevragen.  [Bevraging
 4](#buurt) laat zien hoe de BAG in combinatie met de CBS Wijk- en
 Buurtkaart bevraagd kan worden: voor elke buurt worden de
-daarbinnengelegen panden teruggegeven.
+daarbinnen gelegen panden teruggegeven.
 
 <figure id="buurt">
   <query data-row data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-functie-cbs-buurt">
@@ -82,7 +82,7 @@ daarbinnengelegen panden teruggegeven.
 ## Bevraging op basis van gebruiksfunctie
 
 Adressen in Nederland hebben één of meerdere verblijfsfuncties.  In
-[Bevraging 5](#functie) worden alle addressen (verblijfsobjecten)
+[Bevraging 5](#functie) worden alle adressen (verblijfsobjecten)
 geretourneerd die een specifieke gebruiksfunctie bezitten.
 
 <figure id="functie">
@@ -101,11 +101,11 @@ bevraging kunnen hiervoor te inspiratie dienen.  Klik op “Show editor“
 om de specifieke SPARQL bevraging in te bekijken.  Daarnaast kunnen de
 volgende bronnen behulpzaam zijn:
 
-  - Het officiële SPARQL endpoint voor de BAG: <https://bag.basisregistraties.overheid.nl/sparql>
+  - Het officiële SPARQL endpoint voor de BAG: <https://data.labs.kadaster.nl/kadaster/bag/sparql/bag>
 
-  - Slides voor de [Kasaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html).
+  - Slides voor de [Kasaster SPARQL Tutorial](/dissemination/Kadaster-SPARQL-Tutorial.html).
 
-  - Het [Kadaster SPARQL Webinar](./Kadaster-SPARQL-Webinar.html):
+  - Het [Kadaster SPARQL Webinar](/dissemination/Kadaster-SPARQL-Webinar.html):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oyH8YFVy37Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>

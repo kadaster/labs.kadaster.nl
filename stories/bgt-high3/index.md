@@ -101,7 +101,7 @@ De BGT wordt gebruikt in een groot aantal datasets.  <a href="#links" target="_b
 
 ## De kwaliteit van wegen (BGT ↔ IMBOR)
 
-Een voorbeeld van zo'n dataset is de IMBOR.  Hierin wordt opgeslagen wat de kwaliteit van proviciale wegdelen is.  De IMBOR dataset is geen open data.  De bevraging in <a href="#kwaliteit-wegdek" target="_blank">Figuur 6</a> kan live worden uitgevoerd door op de afbeelding te klikken, maar alleen als men middels een login-account toegang tot de Linked Data IMBOR heeft.
+Een voorbeeld van zo'n dataset is de IMBOR.  Hierin wordt opgeslagen wat de kwaliteit van provinciale wegdelen is.  De IMBOR dataset is geen open data.  De bevraging in <a href="#kwaliteit-wegdek" target="_blank">Figuur 6</a> kan live worden uitgevoerd door op de afbeelding te klikken, maar alleen als men middels een login-account toegang tot de Linked Data IMBOR heeft.
 
 <figure id="kwaliteit-wegdek">
   <a href="https://data.labs.kadaster.nl/bgt-high3/-/queries/kwaliteit-wegdek" target="_blank">
@@ -141,7 +141,7 @@ Een andere dataset die met de BGT in verband kan worden gebracht is de NDW.  Hie
 
 Omdat de BGT nu als Linked Data beschikbaar is, kunnen we de kwaliteit van de wegen en het gebruik van de wegen gemakkelijk koppelen.  Hierdoor kunnen we drukke wegen identificeren waarvan het wegdek in slechte conditie verkeerd.
 
-Op basis van het combineren van Linked Data kunnen we vaststellen dat het wegdeel in <a href="#werkzaamheden-kaart">Figuur 9</a> moet worden vervangen.  We kunen vervolgens de wettelijke norm hanteren voor het op de hoogte brengen van omwonenden.  In de figuur is te zien welke adressen bij werkzaamheden moeten worden aangeschreven.
+Op basis van het combineren van Linked Data kunnen we vaststellen dat het wegdeel in <a href="#werkzaamheden-kaart">Figuur 9</a> moet worden vervangen.  We kunnen vervolgens de wettelijke norm hanteren voor het op de hoogte brengen van omwonenden.  In de figuur is te zien welke adressen bij werkzaamheden moeten worden aangeschreven.
 
 <figure id="werkzaamheden-kaart">
   <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/adressen-aanschrijven-kaart">

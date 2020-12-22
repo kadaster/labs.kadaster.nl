@@ -23,10 +23,10 @@ Deze gebruikersgroep is doorgaans niet goed thuis in de technische fijne kneepje
 ## Wat zijn de kenmerken van Self-Service GIS?
 <div class="textbox" markdown="1">
 ## Self-Service GIS defined
-Esri, de toonaangevende commerciële leverancier van geospatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden. Over het algemeen is een self-service GIS een applicatie die gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
+Esri, de toonaangevende commerciële leverancier van geo-spatiale software en clouddiensten voor geo-informatie, definieert self-service GIS als een uitbreiding op de typische functionaliteit die binnen een web GIS wordt gevonden. Over het algemeen is een self-service GIS een applicatie die gemakkelijke interactie door de gebruiker en eenvoudige analyse van georuimtelijke gegevens via webgebaseerde geografische toepassingen, mogelijk maakt.
 </div>
 
-Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing. Om te bepalen wat de belangrijke features van self-service GIS zijn voor ons doel en de doelgroep van het Kadaster, kijken we ook naar de wenzen vanuit onze klanten.
+Bij het bedienen van de bovengenoemde gebruikersgroep, wordt de vraag gesteld wat de features zijn van self-service GIS. Deze features kunnen zowel de functionaliteit bevatten, die beschikbaar moet zijn voor de gebruiker in de toepassing vanuit het perspectief van de gebruikersinterface, als ook welke gegevens of welke functies van deze gegevens beschikbaar moeten zijn voor de gebruiker in de webtoepassing. Om te bepalen wat de belangrijke features van self-service GIS zijn voor ons doel en de doelgroep van het Kadaster, kijken we ook naar de wensen vanuit onze klanten.
 
 Een analyse van welke ruimtelijke vragen de klanten van het Kadaster stellen, wordt uitgevoerd als onderdeel van een interne analyse van de gebruikersbehoeften. Welke vragen worden gesteld, zal benadrukken welke functionaliteit nuttig kan zijn voor de gebruikers in een selfservice GIS-toepassing. Het geeft ook inzicht in hoe gebruikers gebruik willen maken van de gegevens van het Kadaster en met welke andere gegevens de Kadastergegevens meestal worden gecombineerd bij het beantwoorden van ruimtelijke vragen.
 
@@ -45,7 +45,7 @@ Hieronder volgen voorbeelden van browsers en viewers die door het Kadaster zijn 
   <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png">
+      <img class="card-image" src="/assets/images/ld-vowl.png" alt="Linked data vowl">
       <div class="card-title">LD-VOWL</div>
       <div class="card-description">Het datamodel van de Basisregistratie Adressen en Gebouwen (BAG) in de online visualisatietool LD-VOWL.</div>
 	</div>
@@ -53,15 +53,15 @@ Hieronder volgen voorbeelden van browsers en viewers die door het Kadaster zijn 
   <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
       <div class="card-title">Kadaster's Knowledge Graph</div>
       <div class="card-description">Beweeg door alle Linked Data die wij integraal ontsluiten en ontdek relaties tussen de verschillende bronnen.</div>
 	</div>
   </a>
-  <a href="/demonstrators/graph-browser/namen-app">
+  <a href="https://labs.kadaster.nl/demonstrators/namen-app/#/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+      <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Screenshot Toponamenzoeker">
       <div class="card-title">Toponamenzoeker</div>
       <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
 	</div>
@@ -109,7 +109,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
   <a href="/stories/covid-19/">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg">
+      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Weergave Covid-19 virus">
       <div class="card-title">Corona (COVID-19) Data Story</div>
       <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
 	</div>
@@ -117,7 +117,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
   <a href="/stories/digitaal-erfgoed/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg">
+      <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg" alt="Lisse logo">
       <div class="card-title">Digital Heritage</div>
       <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
 	</div>
@@ -125,7 +125,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
   <a href="/stories/pdok-knowledge-graph/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png">
+      <img class="card-image" src="/assets/images/pdok-logo-text.png" alt="PDOK logo">
       <div class="card-title">PDOK Knowledge Graph</div>
       <div class="card-description">In deze Data Story bevragen we combinaties van datasets. Hiermee laten we de toegevoegde waarde van een Knowledge Graph zien.</div>
 	</div>
@@ -135,11 +135,11 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
 
 ## Bereiken Self Service GIS 
 
-Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de gegevens die we bijhouden te integreren in één bron. Met deze centrale ontsluiting, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot- en betrokkenheid bij geospatiale en niet-ruimtelijke gegevens voor onze gebruikers.
+Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de gegevens die we bijhouden te integreren in één bron. Met deze centrale ontsluiting, zou onze self-service GIS onze gebruikers gemakkelijker toegang kunnen geven tot al onze datasets tegelijk en in realtime; het verbeteren van de toegankelijkheid tot- en betrokkenheid bij geo-spatiale en niet-ruimtelijke gegevens voor onze gebruikers.
 
 <figure id="3">
 	<a href="/assets/images/self-serviceGISarchitecture.jpg">
-		<img src="/assets/images/self-serviceGISarchitecture.jpg">
+		<img src="/assets/images/self-serviceGISarchitecture.jpg" alt="Self-service GIS architectuur">
 	</a>
   <figcaption>
     Figuur 3 ― Self-Service GIS Architectuur. 

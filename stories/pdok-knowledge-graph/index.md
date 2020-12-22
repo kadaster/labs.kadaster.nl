@@ -182,7 +182,7 @@ target="_blank">gepubliceerd in het Staatsblad</a>. -->
 
 <p>Soms bevinden zich in één pand meerdere kantoren, die mogelijk
 verschillende energielabels hebben.  In dat geval is de kleur van het
-pand bepaald door het slechtste enrgielabel dat binnen dat pand
+pand bepaald door het slechtste energielabel dat binnen dat pand
 aanwezig is.</p>
 
 <div class="textbox">

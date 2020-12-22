@@ -1,0 +1,134 @@
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
+prefix identificatie: <https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/>
+prefix nummeraanduiding: <https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/>
+prefix openbareRuimte: <https://bag2.basisregistraties.overheid.nl/bag/id/openbareRuimte/>
+prefix pand: <https://bag2.basisregistraties.overheid.nl/bag/id/pand/>
+prefix registratie: <https://bag2.basisregistraties.overheid.nl/bag/id/registratie/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+prefix verblijfsobject: <https://bag2.basisregistraties.overheid.nl/bag/id/verblijfsobject/>
+prefix woonplaats: <https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/>
+
+graph:instanties {
+  
+standplaats:0119030000000001
+  a bag:Standplaats;
+  bag:hoofdadres nummeraanduiding:0119200000010961;
+  foaf:isPrimaryTopicOf
+    registratie:0119030000000001.1,
+    registatrie:0119030000000001.2;
+  nen3610:Identificatie identificatie:0119030000000001.
+
+  identificatie:0119030000000001
+    a nen3610:Identificatie;
+    nen3610:lokaalID "0119030000000001";
+    nen3610:namespace "NL.IMBAG.Standplaats".
+
+#voorkomen1
+  registratie:0119030000000001.1
+    a bag:standplaatsRegistratie;
+    bag:geconstateerd true;
+    bag:status status:plaatsAangewezen;
+    bag:geometrie 
+      [ a gml:Polygon;
+        geo:wkt "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((210948.938 523944.189 210949.619 523938.839 210967.129 523940.979 210966.545 523946.134 210948.938 523944.189))"^^geo:wktLiteral ];
+    dct:created "2010-02-10"^^xsd:date;
+    dct:identifier "2010-sta-0";
+    nen3610:beginGeldigheid "2010-02-10"^^xsd:date;
+    nen3610:eindGeldigheid "2014-04-08"^^xsd:date;
+    bag:tijdstipRegistratie "2010-03-02T14:38:53.000"^^xsd:dateTime;
+    bag:eindRegistratie "2014-04-08T13:23:25.000"^^xsd:dateTime;
+    prov:generatedAtTime "2010-03-04T09:15:43.692"^^xsd:dateTime;
+    prov:invalidatedAtTime "2014-04-08T13:35:33.150"^^xsd:dateTime.
+
+#voorkomen2
+  registratie:0119030000000001.2
+    a bag:standplaatsRegistratie;
+    bag:geconstateerd false;
+    bag:status status:plaatsAangewezen;
+    bag:geometrie 
+      [ a gml:Polygon;
+        geo:wkt "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((210948.938 523944.189 210949.619 523938.839 210967.129 523940.979 210966.545 523946.134 210948.938 523944.189))"^^geo:wktLiteral ];
+    dct:created "2014-04-08"^^xsd:date;
+    dct:identifier "228124";
+    nen3610:beginGeldigheid "2014-04-08"^^xsd:date;
+    bag:tijdstipRegistratie "2014-04-08T13:23:25.000"^^xsd:dateTime;
+    nen3610:vorigeGeldigeVersie registratie:0119030000000001.1;
+    nen3610:vorigeGeregistreerdeVersie registratie:0119030000000001.1;
+    prov:generatedAtTime "2014-04-08T13:35:33.150"^^xsd:dateTime.
+
+
+ligplaats:0119020000000005
+  a bag:Ligplaats;
+  bag:hoofdadres nummeraanduiding:0119200000002120;
+  foaf:isPrimaryTopicOf
+    registratie:0119020000000005.1,
+    registatrie:0119020000000005.2,
+    registatrie:0119020000000005.3;
+  nen3610:Identificatie identificatie:0119020000000005.
+
+  identificatie:0119020000000005
+    a nen3610:Identificatie;
+    nen3610:lokaalID "0119020000000005";
+    nen3610:namespace "NL.IMBAG.Ligplaats".
+
+#voorkomen1
+  registratie:0119020000000005.1
+    a bag:ligplaatsRegistratie;
+    bag:geconstateerd true;
+    bag:status status:plaatsAangewezen;
+    bag:geometrie 
+      [ a gml:Polygon;
+        geo:wkt "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((209332.541 525531.408 209333.653 525506.933 209344.5 525506.238 209344.083 525531.408 209332.541 525531.408))"^^geo:wktLiteral ];
+    dct:created "2010-02-05"^^xsd:date;
+    dct:identifier "2010-lig-01";
+    nen3610:beginGeldigheid "2010-02-05"^^xsd:date;
+    nen3610:eindGeldigheid "2013-12-11"^^xsd:date;
+    bag:tijdstipRegistratie "2010-03-02T14:38:51.000"^^xsd:dateTime;
+    bag:eindRegistratie "2013-12-11T13:29:58.000"^^xsd:dateTime;
+    prov:generatedAtTime "2010-03-04T09:15:43.620"^^xsd:dateTime;
+    prov:invalidatedAtTime "2013-12-11T13:33:10.711"^^xsd:dateTime.
+
+#voorkomen2
+  registratie:0119020000000005.2
+    a bag:ligplaatsRegistratie;
+    bag:geconstateerd true;
+    bag:status status:plaatsAangewezen;
+    bag:geometrie 
+      [ a gml:Polygon;
+        geo:wkt "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((209332.541 525531.408 209333.653 525506.933 209344.5 525506.238 209344.083 525531.408 209332.541 525531.408))"^^geo:wktLiteral ];
+    dct:created "2013-12-11"^^xsd:date;
+    dct:identifier "216893";
+    nen3610:beginGeldigheid "2013-12-11"^^xsd:date;
+    nen3610:eindGeldigheid "2016-11-15"^^xsd:date;
+    bag:tijdstipRegistratie "2013-12-11T13:29:58.000"^^xsd:dateTime;
+    nen3610:vorigeGeldigeVersie registratie:0119020000000005.1;
+    nen3610:vorigeGeregistreerdeVersie registratie:0119020000000005.1;
+    prov:generatedAtTime "2013-12-11T13:33:10.711"^^xsd:dateTime;
+    prov:invalidatedAtTime "2016-11-16T15:01:15.491"^^xsd:dateTime.
+
+#voorkomen3
+  registratie:0119020000000005.3
+    a bag:ligplaatsRegistratie;
+    bag:geconstateerd false;
+    bag:status status:plaatsAangewezen;
+    bag:geometrie 
+      [ a gml:Polygon;
+        geo:wkt "<http://www.opengis.net/def/crs/EPSG/0/28992> Polygon((209332.541 525531.408 209333.653 525506.933 209344.5 525506.238 209344.083 525531.408 209332.541 525531.408))"^^geo:wktLiteral ];
+    dct:created "2016-11-15"^^xsd:date;
+    dct:identifier "1201432";
+    nen3610:beginGeldigheid "2016-11-15"^^xsd:date;
+    bag:tijdstipRegistratie "2016-11-16T14:58:36.000"^^xsd:dateTime;
+    nen3610:vorigeGeldigeVersie registratie:0119020000000005.2;
+    nen3610:vorigeGeregistreerdeVersie registratie:0119020000000005.2;
+    prov:generatedAtTime "2016-11-16T15:01:15.491"^^xsd:dateTime.
+     
+}

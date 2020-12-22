@@ -24,7 +24,7 @@ science team en heet LDWizard.
    <a href="/demonstrators/spatialwizard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png" alt="Spatial Wizard logo">
       <div class="card-title">LD Spatial Wizard</div>
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data.</div>
     </div>
@@ -43,7 +43,7 @@ Via onderstaande knop is de demonstrator te bereiken. Hier kan de tool op zich u
   <a href="/demonstrators/ldmapTest/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png">
+      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png" alt="Kaart LDMaps">
       <div class="card-title">LDMaps</div>
       <div class="card-description"> Omschrijving toevoegen</div>
     </div>
@@ -55,7 +55,7 @@ Via onderstaande knop is de demonstrator te bereiken. Hier kan de tool op zich u
   <a href="/demonstrators/LDMaps_BGT/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png">
+      <img class="card-image" src="/assets/images/Plattegrond-ldmaps.png" alt="Kaart LDMaps">
       <div class="card-title">LDMaps voor de BGT</div>
       <div class="card-description"> Omschrijving toevoegen</div>
     </div>

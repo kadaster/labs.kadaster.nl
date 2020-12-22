@@ -1,0 +1,819 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def>
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
+prefix shape: <https://bag2.basisregistraties.overheid.nl/bag/id/shape/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+
+graph:shapes {
+  shape:AdresseerbaarObject
+    sh:property
+      sh:hoofdadres,
+      sh:nevenadres;
+    sh:targetClass bag:AdresseerbaarObject.
+
+  sh:hoofdadres
+    sh:class bag:Nummeraanduiding;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:hoofdadres.
+
+  sh:nevenadres
+    sh:class bag:Nummeraanduiding;
+    sh:path bag:nevenadres.
+
+
+  shape:Geometry
+    sh:property shape:wktLiteral;
+    sh:targetClass geo:Geometry.
+
+  shape:wktLiteral
+    sh:datatype geo:wktLiteral;
+    sh:description "Iedere geometrie heeft precies 1 serialisatie."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "heeft WKT serialisatie"@nl;
+    sh:path geo:asWKT.
+
+
+  shape:Identificatie
+    sh:property
+      shape:lokaalId,
+      shape:namespace;
+    sh:targetClass nen3610:Identificatie.
+
+  shape:lokaalId
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:lokaalID.
+
+  shape:namespace
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:namespace;
+    sh:pattern "^NL.IMBAG.".
+
+
+  shape:Ligplaats
+    sh:property
+      shape:Ligplaats_identificatie,
+      shape:Ligplaats_isPrimaryTopicOf;
+    sh:targetClass bag:Ligplaats.
+
+  shape:Ligplaats_isPrimaryTopicOf
+    sh:class bag:LigplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:Ligplaats_identificatie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#761-identificatie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    skos:definition "De unieke aanduiding van een ligplaats."@nl;
+    skos:scopeNote "Elke Ligplaats waarvan gegevens zijn opgenomen in de basisregistratie adressen en gebouwen wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:LigplaatsRegistratie
+    sh:property
+      shape:LigplaatsRegistratie_documentdatum,
+      shape:LigplaatsRegistratie_documentnummer,
+      shape:LigplaatsRegistratie_geconstrateerd,
+      shape:LigplaatsRegistratie_geometrie,
+      shape:LigplaatsRegistratie_status;
+    sh:tagetClass bag:LigplaatsRegistratie.
+
+  shape:LigplaatsRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#765-documentdatum"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een ligplaats heeft plaatsgevonden."@nl;
+    skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:LigplaatsRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#766-documentnummer"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een ligplaats heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:LigplaatsRegistratie_geconstrateerd
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#764-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een ligplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een ligplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk permanent gebruik van een plaats in het water dat binnen andere processen aan het licht is gekomen."@nl.
+
+  shape:LigplaatsRegistratie_geometrie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#763-geometrie"^^xsd:anyURI;
+    sh:class gml:Surface;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De tweedimensionale geometrische representatie van de omtrekken van een ligplaats."@nl.
+
+  shape:LigplaatsRegistratie_status
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#762-status"^^xsd:anyURI;
+    sh:class bag:StatusPlaats;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een ligplaats waarin de betreffende ligplaats zich bevindt."@nl;
+    skos:scopeNote "De BAG bevat gegevens over zowel daadwerkelijk aanwezige ligplaatsen als ingetrokken ligplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de ligplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+
+  shape:Registratie
+    sh:property
+      shape:formeleHistorieBegin,
+      shape:formeleHistorieEind,
+      shape:formeleLevensduur,
+      shape:materiëleHistorieBegin,
+      shape:materiëleHistorieEind,
+      shape:materiëleLevensduur,
+      shape:primaryTopic;
+    sh:targetClass foaf:Document.
+
+  shape:formeleHistorieBegin
+    sh:datatype xsd:dateTime;
+    sh:description "Wordt gebruikt om de formele historie mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "heeft begin registratie"@nl;
+    sh:path prov:generatedAtTime.
+
+  shape:formeleHistorieEind
+    sh:datatype xsd:dateTime;
+    sh:description "Wordt gebruikt om de formele historie mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:name "heeft eind registratie"@nl;
+    sh:path prov:invalidatedAtTime.
+
+  shape:formeleLevensduur
+    sh:class foaf:Document;
+    sh:description "Wordt gebruikt om de formele levensduur mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:name "heeft vorige geregistreerde versie"@nl;
+    sh:path nen3610:vorigeGeregistreerdeVersie.
+
+  shape:materiëleHistorieBegin
+    sh:datatype xsd:dateTime;
+    sh:description "Wordt gebruikt om de materiële historie mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:name "heeft begin geldigheid"@nl;
+    sh:path nen3610:beginGeldigheid.
+
+  shape:materiëleHistorieEind
+    sh:datatype xsd:dateTime;
+    sh:description "Wordt gebruikt om de materiële historie mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:name "heeft eind geldigheid"@nl;
+    sh:path nen3610:eindGeldigheid.
+
+  shape:materiëleLevensduur
+    sh:class foaf:Document;
+    sh:description "Wordt gebruikt om de materiële levensduur mee aan de duiden."@nl;
+    sh:maxCount 1;
+    sh:name "heeft vorige geldige versie"@nl;
+    sh:path nen3610:vorigeGeldigeVersie.
+
+  shape:primaryTopic
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:nodeType sh:IRI;
+    sh:path foaf:primaryTopic.
+
+
+  shape:Standplaats
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#77-standplaats"^^xsd:anyURI;
+    sh:property
+      shape:Standplaats_identificatie,
+      shape:Standplaats_isPrimaryTopicOf;
+    sh:targetClass bag:Standplaats.
+
+  shape:Standplaats_identificatie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#771-identificatie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    skos:definition "De unieke aanduiding van een standplaats."@nl;
+    skos:scopeNote "Elke standplaats waarvan gegevens zijn opgenomen in de BAG wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:Standplaats_isPrimaryTopicOf
+    sh:class bag:StandplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:StandplaatsRegistratie
+    sh:property
+      shape:StandplaatsRegistratie_documentdatum,
+      shape:StandplaatsRegistratie_documentnummer,
+      shape:StandplaatsRegistratie_geconstrateerd,
+      shape:StandplaatsRegistratie_geometrie,
+      shape:StandplaatsRegistratie_status;
+    sh:tagetClass bag:StandplaatsRegistratie.
+
+  shape:StandplaatsRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#775-documentdatum"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een standplaats heeft plaatsgevonden."@nl;
+    skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:StandplaatsRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#776-documentnummer"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een standplaats heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:StandplaatsRegistratie_geconstrateerd
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#774-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een standplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een standplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om het feitelijk gebruik van (een gedeelte van) een terrein dat binnen andere processen aan het licht is gekomen."@nl.
+
+  shape:StandplaatsRegistratie_geometrie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#773-geometrie"^^xsd:anyURI;
+    sh:class gml:Surface;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De tweedimensionale geometrische representatie van de omtrekken van een standplaats."@nl.
+
+  shape:StandplaatsRegistratie_status
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#772-status"^^xsd:anyURI;
+    sh:class bag:StatusPlaats;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een standplaats waarin de betreffende standplaats zich bevindt."@nl;
+    skos:scopeNote "De BAG bevat gegevens over zowel daadwerkelijk aanwezige standplaatsen als ingetrokken standplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de standplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+
+  shape:Nummeraanduiding
+    sh:property
+      shape:Nummeraanduiding_identificatie,
+      shape:Nummeraanduiding_isPrimaryTopicOf;
+    sh:targetClass bag:Nummeraanduiding.
+
+  shape:Nummeraanduiding_identificatie
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#731-identificatie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    skos:definition "De unieke aanduiding van een nummeraanduiding."@nl;
+    skos:scopeNote "Elke nummeraanduiding waarvan gegevens zijn opgenomen in de basisregistratie adressen en gebouwen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:Nummeraanduiding_isPrimaryTopicOf
+    sh:class bag:NummeraanduidingRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:NummeraanduidingRegistratie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#73-nummeraanduiding"^^xsd:anyURI;
+    sh:property
+      shape:NummeraanduidingRegistratie_documentdatum,
+      shape:NummeraanduidingRegistratie_documentnummer,
+      shape:NummeraanduidingRegistratie_geconstateerd,
+      shape:NummeraanduidingRegistratie_status,
+      shape:huisletter,
+      shape:huisnummer,
+      shape:huisnummertoevoeging,
+      shape:openbareRuimte,
+      shape:postcode;
+    sh:targetClass bag:NummeraanduidingRegistratie.
+
+  shape:NummeraanduidingRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#739-documentdatum"^^xsd:anyURI;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een nummeraanduiding heeft plaatsgevonden."@nl;
+    skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:NummeraanduidingRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#7310-documentnummer"^^xsd:anyURI;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een nummeraanduiding heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:NummeraanduidingRegistratie_geconstateerd
+    dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#738-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een nummeraanduiding in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een nummeraanduiding dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte nummeraanduidingen die binnen andere processen aan het licht zijn gekomen."@nl.
+
+  shape:NummeraanduidingRegistratie_status
+    dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#737-status"^^xsd:anyURI;
+    sh:class bag:StatusNaamgeving;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een nummeraanduiding waarin de betreffende nummeraanduiding zich bevindt."@nl;
+    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande nummeraanduidingen als ingetrokken nummeraanduidingen. Om het onderscheid tussen de stadia in de levenscyclus van de nummeraanduiding te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+  shape:huisletter
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#733-huisletter"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:path bag:huisletter;
+    sh:pattern "[A-Z][a-z]{1}";
+    skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."@nl.
+
+  shape:huisnummer
+    sh:datatype xsd:positiveInteger;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:huisnummer;
+    sh:pattern "[0-9]{1,5}".
+
+  shape:huisnummertoevoeging
+    sh:datatype xsd:string;
+    sh:description "Maximaal vier alfanumerieke tekens bestaande uit een combinatie van hoofdletters (A – Z), kleine letters (a – z) en/of cijfers (0 – 9)."@nl;
+    sh:maxCount 1;
+    sh:path bag:huisnummertoevoeging;
+    sh:pattern "[0-9A-Za-z]{1,4}".
+
+  shape:openbareRuimte
+    sh:class bag:OpenbareRuimte;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:openbareRuimte.
+
+  shape:postcode
+    sh:datatype xsd:string;
+    sh:description "Combinatie van vier cijfers (0 – 9) en twee hoofdletters (A – Z)."@nl;
+    sh:maxCount 1;
+    sh:path bag:postcode;
+    sh:pattern "[0-9]{4}[A-Z]{2}".
+
+
+  shape:OpenbareRuimte
+    sh:property
+      shape:OpenbareRuimte_identificatie,
+      shape:OpenbareRuimte_isPrimaryTopicOf;
+    sh:targetClass bag:OpenbareRuimte.
+
+  shape:OpenbareRuimte_identificatie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#721-identificatie"^^xsd:anyURI;
+    dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+    sh:class nen3610:Identificatie;
+    sh:description "Een natuurlijk getal tussen 0001 en 9999."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    skos:definition "De unieke aanduiding van een openbare ruimte."@nl;
+    skos:scopeNote "Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:OpenbareRuimte_isPrimaryTopicOf
+    sh:class bag:OpenbareRuimteRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:OpenbareRuimteRegistratie
+    sh:property
+      shape:OpenbareRuimteRegistratie_documentdatum,
+      shape:OpenbareRuimteRegistratie_documentnummer,
+      shape:OpenbareRuimteRegistratie_geconstateerd,
+      shape:OpenbareRuimteRegistratie_geometrie,
+      shape:OpenbareRuimteRegistratie_status,
+      shape:OpenbareRuimteRegistratie_type,
+      shape:woonplaats;
+    sh:targetClass bag:OpenbareRuimteRegistratie.
+
+  shape:OpenbareRuimteRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#726-documentdatum"^^xsd:anyURI;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of verwijdering van gegevens ten aanzien van een openbare ruimte heeft plaatsgevonden."@nl;
+    skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:OpenbareRuimteRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#727-documentnummer"^^xsd:anyURI;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een openbare ruimte heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:OpenbareRuimteRegistratie_geconstateerd
+    dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#745-geconstateerd"^^xsd:anyURI;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een openbare ruimte in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een naam van een openbare ruimte dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte benamingen die binnen andere processen aan het licht zijn gekomen."@nl.
+
+  shape:OpenbareRuimteRegistratie_geometrie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#742-geometrie"^^xsd:anyURI;
+    sh:datatype geo:wktLiteral;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De minimaal tweedimensionale geometrische representatie van het bovenzicht van de omtrekken van een pand."@nl.
+
+  shape:OpenbareRuimteRegistratie_naam
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#722-naam"^^xsd:anyURI;
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    sh:languageIn ( "nl" );
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path sdo:name;
+    sh:pattern "\\p{S}{1,80}";
+    skos:definition "De naam die aan een openbare ruimte is toegekend in een daartoe strekkend formeel gemeentelijk besluit."@nl;
+    skos:scopeNote "Het verdient aanbeveling te streven naar korte benamingen."@nl.
+
+  shape:OpenbareRuimteRegistratie_status
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#724-status"^^xsd:anyURI;
+    sh:class bag:StatusOpenbareRuimte;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een openbare ruimte waarin de betreffende openbare ruimte zich bevindt."@nl;
+    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande openbare ruimten als ingetrokken openbare ruimten. Om het onderscheid tussen de stadia in de levenscyclus van de openbare ruimte te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+  shape:OpenbareRuimteRegistratie_type
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#723-type"^^xsd:anyURI;
+    sh:in
+      ( nen3610:AdministratiefGebied
+        nen3610:Kunstwerk
+        nen3610:LandschappelijkGebied
+        nen3610:Spoorbaan
+        nen3610:Terrein
+        nen3610:Water
+        nen3610:Weg );
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:type;
+    skos:definition "De aard van de als zodanig benoemde openbare ruimte."@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <dl>
+    <dt>Administratief gebied</dt>
+    <dd>Oftewel 'registratief gebied': op basis van wet- en regelgeving afgebakend gebied dat als eenheid geldt van politiek/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering (bijvoorbeeld stadsdeel) (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Kunstwerk</dt>
+    <dd>Civiel-technisch werk voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen en niet bedoeld voor permanent menselijk verblijf. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Landschappelijk gebied</dt>
+    <dd>Te verdelen in (NEN 3610): 'Geografisch gebied': geografisch benoemd of aangeduid gebied. De grenzen zijn niet altijd exact vastgesteld (bijvoorbeeld Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied) en 'Functioneel gebied': begrensd en benoemd gebied dat door een functionele eenheid wordt beschreven (bijvoorbeeld bedrijventerrein, bungalowpark, plantsoen, begraafplaats, jachthaven, windmolenpark en recreatiegebied) (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Spoorbaan</dt>
+    <dd>Gebaand gedeelte voor het verkeer over rails. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Terrein</dt>
+    <dd>Door een fysiek voorkomen gekarakteriseerd zichtbaar begrensd stuk grond (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Water</dt>
+    <dd>Grondoppervlak in principe bedekt met water. (bron: NEN 3610:2011/A1:2016 nl).</dd>
+    <dt>Weg</dt>
+    <dd>Gebaand gedeelte voor het wegverkeer en vliegverkeer te land (bron: NEN 3610:2011/A1:2016 nl).</dd>
+  </dl>
+</section>"""^^rdf:HTML.
+
+  shape:woonplaats
+    sh:class bag:Woonplaats;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:woonplaats.
+
+
+  shape:Pand
+    sh:property
+      shape:Pand_identificatie,
+      shape:Pand_isPrimaryTopicOf;
+    sh:targetClass bag:Pand.
+
+  shape:Pand_identificatie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#721-identificatie"^^xsd:anyURI;
+    dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+    sh:class nen3610:Identificatie;
+    sh:description "Een natuurlijk getal tussen 0001 en 9999."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    sh:pattern "[0-9]{4}";
+    skos:definition "De unieke aanduiding van een openbare ruimte."@nl;
+    skos:scopeNote "Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:Pand_isPrimaryTopicOf
+    sh:class bag:PandRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:PandRegistratie
+    sh:property
+      shape:PandRegistratie_documentdatum,
+      shape:PandRegistratie_documentnummer,
+      shape:PandRegistratie_geconstateerd,
+      shape:PandRegistratie_geometrie,
+      shape:PandRegistratie_status,
+      shape:bouwjaar;
+    sh:targetClass bag:PandRegistratie.
+
+  shape:PandRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#746-documentdatum"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden."@nl;
+    skos:scopeNote "Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen. In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:PandRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#747-documentnummer"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:PandRegistratie_geconstateerd
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#745-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een pand dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen panden, vanwege het ontbreken van de voor de bouw benodigde vergunning."@nl.
+
+  shape:PandRegistratie_geometrie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#742-geometrie"^^xsd:anyURI;
+    sh:datatype geo:wktLiteral;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De minimaal tweedimensionale geometrische representatie van het bovenzicht van de omtrekken van een pand."@nl.
+
+  shape:PandRegistratie_status
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#744-status"^^xsd:anyURI;
+    sh:class bag:StatusPand;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een pand waarin het betreffende pand zich bevindt."@nl;
+    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel daadwerkelijk aanwezige panden, als nog tot stand te brengen en verdwenen panden. Om het onderscheid tussen de stadia in de levenscyclus van het pand te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+  shape:bouwjaar
+    sh:datatype xsd:gYear;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:bouwjaar.
+
+
+  shape:Verblijfsobject
+    sh:property
+      shape:Verblijfsobject_identificatie,
+      shape:Verblijfsobject_isPrimaryTopicOf;
+    sh:targetClass bag:Verblijfsobject.
+
+  shape:Verblijfsobject_identificatie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#781-identificatie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    skos:definition "De unieke aanduiding van een verblijfsobject."@nl;
+    skos:scopeNote "Elk verblijfsobject waarvan gegevens zijn opgenomen in de basisregistratie gebouwen wordt uniek aangeduid door middel van een identificatiecode."@nl.
+
+  shape:Verblijfsobject_isPrimaryTopicOf
+    sh:class bag:VerblijfsobjectRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:VerblijfsobjectRegistratie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#782-geometrie"^^xsd:anyURI;
+    sh:property
+      shape:VerblijfsobjectRegistratie_documentdatum,
+      shape:VerblijfsobjectRegistratie_documentnummer,
+      shape:VerblijfsobjectRegistratie_geconstateerd,
+      shape:VerblijfsobjectRegistratie_geometrie,
+      shape:VerblijfsobjectRegistratie_status,
+      shape:gebruiksdoel,
+      shape:oppervlakte,
+      shape:pand;
+    sh:targetClass bag:VerblijfsobjectRegistratie.
+
+  shape:VerblijfsobjectRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#787-documentdatum"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een verblijfsobject heeft plaatsgevonden."@nl;
+    skos:scopeNote "Alleen een datum die gelijk is aan of die is gelegen voor de datum van het opnemen of muteren van het betreffende gegeven kan in de registratie worden opgenomen. In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:VerblijfsobjectRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#747-documentnummer"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een object heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:VerblijfsobjectRegistratie_geconstateerd
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#786-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een verblijfsobject in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een verblijfsobject dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om niet eerder in de registratie opgenomen verblijfsobjecten, vanwege het ontbreken van de voor de bouw benodigde vergunning of vanwege het niet benodigd zijn van een dergelijke vergunning."@nl.
+
+  shape:VerblijfsobjectRegistratie_geometrie
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#782-geometrie"^^xsd:anyURI;
+    sh:class bag:PuntOfVlak;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De minimaal tweedimensionale geometrische representatie van een verblijfsobject."@nl.
+
+  shape:VerblijfsobjectRegistratie_status
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#785-status"^^xsd:anyURI;
+    sh:class bag:StatusVerblijfsobject;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een verblijfsobject waarin het betreffende verblijfsobject zich bevindt."@nl;
+    skos:scopeNote "De BAG bevat gegevens over zowel daadwerkelijk aanwezige verblijfsobjecten, als nog tot stand te brengen en verdwenen verblijfsobjecten. Om het onderscheid tussen de stadia in de levenscyclus van het verblijfsobject te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+
+  shape:gebruiksdoel
+    sh:class bag:Gebruiksdoel;
+    sh:minCount 1;
+    sh:path bag:gebruiksdoel.
+
+  shape:oppervlakte
+    sh:datatype xsd:positiveInteger;
+    sh:description "Een natuurlijk getal tussen 1 en 999999."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:oppervlakte;
+    sh:pattern "[0-9]{1,6}".
+
+  shape:pand
+    sh:class bag:Pand;
+    sh:minCount 1;
+    sh:path bag:pand.
+
+
+  shape:Woonplaats
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/objecttypen#61-woonplaats"^^xsd:anyURI;
+    sh:property
+      shape:Woonplaats_identificatie,
+      shape:Woonplaats_isPrimaryTopicOf;
+    sh:targetClass bag:Woonplaats.
+
+  shape:Woonplaats_identificatie
+    dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#711-identificatie"^^xsd:anyURI;
+    sh:class nen3610:Identificatie;
+    sh:description "Een natuurlijk getal tussen 0001 en 9999."@nl;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path nen3610:identificatie;
+    sh:pattern "[0-9]{4}";
+    skos:definition "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl;
+    skos:scopeNote "De woonplaatsen worden vastgesteld door de gemeenten. De vastgestelde woonplaatsen worden voorzien van een unieke aanduiding, te vergelijken met de gemeentecode volgens Tabel 33 Gemeententabel van de Landelijke Tabellen GBA. Deze aanduiding wordt verstrekt door de Dienst voor het kadaster en de openbare registers."@nl.
+
+  shape:Woonplaats_isPrimaryTopicOf
+    sh:class bag:WoonplaatsRegistratie;
+    sh:minCount 1;
+    sh:path foaf:isPrimaryTopicOf.
+
+  shape:WoonplaatsRegistratie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#71-woonplaats"^^xsd:anyURI;
+    sh:property
+      shape:WoonplaatsRegistratie_documentdatum,
+      shape:WoonplaatsRegistratie_documentnummer,
+      shape:WoonplaatsRegistratie_geconstateerd,
+      shape:WoonplaatsRegistratie_geometrie,
+      shape:WoonplaatsRegistratie_naam,
+      shape:WoonplaatsRegistratie_status;
+    sh:targetClass bag:WoonplaatsRegistratie.
+
+  shape:WoonplaatsRegistratie_documentdatum
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 3.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#716-documentdatum"^^xsd:anyURI;
+    sh:datatype xsd:date;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:created;
+    skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden."@nl;
+    skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
+
+  shape:WoonplaatsRegistratie_documentnummer
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 3.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#717-documentnummer"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path dct:identifier;
+    sh:pattern "[0-9]{1,40}";
+    skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente."@nl.
+
+  shape:WoonplaatsRegistratie_geconstateerd
+    dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#715-geconstateerd"^^xsd:anyURI;
+    sh:datatype xsd:boolean;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geconstateerd;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een woonplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:scopeNote "Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen."@nl.
+
+  shape:WoonplaatsRegistratie_geometrie
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#713-geometrie"^^xsd:anyURI;
+    sh:class bag:VlakOfMultivlak;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:geometrie;
+    skos:definition "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl.
+
+  shape:WoonplaatsRegistratie_naam
+    dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#712-naam"^^xsd:anyURI;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path sdo:name;
+    sh:pattern "\\p{S}{1,80}";
+    skos:definition "De benaming van een door het gemeentebestuur aangewezen woonplaats."@nl;
+    skos:scopeNote "Het maximale aantal te gebruiken tekens voor een benaming is tachtig. Het verdient aanbeveling te streven naar korte benamingen."@nl.
+
+  shape:WoonplaatsRegistratie_status
+    dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
+    sh:class bag:StatusWoonplaats;
+    sh:maxCount 1;
+    sh:minCount 1;
+    sh:path bag:status;
+    skos:definition "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl;
+    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+}

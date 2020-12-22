@@ -16,7 +16,7 @@ Hier willen we bewijzen dat Linked Data geschikt is voor de volgende kernprincip
 
  <figure id="figuur-1">
   <a href="/assets/images/sfeerimpressie-high5.jpg">
-    <img src="/assets/images/sfeerimpressie-high5.jpg" >
+    <img src="/assets/images/sfeerimpressie-high5.jpg" alt="Sfeerimpressie">
   </a>
   <figcaption>
     Figuur 1 ― Sfeerimpressie van de aftrap van de High 5
@@ -46,7 +46,7 @@ Of is er verontreinigd bluswater in het afvoersysteem belandt? Met een combinati
 
  <figure id="figuur-2">
   <a href="/assets/images/Stages_Inzicht_Brandweer.PNG">
-    <img src="/assets/images/Stages_Inzicht_Brandweer.PNG" >
+    <img src="/assets/images/Stages_Inzicht_Brandweer.PNG" alt="Stages Brandweer">
   </a>
   <figcaption>
     Figuur 2 ― Stages geïdentificeerd in deze use case rondom brand.
@@ -66,7 +66,7 @@ Speel bijvoorbeeld zelf ook eens in de Graph Browsers met de URI's van het <a hr
 
  <figure id="figuur-3">
   <a href="/assets/images/Ontodia_Brand.gif">
-    <img src="/assets/images/Ontodia_Brand.gif" >
+    <img src="/assets/images/Ontodia_Brand.gif" alt="Demo Brandweer Ontodia">
   </a>
   <figcaption>
     Figuur 3 ― De data vanuit deze case gevisualiseerd in een Graph Browser. (Tip: Klik op het figuur voor een uitvergroot beeld)
@@ -103,7 +103,7 @@ naar een CSV en gebruikt kan worden in een (open-source) BI Tool zoals <a href="
 
 Om in het thema te blijven van het integreren van de Linked Data in het eigen werkproces kijken we ook naar een data story rondom Provincie data in relatie tot bestaande Linked Data zoals de BGT 
 uit een <a href="/stories/bgt-high3/">eerdere high 5</a>. In deze case focussen we ons op data in verschillende endpoints (federatie) en de waarde die dit brengt voor een bestaand proces.
-We zoomen ook in op de waarde van administratieve links tussen geometrische datasets, waarbij de administratieve koppeling een (semantisch) betere beschrijving biedt van hoe de objecten gerelateert zijn.
+We zoomen ook in op de waarde van administratieve links tussen geometrische datasets, waarbij de administratieve koppeling een (semantisch) betere beschrijving biedt van hoe de objecten gerelateerd zijn.
 Deze demonstrator kun je <a href="/stories/high5-imbor">hier</a> vinden. 
 
 ### Conclusies
@@ -115,7 +115,7 @@ In deze dagen hebben we met meerdere demonstrator de waarde en huidige tekortkom
   <a href="/stories/disgeo">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/brand.png">
+      <img class="card-image" src="/assets/images/brand.png" alt="Brandweer logo">
       <div class="card-title">Brand - Analyse achteraf</div>
       <div class="card-description">In deze data story laten we zien hoe mobiliteitsdata van het NDW gebruikt kan worden om een analyse na afloop van een brand te doen in Linked Data of eigen systemen.</div>
     </div>
@@ -123,7 +123,7 @@ In deze dagen hebben we met meerdere demonstrator de waarde en huidige tekortkom
   <a href="/stories/high5-imbor">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/brand.jpg">
+      <img class="card-image" src="/assets/images/brand.jpg" alt="Brand">
       <div class="card-title">Brand - Wat doet dit met je water</div>
       <div class="card-description">In deze story bekijken we de combinatie tussen geometrische analyse en administratieve link in de afhandeling van de brand voor een provincie </div>
     </div>
@@ -131,7 +131,7 @@ In deze dagen hebben we met meerdere demonstrator de waarde en huidige tekortkom
    <a href="/demonstrators/graph-browser">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
       <div class="card-title">Graph Browsers</div>
       <div class="card-description">We stellen hier verschillende graaf browsers beschikbaar op onze data.</div>
     </div>

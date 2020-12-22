@@ -5,7 +5,7 @@ title: Use Case ― Akte OCR
 ---
 <script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
 <iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html"> 
+  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="Loki"> 
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
@@ -15,7 +15,7 @@ title: Use Case ― Akte OCR
 # Use Case: Kwaliteit van aktes uit een OCR traject
 
 ## Introductie
-Binnen het Kadaster heeft een aantal jaren terug een grootschalig onderzoek plaatsgevonden waarbij de bestaande akten sinds 1950 ge-analyseerd werden. 
+Binnen het Kadaster heeft een aantal jaren terug een grootschalig onderzoek plaatsgevonden waarbij de bestaande akten sinds 1950 geanalyseerd werden. 
 Het doel was de erfdienstbaarheden uit deze akten te herkennen en hiermee het onderzoekend werk van de bewaarder te vergemakkelijken. 
 In de laatste jaren zijn er - mede ingegeven door de huidige technologische vernieuwingen - meer en meer standaarden en eisen aan een akte opgesteld. Vroeger was dit een stuk minder vanzelfsprekend. 
 Zo waren veel akten handgeschreven of kwam het van een ouderwetse typmachine, en werd er regelmatig het een of ander buiten de lijntjes bij de aktetekst opgeschreven. Al deze akten zijn bij 
@@ -30,7 +30,7 @@ in deze akteteksten gedoken om te zien of deze wellicht voor nieuwe toepassingen
 
 <div class="textbox" markdown="1">
 ## Optical Character Recognition (OCR)
-Optical Character Recognition is de techniek waarmee een computer scans of foto's omzet naar een leesbare gestructureerde tekst. In dit specifieke geval betreft het scans van fotokopiën van akten
+Optical Character Recognition is de techniek waarmee een computer scans of foto's omzet naar een leesbare gestructureerde tekst. In dit specifieke geval betreft het scans van fotokopieën van akten
 uit het openbaar register bij het Kadaster. 
 </div>
 
@@ -39,7 +39,7 @@ Voor een simpele visuele samenvatting verwijzen we de lezer naar Figuur 0. Voor 
 datgene wat we met dit onderzoek hebben gedaan.  
 <figure id="figuur-0">
   <a href="/assets/images/akteocr-samenvatting.jpg">
-    <img src="/assets/images/akteocr-samenvatting.jpg">
+    <img src="/assets/images/akteocr-samenvatting.jpg" alt="Samenvatting resultaten">
   </a>
   <figcaption>
     Figuur 0 ― Samenvatting van de behaalde resultaten. 
@@ -49,8 +49,8 @@ datgene wat we met dit onderzoek hebben gedaan.
 
 ## Aanpak
 De eerste uitdaging ontstond rond de grote hoeveelheid data binnen dit onderzoek. In totaal had het team te maken met ruwweg 16,7 miljoen akteteksten in XML-formaat, welke op een lokale Kadaster omgeving stonden. 
-Deze(n) zijn ge-upload naar de Azure cloud omgeving en geconverteerd naar het meer bruikbare JSON formaat. Vanuit daar werd het vervolgens verder getransformeerd en ge-analyseerd. 
-De akteteksten zijn middels een check op de Nederlandse taal (bestaat het gevonden woord wel/niet in een Nederlands woordenboek) ge-analyseerd op de leesbaarheid van de akteteksten. De resultaten van deze 
+Deze(n) zijn ge-upload naar de Azure cloud omgeving en geconverteerd naar het meer bruikbare JSON formaat. Vanuit daar werd het vervolgens verder getransformeerd en geanalyseerd. 
+De akteteksten zijn middels een check op de Nederlandse taal (bestaat het gevonden woord wel/niet in een Nederlands woordenboek) geanalyseerd op de leesbaarheid van de akteteksten. De resultaten van deze 
 analyse zijn in combinatie met een steekproef op een visuele manier getoetst bij de eindgebruikers. 
 
 ### Gebruik van de Microsoft Azure cloudomgeving
@@ -58,7 +58,7 @@ Voor dit onderzoek is grootschalig gebruik gemaakt van de Azure cloud omgeving. 
 
 <figure id="figuur-1">
   <a href="/assets/images/architectuur-akteocr.png">
-    <img src="/assets/images/architectuur-akteocr.png">
+    <img src="/assets/images/architectuur-akteocr.png" alt="MS Azure architectuur">
   </a>
   <figcaption>
     Figuur 1 ― Architectuurplaat voor dit onderzoek
@@ -79,7 +79,7 @@ Het uitpakken en converteren van de aktes is omgeschreven naar een set taken voo
 Op deze manier kunnen we in parallel het proces uitvoeren in een automatisch schalende omgeving. Dit heeft de doorlooptijd significant kunnen versnellen.
 
 ### De Nederlandse taalcheck
-In de volgende stap wordt de taalanalyse uitgevoerd op de uitgepakte aktes. Ook hier is er voor een parallell proces in Azure Batch gekozen. 
+In de volgende stap wordt de taalanalyse uitgevoerd op de uitgepakte aktes. Ook hier is er voor een parallel proces in Azure Batch gekozen. 
 De analyse is geschreven in een Python script. In de analyse wordt er gebruik gemaakt van de HunSpell library voor de controle op de Nederlandse taal. 
 Deze spellingcontrole heeft <a href="https://taaluniebericht.org/artikel/een-betere-spellingscontrole-voor-een-miljard-mensen">van de Taalunie het “Keurmerk Spelling” gekregen</a>. 
 Hunspell werkt met een Nederlandse woordenlijst en met een lijst met vervoegingen. Op basis daarvan wordt gekeken of een woord een goed Nederlands woord is. 
@@ -87,7 +87,7 @@ Hunspell werkt met een Nederlandse woordenlijst en met een lijst met vervoeginge
 De controle op de Nederlandse taal ziet er schematisch als volgt uit:
 <figure id="figuur-2">
   <a href="/assets/images/nederlandse-taalcheck.png">
-    <img src="/assets/images/nederlandse-taalcheck.png">
+    <img src="/assets/images/nederlandse-taalcheck.png" alt="Schematische weergave taalcheck">
   </a>
   <figcaption>
     Figuur 2 ― Schematische weergave van de Nederlandse taalcheck
@@ -111,7 +111,7 @@ Eén van de zaken die ook naar boven kwam is dat er soms relatief veel ruis in e
 ### Resultaten tastbaar maken
 Om de resultaten over de gehele set aan aktes kwantitatief te maken zijn de volgende twee kwaliteitsindicatoren opgesteld:
 <figure id="figuur-tekst-1">
-    <img src="/assets/images/indicatoren-akteocr.PNG">
+    <img src="/assets/images/indicatoren-akteocr.PNG" alt="Indicatoren">
 </figure>
 
 Hierbij dienen de grenzen als indicator om iets te kunnen roepen over de kwaliteit van de akten. Om de grenzen te bepalen is gebruik gemaakt van twee methodieken:
@@ -122,16 +122,16 @@ Ruwweg kunnen we over de betekenis van kleuren het volgende zeggen: Groen beteke
 
 Op basis van de twee indicatoren kan er een algemene kwaliteitsindicator worden opgesteld. Zie onderstaande tabel:
 <figure id="figuur-tekst-2">
-    <img src="/assets/images/akteocr-kwaliteit-tabel.PNG">
+    <img src="/assets/images/akteocr-kwaliteit-tabel.PNG" alt="Tabel kwaliteit">
 </figure>
 
-Om de resultaten op steekproefniveau inzichtelijk te maken is gebruik gemaakt van een variant op een user-interface die momenteel al bij Kadaster in gebruik is. Daarbij werd ook een bestaand algoritme op de resulterende akteteksten 
+Om de resultaten op steekproefniveau inzichtelijk te maken is gebruik gemaakt van een variant op een user interface die momenteel al bij Kadaster in gebruik is. Daarbij werd ook een bestaand algoritme op de resulterende akteteksten 
 losgelaten om te zien of deze - zonder specifieke training of aanvullingen - de eerste personalia en kadastrale objecten uit de akteteksten kan vinden. Dit is een belangrijk onderdeel gebleken om iets te kunnen roepen 
 over de bruikbaarheid van de resulterende akteteksten voor een domeinexpert. Een screenshot van deze viewer met ge-anonimiseerde akte is te vinden in Figuur 3.  
 
 <figure id="figuur-3">
   <a href="/assets/images/akte-ai-viewer-screenshot-redacted.png">
-    <img src="/assets/images/akte-ai-viewer-screenshot-redacted.png">
+    <img src="/assets/images/akte-ai-viewer-screenshot-redacted.png" alt="Screenshot user interface">
   </a>
   <figcaption>
     Figuur 3 ― Screenshot van de gebruikte user interface (klik voor een groter beeld)
@@ -166,7 +166,7 @@ Om inzicht te krijgen in de kwaliteit van de akteteksten is gebruik gemaakt van 
 In onderstaande tabel wordt de verdeling voor de eerste twee indicatoren getoond.
 
 <figure id="figuur-tekst-3">
-    <img src="/assets/images/akteocr-kwaliteit-tabel-resultaat.PNG">
+    <img src="/assets/images/akteocr-kwaliteit-tabel-resultaat.PNG" alt="Kwaliteit tabel resultaat">
 </figure>
 
 In deze tabel is te zien dat het merendeel van de akteteksten, ongeveer 1,5 miljoen, het label groen heeft gekregen en dus wordt beschouwd als goede akteteksten. Ongeveer 11% van de akteteksten heeft groen op de ruisindicator maar oranje op de indicator voor gevonden woorden. 
@@ -177,7 +177,7 @@ Het is te verwachten dat een oudere akte vaak een slechtere scan heeft en daardo
 
 <figure id="figuur-4">
   <a href="/assets/images/akteocr-resultaten-jaar.png">
-    <img src="/assets/images/akteocr-resultaten-jaar.png">
+    <img src="/assets/images/akteocr-resultaten-jaar.png" alt="Resultaten per jaar">
   </a>
   <figcaption>
     Figuur 4 ― Resultaten voor akteteksten uitgezet per jaar van aanbieding
@@ -195,10 +195,10 @@ Over het algemeen kan er worden geconcludeerd dat de kwaliteitsscore vooral een 
 Wel is er nog een kanttekening te plaatsen over de bruikbaarheid van akten, ook als de leesbaarheid zeer hoog is. Vaak zit de waarde in een akte in het vinden van de meest belangrijke feiten en essentialia uit de gegeven aktetekst. In de praktijk komt het nog wel eens voor dat juist deze essentialia door de notaris werd benadrukt door bijvoorbeeld de eigennamen te onderstrepen. 
 We zien in de resultaten terug dat dit soms precies een stuk is waar de OCR-techniek over struikelde, ook als de rest van de akte van zeer hoge kwaliteit is. 
 Daarom kan er met een hoge kwaliteit voor een akte nog niet per se een foutloos en volledig bruikbare akte worden geconcludeerd. 
-Een voorbeeld van een akte met een dergelijke nadruk op essentialia vind je hieronder in Figuur 5(geanonimiseerd).
+Een voorbeeld van een akte met een dergelijke nadruk op essentialia vind je hieronder in Figuur 5 (geanonimiseerd).
 <figure id="figuur-5">
   <a href="/assets/images/akteocr-voorbeeld-bruikbaarheid.png">
-    <img src="/assets/images/akteocr-voorbeeld-bruikbaarheid.png">
+    <img src="/assets/images/akteocr-voorbeeld-bruikbaarheid.png" alt="Voorbeeld bruikbaarheid">
   </a>
   <figcaption>
     Figuur 5 ― Voorbeeld van een aktetekst waarbij juist de personalia slecht leesbaar waren
@@ -213,7 +213,7 @@ groen, oranje en rood respectievelijk.
 
 <figure id="figuur-6">
   <a href="/assets/images/akteocr-resultaat-groen.png">
-    <img src="/assets/images/akteocr-resultaat-groen.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-groen.png" width="692" height="320" alt="Resultaten groen">
   </a>
   <figcaption>
     Figuur 6 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse groen scoorden.
@@ -222,16 +222,16 @@ groen, oranje en rood respectievelijk.
 
 <figure id="figuur-7">
   <a href="/assets/images/akteocr-resultaat-oranje.png">
-    <img src="/assets/images/akteocr-resultaat-oranje.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-oranje.png" width="692" height="320" alt="Resultaten oranje">
   </a>
   <figcaption>
     Figuur 7 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse oranje scoorden.
   </figcaption>
 </figure>
 
-<figure id="figuur-7">
+<figure id="figuur-8">
   <a href="/assets/images/akteocr-resultaat-rood.png">
-    <img src="/assets/images/akteocr-resultaat-rood.png" width="692" height="320">
+    <img src="/assets/images/akteocr-resultaat-rood.png" width="692" height="320" alt="Resultaten rood">
   </a>
   <figcaption>
     Figuur 5 ― Resultaten van nieuwe OCR technieken wanneer we deze toepassen op akten die in de voorgaande analyse rood scoorden.
@@ -248,7 +248,7 @@ Deze scoren allebei overwegend beter dan de oude akteteksten. Tesseract en ABBYY
 De verschillende akteteksten laten daarnaast zien dat Google en Azure ook daadwerkelijk de leesbaarheid en bruikbaarheid kunnen verbeteren. 
 We hebben verschillende resultanten bekeken en vergeleken en Google en Azure herkennen meer woorden correct. Ook hebben zij bijvoorbeeld minder moeite met onderstreepte woorden waardoor zij ook vaker de essentialia correct uit de akte halen.
 
-Ook in de rode aktetensten weten Azure en Google een grote kwaliteitssprong te realiseren en scoort Azure weer het beste. 
+Ook in de rode akteteksten weten Azure en Google een grote kwaliteitssprong te realiseren en scoort Azure weer het beste. 
 Tesseract en ABBYY weten hier ook iets beter te scoren dan de oude akteteksten maar scoren beduidend minder dan Google en Azure. 
 Azure scoort voor slechts 1% van de aktes rood. Deze aktes zijn bekeken en hieruit werd duidelijk dat de scans van dermate slechte kwaliteit zijn dat deze voor een persoon ook lastig tot niet te lezen zijn. Hetzelfde geldt voor de rode aktes van Google en een deel van de oranje aktes van Azure. De mindere scores op deze aktes liggen dus niet aan de kwaliteit van de OCR maar eerder aan de kwaliteit van de scan.   
 

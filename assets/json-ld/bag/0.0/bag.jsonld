@@ -1,50 +1,187 @@
-  
-{ 
+{
   "@context": {
+    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bag.basisregistraties.overheid.nl/def/bag#",
-    "identificatiecode" : null,
-    "beginGeldigheid": {
+    "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
+    "bronhouder": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "dct": "http://purl.org/dc/terms/",
+    "documentdatum": {
+      "@id": "dct:created",
       "@type": "xsd:date"
     },
-    "bijbehorendeWoonplaats" : {
-      "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
+    "documentnummer": {
+      "@id": "dct:identifier"
     },
-    "naamOpenbareRuimte": {
+    "eindregistratie": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geconstateerd": {
+      "@type": "xsd:boolean"
+    },
+    "gebruiksdoel": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/"
+      },
+      "@id": "gebruiksdoel",
+      "@type": "@id"
+    },
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_punt": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie_vlak": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "gml_id": null,
+    "heeftalshoofdadres" : {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "hoofdadres",
+      "@type": "@id"
+    },
+    "heeftalsnevenadres" : {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+      },
+      "@id": "nevenadres",
+      "@type": "@id"
+    },
+    "huisnummer": {
+      "@type": "xsd:positiveInteger"
+    },
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/"
+      },
+      "@type": "@id"
+    },
+    "inonderzoek": null,
+    "lokaalid": "nen3610:lokaalID",
+    "ligplaatsstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "ligtaan": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbareRuimte/"
+      },
+      "@id": "ligtAan",
+      "@type": "@id"
+    },
+    "ligtin": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/"
+      },
+      "@id": "ligtIn",
+      "@type": "@id"
+    },
+    "maaktdeeluitvan": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
+      },
+      "@id": "maaktDeelUitVan",
+      "@type": "@id"
+    },
+    "nummeraanduidingstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "openbareruimtestatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "pandstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "tijdstipregistratielv": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "objectbegintijd": {
+      "@id": "nen3610:beginGeldigheid",
+      "@type": "xsd:date"
+    },
+    "objecteindtijd": {
+      "@id": "nen3610:eindGeldigheid",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
+    "openbareruimtetype": {
+      "@context": {
+        "@base": "http://definities.geostandaarden.nl/def/nen3610#"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "peilDatum": null,
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "standplaatsstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "tijdstipregistratie": {
+      "@id": "tijdstipRegistratie",
+      "@type": "xsd:dateTime"
+    },
+    "verblijfsobjectstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "woonplaatsnaam": {
+      "@id": "skos:prefLabel",
       "@language": "nl"
     },
-    "naamWoonplaats": {
-      "@language": "nl"
-    },
-    "nummeraanduiding" : {
+    "woonplaatsstatus": {
       "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
-        
-      }
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
     },
-    "OpenbareRuimte": {
-      "@context": {
-        "@base": "https://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/",
-        "@type" : "type"
-      }
-    },
-    "status": {
-      "@language": "nl"
-    },
-    "woonplaats": {
-      "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/woonplaats/"
-      }
-    },
-    "Pand": {
-      "@context": {
-        "@base" : "https://bag.basisregistraties.overheid.nl/bag/id/pand/",
-        "identificatiecode": "@id"
-      }
-    },
-    "xsd": "https://www.w3.org/2001/XMLSchema#",
-    "data": "@nest"
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
