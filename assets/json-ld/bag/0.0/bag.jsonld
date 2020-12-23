@@ -3,7 +3,7 @@
     "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
-    "adreseerbaarobjectstatus": {
+    "adresseerbaarobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
       },
