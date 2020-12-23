@@ -11,7 +11,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/LDMaps_BGT/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-maps.png">
+      <img class="card-image" src="/assets/images/ld-maps.png" alt="LDMaps kaart">
       <div class="card-title">LDMaps voor de BGT</div>
       <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
     </div>
@@ -19,7 +19,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png" alt="Logo GeoDataWizard">
       <div class="card-title">GeoDataWizard</div>
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
@@ -27,7 +27,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg">
+      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Logo Loki">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
@@ -35,7 +35,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/logoexplorer.PNG">
+      <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Logo Integrale Explorer">
       <div class="card-title">Integrale Explorer</div>
       <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
     </div>
@@ -43,7 +43,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/sensrnet/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/SensRNet-logo.png">
+      <img class="card-image" src="/assets/images/SensRNet-logo.png" alt="Logo SensRNet">
       <div class="card-title">Ontwikkeling Sensorenregister</div>
       <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
     </div>
@@ -51,7 +51,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+      <img class="card-image" src="/assets/images/kwaliteits_dashboard_screenshot.PNG" alt="Screenshot Kwaliteitsdashboard">
       <div class="card-title">Generiek Kwaliteitsdashboard</div>
       <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
     </div>
@@ -59,7 +59,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg">
+      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg" alt="Skyline Rotterdam">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
@@ -67,7 +67,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="https://arcg.is/11uvDD">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/landscape-water.jpg">
+      <img class="card-image" src="/assets/images/landscape-water.jpg" alt="Natuurfoto met sloot">
       <div class="card-title">Het Effect van Natura 2000-Gebieden</div>
       <div class="card-description">De onderzoeksvraag: "Wat is het effect van de Natura 2000-gebieden op grond- en woningwaarde?", wordt in deze applicatie gevisualiseerd.</div>
     </div>
@@ -75,7 +75,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/tech-radar/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/radar-banner.png">
+      <img class="card-image" src="/assets/images/radar-banner.png" alt="Weergave radar">
       <div class="card-title">ETC Tech Radar</div>
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
@@ -83,7 +83,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png">
+      <img class="card-image" src="/assets/images/ld-vowl.png" alt="Weergave LD-VOWL">
       <div class="card-title">LD-VOWL</div>
       <div class="card-description">Het data model van de Basisregistratie Adressen en Gebouwen (BAG) in de online visualisatie tool LD-VOWL.</div>
     </div>
@@ -91,7 +91,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/telegram.png">
+      <img class="card-image" src="/assets/images/telegram.png" alt="Telegram">
       <div class="card-title">HackaLOD-Bot</div>
       <div class="card-description">Hier laten we een bot zien welke op basis van linked data routes genereert langs stolpersteine. </div>
     </div>
@@ -99,7 +99,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/huischeck">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/huis.png">
+      <img class="card-image" src="/assets/images/huis.png" alt="Huis">
       <div class="card-title">Huischeck</div>
       <div class="card-description">Vraag informatie op over uw huis en buurt door middel van de PDOK Locatieserver.  Naast een informatief overzicht wordt ook een unieke QR-code voor uw huis aangemaakt.</div>
     </div>
@@ -107,7 +107,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/livedatadashboard.png">
+      <img class="card-image" src="/assets/images/livedatadashboard.png" alt="Screenshot datadashboard">
       <div class="card-title">Tableau dashboard op live data</div>
       <div class="card-description">Dit is het dashboard dat gebruik maakt van de data in de Tableau WDC om live data te ontsluiten.</div>
     </div>
@@ -115,7 +115,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/brouwerij-tijdreis">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
+      <img class="card-image" src="/assets/images/bier.jpg" alt="Bier">
       <div class="card-title">Brouwerij Tijdreis</div>
       <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
     </div>
@@ -123,7 +123,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/flitser-tijdreis">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/flitser.svg">
+      <img class="card-image" src="/assets/images/flitser.svg" alt="Flitser">
       <div class="card-title">Flitser Tijdreis</div>
       <div class="card-description">Het ontstaan van flitser registraties in de Basisregistratie Grootschalige Topografie (BGT).  Steeds meer gemeenten in NL registreren hun ruimtelijke objecten.</div>
     </div>
@@ -131,7 +131,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/tableau">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/tableau-logo.jpg">
+      <img class="card-image" src="/assets/images/tableau-logo.jpg" alt="Logo Tableau">
       <div class="card-title">Data exploratie met Tableau</div>
       <div class="card-description">Kunnen we actuele data bij de bron gebruiken in mooie data visualisatie tools zoals Tableau?</div>
     </div>
@@ -139,7 +139,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/energielabels-voorspellen">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/energielabels.png">
+      <img class="card-image" src="/assets/images/energielabels.png" alt="Overzicht met energielabels">
       <div class="card-title">Energielabels voorspellen</div>
       <div class="card-description">Energielabels voorspellen met behulp van Machine Learning.</div>
     </div>
@@ -148,7 +148,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/webvowl.png">
+      <img class="card-image" src="/assets/images/webvowl.png" alt="WebVOWL">
       <div class="card-title">Vocabulaire visualisatie met WebVOWL</div>
       <div class="card-description">Met deze demo laten we zien dat onze datamodellen ook te visualiseren zijn met tools op het Web.</div>
     </div>
@@ -157,7 +157,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/archief-mapviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/gemeente-lisse.jpg">
+      <img class="card-image" src="/assets/images/gemeente-lisse.jpg" alt="Historische kaart">
       <div class="card-title">Archief Mapviewer</div>
       <div class="card-description">Experiment om veldwerken te linken aan huidige percelen.</div>
     </div>
@@ -165,7 +165,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/zoeken">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/lov.jpg">
+      <img class="card-image" src="/assets/images/lov.jpg" alt="LOV">
       <div class="card-title">Zoeken in metadata</div>
       <div class="card-description">Waar zoekt een data gebruiker naar?</div>
     </div>
@@ -173,7 +173,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/namen-app">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+      <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Weergave Toponamenzoeker">
       <div class="card-title">Toponamenzoeker</div>
       <div class="card-description"> In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
@@ -181,7 +181,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/verkaufsbucher-zoeken">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png" alt="Weergave Verkaufsbücher zoeker">
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>

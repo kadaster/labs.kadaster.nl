@@ -71,7 +71,7 @@ Bezoek <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">https:
 
 <figure id="figuur-5">
   <a href="https://data.labs.kadaster.nl/hack-a-lod" target="_blank">
-    <img src="kadaster-labs.png">
+    <img src="kadaster-labs.png" alt="Kadaster labs">
   </a>
   <figcaption>
     Figuur 5 ― Klik op het plaatje om de gebruikte Linked Datasets te bezoeken.

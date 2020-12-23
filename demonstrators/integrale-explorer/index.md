@@ -69,7 +69,7 @@ Een voorbeeld van een GraphQL bevraging waarbij meerdere objecten en diens infor
 
 <figure id="figuur-2">
   <a href="/assets/images/integralequery.gif">
-    <img src="/assets/images/integralequery.gif">
+    <img src="/assets/images/integralequery.gif" alt="Integrale query">
   </a>
   <figcaption>
     Figuur 2 ― Een integrale bevraging aan het GraphQL endpoint met een verzameling aan beschikbare data over één adres.
@@ -102,7 +102,7 @@ over bijvoorbeeld de WOZ waarde of de Akte bijbehorend aan een Kadastraal recht.
 
 <figure id="figuur-3">
   <a href="/assets/images/login_integrale_explorer.PNG">
-    <img src="/assets/images/login_integrale_explorer.PNG">
+    <img src="/assets/images/login_integrale_explorer.PNG" alt="Login Integrale explorer">
   </a>
   <figcaption>
     Figuur 3 ― Weren aan de deur. Alleen met de juiste toestemming kan je je data zien. 
@@ -116,7 +116,7 @@ en daar wordt meteen een integrale bevraging gestuurd richting ons GraphQL endpo
 Een voorbeeld van het resultaat vind je in Figuur 4.
 <figure id="figuur-4">
   <a href="/assets/images/integraleexplorer.PNG">
-    <img src="/assets/images/integraleexplorer.PNG">
+    <img src="/assets/images/integraleexplorer.PNG" alt="Integrale explorer">
   </a>
   <figcaption>
     Figuur 4 ― Een voorbeeld visualisatie in de Integrale Explorer
@@ -132,7 +132,7 @@ inzichtelijk kan worden gemaakt.
 
 <figure id="figuur-5">
   <a href="/assets/images/lineageexplorer.PNG">
-    <img src="/assets/images/lineageexplorer.PNG">
+    <img src="/assets/images/lineageexplorer.PNG" alt="Lineage explorer">
   </a>
   <figcaption>
     Figuur 5 ― Data Lineage en de geraadpleegde bronnen laagdrempelig beschikbaar gesteld.

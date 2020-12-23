@@ -8,7 +8,7 @@ title: Ontodia Graph Browser
   <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
       <div class="card-title">Kadaster Knowledge Graph</div>
       <div class="card-description">Beweeg door alle Linked Data die wij integraal ontsluiten en ontdek relaties tussen de verschillende bronnen. </div>
     </div>
@@ -16,7 +16,7 @@ title: Ontodia Graph Browser
   <a href="/demonstrators/graph-browser/ontodia-imbor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
       <div class="card-title">BGT - IMBOR Browser</div>
       <div class="card-description">In deze browser relateren we een normaliter gesloten set als IMBOR met de open bron BGT. </div>
     </div>

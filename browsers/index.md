@@ -11,7 +11,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="bevolking">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <img class="card-image" src="/assets/images/cbs-logo.png" alt="Logo CBS">
       <div class="card-title">Bevolkingsbrowser</div>
       <div class="card-description">Met de bevolkingsbrowser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
     </div>
@@ -19,7 +19,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="nationaal-archief">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/nationaal-archief-logo.png">
+      <img class="card-image" src="/assets/images/nationaal-archief-logo.png" alt="Logo Nationaal Archief">
       <div class="card-title">Nationaal Archief Beeldbrowser</div>
       <div class="card-description">Met deze browser kan de Beeldbank van het Nationaal Archief doorzocht worden.  Afbeeldingen kunnen worden gevonden op basis van hun onderwerp en locatie.</div>
     </div>
@@ -27,7 +27,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="grondmarkt">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg">
+      <img class="card-image" src="/assets/images/grondmarkt.jpg" alt="Grondmarkt">
       <div class="card-title">Grondmarkt Browser</div>
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
@@ -35,7 +35,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="voorzieningen">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/cbs-logo.png">
+      <img class="card-image" src="/assets/images/cbs-logo.png" alt="Logo CBS">
       <div class="card-title">Voorzieningen Browser</div>
       <div class="card-description">Een overzicht van de afstand tot verschillende voorzieningen.  Op basis van actuele statistieken van het Centraal Bureau voor de Statistiek (CBS).</div>
     </div>
@@ -43,7 +43,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="transport">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/transport.jpg">
+      <img class="card-image" src="/assets/images/transport.jpg" alt="Vervoersmiddelen">
       <div class="card-title">Transport Browser</div>
       <div class="card-description">In welke buurt is het autobezit het hoogst?  En waar rijden de meeste oude auto's rond?  Deze vragen worden beantwoord in de Transport Browser.</div>
     </div>
@@ -51,7 +51,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="brt">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Logo Kadaster">
       <div class="card-title">BRT Browser</div>
       <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
     </div>
@@ -59,7 +59,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="dbeerpedia">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
+      <img class="card-image" src="/assets/images/bier.jpg" alt="Bier">
       <div class="card-title">Linked Bier Browser</div>
       <div class="card-description">Zoek naar in Nederland vervaardigde biertjes door de zoekcriteria in te stellen. Zoek tevens naar bier brouwerijen die in Nederland gevestigd zijn.</div>
     </div>
@@ -67,7 +67,7 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
   <a href="areaal">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
       <div class="card-title">Areaal data browser</div>
       <div class="card-description">Met deze databrowser kun je Areaal data van Noord-holland doorzoeken. Hierin vind je alle wegdelen, borden en kunstwerken.</div>
     </div>

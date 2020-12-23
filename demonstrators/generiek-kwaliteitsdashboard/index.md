@@ -19,15 +19,12 @@ huidige aanpak rondom deze kwaliteitsdashboards, namelijk:
 - Wanneer een bronhouder een verbetering doorvoert over zijn registratie, is het resultaat hiervan pas een maand later in het kwaliteitsdashboard terug te zien, wanneer de analyse opnieuw gedraaid is.
 - Alhoewel de business regels betreffende de kwaliteitsanalyse opgesteld zijn door ervaren domeinexperts van de verschillende registraties, zitten ze vaak verweven in de software en is het toevoegen of aanpassen van de regels niet triviaal voor de bronhouder. 
 - Onze kwaliteitsdashboard zijn veelal registratie én product georiënteerd en buigen zich maar zelden over data kwaliteit tussen de verschillende registraties. Ze bieden geen integraal beeld over het <a href = "https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/basisregistraties-en-stelselafspraken/stelsel-van-basisregistraties/stelselplaat/"> Stelsel van Basisregistraties</a>.
-<<<<<<< HEAD
 - Deze ontkoppeling tussen registraties zien we ook in de efficiëntie van de ontwikkeling van de kwaliteitsdashboards, waarbij ieder dashboard weer een op zichzelf staand product is met eigen teams, beheer en aanpak.
-=======
-- Deze ontkoppeling tussen registraties zien we ook in de efficiëntie  van de ontwikkeling van de kwaliteitsdashboards, waarbij ieder dashboard weer een op zichzelf staand product is met eigen teams, beheer en aanpak.
->>>>>>> 9fb78b2c5b8d92d0fd089a389640e7f4736bc907
+
 
 <figure id="figuur-1">
   <a href="/assets/images/kwaliteitsdashboardbag.jpg">
-    <img src="/assets/images/kwaliteitsdashboardbag.jpg">
+    <img src="/assets/images/kwaliteitsdashboardbag.jpg" alt="Kwaliteitsdashboard BAG">
   </a>
   <figcaption>
     Figuur 1 ― Voorbeeld van het bestaande kwaliteitsdashboard voor de BAG. 
@@ -58,11 +55,7 @@ Een integrale koppeling tussen deze bronnen is tot dusver nog niet eerder gelegd
 voorbeeld is van twee bronnen die direct naar elkaar verwijzen (Immers, de WOZ aanslag wordt naar een adres verstuurd), maar beide bronnen worden in de huidige situatie als silo's 
 behandeld. Het doel is om minstens de volgende kwaliteitsregels aan het kwaliteitsdashboard toe te voegen:
 - **Onwaarschijnlijk bouwjaar (BAG)** - Dit is een voorbeeld van een check op één attribuut binnen één object in één registratie.
-<<<<<<< HEAD
 - **Onjuist gebruik van een letter in het huisnummertoevoeging veld (BAG)** - Dit is een voorbeeld van een check op twee attributen binnen één object in één registratie.
-=======
-- **Onjuist gebruik van een letter in het huisnummertoevoeging veld (BAG)** - Dit is een voorbeeld van een check op twee atrributen binnen één object in één registratie.
->>>>>>> 9fb78b2c5b8d92d0fd089a389640e7f4736bc907
 - **Nummeraanduiding zonder gerelateerd adresseerbaar object (BAG)** - Dit is een voorbeeld van een check tussen twee objecten in één registratie.
 - **Verblijfsobject ligt niet in pand** - Dit is een voorbeeld van een geometrische check tussen twee objecten in één registratie.
 - **Nummeraanduiding zonder gerelateerd WOZ-object (BAG+WOZ)** - Dit is een voorbeeld van een check tussen twee objecten in twee registraties.
@@ -73,11 +66,7 @@ behandeld. Het doel is om minstens de volgende kwaliteitsregels aan het kwalitei
 ## Datamodel van de registraties en integrale bevraging
 
 In bovenstaande introductie praten we voornamelijk over functionele eisen die wij aan onze demonstrator stellen. Uiteraard is er ook een techniek waarmee we deze demonstrator bewerkstelligen.
-<<<<<<< HEAD
 Om geïntegreerd en real-time bevragingen te kunnen uitvoeren maken wij gebruik van de querytaal <a href = "https://graphql.org/">GraphQL</a>. GraphQL is een graaf-gebaseerde API waarmee
-=======
-Om ge-integreerde en real-time bevragingen te kunnen uitvoeren maken wij gebruik van de querytaal <a href = "https://graphql.org/">GraphQL</a>. GraphQL is een graaf-gebaseerde API waarmee
->>>>>>> 9fb78b2c5b8d92d0fd089a389640e7f4736bc907
 een verscheidenheid aan bronnen integraal mee beschikbaar wordt gesteld. 
 
 Een graaf gebaseerd datamodel bestaat uit, net als in Linked Data, uit objecten en diens attributen. Wanneer we ons datamodel voor deze demonstrator visualiseren krijgen we een beeld zoals in 
@@ -85,7 +74,7 @@ Figuur 2.
 
 <figure id="figuur-2">
   <a href="/assets/images/bagwozschema.PNG">
-    <img src="/assets/images/bagwozschema.PNG">
+    <img src="/assets/images/bagwozschema.PNG" alt="BAG WOZ schema">
   </a>
   <figcaption>
     Figuur 2 ― Het gebruikte datamodel gevisualiseerd met behulp van <a href = "https://github.com/APIs-guru/graphql-voyager">GraphQL Voyager</a>
@@ -104,7 +93,7 @@ Hiervoor voegen we een extra ingang toe, zijnde de ingang voor een gemeente. Omd
 
 <figure id="figuur-3">
   <a href="/assets/images/gemeentelijkequery.gif">
-    <img src="/assets/images/gemeentelijkequery.gif">
+    <img src="/assets/images/gemeentelijkequery.gif" alt="Gemeentelijke query">
   </a>
   <figcaption>
     Figuur 3 ― Een GraphQL batch bevraging voor een gemeente.
@@ -142,7 +131,7 @@ Een visuele weergave van de Rule Engine vind je in Figuur 4.
 
 <figure id="figuur-4">
   <a href="/assets/images/ruleengine.gif">
-    <img src="/assets/images/ruleengine.gif">
+    <img src="/assets/images/ruleengine.gif" alt="Rule engine">
   </a>
   <figcaption>
     Figuur 4 ― De Rule Engine in werking.
@@ -157,12 +146,12 @@ en daarbij de vrijheid moet laten aan de bronhouder om dit in zijn eigen proces 
 
 Een screenshot van het dashboard is te vinden in Figuur 5. Hierbij vind je een uitknipsel van het dashboard zelf, maar ook van de ververs knop voor een gegeven gemeente. 
 Deze ververs knop staat in connectie met de Microservice dat de bevragingen en vernieuwing van de data realiseert. Op deze manier kan een bronhouder real-time zijn verbeteringen 
-aan zijn registratie terug zijn in het kwaliteitsdashboard.   
-<a href="/assets/images/gemeentebevraging.gif"><img src="/assets/images/gemeentebevraging.gif"></a>
+aan zijn registratie terug zijn in het kwaliteitsdashboard.
+<a href="/assets/images/gemeentebevraging.gif"><img src="/assets/images/gemeentebevraging.gif" alt="Gemeentebevraging"></a>
 
 <figure id="figuur-5">
   <a href="/assets/images/kwaliteits_dashboard_screenshot.PNG">
-    <img src="/assets/images/kwaliteits_dashboard_screenshot.PNG">
+    <img src="/assets/images/kwaliteits_dashboard_screenshot.PNG" alt="Screenshot kwaliteitsdashboard">
   </a>
   <figcaption>
     Figuur 5 ― Een screenshot van het opgeleverde dashboard.

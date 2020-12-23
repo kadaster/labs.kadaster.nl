@@ -59,7 +59,7 @@ Nu we de BGT als Linked Data voorhanden hebben, is het eenvoudig om deze te comb
 <a href="#3-basisregistraties">Figuur 3</a> geeft een overzicht van de 3 Linked Datasets BAG, BGT, en BRT.  De grootte van de cirkels correspondeert met het aantal instanties.
 
 <figure id="3-basisregistraties">
-  <img src="/assets/images/bag-bgt-brt.png">
+  <img src="/assets/images/bag-bgt-brt.png" alt="Overzicht datasets">
   <figcaption>
     Figuur 3 ― Drie basisregistraties samengebracht middels Linked Data: BAG, BGT, en BRT.
   </figcaption>
@@ -78,7 +78,7 @@ Laten we eens kijken naar een voorbeeld van hoe de 3 basisregistraties hetzelfde
 </figure>
 
 <figure id="foto-havenplein">
-  <img src="/assets/images/Havenplein_5.png">
+  <img src="/assets/images/Havenplein_5.png" alt="Havenplein" >
   <figcaption>
     Figuur 4a ― Havenplein 5 Verkeerscentrale Den Helder
   </figcaption>
@@ -92,7 +92,7 @@ De BGT wordt gebruikt in een groot aantal datasets.  <a href="#links" target="_b
 
 <figure id="links">
   <a href="/assets/images/bgt-high3.png" target="_blank">
-    <img src="/assets/images/bgt-high3.png">
+    <img src="/assets/images/bgt-high3.png" alt="Links dataset">
   </a>
   <figcaption>
     Figuur 5 ― Overzicht van de datasets en links die tijdens de High3 gemaakt en gebruikt zijn.
@@ -105,7 +105,7 @@ Een voorbeeld van zo'n dataset is de IMBOR.  Hierin wordt opgeslagen wat de kwal
 
 <figure id="kwaliteit-wegdek">
   <a href="https://data.labs.kadaster.nl/bgt-high3/-/queries/kwaliteit-wegdek" target="_blank">
-    <img src="/assets/images/noord-holland-kwaliteit-wegdek.png" height="500">
+    <img src="/assets/images/noord-holland-kwaliteit-wegdek.png" height="500" alt="Cirkeldiagram kwaliteit wegdek">
   </a>
   <figcaption>
     Figuur 6 ― Kwaliteit van het wegdek in Noord-Holland.  Bron: Linked Data versie van <a href="https://data.labs.kadaster.nl/bgt-high3/imbor" target="_blank">imbor</a>.
@@ -116,7 +116,7 @@ Naast de kwaliteit van het wegdek wordt in de IMBOR ook opgeslagen wat wanneer w
 
 <figure id="deklaag-vervanging-per-jaar">
   <a href="https://data.labs.kadaster.nl/bgt-high3/-/queries/deklaag-vervanging-per-jaar" target="_blank">
-    <img src="/assets/images/noord-holland-wegdek.png">
+    <img src="/assets/images/noord-holland-wegdek.png" alt="Lijndiagram wegdek Noord-Holland">
   </a>
   <figcaption>
     Figuur 7 ― Aanleg en onderhoud aan het wegdek in Noord-Holland.  Brond: Linked Data versie van <a href="https://data.labs.kadaster.nl/bgt-high3/imbor" target="_blank">imbor</a>.

@@ -9,7 +9,7 @@ Data is de motor van het Kadaster.  Daarom is Kadaster sinds jaar en dag continu
 Voor meer informatie over deze Kadaster Labs of over het Data Science team kunt u contact opnemen met Erwin Folmer ([erwin.folmer@kadaster.nl](mailto:erwin.folmer@kadaster.nl)).
 
 <figure id="figuur-1">
-  <img src="/assets/images/data-science-process.jpg">
+  <img src="/assets/images/data-science-process.jpg" alt="Data science proces">
   <figcaption>
     Figuur 1 ― Schematisch overzicht van het Data Science Process.
   </figcaption>

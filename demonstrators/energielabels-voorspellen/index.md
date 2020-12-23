@@ -16,7 +16,7 @@ De applicatie op deze pagina kan een **ruwe** inschatting maken van het energiel
 
 Naast broodroosters en wasmachines kunnen ook panden over een energielabel beschikken.  Het energielabel voor panden is een van de belangrijkste instrumenten in Europa om inzicht te krijgen in de energieconsumptie van huizen en panden.  Velen hebben hier al kennis mee gemaakt: bij verkoop van een pand moet er een energielabel van dit pand bekend zijn.  De labelindeling en het bijbehorende kleurenpalet is als volgt:
 
-<img src="energy_performance_rating.svg" />
+<img src="energy_performance_rating.svg" alt="Energy performance rating">
 
 *Aangepast van [Wikipedia](https://en.wikipedia.org/wiki/Energy_Performance_Certificate_(United_Kingdom))*
 

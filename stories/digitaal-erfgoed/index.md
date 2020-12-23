@@ -125,7 +125,7 @@ te zien.
 
 <!-- '''Minuutplan Lisse sectie A blad 1''' -->
 <figure id="figuur-4">
-  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="600">
+  <img src="https://images.memorix.nl/rce/download/1200x1200/a454004e-33cf-bb43-7e66-f169d804c4e1.jpg" height="600" alt="Historische kaart Keukenhof">
   <figcaption>
     Figuur 4 ― Minuutplan Lisse Sectie C, blad 2 met daarop het terrein van Keukenhof.
   </figcaption>
@@ -270,7 +270,7 @@ huisjes wonen, hoe oud ze zijn en wat hun beroep is.
 
 <figure id="Lisse_Stationsweg_164-166_01">
   <a href="https://cultureelerfgoed.nl/monumenten/511416" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg" height="600">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Lisse_Stationsweg_164-166_01.jpg" height="600" alt="'t Hoogje">
   </a>
   <figcaption>
     Figuur 10 ― Afbeelding van monument 't Hoogje.

@@ -36,7 +36,7 @@ Vanaf deze plek zoeken we in de SOR over welke terreindelen het gaat. Tenslotte 
 
 <figure id="figuur-1b">
   <a href="/assets/images/sor-aanvullend-story.png">
-    <img src="/assets/images/sor-aanvullend-story.png">
+    <img src="/assets/images/sor-aanvullend-story.png" alt="Overzicht Databronnen">
   </a>
   <figcaption>
     Figuur 2 ― Overzicht van de betrokken databronnen

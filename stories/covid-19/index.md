@@ -16,7 +16,7 @@ Deze Data Story voert live bevragingen uit over de Corona statistieken voor Nede
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-ziekenhuisopnames-kaart">
   </query>
   <figcaption>
-    Figuur 1a ― Overzicht van het totale aantal ziekenhuisopnames per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png">
+    Figuur 1a ― Overzicht van het totale aantal ziekenhuisopnames per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png" alt="jet">
   </figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ Deze Data Story voert live bevragingen uit over de Corona statistieken voor Nede
   <query data-config-ref="https://data.labs.kadaster.nl/rivm/-/queries/covid19-infecties-kaart">
   </query>
   <figcaption>
-    Figuur 1b ― Overzicht van het totale aantal infecties per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png">
+    Figuur 1b ― Overzicht van het totale aantal infecties per gemeente.  De kleurcodering loopt van koud/blauw voor lage aantallen naar warm/rood voor hoge aantallen: <img src="/assets/images/jet.png" alt="jet">
   </figcaption>
 </figure>
 

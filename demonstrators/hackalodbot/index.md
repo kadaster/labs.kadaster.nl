@@ -7,7 +7,7 @@ title: Use Case ― HackaLOD-Bot
     <a href="https://telegram.me/HackaLODBot">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/telegram.png">
+      <img class="card-image" src="/assets/images/telegram.png" alt="Telegram">
       <div class="card-title">HackaLOD-Bot</div>
       <div class="card-description">Hier laten we een bot zien welke op basis van linked data routes genereert langs stolpersteine. </div>
     </div>
@@ -60,7 +60,7 @@ Met dank aan lead developer Menno Holtkamp.
     <a href="https://telegram.me/HackaLODBot">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/telegram.png">
+      <img class="card-image" src="/assets/images/telegram.png" alt="Telegram">
       <div class="card-title">Hack-a-LOD-Bot</div>
       <div class="card-description">Hier laten we een bot zien welke obv linked data routes genereert langs stolpersteine. </div>
     </div>
