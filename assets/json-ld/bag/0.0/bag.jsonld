@@ -107,6 +107,10 @@
       "@id": "status",
       "@type": "@id"
     },
+    "oorspronkelijkbouwjaar": {
+      "@id": "bouwjaar",
+      "@type": "xsd:gYear"
+    },
     "openbareruimtestatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
