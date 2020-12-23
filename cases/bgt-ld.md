@@ -55,6 +55,22 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data Story die laat zien hoe de BGT de planning van wegwerkzaamheden kan ondersteunen.</div>
     </div>
   </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/hoogspanningsmast-nl" >
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/hoogspanning.jpg" alt="Hoogspanningsmasten">
+      <div class="card-title">BGT Hoogspanningsmasten Kaart</div>
+      <div class="card-description">Deze data story toont het totaal aantal hoogspanningsmasten in Nederland en visualiseert deze op een kaart.</div>
+    </div>
+  </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bgt-plustype-bomen-gemeenten" >
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/bomen.jpg" alt="BomenPlusData">
+      <div class="card-title">BGT Bomen als Plus-Type Data</div>
+      <div class="card-description">Deze data story laat zien welke gemeenten data over BGT plus-type bomen in heel Nederland vastleggen.</div>
+    </div>
+  </a>
     <a href="/demonstrators/flitser-tijdreis">
     <div class="card">
       <div class="card-type">Demonstrator</div>
