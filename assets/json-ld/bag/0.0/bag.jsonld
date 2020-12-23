@@ -55,14 +55,14 @@
     "gml_id": null,
     "heeftalshoofdadres" : {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "hoofdadres",
       "@type": "@id"
     },
     "heeftalsnevenadres" : {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/nummeraanduiding/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "nevenadres",
       "@type": "@id"
@@ -88,21 +88,21 @@
     },
     "ligtaan": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbareRuimte/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "ligtAan",
       "@type": "@id"
     },
     "ligtin": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "ligtIn",
       "@type": "@id"
     },
     "maaktdeeluitvan": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "maaktDeelUitVan",
       "@type": "@id"
