@@ -3,6 +3,13 @@
     "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
+    "adresseerbaarobjectstatus": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
     "bronhouder": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/"
@@ -168,6 +175,7 @@
       "@id": "tijdstipRegistratie",
       "@type": "xsd:dateTime"
     },
+    "typeRegistratie": "@type",
     "verblijfsobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"

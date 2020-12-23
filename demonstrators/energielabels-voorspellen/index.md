@@ -32,7 +32,7 @@ Het blijkt niet eenvoudig om een model voor energielabels van woningen handmatig
 Deze demo is gemaakt met enkel **open data en open source software**.  We hebben een een eenvoudig decision tree model met een maximum diepte van 6 beslisstappen getraind op het zo goed mogelijk voorspellen van energielabels op basis van bouwjaar en pandoppervlak.  Daartoe zijn energielabels gebruikt die de [Rijksdienst voor Ondernemend Nederland (RVO)](https://rvo.nl) verzamelt en ter beschikking heeft gesteld.  Er is gewerkt met de energielabels van juni 2017.
 
 In kort bestek hebben we het volgende gedaan:
-- Een decision tree [model](https://github.com/SPINLab/energy-performance-prediction/blob/master/model/energy_label_decision_tree_demo_model.py) is getraind, met behulp van [scikit-learn](http://scikit-learn.org).
-- Het getrainde model is [met een script vertaald](https://github.com/SPINLab/energy-performance-prediction/blob/master/model/dtree_to_code.py) naar een geneste set [beslisregels in JavaScript](https://github.com/PDOK/data.labs.pdok.nl/blob/master/apps/energielabels/decisionTree.js).
+- Een decision tree model is getraind, met behulp van [scikit-learn](http://scikit-learn.org).
+- Het getrainde model is met een script vertaald naar een geneste set [beslisregels in JavaScript](https://github.com/PDOK/data.labs.pdok.nl/blob/master/apps/energielabels/decisionTree.js).
 - Dit model, getransformeerd naar JavaScript, wordt ingeladen in de browser bij het opvragen van deze pagina.
 - Telkens als de kaart wordt verschoven, worden er nieuwe panden uit de [PDOK BAG WFS](http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1c0dcc64-91aa-4d44-a9e3-54355556f5e7) gehaald.  De eigenschappen bouwjaar en oppervlak worden door de decision tree vertaald naar een inschatting van een energielabel.  Voor het label wordt de bijbehorende kleurcode berekend en vervolgens wordt het pand in de kaart ingekleurd met deze kleur.
