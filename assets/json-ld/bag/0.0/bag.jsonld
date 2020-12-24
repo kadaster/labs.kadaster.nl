@@ -150,6 +150,7 @@
     "ogc_fid": null,
     "openbareruimtetype": {
       "@context": {
+        "@vocab": "http://definities.geostandaarden.nl/def",
         "@base": "http://definities.geostandaarden.nl/def/nen3610#"
       },
       "@id": "type",
