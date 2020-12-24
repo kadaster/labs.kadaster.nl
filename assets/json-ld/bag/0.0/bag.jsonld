@@ -75,6 +75,7 @@
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/"
       },
+      "@id": "nen3610:identificatie",
       "@type": "@id"
     },
     "inonderzoek": null,
