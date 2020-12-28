@@ -184,6 +184,10 @@
       "@id": "status",
       "@type": "@id"
     },
+    "voorkomenidentificatie": {
+      "@id": "prov:order",
+      "@type": "xsd:positiveInteger"
+    },
     "woonplaatsnaam": {
       "@id": "skos:prefLabel",
       "@language": "nl"
