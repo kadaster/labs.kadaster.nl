@@ -26,7 +26,7 @@
       "@id": "dct:identifier"
     },
     "eindregistratie": {
-      "@id": "prov:invalidatedAtTime",
+      "@id": "eindRegistratie",
       "@type": "xsd:dateTime"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -133,6 +133,10 @@
       "@id": "status",
       "@type": "@id"
     },
+    "tijdstipregistratie": {
+      "@id": "beginRegistratie",
+      "@type": "xsd:dateTime"
+    },
     "tijdstipregistratielv": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
@@ -171,6 +175,10 @@
       },
       "@id": "status",
       "@type": "@id"
+    },
+    "tijdstipeindregistratielv": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
     },
     "tijdstipregistratie": {
       "@id": "tijdstipRegistratie",
