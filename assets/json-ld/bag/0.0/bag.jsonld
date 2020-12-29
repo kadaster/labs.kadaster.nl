@@ -133,14 +133,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "tijdstipregistratie": {
-      "@id": "beginRegistratie",
-      "@type": "xsd:dateTime"
-    },
-    "tijdstipregistratielv": {
-      "@id": "prov:generatedAtTime",
-      "@type": "xsd:dateTime"
-    },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectbegintijd": {
@@ -178,6 +170,14 @@
     },
     "tijdstipeindregistratielv": {
       "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratie": {
+      "@id": "beginRegistratie",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratielv": {
+      "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
     "type": {
