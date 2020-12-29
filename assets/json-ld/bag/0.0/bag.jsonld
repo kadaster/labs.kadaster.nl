@@ -184,7 +184,6 @@
       "@context": {
         "@base": "http://bag2.basisregistraties.overheid.nl/def/"
       },
-      "@id": "type",
       "@type": "@id"
     },
     "typeRegistratie": "@type",
