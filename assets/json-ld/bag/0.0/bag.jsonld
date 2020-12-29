@@ -44,14 +44,6 @@
     "geometrie": {
       "@type": "geo:wktLiteral"
     },
-    "geometrie_punt": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
-    "geometrie_vlak": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
     "gml_id": null,
     "heeftalshoofdadres" : {
       "@context": {
@@ -135,11 +127,11 @@
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "objectbegintijd": {
+    "begingeldigheid": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
-    "objecteindtijd": {
+    "eindgeldigheid": {
       "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
@@ -186,7 +178,6 @@
       },
       "@type": "@id"
     },
-    "typeRegistratie": "@type",
     "verblijfsobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
