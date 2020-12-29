@@ -9,5 +9,4 @@ yarn.lock
 
 *.DS_Store
 
-#Intellij
-.idea
+/.idea
