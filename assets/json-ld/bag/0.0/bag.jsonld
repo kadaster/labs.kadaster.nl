@@ -151,20 +151,6 @@
       "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
-    "vorigeGeldigeVersie": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
-      },
-      "@id": "nen3610:vorigeGeldigeVersie",
-      "@type": "@id"
-    },
-    "vorigeGeregistreerdeVersie": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
-      },
-      "@id": "nen3610:vorigeGeregistreerdeVersie",
-      "@type": "@id"
-    },
     "ogc_fid": null,
     "openbareruimtetype": {
       "@context": {
@@ -212,6 +198,20 @@
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
+    },
+    "vorigeGeldigeVersie": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeldigeVersie",
+      "@type": "@id"
+    },
+    "vorigeGeregistreerdeVersie": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeregistreerdeVersie",
+      "@type": "@id"
     },
     "woonplaatsnaam": {
       "@id": "skos:prefLabel",
