@@ -180,10 +180,6 @@
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "tijdstipregistratie": {
-      "@id": "tijdstipRegistratie",
-      "@type": "xsd:dateTime"
-    },
     "type": {
       "@context": {
         "@base": "http://bag2.basisregistraties.overheid.nl/def/"
