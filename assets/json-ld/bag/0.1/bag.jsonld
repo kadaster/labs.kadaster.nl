@@ -111,11 +111,22 @@
       "@id": "bouwjaar",
       "@type": "xsd:gYear"
     },
+    "openbareruimtenaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
     "openbareruimtestatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
       },
       "@id": "status",
+      "@type": "@id"
+    },
+    "openbareruimtetype": {
+      "@context": {
+        "@base": "http://definities.geostandaarden.nl/def/nen3610#"
+      },
+      "@id": "type",
       "@type": "@id"
     },
     "pandstatus": {
@@ -136,24 +147,6 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
-    "openbareruimtenaam": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
-    },
-    "openbareruimtestatus": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
-      },
-      "@id": "status",
-      "@type": "@id"
-    },
-    "openbareruimtetype": {
-      "@context": {
-        "@base": "http://definities.geostandaarden.nl/def/nen3610#"
-      },
-      "@id": "type",
-      "@type": "@id"
-    },
     "peilDatum": null,
     "primaryTopic": {
       "@context": {
