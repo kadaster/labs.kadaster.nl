@@ -7,7 +7,6 @@
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
       },
-      "@id": "status",
       "@type": "@id"
     },
     "bronhouder": {
