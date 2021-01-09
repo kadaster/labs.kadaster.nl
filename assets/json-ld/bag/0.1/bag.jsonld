@@ -129,6 +129,9 @@
       "@id": "type",
       "@type": "@id"
     },
+    "oppervlakte": {
+      "@type": "xsd:positiveInteger"
+    },
     "pandstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
