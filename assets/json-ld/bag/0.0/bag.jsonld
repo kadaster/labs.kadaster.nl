@@ -144,6 +144,10 @@
       "@type": "xsd:date"
     },
     "ogc_fid": null,
+    "openbareruimtenaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
     "openbareruimtetype": {
       "@context": {
         "@base": "http://definities.geostandaarden.nl/def/nen3610#"
@@ -193,6 +197,10 @@
       },
       "@id": "status",
       "@type": "@id"
+    },
+    "verkorteopenbareruimtenaam": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
     },
     "voorkomenidentificatie": {
       "@id": "prov:order",
