@@ -205,6 +205,10 @@
       "@id": "nen3610:vorigeGeregistreerdeVersie",
       "@type": "@id"
     },
+    "verkorteopenbareruimtenaam": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
+    },
     "woonplaatsnaam": {
       "@id": "skos:prefLabel",
       "@language": "nl"
