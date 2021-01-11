@@ -50,6 +50,9 @@ An Integrated Approach for Linked Data Browsing
 GeoYASGUI: The GeoSPARQL Query Editor and Result Set Visualizer
 : Wouter Beek, Erwin Folmer, Laurens Rietveld, John Walker.  In: _International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences_, 2017, pp. 39-42, [online toegang](https://doi.org/10.5194/isprs-archives-XLII-4-W2-39-2017).
 
+Towards Self-Service GIS - Combining the Best of the Semantic Web and Web GIS
+: Alexandra Rowland, Erwin Folmer, Wouter Beek. In: _ISPRS International Journal of Geo-Information_, Vol 9, No. 12, 2020, [online toegang](https://www.mdpi.com/2220-9964/9/12/753).  
+
 # Applicaties
 
 ## LinkDaLe

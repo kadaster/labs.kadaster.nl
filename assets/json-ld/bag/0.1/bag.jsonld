@@ -10,10 +10,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "begingeldigheid": {
-      "@id": "nen3610:beginGeldigheid",
-      "@type": "xsd:date"
-    },
     "bronhouder": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/"
@@ -29,24 +25,20 @@
     "documentnummer": {
       "@id": "dct:identifier"
     },
-    "eindgeldigheid": {
-      "@id": "nen3610:eindGeldigheid",
-      "@type": "xsd:date"
-    },
     "eindregistratie": {
       "@id": "eindRegistratie",
       "@type": "xsd:dateTime"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "geconstateerd": {
+      "@type": "xsd:boolean"
+    },
     "gebruiksdoel": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/"
       },
       "@id": "gebruiksdoel",
       "@type": "@id"
-    },
-    "geconstateerd": {
-      "@type": "xsd:boolean"
     },
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": {
@@ -79,6 +71,7 @@
       "@type": "@id"
     },
     "inonderzoek": null,
+    "lokaalid": "nen3610:lokaalID",
     "ligplaatsstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -100,7 +93,6 @@
       "@id": "ligtIn",
       "@type": "@id"
     },
-    "lokaalid": "nen3610:lokaalID",
     "maaktdeeluitvan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -108,8 +100,6 @@
       "@id": "maaktDeelUitVan",
       "@type": "@id"
     },
-    "namespace": "nen3610:namespace",
-    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "nummeraanduidingstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -117,7 +107,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "ogc_fid": null,
     "oorspronkelijkbouwjaar": {
       "@id": "bouwjaar",
       "@type": "xsd:gYear"
@@ -150,6 +139,17 @@
       "@id": "status",
       "@type": "@id"
     },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "begingeldigheid": {
+      "@id": "nen3610:beginGeldigheid",
+      "@type": "xsd:date"
+    },
+    "eindgeldigheid": {
+      "@id": "nen3610:eindGeldigheid",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
     "peilDatum": null,
     "primaryTopic": {
       "@context": {
@@ -187,10 +187,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "verkorteopenbareruimtenaam": {
-      "@id": "skos:altLabel",
-      "@language": "nl"
-    },
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
@@ -208,6 +204,10 @@
       },
       "@id": "nen3610:vorigeGeregistreerdeVersie",
       "@type": "@id"
+    },
+    "verkorteopenbareruimtenaam": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
     },
     "woonplaatsnaam": {
       "@id": "skos:prefLabel",
