@@ -122,10 +122,7 @@
       "@id": "status",
       "@type": "@id"
     },
-    "openbareruimtetype": {
-      "@id": "nen3610:type",
-      "@type": "@id"
-    },
+    "openbareruimtetype": "nen3610:type",
     "oppervlakte": {
       "@type": "xsd:positiveInteger"
     },
