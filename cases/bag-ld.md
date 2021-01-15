@@ -1,7 +1,7 @@
 ---
+banner: /assets/images/bag-bronhouder.jpg
 layout: page
 title: Use Case ― BAG LD Basisregistratie Adressen & Gebouwen (2.0) als Linked Data
-banner: /assets/images/bag-bronhouder.jpg
 
 ---
 
