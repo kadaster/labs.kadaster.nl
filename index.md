@@ -28,6 +28,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
 
 
 <div class="cards-wrapper">
+  <a href="/cases/bag-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
+      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+    </div>
+  </a>
   <a href="/cases/bgt-ld">
     <div class="card">
       <div class="card-type">Use Case</div>
