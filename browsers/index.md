@@ -16,14 +16,6 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Met de bevolkingsbrowser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
     </div>
   </a>
-  <a href="nationaal-archief">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/nationaal-archief-logo.png">
-      <div class="card-title">Nationaal Archief Beeldbrowser</div>
-      <div class="card-description">Met deze browser kan de Beeldbank van het Nationaal Archief doorzocht worden.  Afbeeldingen kunnen worden gevonden op basis van hun onderwerp en locatie.</div>
-    </div>
-  </a>
   <a href="grondmarkt">
     <div class="card">
       <div class="card-type">Browser</div>
@@ -54,14 +46,6 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">BRT Browser</div>
       <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
-    </div>
-  </a>
-  <a href="dbeerpedia">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Linked Bier Browser</div>
-      <div class="card-description">Zoek naar in Nederland vervaardigde biertjes door de zoekcriteria in te stellen. Zoek tevens naar bier brouwerijen die in Nederland gevestigd zijn.</div>
     </div>
   </a>
   <a href="areaal">

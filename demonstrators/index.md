@@ -24,14 +24,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
   </a>
-  <a href="/demonstrators/loki/index.html">
+  <!-- <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -80,14 +80,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
   </a>
-  <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png">
-      <div class="card-title">LD-VOWL</div>
-      <div class="card-description">Het data model van de Basisregistratie Adressen en Gebouwen (BAG) in de online visualisatie tool LD-VOWL.</div>
-    </div>
-  </a>
   <a href="/demonstrators/hackalodbot/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -103,23 +95,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">Huischeck</div>
       <div class="card-description">Vraag informatie op over uw huis en buurt door middel van de PDOK Locatieserver.  Naast een informatief overzicht wordt ook een unieke QR-code voor uw huis aangemaakt.</div>
     </div>
-  </a>
-    <a href="/demonstrators/live-data-in-een-bi-toepassing/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/livedatadashboard.png">
-      <div class="card-title">Tableau dashboard op live data</div>
-      <div class="card-description">Dit is het dashboard dat gebruik maakt van de data in de Tableau WDC om live data te ontsluiten.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/brouwerij-tijdreis">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Brouwerij Tijdreis</div>
-      <div class="card-description">Visualisatie van het ontstaan van Nederlandse bierbrouwerijen over de afgelopen 800 jaar.</div>
-    </div>
-  </a>
   <a href="/demonstrators/flitser-tijdreis">
     <div class="card">
       <div class="card-type">Demonstrator</div>

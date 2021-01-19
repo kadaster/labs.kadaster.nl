@@ -18,14 +18,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Overzicht van alle graafschades die in 2019 veroorzaakt zijn aan kabels en leidingen in Nederland.  De gegevens zijn afkomstig van het Agentschap Telecom.</div>
     </div>
   </a>
-  <a href="/stories/covid-19/">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg">
-      <div class="card-title">Corona (COVID-19) Data Story</div>
-      <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
-    </div>
-  </a>
   <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -99,14 +91,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       </div>
     </div>
   </a>
-  <a href="./haal-centraal/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/voetbal.jpg">
-      <div class="card-title">Haal Centraal</div>
-      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
-    </div>
-  </a>
   <a href="./cbs/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -121,14 +105,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <img class="card-image" src="/assets/images/groene-stroom.png">
       <div class="card-title">CBS energiebesparingspotentie</div>
       <div class="card-description">Data Story over de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
-    </div>
-  </a>
-  <a href="./bier/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Bier Data Story</div>
-      <div class="card-description">In deze Data Story behandelen we vragen rond bier brouwerijen in Nederland, op basis van verschillende datasets.</div>
     </div>
   </a>
   <a href="./digitaal-erfgoed/index.html">
