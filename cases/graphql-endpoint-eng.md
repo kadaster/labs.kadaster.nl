@@ -6,6 +6,10 @@ title: GraphQL Open endpoint
 
 Voor de Nederlandse versie, <a href = "/cases/graphql-endpoint">klik hier</a>.
 
+## Status GraphQL Endpoint
+The GraphQL endpoint is always available at <a href="https://labs.kadaster.nl/gateway">this link</a>.
+This page is no longer 100% representative of the content on this endpoint, specifically on the data model and specific UOI components. The documentation on how to use the overall endpoint still holds.
+
 ### Disclaimer
 This page describes the first open GraphQL endpoint that the Cadastre Land Registry makes available as an experiment. This endpoint is maintained with a "best-effort" service level and only concerns open data sources at the Cadastre Land Registry. For this endpoint, we cannot guarantee that the data is always up-to-date and will occasionally (without announcement) renew the endpoint as part of further development. Do you have any questions or comments about this? Then  <a href="/about">contact us</a>.
 
