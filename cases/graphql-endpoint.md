@@ -14,7 +14,7 @@ Deze pagina is niet langer 100% representatief voor de inhoud van dit endpoint, 
 Deze pagina beschrijft het eerste open GraphQL endpoint wat het Kadaster bij wijze van experiment beschikbaar stelt. Dit endpoint wordt met een onderhouden met een 'best-effort' service level en betreft alleen open data bronnen bij het Kadaster. Wij kunnen voor dit endpoint niet garanderen dat de data altijd actueel is en zullen af en toe (onaangekondigd) het endpoint vernieuwen in het kader van doorontwikkeling. Heb je hier vragen of opmerkingen over? Neem dan <a href="/about"> contact met ons op</a>.
 
 <div class="cards-wrapper">
-  <a href="/odysseyhackathon">
+  <a href="https://labs.kadaster.nl/gateway">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">

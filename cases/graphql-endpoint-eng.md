@@ -15,7 +15,7 @@ This page describes the first open GraphQL endpoint that the Cadastre Land Regis
 
 
 <div class="cards-wrapper">
-  <a href="/odysseyhackathon">
+  <a href="https://labs.kadaster.nl/gateway">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">
