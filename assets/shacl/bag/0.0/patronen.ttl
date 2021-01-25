@@ -192,7 +192,7 @@
 
   shp:hoofdadres
     a sh:PropertyShape;#
-    sh:class bag:Nummeraanduiding;#
+    #sh:class bag:Nummeraanduiding;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft hoofdadres"@nl;#
@@ -201,7 +201,7 @@
 
   shp:nevenadres
     a sh:PropertyShape;#
-    sh:class bag:Nummeraanduiding;#
+    #sh:class bag:Nummeraanduiding;#
     sh:name "heeft nevenadres"@nl;#
     sh:nodeKind sh:IRI;#
     sh:path bag:nevenadres.
