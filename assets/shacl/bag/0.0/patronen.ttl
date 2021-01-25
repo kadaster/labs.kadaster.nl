@@ -725,7 +725,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#744-status"^^xsd:anyURI;
-    sh:class bag:StatusPand;
+    #sh:class bag:StatusPand;
     sh:in#
       ( status:bouwGestart#
         status:bouwvergunningVerleend#
@@ -965,7 +965,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#772-status"^^xsd:anyURI;
-    sh:class bag:StatusPlaats;
+    #sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
