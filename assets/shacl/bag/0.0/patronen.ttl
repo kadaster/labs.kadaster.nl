@@ -16,6 +16,12 @@
 @prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/> . 
 @prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/> .
 
+
+
+
+
+
+
 graph:patronen {
   shp:Identificatie
     a sh:ShapeNode;#
