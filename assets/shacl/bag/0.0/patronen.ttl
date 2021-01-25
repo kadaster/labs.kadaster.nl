@@ -1256,7 +1256,7 @@
     sh:nodeKind sh:Literal;#
     sh:name "is geconstateerd"@nl;#
     sh:path bag:geconstateerd;
-    sh:pattern "(false|true)";#
+    #sh:pattern "(false|true)";#
     skos:definition "Een aanduiding waarmee kan worden aangegeven dat een woonplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
     skos:scopeNote "Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen."@nl.
 
