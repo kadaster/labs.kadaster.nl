@@ -46,8 +46,21 @@ graph:patronen {
     sh:minCount 1;
     sh:name "heeft naamgevingsruimte"@nl;
     sh:nodeKind sh:Literal;#
-    sh:path nen3610:namespace.
-    #sh:pattern "^NL.IMBAG.*".
+    sh:path nen3610:namespace;
+    sh:pattern "^NL.IMBAG.".
+
+  shp:value 
+    a sh:PropertyShape;#
+    sh:datatype xsd:string;
+    sh:description "De rdf:value mag gebruikt worden om het NEN3610ID als één string te beschrijven. Daarbij dient de waarde opbouwd te zijn volgens het sjabloon {namespace}{lokaalID}{versie}"@nl;
+    sh:maxCount 1;
+    sh:name "de gecombineerde identificatie"@nl;
+    sh:nodeKind sh:Literal;#
+    sh:property 
+      shp:lokaalID,
+      shp:namespace;
+    sh:path rdf:value.
+
 
   shp:Ligplaats
     a sh:ShapeNode;#
@@ -168,7 +181,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#762-status"^^xsd:anyURI;
-    #sh:class bag:StatusPlaats;
+    sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
@@ -182,7 +195,7 @@ graph:patronen {
 
   shp:hoofdadres
     a sh:PropertyShape;#
-    #sh:class bag:Nummeraanduiding;#
+    sh:class bag:Nummeraanduiding;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft hoofdadres"@nl;#
@@ -191,17 +204,19 @@ graph:patronen {
 
   shp:nevenadres
     a sh:PropertyShape;#
-    #sh:class bag:Nummeraanduiding;#
+    sh:class bag:Nummeraanduiding;#
     sh:name "heeft nevenadres"@nl;#
     sh:nodeKind sh:IRI;#
     sh:path bag:nevenadres.
+
 
   shp:Nummeraanduiding
     a sh:ShapeNode;#
     sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding"@nl;#
-    sh:property shp:Nummeraanduiding_identificatie;
+    sh:property
+      shp:Nummeraanduiding_identificatie;
     sh:targetClass bag:Nummeraanduiding.
 
   shp:Nummeraanduiding_identificatie
@@ -318,8 +333,10 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#737-status"^^xsd:anyURI;
-    #sh:class bag:StatusNaamgeving;
-    sh:in ( status:naamgevingIngetrokken status:naamgevingUitgegeven );#
+    sh:class bag:StatusNaamgeving;
+    sh:in#
+      ( status:naamgevingIngetrokken#
+        status:naamgevingUitgegeven );#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft status"@nl;
@@ -337,7 +354,7 @@ graph:patronen {
     sh:name "heeft huisletter"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:huisletter;
-    sh:pattern "[A-Za-z]{1}";
+    sh:pattern "[A-Z][a-z]{1}";
     skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."@nl.
 
   shp:huisnummer
@@ -362,7 +379,7 @@ graph:patronen {
 
   shp:ligtAan
     a sh:PropertyShape;#
-    #sh:class bag:OpenbareRuimte;#
+    sh:class bag:OpenbareRuimte;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt aan"@nl;#
@@ -488,12 +505,12 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
-    #sh:class bag:Woonplaats;#
+    sh:class bag:Woonplaats;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt in"@nl;#
     sh:nodeKind sh:IRI;#
-    sh:path bag:ligtIn;
+    sh:path geo:sfWithin;
     skos:definition "Unieke aanduiding van de woonplaats waarbinnen een openbare ruimte is gelegen."@nl;
     skos:scopeNote "De woonplaats behorende bij de nummeraanduiding prevaleert boven de woonplaats behorende bij de openbare ruimte. Achtergrond hiervan is dat de locatie van het object bepalend is voor de vraag in welke woonplaats een adres is gelegen."@nl.
 
@@ -525,7 +542,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#724-status"^^xsd:anyURI;
-    #sh:class bag:StatusNaamgeving;
+    sh:class bag:StatusNaamgeving;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -543,7 +560,14 @@ graph:patronen {
     rdfs:seeAlso
       "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#723-type"^^xsd:anyURI,
       "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#89-typeopenbareruimte"^^xsd:anyURI;
-    sh:in ( nen3610:AdministratiefGebied nen3610:Kunstwerk nen3610:LandschappelijkGebied nen3610:Spoorbaan nen3610:Terrein nen3610:Water nen3610:Weg );
+    sh:in
+      ( nen3610:AdministratiefGebied
+        nen3610:Kunstwerk
+        nen3610:LandschappelijkGebied
+        nen3610:Spoorbaan
+        nen3610:Terrein
+        nen3610:Water
+        nen3610:Weg );
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft type"@nl;#
@@ -704,9 +728,17 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#744-status"^^xsd:anyURI;
-    #sh:class bag:StatusPand;
+    sh:class bag:StatusPand;
     sh:in#
-      ( status:bouwGestart status:bouwvergunningVerleend status:nietGerealiseerdPand status:pandGesloopt status:pandInGebruik status:pandInGebruikNietIngemeten status:pandTenOnrechteOpgevoerd status:sloopvergunningVerleend status:verbouwingPand );#
+      ( status:bouwGestart#
+        status:bouwvergunningVerleend#
+        status:nietGerealiseerdPand#
+        status:pandGesloopt#
+        status:pandInGebruik#
+        status:pandInGebruikNietIngemeten#
+        status:pandTenOnrechteOpgevoerd#
+        status:sloopvergunningVerleend#
+        status:verbouwingPand );#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft status"@nl;#
@@ -936,7 +968,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#772-status"^^xsd:anyURI;
-    #sh:class bag:StatusPlaats;
+    sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
@@ -1071,7 +1103,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#785-status"^^xsd:anyURI;
-    #sh:class bag:StatusVerblijfsobject;
+    sh:class bag:StatusVerblijfsobject;
     sh:in#
       ( status:nietGerealiseerdVerblijfsobject#
         status:verblijfsobjectBuitenGebruik#
@@ -1093,7 +1125,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#783-gebruiksdoel"^^xsd:anyURI;
-    #sh:class bag:Gebruiksdoel;#
+    sh:class bag:Gebruiksdoel;#
     sh:in#
       ( gebruiksdoel:bijeenkomstfunctie#
         gebruiksdoel:celfunctie#
@@ -1115,7 +1147,7 @@ graph:patronen {
 
   shp:maaktDeelUitVan
     a sh:PropertyShape;#
-    #sh:class bag:Pand;#
+    sh:class bag:Pand;#
     sh:minCount 1;
     sh:name "maakt deel uit van"@nl;#
     sh:nodeKind sh:IRI;#
@@ -1131,6 +1163,7 @@ graph:patronen {
     sh:nodeKind sh:Literal;#
     sh:path bag:oppervlakte;
     sh:pattern "[0-9]{1,6}".
+
 
   shp:Woonplaats
     a sh:ShapeNode;#
@@ -1208,7 +1241,7 @@ graph:patronen {
 
   shp:WoonplaatsRegistratie_formeleLevensduur
     a sh:PropertyShape;#
-    #sh:class bag:WoonplaatsRegistratie;
+    sh:class bag:WoonplaatsRegistratie;
     sh:description "Wordt gebruikt om de formele levensduur mee aan de duiden."@nl;
     sh:maxCount 1;
     sh:name "heeft vorige geregistreerde versie"@nl;
@@ -1238,13 +1271,13 @@ graph:patronen {
     sh:minCount 1;
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
-    sh:path bag:geometrie;#
-    #sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)";#
+    sh:path bag:geometrie;
+    sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)";#
     skos:definition "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl.
 
   shp:WoonplaatsRegistratie_materiëleLevensduur
     a sh:PropertyShape;#
-    #sh:class bag:WoonplaatsRegistratie;
+    sh:class bag:WoonplaatsRegistratie;
     sh:description "Wordt gebruikt om de materiële levensduur mee aan de duiden."@nl;
     sh:maxCount 1;
     sh:name "heeft vorige geldige versie"@nl;
@@ -1270,12 +1303,15 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
-    #sh:class bag:StatusWoonplaats;
-    sh:in ( status:woonplaatsAangewezen status:woonplaatsIngetrokken );#
+    sh:class bag:StatusWoonplaats;
+    sh:in#
+      ( status:woonplaatsAangewezen#
+        status:woonplaatsIngetrokken );#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft status"@nl;#
     sh:nodeKind sh:IRI;#
     sh:path bag:status;
-    skos:definition "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl;    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
+    skos:definition "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl;
+    skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
 }
