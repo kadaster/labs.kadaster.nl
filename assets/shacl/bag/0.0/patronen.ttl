@@ -247,7 +247,8 @@
       shp:NummeraanduidingRegistratie_documentnummer,
       shp:NummeraanduidingRegistratie_formeleLevensduur,
       shp:NummeraanduidingRegistratie_geconstateerd,
-      shp:NummeraanduidingRegistratie_ligtIn,
+      shp:NummeraanduidingRegistratie_
+,
       shp:NummeraanduidingRegistratie_materiëleLevensduur,
       shp:NummeraanduidingRegistratie_status,
       shp:huisletter,
@@ -1164,7 +1165,7 @@
 
   shp:Woonplaats
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Woonplaats"@nl;#
     sh:property shp:Woonplaats_identificatie;
