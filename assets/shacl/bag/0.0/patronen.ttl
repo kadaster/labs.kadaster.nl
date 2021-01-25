@@ -351,7 +351,7 @@
     sh:name "heeft huisletter"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:huisletter;
-    sh:pattern "[A-Z][a-z]{1}";
+    sh:pattern "[A-Za-z]{1}";
     skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."@nl.
 
   shp:huisnummer
