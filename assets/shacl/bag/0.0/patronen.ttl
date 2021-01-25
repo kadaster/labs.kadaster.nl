@@ -11,7 +11,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/> .
 @prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/> .
-@prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/> . 
 @prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/> . 
 @prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>. 
 
