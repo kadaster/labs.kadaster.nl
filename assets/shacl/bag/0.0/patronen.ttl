@@ -16,7 +16,7 @@
 
   shp:Identificatie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:description "De BAG volgt de NEN 3610 standaard voor het vastleggen van de identificatie van ieder geregistreerd object."@nl;
     sh:ignoredProperties ( rdf:type );#
     sh:name "Identificatie"@nl;
