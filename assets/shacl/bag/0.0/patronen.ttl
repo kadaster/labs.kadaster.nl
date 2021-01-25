@@ -376,7 +376,7 @@
 
   shp:ligtAan
     a sh:PropertyShape;#
-    sh:class bag:OpenbareRuimte;#
+    #sh:class bag:OpenbareRuimte;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt aan"@nl;#
@@ -385,7 +385,7 @@
 
   shp:openbareRuimte
     a sh:PropertyShape;#
-    sh:class bag:OpenbareRuimte;#
+    #sh:class bag:OpenbareRuimte;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft openbare ruimte"@nl;#
@@ -502,7 +502,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
-    sh:class bag:Woonplaats;#
+    #sh:class bag:Woonplaats;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt in"@nl;#
