@@ -178,7 +178,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#762-status"^^xsd:anyURI;
-    sh:class bag:StatusPlaats;
+    #sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
@@ -330,7 +330,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#737-status"^^xsd:anyURI;
-    sh:class bag:StatusNaamgeving;
+    #sh:class bag:StatusNaamgeving;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -539,7 +539,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#724-status"^^xsd:anyURI;
-    sh:class bag:StatusNaamgeving;
+    #sh:class bag:StatusNaamgeving;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -1100,7 +1100,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#785-status"^^xsd:anyURI;
-    sh:class bag:StatusVerblijfsobject;
+    #sh:class bag:StatusVerblijfsobject;
     sh:in#
       ( status:nietGerealiseerdVerblijfsobject#
         status:verblijfsobjectBuitenGebruik#
@@ -1122,7 +1122,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#783-gebruiksdoel"^^xsd:anyURI;
-    sh:class bag:Gebruiksdoel;#
+    #sh:class bag:Gebruiksdoel;#
     sh:in#
       ( gebruiksdoel:bijeenkomstfunctie#
         gebruiksdoel:celfunctie#
@@ -1300,7 +1300,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
-    sh:class bag:StatusWoonplaats;
+    #sh:class bag:StatusWoonplaats;
     sh:in#
       ( status:woonplaatsAangewezen#
         status:woonplaatsIngetrokken );#
