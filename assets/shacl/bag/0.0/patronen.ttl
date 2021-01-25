@@ -9,7 +9,6 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix sh: <http://www.w3.org/ns/shacl#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-
 prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
 prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/>
 prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
