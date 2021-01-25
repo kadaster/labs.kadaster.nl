@@ -61,7 +61,7 @@
 
   shp:Ligplaats
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Ligplaats"@nl;#
     sh:property shp:Ligplaats_identificatie;
@@ -82,7 +82,7 @@
 
   shp:LigplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Ligplaats registratie"@nl;#
     sh:property
@@ -209,7 +209,7 @@
 
   shp:Nummeraanduiding
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding"@nl;#
     sh:property
@@ -231,7 +231,7 @@
 
   shp:NummeraanduidingRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding registratie"@nl;#
     sh:property
@@ -406,7 +406,7 @@
 
   shp:OpenbareRuimte
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Openbare ruimte"@nl;#
     sh:property shp:OpenbareRuimte_identificatie;
@@ -427,7 +427,7 @@
 
   shp:OpenbareRuimteRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Openbare ruimte registratie"@nl;#
     sh:property
@@ -608,7 +608,7 @@
 
   shp:Pand
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Pand"@nl;#
     sh:property shp:Pand_identificatie;
@@ -631,7 +631,7 @@
 
   shp:PandRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Pand registratie"@nl;#
     sh:property
@@ -757,7 +757,7 @@
 
   shp:Registratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Registratie"@nl;#
     sh:property
@@ -850,7 +850,7 @@
 
   shp:Standplaats
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Standplaats"@nl;#
     sh:property shp:Standplaats_identificatie;
@@ -871,7 +871,7 @@
 
   shp:StandplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Standplaats registratie"@nl;#
     sh:property
@@ -981,7 +981,7 @@
 
   shp:Verblijfsobject
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Verblijfsobject"@nl;#
     sh:property shp:Verblijfsobject_identificatie;
@@ -1002,7 +1002,7 @@
 
   shp:VerblijfsobjectRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Verblijsobjectregistratie"@nl;#
     sh:property
@@ -1270,7 +1270,7 @@
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
-    sh:pattern "^<[^<>]*>\\sPOLYGON\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)";#
+    #sh:pattern "^<[^<>]*>\\sPOLYGON\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)";#
     skos:definition "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl.
 
   shp:WoonplaatsRegistratie_materiëleLevensduur
