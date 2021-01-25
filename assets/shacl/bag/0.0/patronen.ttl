@@ -11,11 +11,10 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
 prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/>
-prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
-prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/>
-prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/> . 
+prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/> . 
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>. 
 
-graph:patronen {
   shp:Identificatie
     a sh:ShapeNode;#
     sh:closed true;#
@@ -1313,4 +1312,3 @@ graph:patronen {
     sh:path bag:status;
     skos:definition "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl;
     skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
-}
