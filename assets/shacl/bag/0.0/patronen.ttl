@@ -1187,7 +1187,7 @@
 
   shp:WoonplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed true;#
+    sh:closed false;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Woonplaatsregistratie"@nl;#
     sh:property
