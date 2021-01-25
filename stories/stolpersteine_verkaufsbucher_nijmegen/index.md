@@ -8,22 +8,25 @@ title: WOII in Nijmegen
 
 ## Locaties stolpersteine in de stad Nijmegen
 
-<p>Deze datastory is geïnspireerd door Hack-a-lod-2019 datastory over de stolpersteine en verkaufsbucher datastory over Zutpen.  De onderstaande kaart toont de locaties van de stolpersteine in de stad Nijmegen. </p>
+<p>Deze datastory is geïnspireerd door Hack-a-lod-2019 datastory over de stolpersteine en verkaufsbucher datastory over Zutpen.  De onderstaande kaart toont de locaties van de stolpersteine in de stad Nijmegen en de namen van de slachtoffers die hebben gewoond op deze locaties </p>
 
-<query data-config-ref="">
+<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/Query-Stolpersteine/run">
 </query>
 
 
 ## Geregistreerde panden in de verkaufsbucher
 
-<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse eigendommen, met name panden, en wie deze panden zijn verkocht. Ook de datum van de transactie en de vorige eigenaar wordt hierin vermeld.  Onderstaand is ok de kaart gebracht welke panden er geregistreerd zijn met de koper, datum van de verkoop en de eigenaar van het pand</p>
+<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse eigendommen, met name panden, en wie deze panden zijn verkocht. Ook de datum van de transactie en de vorige eigenaar wordt hierin vermeld.  Op de onderstaande kaart is te zien welke panden er geregistreerd zijn met de koper, datum van de verkoop en de eigenaar van het pand</p>
 
-<query data-config-ref="">
+<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/VerkaufsbucherNijmegen/run">
 </query>
 
 ### Relaties tussen de stolpersteine locaties en verkaufsbucher
 
 <p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineert met de verkaufsbucher. Zo is te zien welke panden en hoeveel panden daadwerkelijk zijn opgekocht nadat de eigenaar deporteerd is. </p>
+
+<query data-config-ref="">
+</query>
 
 ## Bronnen
 <ul>
