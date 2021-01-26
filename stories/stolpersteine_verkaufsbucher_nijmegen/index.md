@@ -23,15 +23,16 @@ title: WOII in Nijmegen
 
 ### Relaties tussen de stolpersteine locaties en verkaufsbucher
 
-<p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineert met de verkaufsbucher. Zo is te zien welke panden en hoeveel panden daadwerkelijk zijn opgekocht nadat de eigenaar deporteerd is. </p>
+<p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineert met de verkaufsbucher. Zo is te zien welke panden en hoeveel panden daadwerkelijk zijn opgekocht nadat de eigenaar deporteerd is. Als over de locaties heen gaat vindt u de namen van de bewoner, pandeigenaar en aan wie het pand verkocht is.  </p>
 
-<query data-config-ref="">
+<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/LocatiesStolpersteinePanden/run">
 </query>
 
 ## Bronnen
 <ul>
 <li>Stolpersteine namenlijst Nijmegen – www.oorloginnijmegen.nl (Willem Oosterbaan en Leo van den Munkhof)</li>
 <li>Verkaufsbucher – Nationaal Archief Nederland</li>
+<li>Verkaufsbucher Nijmegen - www.oorloginnijmegen.nl (Willen Oosterbaan en Leo van den Munkhof)
 </ul>
 
 
