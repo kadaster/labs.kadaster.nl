@@ -10,7 +10,7 @@ title: WOII in Nijmegen
 
 <p>Deze datastory is geïnspireerd door Hack-a-lod-2019 datastory over de stolpersteine en verkaufsbucher datastory over Zutpen.  De onderstaande kaart toont de locaties van de stolpersteine in de stad Nijmegen en de namen van de slachtoffers die hebben gewoond op deze locaties </p>
 
-<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/Query-Stolpersteine/run">
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/Query-Stolpersteine/">
 </query>
 
 
@@ -18,14 +18,14 @@ title: WOII in Nijmegen
 
 <p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse eigendommen, met name panden, en wie deze panden zijn verkocht. Ook de datum van de transactie en de vorige eigenaar wordt hierin vermeld.  Op de onderstaande kaart is te zien welke panden er geregistreerd zijn met de koper, datum van de verkoop en de eigenaar van het pand</p>
 
-<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/VerkaufsbucherNijmegen/run">
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/VerkaufsbucherNijmegen/">
 </query>
 
 ### Relaties tussen de stolpersteine locaties en verkaufsbucher
 
 <p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineert met de verkaufsbucher. Zo is te zien welke panden en hoeveel panden daadwerkelijk zijn opgekocht nadat de eigenaar deporteerd is. Als over de locaties heen gaat vindt u de namen van de bewoner, pandeigenaar en aan wie het pand verkocht is.  </p>
 
-<query data-config-ref="https://api.data.pldn.nl/queries/GeoDataWizard/LocatiesStolpersteinePanden/run">
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/LocatiesStolpersteinePanden/">
 </query>
 
 ## Bronnen
