@@ -40,6 +40,14 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data browser waarin het BAG 2.0 data model kan worden opgezocht.</div>
     </div>
   </a>
+    <a href="https://bag2.basisregistraties.overheid.nl/graphql">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL BAG">
+      <div class="card-title">GraphQL Endpoint op onder andere de BAG</div>
+      <div class="card-description">Gebruik dit endpoint om BAG 2.0 als onderdeel van de Knowledge Graph te bevragen met GraphQL.</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/kadaster/bag2/search/search">
     <div class="card">
       <div class="card-type">Browser</div>
