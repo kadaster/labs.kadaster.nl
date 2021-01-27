@@ -1304,13 +1304,13 @@ graph:patronen {
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
     sh:class bag:StatusWoonplaats;
-    sh:in#
-      ( status:woonplaatsAangewezen#
-        status:woonplaatsIngetrokken );#
+    #sh:in#
+    #  ( status:woonplaatsAangewezen#
+    #    status:woonplaatsIngetrokken );#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft status"@nl;#
-    sh:nodeKind sh:IRI;#
+    #sh:nodeKind sh:IRI;#
     sh:path bag:status;
     skos:definition "De fase van de levenscyclus van een woonplaats, waarin de betreffende woonplaats zich bevindt."@nl;
     skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande woonplaatsen als opgeheven woonplaatsen. Om het onderscheid tussen de stadia in de levenscyclus van de woonplaats te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
