@@ -8,7 +8,7 @@ title: WOII in Nijmegen
 
 ## Locaties stolpersteine in de stad Nijmegen
 
-<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er struikelstenen(stolpersteine) gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad.  Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
+<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er stolpersteine gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad.  Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/Query-Stolpersteine/">
 </query>
