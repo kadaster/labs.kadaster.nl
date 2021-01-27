@@ -32,7 +32,7 @@ title: WOII in Nijmegen
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/besteedgeld/">
 </query>
 
-Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode. 
+<p>Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
 </query>
