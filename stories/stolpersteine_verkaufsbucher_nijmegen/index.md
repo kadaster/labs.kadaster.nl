@@ -8,7 +8,7 @@ title: WOII in Nijmegen
 
 ## Locaties stolpersteine in de stad Nijmegen
 
-<p>Deze datastory is geïnspireerd door Hack-a-lod-2019 datastory over de stolpersteine en verkaufsbucher datastory over Zutpen.  De onderstaande kaart toont de locaties van de stolpersteine in de stad Nijmegen en de namen van de slachtoffers die hebben gewoond op deze locaties </p>
+<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er struikelstenen(stolpersteine) gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad.  Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/Query-Stolpersteine/">
 </query>
@@ -16,17 +16,34 @@ title: WOII in Nijmegen
 
 ## Geregistreerde panden in de verkaufsbucher
 
-<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse eigendommen, met name panden, en wie deze panden zijn verkocht. Ook de datum van de transactie en de vorige eigenaar wordt hierin vermeld.  Op de onderstaande kaart is te zien welke panden er geregistreerd zijn met de koper, datum van de verkoop en de eigenaar van het pand</p>
+<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse panden. Van deze panden is ook bekend wie de eigenaar van dit pand was en door wie deze panden gekocht zijn. Ook de verkoopdatum is bekend in de dataset. Deze informatie verschijnt als u op de locaties klikt. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/VerkaufsbucherNijmegen/">
 </query>
 
+
+## Uitgaven en verdiensten
+
+<p>Wat opvalt is dat meerdere panden zijn opgekocht door dezelfde koper. Met de onderstaande query's is er informatie gevraagd over het totaal aantal panden dat deze kopers in bezit kregen en hoeveel zij daarvoor uitgegeven hebben. De heer J.M. Jacobs valt gelijk op, hij heeft in deze periode 15 panden opgekocht en in totaal 307.100 gulden neergelegd voor het opkopen van deze panden. 
+
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/aantalpandenopgekocht/">
+</query>
+
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/besteedgeld/">
+</query>
+
+Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode. 
+
+<query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
+</query>
+
 ### Relaties tussen de stolpersteine locaties en verkaufsbucher
 
-<p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineert met de verkaufsbucher. Zo is te zien welke panden en hoeveel panden daadwerkelijk zijn opgekocht nadat de eigenaar deporteerd is. Als over de locaties heen gaat vindt u de namen van de bewoner, pandeigenaar en aan wie het pand verkocht is.  </p>
+<p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum.  </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/LocatiesStolpersteinePanden/">
 </query>
+
 
 ## Bronnen
 <ul>
