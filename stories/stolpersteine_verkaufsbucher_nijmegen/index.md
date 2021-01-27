@@ -37,7 +37,7 @@ Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht me
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
 </query>
 
-### Relaties tussen de stolpersteine locaties en verkaufsbucher
+## Relaties tussen de stolpersteine locaties en verkaufsbucher
 
 <p>Om het verhaal ronden die stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum.  </p>
 
