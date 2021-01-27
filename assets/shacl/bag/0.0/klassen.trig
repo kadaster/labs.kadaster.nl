@@ -183,6 +183,14 @@ bag: {
     rdfs:isDefinedBy bag:;#
     rdfs:label "Standplaats registratie"@nl;
     rdfs:subClassOf foaf:Document.
+    
+  bag:Status
+    owl:unionOf
+      bag:StatusPand,
+      bag:StatusPlaats,
+      bag:StatusVerblijfsobject,
+      bag:StatusWoonplaats;
+    skos:prefLabel "Status"@nl.
 
   bag:Verblijfsobject
     a owl:Class;#
