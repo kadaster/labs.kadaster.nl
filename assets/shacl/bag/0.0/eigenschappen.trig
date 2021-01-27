@@ -108,7 +108,7 @@ bag: {
     rdfs:seeAlso
       "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI,
       "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#7311-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
-    rdfs:domain bag:NummeraanduidingRegistratie;
+    rdfs:domain bag:NummeraanduidingRegistratieOfOpenbareRuimteRegistratie;
     rdfs:range bag:Woonplaats;
     skos:altLabel "heeft gerelateerde woonplaats"@nl;
     skos:prefLabel "ligt in"@nl.
