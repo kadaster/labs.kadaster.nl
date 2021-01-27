@@ -186,10 +186,11 @@ bag: {
     
   bag:Status
     owl:unionOf
-      bag:StatusPand,
-      bag:StatusPlaats,
-      bag:StatusVerblijfsobject,
-      bag:StatusWoonplaats;
+     ( bag:StatusPand,
+       bag:StatusPlaats,
+       bag:StatusVerblijfsobject,
+       bag:StatusWoonplaats );
+    rdfs:isDefinedBy bag:;#
     skos:prefLabel "Status"@nl.
 
   bag:Verblijfsobject
