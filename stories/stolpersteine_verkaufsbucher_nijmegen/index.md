@@ -4,23 +4,21 @@ title: WOII in Nijmegen
 ---
 
 # WOII in Nijmegen
-<p>Een stad met veel geschiedenis in de WOII. Enkele bekende gebeurtenissen zijn het bombardement van Nijmegen op 22 februari 1944 en operatie Market Garden op 17 september 1944 t/m 20 september 1944.  Tevens kent Nijmegen ook, net als in veel steden, inwoners van joodse komaf die gedeporteerd zijn.  Met de stolpersteine, of wel struikelstenen, probeert men deze inwoners te herdenken. </p>
+<p>Een stad met veel geschiedenis in de WOII. Enkele bekende gebeurtenissen zijn het bombardement van Nijmegen op 22 februari 1944 en operatie Market Garden op 17 september 1944 t/m 20 september 1944.  Tevens kent Nijmegen ook, net als in veel steden, inwoners van joodse komaf die gedeporteerd zijn. Met de stolpersteine, of wel struikelstenen, probeert men deze inwoners te herdenken. </p>
 
 ## Locaties stolpersteine in de stad Nijmegen
 
-<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er stolpersteine gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad. Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
+<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er stolpersteine gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. Op de kaart staan niet alle adressen van de bekende joode slachtoffers. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad. Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/Query-Stolpersteine/">
 </query>
 
-
 ## Geregistreerde panden in de verkaufsbucher
 
-<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse panden. Van deze panden is ook bekend wie de eigenaar van dit pand was en door wie deze panden gekocht zijn. Ook de verkoopdatum is bekend in de dataset. Deze informatie verschijnt als u op de locaties klikt. </p>
+<p>Tijdens WOII werden verkaufsbucher gebruikt om transacties te registreren van de door de bezetter opgekochte joodse panden. Van deze panden is ook bekend door wie deze panden gekocht zijn. Ook de verkoopdatum is bekend in de dataset. Deze informatie verschijnt als u op de locaties klikt. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/VerkaufsbucherNijmegen/">
 </query>
-
 
 ## Uitgaven en verdiensten
 
@@ -32,7 +30,7 @@ title: WOII in Nijmegen
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/besteedgeld/">
 </query>
 
-<p>Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode.</p>
+<p>In de Verkaufsbücher staan bij de verkoopbedragen de namen van de 'oorspronkelijke' en dus onteigende bezitters.  Het verkoopbedrag betaalden de kopers via de ANBO aan de Grundstückverwaltung. Voor meer informatie over de duiding van de Verkaufsbucher zie:  <a href="https//www.oorloginnijmegen.nl" target="_blank">www.oorloginnijmegen.nl</a></p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
 </query>
@@ -44,8 +42,8 @@ title: WOII in Nijmegen
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/LocatiesStolpersteinePanden/">
 </query>
 
-
 ## Bronnen
+
 <ul>
 <li>Stolpersteine namenlijst Nijmegen – www.oorloginnijmegen.nl (Willem Oosterbaan en Leo van den Munkhof)</li>
 <li>Verkaufsbucher – Nationaal Archief Nederland</li>
