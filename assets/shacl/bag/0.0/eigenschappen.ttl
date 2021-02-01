@@ -8,7 +8,6 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
 
-bag: {
   bag:beginRegistratie
     a owl:DatatypeProperty;
     rdfs:comment "Wordt gebruikt om de formele historie aan bronhouder zijde mee aan de duiden."@nl;
@@ -184,4 +183,3 @@ bag: {
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#723-type"^^xsd:anyURI;
     skos:definition "De aard van de als zodanig benoemde openbare ruimte."@nl;
     skos:prefLabel "heeft type"@nl.
-}
