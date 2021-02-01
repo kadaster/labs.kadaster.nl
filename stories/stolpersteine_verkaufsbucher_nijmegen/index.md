@@ -22,7 +22,7 @@ title: WOII in Nijmegen
 
 ## Uitgaven en verdiensten
 
-<p>Wat opvalt is dat meerdere panden zijn opgekocht door dezelfde koper. Met de onderstaande query's is er informatie gevraagd over het totaal aantal panden dat deze kopers in bezit kregen en hoeveel zij daarvoor uitgegeven hebben. De heer J.M. Jacobs valt gelijk op, hij heeft in deze periode 15 panden opgekocht en in totaal 307.100 gulden neergelegd voor het opkopen van deze panden. 
+<p>Wat opvalt is dat meerdere panden zijn opgekocht door dezelfde koper. Met de onderstaande query's is er informatie opgevraagd over het totaal aantal panden dat deze kopers in bezit kregen en hoeveel zij daarvoor uitgegeven hebben. De heer J.M. Jacobs valt gelijk op, hij heeft in deze periode 15 panden opgekocht en in totaal 307.100 gulden neergelegd voor het opkopen van deze panden. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/aantalpandenopgekocht/">
 </query>
@@ -37,7 +37,7 @@ title: WOII in Nijmegen
 
 ## Relaties tussen de stolpersteine locaties en verkaufsbucher
 
-<p>Om het verhaal ronde de stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum. </p>
+<p>Om het verhaal rond de stolpersteine in Nijmegen nog interessanter te maken is de dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als u over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/LocatiesStolpersteinePanden/">
 </query>
