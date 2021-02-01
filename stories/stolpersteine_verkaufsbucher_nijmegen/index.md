@@ -8,7 +8,7 @@ title: WOII in Nijmegen
 
 ## Locaties stolpersteine in de stad Nijmegen
 
-<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er stolpersteine gemaakt die voor het toenmalige adres van het slachtoffer worden gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen door veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad. Per locatie is aangegeven wie het slachtoffer is en het bekende adres</p>
+<p> Voor de joodse slachtoffers die in Nijmegen zijn omgekomen zijn er stolpersteine gemaakt die voor het toenmalige adres van het slachtoffer zijn gelegd. Om deze locaties voor Nijmegen in beeld te brengen is de volgende query bedacht. De volledige lijst bestaat uit ongeveer 400+ namen, de kaart toont er maar 259. Dit kan komen doordat veel van deze slachtoffers buiten Nijmegen zijn ondergedoken of het toenmalige adres niet meer bestaat als gevolg van sloop of herinrichting van de stad. Per locatie is aangegeven wie het slachtoffer is en het wordt het adres weergeven. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/Query-Stolpersteine/">
 </query>
@@ -24,7 +24,7 @@ title: WOII in Nijmegen
 
 ## Uitgaven en verdiensten
 
-<p>Wat opvalt is dat meerdere panden zijn opgekocht door dezelfde koper. Met de onderstaande query's is er informatie gevraagd over het totaal aantal panden dat deze kopers in bezit kregen en hoeveel zij daarvoor uitgegeven hebben. De heer J.M. Jacobs valt gelijk op, hij heeft in deze periode 15 panden opgekocht en in totaal 307.100 gulden neergelegd voor het opkopen van deze panden. 
+<p>Wat opvalt is dat meerdere panden zijn opgekocht door dezelfde koper. Met de onderstaande query's is er informatie opgevraagd over het totaal aantal panden dat deze kopers in bezit kregen en hoeveel zij daarvoor uitgegeven hebben. De heer J.M. Jacobs valt gelijk op, hij heeft in deze periode 15 panden opgekocht en in totaal 307.100 gulden neergelegd voor het opkopen van deze panden. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/aantalpandenopgekocht/">
 </query>
@@ -32,20 +32,21 @@ title: WOII in Nijmegen
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/besteedgeld/">
 </query>
 
-<p>Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode.</p>
+<p>Ook zijn er eigenaren geweest die een behoorlijke buit hebben binnen gebracht met de verkoop van deze panden. Zoals de heer R. Frankenhuis-Prins, voor zijn panden heeft hij 198.000 gulden mogen ontvangen in die periode.</p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
 </query>
 
 ## Relaties tussen de stolpersteine locaties en verkaufsbucher
 
-<p>Om het verhaal ronde de stolpersteine in Nijmegen nog interessanter te maken is dat dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum. </p>
+<p>Om het verhaal rond de stolpersteine in Nijmegen nog interessanter te maken is de dataset van de verkaufsbucher gecombineerd met de stolpersteine. Deze vergelijking is gemaakt om te laten zien dat er ook mogelijk verband is tussen de arrestatie van de bewoner en de verkoop van een pand. Als u over de locaties heen gaat vindt u de namen van de bewoner, wie het pand verkocht heeft en de verkoopdatum. </p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/LocatiesStolpersteinePanden/">
 </query>
 
 
 ## Bronnen
+
 <ul>
 <li>Stolpersteine namenlijst Nijmegen – www.oorloginnijmegen.nl (Willem Oosterbaan en Leo van den Munkhof)</li>
 <li>Verkaufsbucher – Nationaal Archief Nederland</li>
