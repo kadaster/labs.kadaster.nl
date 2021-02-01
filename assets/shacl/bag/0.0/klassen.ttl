@@ -18,7 +18,6 @@ prefix image: <https://bag2.basisregistraties.overheid.nl/bag/id/image/>
 prefix shape: <https://bag2.basisregistraties.overheid.nl/bag/id/shape/>
 prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
-bag: {
   bag:AdresseerbaarObject
     a owl:Class;#
     owl:unionOf
@@ -183,16 +182,6 @@ bag: {
     rdfs:isDefinedBy bag:;#
     rdfs:label "Standplaats registratie"@nl;
     rdfs:subClassOf foaf:Document.
-    
-  bag:Status
-    a owl:Class;#
-    owl:unionOf
-     ( bag:StatusPand
-       bag:StatusPlaats
-       bag:StatusVerblijfsobject
-       bag:StatusWoonplaats );
-    rdfs:isDefinedBy bag:;#
-    skos:prefLabel "Status"@nl.
 
   bag:Verblijfsobject
     a owl:Class;#
@@ -245,4 +234,3 @@ bag: {
     rdfs:isDefinedBy bag:;#
     rdfs:label "Woonplaats registratie"@nl;
     rdfs:subClassOf foaf:Document.
-}
