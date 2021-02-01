@@ -9,7 +9,6 @@ prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
 prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/>
 prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
-bag: {
   bag:Gebruiksdoel
     a
       owl:Class,#
@@ -146,9 +145,18 @@ bag: {
     skos:definition "Gebruiksfunctie voor het wonen."@nl;
     skos:prefLabel "woonfunctie"@nl.
 
+  bag:Status
+    a owl:Class;#
+    rdfs:isDefinedBy bag:;#
+    owl:unionOf
+      ( bag:StatusNaamgeving
+        bag:StatusPand
+        bag:StatusPlaats
+        bag:StatusVerblijfsobject
+        bag:StatusWoonplaats ).
 
   bag:StatusNaamgeving
-    a
+    a #
       owl:Class,#
       skos:Collection;#
     owl:oneOf
@@ -493,4 +501,3 @@ bag: {
     rdfs:isDefinedBy bag:;#
     skos:definition "Woonplaats is ingetrokken door het bevoegd gezag."@nl;
     skos:prefLabel "woonplaats ingetrokken"@nl.
-}

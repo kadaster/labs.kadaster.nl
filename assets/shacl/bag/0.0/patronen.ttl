@@ -1,22 +1,24 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#> . 
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/> .
-@prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/> .
-@prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/> . 
-@prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>. 
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
+prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/>
+prefix graph: <https://bag2.basisregistraties.overheid.nl/bag/id/graph/>
+prefix shp: <https://bag2.basisregistraties.overheid.nl/bag/shp/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
   shp:Identificatie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:description "De BAG volgt de NEN 3610 standaard voor het vastleggen van de identificatie van ieder geregistreerd object."@nl;
     sh:ignoredProperties ( rdf:type );#
     sh:name "Identificatie"@nl;
@@ -54,14 +56,14 @@
     sh:name "de gecombineerde identificatie"@nl;
     sh:nodeKind sh:Literal;#
     sh:property
-      shp:lokaalID,
+      shp:lokaalId,
       shp:namespace;
     sh:path rdf:value.
 
 
   shp:Ligplaats
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Ligplaats"@nl;#
     sh:property shp:Ligplaats_identificatie;
@@ -82,7 +84,7 @@
 
   shp:LigplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Ligplaats registratie"@nl;#
     sh:property
@@ -128,7 +130,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een ligplaats heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:LigplaatsRegistratie_formeleLevensduur
@@ -158,11 +160,13 @@
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#763-geometrie"^^xsd:anyURI;
     sh:datatype geo:wktLiteral;#
+    sh:flags "i";#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
+    sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)$";
     skos:definition "De tweedimensionale geometrische representatie van de omtrekken van een ligplaats."@nl.
 
   shp:LigplaatsRegistratie_materiëleLevensduur
@@ -178,7 +182,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#762-status"^^xsd:anyURI;
-    #sh:class bag:StatusPlaats;
+    sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
@@ -192,7 +196,7 @@
 
   shp:hoofdadres
     a sh:PropertyShape;#
-    #sh:class bag:Nummeraanduiding;#
+    sh:class bag:Nummeraanduiding;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft hoofdadres"@nl;#
@@ -201,7 +205,7 @@
 
   shp:nevenadres
     a sh:PropertyShape;#
-    #sh:class bag:Nummeraanduiding;#
+    sh:class bag:Nummeraanduiding;#
     sh:name "heeft nevenadres"@nl;#
     sh:nodeKind sh:IRI;#
     sh:path bag:nevenadres.
@@ -209,7 +213,7 @@
 
   shp:Nummeraanduiding
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding"@nl;#
     sh:property
@@ -231,7 +235,7 @@
 
   shp:NummeraanduidingRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding registratie"@nl;#
     sh:property
@@ -247,8 +251,7 @@
       shp:NummeraanduidingRegistratie_documentnummer,
       shp:NummeraanduidingRegistratie_formeleLevensduur,
       shp:NummeraanduidingRegistratie_geconstateerd,
-      shp:NummeraanduidingRegistratie_
-,
+      shp:NummeraanduidingRegistratie_ligtIn,
       shp:NummeraanduidingRegistratie_materiëleLevensduur,
       shp:NummeraanduidingRegistratie_status,
       shp:huisletter,
@@ -281,7 +284,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een nummeraanduiding heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:NummeraanduidingRegistratie_formeleLevensduur
@@ -310,7 +313,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#7311-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
-    #sh:class bag:Woonplaats;#
+    sh:class bag:Woonplaats;#
     sh:maxCount 1;
     sh:name "ligt in"@nl;#
     sh:nodeKind sh:IRI;#
@@ -331,7 +334,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#737-status"^^xsd:anyURI;
-    #sh:class bag:StatusNaamgeving;
+    sh:class bag:StatusNaamgeving;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -352,7 +355,7 @@
     sh:name "heeft huisletter"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:huisletter;
-    sh:pattern "[A-Za-z]{1}";
+    sh:pattern "^[A-Za-z]{1}$";
     skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."@nl.
 
   shp:huisnummer
@@ -363,7 +366,7 @@
     sh:name "heeft huisnummer"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:huisnummer;
-    sh:pattern "[0-9]{1,5}".
+    sh:pattern "^[0-9]{1,5}$".
 
   shp:huisnummertoevoeging
     a sh:PropertyShape;#
@@ -373,11 +376,11 @@
     sh:name "heeft huisnummertoevoeging"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:huisnummertoevoeging;
-    sh:pattern "[0-9A-Za-z]{1,4}".
+    sh:pattern "^[0-9A-Za-z]{1,4}$".
 
   shp:ligtAan
     a sh:PropertyShape;#
-    #sh:class bag:OpenbareRuimte;#
+    sh:class bag:OpenbareRuimte;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt aan"@nl;#
@@ -386,7 +389,7 @@
 
   shp:openbareRuimte
     a sh:PropertyShape;#
-    #sh:class bag:OpenbareRuimte;#
+    sh:class bag:OpenbareRuimte;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft openbare ruimte"@nl;#
@@ -401,12 +404,12 @@
     sh:name "heeft postcode"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:postcode;
-    sh:pattern "[0-9]{4}[A-Z]{2}".
+    sh:pattern "^[0-9]{4}[A-Z]{2}$".
 
 
   shp:OpenbareRuimte
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Openbare ruimte"@nl;#
     sh:property shp:OpenbareRuimte_identificatie;
@@ -427,7 +430,7 @@
 
   shp:OpenbareRuimteRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Openbare ruimte registratie"@nl;#
     sh:property
@@ -474,7 +477,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een openbare ruimte heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:OpenbareRuimteRegistratie_formeleLevensduur
@@ -503,12 +506,12 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
-    #sh:class bag:Woonplaats;#
+    sh:class bag:Woonplaats;#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "ligt in"@nl;#
     sh:nodeKind sh:IRI;#
-    sh:path geo:sfWithin;
+    sh:path bag:ligtIn;
     skos:definition "Unieke aanduiding van de woonplaats waarbinnen een openbare ruimte is gelegen."@nl;
     skos:scopeNote "De woonplaats behorende bij de nummeraanduiding prevaleert boven de woonplaats behorende bij de openbare ruimte. Achtergrond hiervan is dat de locatie van het object bepalend is voor de vraag in welke woonplaats een adres is gelegen."@nl.
 
@@ -532,7 +535,7 @@
     sh:name "heeft naam"@nl;
     sh:nodeKind sh:Literal;#
     sh:path skos:prefLabel;
-    sh:pattern "\\S{1,80}";
+    sh:pattern "^\\S{1,80}$";
     skos:definition "De naam die aan een openbare ruimte is toegekend in een daartoe strekkend formeel gemeentelijk besluit."@nl;
     skos:scopeNote "Het verdient aanbeveling te streven naar korte benamingen."@nl.
 
@@ -540,7 +543,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#724-status"^^xsd:anyURI;
-    #sh:class bag:StatusNaamgeving;
+    sh:class bag:StatusNaamgeving;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -608,7 +611,7 @@
 
   shp:Pand
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Pand"@nl;#
     sh:property shp:Pand_identificatie;
@@ -625,13 +628,12 @@
     sh:name "heeft identificatie"@nl;
     sh:nodeKind sh:IRI;#
     sh:path nen3610:identificatie;
-    sh:pattern "[0-9]{4}";
     skos:definition "De unieke aanduiding van een openbare ruimte."@nl;
     skos:scopeNote "Elke openbare ruimte waarvan gegevens zijn opgenomen in de basisregistratie adressen, wordt uniek aangeduid door middel van een identificatiecode."@nl.
 
   shp:PandRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Pand registratie"@nl;#
     sh:property
@@ -676,7 +678,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:PandRegistratie_formeleLevensduur
@@ -706,11 +708,13 @@
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#742-geometrie"^^xsd:anyURI;
     sh:datatype geo:wktLiteral;#
+    sh:flags "i";#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
+    sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)$";
     skos:definition "De minimaal tweedimensionale geometrische representatie van het bovenzicht van de omtrekken van een pand."@nl.
 
   shp:PandRegistratie_materiëleLevensduur
@@ -726,7 +730,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#744-status"^^xsd:anyURI;
-    #sh:class bag:StatusPand;
+    sh:class bag:StatusPand;
     sh:in#
       ( status:bouwGestart#
         status:bouwvergunningVerleend#
@@ -757,7 +761,7 @@
 
   shp:Registratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Registratie"@nl;#
     sh:property
@@ -850,7 +854,7 @@
 
   shp:Standplaats
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Standplaats"@nl;#
     sh:property shp:Standplaats_identificatie;
@@ -871,7 +875,7 @@
 
   shp:StandplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Standplaats registratie"@nl;#
     sh:property
@@ -917,7 +921,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een standplaats heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:StandplaatsRegistratie_formeleLevensduur
@@ -946,11 +950,13 @@
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#773-geometrie"^^xsd:anyURI;
     sh:datatype geo:wktLiteral;#
+    sh:flags "i";#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
+    sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)$";
     skos:definition "De tweedimensionale geometrische representatie van de omtrekken van een standplaats."@nl.
 
   shp:StandplaatsRegistratie_materiëleLevensduur
@@ -966,7 +972,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#772-status"^^xsd:anyURI;
-    #sh:class bag:StatusPlaats;
+    sh:class bag:StatusPlaats;
     sh:in#
       ( status:plaatsAangewezen#
         status:plaatsIngetrokken );#
@@ -981,7 +987,7 @@
 
   shp:Verblijfsobject
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Verblijfsobject"@nl;#
     sh:property shp:Verblijfsobject_identificatie;
@@ -1002,7 +1008,7 @@
 
   shp:VerblijfsobjectRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Verblijsobjectregistratie"@nl;#
     sh:property
@@ -1051,7 +1057,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een object heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:VerblijfsobjectRegistratie_formeleLevensduur
@@ -1081,11 +1087,13 @@
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#782-geometrie"^^xsd:anyURI;
     sh:datatype geo:wktLiteral;#
+    sh:flags "i";#
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
+    sh:pattern "^<[^<>]*>\\spoint\\([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)$";
     skos:definition "De minimaal tweedimensionale geometrische representatie van een verblijfsobject."@nl.
 
   shp:VerblijfsobjectRegistratie_materiëleLevensduur
@@ -1101,7 +1109,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#785-status"^^xsd:anyURI;
-    #sh:class bag:StatusVerblijfsobject;
+    sh:class bag:StatusVerblijfsobject;
     sh:in#
       ( status:nietGerealiseerdVerblijfsobject#
         status:verblijfsobjectBuitenGebruik#
@@ -1123,7 +1131,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#783-gebruiksdoel"^^xsd:anyURI;
-    #sh:class bag:Gebruiksdoel;#
+    sh:class bag:Gebruiksdoel;#
     sh:in#
       ( gebruiksdoel:bijeenkomstfunctie#
         gebruiksdoel:celfunctie#
@@ -1160,12 +1168,12 @@
     sh:name "heeft oppervlakte"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:oppervlakte;
-    sh:pattern "[0-9]{1,6}".
+    sh:pattern "^[0-9]{1,6}$".
 
 
   shp:Woonplaats
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Woonplaats"@nl;#
     sh:property shp:Woonplaats_identificatie;
@@ -1176,19 +1184,17 @@
     dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#711-identificatie"^^xsd:anyURI;
     sh:class nen3610:Identificatie;
-    sh:description "Een natuurlijk getal tussen 0001 en 9999."@nl;
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft identificatie"@nl;
     sh:nodeKind sh:IRI;#
     sh:path nen3610:identificatie;
-    sh:pattern "[0-9]{4}";
     skos:definition "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl;
     skos:scopeNote "De woonplaatsen worden vastgesteld door de gemeenten. De vastgestelde woonplaatsen worden voorzien van een unieke aanduiding, te vergelijken met de gemeentecode volgens Tabel 33 Gemeententabel van de Landelijke Tabellen GBA. Deze aanduiding wordt verstrekt door de Dienst voor het kadaster en de openbare registers."@nl.
 
   shp:WoonplaatsRegistratie
     a sh:ShapeNode;#
-    sh:closed false;#
+    sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Woonplaatsregistratie"@nl;#
     sh:property
@@ -1220,7 +1226,6 @@
     sh:name "heeft documentdatum"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:created;
-    #sh:pattern "?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?";
     skos:definition "De datum waarop het brondocument is vastgesteld op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden."@nl;
     skos:scopeNote "In het geval het brondocument een besluit van een bestuursorgaan betreft, dan is de datum van het brondocument de datum waarop het besluit is genomen."@nl.
 
@@ -1234,7 +1239,7 @@
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "[0-9]{1,40}";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een woonplaats heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:WoonplaatsRegistratie_formeleLevensduur
@@ -1256,7 +1261,6 @@
     sh:nodeKind sh:Literal;#
     sh:name "is geconstateerd"@nl;#
     sh:path bag:geconstateerd;
-    #sh:pattern "(false|true)";#
     skos:definition "Een aanduiding waarmee kan worden aangegeven dat een woonplaats in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
     skos:scopeNote "Het feitelijk bestaan van een woonplaats dient daadwerkelijk te worden geconstateerd. Het gaat dan bijvoorbeeld om door burgers aangebrachte woonplaatsbenamingen die binnen andere processen aan het licht zijn gekomen."@nl.
 
@@ -1270,7 +1274,7 @@
     sh:name "heeft geometrie"@nl;#
     sh:nodeKind sh:Literal;#
     sh:path bag:geometrie;
-    #sh:pattern "^<[^<>]*>\\sPOLYGON\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)";#
+    sh:pattern "^<[^<>]*>\\spolygon\\(\\(([0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\,)*[0-9]*\\.[0-9]*\\s[0-9]*\\.[0-9]*\\)\\)$";
     skos:definition "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl.
 
   shp:WoonplaatsRegistratie_materiëleLevensduur
@@ -1293,7 +1297,7 @@
     sh:name "heeft naam"@nl;
     sh:nodeKind sh:Literal;#
     sh:path skos:prefLabel;
-    sh:pattern "\\S{1,80}";
+    sh:pattern "^\\S{1,80}$";
     skos:definition "De benaming van een door het gemeentebestuur aangewezen woonplaats."@nl;
     skos:scopeNote "Het maximale aantal te gebruiken tekens voor een benaming is tachtig. Het verdient aanbeveling te streven naar korte benamingen."@nl.
 
@@ -1301,7 +1305,7 @@
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#714-status"^^xsd:anyURI;
-    #sh:class bag:StatusWoonplaats;
+    sh:class bag:StatusWoonplaats;
     sh:in#
       ( status:woonplaatsAangewezen#
         status:woonplaatsIngetrokken );#
