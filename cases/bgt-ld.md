@@ -39,6 +39,14 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data Story die een overzicht van de BGT-LD geeft.</div>
     </div>
   </a>
+  <a href="https://bgt.basisregistraties.overheid.nl/graphql">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL BAG">
+      <div class="card-title">GraphQL Endpoint op onder andere de BGT</div>
+      <div class="card-description">Gebruik dit endpoint om BGT als onderdeel van de Knowledge Graph te bevragen met GraphQL.</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/kadaster/-/stories/windturbines">
     <div class="card">
       <div class="card-type">Story</div>

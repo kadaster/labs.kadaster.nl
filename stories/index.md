@@ -10,6 +10,14 @@ Het Data Science team vertelt met behulp van de Data Stories het verhaal van onz
 Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer SPARQL bevragingen waardoor we altijd de actuele data tonen. Je kunt de inzichten en/of visualisaties altijd reproduceren en hergebruiken voor je eigen toepassingen.
 
 <div class="cards-wrapper">
+  <a href="./stolpersteine_verkaufsbucher_nijmegen/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/stolpersteine_nijmegen.png">
+      <div class="card-title">Datastory Stolpersteine / Verkaufsbucher WOII Nijmegen</div>
+      <div class="card-description">Overzicht van stolpersteine- en verkaufsbucherlocaties in de stad Nijmegen.</div>
+    </div>
+  </a>
   <a href="./graafschades/index.html">
     <div class="card">
       <div class="card-type">Story</div>

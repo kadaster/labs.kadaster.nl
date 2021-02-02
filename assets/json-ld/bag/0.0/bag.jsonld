@@ -52,6 +52,9 @@
     "geometrie": {
       "@type": "geo:wktLiteral"
     },
+    "geometrie_vlak": {
+      "@type": "geo:wktLiteral"
+    },
     "gml_id": null,
     "heeftalshoofdadres" : {
       "@context": {

@@ -123,11 +123,7 @@
       "@type": "@id"
     },
     "openbareruimtetype": {
-      "@context": {
-        "@base": "http://definities.geostandaarden.nl/def/nen3610"
-      },
-      "@id": "type",
-      "@type": "@id"
+      "@id" : "nen3610:type"
     },
     "oppervlakte": {
       "@type": "xsd:positiveInteger"

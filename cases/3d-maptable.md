@@ -13,14 +13,14 @@ title: Use Case ― Grondmarkt
       <div class="card-description">Gebruik de Augmented Reality app van het Kadaster op deze ondergrondkaart en krijg een uniek beeld van de wijk Ugchelen Buiten in Apeldoorn.</div>
     </div>
   </a>
-  <a href="/download/KadasterMapTable_InnovationHub.apk">
+  <!-- <a href="/download/KadasterMapTable_InnovationHub.apk">
     <div class="card">
       <div class="card-type">Download</div>
       <img class="card-image" src="/assets/images/android_icon.png" alt="Android logo">
       <div class="card-title">Android Augmented Reality App</div>
       <div class="card-description">Download hier de Augmented Reality app voor Android. Voor instructies, zie onder.</div>
     </div>
-  </a>
+  </a> -->
 </div>
 
 ## Introductie
@@ -35,7 +35,7 @@ in de <a href = "https://innovationhub.kadaster-registratie.nl/">Kadaster Innova
 
 ## Installatie instructies (Android)
 <ol>
-	<li> Download de APK (Android Package) bovenaan deze pagina of <a href = "/download/KadasterMapTable_InnovationHub.apk">door op deze link te klikken</a></li>
+	<li> Download de APK (Android Package). Deze APK is niet meer online beschikbaar. Neem contact op met het Data Science Team als je deze toch wilt uitproberen. </li>
 	<li> Omdat dit een package is die niet uit de Google Play Store komt, zul je bij je Android telefoon moeten aangeven dat het OK is om de app te installeren. 
 	Dit doe je door de functionaliteit "Allow installation of apps from sources other than the Play Store" aan te zetten (NL: Installeren van apps met onbekende bronnen toestaan). 
 	Voor oudere versies van android software (Voor Android 8.0) kun je dit doen door <strong>Instellingen-->Beveiliging-->Onbekende bronnen</strong> aan te zetten. Zie ook Figuur 1. Let op dat de precieze instelling afhankelijk is van het model van je telefoon. Indien deze stap lukt, sla stap 3 over. 

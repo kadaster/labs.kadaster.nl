@@ -13,6 +13,10 @@ title: Use Case ― Loki voor GEO Informatieverstrekking
 
 # Use Case: Loki voor GEO Informatieverstrekking
 
+## Status
+
+Deze oude versie van Loki is gedeactiveerd. De pagina met de demonstrator is niet meer beschikbaar. De meest recente versie van loki is beschikbaar met het chat-ballonetje rechts onderin op deze pagina en de [hoofdpagina](/).
+
 ## Introductie
 
 Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.  De [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) is het kloppend hart van Loki. 
@@ -22,14 +26,14 @@ Na dit experiment ontstond de wens voor een testbare versie voor de eindgebruike
 Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de [Kadaster Knowledge Graph](/cases/kadaster-knowledge-graph.html), ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/loki/index.html">
+  <!-- <a href="/demonstrators/loki/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
       <div class="card-title">Loki voor Geo Informatieverstrekking</div>
       <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/cases/pdok-knowledge-graph.html">
     <div class="card">
       <div class="card-type">Use Case</div>
