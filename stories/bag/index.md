@@ -5,7 +5,6 @@ title: BAG Data Story
 
 # BAG Data Story
 
-
 De Basisregistratie Adressen en Gebouwen (BAG) bevat informatie over
 alle adressen en gebouwen in Nederland.  De data uit de BAG wordt op
 verschillende manieren ontsloten.  Één van deze manier is Linked Data,
@@ -28,7 +27,7 @@ postcode en (optioneel) huisnummer op te geven ([Bevraging
 en/of huisnummertoevoeging.
 
 <figure id="postcode">
-  <query data-config-ref="https://data.labs.kadaster.nl/kadaster-dev/-/queries/bag-postcode"></query>
+  <query data-config-ref="https://data.labs.kadaster.nl/kadaster/-/queries/bag-postcode"></query>
   <figcaption>
     Bevraging 1 ― Postcode-gebaseerde bevraging van de BAG.
   </figcaption>
