@@ -7,7 +7,7 @@ title: BGT High3
 
 ## De BGT als Linked Data
 
-De BGT is de enige geo Basisregistratie die begin 2020 niet als Linked Data beschikbaar was. Daarmee was de BGT ook niet integraal bevraagbaar in combinatie met andere datasets. Het Kadaster Data Science Team, Provincie Noord-Holland, CROW en CGI, hebben daarom in 3 dagen (High3 week) een experiment uitgevoerd om de BGT eenmalig om te zetten naar Linked Data, en door middel van een Data Story (deze pagina) wat inzicht te bieden in de mogelijkheden.  
+De BGT is de enige geo Basisregistratie die begin 2020 niet als Linked Data beschikbaar was. Daarmee was de BGT ook niet integraal bevraagbaar in combinatie met andere datasets. Het Kadaster Data Science Team, Provincie Noord-Holland, CROW en CGI, hebben daarom in 3 dagen (High3 week) een experiment uitgevoerd om de BGT eenmalig om te zetten naar Linked Data, en door middel van een Data Story (deze pagina) wat inzicht te bieden in de mogelijkheden.
 
 Allereerst zijn we gestart met het omzetten van de BGT naar Linked Data. <a href="#bgt-klasse-histogram">Figuur 1</a> geeft een overzicht van de omvang en het soort objecten dat door ons is omgezet.
 
@@ -163,7 +163,7 @@ Naast de kaart weergave kunnen we ook een tabel weergave maken (<a href="#werkza
 
 # En dan even iets anders…
 
-Data verlinken gaat niet alleen met data uit de basis registraties. Maar het is ook mogelijk om de data te verrijken met verbindingen uit andere domeinen. In <a href="#bier">Figuur 10</a> zoeken we de dichtstbijzijnde brouwerij op waar na de werkzaamheden het (alcoholvrije)-biertje kan worden gedronken.  
+Data verlinken gaat niet alleen met data uit de basis registraties. Maar het is ook mogelijk om de data te verrijken met verbindingen uit andere domeinen. In <a href="#bier">Figuur 10</a> zoeken we de dichtstbijzijnde brouwerij op waar na de werkzaamheden het (alcoholvrije)-biertje kan worden gedronken.
 
 <figure id="bier">
   <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bier">
