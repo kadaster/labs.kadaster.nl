@@ -28,6 +28,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
 
 
 <div class="cards-wrapper">
+  <a href="/cases/architectuur-integraal-bevragen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
+      <div class="card-title">Aanpak en Architectuur van de Knowledge Graph</div>
+      <div class="card-description">Hier besteden we aandacht aan onze aanpak om met oa. Linked Data laagdrempelig een knowledge Graph te maken.</div>
+    </div>
+  </a>
   <a href="/cases/bag-ld">
     <div class="card">
       <div class="card-type">Use Case</div>
