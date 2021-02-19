@@ -690,7 +690,7 @@ graph:patronen {
     sh:name "heeft documentnummer"@nl;
     sh:nodeKind sh:Literal;#
     sh:path dct:identifier;
-    sh:pattern "^.{1,40}$";
+    sh:pattern "^[0-9]{1,40}$";
     skos:definition "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden binnen een gemeente."@nl.
 
   shp:PandRegistratie_formeleLevensduur
