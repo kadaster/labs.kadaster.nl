@@ -1,0 +1,505 @@
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
+prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/>
+prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
+
+bag: {
+  bag:Gebruiksdoel
+    a
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( gebruiksdoel:bijeenkomstfunctie
+        gebruiksdoel:celfunctie
+        gebruiksdoel:gezondheidszorgfunctie
+        gebruiksdoel:industriefunctie
+        gebruiksdoel:kantoorfunctie
+        gebruiksdoel:logiesfunctie
+        gebruiksdoel:onderwijsfunctie
+        gebruiksdoel:overigeGebruiksfunctie
+        gebruiksdoel:sportfunctie
+        gebruiksdoel:winkelfunctie
+        gebruiksdoel:woonfunctie );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#82-gebruiksdoel"^^xsd:anyURI;
+    skos:definition "Een categorisering waarmee het gebruiksdoel van een object kan worden verbijzonderd."@nl;
+    skos:member#
+      gebruiksdoel:bijeenkomstfunctie,#
+      gebruiksdoel:celfunctie,#
+      gebruiksdoel:gezondheidszorgfunctie,#
+      gebruiksdoel:industriefunctie,#
+      gebruiksdoel:kantoorfunctie,#
+      gebruiksdoel:logiesfunctie,#
+      gebruiksdoel:onderwijsfunctie,#
+      gebruiksdoel:overigeGebruiksfunctie,#
+      gebruiksdoel:sportfunctie,#
+      gebruiksdoel:winkelfunctie,#
+      gebruiksdoel:woonfunctie;#
+    skos:prefLabel "Gebruiksdoel"@nl;
+    skos:scopeNote "Het waardenbereik van de categorisering van het gebruiksdoel van een object stemt overeen met het bepaalde in artikel 1 van het Bouwbesluit 2012.  Het waardenbereik van het gegeven gebruiksdoel kent een limitatief karakter en kan uitsluitend een of meer van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDifferentFrom;#
+    owl:distinctMembers#
+      ( gebruiksdoel:bijeenkomstfunctie#
+        gebruiksdoel:celfunctie#
+        gebruiksdoel:gezondheidszorgfunctie#
+        gebruiksdoel:industriefunctie#
+        gebruiksdoel:kantoorfunctie#
+        gebruiksdoel:logiesfunctie#
+        gebruiksdoel:onderwijsfunctie#
+        gebruiksdoel:overigeGebruiksfunctie#
+        gebruiksdoel:sportfunctie#
+        gebruiksdoel:winkelfunctie#
+        gebruiksdoel:woonfunctie ) ].#
+
+  gebruiksdoel:bijeenkomstfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het samenkomen van personen voor kunst, cultuur, godsdienst, communicatie, kinderopvang, het verstrekken van consumpties voor het gebruik ter plaatse of het aanschouwen van sport."@nl;
+    skos:prefLabel "bijeenkomstfunctie"@nl.
+
+  gebruiksdoel:celfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor dwangverblijf van personen."@nl;
+    skos:prefLabel "celfunctie"@nl.
+
+  gebruiksdoel:gezondheidszorgfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor medisch onderzoek, verpleging, verzorging of behandeling."@nl;
+    skos:prefLabel "gezondheidszorgfunctie"@nl.
+
+  gebruiksdoel:industriefunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het bedrijfsmatig bewerken of opslaan van materialen en goederen, of voor agrarische doeleinden."@nl;
+    skos:prefLabel "industriefunctie"@nl.
+
+  gebruiksdoel:kantoorfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor administratie."@nl;
+    skos:prefLabel "kantoorfunctie"@nl.
+
+  gebruiksdoel:logiesfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het bieden van recreatief verblijf of tijdelijk onderdak aan personen."@nl;
+    skos:prefLabel "logiesfunctie"@nl.
+
+  gebruiksdoel:onderwijsfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het geven van onderwijs."@nl;
+    skos:prefLabel "onderwijsfunctie"@nl.
+
+  gebruiksdoel:overigeGebruiksfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Niet in dit lid benoemde gebruiksfunctie voor activiteiten waarbij het verblijven van personen een ondergeschikte rol speelt.."@nl;
+    skos:prefLabel "overige gebruiksfunctie"@nl.
+
+  gebruiksdoel:sportfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het beoefenen van sport."@nl;
+    skos:prefLabel "sportfunctie"@nl.
+
+  gebruiksdoel:winkelfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het verhandelen van materialen, goederen of diensten."@nl;
+    skos:prefLabel "winkelfunctie"@nl.
+
+  gebruiksdoel:woonfunctie
+    a
+      bag:Gebruiksdoel,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Gebruiksfunctie voor het wonen."@nl;
+    skos:prefLabel "woonfunctie"@nl.
+
+  bag:Status
+    a owl:Class;#
+    rdfs:isDefinedBy bag:;#
+    owl:unionOf
+      ( bag:StatusNaamgeving
+        bag:StatusPand
+        bag:StatusPlaats
+        bag:StatusVerblijfsobject
+        bag:StatusWoonplaats ).
+
+  bag:StatusNaamgeving
+    a #
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( status:naamgevingIngetrokken
+        status:naamgevingUitgegeven );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#84-statusnaamgeving"^^xsd:anyURI;
+    skos:definition "Een aanduiding van alle waarden die de status van een openbare ruimte of een nummeraanduiding kan aannemen."@nl;
+    skos:member#
+      status:naamgevingIngetrokken,#
+      status:naamgevingUitgegeven;#
+    skos:prefLabel "Naamgeving status"@nl;
+    skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDifferentFrom;#
+    owl:distinctMembers#
+      ( status:naamgevingIngetrokken#
+        status:naamgevingUitgegeven ) ].#
+
+  status:naamgevingIngetrokken
+    a
+      bag:StatusNaamgeving,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Naam is ingetrokken door het bevoegd gezag."@nl;
+    skos:prefLabel "naamgeving ingetrokken"@nl.
+
+  status:naamgevingUitgegeven
+    a
+      bag:StatusNaamgeving,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Naam is uitgegeven door het bevoegd gezag of geconstateerd."@nl;
+    skos:prefLabel "naamgeving uitgegeven"@nl.
+
+
+  bag:StatusPand
+    a
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( status:bouwGestart
+        status:bouwvergunningVerleend
+        status:nietGerealiseerdPand
+        status:pandGesloopt
+        status:pandInGebruik
+        status:pandInGebruikNietIngemeten
+        status:pandTenOnrechteOpgevoerd
+        status:sloopvergunningVerleend
+        status:verbouwingPand );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#85-statuspand"^^xsd:anyURI;
+    skos:definition "Een codering van de verschillende waarden die de status van een pand kan aannemen."@nl;
+    skos:member#
+      status:bouwGestart,#
+      status:bouwvergunningVerleend,#
+      status:nietGerealiseerdPand,#
+      status:pandGesloopt,#
+      status:pandInGebruik,#
+      status:pandInGebruikNietIngemeten,#
+      status:pandTenOnrechteOpgevoerd,#
+      status:sloopvergunningVerleend,#
+      status:verbouwingPand;#
+    skos:prefLabel "Pand status"@nl;
+    skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDifferentFrom;#
+    owl:distinctMembers#
+      ( status:bouwGestart#
+        status:bouwvergunningVerleend#
+        status:nietGerealiseerdPand#
+        status:pandBuitenGebruik#
+        status:pandGesloopt#
+        status:pandInGebruik#
+        status:pandInGebruikNietIngemeten#
+        status:pandTenOnrechteOpgevoerd#
+        status:sloopvergunningVerleend#
+        status:verbouwingPand ) ].#
+
+  status:bouwGestart
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een vergund pand waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is gestart of waarvan in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat de feitelijke bouw is aangevangen door minimaal de aanleg van de fundering (waartoe niet het bouwrijp maken van een terrein wordt gerekend)."@nl;
+    skos:prefLabel "Bouw gestart"@nl.
+
+  status:bouwvergunningVerleend
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een nieuw pand dat nog niet is gebouwd maar waarvoor wel een bouwvergunning is verleend."@nl;
+    skos:prefLabel "Bouwvergunning verleend"@nl.
+
+  status:nietGerealiseerdPand
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand waarvoor een bouwvergunning was verleend, maar waarvan in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat wordt afgezien van de bouw of waarvan de bouwvergunning is ingetrokken."@nl;
+    skos:prefLabel "Niet gerealiseerd pand"@nl.
+
+  status:pandBuitenGebruik
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand dat in dusdanige bouwkundige staat is dat niet te verwachten is dat het pand zal worden hersteld en weer in gebruik zal worden genomen."@nl;
+    skos:prefLabel "Pand buiten gebruik"@nl.
+
+  status:pandGesloopt
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand waarvan de aanvrager van de sloopvergunning heeft gemeld dat de sloop is voltooid of in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het pand is gesloopt."@nl;
+    skos:prefLabel "Pand gesloopt"@nl.
+
+  status:pandInGebruik
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition """
+<section lang="nl">
+  <p>Een pand dat feitelijk de status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/pandInGebruikNietIngemeten">Pand in gebruik (niet ingemeten)</a> had en waarvan de definitieve geometrie is ingemeten.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Pand in gebruik"@nl.
+
+  status:pandInGebruikNietIngemeten
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is voltooid of waarvan in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het pand feitelijk in gebruik is genomen of dat het weliswaar (nog) niet in gebruik is genomen maar naar het oordeel van de gemeente wel gebruiksgereed is, dan wel een pand waarvan de verbouw is voltooid, dan wel een pand dat door een calamiteit gedeeltelijk is verdwenen maar naar verwachting zal worden hersteld en in gebruik genomen."@nl;
+    skos:prefLabel "Pand in gebruik (niet ingemeten)"@nl.
+
+  status:pandTenOnrechteOpgevoerd
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand dat niet had mogen worden opgenomen in de BAG-registratie en vervolgens is beëindigd."@nl;
+    skos:prefLabel "Pand ten onrechte opgevoerd"@nl.
+
+  status:sloopvergunningVerleend
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand waarvoor een sloopvergunning is verleend."@nl;
+    skos:prefLabel "Sloopvergunning verleend"@nl.
+
+  status:verbouwingPand
+    a
+      bag:StatusPand,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een pand waarvoor een vergunning tot verbouw is verleend en waarbij de verbouwing nog niet is voltooid."@nl;
+    skos:prefLabel "Verbouwing pand"@nl.
+
+
+  bag:StatusPlaats
+    a
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( status:plaatsAangewezen
+        status:plaatsIngetrokken );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#86-statusplaats"^^xsd:anyURI;
+    skos:definition "Een aanduiding van alle waarden die de status van een ligplaats en een standplaats kan aannemen."@nl;
+    skos:member#
+      status:plaatsAangewezen,#
+      status:plaatsIngetrokken;#
+    skos:prefLabel "Plaats status"@nl;
+    skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDistinctFrom;#
+    owl:distinctMembers#
+      ( status:plaatsAangewezen#
+        status:plaatsIngetrokken ) ].#
+
+  status:plaatsAangewezen
+    a
+      bag:StatusPlaats,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Plaats is aangewezen door het bevoegd gezag of geconstateerd."@nl;
+    skos:prefLabel "Plaats aangewezen"@nl.
+
+  status:plaatsIngetrokken
+    a
+      bag:StatusPlaats,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Plaats is ingetrokken door het bevoegd gezag."@nl;
+    skos:prefLabel "Plaats ingetrokken"@nl.
+
+
+  bag:StatusVerblijfsobject
+    a
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( status:nietGerealiseerdVerblijfsobject
+        status:verblijfsobjectBuitenGebruik
+        status:verblijfsobjectGevormd
+        status:verblijfsobjectInGebruik
+        status:verblijfsobjectInGebruikNietIngemeten
+        status:verblijfsobjectIngetrokken
+        status:verblijfsobjectTenOnrechteOpgevoerd
+        status:verbouwingVerblijfsobject );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#87-statusverblijfsobject"^^xsd:anyURI;
+    skos:definition "Een aanduiding van alle waarden die de status van een verblijfsobject kan aannemen."@nl;
+    skos:member#
+      status:nietGerealiseerdVerblijfsobject,#
+      status:verblijfsobjectBuitenGebruik,#
+      status:verblijfsobjectGevormd,#
+      status:verblijfsobjectInGebruik,#
+      status:verblijfsobjectInGebruikNietIngemeten,#
+      status:verblijfsobjectIngetrokken,#
+      status:verblijfsobjectTenOnrechteOpgevoerd,#
+      status:verbouwingVerblijfsobject;#
+    skos:prefLabel "Verblijfsobject status"@nl;
+    skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDistinctFrom;#
+    owl:distinctMembers#
+      ( status:nietGerealiseerdVerblijfsobject#
+        status:verblijfsobjectBuitenGebruik#
+        status:verblijfsobjectGevormd#
+        status:verblijfsobjectInGebruik#
+        status:verblijfsobjectInGebruikNietIngemeten#
+        status:verblijfsobjectIngetrokken#
+        status:verblijfsobjectTenOnrechteOpgevoerd#
+        status:verbouwingVerblijfsobject ) ].#
+
+  status:nietGerealiseerdVerblijfsobject
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject in een pand waarvoor een bouwvergunning was verleend of dat gerealiseerd zou worden in een reeds bestaand pand, maar waarvan in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat wordt afgezien van de bouw of waarvan de bouwvergunning is ingetrokken."@nl;
+    skos:prefLabel "Niet gerealiseerd verblijfsobject"@nl.
+
+  status:verblijfsobjectBuitenGebruik
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject dat onderdeel uitmaakt van een pand dat in dusdanige bouwkundige staat is dat niet te verwachten is dat het pand zal worden hersteld en weer in gebruik zal worden genomen."@nl;
+    skos:prefLabel "Verblijfsobject buiten gebruik"@nl.
+
+  status:verblijfsobjectGevormd
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een nieuw verblijfsobject dat deel gaat uitmaken van een nog niet gebouwd pand waarvoor een bouwvergunning is verleend of dat wordt gerealiseerd in een reeds bestaand pand."@nl;
+    skos:prefLabel "Verblijfsobject gevormd"@nl.
+
+  status:verblijfsobjectInGebruik
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition """
+<section lang="nl">
+  <p>Een verblijfsobject dat feitelijk de status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectInGebruikNietIngemeten">Verblijfsobject in gebruik (niet ingemeten)</a> had en waarvan de definitieve geometrie is ingemeten.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Verblijfsobject in gebruik"@nl.
+
+  status:verblijfsobjectInGebruikNietIngemeten
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject waarvan de aanvrager van de bouwvergunning heeft gemeld dat de bouw is voltooid of waarvan in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het verblijfsobject feitelijk in gebruik is genomen of dat het weliswaar (nog) niet in gebruik is genomen maar naar het oordeel van de gemeente wel gebruiksgereed is, dan wel een verblijfsobject waarvan de verbouw is voltooid, dan wel een verblijfsobject dat door een calamiteit gedeeltelijk is verdwenen maar naar verwachting zal worden hersteld en in gebruik genomen."@nl;
+    skos:prefLabel "Verblijfsobject in gebruik (niet ingemeten)"@nl.
+
+  status:verblijfsobjectIngetrokken
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject dat als zodanig opgehouden heeft te bestaan omdat de aanvrager van een sloopvergunning heeft gemeld dat de sloop is voltooid of in een ambtelijke verklaring van een daartoe bevoegd ambtenaar is vastgesteld dat het verblijfsobject als zodanig niet meer bestaat."@nl;
+    skos:prefLabel "Verblijfsobject ingetrokken"@nl.
+
+  status:verblijfsobjectTenOnrechteOpgevoerd
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject dat niet had mogen worden opgenomen in de BAG-registratie en vervolgens is beëindigd."@nl;
+    skos:prefLabel "Verblijfsobject ten onrechte opgevoerd"@nl.
+
+  status:verbouwingVerblijfsobject
+    a
+      bag:StatusVerblijfsobject,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Een verblijfsobject waarvoor een vergunning tot verbouw is verleend en waarbij de verbouwing nog niet is voltooid."@nl;
+    skos:prefLabel "Verbouwing verblijfsobject"@nl.
+
+
+  bag:StatusWoonplaats
+    a
+      owl:Class,#
+      skos:Collection;#
+    owl:oneOf
+      ( status:woonplaatsAangewezen
+        status:woonplaatsIngetrokken );
+    rdfs:isDefinedBy bag:;#
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#83-statuswoonplaats"^^xsd:anyURI;
+    skos:definition "Een aanduiding van alle waarden die de status van een woonplaats kan aannemen."@nl;
+    skos:member#
+      status:woonplaatsAangewezen,#
+      status:woonplaatsIngetrokken;#
+    skos:prefLabel "Status woonplaats"@nl;
+    skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
+
+  [ a owl:AllDistinctFrom;#
+    owl:distinctMembers#
+      ( status:woonplaatsAangewezen#
+        status:woonplaatsIngetrokken ) ].#
+
+  status:woonplaatsAangewezen 
+    a
+      bag:StatusWoonplaats,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Woonplaats is aangewezen door het bevoegd gezag of geconstateerd."@nl;
+    skos:prefLabel "woonplaats aangewezen"@nl.
+
+  status:woonplaatsIngetrokken
+    a
+      bag:StatusWoonplaats,
+      skos:Concept;#
+    rdfs:isDefinedBy bag:;#
+    skos:definition "Woonplaats is ingetrokken door het bevoegd gezag."@nl;
+    skos:prefLabel "woonplaats ingetrokken"@nl.
+}
