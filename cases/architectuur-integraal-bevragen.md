@@ -35,11 +35,11 @@ Om die reden zetten we de data om naar één of meerdere views (datamodellen) wa
 
 Uiteindelijk bieden we op basis van standaard services (bijv. REST / ElasticSearch / SPARQL / GraphQL) verschillende stopcontacten waar een gebruiker middels zijn applicatie op kan aansluiten. Hierbij interpreteren we een applicatie als een breed begrip. Zo is de metadata bijvoorbeeld ook gemakkelijk vindbaar voor een zoekmachine als Google.
 
-## Linked Data publicatie treintje
+## Linked Data publicatie pipeline
 
 <figure id="figuur-2">
   <a href="/assets/images/ld-treintje.png">
-    <img src="/assets/images/ld-treintje.png" alt="Linked data treintje">
+    <img src="/assets/images/ld-treintje.png" alt="Linked data pipeline">
   </a>
   <figcaption>
     Figuur 2 ― Een beschrijving van de componenten die wij gebruiken om Linked Data te publiceren
@@ -50,7 +50,7 @@ Om de stap van een bron als SQL of REST naar Linked Data te maken maken wij gebr
 
 De workflow van dit geheel managen wij met de open-soure tooling van Apache Airflow. Hiermee wordt het proces herhaalbaar en valt het voldoende te monitoren.
 
-**Note**: In het ideaalplaatje bevat het publicatietreintje niet noodzakelerwijs een (PostgreSQL) database met een kopie van de bron. In de toekomst voorzien wij dat het treintje rechtstreeks op de bron zal acteren.
+**Note**: In het ideaalplaatje bevat de pipeline niet noodzakelijkerwijs een (PostgreSQL) database met een kopie van de bron. In de toekomst voorzien wij dat de pipeline rechtstreeks op de bron zal acteren.
 
 ## Knowledge Graph via LD Views
 
