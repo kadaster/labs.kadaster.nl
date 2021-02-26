@@ -18,7 +18,7 @@ title: Kadaster Data Science
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
 </script>
 
-# Kadaster Labs
+# Kadaster Labszz
 
 Onze samenleving staat voor een aantal grote uitdagingen om de wereld in de toekomst leefbaar te houden. We moeten de overgang maken naar duurzame energie en het hergebruik van grondstoffen. We hebben te maken met verstedelijking en vergrijzing en daardoor veranderende eisen aan huisvesting en de inrichting van ruimte. De technologische ontwikkelingen gaan razendsnel. Data en het combineren daarvan tot zinvolle informatie speelt daarin een belangrijke rol.
 
