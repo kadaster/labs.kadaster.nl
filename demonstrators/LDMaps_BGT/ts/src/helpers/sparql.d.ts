@@ -24,4 +24,4 @@ export declare type BindingValue = {
     value: string;
 };
 export declare function queryResourcesDescriptions(lat: string, lng: string, iris: string[]): Promise<SingleObject[]>;
-export declare function queryTriply(query: string): Promise<SparqlResults>;
+export declare function runQuery(lat: string, long: string, precisie: string): Promise<SparqlResults>;
