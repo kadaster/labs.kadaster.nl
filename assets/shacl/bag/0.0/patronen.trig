@@ -219,8 +219,7 @@ graph:patronen {
     sh:closed true;#
     sh:ignoredProperties ( rdf:type );#
     sh:name "Nummeraanduiding"@nl;#
-    sh:property
-      shp:Nummeraanduiding_identificatie;
+    sh:property shp:Nummeraanduiding_identificatie;
     sh:targetClass bag:Nummeraanduiding.
 
   shp:Nummeraanduiding_identificatie
@@ -389,15 +388,6 @@ graph:patronen {
     sh:name "ligt aan"@nl;#
     sh:nodeKind sh:IRI;#
     sh:path bag:ligtAan.
-
-  shp:openbareRuimte
-    a sh:PropertyShape;#
-    sh:class bag:OpenbareRuimte;#
-    sh:maxCount 1;
-    sh:minCount 1;
-    sh:name "heeft openbare ruimte"@nl;#
-    sh:nodeKind sh:IRI;#
-    sh:path bag:openbareRuimte.
 
   shp:postcode
     a sh:PropertyShape;#
