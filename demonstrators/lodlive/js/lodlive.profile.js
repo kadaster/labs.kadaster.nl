@@ -4,7 +4,7 @@ $.jStorage
                 {
                     // parametri di connessione agli endpoint
                     'connection' : {
-			'http://bag.basisregistraties.overheid.nl,http://archief.nl,http://rdf.histograph.io,http://data.pldn.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
+			'https://bag2.basisregistraties.overheid.nl,http://archief.nl,http://rdf.histograph.io,http://data.pldn.nl,http://brk.basisregistraties.overheid.nl,http://www.w3.org,https://data.labs.kadaster.nl,http://www.opengis.net,http://data.labs.kadaster.nl,http://bgt.basisregistraties.overheid.nl,http://api.labs.kadaster.nl,https://api.labs.kadaster.nl,http://data.informatiehuisruimte.nl' : {
 			description : {
 				en : 'Dit is de BAG!' 
 			},
@@ -20,22 +20,22 @@ $.jStorage
                                 inverseSameAs : 'SELECT DISTINCT * WHERE {?object <http://www.w3.org/2002/07/owl#sameAs> <{URI}>}'
                             },
 			useForInverseSameAs : true,
-			endpoint : 'https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql',
+			endpoint : 'https://bag2.basisregistraties.overheid.nl/sparql',
 			examples : [{
 				label : 'Hoog Soeren',
-				uri : 'http://bag.basisregistraties.overheid.nl/bag/id/woonplaats/3564'
+				uri : 'https://bag2.basisregistraties.overheid.nl/bag/id/woonplaats/3564'
 			}
 				, {
 				label : 'Woonplaats',
-				uri : 'http://bag.basisregistraties.overheid.nl/def/bag#Woonplaats'
+				uri : 'https://bag2.basisregistraties.overheid.nl/def/bag#Woonplaats'
 			} 
 				, {
 				label : 'Verblijfsobject',
-				uri : 'http://bag.basisregistraties.overheid.nl/def/bag#Verblijfsobject'
+				uri : 'https://bag2.basisregistraties.overheid.nl/def/bag#Verblijfsobject'
 			} 
 				, {
 				label : 'OpenbareRuimte',
-				uri : 'http://bag.basisregistraties.overheid.nl/def/bag#OpenbareRuimte'
+				uri : 'https://bag2.basisregistraties.overheid.nl/def/bag#OpenbareRuimte'
 			} , {
 				label : 'VerkaufsBucher',
 				uri : 'http://archief.nl/def/ArchivalReference'
@@ -72,7 +72,7 @@ $.jStorage
                         },
 			endpointType: 'all',
 			useForInverseSameAs : true,
-			endpoint : 'https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql',
+			endpoint : 'https://bag2.basisregistraties.overheid.nl',
                         document : {
                             className : 'standard',
                             titleProperties : [
@@ -84,13 +84,13 @@ $.jStorage
                                     'http://purl.org/dc/terms/title',
                                     'http://www.w3.org/2000/01/rdf-schema#label',
 				    'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
-				    'http://bag.basisregistraties.overheid.nl/def/bag#naamWoonplaats',
+				    'http://bag2.basisregistraties.overheid.nl/def/bag#naamWoonplaats',
 				    'https://data.labs.kadaster.nl/kadaster/woz/vocab/wozobjectnummer',
-				    'http://data.labs.kadaster.nl/kadaster/woz/vocab/wozobjectnummer',
-				    'http://bag.basisregistraties.overheid.nl/def/bag/id/verblijfsobject',
-				    'http://bag.basisregistraties.overheid.nl/def/bag/id/pand',
-				    'http://bag.basisregistraties.overheid.nl/def/bag#naamOpenbareRuimte',
-				    'http://bag.basisregistraties.overheid.nl/def/bag#huisnummer',
+				    'https://data.labs.kadaster.nl/kadaster/woz/vocab/wozobjectnummer',
+				    'https://bag2.basisregistraties.overheid.nl/def/bag/id/verblijfsobject',
+				    'https://bag2.basisregistraties.overheid.nl/def/bag/id/pand',
+				    'https://bag2.basisregistraties.overheid.nl/def/bag#naamOpenbareRuimte',
+				    'http://bag2.basisregistraties.overheid.nl/def/bag#huisnummer',
 				    'http://brt.basisregistraties.overheid.nl/def/top10nl#naam',
 				    'http://brt.basisregistraties.overheid.nl/def/top10nl#naamNL',
 				    'http://brt.basisregistraties.overheid.nl/def/top10nl#naamOfficieel',
