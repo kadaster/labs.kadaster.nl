@@ -3,6 +3,7 @@ banner: /assets/images/geodataplein.PNG
 layout: page
 title: Kadaster GEO-Dataplein
 ---
+
 # Use Case: Kadaster GEO-informatie voor iedereen
 
 ## Introductie
@@ -35,32 +36,20 @@ om middels twee demonstrators aan te tonen hoe een toekomstige manier van ontslu
   </a>
 </div>
 
-
-## Demonstrators 
+## Demonstrators
 
 Concreet heeft het Data Science Team hierbij de volgende demonstrators opgeleverd:
+
 1. **Integrale Explorer** - We maken het mogelijk om verschillende (basis)registraties integraal te bevragen op basis van een object (Adres, Pand, WOZ Object, etc.) welke als ingang voor de bevraging dient. De Integrale Explorer toont daarbij alle data die beschikbaar is in de API’s van de verschillende basisregistraties en richt zich hierbij ook nadrukkelijk op de data lineage; Waar komt de data vandaan en hoe is deze aan elkaar gekoppeld?
 2. **Generiek Kwaliteitsdashboard** - Hierbij laten wij zien dat het mogelijk is om eenvoudig kwaliteitsanalyses uit te voeren over basisregistraties heen. We focussen ons hier op near real-time analyse waarbij de domeinkennis bij de gebruiker ligt in plaats van het IT systeem wat er achter zit.
 
-
 **Hierbij moeten de demonstrators minstens aansluiten bij de volgende leidende principes van Kadaster omtrent data ontsluiting in de nieuwe situatie:**
--  De demonstrators worden gevoed door (samengestelde) APIs over de verschillende basisregistraties in scope.
--  De data waarover wordt gevisualiseerd en geanalyseerd blijft bij de bron. Voor deze toepassingen wordt geen kopie van de data gemaakt.
--  De demonstrators tonen een doorkijkje naar de toekomst vanuit de architectuur/back-end, maar richten zich primair op de toepassing en waarde voor de eindgebruiker. Het toont een voorbeelduitwerking van hoe het Kadaster zijn data in de toekomst kan organiseren.
 
-<figure id="figuur-1">
-  <a href="/assets/images/architectuur-platformstrategie.PNG">
-    <img src="/assets/images/architectuur-platformstrategie.PNG" alt="Architectuur platformstrategie">
-  </a>
-  <figcaption>
-    Figuur 1 ― Simpele architectuurplaat van de gemaakte demonstrators.
-  </figcaption>
-</figure>
+- De demonstrators worden gevoed door (samengestelde) APIs over de verschillende basisregistraties in scope.
+- De data waarover wordt gevisualiseerd en geanalyseerd blijft bij de bron. Voor deze toepassingen wordt geen kopie van de data gemaakt.
+- De demonstrators tonen een doorkijkje naar de toekomst vanuit de architectuur/back-end, maar richten zich primair op de toepassing en waarde voor de eindgebruiker. Het toont een voorbeelduitwerking van hoe het Kadaster zijn data in de toekomst kan organiseren.
 
-<div class="textbox" markdown="1">
 ## Samengestelde API's / GraphQL
 
-In de introductie spreken wij over samengestelde API's. Voor de demonstrators waarover gesproken wordt in deze use case betreft dit een samengestelde API op basis van de 
-tooling GraphQL. Wil je meer weten over wat GraphQL precies inhoudt en wat de relatie is met andere bekende data-ontsluitingstechnieken zoals REST en Linked Data, neem dan contact met ons op! 
+In de introductie spreken wij over samengestelde API's. Voor de demonstrators waarover gesproken wordt in deze use case betreft dit een samengestelde API op basis van de tooling GraphQL. Wil je meer weten over wat GraphQL precies inhoudt en wat de relatie is met andere bekende data-ontsluitingstechnieken zoals REST en Linked Data, neem dan contact met ons op!
 We delen graag onze visie op dit stuk.
-</div>
