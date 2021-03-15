@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/geodataplein.PNG
 layout: page
 title: Kadaster GEO-Dataplein
 ---

@@ -127,7 +127,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
     <a href="/cases/geodata-voor-iedereen">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/geodataplein.PNG" alt="Geo-data plein">
+      <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Integrale explorer logo">
       <div class="card-title">GEO data voor iedereen</div>
       <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
     </div>
