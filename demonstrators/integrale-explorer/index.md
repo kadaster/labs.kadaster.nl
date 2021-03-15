@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/geodataplein.PNG
 layout: page
 title: Integrale Explorer
 ---
