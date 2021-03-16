@@ -1,1 +1,221 @@
-
+{
+  "@context": {
+    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/",
+    "@version": 1.1,
+    "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
+    "adresseerbaarobjectstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "bronhouder": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/bronhouder/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "dct": "http://purl.org/dc/terms/",
+    "documentdatum": {
+      "@id": "dct:created",
+      "@type": "xsd:date"
+    },
+    "documentnummer": {
+      "@id": "dct:identifier"
+    },
+    "eindregistratie": {
+      "@id": "eindRegistratie",
+      "@type": "xsd:dateTime"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geconstateerd": {
+      "@type": "xsd:boolean"
+    },
+    "gebruiksdoel": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebruiksdoel/"
+      },
+      "@id": "gebruiksdoel",
+      "@type": "@id"
+    },
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "gml_id": null,
+    "heeftalshoofdadres" : {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "hoofdadres",
+      "@type": "@id"
+    },
+    "heeftalsnevenadres" : {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "nevenadres",
+      "@type": "@id"
+    },
+    "huisnummer": {
+      "@type": "xsd:positiveInteger"
+    },
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/"
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
+    },
+    "inonderzoek": null,
+    "lokaalID": "nen3610:lokaalID",
+    "ligplaatsstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "ligtaan": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "ligtAan",
+      "@type": "@id"
+    },
+    "ligtin": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "ligtIn",
+      "@type": "@id"
+    },
+    "maaktdeeluitvan": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "maaktDeelUitVan",
+      "@type": "@id"
+    },
+    "nummeraanduidingstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "oorspronkelijkbouwjaar": {
+      "@id": "bouwjaar",
+      "@type": "xsd:gYear"
+    },
+    "openbareruimtenaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "openbareruimtestatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "openbareruimtetype": {
+      "@id" : "nen3610:type"
+    },
+    "oppervlakte": {
+      "@type": "xsd:positiveInteger"
+    },
+    "pandstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "begingeldigheid": {
+      "@id": "nen3610:beginGeldigheid",
+      "@type": "xsd:date"
+    },
+    "eindgeldigheid": {
+      "@id": "nen3610:eindGeldigheid",
+      "@type": "xsd:date"
+    },
+    "ogc_fid": null,
+    "peilDatum": null,
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "standplaatsstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "tijdstipeindregistratielv": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratie": {
+      "@id": "beginRegistratie",
+      "@type": "xsd:dateTime"
+    },
+    "tijdstipregistratielv": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "typeRegistratie": null,
+    "verblijfsobjectstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "voorkomenidentificatie": {
+      "@id": "prov:order",
+      "@type": "xsd:positiveInteger"
+    },
+    "vorigeGeldigeVersie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeldigeVersie",
+      "@type": "@id"
+    },
+    "vorigeGeregistreerdeVersie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeregistreerdeVersie",
+      "@type": "@id"
+    },
+    "verkorteopenbareruimtenaam": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
+    },
+    "woonplaatsnaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "woonplaatsstatus": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}
