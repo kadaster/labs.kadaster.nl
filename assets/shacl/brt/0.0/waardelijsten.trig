@@ -1,0 +1,3240 @@
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix breedteklasse: <http://brt.basisregistraties.overheid.nl/top10nl/id/breedteklasse>
+prefix brontype: <http://brt.basisregistraties.overheid.nl/top10nl/id/brontype/>
+prefix brt: <https://brt.basisregistraties.overheid.nl/top10nl/def/>
+prefix functieReliëf: <http://brt.basisregistraties.overheid.nl/top10nl/id/functieReliëf/>
+prefix functieWaterdeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/functieWaterdeel/>
+prefix fysiekVoorkomenGebouw: <http://brt.basisregistraties.overheid.nl/top10nl/id/fysiekVoorkomenGebouw/>
+prefix fysiekVoorkomenSpoorbaandeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/fysiekVoorkomenSpoorbaandeel/>
+prefix fysiekVoorkomenTerrein: <http://brt.basisregistraties.overheid.nl/top10nl/id/fysiekVoorkomenTerrein/>
+prefix fysiekVoorkomenWaterdeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/fysiekVoorkomenWaterdeel/>
+prefix fysiekVoorkomenWegdeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/fysiekVoorkomenWegdeel/>
+prefix gebruiksdoel: <http://brt.basisregistraties.overheid.nl/top10nl/id/gebruiksdoel/>
+prefix hoofdverkeersgebruik: <http://brt.basisregistraties.overheid.nl/top10nl/id/hoofdverkeersgebruik/>
+prefix hoogteklasseGebouw: <http://brt.basisregistraties.overheid.nl/top10nl/id/hoogteklasseGebouw/>
+prefix hoogteklasseReliëf: <http://brt.basisregistraties.overheid.nl/top10nl/id/hoogteklasseReliëf/>
+prefix mutatietype: <http://brt.basisregistraties.overheid.nl/top10nl/id/mutatietype/>
+prefix referentievlak: <http://brt.basisregistraties.overheid.nl/top10nl/id/referentievlak/>
+prefix spoorbreedte: <http://brt.basisregistraties.overheid.nl/top10nl/id/spoorbreedte/>
+prefix status: <http://brt.basisregistraties.overheid.nl/top10nl/id/status/>
+prefix typeFunctioneelGebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeFunctioneelGebied/>
+prefix typeGebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeGebied/>
+prefix typeGebouw: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeGebouw/>
+prefix typeGeografischGebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeGeografischGebied/>
+prefix typeHoogte: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeHoogte/>
+prefix typeInfrastructuurSpoorbaandeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeInfrastructuurSpoorbaandeel/>
+prefix typeInfrastructuurWegdeel: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeInfrastructuurWegdeel/>
+prefix typeInrichtingselement: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeInrichtingselement/>
+prefix typeLandgebruik: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeLandgebruik/>
+prefix typeObject: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeObject/>
+prefix typeRegistratiefGebied: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeRegistratiefGebied/>
+prefix typeReliëf: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeReliëf/>
+prefix typeSpoorbaan: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeSpoorbaan/>
+prefix typeWater: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeWater>
+prefix typeWeg: <http://brt.basisregistraties.overheid.nl/top10nl/id/typeWeg/>
+prefix vaarwegklasse: <http://brt.basisregistraties.overheid.nl/top10nl/id/vaarwegklasse/>
+prefix verhardingsbreedteklasse: <http://brt.basisregistraties.overheid.nl/top10nl/id/verhardingsbreedteklasse/>
+prefix verhardingstype: <http://brt.basisregistraties.overheid.nl/top10nl/id/verhardingstype/>
+prefix vervoerfunctie: <http://brt.basisregistraties.overheid.nl/top10nl/id/vervoerfunctie/>
+prefix voorkomen: <http://brt.basisregistraties.overheid.nl/top10nl/id/voorkomen/>
+
+brt: {
+
+  brt:Breedteklasse
+    owl:oneOf
+      ( breedteklasse:05_3meter
+        breedteklasse:3_6meter
+        breedteklasse:6_12meter
+        breedteklasse:12_50meter
+        breedteklasse:50_125meter
+        breedteklasse:groterdan125meter );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_breedteklasse"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "De breedte van het water ingedeeld in klassen."@nl;
+    skos:prefLabel "Breedteklasse"@nl.
+
+  breedteklasse:05_3meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 0,5 meter en minder dan 3 meter."@nl;
+    skos:prefLabel "0,5 - 3 meter"@nl.
+
+  breedteklasse:3_6meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 3 meter en minder dan 6 meter."@nl;
+    skos:prefLabel "3 - 6 meter"@nl.
+
+  breedteklasse:6_12meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 6 meter en minder dan 12 meter."@nl;
+    skos:prefLabel "6 - 12 meter"@nl.
+
+  breedteklasse:12_50meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 12 meter en minder dan 50 meter."@nl;
+    skos:prefLabel "12 - 50 meter"@nl.
+
+  breedteklasse:50_125meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 50 meter en minder dan 125 meter."@nl;
+    skos:prefLabel "50 - 125 meter"@nl.
+
+  breedteklasse:groterdan125meter
+    skos:definition "De breedte van het water is groter dan of gelijk aan 125 meter."@nl;
+    skos:prefLabel "> 125 meter"@nl.
+
+
+
+  brt:Brontype
+    owl:oneOf
+      ( brontype:externedata
+        brontype:luchtfoto
+        brontype:overig
+        brontype:rd
+        brontype:top10vector );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-brontype"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Het type van de gebruikte bron."@nl;
+    skos:prefLabel "Brontype"@nl.
+
+  brontype:externeData
+    skos:definition "De data worden aangeleverd door externe leveranciers."@nl;
+    skos:prefLabel "externe data"@nl.
+
+  brontype:luchtfoto
+    skos:definition "Een fotografische opname van een deel van het aardoppervlak, gemaakt vanuit een vliegtuig."@nl;
+    skos:prefLabel "luchtfoto"@nl.
+
+  brontype:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  brontype:rd
+    skos:definition "Net van vaste punten in Nederland. Deze vaste punten zijn de referentiepunten waarnaar overige metingen en karteringen kunnen verwijzen. De referentiepunten maken deel uit van een netwerk dat is vastgelegd in het systeem van de Rijksdriehoeksmeting (RD). Dit netwerk wordt beheerd en onderhouden door het Kadaster. ( www.kadaster.nl )."@nl;
+    skos:prefLabel "RD"@nl.
+
+  brontype:top10vector
+    skos:definition "Digitaal bestand, bestaande uit gecodeerde vectoren, die tezamen de topografie van Nederland weergeven op de schaal 1:10.000. Voorloper van TOP10NL."@nl;
+    skos:prefLabel "TOP10vector"@nl.
+
+
+
+  brt:Functie
+    owl:unionOf
+      ( brt:FunctieReliëf
+        brt:FunctieWaterdeel );
+    rdfs:subClassOf skos:Concept;
+    skos:prefLabel "Functie"@nl.
+
+
+  brt:FunctieReliëf
+    owl:oneOf
+      ( functieReliëf:geluidWeren );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-re_functie"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een geluidswerende functie heeft."@nl;
+    skos:prefLabel "Reliëf functie"@nl.
+
+  functieReliëf:geluidWeren
+    skos:definition "Het reliëf heeft de functie van geluidswering in de vorm van een langwerpige, opgeworpen hoogte."@nl;
+    skos:prefLabel "geluid weren"@nl;
+        skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte: 100 meter. Minimum hoogte: 2 meter.</p>
+  <p>Een dijk met daarop een geluidsscherm wordt aangegeven als dijk/… (zonder de functie “geluid weren”) in combinatie met een inrichtingslijn geluidswering.</p>
+  <p>Een wal met daarop een geluidsscherm wordt aangegeven als een inrichtingslijn geluidswering.</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:FunctieWaterdeel
+    owl:oneOf
+      ( functieWaterdeel:drinkwaterbekken
+        functieWaterdeel:haven
+        functieWaterdeel:natuurbad
+        functieWaterdeel:overig
+        functieWaterdeel:viskwekerij
+        functieWaterdeel:vistrap
+        functieWaterdeel:vloeiveld
+        functieWaterdeel:waterval
+        functieWaterdeel:waterzuivering
+        functieWaterdeel:zwembad );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_functie"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "De functie van het water."@nl;
+    skos:prefLabel "Waterdeel functie"@nl.
+
+  functieWaterdeel:drinkwaterbekken
+    skos:definition "Bassin t.b.v. de drinkwatervoorziening."@nl;
+    skos:prefLabel "drinkwaterbekken"@nl;
+    skos:scopeNote "Ook een spaarbekken (niet noodzakelijk bedoeld voor de drinkwatervoorziening) wordt als drinkwaterbekken ingewonnen."@nl.
+
+  functieWaterdeel:haven
+    skos:definition "Lig- en bergplaats voor vaartuigen."@nl;
+    skos:prefLabel "haven"@nl;
+    skos:scopeNote "Tot welk type water een haven behoort, is afhankelijk van het waterdeel waar de haven aan ligt. Is dat waterdeel een “waterloop” dan is ook de haven een “waterloop”, is dat waterdeel van de categorie “meer, plas, ven, vijver” dan is de haven ook een “meer, plas, ven, vijver”."@nl.
+
+  functieWaterdeel:natuurbad
+    skos:definition "Plas in de natuur, ingericht voor zwemmen en zonnebaden."@nl;
+    skos:prefLabel "natuurbad"@nl.
+
+  functieWaterdeel:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  functieWaterdeel:viskwekerij
+    skos:definition "Bassin, aangelegd voor het kweken van vis."@nl;
+    skos:prefLabel "viskwekerij"@nl.
+
+  functieWaterdeel:vistrap
+    skos:definition "Omleiding bij een stuw of een deel van een waterloop zodanig ingericht dat vissen stroomopwaarts kunnen passeren."@nl;
+    skos:prefLabel "viskwekerij"@nl;
+    skos:scopeNote "De in de vistrap gelegen stuwtjes worden niet apart aangegeven."@nl.
+
+  functieWaterdeel:vloeiveld
+    skos:definition "Omdijkt stuk land, bestemd voor de bezinking van afvalwater."@nl;
+    skos:prefLabel "vloeiveld"@nl.
+
+  functieWaterdeel:waterval
+    skos:definition "Plaats waar stromend water van een hoogte of helling naar beneden valt."@nl;
+    skos:prefLabel "waterval"@nl.
+
+  functieWaterdeel:waterzuivering
+    skos:definition "Zuivering van afvalwater."@nl;
+    skos:prefLabel "waterzuivering"@nl;
+    skos:scopeNote "Een bezinkbak (omdijkt of ommuurd vlak, bestemd voor de bezinking van afvalslib) en beluchtingsbak worden, indien deel uitmakend van een zuiveringsinstallatie, ook opgenomen."@nl.
+
+  functieWaterdeel:zwembad
+    skos:definition "De waterbak bij een zwembad."@nl;
+    skos:prefLabel "zwembad"@nl;
+    skos:scopeNote "Een zwembassin wordt, indien groter dan 50 m² en openbaar toegankelijk, aangegeven als een waterdeel van het type meer/plas/ven/vijver, met de functie zwembad."@nl.
+
+
+
+  brt:FysiekVoorkomen
+    owl:unionOf
+      ( brt:FysiekVoorkomenGebouw
+        brt:FysiekVoorkomenSpoorbaandeel
+        brt:FysiekVoorkomenTerrein
+        brt:FysiekVoorkomenWaterdeel
+        brt:FysiekVoorkomenWegdeel );
+    rdfs:subClassOf skos:Concept;
+    skos:prefLabel "Fysiek voorkomen"@nl.
+
+
+  brt:FysiekVoorkomenGebouw
+    owl:oneOf
+      ( fysiekVoorkomenGebouw:ondergronds
+        fysiekVoorkomenGebouw:overkluisd  );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-gb_fysiekvoorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "Fysiek voorkomen gebouw"@nl.
+
+  fysiekVoorkomenGebouw:ondergronds
+    skos:definition "Gebouw gelegen onder het maaiveld."@nl;
+    skos:prefLabel "ondergronds"@nl.
+
+  fysiekVoorkomenGebouw:overkluisd
+    skos:definition "Gebouw overbouwd door andere bebouwing."@nl;
+    skos:prefLabel "overkluisd"@nl.
+
+
+  brt:FysiekVoorkomenSpoorbaandeel
+    owl:oneOf
+      ( fysiekVoorkomenSpoorbaandeel:inTunnel
+        fysiekVoorkomenSpoorbaandeel:opBeweegbaarDeelVanBrug
+        fysiekVoorkomenSpoorbaandeel:opVastDeelVanBrug
+        fysiekVoorkomenSpoorbaandeel:overkluisd );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-sp_fysiekvoorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "Fysiek voorkomen spoorbaandeel"@nl.
+
+  fysiekVoorkomenSpoorbaandeel:inTunnel
+    skos:definition "Gelegen in een kunstmatig aangelegde, onderaardse of door een berg geboorde kokervormige doorgang."@nl;
+    skos:prefLabel "op beweegbaar deel van brug spoorbaandeel"@nl.
+
+  fysiekVoorkomenSpoorbaandeel:opBeweegbaarDeelVanBrug
+    skos:definition "Gelegen op een beweegbaar deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op beweegbaar deel van brug spoorbaandeel"@nl.
+
+  fysiekVoorkomenSpoorbaandeel:opVastDeelVanBrug
+    skos:definition "Gelegen op een niet beweegbaar deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op vast deel van brug spoorbaandeel"@nl.
+
+  fysiekVoorkomenSpoorbaandeel:overkluisd
+    skos:definition "Overbouwd door bebouwing of door een al dan niet licht doorlatend dak, zodanig dat de orthogonale projectie van de bebouwing of het dak op of over het object valt."@nl;
+    skos:prefLabel "overkluisd spoorbaandeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Het verloop van het object onder de bebouwing, wordt volgens de meest waarschijnlijke vorm aangegeven. Een overkluizing is geen aanleiding tot verandering van het hoogteniveau (bijvoorbeeld: een object waarboven zich alleen een gebouw bevindt, heeft als hoogteniveau de attribuutwaarde 0).</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:FysiekVoorkomenTerrein
+    owl:oneOf
+      ( fysiekVoorkomenTerrein:inTunnel
+        fysiekVoorkomenTerrein:opBeweegbaarDeelVanBrug
+        fysiekVoorkomenTerrein:opVastDeelVanBrug
+        fysiekVoorkomenTerrein:overkluisd );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-te_fysiekvoorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "Fysiek voorkomen terrein"@nl.
+
+  fysiekVoorkomenTerrein:inTunnel
+    skos:definition "Gelegen in een kunstmatig aangelegde, onderaardse of door een berg geboorde kokervormige doorgang."@nl;
+    skos:prefLabel "in tunnel terrein"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een op zichzelf staande veetunnel breder dan 2 m wordt gegeven door het aanbrengen van een vlak overig in tunnel.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenTerrein:opBeweegbaarDeelVanBrug
+    skos:definition "Object gelegen op een beweegbaar deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op beweegbaar deel van brug terrein"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een losse brug die direct vanaf de weg toegang geeft tot bebouwing, een landerij, etc. én geen relatie heeft met een weg wordt niet gegeven.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenTerrein:opVastDeelVanBrug
+    skos:definition "Object gelegen op een vast deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op vast deel van brug terrein"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een losse brug die direct vanaf de weg toegang geeft tot bebouwing, een landerij, etc. én geen relatie heeft met een weg wordt niet gegeven.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenTerrein:overkluisd
+    skos:definition "Overbouwd door bebouwing of door een al dan niet licht doorlatend dak, zodanig dat de orthogonale projectie van de bebouwing of het dak op of over het object valt."@nl;
+    skos:prefLabel "overkluisd terrein"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Overkluizing wordt niet aangeven in het geval van kleine oversteekjes. Minimale oppervlakte overkluisd terrein: 100 m².</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:FysiekVoorkomenWaterdeel
+    owl:oneOf
+      ( fysiekVoorkomenWaterdeel:inAfsluitbareDuiker
+        fysiekVoorkomenWaterdeel:inAfsluitbareGrondduiker
+        fysiekVoorkomenWaterdeel:inDuiker
+        fysiekVoorkomenWaterdeel:inGrondduiker
+        fysiekVoorkomenWaterdeel:inSluis
+        fysiekVoorkomenWaterdeel:opBrug
+        fysiekVoorkomenWaterdeel:overkluisd );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_fysiekvoorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "Fysiek voorkomen waterdeel"@nl.
+
+  fysiekVoorkomenWaterdeel:inAfsluitbareDuiker
+    skos:definition "Gelegen in een afsluitbare koker die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen, niet zijnde een grondduiker."@nl;
+    skos:prefLabel "in afsluitbare duiker"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Elke afsluitbare duiker in het hoofafwateringspatroon wordt aangegeven en elke afsluitbare duiker onder een dijk of (spoor)weg met een minimale diameter van 60 centimeter. Een afsluitbare duiker in open terrein, niet gelegen in het hoofdafwateringspatroon, wordt aangegeven als (koe)dam. (Koe)dammen gelegen in waterlopen smaller dan 6 meter die onderdeel uitmaken van het hoofdafwateringspatroon worden opgenomen als duiker. Ook een uitwateringssluis (sluis waarmee overtollig water gespuid wordt) wordt opgenomen als waterdeel in afsluitbare duiker, tenzij er een aantal uitwateringssluizen als complex naast elkaar voorkomen. Dan wordt het geheel als functioneel gebied van het type sluizencomplex opgenomen.</p>
+  <p>Een duiker gelegen onder een gemaal of onder een molen van het type windmolen: watermolen wordt altijd gegeven als afsluitbare duiker.</p>
+  <p>Een buis voor het lozen van industrieel water op oppervlaktewater wordt niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWaterdeel:inAfsluitbareGrondduiker
+    skos:definition "Gelegen in een onder een ander water doorlopende afsluitbare koker, die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen."@nl;
+    skos:prefLabel "in afsluitbare grond duiker"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Elke afsluitbare grondduiker in het hoofafwateringspatroon wordt aangegeven.</p>
+  <p>Een buis voor het lozen van industrieel water op oppervlaktewater wordt niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWaterdeel:inDuiker
+    skos:definition "Gelegen in een niet afsluitbare koker die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen, niet zijnde een grondduiker."@nl;
+    skos:prefLabel "in duiker"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Elke duiker in het hoofafwateringspatroon wordt aangegeven en elke duiker onder een dijk of (spoor)weg met een minimale diameter van 60 centimeter. Een duiker in open terrein, niet gelegen in het hoofdafwateringspatroon, wordt aangegeven als (koe)dam.</p>
+  <p>(Koe)dammen gelegen in waterlopen smaller dan 6 meter die onderdeel uitmaken van het hoofdafwateringspatroon worden opgenomen als duiker.</p>
+  <p>Een buis voor het lozen van industrieel water op oppervlaktewater wordt niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWaterdeel:inGrondduiker
+    skos:definition "Gelegen in een onder een ander water doorlopende koker, die dient voor de instandhouding van de verbinding tussen wederzijds gelegen wateren of voor de afwatering van aangrenzende landerijen."@nl;
+    skos:prefLabel "in grond duiker"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Elke grondduiker gelegen in het hoofafwateringspatroon wordt aangegeven.</p>
+  <p>Een buis voor het lozen van industrieel water op oppervlaktewater wordt niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWaterdeel:inSluis
+    skos:definition "Gelegen in het deel tussen de sluisdeuren van een schutsluis/scheepvaartsluis (de schutkolk/sluiskolk)."@nl;
+    skos:prefLabel "in sluis"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien een sluisdeur is gelegen onder een wegdeel >2 m op brug wordt deze niet aangegeven. Ook de kolk loopt in dat geval tot de brug.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWaterdeel:opBrug
+    skos:definition "Gelegen op een kunstwerk waarmee water over een weg of een ander water wordt gevoerd, zodanig geconstrueerd dat het dak van de onderdoorgang tevens de bodem van het bovengelegen water vormt (aquaduct)."@nl;
+    skos:prefLabel "op brug"@nl.
+
+  fysiekVoorkomenWaterdeel:overkluisd
+    skos:definition "Overdekt door gebouwen."@nl;
+    skos:prefLabel "overkluisd waterdeel"@nl.
+
+
+  brt:FysiekVoorkomenWegdeel
+    owl:oneOf
+      ( fysiekVoorkomenWegdeel:inTunnel
+        fysiekVoorkomenWegdeel:opBeweegbaarDeelVanBrug
+        fysiekVoorkomenWegdeel:opKnooppuntverbinding
+        fysiekVoorkomenWegdeel:opOpritOfAfrit
+        fysiekVoorkomenWegdeel:opRotonde
+        fysiekVoorkomenWegdeel:opVastDeelVanBrug
+        fysiekVoorkomenWegdeel:overkluisd );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_fysiekvoorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "Fysiek voorkomen wegdeel"@nl.
+
+  fysiekVoorkomenWegdeel:inTunnel
+    skos:definition "Gelegen in een kunstmatig aangelegde, onderaardse of door een berg geboorde kokervormige doorgang."@nl;
+    skos:prefLabel "in tunnel wegdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Voor vastlegging van het verloop van een tunnel is een overzichtskaart noodzakelijk. Een veetunnel smaller dan 2 m wordt gegeven door het aanbrengen van een voetpad<2m in tunnel, ongeacht de lengte.</p>
+  <p>Een op zichzelf staande veetunnel breder dan 2 m wordt gegeven door het aanbrengen van een vlak overig in tunnel.</p>
+  <p>Een voetgangerstunnel smaller dan 2 m wordt gegeven door het aanbrengen van een voetpad<2m in tunnel, ongeacht de lengte.</p>
+  <p>Een voetgangerstunnel breder dan 2 m wordt gegeven door het aanbrengen van een wegvlak van het type voetpad>2 m in tunnel ongeacht de lengte.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWegdeel:opBeweegbaarDeelVanBrug
+    skos:definition "Gelegen op een beweegbaar deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op beweegbaar deel van brug wegdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Iedere beweegbare brug wordt ingewonnen tenzij het een brug betreft die direct vanaf een weg toegang geeft tot bebouwing, een landerij etc. én geen relatie heeft met een weg.</p>
+  <p>Uitzondering: Losse voetgangersbruggen, niet gelegen in een pad of rijwielpad, worden aangegeven als een voetpad met de attribuutwaarde op beweegbaar deel van brug. Deze bruggen zijn interessant voor bv. wandelaars. Indien er over een waterloop veel losse voetgangersbruggen naast elkaar voorkomen, worden deze gegeneraliseerd weergegeven.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWegdeel:opKnooppuntverbinding
+    skos:definition "Deel van een weg gelegen op een verkeersknooppunt van snelwegen."@nl;
+    skos:prefLabel "op knooppuntverbinding wegdeel"@nl.
+
+  fysiekVoorkomenWegdeel:opOpritOfAfrit
+    skos:definition "Deel van weg onderdeel zijnde van een op- of afrit van een autosnelweg of hoofdweg."@nl;
+    skos:prefLabel "op oprit/afrit wegdeel"@nl.
+
+  fysiekVoorkomenWegdeel:opRotonde
+    skos:definition "Deel van weg onderdeel zijnde van een rotonde."@nl;
+    skos:prefLabel "op rotonde wegdeel"@nl.
+
+  fysiekVoorkomenWegdeel:opVastDeelVanBrug
+    skos:definition "Gelegen op een niet beweegbaar deel van een kunstwerk dat een verbinding vormt door middel van een overspanning."@nl;
+    skos:prefLabel "op vast deel van brug wegdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Iedere brug wordt ingewonnen tenzij het een brug betreft die direct vanaf een weg toegang geeft tot bebouwing, een landerij etc. én geen relatie heeft met een weg.</p>
+  <p>Uitzondering: Losse voetgangersbruggen, niet gelegen in een pad of rijwielpad, worden aangegeven als een voetpad met de attribuutwaarde op vast deel van brug. Deze bruggen zijn interessant voor bv. wandelaars. Indien er over een waterloop veel losse voetgangersbruggen naast elkaar voorkomen, worden deze gegeneraliseerd weergegeven.</p>
+</section>"""^^rdf:HTML.
+
+  fysiekVoorkomenWegdeel:overkluisd
+    skos:definition "Overbouwd door gebouwen, zodanig dat de orthogonale projectie van de gebouwen op of over het object valt."@nl;
+    skos:prefLabel "overkluisd wegdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Wordt aangegeven voor de objectklassen Wegdeel, Spoorbaandeel, Waterdeel en Terrein. Een overkluizing wordt niet aangeven in het geval van kleine oversteekjes. Bij de objectklasse terrein is de minimale maat 100 m2, de andere objectklassen kennen geen minimummaat.</p>
+  <p>Het verloop van het object onder de bebouwing, wordt volgens de meest waarschijnlijke vorm aangegeven. Een overkluizing is geen aanleiding tot verandering van het hoogteniveau.</p>
+  <p>Wanneer een weg voor een gedeelte van de breedte overkluisd is, wordt het gehele wegdeel waarvoor dit geldt overkluisd (i.v.m. hartlijn).</p>
+</section>"""^^rdf:HTML.
+
+
+
+  brt:Gebruiksdoel
+    owl:oneOf
+      ( gebruiksdoel:bijeenkomstfunctie
+        gebruiksdoel:celfunctie
+        gebruiksdoel:gezondheidszorgfunctie
+        gebruiksdoel:industriefunctie
+        gebruiksdoel:kantoorfunctie
+        gebruiksdoel:logiesfunctie
+        gebruiksdoel:onderwijsfunctie
+        gebruiksdoel:overigeGebruiksfunctie
+        gebruiksdoel:sportfunctie
+        gebruiksdoel:winkelfunctie
+        gebruiksdoel:woonfunctie );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ge_gebruiksdoel"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Huidig gebruiksdoel van een gebouw, conform de BAG classificatie voor panden"@nl;
+    skos:prefLabel "Gebruiksdoel"@nl.
+
+  gebruiksdoel:bijeenkomstfunctie
+    skos:definition "Gebouw waar bijeenkomsten voor personen kunnnen worden georganiseerd."@nl;
+    skos:prefLabel "bijeenkomstfunctie"@nl.
+
+  gebruiksdoel:celfunctie
+    skos:definition "Gebouw waar personen in bewaring kunnen worden gesteld."@nl;
+    skos:prefLabel "celfunctie"@nl.
+
+  gebruiksdoel:gezondheidszorgfunctie
+    skos:definition "Gebouw waar lichamelijke of geestelijke gezondheidszorg kan worden verleend."@nl;
+    skos:prefLabel "gezondheidszorgfunctie"@nl.
+
+  gebruiksdoel:industriefunctie
+    skos:definition "Gebouw waar industriële activiteiten plaatsvinden."@nl;
+    skos:prefLabel "industriefunctie"@nl.
+
+  gebruiksdoel:kantoorfunctie
+    skos:definition "Gebouw waar administratieve handelingen plaatsvinden."@nl;
+    skos:prefLabel "kantoorfunctie"@nl.
+
+  gebruiksdoel:logiesfunctie
+    skos:definition "Gebouw waar de mogelijkheid aanwezig is om overnachtingsmogelijkheden aan te bieden."@nl;
+    skos:prefLabel "logiesfunctie"@nl.
+
+  gebruiksdoel:onderwijsfunctie
+    skos:definition "Gebouw waar onderwijsfaciliteiten worden aangeboden."@nl;
+    skos:prefLabel "onderwijsfunctie"@nl.
+
+  gebruiksdoel:overigeGebruiksfunctie
+    skos:definition "Indien geen van bovengenoemde functies van toepassing is."@nl;
+    skos:prefLabel "overige gebruiksfunctie"@nl.
+
+  gebruiksdoel:sportfunctie
+    skos:definition "Gebouw waar sportieve activiteiten kunnen worden ontplooid."@nl;
+    skos:prefLabel "sportfunctie"@nl.
+
+  gebruiksdoel:winkelfunctie
+    skos:definition "Gebouw waar allerhanden roerende of onroerende goederen al dan niet tegen betaling worden aangeboden."@nl;
+    skos:prefLabel "winkelfunctie"@nl.
+
+  gebruiksdoel:woonfunctie
+    skos:definition "Gebouw geschikt voor permanente bewoning."@nl;
+    skos:prefLabel "woonfunctie"@nl.
+
+
+
+  brt:Hoofdverkeersgebruik
+    owl:oneOf
+      ( hoofdverkeersgebruik:busverkeer
+        hoofdverkeersgebruik:fietsers_bromfietsers
+        hoofdverkeersgebruik:gemengdVerkeer
+        hoofdverkeersgebruik:overig
+        hoofdverkeersgebruik:ruiters
+        hoofdverkeersgebruik:snelverkeer
+        hoofdverkeersgebruik:vliegverkeer
+        hoofdverkeersgebruik:voetgangers );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_hoofdverkeersgebruik"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Soort verkeer waarvoor een weg bestemd is."@nl;
+    skos:prefLabel "Hoofdverkeersgebruik"@nl.
+
+  hoofdverkeersgebruik:busverkeer
+    skos:definition "Weg speciaal bestemd voor openbaar vervoer."@nl;
+    skos:prefLabel "busverkeer"@nl;
+    skos:scopeNote """
+  <section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien een busbaan is geïntegreerd in een bredere weg (dus als er op de grens tussen de busbaan en de rest van de weg geen fysieke barrière is om oneigenlijk gebruik te verhinderen), dan wordt de busbaan niet apart aangegeven.</p>
+  </section>"""^^rdf:HTML.
+
+  hoofdverkeersgebruik:fietsers_bromfietsers
+    skos:definition "Weg uitsluitend bestemd voor fietsers en/of bromfietsers en daartoe aangeduid met een blauw bord met daarop een wit rijwiel, of een blauw of zwart bord met daarop de tekst “FIETSPAD” of “RIJWIELPAD”. Indien, in uitzonderlijke gevallen, met grote mate van zekerheid bepaald kan worden dat een weg/pad een rijwielpad is, mag afgeweken worden van de regel dat er een aanduiding moet zijn."@nl;
+    skos:prefLabel "fietsers, bromfietsers"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een vrijliggend rijwielpad (waar niet direct een ander wegdeel naast ligt) breder dan 2 meter wordt altijd aangegeven.</p>
+  <p>Een parallel gelegen rijwielpad (direct gelegen naast een ander wegdeel, met een fysieke scheiding ertussen) breder dan 2 meter, buiten bebouwd gebied, wordt altijd aangegeven.</p>
+  <p>Een parallel gelegen rijwielpad breder dan 2 meter, binnen bebouwd gebied, wordt alleen gegeven naast een autosnelweg, hoofdweg, regionale weg of lokale weg.</p>
+  <p>Een vrijliggend rijwielpad smaller dan 2 meter, wordt altijd aangegeven.</p>
+  <p>Een parallel gelegen rijwielpad smaller dan 2 meter buiten bebouwd gebied wordt aangegeven op de rand van het naastliggende wegvlak.</p>
+  <p>Een parallel gelegen rijwielpad smaller dan 2 meter binnen bebouwd gebied wordt niet aangegeven.</p>
+  <p>Een vrijliggend rijwielpad binnen bebouwd gebied dat over een relatief korte afstand parallel ligt langs een niet geclassificeerde weg, wordt wel aangegeven.</p>
+  <p>Rijwielpaden toegankelijk voor bestemmingsverkeer krijgen als hoofdverkeersgebruik ‘fietsers, bromfietsers’.</p>
+  <p>Een rijwielpad geïntegreerd in een voetgangersgebied wordt niet apart aangegeven.</p>
+  <p>Een fietsstraat wordt ingewonnen als straat.</p>
+</section>"""^^rdf:HTML.
+
+  hoofdverkeersgebruik:gemengdVerkeer
+    skos:definition "Weg, bestemd voor allerlei soorten verkeer."@nl;
+    skos:prefLabel "gemengd verkeer"@nl.
+
+  hoofdverkeersgebruik:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  hoofdverkeersgebruik:ruiters
+    skos:definition "Weg bestemd voor paardrijders"@nl;
+    skos:prefLabel "ruiters"@nl.
+
+  hoofdverkeersgebruik:snelverkeer
+    skos:definition "Weg, bestemd voor motorvoertuigen."@nl;
+    skos:prefLabel "snelverkeer"@nl.
+
+  hoofdverkeersgebruik:vliegverkeer
+    skos:definition "Weg, bestemd voor luchtvaartuigen."@nl;
+    skos:prefLabel "vliegverkeer"@nl.
+
+  hoofdverkeersgebruik:voetgangers
+    skos:definition "Weg, uitsluitend bestemd voor voetgangers."@nl;
+    skos:prefLabel "voetgangers"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Voetpaden smaller dan 2 meter worden alleen ingewonnen indien vrijliggend van andere wegdelen en langer dan 100 meter.</p>
+  <p>In uitzonderingssituaties mag, in geval van een duidelijke verbinding (als afkorting van een veel langer wegdeel van het type gemengd verkeer), een pad korter dan 100 m wel gegeven worden.</p>
+  <p>Een koepad <2 m, gelegen achter een boerderij, wordt gegeven als voetpad indien hij langer is dan 250 m.</p>
+  <p>Een voetpad toegankelijk voor bestemmingsverkeer krijgt alleen ‘voetgangers’ als hoofdverkeersgebruik. Een voetpad als toegangspad of gemeenschappelijk pad rond huizen, huizenrijen, flatgebouwen e.d. v wordt niet aangegeven. Een voetpad dat onderdeel is van een doorlopend geheel en over een relatief korte afstand parallel ligt langs een niet geclassificeerde weg, wordt wel aangegeven. Belangrijke voetpaden (belangrijk voor de wijk waarin ze voorkomen) mogen gegeven worden, ook als ze korter zijn dan 100 m, mits ze onderdeel zijn van een logisch doorlopend geheel met een minimum lengte van 250 meter.</p>
+  <p>Losse voetgangersbruggen, niet gelegen in een pad of rijwielpad, worden aangegeven als een voetpad met de attribuutwaarde op vast deel van brug / op beweegbaar deel van brug. Deze bruggen zijn interessant voor bv. wandelaars. Indien er over een waterloop veel losse voetgangersbruggen naast elkaar voorkomen, worden deze gegeneraliseerd weergegeven.</p>
+</section>"""^^rdf:HTML.
+
+
+
+  brt:Hoogteklasse
+    owl:unionOf
+      ( brt:HoogteklasseGebouw
+        brt:HoogteklasseReliëf );
+    rdfs:subClassOf skos:Concept;
+    skos:prefLabel "Hoogteklasse"@nl.
+
+
+  brt:HoogteklasseGebouw
+    owl:oneOf
+      ( hoogteklasseGebouw:hoogbouw
+        hoogteklasseGebouw:laagbouw );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ge_hoogteklasse"^^xsd:anyURI;
+    skos:definition "De klasse van hoogte waar de bebouwing toe behoort."@nl;
+    skos:prefLabel "Hoogteklasse gebouw"@nl.
+
+  hoogteklasseGebouw:hoogbouw
+    skos:definition "Gebouwen (als zelfstandige eenheid of onderdeel van een groter gebouw) hoger dan 35 meter of bestaande uit 10 of meer woonlagen."@nl;
+    skos:prefLabel "hoogbouw"@nl;
+    skos:scopeNote "Een gedeelte hoogbouw, wat onderdeel uitmaakt van een groter geheel, wordt als een op zichzelf staand object aangegeven."@nl.
+
+  hoogteklasseGebouw:laagbouw
+    skos:definition "Bebouwing met een hoogte van 35 meter of lager en bestaande uit minder dan 10 woonlagen."@nl;
+    skos:prefLabel "laagbouw"@nl.
+
+
+  brt:HoogteklasseReliëf
+    owl:oneOf
+      ( hoogteklasseReliëf:minderdan1meter
+        hoogteklasseReliëf:1_2punt5meter
+        hoogteklasseReliëf:groterdan2punt5meter );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ge_hoogteklasse"^^xsd:anyURI;
+    skos:definition "De klasse van hoogte waar de bebouwing toe behoort."@nl;
+    skos:prefLabel "Hoogteklasse gebouw"@nl.
+
+  hoogteklasseReliëf:minderdan1meter
+    skos:definition "De hoogte van een wal, talud of steile rand is lager dan 1 meter."@nl;
+    skos:prefLabel "< 1 meter"@nl.
+
+  hoogteklasseReliëf:1_2punt5meter
+    skos:definition "De hoogte van het object ten opzichte van het maaiveld ligt tussen 1 en 2,5 meter."@nl;
+    skos:prefLabel "1 - 2,5 meter"@nl.
+
+  hoogteklasseReliëf:groterdan2punt5meter
+    skos:definition "De hoogte van het object ten opzichte van het maaiveld is groter dan 2,5 meter."@nl;
+    skos:prefLabel "> 2,5 meter"@nl.
+
+
+
+  brt:Mutatietype
+    owl:oneOf
+      ( mutatietype:andereBron
+        mutatietype:kwaliteitsverbetering
+        mutatietype:modelwijziging
+        mutatietype:werkelijkeVerandering );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-mutatietype"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Het soort mutatie dat een object als laatste ondergaan heeft."@nl;
+    skos:prefLabel "Mutatietype"@nl.
+
+  mutatietype:andereBron
+    skos:definition "Aanpassing van het object als gevolg van gebruik van andere bronnen."@nl;
+    skos:prefLabel "andere bron"@nl.
+
+  mutatietype:kwaliteitsverbetering
+    skos:definition "Aanpassing van het object als gevolg van een kwaliteitsactie"@nl;
+    skos:prefLabel "kwaliteitsverbetering"@nl.
+
+  mutatietype:modelwijziging
+    skos:definition "Aanpassing van het object als gevolg van wijzigingen in het datamodel."@nl;
+    skos:prefLabel "modelwijziging"@nl.
+
+  mutatietype:werkelijkeVerandering
+    skos:definition "Aanpassing van het object als gevolg van wijzigingen van het object in het terrein."@nl;
+    skos:prefLabel "werkelijke verandering"@nl.
+
+
+
+  brt:Referentievlak
+    owl:oneOf
+      ( referentievlak:ghw
+        referentievlak:lat
+        referentievlak:nap
+        referentievlak:olw );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ho_referentievlak"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Het referentievlak waarop de hoogte van een object gebaseerd is."@nl;
+    skos:prefLabel "Referentievlak"@nl.
+
+  referentievlak:ghw
+    skos:definition "Gemiddeld Hoog Water."@nl;
+    skos:prefLabel "GHW"@nl.
+
+  referentievlak:lat
+    skos:definition "Lowest Astronomical Tide."@nl;
+    skos:prefLabel "LAT"@nl.
+
+  referentievlak:nap
+    skos:definition "Normaal Amsterdams Peil."@nl;
+    skos:prefLabel "NAP"@nl.
+
+  referentievlak:olw
+    skos:definition "Overeengekomen Laag Water."@nl;
+    skos:prefLabel "OLW"@nl.
+
+
+
+  brt:Spoorbreedte
+    owl:oneOf
+      ( spoorbreedte:normaalspoor
+        spoorbreedte:smalspoor );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-brontype"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Het type van de gebruikte bron."@nl;
+    skos:prefLabel "Spoorbreedte"@nl.
+
+  spoorbreedte:normaalspoor
+    skos:definition "Spoor met een normale breedte, namelijk 1,435 meter."@nl;
+    skos:prefLabel "normaal spoor"@nl.
+
+  spoorbreedte:smalspoor
+    skos:definition "Spoorbaandeel met een geringere breedte dan normaalspoor."@nl;
+    skos:prefLabel "smal spoor"@nl;
+    skos:scopeNote "Wordt alleen weergegeven in open terrein."@nl.
+
+
+
+  brt:Status
+    owl:oneOf
+      ( status:buitenGebruik
+        status:inGebruik
+        status:inUitvoering );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-status"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "De staat waarin een object zich bevindt."@nl;
+    skos:prefLabel "Status"@nl.
+
+  status:buitenGebruik
+    skos:definition "Het object wordt niet meer (als zodanig) gebruikt."@nl;
+    skos:prefLabel "buiten gebruik"@nl.
+
+  status:inGebruik
+    skos:definition "Het object wordt gebruikt."@nl;
+    skos:prefLabel "in gebruik"@nl.
+
+  status:inUitvoering
+    skos:definition "Het object is in aanleg."@nl;
+    skos:prefLabel "in uitvoering"@nl.
+
+
+
+  brt:Type
+    owl:unionOf
+      ( brt:TypeFunctioneelGebied
+        brt:TypeGebied
+        brt:TypeGebouw
+        brt:TypeGeografischGebied
+        brt:TypeHoogte
+        brt:TypeInrichtingselement
+        brt:TypeLandgebruik
+        brt:TypeObject
+        brt:TypeRegistratiefGebied
+        brt:TypeReliëf
+        brt:TypeSpoorbaan
+        brt:TypeWater
+        brt:TypeWeg );
+    rdfs:subClassOf skos:Concept;
+    skos:prefLabel "Type"@nl.
+
+
+  brt:TypeFunctioneelGebied
+    owl:oneOf
+      ( typeFunctioneelGebied:attractiepark
+        typeFunctioneelGebied:bedrijventerrein
+        typeFunctioneelGebied:begraafplaats
+        typeFunctioneelGebied:boswachterij
+        typeFunctioneelGebied:botanischeTuin
+        typeFunctioneelGebied:bungalowpark
+        typeFunctioneelGebied:camping_kampeerterrein
+        typeFunctioneelGebied:campus
+        typeFunctioneelGebied:caravanpark
+        typeFunctioneelGebied:circuit
+        typeFunctioneelGebied:crossbaan
+        typeFunctioneelGebied:dierentuin_safaripark
+        typeFunctioneelGebied:eendenkooi
+        typeFunctioneelGebied:emplacement
+        typeFunctioneelGebied:erebegraafplaats
+        typeFunctioneelGebied:gaswinning
+        typeFunctioneelGebied:gebiedMetHogeObjecten
+        typeFunctioneelGebied:gebiedVoorRadioastronomie
+        typeFunctioneelGebied:gebouwencomplex
+        typeFunctioneelGebied:golfterrein
+        typeFunctioneelGebied:grafheuvel
+        typeFunctioneelGebied:grindwinning
+        typeFunctioneelGebied:groeve
+        typeFunctioneelGebied:haven
+        typeFunctioneelGebied:heemtuin
+        typeFunctioneelGebied:helikopterlandingsterrein
+        typeFunctioneelGebied:ijsbaan
+        typeFunctioneelGebied:infiltratiegebied
+        typeFunctioneelGebied:jachthaven
+        typeFunctioneelGebied:kartingbaan
+        typeFunctioneelGebied:kassengebied
+        typeFunctioneelGebied:kazerne_legerplaats
+        typeFunctioneelGebied:landgoed
+        typeFunctioneelGebied:mijn
+        typeFunctioneelGebied:milieustraat
+        typeFunctioneelGebied:militairOefengebied_schietterrein
+        typeFunctioneelGebied:mosselbank
+        typeFunctioneelGebied:nationaalPark
+        typeFunctioneelGebied:natuurgebied
+        typeFunctioneelGebied:oliewinning
+        typeFunctioneelGebied:openluchtmuseum
+        typeFunctioneelGebied:overig
+        typeFunctioneelGebied:park
+        typeFunctioneelGebied:plantsoen
+        typeFunctioneelGebied:productieInstallatie
+        typeFunctioneelGebied:recreatiegebied
+        typeFunctioneelGebied:renbaan
+        typeFunctioneelGebied:skibaan
+        typeFunctioneelGebied:slipschool
+        typeFunctioneelGebied:sluizencomplex
+        typeFunctioneelGebied:sportterrein_sportcomplex
+        typeFunctioneelGebied:stortplaats
+        typeFunctioneelGebied:tennispark
+        typeFunctioneelGebied:transformatorstation
+        typeFunctioneelGebied:tuincentrum
+        typeFunctioneelGebied:vakantiepark
+        typeFunctioneelGebied:verdedigingswerk
+        typeFunctioneelGebied:verzorgingsplaats
+        typeFunctioneelGebied:viskwekerij
+        typeFunctioneelGebied:visvijvercomplex
+        typeFunctioneelGebied:vliegveld_luchthaven
+        typeFunctioneelGebied:volkstuinen
+        typeFunctioneelGebied:waterkering
+        typeFunctioneelGebied:windturbinepark
+        typeFunctioneelGebied:woonwagencentrum
+        typeFunctioneelGebied:zandwinning
+        typeFunctioneelGebied:zenderpark
+        typeFunctioneelGebied:ziekenhuiscomplex
+        typeFunctioneelGebied:zonnepark
+        typeFunctioneelGebied:zoutwinning
+        typeFunctioneelGebied:zuiveringsinstallatie
+        typeFunctioneelGebied:zweefvliegveldterrein
+        typeFunctioneelGebied:zwembadcomplex );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-fg_typefunctioneelgebied"^^xsd:anyURI;
+    skos:definition "Het soort functioneel gebied."@nl;
+    skos:prefLabel "Type functioneel gebied"@nl.
+
+  typeFunctioneelGebied:attractiepark
+    skos:definition "Park ingericht voor vrijetijdsbesteding."@nl;
+    skos:prefLabel "attractiepark"@nl.
+
+  typeFunctioneelGebied:bedrijventerrein
+    skos:definition "Het geheel aan gebouwen en terreinen ten behoeve van bedrijven en industrie, inclusief toevoerwegen, tussengelegen water etc."@nl;
+    skos:prefLabel "bedrijventerrein"@nl.
+
+  typeFunctioneelGebied:begraafplaats
+    skos:definition "Het geheel aan voorzieningen t.b.v. het begraven van overledenen.."@nl;
+    skos:prefLabel "begraafplaats"@nl.
+
+  typeFunctioneelGebied:boswachterij
+    skos:definition "Deel van een houtvesterij onder een boswachter."@nl;
+    skos:prefLabel "boswachterij"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeFunctioneelGebied:botanischeTuin
+    skos:definition "Tuin met verschillende soorten planten en / of bomen voor wetenschappelijke, educatieve of kunstzinnige doeleinden."@nl;
+    skos:prefLabel "botanischeTuin"@nl.
+
+  typeFunctioneelGebied:bungalowpark
+    skos:definition "Oppervlak bebouwd met (luxe) vakantiehuisjes."@nl;
+    skos:prefLabel "bungalowpark"@nl.
+
+  typeFunctioneelGebied:camping_kampeerterrein
+    skos:definition "Terrein met voorzieningen t.b.v. verblijfsrecreatie voornamelijk voor tenten, caravans en campers."@nl;
+    skos:prefLabel "camping, kampeerterrein"@nl.
+
+  typeFunctioneelGebied:campus
+    skos:definition "Een universiteitsterrein waarop gebouwen en voorzieningen voor zowel docenten als studenten aanwezig zijn."@nl;
+    skos:prefLabel "campus"@nl.
+
+  typeFunctioneelGebied:caravanpark
+    skos:definition "Terrein met voorzieningen t.b.v. verblijfsrecreatie voornamelijk ingericht met stacaravans."@nl;
+    skos:prefLabel "caravanpark"@nl.
+
+  typeFunctioneelGebied:circuit
+    skos:definition "Verhard terrein voor snelheidswedstrijden."@nl;
+    skos:prefLabel "circuit"@nl.
+
+  typeFunctioneelGebied:crossbaan
+    skos:definition "Onverhard terrein voor snelheidswedstrijden en hiervoor uitgerust met de nodige voorzieningen."@nl;
+    skos:prefLabel "crossbaan"@nl.
+
+  typeFunctioneelGebied:dierentuin_safaripark
+    skos:definition "Publieke tuin / park waarin een verzameling inheemse en uitheemse dieren is ondergebracht (dierentuin).  Groot park met wilde dieren, waar men met een auto doorheen kan rijden (safaripark)."@nl;
+    skos:prefLabel "dierentuin, Safaripark"@nl.
+
+  typeFunctioneelGebied:eendenkooi
+    skos:definition "Stuk land en water met een karakteristieke vorm, ingericht om wilde eenden te vangen."@nl;
+    skos:prefLabel "eendenkooi"@nl.
+
+  typeFunctioneelGebied:emplacement
+    skos:definition "Het totaal aan sporen op een terrein ten behoeve van het rangeren en stallen van treinen."@nl;
+    skos:prefLabel "emplacement"@nl.
+
+  typeFunctioneelGebied:erebegraafplaats
+    skos:definition "Begraafplaats voor gesneuvelde militairen."@nl;
+    skos:prefLabel "erebegraafplaats"@nl.
+
+  typeFunctioneelGebied:gaswinning
+    skos:definition "Gebied met installatie(s) t.b.v. de winning of transport van aardgas."@nl;
+    skos:prefLabel "gaswinning"@nl;
+    skos:scopeNote "Minimumgrootte: 1.000 m².  Indien kleiner, dan wordt het opgenomen als inrichtingselement."@nl.
+
+  typeFunctioneelGebied:gebiedMetHogeObjecten
+    skos:definition "Gebied, waarbinnen zich meerdere hoge objecten bevinden."@nl;
+    skos:prefLabel "gebied met hoge objecten"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeFunctioneelGebied:gebiedVoorRadioastronomie
+    skos:definition "Gebied waarin sensoren opgesteld zijn ten behoeven van radio-astronomie."@nl;
+    skos:prefLabel "gebied voor radioastronomie"@nl;
+    skos:scopeNote "Beperkt"@nl.
+
+  typeFunctioneelGebied:gebouwencomplex
+    skos:definition "Geheel van bij elkaar horende gebouwen."@nl;
+    skos:prefLabel "gebouwencomplex"@nl;
+    skos:scopeNote "Bijvoorbeeld universiteit of veiling."@nl.
+
+  typeFunctioneelGebied:golfterrein
+    skos:definition "Terrein toegerust voor de uitoefening van de golfsport."@nl;
+    skos:prefLabel "golfterrein"@nl;
+    skos:scopeNote "Ook de kleinschalige variant Pitch en Putt wordt ingewonnen als golfterrein."@nl.
+
+  typeFunctioneelGebied:grafheuvel
+    skos:definition "Voorhistorische begraafplaats in de vorm van een heuvel."@nl;
+    skos:prefLabel "grafheuvel"@nl.
+
+  typeFunctioneelGebied:grindwinning
+    skos:definition "Gebied waar winning van grind plaatsvind (in dagbouw of d.m.v. zuigen)."@nl;
+    skos:prefLabel "grindwinning"@nl.
+
+  typeFunctioneelGebied:groeve
+    skos:definition "Opengegraven ruimte waaruit een delfstof gewonnen wordt."@nl;
+    skos:prefLabel "groeve"@nl;
+    skos:scopeNote "Bijvoorbeeld mergelgroeve of zandgroeve."@nl.
+
+  typeFunctioneelGebied:haven
+    skos:definition "Lig- en bergplaats voor vaartuigen, inclusief het omliggende terrein."@nl;
+    skos:prefLabel "haven"@nl;
+    skos:scopeNote "Ook vluchthavens en werkhavens met omliggend terrein worden aangegeven."@nl.
+
+  typeFunctioneelGebied:heemtuin
+    skos:definition "Tuin waar de inheemse flora en fauna ter instructie te bezichtigen zijn."@nl;
+    skos:prefLabel "heemtuin"@nl.
+
+  typeFunctioneelGebied:helikopterlandingsterrein
+    skos:definition "Terrein dat als landings- en vertrekplaats dient voor helikopters."@nl;
+    skos:prefLabel "helikopterlandingsterrein"@nl.
+
+  typeFunctioneelGebied:ijsbaan
+    skos:definition "Terrein dat in de winter onder water wordt gezet om te dienen als schaatsgelegenheid of dat is voorzien van een installatie waarmee een ijsvloer kan worden gelegd."@nl;
+    skos:prefLabel "ijsbaan"@nl.
+
+  typeFunctioneelGebied:infiltratiegebied
+    skos:definition "Gebied waar water wordt gezuiverd door infiltratie t.b.v. de drinkwatervoorziening."@nl;
+    skos:prefLabel "infiltratiegebied"@nl.
+
+  typeFunctioneelGebied:jachthaven
+    skos:definition "Lig- en bergplaats voor pleziervaartuigen, tezamen met het omliggende terrein."@nl;
+    skos:prefLabel "jachthaven"@nl.
+
+  typeFunctioneelGebied:kartingbaan
+    skos:definition "Baan waarop met skelters of karts gereden wordt."@nl;
+    skos:prefLabel "kartingbaan"@nl.
+
+  typeFunctioneelGebied:kassengebied
+    skos:definition "Gebied bestaande uit meerdere landbouwkassen."@nl;
+    skos:prefLabel "kassengebied"@nl.
+
+  typeFunctioneelGebied:kazerne_legerplaats
+    skos:definition "Gebouw(-encomplex) bestemd tot huisvesting van soldaten."@nl;
+    skos:prefLabel "kazerne, legerplaats"@nl.
+
+  typeFunctioneelGebied:landgoed
+    skos:definition "Buitenverblijf met omliggende landerijen."@nl;
+    skos:prefLabel "landgoed"@nl.
+
+  typeFunctioneelGebied:mijn
+    skos:definition "Plaats waar ertsen, steenkool, enz. worden gedolven."@nl;
+    skos:prefLabel "mijn"@nl.
+
+  typeFunctioneelGebied:milieustraat
+    skos:definition "Een locatie die specifiek bestemd is voor het brengen van gescheiden huishoudelijk afval en grofvuil."@nl;
+    skos:prefLabel "milieustraat"@nl;
+    skos:scopeNote "De in de wijken gelegen milieuinzamelpunten worden niet gegeven."@nl.
+
+  typeFunctioneelGebied:militairOefengebied_schietterrein
+    skos:definition "Militair kamp voor het houden van schietoefeningen met zware vuurwapens (artillerie schietkamp). / Terrein ingericht voor het schieten op doelen (schietkamp). / Terrein waar militairen oefenen (militair oefenterrein)."@nl;
+    skos:prefLabel "militair oefengebied, schietterrein"@nl.
+
+  typeFunctioneelGebied:mosselbank
+    skos:definition "Plaats waar mosselen gekweekt worden."@nl;
+    skos:prefLabel "mosselbank"@nl.
+
+  typeFunctioneelGebied:nationaalPark
+    skos:definition "Een door de rijksoverheid aangewezen terrein van nationale landschappelijke betekenis."@nl;
+    skos:prefLabel "nationaal park"@nl.
+
+  typeFunctioneelGebied:natuurgebied
+    skos:definition "Gebied dat waarde heeft uit een oogpunt van natuurschoon of natuurleven"@nl;
+    skos:prefLabel "natuurgebied"@nl.
+
+  typeFunctioneelGebied:oliewinning
+    skos:definition "Installatie t.b.v. de winning of transport van aardolie."@nl;
+    skos:prefLabel "oliewinning"@nl.
+
+  typeFunctioneelGebied:openluchtmuseum
+    skos:definition "Historisch museum in de open lucht, waarin de vroegere woon- en werkomgeving van de mens is gereconstrueerd."@nl;
+    skos:prefLabel "openluchtmuseum"@nl.
+
+  typeFunctioneelGebied:openluchttheater
+    skos:definition "Plaats waar toneelvoorstellingen in de openlucht plaatsvinden."@nl;
+    skos:prefLabel "openluchttheater"@nl.
+
+  typeFunctioneelGebied:overig
+    skos:definition "Het type functioneel gebied is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  typeFunctioneelGebied:park
+    skos:definition "Een op zichzelf staande groenvoorziening, dienend ter verfraaiing en/of verlevendiging van één of meerdere wijken, zonder hiervan direct deel uit te maken."@nl;
+    skos:prefLabel "park"@nl.
+
+  typeFunctioneelGebied:plantsoen
+    skos:definition "Kleinschalige groenvoorziening, soms met wandel- en speelmogelijkheden, temidden van bebouwing, ter verfraaiing en verlevendiging van deze bebouwing."@nl;
+    skos:prefLabel "plantsoen"@nl;
+    skos:scopeNote "Een plantsoen bestaat niet altijd uit gras en kan soms een andere ondergrond hebben."@nl.
+
+  typeFunctioneelGebied:productieInstallatie
+    skos:definition "Het geheel van reactorvaten, kolommen, aan- en afvoerpijpen, bebouwing etc. t.b.v. de vervaardiging van chemische producten."@nl;
+    skos:prefLabel "productie-installatie"@nl.
+
+  typeFunctioneelGebied:recreatiegebied
+    skos:definition "Terrein bedoeld voor vrijetijdsbesteding."@nl;
+    skos:prefLabel "recreatiegebied"@nl.
+
+  typeFunctioneelGebied:renbaan
+    skos:definition "Het geheel aan gebouwen en installaties bedoeld voor draf- of renwedstrijden."@nl;
+    skos:prefLabel "renbaan"@nl.
+
+  typeFunctioneelGebied:skibaan
+    skos:definition "Terrein ingericht voor het beoefenen van de skisport."@nl;
+    skos:prefLabel "skibaan"@nl;
+    skos:scopeNote "Alleen buitenskibanen worden aangegeven als functioneel gebied ‘skibaan’.  Ook kabelskibanen voor het beoefenen van de waterskisport worden gegeven als functioneel gebied ‘skibaan’ met soortnaam “Kabelskibaan”.  Binnenskibanen worden gegeven als gebouw met soortnaam “Skicentrum”."@nl.
+
+  typeFunctioneelGebied:slipschool
+    skos:definition "Rijschool waar men een slippend voertuig leert beheersen."@nl;
+    skos:prefLabel "slipschool"@nl.
+
+  typeFunctioneelGebied:sluizencomplex
+    skos:definition "Het geheel aan voorzieningen, zoals gebouwen, terreinen, etc., behorende tot een sluizencomplex (ook schutsluizen en uitwateringssluizen)."@nl;
+    skos:prefLabel "sluizencomplex"@nl.
+
+  typeFunctioneelGebied:sportterrein_sportcomplex
+    skos:definition "Het geheel aan voorzieningen (velden, kleedruimten, groenvoorziening, parkeerterrein, wegen, tribunes, etc.) t.b.v. de beoefening van sport."@nl;
+    skos:prefLabel "sportterrein, sportcomplex"@nl.
+
+  typeFunctioneelGebied:stortplaats
+    skos:definition "Plaats waar afval gestort mag worden."@nl;
+    skos:prefLabel "stortplaats"@nl;
+    skos:scopeNote "Het gehele object wordt aangegeven als functioneel gebied van het type stortplaats indien er nog actief wordt gestort. Een afvalbrengstation, milieustraat of stortbordes wordt niet als stortplaats aangegeven."@nl.
+
+  typeFunctioneelGebied:tennispark
+    skos:definition "Terrein ingericht voor de beoefening van de tennissport."@nl;
+    skos:prefLabel "tennispark"@nl.
+
+  typeFunctioneelGebied:transformatorstation
+    skos:definition "Gebied met installatie(s) voor het transformeren van elektrische stroom."@nl;
+    skos:prefLabel "transformatorstation"@nl;
+    skos:scopeNote "Wordt alleen ingewonnen indien verbonden met een of meerdere hoogspanningsleidingen."@nl.
+
+  typeFunctioneelGebied:tuincentrum
+    skos:definition "Het geheel aan bebouwing en omliggend terrein t.b.v. de (particuliere) verkoop van artikelen voor tuinaanleg."@nl;
+    skos:prefLabel "tuincentrum"@nl.
+
+  typeFunctioneelGebied:vakantiepark
+    skos:definition "Een terrein met voorzieningen t.b.v. verblijfsrecreatie, waarop een combinatie van bungalows en / of stacaravans en / of kampeerplaatsen voorkomt."@nl;
+    skos:prefLabel "vakantiepark"@nl.
+
+  typeFunctioneelGebied:verdedigingswerk
+    skos:definition "Historisch verdedigingswerk, al dan niet voorzien van een of meer (door aarde bedekte) gebouwen of ruïnes."@nl;
+    skos:prefLabel "verdedigingswerk"@nl.
+
+  typeFunctioneelGebied:verzorgingsplaats
+    skos:definition "Locatie langs een autosnelweg of hoofdweg met een parkeerfunctie, meestal in combinatie met een brandstofverkooppunt en soms aangevuld met een wegrestaurant."@nl;
+    skos:prefLabel "verzorgingsplaats"@nl;
+    skos:scopeNote "Wordt aangegeven indien gelegen langs een autosnelweg of hoofdweg."@nl.
+
+  typeFunctioneelGebied:viskwekerij
+    skos:definition "Terrein met bassins, aangelegd voor het kweken van vis."@nl;
+    skos:prefLabel "viskwekerij"@nl.
+
+  typeFunctioneelGebied:visvijvercomplex
+    skos:definition "Het geheel aan voorzieningen t.b.v. sportvissen."@nl;
+    skos:prefLabel "visvijvercomplex"@nl.
+
+  typeFunctioneelGebied:vliegveld_luchthaven
+    skos:definition "Vliegveld voor verkeersvliegtuigen met groot, effen terrein met al dan niet verharde banen, waar vliegtuigen kunnen opstijgen en landen, eventueel met accomodatie voor ontvangst en vertrek van passagiers en verzending van goederen."@nl;
+    skos:prefLabel "vliegveld, luchthaven"@nl.
+
+  typeFunctioneelGebied:volkstuinen
+    skos:definition "Het geheel aan voorzieningen t.b.v. hobbytuinbouw."@nl;
+    skos:prefLabel "volkstuinen"@nl.
+
+  typeFunctioneelGebied:waterkering
+    skos:definition "Geheel van een dijk of dam, inclusief talud."@nl;
+    skos:prefLabel "waterkering"@nl.
+
+  typeFunctioneelGebied:werf
+    skos:definition "Werkplaats waar schepen worden gebouwd of hersteld."@nl;
+    skos:prefLabel "werf"@nl.
+
+  typeFunctioneelGebied:wildwissel
+    skos:definition "Civieltechnisch kunstwerk om dieren een veilige oversteek te bieden over of onder een weg."@nl;
+    skos:prefLabel "wildwissel"@nl;
+    skos:scopeNote "Wordt niet gegeven indien het slechts een kokervormige buis betreft."@nl.
+
+  typeFunctioneelGebied:windturbinepark
+    skos:definition "Concentratie van windturbines."@nl;
+    skos:prefLabel "windturbinepark"@nl.
+
+  typeFunctioneelGebied:woonwagencentrum
+    skos:definition "Plaats waar gewoond wordt in woonwagens."@nl;
+    skos:prefLabel "woonwagencentrum"@nl.
+
+  typeFunctioneelGebied:zandwinning
+    skos:definition "Gebied waar winning van zand plaatsvindt door middel van zuigen."@nl;
+    skos:prefLabel "zandwinning"@nl.
+
+  typeFunctioneelGebied:zenderpark
+    skos:definition "Gebied waar meerdere zendmasten staan opgesteld."@nl;
+    skos:prefLabel "zenderpark"@nl;
+    skos:scopeNote "De zendmasten worden gegeneraliseerd aangegeven."@nl.
+
+  typeFunctioneelGebied:ziekenhuiscomplex
+    skos:definition "Het geheel van gebouwen die tezamen een ziekenhuis vormen."@nl;
+    skos:prefLabel "ziekenhuiscomplex"@nl.
+
+  typeFunctioneelGebied:zonnepark
+    skos:definition "Gebied ten behoeve van de opwekking van zonne-energie of zonnewarmte."@nl;
+    skos:prefLabel "zonnepark"@nl;
+    skos:scopeNote "Het onderliggende terrein wordt gegeven volgens voorkomen of, indien niet te bepalen, als type ‘overig bodemgebruik’."@nl.
+
+  typeFunctioneelGebied:zoutwinning
+    skos:definition "Gebied waar zoutwinning plaatsvindt."@nl;
+    skos:prefLabel "zoutwinning"@nl.
+
+  typeFunctioneelGebied:zuiveringsinstallatie
+    skos:definition "Het gebied omvattende het geheel aan voorzieningen t.b.v. de zuivering van afvalwater."@nl;
+    skos:prefLabel "zuiveringsinstallatie"@nl.
+
+  typeFunctioneelGebied:zweefvliegveldterrein
+    skos:definition "Het geheel aan terreinen, gebouwen enz. voor (de beoefening van) de zweefvliegsport."@nl;
+    skos:prefLabel "zweefvliegveldterrein"@nl.
+
+  typeFunctioneelGebied:zwembadcomplex
+    skos:definition "Het geheel aan voorzieningen rond een openbaar zwembad."@nl;
+    skos:prefLabel "zwembadcomplex"@nl.
+
+
+  brt:TypeGebied
+    owl:oneOf
+      ( typeGebied:buurt
+        typeGebied:buurtschap
+        typeGebied:deelkern
+        typeGebied:gehucht
+        typeGebied:industriekern
+        typeGebied:recreatiekern
+        typeGebied:stadsdeel
+        typeGebied:wijk
+        typeGebied:woonkern );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-pl_typegebied"^^xsd:anyURI;
+    skos:definition "Het soort gebied."@nl;
+    skos:prefLabel "Type gebied"@nl.
+
+  typeGebied:buurt
+    skos:definition "Kleine eenheid binnen een plaats, doorgaans met een zekere mate van sociale samenhang."@nl;
+    skos:prefLabel "buurt"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <p>Wordt alleen ingewonnen als onderverdeling en binnen de begrenzing van een topografische bebouwde kom.</p>
+  <p>De onderverdeling in wijken en buurten is gebaseerd op de topografische en sociaal-geografische indeling van de plaats en kan afwijken van de statistische indeling zoals weergegeven in de Wijk- en buurtindeling van het Centraal Bureau voor de Statistiek.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebied:buurtschap
+    skos:definition "Lintbebouwing of verspreid staande bebouwing in landelijk gebied met een zekere mate van sociale samenhang, die geen bebouwde kom voor de Wegenverkeerswet vormt."@nl;
+    skos:prefLabel "buurtschap"@nl.
+
+  typeGebied:deelkern
+    skos:definition "Historische bebouwingskern, ruimtelijk te onderscheiden van de omliggende bebouwing, gelegen binnen een bebouwde kom voor de Wegenverkeerswet van een andere plaats."@nl;
+    skos:prefLabel "deelkern"@nl.
+
+  typeGebied:gehucht
+    skos:definition "Kleine bebouwingskern of concentratie van aaneengesloten bebouwing, niet zijnde lintbebouwing, die geen bebouwde kom voor de Wegenverkeerswet vormt."@nl;
+    skos:prefLabel "gehucht"@nl.
+
+  typeGebied:industriekern
+    skos:definition "Bebouwingskern met hoofdzakelijk een bedrijfsmatige functie, zoals een bedrijventerrein, een haven of een vliegveld, voorzien van openbare wegen."@nl;
+    skos:prefLabel "Industriekern"@nl.
+
+  typeGebied:recreatiekern
+    skos:definition "Bebouwingskern met hoofdzakelijk een (verblijfs)recreatieve functie, zoals een bungalowpark, voorzien van openbare wegen."@nl;
+    skos:prefLabel "recreatiekern"@nl.
+
+  typeGebied:stadsdeel
+    skos:definition "Grote administratief-geografische eenheid binnen een stedelijke gemeente."@nl;
+    skos:prefLabel "stadsdeel"@nl;
+    skos:scopeNote "Wordt alleen ingewonnen als onderverdeling en binnen de begrenzing van een topografische bebouwde kom, indien de gemeente de plaats heeft ingedeeld in stadsdelen."@nl.
+
+  typeGebied:wijk
+    skos:definition "Eenheid binnen een bebouwingskern die ruimtelijk min of meer een afgesloten geheel vormt."@nl;
+    skos:prefLabel "wijk"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <p>Wordt alleen ingewonnen als onderverdeling en binnen de begrenzing van een topografische bebouwde kom.</p>
+  <p>De onderverdeling in wijken en buurten is gebaseerd op de topografische en sociaal-geografische indeling van de plaats en kan afwijken van de statistische indeling zoals weergegeven in de Wijk- en buurtindeling van het Centraal Bureau voor de Statistiek.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebied:woonkern
+    skos:definition "Bebouwingskern met hoofdzakelijk een woonfunctie, die tevens een bebouwde kom voor de Wegenverkeerswet is."@nl;
+    skos:prefLabel "woonkern"@nl.
+
+
+  brt:TypeGebouw
+    owl:oneOf
+      ( typeGebouw:bezoekerscentrum
+        typeGebouw:boortoren
+        typeGebouw:brandtoren
+        typeGebouw:brandweerkazerne
+        typeGebouw:bunker
+        typeGebouw:crematorium
+        typeGebouw:dok
+        typeGebouw:elektriciteitscentrale
+        typeGebouw:fabriek
+        typeGebouw:fort
+        typeGebouw:gemaal
+        typeGebouw:gemeentehuis
+        typeGebouw:gevangenis
+        typeGebouw:hotel
+        typeGebouw:huizenblok
+        typeGebouw:kapel
+        typeGebouw:kas_warenhuis
+        typeGebouw:kasteel
+        typeGebouw:kerk
+        typeGebouw:kerncentrale_kernreactor
+        typeGebouw:kliniek_inrichting_sanatorium
+        typeGebouw:klokkentoren
+        typeGebouw:klooster_abdij
+        typeGebouw:koeltoren
+        typeGebouw:koepel
+        typeGebouw:kunstijsbaan
+        typeGebouw:lichttoren
+        typeGebouw:luchtwachttoren
+        typeGebouw:manege
+        typeGebouw:markantGebouw
+        typeGebouw:militairGebouw
+        typeGebouw:moskee
+        typeGebouw:museum
+        typeGebouw:observatorium
+        typeGebouw:overig
+        typeGebouw:overigReligieusGebouw
+        typeGebouw:paleis
+        typeGebouw:parkeerdak_parkeerdek_parkeergarage
+        typeGebouw:peilmeetstation
+        typeGebouw:politiebureau
+        typeGebouw:pompstation
+        typeGebouw:postkantoor
+        typeGebouw:psychiatrischZiekenhuis_psychiatrischCentrum
+        typeGebouw:radarpost
+        typeGebouw:radartoren
+        typeGebouw:radiotoren_televisietoren
+        typeGebouw:recreatiecentrum
+        typeGebouw:reddingboothuisje
+        typeGebouw:remise
+        typeGebouw:ruïne
+        typeGebouw:schaapskooi
+        typeGebouw:school
+        typeGebouw:schoorsteen
+        typeGebouw:silo
+        typeGebouw:sporthal
+        typeGebouw:stadion
+        typeGebouw:stadskantoor_hulpsecretarie
+        typeGebouw:stationsgebouw
+        typeGebouw:synagoge
+        typeGebouw:tank
+        typeGebouw:tankstation
+        typeGebouw:telecommunicatietoren
+        typeGebouw:tol
+        typeGebouw:toren
+        typeGebouw:transformatorstation
+        typeGebouw:uitzichttoren
+        typeGebouw:universiteit
+        typeGebouw:veiling
+        typeGebouw:verkeerstoren
+        typeGebouw:vuurtoren
+        typeGebouw:waterradmolen
+        typeGebouw:watertoren
+        typeGebouw:wegrestaurant
+        typeGebouw:werf
+        typeGebouw:windmolen
+        typeGebouw:windmolen_korenmolen
+        typeGebouw:windmolen_watermolen
+        typeGebouw:windturbine
+        typeGebouw:zendtoren
+        typeGebouw:ziekenhuis
+        typeGebouw:zwembad );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-gb_typegebouw"^^xsd:anyURI;
+    skos:definition "Het type gebouw, het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd)."@nl;
+    skos:prefLabel "Type gebouw"@nl.
+
+  typeGebouw:bezoekerscentrum
+    skos:definition "Informatiecentrum in een culturele instelling, een natuurpark, enz."@nl;
+    skos:prefLabel "bezoekerscentrum"@nl.
+
+  typeGebouw:boortoren
+    skos:definition "Tijdelijke of permanente toren voor het verrichten van boorwerkzaamheden."@nl;
+    skos:prefLabel "boortoren"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt. Ook een drijvend of op de zeebodem staand platform van waaraf boringen onder water kunnen worden uitgevoerd wordt ingewonnen als boortoren."@nl.
+
+  typeGebouw:brandtoren
+    skos:definition "Toren t.b.v. het signaleren van een (bos)brand."@nl;
+    skos:prefLabel "brandtoren"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:brandweerkazerne
+    skos:definition "Gebouw voor het stationeren van materieel en manschappen t.b.v. brandbestrijding."@nl;
+    skos:prefLabel "brandweerkazerne"@nl.
+
+  typeGebouw:bunker
+    skos:definition "Versterkte (schuil)plaats te gebruiken in tijden van oorlog of ramp zowel voor burger- als militaire doeleinden. Kan ook (gedeeltelijk) ondergronds gelegen zijn."@nl;
+    skos:prefLabel "bunker"@nl;
+    skos:scopeNote "Versterkte (schuil)plaats te gebruiken in tijden van oorlog of ramp zowel voor burger- als militaire doeleinden. Kan ook (gedeeltelijk) ondergronds gelegen zijn."@nl.
+
+  typeGebouw:crematorium
+    skos:definition "Gebouw dat dient voor lijkverbranding."@nl;
+    skos:prefLabel "crematorium"@nl.
+
+  typeGebouw:dok
+    skos:definition "Installatie voor onderhoud en herstel van schepen."@nl;
+    skos:prefLabel "dok"@nl.
+
+  typeGebouw:elektriciteitscentrale
+    skos:definition "Gebouw waarin elektriciteit wordt opgewekt."@nl;
+    skos:prefLabel "elektriciteitscentrale"@nl.
+
+  typeGebouw:fabriek
+    skos:definition "Industriële onderneming waarin op grote schaal stoffen of goederen worden geproduceerd."@nl;
+    skos:prefLabel "fabriek"@nl.
+
+  typeGebouw:fort
+    skos:definition "Verdedigingswerk."@nl;
+    skos:prefLabel "fort"@nl;
+    skos:scopeNote "Van een gedeeltelijk met aarde bedekt fort worden de aarden hellingen aangegeven als hoogteverschil, terwijl zichtbare muren aangegeven worden als muur, indien deze muur langer is dan 50 meter en hoger dan 2 meter."@nl.
+
+  typeGebouw:gemaal
+    skos:definition "Installatie om water omhoog te pompen uit een polder of een kanaal."@nl;
+    skos:prefLabel "gemaal"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Alleen een gemaal, gelegen in het hoofdafwateringspatroon wordt aangegeven. Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt.</p>
+  <p>Een gemaal moet altijd in combinatie met een waterdeel gegeven worden.</p>
+  <p>Een rioolgemaal wordt niet aangegeven als gemaal.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:gemeentehuis
+    skos:definition "Gebouw waarin de gemeentelijke secretarie gevestigd is."@nl;
+    skos:prefLabel "gemeentehuis"@nl;
+    skos:scopeNote "Dependances van deze secretarie worden als ‘stadskantoor, hulpsecretarie’ aangegeven. Indien het gemeentehuis omwille van ruimtegebrek over verschillende gebouwen is verspreid, is er geen sprake van dependances."@nl.
+
+  typeGebouw:gevangenis
+    skos:definition "Gebouwen waarin personen in verzekerde bewaring worden gesteld."@nl;
+    skos:prefLabel "gevangenis"@nl;
+    skos:scopeNote "Door middel van het attribuut soortnaam wordt vermeld of het eventueel een jeugdinrichting of detentiecentrum betreft."@nl.
+
+  typeGebouw:hotel
+    skos:definition "Gebouw ten behoeve van de overnachting van reizigers."@nl;
+    skos:prefLabel "hotel"@nl;
+    skos:scopeNote "Een jeugdherberg wordt als hotel ingewonnen."@nl.
+
+  typeGebouw:huizenblok
+    skos:definition "Terrein, volledig of nagenoeg volledig bedekt met bebouwing (niet zijnde lintbebouwing of grote boerderijen met bijbehorende stallen), gelegen in stedelijk/verstedelijkt gebied, waarbij de bebouwing naar alle zijden aaneengesloten is en waar men vanaf de openbare weg van eventuele binnenplaatsen en -tuinen weinig of niets kan zien."@nl;
+    skos:prefLabel "huizenblok"@nl;
+    skos:scopeNote "Bij de beoordeling of een zijde aaneengesloten is wordt alle bebouwing meegerekend, plus muren. Kleine openingen tot plm. 3 meter en poorten worden als bebouwd beschouwd. Grotere inspringingen welke niet voor het publiek vanaf de openbare weg toegankelijk zijn, worden bij het bebouwd gebied getrokken. Kleine en smalle inspringingen (tot plm. 3 meter) in de begrenzinglijn worden niet aangegeven. Ingeval het bebouwd gebied slechts uit één of enkele gebouwen bestaat, mogen binnenplaatsen gegeven worden indien deze groter zijn dan plm. 1000m²."@nl.
+
+  typeGebouw:kapel
+    skos:definition "Gebouwtje dat dient als bidruimte."@nl;
+    skos:prefLabel "kapel"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:kas_warenhuis
+    skos:definition "Voornamelijk uit glas opgebouwde overbouwing van de grond."@nl;
+    skos:prefLabel "kas, warenhuis"@nl;
+    skos:scopeNote "Een kas wordt aangegeven als een gebouw van het type kas, warenhuis, indien groter dan 200 m². Stookhokken worden als typegebouw ‘overig’ opgenomen. Plastic kassen met een permanent karakter worden ingewonnen als ‘kas, warenhuis’. Het zogenaamde “platte glas” wordt niet aangegeven."@nl.
+
+  typeGebouw:kasteel
+    skos:definition "Burcht."@nl;
+    skos:prefLabel "kasteel"@nl.
+
+  typeGebouw:kerk
+    skos:definition "Bebouwing bedoeld voor christelijke erediensten."@nl;
+    skos:prefLabel "kerk"@nl;
+    skos:scopeNote "Een gebouw, dat is gebouwd met het doel om er christelijke erediensten te kunnen houden en door een kenmerkende bouwstijl als zodanig herkenbaar is, maar dat niet meer in gebruik is voor erediensten, wordt aangegeven als gebouw en voorzien van een typering die overeenkomt met het huidige gebruik alsmede van de soortnaam “Voormalige kerk”."@nl.
+
+  typeGebouw:kerncentrale_kernreactor
+    skos:definition "Centrale die met kernenergie elektriciteit opwekt (kerncentrale) / Installatie voor het splijten of fuseren van atoomkernen, atoomreactor (kernreactor)."@nl;
+    skos:prefLabel "kerncentrale, kernreactor"@nl.
+
+  typeGebouw:kliniek_inrichting_sanatorium
+    skos:definition "Inrichting waar patiënten worden verpleegd (kliniek). / Herstellingsoord (sanatorium)."@nl;
+    skos:prefLabel "kliniek, inrichting, sanatorium"@nl;
+    skos:scopeNote "Ook een revalidatiecentrum wordt opgenomen."@nl.
+
+  typeGebouw:klokkentoren
+    skos:definition "Toren t.b.v. de ophanging van een uurwerk en/of klokkenspel."@nl;
+    skos:prefLabel "klokkentoren"@nl;
+    skos:scopeNote "Een klokkentoren welke niet voldoet aan de opnamecriteria voor een gebouwvlak, wordt aangegeven als gebouwpunt."@nl.
+
+  typeGebouw:klooster_abdij
+    skos:definition "Gebouw bedoeld voor de huisvesting en eventueel het voorzien in levensonderhoud van een geloofsgemeenschap."@nl;
+    skos:prefLabel "klooster, abdij"@nl;
+    skos:scopeNote "Het hoofdgebouw wordt aangegeven als bebouwing en voorzien van de attribuutwaarde klooster/abdij."@nl.
+
+  typeGebouw:koeltoren
+    skos:definition "Torenvormig bouwsel voor het afkoelen van gassen of dampen."@nl;
+    skos:prefLabel "koeltoren"@nl;
+    skos:scopeNote "Indien de koeltoren niet voldoet aan het voorschrift voor bebouwing wordt er een gebouwpunt geplaatst."@nl.
+
+  typeGebouw:koepel
+    skos:definition "Bolvormige constructie als dak van een gebouw."@nl;
+    skos:prefLabel "koepel"@nl;
+    skos:scopeNote "Alleen een hoge koepel (in verhouding tot de omliggende bebouwing) wordt aangegeven. Indien de koepel niet voldoet aan het voorschrift voor gebouwvlak wordt er een gebouwpunt geplaatst."@nl.
+
+  typeGebouw:kunstijsbaan
+    skos:definition "Gebouw voorzien van een installatie waarmee een ijsvloer kan worden gelegd."@nl;
+    skos:prefLabel "kunstijsbaan"@nl.
+
+  typeGebouw:lichttoren
+    skos:definition "Toren als drager van een ter oriëntatie dienend licht, met name langs de kust. Het lichtpatroon van een lichttoren is niet uniek t.o.v. andere lichttorens."@nl;
+    skos:prefLabel "lichttoren"@nl;
+    skos:scopeNote "Een lichttoren welke niet voldoet aan de opnamecriteria voor gebouwvlak, wordt aangegeven als een gebouwpunt."@nl.
+
+  typeGebouw:luchtwachttoren
+    skos:definition "Toren vroeger gebruikt t.b.v. het bewaken van het luchtruim."@nl;
+    skos:prefLabel "luchtwachttoren"@nl.
+
+  typeGebouw:manege
+    skos:definition "Besloten plaats tot beoefening van het paardrijden."@nl;
+    skos:prefLabel "manege"@nl.
+
+  typeGebouw:markantGebouw
+    skos:definition "Gebouw dat sterk opvalt ten opzichte van zijn omgeving."@nl;
+    skos:prefLabel "markant gebouw"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:militairGebouw
+    skos:definition "Gebouw in gebruik voor militaire doeleinden."@nl;
+    skos:prefLabel "militair gebouw"@nl.
+
+  typeGebouw:moskee
+    skos:definition "Bebouwing bedoeld voor islamitische geloofsuitoefening."@nl;
+    skos:prefLabel "moskee"@nl;
+    skos:scopeNote "Een gebouw, dat is gebouwd met het doel om er islamitische geloofsuitoefening te kunnen houden en door een kenmerkende bouwstijl als zodanig herkenbaar is, maar dat niet meer in gebruik is voor geloofsuitoefening, wordt aangegeven als gebouw en voorzien van een typering die overeenkomt met het huidige gebruik alsmede van de soortnaam “Voormalige moskee”."@nl.
+
+  typeGebouw:museum
+    skos:definition "Gebouw waarin voorwerpen van kunst of wetenschap bijeen zijn gebracht en (ten minste voor een gedeelte) voortdurend uitgestald worden."@nl;
+    skos:prefLabel "museum"@nl.
+
+  typeGebouw:observatorium
+    skos:definition "Gebouw t.b.v. het doen van waarnemingen in de ruimte."@nl;
+    skos:prefLabel "observatorium"@nl.
+
+  typeGebouw:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl;
+    skos:scopeNote "De meeste gebouwen in TOP10NL zijn van het type “overig”. Bijvoorbeeld woningen en flats, maar ook een stookhok bij een kas, kapschuur (schuur, bestaande uit een dak op palen en maximaal één muur), KI-station (gebouw waarin of van waar uit handelingen tot kunstmatige inseminatie uitgevoerd worden) of starttoren."@nl.
+
+  typeGebouw:overigReligieusGebouw
+    skos:definition "Bebouwing bedoeld voor geloofsuitoefening, niet zijnde een kerk, moskee en synagoge."@nl;
+    skos:prefLabel "overig religieus gebouw"@nl.
+
+  typeGebouw:paleis
+    skos:definition "Gebouw met een openbare of cermoniële functie heeft voor gebruik door de koninkljke familie."@nl;
+    skos:prefLabel "paleis"@nl.
+
+  typeGebouw:parkeerdak_parkeerdek_parkeergarage
+    skos:definition "Al dan niet open bebouwing, geheel of gedeeltelijk (het dak of een van de onderliggende etages) in gebruik als openbare voorziening voor het parkeren van motorvoertuigen."@nl;
+    skos:prefLabel "parkeerdak, parkeerdek, parkeergarage"@nl.
+
+  typeGebouw:peilmeetstation
+    skos:definition "Installatie die informatie geeft over de landelijke/regionale waterstanden via het Monitoring Systeem Water (MSW). De installatie is voorzien van een Digitaal Niveau Meter (DNM)."@nl;
+    skos:prefLabel "peilmeetstation"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:politiebureau
+    skos:definition "Gebouw waarin een kantoor of bezoeklocatie van de politie is gevestigd."@nl;
+    skos:prefLabel "politiebureau"@nl.
+
+  typeGebouw:pompstation
+    skos:definition "Installatie waarmee een vloeistof op- of doorgepompt wordt."@nl;
+    skos:prefLabel "pompstation"@nl.
+
+  typeGebouw:postkantoor
+    skos:definition "Kantoor waar men administratieve handelingen kan verrichten ten behoeve van postverzending, giro e.d."@nl;
+    skos:prefLabel "postkantoor"@nl;
+    skos:scopeNote "Alle locaties die PostNL als postkantoor aanduidt, worden als ‘postkantoor’ ingewonnen. Pakketpunten, businesspoints en andere locaties waar niet alle diensten van een postkantoor worden aangeboden, worden niet ingewonnen als ‘postkantoor’."@nl.
+
+  typeGebouw:psychiatrischZiekenhuis_psychiatrischCentrum
+    skos:definition "Verzorgingstehuis voor geesteszieken."@nl;
+    skos:prefLabel "psychiatrisch ziekenhuis, psychiatrisch centrum"@nl;
+    skos:scopeNote "Het hoofdgebouw wordt voorzien van de attribuutwaarde psychiatrisch ziekenhuis, psychiatrisch centrum"@nl.
+
+  typeGebouw:radarpost
+    skos:definition "Plaats waar waarnemingen worden gedaan met behulp van radar, m.n. om vliegtuigen en scheepsbewegingen te observeren."@nl;
+    skos:prefLabel "radarpost"@nl;
+    skos:scopeNote "Een radarpost welke niet voldoet aan de opnamecriteria voor gebouwvlak, wordt aangegeven als gebouwpunt."@nl.
+
+  typeGebouw:radartoren
+    skos:definition "Toren t.b.v. radarsignalering c.q. radargeleiding."@nl;
+    skos:prefLabel "radartoren"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:radiotoren_televisietoren
+    skos:definition "Toren t.b.v. het verspreiden van radio- en televisiesignalen."@nl;
+    skos:prefLabel "radiotoren, televisietoren"@nl.
+
+  typeGebouw:recreatiecentrum
+    skos:definition "Terrein van min of meer beperkte omvang, bedoeld voor vrijetijdsbesteding."@nl;
+    skos:prefLabel "recreatiecentrum"@nl.
+
+  typeGebouw:reddingboothuisje
+    skos:definition "Plaats waar een reddingboot beschikbaar is."@nl;
+    skos:prefLabel "reddingboothuisje"@nl.
+
+  typeGebouw:remise
+    skos:definition "Wagenloods voor openbare vervoermiddelen."@nl;
+    skos:prefLabel "remise"@nl.
+
+  typeGebouw:ruïne
+    skos:definition "Overblijfsel van een verwoest of door ouderdom vervallen gebouw."@nl;
+    skos:prefLabel "ruïne"@nl;
+    skos:scopeNote "Minimaal een deel van een muur van een gebouw moet nog overeind staan om als ruïne gegeven te worden. Alleen een gebouw als ruïne aangeven als het een historisch gebouw is (in terrein te zien aan bebording, naamgeving, gedenkteken, etc.). Als een (niet historisch) gebouw / huis vervallen of verwoest is, dan wordt dit gebouw aangeven volgens voorkomen met de status buiten gebruik. Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt.."@nl.
+
+  typeGebouw:schaapskooi
+    skos:definition "Stal voor schapen."@nl;
+    skos:prefLabel "schaapskooi"@nl.
+
+  typeGebouw:school
+    skos:definition "Opleidingsinstituut."@nl;
+    skos:prefLabel "school"@nl.
+
+  typeGebouw:schoorsteen
+    skos:definition "Pijp voor het afvoeren van verbrandingsgassen."@nl;
+    skos:prefLabel "schoorsteen"@nl;
+    skos:scopeNote "Minimum hoogte 15 meter. Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:silo
+    skos:definition "Gebouw in gebruik als opslagplaats voor stort- of bulkgoederen."@nl;
+    skos:prefLabel "silo"@nl.
+
+  typeGebouw:sporthal
+    skos:definition "Hal waarin kan worden gesport."@nl;
+    skos:prefLabel "sporthal"@nl;
+    skos:scopeNote "Grootschalige voorziening met een meer regionale uitstraling en meerdere velden tbv verschillende of een specifieke tak van sport."@nl.
+
+  typeGebouw:stadion
+    skos:definition "Gebouw met tribunes en een sportveld voor het beoefenen van sport, in het bijzonder voor het houden van grote wedstrijden."@nl;
+    skos:prefLabel "stadion"@nl.
+
+  typeGebouw:stadskantoor_hulpsecretarie
+    skos:definition "Bureau waar gemeentelijke instellingen, bijvoorbeeld de burgerlijke stand, gevestigd zijn."@nl;
+    skos:prefLabel "stadskantoor, hulpsecretarie"@nl.
+
+  typeGebouw:stationsgebouw
+    skos:definition "Een gebouw dat speciaal bedoeld is voor het bedienen van treinreizigers."@nl;
+    skos:prefLabel "stationsgebouw"@nl.
+
+  typeGebouw:synagoge
+    skos:definition "Bebouwing bedoeld voor joodse geloofsuitoefening."@nl;
+    skos:prefLabel "synagoge"@nl;
+    skos:scopeNote "Een gebouw, dat is gebouwd met het doel om er joodse erediensten te kunnen houden en door een kenmerkende bouwstijl als zodanig herkenbaar is, maar dat niet meer in gebruik is voor erediensten, wordt aangegeven als gebouw en voorzien van een typering die overeenkomt met het huidige gebruik alsmede van de soortnaam “Voormalige synagoge”."@nl.
+
+  typeGebouw:tank
+    skos:definition "Rond bouwwerk t.b.v. opslag."@nl;
+    skos:prefLabel "tank"@nl;
+    skos:scopeNote "Minimum diameter: 8 meter (bij een liggende tank geldt de breedtemaat), uitgezonderd een markante, alleenstaande tank. Zowel open als gesloten, zowel staand als liggend. Meerdere tanks met kleinere doorsnede worden niet aangegeven. Bijvoorbeeld gasbol, graansilo, mestsilo of olietank. Een niet-ronde graansilo wordt als ‘overig’ gebouw ingewonnen. Een niet-ronde waterbak groter dan 50 m² wordt opgenomen als waterdeel van het type ‘meer, plas, ven, vijver’."@nl.
+
+  typeGebouw:tankstation
+    skos:definition "Inrichting waar motorbrandstof, olie, lucht en koelwater kunnen worden verkregen."@nl;
+    skos:prefLabel "tankstation"@nl;
+    skos:scopeNote "Wordt ingewonnen als gebouwvlak langs autosnelwegen en hoofdwegen. Op de plek waar de pompen zijn gesitueerd, wordt altijd een gebouwpunt gegeven."@nl.
+
+  typeGebouw:telecommunicatietoren
+    skos:definition "Toren t.b.v. datacommunicatie."@nl;
+    skos:prefLabel "telecommunicatietoren"@nl;
+    skos:scopeNote "Een telecommunicatietoren die niet voldoet aan de opnamecriteria voor gebouwvlak, wordt aangegeven als een gebouwpunt."@nl.
+
+  typeGebouw:tol
+    skos:definition "Een tol is een gebouw aan een verkeers- of waterweg waar tol wordt geheven."@nl;
+    skos:prefLabel "tol"@nl.
+
+  typeGebouw:toren
+    skos:definition "Vrijstaand bouwwerk van grote hoogte in verhouding tot de doorsnede."@nl;
+    skos:prefLabel "toren"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een toren kan zowel vrijstaand als onderdeel van een groter stuk aaneengesloten bebouwing voorkomen.</p>
+  <p>Indien het object (vrijstaand of als onderdeel van een gebouw) niet voldoet aan de criteria voor gebouwvlak, dan wordt deze opgenomen als gebouwpunt.</p>
+  <p>Een starttoren wordt niet als toren opgenomen maar als overig gebouw.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:transformatorstation
+    skos:definition "Installatie voor het transformeren van elektrische stroom."@nl;
+    skos:prefLabel "transformatorstation"@nl.
+
+  typeGebouw:uitzichttoren
+    skos:definition "Toren t.b.v. de recreatie."@nl;
+    skos:prefLabel "uitzichttoren"@nl;
+    skos:scopeNote "Indien het object niet voldoet aan de criteria voor een gebouwvlak, dan wordt deze opgenomen als gebouwpunt."@nl.
+
+  typeGebouw:universiteit
+    skos:definition "Instelling voor wetenschappelijk onderwijs met tenminste drie faculteiten."@nl;
+    skos:prefLabel "universiteit"@nl.
+
+  typeGebouw:veiling
+    skos:definition "Gebouw waar goederen openbaar worden geveild."@nl;
+    skos:prefLabel "veiling"@nl.
+
+  typeGebouw:verkeerstoren
+    skos:definition "Toren t.b.v. verkeersregulatie te land, ter zee of in de lucht."@nl;
+    skos:prefLabel "verkeerstoren"@nl.
+
+  typeGebouw:vuurtoren
+    skos:definition "Toren als drager van een ter oriëntatie dienend licht, met name langs de kust. Het lichtpatroon van de vuurtoren is uniek t.o.v. elke andere vuurtoren of lichttoren."@nl;
+    skos:prefLabel "vuurtoren"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Alleen de torens, voorkomend op de “Vuurtorenlijst” worden als vuurtoren aangegeven.</p>
+  <p>Een voormalige vuurtoren, die nog steeds als zodanig herkenbaar is, wordt aangegeven als bebouwing en voorzien van de attribuutwaarde vuurtoren, waarbij de status op buiten gebruik wordt ingesteld.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:waterradmolen
+    skos:definition "Bebouwing t.b.v. het verrichten van arbeid, waarvoor de energie geleverd wordt door stromend water en opgenomen door middel van een schoepenrad."@nl;
+    skos:prefLabel "waterradmolen"@nl;
+    skos:scopeNote "Een voormalige waterradmolen (zonder schoepenrad) wordt aangegeven als bebouwing zonder verdere toevoeging."@nl.
+
+  typeGebouw:watertoren
+    skos:definition "Toren (oorspronkelijk) bedoeld voor de opslag van drinkwater."@nl;
+    skos:prefLabel "watertoren"@nl;
+    skos:scopeNote "Niet de functie, maar het voorkomen telt. Een voormalige watertoren, die nog steeds als zodanig herkenbaar is, wordt opgenomen, met als status ‘buiten gebruik’."@nl.
+
+  typeGebouw:wegrestaurant
+    skos:definition "Restaurant op verzorgingsplaats langs autosnelweg of hoofdweg."@nl;
+    skos:prefLabel "wegrestaurant"@nl.
+
+  typeGebouw:werf
+    skos:definition "Werkplaats waar schepen worden gebouwd of hersteld."@nl;
+    skos:prefLabel "werf"@nl.
+
+  typeGebouw:windmolen
+    skos:definition "Bebouwing t.b.v. het verrichten van arbeid (m.u.v. het opwekken van elektrische energie, het malen van granen en het opvijzelen van water), waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken."@nl;
+    skos:prefLabel "windmolen"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien het object niet voldoet aan de criteria voor gebouwvlak, dan wordt deze opgenomen als gebouwpunt.</p>
+  <p>Een voormalige windmolen zonder wieken wordt niet aangegeven als windmolen. Wanneer de wieken vanwege restauratie tijdelijk afwezig zijn, dan wordt het object wel als windmolen gegeven.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:windmolen_korenmolen
+    skos:definition "Bebouwing t.b.v. het malen van granen, waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken."@nl;
+    skos:prefLabel "windmolen: korenmolen"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien het object niet voldoet aan de criteria voor gebouwvlak, dan wordt deze opgenomen als gebouwpunt.</p>
+  <p>Een voormalige windmolen zonder wieken wordt niet aangegeven als windmolen: korenmolen. Wanneer de wieken vanwege restauratie tijdelijk afwezig zijn, dan wordt het object wel als windmolen: korenmolen gegeven.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:windmolen_watermolen
+    skos:definition "Bebouwing t.b.v. het opvijzelen van water, waarvoor de energie geleverd wordt door wind en opgenomen door middel van wieken."@nl;
+    skos:prefLabel "windmolen: watermolen"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien het object niet voldoet aan de criteria voor gebouwvlak, dan wordt deze opgenomen als gebouwpunt.</p>
+  <p>Een voormalige windmolen zonder wieken wordt niet aangegeven als windmolen: watermolen. Wanneer de wieken vanwege restauratie tijdelijk afwezig zijn, dan wordt het object wel als windmolen: watermolen gegeven.</p>
+</section>"""^^rdf:HTML.
+
+  typeGebouw:windturbine
+    skos:definition "Bebouwing t.b.v. het opwekken van elektrische energie, waarvoor de energie geleverd wordt door wind en opgenomen wordt door middel van wieken."@nl;
+    skos:prefLabel "windturbine"@nl;
+    skos:scopeNote "Een windturbine wordt ingewonnen als gebouwpunt."@nl.
+
+  typeGebouw:zendtoren
+    skos:definition "Toren met een zendantenne."@nl;
+    skos:prefLabel "zendtoren"@nl;
+    skos:scopeNote "Een zendtoren welke niet voldoet aan de opnamecriteria voor gebouwvlak, wordt aangegeven als een gebouwpunt."@nl.
+
+  typeGebouw:ziekenhuis
+    skos:definition "Instelling voor onderzoek, behandeling en verpleging van patiënten."@nl;
+    skos:prefLabel "ziekenhuis"@nl.
+
+  typeGebouw:zwembad
+    skos:definition "Gebouw met zwemfunctionaliteit of een zwembassin, openbaar toegankelijk."@nl;
+    skos:prefLabel "zwembad"@nl.
+
+
+  brt:TypeGeografischGebied
+    owl:oneOf
+      ( typeGeografischGebied:bank_ondiepte_plaat
+        typeGeografischGebied:bosgebied
+        typeGeografischGebied:duingebied
+        typeGeografischGebied:eiland
+        typeGeografischGebied:geul_vaargeul
+        typeGeografischGebied:heidegebied
+        typeGeografischGebied:heuvel_berg
+        typeGeografischGebied:kaap_hoek
+        typeGeografischGebied:overig
+        typeGeografischGebied:polder
+        typeGeografischGebied:streek_eld
+        typeGeografischGebied:terp_wierde
+        typeGeografischGebied:wad
+        typeGeografischGebied:watergebied
+        typeGeografischGebied:zee
+        typeGeografischGebied:zeegat_zeearm );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-gg_typegeografischgebied"^^xsd:anyURI;
+    skos:definition "Het soort geografisch gebied."@nl;
+    skos:prefLabel "Type geografisch gebied"@nl.
+
+  typeGeografischGebied:bank_ondiepte_plaat
+    skos:definition "Geheel of gedeeltelijk droogvallende grond (bank). / Ondiepe plaats in een vaarwater (ondiepte). / Zandbank (plaat)."@nl;
+    skos:prefLabel "bank, ondiepte, plaat"@nl.
+
+  typeGeografischGebied:bosgebied
+    skos:definition "Met bos begroeid gebied."@nl;
+    skos:prefLabel "bosgebied"@nl.
+
+  typeGeografischGebied:duingebied
+    skos:definition "Heuvels van fijn zand, al dan niet begroeid met helmgras en struiken."@nl;
+    skos:prefLabel "duingebied"@nl.
+
+  typeGeografischGebied:eiland
+    skos:definition "Land, omgeven door water."@nl;
+    skos:prefLabel "eiland"@nl.
+
+  typeGeografischGebied:geul_vaargeul
+    skos:definition "Smal, meestal diep water (geul). / Geul van voldoende diepte als vaarwater tussen ondiepten door (vaargeul)."@nl;
+    skos:prefLabel "geul, vaargeul"@nl.
+
+  typeGeografischGebied:heidegebied
+    skos:definition "Met heide begroeid gebied."@nl;
+    skos:prefLabel "heidegebied"@nl.
+
+  typeGeografischGebied:heuvel_berg
+    skos:definition "Verhoging van het terrein (heuvel). / Min of meer op zichzelf staande sterke verheffing van het aardoppervlak (berg)."@nl;
+    skos:prefLabel "heuvel, berg"@nl;
+    skos:scopeNote "Alleen duintoppen met een eigennaam krijgen een geografisch gebied."@nl.
+
+  typeGeografischGebied:kaap_hoek
+    skos:definition "In zee vooruitstekende landpunt (kaap). / In het water uitstekende landtong (hoek)."@nl;
+    skos:prefLabel "kaap, hoek"@nl.
+
+  typeGeografischGebied:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  typeGeografischGebied:polder
+    skos:definition "Door waterscheidingen begrensd stuk land of gebied waarin de waterstand kan worden beheerst door bemaling."@nl;
+    skos:prefLabel "polder"@nl.
+
+  typeGeografischGebied:streek_veld
+    skos:definition "Landstreek, gebied dat cultureel of landschappelijk een eenheid vormt (streek). / Het open land buiten steden en dorpen (veld)."@nl;
+    skos:prefLabel "streek, veld"@nl.
+
+  typeGeografischGebied:terp_wierde
+    skos:definition "Verhoging in het landschap oorspronkelijk bedoelt om de daarop gevestigde bebouwing te beschermen tegen het water."@nl;
+    skos:prefLabel "terp, wierde"@nl.
+
+  typeGeografischGebied:wad
+    skos:definition "De buitendijkse gronden bij Friesland, Groningen en Noord-Duitsland die alleen bij vloed onder water komen."@nl;
+    skos:prefLabel "wad"@nl.
+
+  typeGeografischGebied:watergebied
+    skos:definition "Een complex van meren en plassen."@nl;
+    skos:prefLabel "watergebied"@nl.
+
+  typeGeografischGebied:zee
+    skos:definition "Uitgestrekt oppervlak zout water dat het grootste deel van de aarde bedekt."@nl;
+    skos:prefLabel "zee"@nl.
+
+  typeGeografischGebied:zeegat_zeearm
+    skos:definition "Plaats waar een binnenzee in een zee uitmondt (zeegat). / Lange, smalle inham van een zee (zeearm)."@nl;
+    skos:prefLabel "zeegat, zeearm"@nl.
+
+
+  brt:TypeHoogte
+    owl:oneOf
+      ( typeHoogte:dieptelijn
+        typeHoogte:dieptepunt
+        typeHoogte:hoogtelijn
+        typeHoogte:hoogtepunt
+        typeHoogte:hoogwaterlijn
+        typeHoogte:laagwaterlijn
+        typeHoogte:peil
+        typeHoogte:winterpeil
+        typeHoogte:zomerpeil );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ho_typehoogte"^^xsd:anyURI;
+    skos:definition "Het soort hoogte."@nl;
+    skos:prefLabel "Type hoogte"@nl.
+
+  typeHoogte:dieptelijn
+    skos:definition "Lijn gevormd door punten met gelijke waterdiepte."@nl;
+    skos:prefLabel "dieptelijn"@nl.
+
+  typeHoogte:dieptepunt
+    skos:definition "Punt waarvan de waterdiepte bekend is t.o.v. het referentievlak."@nl;
+    skos:prefLabel "dieptepunt"@nl.
+
+  typeHoogte:hoogtelijn
+    skos:definition "Lijn die punten van gelijke hoogte met elkaar verbindt."@nl;
+    skos:prefLabel "hoogtelijn"@nl.
+
+  typeHoogte:hoogtepunt
+    skos:definition "Punt in de kaart, waarvan de hoogte bekend is ten opzichte van het referentievlak."@nl;
+    skos:prefLabel "hoogtepunt"@nl.
+
+  typeHoogte:hoogwaterlijn
+    skos:definition "Lijn die de grens van het water aangeeft als de waterstand op zijn hoogst."@nl;
+    skos:prefLabel "hoogwaterlijn"@nl;
+    skos:scopeNote "De hoogwaterlijn is onderdeel van TOP10NL vanwege INSPIRE eisen en wordt ingewonnen in de 6 grote wateren in Nederland (Noordzee, Waddenzee, IJsselmeer, Markermeer, Oosterschelde en Westerschelde)."@nl.
+
+  typeHoogte:laagwaterlijn
+    skos:definition "Lijn die de grens van het water aangeeft als de waterstand op zijn laagst is."@nl;
+    skos:prefLabel "laagwaterlijn"@nl;
+    skos:scopeNote "Door middel van het attribuut referentievlak wordt aangegeven op welke waterstand deze lijn gebaseerd is."@nl.
+
+  typeHoogte:peil
+    skos:definition "Geeft de streefhoogte aan van het waterniveau t.o.v. het referentievlak in grotere waterplassen."@nl;
+    skos:prefLabel "peil"@nl.
+
+  typeHoogte:winterpeil
+    skos:definition "Geeft de streefhoogte aan van het waterniveau t.o.v. het referentievlak in grotere waterplassen gedurende de wintermaanden."@nl;
+    skos:prefLabel "winterpeil"@nl.
+
+  typeHoogte:zomerpeil
+    skos:definition "Geeft de streefhoogte aan van het waterniveau t.o.v. het referentievlak in grotere waterplassen gedurende de zomermaanden."@nl;
+    skos:prefLabel "zomerpeil"@nl.
+
+
+  brt:TypeInrichtingselement
+    owl:oneOf
+      ( typeInrichtingselement:aanlegsteiger
+        typeInrichtingselement:baak
+        typeInrichtingselement:bomenrij
+        typeInrichtingselement:boom
+        typeInrichtingselement:botenhelling
+        typeInrichtingselement:busstation
+        typeInrichtingselement:calamiteitendoorgang
+        typeInrichtingselement:dukdalf
+        typeInrichtingselement:gaswinning
+        typeInrichtingselement:gedenkteken_monument
+        typeInrichtingselement:geluidswering
+        typeInrichtingselement:golfmeetpaal
+        typeInrichtingselement:GPSkernnetpunt
+        typeInrichtingselement:grenspunt
+        typeInrichtingselement:havenhoofd
+        typeInrichtingselement:heg_haag
+        typeInrichtingselement:hekwerk
+        typeInrichtingselement:helikopterlandingsplatform
+        typeInrichtingselement:hoogspanningsleiding
+        typeInrichtingselement:hoogspanningsmast
+        typeInrichtingselement:hunebed
+        typeInrichtingselement:kaap
+        typeInrichtingselement:kabelbaan
+        typeInrichtingselement:kabelbaanmast
+        typeInrichtingselement:kilometerpaal
+        typeInrichtingselement:kilometerpaalSpoorweg
+        typeInrichtingselement:kilometerpaalWater
+        typeInrichtingselement:kilometerraaibord
+        typeInrichtingselement:kilometerraaipaal
+        typeInrichtingselement:klokkenstoel
+        typeInrichtingselement:koedam
+        typeInrichtingselement:kogelvangerSchietbaan
+        typeInrichtingselement:kraan
+        typeInrichtingselement:kruis
+        typeInrichtingselement:leiding
+        typeInrichtingselement:luchtvaartlicht
+        typeInrichtingselement:markantObject
+        typeInrichtingselement:metrostation
+        typeInrichtingselement:muur
+        typeInrichtingselement:oliepompinstallatie
+        typeInrichtingselement:overig
+        typeInrichtingselement:paal
+        typeInrichtingselement:paalwerk
+        typeInrichtingselement:peilschaal
+        typeInrichtingselement:pijler
+        typeInrichtingselement:plaatsnaambord
+        typeInrichtingselement:radiobaken
+        typeInrichtingselement:radiotelescoop
+        typeInrichtingselement:RDpunt
+        typeInrichtingselement:scheepvaartlicht
+        typeInrichtingselement:schietbaan
+        typeInrichtingselement:seinmast
+        typeInrichtingselement:sluisdeur
+        typeInrichtingselement:sneltramhalte
+        typeInrichtingselement:stormvloedkering
+        typeInrichtingselement:strandpaal
+        typeInrichtingselement:strekdam_krib_golfbreker
+        typeInrichtingselement:stuw
+        typeInrichtingselement:tol
+        typeInrichtingselement:treinstation
+        typeInrichtingselement:uitzichtpunt
+        typeInrichtingselement:verkeersgeleider
+        typeInrichtingselement:vlampijp
+        typeInrichtingselement:vliedberg
+        typeInrichtingselement:wegafsluiting
+        typeInrichtingselement:wegwijzer
+        typeInrichtingselement:windmolentje
+        typeInrichtingselement:zendmast
+        typeInrichtingselement:zichtbaarWrak );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-ie_typeinrichtingselement"^^xsd:anyURI;
+    skos:definition "Het soort inrichtingselement."@nl;
+    skos:prefLabel "Type inrichtingselement"@nl.
+
+  typeInrichtingselement:aanlegsteiger
+    skos:definition "In het water uitstekende brug of pier, smaller dan 2 meter, gebruikt om personen en goederen aan wal te brengen."@nl;
+    skos:prefLabel "aanlegsteiger"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte 50 meter. De minimumlengte geldt niet indien de aanlegsteiger is gelegen in een waterdeel met de functie haven.</p>
+  <p>Wordt gegeneraliseerd weergegeven. Een rij onderling verbonden meerpalen wordt ook ingewonnen als aanlegsteiger.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:baak
+    skos:definition "Markering van de loop van de vaargeul."@nl;
+    skos:prefLabel "baak"@nl.
+
+  typeInrichtingselement:bomenrij
+    skos:definition "Aantal bomen (minimaal 3) die in een rij staan, waarbij de onderlinge afstand tussen de bomen zodanig is dat de bomenrij tot manshoogte geen zichtbelemmering vormt."@nl;
+    skos:prefLabel "bomenrij"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte: 100 meter. Indien een doorgaande bomenrij in het terrein voor minder dan 100 meter onderbroken is, wordt de onderbreking genegeerd en de bomenrij doorgetrokken. Een grotere opening leidt tot een opsplitsing in twee bomenrijen. Dit geldt niet indien een bomenrij een weg, water e.d. kruist die als vlak wordt weergegeven. In dat geval mogen ze korter zijn dan 100 m mits ze onderdeel zijn van een logisch doorgaand geheel.</p>
+  <p>Een enkele boom in de lijn van een aanwezige bomenrij, maar op meer dan 50 meter afstand, hoeft niet als onderdeel van die bomenrij gerekend te worden.</p>
+  <p>Bij een bomenrij naast een weg wordt de lijn op het wegvlak geplaatst als de bomen staan in een bij de weg getrokken berm, en buiten het wegvlak als de bomen staan op een niet bij de weg getrokken berm. Wordt binnen bebouwd gebied slechts gegeven indien gelegen langs een naar breedte geclassificeerde weg. Parallel gelegen fietspaden langs geclassificeerde wegen worden eveneens voorzien van bomenrijen.</p>
+  <p>Wordt in een bos alleen aangegeven als er sprake is van een markante laan (b.v. oprijlaan naar een kasteel).</p>
+  <p>Een bomenrij op of om een erf mag worden gegeven indien deze door loopt in het achter- of naastliggende terrein.</p>
+  <p>Een bomenrij gelegen op de weg langs een waterdeel wordt, indien het betreffende waterdeel voor minder dan 100m wordt onderbroken, zonder verspringing doorgetrokken.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:boom
+    skos:definition "Houtachtig gewas met een enkele, stevige, houtige en overblijvende stam, die zich op een zekere hoogte boven de grond vertakt."@nl;
+    skos:prefLabel "boom"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Bomen binnen bebouwd gebied op of langs een straat, in een tuin of op een erf worden niet opgenomen tenzij gelegen in plantsoen of park.</p>
+  <p>Een permanent aanwezige boom op een kwekerij kan gegeven worden.</p>
+  <p>Een klein aantal bij elkaar staande bomen wordt als één boom opgenomen.</p>
+  <p>Een gewas met meerdere hoofdstammen vanuit hetzelfde wortelstelsel (geen struik) wordt gegeven als boom.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:botenhelling
+    skos:definition "Voorziening om boten uit of in het water te helpen."@nl;
+    skos:prefLabel "botenhelling"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Geeft het begin van de helling aan.</p>
+  <p>Wordt met behulp van het attribuut soortnaam geclassificeerd als openbare botenhelling of niet-openbare botenhelling.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:busstation
+    skos:definition "Een plaats waar verschillende buslijnen samenkomen en waar meerdere bushaltes aanwezig zijn, met het doel dat buspassagiers hier kunnen in-, uit- of overstappen."@nl;
+    skos:prefLabel "busstation"@nl.
+
+  typeInrichtingselement:calamiteitendoorgang
+    skos:definition "Doorgang in de verkeersgeleider of wegafsluiting die hulpdiensten doorgang moet verlenen voor het bestrijden van calamiteiten."@nl;
+    skos:prefLabel "calamiteitendoorgang"@nl.
+
+  typeInrichtingselement:dukdalf
+    skos:definition "In het water geplaatste, zware al dan niet metalen paal of constructie, dienend tot bescherming van bruggen en sluizen."@nl;
+    skos:prefLabel "dukdalf"@nl.
+
+  typeInrichtingselement:gaswinning
+    skos:definition "Installatie t.b.v. de winning of transport van aardgas."@nl;
+    skos:prefLabel "gaswinning"@nl;
+    skos:scopeNote "Maximum oppervlakte: 1000 m². Indien groter, dan wordt het opgenomen als functioneel gebied."@nl.
+
+  typeInrichtingselement:gedenkteken_monument
+    skos:definition "Topografisch object ter nagedachtenis van een belangrijke persoon of gebeurtenis."@nl;
+    skos:prefLabel "gedenkteken, monument"@nl.
+
+  typeInrichtingselement:geluidswering
+    skos:definition "Constructie ten behoeve van het terugdringen van geluidsoverlast."@nl;
+    skos:prefLabel "geluidswering"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte: 100 meter. Minimum hoogte: 2 meter.</p>
+  <p>Een geluidsscherm op een dijk wordt ingewonnen als ‘geluidswering’.</p>
+  <p>Een wal met geluidsscherm, samen hoger dan 2 meter, wordt ingewonnen als ‘geluidswering’.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:golfmeetpaal
+    skos:definition "Paal uitgerust met instrumenten t.b.v. het doen van waarnemingen betreffende golfbewegingen."@nl;
+    skos:prefLabel "golfmeetpaal"@nl.
+
+  typeInrichtingselement:GPSkernnetpunt
+    skos:definition "Punt geschikt voor GPS metingen. (Kan een steen of bout zijn)."@nl;
+    skos:prefLabel "GPS kernnetpunt"@nl;
+    skos:scopeNote "Alleen recent gecontroleerde GPS-kernnetpunten worden opgenomen in de BRT."@nl.
+
+  typeInrichtingselement:grenspunt
+    skos:definition "Aanduiding van een grensscheiding."@nl;
+    skos:prefLabel "grenspunt"@nl;
+    skos:scopeNote "Bij een herziening worden grenspalen alleen gecontroleerd in de buurt van nieuwe topografie. Overige grenspalen worden niet gecontroleerd. Op een gemeentegrens of provinciegrens worden alleen grote, markante palen aangegeven (een stalen paal met een gemeentenaambordje wordt niet als markant gezien). Indien er langs de grens dubbele grenspalen aanwezig zijn (bijvoorbeeld aan weerszijden van een waterloop) wordt er slechts één gegeven."@nl.
+
+  typeInrichtingselement:havenhoofd
+    skos:definition "Zware, stenen of houten dam ter weerszijden van de mond van een haven."@nl;
+    skos:prefLabel "havenhoofd"@nl.
+
+  typeInrichtingselement:heg_haag
+    skos:definition "Rij bomen, al of niet in combinatie met struiken, waarbij de onderlinge afstand of onderbegroeiing zodanig is dat tot minstens manshoogte het zicht belemmerd wordt. Maximale inplantbreedte van de stammen: 3 meter. / Een rij naast elkaar geplante struiken (liguster, haagdoorn, coniferen, haagbeuk, e.d.) die op gezette tijden worden geschoren. Minimale hoogte 1 meter, minimumlengte: 100 meter."@nl;
+    skos:prefLabel "heg, haag"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Wordt niet opgenomen binnen bebouwd gebied en tussen tennisbanen. Een heg, haag op of rondom een erf wordt niet ingewonnen, tenzij deze zich voortzet voorbij het erf.</p>
+  <p>Een heg/haag aan de buitenzijde van een bos of op een middenberm smaller dan 6 meter of op het bovenste gedeelte van een talud wordt niet opgenomen. Een heg/haag in een berm smaller dan 6 meter wordt aan de buitenzijde van het wegdeel geplaatst (de berm is onderdeel van het wegdeel), maar als het wegdeel wordt begrensd door een watervlak of een talud, hoogteverschil, dan wordt de heg/haag voorgesteld als bomenrij aan de binnenzijde van het wegdeel, een haag wordt niet aangegeven. Als het aan de weg grenzende vlak een weer te geven talud betreft dan wordt een heg gegeven als bomenrij op het talud, een haag wordt in dat geval niet gegeven.</p>
+  <p>Een heg / haag gelegen op het onderste gedeelte van een talud wordt aangegeven aan de voet van het talud indien hiervoor ruimte is, waarbij de voorstelling van de heg blijft liggen binnen het vlak waarin ook het talud ligt. Is er niet voldoende ruimte aan de voet van het talud voor het geven van de heg/ haag dan wordt deze aan de buitenzijde van het taludvlak geplaatst. Indien echter het begrenzende vlak een waterloop > 6m betreft geldt dat een heg gegeven wordt als bomenrij op de werkelijke plaats, een haag wordt in dat geval niet gegeven.</p>
+  <p>Een rij dicht op elkaar geplante bomen met de functie van windscherm wordt gegeven als heg.</p>
+  <p>Doorgangen dienen gegeven te worden in geval van gelegen langs een door een koedam of duiker onderbroken waterdeel of indien vrijliggend gelegen in open, landelijk gebied. Geen doorgangen geven indien gelegen langs erven, wegen en op campings.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:hekwerk
+    skos:definition "Begrenzing van een terrein in de vorm van een afrastering."@nl;
+    skos:prefLabel "hekwerk"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimumlengte: 400 meter bij gas- en oliewinningsgebieden, 1000 meter in overige situaties.</p>
+  <p>Minimumhoogte: 2 meter. Bij een combinatie van hekwerken op een bedrijventerrein of op het terrein van een groot bedrijf wordt het buitenste hekwerk opgenomen. Daarbinnen worden hekwerken selectief ingewonnen. Wordt niet ingewonnen tussen tennisbanen. Indien een afrastering dwars over een weg loopt en ter plaatse een draaihek, slagboom o.i.d. aanwezig is, wordt alleen bij de hoofd in- en uitgang van het omsloten terrein een wegafsluiting geplaatst. Indien de wegafsluiting niet gegeven wordt, wordt het hek doorgetrokken.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:helikopterlandingsplatform
+    skos:definition "Platform dat als landings- en vertrekplaats dient voor helikopters."@nl;
+    skos:prefLabel "helikopterlandingsplatform"@nl.
+
+  typeInrichtingselement:hoogspanningsleiding
+    skos:definition "Leiding waarop elektrische spanning van meer dan 500 volt staat."@nl;
+    skos:prefLabel "hoogspanningsleiding"@nl;
+    skos:scopeNote "Zogenaamde wintrackmasten (magneetveldarme masten herkenbaar aan twee tegenover elkaar staande palen) worden gekarteerd door het geven van één hoogspanningsmast in het centrum."@nl.
+
+  typeInrichtingselement:hoogspanningsmast
+    skos:definition "Mast van een hoogspanningsleiding."@nl;
+    skos:prefLabel "hoogspanningsmast"@nl.
+
+  typeInrichtingselement:hunebed
+    skos:definition "Voorhistorische begraafplaats, bestaande uit opgestapelde, reusachtige stenen."@nl;
+    skos:prefLabel "hunebed"@nl.
+
+  typeInrichtingselement:kaap
+    skos:definition "Gestel van balken met een daartegen aangebracht scherm van latten of ribben, dat als baak op het land dienst doet voor de zeevaart."@nl;
+    skos:prefLabel "kaap"@nl.
+
+  typeInrichtingselement:kabelbaan
+    skos:definition "Kabel waaraan stoeltjes hangen."@nl;
+    skos:prefLabel "kabelbaan"@nl.
+
+  typeInrichtingselement:kabelbaanmast
+    skos:definition "Mast van een kabelbaan."@nl;
+    skos:prefLabel "kabelbaanmast"@nl.
+
+  typeInrichtingselement:kilometerpaal
+    skos:definition "Paal waarop de kilometrering van een weg wordt aangegeven."@nl;
+    skos:prefLabel "kilometerpaal"@nl;
+    skos:scopeNote "Alleen de palen met een gehele kilometeraanduiding worden aangegeven. Bij een weg met gescheiden rijbanen met een middenberm smaller dan 6 meter en met kilometeraanduiding aan beide zijden en eventueel in de middenberm, wordt toch slechts één aanduiding aangegeven; bij voorkeur rechts in oplopende richting. Bij een weg met gescheiden rijbanen met een middenberm breder dan 6 meter en met kilometeraanduiding aan beide zijden en eventueel in de middenberm, worden de aanduidingen links en rechts aangegeven, niet in de middenberm. Bij een weg met gescheiden rijbanen met alleen een kilometeraanduiding in de middenberm, wordt de aanduiding alleen in de middenberm aangegeven. Er wordt geen kilometrering gegeven langs op- en afritten met uitzondering van wegen die behoren tot een knooppunt."@nl.
+
+  typeInrichtingselement:kilometerpaalSpoorweg
+    skos:definition "Paal waarop de kilometrering van een spoorweg wordt aangegeven."@nl;
+    skos:prefLabel "kilometerpaal spoorweg"@nl;
+    skos:scopeNote "Alleen de palen met een gehele kilometeraanduiding worden aangegeven. Wordt niet ingewonnen langs metrolijnen."@nl.
+
+  typeInrichtingselement:kilometerpaalWater
+    skos:definition "Paal waarop de kilometrering van een water wordt aangegeven."@nl;
+    skos:prefLabel "kilometerpaal water"@nl;
+    skos:scopeNote "Alleen de palen met een gehele kilometeraanduiding worden aangegeven. Indien er alleen hectometerpalen aanwezig zijn, worden alleen de tientallen opgenomen."@nl.
+
+  typeInrichtingselement:kilometerraaibord
+    skos:definition "Bord op de oever van een rivier, met daarop vermeld het aantal gehele kilometers van de betreffende kilometerraai. Een kilometerraai is een lijn loodrecht op de lengteas van een rivier, gedacht op onderlinge afstand van 1 kilometer als indeling van het traject."@nl;
+    skos:prefLabel "kilometerraaibord"@nl.
+
+  typeInrichtingselement:kilometerraaipaal
+    skos:definition "Paal, meestal geplaatst tegenover een kilometerraaibord, op de andere oever van de rivier."@nl;
+    skos:prefLabel "kilometerraaipaal"@nl.
+
+  typeInrichtingselement:klokkenstoel
+    skos:definition "Stellage van balken (ongeacht het soort materiaal), meestal voorzien van een afdak, waarin een of meerdere klokken hangen."@nl;
+    skos:prefLabel "klokkenstoel"@nl.
+
+  typeInrichtingselement:koedam
+    skos:definition "Onderbreking van een waterloop, door middel van demping, al dan niet met een doorlaatbuis."@nl;
+    skos:prefLabel "koedam"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een duiker in open terrein, niet gelegen in het hoofdafwateringspatroon, wordt aangegeven als koedam.</p>
+  <p>Koedammen gelegen in waterlopen smaller dan 6 meter die onderdeel uitmaken van het hoofdafwateringspatroon worden opgenomen als duiker.</p>
+  <p>Een bredere koedam (breder dan 12 meter) wordt aangegeven met een onderbreking van het waterdeel.</p>
+  <p>Een onderbreking van een waterloop wordt altijd aangegeven tenzij gelegen in een wegcontour. Of er ook een inrichtingselement van het type koedam gegeven wordt is afhankelijk van een aantal randvoorwaarden. Er wordt geen inrichtingselement van het type koedam gegeven indien:</p>
+  <ul>
+    <li>de koedam is gelegen in of langs een bosperceel</li>
+    <li>over de koedam een wegvlak, weglijn of dijk (reliëflijn) ligt.</li>
+    <li>er geen sprake is van de mogelijkheid tot passage van de onderbreking (bv ihgv. aanwezigheid van een mast, windturbine, lantaarnpaal ed. op de dam).</li>
+    <li>de te overbruggen afstand meer dan 12 m bedraagt.</li>
+    <li>de waterdelen aan beide zijden van de dam breder zijn dan 6 meter.</li>
+  </ul>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:kogelvangerSchietbaan
+    skos:definition "Zandheuvel of ander voorwerp achter de schietschijf op een schietbaan, die de afgevuurde kogels opvangt."@nl;
+    skos:prefLabel "kogelvanger schietbaan"@nl;
+    skos:scopeNote "Wordt ingewonnen in combinatie met ‘schietbaan’."@nl.
+
+  typeInrichtingselement:kraan
+    skos:definition "Hijswerktuig om zware voorwerpen op te tillen en te verplaatsen."@nl;
+    skos:prefLabel "kraan"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeInrichtingselement:kruis
+    skos:definition "Object tot bezinning en/of verering in de vorm van een kruis of heiligenbeeld."@nl;
+    skos:prefLabel "kruis"@nl.
+
+  typeInrichtingselement:leiding
+    skos:definition "Koker, buis, draad enz. waardoor of waarlangs een stof of kracht geleid wordt."@nl;
+    skos:prefLabel "leiding"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeInrichtingselement:luchtvaartlicht
+    skos:definition "Navigatielicht t.b.v. de luchtvaart."@nl;
+    skos:prefLabel "luchtvaartlicht"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeInrichtingselement:markantObject
+    skos:definition "Een object dat vanuit de wijde omgeving zichtbaar is en een oriënterende waarde heeft."@nl;
+    skos:prefLabel "markant object"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een object wordt als inrichtingselement van het type ‘markant object’ ingewonnen indien het niet kan worden opgenomen in een meer specifieke categorie (bebouwing, palen, gedenktekens, zendmasten, schoorstenen) waarbij voor kunstwerken en reclame-uitingen extra voorwaarden gelden:</p>
+  <p>Reclamemasten worden pas als markant object gegeven indien de mast reclame van meerdere bedrijven voert.</p>
+  <p>Kunstwerken worden pas opgenomen als markant object indien het object opvallend groot is (richtlijn: meer dan 5m hoog). Binnen bebouwd gebied worden ze genegeerd met uitzondering van kunstwerken die als blikvanger dienen langs de toegangswegen naar een stad of dorp en voldoen aan de gegeven richtlijn voor de maatvoering.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:metrostation
+    skos:definition "Halteplaats voor een onder- of bovengronds metronetwerk."@nl;
+    skos:prefLabel "metrostation"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Geeft de ingang van het station aan. De ligging van een ondergronds metrostation wordt ontleend aan de plattegrond van de metro. Een eventueel stationsgebouw wordt niet als metrostation aangegeven maar als gebouw van het type ‘stationsgebouw’.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:muur
+    skos:definition "Relatief smal, rechtopstaand bouwwerk."@nl;
+    skos:prefLabel "muur"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte: 50 meter. Minimum hoogte: 2 meter. Voor een muraltmuur (muur geplaatst op een dijk met een waterkerende functie) geldt deze minimum hoogte niet. Een muur voor het bijzetten van urnen (columbarium) op een begraafplaats wordt niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:oliepompinstallatie
+    skos:definition "Productie-installatie om olie uit de grond te pompen."@nl;
+    skos:prefLabel "oliepompinstallatie"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Per plateau wordt slechts één oliepompinstallatie geplaatst. Opnamecriterium is de aanwezigheid van de installatie, niet of deze wel of niet operationeel is.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:overig
+    skos:definition "Het type inrichtingselement is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl;
+    skos:scopeNote "Bijvoorbeeld een belvédère (punt met fraai uitzicht), observatiepunt of toegang van ondergrondse parkeergarage, de ingang van een ondergronds metrostation of een doolhof."@nl.
+
+  typeInrichtingselement:paal
+    skos:definition "Stevig, langwerpig, rechtop in de grond geplaatst merkteken ter afbakening. / Kilometrering van een dijklichaaam."@nl;
+    skos:prefLabel "paal"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Voor de kilometrering van een dijklichaam geldt: Alleen de palen met een gehele kilometeraanduiding worden aangegeven. Indien er alleen hectometerpalen aanwezig zijn, worden alleen de tientallen opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:paalwerk
+    skos:definition "Palissade, omheining van in de grond geslagen palen of staken ten behoeve van landaanwinning."@nl;
+    skos:prefLabel "paalwerk"@nl.
+
+  typeInrichtingselement:peilschaal
+    skos:definition "Lat met schaalverdeling voor het aflezen van de waterhoogte in een water."@nl;
+    skos:prefLabel "peilschaal"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Alleen aangegeven indien het in het hoofdafwateringspatroon ligt of buitendijks de grote rivieren. Wordt niet aangegeven in combinatie met een brug, duiker, gemaal, sluis of stuw.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:pijler
+    skos:definition "Zuil die een bouwconstructie ondersteunt."@nl;
+    skos:prefLabel "pijler"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Alleen pijlers van een brug die duidelijk buiten het brugdek uitsteken worden opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:plaatsnaambord
+    skos:definition "Bord dat de naam weergeeft van een bewoond oord."@nl;
+    skos:prefLabel "plaatsnaambord"@nl.
+
+  typeInrichtingselement:radiobaken
+    skos:definition "Radiozendstation op een vliegveld of langs een luchtroute, dat dient als hulpmiddel om de koers voor vliegtuigen te bepalen."@nl;
+    skos:prefLabel "radiobaken"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+  typeInrichtingselement:radiotelescoop
+    skos:definition "Instrument waarmee men radiogolven uit de kosmische ruimte kan opvangen."@nl;
+    skos:prefLabel "radiotelescoop"@nl;
+    skos:scopeNote "Komt ook voor in een moderne variant waarbij in het landschap op regelmatige afstand sensoren staan opgesteld, er is geen sprake van een bouwwerk. In dat geval het terrein geven naar voorkomen en een inrichtingspunt plaatsen van het type overig met de naam Lofar."@nl.
+
+  typeInrichtingselement:RDpunt
+    skos:definition "Getrianguleerd punt."@nl;
+    skos:prefLabel "RD punt"@nl;
+    skos:scopeNote "Alleen recent gecontroleerde RD-punten worden opgenomen in de BRT."@nl.
+
+  typeInrichtingselement:scheepvaartlicht
+    skos:definition "Stellage die een licht draagt t.b.v. de scheepvaart."@nl;
+    skos:prefLabel "scheepvaartlicht"@nl;
+    skos:scopeNote "Ook de lichten langs het Noordzeekanaal worden ingewonnen."@nl.
+
+  typeInrichtingselement:schietbaan
+    skos:definition "Baan ingericht voor het schieten naar een doel."@nl;
+    skos:prefLabel "schietbaan"@nl;
+    skos:scopeNote "Wordt ingewonnen in combinatie met ‘kogelvanger schietbaan’."@nl.
+
+  typeInrichtingselement:seinmast
+    skos:definition "Mast waarin seinen worden gehesen."@nl;
+    skos:prefLabel "seinmast"@nl.
+
+  typeInrichtingselement:sluisdeur
+    skos:definition "Beweegbare waterkering van een (schut)sluis."@nl;
+    skos:prefLabel "sluisdeur"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Per schutsluis komen twee of meer deuren voor, gescheiden door een tussenruimte. Alleen de voorste en achterste sluisdeur wordt ingewonnen.</p>
+  <p>Een sluis in of vlak bij een duiker wordt ingewonnen als waterdeel met fysiek voorkomen ‘in afsluitbare duiker’.</p>
+  <p>Een sluisdeur gelegen onder een gebouw, een wegvlak of terreinvlak ‘op brug’, wordt geplaatst tussen het bovenliggende object en het watervlak.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:sneltramhalte
+    skos:definition "Halte aan een sneltramlijn."@nl;
+    skos:prefLabel "sneltramhalte"@nl;
+    skos:scopeNote "Geeft de ingang van de halte aan. Een eventueel stationsgebouw wordt niet als sneltramhalte aangegeven maar als gebouw van het type ‘stationsgebouw’."@nl.
+
+  typeInrichtingselement:stormvloedkering
+    skos:definition "Waterkering, bedoeld om bij extreem hoge waterstanden water af te sluiten ter bescherming van het achter de kering gelegen land."@nl;
+    skos:prefLabel "stormvloedkering"@nl;
+    skos:scopeNote "Alleen de schuiven worden opgenomen als inrichtingselement van het type stormvloedkering. De torens worden opgenomen als gebouw."@nl.
+
+  typeInrichtingselement:strandpaal
+    skos:definition "Paal op het strand of in de duinen, geplaatst als hulpmiddel bij het uitvoeren van metingen."@nl;
+    skos:prefLabel "strandpaal"@nl.
+
+  typeInrichtingselement:strekdam_krib_golfbreker
+    skos:definition """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Dam in de richting van de loop van de rivier of kanaal, ter beveiliging van de oevers of brugpijlers of tot beperking van de rivier tot een bepaalde breedte (strekdam).</p>
+  <p>Golfslagbreker of stroombreker langs de kust en in rivieren, staat loodrecht op de oever/kust (krib).</p>
+  <p>Een uit steenglooiing of stortsteen bestaand object bedoelt voor oeverbescherming (golfbreker).</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "strekdam, krib, golfbreker"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Wordt, indien breder dan 2 m, gegeven als steenglooiing.</p>
+  <p>Minimumlengte voor opname is 50 meter.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:stuw
+    skos:definition "Vaste of beweegbare constructie die dient om de waterstand bovenstrooms van de constructie te regelen."@nl;
+    skos:prefLabel "stuw"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een stuw, in een duiker, wordt gekoppeld aan die duiker in de vorm van de attribuutwaarde ‘in afsluitbare duiker’ aan het bijbehorende waterdeel. Een grote stuw wordt aangegeven in gesloten toestand (b.v. de stuw bij Hagestein).</p>
+  <p>Een stuw tussen waterlijnen wordt aangegeven met een puntobject, een stuw tussen watervlakken wordt aangegeven met een lijnobject. Indien de stuw is gelegen tussen een waterlijn en watervlak wordt deze gegeven als puntobject.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:treinstation
+    skos:definition "Halte aan een spoorlijn."@nl;
+    skos:prefLabel "treinstation"@nl.
+
+  typeInrichtingselement:uitzichtpunt
+    skos:definition "Punt met fraai uitzicht. / Bouwwerk permanent ingericht om te kunnen observeren."@nl;
+    skos:prefLabel "uitzichtpunt"@nl.
+
+  typeInrichtingselement:verkeersgeleider
+    skos:definition "Obstakel op een weg om het verkeer in goede banen te leiden."@nl;
+    skos:prefLabel "verkeersgeleider"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een verkeersgeleider wordt alleen gegeven indien deze is gelegen in een geclassificeerde weg (auto(snel)wegen, hoofdwegen, regionale en lokale wegen).</p>
+  <p>Minimum lengte 50 meter. Maximale breedte 6 meter.</p>
+  <p>Een verkeersgeleider kan zich over meerdere logisch verbonden wegen uitstrekken. Een logisch geheel kan pas gevormd worden indien er minimaal twee op zichzelf staande kruisingen bij betrokken zijn. De lengte van een verkeersgeleider wordt dan ook gemeten over de volle lengte van dit logisch geheel. De lengte van elk logisch verbonden gedeelte moet minimaal 6 meter zijn.</p>
+  <p>Een middenberm (smalle strook grond, aan beide zijden begrensd door rijbanen van dezelfde weg) wordt als verkeersgeleider opgenomen indien smaller dan 6 meter. Een verkeersgeleider breder dan 6 meter wordt aangegeven als terrein, als deze tenminste 50 meter lang is.</p>
+  <p>Als de verkeersgeleider langer is dan 500 meter, worden beide wegen geclassificeerd als weg met gescheiden rijbanen, onafhankelijk van de breedte van de middenberm, mits beide wegen als een samenhangend geheel kunnen worden beschouwd. Er mag in dit geval geen verkeersgeleider tussen de rijbanen gegeven worden.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:vlampijp
+    skos:definition "Affakkelinstallatie."@nl;
+    skos:prefLabel "vlampijp"@nl;
+    skos:scopeNote "Alleen markante vlampijpen worden ingewonnen."@nl.
+
+  typeInrichtingselement:vliedberg
+    skos:definition "Verhoging in het terrein ter bescherming van de daarop geplaatste bebouwing tegen hoogwater."@nl;
+    skos:prefLabel "vliedberg"@nl.
+
+  typeInrichtingselement:wegafsluiting
+    skos:definition "Een fysieke permanente of tijdelijke barrière in of dwars over een weg voor tenminste een gedeelte van de gebruikers van die weg. (b.v paaltjes, slagboom, toegangshek, etc.)"@nl;
+    skos:prefLabel "wegafsluiting"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een wegafsluiting in een bos wordt alleen opgenomen indien deze voorkomt op een verharde of halfverharde weg.</p>
+  <p>Paaltjes en zigzaghekken aan het begin, eind of in voet- en rijwielpaden worden niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:wegwijzer
+    skos:definition "Richtingaanduiding."@nl;
+    skos:prefLabel "wegwijzer"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Wordt alleen ingewonnen buiten bebouwd gebied, maar niet op autosnelwegen. Er wordt maximaal één wegwijzer per kruising ingewonnen. Een wegwijzer ten behoeve van de scheepvaart wordt niet ingewonnen.</p>
+  <p>De wegwijzer wordt geplaatst waar hij in het terrein voorkomt en mag dus ook midden op de weg voorkomen in het geval van een niet te geven (midden)berm of vluchtheuvel.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:windmolentje
+    skos:definition "Een vrij op de wind draaiend molentje (met wieken of een rad van schoepen) van metaal en/of kuststof, bestemd voor het bemalen van een sloot. / Klein type molen, herkenbaar aan schuin op een stellage geplaatste wieken, bestemd voor het bemalen van het omliggende terrein (tjasker)."@nl;
+    skos:prefLabel "windmolentje"@nl.
+
+  typeInrichtingselement:zendmast
+    skos:definition "Telecommunicatietoren (toren t.b.v. datacommunicatie). / Zendtoren (toren met een zendantenne) / Zend- en/of ontvangstmast (hoge, open constructie t.b.v. het uitzenden en/of ontvangen van beeld- en/of geluidssignalen)."@nl;
+    skos:prefLabel "zendmast"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een telecommunicatietoren of zendtoren die niet voldoet aan de opnamecriteria voor gebouwen, wordt aangegeven als een inrichtingselement van het type zendmast.</p>
+  <p>Zend – en/of ontvangstmasten hoger dan 15 meter, al dan niet op een gebouw (de mast moet 15 meter zijn), worden opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInrichtingselement:zichtbaarWrak
+    skos:definition "Wrak van vergaan schip dat (deels) boven water uitsteekt.."@nl;
+    skos:prefLabel "zichtbaar wrak"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+
+  brt:TypeLandgebruik
+    owl:oneOf
+      ( typeLandgebruik:aanlegsteiger
+        typeLandgebruik:akkerland
+        typeLandgebruik:basaltblokken_steenglooiing
+        typeLandgebruik:bebouwdGebied
+        typeLandgebruik:boomgaard
+        typeLandgebruik:boomkwekerij
+        typeLandgebruik:bos_gemengdBos
+        typeLandgebruik:bos_griend
+        typeLandgebruik:bos_loofbos
+        typeLandgebruik:bos_naaldbos
+        typeLandgebruik:braakliggend
+        typeLandgebruik:dodenakker
+        typeLandgebruik:dodenakkerMetBos
+        typeLandgebruik:duin
+        typeLandgebruik:fruitkwekerij
+        typeLandgebruik:grasland
+        typeLandgebruik:heide
+        typeLandgebruik:overig
+        typeLandgebruik:populieren
+        typeLandgebruik:spoorbaanlichaam
+        typeLandgebruik:zand );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-te_typeiandgebruik"^^xsd:anyURI;
+    skos:definition "De gebruiksbestemming van het terrein."@nl;
+    skos:prefLabel "Type landgebruik"@nl.
+
+  typeLandgebruik:aanlegsteiger
+    skos:definition "In het water uitstekende brug of pier, breder dan 2 meter, gebruikt om personen en goederen aan wal te brengen."@nl;
+    skos:prefLabel "aanlegsteiger"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum lengte 50 meter. Wordt gegeneraliseerd weergegeven.</p>
+  <p>De minimumlengte geldt niet indien de aanlegsteiger is gelegen in een waterdeel met de functie haven. Een rij onderling verbonden meerpalen wordt aangegeven als aanlegsteiger.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:akkerland
+    skos:definition "Terrein waar landbouwproducten worden verbouwd."@nl;
+    skos:prefLabel "akkerland"@nl.
+
+  typeLandgebruik:basaltblokken_steenglooiing
+    skos:definition "Dijkversteviging m.b.v. stenen, tegels, basaltblokken, stortsteen (geen asfalt of bitumen) of een golfslagbreker, stroombreker of strekdam langs de kust en in rivieren."@nl;
+    skos:prefLabel "basaltblokken, steenglooiing"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimumgrootte: 50 m². Wordt niet opgenomen langs een kanaal.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:bebouwdGebied
+    skos:definition "Een oppervlak, (vrij) intensief gebruikt voor bewoning en/of productie en/of verhandeling van goederen en diensten, plus bijbehorend erf, wegen en openbaar groen (m.u.v. een plantsoen of park)."@nl;
+    skos:prefLabel "bebouwd gebied"@nl.
+
+  typeLandgebruik:boomgaard
+    skos:definition "Terrein met hoogstammige fruitbomen."@nl;
+    skos:prefLabel "boomgaard"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Fruitbomen als onderdeel van een moestuin worden niet opgenomen.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:boomkwekerij
+    skos:definition "Terrein, overwegend in gebruik t.b.v. het opkweken van bomen (inclusief coniferen en sparren) en struiken, waarbij de hoogte van de aanplant niet van belang is."@nl;
+    skos:prefLabel "boomkwekerij"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Het terreingedeelte met plantgoed van een tuincentrum wordt ook opgenomen als boomkwekerij. Een verwaarloosde kerstsparkwekerij wordt weergegeven als bos: naaldbos. De wegen op de boomkwekerij worden gegeneraliseerd weergegeven.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:bos_gemengdBos
+    skos:definition "Oppervlak begroeid met een dusdanige aantal naald- en loofbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen."@nl;
+    skos:prefLabel "bos: gemengd bos"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Maximum percentage naalbomen: 90%. Maximumpercentage loofbomen: 90%. Bij deze percentages worden het eventueel aanwezige onderhout en smalle stroken loof- en of naaldbos gelegen naast of als uitloper van het bos buiten beschouwing gelaten.</p>
+  <p>Minimumoppervlakte voor het logisch geheel van bospartijen op erven en in bebouwd gebied: 1000 m².</p>
+  <p>Minimumlengte en -breedte voor een brede houtrand: 50 meter resp. 3 meter. Minimumoppervlakte in overige gevallen: 50 m².</p>
+  <p>Een afgebrand bos, kapvlakte, jonge aanplant of bosopslag (spontaan groeiend bos waarvan de begrenzing niet duidelijk kan worden onderscheiden) wordt behandeld als bos.</p>
+  <p>Een smalle strook loof- en/of naaldhout gelegen naast of als uitloper van een bos wordt geacht tot dit bos te behoren.</p>
+  <p>In een groot deel van de bossen worden bospaden ontoegankelijk gemaakt t.b.v. het wild door er greppels te graven, er bomen/takken neer te leggen of zandbergen op te werpen. Deze paden worden bij het bos getrokken.</p>
+  <p>Een heg op een wal (houtwal) wordt niet als inrichtingselement van het type ‘heg, haag’ ingewonnen, maar als bos (geen griend).</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:bos_griend
+    skos:definition "In of aan het water gelegen terrein, begroeid met laagafgeknot wilgenhout t.b.v. de productie van rijshout."@nl;
+    skos:prefLabel "bos: griend"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Verwilderd griend wordt opgenomen als loofbos.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:bos_loofbos
+    skos:definition "Oppervlak begroeid met een dusdanige aantal loofbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen."@nl;
+    skos:prefLabel "bos: loofbos"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimumpercentage loofbomen: 90%. Bij dit percentage worden het eventueel aanwezige onderhout en smalle stroken loof- en of naaldbos gelegen naast of als uitloper van het bos buiten beschouwing gelaten.</p>
+  <p>Minimumoppervlakte voor het logisch geheel van bospartijen op erven en in bebouwd gebied: 1000 m².</p>
+  <p>Minimumlengte en -breedte voor een brede houtrand: 50 meter resp. 3 meter. Minimumoppervlakte in overige gevallen: 50 m².</p>
+  <p>Een afgebrand bos, kapvlakte, jonge aanplant of bosopslag (spontaan groeiend bos waarvan de begrenzing niet duidelijk kan worden onderscheiden) wordt behandeld als bos. Een smalle strook loof- en/of naaldhout gelegen naast of als uitloper van een bos wordt geacht tot dit bos te behoren.</p>
+  <p>In een groot deel van de bossen worden bospaden ontoegankelijk gemaakt t.b.v. het wild door er greppels te graven, er bomen/takken neer te leggen of zandbergen op te werpen. Deze paden worden bij het bos getrokken.</p>
+  <p>Een heg op een wal (houtwal) wordt niet als inrichtingselement van het type ‘heg, haag’ ingewonnen, maar als bos (geen griend).</p>
+  <p>Een terrein, volgens een regelmatig patroon beplant met populieren zonder een ondergrond van gras wordt opgenomen als loofbos.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:bos_naaldbos
+    skos:definition "Oppervlak begroeid met een dusdanige aantal naaldbomen dat de kruinen een min of meer gesloten geheel vormen of, na volgroeiing van de bomen, zullen vormen"@nl;
+    skos:prefLabel "bos: naaldbos"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum percentage naalbomen: 90%. Bij dit percentage worden het eventueel aanwezige onderhout en smalle stroken loof- en of naaldbos gelegen naast of als uitloper van het bos buiten beschouwing gelaten.</p>
+  <p>Minimumoppervlakte voor het logisch geheel van bospartijen op erven en in bebouwd gebied: 1000 m².</p>
+  <p>Minimumlengte en -breedte voor een brede houtrand: 50 meter resp. 3 meter. Minimumoppervlakte in overige gevallen: 50 m².</p>
+  <p>Een afgebrand bos, kapvlakte, jonge aanplant of bosopslag (spontaan groeiend bos waarvan de begrenzing niet duidelijk kan worden onderscheiden) wordt behandeld als bos.</p>
+  <p>Een smalle strook loof- en/of naaldhout gelegen naast of als uitloper van een bos wordt geacht tot dit bos te behoren.</p>
+  <p>In een groot deel van de bossen worden bospaden ontoegankelijk gemaakt t.b.v. het wild door er greppels te graven, er bomen/takken neer te leggen of zandbergen op te werpen. Deze paden worden bij het bos getrokken.</p>
+  <p>Een heg op een wal (houtwal) wordt niet als inrichtingselement van het type ‘heg, haag’ ingewonnen, maar als bos (geen griend).</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:braakliggend
+    skos:definition "Een stuk grond dat geen functie vervult of niet wordt onderhouden, met uitzondering van landbouwgrond."@nl;
+    skos:prefLabel "braakliggend"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Braakliggende landbouwgronden en landbouwterreinen die zijn ingezaaid met groenbemesters worden aangegeven als braakliggend. Betreft het een andersoortig terrein dan wordt dit gegeven met een vlak van het type ‘overig’.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:dodenakker
+    skos:definition "Terrein, gedeelte van een begraafplaats waar doden zijn of zullen worden begraven, niet gelegen in bos."@nl;
+    skos:prefLabel "dodenakker"@nl.
+
+  typeLandgebruik:dodenakkerMetBos
+    skos:definition "Terrein, gedeelte van een begraafplaats waar doden zijn of zullen worden begraven, gelegen in bos."@nl;
+    skos:prefLabel "dodenakker met bos"@nl.
+
+  typeLandgebruik:duin
+    skos:definition "Terrein met grondsoort zand, langs de kust als natuurlijke kustverdediging, eventueel begroeid met helmgras of lage struiken."@nl;
+    skos:prefLabel "duin"@nl.
+
+  typeLandgebruik:fruitkwekerij
+    skos:definition "Terrein met laagstammige fruitbomen en struiken waarvan de vruchten worden geoogst (zoals: rozenbottels, bessen, frambozen, druiven, etc.)."@nl;
+    skos:prefLabel "fruitkwekerij"@nl.
+
+  typeLandgebruik:grasland
+    skos:definition "Terrein, overwegend begroeid met een grasachtige vegetatie."@nl;
+    skos:prefLabel "grasland"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een graszaadkwekerij en graszodenbedrijf worden ook als grasland ingewonnen. Een (sier)gazon, d.w.z. een goed onderhouden grasperk, op een erf wordt opgenomen als terrein met het type landgebruik ‘overig’.</p>
+  <p>Indien het grasland tijdelijk onder water is gezet worden de wallen en het water genegeerd. Ook een smalle strook grasland, niet zijnde een berm en begrensd door harde topografie, wordt ingewonnen.</p>
+  <p>Indien de strook gras gelegen is langs een waterdeel en begrensd wordt door een bosrand dan geldt er een minimum breedtemaat van 2 meter vanaf insteek sloot.</p>
+  <p>Indien de strook gras gelegen is langs een waterdeel en begrensd wordt door zachte topografie dan geldt er een minimum breedtemaat van 6 meter vanaf kant water.</p>
+  <p>Indien de strook gras niet gelegen is langs een waterdeel en permanent aanwezig, dan wordt deze gegeven indien breder dan 6 meter.</p>
+  <li>Bij één enkele rij bomen: als terrein grasland met een inrichtingselement bomenrij</li>
+  <li>Bij meerdere rijen populieren: als terrein populieren</li>
+  <li>In alle overge gevallen: als terrein loofbos.</li>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:heide
+    skos:definition "Terrein, overwegend begroeid met heidevegetatie en wilde grassoorten."@nl;
+    skos:prefLabel "heide"@nl.
+
+  typeLandgebruik:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden. Een niet nader omschreven gebruiksbestemming."@nl;
+    skos:prefLabel "overig"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Bijvoorbeeld een oppervlakte begroeid met struiken of varens, een dijkversteviging met asfalt of bitumen, onland (terrein zonder begroeiing of met onduidelijke begroeiing), een skibaan, een stortplaats, een terrein ingericht t.b.v. een tankstation, een terrein rondom een transformatorstation, tennisbanen, een tribune die geen geheel vormt met de bebouwing, een kunstgrasveld, een trottoir breder dan 6 meter, volkstuinen, een paardenbak of het drafgedeelte van een renbaan. Ook opgenomen wordt een (sier)gazon, d.w.z. een goed onderhouden grasperk, op een erf. Een mestopslag groter dan 1000 m² en het terrein met voor een nertsfarm specifieke bebouwing wordt ook opgenomen. Bij een weg in aanleg wordt het gerealiseerde gedeelte aangegeven als wegdeel. Voor de overige wegen in aanleg geldt dat het gedeelte van het terrein waar de werkzaamheden zijn aangevangen wordt aangegeven als een terrein met overig landgebruik.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:populieren
+    skos:definition "Terrein, volgens een regelmatig patroon beplant met populieren."@nl;
+    skos:prefLabel "populieren"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Het perceel wordt aangegeven als terrein van het type landgebruik populieren, indien de ondergrond bestaat uit grasland en het perceel is beplant met meerdere rijen populieren.</p>
+  <p>Betreft het een enkele rij populieren dan wordt het terein gegeven als grasland in combinatie met een inrichtingselement bomenrij.</p>
+  <p>In alle overige gevallen wordt het perceel aangegeven als “bos/ loofbos”.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:spoorbaanlichaam
+    skos:definition "Geheel van rails, dwarsliggers e.d. waarover de trein, metro of sneltram rijdt."@nl;
+    skos:prefLabel "spoorbaanlichaam"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Het terrein loopt tot aan de begrenzende sloot, een hek of een vlak met ander landgebruik.</p>
+  <p>Spoorbaanlichaam wordt ook aangegeven op een spoorbrug.</p>
+  <p>Spoorbaanlichamen worden ook aangegeven indien het spoor van het type trein is gelegen in tunnel. De breedte wordt bepaalt aan de hand van de in- en uitgangsbreedte van de tunnel.</p>
+  <p>Metro en sneltram in tunnel krijgen geen spoorbaanlichaam.</p>
+  <p>Spoorbaanlichaam wordt niet aangegeven als de spoorbaan geïntegreerd is in andere objecten en dus geen eigen grindbed heeft.</p>
+</section>"""^^rdf:HTML.
+
+  typeLandgebruik:zand
+    skos:definition "Terrein, grondsoort zand, van nature zonder enige begroeiing."@nl;
+    skos:prefLabel "zand"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Bij een zandwinning of grindwinning wordt het terrein voor opslag van het zand of grind niet ingewonnen als ‘zand’.</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:TypeObject
+    owl:oneOf
+      ( typeObject:overig
+        typeObject:spoorbaan
+        typeObject:water
+        typeObject:weg );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-pt_typeobject"^^xsd:anyURI;
+    skos:definition "Het soort plantopografie object."@nl;
+    skos:prefLabel "Type plantopografie"@nl.
+
+  typeObject:overig
+    skos:definition "Plantopografie van overige objectklassen."@nl;
+    skos:prefLabel "Overig"@nl.
+
+  typeObject:spoorbaan
+    skos:definition "Plantopografie van spoorbaandelen."@nl;
+    skos:prefLabel "Spoorbaan"@nl.
+
+  typeObject:water
+    skos:definition "Plantopografie van waterdelen."@nl;
+    skos:prefLabel "Water"@nl.
+
+  typeObject:weg
+    skos:definition "Plantopografie van wegdelen."@nl;
+    skos:prefLabel "Weg"@nl.
+
+
+  brt:TypeRegistratiefGebied
+    owl:oneOf
+      ( typeRegistratiefGebied:gemeente
+        typeRegistratiefGebied:land
+        typeRegistratiefGebied:provincie
+        typeRegistratiefGebied:territorialeZee
+        typeRegistratiefGebied:waterschap );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-rg_typeregistratiefgebied"^^xsd:anyURI;
+    skos:definition "Het soort administratief gebied."@nl;
+    skos:prefLabel "Type registratief gebied"@nl.
+
+  typeRegistratiefGebied:gemeente
+    skos:definition "Zelfstandig, zelfbestuur en autonomie bezittend onderdeel van de staat Nederland, onder het bestuur van een raad, een burgemeester en wethouders."@nl;
+    skos:prefLabel "gemeente"@nl.
+
+  typeRegistratiefGebied:land
+    skos:definition "Begrenzing van Nederland, begrenst door België, Duitsland en de 12-mijls zone."@nl;
+    skos:prefLabel "land"@nl.
+
+  typeRegistratiefGebied:provincie
+    skos:definition "Staatkundig onderdeel van Nederland."@nl;
+    skos:prefLabel "provincie"@nl.
+
+  typeRegistratiefGebied:territorialeZee
+    skos:definition "Een zeestrook, grenzend aan het landgebied van Nederland waarover de soevereiniteit van Nederland zich uitstrekt."@nl;
+    skos:prefLabel "territoriale zee"@nl;
+    skos:scopeNote "De territoriale zee is gebaseerd op de laagwaterlijn en de 12 mjils zone."@nl.
+
+  typeRegistratiefGebied:waterschap
+    skos:definition "Lichaam dat, onder toezicht van de Provinciale Staten, in een bepaald gebied voor waterlozing en waterkering zorgt."@nl;
+    skos:prefLabel "waterschap"@nl;
+    skos:scopeNote "Wordt niet ingewonnen."@nl.
+
+
+  brt:TypeReliëf
+    owl:oneOf
+      ( typeReliëf:steileRand_aardrand
+        typeReliëf:talud_hoogteverschil
+        typeReliëf:wal );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-re_typereli%C3%ABf"^^xsd:anyURI;
+    skos:definition "Het soort reliëf."@nl;
+    skos:prefLabel "Type reliëf"@nl.
+
+  typeReliëf:steileRand_aardrand
+    skos:definition "Plotselinge terreinverheffing of inzinking."@nl;
+    skos:prefLabel "steile rand, aardrand"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimumlengte 100 meter.</p>
+  <p>Minimum hoogteverschil tussen twee maaivelden: 1 meter.</p>
+  <p>Minimum hoogteverschil tussen maaiveld en water: 3 meter.</p>
+</section>"""^^rdf:HTML.
+
+  typeReliëf:talud_hoogteverschil
+    skos:definition "Plaatselijk glooiende terreinverheffing of -inzinking (hoogteverschil). / Schuinte van het zijvlak van aardwerken, dijken, spoorbanen, vestingwerken, enz (talud)."@nl;
+    skos:prefLabel "talud, hoogteverschil"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Grotere terreinglooiingen worden opgenomen als hoogtelijnen.</p>
+  <p>Van een dijk wordt elke zijde opgenomen als een talud, hoogteverschil.</p>
+  <p>De onderzijde en de bovenzijde van het talud worden opgenomen.</p>
+  <p>Minimale lengte in geval van een dijk: 100 meter.</p>
+  <p>Minimale hoogteverschil tussen twee maaivelden: 1 meter (als geluidswering 2 meter).</p>
+  <p>Minimum hoogteverschil tussen maaiveld en water: 3 meter.</p>
+  <p>Wordt niet opgenomen in duingebieden en bij basaltblokken/steenglooiing.</p>
+  <p>Indien er een weg op een dijk loopt, dan worden hoge taludlijnen van deze dijk geplaatst op de kant van het wegdeel indien de afstand tussen de bovenzijde van het talud en de wegkant kleiner is dan 6 meter.</p>
+  <p>Een calamiteitenkering (dijk als kering van vloeistoffen om bijvoorbeeld een tankpark) wordt altijd als kade, wal opgenomen, ongeacht de hoogte.</p>
+</section>"""^^rdf:HTML.
+
+  typeReliëf:wal
+    skos:definition "Langgerekte ophoging in het terrein met een hoogte tussen 0,50 en 1,00 meter."@nl;
+    skos:prefLabel "wal"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimumlengte: 100 meter.</p>
+  <p>Een calamiteitenkering (een dijk als kering van vloeistoffen om bijvoorbeeld een tankpark) wordt ongeacht de hoogte als ‘wal’ opgenomen.</p>
+  <p>Indien er een weg over de wal loopt, dan wordt de wal niet opgenomen.</p>
+  <p>Een wal om een waterbak en mestopslag worden niet opgenomen.</p>
+  <p>De omdijking om een vloeiveld (omdijkt stuk land, bestemd voor bezinking van afvalwater) wordt altijd als wal opgenomen.</p>
+  <p>Kades worden niet ingewonnen.</p>
+  <p>Een wal met geluidsscherm, samen lager dan 2 meter, wordt ingewonnen als ‘wal’.</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:TypeSpoorbaan
+    owl:oneOf
+      ( typeSpoorbaan:gemengd
+        typeSpoorbaan:metro
+        typeSpoorbaan:sneltram
+        typeSpoorbaan:tram
+        typeSpoorbaan:trein );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-sp_typespoorbaan"^^xsd:anyURI;
+    skos:definition "Het soort vervoermiddel waarvoor het spoorbaandeel bestemd is."@nl;
+    skos:prefLabel "Type spoorbaan"@nl.
+
+  typeSpoorbaan:gemengd
+    skos:definition "Spoorbaandeel bestemd voor een combinatie van zowel trein, metro, sneltram of tramverkeer."@nl;
+    skos:prefLabel "gemengd"@nl.
+
+  typeSpoorbaan:metro
+    skos:definition "Spoorbaandeel bestemd voor al dan niet ondergrondse personentrein in een grote stad."@nl;
+    skos:prefLabel "metro"@nl;
+    skos:scopeNote "Wordt niet voorzien van kilometrering en het ondergrondse deel krijgt geen spoorbaanlichaam."@nl.
+
+  typeSpoorbaan:sneltram
+    skos:definition "Spoorbaandeel bestemd voor railvoertuig ten behoeve van personenvervoer over korte afstand, harder rijdend dan 45 km per uur."@nl;
+    skos:prefLabel "sneltram"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Kan zowel enkel- als meersporig voorkomen. Hierbij geldt geen minimummaat voor opname.</p>
+  <p>Indien de tramroute loopt over een brug, door een tunnel of overkluisd is wordt dit voor het betreffende routedeel als attribuut toegevoegd.</p>
+  <p>Indien op een tracé zowel tram als sneltram rijdt wordt het tracé gegeven als sneltram.</p>
+</section>"""^^rdf:HTML.
+
+  typeSpoorbaan:tram
+    skos:definition "Spoorbaandeel bestemd voor railvoertuig ten behoeve van personenvervoer over korte afstand, niet harder rijdend dan 45 km per uur."@nl;
+    skos:prefLabel "tram"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Kan zowel enkel- als meersporig voorkomen. Hierbij geldt geen minimummaat voor opname.</p>
+  <p>Indien de tramroute loopt over een brug, door een tunnel of overkluisd is wordt dit voor het betreffende routedeel als attribuut toegevoegd.</p>
+</section>"""^^rdf:HTML.
+
+  typeSpoorbaan:trein
+    skos:definition "Spoorbaandeel bestemd voor railvoertuig voor de langere afstand dat sneller dan 45 km per uur kan, bestaande uit een enkele of een reeks van locomotieven, treinstellen en/of wagons."@nl;
+    skos:prefLabel "trein"@nl.
+
+
+  brt:TypeWater
+    owl:oneOf
+      ( typeWater:bronOfEnWel
+        typeWater:droogvallend
+        typeWater:droogvallend_LAT
+        typeWater:greppelOfEnDrogeSloot
+        typeWater:meerEnOfPlas
+        typeWater:overig
+        typeWater:waterloop
+        typeWater:zee );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_typewater"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding, een kruising of iets anders is."@nl;
+    skos:prefLabel "Type water"@nl.
+
+  typeWater:bronOfEnWel
+    skos:definition "Plaats waar op natuurlijke wijze water uit de grond opwelt."@nl;
+    skos:prefLabel "bron, wel"@nl.
+
+  typeWater:droogvallend
+    skos:definition "Geheel of gedeeltelijk droogvallende gronden, buitendijks gelegen, begrensd door de lijnen gemiddeld hoog water en gemiddeld laag water."@nl;
+    skos:prefLabel "droogvallend"@nl;
+    skos:scopeNote "Het terrein, gelegen tussen de hoogwaterlijn en de waterkering (dijk), wordt aangegeven volgens de aanwezige vegetatie. Het gedeelte tussen de hoogwaterlijn en de laagwaterlijn wordt aangegeven als een waterdeel van het type ‘droogvallend’."@nl.
+
+  typeWater:droogvallend_LAT
+    skos:definition "Geheel of gedeeltelijk droogvallende gronden, buitendijks gelegen, begrensd door de lijnen gemiddeld laag water en laagste astromnomisch getij (LAT)."@nl;
+    skos:prefLabel "droogvallend LAT"@nl;
+    skos:scopeNote "Ingewonnen op basis van gegevens van de Dienst der Hydrografie."@nl.
+
+  typeWater:greppelOfEnDrogeSloot
+    skos:definition "Een in het algemeen niet watervoerende sloot."@nl;
+    skos:prefLabel "autosnelweg"@nl;
+    skos:scopeNote "Een greppel wordt gegeven indien hij minimaal 50 cm diep en breed is."@nl.
+
+  typeWater:meerEnOfPlas
+    skos:definition "Water (meestal) niet gelegen in een waterloop."@nl;
+    skos:prefLabel "meer, plas"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Als meer, plas worden beschouwd:</p>
+  <ul>
+    <li>Bezinkbak (omdijkt of ommuurd vlak, bestemd voor de bezinking van afvalslib).</li>
+    <li>Brandput (verdieping in het terrein, gevuld met water, waar bij brand bluswater gehaald kan worden).</li>
+    <li>Drinkplaats (verdieping in het terrein, gevuld met water, bestemd om vee te drenken).</li>
+    <li>Drinkwaterbekken (bassin t.b.v. de drinkwatervoorziening).</li>
+    <li>Kolk (waterput van extreme diepte in vergelijking met de oppervlakte).</li>
+    <li>Meer (grote watervlakte, ontstaan op natuurlijke wijze, dan wel door menselijk ingrijpen).</li>
+    <li>Natuurbad (plas in de natuur, ingericht voor zwemmen en zonnebaden).</li>
+    <li>Plas (watervlakte, ontstaan op natuurlijke wijze, dan wel door menselijk ingrijpen).</li>
+    <li>Poel (klein, ondiep, stilstaand water).</li>
+    <li>Spaarbekken (bekken waarin water wordt verzameld om op andere tijden te worden gebruikt o.a. als drinkwater).</li>
+    <li>Ven (klein, ondiep, stilstaand water in bos- of heidegebied, dat in tijden van grote droogte leeg kan staan en betreedbaar kan zijn).</li>
+    <li>Vijver (aangelegde waterkom in een tuin, park, plantsoen e.d.).</li>
+    <li>Viskwekerij (bassin, aangelegd voor het kweken van vis).</li>
+    <li>Visvijver (plas met voorzieningen t.b.v. het sportvissen).</li>
+    <li>Vloeiveld (omdijkt stuk land, bestemd voor bezinking van afvalwater).</li>
+    <li>Wiel (plas ontstaan als gevolg van uitspoeling na een dijkdoorbraak).</li>
+    <li>Zwembassin (waterbak bij een zwembad).</li>
+  </ul>
+  <p>Omdat een ven ondiep is, kan de oeverlijn sterk fluctueren, maar de oorspronkelijke vastlegging hiervan wordt echter zoveel mogelijk gehandhaafd.</p>
+  <p>Een niet-ronde waterbak groter dan 50 m² wordt ook opgenomen (indien de waterbak rond is, dan wordt deze als gebouw van het type tank opgenomen).</p>
+  <p>Opnamecriterium: minimumgrootte 50 m².</p>
+</section>"""^^rdf:HTML.
+
+  typeWater:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl.
+
+  typeWater:waterloop
+    skos:definition "Langgerekt waterdeel in de vorm van een sloot, rivier, kanaal, enz."@nl;
+    skos:prefLabel "waterloop"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Als waterloop worden beschouwd:</p>
+  <ul>
+    <li>Beek (natuurlijke waterloop, ontstaan uit een bron).</li>
+    <li>Boezem (het geheel aan stilstaande, gemeen liggende, doch van het buitenwater afgesloten plassen, kanalen, tochten en sloten, waarop het overtollige water uit lager gelegen polders wordt uitgeslagen. Karakteristiek hierbij is dat het waterniveau hoger is dan het naastliggende maaiveldniveau).</li>
+    <li>Gracht (gegraven geul).</li>
+    <li>Kanaal (een ten behoeve van de waterbeheersing of scheepvaart gegraven geul).</li>
+    <li>Kreek (klein, smal, niet gegraven water, dikwijls een inham van een zee, ook wel een overblijfsel van een overstroming). Worden gegeneraliseerd aangegeven.</li>
+    <li>Natte sloot (sloot waar het grootste gedeelte van het jaar water in staat).</li>
+    <li>Rivier (natuurlijke waterloop).</li>
+    <li>Sprang / Sprank / Spreng (sloot of kanaal in zandgrond tot verzameling van het in de bodem aanwezige water t.b.v. de drinkwatervoorziening).</li>
+    <li>Vaart (kanaal, gegraven waterweg).</li>
+    <li>Vistrap (omleiding bij een stuw of een deel van een waterloop zodanig ingericht dat vissen stroomopwaarts kunnen passeren).</li>
+    <li>Wijk (sloot of kanaal in veenkoloniaal gebied).</li>
+  </ul>
+</section>"""^^rdf:HTML.
+
+  typeWater:zee
+    skos:definition "Uitgestrekt oppervlak zout water dat het grootste deel van de aarde bedekt."@nl;
+    skos:prefLabel "meer, plas"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Het waterdeel in een haven aan zee heeft ook de attribuutwaarde zee.</p>
+  <p>De overgang naar waterloop of meer, .plas, ven, vijver ligt op een sluis (bv. haven Den Helder en IJmuiden, Haringvlietsluizen). Nieuwe Waterweg: compleet waterloop en dus geen zee. De overgang naar de Noordzee ligt aan het eind van de Noorderdam, haaks over de Nieuwe Waterweg (tussen de twee landhoofden). Oosterschelde: compleet zee, tot de Philipsdam en de Oesterdam. Westerschelde: compleet zee, de overgang naar waterloop ligt bij de Stroomleidam (ter hoogte van de rijksgrens met België). De overgang ligt op de dam en vanaf het einde van de dam haaks over de Schelde.</p>
+</section>"""^^rdf:HTML.
+
+
+  brt:TypeWeg
+    owl:oneOf
+      ( typeWeg:autosnelweg
+        typeWeg:hoofdweg
+        typeWeg:lokaleWeg
+        typeWeg:overig
+        typeWeg:parkeerplaats
+        typeWeg:parkeerplaats_PR
+        typeWeg:parkeerplaats_carpool
+        typeWeg:platform
+        typeWeg:regionaleWeg
+        typeWeg:rolbaan
+        typeWeg:startbaanOfEnLandingsbaan
+        typeWeg:straat
+        typeWeg:veerverbinding );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_typeweg"^^xsd:anyURI;
+    skos:definition "Het soort weg."@nl;
+    skos:prefLabel "Type weg"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Wegen worden hierarchisch opgedeeld in een aantal categorieën, welke met dit attribuut worden aangeduid. Een op- of afrit en een rotonde wordt aangegeven als een wegdeel van de hoogst geclassificeerde route (Volgorde van classificatie van hoog naar laag: 1 autosnelweg, 2 hoofdweg, 3 regionale weg, 4 lokale weg, 5 alle andere). Echter, als van een autosnelweg of hoofdweg voor snelverkeer een op/afrit op een rotonde uitkomt, dan vervalt de regel van hoogst geclassificeerde route, en krijgt de rotonde de code van de doorgaande route. Autosnelwegen en hoofdwegen vormen samen een gesloten netwerk. Autosnelwegen, hoofdwegen en regionale wegen vormen ook een gesloten netwerk.</p>
+  <h1>Multipliciteit</h1>
+  <p>Veelvoudig (type infrastructuur = “kruising”) / Enkelvoudig (type infrastructuur = “verbinding” of type infrastructuur = “overig verkeersgebied”).</p>
+</section>"""^^rdf:HTML.
+
+  typeWeg:autosnelweg
+    skos:definition "Weg met gescheiden rijbanen en ongelijkvloerse kruisingen, daartoe aangeduid met het betreffende verkeersbord."@nl;
+    skos:prefLabel "autosnelweg"@nl.
+
+  typeWeg:hoofdweg
+    skos:definition "Verharde weg die is aangeduid met een E-nummer, maar niet met een A-nummer, of verharde weg die onderdeel is van een verbindingsroute tussen grotere plaatsen, wat blijkt uit blauwe ANWB-borden, dan wel onderdeel is van een route om eindigende A of E-routes tot een gesloten netwerk te completeren."@nl;
+    skos:prefLabel "hoofdweg"@nl.
+
+  typeWeg:lokaleWeg
+    skos:definition "Weg van lokaal belang tussen bewegwijzerde routes."@nl;
+    skos:prefLabel "lokale weg"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>De belangrijkste straat (straten) binnen een wijk van tenminste 1 km2.</p>
+  <p>Belangrijke ontsluitingswegen zijn bewegwijzerd met witte ANWB-borden.</p>
+  <p>Aan- en afvoerwegen naar bebouwingsconcentraties (ook als deze doodlopend zijn) die veel verkeer aantrekken zoals winkel- en wijkcentra, industrieterreinen, stations, ziekenhuizen en aanverwante inrichtingen, kampeerterreinen, kazernes etc…</p>
+  <p>Een doodlopende weg langer dan 250 meter wordt ingewonnen als ‘lokale weg’ als deze verhard is of geen toegangsweg is.</p>
+</section>"""^^rdf:HTML.
+
+  typeWeg:overig
+    skos:definition "De waarde van het objectkenmerk is bekend, maar anders dan de genoemde waarden."@nl;
+    skos:prefLabel "overig"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Niet-openbare wegen op een circuit en wegen van een crossbaan gelegen in een bos worden als overige weg ingewonnen. Wegen op een vliegveld/luchthaven die geen start- of landingsbaan, rolbaan of platform zijn worden altijd als overige weg ingewonnen.</p>
+  <p>Doodlopende wegen en toegangswegen langer dan 100 meter en korter dan 250 meter worden ingewonnen als ‘overige weg’.</p>
+  <p>Een toegangsweg langer dan 250 meter met wegafsluiter (open of dicht) naar landerij(en) worden gegeven als ‘overige weg’.</p>
+  <p>Wegen achter bebouwing, doodlopend in het terrein, met een minimum lengte van 250 meter worden ingewonnen als ‘overige weg’.</p>
+</section>"""^^rdf:HTML.
+
+  typeWeg:parkeerplaats
+    skos:definition "Parkeergelegenheid voor meerdere voertuigen in de openlucht."@nl;
+    skos:prefLabel "parkeerplaats"@nl;
+    skos:scopeNote "Parkeerplaatsen worden gegeven als deze openbaar zijn en groter zijn dan 1000m². Parkeerterreinen kleinder dan 1000 m² in een bosrijk natuurgebied én van oriënterende waarde worden ook ingewonnen."@nl.
+
+  typeWeg:parkeerplaats_PR
+    skos:definition "Parkeergelegenheid ten behoeve van het overstappen op het openbaar vervoer."@nl;
+    skos:prefLabel "parkeerplaats: P+R"@nl.
+
+  typeWeg:parkeerplaats_carpool
+    skos:definition "Parkeerplaats voor personenwagens langs doorgaande wegen t.b.v. carpoolers."@nl;
+    skos:prefLabel "parkeerplaats: carpool"@nl.
+
+  typeWeg:platform
+    skos:definition "Terrein voor geparkeerd staande vliegtuigen (platform)."@nl;
+    skos:prefLabel "platform"@nl.
+
+  typeWeg:regionaleWeg
+    skos:definition "Verharde weg die een verbinding vormt tussen bewoonde oorden of grote stadswijken en daartoe van twee kanten bewegwijzerd zijn met blauwe ANWB-richtingsborden voor autoverkeer."@nl;
+    skos:prefLabel "regionale weg"@nl.
+
+  typeWeg:rolbaan
+    skos:definition "Afgebakende taxibaan op een vliegveld (rolbaan). "@nl;
+    skos:prefLabel "rolbaan"@nl.
+
+  typeWeg:straat
+    skos:definition "Weg van zeer plaatselijk belang, gelegen binnen bebouwd gebied."@nl;
+    skos:prefLabel "straat"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Breder dan 2 meter.</p>
+  <p>Weg gelegen binnen bebouwd gebied, niet behorende tot de categorieën Autosnelweg, Hoofdweg, Regionale weg en Lokale weg, ongeacht de verharding en lengte.</p>
+  <p>Uitzondering: Doodlopende wegen naar of tussen schuurtjes, garageboxen, parkeerterreintjes (< 1000 m2) gelegen achter bebouwing, etc., korter dan 100 meter, worden ongeacht de verharding weggelaten. Wegen langer dan 100 meter worden aangegeven als straat.</p>
+</section>"""^^rdf:HTML.
+
+  typeWeg:startbaanEnOfLandingsbaan
+    skos:definition "Strook grond waar vliegtuigen kunnen opstijgen en/of landen."@nl;
+    skos:prefLabel "startbaan en/of landingsbaan"@nl.
+
+  typeWeg:veerverbinding
+    skos:definition "Vastgelegde route over water om voertuigen en personen over te zetten al dan niet op basis van een vaste dienstregeling"@nl;
+    skos:prefLabel "veerverbinding"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een veerverbinding komt in verschillende verschijningsvormen voor:</p>
+  <ul>
+    <li>Veerdienst: veer met een dienstregeling tussen twee plaatsen / havens. Wordt ingewonnen als ‘veerverbinding’ met hoofdverkeersgebruik ‘gemengd verkeer’ én bij de attribuutwaarde “naam” de tekst Veerdienst - </li>
+    <li>Pontveer: veer voor het overzetten van voertuigen en personen. Wordt ingewonnen als 'veerverbinding' met hoofdverkeersgebruik 'gemengd verkeer'</li>
+    <li>Fietsveer: veer voor het overzetten van fietsers / bromfietsers en personen. Wordt ingewonnen als 'veerverbinding' met hoofdverkeersgebruik 'fietsers, bromfietsers'. Ook een losliggend fietsveer worden ingewonnen als fietsveer.</li>
+    <li>Voetveer: veer voor het overzetten van personen. Wordt ingewonnen als 'veerverbinding' met hoofdverkeersgebruik 'voetgangers'. Ook een losliggend voetveer wordt ingewonnen als voetveer.</li>
+  </ul>
+</section>"""^^rdf:HTML.
+
+
+
+  brt:TypeInfrastructuur
+    owl:unionOf
+      ( brt:TypeInfrastructuurSpoorbaandeel
+        brt:TypeInfrastructuurWegdeel );
+    skos:prefLabel "Type Infrastructuur"@nl.
+
+
+  brt:TypeInfrastructuurSpoorbaandeel
+    owl:oneOf
+      ( typeInfrastructuurSpoorbaandeel:kruising
+        typeInfrastructuurSpoorbaandeel:verbinding );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-sp_typeinfrastructuur"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding of een kruising is."@nl;
+    skos:prefLabel "Type infrastructuur spoorbaandeel"@nl.
+
+  typeInfrastructuurSpoorbaandeel:kruising
+    skos:definition "Een object waar drie of meer objecten van hetzelfde objecttype op aansluiten."@nl;
+    skos:prefLabel "spoorbaandeel kruising"@nl.
+
+  typeInfrastructuurSpoorbaandeel:verbinding
+    skos:definition "Object waar maximaal twee objecten van hetzelfde objecttype op aansluiten."@nl;
+    skos:prefLabel "spoorbaandeel verbinding"@nl.
+
+
+  brt:TypeInfrastructuurWegdeel
+    owl:oneOf
+      ( typeInfrastructuurWegdeel:kruising
+        typeInfrastructuurWegdeel:overigVerkeersgebied
+        typeInfrastructuurWegdeel:verbinding );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_typeinfrastructuur"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding, een kruising of een overig verkeersgebied is."@nl;
+    skos:prefLabel "Type infrastructuur wegdeel"@nl.
+
+  typeInfrastructuurWegdeel:overigVerkeersgebied
+    skos:definition "Een wegdeel anders dan een verbinding of kruising."@nl;
+    skos:prefLabel "overig verkeersgebied"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een wegdeel van het type overig verkeersgebied heeft als hoofdgeometrie een wegvlak.</p>
+  <p>Een wegdeel van het type overig verkeersgebied heeft geen hartlijn en geen hartpunt.</p>
+  <p>Overige verkeersgebied wordt alleen gebruikt voor voetgangersgebieden en parkeerplaatsen.</p>
+</section>"""^^rdf:HTML.
+
+  typeInfrastructuurWegdeel:wegdeelVerbinding
+    skos:definition "Wegdeel waar maximaal twee hartlijnen van andere wegdelen op aansluiten."@nl;
+    skos:prefLabel "wegdeel verbinding"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een wegdeel van het type verbinding heeft meestal als hoofdgeometrie een wegvlak of een weglijn. Soms heeft het geen hoofdgeometrie.</p>
+  <p>Een wegdeel van het type verbinding heeft altijd een hartlijn.</p>
+</section>"""^^rdf:HTML.
+
+  typeInfrastructuurWegdeel:wegdeelKruising
+    skos:definition "Gelijkvloerse kruising (wegdeel waar drie of meer hartlijnen van verbindingen op elkaar aansluiten)."@nl;
+    skos:prefLabel "wegdeel kruising"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een wegdeel van het type kruising heeft meestal als hoofdgeometrie een wegvlak of een wegpunt. Soms heeft het geen hoofdgeometrie.</p>
+  <p>Een wegdeel van het type kruising heeft altijd een hartpunt.</p>
+  <p>Het kruisingsvlak wordt geplaatst, daar waar twee wegvlakken elkaar kruisen of zoals bij op – en afritten, daar waar de wegvlakken bij elkaar komen.</p>
+</section>"""^^rdf:HTML.
+
+
+
+  brt:Vaarwegklasse
+    owl:oneOf
+      ( vaarwegklasse:0
+        vaarwegklasse:I
+        vaarwegklasse:II
+        vaarwegklasse:III
+        vaarwegklasse:IV
+        vaarwegklasse:Va
+        vaarwegklasse:Vb
+        vaarwegklasse:VIa
+        vaarwegklasse:VIb
+        vaarwegklasse:VIc
+        vaarwegklasse:VII );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_vaarwegklasse"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "CEMT klasses van vaarwegen, welke gebaseerd zijn op de afmetingen en laadvermogen van standaardschepen en duwstellen voor de binnen- en riviervaart in West-Europa. De klasses I t/m VII zijn in 1992 bepaald door de Conferentie van Europese Ministers van Verkeer (C.E.M.T.). Naderhand is klasse 0 (vaarwegen kleiner dan die van klasse I) daaraan toegevoegd. Klasse VII komt in Nederland niet voor."@nl;
+    skos:prefLabel "Vaarwegklasse"@nl.
+
+  vaarwegklasse:0
+    skos:definition "Vaarweg geschikt voor kleinere vaartuigen en recreatievaart (laadvermogen < 250 ton)."@nl;
+    skos:prefLabel "0"@nl.
+
+  vaarwegklasse:I
+    skos:definition "Vaarweg geschikt voor Spits (laadvermogen 250 - 400 ton)."@nl;
+    skos:prefLabel "I"@nl.
+
+  vaarwegklasse:II
+    skos:definition "Vaarweg geschikt voor Kempenaar (laadvermogen 400 - 650 ton)."@nl;
+    skos:prefLabel "II"@nl.
+
+  vaarwegklasse:III
+    skos:definition "Vaarweg geschikt voor Dortmund-Eemskanaalschip (laadvermogen 650 - 1000 ton)."@nl;
+    skos:prefLabel "III"@nl.
+
+  vaarwegklasse:IV
+    skos:definition "Vaarweg geschikt voor Rijn-Hernekanaalschip (laadvermogen 1000 - 1500 ton) en voor 1-baksduwstel (laadvermogen 1250-1450 ton)."@nl;
+    skos:prefLabel "IV"@nl.
+
+  vaarwegklasse:Va
+    skos:definition "Vaarweg geschikt voor Groot Rijnschip (laadvermogen 1500 - 3000 ton) en voor 1-baksduwstel (laadvermogen 1600-3000 ton)."@nl;
+    skos:prefLabel "Va"@nl.
+
+  vaarwegklasse:Vb
+    skos:definition "Vaarweg geschikt voor 2-baksduwstel - achter elkaar (laadvermogen 3200 - 6000 ton)."@nl;
+    skos:prefLabel "Vb"@nl.
+
+  vaarwegklasse:VIa
+    skos:definition "Vaarweg geschikt voor 2-baksduwstel - naast elkaar (laadvermogen 3200 - 6000 ton)."@nl;
+    skos:prefLabel "VIa"@nl.
+
+  vaarwegklasse:VIb
+    skos:definition "Vaarweg geschikt voor 4-baksduwstel - 2 naast elkaar, 2 achter elkaar (laadvermogen 6000 - 12000 ton)."@nl;
+    skos:prefLabel "VIb"@nl.
+
+  vaarwegklasse:VIc
+    skos:definition "Vaarweg geschikt voor 6-baksduwstel - 2 naast elkaar, 3 achter elkaar of 3 naast elkaar, 2 achter elkaar (laadvermogen 9600 - 18000 ton)."@nl;
+    skos:prefLabel "VIc"@nl.
+
+  vaarwegklasse:VII
+    skos:definition "Vaarweg geschikt voor 9-baksduwstel - 3 naast elkaar, 3 achter elkaar (laadvermogen 14500 - 27000 ton)."@nl;
+    skos:prefLabel "VII"@nl.
+
+
+
+  brt:Verhardingsbreedteklasse
+    owl:oneOf
+      ( verhardingsbreedteklasse:2_4meter
+        verhardingsbreedteklasse:4_7meter
+        verhardingsbreedteklasse:groterdan7meter
+        verhardingsbreedteklasse:minderdan2meter );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_verhardingsbreedteklasse"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "De breedte van de verharding, ingedeeld in klassen."@nl;
+    skos:prefLabel "Verhardingsbreedteklasse"@nl.
+
+  verhardingsbreedteklasse:2_4meter
+    skos:definition "De breedte van de verharding, inclusief beton- en klinkerrand op gelijk niveau als het wegdek, berijdbare goot, geintegreerde rijwielstrook en/of busbaan en parkeerstrook is 2 meter of breder en smaller dan 4 meter."@nl;
+    skos:prefLabel "2 - 4 meter"@nl.
+
+  verhardingsbreedteklasse:4_7meter
+    skos:definition "De breedte van de verharding, inclusief beton- en klinkerrand op gelijk niveau als het wegdek, berijdbare goot, geintegreerde rijwielstrook en/of busbaan en parkeerstrook is 4 meter of breder en smaller dan 7 meter."@nl;
+    skos:prefLabel "4 - 7 meter"@nl.
+
+  verhardingsbreedteklasse:groterdan7meter
+    skos:definition "De breedte van de verharding, inclusief beton- en klinkerrand op gelijk niveau als het wegdek, berijdbare goot, geintegreerde rijwielstrook en/of busbaan en parkeerstrook is 7 meter of meer."@nl;
+    skos:prefLabel "> 7 meter"@nl.
+
+  verhardingsbreedteklasse:minderdan2meter
+    skos:definition "De breedte van de verharding, inclusief beton- en klinkerrand op gelijk niveau als het wegdek, berijdbare goot is smaller dan 2 meter. Een verhardingsbreedteklasse “< 2 meter” geldt alleen voor weglijnen."@nl;
+    skos:prefLabel "< 2 meter"@nl.
+
+
+
+  brt:Verhardingstype
+    owl:oneOf
+      ( verhardingstype:halfVerhard
+        verhardingstype:onbekend
+        verhardingstype:onverhard
+        verhardingstype:verhard );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_verhardingstype"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "Het type verharding van een wegdeel."@nl;
+    skos:prefLabel "verhardingstype"@nl.
+
+  verhardingstype:halfVerhard
+    skos:definition "Een weg waarop de verharding slechts gedeeltelijk is aangebracht (als twee banen met klinkers, beton, tegels, of uitsluitend groenstenen, etc.) of het rijvlak is verbeterd met grind of sintels."@nl;
+    skos:prefLabel "half verhard"@nl;
+    skos:scopeNote "Wegen met een verharding in slechte staat worden als verhard ingewonnen. Wegen die van nature min of meer steenachtig zijn, zoals bijvoorbeeld in Limburg, worden als onverhard aangegeven."@nl.
+
+  verhardingstype:onbekend
+    skos:definition "De waarde van het objectkenmerk is niet bekend."@nl;
+    skos:prefLabel "onbekend"@nl.
+
+  verhardingstype:onverhard
+    skos:definition "Een weg zonder enige vorm van kunstmatige verharding, dan wel een weg hier en daar opgevuld met puin."@nl;
+    skos:prefLabel "onverhard"@nl;
+    skos:scopeNote "Ook wegen die van nature min of meer steenachtig zijn, zoals bijvoorbeeld in Limburg, worden als onverhard aangegeven."@nl.
+
+  verhardingstype:verhard
+    skos:definition "Een weg met een egale verharding (asfalt, beton, klinkers, tegels, keien, etc.)."@nl;
+    skos:prefLabel "verhard"@nl;
+    skos:scopeNote "Ook wegen met een verharding in slechte staat worden als verhard ingewonnen. Wegen die van nature min of meer steenachtig zijn, zoals bijvoorbeeld in Limburg, worden als onverhard aangegeven."@nl.
+
+
+
+  brt:Vervoerfunctie
+    owl:oneOf
+      ( vervoerfunctie:gemengdGebruik
+        vervoerfunctie:goederenvervoer
+        vervoerfunctie:museumlijn
+        vervoerfunctie:personenvervoer );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-we_verhardingstype"^^xsd:anyURI;
+    rdfs:subClassOf skos:Concept;
+    skos:definition "De functie waarvoor het spoor gebruikt wordt."@nl;
+    skos:prefLabel "Vervoerfunctie"@nl.
+
+  vervoerfunctie:gemengdGebruik
+    skos:definition "Spoorbaan, zowel bestemd voor personen- als goederenvervoer."@nl;
+    skos:prefLabel "gemengd gebruik"@nl.
+
+  vervoerfunctie:goederenvervoer
+    skos:definition "Spoorbaan, alleen bestemd voor goederenvervoer."@nl;
+    skos:prefLabel "goederenvervoer"@nl.
+
+  vervoerfunctie:personenvervoer
+    skos:definition "Spoorbaan, alleen bestemd voor personenvervoer."@nl;
+    skos:prefLabel "personenvervoer"@nl.
+
+  vervoerfunctie:museumlijn
+    skos:definition "Spoorbaan, enkel in gebruik als toeristische attractie."@nl;
+    skos:prefLabel "museumlijn"@nl.
+
+
+
+  brt:Voorkomen
+    owl:unionOf
+      ( brt:Voorkomen_TE
+        brt:Voorkomen_WA );
+    skos:prefLabel "Voorkomen"@nl.
+
+  brt:Voorkomen_TE
+    owl:oneOf
+      ( voorkomen:dras_moerassig
+        voorkomen:metRiet );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-te_voorkomen"^^xsd:anyURI;
+    rdfs:subClassOf brt:Voorkomen;
+    skos:definition "Aanduiding dat er riet op het terrein voorkomt of dat het drassig/moerassig is."@nl;
+    skos:prefLabel "Voorkomen terreindeel"@nl.
+
+  brt:Voorkomen_WA
+    owl:oneOf
+      ( voorkomen:metRiet );
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-wa_voorkomen"^^xsd:anyURI;
+    rdfs:subClassOf brt:Voorkomen;
+    skos:definition "Aanduiding dat er riet op het waterdeel voorkomt."@nl;
+    skos:prefLabel "Voorkomen waterdeel"@nl.
+
+  voorkomen:dras_moerassig
+    skos:definition "Weke, moerassige grond."@nl;
+    skos:prefLabel "dras, moerassig"@nl.
+
+  voorkomen:metRiet
+    skos:definition "Een met riet bedekt oppervlak."@nl;
+    skos:prefLabel "met riet"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Minimum oppervlakte: 1000 m².</p>
+  <p>Rietkragen smaller dan 6 meter worden niet gegeven.</p>
+</section>"""^^rdf:HTML.
+
+}
