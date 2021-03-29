@@ -1,0 +1,863 @@
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix brt: <https://brt.basisregistraties.overheid.nl/top10nl/def/>
+
+brt: {
+
+  # Kopie van taxonomie relaties die noodzakelijkheid zijn om de
+  # patronen te kunnen valideren.
+  foaf:Document a owl:Class.
+  geo:wktLiteral a rdfs:Datatype.
+  xsd:boolean a rdfs:Datatype.
+  xsd:dateTime a rdfs:Datatype.
+  xsd:decimal a rdfs:Datatype.
+  xsd:gYearMonth a rdfs:Datatype.
+  xsd:nonNegativeInteger a rdfs:Datatype.
+  xsd:nonPositiveInteger a rdfs:Datatype.
+  xsd:positiveInteger a rdfs:Datatype.
+  xsd:string a rdfs:Datatype.
+
+  brt:aantalInwoners
+    a owl:DatatypeProperty;
+    rdfs:domain brt:PlaatsRegistratie;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-aantal-inwoners"^^xsd:anyURI;
+    skos:definition "Het aantal inwoners dat in een plaats woont."@nl;
+    skos:prefLabel "heeft aantal inwoners"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <p>Het aantal inwoners van een topografische bebouwde kom is het totaal van alle mensen die als bewoner op een van de binnen het vlak gelegen adressen geregistreerd staan in de Basisregistratie Personen (BRP) op peildatum 1 juli van het jaar waarin de luchtfoto’s genomen zijn, die gebruikt zijn voor het intekenen van de vlakken.  Omdat voor de vlakbegrenzing de oever van een water als grens is aangehouden, waardoor woonboten langs een oever niet binnen een vlak vallen, is het inwoneraantal van het vlak vermeerderd met de mensen die als bewoner van een woonboot grenzend aan een vlak geregistreerd staan.  Hiervoor is een buffer van 25 meter aangehouden gerekend vanaf de vlakgrens.</p>
+  <p>Bij deze telling moet opgemerkt dat niet alle in de BRP geregistreerde inwoners van Nederland gekoppeld zijn aan een adreslocatie.  Het gaat echter om minder dan 0,1% van de in de BRP geregistreerde inwoners die niet bij de berekening wordt meegenomen.</p>
+  <p>De berekening en telling van het aantal inwoners van de topografische bebouwde kommen wordt uitgevoerd door het Centraal Bureau voor de Statistiek (CBS), dat toegang heeft tot de BRP-gegevens.</p>
+</section>"""^^rdf:HTML.
+
+  brt:aantalRijstroken
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-aantal-rijstroken"^^xsd:anyURI;
+    skos:definition "Het aantal onderverdelingen van een wegdeel d.m.v. strepen, verschil in verharding of kleur."@nl;
+    skos:prefLabel "heeft aantal rijstroken"@nl;
+    skos:scopeNote "Wordt aangegeven voor alle wegdelen behorende tot de categorie autosnelwegen en/of hoofdwegen. Niet meegeteld worden geïntegreerde stroken met een speciale bestemming zoals busbaan en rijwielstrook. Een eventuele wisselstrook (een fysiek gescheiden rijbaan die beurtelings per rijrichting gebruikt wordt om doorstroming van het verkeer in de spits te bevorderen) telt mee voor het aantal rijstroken. Een wisselend aantal rijstroken wordt pas weergegeven als het aantal rijstroken over tenminste 500 m constant is. Bij een weg met gescheiden rijbanen wordt het aantal rijstroken per rijbaan aangegeven. Het aantal rijstroken wordt niet toegevoegd aan op- en afritten, wel aan de verbindingswegen op een knooppunt."@nl.
+
+  brt:aantalSporen
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#domein-sp_aantalsporen"^^xsd:anyURI;
+    skos:definition "Het aantal sporen van het spoorbaandeel."@nl;
+    skos:prefLabel "heeft aantal sporen"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een wisselend aantal sporen wordt pas weergegeven als het aantal sporen over tenminste 5 kilometer constant is.</p>
+  <p>Indien het aantal sporen over een lengte van minder dan 5 km wisselt, wordt het extra spoor niet apart weergegeven. Een tijdelijk parallel spoor op een volledig eigen tracé, wordt apart weergegeven.</p>
+  <p>Echter: de minimum lengte voor opname van een dubbelsporig gedeelte in een enkelspoor is 500 meter en ditzelfde geld voor een enkelsporig gedeelte in een dubbelspoor.</p>
+  <p>Voor het inwinnen van het aantal sporen van een spoorbaandeel is gebruik gemaakt van gegevens van ProRail.</p>
+</section>"""^^rdf:HTML.
+
+  brt:afritnaam
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-afritnaam"^^xsd:anyURI;
+    skos:definition "Afritbenaming op autosnelweg, vastgesteld door Rijkswaterstaat."@nl;
+    skos:prefLabel "heeft afritnaam"@nl;
+    skos:scopeNote "Wordt (nog) niet ingewonnen."@nl.
+
+  brt:afritnummer
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-afritnummer"^^xsd:anyURI;
+    skos:definition "Afritnummering op autosnelweg en hoofdweg, vastgesteld door Rijkswaterstaat."@nl;
+    skos:prefLabel "heeft afritnummer"@nl.
+
+  brt:aWegnummer
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-a-wegnummer"^^xsd:anyURI;
+    skos:definition "Nummering van de rijkswegen (autosnelwegen en autowegen) behorende tot het nationale wegenstelsel."@nl;
+    skos:prefLabel "heeft A-wegnummer"@nl;
+    skos:scopeNote "Wordt opgenomen voor alle betreffende wegdelen, inclusief op- en afritten. In incidentele gevallen komt het voor dat een autosnelweg tijdelijk overgaat in een autoweg waarbij het A-wegnummer blijft doorlopen. In die gevallen is het toegestaan aan de autoweg het betreffende A-wegnummer toe te voegen."@nl.
+
+  brt:baanvaknaam
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-baanvaknaam"^^xsd:anyURI;
+    skos:definition "De naam van het baanvak waarin het spoorbaandeel zich bevind."@nl;
+    skos:prefLabel "heeft baanvaknaam"@nl.
+
+  brt:bagWoonplaats
+    a owl:DatatypeProperty;
+    rdfs:domain brt:PlaatsRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-isbagwoonplaats"^^xsd:anyURI;
+    skos:definition "Aanduiding of de naam afkomstig is uit de BAG."@nl;
+    skos:prefLabel "is BAG woonplaats"@nl;
+    skos:scopeNote "Voor plaatsen die een eigen BAG-woonplaatsgebied hebben, wordt de spelling van de naam van het BAG-woonplaatsgebied overgenomen als officiële naam, met uitzondering van toevoegingen ter onderscheiding van gelijknamige plaatsen (bijvoorbeeld “Bergen L” voor “Bergen” in de provincie Limburg), afkortingen (bijvoorbeeld “St.-Annaparochie” voor “Sint-Annaparochie”) en een kleine beginletter (bijvoorbeeld “de Lutte” voor “De Lutte”)."@nl.
+
+  brt:bebouwdeKom
+    a owl:DatatypeProperty;
+    rdfs:domain brt:PlaatsRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-bebouwde-kom"^^xsd:anyURI;
+    skos:definition "Aanduiding of het gebied de bebouwde kom van een plaats omvat."@nl;
+    skos:prefLabel "is bebouwde kom"@nl;
+    skos:scopeNote "De status van de bebouwingskern volgens de Wegenverkeerswet is bepalend. De aanwezigheid van plaatsnaamborden is hierbij een hulpmiddel."@nl.
+
+  brt:breedte
+    a owl:DatatypeProperty;
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-breedte"^^xsd:anyURI;
+    skos:definition "De breedte van het object gemeten in meters."@nl;
+    skos:prefLabel "heeft breete"@nl;
+    skos:scopeNote "Dit attribuut geldt alleen voor inrichtingselementen van het type ‘strekdam, krib, golfbreker’."@nl.
+
+  brt:breedteklasse
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:Breedteklasse;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-breedteklasse"^^xsd:anyURI;
+    skos:definition "De breedte van het water ingedeeld in klassen."@nl;
+    skos:prefLabel "heeft breedteklasse"@nl.
+
+  brt:bronactualiteit
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:gYearMonth;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-bronactualiteit"^^xsd:anyURI;
+    skos:definition "De actualiteit van de gebruikte bron."@nl;
+    skos:prefLabel "heeft bronactualiteit"@nl.
+
+  brt:bronbeschrijving
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-bronbeschrijving"^^xsd:anyURI;
+    skos:definition "De beschrijving van de gebruikte bron."@nl;
+    skos:scopeNote "De bronbeschrijving geeft een nadere specificering van de gebruikte bron."@nl;
+    skos:prefLabel "heeft bronbeschriving"@nl.
+
+  brt:bronnauwkeurigheid
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:nonNegativeInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-bronnauwkeurigheid"^^xsd:anyURI;
+    skos:definition "De nauwkeurigheid van de gebruikte bron in meters."@nl;
+    skos:prefLabel "heeft bronnauwkeurigheid"@nl.
+
+  brt:brontype
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    skos:definition "Het type van de gebruikte bron."@nl;
+    rdfs:range brt:Brontype;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-brontype"^^xsd:anyURI;
+    skos:prefLabel "heeft brontype"@nl.
+
+  brt:brugnaam_SP
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-brugnaam-1"^^xsd:anyURI;
+    skos:definition "De naam van een spoorbrug."@nl;
+    skos:prefLabel "heeft brugnaam"@nl.
+
+  brt:brugnaam_WA
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-brugnaam-2"^^xsd:anyURI;
+    skos:definition "De naam van een brug."@nl;
+    skos:prefLabel "heeft brugnaam"@nl;
+    skos:scopeNote "Indien de brug is gelegen over een waterdeel van het type Greppel, Enkele sloot of Gerenforceerde sloot en er zich geen weer te geven brugvlak boven het waterdeel bevindt is het niet mogelijk een naam toe te voegen. Indien de brug wel is beschreven op de 1:25.000 wordt in dat geval een inrichtingspunt geplaatst van het type overig waaraan de naam wordt toegevoegd."@nl.
+
+  brt:brugnaam_WE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-brugnaam"^^xsd:anyURI;
+    skos:definition "De naam van een brug."@nl;
+    skos:prefLabel "heeft brugnaam"@nl;
+    skos:scopeNote "Indien de brug is gelegen over een waterdeel van het type Greppel, Enkele sloot of Gerenforceerde sloot en er zich geen weer te geven brugvlak boven het waterdeel bevindt is het niet mogelijk een naam toe te voegen. Indien de brug wel is beschreven op de 1:25.000 wordt in dat geval een inrichtingspunt geplaatst van het type overig waaraan de naam wordt toegevoegd."@nl.
+
+  brt:eindRegistratie
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:dateTime;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-eindregistratie"^^xsd:anyURI;
+    skos:definition "Tijdstip waarop een versie van het object vervallen is."@nl;
+    skos:prefLabel "heeft eind registratie"@nl.
+
+  brt:elektrificatie
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-elektrificatie"^^xsd:anyURI;
+    skos:definition "Aanduiding of het spoorbaandeel geëlektrificeerd is of niet."@nl;
+    skos:prefLabel "heeft elektrificatie"@nl.
+
+  brt:eWegnummer
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-e-wegnummer"^^xsd:anyURI;
+    skos:definition "Nummering van rijkswegen behorende tot het stelsel van europese doorgaande routes."@nl;
+    skos:prefLabel "heeft E-wegnummer"@nl;
+    skos:scopeNote "Wordt opgenomen voor alle betreffende wegdelen, echter niet aan de wegdelen behorende tot de op- en afritten, tenzij deze behoren tot de E-route of een verbinding vormen tussen verschillende E-routes."@nl.
+
+  brt:fysiekVoorkomen_GE
+    a owl:ObjectProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range brt:FysiekVoorkomenGebouw;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-fysiek-voorkomen-3"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "heeft fysiek voorkomen gebouw"@nl.
+
+  brt:fysiekVoorkomen_SP
+    a owl:ObjectProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range brt:FysiekVoorkomenSpoorbaandeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-fysiek-voorkomen-1"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "heeft fysiek voorkomen spoorbaandeel"@nl.
+
+  brt:fysiekVoorkomen_TE
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:FysiekVoorkomen;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-fysiek-voorkomen-4"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "heeft fysiek voorkomen terreindeel"@nl.
+
+  brt:fysiekVoorkomen_WA
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:FysiekVoorkomenWaterdeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-fysiek-voorkomen-2"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "heeft fysiek voorkomen waterdeel"@nl.
+
+  brt:fysiekVoorkomen_WE
+    a owl:ObjectProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range brt:FysiekVoorkomenWegdeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-fysiek-voorkomen"^^xsd:anyURI;
+    skos:definition "De plaats waar het object zich bevindt t.o.v. andere constructies."@nl;
+    skos:prefLabel "heeft fysiek voorkomen wegdeel"@nl.
+
+  brt:functie_RE
+    a owl:ObjectProperty;
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range brt:FunctieReliëf;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-functie-1"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een geluidswerende functie heeft."@nl;
+    skos:prefLabel "heeft functie"@nl.
+
+  brt:functie_WA
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:FunctieWaterdeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-functie"^^xsd:anyURI;
+    skos:definition "De functie van het water."@nl;
+    skos:prefLabel "heeft functie"@nl.
+
+  brt:gebruiksdoel
+    a owl:ObjectProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range brt:Gebruiksdoel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-gebruiksdoel"^^xsd:anyURI;
+    skos:definition "Huidig gebruiksdoel van een gebouw, conform de BAG classificatie voor panden"@nl;
+    skos:prefLabel "heeft gebruiksdoel"@nl.
+
+  brt:geometrieLijn
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-1"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-2"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-3"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-4"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-5"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrielijn-6"^^xsd:anyURI;
+    skos:definition "De lijngeometrie van een object."@nl;
+    skos:prefLabel "heeft lijngeometrie"@nl.
+
+  brt:geometriePunt
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso
+      "https://kadaster.github.io/imbrt/#attribuut-labelpunt"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-labelpunt-1"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-labelpunt-2"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-labelpunt-3"^^xsd:anyURI;
+    skos:altLabel "heeft label punt"@nl;
+    skos:definition "De puntgeometrie van een object."@nl;
+    skos:prefLabel "heeft puntgeometrie"@nl.
+
+  brt:geometrieVlak
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-1"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-2"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-3"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-4"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-5"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-6"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-geometrievlak-7"^^xsd:anyURI;
+    skos:definition "De vlakgeometrie van een object."@nl;
+    skos:prefLabel "heeft valkgeometrie"@nl.
+
+  brt:gescheidenRijbaan
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    skos:definition "Aanduiding of het object onderdeel uitmaakt van een weg met gescheiden rijbanen."@nl;
+    rdfs:range xsd:boolean;
+    skos:prefLabel "heeft gescheiden rijbaan"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een weg heeft gescheiden rijbanen als het obstakel (vangrail, verhoogde betonrand, middenberm) tussen de rijbanen langer is dan 500 meter, mits beide wegen als een samenhangend geheel kunnen worden beschouwd. Een plaatselijke onderbreking van het obstakel (bijvoorbeeld bij een brug) wordt niet als onderbreking van het obstakel beschouwd. In het geval het terrein tussen beide rijbanen gevuld is met min of meer aaneengesloten bebouwing of met water of met een dusdanige dichte begroeiing dat het verband tussen beide wegen in het terrein niet meer is waar te nemen dan worden beide rijbanen niet meer aangegeven als gescheiden rijbaan.</p>
+  <p>De combinatie van gescheiden rijbaan “ja” en straat is niet toegestaan.</p>
+</section>"""^^rdf:HTML;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-gescheiden-rijbaan"^^xsd:anyURI.
+
+  brt:getijdeinvloed
+    a owl:DatatypeProperty;
+    skos:definition "Aanduiding of het water getijdeinvloed heeft."@nl;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-getijdeinvloed"^^xsd:anyURI;
+    skos:prefLabel "heeft getijdeinvloed"@nl.
+
+  brt:hartLijn
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hartlijn"^^xsd:anyURI;
+    skos:definition "De hartlijngeometrie van een wegdeel object."@nl;
+    skos:prefLabel "heeft hartlijngeometrie"@nl.
+
+  brt:hartPunt
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hartpunt"^^xsd:anyURI;
+    skos:definition "De hartpuntgeometrie van een wegdeel object."@nl;
+    skos:prefLabel "heeft hartpuntgeometrie"@nl.
+
+  brt:hogeZijde
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hogezijde"^^xsd:anyURI;
+    skos:definition "De lijngeometrie van de hoge zijde van een reliëf object."@nl;
+    skos:prefLabel "heeft hoge zijde"@nl.
+
+  brt:hoofdafwatering
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoofdafwatering"^^xsd:anyURI;
+    skos:definition "Aanduiding of het water deel uitmaakt van het hoofdafwateringspatroon (het stelsel van waterlopen in gebruik als primaire afvoermogelijkheid van overtollig oppervlaktewater c.q. aanvoermogelijkheid bij een tekort aan oppervlaktewater, plus bijbehorende kunstwerken)."@nl;
+    skos:prefLabel "heeft hoofdafwatering."@nl.
+
+  brt:hoofdverkeersgebruik
+    a owl:ObjectProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range brt:Hoofdverkeersgebruik;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoofdverkeersgebruik"^^xsd:anyURI;
+    skos:definition "Soort verkeer waarvoor een weg bestemd is."@nl;
+    skos:prefLabel "heeft hoofdverkeersgebruik"@nl.
+
+  brt:hoogte_GE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range xsd:decimal;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogte"^^xsd:anyURI;
+    skos:definition "De hoogte van het object (t.o.v. het maaiveld of t.o.v. NAP)."@nl;
+    skos:prefLabel "heeft hoogte"@nl.
+
+  brt:hoogte_HO
+    a owl:DatatypeProperty;
+    rdfs:domain brt:HoogteRegistratie;
+    rdfs:range xsd:decimal;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogte-2"^^xsd:anyURI;
+    skos:definition "Hoogte van het object t.o.v. het referentievlak in meters met een nauwkeurigheid van 1 decimeter. / De diepte van het water."@nl;
+    skos:prefLabel "heeft hoogte"@nl;
+    skos:scopeNote "Wordt aangegeven voor hoogte- en dieptelijnen, hoogte- en dieptepunten en laagwaterlijnen."@nl.
+
+  brt:hoogte_IE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogte-1"^^xsd:anyURI;
+    skos:definition "De hoogte van het object (t.o.v. het maaiveld of t.o.v. NAP)."@nl;
+    skos:prefLabel "heeft hoogte"@nl.
+
+  brt:hoogteklasse_GE
+    a owl:ObjectProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range brt:HoogteklasseGebouw;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteklasse"^^xsd:anyURI;
+    skos:definition "De klasse van hoogte waar de bebouwing toe behoort."@nl;
+    skos:prefLabel "heeft hoogteklasse"@nl.
+
+  brt:hoogteklasse_RE
+    a owl:ObjectProperty;
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range brt:HoogteklasseReliëf;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteklasse-1"^^xsd:anyURI;
+    skos:definition "Klasse van de hoogte van een object ten opzichte van het maaiveld."@nl;
+    skos:prefLabel "heeft hoogteklasse"@nl.
+
+  brt:hoogteniveau_GE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-3"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object."@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_IE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-5"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object"@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_RE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-6"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object"@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_SP
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-1"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object."@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_TE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:TerreinRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-4"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object."@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_WA
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau-2"^^xsd:anyURI;
+    skos:definition "Het hoogteniveau van het object."@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:hoogteniveau_WE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:nonPositiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-hoogteniveau"^^xsd:anyURI;
+    skos:definition "Met het hoogteniveau wordt de relatieve hoogte van het geo-object weergegeven. Zo kan worden bepaald op welke wijze geo-objecten elkaar kruisen."@nl;
+    skos:prefLabel "heeft hoogteniveau"@nl.
+
+  brt:isBagNaam_WA
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-isbagnaam"^^xsd:anyURI;
+    skos:definition "Aanduiding of de naam geverifieerd is met de BAG."@nl;
+    skos:prefLabel "is BAG naam"@nl.
+
+  brt:isBagNaam_WE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-isbagnaam-1"^^xsd:anyURI;
+    skos:definition "Aanduiding of de naam geverifieerd is met de BAG."@nl;
+    skos:prefLabel "is BAG naam"@nl;
+    skos:scopeNote "Wegen van het type kruising hebben geen aanduiding ‘isBAGnaam’."@nl.
+
+  brt:isBagWoonplaats
+    a owl:DatatypeProperty;
+    rdfs:domain brt:PlaatsRegistratie;
+    rdfs:range xsd:boolean;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-isbagwoonplaats"^^xsd:anyURI;
+    skos:definition "Aanduiding of de naam afkomstig is uit de BAG."@nl;
+    skos:prefLabel "is BAG woonplaats"@nl;
+    skos:scopeNote "Voor plaatsen die een eigen BAG-woonplaatsgebied hebben, wordt de spelling van de naam van het BAG-woonplaatsgebied overgenomen als officiële naam, met uitzondering van toevoegingen ter onderscheiding van gelijknamige plaatsen (bijvoorbeeld “Bergen L” voor “Bergen” in de provincie Limburg), afkortingen (bijvoorbeeld “St.-Annaparochie” voor “Sint-Annaparochie”) en een kleine beginletter (bijvoorbeeld “de Lutte” voor “De Lutte”)."@nl.
+
+  brt:knooppuntnaam
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-knooppuntnaam"^^xsd:anyURI;
+    skos:definition "Naam van een knooppunt."@nl;
+    skos:prefLabel "heeft afritnaam"@nl.
+
+  brt:lageZijde
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range geo:wktLiteral;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-lagezijde"^^xsd:anyURI;
+    skos:definition "De lijngeometrie van de lage zijde van een reliëf object."@nl;
+    skos:prefLabel "heeft lage zijde"@nl.
+
+  brt:mutatietype
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:Mutatietype;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-mutatietype"^^xsd:anyURI;
+    skos:definition "Het soort mutatie dat een object als laatste ondergaan heeft."@nl;
+    skos:prefLabel "heeft mutatietype"@nl.
+
+  brt:nWegnummer
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-n-wegnummer"^^xsd:anyURI;
+    skos:definition "Nummering van de provinciale wegen behorende tot het nationale wegenstelsel en nummering van rijkswegen die nog niet de status van autosnelweg hebben."@nl;
+    skos:prefLabel "heeft N-wegnummer"@nl;
+    skos:scopeNote "Wordt opgenomen voor alle betreffende wegdelen, inclusief op- en afritten. Bij een kruising van twee wegen met N-wegnummering over een rotonde krijgen alle wegdelen van de rotonde een dubbel N-wegnummer. Dit geldt niet indien het een T-splitsing betreft. In dat geval krijgen de wegdelen op de rotonde enkel het doorgaande N-wegnummer."@nl.
+
+  brt:nummer_IE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-nummer"^^xsd:anyURI;
+    skos:definition "Het nummer van het inrichtingselement."@nl;
+    skos:prefLabel "heeft nummer"@nl;
+    skos:scopeNote "Bijvoorbeeld het nummer van een grenspunt, kilometerpaal, kilometerpaal spoorweg, kilometerpaal water, kilometerraaibord, kilometerraaipaal, paal of strandpaal."@nl.
+
+  brt:nummer_RG
+    a owl:DatatypeProperty;
+    rdfs:domain brt:RegistratiefGebiedRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-nummer-1"^^xsd:anyURI;
+    skos:definition "Het administratieve nummer van het registratief gebied."@nl;
+    skos:prefLabel "heeft nummer"@nl.
+
+  brt:objectBeginTijd
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:dateTime;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-objectbegintijd"^^xsd:anyURI;
+    skos:definition "Tijdstip waarop het object ontstaan is."@nl;
+    skos:prefLabel "heeft object begin tijd"@nl.
+
+  brt:objectEindTijd
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:dateTime;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-objecteindtijd"^^xsd:anyURI;
+    skos:definition "Tijdstip waarop het object vervallen is."@nl;
+    skos:prefLabel "heeft object eind tijd"@nl.
+
+  brt:referentievlak
+    a owl:ObjectProperty;
+    rdfs:domain brt:HoogteRegistratie;
+    rdfs:range brt:Referentievlak;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-referentievlak"^^xsd:anyURI;
+    skos:definition "Het referentievlak waarop de hoogte van het object gebaseerd is."@nl;
+    skos:prefLabel "heeft referentievlak"@nl.
+
+  brt:sWegnummer
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-s-wegnummer"^^xsd:anyURI;
+    skos:definition "Nummering van secundaire wegen behorende tot het provinciale wegenstelsel."@nl;
+    skos:prefLabel "heeft S-wegnummer"@nl;
+    skos:scopeNote "Wordt opgenomen voor alle betreffende wegdelen, inclusief op- en afritten."@nl.
+
+  brt:sluisnaam
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-sluisnaam"^^xsd:anyURI;
+    skos:definition "De naam van de sluis."@nl;
+    skos:prefLabel "heeft sluisnaam"@nl.
+
+  brt:soortnaam_FG
+    a owl:DatatypeProperty;
+    rdfs:domain brt:FunctioneelGebiedRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-soortnaam-2"^^xsd:anyURI;
+    skos:definition "Verdere specificatie van het type functioneel gebied."@nl;
+    skos:prefLabel "heeft soortnaam"@nl;
+    skos:scopeNote "Bijvoorbeeld “bejaardencentrum” in geval van een gebouwencomplex, “mergelgroeve” in het geval van een groeve of “vluchthaven” indien het type functioneel gebied een haven is."@nl.
+
+  brt:soortnaam_GE
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-soortnaam"^^xsd:anyURI;
+    skos:definition "Nadere specificatie van het type gebouw."@nl;
+    skos:prefLabel "heeft soortnaam"@nl.
+
+  brt:soortnaam_IE
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-soortnaam-1"^^xsd:anyURI;
+    skos:definition "Nadere specificatie van het type inrichtingselement."@nl;
+    skos:prefLabel "heeft soortnaam"@nl.
+
+  brt:spoorbreedte
+    a owl:ObjectProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range brt:Spoorbreedte;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-spoorbreedte"^^xsd:anyURI;
+    skos:definition "De breedteklasse van het spoor."@nl;
+    skos:prefLabel "heeft spoorbreedte"@nl.
+
+  brt:status
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:Status;
+    rdfs:seeAlso
+      "https://kadaster.github.io/imbrt/#attribuut-status"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-status-1"^^xsd:anyURI,
+      "https://kadaster.github.io/imbrt/#attribuut-status-2"^^xsd:anyURI;
+    skos:definition "De staat waarin het object zich bevindt."@nl;
+    skos:prefLabel "heeft status"@nl.
+
+  brt:tdnCode
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-tdncode"^^xsd:anyURI;
+    skos:definition "Code die het object in TOP10vector had."@nl;
+    skos:prefLabel "heeft tdn code"@nl.
+
+  brt:tijdstipRegistratie
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:dateTime;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-tijdstipregistratie"^^xsd:anyURI;
+    skos:definition "Tijdstip waarop een versie van het object ontstaan is."@nl;
+    skos:prefLabel "heeft tijdstip registratie"@nl.
+
+  brt:tunnelnaam_SP
+    a owl:DatatypeProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-tunnelnaam-1"^^xsd:anyURI;
+    skos:definition "Naam van een spoortunnel."@nl;
+    skos:prefLabel "heeft tunnelnaam"@nl.
+
+  brt:tunnelnaam_WE
+    a owl:DatatypeProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range xsd:string;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-tunnelnaam"^^xsd:anyURI;
+    skos:definition "Naam van een tunnel."@nl;
+    skos:prefLabel "heeft tunnelnaam"@nl.
+
+  brt:typeFunctioneelGebied
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:TypeFunctioneelGebied;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-functioneel-gebied"^^xsd:anyURI;
+    skos:definition "Het soort functioneel gebied."@nl;
+    skos:prefLabel "heeft type functioneel gebied"@nl.
+
+  brt:typeGebied
+    a owl:ObjectProperty;
+    rdfs:domain brt:PlaatsRegistratie;
+    rdfs:range brt:TypeGebied;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-typegebied"^^xsd:anyURI;
+    skos:definition "Het soort gebied."@nl;
+    skos:prefLabel "heeft type gebied"@nl.
+
+  brt:typeGebouw
+    a owl:ObjectProperty;
+    rdfs:domain brt:GebouwRegistratie;
+    rdfs:range brt:TypeGebouw;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-gebouw"^^xsd:anyURI;
+    skos:definition "Het type gebouw, het doel waarvoor de bebouwing gebruikt wordt (gaat worden / werd)."@nl;
+    skos:prefLabel "heeft type gebouw"@nl;
+    skos:scopeNote "Indien de betreffende bebouwing onderdeel uitmaakt van een groter geheel, wordt het gebouwdeel “uitgesneden” uit de omliggende bebouwing en voorzien van de bijbehorende attribuutwaarde. Indien het gebouwdeel niet exact is aan te geven, wordt een op zich zelf staand gebouw aangebracht aan de rand van het complete gebouw (op de ware plek of bij de dichtsbij gelegen ingang van het gebouw)."@nl.
+
+  brt:typeGeografischGebied
+    a owl:ObjectProperty;
+    rdfs:domain brt:GeografischGebiedRegistratie;
+    rdfs:range brt:TypeGeografischGebied;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-geografisch-gebied"^^xsd:anyURI;
+    skos:definition "Het soort geografisch gebied."@nl;
+    skos:prefLabel "heeft type geografisch gebied"@nl.
+
+  brt:typeHoogte
+    a owl:ObjectProperty;
+    rdfs:domain brt:HoogteRegistratie;
+    rdfs:range brt:TypeHoogte;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-hoogte"^^xsd:anyURI;
+    skos:definition "Het soort hoogte."@nl;
+    skos:prefLabel "heeft type hoogte"@nl.
+
+  brt:typeInfrastructuur_SP
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:TypeInfrastructuurSpoorbaandeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-infrastructuur"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding, een kruising of een overig verkeersgebied is."@nl;
+    skos:prefLabel "heeft type infrastructuur"@nl.
+
+  brt:typeInfrastructuur_WE
+    a owl:ObjectProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range brt:TypeInfrastructuurWegdeel;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-infrastructuur"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding, een kruising of een overig verkeersgebied is."@nl;
+    skos:prefLabel "heeft type infrastructuur"@nl.
+
+  brt:typeInrichtingselement
+    a owl:ObjectProperty;
+    rdfs:domain brt:InrichtingselementRegistratie;
+    rdfs:range brt:TypeInrichtingselement;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-inrichtingselement"^^xsd:anyURI;
+    skos:definition "Het soort gebied."@nl;
+    skos:prefLabel "heeft type inrichtingselement"@nl.
+
+  brt:typeLandgebruik
+    a owl:ObjectProperty;
+    rdfs:domain brt:TerreinRegistratie;
+    rdfs:range brt:TypeLandgebruik;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-landgebruik"^^xsd:anyURI;
+    skos:definition "De gebruiksbestemming van het terrein."@nl;
+    skos:prefLabel "heeft type landgebruik"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Indien er in het terrein meerdere vormen van begroeiing naast elkaar voorkomen, zonder dat daartussen duidelijke grenzen zijn aan te geven, dan wordt de meest voorkomende begroeiingsvorm opgenomen. Zo mogelijk worden binnen dit vlakobject kleinere vlakobjecten aangegeven met andere begroeiingsvormen, mits deze groter zijn dan plm. 1000 m². De perceeltjes behoren een globale indruk te geven van de bezettingsgraad van elk der vegetatievormen / vormen van grondgebruik.</p>
+</section>"""^^rdf:HTML.
+
+  brt:typeObject
+    a owl:ObjectProperty;
+    rdfs:domain brt:PlantopografieRegistratie;
+    rdfs:range brt:TypeObject;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-typeobject"^^xsd:anyURI;
+    skos:definition "Het soort plantopografie object."@nl;
+    skos:prefLabel "heeft type object"@nl.
+
+  brt:typeRegistratiefGebied
+    a owl:ObjectProperty;
+    rdfs:domain brt:RegistratiefGebiedRegistratie;
+    rdfs:range brt:TypeRegistratiefGebied;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-registratief-gebied"^^xsd:anyURI;
+    skos:definition "Het soort administratief gebied."@nl;
+    skos:prefLabel "heeft type registratief gebied"@nl.
+
+  brt:typeReliëf
+    a owl:ObjectProperty;
+    rdfs:domain brt:ReliëfRegistratie;
+    rdfs:range brt:TypeReliëf;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-reli%C3%ABf"^^xsd:anyURI;
+    skos:definition "Het soort reliëf."@nl;
+    skos:prefLabel "heeft type reliëf"@nl.
+
+  brt:typeSpoorbaan
+    a owl:ObjectProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range brt:TypeSpoorbaan;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-spoorbaan"^^xsd:anyURI;
+    skos:definition "Het soort vervoermiddel waarvoor het spoorbaandeel bestemd is."@nl;
+    skos:prefLabel "heeft type spoorbaan"@nl.
+
+  brt:typeWater
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:TypeWater;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-water"^^xsd:anyURI;
+    skos:definition "Aanduiding of het object een verbinding, een kruising of iets anders is."@nl;
+    skos:prefLabel "heeft type water"@nl.
+
+  brt:typeWeg
+    a owl:ObjectProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range brt:TypeWeg;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-type-weg"^^xsd:anyURI;
+    skos:definition "Het soort weg."@nl;
+    skos:prefLabel "heeft type weg"@nl.
+
+
+  brt:vaarwegklasse
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:Vaarwegklasse;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-vaarwegklasse"^^xsd:anyURI;
+    skos:definition "CEMT klasses van vaarwegen, welke gebaseerd zijn op de afmetingen en laadvermogen van standaardschepen en duwstellen voor de binnen- en riviervaart in West-Europa. De klasses I t/m VII zijn in 1992 bepaald door de Conferentie van Europese Ministers van Verkeer (C.E.M.T.). Naderhand is klasse 0 (vaarwegen kleiner dan die van klasse I) daaraan toegevoegd. Klasse VII komt in Nederland niet voor."@nl;
+    skos:prefLabel "heeft vaarwegklasse"@nl.
+
+  brt:verhardingsbreedteklasse
+    a owl:ObjectProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range brt:Verhardingsbreedteklasse;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-verhardingsbreedteklasse"^^xsd:anyURI;
+    skos:definition "De breedte van de verharding, ingedeeld in klassen."@nl;
+    skos:prefLabel "heeft verhardingsbreedteklasse"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Bij het bepalen van de wegbreedte wordt tot de verharding gerekend: het verharde rijgedeelte, beton- en klinkerrand op gelijk niveau als het wegdek, berijdbare goot en in de rijbaan geïntegreerde rijwielstrook, weg/ busbaan en parkeerstrook (aangegeven door b.v. een witte streep). Niet meegerekend worden: opstaande randen, parkeerhavens, groenstenen en bermverharding in de vorm van sintels, puin e.d.. Duidelijk zichtbare, plaatselijke versmallingen of verbredingen worden alleen opgemeten als deze zich over een afstand van tenminste 500 meter voortzetten (dus geen bruggen e.d.). Vluchtheuvels en verkeersgeleiders in de vorm van opstaande randen worden, mits ze korter zijn dan 500 meter, bij de bepaling van de wegbreedte buiten beschouwing gelaten.</p>
+  <p>Wegen van het type “straat” worden ingewonnen met verhardingsbreedteklasse = “2 – 4 meter” ongeacht de werkelijke verhardingsbreedte.</p>
+  <p>Wegen van het type “overig” en breder dan 2 meter, worden ingewonnen met verhardingsbreedteklasse = “2 – 4 meter” ongeacht de werkelijke verhardingsbreedte. Dit geldt bijvoorbeeld voor toegangswegen, busbanen, half-verharde wegen of onverharde wegen.</p>
+</section>"""^^rdf:HTML.
+
+  brt:verhardingstype
+    a owl:ObjectProperty;
+    rdfs:domain brt:WegdeelRegistratie;
+    rdfs:range brt:Verhardingstype;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-verhardingstype"^^xsd:anyURI;
+    skos:definition "Het type verharding van een wegdeel."@nl;
+    skos:prefLabel "heeft verhardingstype"@nl.
+
+  brt:vervoerfunctie
+    a owl:ObjectProperty;
+    rdfs:domain brt:SpoorbaandeelRegistratie;
+    rdfs:range brt:Vervoerfunctie;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-vervoerfunctie"^^xsd:anyURI;
+    skos:definition "De functie waarvoor het spoor gebruikt wordt."@nl;
+    skos:prefLabel "heeft vervoerfunctie"@nl.
+
+  brt:visualisatieCode
+    a owl:DatatypeProperty;
+    rdfs:domain brt:ObjectRegistratie;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-visualisatiecode"^^xsd:anyURI;
+    skos:definition "Code voor het visualiseren van het object."@nl;
+    skos:prefLabel "heeft visualisatie code"@nl.
+
+  brt:voorkomen_TE
+    a owl:ObjectProperty;
+    rdfs:domain brt:TerreinRegistratie;
+    rdfs:range brt:Voorkomen_TE;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-voorkomen-1"^^xsd:anyURI;
+    skos:definition "Aanduiding dat er riet op het terrein voorkomt of dat het drassig/moerassig is."@nl;
+    skos:prefLabel "heeft voorkomen"@nl.
+
+  brt:voorkomen_WA
+    a owl:ObjectProperty;
+    rdfs:domain brt:WaterdeelRegistratie;
+    rdfs:range brt:Voorkomen_WA;
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#attribuut-voorkomen"^^xsd:anyURI;
+    skos:definition "Aanduiding dat er riet op het waterdeel voorkomt."@nl;
+    skos:prefLabel "heeft voorkomen"@nl.
+
+}

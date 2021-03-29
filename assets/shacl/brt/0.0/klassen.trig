@@ -1,0 +1,359 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix gml: <http://www.opengis.net/ont/gml#>
+prefix nen3610: <http://definities.geostandaarden.nl/def/nen3610#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sdo: <https://schema.org/>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix brt: <https://brt.basisregistraties.overheid.nl/top10nl/def/>
+prefix graph: <https://brt.basisregistraties.overheid.nl/top10nl/id/graph/>
+prefix image: <https://brt.basisregistraties.overheid.nl/top10nl/id/image/>
+prefix shape: <https://brt.basisregistraties.overheid.nl/top10nl/id/shape/>
+prefix status: <https://brt.basisregistraties.overheid.nl/top10nl/id/status/>
+
+brt: {
+
+  brt:FunctioneelGebied
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#713-objectklasse-functioneel-gebied"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Begrensd en benoemd gebied dat door een functionele eenheid beschreven wordt."@nl;
+    skos:prefLabel "Functioneel gebied"@nl.
+
+  brt:FunctioneelGebiedRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/FunctioneelGebied">functioneel gebied</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Functioneel gebied registratie"@nl.
+
+
+  brt:Gebouw
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#75-objectklasse-gebouw"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Vrijstaande, overdekte en geheel of gedeeltelijk met wanden omsloten toegankelijke ruimte of door pilaren ondersteunde dakconstructie, die direct of indirect met de grond is verbonden."@nl;
+    skos:prefLabel "Gebouw"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Met ingang van april 2020 is het muteren van gebouwen in de BRT gebaseerd op mutaties in de Basisregistraties Adressen en Gebouwen (BAG). Alle mutaties die in de BAG plaatsvinden worden in enigszins gegeneraliseerde vorm overgenomen in de BRT. Als peildatum voor de BAG-mutaties is hierbij 1 juni gebruikt, omdat dit het beste aansluit bij de luchtfoto’s waarmee de andere elementen in de BRT worden bijgewerkt.</p>
+  <p>Een gebouw moet een permanent karakter hebben en bedoeld zijn voor verblijf, handel, verkeer en/of arbeid.</p>
+  <p>De orthogonale projectie van de uiterste buitenrand inclusief carports en passages (overbouwing van een weg reikend van gebouw tot gebouw, enkel bestaand uit een al dan niet licht doorlatend dak), exclusief luifels, op onderliggend terrein, wegen of water wordt opgenomen. Een stationsoverkapping wordt ingewonnenn als gebouw, een overkapping van alleen een perron op een station wordt niet opgenomen. Bebouwing boven (hoge) poorten maakt onderdeel uit van de opgaande bebouwing. Bebouwing, geheel of gedeeltelijk gelegen over een ander object, wordt als bebouwing aangegeven.</p>
+  <p>De minimumgrootte voor een gebouwvlak is 9 m².</p>
+  <p>Gebouwen, gelegen onder de projectie van andere gebouwen wordt niet opgenomen. Is echter een deel van het gebouw wel zichtbaar dan wordt het gehele gebouw op basis van interpretatie zo goed mogelijk aangegeven waarbij het gebouwdeel gelegen onder het object een hoogteniveau kleiner dan nul krijgt.</p>
+  <p>Twee stukken bebouwing worden samengevoegd indien de afstand tussen de orthogonale projecties 2 meter of minder bedraagt, behalve als er tussen de gebouwen een weg of water voorkomt en als de gebouwen in verschillende rijen van bebouwing staan, gezien vanaf de ontsluitingsweg.</p>
+  <p>Uitbouwsels tot plm. 3x3 meter en luifels worden verwaarloosd. Inspringingen tot plm. 3x3 meter worden aangegeven als onderdeel van de bebouwing. Een loopgang of loopbrug wordt als onderdeel van het gebouw opgenomen indien deze 3 meter of breder is. Bij openingen groter dan plm. 3 meter wordt het hierdoor ontsloten binnenterrein wel gegeven, waarna een nieuwe afweging gemaakt wordt of er sprake is van een gebouw dan wel een bebouwd oppervlak.</p>
+  <p>Een open gedeelte binnen bebouwing (waarbij loopgangen buiten beschouwing worden gelaten), niet direct bereikbaar vanaf de openbare weg, kleiner dan ongeveer 1000 m² wordt niet opgenomen. Deze regel geldt echter niet voor boerderijen met ommuurde binnenplaats zoals deze in Limburg voorkomen.</p>
+  <p>Het al dan niet aangegeven van een gebouw is afhankelijk van de omgeving waarin dit gebouw staat. In een gebied met weinig bebouwing wordt elk gebouw aangegeven (vanwege de oriënterende waarde).</p>
+  <p>In een gebied met drukke bebouwing worden gebouwen kleiner dan 50 m² achter de eerste rij gebouwen gezien vanaf de ontsluitingsweg niet opgenomen.</p>
+  <p>Boothuizen worden als gebouw ingewonnen.</p>
+  <p>Op een volkstuincomplex worden de gebouwen gegeneraliseerd weergegeven.</p>
+  <p>Een kas wordt aangegeven als een gebouw van het type kas, warenhuis, indien groter dan 200 m².</p>
+  <p>Hooibergen worden niet opgenomen. Echter wordt een carport, al dan niet vrijstaand, wel opgenomen.</p>
+  <p>Bij een steeg (nauwe straat binnen bebouwd gebied, smaller dan 2 meter) wordt de weg als vlak i.p.v. als lijn ingewonnen en worden de gebouwen vertekend opgenomen.</p>
+  <p>De torens van een stormvloedkering worden als gebouw ingewonnen.</p>
+  <p>Een tribune die een geheel vormt met de bebouwing wordt als gebouw ingewonnen.</p>
+  <p>Voor bestaande bebouwing gelden, in tegenstelling tot nieuw in te winnen gebouwen, afwijkende inwinregels. Kleinere mutaties in de vorm van het gebouw, zoals een aanbouw of carport, worden bij de actualisering genegeerd. Deze regel is geïntroduceerd vanwege het gebruik van de TOP10NL gebouwen door het CBS en nu nog actief vanwege de komst van de BAG als bron voor de gebouwen in TOP10NL.</p>
+  <p>Drijvende bebouwing met het voorkomen van een huis en met een permanente (flexibele) verankering (waterwoning) wordt aangegeven als normale bebouwing. Het onderliggende waterdeel wordt overkluisd gegeven. Woonboten worden, ongeacht de verschijningsvorm, niet aangegeven.</p>
+  <p>Loopstallen ten behoeve van stalling van rundvee (ook wel ligboxenstal genoemd), zowel voorkomend met een open als een gesloten (dak)constructie worden als gebouw ingewonnen.</p>
+  <p>Op een volkstuincomplex worden de gebouwen gegeneraliseerd weergegeven.</p>
+</section>"""^^rdf:HTML.
+
+  brt:GebouwRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Gebouw">gebouw</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Gebouw registratie"@nl.
+
+
+  brt:GeografischGebied
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#711-objectklasse-geografisch-gebied"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Begrensd en benoemd gebied dat door een geografische eenheid beschreven wordt."@nl;
+    skos:prefLabel "Geografisch gebied"@nl.
+
+  brt:GeografischGebiedRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/GeografischGebied">geografisch gebied</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Geografisch gebied registratie"@nl.
+
+
+  brt:Hoogte
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#79-objectklasse-hoogte"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Virtuele objecten met informatie over de hoogte van het terrein of de diepte van het water."@nl;
+    skos:prefLabel "Hoogte"@nl.
+
+  brt:HoogteRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Hoogte">hoogte</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Hoogte registratie"@nl.
+
+
+  brt:Inrichtingselement
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#77-objectklasse-inrichtingselement"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Ruimtelijk object, punt of lijnvormig, al dan niet ter detaillering dan wel ter inrichting van de overige benoemde ruimtelijke objecten of een ander inrichtingselement."@nl;
+    skos:prefLabel "Inrichtingselement"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Inrichtingspunten met een negatief hoogteniveau worden niet ingewonnen.</p>
+</section>"""^^rdf:HTML.
+
+  brt:InrichtingselementRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Inrichtingselement">inrichtingselement</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Inrichtingselement registratie"@nl.
+
+
+  brt:Object
+    owl:unionOf
+      ( brt:FunctioneelGebied
+        brt:Gebouw
+        brt:GeografischGebied
+        brt:Hoogte
+        brt:Inrichtingselement
+        brt:Plaats
+        brt:Plantopografie
+        brt:RegistratiefGebied
+        brt:Reliëf
+        brt:Spoorbaandeel
+        brt:Terrein
+        brt:Waterdeel
+        brt:Wegdeel );
+    rdfs:seeAlso "http://brt.basisregistraties.overheid.nl/id/begrip/Top10nlObject"^^xsd:anyURI;
+    rdfs:subclassOf nen3610:GeoObject;
+    skos:definition "De gemeenschappelijke eigenschappen van een TOP10NL object."@nl;
+    skos:prefLabel "Top10nl Object"@nl;
+    skos:scopeNote "De abstracte klasse _Top10nlObject heeft alle attributen die TOP10NL objecten gemeenschappelijk hebben, zoals identificatie."@nl.
+
+  brt:ObjectRegistratie
+    owl:unionOf
+      ( brt:FunctioneelGebiedRegistratie
+        brt:GebouwRegistratie
+        brt:GeografischGebiedRegistratie
+        brt:HoogteRegistratie
+        brt:InrichtingselementRegistratie
+        brt:PlaatsRegistratie
+        brt:PlantopografieRegistratie
+        brt:RegistratiefGebiedRegistratie
+        brt:ReliëfRegistratie
+        brt:SpoorbaandeelRegistratie
+        brt:TerreinRegistratie
+        brt:WaterdeelRegistratie
+        brt:WegdeelRegistratie );
+    rdfs:subClassOf foaf:Document;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Object">Top10nl object</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Top10nl object registratie"@nl.
+
+
+  brt:Plaats
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#712-objectklasse-plaats"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Geografisch gebied gekenmerkt door een concentratie van gebouwen gebruikt voor wonen en werken."@nl;
+    skos:prefLabel "Plaats"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>De objectklasse plaats bestaat uit de topografische bebouwde kommen en hun onderverdelingen.</p>
+  <p>Een topografische bebouwde kom is een plaatsvlak dat, gebaseerd op de locatie van de plaatsnaamborden langs de toegangswegen, de kern van de bebouwing van een plaats omvat, alsmede de daarbij behorende ruimtegebruiksfuncties (zoals wegen, volkstuinen, sportterreinen, begraafplaatsen en bedrijventerreinen), en is afgebakend volgens zichtbare topografische grenslijnen in het landschap (zoals een sloot, de bosrand of de berm van een weg). Het vlak is voorzien van een typering, de naam of namen van de plaats, het aantal inwoners binnen het vlak, en de status van de plaats als bebouwde kom voor de Wegenverkeerswet en als woonplaats in de Basisregistraties Adressen en Gebouwen (BAG).</p>
+  <p>De volgende topografische elementen maken deel uit van het vlak van een topografische bebouwde kom:</p>
+  <ul>
+    <li>Alle aaneengesloten bebouwing inclusief erven. Bebouwing buiten een bebouwingskern die alleen bereikbaar is vanuit de bebouwde kom en waar niet met plaatsnaamborden is aangegeven dat de bebouwing buiten de bebouwde kom ligt, alsmede bedrijventerreinen aan de rand van een plaats vallen ook binnen het vlak.</li>
+    <li>Alle wegen tussen de bebouwing, met uitzondering van doorgaande wegen zonder erftoegangen die doorlopen buiten de bebouwingskern, vanaf de laatste kruising met een andere weg met erftoegangen binnen de bebouwingskern.</li>
+    <li>Alle wegen aan de rand van de bebouwing die vallen binnen de bebouwde kom volgens de Wegenverkeerswet, met uitzondering van doorgaande wegen zoals hierboven beschreven.</li>
+    <li>Alle plantsoenen en parken tussen en aan de rand van de bebouwing.</li>
+    <li>Alle waterlopen tussen de bebouwing, met uitzondering van waterlopen die doorlopen buiten de bebouwingskern en breder zijn dan zes meter ter hoogte van de buitenrand van de bebouwingskern, vanaf de laatste kruising met een brug of een tunnel binnen de bebouwingskern.</li>
+    <li>Alle sportterreinen en trapveldjes die tussen of aan de rand van de bebouwing gelegen zijn, met uitzondering van buiten de bebouwingskern gelegen golfterreinen.</li>
+    <li>Alle begraafplaatsen die tussen of aan de rand van de bebouwing gelegen zijn.</li>
+    <li>Alle volkstuinen die tussen of aan de rand van de bebouwing gelegen zijn.</li>
+    <li>Alle terreinen tussen of aan de rand van de bebouwing waarop een van de bovenstaande elementen wordt aangelegd of ontwikkeld, zoals nieuwbouwwijken of bedrijventerreinen in aanleg.</li>
+    <li>Alle andere topografische elementen die omsloten worden door een van de bovenstaande elementen, met uitzondering van landbouwgebied.</li>
+    <li>De plaatsvlakken van type buurtschap volgen bovenstaande regels niet. Hun vlakgrens is zo bepaald, dat in ieder geval alle bebouwing die tot het buurtschap behoort binnen het vlak valt. Voor het overige houdt de begrenzing van de buurtschappen weinig rekening met de onderliggende topografie en is daarmee veel minder nauwkeurig dan die van de andere topografische bebouwde kommen. Dit past bij het ‘vage’ karakter van de meeste buurtschapgrenzen en is vergelijkbaar met de begrenzing van veel geografische gebieden. Een buurtschap overlapt echter niet met topografische bebouwde kommen van een ander type.</li>
+  </ul>
+</section>"""^^rdf:HTML.
+
+  brt:PlaatsRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Plaats">plaats</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Plaats registratie"@nl.
+
+
+  brt:Plantopografie
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#714-objectklasse-plantopografie"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Ruimtelijk object dat wel gepland is, maar nog niet in uitvoering is; meestal een groot infrastructureel object."@nl;
+    skos:prefLabel "Plantopografie"@nl.
+
+  brt:PlantopografieRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Plantopografie">plantotografie</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Plantopografie registratie"@nl.
+
+
+  brt:RegistratiefGebied
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#710-objectklasse-registratief-gebied"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Op basis van wet- en regelgeving afgebakend gebied dat als eenheid geldt van politieke/bestuurlijke verantwoordelijkheid of voor bedrijfsvoering."@nl;
+    skos:prefLabel "Registratief gebied"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>De grenzen uit de BRK (Basisregistratie Kadaster) zijn de bron voor de objecten in de objectklasse Registratief gebied. Deze grenzen worden gegeneraliseerd opgenomen in TOP10NL, waarbij een gemeentegrens in TOP10NL zo veel mogelijk de objecten in TOP10NL volgt.</p>
+  <p>De provincies zijn een samenvoeging van de gemeenten die behoren tot deze provincie.</p>
+  <p>Het land “Nederland” is een samenvoeging van alle provincies.</p>
+  <p>Voor de twaalfmijlszone zijn de “Grenzen territoriale zee” van de Dienst der Hydrografie de bron. Ook deze begrenzing is gegeneraliseerd opgenomen in TOP10NL.</p>
+</section>"""^^rdf:HTML.
+
+  brt:RegistratiefGebiedRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/RegistratiefGebied">registratief gebied</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Registratief gebied registratie"@nl.
+
+
+  brt:Reliëf
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#78-objectklasse-reli%C3%ABf"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Object dat tot doel heeft hoogteverschillen in het landschap te representeren."@nl;
+    skos:prefLabel "Reliëf"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>“Talud, hoogteverschil” en “steile rand, aardrand” worden met twee lijnen opgeslagen: een lijn voor de hoge zijde en een lijn voor de lage zijde. De andere geo-objecten worden met een enkele lijn opgeslagen.</p>
+</section>"""^^rdf:HTML.
+
+  brt:ReliëfRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Reliëf">reliëf</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Reliëf registratie"@nl.
+
+
+  brt:Spoorbaandeel
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#73-objectklasse-spoorbaandeel"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Kleinste functioneel onafhankelijk stukje spoorbaan met gelijkblijvende, homogene eigenschappen en relaties dat er binnen een spoorwegnet wordt onderscheiden."@nl;
+    skos:prefLabel "Spoorbaandeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>De hartlijnen worden opgenomen. Op het rangeergedeelte van een emplacement worden de buitenste sporen op de juiste plaats aangegeven, waarna de ruimte tussen het doorgaande spoor en het buitenste spoor wordt opgevuld met spoorbaandelen zonder wissels (kruisingen).</p>
+</section>"""^^rdf:HTML.
+
+  brt:SpoorbaandeelRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Spoorbaandeel">spoorbaandeel</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Spoorbaandeel registratie"@nl.
+
+
+  brt:Terrein
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#76-objectklasse-terrein"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Zichtbaar begrensd stuk grond, niet zijnde een van de andere opdelende ruimtelijke objecten (wegdeel of waterdeel)."@nl;
+    skos:prefLabel "Terrein"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Voor terreinen begrensd door uitsluitend harde topografie (zoals wegdelen, spoorbaandelen, waterdelen en enkele inrichtingselementen) geldt geen minimummaat. Voor terreinen niet geheel begrensd door harde topografie is de minimumoppervlakte 1000 m². Voor eilanden (land omgeven door water): minimumoppervlakte 50 m².</p>
+  <p>Een berm smaller dan 6 meter en zonder talud en zonder brede houtrand wordt niet als terrein opgenomen als de berm begrensd wordt door een waterloop, bebouwing, bebouwd oppervlak of een weg. Een berm met talud wordt ongeacht de breedte als terrein met reliëf opgenomen. Het niet berijdbare middenvlak van een rotonde wordt, ongeacht de grootte, aangegeven.</p>
+  <p>Voor het bijhouden van het attribuut type_landgebruik wordt gebruik gemaakt van een externe bron. Voor agrarische percelen wordt hiervoor gebruik gemaakt van de Basisregistratie Gewaspercelen (BRP) van RVO. Het soort gewas dat een perceeleigenaar opgeeft in de BRP is bepalend voor het invullen van het juiste type_landgebruik in TOP10NL.</p>
+</section>"""^^rdf:HTML.
+
+  brt:TerreinRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Terrein">terrein</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Terrein registratie"@nl.
+
+
+  brt:Waterdeel
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#74-objectklasse-waterdeel"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Kleinste functioneel onafhankelijk stukje water met gelijkblijvende, homogene eigenschappen en relaties dat er binnen een water wordt onderscheiden."@nl;
+    skos:prefLabel "Waterdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Maximum breedte voor lijnvormige waterdelen: 6 meter.</p>
+  <p>Minimum oppervlakte voor vlakvormige waterdelen: 50 m².</p>
+  <p>Een vlakvormig waterdeel (zee of meer, plas, ven, vijver) kan opgesplitst worden in meerdere delen, zodat het aantal punten niet te groot wordt.</p>
+</section>"""^^rdf:HTML.
+
+  brt:WaterdeelRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Waterdeel">waterdeel</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Waterdeel registratie"@nl.
+
+
+  brt:Wegdeel
+    rdfs:seeAlso "https://kadaster.github.io/imbrt/#72-objectklasse-wegdeel"^^xsd:anyURI;
+    rdfs:subClassOf brt:Object;
+    skos:definition "Kleinste functioneel onafhankelijk stukje weg met gelijkblijvende, homogene eigenschappen en relaties voor wegverkeer en vliegverkeer te land. Hieronder wordt het gehele weglichaam begrepen (incl. rijstroken, trottoirs, bermen, etc.)."@nl;
+    skos:prefLabel "Wegdeel"@nl;
+    skos:scopeNote """
+<section lang="nl">
+  <h1>Inwinningscriteria</h1>
+  <p>Een weg smaller dan 2 meter wordt aangegeven als een lijnobject samenvallend met het midden van de weg. Een weg breder dan 2 meter wordt aangegeven als een vlakobject, waarvan de contouren worden aangegeven, samenvallend met de kant van de verharding van een verharde weg c.q. de berijdbare strook van een onverharde weg.</p>
+  <p>Een berm smaller dan 6 meter zonder bebouwing, talud of brede houtrand wordt bij het wegdeel getrokken als de berm begrensd wordt door een waterloop, bebouwd oppervlak of een andere weg (uitgezonderd een rijwielpad smaller dan 2 meter). Een berm met talud wordt ongeacht de breedte als terrein met reliëf opgenomen.</p>
+  <p>Niet-openbare wegen op een circuit, wegen van een kartbaan, tankbanen (niet gelegen in een zandvlakte), wegen op een vliegveld/luchthaven (niet zijnde startbaan, landingsbaan, rolbaan of platform) en wegen op een volkstuincomplex worden opgenomen als wegdeel met als type weg en hoofdverkeersgebruik ‘overig’.</p>
+  <p>Wegen van een crossbaan gelegen in een bos worden altijd opgenomen als wegdeel met als type wegen hoofdverkeersgebruik ‘overig’ en verhardingstype ‘onverhard’. Wegen van een crossbaan buiten een bos worden alleen ingewonnen als de crossbaan meer dan 10.000 m² groot is. Bij andere crossbanen worden de wegen niet opgenomen.</p>
+  <p>Minimumlengte van op- en afritten van een dijk: 100 meter.</p>
+  <p>Er wordt geen verbinding gemaakt tussen wegen die op een erf uitkomen, maar openbare wegen die via het erf lopen worden wel opgenomen.</p>
+  <p>Een weg uitsluitend bestemd voor voetgangers rondom een sportveld wordt niet ingewonnen. Een weg uitsluitend bestemd voor voetgangers als toegangspad of gemeenschappelijk pad rond huizen, huizenrijen, flatgebouwen en dergelijke wordt niet opgenomen.</p>
+  <p>De wegen op een fruitkwekerij worden gegeneraliseerd weergegeven.</p>
+  <p>De toe- en uitrit van een tankstation of verzorgingsplaats wordt altijd opgenomen als lokale weg met een breedte van 4 tot 7 meter.</p>
+  <p>Een trap, hemelsbreed langer dan 100 meter wordt aangegeven als wegdeel met hoofdverkeersgebruik ‘voetgangers’ en breedteklasse ‘< 2 meter’. Een trap, hemelsbreed korter dan 100 meter, wordt niet aangegeven, tenzij het onderdeel is van een voetpad smaller dan 2 meter. Een trap gelegen in een voetgangersgebied wordt niet apart aangegeven.</p>
+  <p>Een steeg (nauwe straat binnen bebouwd gebied, smaller dan 2 meter) wordt als vlak ingewonnen waarbij de aanliggende gebouwen vertekend worden.</p>
+  <p>Een wisselstrook krijgt dezelfde attribuutwaarden als de rest van de weg.</p>
+</section>"""^^rdf:HTML.
+
+  brt:WegdeelRegistratie
+    rdfs:subClassOf brt:ObjectRegistratie;
+    skos:definition """
+<section lang="nl">
+  <p>Een registratie van een <a href="https://brt.basisregistraties.overheid.nl/top10nl/def/Wegdeel">wegdeel</a>.</p>
+</section>"""^^rdf:HTML;
+    skos:prefLabel "Wegdeel registratie"@nl.
+
+}
