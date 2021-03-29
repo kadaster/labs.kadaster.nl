@@ -122,6 +122,34 @@
       "@id": "type",
       "@type": "@id"
     },
+    "typeFunctioneelGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeGebouw": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeGeografischGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeHoogte": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeHoogte/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
     "typeInfrastructuur": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
@@ -131,21 +159,42 @@
     },
     "typeInrichtingselement": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/"
       },
       "@id": "type",
       "@type": "@id"
     }, 
     "typeLandgebruik": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
       },
       "@id": "type",
       "@type": "@id"
-    }, 
+    },
+    "typePlaats": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typePlantopografie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typePlantopografie/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeRegistratiefGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRegistratiefGebied/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
     "typeRelief": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRelief/"
       },
       "@id": "type",
       "@type": "@id"
@@ -159,7 +208,7 @@
     }, 
     "typeWeg": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWeg/"
       },
       "@id": "type",
       "@type": "@id"
