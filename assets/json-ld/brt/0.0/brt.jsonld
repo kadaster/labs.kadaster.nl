@@ -16,7 +16,7 @@
     },
     "brontype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/brontype/"
       },
       "@id": "type",
       "@type": "@id"
@@ -117,14 +117,14 @@
     },
     "tdnCode": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/tdnCode/"
       },
       "@id": "type",
       "@type": "@id"
     },
     "typeInfrastructuur": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
       },
       "@id": "type",
       "@type": "@id"
@@ -152,7 +152,7 @@
     }, 
     "typeWater": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWater/"
       },
       "@id": "type",
       "@type": "@id"
