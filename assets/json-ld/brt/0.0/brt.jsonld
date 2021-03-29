@@ -77,11 +77,11 @@
       "@id": "skos:prefLabel",
       "@language": "nl"
     },
-    "objectBegintijd": {
+    "objectBeginTijd": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
-    "objectEindtijd": {
+    "objectEindTijd": {
       "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
