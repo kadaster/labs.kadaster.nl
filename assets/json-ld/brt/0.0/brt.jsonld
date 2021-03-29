@@ -115,6 +115,55 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
+    "tdnCode": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeInfrastructuur": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
+    "typeInrichtingselement": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    }, 
+    "typeLandgebruik": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    }, 
+    "typeRelief": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    }, 
+    "typeWater": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    }, 
+    "typeWeg": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+      },
+      "@id": "type",
+      "@type": "@id"
+    }, 
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
