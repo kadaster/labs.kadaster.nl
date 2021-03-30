@@ -597,8 +597,8 @@ graph:patronen {
     sh:datatype rdf:langString;#
     sh:languageIn ( "nl" );
     sh:maxCount 1;
-    sh:minLength 1;#
     sh:name "heeft verkorte naam"@nl;
+    sh:nodeKind sh:Literal;#
     sh:path skos:altLabel.
 
 
