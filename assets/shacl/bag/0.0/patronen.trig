@@ -336,7 +336,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 4.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#737-status"^^xsd:anyURI;
-    sh:class bag:StatusNaamgeving;
+    sh:class bag:Status;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
@@ -536,7 +536,7 @@ graph:patronen {
     a sh:PropertyShape;#
     dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#724-status"^^xsd:anyURI;
-    sh:class bag:StatusNaamgeving;
+    sh:class bag:Status;
     sh:in#
       ( status:naamgevingIngetrokken#
         status:naamgevingUitgegeven );#
