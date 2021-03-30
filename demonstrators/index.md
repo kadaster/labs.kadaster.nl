@@ -32,6 +32,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
+  <a href="/demonstrators/pandviewer">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/ld-maps.png">
+      <div class="card-title">Pandviewer</div>
+      <div class="card-description">Zoek zelf in de Pandviewer op locatie, informatie uit de BAG, BGT en BRT.</div>
+    </div>
+  </a>
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -184,6 +192,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/pandviewer">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
+      <div class="card-title">Pandviewer</div>
+      <div class="card-description">Zoek zelf in de Pandviewer op locatie, informatie uit de BAG, BGT en BRT.</div>
     </div>
   </a>
 </div>
