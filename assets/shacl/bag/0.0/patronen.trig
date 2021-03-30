@@ -544,7 +544,7 @@ graph:patronen {
     sh:minCount 1;
     sh:name "heeft status"@nl;#
     sh:nodeKind sh:IRI;#
-    sh:path bag:status;
+    sh:path bag:Status;
     skos:definition "De fase van de levenscyclus van een openbare ruimte waarin de betreffende openbare ruimte zich bevindt."@nl;
     skos:scopeNote "De basisregistratie adressen en gebouwen bevat gegevens over zowel bestaande openbare ruimten als ingetrokken openbare ruimten. Om het onderscheid tussen de stadia in de levenscyclus van de openbare ruimte te kunnen maken, wordt gebruik gemaakt van dit statusgegeven."@nl.
 
