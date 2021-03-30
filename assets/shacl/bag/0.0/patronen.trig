@@ -475,7 +475,7 @@ graph:patronen {
 
   shp:OpenbareRuimteRegistratie_formeleLevensduur
     a sh:PropertyShape;#
-    sh:class foaf:Document;
+    sh:class bag:OpenbareRuimteRegistratie;
     sh:description "Wordt gebruikt om de formele levensduur mee aan de duiden."@nl;
     sh:maxCount 1;
     sh:name "heeft vorige geregistreerde versie"@nl;
