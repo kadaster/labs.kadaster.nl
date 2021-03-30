@@ -1302,7 +1302,7 @@ graph:patronen {
     dct:source "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#712-naam"^^xsd:anyURI;
     sh:datatype rdf:langString;#
-    sh:inLanguage ( "fy" "nl" );
+    sh:languageIn ( "fy" "nl" );
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft naam"@nl;
