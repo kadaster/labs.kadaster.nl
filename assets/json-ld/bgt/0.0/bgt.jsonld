@@ -100,28 +100,28 @@
     },
     "identificatiebagopr": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
       "@id": "bagOpenbareRuimte",
       "@type": "@id"
     },
     "identificatiebagpnd": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/pand/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
       },
       "@id": "bagPand",
       "@type": "@id"
     },
     "identificatiebagvbohoogstehuisnummer": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
       },
       "@id": "bagVerblijfsobject",
       "@type": "@id"
     },
     "identificatiebagvbolaagstehuisnummer": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
       },
       "@id": "bagVerblijfsobject",
       "@type": "@id"
@@ -150,7 +150,7 @@
     "ondersteunendWegdeelOpTalud": "talud",
     "openbareruimtetype": {
       "@context": {
-        "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
       },
       "@id": "openbareRuimteType",
       "@type": "@id"
