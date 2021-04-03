@@ -39,11 +39,11 @@
       "@type": "@id"
     },
     "data": "@nest",
-    "eindregistratie": {
+    "eindRegistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "tijdstipregistratie": {
+    "tijdstipRegistratie": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
@@ -77,6 +77,10 @@
       "@type": "geo:wktLiteral"
     },
     "geometrie_vlak": {
+      "@id": "geometrie",
+      "@type": "geo:wktLiteral"
+    },
+    "geometrie": {
       "@id": "geometrie",
       "@type": "geo:wktLiteral"
     },
@@ -122,28 +126,28 @@
       "@id": "bagVerblijfsobject",
       "@type": "@id"
     },
-    "inonderzoek": {
+    "inOnderzoek": {
       "@id": "onderzoek",
       "@type": "xsd:boolean"
     },
-    "lokaalid": "nen3610:lokaalID",
-    "lv_publicatiedatum": {
+    "lokaalID": "nen3610:lokaalID",
+    "LV_publicatiedatum": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "objectbegintijd": {
+    "objectBeginTijd": {
       "@id": "objectBegintijd",
       "@type": "xsd:date"
     },
-    "objecteindtijd": {
+    "objectEindTijd": {
       "@id": "objectEindtijd",
       "@type": "xsd:date"
     },
     "ogc_fid": null,
-    "onbegroeidterreindeeloptalud": "talud",
-    "ondersteunendwegdeeloptalud": "talud",
+    "onbegroeidTerreindeelOpTalud": "talud",
+    "ondersteunendWegdeelOpTalud": "talud",
     "openbareruimtetype": {
       "@context": {
         "@base": "http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
@@ -195,7 +199,7 @@
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/"
       }
     },
-    "relatievehoogteligging": {
+    "relatieveHoogteligging": {
       "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
@@ -207,7 +211,7 @@
       "@id": "typeOverbruggingsdeel",
       "@type": "@id"
     },
-    "wegdeeloptalud": "talud",
+    "wegdeelOpTalud": "talud",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
