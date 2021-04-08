@@ -6,4 +6,4 @@
 
 3. Zorg er voor dat er geen fouten in de JSON staan (geen rode error berichten).
 
-4. Klop op tab "N-Quads" om de linked data te zien.
+4. Klik op tab "N-Quads" om de linked data te zien.
