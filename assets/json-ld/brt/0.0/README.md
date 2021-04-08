@@ -20,17 +20,17 @@
 
 Voorbeelden van alle features:
 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/functioneelgebied/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/geografischgebied/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/hoogte/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/inrichtingselement/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/plaats/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/plantopografie/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/registratiefgebied/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/relief/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/spoorbaandeel/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/relief/1/2 
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/terrein/1/2
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/waterdeel/1/2
-curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/wegdeel/1/2
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/functioneelgebied/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/geografischgebied/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/hoogte/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/inrichtingselement/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/plaats/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/plantopografie/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/registratiefgebied/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/relief/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/spoorbaandeel/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/relief/1/2 
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/terrein/1/2
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/waterdeel/1/2
+- curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/wegdeel/1/2
