@@ -11,9 +11,11 @@
 
 # Met Ontwikkel VPN
 
-1. Vanaf CMD of POWERSHELL doe bijvoorbeeld:  curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 
+1. Vanaf CMD of POWERSHELL doe bijvoorbeeld:  
+     - curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 
 
-2. Opslaan in file: curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 -o gebouw.nq
+2. Opslaan in file: 
+     - curl -H "accept: application/nquads"  http://dba-graphql.so.kadaster.nl:8070/enhancer/brt/gebouw/1/2 -o gebouw.nq
 
 3. Dan de file uploaden naar de triple store
 
