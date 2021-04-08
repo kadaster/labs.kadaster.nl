@@ -47,6 +47,7 @@
       "@id": "dct:identifier"
     },
     "eindRegistratie": {
+      "@id": "prov:invalidatedAtTime",
       "@type": "xsd:date"
     },
     "elektrificatie": {
@@ -120,21 +121,19 @@
       "@type": "@id"
     },
     "naam": {
-      "@id": "skos:altLabel",
-      "__language": "frr nl"
+      "@id": "skos:altLabel"
     },
     "naamOfficieel": {
-      "@id": "skos:prefLabel",
-      "__language": "nl"
+      "@id": "skos:prefLabel"
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectBeginTijd": {
-      "__id": "nen3610:beginGeldigheid",
+      "id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
     "objectEindTijd": {
-      "__id": "nen3610:einGeldigheid",
+      "id": "nen3610:einGeldigheid",
       "@type": "xsd:date"
     },
     "oorspronkelijkbouwjaar": {
@@ -174,7 +173,7 @@
       "@type": "xsd:positiveInteger"
     },
     "tijdstipRegistratie": {
-      "__id": "prov:invalidatedAtTime",
+      "@id": "prov:generatedAtTime",
       "@type": "xsd:date"
     },
     "typeFunctioneelGebied": {
