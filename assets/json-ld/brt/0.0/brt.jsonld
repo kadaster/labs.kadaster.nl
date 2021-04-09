@@ -116,6 +116,9 @@
       "@type": "@id"
     },
     "inonderzoek": null,
+    "isBagNaam": {
+      "@type": "xsd:boolean"
+    },
     "isBagWoonplaats": {
       "@type": "xsd:boolean"
     },
