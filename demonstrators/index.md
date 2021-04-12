@@ -24,7 +24,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
   </a>
-  <a href="/demonstrators/sparklis/osparklis.html">
+  <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/sparklis.png">
