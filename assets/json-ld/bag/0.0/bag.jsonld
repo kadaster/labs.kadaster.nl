@@ -183,7 +183,7 @@
       "@type": "xsd:dateTime"
     },
     "typeRegistratie": null,
-    "value": "nen3610:value",
+    "value": "rdf:value",
     "verblijfsobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
