@@ -54,7 +54,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Kaart Amsterdam met markers">
       <div class="card-title">R Shiny Dashboard</div>
-      <div class="card-description">Bekijk de resultaten van dit voorspellend model ook in een interactief dashboard!</div>
+      <div class="card-description">Bekijk de resultaten van een voorspellend model over de missende bouwjaren uit de BAG in een interactief dashboard!</div>
     </div>
   </a>
 </div>
