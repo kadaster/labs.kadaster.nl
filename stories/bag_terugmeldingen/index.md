@@ -7,7 +7,7 @@ title: Bag terugmeldingen story
 
 <p>Via verschillenden kanalen (BAG viewer, verbeterdekaart.nl en OpenStreetMap) worden op dit moment jaarlijks ruim 10.000 terugmeldingen gedaan op de BAG (2019, 2020). Terugmeldingen kunnen worden gedaan door burgers, bedrijven en overheden. In vrijwel alle meldingen is in een "vrij tekstveld" aanvullende informatie over de terugmeldingen meegegeven. Vanuit het BAG team kregen wij de vraag of wij uit deze "vrije tekstvelden" data waardevolle inzichten konden bieden over de terugmelding. Om dit te realiseren hebben wij een export (csv bestand) van de data ontvangen vanuit het terugmeldsysteem. In onderstaande figuur is de verhouding van de terugkoppelingen per kanaal te zien.</p>
 
-![terugmeldingen](/assets/images/bag_resultaten1.jpg)
+![terugmeldingen](/assets/images/BAG_resultaten1.jpg)
 
 <h1>Het doel</h1>
 
