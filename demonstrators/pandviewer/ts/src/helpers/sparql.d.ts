@@ -43,4 +43,6 @@ export declare type BindingValue = {
     value: string;
 };
 export declare function queryResourcesDescriptions(lat: string, lng: string, iris: string[]): Promise<SingleObject[]>;
+export declare function searchResourcesDescriptions(postcode: string, housenumber: string, iris: string[]): Promise<SingleObject[]>;
 export declare function runQuery(lat: string, long: string): Promise<SparqlResults>;
+export declare function searchQuery(postcode: string, housenumber: string): Promise<SparqlResults>;
