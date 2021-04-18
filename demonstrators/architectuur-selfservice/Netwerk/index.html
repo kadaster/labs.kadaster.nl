@@ -14,7 +14,7 @@
     
     
       
-        <title>Overzicht - Self-Service GIS platform Architectuur</title>
+        <title>Netwerk - Self-Service GIS platform Architectuur</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#solution-architecture" class="md-skip">
+        <a href="#netwerk" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overzicht
+              Netwerk
             
           </span>
         </div>
@@ -185,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../Architecture/" class="md-tabs__link md-tabs__link--active">
         Data
       </a>
     </li>
@@ -367,56 +367,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Overzicht
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Architecture/" class="md-nav__link">
         Overzicht
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#architectuur" class="md-nav__link">
-    Architectuur
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernprincipes" class="md-nav__link">
-    Kernprincipes
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -496,11 +451,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Netwerk/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Netwerk
       </a>
+      
     </li>
   
 
@@ -703,28 +667,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#architectuur" class="md-nav__link">
-    Architectuur
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernprincipes" class="md-nav__link">
-    Kernprincipes
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -735,28 +677,16 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadaster-it/datascience-architecture-selfservice/edit/master/docs/Architecture.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/kadaster-it/datascience-architecture-selfservice/edit/master/docs/Netwerk.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="solution-architecture">Solution Architecture</h1>
-<p>Uiteindelijk streven wij ernaar onze data zo laagdrempelig en integraal mogelijk beschikbaar te stellen. Dat gaat uiteraard niet vanzelf. In zijn totaliteit onderkennen wij een Solution Architecture voor de totale ontsluiting. Deze zullen we hier toelichten.</p>
-<h2 id="architectuur">Architectuur</h2>
-<p><img alt="Solution Architecture" src="../images/solution-acrhitecture.jpg" /></p>
-<p>In de essentie begint onze gedachte bij de data. Hierbij doen we doelbewust geen uitspraken over de specifieke databronnen. De aanpak die wij schetsen is generiek en zal moeten werken voor verschillende soorten data en databronnen. Databronnen benaderbaar met SQL, Linked Data en REST (vanuit de bron) noemen we hier expliciet. Op deze typen bronnen hebben wij eerder succesvol linked data ontsloten. Wij ontsluiten deze bronnen middels GraphQL. (<a href="../GraphQLETL/">zie ook GraphQL-ETL</a>)</p>
-<p>Vanuit deze bronnen maken/hebben wij een Linked Data specifiek model (<a href="../Modelling/">zie ook Modelling</a>) waarheen wij de brondata omzetten. Deze omzetting doen wij met een component wat wij <a href="../Enhancer/">de Enhancer</a> noemen. Het resulterende datamodel representeert vaak een vertaling die dicht op het oorspronkelijke datamodel van de bron ligt en is derhalve herkenbaar voor de dataset-eigenaar. Deze resulterende LD – registraties zijn vaak moeilijk te gebruiken zonder domeinkennis van de specifieke bron en diens datamodel. (<a href="../LinkedData/">zie ook Linked Data</a>).</p>
-<p>Om die reden zetten we de data om naar één of meerdere views (datamodellen) wat dichter bij de wens van de gebruiker zitten. Dit is zichtbaar in de gele laag. (<a href="../KnowledgeGraph/">zie ook Knowledge Graph</a>).</p>
-<p>Uiteindelijk bieden we op basis van standaard services (bijv. REST / ElasticSearch / SPARQL / GraphQL) verschillende stopcontacten waar een gebruiker middels zijn applicatie op kan aansluiten. Hierbij interpreteren we een applicatie als een breed begrip. Zo is de metadata bijvoorbeeld ook gemakkelijk vindbaar voor een zoekmachine als Google. (<a href="../Gebruik/">zie ook Gebruik</a>).</p>
-<h2 id="kernprincipes">Kernprincipes</h2>
-<p>Om tot deze solution architecture te komen zijn een aantal kernprincipes van belang die relevant zijn geweest in de totstandkoming. Deze principes zijn:</p>
-<ul>
-<li>Data komt zo dicht mogelijk <strong>bij de bron</strong> weg. Enkel noodzakelijke kopieën worden gebruikt.</li>
-<li><strong>Data lineage</strong> is van essentieel belang. Het moet bij alle data herkenbaar zijn waar deze zijn oorsprong vindt.</li>
-<li>De <strong>Data Governance</strong> is duidelijk. Ieder tussenproduct van de data heeft een duidelijke eigenaar.</li>
-<li><strong>Tussenproducten</strong> in de architectuur dienen allemaal een <strong>doel</strong>. Data wordt niet onnodig ontsloten.</li>
-<li>Data is rijk aan <strong>metadata</strong> en <strong>semantiek</strong>. Dit is onderdeel van de data die wij ontsluiten.</li>
-</ul>
+                <h1 id="netwerk">Netwerk</h1>
+<p>Omdat we zowel open als gesloten data ontsluiten, hebben we beveiliging in zones geimplementeerd. Zo hebben we een zone in Azure staan waar alle open data kan worden ontsloten en een zone binnen het Kadaster waar alleen met behulp van identificerende authenticatie toegang mogelijk is. Voor meer informatie over verbinden met gesloten data, zie <a href="/GraphQL/#gebruik-van-gesloten-data">gebruik</a></p>
+<p>Hieronder is een afbeelding met een schematische weergaven van de twee netwerk zones. </p>
+<p><img src="/images/net_security.png" width="600"></p>
+<p>Voor meer informatie over de werking van de afgebeelde lagen, zie <a href="../GraphQLETL/">GraphQL</a></p>
                 
               
               
@@ -774,7 +704,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../Visie/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Pipeline/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -783,19 +713,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Visie
+              Pipeline
             </div>
           </div>
         </a>
       
       
-        <a href="../Brondata/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../Modelling/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Brondata
+              Overzicht
             </div>
           </div>
           <div class="md-footer__button md-icon">
