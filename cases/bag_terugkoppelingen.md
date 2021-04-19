@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: page
 title: Bag terugmeldingen story
 ---
 
