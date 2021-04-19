@@ -20,7 +20,7 @@ Bij het Kadaster zijn wij al enige tijd bezig met het vraagstuk hoe wij de besta
 
 <figure id="figuur-1">
   <a href="/assets/images/hoogover-kg-architectuur.png">
-    <img src="/assets/images/hoogover-kg-architectuur.png" width="80%" alt="Hoog-over architectuur">
+    <img src="/assets/images/hoogover-kg-architectuur.png" width="125%" alt="Hoog-over architectuur">
   </a>
   <figcaption>
     Figuur 1 ― De hoog-over architectuur die wij gebruiken.
