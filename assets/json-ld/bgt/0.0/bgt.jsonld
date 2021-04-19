@@ -107,7 +107,7 @@
     },
     "identificatiebagpnd": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "bagPand",
       "@type": "@id"
