@@ -32,7 +32,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png" alt="BAG terugmeldingen">
-      <div class="card-title">BAG terugkoppelingen tekst analyse</div>
+      <div class="card-title">BAG terugmeldingen tekst analyse</div>
       <div class="card-description">Deze data story geeft een overzicht van de analyse van BAG terugmeldingen die gekwalificeerd zijn door middel van topic -en attribuut extractie. </div>
     </div>
   </a>
