@@ -28,7 +28,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
 
 
 <div class="cards-wrapper">
-  <a href="/cases/bag_terugkoppelingen">
+  <a href="/cases/bag_terugmeldingen">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png" alt="BAG terugmeldingen">
