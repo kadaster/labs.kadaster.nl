@@ -48,6 +48,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
+  <a href="/demonstrators/bagdemonstrator/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Kaart Amsterdam met markers">
+      <div class="card-title">R Shiny Dashboard</div>
+      <div class="card-description">Bekijk de resultaten van een voorspellend model over de missende bouwjaren uit de BAG in een interactief dashboard!</div>
+    </div>
+  </a>
   <a href="/demonstrators/integrale-explorer/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>

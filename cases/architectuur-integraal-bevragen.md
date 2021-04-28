@@ -6,7 +6,7 @@ title: Use Case ― Architectuur rondom integraal bevragen
 
 <script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js"></script>
 <iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="Loki"> 
+  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="Loki">
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
@@ -20,7 +20,7 @@ Bij het Kadaster zijn wij al enige tijd bezig met het vraagstuk hoe wij de besta
 
 <figure id="figuur-1">
   <a href="/assets/images/hoogover-kg-architectuur.png">
-    <img src="/assets/images/hoogover-kg-architectuur.png" width="125%" height="125%" alt="Hoog-over architectuur">
+    <img src="/assets/images/hoogover-kg-architectuur.png" width="80%" alt="Hoog-over architectuur">
   </a>
   <figcaption>
     Figuur 1 ― De hoog-over architectuur die wij gebruiken.
@@ -39,7 +39,7 @@ Uiteindelijk bieden we op basis van standaard services (bijv. REST / ElasticSear
 
 <figure id="figuur-2">
   <a href="/assets/images/ld-treintje.png">
-    <img src="/assets/images/ld-treintje.png" alt="Linked data pipeline">
+    <img src="/assets/images/ld-treintje.png" width="80%" alt="Linked data pipeline">
   </a>
   <figcaption>
     Figuur 2 ― Een beschrijving van de componenten die wij gebruiken om Linked Data te publiceren
@@ -56,7 +56,7 @@ De workflow van dit geheel managen wij met de open-soure tooling van Apache Airf
 
 <figure id="figuur-3">
   <a href="/assets/images/architectuur-ld-views.png">
-    <img src="/assets/images/architectuur-ld-views.png" width="75%" height="75%" alt="Knowledge Graph architectuur">
+    <img src="/assets/images/architectuur-ld-views.png" width="80%" alt="Knowledge Graph architectuur">
   </a>
   <figcaption>
     Figuur 3 ― Een beschrijving van de architectuur hoe wij uiteindelijk naar een laagdrempelige view van de data komen.
@@ -69,7 +69,7 @@ Herleidbaar naar de bron van informatie in de view garanderen wij door gebruik t
 Een voorbeeld van een dergelijke omzetting is zichtbaar in de volgende data story:
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/ld-views">
+  <a href="https://data.labs.kadaster.nl/kkg/-/stories/ld-views">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">

@@ -6,8 +6,14 @@
     "aantalInwoners": {
       "@type": "xsd:positiveInteger"
     },
+    "aantalRijbanen": {
+      "@type": "xsd:positiveInteger"
+    },
     "aantalSporen": {
       "@type": "xsd:positiveInteger"
+    },
+    "bagNaam": {
+      "@type": "xsd:boolean"
     },
     "bagWoonplaats": {
       "@type": "xsd:boolean"
@@ -64,6 +70,9 @@
       "@type": "@id"
     },
     "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
     "geometrieLijn": {
       "@type": "geo:wktLiteral"
     },
@@ -107,6 +116,9 @@
       "@type": "@id"
     },
     "inonderzoek": null,
+    "isBagNaam": {
+      "@type": "xsd:boolean"
+    },
     "isBagWoonplaats": {
       "@type": "xsd:boolean"
     },
@@ -245,6 +257,12 @@
     "typeReliëf": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
+      },
+      "@type": "@id"
+    },
+    "typeRelief": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRelief/"
       },
       "@type": "@id"
     },

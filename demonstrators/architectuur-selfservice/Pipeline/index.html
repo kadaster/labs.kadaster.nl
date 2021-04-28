@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pipeline" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -365,7 +370,19 @@
   
     <li class="md-nav__item">
       <a href="../Architecture/" class="md-nav__link">
-        Overview
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brondata/" class="md-nav__link">
+        Brondata
       </a>
     </li>
   
@@ -429,11 +446,68 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pipeline
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Pipeline
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apache-airflow" class="md-nav__link">
+    Apache Airflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dags-en-tasks" class="md-nav__link">
+    DAGs en Tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microservice" class="md-nav__link">
+    Microservice
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Netwerk/" class="md-nav__link">
+        Netwerk
+      </a>
     </li>
   
 
@@ -474,7 +548,31 @@
   
     <li class="md-nav__item">
       <a href="../Modelling/" class="md-nav__link">
-        Data Modelling
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IRI/" class="md-nav__link">
+        IRI Strategie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics/" class="md-nav__link">
+        Definities
       </a>
     </li>
   
@@ -516,7 +614,7 @@
   
     <li class="md-nav__item">
       <a href="../Gebruik/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -582,7 +680,7 @@
   
     <li class="md-nav__item">
       <a href="../UseCases/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -601,6 +699,51 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apache-airflow" class="md-nav__link">
+    Apache Airflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dags-en-tasks" class="md-nav__link">
+    DAGs en Tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microservice" class="md-nav__link">
+    Microservice
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -611,9 +754,18 @@
                   </a>
                 
                 
-                  <h1>Pipeline</h1>
-                
-                
+                <h1 id="pipeline">Pipeline</h1>
+<p>Gedurende het gehele proces zoals beschreven in de <a href="../Architecture/">Solution Architecture</a> maken we zoveel mogelijk gebruik van herbruikbare componenten en maken we zo min mogelijk maatwerk code. Wel begeleiden we het hele proces in pipeline software. Deze pipeline wordt voor het gehele proces van omzetting van brondata tot en met Linked Data omschreven door de volgende plaat:</p>
+<p><img alt="Architectuur Pipeline" src="../images/pipeline-plaat.jpg" /></p>
+<h2 id="apache-airflow">Apache Airflow</h2>
+<p>We maken voor onze pipeline gebruik van het open-source framework <a href="https://airflow.apache.org/">Apache Airflow</a>. Dit framework gebruikt minimale Python code om zogenoemde Directe Acyclic Graphs (DAGs) te configureren.</p>
+<p><img alt="Logo Airflow" src="../images/airflow-logo.png" /></p>
+<h2 id="dags-en-tasks">DAGs en Tasks</h2>
+<p>Een DAG kan worden ondergesplitst in een aantal taken. Een task beschrijft één stap in het gehele proces van het omzetten van brondata tot een Linked Data bron. (Of andere ETL activiteiten). Vervolgens kunnen deze taken individueel worden gemonitord en opnieuw worden afgetrapt als er een fout ontstaat.</p>
+<p><img alt="DAGs" src="../images/airflow-dag.PNG" /></p>
+<h2 id="microservice">Microservice</h2>
+<p>In de architectuurplaat bovenaan deze pagina wordt omschreven hoe wij onze eerder beschreven componenten hergebruiken om het totale proces vorm te geven. Deze bevat ook een zogenoemde microservice. In de praktijk is dit een Task binnen Airflow, waarin met beperkte code <a href="../Enhancer/">de Enhancer</a> serieel wordt aangesproken en de resultaten als Linked Data wordt verzameld.</p>
+<p>Bij het verzamelen van deze resultaten wordt ook <a href="https://www.w3.org/TR/shacl/">SHACL</a> validatie toegepast. Op deze manier valideren we of de uiteindelijke Linked Data voldoet aan het datamodel wat we origineel gedefiniëerd hebben. Zo voorkomen we fouten in de transformatie.</p>
                 
               
               
@@ -646,13 +798,13 @@
         </a>
       
       
-        <a href="../Modelling/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../Netwerk/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Data Modelling
+              Netwerk
             </div>
           </div>
           <div class="md-footer__button md-icon">

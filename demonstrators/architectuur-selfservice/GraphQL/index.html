@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphql" class="md-skip">
+        <a href="#graphql-verkennen" class="md-skip">
           Skip to content
         </a>
       
@@ -368,7 +368,19 @@
   
     <li class="md-nav__item">
       <a href="../Architecture/" class="md-nav__link">
-        Overview
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brondata/" class="md-nav__link">
+        Brondata
       </a>
     </li>
   
@@ -434,6 +446,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Netwerk/" class="md-nav__link">
+        Netwerk
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -470,7 +494,31 @@
   
     <li class="md-nav__item">
       <a href="../Modelling/" class="md-nav__link">
-        Data Modelling
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IRI/" class="md-nav__link">
+        IRI Strategie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics/" class="md-nav__link">
+        Definities
       </a>
     </li>
   
@@ -514,7 +562,7 @@
   
     <li class="md-nav__item">
       <a href="../Gebruik/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -530,12 +578,57 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GraphQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GraphQL
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphql-verkennen" class="md-nav__link">
+    GraphQL verkennen
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphQL verkennen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graphql-via-rest" class="md-nav__link">
+    GraphQL via REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gebruik-van-gesloten-data" class="md-nav__link">
+    Gebruik van gesloten data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -589,7 +682,7 @@
   
     <li class="md-nav__item">
       <a href="../UseCases/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -616,8 +709,41 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphql-verkennen" class="md-nav__link">
+    GraphQL verkennen
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphQL verkennen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graphql-via-rest" class="md-nav__link">
+    GraphQL via REST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gebruik-van-gesloten-data" class="md-nav__link">
+    Gebruik van gesloten data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -634,7 +760,28 @@
                   </a>
                 
                 
-                <h1 id="graphql">GraphQL</h1>
+                  <h1>GraphQL</h1>
+                
+                <p>Alle individuele openbare bronnen en de gecombineerde knowledge graphs zijn bereikbaar via GraphQL. Ieder endpoint is geconfigureerd met een playground waar exploratie mogelijk is.</p>
+<h2 id="graphql-verkennen">GraphQL verkennen</h2>
+<p>De databronnen die openbaar beschikbaar zijn bieden wij aan op het GraphQL knowledge graph endpoint op onze website: 
+<a href="https://labs.kadaster.nl/gateway">https://labs.kadaster.nl/gateway</a> <br>
+Voor onze technische implementatie van GraphQL (<a href="../GraphQLETL/">zie onze architectuurpagina</a>)</p>
+<p>Voorbeelden van queries staan in de playground beschikbaar.
+Op dit endpoint kunnen gebruikers aansluiten en applicaties ontwikkelen voor de openbaar beschikbare bronnen. Er is verder geen configuratie voor toegang vereist. Let wel dat gebruik op het endpoint gemonitord wordt en dat queries die te complex zijn niet worden uitgevoerd. Ook langlopende queries worden afgebroken.</p>
+<h3 id="graphql-via-rest">GraphQL via REST</h3>
+<p>In applicaties is de GraphQL playground natuurlijk niet geschikt. Hiervoor kan een verzoek gedaan worden met een REST request.
+Hiervoor dient dezelfde URL te worden gehanteerd: <a href="https://labs.kadaster.nl/gateway">https://labs.kadaster.nl/gateway</a> 
+Het is mogelijk om POST requests uit te voeren met in de 'body' een graphql query. Op deze manier is ook mogelijk om te communiceren met het endpoint via applicatie interfaces.</p>
+<h3 id="gebruik-van-gesloten-data">Gebruik van gesloten data</h3>
+<p>Indien er gebruik wordt gemaakt van gesloten (niet openbare) data dient er een ander endpoint te worden gebruikt. Dit endpoint bevind zich binnen de perken van het Kadaster netwerk. Voor gebruik dit endpoint is verdere toestemming en configuratie nodig. Het endpoint bevindt zich in het beveiligde deel van het Kadaster netwerk.
+De werking van de GraphQL service blijft hetzelfde behalve de (mogelijke) toevoeging van een (nog te besluiten) identificatie middel.
+Opties hiervoor zijn:</p>
+<ul>
+<li>JWT (JSON web token)</li>
+<li>Authorisation in de Header</li>
+</ul>
+<p>De configuratie die vereist is voor de toegang tot het endpoint is tweezijdig TLS. Dit stelt de diensten die wij aanbieden in staat om de gebruikers te identificeren. De verbinding is alleen mogelijk als de gebruiker zich identificeert via een certificaat. Voor configuratie, neem contact op met de toegangsdienst van het Kadaster.</p>
                 
               
               
@@ -661,7 +808,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Overview
+              Overzicht
             </div>
           </div>
         </a>
