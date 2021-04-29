@@ -6,11 +6,6 @@ export interface State {
         values: Array<SingleObject>;
     };
     coordinateQuery: CoordinateQuery;
-    searchText: {
-        x: string;
-        y: string;
-        values: Array<SingleObject>;
-    };
     textSearchQuery: TextQuery;
     isFetching: boolean;
     mapClustered: boolean;
@@ -54,13 +49,6 @@ export declare type Action = {
 } | {
     type: "setMapClustered";
     value: boolean;
-} | {
-    type: "textSearch";
-    value: {
-        x: string;
-        y: string;
-        values: Array<SingleObject>;
-    };
 } | {
     type: "zoomChange";
     value: number;
