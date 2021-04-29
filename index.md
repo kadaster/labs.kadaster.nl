@@ -116,6 +116,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
         <div class="card-description">In deze case wordt een voorbeeld gegeven van een Self-Service GIS platform.</div>
       </div>
     </a>
+    <a href="/cases/sparklis">
+      <div class="card">
+        <div class="card-type">Use Case</div>
+        <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
+        <div class="card-title">Sparklis</div>
+        <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
+      </div>
+    </a>
   <a href="/cases/proeftuin">
     <div class="card">
       <div class="card-type">Use Case</div>

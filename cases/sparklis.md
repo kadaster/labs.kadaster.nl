@@ -1,13 +1,12 @@
 ---
-banner: /assets/images/handen.jpg
 layout: page
 title: Sparklis 
 ---
 
 # Use Case: Sparklis 
 
-## Introduction
-Introduction here
+## Introductie
+Sparklis is een query-builder in natuurlijke taal waarmee mensen SPARQL-eindpunten kunnen verkennen en bevragen met alle kracht van SPARQL en zonder enige kennis van SPARQL, noch van het eindpuntvocabulaire. Het is een open-source client-side applicatie ontwikkeld door [Sébastien Ferré](http://people.irisa.fr/Sebastien.Ferre/).
 
 <div class="cards-wrapper">
   <a href="https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
@@ -15,12 +14,12 @@ Introduction here
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
       <div class="card-title">Sparklis</div>
-      <div class="card-description">description.</div>
+      <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-eindpunten kunnen verkennen en doorzoeken.</div>
 	</div>
   </a>
 </div>
 
-## Example queries for Sparklis
+## Voorbeeldquery's voor Sparklis
 
 ### BAG
 1. Buildings given a construct year. <a href="https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=BAG&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&sparklis-query=%5BVId%5DReturn%28Det%28An%281%2CModif%28Select%2CUnordered%29%2CClass%28%22http%3A//bag.basisregistraties.overheid.nl/def/bag%23Pand%22%29%29%2CSome%28Rel%28%22http%3A//bag.basisregistraties.overheid.nl/def/bag%23oorspronkelijkBouwjaar%22%2CFwd%2CDet%28Term%28Number%282020.%2C%222020%22%2C%22http%3A//www.w3.org/2001/XMLSchema%23integer%22%29%29%2CNone%29%29%29%29%29&sparklis-path=DD&max_increment_samples=100"><button>open in Sparklis</button></a>
