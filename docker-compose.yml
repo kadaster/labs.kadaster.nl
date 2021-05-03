@@ -1,7 +1,10 @@
 version: '3.5'
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: kadasterdst.azurecr.io/jekyll-serve:latest
     volumes:
       - .:/site
     ports:
