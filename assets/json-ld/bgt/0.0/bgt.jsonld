@@ -3,7 +3,7 @@
     "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
-    "begroeidterreindeeloptalud": "talud",
+    "begroeidTerreindeelOpTalud": "talud",
     "bgt_functie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
@@ -25,7 +25,7 @@
       "@id": "type",
       "@type": "@id"
     },
-    "bgt_fysiekvoorkomen": {
+    "bgt_fysiekVoorkomen": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
@@ -49,34 +49,11 @@
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geometrie": {
-      "@type": "geo:wktLiteral"
-    },
     "geometrie_kruinlijn": {
       "@id": "geometrie",
       "@type": "geo:wktLiteral"
     },
-    "geometrie_lijn": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
-    "geometrie_multipunt": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
-    "geometrie_multivlak": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
-    "geometrie_nummeraanduiding": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
     "geometrie_punt": {
-      "@id": "geometrie",
-      "@type": "geo:wktLiteral"
-    },
-    "geometrie_vlak": {
       "@id": "geometrie",
       "@type": "geo:wktLiteral"
     },
@@ -178,7 +155,7 @@
       "@id": "plusType",
       "@type": "@id"
     },
-    "plus_fysiekvoorkomen": {
+    "plus_fysiekVoorkomen": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
       },
