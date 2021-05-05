@@ -35,7 +35,7 @@
       "@language": "nl"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "brontype": {
       "@context": {
