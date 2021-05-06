@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: triply/jekyll-serve:20210506
     volumes:
       - .:/site
     ports:
