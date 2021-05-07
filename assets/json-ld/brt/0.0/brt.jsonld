@@ -136,11 +136,11 @@
       "@id": "skos:altLabel"
     },
     "naamNl": {
-      "@id": "skos:prefLabel",
+      "@id": "skos:altLabel",
       "@language": "nl"
     },
     "naamFries": {
-      "@id": "skos:prefLabel",
+      "@id": "skos:altLabel",
       "@language": "frr"
     },
     "naamOfficieel": {
