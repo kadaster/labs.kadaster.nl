@@ -35,7 +35,7 @@
       "@language": "nl"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:float"
+      "@type": "xsd:nonNegativeInteger"
     },
     "brontype": {
       "@context": {
@@ -128,12 +128,20 @@
     "lokaalID": "nen3610:lokaalID",
     "mutatietype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/mutatietype/"
       },
       "@type": "@id"
     },
     "naam": {
       "@id": "skos:altLabel"
+    },
+    "naamNl": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "naamFries": {
+      "@id": "skos:prefLabel",
+      "@language": "frr"
     },
     "naamOfficieel": {
       "@id": "skos:prefLabel"
@@ -190,7 +198,7 @@
     },
     "typeFunctioneelGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeFunctioneelGebied/"
       },
       "@type": "@id"
     },
