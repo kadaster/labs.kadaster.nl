@@ -135,6 +135,9 @@
     "naam": {
       "@id": "skos:altLabel"
     },
+    "naamNl": {
+      "@id": "skos:altLabel"
+    },
     "naamOfficieel": {
       "@id": "skos:prefLabel"
     },
