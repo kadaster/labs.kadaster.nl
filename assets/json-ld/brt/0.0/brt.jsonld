@@ -192,7 +192,7 @@
     },
     "typeFunctioneelGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeFunctioneelGebied/"
       },
       "@type": "@id"
     },
