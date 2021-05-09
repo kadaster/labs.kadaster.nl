@@ -221,6 +221,12 @@
       },
       "@type": "@id"
     },
+    "typeInfrastructuur": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
+      },
+      "@type": "@id"
+    },
     "typeInrichtingselement": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/"
