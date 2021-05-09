@@ -265,7 +265,7 @@
     },
     "typeRelief": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRelief/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
       },
       "@type": "@id"
     },
