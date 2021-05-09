@@ -136,7 +136,8 @@
       "@id": "skos:altLabel"
     },
     "naamNl": {
-      "@id": "skos:prefLabel"
+      "@id": "skos:prefLabel",
+      "@language": "nl"
     },
     "naamOfficieel": {
       "@id": "skos:prefLabel"
