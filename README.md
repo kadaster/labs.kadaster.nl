@@ -12,13 +12,19 @@
    git clone https://github.com/kadaster/labs.kadaster.nl
    ```
 
-2. Run the container in the directory of the repository
+2. Build the container in the directory of the repository
+
+   ```bash
+   docker-compose build
+   ```
+
+3. Run the container in the directory of the repository
 
    ```bash
    docker-compose up
    ```
 
-3. The site now run on <http://localhost:4000>.
+4. The site now run on <http://localhost:4000>.
 
 ## Templates
 
