@@ -1,0 +1,49 @@
+.developerpageIcon{
+    height: 20px; 
+    margin-right: 10px; 
+    float: left;
+}
+.endpointContainer{
+    display: grid;
+    grid-template-columns: 30% 50% 10% 10%;
+    align-items: center;
+    padding: 5px;
+    column-gap: 5px;
+    margin-bottom: 10px;
+}
+.endpointContainer_title{
+    display: flex; 
+    align-items: center;
+}
+.endpointContainer_center{
+    justify-self: center;
+}
+.endpointContainerTitle_image{
+    height: 30px; 
+    margin-right: 10px;
+}
+.endpointContainerTitle_maintext{
+    font-size: 20px; 
+    font-weight: 1000
+}
+.endpointContainerTitle_subtext{
+    font-size: 14px; 
+    font-weight: 400
+}
+@media only screen and (max-width: 900px) {
+    .endpointContainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 5px;
+        column-gap: 5px;
+        margin-bottom: 10px;
+    }
+    .mobileSpan{
+        grid-column: span 2;
+        justify-self: center;
+    }
+    .mobileHidden{
+        display: none;
+    }
+}
