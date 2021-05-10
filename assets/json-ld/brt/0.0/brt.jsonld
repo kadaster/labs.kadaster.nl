@@ -31,8 +31,7 @@
       "@type": "xsd:date"
     },
     "bronbeschrijving": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
+      "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
       "@type": "xsd:nonNegativeInteger"
@@ -107,6 +106,21 @@
       },
       "@type": "@id"
     },
+    "hoogteklasse_GE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
+      },
+      "@type": "@id"
+    },
+    "hoogteklasse_RE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
+      },
+      "@type": "@id"
+    },
+    "hoogteniveau": {
+      "@type": "xsd:positiveInteger"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
@@ -175,7 +189,6 @@
     },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "referentievlak": "???",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "spoorbreedte": {
       "@context": {
@@ -226,6 +239,12 @@
       },
       "@type": "@id"
     },
+    "typeInfrastructuur": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
+      },
+      "@type": "@id"
+    },
     "typeInrichtingselement": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/"
@@ -270,7 +289,7 @@
     },
     "typeRelief": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRelief/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
       },
       "@type": "@id"
     },
