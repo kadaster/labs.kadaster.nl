@@ -15,14 +15,14 @@ introtekst over de verschillende endpoints die Kadaster Datasience team onderhou
 ## Linked Data
 Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeeld de dataset van de Basisregistratie Adressen en Gebouwen (BAG) met andere datasets. Omdat veel informatie via een adres gelinkt kan worden, leent de BAG zich hier goed voor.
 
-Voor meer informatie, kijk bij de <a href="https://labs.kadaster.nl/cases/architectuur-integraal-bevragen">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
+Voor meer informatie, kijk bij de <a href="/cases/architectuur-integraal-bevragen">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
 
 
 <img class="developerpageIcon" src="/assets/images/graphql_icon.svg">
 ## GraphQL
 Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de services die we op onze basisregistraties leveren. De levering van data is vraaggestuurd in plaats van aanbodgestuurd, en daardoor kan de data beter op de gebruiker worden aangeboden. Verschillende datasets kunnen met een administratieve connectie integraal bevraagd worden.
 
-Voor meer informatie, kijk bij de <a href="https://labs.kadaster.nl/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>    
+Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>    
 
 <br/>
 
