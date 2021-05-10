@@ -31,8 +31,7 @@
       "@type": "xsd:date"
     },
     "bronbeschrijving": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
+      "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
       "@type": "xsd:float"
