@@ -48,7 +48,7 @@ brt: {
     sh:maxCount 1;
     sh:minCount 1;
     sh:name "heeft naamgevingsruimte"@nl;
-    sh:pattern "^NL.TOP10NL.";
+    sh:pattern "^NL.TOP10NL$";
     sh:path nen3610:namespace.
 
   shp:Identificatie_value
@@ -58,8 +58,6 @@ brt: {
     sh:minCount 1;
     sh:name "Gecombineerde waarde"@nl;
     sh:path rdf:value.
-
-
 
   shp:FunctioneelGebiedRegistratie
     sh:property
@@ -110,8 +108,6 @@ brt: {
     sh:maxCount 1;
     sh:minCount 1;
     sh:path brt:typeFunctioneelGebied.
-
-
 
   shp:GebouwRegistratie
     sh:property

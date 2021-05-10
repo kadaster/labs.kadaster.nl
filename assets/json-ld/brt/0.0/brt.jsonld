@@ -31,11 +31,10 @@
       "@type": "xsd:date"
     },
     "bronbeschrijving": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
+      "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "brontype": {
       "@context": {
@@ -107,6 +106,9 @@
       },
       "@type": "@id"
     },
+    "hoogteniveau": {
+      "@type": "xsd:positiveInteger"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
@@ -134,6 +136,10 @@
     },
     "naam": {
       "@id": "skos:altLabel"
+    },
+    "naamNl": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
     },
     "naamOfficieel": {
       "@id": "skos:prefLabel"
@@ -167,7 +173,6 @@
     },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "referentievlak": "???",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "spoorbreedte": {
       "@context": {
@@ -190,7 +195,7 @@
     },
     "typeFunctioneelGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeFunctioneelGebied/"
       },
       "@type": "@id"
     },
@@ -215,6 +220,12 @@
     "typeHoogte": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeHoogte/"
+      },
+      "@type": "@id"
+    },
+    "typeInfrastructuur": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
       },
       "@type": "@id"
     },
@@ -262,7 +273,7 @@
     },
     "typeRelief": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRelief/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
       },
       "@type": "@id"
     },

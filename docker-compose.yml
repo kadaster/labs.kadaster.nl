@@ -1,10 +1,7 @@
 version: '3.5'
 services:
   jekyll:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: kadasterdst.azurecr.io/jekyll-serve:latest
+    image: triply/jekyll-serve:20210506
     volumes:
       - .:/site
     ports:
