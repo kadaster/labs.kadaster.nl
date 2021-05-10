@@ -34,7 +34,7 @@
       "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:float"
+      "@type": "xsd:nonNegativeInteger"
     },
     "brontype": {
       "@context": {
@@ -106,6 +106,18 @@
       },
       "@type": "@id"
     },
+    "hoogteklasse_GE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
+      },
+      "@type": "@id"
+    },
+    "hoogteklasse_RE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
+      },
+      "@type": "@id"
+    },
     "hoogteniveau": {
       "@type": "xsd:positiveInteger"
     },
@@ -130,7 +142,7 @@
     "lokaalID": "nen3610:lokaalID",
     "mutatietype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/type/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/mutatietype/"
       },
       "@type": "@id"
     },
@@ -138,8 +150,12 @@
       "@id": "skos:altLabel"
     },
     "naamNl": {
-      "@id": "skos:prefLabel",
+      "@id": "skos:altLabel",
       "@language": "nl"
+    },
+    "naamFries": {
+      "@id": "skos:altLabel",
+      "@language": "frr"
     },
     "naamOfficieel": {
       "@id": "skos:prefLabel"
