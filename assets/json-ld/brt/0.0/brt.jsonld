@@ -118,6 +118,15 @@
       },
       "@type": "@id"
     },
+    "hoogte_GE": {
+      "@type": "xsd:positiveInteger"
+    },
+    "hoogte_HO": {
+      "@type": "xsd:positiveInteger"
+    },
+    "hoogte_IE": {
+      "@type": "xsd:positiveInteger"
+    },
     "hoogteniveau": {
       "@type": "xsd:positiveInteger"
     },
