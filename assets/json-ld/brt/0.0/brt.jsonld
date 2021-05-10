@@ -107,6 +107,9 @@
       },
       "@type": "@id"
     },
+    "hoogteniveau": {
+      "@type": "xsd:positiveInteger"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
