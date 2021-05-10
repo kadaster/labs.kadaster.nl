@@ -106,6 +106,18 @@
       },
       "@type": "@id"
     },
+    "hoogteklasse_GE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
+      },
+      "@type": "@id"
+    },
+    "hoogteklasse_RE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
+      },
+      "@type": "@id"
+    },
     "hoogteniveau": {
       "@type": "xsd:positiveInteger"
     },
