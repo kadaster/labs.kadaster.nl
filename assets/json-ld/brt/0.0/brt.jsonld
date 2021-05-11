@@ -9,9 +9,6 @@
     "aantalRijbanen": {
       "@type": "xsd:positiveInteger"
     },
-    "aantalSporen": {
-      "@type": "xsd:positiveInteger"
-    },
     "bagNaam": {
       "@type": "xsd:boolean"
     },
