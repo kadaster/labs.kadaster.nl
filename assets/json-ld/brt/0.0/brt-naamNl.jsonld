@@ -155,15 +155,12 @@
       },
       "@type": "@id"
     },
-    "naam": {
-      "@id": "skos:altLabel"
-    },
     "naamNl": {
-      "@id": "skos:altLabel",
+      "@id": "skos:prefLabel",
       "@language": "nl"
     },
     "naamFries": {
-      "@id": "skos:altLabel",
+      "@id": "skos:prefLabel",
       "@language": "frr"
     },
     "naamOfficieel": {

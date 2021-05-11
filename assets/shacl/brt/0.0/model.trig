@@ -8419,6 +8419,9 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie_primaryTopic> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie_soortnaam_FG> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie_typeFunctioneelGebied> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_lokaalId> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_namespace> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_value> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronactualiteit> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronbeschrijving> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/FunctioneelGebiedRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronnauwkeurigheid> .
@@ -8531,6 +8534,9 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#description> "\n<section lang=\"nl\">\n  <p>Een registratie van een <a href=\"https://brt.basisregistraties.overheid.nl/brt/def/Inrichtingselement\">inrichtingselement</a>.</p>\n</section>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#ignoredProperties> <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/20096b0e742824e2cee30b76c017b3b5> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#name> "Inrichtingselement registratie"@nl .
+<https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_lokaalId> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_namespace> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie_value> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie_breedte> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie_geometrieLijn> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/InrichtingselementRegistratie_geometriePunt> .
