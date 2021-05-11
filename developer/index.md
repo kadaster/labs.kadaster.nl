@@ -15,7 +15,7 @@ Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegeve
 ## Linked Data
 Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeeld de dataset van de Basisregistratie Adressen en Gebouwen (BAG) met andere datasets. Omdat veel informatie via een adres gelinkt kan worden, leent de BAG zich hier goed voor. De querytaal van Linked Data heet SPARQL.
 
-Voor meer informatie, kijk bij de <a href="/cases/architectuur-integraal-bevragen">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
+Voor meer informatie, kijk bij de <a href="/demonstrators/architectuur-selfservice/">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
 
 Klik <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">hier</a> voor een SPARQL Tutorial en <a href="/dissemination/Kadaster-SPARQL-Webinar.html">hier</a> voor een SPARQL Webinar.
 
