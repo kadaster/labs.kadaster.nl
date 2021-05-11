@@ -4,7 +4,7 @@
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
     "aantalInwoners": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:nonNegativeInteger"
     },
     "aantalRijbanen": {
       "@type": "xsd:positiveInteger"
