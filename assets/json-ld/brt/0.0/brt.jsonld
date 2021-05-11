@@ -260,9 +260,15 @@
       },
       "@type": "@id"
     },
-    "typeInfrastructuur": {
+    "typeInfrastructuur_SP": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurSpoorbaandeel/"
+      },
+      "@type": "@id"
+    },
+    "typeInfrastructuur_WE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurWegdeel/"
       },
       "@type": "@id"
     },
