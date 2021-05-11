@@ -34,7 +34,7 @@
       "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:nonNegativeInteger"
+      "@type": "xsd:float"
     },
     "brontype": {
       "@context": {
@@ -128,7 +128,7 @@
       "@type": "xsd:positiveInteger"
     },
     "hoogteniveau": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:nonPositiveInteger"
     },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
