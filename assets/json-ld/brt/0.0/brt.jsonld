@@ -62,6 +62,18 @@
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
+    "functie_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
+      },
+      "@type": "@id"
+    },
+    "functie_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
+      },
+      "@type": "@id"
+    },
     "gebruiksdoel": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebruiksdoel/"
