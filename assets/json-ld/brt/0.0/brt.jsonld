@@ -216,7 +216,7 @@
     },
     "tijdstipRegistratie": {
       "@id": "prov:generatedAtTime",
-      "@type": "xsd:dateTime"
+      "@type": "xsd:date"
     },
     "typeFunctioneelGebied": {
       "@context": {
