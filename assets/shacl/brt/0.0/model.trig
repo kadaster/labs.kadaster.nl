@@ -7282,7 +7282,6 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#class> <https://brt.basisregistraties.overheid.nl/brt/def/Mutatietype> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#description> "Het soort mutatie dat een object als laatste ondergaan heeft."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#in> <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/e0e7c3783eee22deed8ace6746f33482> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#name> "heeft mutatietype"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> <http://www.w3.org/ns/shacl#path> <https://brt.basisregistraties.overheid.nl/brt/def/mutatietype> .
