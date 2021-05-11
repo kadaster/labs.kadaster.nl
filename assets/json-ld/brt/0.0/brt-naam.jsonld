@@ -1,0 +1,379 @@
+{
+  "@context": {
+    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/",
+    "@version": 1.1,
+    "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
+    "aantalInwoners": {
+      "@type": "xsd:positiveInteger"
+    },
+    "aantalRijbanen": {
+      "@type": "xsd:positiveInteger"
+    },
+    "aantalSporen": {
+      "@type": "xsd:positiveInteger"
+    },
+    "bagNaam": {
+      "@type": "xsd:boolean"
+    },
+    "bagWoonplaats": {
+      "@type": "xsd:boolean"
+    },
+    "breedte": {
+      "@type": "xsd:positiveInteger"
+    },
+    "breedteklasse": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/breedteklasse/"
+      },
+      "@type": "@id"
+    },
+    "bronactualiteit": {
+      "@type": "xsd:date"
+    },
+    "bronbeschrijving": {
+      "@type": "xsd:string"
+    },
+    "bronnauwkeurigheid": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "brontype": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/brontype/"
+      },
+      "@type": "@id"
+    },
+    "data": "@nest",
+    "dct": "http://purl.org/dc/terms/",
+    "documentdatum": {
+      "@id": "dct:created",
+      "@type": "xsd:date"
+    },
+    "documentnummer": {
+      "@id": "dct:identifier"
+    },
+    "eindRegistratie": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:date"
+    },
+    "elektrificatie": {
+      "@type": "xsd:boolean"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geconstateerd": {
+      "@type": "xsd:boolean"
+    },
+    "gebruiksdoel": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebruiksdoel/"
+      },
+      "@type": "@id"
+    },
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geometrie": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrieLijn": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometriePunt": {
+      "@type": "geo:wktLiteral"
+    },
+    "geometrieVlak": {
+      "@type": "geo:wktLiteral"
+    },
+    "gescheidenRijbaan": {
+      "@type": "xsd:boolean"
+    },
+    "getijdeinvloed": {
+      "@type": "xsd:boolean"
+    },
+    "gml_id": null,
+    "hartLijn": {
+      "@type": "geo:wktLiteral"
+    },
+    "hartPunt": {
+      "@type": "geo:wktLiteral"
+    },
+    "hogeZijde": {
+      "@type": "geo:wktLiteral"
+    },
+    "hoofdafwatering": {
+      "@type": "xsd:boolean"
+    },
+    "hoofdverkeersgebruik": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoofdverkeersgebruik/"
+      },
+      "@type": "@id"
+    },
+    "hoogteklasse_GE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
+      },
+      "@type": "@id"
+    },
+    "hoogteklasse_RE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
+      },
+      "@type": "@id"
+    },
+    "hoogte_GE": {
+      "@type": "xsd:positiveInteger"
+    },
+    "hoogte_HO": {
+      "@type": "xsd:positiveInteger"
+    },
+    "hoogte_IE": {
+      "@type": "xsd:positiveInteger"
+    },
+    "hoogteniveau": {
+      "@type": "xsd:positiveInteger"
+    },
+    "Identificatie": "nen3610:Identificatie",
+    "identificatie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/"
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
+    },
+    "inonderzoek": null,
+    "isBagNaam": {
+      "@type": "xsd:boolean"
+    },
+    "isBagWoonplaats": {
+      "@type": "xsd:boolean"
+    },
+    "lageZijde": {
+      "@type": "geo:wktLiteral"
+    },
+    "lokaalID": "nen3610:lokaalID",
+    "mutatietype": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/mutatietype/"
+      },
+      "@type": "@id"
+    },
+    "naam": {
+      "@id": "skos:prefLabel"
+    },
+    "naamNl": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
+    },
+    "naamFries": {
+      "@id": "skos:altLabel",
+      "@language": "frr"
+    },
+    "naamOfficieel": {
+      "@id": "skos:prefLabel"
+    },
+    "namespace": "nen3610:namespace",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "objectBeginTijd": {
+      "@id": "nen3610:beginGeldigheid",
+      "@type": "xsd:date"
+    },
+    "objectEindTijd": {
+      "@id": "nen3610:einGeldigheid",
+      "@type": "xsd:date"
+    },
+    "oorspronkelijkbouwjaar": {
+      "@id": "bouwjaar",
+      "@type": "xsd:gYear"
+    },
+    "openbareruimtenaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "ogc_fid": null,
+    "peilDatum": null,
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "spoorbreedte": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/spoorbreedte/"
+      },
+      "@type": "@id"
+    },
+    "status": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+      },
+      "@type": "@id"
+    },
+    "tdnCode": {
+      "@type": "xsd:positiveInteger"
+    },
+    "tijdstipRegistratie": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "typeFunctioneelGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeFunctioneelGebied/"
+      },
+      "@type": "@id"
+    },
+    "typeGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGebied/"
+      },
+      "@type": "@id"
+    },
+    "typeGebouw": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/"
+      },
+      "@type": "@id"
+    },
+    "typeGeografischGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+      },
+      "@type": "@id"
+    },
+    "typeHoogte": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeHoogte/"
+      },
+      "@type": "@id"
+    },
+    "typeInfrastructuur": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
+      },
+      "@type": "@id"
+    },
+    "typeInrichtingselement": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/"
+      },
+      "@type": "@id"
+    },
+    "typeLandgebruik": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
+      },
+      "@type": "@id"
+    },
+    "typeObject": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeObject/"
+      },
+      "@type": "@id"
+    },
+    "typePlaats": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
+      },
+      "@type": "@id"
+    },
+    "typePlantopografie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typePlantopografie/"
+      },
+      "@type": "@id"
+    },
+    "typeRegistratiefGebied": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRegistratiefGebied/"
+      },
+      "@type": "@id"
+    },
+    "typeReliëf": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
+      },
+      "@type": "@id"
+    },
+    "typeRelief": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
+      },
+      "@type": "@id"
+    },
+    "typeSpoorbaan": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeSpoorbaan/"
+      },
+      "@type": "@id"
+    },
+    "typeWater": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWater/"
+      },
+      "@type": "@id"
+    },
+    "typeWeg": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWeg/"
+      },
+      "@type": "@id"
+    },
+    "vaarwegklasse": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/vaarwegklasse/"
+      },
+      "@type": "@id"
+    },
+    "value": "rdf:value",
+    "verhardingsbreedteklasse": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/verhardingsbreedteklasse/"
+      },
+      "@type": "@id"
+    },
+    "verhardingstype": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/verhardingstype/"
+      },
+      "@type": "@id"
+    },
+    "verkorteopenbareruimtenaam": {
+      "@id": "skos:altLabel",
+      "@language": "nl"
+    },
+    "vervoerfunctie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/vervoerfunctie/"
+      },
+      "@type": "@id"
+    },
+    "visualisatieCode": {
+      "@type": "xsd:positiveInteger"
+    },
+    "voorkomenidentificatie": {
+      "@id": "prov:order",
+      "@type": "xsd:positiveInteger"
+    },
+    "vorigeGeldigeVersie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeldigeVersie",
+      "@type": "@id"
+    },
+    "vorigeGeregistreerdeVersie": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+      },
+      "@id": "nen3610:vorigeGeregistreerdeVersie",
+      "@type": "@id"
+    },
+    "woonplaatsnaam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}
