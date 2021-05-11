@@ -34,7 +34,7 @@
       "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:nonNegativeInteger"
+      "@type": "xsd:float"
     },
     "brontype": {
       "@context": {
