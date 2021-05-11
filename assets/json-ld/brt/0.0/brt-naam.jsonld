@@ -59,6 +59,12 @@
       "@type": "xsd:boolean"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "fysiekVoorkomen_WE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
+      },
+      "@type": "@id"
+    },
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
