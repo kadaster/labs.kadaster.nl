@@ -348,7 +348,7 @@
       },
       "@type": "@id"
     },
-    "Verhardingstype": {
+    "verhardingstype": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/verhardingstype/"
       },
