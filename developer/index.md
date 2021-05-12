@@ -77,6 +77,19 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
 
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">
+        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
+        <div>
+            <div class="endpointContainerTitle_maintext">KG</div>
+            <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
+        </div>
+    </div>
+    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kkg/sdo/sparql/default">https://data.labs.kadaster.nl/kkg/sdo/sparql/default</a></div>
+    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kkg/sdo/sparql/default">Sandbox</a></div>
+</div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">
         <img class="endpointContainerTitle_image" src="/assets/images/graphql_icon.svg">
         <div>
             <div class="endpointContainerTitle_maintext">GraphQL</div>
