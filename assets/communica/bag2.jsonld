@@ -27,6 +27,7 @@
     "status": "https://bag2.basisregistraties.overheid.nl/bag/def/status",
     "geconstateerd": "https://bag2.basisregistraties.overheid.nl/bag/def/geconstateerd",
     "hoofdadres": "https://bag2.basisregistraties.overheid.nl/bag/def/hoofdadres",
+    "hoortbijado": { "@reverse" : "https://bag2.basisregistraties.overheid.nl/bag/def/hoofdadres" },
     "nevenadres": "https://bag2.basisregistraties.overheid.nl/bag/def/nevenadres",
     "bagtype": "https://bag2.basisregistraties.overheid.nl/bag/def/type",
 
