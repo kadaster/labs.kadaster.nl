@@ -26,7 +26,16 @@
     "bagtype": "https://bag2.basisregistraties.overheid.nl/bag/def/type",
 
     "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-    "primaryTopic": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"}
-    "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie",
+    "primaryTopic": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    "registratie": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    
+    "PAND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
+    "NUMMERAANDUIDING": "https://bag2.basisregistraties.overheid.nl/bag/def/NummeraanduidingRegistratie",
+    "OPENBARERUIMTE": "https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimteRegistratie",
+    "WOONPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/WoonplaatsRegistratie",
+    "VERBLIJFSOBJECT": "https://bag2.basisregistraties.overheid.nl/bag/def/VerblijfsobjectRegistratie",
+    "LIGPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/LigplaatsRegistratie",
+    "STANDPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie"
+    
    }
 }
