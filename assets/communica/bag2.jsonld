@@ -9,10 +9,10 @@
     "beginGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#beginGeldigheid",
     "eindGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid",
     "identificatie": "http://definities.geostandaarden.nl/def/nen3610#identificatie",
-    "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
+    "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel" },
     "naam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
     "straatnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
-    "woonplaatsnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language", "nl" },
+    "woonplaatsnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
 
     "maaktdeeluitvan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
     "bouwjaar":  "https://bag2.basisregistraties.overheid.nl/bag/def/bouwjaar",
@@ -29,7 +29,8 @@
     "bagtype": "https://bag2.basisregistraties.overheid.nl/bag/def/type",
 
     "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
-    "primaryTopic": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    "primaryTopic": { "@id": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    "primaryTopicR": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "registratie": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     
     "PAND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
