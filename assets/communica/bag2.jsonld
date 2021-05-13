@@ -10,9 +10,9 @@
     "eindGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid",
     "identificatie": "http://definities.geostandaarden.nl/def/nen3610#identificatie",
     "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
-    "naam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
-    "straatnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
-    "woonplaatsnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
+    "naam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
+    "straatnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
+    "woonplaatsnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language", "nl" },
 
     "maaktdeeluitvan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
     "bouwjaar":  "https://bag2.basisregistraties.overheid.nl/bag/def/bouwjaar",
