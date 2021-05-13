@@ -1,21 +1,32 @@
 {
   "@context": {
     "label": { "@id": "http://www.w3.org/2000/01/rdf-schema#label" },
+    
     "lokaalID": "http://definities.geostandaarden.nl/def/nen3610#lokaalID",
-    "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
-    "maaktdeeluitvan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
-    "postcode":  "https://bag2.basisregistraties.overheid.nl/bag/def/postcode",
-    "huisnummer": "https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer",
-    "huisletter": "https://bag2.basisregistraties.overheid.nl/bag/def/huisletter",
-    "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie",
-    "ligtAan": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtAan",
-    "status": "https://bag2.basisregistraties.overheid.nl/bag/def/status",
-    "geconstateerd": "https://bag2.basisregistraties.overheid.nl/bag/def/geconstateerd",
-    "hoofdadres": "https://bag2.basisregistraties.overheid.nl/bag/def/hoofdadres",
+    "namespace": "http://definities.geostandaarden.nl/def/nen3610#namespace",
+    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    
     "beginGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#beginGeldigheid",
     "eindGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid",
     "identificatie": "http://definities.geostandaarden.nl/def/nen3610#identificatie",
+    "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"},
+    
+    "maaktdeeluitvan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
+    "bouwjaar":  "https://bag2.basisregistraties.overheid.nl/bag/def/bouwjaar",
+    "gebruiksdoel":  "https://bag2.basisregistraties.overheid.nl/bag/def/gebruiksdoel",
+    "postcode":  "https://bag2.basisregistraties.overheid.nl/bag/def/postcode",
+    "huisnummer": "https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer",
+    "huisletter": "https://bag2.basisregistraties.overheid.nl/bag/def/huisletter",
+    "ligtAan": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtAan",
+    "ligtIn": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtIn",
+    "status": "https://bag2.basisregistraties.overheid.nl/bag/def/status",
+    "geconstateerd": "https://bag2.basisregistraties.overheid.nl/bag/def/geconstateerd",
+    "hoofdadres": "https://bag2.basisregistraties.overheid.nl/bag/def/hoofdadres",
+    "nevenadres": "https://bag2.basisregistraties.overheid.nl/bag/def/nevenadres",
+    "bagtype": "https://bag2.basisregistraties.overheid.nl/bag/def/type",
+
     "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
     "primaryTopic": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"}
+    "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie",
    }
 }
