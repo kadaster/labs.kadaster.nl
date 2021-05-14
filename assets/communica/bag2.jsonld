@@ -35,7 +35,7 @@
     "linktnaar": { "@id": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "linktvan": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "primaryTopic": { "@id": "http://xmlns.com/foaf/0.1/primaryTopic"},
-    "primaryTopicR": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    "primaryTopicOf": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "registratie": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     
     "PAND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
