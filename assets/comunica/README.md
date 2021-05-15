@@ -9,9 +9,11 @@ Bij Datasource voeg je het volgende endpoint toe: https://api.labs.kadaster.nl/d
 
 ## Voeg de volgende JSON-LD Context toe
 
+```
 {
   "@context" :  "https://labs.kadaster.nl/assets/comunica/bag2.jsonld"
 }
+```
 
 # Voorbeeld: laat alle nummeraandudingen voor postcode 7339 AB zien
 ```
@@ -19,3 +21,14 @@ Bij Datasource voeg je het volgende endpoint toe: https://api.labs.kadaster.nl/d
      nummeraanduiding(postcode: "7339AB") 
 }
 ```
+
+```
+{
+     nummeraanduiding(postcode: "7339AB΅) {
+         huisnummer
+         huisletter
+         
+     }
+}
+```
+
