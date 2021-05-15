@@ -14,8 +14,8 @@ Bij Datasource voeg je het volgende endpoint toe: https://api.labs.kadaster.nl/d
 }
 
 # Voorbeeld: laat alle nummeraandudingen voor postcode 7339 AB zien
-
+```
 {
-   postcode(\_:"7339AB")
+     nummeraanduiding(postcode: "7339AB") 
 }
- 
+```
