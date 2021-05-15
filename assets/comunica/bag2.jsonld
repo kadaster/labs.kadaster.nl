@@ -4,11 +4,12 @@
     
     "lokaalID": "http://definities.geostandaarden.nl/def/nen3610#lokaalID",
     "namespace": "http://definities.geostandaarden.nl/def/nen3610#namespace",
-    "value": "rdf:value",
+    "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
     
     "beginGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#beginGeldigheid",
     "eindGeldigheid": "http://definities.geostandaarden.nl/def/nen3610#eindGeldigheid",
     "identificatie": "http://definities.geostandaarden.nl/def/nen3610#identificatie",
+    "Identificatie": "http://definities.geostandaarden.nl/def/nen3610#Identificatie",
     "prefLabel":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel" },
     "naam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
     "straatnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
