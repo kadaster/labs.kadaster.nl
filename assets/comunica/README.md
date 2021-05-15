@@ -32,3 +32,13 @@ Bij Datasource voeg je het volgende endpoint toe: https://api.labs.kadaster.nl/d
 }
 ```
 
+```
+{
+     nummeraanduiding(postcode: "7339AB΅) {
+         huisnummer
+         huisletter @optional
+         beginGeldigheid
+     }
+}
+```
+
