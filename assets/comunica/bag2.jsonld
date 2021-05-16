@@ -76,7 +76,11 @@
     "overigeGebruiksFunctie": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/overigeGebruiksFunctie",
     "sportfunctie":        "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/sportfunctie",
     "woonfunctie":         "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/woonfunctie",
-    "winkelfunctie":       "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/winkelfunctie"
-       
+    "winkelfunctie":       "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/winkelfunctie",
+
+    "verblijfsobjectBuitenGebruik" : "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectBuitenGebruik",
+    "verblijfsobjectGevormd" :       "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectGevormd",
+    "verblijfsobjectInGebruik" :     "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectInGebruik",
+    "verblijfsobjectIngetrokken" :   "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken"
    }
 }
