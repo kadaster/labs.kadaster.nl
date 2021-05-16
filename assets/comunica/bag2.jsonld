@@ -43,13 +43,13 @@
     "WPL": "https://bag2.basisregistraties.overheid.nl/bag/def/WoonplaatsRegistratie",
     "VBO": "https://bag2.basisregistraties.overheid.nl/bag/def/VerblijfsobjectRegistratie",
     "LIG": "https://bag2.basisregistraties.overheid.nl/bag/def/LigplaatsRegistratie",
-    "STA": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie"
+    "STA": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie",
     
     "pand": "https://bag2.basisregistraties.overheid.nl/bag/def/Pand",
     "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding",
     "openbareruimte": "https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimte",
     "woonplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats",
-    "verblijfsobject": "https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobjec",
+    "verblijfsobject": "https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject",
     "ligplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Ligplaats",
     "standplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Standplaats"
     
