@@ -41,4 +41,11 @@ Bij Datasource voeg je het volgende endpoint toe: https://api.labs.kadaster.nl/d
      }
 }
 ```
-
+```
+{
+    linktvan(type: VBO, status: verblijfsobjectGevormd) {
+        oppervlakte
+        status
+    }
+} 
+```
