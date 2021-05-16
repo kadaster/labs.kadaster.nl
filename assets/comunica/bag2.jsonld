@@ -15,16 +15,14 @@
     "straatnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
     "woonplaatsnaam":  { "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel", "@language": "nl" },
 
-    "maaktdeeluitvan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
+    "maaktDeelUitVan":  "https://bag2.basisregistraties.overheid.nl/bag/def/maaktDeelUitVan",
     "bouwjaar":  "https://bag2.basisregistraties.overheid.nl/bag/def/bouwjaar",
     "gebruiksdoel":  "https://bag2.basisregistraties.overheid.nl/bag/def/gebruiksdoel",
     "postcode":  "https://bag2.basisregistraties.overheid.nl/bag/def/postcode",
     "huisnummer": "https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer",
     "huisletter": "https://bag2.basisregistraties.overheid.nl/bag/def/huisletter",
-    "openbareruimte": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtAan",
-    "nummeraanduiding": { "@reverse" : "https://bag2.basisregistraties.overheid.nl/bag/def/ligtAan"},
+    "ligtAan": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtAan",
     "ligtIn": "https://bag2.basisregistraties.overheid.nl/bag/def/ligtIn",
-    "woonplaats": { "@reverse" : "https://bag2.basisregistraties.overheid.nl/bag/def/ligtIn"},
     "status": "https://bag2.basisregistraties.overheid.nl/bag/def/status",
     "geconstateerd": "https://bag2.basisregistraties.overheid.nl/bag/def/geconstateerd",
     "hoofdadres": "https://bag2.basisregistraties.overheid.nl/bag/def/hoofdadres",
@@ -39,13 +37,21 @@
     "primaryTopicOf": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "registratie": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     
-    "PAND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
-    "NUMMERAANDUIDING": "https://bag2.basisregistraties.overheid.nl/bag/def/NummeraanduidingRegistratie",
-    "OPENBARERUIMTE": "https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimteRegistratie",
-    "WOONPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/WoonplaatsRegistratie",
-    "VERBLIJFSOBJECT": "https://bag2.basisregistraties.overheid.nl/bag/def/VerblijfsobjectRegistratie",
-    "LIGPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/LigplaatsRegistratie",
-    "STANDPLAATS": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie"
+    "PND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
+    "NUM": "https://bag2.basisregistraties.overheid.nl/bag/def/NummeraanduidingRegistratie",
+    "ORM": "https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimteRegistratie",
+    "WPL": "https://bag2.basisregistraties.overheid.nl/bag/def/WoonplaatsRegistratie",
+    "VBO": "https://bag2.basisregistraties.overheid.nl/bag/def/VerblijfsobjectRegistratie",
+    "LIG": "https://bag2.basisregistraties.overheid.nl/bag/def/LigplaatsRegistratie",
+    "STA": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie"
+    
+    "pand": "https://bag2.basisregistraties.overheid.nl/bag/def/Pand",
+    "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding",
+    "openbareruimte": "https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimte",
+    "woonplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats",
+    "verblijfsobject": "https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobjec",
+    "ligplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Ligplaats",
+    "standplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Standplaats"
     
    }
 }
