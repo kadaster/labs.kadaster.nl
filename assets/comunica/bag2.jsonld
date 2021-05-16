@@ -37,6 +37,7 @@
     "primaryTopic": { "@id": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "primaryTopicOf": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
     "registratie": { "@reverse": "http://xmlns.com/foaf/0.1/primaryTopic"},
+    "subClassOf": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
     
     "PND": "https://bag2.basisregistraties.overheid.nl/bag/def/PandRegistratie",
     "NUM": "https://bag2.basisregistraties.overheid.nl/bag/def/NummeraanduidingRegistratie",
@@ -45,6 +46,7 @@
     "VBO": "https://bag2.basisregistraties.overheid.nl/bag/def/VerblijfsobjectRegistratie",
     "LIG": "https://bag2.basisregistraties.overheid.nl/bag/def/LigplaatsRegistratie",
     "STA": "https://bag2.basisregistraties.overheid.nl/bag/def/StandplaatsRegistratie",
+    "ADO": "https://bag2.basisregistraties.overheid.nl/bag/def/AdresseerbaarObjectRegistratie",
     
     "pand": "https://bag2.basisregistraties.overheid.nl/bag/def/Pand",
     "nummeraanduiding": "https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding",
@@ -52,7 +54,8 @@
     "woonplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats",
     "verblijfsobject": "https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject",
     "ligplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Ligplaats",
-    "standplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Standplaats"
-    
+    "standplaats": "https://bag2.basisregistraties.overheid.nl/bag/def/Standplaats",
+    "adresseerbaarobject": "https://bag2.basisregistraties.overheid.nl/bag/def/AdresseerbaarObject"
+       
    }
 }
