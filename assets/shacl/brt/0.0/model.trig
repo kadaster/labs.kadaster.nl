@@ -6997,7 +6997,6 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#datatype> <http://www.opengis.net/ont/geosparql#wktLiteral> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#description> "De vlakgeometrie van een geografisch gebied object."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#name> "heeft vlakgeometrie"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/GeografischGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#path> <https://brt.basisregistraties.overheid.nl/brt/def/geometrieVlak> .
@@ -7592,7 +7591,6 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#datatype> <http://www.opengis.net/ont/geosparql#wktLiteral> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#description> "De vlakgeometrie van een registratief gebied object."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#name> "heeft vlakgeometrie"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/RegistratiefGebiedRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#path> <https://brt.basisregistraties.overheid.nl/brt/def/geometrieVlak> .
@@ -7960,7 +7958,6 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#datatype> <http://www.opengis.net/ont/geosparql#wktLiteral> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#description> "De vlakgeometrie van een terrein object."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#name> "heeft vlakgeometrie"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/TerreinRegistratie_geometrieVlak> <http://www.w3.org/ns/shacl#path> <https://brt.basisregistraties.overheid.nl/brt/def/geometrieVlak> .
