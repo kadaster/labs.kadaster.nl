@@ -1,4 +1,8 @@
 
+## Resources
+
+https://comunica.github.io/Tutorial-ISWC2019-Slides-GraphQL-LD/#demo
+
 ## Open comunica in browser
 
 Ga naar website http://query.linkeddatafragments.org/
