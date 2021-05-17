@@ -7368,7 +7368,7 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/2000/01/rdf-schema#comment> "Het aantal inwoners dat in een plaats woont."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://brt.basisregistraties.overheid.nl/brt/def/> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/2000/01/rdf-schema#label> "heeft aantal inwoners"@nl .
-<https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/ns/shacl#description> "Het aantal inwoners dat in een plaats woont."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_aantalInwoners> <http://www.w3.org/ns/shacl#name> "heeft aantal inwoners"@nl .
