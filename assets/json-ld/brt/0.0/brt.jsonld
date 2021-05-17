@@ -4,12 +4,9 @@
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
     "aantalInwoners": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:nonNegativeInteger"
     },
     "aantalRijbanen": {
-      "@type": "xsd:positiveInteger"
-    },
-    "aantalSporen": {
       "@type": "xsd:positiveInteger"
     },
     "bagNaam": {
@@ -59,8 +56,38 @@
       "@type": "xsd:boolean"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "fysiekVoorkomen_SP": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenSpoorbaandeel/"
+      },
+      "@type": "@id"
+    },
+    "fysiekVoorkomen_TE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenTerrein/"
+      },
+      "@type": "@id"
+    },
+    "fysiekVoorkomen_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWaterdeel/"
+      },
+      "@type": "@id"
+    },
     "geconstateerd": {
       "@type": "xsd:boolean"
+    },
+    "functie_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
+      },
+      "@type": "@id"
+    },
+    "functie_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
+      },
+      "@type": "@id"
     },
     "gebruiksdoel": {
       "@context": {
@@ -198,6 +225,12 @@
     },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "referentievlak": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/referentievlak/"
+      },
+      "@type": "@id"
+    },
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "spoorbreedte": {
       "@context": {
@@ -248,9 +281,15 @@
       },
       "@type": "@id"
     },
-    "typeInfrastructuur": {
+    "typeInfrastructuur_SP": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuur/"
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurSpoorbaandeel/"
+      },
+      "@type": "@id"
+    },
+    "typeInfrastructuur_WE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurWegdeel/"
       },
       "@type": "@id"
     },
