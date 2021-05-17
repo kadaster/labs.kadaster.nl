@@ -152,13 +152,13 @@
       "@type": "@id"
     },
     "hoogte_GE": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogte_HO": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogte_IE": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogteniveau": {
       "@type": "xsd:nonPositiveInteger"
