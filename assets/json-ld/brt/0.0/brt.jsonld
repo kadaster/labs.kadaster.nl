@@ -9,6 +9,12 @@
     "aantalRijbanen": {
       "@type": "xsd:positiveInteger"
     },
+    "aantalSporen": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/aantalSporen/"
+      },
+      "@type": "@id"
+    },
     "bagNaam": {
       "@type": "xsd:boolean"
     },
