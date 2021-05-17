@@ -7382,7 +7382,6 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#description> "Aanduiding of de naam afkomstig is uit de BAG."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#name> "is BAG woonplaats"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/PlaatsRegistratie_bagWoonplaats> <http://www.w3.org/ns/shacl#path> <https://brt.basisregistraties.overheid.nl/brt/def/bagWoonplaats> .
