@@ -80,6 +80,12 @@
       },
       "@type": "@id"
     },
+    "fysiekVoorkomen_WE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
+      },
+      "@type": "@id"
+    },
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
@@ -152,13 +158,13 @@
       "@type": "@id"
     },
     "hoogte_GE": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogte_HO": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogte_IE": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:float"
     },
     "hoogteniveau": {
       "@type": "xsd:nonPositiveInteger"
@@ -396,6 +402,18 @@
     },
     "visualisatieCode": {
       "@type": "xsd:positiveInteger"
+    },
+    "voorkomen_TE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+      },
+      "@type": "@id"
+    },
+    "voorkomen_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+      },
+      "@type": "@id"
     },
     "voorkomenidentificatie": {
       "@id": "prov:order",
