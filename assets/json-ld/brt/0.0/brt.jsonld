@@ -397,6 +397,18 @@
     "visualisatieCode": {
       "@type": "xsd:positiveInteger"
     },
+    "voorkomen_TE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+      },
+      "@type": "@id"
+    },
+    "voorkomen_WA": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+      },
+      "@type": "@id"
+    },
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
