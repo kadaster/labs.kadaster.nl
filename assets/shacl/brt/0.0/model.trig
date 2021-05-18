@@ -8796,7 +8796,7 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_referentievlak> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_typeHoogte> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Object_identificatie> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#targetClass> <https://brt.basisregistraties.overheid.nl/brt/def/Hoogte> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#targetClass> <https://brt.basisregistraties.overheid.nl/brt/def/HoogteRegistratie> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/2000/01/rdf-schema#comment> "In TOP10NL heeft elk geo-object een identificatiecode, bestaande uit de attributen namespace en lokaalID. Deze attributen geven het geo-object een unieke identiteit."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://brt.basisregistraties.overheid.nl/brt/def/> .
