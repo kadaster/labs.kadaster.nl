@@ -80,6 +80,12 @@
       },
       "@type": "@id"
     },
+    "fysiekVoorkomen_WE": {
+      "@context": {
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
+      },
+      "@type": "@id"
+    },
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
