@@ -8,7 +8,7 @@
     "bag2nummeraanduiding": "@nest",
     "hoofdadresvan": "@nest",
     "maaktdeeluitvan_object":"@nest",
-    "lokaalID": {
+    "_id": {
       "@id" : "geo:sfContains",
       "@type": "@id",
       "@context": {
