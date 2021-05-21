@@ -349,9 +349,6 @@
       },
       "@type": "@id"
     },
-    "visualisatieCode": {
-      "@type": "xsd:positiveInteger"
-    },
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
