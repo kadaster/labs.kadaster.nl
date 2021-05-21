@@ -861,7 +861,7 @@
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/794e5f3da640dcabd2f08dfedb6f63cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/zendmast> .
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/794e5f3da640dcabd2f08dfedb6f63cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/b3e613f30a88fcf56a11e45669027b3b> .
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/794e5f3da640dcabd2f08dfedb6f63cc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/79b1ed9bbfea7381c5799fdd92eaf64b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> .
+<https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/79b1ed9bbfea7381c5799fdd92eaf64b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> .
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/79b1ed9bbfea7381c5799fdd92eaf64b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/97725b607f75cc0c15cf88734d0689a2> .
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/79b1ed9bbfea7381c5799fdd92eaf64b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://brt.basisregistraties.overheid.nl/brt/.well-known/genid/7aa31c2073a100b0b2591d6c9786f5ff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/kas_warenhuis> .
@@ -1778,7 +1778,7 @@
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/inTunnel> .
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opBeweegbaarDeelVanBrug> .
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opKnooppuntverbinding> .
-<https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> .
+<https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> .
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opRotonde> .
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opVastDeelVanBrug> .
 <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> <http://www.w3.org/2004/02/skos/core#member> <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/overkluisd> .
@@ -3755,11 +3755,11 @@
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opKnooppuntverbinding> <http://www.w3.org/2000/01/rdf-schema#label> "op knooppuntverbinding wegdeel"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opKnooppuntverbinding> <http://www.w3.org/2004/02/skos/core#definition> "Deel van een weg gelegen op een verkeersknooppunt van snelwegen."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opKnooppuntverbinding> <http://www.w3.org/2004/02/skos/core#prefLabel> "op knooppuntverbinding wegdeel"@nl .
-<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> .
-<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> <http://www.w3.org/2000/01/rdf-schema#comment> "Deel van weg onderdeel zijnde van een op- of afrit van een autosnelweg of hoofdweg."@nl .
-<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> <http://www.w3.org/2000/01/rdf-schema#label> "op oprit/afrit wegdeel"@nl .
-<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> <http://www.w3.org/2004/02/skos/core#definition> "Deel van weg onderdeel zijnde van een op- of afrit van een autosnelweg of hoofdweg."@nl .
-<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOpritOfAfrit> <http://www.w3.org/2004/02/skos/core#prefLabel> "op oprit/afrit wegdeel"@nl .
+<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> .
+<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> <http://www.w3.org/2000/01/rdf-schema#comment> "Deel van weg onderdeel zijnde van een op- of afrit van een autosnelweg of hoofdweg."@nl .
+<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> <http://www.w3.org/2000/01/rdf-schema#label> "op oprit/afrit wegdeel"@nl .
+<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> <http://www.w3.org/2004/02/skos/core#definition> "Deel van weg onderdeel zijnde van een op- of afrit van een autosnelweg of hoofdweg."@nl .
+<https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opOprit_afrit> <http://www.w3.org/2004/02/skos/core#prefLabel> "op oprit/afrit wegdeel"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opRotonde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://brt.basisregistraties.overheid.nl/brt/def/FysiekVoorkomenWegdeel> .
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opRotonde> <http://www.w3.org/2000/01/rdf-schema#comment> "Deel van weg onderdeel zijnde van een rotonde."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/opRotonde> <http://www.w3.org/2000/01/rdf-schema#label> "op rotonde wegdeel"@nl .
@@ -7849,21 +7849,32 @@
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://purl.org/dc/terms/source> "https://kadaster.github.io/imbrt/#attribuut-geometriepunt-5"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://purl.org/dc/terms/source> "https://kadaster.github.io/imbrt/#attribuut-referentievlak"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/2000/01/rdf-schema#comment> "Virtuele objecten met informatie over de hoogte van het terrein of de diepte van het water."@nl .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/2000/01/rdf-schema#comment> "\n<section lang=\"nl\">\n  <p>Een registratie van een <a href=\"https://brt.basisregistraties.overheid.nl/brt/def/Hoogte\">hoogte</a>.</p>\n</section>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://brt.basisregistraties.overheid.nl/brt/def/> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/2000/01/rdf-schema#label> "Hoogte"@nl .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/2000/01/rdf-schema#label> "Hoogte registratie"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#closed> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#description> "Virtuele objecten met informatie over de hoogte van het terrein of de diepte van het water."@nl .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#description> "\n<section lang=\"nl\">\n  <p>Een registratie van een <a href=\"https://brt.basisregistraties.overheid.nl/brt/def/Hoogte\">hoogte</a>.</p>\n</section>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#ignoredProperties> <https://triplydb.com/generic/model/id/list/20096b0e742824e2cee30b76c017b3b5> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#name> "Hoogte"@nl .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#name> "Hoogte registratie"@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_geometrieLijn> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_geometriePunt> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_hoogte_HO> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_primaryTopic> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_referentievlak> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie_typeHoogte> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/Object_identificatie> .
-<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#targetClass> <https://brt.basisregistraties.overheid.nl/brt/def/Hoogte> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronactualiteit> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronbeschrijving> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_bronnauwkeurigheid> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_brontype> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_mutatietype> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_tdnCode> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/ObjectRegistratie_visualisatieCode> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/beginGeldigheid> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/eindGeldigheid> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/formeleHistorieBegin> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/formeleHistorieEind> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#property> <https://brt.basisregistraties.overheid.nl/brt/shp/formeleLevensduur> .
+<https://brt.basisregistraties.overheid.nl/brt/shp/HoogteRegistratie> <http://www.w3.org/ns/shacl#targetClass> <https://brt.basisregistraties.overheid.nl/brt/def/HoogteRegistratie> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/2000/01/rdf-schema#comment> "In TOP10NL heeft elk geo-object een identificatiecode, bestaande uit de attributen namespace en lokaalID. Deze attributen geven het geo-object een unieke identiteit."@nl .
 <https://brt.basisregistraties.overheid.nl/brt/shp/Identificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://brt.basisregistraties.overheid.nl/brt/def/> .
