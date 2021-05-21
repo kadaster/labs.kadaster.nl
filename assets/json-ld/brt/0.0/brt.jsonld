@@ -403,9 +403,6 @@
       },
       "@type": "@id"
     },
-    "visualisatieCode": {
-      "@type": "xsd:positiveInteger"
-    },
     "voorkomen_TE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
