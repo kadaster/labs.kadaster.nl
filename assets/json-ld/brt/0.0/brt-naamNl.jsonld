@@ -9,6 +9,9 @@
     "aantalRijbanen": {
       "@type": "xsd:positiveInteger"
     },
+    "aantalRijstroken": {
+      "@type": "xsd:positiveInteger"
+    },
     "aantalSporen": {
       "@type": "xsd:positiveInteger"
     },
