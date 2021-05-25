@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebouw/",
+    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/",
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
     "bagPandID": {
