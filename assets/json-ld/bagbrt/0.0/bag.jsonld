@@ -7,7 +7,8 @@
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/" 
       },
-      "@id": "geo:sfOverlaps"
+      "@id": "geo:sfOverlaps",
+      "@type" "@id" 
     },
     "geo": "https://www.opengis.net/ont/geosparql#",
     "data" : "@nest"
