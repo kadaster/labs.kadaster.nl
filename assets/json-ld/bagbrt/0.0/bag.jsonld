@@ -11,6 +11,6 @@
       "@type": "@id" 
     },
     "geo": "https://www.opengis.net/ont/geosparql#",
-    "data" : "@nest"
+    "data": "@nest"
   }
 }
