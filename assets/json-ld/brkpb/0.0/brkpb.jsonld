@@ -1,147 +1,81 @@
 {
   "@context": {
-    "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/registratie/",
+    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
     "@version": 1.1,
-    "@vocab": "https://brkpb.basisregistraties.overheid.nl/brkpb/def/",
-    "bronactualiteit": {
-      "@id": "bronactualiteit",
-      "@type": "xsd:date"
-    },
-    "bronbeschrijving": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
-    },
-    "bronnauwkeurigheid": {
-      "@type": "xsd:positiveInteger"
-    },
-    "brontype": {
+    "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "beeindigd": null,
+    "beperking_identificatie": null,
+    "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "brkpbpubliekrechtelijkebeperkingen": "@nest",
+    "brondocument_domein": null,
+    "brondocument_identificatie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/brontype/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
       },
-      "@id": "type",
+      "@id": "brk:stukdeel",
       "@type": "@id"
-    },   
+    },
+    "code_grondslag": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/grondslag/"
+      },
+      "@id": "grondslag",
+      "@type": "@id"
+    },
+    "code_status_historie": null,
     "data": "@nest",
-    "dct": "http://purl.org/dc/terms/",
-    "documentdatum": {
-      "@id": "dct:created",
-      "@type": "xsd:date"
-    },
-    "documentnummer": {
-      "@id": "dct:identifier"
-    },
-    "eindRegistratie": {
-      "@id": "eindRegistratie",
+    "datum_beeindiging": {
+      "@id": "datumBeeindiging",
       "@type": "xsd:dateTime"
     },
+    "datum_in_werking": {
+      "@id": "datumInWerking",
+      "@type": "xsd:dateTime"
+    },
+    "dct": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "geconstateerd": {
-      "@type": "xsd:boolean"
+    "identificatie": null,
+    "klantnummer": null,
+    "lokaalID": {
+      "@id": "nen3610:lokaalID",
+      "@type": "xsd:string"
     },
-    "gebruiksdoel": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/gebruiksdoel/"
-      },
-      "@id": "gebruiksdoel",
-      "@type": "@id"
-    },
-    "geo": "http://www.opengis.net/ont/geosparql#",
-    "geometrie": {
-      "@type": "geo:wktLiteral"
-    },
-    "gml_id": null,
-    "Identificatie": "nen3610:Identificatie",
-    "identificatie": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/identificatie/"
-      },
-      "@id": "nen3610:identificatie",
-      "@type": "@id"
-    },
-    "inonderzoek": null,
-    "lokaalID": "nen3610:lokaalID",
-    "mutatietype": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/type/"
-      },
-      "@id": "type",
-      "@type": "@id"
-    }, 
+    "naam": "brk:statutaireNaam",
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "oorspronkelijkbouwjaar": {
-      "@id": "bouwjaar",
-      "@type": "xsd:gYear"
-    },
-    "openbareruimtenaam": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
-    },
-    "objectBeginTijd": {
+    "nietnatuurlijkpersoon_identificaite": null,
+    "object_identificatie": "@id",
+    "objectBegintijd": {
       "@id": "nen3610:beginGeldigheid",
-      "@type": "xsd:date"
+      "@type": "xsd:dateTime"
     },
-    "objectEindTijd": {
-      "@id": "nen3610:eindGeldigheid",
-      "@type": "xsd:date"
+    "objectEindtijd": {
+      "@id": "nen3610:einGeldigheid",
+      "@type": "xsd:dateTime"
     },
     "ogc_fid": null,
+    "oin": null,
     "peilDatum": null,
-    "primaryTopic": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/object/"
-      },
-      "@id": "foaf:primaryTopic",
-      "@type": "@id"
-    },
+    "primaryTopic": "foaf:primaryTopic",
     "prov": "http://www.w3.org/ns/prov#",
+    "pubki_identificatie": null,
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "status": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/status/"
-      },
-      "@id": "status",
-      "@type": "@id"
-    },
-    "tijdstipeindregistratielv": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "tijdstipCorrectieRegistratie": null,
+    "tijdstipEindRegistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
     "tijdstipRegistratie": {
-      "@id": "beginRegistratie",
-      "@type": "xsd:dateTime"
-    },
-    "tijdstipregistratielv": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "voorkomenidentificatie": {
-      "@id": "prov:order",
-      "@type": "xsd:positiveInteger"
-    },
-    "vorigeGeldigeVersie": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/registratie/"
-      },
-      "@id": "nen3610:vorigeGeldigeVersie",
-      "@type": "@id"
-    },
-    "vorigeGeregistreerdeVersie": {
-      "@context": {
-        "@base": "https://brkpb.basisregistraties.overheid.nl/brkpb/id/registratie/"
-      },
-      "@id": "nen3610:vorigeGeregistreerdeVersie",
-      "@type": "@id"
-    },
-    "verkorteopenbareruimtenaam": {
-      "@id": "skos:altLabel",
-      "@language": "nl"
-    },
-    "woonplaatsnaam": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
-    },
+    "transactieTijdstip": null,
+    "transactieTijdstipAfsluiting": null,
+    "user_id": null,
+    "value": "rdf:value",
+    "volgnummer": "sh:order",
+    "voorkomen_identificatie": null,
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
