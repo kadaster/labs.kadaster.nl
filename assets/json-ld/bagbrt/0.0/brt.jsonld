@@ -1,11 +1,11 @@
 {
   "@context": {
-    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/",
+    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/",
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
     "bagPandID": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/" 
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/" 
       },
       "@id": "geo:sfWithin",
       "@type": "@id"
