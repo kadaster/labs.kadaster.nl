@@ -5,7 +5,7 @@
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
     "brtPandID": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificateie" 
+        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/" 
       },
       "@id": "geo:sfOverlaps",
       "@type": "@id" 
