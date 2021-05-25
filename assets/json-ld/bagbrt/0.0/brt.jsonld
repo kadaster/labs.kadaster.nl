@@ -1,2 +1,16 @@
 {
+  "@context": {
+    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/",
+    "@version": 1.1,
+    "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
+    "brtPandID": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag2/id/" 
+      },
+      "@id": "geo:sfWithin",
+      "@type": "@id"
+    },
+    "geo": "https://www.opengis.net/ont/geosparql#",
+    "data": "@nest"
+  }
 }
