@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
+    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/",
     "@version": 1.1,
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
     "brtPandID": {
