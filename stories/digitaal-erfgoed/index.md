@@ -4,10 +4,10 @@ title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 
 <iframe
-  id="digitaal-erfgoed"
-  src="https://data.labs.kadaster.nl/kadaster/-/stories/digitaal-erfgoed?embed"
+  id="buitenplaatsen-in-oud-lisse"
+  src="https://data.labs.kadaster.nl/rce/-/stories/buitenplaatsen-in-oud-lisse?embed"
   width="100%"
   height="100%"
   frameborder="0"
 ></iframe>
-<script src="https://data.labs.kadaster.nl/resizeIframe.js" iframeId="digitaal-erfgoed"></script>
+<script src="https://data.labs.kadaster.nl/resizeIframe.js" iframeId="buitenplaatsen-in-oud-lisse"></script>
