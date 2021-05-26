@@ -398,6 +398,32 @@ div.modal-dialog.google-visualization-charteditor-dialog {
 div.modal-dialog.google-visualization-charteditor-dialog * {
   box-sizing: content-box;
 }
+.footer {
+    background-color: #2b2b2b;
+    margin-top: 2.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer-bar {
+    max-width: 1140px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer-bar-item {
+    flex: 1 0 200px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.footer-bar-item:not(:first-child):before {
+    float: left;
+    content: "\\";
+    color: #fff;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+}
 @media only screen and (max-width: 900px) {
   .hamburger {
     display: block;
