@@ -2,12 +2,21 @@
   "@context": {
     "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
     "@version": 1.1,
-    "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
-    "beeindigd": null,
-    "beperking_identificatie": null,
+    "beperking_identificatie": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
+      },
+      "@id": "brk:beheert",
+      "@type": "@id"
+    },
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "brk:omvat": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
+      },
+      "@type": "@id"
+    },
     "brkpbpubliekrechtelijkebeperkingen": "@nest",
-    "brondocument_domein": null,
     "brondocument_identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
@@ -15,27 +24,43 @@
       "@id": "brk:stukdeel",
       "@type": "@id"
     },
-    "code_grondslag": {
-      "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/grondslag/"
-      },
-      "@id": "grondslag",
-      "@type": "@id"
-    },
-    "code_status_historie": null,
+    "code_grondslag": "brk:grondslag",
     "data": "@nest",
     "datum_beeindiging": {
-      "@id": "datumBeeindiging",
+      "@id": "brk:datumBeëindiging",
       "@type": "xsd:dateTime"
     },
     "datum_in_werking": {
-      "@id": "datumInWerking",
+      "@id": "brk:datumInWerking",
+      "@type": "xsd:dateTime"
+    },
+    "datum_kenbaarheid": {
+      "@id": "brk:datumKenbaarheid",
       "@type": "xsd:dateTime"
     },
     "dct": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "identificatie": null,
-    "klantnummer": null,
+    "gebaseerd_op_stkdi_identificatie": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+      },
+      "@id": "brk:isGebaseerdOp",
+      "@type": "@id"
+    },
+    "gekoppeldAanStukdeel": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+      },
+      "@id": "brk:omvat",
+      "@type": "@id"
+    },
+    "gekoppeldAanTiaStuk": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+      },
+      "@id": "brk:omvat",
+      "@type": "@id"
+    },
     "lokaalID": {
       "@id": "nen3610:lokaalID",
       "@type": "xsd:string"
@@ -43,8 +68,6 @@
     "naam": "brk:statutaireNaam",
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-    "nietnatuurlijkpersoon_identificaite": null,
-    "object_identificatie": "@id",
     "objectBegintijd": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:dateTime"
@@ -53,15 +76,32 @@
       "@id": "nen3610:einGeldigheid",
       "@type": "xsd:dateTime"
     },
-    "ogc_fid": null,
-    "oin": null,
-    "peilDatum": null,
+    "oin": "brk:oin",
     "primaryTopic": "foaf:primaryTopic",
     "prov": "http://www.w3.org/ns/prov#",
-    "pubki_identificatie": null,
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "relatie_met_PubliekRechtelijkeBeperking": {
+      "@reverse": "brk:omvat"
+    },
+    "relatie_met_stukdeel": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+      },
+      "@id": "brk:omvat",
+      "@type": "@id"
+    },
+    "relatie_met_werkingsgebied": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/werkingsgebied/"
+      },
+      "@id": "brk:ontleendAan",
+      "@type": "@id"
+    },
     "sh": "http://www.w3.org/ns/shacl#",
-    "tijdstipCorrectieRegistratie": null,
+    "tijdstip_aanbieding": {
+      "@id": "brk:tijdstipAanbieding",
+      "@type": "xsd:dateTime"
+    },
     "tijdstipEindRegistratie": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
@@ -70,12 +110,8 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "transactieTijdstip": null,
-    "transactieTijdstipAfsluiting": null,
-    "user_id": null,
     "value": "rdf:value",
     "volgnummer": "sh:order",
-    "voorkomen_identificatie": null,
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
