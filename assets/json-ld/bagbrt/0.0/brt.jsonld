@@ -3,7 +3,7 @@
     "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/",
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
-    "bagID": {
+    "brtPandID": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/" 
       },
