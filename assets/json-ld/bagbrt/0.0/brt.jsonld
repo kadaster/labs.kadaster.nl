@@ -3,11 +3,11 @@
     "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/",
     "@version": 1.1,
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
-    "bagPandID": {
+    "bagID": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/" 
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/" 
       },
-      "@id": "geo:sfWithin",
+      "@id": "geo:sfOverlaps",
       "@type": "@id"
     },
     "geo": "https://www.opengis.net/ont/geosparql#",
