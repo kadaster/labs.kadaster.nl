@@ -5,9 +5,9 @@
     "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
     "bagID": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/" 
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/" 
       },
-      "@id": "geo:sfWithin",
+      "@id": "geo:sfOverlaps",
       "@type": "@id"
     },
     "geo": "https://www.opengis.net/ont/geosparql#",
