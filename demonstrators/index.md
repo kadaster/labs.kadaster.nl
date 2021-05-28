@@ -210,4 +210,12 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
   </a>
+  <a href="/demonstrators/geodatawizard-test">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+      <div class="card-title">GeoDataWizard Test</div>
+      <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
+    </div>
+  </a>
 </div>
