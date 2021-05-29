@@ -1,7 +1,8 @@
 {
   "@context": {
+    "xsd": "https://www.w3.org/2001/XMLSchema#",
     "label": { "@id": "http://www.w3.org/2000/01/rdf-schema#label",  "@language": "nl" },
-    "label_en": { "@id": "http://www.w3.org/2000/01/rdf-schema#label",  "@language": "en" },
+    "label_en": { "@id": "http://www.w3.org/2000/01/rdf-schema#label", "@type": "xsd:string", "@language": "en" },
     "Class": { "@reverse" : "http://www.w3.org/2002/07/owl#Class"},
     "soort": { "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
     
