@@ -18,7 +18,7 @@
     "onderdeelvan": { "@id": "https://schema.org/containedInPlace"}, 
     
 
-    "PLACE":                  "https://schema.org/Place, 
+    "PLACE":                  "https://schema.org/Place", 
     "bijeenkomstfunctie":     "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/bijeenkomstfunctie",
     "celfunctie":             "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/celfunctie",
     "gezondheidszorgfunctie": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/gezondheidszorgfunctie",
