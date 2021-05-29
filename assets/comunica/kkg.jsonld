@@ -2,6 +2,7 @@
   "@context": {
     "label": { "@id": "http://www.w3.org/2000/01/rdf-schema#label",  "@language": "nl" },
     "Class": { "@reverse" : "http://www.w3.org/2002/07/owl#Class"},
+    "type": { "@id": "https://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
     
     "straatadres": { "@id": "https://schema.org/streetAddress"},
     "postadres":   { "@id": "https://schema.org/PostalAddress"},
@@ -17,6 +18,7 @@
     "onderdeelvan": { "@id": "https://schema.org/containedInPlace"}, 
     
 
+    "PLACE":                  "https://schema.org/Place, 
     "bijeenkomstfunctie":     "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/bijeenkomstfunctie",
     "celfunctie":             "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/celfunctie",
     "gezondheidszorgfunctie": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/gezondheidszorgfunctie",
