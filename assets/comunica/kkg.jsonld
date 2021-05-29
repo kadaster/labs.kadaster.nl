@@ -12,7 +12,7 @@
     "postcode":    { "@id": "https://schema.org/postalCode" },
     "name":        { "@id": "https://schema.org/name", "@language": "nl" },
     "functie":     { "@id": "https://schema.org/additionalType" },
-    "pand":        { "@id": "https://schema.org/Place" },
+    "plek":        { "@reverse": "https://schema.org/Place" },
     
     "ontstaan":    { "@id": "https://schema.org/created" },
     "geo":         { "@id": "https://schema.org/geo"},
