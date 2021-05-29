@@ -18,7 +18,8 @@
     "geo":         { "@id": "https://schema.org/geo"},
     "plaats":      { "@id": "https://schema.org/addressLocality"},
     "bevat":       { "@id": "https://schema.org/containsPlace"}, 
-    "onderdeelvan": { "@id": "https://schema.org/containedInPlace"}, 
+    "onderdeelvan": { "@id": "https://schema.org/containedInPlace"},
+    "oppervlakte": { "@id": "https://schema.org/floorSize"},
     
 
     "PLACE":                  "https://schema.org/Place", 
