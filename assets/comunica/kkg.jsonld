@@ -32,7 +32,7 @@
     "verblijfsobjectBuitenGebruik" : "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectBuitenGebruik",
     "verblijfsobjectGevormd" :       "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectGevormd",
     "verblijfsobjectInGebruik" :     "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectInGebruik",
-    "verblijfsobjectIngetrokken" :   "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken",
+    "verblijfsobjectIngetrokken" :   "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken"
     
    }
 }
