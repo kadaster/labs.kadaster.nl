@@ -15,6 +15,7 @@
     "functie":     { "@id": "https://schema.org/additionalType" },
     "plek":        { "@id": "https://schema.org/Place" },
     "functiehoortbijpand":        { "@reverse": "https://schema.org/additonalType" },
+    "pand" :  { "@id": "https://schema.org/Place" },
     "hoortbijpand":        { "@reverse": "https://schema.org/Place" },
     
     "ontstaan":    { "@id": "https://schema.org/created" },
