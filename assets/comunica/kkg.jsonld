@@ -7,7 +7,7 @@
     "soort": { "@reverse": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
     
     "adres":       { "@id": "https://schema.org/address" },
-    "straatadres": { "@id": "https://schema.org/streetAddress" },
+    "straatadres": { "@id": "https://schema.org/streetAddress", "@language": "nl" },
     "postadres":   { "@id": "https://schema.org/PostalAddress" },
     "postcode":    { "@id": "https://schema.org/postalCode" },
     "name":        { "@id": "https://schema.org/name", "@language": "nl" },
