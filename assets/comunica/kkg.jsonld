@@ -19,6 +19,7 @@
     "plaats":      { "@id": "https://schema.org/addressLocality"},
     "bevat":       { "@id": "https://schema.org/containsPlace"}, 
     "onderdeelvan": { "@id": "https://schema.org/containedInPlace"},
+    "bouwjaar"     { "@id": "https://schema.org/dateCreated", "@type": "xsd:nonNegativeInteger" },
     "oppervlakte": { "@id": "https://schema.org/floorSize"},
     
 
