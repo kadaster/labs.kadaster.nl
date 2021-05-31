@@ -64,6 +64,15 @@ export interface SingleObject {
     brtTypeName: string;
     bgt: string;
     bgtStatus: string;
+    place: string;
+    name: string;
+    type: string;
+}
+export interface RightClickObject {
+    bagShape: any;
+    place: string;
+    name: string;
+    type: string;
 }
 export interface CoordinateQuery {
     lat: string;
