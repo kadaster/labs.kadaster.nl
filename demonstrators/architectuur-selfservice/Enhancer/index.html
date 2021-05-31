@@ -413,79 +413,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GraphQL naar Linked Data
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         GraphQL naar Linked Data
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#json-ld" class="md-nav__link">
-    JSON-LD
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enhancer" class="md-nav__link">
-    Enhancer
-  </a>
-  
-    <nav class="md-nav" aria-label="Enhancer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bevragen-obv-een-query" class="md-nav__link">
-    Bevragen obv een query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bevragen-obv-voorgedefinieerde-queries" class="md-nav__link">
-    Bevragen obv voorgedefiniëerde queries
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json-ld-context" class="md-nav__link">
-    JSON-LD Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linked-data" class="md-nav__link">
-    Linked Data
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -575,31 +505,7 @@
   
     <li class="md-nav__item">
       <a href="../Modelling/" class="md-nav__link">
-        Overzicht
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../IRI/" class="md-nav__link">
-        IRI Strategie
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Semantics/" class="md-nav__link">
-        Definities
+        Data Modelling
       </a>
     </li>
   
@@ -641,7 +547,7 @@
   
     <li class="md-nav__item">
       <a href="../Gebruik/" class="md-nav__link">
-        Overzicht
+        Overview
       </a>
     </li>
   
@@ -707,7 +613,7 @@
   
     <li class="md-nav__item">
       <a href="../UseCases/" class="md-nav__link">
-        Overzicht
+        Overview
       </a>
     </li>
   
@@ -737,62 +643,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#json-ld" class="md-nav__link">
-    JSON-LD
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enhancer" class="md-nav__link">
-    Enhancer
-  </a>
-  
-    <nav class="md-nav" aria-label="Enhancer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bevragen-obv-een-query" class="md-nav__link">
-    Bevragen obv een query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bevragen-obv-voorgedefinieerde-queries" class="md-nav__link">
-    Bevragen obv voorgedefiniëerde queries
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json-ld-context" class="md-nav__link">
-    JSON-LD Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linked-data" class="md-nav__link">
-    Linked Data
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -809,98 +659,6 @@
                 
                 
                 <h1 id="graphql-naar-linked-data-de-enhancer">GraphQL naar Linked Data: De Enhancer</h1>
-<p>In de sectie omtrent <a href="../GraphQLETL/">GraphQL</a> beschrijven wij reeds hoe we GraphQL kunnen gebruiken om data te leveren in een JSON (JavaScript Object Notation) formaat. Wij gebruiken dit - naast een ontsluitingskanaal richting de eindgebruiker - ook als mogelijkheid om Linked Data te genereren.</p>
-<h2 id="json-ld">JSON-LD</h2>
-<p>In de omzetting van JSON naar Linked Data maken wij veel gebruik van de open standaard <a href="https://json-ld.org/">JSON-LD</a>, zoals gestandaardiseerd door het <a href="https://www.w3.org/TR/json-ld/">W3C</a>. JSON-LD - in zijn essentie - biedt de mogelijkheid om van JSON data lichtgewicht Linked Data te genereren.</p>
-<p><img alt="Logo JSON-LD" src="../images/json-ld-logo.jpg" /></p>
-<blockquote>
-<p>Deze documentatie is gebaseerd op <a href="https://www.w3.org/TR/json-ld11/">JSON-LD 1.1</a>, zoals beheerd door de W3C.</p>
-</blockquote>
-<h2 id="enhancer">Enhancer</h2>
-<p>Het Data Science Team heeft een component ontwikkeld dat op basis van een GraphQL endpoint in staat is JSON-LD te bevragen. De enhancer neemt de volgende configuratie:</p>
-<ul>
-<li>JSON-LD Context</li>
-<li>Een GraphQL endpoint</li>
-</ul>
-<p>Vervolgens dient de Enhancer als een additioneel endpoint waar op basis van een accept header data data wordt teruggeven in een bepaald formaat:</p>
-<ul>
-<li>application/n-quads</li>
-<li>application/ld+json</li>
-</ul>
-<p>Vervolgens zijn er twee manieren om de enhancer aan te spreken:</p>
-<h3 id="bevragen-obv-een-query">Bevragen obv een query</h3>
-<p>Het enhancer endpoint kan benaderd worden met een POST request met in de body een GraphQL query, zoals</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;{ bag2nummeraanduiding(first:10 ) { jsonldid jsonldtype objecteindtijd objectbegintijd tijdstipregistratie eindregistratie tijdstipregistratielv tijdstipeindregistratielv primaryTopic { jsonldid jsonldtype identificatie { jsonldid jsonldtype }} inonderzoek geconstateerd documentnummer documentdatum aanduidingrecordinactief aanduidingrecordcorrectie huisnummer huisletter huisnummertoevoeging postcode nummeraanduidingstatus ligtin ligtaan }}&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>en de headers</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;content-type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span> 
-    <span class="nt">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/ld+json&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Het reusltaat van deze bevraging is een JSON-LD respons van de desbetreffende GraphQL query.</p>
-<h3 id="bevragen-obv-voorgedefinieerde-queries">Bevragen obv voorgedefiniëerde queries</h3>
-<p>Voor het omzetten van de GraphQL levering naar Linked Data bereiden we vaak voorgedefiniëerde queries voor in de enhancer, waarmee op basis van (paginatie) parameters een set aan objecten opgevraagd kan worden. Dit is bijvoorbeeld bruikbaar in een full load van een dataset als Linked Data.</p>
-<p>Het configureren van deze voorgedefiniëerde queries werkt momenteel door in de Enhancer een graphql query toe te voegen onder de directory /query. Zie bijvoorbeeld de query /bag/pand.graphql.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span> 
-    <span class="nt">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;{ bag2pand(#filter#) { jsonldid jsonldtype jsonldbase jsonldvocab jsonldlabel voorkomenidentificatie begingeldigheid eindgeldigheid tijdstipregistratie eindregistratie tijdstipregistratielv tijdstipeindregistratielv primaryTopic { jsonldid jsonldtype identificatie { jsonldid jsonldtype namespace lokaalid } } geometrie geconstateerd documentnummer documentdatum oorspronkelijkbouwjaar pandstatus vorigeGeldigeVersie vorigeGeregistreerdeVersie } } &quot;</span> 
-<span class="p">}</span> 
-</code></pre></div>
-<p><strong>Tip voor de developer:</strong> Gebruik <a href="https://www.gillmeister-software.com/online-tools/text/remove-line-breaks.aspx">deze website</a> om een GraphQL query te verlossen van newlines.</p>
-<p>Vervolgens kan de data bevraagd worden met een request naar <em>http://enhancer-endpoint/bag/pand/0/1000</em> waarbij de laatste twee (paginatie) parameters zijn die gedefiniëerd zijn in de enhancer. Door gebruik te maken van deze parameters kan over de gehele set aan objecten worden gelopen.</p>
-<h2 id="json-ld-context">JSON-LD Context</h2>
-<p>Een voorbeeld van een (ingekorte) JSON-LD Context (van de BAG) is hieronder te vinden:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;@base&quot;</span><span class="p">:</span> <span class="s2">&quot;https://bag2.basisregistraties.overheid.nl/bag/id/registratie/&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;@version&quot;</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
-    <span class="nt">&quot;@vocab&quot;</span><span class="p">:</span> <span class="s2">&quot;https://bag2.basisregistraties.overheid.nl/bag/def/&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;adresseerbaarobjectstatus&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;@base&quot;</span><span class="p">:</span> <span class="s2">&quot;https://bag2.basisregistraties.overheid.nl/bag/id/status/&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;status&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;@id&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;begingeldigheid&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;nen3610:beginGeldigheid&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;xsd:date&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;bronhouder&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@context&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;@base&quot;</span><span class="p">:</span> <span class="s2">&quot;https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;@id&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;@nest&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;dct&quot;</span><span class="p">:</span> <span class="s2">&quot;http://purl.org/dc/terms/&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;documentdatum&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;dct:created&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;xsd:date&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;documentnummer&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;dct:identifier&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;eindgeldigheid&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;nen3610:eindGeldigheid&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;xsd:date&quot;</span>
-    <span class="p">},</span>
-    <span class="nt">&quot;eindregistratie&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;@id&quot;</span><span class="p">:</span> <span class="s2">&quot;eindRegistratie&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;xsd:dateTime&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>waarbij <em>keys</em> in de JSON-LD context verwijzen naar attributen en/of objecten in de GraphQL typedefs (bijv. documentnummer, eindgeldigheid, etc.). Op deze manier weet de Enhancer hoe deze attributen om te zetten zijn naar een Linked data formaat (zoals nquads).</p>
-<h2 id="linked-data">Linked Data</h2>
-<p>In de pipeline van het omzetten van een GraphQL levering hebben we een manier nodig om (in batch) over de totale set aan objecten cq. voorkomens heen te lopen. We gebruiken de volgende header:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/n-quads&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>en lopen over de gehele set heen die we willen bevragen middels de voorgedefinieerde queries. Deze batch bevragingen worden aangeroepen vanuit een minimaal stuk code wat wij tot voorheen <em>de microservice</em> noemden. Dit proces wordt verder toegelicht in de documentatie rondom onze <a href="../Pipeline/">ETL Pipeline</a>.</p>
                 
               
               
