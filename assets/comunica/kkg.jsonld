@@ -50,7 +50,8 @@
     "windmolen" : "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/windmolen",
     "windturbine" : "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/windturbine",
     
-    "Gebouw" : "https://brt.basisregistraties.overheid.nl/brt/def/Gebouw"
-    
+    "Gebouw" : "https://brt.basisregistraties.overheid.nl/brt/def/Gebouw",
+    "woonplaats" : "https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats",
+    "Woonplaats" : "https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats"
    }
 }
