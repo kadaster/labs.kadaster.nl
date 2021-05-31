@@ -43,6 +43,10 @@
     "verblijfsobjectInGebruik" :     "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectInGebruik",
     "verblijfsobjectIngetrokken" :   "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken",
     
+    "kerk" : "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/kerk",
+    "windmolen" : "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/windmolen",
+    "windturbine" : "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/windturbine",
+    
     "Gebouw" : "https://brt.basisregistraties.overheid.nl/brt/def/Gebouw"
     
    }
