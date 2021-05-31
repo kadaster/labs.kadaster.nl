@@ -77,28 +77,28 @@
     },
     "identificatiebagopr": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "bagOpenbareRuimte",
       "@type": "@id"
     },
     "identificatiebagpnd": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/pand/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "bagPand",
       "@type": "@id"
     },
     "identificatiebagvbohoogstehuisnummer": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "bagVerblijfsobject",
       "@type": "@id"
     },
     "identificatiebagvbolaagstehuisnummer": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/verblijfsobject/"
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
       "@id": "bagVerblijfsobject",
       "@type": "@id"
