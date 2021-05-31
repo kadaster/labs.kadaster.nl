@@ -1,0 +1,54 @@
+.igo_usercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.igo_usercard {
+    background-color: #ececec;
+    border-radius: 5px;
+    width: 32%;
+}
+
+.igo_usercard h1 {
+    margin: 5px 8px 0px 8px;
+}
+
+.igo_usercard .description {
+    margin: 5px 8px 0px 8px;
+}
+
+.igo_card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    flex-basis: 160px;
+    max-width: 200px;
+    min-width: 160px;
+    border: #f8f8f8 5px solid;
+    box-shadow: 0.5px 1px 5px 2px #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+    max-height: 300px;
+}
+
+.igo_card .card-image {
+    background: white;
+    display: flex;
+    flex-shrink: 1;
+    height: 100px;
+    margin: 0 auto;
+    max-height: 100px;
+    max-width: 333px;
+    max-width: fit-content;
+    min-height: 100px;
+    object-fit: cover;
+    outline: none;
+    padding: 0;
+    width: 100%;
+}
+
+.igo_card .card-description {
+    font-size: 14px;
+}
