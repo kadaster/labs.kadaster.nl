@@ -16,7 +16,7 @@
     
     "ontstaan":    { "@id": "https://schema.org/created" },
     "geo":         { "@id": "https://schema.org/geo"},
-    "plaats":      { "@id": "https://schema.org/addressLocality"},
+    "plaats":      { "@id": "https://schema.org/addressLocality",  "@language": "nl"},
     "bevat":       { "@id": "https://schema.org/containsPlace"}, 
     "onderdeelvan": { "@id": "https://schema.org/containedInPlace"},
     "bouwjaar":    { "@id": "https://schema.org/dateCreated", "@type": "http://www.w3.org/2001/XMLSchema#gYear" },
