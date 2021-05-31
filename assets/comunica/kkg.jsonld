@@ -14,6 +14,8 @@
     "name":        { "@id": "https://schema.org/name", "@language": "nl" },
     "functie":     { "@id": "https://schema.org/additionalType" },
     "plek":        { "@id": "https://schema.org/Place" },
+    "functiehoortbijpand":        { "@reverse": "https://schema.org/additonalType" },
+    "hoortbijpand":        { "@reverse": "https://schema.org/Place" },
     
     "ontstaan":    { "@id": "https://schema.org/created" },
     "afgeleidvan": { "@id": "http://www.w3.org/ns/prov#wasDerivedFrom" },
