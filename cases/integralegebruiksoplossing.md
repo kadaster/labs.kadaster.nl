@@ -20,75 +20,73 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
   <div class="igo_usercard">
     <h1>Kijk en vraag</h1>
     <div class="description">
-    Bekijk en bevraag informatie uit verschillende basisregistraties over een object, zoals een gebouw, weg of terrein.
-    Een toepassing voor de nieuwsgierige algemene gebruiker.
+      Bekijk en bevraag informatie uit verschillende basisregistraties over een object, zoals een gebouw, weg of terrein.
+      Een toepassing voor de nieuwsgierige algemene gebruiker.
+    </div>
+    <div class="cards-wrapper">
+      <a href="/demonstrators/pandviewer">
+        <div class="igo_card">
+          <div class="card-type">Pandviewer</div>
+          <img class="card-image" src="/assets/images/pandviewer.png">
+          <div class="card-description">Zoek in de Pandviewer de informatie uit BAG, BGT en BRT. Deze demonstrator geeft een concept voor integrale bevraging.</div>
+        </div>
+      </a>
+      <a href="/cases/loki">
+        <div class="igo_card">
+          <div class="card-type">Loki</div>
+          <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
+          <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. </div>
+        </div>
+      </a>
+    </div>
   </div>
 
-  <div class="cards-wrapper">
-    <a href="/demonstrators/pandviewer">
-      <div class="igo_card">
-        <div class="card-type">Pandviewer</div>
-        <img class="card-image" src="/assets/images/pandviewer.png">
-        <div class="card-description">Zoek in de Pandviewer de informatie uit BAG, BGT en BRT. Deze demonstrator geeft een concept voor integrale bevraging.</div>
-      </div>
-    </a>
-    <a href="/cases/loki">
-      <div class="igo_card">
-        <div class="card-type">Loki</div>
-        <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-        <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. </div>
-      </div>
-    </a>
-  </div>
-</div>
-
-<div class="igo_usercard">
-  <h1>Combineer en selecteer</h1>
-  <div class="description">
-    Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. 
-    Een toepassing voor de professionele geodata gebruiker. 
-  </div>
-
-  <div class="cards-wrapper">
-    <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
-      <div class="igo_card">
-        <div class="card-type">Sparklis</div>
-        <img class="card-image" src="/assets/images/sparklis.png">
-        <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
-      </div>
-    </a>
-    <a href="/demonstrators/geodatawizard">
-      <div class="igo_card">
-        <div class="card-type">GeoDataWizard</div>
-        <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
-        <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je deze gecombineerd met onze data kan bevragen!</div>
-      </div>
-    </a>
-  </div>
-</div>
-
-<div class="igo_usercard">
-  <h1>Ontwikkel en Analyseer</h1>
-  <div class="description">
-    Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints
-    Een toepassing voor de technische ontwikkelaar.
+  <div class="igo_usercard">
+    <h1>Combineer en selecteer</h1>
+    <div class="description">
+      Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. 
+      Een toepassing voor de professionele geodata gebruiker. 
+    </div>
+    <div class="cards-wrapper">
+      <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
+        <div class="igo_card">
+          <div class="card-type">Sparklis</div>
+          <img class="card-image" src="/assets/images/sparklis.png">
+          <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
+        </div>
+      </a>
+      <a href="/demonstrators/geodatawizard">
+        <div class="igo_card">
+          <div class="card-type">GeoDataWizard</div>
+          <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+          <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je deze gecombineerd met onze data kan bevragen!</div>
+        </div>
+      </a>
+    </div>
   </div>
 
-  <div class="cards-wrapper">
-    <a href="/developer/">
-      <div class="igo_card">
-        <div class="card-type">Developer Portal</div>
-        <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-        <div class="card-description">Voor een lijst van al onze endpoints en services gebaseerd op Linked Data en GraphQL en benodigde resources, kijk hier.</div>
-      </div>
-    </a>
-    <a href="https://kadaster.wvr.io/sdo-target-model/home">
-      <div class="igo_card">
-        <div class="card-type">Datamodellen</div>
-        <img class="card-image" src="/assets/images/sdo-model.PNG" alt="Knowledge Graph">
-        <div class="card-description">Voor het datamodel van onze Knowledge Graph, klik hier voor een visualisatie.</div>
-      </div>
-    </a>
+  <div class="igo_usercard">
+    <h1>Ontwikkel en Analyseer</h1>
+    <div class="description">
+      Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints
+      Een toepassing voor de technische ontwikkelaar.
+    </div>
+    <div class="cards-wrapper">
+      <a href="/developer/">
+        <div class="igo_card">
+          <div class="card-type">Developer Portal</div>
+          <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
+          <div class="card-description">Voor een lijst van al onze endpoints en services gebaseerd op Linked Data en GraphQL en benodigde resources, kijk hier.</div>
+        </div>
+      </a>
+      <a href="https://kadaster.wvr.io/sdo-target-model/home">
+        <div class="igo_card">
+          <div class="card-type">Datamodellen</div>
+          <img class="card-image" src="/assets/images/sdo-model.PNG" alt="Knowledge Graph">
+          <div class="card-description">Voor het datamodel van onze Knowledge Graph, klik hier voor een visualisatie.</div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 
