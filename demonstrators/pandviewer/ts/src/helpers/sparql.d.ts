@@ -1,4 +1,5 @@
 import { SingleObject } from "../reducer";
+import { RightClickObject } from "../reducer";
 export interface SparqlResults {
     head: Head;
     results: {
@@ -16,6 +17,9 @@ export declare type BindingValue = {
     value: string;
 } | {
     type: "typed-literal";
+    value: string;
+} | {
+    type: "literal";
     value: string;
 } | {
     type: number;
@@ -42,7 +46,29 @@ export declare type BindingValue = {
     type: "literal";
     value: string;
 };
-export declare function queryResourcesDescriptions(lat: string, lng: string, iris: string[]): Promise<SingleObject[]>;
+export interface SparqlResultsRightClick {
+    head: Head;
+    results: {
+        bindings: RightClickBinding[];
+    };
+}
+export interface RightClickBinding {
+    [varname: string]: RightClickBindingValue;
+}
+export declare type RightClickBindingValue = {
+    type: "typed-literal";
+    value: string;
+} | {
+    type: "literal";
+    value: string;
+} | {
+    type: "uri";
+    value: string;
+} | {
+    type: "uri";
+    value: string;
+};
+export declare function queryResourcesDescriptions(lat: string, lng: string, iris: string[]): Promise<RightClickObject[]>;
 export declare function searchResourcesDescriptions(postcode: string, housenumber: string, iris: string[]): Promise<SingleObject[]>;
-export declare function runQuery(lat: string, long: string): Promise<SparqlResults>;
+export declare function runQuery(lat: string, long: string): Promise<SparqlResultsRightClick>;
 export declare function searchQuery(postcode: string, housenumber: string): Promise<SparqlResults>;
