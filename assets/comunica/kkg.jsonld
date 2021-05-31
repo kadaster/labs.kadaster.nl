@@ -4,7 +4,7 @@
     "label": { "@id": "http://www.w3.org/2000/01/rdf-schema#label",  "@language": "nl" },
     "label_en": { "@id": "http://www.w3.org/2000/01/rdf-schema#label", "@type": "xsd:string", "@language": "en" },
     "Class": { "@id" : "http://www.w3.org/2002/07/owl#Class"},
-    "soort": { "@reverse": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
+    "soort": { "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
     
     "adres":       { "@id": "https://schema.org/address" },
     "straatadres": { "@id": "https://schema.org/streetAddress", "@language": "nl" },
@@ -12,9 +12,10 @@
     "postcode":    { "@id": "https://schema.org/postalCode" },
     "name":        { "@id": "https://schema.org/name", "@language": "nl" },
     "functie":     { "@id": "https://schema.org/additionalType" },
-    "plek":        { "@reverse": "https://schema.org/Place" },
+    "plek":        { "@id": "https://schema.org/Place" },
     
     "ontstaan":    { "@id": "https://schema.org/created" },
+    "afgeleidvan": { "@id": "http://www.w3.org/ns/prov#wasDerivedFrom" },
     "geo":         { "@id": "https://schema.org/geo"},
     "plaats":      { "@id": "https://schema.org/addressLocality",  "@language": "nl"},
     "bevat":       { "@id": "https://schema.org/containsPlace"}, 
@@ -40,6 +41,8 @@
     "verblijfsobjectGevormd" :       "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectGevormd",
     "verblijfsobjectInGebruik" :     "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectInGebruik",
     "verblijfsobjectIngetrokken" :   "https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken"
+    
+    "Gebouw" : "https://brt.basisregistraties.overheid.nl/brt/def/Gebouw"
     
    }
 }
