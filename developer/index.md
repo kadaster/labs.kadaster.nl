@@ -67,12 +67,12 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">BRT</div>
-            <div class="endpointContainerTitle_subtext">Basisregistratie Grootschalige Topografie</div>
+            <div class="endpointContainerTitle_subtext">Basisregistratie Topografie</div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql</a></div>
+    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt/sparql/brt">Sandbox</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">

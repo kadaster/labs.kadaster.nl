@@ -26,7 +26,6 @@ Het Kadaster vindt het belangrijk om samen met publieke en private partners te o
 
 Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wij om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Wij werken hier vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers, Demonstrators en/of Datasets”. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
-
 <div class="cards-wrapper">
   <a href="/cases/integralegebruiksoplossing">
     <div class="card">
