@@ -26,9 +26,9 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
     <div class="cards-wrapper">
       <a href="/demonstrators/pandviewer">
         <div class="igo_card">
-          <div class="card-type">Pandviewer</div>
+          <div class="card-type">Objectviewer</div>
           <img class="card-image" src="/assets/images/pandviewer.png">
-          <div class="card-description">Zoek in de Pandviewer de informatie uit BAG, BGT en BRT. Deze demonstrator geeft een concept voor integrale bevraging.</div>
+          <div class="card-description">Zoek in de Objectviewer door informatie uit BAG, BGT en BRT. Deze demonstrator geeft een concept voor integrale bevraging.</div>
         </div>
       </a>
       <a href="/cases/loki">
