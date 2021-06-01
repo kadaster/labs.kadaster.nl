@@ -60,6 +60,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
     </div>
   </a>
+    <a href="/cases/brt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
+      <div class="card-title">Basisregistratie Topografie</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
+    </div>
+  </a>
   <a href="/cases/bgt-ld">
     <div class="card">
       <div class="card-type">Use Case</div>
