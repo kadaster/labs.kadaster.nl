@@ -7,6 +7,8 @@
     "soort": { "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"}, 
     "adreshoortbijpand": { "@reverse": "https://schema.org/PostalAddress" },
     
+    "gebied" : { "@id" : "https://schema.org/AdministrativeArea" },
+    
     "adres":       { "@id": "https://schema.org/address" },
     "straatadres": { "@id": "https://schema.org/streetAddress", "@language": "nl" },
     "postadres":   { "@id": "https://schema.org/PostalAddress" },
