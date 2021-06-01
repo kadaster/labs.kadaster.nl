@@ -48,7 +48,7 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
       Een toepassing voor de professionele geodata gebruiker. 
     </div>
     <div class="cards-wrapper">
-      <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
+      <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&max_increment_samples=100">
         <div class="igo_card">
           <div class="card-type">Sparklis</div>
           <img class="card-image" src="/assets/images/sparklis.png">
