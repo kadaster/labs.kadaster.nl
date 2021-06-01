@@ -26,7 +26,6 @@ Het Kadaster vindt het belangrijk om samen met publieke en private partners te o
 
 Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wij om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Wij werken hier vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers, Demonstrators en/of Datasets”. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
-
 <div class="cards-wrapper">
   <a href="/cases/integralegebruiksoplossing">
     <div class="card">
@@ -58,6 +57,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
       <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+    </div>
+  </a>
+    <a href="/cases/brt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
+      <div class="card-title">Basisregistratie Topografie</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
     </div>
   </a>
   <a href="/cases/bgt-ld">

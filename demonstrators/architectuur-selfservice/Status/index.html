@@ -14,7 +14,7 @@
     
     
       
-        <title>Netwerk - Self-Service GIS platform Architectuur</title>
+        <title>Status - Self-Service GIS platform Architectuur</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#netwerk" class="md-skip">
+        <a href="#status" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Netwerk
+              Status
             
           </span>
         </div>
@@ -161,13 +161,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Introductie
       </a>
     </li>
@@ -177,15 +179,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../Architecture/" class="md-tabs__link md-tabs__link--active">
+      <a href="../Architecture/" class="md-tabs__link">
         Data
       </a>
     </li>
@@ -290,12 +290,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       <label class="md-nav__link" for="__nav_1">
         Introductie
@@ -323,11 +325,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Status/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Status
       </a>
+      
     </li>
   
 
@@ -356,14 +367,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Data
@@ -463,20 +472,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Netwerk/" class="md-nav__link">
         Netwerk
       </a>
-      
     </li>
   
 
@@ -689,16 +689,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kadaster-it/datascience-architecture-selfservice/edit/master/docs/Netwerk.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/kadaster-it/datascience-architecture-selfservice/edit/master/docs/Status.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="netwerk">Netwerk</h1>
-<p>Omdat we zowel open als gesloten data ontsluiten, hebben we beveiliging in zones geimplementeerd. Zo hebben we een zone in Azure staan waar alle open data kan worden ontsloten en een zone binnen het Kadaster waar alleen met behulp van identificerende authenticatie toegang mogelijk is. Voor meer informatie over verbinden met gesloten data, zie <a href="/GraphQL/#gebruik-van-gesloten-data">gebruik</a></p>
-<p>Hieronder is een afbeelding met een schematische weergaven van de twee netwerk zones. </p>
-<p><img src="/images/net_security.png" width="600"></p>
-<p>Voor meer informatie over de werking van de afgebeelde lagen, zie <a href="../GraphQLETL/">GraphQL</a></p>
+                <h1 id="status">Status</h1>
+<p><strong>Status per:</strong> 31 Mei 2021</p>
+<p><strong>Huidige versie:</strong></p>
+<ul>
+<li>BRT en de koppeltabel BRT-BAG zijn beschikbaar als Linked Data</li>
+<li>BRT is nu - tesamen met BAG en BGT onderdeel van de schema.org Knowledge Graph</li>
+<li>De pandviewer is nu een objectviewer, waarmee naast gebouwen ook wegen, waterdelen en terreinen geraadpleegd kunnen worden</li>
+<li>Sparklis is geconfigureerd op de Schema.org Knowledge Graph</li>
+</ul>
+<p><strong>In de pijplijn:</strong></p>
+<ul>
+<li>CBS Wijken en Buurten worden administratief gelinkt aan de BAG panden</li>
+<li>CBS Wijken en Buurten worden toegevoegd aan de Schema.Org Knowledge Graph</li>
+<li>Zoeken middels Elastic Search over de Knowledge Graph wordt mogelijk in de Objectviewer</li>
+<li>Uploaden van eigen data en deze automatisch koppelen aan basisgegevens wordt mogelijk</li>
+</ul>
+<p><img alt="Status" src="../images/selfservice-architecture%20progress.png" /></p>
                 
               
               
@@ -716,7 +728,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../Pipeline/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -725,19 +737,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Pipeline
+              Introductie
             </div>
           </div>
         </a>
       
       
-        <a href="../Modelling/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../Visie/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Overzicht
+              Visie
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -68,8 +68,8 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
   <div class="igo_usercard">
     <h1>Ontwikkel en Analyseer</h1>
     <div class="description">
-      Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints
-      Een toepassing voor de technische ontwikkelaar.
+      Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints.
+      De resources en toepassingen voor de technische ontwikkelaar vind je hier.
     </div>
     <div class="cards-wrapper">
       <a href="/developer/">
@@ -94,8 +94,8 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
 Lees hoe we de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/architectuur-selfservice">
-    <div class="igo_card">
+  <a href="/demonstrators/architectuur-selfservice/Status">
+    <div class="card">
       <div class="card-type">Knowledge Graph</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
       <div class="card-description">De Aanpak en Architectuur van de Knowledge Graph. Hier besteden we aandacht aan onze aanpak om met oa. Linked Data een knowledge Graph te maken.</div>
@@ -107,7 +107,7 @@ Lees hoe we de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen 
 
 We zijn heel benieuwd naar jullie feedback. Jullie zouden ons dan ook helpen door onderstaand formulier in te vullen.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform?embedded=true" width="640" height="1093" frameborder="0" marginheight="0" marginwidth="0">Laden..</iframe> 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform?embedded=true" width="640" height="1293" frameborder="0" marginheight="0" marginwidth="0">Laden..</iframe> 
 
 
 ## Overall UI/UX Design
