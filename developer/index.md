@@ -31,7 +31,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
 
 <div class="endpointContainer mobileHidden">
     <div>Name:</div>
-    <div>End point:</div>
+    <div>Endpoint:</div>
     <div></div>
     <div></div>
 </div>
@@ -79,6 +79,19 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
     <div class="endpointContainer_title mobileSpan">
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
+            <div class="endpointContainerTitle_maintext">CBS KWB</div>
+            <div class="endpointContainerTitle_subtext">CBS Kerncijfers Wijken- en Buurten</div>
+        </div>
+    </div>
+    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
+    <div class="endpointContainer_center">Data Model WIP</div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">Sandbox</a></div>
+</div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">
+        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
+        <div>
             <div class="endpointContainerTitle_maintext">KG</div>
             <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
         </div>
@@ -97,7 +110,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         </div>
     </div>
     <div class="mobileSpan"><a href="https://labs.kadaster.nl/gateway/graphql">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
-    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">Data Model</a></div>
+    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">Data Model WIP</a></div>
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
 </div>
