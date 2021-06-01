@@ -8,6 +8,12 @@
     "adreshoortbijpand": { "@reverse": "https://schema.org/PostalAddress" },
     
     "gebied" : { "@id" : "https://schema.org/AdministrativeArea" },
+    "gebiedr" : { "@reverse" : "https://schema.org/AdministrativeArea" },
+    "brug":  {  "@id" : "https://schema.org/Bridge" },
+    "brugr":  {  "@reverse" : "https://schema.org/Bridge" },
+    "ding":  {  "@id" : "https://schema.org/Thing" },
+    "dingr":  {  "@reverse" : "https://schema.org/Thing" },
+    
     
     "adres":       { "@id": "https://schema.org/address" },
     "straatadres": { "@id": "https://schema.org/streetAddress", "@language": "nl" },
