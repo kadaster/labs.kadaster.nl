@@ -325,6 +325,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Status/" class="md-nav__link">
+        Status
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Visie/" class="md-nav__link">
         Visie
       </a>
@@ -425,9 +437,52 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Linked Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Linked Data
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iri-strategie" class="md-nav__link">
+    IRI Strategie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triple-store" class="md-nav__link">
+    Triple Store
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linked-data-registraties" class="md-nav__link">
+    Linked Data registraties
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -505,7 +560,31 @@
   
     <li class="md-nav__item">
       <a href="../Modelling/" class="md-nav__link">
-        Data Modelling
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IRI/" class="md-nav__link">
+        IRI Strategie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics/" class="md-nav__link">
+        Definities
       </a>
     </li>
   
@@ -547,7 +626,7 @@
   
     <li class="md-nav__item">
       <a href="../Gebruik/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -613,7 +692,7 @@
   
     <li class="md-nav__item">
       <a href="../UseCases/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -643,6 +722,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iri-strategie" class="md-nav__link">
+    IRI Strategie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triple-store" class="md-nav__link">
+    Triple Store
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linked-data-registraties" class="md-nav__link">
+    Linked Data registraties
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -659,6 +767,26 @@
                 
                 
                 <h1 id="linked-data">Linked Data</h1>
+<p>Linked Data is een formaat waarin data als zogenoemde triples beschikbaar worden gesteld. Triples bestaan uit een <em>subject</em>, <em>predicate</em> en een <em>object</em>. Een voorbeeldje:</p>
+<p><img alt="Triples" src="../images/triples.PNG" /></p>
+<p>Tevens zijn objecten in Linked Data uniek identificeerbaar op het web (middels zgn. URIs, of Uniform Resource Identifiers). Zie bijvoorbeeld</p>
+<p><a href="https://bag2.basisregistraties.overheid.nl/bag/id/object/NL.IMBAG.Pand.0003100000117489">https://bag2.basisregistraties.overheid.nl/bag/id/object/NL.IMBAG.Pand.0003100000117489</a></p>
+<h2 id="iri-strategie">IRI Strategie</h2>
+<p>Deze URIs volgen een vaste vorm, zoveel mogelijk in lijn met de <a href="https://www.geonovum.nl/themas/uri-strategie">Nederlandse URI strategie</a>. Hierbij gaan wij uit van HTTPS URIs. Wij ondersteunen dan ook standaard geen HTTP URIs.</p>
+<h2 id="triple-store">Triple Store</h2>
+<p><img alt="TriplyDB" src="../images/triplydb.png" /></p>
+<p>Triples worden opgeslagen in een zogenoemde triple store. Bij het Kadaster maken we hierbij gebruik van <a href="https://triplydb.com/">TriplyDB</a>. Door de data in een triple store beschikbaar te stellen kan de data bevraagd worden met de standaard querytaal <a href="../SparQL/">SPARQL en services die van deze standaard gebruik maken</a>.</p>
+<p>Voor het uploaden naar de Triple store van gegenereerde triples (vanuit de <a href="../Enhancer/">Enhancer</a>) maken wij gebruik van de REST-interface van TriplyDB om de triples te uploaden.</p>
+<blockquote>
+<p>Deze documentatie wordt nog uitgebreid met informatie over de upload.</p>
+</blockquote>
+<h2 id="linked-data-registraties">Linked Data registraties</h2>
+<p>Zoals eerder beschreven in de <a href="../Architecture/">Solution Architecture</a> hanteren wij twee stappen in de ontsluiting van onze Linked Data. In de eerste laag stellen we Linked Data beschikbaar van de basisregistratie in een vorm die zo dicht mogelijk overeen komt met de brondata. Zo is de data</p>
+<ul>
+<li>Herkenbaar voor domein experts.</li>
+<li>Governance-technisch duidelijk in beheer van de eigenaar van de data.</li>
+</ul>
+<p>Pas in de tweede laag brengen we de data naar een meer gebruiksvriendelijk datamodel in de <a href="../KnowledgeGraph/">Knowledge Graph</a>.</p>
                 
               
               

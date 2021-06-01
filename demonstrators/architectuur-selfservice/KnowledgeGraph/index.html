@@ -325,6 +325,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../Status/" class="md-nav__link">
+        Status
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Visie/" class="md-nav__link">
         Visie
       </a>
@@ -437,9 +449,78 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Knowledge Graphs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Knowledge Graphs
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-graph-datamodel" class="md-nav__link">
+    Knowledge Graph datamodel
+  </a>
+  
+    <nav class="md-nav" aria-label="Knowledge Graph datamodel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schemaorg" class="md-nav__link">
+    Schema.org
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ld-views" class="md-nav__link">
+    LD Views
+  </a>
+  
+    <nav class="md-nav" aria-label="LD Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparql-construct" class="md-nav__link">
+    SPARQL Construct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provenance" class="md-nav__link">
+    Provenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -505,7 +586,31 @@
   
     <li class="md-nav__item">
       <a href="../Modelling/" class="md-nav__link">
-        Data Modelling
+        Overzicht
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IRI/" class="md-nav__link">
+        IRI Strategie
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Semantics/" class="md-nav__link">
+        Definities
       </a>
     </li>
   
@@ -547,7 +652,7 @@
   
     <li class="md-nav__item">
       <a href="../Gebruik/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -613,7 +718,7 @@
   
     <li class="md-nav__item">
       <a href="../UseCases/" class="md-nav__link">
-        Overview
+        Overzicht
       </a>
     </li>
   
@@ -643,6 +748,61 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-graph-datamodel" class="md-nav__link">
+    Knowledge Graph datamodel
+  </a>
+  
+    <nav class="md-nav" aria-label="Knowledge Graph datamodel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schemaorg" class="md-nav__link">
+    Schema.org
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ld-views" class="md-nav__link">
+    LD Views
+  </a>
+  
+    <nav class="md-nav" aria-label="LD Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparql-construct" class="md-nav__link">
+    SPARQL Construct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provenance" class="md-nav__link">
+    Provenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -659,6 +819,54 @@
                 
                 
                 <h1 id="knowledge-graph">Knowledge Graph</h1>
+<p>Wanneer we (basis-)registraties beschikbaar gesteld als Linked Data, is er nog steeds een grote hoeveelheid domeinkennis nodig om de data goed te gebruiken. Zo kunnen bijvoorbeeld alleen BAG en BGT specialisten die data en het datamodel goed kennen gemakkelijk interacteren met de data. In de praktijk zijn veel gebruikers geïnteresseerd in data over hun huis, wijk of leefomgeving. Om die reden slaan we de complexe basisregistraties en andere overheidsdatasets plat tot een Knowledge Graph voor een bepaald doeleinde. Hierbij kunnen we er ook voor kiezen additionele versimpelingen toe te passen, zoals het abstraheren van historie in de registraties.</p>
+<h2 id="knowledge-graph-datamodel">Knowledge Graph datamodel</h2>
+<p>In de praktijk praten gebruikers vaak niet in termen als Nummeraanduiding, Verblijfsobject of Bestuurlijk Gebied, maar over adressen, gebouwen en wijken. Gebruikers denken in termen van hun fysieke leefomgeving.</p>
+<p><img alt="Fysieke Werkelijkheid" src="../images/fysieke-werkelijkheid.png" /></p>
+<h3 id="schemaorg">Schema.org</h3>
+<p>In het maken van een gebruiksvriendelijk datamodel kan ervoor gekozen worden om termen uit de basisregistraties te hergebruiken (zoals Pand of Perceel). Er kan ook voor gekozen worden om de data naar een nog meer generiek en open standaard te brengen, zoals <a href="https://schema.org/docs/documents.html">Schema.org</a>. Deze standaard is geïntrodueerd door Google en behelst een manier van data omschrijving waarmee moderne zoek machines goed aan de slag kunnen. Objecten, pagina's en websites die met deze standaard zijn omschreven zijn dan ook over het algemeen goed vindbaar op het web. Een voorbeeld van een dergelijk datamodel:</p>
+<p><img alt="Schema.Org model" src="../images/mermaid-sdo-model.PNG" /></p>
+<h2 id="ld-views">LD Views</h2>
+<p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
+<p><img alt="Architectuur LD Views" src="../images/architectuur-ld-views.png" /></p>
+<p>In deze architectuur zijn een aantal zaken van belang. We beginnen met brondata (paarse laag) zoals eerder beschreven in <a href="../Brondata/">Brondata</a>. Deze zetten we middels <a href="../GraphQLETL/">GraphQL</a> en de <a href="../Enhancer/">Enhancer</a> om naar registratieve <a href="../LinkedData/">Linked Data</a> (de oranje laag).</p>
+<p>Vanuit daar creeëren we één of meerdere Views (afhankelijk van gebruik) op deze data, welke laag we dan ook de Knowledge Graph noemen. Governance technisch zal een business architect moeten bepalen welke data er in deze laag moet zitten - en waar deze data vandaan moet komen. Het unieke hier is dat de data op zichzelf vaak al bevraagbaar is (middels uitgebreide en complexe SPARQL queries op de registratieve Linked Data), maar dat deze voor gemakkelijk gebruik persistent wordt opgeslagen. Voor verschillende doeleinden kunnen verschillende LD Views ontstaan in de toekomst.</p>
+<blockquote>
+<p>We geloven heel erg in het statement <em>One size fits none</em>. Immers, er valt niet één datamodel, één dataset of één manier van ontsluiting te bedenken waar alle gebruikers baat bij hebben. Door dit wel na te streven lopen we het risico een oplossing te creeëren die voor niemand echt de perfect aansluiting geeft. Daarom houden we de brondata grotendeels intact en staan we toe op basis van verschillende use cases één of meerdere Knowledge Graphs beschikbaar te stellen.</p>
+</blockquote>
+<h3 id="sparql-construct">SPARQL Construct</h3>
+<p>We gebruiken vervolgens SHACL Rules om de data om te zetten naar het Knowlegde Graph datamodel. Dit is een combinatie van SPARQL Construct queries waarmee de bestaande data wordt getransformeerd naar het nieuwe model. Een voorbeeld van een dergelijke query is:</p>
+<div class="highlight"><pre><span></span><code><span class="k">prefix</span> <span class="nn">bag</span><span class="p">:</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/def/&gt;</span>
+<span class="k">prefix</span> <span class="nn">dct</span><span class="p">:</span> <span class="nl">&lt;http://purl.org/dc/terms/&gt;</span>
+<span class="k">prefix</span> <span class="nn">foaf</span><span class="p">:</span> <span class="nl">&lt;http://xmlns.com/foaf/0.1/&gt;</span>
+<span class="k">prefix</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
+<span class="k">prefix</span> <span class="nn">prov</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/ns/prov#&gt;</span>
+<span class="k">prefix</span> <span class="nn">sdo</span><span class="p">:</span> <span class="nl">&lt;https://schema.org/&gt;</span>
+<span class="k">prefix</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
+<span class="k">construct</span> <span class="p">{</span>
+  <span class="nv">?city</span>
+    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">City</span><span class="p">;</span>
+    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span> <span class="nv">?woonplaatsRegistratie</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">geo</span> <span class="nv">?shape</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="nv">?name</span><span class="p">.</span>
+  <span class="nv">?shape</span> <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">GeoShape</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">polygon</span> <span class="nv">?polygon</span><span class="p">.</span>
+<span class="p">}</span> <span class="k">where</span> <span class="p">{</span>
+  <span class="nv">?woonplaatsRegistratie</span>
+    <span class="k">a</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">WoonplaatsRegistratie</span><span class="p">;</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">geometrie</span> <span class="nv">?polygon</span><span class="p">;</span>
+    <span class="nn">dct</span><span class="p">:</span><span class="nt">identifier</span> <span class="nv">?id</span><span class="p">;</span>
+    <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?woonplaats</span><span class="p">;</span>
+    <span class="nn">skos</span><span class="p">:</span><span class="nt">prefLabel</span> <span class="nv">?name</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?woonplaatsRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&quot;https://data.labs.kadaster.nl/kadaster/kg/id/city/&quot;</span><span class="p">,</span><span class="nf">str</span><span class="p">(</span><span class="nv">?id</span><span class="p">)))</span> <span class="k">as</span> <span class="nv">?city</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&quot;https://data.labs.kadaster.nl/kadaster/kg/id/geo-shape/&quot;</span><span class="p">,</span><span class="nf">str</span><span class="p">(</span><span class="nv">?id</span><span class="p">)))</span> <span class="k">as</span> <span class="nv">?shape</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="k">limit</span> <span class="mi">1</span>
+</code></pre></div>
+<p>Uitgangspunt is deshalve dat de data origineel beschikbaar is gemaakt in de registratieve Linked Data laag. Daarna kan er op - op basis van deze brondata - een View worden gegenereerd met SPARQL queries. Deze nieuwe Knowledge Graph bevat een provenance (i.e. data lineage) naar de originele brondata.</p>
+<h3 id="provenance">Provenance</h3>
+<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt. </p>
                 
               
               
