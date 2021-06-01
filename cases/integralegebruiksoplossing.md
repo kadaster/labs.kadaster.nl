@@ -48,7 +48,7 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
       Een toepassing voor de professionele geodata gebruiker. 
     </div>
     <div class="cards-wrapper">
-      <a href="/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&max_increment_samples=100">
+      <a href="/demonstrators/sparklis/osparklis.html?title=Kadaster%20Knowledge%20Graph&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl&avoid_lengthy_queries=true&max_increment_samples=100max_increment_samples=100">
         <div class="igo_card">
           <div class="card-type">Sparklis</div>
           <img class="card-image" src="/assets/images/sparklis.png">
@@ -102,6 +102,13 @@ Lees hoe we de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen 
     </div>
   </a>
 </div>
+
+## Feedback
+
+We zijn heel benieuwd naar jullie feedback. Jullie zouden ons dan ook helpen door onderstaand formulier in te vullen.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform?embedded=true" width="640" height="1093" frameborder="0" marginheight="0" marginwidth="0">Laden..</iframe> 
+
 
 ## Overall UI/UX Design
 
