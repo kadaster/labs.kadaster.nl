@@ -18,7 +18,7 @@
 	  <!-- Google Charts -->
 	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	  <script type="text/javascript">
-		  google.charts.load('current', { 'packages': ['map'], mapsApiKey: 'AIzaSyC1lxqo51Ivm0BrOc0ogkOBUFjHcoczqNo' });
+		  google.charts.load('current', { 'packages': ['map'], mapsApiKey: 'AIzaSyAu6pclUgwT_Vu3cLwU2bQBGV77wVDFgJQ' });
 	  </script>
 	  <!-- YASGUI -->
 	  <link href="https://cdn.jsdelivr.net/yasgui/2.6.1/yasgui.min.css" rel="stylesheet" type="text/css" />
@@ -66,45 +66,12 @@
 						  <ul class="dropdown-menu">
 							  <li>
 								  <a
-									  href="osparklis.html?title=BAG&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&lang=nl&max_increment_samples=100">
-									  Basisregistratie Adressen en Gebouwen (BAG)
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="osparklis.html?title=BAG&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
-									  Basisregistratie Adressen en Gebouwen (BAG) -en
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="osparklis.html?title=Kadaster%20Knowledge%20Graph&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl&max_increment_samples=100">
-									  Kadaster Knowledge Graph
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="osparklis.html?title=Kadaster%20Knowledge%20Graph&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=en&max_increment_samples=100">
-									  Kadaster Knowledge Graph -en
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="osparklis.html?title=BRT&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl&max_increment_samples=100">
-									  Basisregistratie Topografie (BRT)
-  
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="osparklis.html?title=BRT&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/brt/services/brt/sparql&entity_lexicon_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&max_increment_samples=100">
-									  Basisregistratie Topografie (BRT) -en
-  
+									  href="osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/wouter/kg-demo-sparklis/services/default/sparql&lang=nl&avoid_lengthy_queries=true&max_increment_samples=100">
+									  KG Demo Sparklis
 								  </a>
 							  </li>
 						  </ul>
 					  </li>
-  
   
 					  <li class="dropdown">
 						  <a class="dropdown-toggle" data-toggle="dropdown">
@@ -118,25 +85,14 @@
 						  </a>
 						  <ul class="dropdown-menu">
 							  <li>
-								  <a
-									  href="https://kadaster.wvr.io/bag2-0" target="_blank">
-									  BAG
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="https://kadaster.wvr.io/brt-ld" target="_blank">
-									  BRT
-								  </a>
-							  </li>
-							  <li>
-								  <a
-									  href="https://kadaster.wvr.io/sdo-target-model" target="_blank">
-									  Kadaster SDO KG
+								  <a href="https://kadaster.wvr.io/kg-demo-sparklis/home" target="_blank">
+									  KG Demo Sparklis
 								  </a>
 							  </li>
 						  </ul>
-			  
+  
+					  <li>
+  
 					  <li>
 						  <span class="navbar-form">
 							  <span class="tooltiped">
@@ -145,8 +101,7 @@
 								  <span class="tooltip lang-es">Ingrese aquí la URL del SPARQL endpoint requerido</span>
 								  <span class="tooltip lang-nl">Vul hier de URL van de gewenste SPARQL endpoint in</span>
 								  <input id="sparql-endpoint-input" class="form-control no-padding" type="url"
-									  value="http://api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql">
-								  <!-- default endpoint -->
+									  value="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql"> <!-- default endpoint -->
 							  </span>
 							  <span class="tooltiped">
 								  <span class="tooltip lang-en">Click to connect to the entered SPARQL endpoint</span>
@@ -167,7 +122,7 @@
 							  <span class="tooltip lang-es">Haga clic aquí para editar el título de el endpoint</span>
 							  <span class="tooltip lang-nl">Klik hier om de titel van het endpoint te bewerken</span>
 							  <span id="sparql-endpoint-title" class="navbar-text" contenteditable="true">
-								  BAG
+								  SDO Knowledge Graph
 							  </span> <!-- default title -->
 						  </span>
 					  </li>
@@ -352,7 +307,7 @@
 								  <span class="texte lang-fr">Utiliser comme proxy le point d'accès suivant </span>
 								  <span class="texte lang-es">Utilizar como proxy el siguiente endpoint</span>
 								  <span class="texte lang-nl">Gebruik een proxy naar de volgende endpoint</span>
-								  <input id="input-proxy-url" type="text" value="http://servolis.irisa.fr/dbpedia/sparql">
+								  <input id="input-proxy-url" type="text">
 								  <!-- default value -->
 								  <span class="texte lang-en"> (useful to avoid cross-domain blocking by Web
 									  browsers)</span>
@@ -477,6 +432,19 @@
 							  </div>
 						  </li>
 						  <li class="list-group-item">
+							  <div id="config-avoid-lengthy-queries" class="config-param">
+								  <input id="input-avoid-lengthy-queries" type="checkbox" checked> <!-- default value -->
+								  <span class="texte lang-en">Avoid very long queries, which are used to better sample
+									  suggestions</span>
+								  <span class="texte lang-fr">Évitez les requêtes très longues, qui sont utilisées pour
+									  mieux sélectionner les suggestions</span>
+								  <span class="texte lang-es">Evite las consultas muy largas, que se utilizan para
+									  seleccionar mejor las sugerencias</span>
+								  <span class="texte lang-nl">Vermijd zeer lange query's, die worden gebruikt om
+									  suggesties beter te selecteren</span>
+							  </div>
+						  </li>
+						  <li class="list-group-item">
 							  <div id="config-short-permalink" class="config-param">
 								  <input id="input-short-permalink" type="checkbox" checked> <!-- default value -->
 								  <span class="texte lang-en">Generate short URLs for permanent links</span>
@@ -493,7 +461,7 @@
 						  <span class="tooltip lang-fr">Fermer le panneau de configuration pour appliquer les
 							  changements.</span>
 						  <span class="tooltip lang-es">Cierre el panel de configuración para aplicar los cambios.</span>
-						  <span class="tooltip lang-nl">Sluit het configuratiescherm om de wijzigingen op te slaan.</span>
+						  <span class="tooltip lang-nl">Sluit het configuratie paneel om de wijzigingen op te slaan</span>
 						  <button id="config-endpoint-close" type="button" class="config-close btn btn-primary"
 							  data-dismiss="modal">
 							  <span class="texte lang-en">Close</span>
@@ -619,6 +587,23 @@
 							  </div>
 						  </li>
 						  <li class="list-group-item">
+							  <div id="config-transitive-closure" class="config-param">
+								  <input id="input-transitive-closure" type="checkbox" checked> <!-- default value -->
+								  <span class="texte lang-en">Use materialized transitive closures declared with property
+									  <code
+										  title="http://www.irisa.fr/LIS/ferre/vocab/owl#transitiveOf">lis-owl:transitiveOf</code></span>
+								  <span class="texte lang-fr">Utiliser les fermetures transitives matérialisées, déclarées
+									  avec la propriété <code
+										  title="http://www.irisa.fr/LIS/ferre/vocab/owl#transitiveOf">lis-owl:transitiveOf</code></span>
+								  <span class="texte lang-es">Utilizar cierres transitivos materializados, declarados con
+									  la propiedad <code
+										  title="http://www.irisa.fr/LIS/ferre/vocab/owl#transitiveOf">lis-owl:transitiveOf</code></span>
+								  <span class="texte lang-nl">Gebruik gematerialiseerde transitieve sluitingen,
+									  gedeclareerd met de eigenschap <code
+										  title="http://www.irisa.fr/LIS/ferre/vocab/owl#transitiveOf">lis-owl:transitiveOf</code></span>
+							  </div>
+						  </li>
+						  <li class="list-group-item">
 							  <div id="config-nary-relations" class="config-param">
 								  <input id="input-nary-relations" type="checkbox" checked> <!-- default value -->
 								  <span class="texte lang-en">Suggest <span class="naryURI">n-ary relations (reified
@@ -652,7 +637,7 @@
 						  <span class="tooltip lang-fr">Fermer le panneau de configuration pour appliquer les
 							  changements.</span>
 						  <span class="tooltip lang-es">Cierre el panel de configuración para aplicar los cambios.</span>
-						  <span class="tooltip lang-nl">Sluit het configuratiescherm om de wijzigingen op te slaan. </span>
+						  <span class="tooltip lang-nl">Sluit het configuratie paneel om de wijzingen op te slaan. </span>
 						  <button id="config-ontology-close" type="button" class="config-close btn btn-primary"
 							  data-dismiss="modal">
 							  <span class="texte lang-en">Close</span>
@@ -681,10 +666,12 @@
 					  <ul class="list-group">
 						  <li class="list-group-item">
 							  <div id="config-lang" class="config-param">
-								  <span class="texte lang-en">Set the page and query language as </span>
-								  <span class="texte lang-fr">Définir la langue de la page et des requêtes </span>
-								  <span class="texte lang-es">Cambiar el idioma de la página y las consultas a </span>
-								  <span class="texte lang-nl"> Stel de pagina en query taal in als</span>
+								  <span class="texte lang-en">Set the page and query <strong>language</strong> as </span>
+								  <span class="texte lang-fr">Définir la <strong>langue</strong> de la page et des
+									  requêtes </span>
+								  <span class="texte lang-es">Cambiar el <strong>idioma</strong> de la página y las
+									  consultas a </span>
+								  <span class="texte lang-nl"> Stel de pagina en query <strong>taal</strong> in als</span>
 								  <select id="lang-select">
 									  <option value="en">English</option>
 									  <option value="fr">français</option>
@@ -695,14 +682,14 @@
 						  </li>
 						  <li class="list-group-item">
 							  <div id="config-label-entity" class="config-param">
-								  <span class="texte lang-en">For <span class="URI">entity</span> labels, use property
-								  </span>
-								  <span class="texte lang-fr">Pour les étiquettes d'<span class="URI">entités</span>,
-									  utiliser la propriété </span>
-								  <span class="texte lang-es">Para las etiquetas de las <span
+								  <span class="texte lang-en">For the <strong>labels</strong> of <span
+										  class="URI">entities</span>, use property </span>
+								  <span class="texte lang-fr">Pour les <strong>étiquettes</strong> d'<span
+										  class="URI">entités</span>, utiliser la propriété </span>
+								  <span class="texte lang-es">Para las <strong>etiquetas</strong> de las <span
 										  class="URI">entidades</span>, utilizar la propiedad </span>
-								  <span class="texte lang-nl"> Voor <span class="URI">entity</span> labels, gebruik
-									  eigenschap </span>
+								  <span class="texte lang-nl"> Voor <strong>labels</strong> van <span
+										  class="URI">entity</span>, gebruik eigenschap </span>
 								  <select id="config-label-entity-select">
 									  <option value=""></option>
 									  <option value="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</option>
@@ -742,16 +729,20 @@
 							  </div>
 						  </li>
 						  <li class="list-group-item">
-							  <div id="config-label-class" class="config-param">
-								  <span class="texte lang-en">For <span class="classURI">class</span> labels, use
-									  property</span>
-								  <span class="texte lang-fr">Pour les étiquettes de <span
-										  class="classURI">classes</span>, utiliser la propriété</span>
-								  <span class="texte lang-es">Para las etiquetas de las <span
-										  class="classURI">clases</span>, utilizar la propiedad</span>
-								  <span class="texte lang-nl">Voor labels van <span class="classURI">klassen</span>,
-									  gebruik de eigenschap</span>
-								  <select id="config-label-class-select">
+							  <div id="config-label-concept" class="config-param">
+								  <span class="texte lang-en">For the <strong>labels</strong> of <span
+										  class="classURI">classes</span>, <span class="propURI">properties</span>, and
+									  <span class="naryURI">qualifiers</span>, use property</span>
+								  <span class="texte lang-fr">Pour les <strong>étiquettes</strong> de <span
+										  class="classURI">classes</span>, <span class="propURI">propriétés</span> et
+									  <span class="naryURI">qualifieurs</span>, utiliser la propriété</span>
+								  <span class="texte lang-es">Para las <strong>etiquetas</strong> de las <span
+										  class="classURI">clases</span>, <span class="propURI">propiedades</span> y <span
+										  class="naryURI">calificadores</span>, utilizar la propiedad</span>
+								  <span class="texte lang-nl">Voor <strong>labels</strong> van <span
+										  class="classURI">klassen</span>, <span class="propURI">eigenschappen</span>, en
+									  <span class="naryURI">qualifiers</span>, gebruik de eigenschap</span>
+								  <select id="config-label-concept-select">
 									  <option value=""></option>
 									  <option value="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</option>
 									  <option value="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel
@@ -767,7 +758,7 @@
 										  requeridas</span>
 									  <span class="tooltip lang-nl">Voer hier de URIs in van de gewenste
 										  eigenschappen</span>
-									  <input id="config-label-class-input" type="text" size="50"
+									  <input id="config-label-concept-input" type="text" size="50"
 										  placeholder="uri1, uri2, ...">
 								  </span>
 								  <span class="texte lang-en"> with languages (optional)</span>
@@ -780,7 +771,7 @@
 									  <span class="tooltip lang-es">Introduzca aquí los tags de los idiomas
 										  requeridos</span>
 									  <span class="tooltip lang-nl">Voer hier de gewenste taaltags in</span>
-									  <input id="config-label-class-input-lang" type="text" size="10"
+									  <input id="config-label-concept-input-lang" type="text" size="10"
 										  placeholder="tag1, tag2, ...">
 								  </span>
 								  <span class="texte lang-en">(e.g., 'en,fr' for English or French)</span>
@@ -789,18 +780,21 @@
 								  <span class="texte lang-nl"> (bijv., 'en,fr' voor Engels of Frans) </span>
 							  </div>
 						  </li>
+  
 						  <li class="list-group-item">
-							  <div id="config-label-property" class="config-param">
-								  <span class="texte lang-en">For <span class="propURI">property</span> labels, use
-									  property</span>
-								  <span class="texte lang-fr">Pour les étiquettes de <span
-										  class="propURI">propriétés</span>, utiliser la propriété </span>
-								  <span class="texte lang-es">Para las etiquetas de las <span
-										  class="propURI">propiedades</span>, utilizar la propiedad </span>
-								  <span class="texte lang-nl">Voor labels van <span class="propURI">eigenschappen</span>,
-									  gebruik de eigenschap</span>
-								  <select id="config-label-property-select">
-									  <option value=""></option>
+							  <div id="config-entity-tooltips" class="config-param">
+								  <span class="texte lang-en">For the <strong>tooltips</strong> of <span
+										  class="URI">entities</span>, use property </span>
+								  <span class="texte lang-fr">Pour les <strong>info-bulles</strong> d'<span
+										  class="URI">entités</span>, utiliser la propriété </span>
+								  <span class="texte lang-es">Para los <strong>tooltips</strong> de las <span
+										  class="URI">entidades</span>, utilizar la propiedad </span>
+								  <span class="texte lang-nl"> Voor de <strong>tooltips</strong> van <span
+										  class="URI">entities</span>, gebruik eigenschap </span>
+								  <select id="config-entity-tooltips-select">
+									  <option value="">(URI)</option>
+									  <option value="void">(void)</option>
+									  <option value="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</option>
 									  <option value="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</option>
 									  <option value="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel
 									  </option>
@@ -815,56 +809,8 @@
 										  requeridas</span>
 									  <span class="tooltip lang-nl">Voer hier de URIs in van de gewenste
 										  eigenschappen</span>
-									  <input id="config-label-property-input" type="text" size="50"
+									  <input id="config-entity-tooltips-input" type="text" size="50"
 										  placeholder="uri1, uri2, ...">
-								  </span>
-								  <span class="texte lang-en"> with languages (optional) </span>
-								  <span class="texte lang-fr"> avec les langues (optionnel) </span>
-								  <span class="texte lang-es"> con los idiomas (opcional) </span>
-								  <span class="texte lang-nl"> met talen (optioneel)</span>
-								  <span class="tooltiped">
-									  <span class="tooltip lang-en">Enter here the desired language tags</span>
-									  <span class="tooltip lang-fr">Entrer ici les tags des langues souhaitées</span>
-									  <span class="tooltip lang-es">Introduzca aquí los tags de los idiomas
-										  requeridos</span>
-									  <span class="tooltip lang-nl">Voer hier de gewenste taaltags in</span>
-									  <input id="config-label-property-input-lang" type="text" size="10"
-										  placeholder="tag1, tag2, ...">
-								  </span>
-								  <span class="texte lang-en">(e.g., 'en,fr' for English or French)</span>
-								  <span class="texte lang-fr">(ex., 'en,fr' pour l'anglais ou le français)</span>
-								  <span class="texte lang-es">(ej., 'en,fr' para inglés o francés) </span>
-								  <span class="texte lang-nl"> (bijv., 'en,fr' voor Engels of Frans) </span>
-							  </div>
-						  </li>
-						  <li class="list-group-item">
-							  <div id="config-label-arg" class="config-param">
-								  <span class="texte lang-en">For <span class="naryURI">qualifier</span> labels, use
-									  property</span>
-								  <span class="texte lang-fr">Pour les étiquettes des <span
-										  class="naryURI">qualifieurs</span>, utiliser la propriété </span>
-								  <span class="texte lang-es">Para las etiquetas de los <span
-										  class="naryURI">calificadores</span>, utilizar la propiedad </span>
-								  <span class="texte lang-nl">voor labels van <span class="naryURI">qualifiers</span>,
-									  gebruik de eigenschap </span>
-								  <select id="config-label-arg-select">
-									  <option value=""></option>
-									  <option value="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</option>
-									  <option value="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel
-									  </option>
-									  <option value="http://purl.org/dc/elements/1.1/title">dc:title</option>
-									  <option value="http://purl.org/dc/terms/title">dct:title</option>
-									  <option value="other">prop1, prop2, ...</option>
-								  </select>
-								  <span class="tooltiped">
-									  <span class="tooltip lang-en">Enter here the URIs of the desired properties</span>
-									  <span class="tooltip lang-fr">Entrer ici les URI des propriétés souhaitées</span>
-									  <span class="tooltip lang-es">Introduzca aquí las URIs de las propiedades
-										  requeridas</span>
-									  <span class="tooltip lang-nl">Voer hier de URI in van de gewenste
-										  eigenschappen</span>
-									  <input id="config-label-arg-input" type="text" size="50"
-										  placeholder="url1, url2, ...">
 								  </span>
 								  <span class="texte lang-en"> with languages (optional) </span>
 								  <span class="texte lang-fr"> avec les langues (optionnel) </span>
@@ -876,7 +822,61 @@
 									  <span class="tooltip lang-es">Introduzca aquí los tags de los idiomas
 										  requeridos</span>
 									  <span class="tooltip lang-nl">Voer hier de gewenste taaltags in</span>
-									  <input id="config-label-arg-input-lang" type="text" size="10"
+									  <input id="config-entity-tooltips-input-lang" type="text" size="10"
+										  placeholder="tag1, tag2, ...">
+								  </span>
+								  <span class="texte lang-en"> (e.g., 'en,fr' for English or French) </span>
+								  <span class="texte lang-fr"> (ex., 'en,fr' pour l'anglais ou le français) </span>
+								  <span class="texte lang-es"> (ej., 'en,fr' para inglés o francés) </span>
+								  <span class="texte lang-nl"> (bijv., 'en,fr' voor Engels of Frans) </span>
+							  </div>
+						  </li>
+						  <li class="list-group-item">
+							  <div id="config-concept-tooltips" class="config-param">
+								  <span class="texte lang-en">For the <strong>tooltips</strong> of <span
+										  class="classURI">classes</span>, <span class="propURI">properties</span>, and
+									  <span class="naryURI">qualifiers</span>, use property</span>
+								  <span class="texte lang-fr">Pour les <strong>info-bulles</strong> des <span
+										  class="classURI">classes</span>, <span class="propURI">propriétés</span> et
+									  <span class="naryURI">qualifieurs</span>, utiliser la propriété</span>
+								  <span class="texte lang-es">Para los <strong>tooltips</strong> de las <span
+										  class="classURI">clases</span>, <span class="propURI">propiedades</span> y <span
+										  class="naryURI">calificadores</span>, utilizar la propiedad</span>
+								  <span class="texte lang-nl">Voor de <strong>tooltips</strong> van <span
+										  class="classURI">klassen</span>, <span class="propURI">eigenschappen</span>, en
+									  <span class="naryURI">qualifiers</span>, gebruik de eigenschap</span>
+								  <select id="config-concept-tooltips-select">
+									  <option value="">(URI)</option>
+									  <option value="void">(void)</option>
+									  <option value="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</option>
+									  <option value="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</option>
+									  <option value="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel
+									  </option>
+									  <option value="http://purl.org/dc/elements/1.1/title">dc:title</option>
+									  <option value="http://purl.org/dc/terms/title">dct:title</option>
+									  <option value="other">prop1, prop2, ...</option>
+								  </select>
+								  <span class="tooltiped">
+									  <span class="tooltip lang-en">Enter here the URI of the desired properties</span>
+									  <span class="tooltip lang-fr">Entrer ici les URI des propriétés souhaitées</span>
+									  <span class="tooltip lang-es">Introduzca aquí las URIs de las propiedades
+										  requeridas</span>
+									  <span class="tooltip lang-nl">Voer hier de URIs in van de gewenste
+										  eigenschappen</span>
+									  <input id="config-concept-tooltips-input" type="text" size="50"
+										  placeholder="uri1, uri2, ...">
+								  </span>
+								  <span class="texte lang-en"> with languages (optional)</span>
+								  <span class="texte lang-fr"> avec les langues (optionnel)</span>
+								  <span class="texte lang-es"> con los idiomas (opcional) </span>
+								  <span class="texte lang-nl"> met talen (optioneel)</span>
+								  <span class="tooltiped">
+									  <span class="tooltip lang-en">Enter here the desired language tags</span>
+									  <span class="tooltip lang-fr">Entrer ici les tags des langues souhaitées</span>
+									  <span class="tooltip lang-es">Introduzca aquí los tags de los idiomas
+										  requeridos</span>
+									  <span class="tooltip lang-nl">Voer hier de gewenste taaltags in</span>
+									  <input id="config-concept-tooltips-input-lang" type="text" size="10"
 										  placeholder="tag1, tag2, ...">
 								  </span>
 								  <span class="texte lang-en">(e.g., 'en,fr' for English or French)</span>
@@ -885,6 +885,65 @@
 								  <span class="texte lang-nl"> (bijv., 'en,fr' voor Engels of Frans) </span>
 							  </div>
 						  </li>
+  
+						  <li class="list-group-item">
+							  <div id="config-open-links" class="config-param">
+								  <span class="texte lang-en">For the <strong>hyperlinks</strong> <span
+										  class="glyphicon glyphicon-new-window"></span> of <span
+										  class="URI">entities</span>, use property </span>
+								  <span class="texte lang-fr">Pour les <strong>hyperliens</strong> <span
+										  class="glyphicon glyphicon-new-window"></span> des <span
+										  class="URI">entités</span>, utiliser la propriété </span>
+								  <span class="texte lang-es">Para los <strong>hipervínculos</strong> <span
+										  class="glyphicon glyphicon-new-window"></span> de las <span
+										  class="URI">entidades</span>, utilizar la propiedad </span>
+								  <span class="texte lang-nl"> Voor de <strong>hyperlinks</strong> <span
+										  class="glyphicon glyphicon-new-window"></span> van <span
+										  class="URI">entities</span>, gebruik eigenschap </span>
+								  <select id="config-open-links-select">
+									  <option value="">(URI)</option>
+									  <option value="void">(void)</option>
+									  <option value="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</option>
+									  <option value="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">rdfs:isDefinedBy
+									  </option>
+									  <option value="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</option>
+									  <option value="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">foaf:isPrimaryTopicOf
+									  </option>
+									  <option value="other">prop1, prop2, ...</option>
+								  </select>
+								  <span class="tooltiped">
+									  <span class="tooltip lang-en">Enter here the URIs of the desired properties</span>
+									  <span class="tooltip lang-fr">Entrer ici les URI des propriétés souhaitées</span>
+									  <span class="tooltip lang-es">Introduzca aquí las URIs de las propiedades
+										  requeridas</span>
+									  <span class="tooltip lang-nl">Voer hier de URIs in van de gewenste
+										  eigenschappen</span>
+									  <input id="config-open-links-input" type="text" size="50"
+										  placeholder="uri1, uri2, ...">
+								  </span>
+								  <span style="display:none">
+									  <!-- no need for language tag with open links -->
+									  <span class="texte lang-en"> with languages (optional) </span>
+									  <span class="texte lang-fr"> avec les langues (optionnel) </span>
+									  <span class="texte lang-es"> con los idiomas (opcional) </span>
+									  <span class="texte lang-nl"> met talen (optioneel) </span>
+									  <span class="tooltiped">
+										  <span class="tooltip lang-en">Enter here the desired language tags</span>
+										  <span class="tooltip lang-fr">Entrer ici les tags des langues souhaitées</span>
+										  <span class="tooltip lang-es">Introduzca aquí los tags de los idiomas
+											  requeridos</span>
+										  <span class="tooltip lang-nl">Voer hier de gewenste taaltags in</span>
+										  <input id="config-open-links-input-lang" type="text" size="10"
+											  placeholder="tag1, tag2, ...">
+									  </span>
+									  <span class="texte lang-en"> (e.g., 'en,fr' for English or French) </span>
+									  <span class="texte lang-fr"> (ex., 'en,fr' pour l'anglais ou le français) </span>
+									  <span class="texte lang-es"> (ej., 'en,fr' para inglés o francés) </span>
+									  <span class="texte lang-nl"> (bijv., 'en,fr' voor Engels of Frans) </span>
+								  </span>
+							  </div>
+						  </li>
+  
 						  <li class="list-group-item">
 							  <div id="config-show-datatypes" class="config-param">
 								  <input id="input-show-datatypes" type="checkbox"> <!-- default value -->
@@ -920,7 +979,7 @@
 						  <span class="tooltip lang-fr">Fermer le panneau de configuration pour appliquer les
 							  changements.</span>
 						  <span class="tooltip lang-es">Cierre el panel de configuración para aplicar los cambios.</span>
-						  <span class="tooltip lang-nl">Sluit het configuratiescherm om de wijzigingen op te slaan.</span>
+						  <span class="tooltip lang-nl">Sluit het configuratie paneel om de wijzingen op te slaan.</span>
 						  <button id="config-language-close" type="button" class="config-close btn btn-primary"
 							  data-dismiss="modal">
 							  <span class="texte lang-en">Close</span>
@@ -1019,7 +1078,7 @@
 						  <span class="tooltip lang-fr">Fermer le panneau de configuration pour appliquer les
 							  changements.</span>
 						  <span class="tooltip lang-es">Cierre el panel de configuración para aplicar los cambios.</span>
-						  <span class="tooltip lang-nl">Sluit het configuratiescherm om de wijzigingen op te slaan.</span>
+						  <span class="tooltip lang-nl">Sluit het configuratie paneel om de wijzingen op te slaan.</span>
 						  <button id="config-privacy-close" type="button" class="config-close btn btn-primary"
 							  data-dismiss="modal">
 							  <span class="texte lang-en">Close</span>
@@ -1070,7 +1129,7 @@
 						  <span class="tooltip lang-fr">Fermer le panneau de configuration pour appliquer les
 							  changements.</span>
 						  <span class="tooltip lang-es">Cierre el panel de configuración para aplicar los cambios.</span>
-						  <span class="tooltip lang-nl">Sluit het configuratiescherm om de wijzigingen op te slaan.</span>
+						  <span class="tooltip lang-nl">Sluit het configuratie paneel om de wijzingen op te slaan.</span>
 						  <button id="config-privacy-close" type="button" class="config-close btn btn-primary"
 							  data-dismiss="modal">
 							  <span class="texte lang-en">Close</span>
@@ -1208,7 +1267,6 @@
 					  <span class="texte lang-es">Historial</span>
 					  <span class="texte lang-nl">Geschiedenis</span>
 				  </label>
-				  
 			  </div>
   
 		  </div>
@@ -1228,15 +1286,15 @@
 							  <span class="texte lang-es">Tu consulta y su <span class="highlighted">foco
 									  actual</span></span>
 							  <span class="texte lang-nl">Uw query en zijn <span class="highlighted">huidige
-									  specificaties</span></span>
+									  focus</span></span>
   
 							  <span class="texte lang-en"> (click on different parts of the query to change it)</span>
 							  <span class="texte lang-fr"> (cliquer sur différentes parties de la requêtes pour le
 								  changer)</span>
 							  <span class="texte lang-es"> (Haga clic sobre las diferentes partes de la consulta para
 								  cambiarlo)</span>
-							  <span class="texte lang-nl"> (Klik op de verschillende delen van de query om deze te
-								  wijzigen)</span>
+							  <span class="texte lang-nl"> (Klik op verschillende delen van de query om deze te
+								  wijzingen)</span>
 						  </a>
 					  </h5>
 				  </div>
@@ -1284,11 +1342,11 @@
 							  <div class="incr-box col-sm-4">
 								  <div class="panel panel-default">
 									  <div class="panel-heading">
-										  <span class="texte lang-en">Types and Relations of the thing</span>
-										  <span class="texte lang-fr">Types et Relations de the thing</span>
-										  <span class="texte lang-es">Tipos y Relaciones de the thing</span>
-										  <span class="texte lang-nl">Types en Relaties</span>
-										  
+										  <span class="texte lang-en">Types and Relations of</span>
+										  <span class="texte lang-fr">Types et Relations de</span>
+										  <span class="texte lang-es">Tipos y Relaciones de</span>
+										  <span class="texte lang-nl">Typen en Relaties van</span>
+										  <span class="focus-np">the thing</span>
 									  </div>
 									  <span class="tooltiped panel-body panel-body-incrs">
 										  <span class="tooltip lang-en">Click a concept to insert in the query at the
@@ -1342,7 +1400,7 @@
 											  <span class="texte lang-en">selected items with</span>
 											  <span class="texte lang-fr">éléments sélectionnés avec</span>
 											  <span class="texte lang-es">elementos seleccionados con</span>
-											  <span class="texte lang-nl">geselecteerde items met</span>
+											  <span class="texte lang-nl">geselecteerde items in met</span>
 											  <span id="selection-properties-items"></span>
 										  </div>
 										  <div id="list-properties" class="list-incrs css-treeview">
@@ -1375,7 +1433,7 @@
 															  éléments</span>
 														  <span class="tooltip lang-es">Expandir todos los
 															  elementos</span>
-														  <span class="tooltip lang-nl">Laat alle items zien</span>
+														  <span class="tooltip lang-nl">Vouw alle items uit</span>
 														  ▼
 													  </span>
 													  <span id="button-collapse-properties" type="button"
@@ -1384,7 +1442,7 @@
 														  <span class="tooltip lang-fr">Réduire tous les éléments</span>
 														  <span class="tooltip lang-es">Contraer todos los
 															  elementos</span>
-														  <span class="tooltip lang-nl">Alle items samenvoegen</span>
+														  <span class="tooltip lang-nl">Alle items samenvouwen</span>
 														  ►
 													  </span>
 												  </div>
@@ -1412,10 +1470,11 @@
 							  <div class="incr-box col-sm-4">
 								  <div class="panel panel-default">
 									  <div class="panel-heading">
-										  <span class="texte lang-en">Identities or Values of the thing</span>
-										  <span class="texte lang-fr">Identités ou Valeurs de the thing</span>
-										  <span class="texte lang-es">Identidades o Valores de the thing</span>
-										  <span class="texte lang-nl">Identiteiten en Waarden</span>
+										  <span class="texte lang-en">Identities or Values of</span>
+										  <span class="texte lang-fr">Identités ou Valeurs de</span>
+										  <span class="texte lang-es">Identidades o Valores de</span>
+										  <span class="texte lang-nl">Identiteiten of Waarden van</span>
+										  <span class="focus-np">the thing</span>
 									  </div>
 									  <span class="tooltiped panel-body panel-body-incrs">
 										  <span class="tooltip lang-en">Click an entity to insert in the query at the
@@ -1497,7 +1556,7 @@
 											  <span class="texte lang-en">selected items with</span>
 											  <span class="texte lang-fr">éléments sélectionnés avec</span>
 											  <span class="texte lang-es">elementos seleccionados con</span>
-											  <span class="texte lang-nl">geselecteerde items met</span>
+											  <span class="texte lang-nl">geselecteerde items in met</span>
 											  <span id="selection-terms-items"></span>
 										  </div>
 										  <div id="list-terms" class="list-incrs css-treeview">
@@ -1530,7 +1589,7 @@
 															  éléments</span>
 														  <span class="tooltip lang-es">Expandir todos los
 															  elementos</span>
-														  <span class="tooltip lang-nl">Laat alle items zien</span>
+														  <span class="tooltip lang-nl">Vouw alle items uit</span>
 														  ▼
 													  </span>
 													  <span id="button-collapse-terms" type="button"
@@ -1570,7 +1629,7 @@
 										  <span class="texte lang-en">Aggregations and Operators</span>
 										  <span class="texte lang-fr">Agrégations et Opérateurs</span>
 										  <span class="texte lang-es">Agregaciones y Operadores</span>
-										  <span class="texte lang-nl">Aggregaties en Operatoren</span>
+										  <span class="texte lang-nl">Aggregatien en Operatoren</span>
 									  </div>
 									  <span class="tooltiped panel-body panel-body-incrs">
 										  <span class="tooltip lang-en">Click a modifier to insert in the query at the
@@ -1580,7 +1639,7 @@
 										  <span class="tooltip lang-es">Haga clic en un modificador para insertarlo en el
 											  foco de la consulta</span>
 										  <span class="tooltip lang-nl">Klik op een modifier om deze toe te voegen aan de
-											  specificatie van de query</span>
+											  focus van de query</span>
 										  <div class="row">
 											  <div class="col-xs-5 no-padding">
 												  <select id="select-modifiers" class="select-incrs form-control">
@@ -1623,7 +1682,7 @@
 											  <span class="texte lang-en">selected items with</span>
 											  <span class="texte lang-fr">éléments sélectionnés avec</span>
 											  <span class="texte lang-es">artículos seleccionados con</span>
-											  <span class="texte lang-nl">geselecteerde items met</span>
+											  <span class="texte lang-nl">geselecteerde items in met</span>
 											  <span id="selection-modifiers-items"></span>
 										  </div>
 										  <div id="list-modifiers" class="list-incrs css-treeview">
@@ -1633,7 +1692,7 @@
 										  <span class="texte lang-en">No modifier</span>
 										  <span class="texte lang-fr">Aucun modifieur</span>
 										  <span class="texte lang-es">Ningún modificador</span>
-										  <span class="texte lang-nl">Geen modificator</span>
+										  <span class="texte lang-nl">Geen modifier</span>
 									  </div>
 								  </div>
 							  </div>
@@ -1673,13 +1732,13 @@
 									  <span class="texte lang-en">Nested Table</span>
 									  <span class="texte lang-fr">Tableau imbriqué</span>
 									  <span class="texte lang-es">Tabla anidada</span>
-									  <span class="texte lang-nl">Geneste Tabel</span>
+									  <span class="texte lang-nl">Geneste Tafel</span>
 								  </a></li>
 							  <li id="nav-results-table"><a data-toggle="tab" data-target="#results-table">
 									  <span class="texte lang-en">Table</span>
 									  <span class="texte lang-fr">Tableau</span>
 									  <span class="texte lang-es">Tabla</span>
-									  <span class="texte lang-nl">Tabel</span>
+									  <span class="texte lang-nl">Tafel</span>
 								  </a></li>
 							  <li id="nav-results-map"><a id="nav-tab-map" data-toggle="tab" data-target="#results-map"
 									  title="Click on this tab again if the map is not displayed correctly">
@@ -1729,7 +1788,7 @@
 										  <span class="texte lang-en">No result</span>
 										  <span class="texte lang-fr">Aucun résultat</span>
 										  <span class="texte lang-es">Ningún resultado</span>
-										  <span class="texte lang-nl">Geen resultaten</span>
+										  <span class="texte lang-nl">Geen resultaat</span>
 									  </span>
 									  <span class="tooltiped">
 										  <span class="tooltip lang-en">Click to show the next page of results</span>
@@ -1878,10 +1937,10 @@
 			  <br />
 		  </span>
   
-		  <span class="texte lang-en">Last modified February 25th, 2021. Visit </span>
-		  <span class="texte lang-fr">Dernière modification le 25 février 2021. Visiter </span>
-		  <span class="texte lang-es">Última modificación el 25 de Febrero 2021. Visite </span>
-		  <span class="texte lang-nl">Voor het laatst gewijzigd op 25 Februari 2021. Bezoek </span>
+		  <span class="texte lang-en">Last modified May 26th, 2021. Visit </span>
+		  <span class="texte lang-fr">Dernière modification le 26 mai 2021. Visiter </span>
+		  <span class="texte lang-es">Última modificación el 26 de Mayo 2021. Visite </span>
+		  <span class="texte lang-nl">Voor het laatst gewijzigd op 26 Mei 2021. Bezoek </span>
 		  <a target="_blank" href="http://people.irisa.fr/Sebastien.Ferre/software/">
 			  <span class="texte lang-en">my homepage</span>
 			  <span class="texte lang-fr">ma page Web</span>
@@ -1896,3 +1955,4 @@
   </body>
   
   </html>
+  
