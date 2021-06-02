@@ -24,7 +24,7 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
       Een toepassing voor de nieuwsgierige algemene gebruiker.
     </div>
     <div class="cards-wrapper">
-      <a href="/demonstrators/pandviewer">
+      <a href="/demonstrators/objectviewer">
         <div class="igo_card">
           <div class="card-type">Objectviewer</div>
           <img class="card-image" src="/assets/images/pandviewer.png">
