@@ -67,6 +67,7 @@ export interface SingleObject {
     place: string;
     name: string;
     type: string;
+    punt: any;
 }
 export interface RightClickObject {
     bagShape: any;
