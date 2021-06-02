@@ -96,9 +96,9 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
             <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kkg/sdo/sparql/default">https://data.labs.kadaster.nl/kkg/sdo/sparql/default</a></div>
+    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kkg/sdo/sparql/default">Sandbox</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
