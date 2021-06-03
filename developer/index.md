@@ -109,7 +109,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
             <div class="endpointContainerTitle_subtext">Open databronnen van het Kadaster</div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://labs.kadaster.nl/gateway/graphql">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
+    <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">Data Model WIP</a></div>
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
