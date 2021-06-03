@@ -62,6 +62,7 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
           <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je deze gecombineerd met onze data kan bevragen!</div>
         </div>
       </a>
+      We realiseren ons dat het gebruik van deze tools enige oefening vereist. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="/assets/videos/sparklis_demo_1.webm">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.webm">Video 2</a>.
     </div>
   </div>
 
