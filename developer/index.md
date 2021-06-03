@@ -41,7 +41,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">BAG</div>
-            <div class="endpointContainerTitle_subtext">Basisregistratie Adressen en Gebouwen</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bag2/">Basisregistratie Adressen en Gebouwen</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">https://bag2.basisregistraties.overheid.nl/sparql</a></div>
@@ -54,7 +54,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">BGT</div>
-            <div class="endpointContainerTitle_subtext">Basisregistratie Grootschalige Topografie</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bgt">Basisregistratie Grootschalige Topografie</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://bgt.basisregistraties.overheid.nl/sparql</a></div>
@@ -67,7 +67,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">BRT</div>
-            <div class="endpointContainerTitle_subtext">Basisregistratie Topografie</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brt-2">Basisregistratie Topografie</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
@@ -80,7 +80,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">CBS KWB</div>
-            <div class="endpointContainerTitle_subtext">CBS Kerncijfers Wijken- en Buurten</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/cbs/wbk/">CBS Kerncijfers Wijken- en Buurten</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
@@ -93,7 +93,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
         <div>
             <div class="endpointContainerTitle_maintext">KG</div>
-            <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
