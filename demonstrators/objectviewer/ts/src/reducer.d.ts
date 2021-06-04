@@ -69,18 +69,11 @@ export interface SingleObject {
     type: string;
     punt: any;
 }
-export interface RightClickObject {
-    bagShape: any;
-    place: string;
-    name: string;
-    type: string;
-}
 export interface CoordinateQuery {
     lat: string;
     lng: string;
 }
 export interface TextQuery {
-    postcode: string;
-    houseNumber: string;
+    adres: string;
 }
 export declare const reducer: React.Reducer<State, Action>;
