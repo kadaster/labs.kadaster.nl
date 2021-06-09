@@ -1,6 +1,7 @@
 {
   "@context": {
     "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
+    "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "@version": 1.1,
     "beperking_identificatie": {
       "@context": {
