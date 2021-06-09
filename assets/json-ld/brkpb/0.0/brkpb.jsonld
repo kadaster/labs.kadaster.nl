@@ -3,6 +3,8 @@
     "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
     "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "@version": 1.1,
+    "jsonldid": "@id",
+    "jsonldtype": "@type",
     "beperking_identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
