@@ -10,14 +10,20 @@
       "@type": "@id"
     },
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
-    "brk:omvat": {
+    "omvat": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
       },
+      "@id": "brk:omvat",
       "@type": "@id"
     },
     "brkpbpubliekrechtelijkebeperkingen": "@nest",
-    "brondocument_identificatie": {
+    "brkpbwerkingsgebiedobject": "@nest",
+    "bron_iri": {
+      "@id": "owl:sameAs",
+      "@type": "@id"
+    },
+    "brondocument_id": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
       },
@@ -61,6 +67,7 @@
       "@id": "brk:omvat",
       "@type": "@id"
     },
+    "Identificatie": "nen3610:Identificatie",
     "lokaalID": {
       "@id": "nen3610:lokaalID",
       "@type": "xsd:string"
@@ -77,6 +84,7 @@
       "@type": "xsd:dateTime"
     },
     "oin": "brk:oin",
+    "owl": "http://www.w3.org/2002/07/owl#",
     "primaryTopic": "foaf:primaryTopic",
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
