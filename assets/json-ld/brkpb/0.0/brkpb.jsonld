@@ -5,6 +5,12 @@
     "@version": 1.1,
     "jsonldid": "@id",
     "jsonldtype": "@type",
+    "bagobject": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/"
+      },
+      "@type": "@id"
+    },
     "beperking_identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
