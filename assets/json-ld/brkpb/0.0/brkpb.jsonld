@@ -20,8 +20,6 @@
       "@id": "brk:omvat",
       "@type": "@id"
     },
-    "brkpbpubliekrechtelijkebeperkingen": "@nest",
-    "brkpbwerkingsgebiedobject": "@nest",
     "bron_iri": {
       "@id": "owl:sameAs",
       "@type": "@id"
