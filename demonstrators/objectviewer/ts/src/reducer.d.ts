@@ -58,16 +58,7 @@ export interface SingleObject {
     bagShape: any;
     address: string;
     bouwjaar: string;
-    status: string;
-    brt: string;
-    brtName: string;
-    brtTypeName: string;
-    bgt: string;
-    bgtStatus: string;
     place: string;
-    name: string;
-    type: string;
-    punt: any;
 }
 export interface CoordinateQuery {
     lat: string;
