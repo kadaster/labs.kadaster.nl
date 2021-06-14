@@ -74,6 +74,13 @@
       "@id": "brk:omvat",
       "@type": "@id"
     },
+    "identificatie": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
+    },
     "Identificatie": "nen3610:Identificatie",
     "lokaalID": {
       "@id": "nen3610:lokaalID",
@@ -84,11 +91,11 @@
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "objectBegintijd": {
       "@id": "nen3610:beginGeldigheid",
-      "@type": "xsd:dateTime"
+      "@type": "xsd:date"
     },
     "objectEindtijd": {
-      "@id": "nen3610:einGeldigheid",
-      "@type": "xsd:dateTime"
+      "@id": "nen3610:eindGeldigheid",
+      "@type": "xsd:date"
     },
     "oin": "brk:oin",
     "owl": "http://www.w3.org/2002/07/owl#",
