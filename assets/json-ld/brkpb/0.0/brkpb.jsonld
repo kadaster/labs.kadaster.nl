@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
+    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
     "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "@version": 1.1,
     "jsonldid": "@id",
@@ -13,7 +13,7 @@
     },
     "beperking_identificatie": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:beheert",
       "@type": "@id"
@@ -21,7 +21,7 @@
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "omvat": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/publiekrechtelijkeBeperking/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:omvat",
       "@type": "@id"
@@ -32,7 +32,7 @@
     },
     "brondocument_id": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:stukdeel",
       "@type": "@id"
@@ -55,21 +55,21 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "gebaseerd_op_stkdi_identificatie": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:isGebaseerdOp",
       "@type": "@id"
     },
     "gekoppeldAanStukdeel": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:omvat",
       "@type": "@id"
     },
     "gekoppeldAanTiaStuk": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:omvat",
       "@type": "@id"
@@ -92,7 +92,13 @@
     },
     "oin": "brk:oin",
     "owl": "http://www.w3.org/2002/07/owl#",
-    "primaryTopic": "foaf:primaryTopic",
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "relatie_met_PubliekRechtelijkeBeperking": {
@@ -100,14 +106,14 @@
     },
     "relatie_met_stukdeel": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/stukdeel/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:omvat",
       "@type": "@id"
     },
     "relatie_met_werkingsgebied": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/werkingsgebied/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:ontleendAan",
       "@type": "@id"
