@@ -6,7 +6,7 @@ title: Tech Radar
 # Tech Radar
 
 Dit is de Tech Radar van het Kadaster Emerging Technology Center.
-Hierin zijn nieuwe technologieën, ontwikkelingen en innovaties ingedeeld in hoe het ETC verwacht dat deze het Kadaster raken en/of relevant zijn. Heb je vragen, opmerkingen of suggesties? Stuur ons dan een mail naar etc@kadaster.nl
+Hierin zijn nieuwe technologieën, ontwikkelingen en innovaties ingedeeld in hoe het ETC verwacht dat deze het Kadaster raken en/of relevant zijn. Heb je vragen, opmerkingen of suggesties? Stuur ons dan een mail naar etc@kadaster.nl  
 _Laatst bijgewerkt op 21 juni 2021_
 
 
