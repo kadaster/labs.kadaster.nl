@@ -15,6 +15,7 @@
       "@type": "@id"
     },
     "asWKT": {
+      "@id" : "geometrie",
       "@type": "geo:wktLiteral"
     },
     "begingeldigheid": {
