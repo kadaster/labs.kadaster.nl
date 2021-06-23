@@ -129,6 +129,10 @@
       "@id": "bouwjaar",
       "@type": "xsd:gYear"
     },
+    "oorspronkelijkBouwjaar": {
+      "@id": "bouwjaar",
+      "@type": "xsd:gYear"
+    },
     "openbareruimtenaam": {
       "@id": "skos:prefLabel",
       "@language": "nl"
