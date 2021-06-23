@@ -826,6 +826,19 @@
 <h3 id="schemaorg">Schema.org</h3>
 <p>In het maken van een gebruiksvriendelijk datamodel kan ervoor gekozen worden om termen uit de basisregistraties te hergebruiken (zoals Pand of Perceel). Er kan ook voor gekozen worden om de data naar een nog meer generiek en open standaard te brengen, zoals <a href="https://schema.org/docs/documents.html">Schema.org</a>. Deze standaard is geïntrodueerd door Google en behelst een manier van data omschrijving waarmee moderne zoek machines goed aan de slag kunnen. Objecten, pagina's en websites die met deze standaard zijn omschreven zijn dan ook over het algemeen goed vindbaar op het web. Een voorbeeld van een dergelijk datamodel:</p>
 <p><img alt="Schema.Org model" src="../images/mermaid-sdo-model.PNG" /></p>
+<p>Bevindingen bij het eerste gebruik van een op Schema.org gebaseerde kennisgraaf:</p>
+<ol>
+<li>Door de mapping naar Schema.org worden we uitgenodigd om informatie simpeler te ontsluiten.  Data wordt in termen van de alledaagse wereld ontsloten, begrijpelijk voor de niet-specialistische gebruiker.</li>
+<li>Doordat Schema.org alledaagse begrippen zoals Adres, Plaats, Huis hanteert is de data eenvoudiger te bevragen.</li>
+<li>Doordat verscheidene begrippen soms worden 'plat geslagen' in Schema.org wordt de structuur eenvoudiger (bijvoorbeeld Nummeraanduiding en OpenbareRuimte wordt PostAdres).</li>
+<li>Sommige voor de hand liggende begrippen zitten (nog) niet in Schema.org.  Brug bijvoorbeeld wel, maar Weg niet.</li>
+<li>Schema.org is in het Engels.  Het is soms nog lastig om de juiste Nederlandse vertaling te vinden.</li>
+<li>De koppeling tussen Schema.org en de bronsystemen is eenvoudig te leggen (prov:wasDerivedFrom voor instanties; sdo:additionalType voor definities).</li>
+<li>Een toekomstige iteratie van de knowledge graph o.b.v. Schema.org moet het evenwicht zien te vinden tusen 'breedte en diepte' van de ontologie: de rijkdom van de onderliggende data ontsluiten, maar op een manier die geen domeinkennis vereist.</li>
+<li>Doordat meerdere geo-objecten nu als 1 object ontsloten worden heeft de gebruiker meer begeleiding nodig bij het kiezen van dubbel voorkomende eigenschappen (m.n. geometrie).</li>
+<li>Voor een aantal object typen is maar weinig informatie bekend (bijvoorbeeld een Bak).  Je hebt dan alleen de geometrie en de bronhouder.  Het is niet duidelijk of deze informatie nuttig is voor veel gebruikers.</li>
+<li>Een aantal object typen worden op een te laag niveau ontsloten in de bron (bijvoorbeeld Wegdeel, Waterdeele).  Om voor de gebruiker nuttig te zijn zouden deze gegroepeerd ontsloten moeten worden.  Bijvoorbeeld 1 water i.p.v. 100 losse waterdelen.</li>
+</ol>
 <h2 id="ld-views">LD Views</h2>
 <p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
 <p><img alt="Architectuur LD Views" src="../images/architectuur-ld-views.png" /></p>
@@ -866,7 +879,7 @@
 </code></pre></div>
 <p>Uitgangspunt is deshalve dat de data origineel beschikbaar is gemaakt in de registratieve Linked Data laag. Daarna kan er op - op basis van deze brondata - een View worden gegenereerd met SPARQL queries. Deze nieuwe Knowledge Graph bevat een provenance (i.e. data lineage) naar de originele brondata.</p>
 <h3 id="provenance">Provenance</h3>
-<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt. </p>
+<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt.</p>
                 
               
               
