@@ -175,6 +175,13 @@
       "@id": "status",
       "@type": "@id"
     },
+    "status": {
+      "@context": {
+        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      },
+      "@id": "status",
+      "@type": "@id"
+    },
     "tijdstipeindregistratielv": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
