@@ -5,6 +5,8 @@
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
     "jsonldid": "@id",
     "jsonldtype": "@type",
+    "_id": "@id",
+    "_type": "@type",
     "adresseerbaarobjectstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
