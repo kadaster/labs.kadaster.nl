@@ -215,6 +215,11 @@
       "@id": "skos:altLabel",
       "@language": "nl"
     },
+    "versie": {
+      "@id": "prov:order",
+      "@type": "xsd:positiveInteger"
+    },
+    "voorkomen": "@nest",
     "voorkomenidentificatie": {
       "@id": "prov:order",
       "@type": "xsd:positiveInteger"
