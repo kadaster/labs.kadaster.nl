@@ -114,3 +114,16 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
 </div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">
+        <img class="endpointContainerTitle_image" src="/assets/images/elastic-search-logo.png">
+        <div>
+            <div class="endpointContainerTitle_maintext">Elastic Search</div>
+            <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
+        </div>
+    </div>
+    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">https://data.labs.kadaster.nl/kadaster/kg/search/search</a></div>
+    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">Sandbox</a></div>
+</div>
