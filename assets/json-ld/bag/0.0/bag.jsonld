@@ -216,6 +216,13 @@
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
+    "type": {
+      "@context": {
+        "@base": "http://definities.geostandaarden.nl/def/nen3610"
+      },
+      "@id": "type",
+      "@type": "@id"
+    },
     "typeRegistratie": null,
     "value": "rdf:value",
     "verblijfsobjectstatus": {
