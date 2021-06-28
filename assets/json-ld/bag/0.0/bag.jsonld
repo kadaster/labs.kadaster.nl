@@ -56,7 +56,7 @@
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
-    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.opengis.net/ont/geosparql%23",
     "geometrie": {
       "@type": "geo:wktLiteral"
     },
