@@ -31,13 +31,6 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
           <div class="card-description">Zoek in de Objectviewer door informatie uit de BAG, BGT en BRT. Deze demonstrator geeft een invulling aan integrale bevraging.</div>
         </div>
       </a>
-      <a href="/cases/loki">
-        <div class="igo_card">
-          <div class="card-type">Loki</div>
-          <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-          <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. </div>
-        </div>
-      </a>
     </div>
   </div>
 
@@ -52,7 +45,7 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
         <div class="igo_card">
           <div class="card-type">Sparklis</div>
           <img class="card-image" src="/assets/images/sparklis.png">
-          <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
+          <div class="card-description">Een querybuilder in natuurlijke taal waarmee professionele gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
         </div>
       </a>
       <a href="/demonstrators/geodatawizard">
