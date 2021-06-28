@@ -120,7 +120,7 @@
       "@type": "@id"
     },
     "namespace": "nen3610:namespace",
-    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610%23",
     "nummeraanduidingstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -173,9 +173,9 @@
       "@id": "foaf:primaryTopic",
       "@type": "@id"
     },
-    "prov": "http://www.w3.org/ns/prov#",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov%23",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns%23",
+    "skos": "http://www.w3.org/2004/02/skos/core%23",
     "standplaatsstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -249,6 +249,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema%23"
   }
 }
