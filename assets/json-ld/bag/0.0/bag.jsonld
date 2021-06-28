@@ -56,7 +56,7 @@
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
-    "geo": "http://www.opengis.net/ont/geosparql%23",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "geometrie": {
       "@type": "geo:wktLiteral"
     },
@@ -120,7 +120,7 @@
       "@type": "@id"
     },
     "namespace": "nen3610:namespace",
-    "nen3610": "http://definities.geostandaarden.nl/def/nen3610%23",
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "nummeraanduidingstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -173,8 +173,8 @@
       "@id": "foaf:primaryTopic",
       "@type": "@id"
     },
-    "prov": "http://www.w3.org/ns/prov%23",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns%23",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "skos": "http://www.w3.org/2004/02/skos/core%23",
     "standplaatsstatus": {
       "@context": {
@@ -249,6 +249,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "xsd": "http://www.w3.org/2001/XMLSchema%23"
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
