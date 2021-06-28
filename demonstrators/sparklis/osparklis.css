@@ -424,4 +424,4 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-#Leaflet-map { height: 800px; }
+#Leaflet-map { height: 600px; }

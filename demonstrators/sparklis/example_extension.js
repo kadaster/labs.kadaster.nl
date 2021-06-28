@@ -58,10 +58,18 @@ function resetMap(){
 		search: false
 	};
 	if(map == undefined){
+		console.log('creating map object')
 		map = nlmaps.createMap(opts);
+		setTimeout(() => {  map.invalidateSize(); }, 250);
 	}
-	map.invalidateSize();
-	map.fitBounds(group.getBounds());
+	console.log('invalidatingSize')
+	setTimeout(() => {  map.invalidateSize(); }, 250);
+	if(group != undefined){
+		//re-adding data if available
+		group.addTo(map)
+		console.log('Fitting to bounds')
+		map.fitBounds(group.getBounds());
+	}
 	return;
 }
 
@@ -69,7 +77,9 @@ sparklis_extension.hookResults =
     function(results) {
 	// first clear all old data
 	if(group != undefined){
-		map.removeLayer(group)
+		if(map != undefined){
+			map.removeLayer(group)
+		}
 	}
 
 	console.log("results", results);
@@ -80,22 +90,26 @@ sparklis_extension.hookResults =
 			columnname = column;
 		}
 	})
-	let polygonid = results.columns.indexOf(columnname);
-	let coordinates = []
-	results.rows.forEach((row) => {
-		//WKT literal
-		var wkt_geom = row[polygonid].str
-		var wkt = new Wkt.Wkt();
-		wkt.read(wkt_geom);
-		var feature = { "type": "Feature", 'properties': {}, "geometry": wkt.toJson() };
-		var layer = L.geoJson(feature);
-		coordinates.push(layer);
-		//layer.addTo(map);
-	})
-	group = new L.featureGroup(coordinates);
-	console.log(group.getBounds());
-	group.addTo(map)
-	map.fitBounds(group.getBounds());
+	if (columnname != ''){
+		let polygonid = results.columns.indexOf(columnname);
+		let coordinates = []
+		results.rows.forEach((row) => {
+			//WKT literal
+			var wkt_geom = row[polygonid].str
+			var wkt = new Wkt.Wkt();
+			wkt.read(wkt_geom);
+			var feature = { "type": "Feature", 'properties': {}, "geometry": wkt.toJson() };
+			var layer = L.geoJson(feature);
+			coordinates.push(layer);
+			//layer.addTo(map);
+		})
+		group = new L.featureGroup(coordinates);
+		console.log(group.getBounds());
+		if (map!= undefined){
+			group.addTo(map)
+			map.fitBounds(group.getBounds());
+		}
+	}
 	// map.setView(group.getBounds().getCenter());
 
 	// document.getElementById("Leaflet-map-info").innerHTML = JSON.stringify(results);
@@ -109,6 +123,7 @@ sparklis_extension.hookResults =
 	// console.log("Here the first two rows of the results will be selected.");
 	// results.rows = results.rows.slice(0,2);
 	return results
+
     };
 // example suggestions hook: looking for suggestions matching 'city'
 // flag = true;
