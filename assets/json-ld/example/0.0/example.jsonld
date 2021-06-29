@@ -1,0 +1,82 @@
+
+{
+    "@context": {
+      "@base": "https://data.labs.kadaster.nl/dst/test/id/registratie/",
+      "@version": 1.1,
+      "@vocab": "https://data.labs.kadaster.nl/dst/def/",
+      "jsonldid": "@id",
+      "jsonldtype": "@type",
+      "begingeldigheid": {
+        "@id": "nen3610:beginGeldigheid",
+        "@type": "xsd:date"
+      },
+      "chocoladestatus":{
+        "@context": {
+            "@base": "https://data.labs.kadaster.nl/dst/test/id/chocoladeStatus/"
+          },
+          "@id": "chocoladeStatus",
+          "@type": "@id"
+      },
+      "comment": {
+        "@id": "sdo:Comment",
+        "@type": "xsd:string"
+      },
+      "data": "@nest",
+      "dct": "http://purl.org/dc/terms/",
+      "eindgeldigheid": {
+        "@id": "nen3610:eindGeldigheid",
+        "@type": "xsd:date"
+      },
+      "eindregistratie": {
+        "@id": "eindRegistratie",
+        "@type": "xsd:dateTime"
+      },
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "Identificatie": "nen3610:Identificatie",
+      "identificatie": {
+        "@context": {
+          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/identificatie/"
+        },
+        "@id": "nen3610:identificatie",
+        "@type": "@id"
+      },
+      "ind_kwaliteit": {
+        "@type": "xsd:boolean"
+      },
+      "leeftijd": {
+        "@type": "xsd:positiveInteger"
+      },
+      "lokaalID": "nen3610:lokaalID",
+      "naam": {
+        "@id": "skos:prefLabel",
+        "@language": "nl"
+      },
+      "namespace": "nen3610:namespace",
+      "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+      "ogc_fid": null,
+      "peilDatum": null,
+      "primaryTopic": {
+        "@context": {
+          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/object/"
+        },
+        "@id": "foaf:primaryTopic",
+        "@type": "@id"
+      },
+      "prov": "http://www.w3.org/ns/prov#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "sdo": "https://schema.org/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "tijdstipregistratie": {
+        "@id": "beginRegistratie",
+        "@type": "xsd:dateTime"
+      },
+      "value": "rdf:value",
+      "voorkomenidentificatie": {
+        "@id": "prov:order",
+        "@type": "xsd:positiveInteger"
+      },
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  }
+  
