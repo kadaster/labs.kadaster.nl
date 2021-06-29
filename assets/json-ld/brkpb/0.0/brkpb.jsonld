@@ -27,9 +27,10 @@
       "@type": "@id"
     },
     "bron_iri": {
-      "@id": "owl:sameAs",
+      "@id": "brk:ontleendAan",
       "@type": "@id"
     },
+    "brondocument_domein": null,
     "brondocument_id": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
@@ -37,6 +38,7 @@
       "@id": "brk:stukdeel",
       "@type": "@id"
     },
+    "brondocument_identificatie": null,
     "code_grondslag": "brk:grondslag",
     "data": "@nest",
     "datum_beeindiging": {
