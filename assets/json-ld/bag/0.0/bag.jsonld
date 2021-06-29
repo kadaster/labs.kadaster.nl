@@ -14,10 +14,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "asWKT": {
-      "@id" : "geometrie",
-      "@type": "geo:wktLiteral"
-    },
     "begingeldigheid": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
@@ -104,13 +100,6 @@
       "@id": "ligtAan",
       "@type": "@id"
     },
-    "ligtAan": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
-      },
-      "@id": "ligtAan",
-      "@type": "@id"
-    },
     "ligtin": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -118,7 +107,6 @@
       "@id": "ligtIn",
       "@type": "@id"
     },
-    "ligtIn": "@nest",
     "lokaalID": "nen3610:lokaalID",
     "maaktdeeluitvan": {
       "@context": {
