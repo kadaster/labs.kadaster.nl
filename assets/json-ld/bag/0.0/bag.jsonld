@@ -118,13 +118,7 @@
       "@id": "ligtIn",
       "@type": "@id"
     },
-    "ligtIn": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
-      },
-      "@id": "ligtIn",
-      "@type": "@id"
-    },
+    "ligtIn": "@nest",
     "lokaalID": "nen3610:lokaalID",
     "maaktdeeluitvan": {
       "@context": {
