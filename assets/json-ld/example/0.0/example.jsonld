@@ -36,7 +36,7 @@
       "Identificatie": "nen3610:Identificatie",
       "identificatie": {
         "@context": {
-          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/identificatie/"
+          "@base": "https://data.labs.kadaster.nl/dst/test/id/identificatie/"
         },
         "@id": "nen3610:identificatie",
         "@type": "@id"
@@ -58,7 +58,7 @@
       "peilDatum": null,
       "primaryTopic": {
         "@context": {
-          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/object/"
+          "@base": "https://data.labs.kadaster.nl/dst/test/id/object/"
         },
         "@id": "foaf:primaryTopic",
         "@type": "@id"
