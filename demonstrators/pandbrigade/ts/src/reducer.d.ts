@@ -72,5 +72,7 @@ export interface TextQuery {
     geconstateerd: string;
     endyear: string;
     startyear: string;
+    selected: any;
+    query: string;
 }
 export declare const reducer: React.Reducer<State, Action>;
