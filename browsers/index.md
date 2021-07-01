@@ -8,6 +8,22 @@ title: Data Browsers
 Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandig door de data te exploreren. Je kunt zelf filters toepassen, data selecteren en vervolgens visualiseren. Ook hier is de technische basis voor de bevraging SPARQL waardoor de visualisatie reproduceerbaar is in de data. Het Data Science team gebruikt Linked data als methode voor het publiceren van gestructureerde gegevens, zodanig we deze laagdrempelig beschikbaar kunnen stellen via de labs omgeving. Dit stimuleert herbruikbaarheid.
 
 <div class="cards-wrapper">
+  <a href="kkg-gebouw">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Kadaster Knowledge Graph: Gebouw</div>
+      <div class="card-description">Met deze browser kunnen gebouwen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
+    </div>
+  </a>
+  <a href="kkg-terrein">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Kadaster Knowledge Graph: Terrein</div>
+      <div class="card-description">Met deze browser kunnen terreinen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
+    </div>
+  </a>
   <a href="bevolking">
     <div class="card">
       <div class="card-type">Browser</div>

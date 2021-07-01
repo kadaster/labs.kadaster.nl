@@ -19,13 +19,6 @@
       "@type": "@id"
     },
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
-    "omvat": {
-      "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
-      },
-      "@id": "brk:omvat",
-      "@type": "@id"
-    },
     "bron_iri": {
       "@id": "brk:ontleendAan",
       "@type": "@id"
@@ -40,6 +33,13 @@
     },
     "brondocument_identificatie": null,
     "code_grondslag": "brk:grondslag",
+    "code_status_historie": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+      },
+      "@id": "brk:statusHistorie",
+      "@type": "@id"
+    },
     "data": "@nest",
     "datum_beeindiging": {
       "@id": "brk:datumBeëindiging",
@@ -76,6 +76,14 @@
       "@id": "brk:omvat",
       "@type": "@id"
     },
+    "grondslag": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/model/id/grondslag/"
+      },
+      "@id": "brk:grondslag",
+      "@type": "@id"
+    },
+    "grondslag_waarde": null,
     "identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
@@ -100,6 +108,13 @@
       "@type": "xsd:date"
     },
     "oin": "brk:oin",
+    "omvat": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@id": "brk:omvat",
+      "@type": "@id"
+    },
     "owl": "http://www.w3.org/2002/07/owl#",
     "primaryTopic": {
       "@context": {
@@ -142,6 +157,7 @@
     },
     "value": "rdf:value",
     "volgnummer": "sh:order",
+    "voorkomen_identificatie": null,
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
