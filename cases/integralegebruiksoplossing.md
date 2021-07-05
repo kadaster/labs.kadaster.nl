@@ -98,15 +98,43 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
   </div>
 </div>
 
-<h1>Van de makers</h1>
-Lees hoe we de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
+## Van de makers
+Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
 <div class="cards-wrapper">
   <a href="/demonstrators/architectuur-selfservice/Status">
     <div class="card">
       <div class="card-type">Knowledge Graph</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-      <div class="card-description">De Aanpak en Architectuur van de Knowledge Graph. Hier besteden we aandacht aan onze aanpak om met oa. Linked Data een knowledge Graph te maken.</div>
+      <div class="card-description">De Aanpak en Architectuur van de Knowledge Graph. Hier besteden we aandacht aan onze aanpak om met oa. Linked Data een Knowledge Graph te maken.</div>
+    </div>
+  </a>
+</div>
+
+## Van de gebruikers
+
+Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag gegaan om componenten te ontwikkelen op onze data. Deze dienen als inspiratie voor de mogelijkheden met deze ontsluiting.
+
+<div class="cards-wrapper">
+    <a href="/browsers/kkg-gebouw/">
+    <div class="card">
+      <div class="card-type">Data Browser</div>
+      <img class="card-image" src="/assets/images/browser-screenshot.PNG" alt="Facet Check">
+      <div class="card-description">Gebruik de Facet Check Browser - ontwikkeld door Triply - om door de gebouwen in de Knowledge Graph te zoeken.</div>
+    </div>
+  </a>
+  <a href="https://searchdata.com/">
+    <div class="card">
+      <div class="card-type">Searchdata</div>
+      <img class="card-image" src="/assets/images/searchdata-screenshot.PNG" alt="Searchdata">
+      <div class="card-description">Valuecare heeft deze applicatie ontwikkeld om op basis van natuurlijke tekst door onze data te kunnen zoeken.</div>
+    </div>
+  </a>
+  <a href="https://kadaster.github.io/datascience-comunica-client/">
+    <div class="card">
+      <div class="card-type">Comunica</div>
+      <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
+      <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
 </div>
