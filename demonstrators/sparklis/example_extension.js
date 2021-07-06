@@ -57,6 +57,7 @@ function resetMap(){
 		maxZoom: 17,
 		search: false
 	};
+	
 	if(map == undefined){
 		console.log('creating map object')
 		map = nlmaps.createMap(opts);
@@ -67,6 +68,7 @@ function resetMap(){
 	if(group != undefined){
 		//re-adding data if available
 		group.addTo(map)
+
 		console.log('Fitting to bounds')
 		map.fitBounds(group.getBounds());
 	}
@@ -101,6 +103,16 @@ sparklis_extension.hookResults =
 			var feature = { "type": "Feature", 'properties': {}, "geometry": wkt.toJson() };
 			var layer = L.geoJson(feature);
 			coordinates.push(layer);
+			var k;
+			var html = "";
+        	for (k = 0; k < row.length; k++) {
+				if(!String(Object.values(row[k])[1]).includes('POLYGON')){
+				html += String(Object.values(row[k])[1])+ "<br>"
+				}
+			}
+			layer.bindPopup(html, {
+				maxWidth : 650
+			});
 			//layer.addTo(map);
 		})
 		group = new L.featureGroup(coordinates);
