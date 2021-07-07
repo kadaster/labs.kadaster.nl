@@ -77,6 +77,7 @@ function resetMap(){
 
 sparklis_extension.hookResults =
     function(results) {
+	console.log(results)
 	// first clear all old data
 	if(group != undefined){
 		if(map != undefined){
@@ -109,13 +110,28 @@ sparklis_extension.hookResults =
 
 	if(columnname.length==2){
 		let coordinates = []
-		layer = L.geoJson(columnname)
-		coordinates.push(layer);
+		let polygonid1 = results.columns.indexOf(columnname[0]);
+		let polygonid2 = results.columns.indexOf(columnname[1]);
+		console.log(polygonid1)
+		console.log(polygonid2)
 		results.rows.forEach((row) => {
+			var wkt_geom1= row[polygonid1].number
+			var wkt_geom2 = row[polygonid2].number
+			console.log(wkt_geom1)
+			console.log(wkt_geom2)
+			var wkt = new Wkt.Wkt();
+			var point_wkt = "POINT (" + String(wkt_geom2) + ', '+ String(wkt_geom1) + ')'
+			console.log(point_wkt)
+			wkt.read(point_wkt);
+
+			var feature = { "type": "Feature", 'properties': {}, "geometry": wkt.toJson() };
+			var layer = L.geoJson(feature);
+			coordinates.push(layer);
+
 			var k;
 			var html = "";
         	for (k = 0; k < row.length; k++) {
-				html += String(Object.values(row[k])[1])+ "<br>"
+				html += "<b>"+String(results.columns[k]).split('_')[0] +':</b> '+ String(Object.values(row[k])[1])+ "<br>"
 			}
 			layer.bindPopup(html, {
 				maxWidth : 650
@@ -145,7 +161,7 @@ sparklis_extension.hookResults =
 			var html = "";
         	for (k = 0; k < row.length; k++) {
 				if(!String(Object.values(row[k])[1]).includes('POLYGON')){
-				html += String(Object.values(row[k])[1])+ "<br>"
+				html += "<b>"+String(results.columns[k]).split('_')[0] +':</b> '+ String(Object.values(row[k])[1])+ "<br>"
 				}
 			}
 			layer.bindPopup(html, {
