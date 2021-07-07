@@ -70,7 +70,7 @@ function resetMap(){
 		group.addTo(map)
 
 		console.log('Fitting to bounds')
-		map.fitBounds(group.getBounds());
+		//map.fitBounds(group.getBounds());
 	}
 	return;
 }
