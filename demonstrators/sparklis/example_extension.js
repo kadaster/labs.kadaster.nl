@@ -84,15 +84,53 @@ sparklis_extension.hookResults =
 		}
 	}
 
-	console.log("results", results);
+
 	console.log('update the leaflet map with data')
 	let columnname = ''
+
+	var lat_long = [];
 	results.columns.forEach((column) => {
+		console.log(column)
 		if(column.includes('polygon')){
 			columnname = column;
 		}
+		if(column.includes('latitude')){
+			lat_long.push(column);
+		}
+		if(column.includes('longitude')){
+			lat_long.push(column);
+		}
 	})
-	if (columnname != ''){
+
+	if(lat_long.length==2){
+		columnname = lat_long
+	}
+	console.log(columnname)
+
+	if(columnname.length==2){
+		let coordinates = []
+		layer = L.geoJson(columnname)
+		coordinates.push(layer);
+		results.rows.forEach((row) => {
+			var k;
+			var html = "";
+        	for (k = 0; k < row.length; k++) {
+				html += String(Object.values(row[k])[1])+ "<br>"
+			}
+			layer.bindPopup(html, {
+				maxWidth : 650
+			});
+			//layer.addTo(map);
+		})
+		group = new L.featureGroup(coordinates);
+		console.log(group.getBounds());
+		if (map!= undefined){
+			group.addTo(map)
+			map.fitBounds(group.getBounds());
+		}
+	}
+
+	if (columnname.includes('polygon')){
 		let polygonid = results.columns.indexOf(columnname);
 		let coordinates = []
 		results.rows.forEach((row) => {
