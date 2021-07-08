@@ -12,7 +12,7 @@ Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegeve
 <br/>
 
 <img class="developerpageIcon" src="/assets/images/linked-data_icon.png"> 
-## Linked Data
+## Linked Data (SPARQL)
 Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeeld de dataset van de Basisregistratie Adressen en Gebouwen (BAG) met andere datasets. Omdat veel informatie via een adres gelinkt kan worden, leent de BAG zich hier goed voor. De querytaal van Linked Data heet SPARQL.
 
 Voor meer informatie, kijk bij de <a href="/demonstrators/architectuur-selfservice/">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
@@ -26,6 +26,10 @@ Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de servic
 Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutorial (PDF) van het gebruik van GraphQL.
 
 Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>    
+
+<img class="developerpageIcon" src="/assets/images/elastic-search-logo.png">
+## Elastic Search
+Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen doorzoekbaar met natuurlijke tekst. Denk aan het doorzoeken van straatnamen, postcodes of de namen van meren, rivieren en bekende gebouwen. Om deze doorzoekbaarheid bovenop onze Linked Data beschikbaar te maken gebruiken wij Elastic Search. Middels deze techniek stellen wij een endpoint beschikbaar waar een zoekterm in kan worden ingevoerd en op basis van de beschikbare data de meest relevante objecten worden geretourneerd.
 
 <br/>
 
@@ -84,7 +88,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
-    <div class="endpointContainer_center">Data Model WIP</div>
+    <div class="endpointContainer_center">-</div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">Sandbox</a></div>
 </div>
 
@@ -97,7 +101,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
+    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">Sandbox</a></div>
 </div>
 
@@ -110,7 +114,7 @@ Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: Gr
         </div>
     </div>
     <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
-    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">Data Model WIP</a></div>
+    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div>
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
 </div>

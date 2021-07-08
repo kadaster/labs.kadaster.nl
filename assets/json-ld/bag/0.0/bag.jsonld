@@ -14,10 +14,6 @@
       "@id": "status",
       "@type": "@id"
     },
-    "asWKT": {
-      "@id" : "geometrie",
-      "@type": "geo:wktLiteral"
-    },
     "begingeldigheid": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
@@ -175,7 +171,7 @@
     },
     "prov": "http://www.w3.org/ns/prov#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "skos": "http://www.w3.org/2004/02/skos/core%23",
     "standplaatsstatus": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
@@ -201,6 +197,13 @@
     "tijdstipregistratielv": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
+    },
+    "type": {
+      "@context": {
+        "@base": "http://definities.geostandaarden.nl/def/nen3610"
+      },
+      "@id": "type",
+      "@type": "@id"
     },
     "typeRegistratie": null,
     "value": "rdf:value",

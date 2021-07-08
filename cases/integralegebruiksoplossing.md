@@ -14,28 +14,21 @@ title: Use Case ― Integrale Gebruiksoplossing
 
 <h1>Welkom!</h1>
 
-Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet zelf bij elkaar zoeken, je wilt ze makkelijk tegelijk gebruiken. In deze “integrale gebruiks oplossing” vind je alle gegevens over jouw buurt op één plek. Ga direct aan de slag!
+Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om Geo-data gecombineerd te bevragen  en is ontworpen voor algemene gebruikers, geo-professionals en ontwikkelaars. Bekijk de toepassingen die bij u passen en ga er mee aan de slag. Het is de eerste versie van de integrale gebruiksoplossing, dus we horen graag wat u er van vindt!
 
 <div class="igo_usercontainer">
   <div class="igo_usercard">
     <h1>Kijk en vraag</h1>
     <div class="description">
+      Toepassingen voor de algemene gebruiker:
       Bekijk en bevraag informatie uit verschillende basisregistraties over een object, zoals een gebouw, weg of terrein.
-      Een toepassing voor de nieuwsgierige algemene gebruiker.
     </div>
     <div class="cards-wrapper">
       <a href="/demonstrators/objectviewer">
         <div class="igo_card">
           <div class="card-type">Objectviewer</div>
           <img class="card-image" src="/assets/images/pandviewer.png">
-          <div class="card-description">Zoek in de Objectviewer door informatie uit BAG, BGT en BRT. Deze demonstrator geeft een concept voor integrale bevraging.</div>
-        </div>
-      </a>
-      <a href="/cases/loki">
-        <div class="igo_card">
-          <div class="card-type">Loki</div>
-          <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-          <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. </div>
+          <div class="card-description">Zoek in de Objectviewer door informatie uit de BAG, BGT en BRT. Deze demonstrator geeft een invulling aan integrale bevraging.</div>
         </div>
       </a>
     </div>
@@ -44,15 +37,15 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
   <div class="igo_usercard">
     <h1>Combineer en selecteer</h1>
     <div class="description">
+      Toepassingen voor de professionele gebruiker:
       Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. 
-      Een toepassing voor de professionele geodata gebruiker. 
     </div>
     <div class="cards-wrapper">
       <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
         <div class="igo_card">
           <div class="card-type">Sparklis</div>
           <img class="card-image" src="/assets/images/sparklis.png">
-          <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
+          <div class="card-description">Een querybuilder in natuurlijke taal waarmee professionele gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
         </div>
       </a>
       <a href="/demonstrators/geodatawizard">
@@ -62,13 +55,20 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
           <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je deze gecombineerd met onze data kan bevragen!</div>
         </div>
       </a>
-<!--       <a href="/demonstrators/geodatavisitor">
+<!--        <a href="/demonstrators/geodatavisitor">
         <div class="igo_card">
           <div class="card-type">GeoDataVisitor</div>
           <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
-          <div class="card-description">Gebruik je eigen geüploade data meteen in de geodatavisitor!</div>
+          <div class="card-description">In deze demonstrator kan je je eigen geüploade data meteen visualiseren, inclusief een doorkijkje naar de gerelateerde data.</div>
         </div>
       </a> -->
+      <a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">
+        <div class="igo_card">
+          <div class="card-type">Data Story</div>
+          <img class="card-image" src="/assets/images/data-story-igo.PNG">
+          <div class="card-description">Bekijk hier hoe we SPARQL gebruiken om een aantal use cases van gebruikers te beantwoorden.</div>
+        </div>
+      </a>
       We realiseren ons dat het gebruik van deze tools enige oefening vereist. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="/assets/videos/sparklis_demo_1.webm">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.webm">Video 2</a>.
     </div>
   </div>
@@ -76,15 +76,15 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
   <div class="igo_usercard">
     <h1>Ontwikkel en Analyseer</h1>
     <div class="description">
+      Toepassingen voor de ontwikkelaar:
       Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints.
-      De resources en toepassingen voor de technische ontwikkelaar vind je hier.
     </div>
     <div class="cards-wrapper">
       <a href="/developer/">
         <div class="igo_card">
           <div class="card-type">Developer Portal</div>
           <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-          <div class="card-description">Voor een lijst van al onze endpoints en services gebaseerd op Linked Data en GraphQL en benodigde resources, kijk hier.</div>
+          <div class="card-description">Voor een lijst van al onze endpoints en services gebaseerd op Linked Data en GraphQL en benodigde resources, kijk hier en ga ermee aan de slag.</div>
         </div>
       </a>
       <a href="https://kadaster.wvr.io/sdo-target-model/home">
@@ -98,32 +98,57 @@ Gegevens van de overheid zijn verdeeld over losse registraties. Jij wilt ze niet
   </div>
 </div>
 
-<h1>Van de makers</h1>
-Lees hoe we de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
+## Van de makers
+Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
 <div class="cards-wrapper">
   <a href="/demonstrators/architectuur-selfservice/Status">
     <div class="card">
       <div class="card-type">Knowledge Graph</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-      <div class="card-description">De Aanpak en Architectuur van de Knowledge Graph. Hier besteden we aandacht aan onze aanpak om met oa. Linked Data een knowledge Graph te maken.</div>
+      <div class="card-description">De Aanpak en Architectuur van de Knowledge Graph. Hier besteden we aandacht aan onze aanpak om met oa. Linked Data een Knowledge Graph te maken.</div>
+    </div>
+  </a>
+</div>
+
+## Van de gebruikers
+
+Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag gegaan om componenten te ontwikkelen op onze data. Deze dienen als inspiratie voor de mogelijkheden met deze ontsluiting.
+
+<div class="cards-wrapper">
+    <a href="/browsers/kkg-gebouw/">
+    <div class="card">
+      <div class="card-type">Data Browser</div>
+      <img class="card-image" src="/assets/images/browser-screenshot.PNG" alt="Facet Check">
+      <div class="card-description">Gebruik de Facet Check Browser - ontwikkeld door Triply - om door de gebouwen in de Knowledge Graph te zoeken.</div>
+    </div>
+  </a>
+  <a href="https://searchdata.com/">
+    <div class="card">
+      <div class="card-type">Searchdata</div>
+      <img class="card-image" src="/assets/images/searchdata-screenshot.PNG" alt="Searchdata">
+      <div class="card-description">Valuecare heeft deze applicatie ontwikkeld om op basis van natuurlijke tekst door onze data te kunnen zoeken.</div>
+    </div>
+  </a>
+  <a href="https://kadaster.github.io/datascience-comunica-client/">
+    <div class="card">
+      <div class="card-type">Comunica</div>
+      <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
+      <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
 </div>
 
 ## Feedback
 
-We zijn heel benieuwd naar jullie feedback. Jullie zouden ons dan ook helpen door onderstaand formulier in te vullen.
-
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform?embedded=true" width="640" height="1293" frameborder="0" marginheight="0" marginwidth="0">Laden..</iframe> 
-
 
 ## Overall UI/UX Design
 
-In dit project willen we een doorkijkje bieden naar wat 'integraa gebruik' precies inhoudt. Welke componenten vinden we hierin en hoe ziet dit eruit. Browse door onderstaand Adobe XD bestand om live een inkijkje in de design gedachten te krijgen.
+In dit overzicht willen we een doorkijk bieden naar het mogelijke toekomstige design van de ‘integrale gebruiksoplossing’. Welke componenten vinden we hierin en hoe kan het eruit gaan zien? Browse door onderstaand Adobe XD bestand om een beeld te krijgen van de design gedachten voor de toekomst.
 
 <div style="border: 1px solid black; min-height: 20px;">
-    <iframe  width="1440" height="920" src="https://xd.adobe.com/embed/d22902be-087f-4087-b5a8-b38405f092c6-877a/" frameborder="0" allowfullscreen></iframe>
+    <iframe  width="1440" height="920" src="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/" frameborder="0" allowfullscreen></iframe>
 </div>
-<div>Iframe link to Adobe XD, mocht het niet getoond bezoek dan: <a href="https://xd.adobe.com/embed/d22902be-087f-4087-b5a8-b38405f092c6-877a/">https://xd.adobe.com/embed/d22902be-087f-4087-b5a8-b38405f092c6-877a/</a></div>
+<div>Iframe link to Adobe XD, mocht het niet getoond bezoek dan: <a href="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/">https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/</a></div>
 <br />

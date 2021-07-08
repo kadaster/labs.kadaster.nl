@@ -56,7 +56,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Altijd al eens in de BAG willen 'googlen'? Via deze pagina zoek je rechtstreeks in de BAG.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bag2-overview">
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bag-20">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bag.png" alt="BAG">
