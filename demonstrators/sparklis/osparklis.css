@@ -423,3 +423,5 @@ input:checked + .slider:before {
   -ms-transform: translateX(20px);
   transform: translateX(20px);
 }
+
+#Leaflet-map { height: 600px; }
