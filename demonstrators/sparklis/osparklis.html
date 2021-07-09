@@ -16,6 +16,7 @@
 		  content="SPARQL, faceted search, semantic search, exploratory search, complex queries, natural language interface, logical information systems" />
   
 	  <!-- Google Charts -->
+
 	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	  <script type="text/javascript">
 		  google.charts.load('current', { 'packages': ['map'], mapsApiKey: 'AIzaSyAu6pclUgwT_Vu3cLwU2bQBGV77wVDFgJQ' });
@@ -31,6 +32,11 @@
 	  <!-- Sparklis -->
 	  <link href="osparklis.css?v=2" rel="stylesheet" type="text/css" />
 	  <script src="osparklis.js"></script>
+		<!-- Leaflet --><link rel="stylesheet"
+		href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+		<script src="https://nlmaps.nl/dist/nlmaps.iife.js"></script>
+		<!-- example extension --><script src="example_extension.js"></script>
+
   </head>
   
   <body>
@@ -1484,6 +1490,8 @@
 										  <span class="tooltip lang-nl">Klik op een entiteit om deze toe te voegen aan de
 											  focus van de query</span>
   
+										
+										  
 										  <div class="row">
 											  <div class="tooltiped col-xs-4 no-padding">
 												  <span class="tooltip lang-en">Select a filtering operator</span>
@@ -1833,6 +1841,12 @@
 									  <div id="list-results">
 									  </div>
 								  </span>
+							  </div>
+
+							  <div id="results-Leaflet"
+							  class="tab-pane fade">
+							  <div id="Leaflet-map">
+							  </div>
 							  </div>
   
 							  <div id="results-map" class="tab-pane fade">
