@@ -15,7 +15,6 @@
     "beperking_identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
-                  https://brk.basisregistraties.overheid.nl/brk/id/object/NL.IMKAD.PubliekrechtelijkeBeperking.15699
       },
       "@id": "brk:beheert",
       "@type": "@id"
