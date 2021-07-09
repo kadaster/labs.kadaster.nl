@@ -11,28 +11,40 @@
       },
       "@type": "@id"
     },
+    "beeindigd": null,
     "beperking_identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+                  https://brk.basisregistraties.overheid.nl/brk/id/object/NL.IMKAD.PubliekrechtelijkeBeperking.15699
       },
       "@id": "brk:beheert",
       "@type": "@id"
     },
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "bron_domein": null,
+    "bron_identificatie": null,
     "bron_iri": {
       "@id": "brk:ontleendAan",
       "@type": "@id"
     },
+    "bron_type": null,
     "brondocument_domein": null,
     "brondocument_id": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
-      "@id": "brk:stukdeel",
+      "@id": "brk:isGebaseerdOp",
       "@type": "@id"
     },
     "brondocument_identificatie": null,
-    "code_grondslag": "brk:grondslag",
+    "brondocument_type": null,
+    "code_grondslag": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/grondslag/"
+      },
+      "@id": "brk:grondslag",
+      "@type": "@id"
+    },
     "code_status_historie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
@@ -92,6 +104,7 @@
       "@type": "@id"
     },
     "Identificatie": "nen3610:Identificatie",
+    "indicatie_vervallen": null,
     "lokaalID": {
       "@id": "nen3610:lokaalID",
       "@type": "xsd:string"
@@ -156,7 +169,10 @@
       "@type": "xsd:dateTime"
     },
     "value": "rdf:value",
-    "volgnummer": "sh:order",
+    "volgnummer": {
+      "@id": "sh:order",
+      "@type": "xsd:nonNegativeInteger"
+    },
     "voorkomen_identificatie": null,
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
