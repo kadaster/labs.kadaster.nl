@@ -11,6 +11,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
 <a href="/demonstrators/pandbrigade">
     <div class="card">
       <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/geodatavisitor.png">
+      <div class="card-title">Geo Data Visitor</div>
+      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat ze zijn verrijkt door de geodatawizard.</div>
+    </div>
+  </a>
+<a href="/demonstrators/pandbrigade">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
       <div class="card-title">Pandbrigade</div>
       <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
@@ -38,14 +46,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/sparklis.png">
       <div class="card-title">Sparklis</div>
       <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-eindpunten kunnen verkennen en doorzoeken.</div>
-    </div>
-  </a>
-    <a href="/demonstrators/geodatavisitor/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/geodatavisitor.png">
-      <div class="card-title">Geodatavisitor</div>
-      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat ze zijn verrijkt door de geodatawizard.</div>
     </div>
   </a>
   <a href="/demonstrators/LDMaps_BGT/index.html">
