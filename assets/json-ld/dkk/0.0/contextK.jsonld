@@ -9,9 +9,6 @@
     "data": "@nest",
     "jsonldid": "@id",
     "jsonldtype": "@type",
-    "_id": "@id",
-    "_type": "@type",
-    "KadastraleGrens": "@graph",
     "ogc_fid": null,
     "gml_id": null,
     "namespace": {
