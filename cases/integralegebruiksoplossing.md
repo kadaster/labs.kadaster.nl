@@ -150,5 +150,5 @@ In dit overzicht willen we een doorkijk bieden naar het mogelijke toekomstige de
 <div style="border: 1px solid black; min-height: 20px;">
     <iframe  width="1440" height="920" src="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/" frameborder="0" allowfullscreen></iframe>
 </div>
-<div>Iframe link to Adobe XD, mocht het niet getoond bezoek dan: <a href="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/">https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/</a></div>
+<div>Iframe link to Adobe XD, mocht het niet getoond worden bezoek dan: <a href="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/">https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/</a></div>
 <br />
