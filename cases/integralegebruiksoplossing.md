@@ -97,7 +97,6 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
     </div>
   </div>
 </div>
-<br>
 
 <div class="textbox" markdown="1">
 ## Speeltuinsessies
