@@ -27,7 +27,7 @@ Toepassingen voor de algemene gebruiker: Bekijk en bevraag informatie uit versch
       <div class="card">
         <div class="card-type">Objectviewer</div>
         <img class="card-image" src="/assets/images/pandviewer.png">
-        <div class="card-description">Zoek in de Objectviewer door informatie uit de BAG, BGT en BRT. Deze demonstrator geeft een invulling aan integrale bevraging.</div>
+        <div class="card-description">Zoek in de Objectviewer naar informatie uit de BAG, BGT en BRT. Deze demonstrator geeft een invulling aan integrale bevraging.</div>
       </div>
     </a>
 </div>
@@ -50,7 +50,7 @@ Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw o
         <div class="card">
           <div class="card-type">GeoDataWizard</div>
           <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
-          <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je deze gecombineerd met onze data kan bevragen!</div>
+          <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat u deze gecombineerd met onze data kan bevragen!</div>
         </div>
       </a>
 <!--        <a href="/demonstrators/geodatavisitor">
