@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
+    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "akrgemeente": "brk:akrAanduiding",
@@ -49,6 +49,13 @@
       "@type": "xsd:nonNegativeInteger",
       "@id": "nen3610:volgnummer"
     },
+    "identificatie": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
+    },
     "kadgemeente": "skos:prefLabel",
     "kadgemeentecode": {
       "@context": {
@@ -63,7 +70,7 @@
     },
     "namespace": {
       "@type": "xsd:string",
-      "@id": "nen3610:namescpace"
+      "@id": "nen3610:namespace"
     },
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "ogc_fid": null,
