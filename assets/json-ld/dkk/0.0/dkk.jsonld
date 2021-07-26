@@ -1,64 +1,117 @@
-
 {
-    "@context": {
-      "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/registratie/",
-      "@version": 1.1,
-      "@vocab": "https://dkk.basisregistraties.overheid.nl/dkk/def/",
-      "jsonldid": "@id",
-      "jsonldtype": "@type",
-      "begingeldigheid": {
-        "@id": "nen3610:beginGeldigheid",
-        "@type": "xsd:date"
+  "@context": {
+    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/",
+    "@version": 1.1,
+    "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "akrgemeente": "brk:akrAanduiding",
+    "akrgemeentecode": null,
+    "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "begingeldigheid": {
+      "@type": "xsd:dateTime",
+      "@id": "nen3610:beginGeldigheid"
+    },
+    "begrenzing": {
+      "@type": "geo:wktLiteral",
+      "@id": "brk:begrenzing"
+    },
+    "data": "@nest",
+    "deltax": {
+      "@type": "xsd:float",
+      "@id": "brk:perceelnummerVerschuivingX"
+    },
+    "deltay": {
+      "@type": "xsd:float",
+      "@id": "brk:perceelnummerVerschuivingY"
+    },
+    "eindgeldigheid": {
+      "@type": "xsd:dateTime",
+      "@id": "nen3610:eindGeldigheid"
+    },
+    "eindregistratie": {
+      "@type": "xsd:dateTime",
+      "@id": "prov:invalidatedAtTime"
+    },
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "gml_id": null,
+    "grenslijn": {
+      "@type": "geo:wktLiteral",
+      "@id": "brk:grenslijn"
+    },
+    "historiestatuscode": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
       },
-      "data": "@nest",
-      "dct": "http://purl.org/dc/terms/",
-      "eindgeldigheid": {
-        "@id": "nen3610:eindGeldigheid",
-        "@type": "xsd:date"
+      "@id": "brk:statusHistorie",
+      "@type": "@id"
+    },
+    "historievolgnummer": {
+      "@type": "xsd:nonNegativeInteger",
+      "@id": "nen3610:volgnummer"
+    },
+    "kadgemeente": "skos:prefLabel",
+    "kadgemeentecode": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
-      "eindregistratie": {
-        "@id": "eindRegistratie",
-        "@type": "xsd:dateTime"
+      "@id": "brk:kadastraleGemeente",
+      "@type": "@id"
+    },
+    "lokaalID": {
+      "@type": "xsd:string",
+      "@id": "nen3610:lokaalID"
+    },
+    "namespace": {
+      "@type": "xsd:string",
+      "@id": "nen3610:namescpace"
+    },
+    "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "ogc_fid": null,
+    "oppervlakte": {
+      "@type": "xsd:positiveInteger",
+      "@id": "brk:kadastraleGrootte"
+    },
+    "plaatscoordinaten": {
+      "@type": "geo:wktLiteral",
+      "@id": "brk:plaatscoordinaten"
+    },
+    "perceellinkslokaalid": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
-      "foaf": "http://xmlns.com/foaf/0.1/",
-      "geo": "http://www.opengis.net/ont/geosparql#",
-      "Identificatie": "nen3610:Identificatie",
-      "identificatie": {
-        "@context": {
-          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/identificatie/"
-        },
-        "@id": "nen3610:identificatie",
-        "@type": "@id"
+      "@id": "brk:perceelLinks",
+      "@type": "@id"
+    },
+    "perceelnummer": {
+      "@type": "xsd:integer",
+      "@id": "brk:perceelnummer"
+    },
+    "perceelnummerrotatie": {
+      "@type": "xsd:float",
+      "@id": "brk:perceelnummerRotatie"
+    },
+    "perceelrechtslokaalid": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
-      "lokaalID": "nen3610:lokaalID",
-      "namespace": "nen3610:namespace",
-      "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
-      "ogc_fid": null,
-      "peilDatum": null,
-      "primaryTopic": {
-        "@context": {
-          "@base": "https://dkk.basisregistraties.overheid.nl/dkk/id/object/"
-        },
-        "@id": "foaf:primaryTopic",
-        "@type": "@id"
+      "@id": "brk:perceelRechts",
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "sectie": "brk:sectie",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tijdstipregistratie": {
+      "@type": "xsd:dateTime",
+      "@id": "prov:generatedAtTime"
+    },
+    "typegrens": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/typeGrens/"
       },
-      "prov": "http://www.w3.org/ns/prov#",
-      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "skos": "http://www.w3.org/2004/02/skos/core#",
-      "tijdstipeindregistratielv": {
-        "@id": "prov:invalidatedAtTime",
-        "@type": "xsd:dateTime"
-      },
-      "tijdstipregistratie": {
-        "@id": "beginRegistratie",
-        "@type": "xsd:dateTime"
-      },
-      "tijdstipregistratielv": {
-        "@id": "prov:generatedAtTime",
-        "@type": "xsd:dateTime"
-      },
-      "value": "rdf:value",
-      "xsd": "http://www.w3.org/2001/XMLSchema#"
-    }
+      "@id": "brk:typeGrens",
+      "@type": "@id"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
-  
+}
