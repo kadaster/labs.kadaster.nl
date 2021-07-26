@@ -106,7 +106,6 @@ De integrale gebruiksoplossing is als Minimum Viable Product (MVP) af. We zijn e
 ## Van de makers
 Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
->>>>>>> ea6cdeeda188029dbcb7448bbab044212ac224f1
 <div class="cards-wrapper">
   <a href="/demonstrators/architectuur-selfservice/Status">
     <div class="card">

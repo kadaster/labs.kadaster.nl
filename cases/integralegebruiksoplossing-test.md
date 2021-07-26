@@ -97,8 +97,6 @@ Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw o
 ## Van de makers  
 Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
-
-
 <div class="cards-wrapper">
   <a href="/demonstrators/architectuur-selfservice/Status">
     <div class="card">
