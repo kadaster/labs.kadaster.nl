@@ -98,11 +98,6 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
   </div>
 </div>
 
-<div class="textbox" markdown="1">
-## Speeltuinsessies
-De integrale gebruiksoplossing is als Minimum Viable Product (MVP) af. We zijn echter nog steeds continu bezig om deze MVP te verbeteren en we zijn heel erg benieuwd naar de ervaringen en uitdagingen van onze gebruikers. Mede daarom organiseren we elke **donderdagochtend van 10:00-11:00** uur speeltuinsessies voor al uw vragen. Interesse? Meld u aan door een bericht te sturen naar [Evi van der Meer](mailto:evi.vandermeer@ictu.nl).
-</div>
-
 ## Van de makers
 Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
