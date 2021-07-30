@@ -76,7 +76,7 @@
     },
     "gml_id": null,
     "hoek": {
-      "@id": "tekst",
+      "@id": "hoek",
       "@type": "xsd:decimal"
     },
     "hoortbijtypeoverbrugging": {
