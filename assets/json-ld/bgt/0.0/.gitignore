@@ -1,6 +1,0 @@
-*.gz
-*.nq
-.client.js.err
-bgt.jsonld.nq
-upload.sh
-uploadFiles-linux
