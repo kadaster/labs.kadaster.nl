@@ -11,6 +11,12 @@
       "@id": "functie",
       "@type": "@id"
     },
+    "bgtpand_nummeraanduiding": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+      },
+      "@type": "@id"
+    },
     "bgt_status": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
