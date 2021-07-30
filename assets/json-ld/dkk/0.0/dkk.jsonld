@@ -105,7 +105,15 @@
       "@id": "brk:perceelRechts",
       "@type": "@id"
     },
+    "primaryTopic": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@id": "foaf:primaryTopic",
+      "@type": "@id"
+    },
     "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "sectie": "brk:sectie",
     "sh": "http://www.w3.org/ns/shacl#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
@@ -120,6 +128,7 @@
       "@id": "brk:typeGrens",
       "@type": "@id"
     },
+    "value": "rdf:value",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }
