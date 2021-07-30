@@ -206,7 +206,7 @@
       "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
-    "skos": "http://www.w3.org/2004/02/skos/core%23",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "tekst": {
       "@id": "tekst",
       "@type": "xsd:string"
