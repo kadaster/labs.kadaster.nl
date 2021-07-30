@@ -75,18 +75,15 @@
       "@type": "geo:wktLiteral"
     },
     "gml_id": null,
+    "hoek": {
+      "@id": "tekst",
+      "@type": "xsd:decimal"
+    },
     "hoortbijtypeoverbrugging": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
       },
       "@id": "hoortBijTypeOverbrugging",
-      "@type": "@id"
-    },
-    "hoek": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
-      "@id": "hoek",
       "@type": "@id"
     },
     "Identificatie": "nen3610:Identificatie",
@@ -214,11 +211,8 @@
     },
     "skos": "http://www.w3.org/2004/02/skos/core%23",
     "tekst": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
       "@id": "tekst",
-      "@type": "@id"
+      "@type": "xsd:string"
     },
     "typeoverbruggingsdeel": {
       "@context": {
