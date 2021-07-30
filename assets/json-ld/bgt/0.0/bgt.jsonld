@@ -45,11 +45,8 @@
       "@type": "@id"
     },
     "buurtcode": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
       "@id": "buurtCode",
-      "@type": "@id"
+      "@type": "xsd:string"
     },
     "data": "@nest",
     "eindRegistratie": {
@@ -224,11 +221,8 @@
     "value": "rdf:value",
     "wegdeelOpTalud": "talud",
     "wijkcode": {
-      "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
-      },
       "@id": "wijkCode",
-      "@type": "@id"
+      "@type": "xsd:string"
     },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
