@@ -38,6 +38,13 @@
       },
       "@type": "@id"
     },
+    "buurtcode": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "buurtCode",
+      "@type": "@id"
+    },
     "data": "@nest",
     "eindRegistratie": {
       "@id": "prov:invalidatedAtTime",
@@ -93,14 +100,14 @@
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
-      "@id": "bagVerblijfsobject",
+      "@id": "bagVerblijfsobjectHoogsteHuisnummer",
       "@type": "@id"
     },
     "identificatiebagvbolaagstehuisnummer": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
       },
-      "@id": "bagVerblijfsobject",
+      "@id": "bagVerblijfsobjectLaagsteHuisnummer",
       "@type": "@id"
     },
     "inOnderzoek": {
@@ -114,6 +121,13 @@
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+    "nummeraanduidingreeks": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+      },
+      "@id": "nummeraanduidingreeks",
+      "@type": "@id"
+    },
     "objectBeginTijd": {
       "@id": "objectBegintijd",
       "@type": "xsd:date"
@@ -191,6 +205,13 @@
     },
     "value": "rdf:value",
     "wegdeelOpTalud": "talud",
+    "wijkcode": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "wijkCode",
+      "@type": "@id"
+    },
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   }
 }

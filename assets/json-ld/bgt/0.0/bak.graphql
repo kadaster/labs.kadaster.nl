@@ -1,1 +1,0 @@
-{ "query": "{ bgtbak( first: 1000)  { jsonldid jsonldtype jsonldcontext { jsonldbase } bgt_status bgt_type bronhouder objecteindtijd objectbegintijd tijdstipregistratie eindregistratie lv_publicatiedatum identificatie { jsonldid jsonldtype namespace lokaalid } inonderzoek plus_type plus_status gml_id geometrie_punt { asWKT }  relatievehoogteligging }}" }
