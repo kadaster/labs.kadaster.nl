@@ -76,6 +76,13 @@
       "@id": "hoortBijTypeOverbrugging",
       "@type": "@id"
     },
+    "hoek": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "hoek",
+      "@type": "@id"
+    },
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
@@ -118,6 +125,10 @@
     "LV_publicatiedatum": {
       "@id": "publicatiedatumLandelijkeVoorzieningen",
       "@type": "xsd:dateTime"
+    },
+    "naam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
@@ -195,7 +206,14 @@
       "@id": "relatieveHoogteligging",
       "@type": "xsd:integer"
     },
-
+    "skos": "http://www.w3.org/2004/02/skos/core%23",
+    "tekst": {
+      "@context": {
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+      },
+      "@id": "tekst",
+      "@type": "@id"
+    },
     "typeoverbruggingsdeel": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
