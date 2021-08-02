@@ -56,6 +56,12 @@
       "@id": "nen3610:identificatie",
       "@type": "@id"
     },
+    "KadastraleGemeente": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@type": "@id"
+    },
     "kadgemeente": "skos:prefLabel",
     "kadgemeentecode": {
       "@context": {
