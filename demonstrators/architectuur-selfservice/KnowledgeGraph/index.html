@@ -513,6 +513,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ld-view-for-bag-pand" class="md-nav__link">
+    LD View for BAG Pand
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -796,6 +803,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ld-view-for-bag-pand" class="md-nav__link">
+    LD View for BAG Pand
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -840,13 +854,34 @@
 <li>Een aantal object typen worden op een te laag niveau ontsloten in de bron (bijvoorbeeld Wegdeel, Waterdeele).  Om voor de gebruiker nuttig te zijn zouden deze gegroepeerd ontsloten moeten worden.  Bijvoorbeeld 1 water i.p.v. 100 losse waterdelen.</li>
 </ol>
 <h2 id="ld-views">LD Views</h2>
-<p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
+<p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. LD Views zijn geautomatiseerde afbeeldingen van registratieve datasets naar een geïntegreerde kennisgraaf. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
 <p><img alt="Architectuur LD Views" src="../images/architectuur-ld-views.png" /></p>
 <p>In deze architectuur zijn een aantal zaken van belang. We beginnen met brondata (paarse laag) zoals eerder beschreven in <a href="../Brondata/">Brondata</a>. Deze zetten we middels <a href="../GraphQLETL/">GraphQL</a> en de <a href="../Enhancer/">Enhancer</a> om naar registratieve <a href="../LinkedData/">Linked Data</a> (de oranje laag).</p>
 <p>Vanuit daar creeëren we één of meerdere Views (afhankelijk van gebruik) op deze data, welke laag we dan ook de Knowledge Graph noemen. Governance technisch zal een business architect moeten bepalen welke data er in deze laag moet zitten - en waar deze data vandaan moet komen. Het unieke hier is dat de data op zichzelf vaak al bevraagbaar is (middels uitgebreide en complexe SPARQL queries op de registratieve Linked Data), maar dat deze voor gemakkelijk gebruik persistent wordt opgeslagen. Voor verschillende doeleinden kunnen verschillende LD Views ontstaan in de toekomst.</p>
 <blockquote>
 <p>We geloven heel erg in het statement <em>One size fits none</em>. Immers, er valt niet één datamodel, één dataset of één manier van ontsluiting te bedenken waar alle gebruikers baat bij hebben. Door dit wel na te streven lopen we het risico een oplossing te creeëren die voor niemand echt de perfect aansluiting geeft. Daarom houden we de brondata grotendeels intact en staan we toe op basis van verschillende use cases één of meerdere Knowledge Graphs beschikbaar te stellen.</p>
 </blockquote>
+<p>Om beter weer te kunnen geven hoe LD Views inhoudelijk zijn opgebouwd introduceren we het volgende tabel formaat:</p>
+<ul>
+<li>Rij 1 geeft aan dat de linker twee kolommen gegevens in de Kadaster Kennisgraaf (KKG) beschrijven, en dat de rechter twee kolommen gegevens in een Kadastrale bron aanduiden waar de gegevens in de kennisgraaf op gebaseerd worden.</li>
+<li>Rij 2 geeft aan dat we zowel in de kennisgraaf alsook in de bron een onderscheid maken tussen objecttype en eigenschap.</li>
+<li>Rij 3-5 geven aan dat ze objecten van hetzelfde objecttype in de kennisgraaf beschrijven.</li>
+<li>Rij 3 legt een specifieke afbeelding (View) vast van een Bronklasse/bronEigenschap combinatie, naar een Klase/eigenschap combinatie in de kennisgraaf. De meeste afbeeldingen (Views) zijn van dit karakter.</li>
+<li>Rij 4 legt een ander soort afbeelding (View) vast: eigenschap2 in de kennisgraaf is niet direct gebaseed op 1 gegeven in een bron, maar vormt een link naar een ander objecttype in de kennisgraaf. Dit andere objecttype komt elders in dezelfde tabel voor.</li>
+<li>Rij 5 legt weer een ander soort afbeelding (Viev) vast: eigenschap3 in de kennisgraaf heeft een constante waarde. Deze waarde is niet afkomstig uit een specifieke locatie in de bron, maar maakt onderdeel uit van de LD View.</li>
+</ul>
+<table>
+  <thead>
+    <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">Kadaster Bron</th><th></th></tr>
+    <tr><th>Objecttype</th><th>eigenschap</th><th>Objecttype</th><th>eigenschap</th><tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="3">Objecttype</td><td>eigenschap1</td><td>BronObjecttype</td><td>bronEigenschap</td></tr>
+    <tr><td>eigenschap2</td><td>[link]</td><td>Klasse</td></tr>
+    <tr><td>eigenschap3</td><td>[constante]</td><td>waarde</td></tr>
+  </tbody>
+</table>
+
 <h3 id="sparql-construct">SPARQL Construct</h3>
 <p>We gebruiken vervolgens SHACL Rules om de data om te zetten naar het Knowlegde Graph datamodel. Dit is een combinatie van SPARQL Construct queries waarmee de bestaande data wordt getransformeerd naar het nieuwe model. Een voorbeeld van een dergelijke query is:</p>
 <div class="highlight"><pre><span></span><code><span class="k">prefix</span> <span class="nn">bag</span><span class="p">:</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/def/&gt;</span>
@@ -880,6 +915,51 @@
 <p>Uitgangspunt is deshalve dat de data origineel beschikbaar is gemaakt in de registratieve Linked Data laag. Daarna kan er op - op basis van deze brondata - een View worden gegenereerd met SPARQL queries. Deze nieuwe Knowledge Graph bevat een provenance (i.e. data lineage) naar de originele brondata.</p>
 <h3 id="provenance">Provenance</h3>
 <p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt.</p>
+<h3 id="ld-view-for-bag-pand">LD View for BAG Pand</h3>
+<p>De volgende tabel geeft de inhoudelijke afbeelding (View) voor BAG panden weer.</p>
+<table>
+  <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">BAG Bron</th><th></th></tr>
+  <tr><td>AdministrativeArea</td><td>containsPlace</td><td>Verblijfsobject</td><td>identificatie</td></tr>
+  <tr><td>GeoCoordinates</td><td>latitude</td><td>Verblijfsobject</td><td>geometrie</td></tr>
+  <tr><td></td><td>longitude</td><td>Verblijfsobject</td><td>geometrie</td></tr>
+  <tr><td></td><td>name</td><td>[[constante]]</td><td>"BAG puntgeometrie"</td></tr>
+  <tr><td></td><td>wasDerivedFrom</td><td>Verblijsobject</td><td>identificatie</td></tr>
+  <tr><td>GeoShape</td><td>name</td><td>[[constante]]</td><td>"BAG vlakgeometrie"</td></tr>
+  <tr><td></td><td>polygon</td><td>Pand</td><td>geometrie</td></tr>
+  <tr><td></td><td>wasDerivedFrom</td><td>Pand</td><td>identificatie</td></tr>
+  <tr><td>Place</td><td>additionalType</td><td>[[constante]]</td><td>Pand</td></tr>
+  <tr><td></td><td></td><td>Verblijfsobject</td><td>gebruiksdoel</td></tr>
+  <tr><td></td><td>address</td><td>{{PostalAddress}}</td><td></td></tr>
+  <tr><td></td><td>containedInPlace</td><td>{{AdministrativeArea</td><td></td></tr>
+  <tr><td></td><td>dateCreated</td><td>Pand</td><td>bouwjaar</td></tr>
+  <tr><td></td><td>floorSize</td><td>Verblijfsobject</td><td>oppervlakte</td></tr>
+  <tr><td></td><td>geo</td><td>{{GeoCoordinates}}</td><td></td></tr>
+  <tr><td></td><td></td><td>{{GeoShape}}</td><td></td></tr>
+  <tr><td></td><td>name</td><td>Nummeraanduiding</td><td>postcode</td></tr>
+  <tr><td></td><td></td><td>OpenbareRuimte</td><td>naam</td></tr>
+  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
+  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
+  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
+  <tr><td></td><td></td><td>Woonplaats</td><td>naam</td></tr>
+  <tr><td></td><td>wasDerivedFrom</td><td>Pand</td><td>identificatie</td></tr>
+  <tr><td></td><td></td><td>Verblijfsobject</td><td>identificatie</td></tr>
+  <tr><td>PostalAddress</td><td>addressCountry</td><td>[[constante]]</td><td>"Nederland"</td></tr>
+  <tr><td></td><td>addressLocality</td><td>Woonplaats</td><td>naam</td></tr>
+  <tr><td></td><td>name</td><td>Nummeraanduiding</td><td>postcode</td></tr>
+  <tr><td></td><td></td><td>OpenbareRuimte</td><td>naam</td></tr>
+  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
+  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
+  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
+  <tr><td></td><td></td><td>Woonplaats</td><td>naam</td></tr>
+  <tr><td></td><td>postalCode</td><td>Nummeraanduiding</td><td>postcode</td></tr>
+  <tr><td></td><td>straatAddress</td><td>OpenbareRuimte</td><td>naam</td></tr>
+  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
+  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
+  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
+  <tr><td></td><td>wasDerivedFrom</td><td>Nummeraanduiding</td><td>identificatie</td></tr>
+</table>
+
+<p>Een interactieve visualisatie van deze LD View is <a href="https://kadaster.wvr.io/ld-view-bag-pand">hier</a> beschikbaar.</p>
                 
               
               
