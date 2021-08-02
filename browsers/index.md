@@ -80,12 +80,4 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Zoek naar in Nederland vervaardigde biertjes door de zoekcriteria in te stellen. Zoek tevens naar bier brouwerijen die in Nederland gevestigd zijn.</div>
     </div>
   </a>
-  <a href="areaal">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
-      <div class="card-title">Areaal data browser</div>
-      <div class="card-description">Met deze databrowser kun je Areaal data van Noord-holland doorzoeken. Hierin vind je alle wegdelen, borden en kunstwerken.</div>
-    </div>
-  </a>
 </div>
