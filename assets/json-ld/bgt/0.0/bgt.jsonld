@@ -87,7 +87,9 @@
     "identificatie": {
       "@context": {
         "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
-      }
+      },
+      "@id": "nen3610:identificatie",
+      "@type": "@id"
     },
     "identificatiebagopr": {
       "@context": {
