@@ -486,6 +486,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-lineage" class="md-nav__link">
+    Data lineage
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -500,22 +507,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sparql-construct" class="md-nav__link">
-    SPARQL Construct
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#provenance" class="md-nav__link">
-    Provenance
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ld-view-for-bag-pand" class="md-nav__link">
     LD View for BAG Pand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technische-implementatie" class="md-nav__link">
+    Technische implementatie
   </a>
   
 </li>
@@ -776,6 +776,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#data-lineage" class="md-nav__link">
+    Data lineage
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -790,22 +797,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sparql-construct" class="md-nav__link">
-    SPARQL Construct
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#provenance" class="md-nav__link">
-    Provenance
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#ld-view-for-bag-pand" class="md-nav__link">
     LD View for BAG Pand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technische-implementatie" class="md-nav__link">
+    Technische implementatie
   </a>
   
 </li>
@@ -833,13 +833,25 @@
                 
                 
                 <h1 id="knowledge-graph">Knowledge Graph</h1>
-<p>Wanneer we (basis-)registraties beschikbaar gesteld als Linked Data, is er nog steeds een grote hoeveelheid domeinkennis nodig om de data goed te gebruiken. Zo kunnen bijvoorbeeld alleen BAG en BGT specialisten die data en het datamodel goed kennen gemakkelijk interacteren met de data. In de praktijk zijn veel gebruikers geïnteresseerd in data over hun huis, wijk of leefomgeving. Om die reden slaan we de complexe basisregistraties en andere overheidsdatasets plat tot een Knowledge Graph voor een bepaald doeleinde. Hierbij kunnen we er ook voor kiezen additionele versimpelingen toe te passen, zoals het abstraheren van historie in de registraties.</p>
+<p>Wanneer we (basis-)registraties beschikbaar stellen als Linked Data is er nog steeds een grote hoeveelheid domeinkennis nodig om de data goed te kunnen gebruiken. Zo kunnen bijvoorbeeld alleen BAG en BGT specialisten die data en het datamodel goed kennen gemakkelijk interacteren met de data. In de praktijk zijn veel gebruikers geïnteresseerd in data over hun huis, wijk of leefomgeving. Om die reden slaan we de complexe basisregistraties en andere overheidsdatasets plat tot een Knowledge Graph voor een bepaald doeleinde. Hierbij is het mogelijk om bepaalde versimpelingen toe te passen, zoals het abstraheren van historie in de registraties.</p>
 <h2 id="knowledge-graph-datamodel">Knowledge Graph datamodel</h2>
-<p>In de praktijk praten gebruikers vaak niet in termen als Nummeraanduiding, Verblijfsobject of Bestuurlijk Gebied, maar over adressen, gebouwen en wijken. Gebruikers denken in termen van hun fysieke leefomgeving.</p>
-<p><img alt="Fysieke Werkelijkheid" src="../images/fysieke-werkelijkheid.png" /></p>
+<p>In de praktijk praten gebruikers vaak niet in termen als <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">nummeraanduiding</a>, <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">verblijfsobject</a> of bestuurlijk gebied, maar over adressen, gebouwen en wijken. Gebruikers denken in termen van hun fysieke leefomgeving (Figuur 1).</p>
+<figure>
+  <img src="images/fysieke-werkelijkheid.png">
+  <ficaption>
+    Figuur 1. Een visuele weergave van de fysieke werkelijkheid zoals veel gebruikers deze vanuit hun dagelijks leven ervaren.
+  </figcaption>
+</figure>
+
 <h3 id="schemaorg">Schema.org</h3>
-<p>In het maken van een gebruiksvriendelijk datamodel kan ervoor gekozen worden om termen uit de basisregistraties te hergebruiken (zoals Pand of Perceel). Er kan ook voor gekozen worden om de data naar een nog meer generiek en open standaard te brengen, zoals <a href="https://schema.org/docs/documents.html">Schema.org</a>. Deze standaard is geïntrodueerd door Google en behelst een manier van data omschrijving waarmee moderne zoek machines goed aan de slag kunnen. Objecten, pagina's en websites die met deze standaard zijn omschreven zijn dan ook over het algemeen goed vindbaar op het web. Een voorbeeld van een dergelijk datamodel:</p>
-<p><img alt="Schema.Org model" src="../images/mermaid-sdo-model.PNG" /></p>
+<p>In het maken van een gebruiksvriendelijk datamodel kan ervoor gekozen worden om termen uit de basisregistraties te hergebruiken (zoals <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a> of Perceel). Er kan ook voor gekozen worden om de data naar een nog meer generiek en open standaard te brengen, zoals <a href="https://schema.org/docs/documents.html">Schema.org</a>. Deze standaard is geïntrodueerd door Google en behelst een manier van data omschrijving waarmee moderne zoekmachines goed aan de slag kunnen. Objecten, pagina's en websites die met deze standaard zijn omschreven zijn dan ook over het algemeen goed vindbaar op het web. In Figuur 2 wordt een voorbeeld van een datamodel in Schema.org gegeven.</p>
+<figure>
+  <img src="images/mermaid-sdo-model.PNG">
+  <figcaption>
+    Figuur 2. Een voorbeeld van een datamodel dat gebruik maakt van Schema.org.  Merk op dat dit model dicht in de buurt zit van de fysieke werkelijk zoals de meeste mensen deze ervaren ("stad", "plaats", "adres").
+  </figcaption>
+</figure>
+
 <p>Bevindingen bij het eerste gebruik van een op Schema.org gebaseerde kennisgraaf:</p>
 <ol>
 <li>Door de mapping naar Schema.org worden we uitgenodigd om informatie simpeler te ontsluiten.  Data wordt in termen van de alledaagse wereld ontsloten, begrijpelijk voor de niet-specialistische gebruiker.</li>
@@ -853,37 +865,106 @@
 <li>Voor een aantal object typen is maar weinig informatie bekend (bijvoorbeeld een Bak).  Je hebt dan alleen de geometrie en de bronhouder.  Het is niet duidelijk of deze informatie nuttig is voor veel gebruikers.</li>
 <li>Een aantal object typen worden op een te laag niveau ontsloten in de bron (bijvoorbeeld Wegdeel, Waterdeele).  Om voor de gebruiker nuttig te zijn zouden deze gegroepeerd ontsloten moeten worden.  Bijvoorbeeld 1 water i.p.v. 100 losse waterdelen.</li>
 </ol>
+<h3 id="data-lineage">Data lineage</h3>
+<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt.</p>
 <h2 id="ld-views">LD Views</h2>
 <p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. LD Views zijn geautomatiseerde afbeeldingen van registratieve datasets naar een geïntegreerde kennisgraaf. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
-<p><img alt="Architectuur LD Views" src="../images/architectuur-ld-views.png" /></p>
+<figure>
+  <img src="images/architectuur-ld-views.png">
+  <figcaption>
+    Figuur 3. Architectuur overzicht van de werking van LD Views.
+  </figcaption>
+</figure>
+
 <p>In deze architectuur zijn een aantal zaken van belang. We beginnen met brondata (paarse laag) zoals eerder beschreven in <a href="../Brondata/">Brondata</a>. Deze zetten we middels <a href="../GraphQLETL/">GraphQL</a> en de <a href="../Enhancer/">Enhancer</a> om naar registratieve <a href="../LinkedData/">Linked Data</a> (de oranje laag).</p>
 <p>Vanuit daar creeëren we één of meerdere Views (afhankelijk van gebruik) op deze data, welke laag we dan ook de Knowledge Graph noemen. Governance technisch zal een business architect moeten bepalen welke data er in deze laag moet zitten - en waar deze data vandaan moet komen. Het unieke hier is dat de data op zichzelf vaak al bevraagbaar is (middels uitgebreide en complexe SPARQL queries op de registratieve Linked Data), maar dat deze voor gemakkelijk gebruik persistent wordt opgeslagen. Voor verschillende doeleinden kunnen verschillende LD Views ontstaan in de toekomst.</p>
 <blockquote>
 <p>We geloven heel erg in het statement <em>One size fits none</em>. Immers, er valt niet één datamodel, één dataset of één manier van ontsluiting te bedenken waar alle gebruikers baat bij hebben. Door dit wel na te streven lopen we het risico een oplossing te creeëren die voor niemand echt de perfect aansluiting geeft. Daarom houden we de brondata grotendeels intact en staan we toe op basis van verschillende use cases één of meerdere Knowledge Graphs beschikbaar te stellen.</p>
 </blockquote>
 <p>Om beter weer te kunnen geven hoe LD Views inhoudelijk zijn opgebouwd introduceren we het volgende tabel formaat:</p>
-<ul>
-<li>Rij 1 geeft aan dat de linker twee kolommen gegevens in de Kadaster Kennisgraaf (KKG) beschrijven, en dat de rechter twee kolommen gegevens in een Kadastrale bron aanduiden waar de gegevens in de kennisgraaf op gebaseerd worden.</li>
-<li>Rij 2 geeft aan dat we zowel in de kennisgraaf alsook in de bron een onderscheid maken tussen objecttype en eigenschap.</li>
-<li>Rij 3-5 geven aan dat ze objecten van hetzelfde objecttype in de kennisgraaf beschrijven.</li>
-<li>Rij 3 legt een specifieke afbeelding (View) vast van een Bronklasse/bronEigenschap combinatie, naar een Klase/eigenschap combinatie in de kennisgraaf. De meeste afbeeldingen (Views) zijn van dit karakter.</li>
-<li>Rij 4 legt een ander soort afbeelding (View) vast: eigenschap2 in de kennisgraaf is niet direct gebaseed op 1 gegeven in een bron, maar vormt een link naar een ander objecttype in de kennisgraaf. Dit andere objecttype komt elders in dezelfde tabel voor.</li>
-<li>Rij 5 legt weer een ander soort afbeelding (Viev) vast: eigenschap3 in de kennisgraaf heeft een constante waarde. Deze waarde is niet afkomstig uit een specifieke locatie in de bron, maar maakt onderdeel uit van de LD View.</li>
-</ul>
-<table>
-  <thead>
-    <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">Kadaster Bron</th><th></th></tr>
-    <tr><th>Objecttype</th><th>eigenschap</th><th>Objecttype</th><th>eigenschap</th><tr>
-  </thead>
-  <tbody>
-    <tr><td rowspan="3">Objecttype</td><td>eigenschap1</td><td>BronObjecttype</td><td>bronEigenschap</td></tr>
-    <tr><td>eigenschap2</td><td>[link]</td><td>Klasse</td></tr>
-    <tr><td>eigenschap3</td><td>[constante]</td><td>waarde</td></tr>
-  </tbody>
-</table>
+<figure>
+  <table>
+    <thead>
+      <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">Kadaster Bron</th><th></th></tr>
+      <tr><th>Objecttype</th><th>Eigenschap</th><th>Objecttype</th><th>Eigenschap</th><tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="3">Objecttype</td><td>eigenschapA</td><td>BronObjecttype</td><td>bronEigenschap</td></tr>
+      <tr><td>eigenschapB</td><td>{{Klasse}}</td><td></td></tr>
+      <tr><td>eigenschapC</td><td>[[waarde]]</td><td></td></tr>
+    </tbody>
+  </table>
+  <figcaption>
+    Tabel 1. Overzicht van het LD View tabel formaat.
+  </figcaption>
+</figure>
 
-<h3 id="sparql-construct">SPARQL Construct</h3>
-<p>We gebruiken vervolgens SHACL Rules om de data om te zetten naar het Knowlegde Graph datamodel. Dit is een combinatie van SPARQL Construct queries waarmee de bestaande data wordt getransformeerd naar het nieuwe model. Een voorbeeld van een dergelijke query is:</p>
+<p>De dikgedrukte rijen in dit tabel formaat moeten als volgt gelezen worden:</p>
+<ul>
+<li>Rij 1 geeft aan dat de linker twee kolommen gegevens in de Kadaster Kennisgraaf (KKG) beschrijven.  Deze rij geeft ook dat dat de rechter twee kolommen gegevens in een Kadastrale bron aanduiden, waar de gegevens in de kennisgraaf op gebaseerd worden.</li>
+<li>Rij 2 geeft aan dat zowel in de kennisgraaf alsook in de bron een onderscheid wordt gemaakt tussen objecttype en eigenschap.</li>
+</ul>
+<p>De niet-dikgedrukte rijen in dit tabel formaat moeten als volgt gelezen worden:</p>
+<ul>
+<li>Rij 1-3 geven aan dat ze objecten van hetzelfde objecttype in de kennisgraaf beschrijven.</li>
+<li>Rij 1 legt een specifieke afbeelding (View) vast van een Bronklasse/bronEigenschap combinatie, naar een Klase/eigenschap combinatie in de kennisgraaf. De meeste afbeeldingen (Views) zijn van dit karakter.</li>
+<li>Rij 2 legt een ander soort afbeelding (View) vast: eigenschap2 in de kennisgraaf is niet direct gebaseed op 1 gegeven in een bron, maar vormt een link naar een ander objecttype in de kennisgraaf. Dit andere objecttype komt elders in dezelfde tabel voor.</li>
+<li>Rij 3 legt weer een ander soort afbeelding (Viev) vast: eigenschap3 in de kennisgraaf heeft een constante waarde. Deze waarde is niet afkomstig uit een specifieke locatie in de bron, maar maakt onderdeel uit van de LD View.</li>
+</ul>
+<h3 id="ld-view-for-bag-pand">LD View for BAG Pand</h3>
+<p>De volgende tabel geeft de inhoudelijke afbeelding (View) voor BAG panden weer.</p>
+<figure>
+  <table>
+    <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">BAG Bron</th><th></th></tr>
+    <tr><td><a href="https://schema.org/AdministrativeArea">AdministrativeArea</a></td><td><a href="https://schema.org/containsPlace">containsPlace</td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+    <tr><td rowspan="4"><a href="https://schema.org/GeoCoordinates">GeoCoordinates</a></td><td><a href="https://schema.org/latitude">latitude</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/geometrie">geometrie</a></td></tr>
+    <tr><td><a href="https://schema.org/longitude">longitude</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/geometrie">geometrie</a></td></tr>
+    <tr><td><a href="https://schema.org/name">name</a></td><td>[["BAG puntgeometrie"]]</td><td></td></tr>
+    <tr><td><a href="https://triplydb.com/w3c/prov/browser?resource=http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23wasDerivedFrom">wasDerivedFrom</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+    <tr><td rowspan="3"><a href="https://schema.org/GeoShape">GeoShape</td><td><a href="https://schema.org/name">name</a></td><td>[["BAG vlakgeometrie"]]</td><td></td></tr>
+    <tr><td><a href="https://schema.org/polygon">polygon</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/geometrie">geometrie</a></td></tr>
+    <tr><td><a href="https://triplydb.com/w3c/prov/browser?resource=http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23wasDerivedFrom">wasDerivedFrom</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+    <tr><td rowspan="16"><a href="https://schema.org/Place">Place</a></td><td rowspan="2"><a href="https://schema.org/additionalType">additionalType</a></td><td>[[<a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a>]]</td><td></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/gebruiksdoel">gebruiksdoel</a></td></tr>
+    <tr><td><a href="https://schema.org/address">address</a></td><td>{{<a href="https://schema.org/PostalAddress">PostalAddress</a>}}</td><td></td></tr>
+    <tr><td><a href="https://schema.org/containedInPlace">containedInPlace</a></td><td>{{<a href="https://schema.org/AdministrativeArea">AdministrativeArea</a>}}</td><td></td></tr>
+    <tr><td><a href="https://schema.org/dateCreated">dateCreated</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/bouwjaar">bouwjaar</a></td></tr>
+    <tr><td><a href="https://schema.org/floorSize">floorSize</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/oppervlakte">oppervlakte</a></td></tr>
+    <tr><td rowspan="2"><a href="https://schema.org/geo">geo</a></td><td>{{<a href="https://schema.org/GeoCoordinates">GeoCoordinates</a>}}</td><td></td></tr>
+    <tr><td>{{<a href="https://schema.org/GeoShape">GeoShape</a>}}</td><td></td></tr>
+    <tr><td rowspan="6"><a href="https://schema.org/name">name</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/postcode">postcode</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimte">OpenbareRuimte</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td rowspan="3"><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer">huisnummer</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummertoevoeging">huisnummertoevoeging</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisletter">huisletter</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats">Woonplaats</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td rowspan="2"><a href="https://triplydb.com/w3c/prov/browser?resource=http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23wasDerivedFrom">wasDerivedFrom</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">Verblijfsobject</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+    <tr><td rowspan="14"><a href="https://schema.org/PostalAddress">PostalAddress</a></td><td><a href="https://schema.org/addressCountry">addressCountry</a></td><td>[["Nederland"]]</td><td></td></tr>
+    <tr><td><a href="https://schema.org/addressLocality">addressLocality</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats">Woonplaats</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td rowspan="5"><a href="https://schema.org/name">name</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/postcode">postcode</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimte">OpenbareRuimte</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td rowspan="3"><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer">huisnummer</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummertoevoeging">huisnummertoevoeging</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisletter">huisletter</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats">Woonplaats</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td><a href="https://schema.org/postalCode">postalCode</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/postcode">postcode</a></td></tr>
+    <tr><td rowspan="4"><a href="https://schema.org/streetAddress">streetAddress</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/OpenbareRuimte">OpenbareRuimte</a></td><td><a href="https://triplydb.com/w3c/skos/browser?resource=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel">naam</a></td></tr>
+    <tr><td rowspan="3"><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummer">huisnummer</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisnummertoevoeging">huisnummertoevoeging</a></td></tr>
+    <tr><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/huisletter">huisletter</a></td></tr>
+    <tr><td><a href="https://triplydb.com/w3c/prov/browser?resource=http%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23wasDerivedFrom">wasDerivedFrom</a></td><td><a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">Nummeraanduiding</a></td><td><a href="https://triplydb.com/geonovum/nen3610/browser?resource=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fdef%2Fnen3610%23identificatie">identificatie</a></td></tr>
+  </table>
+  <figcaption>
+    Tabel 2. Voorbeeld van een inhoudelijke LD View tansformatie.  Deze wordt gebruikt om BAG panden om te zetten.
+  </figcaption>
+</figure>
+
+<p>Een interactieve visualisatie van deze LD View is <a href="https://kadaster.wvr.io/ld-view-bag-pand">hier</a> beschikbaar.</p>
+<h3 id="technische-implementatie">Technische implementatie</h3>
+<p>Voor de technische implementatie van LD Views wordt gebruik gemaakt van de open standaarden SPARQL construct en SHACL Rules.</p>
+<p>SPARQL construct wordt gebruikt om transformaties in uit te drukken.  Deze transformaties corresponderen met LD View tabellen zoals Tabel X.  nom de data om te zetten naar het Knowlegde Graph datamodel. Dit is een combinatie van SPARQL Construct queries waarmee de bestaande data wordt getransformeerd naar het nieuwe model. Een voorbeeld van een dergelijke query is:</p>
+<p>SHACL Rules worden gebruikt om de SPARQL construct queries op te slaan are linked data, en worden ook gebruikt om de volgorde waarin de tra</p>
 <div class="highlight"><pre><span></span><code><span class="k">prefix</span> <span class="nn">bag</span><span class="p">:</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/def/&gt;</span>
 <span class="k">prefix</span> <span class="nn">dct</span><span class="p">:</span> <span class="nl">&lt;http://purl.org/dc/terms/&gt;</span>
 <span class="k">prefix</span> <span class="nn">foaf</span><span class="p">:</span> <span class="nl">&lt;http://xmlns.com/foaf/0.1/&gt;</span>
@@ -913,53 +994,6 @@
 <span class="k">limit</span> <span class="mi">1</span>
 </code></pre></div>
 <p>Uitgangspunt is deshalve dat de data origineel beschikbaar is gemaakt in de registratieve Linked Data laag. Daarna kan er op - op basis van deze brondata - een View worden gegenereerd met SPARQL queries. Deze nieuwe Knowledge Graph bevat een provenance (i.e. data lineage) naar de originele brondata.</p>
-<h3 id="provenance">Provenance</h3>
-<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt.</p>
-<h3 id="ld-view-for-bag-pand">LD View for BAG Pand</h3>
-<p>De volgende tabel geeft de inhoudelijke afbeelding (View) voor BAG panden weer.</p>
-<table>
-  <tr><th span="2">Kadaster Kennisgraaf (KKG)</th><th></th><th span="2">BAG Bron</th><th></th></tr>
-  <tr><td>AdministrativeArea</td><td>containsPlace</td><td>Verblijfsobject</td><td>identificatie</td></tr>
-  <tr><td>GeoCoordinates</td><td>latitude</td><td>Verblijfsobject</td><td>geometrie</td></tr>
-  <tr><td></td><td>longitude</td><td>Verblijfsobject</td><td>geometrie</td></tr>
-  <tr><td></td><td>name</td><td>[[constante]]</td><td>"BAG puntgeometrie"</td></tr>
-  <tr><td></td><td>wasDerivedFrom</td><td>Verblijsobject</td><td>identificatie</td></tr>
-  <tr><td>GeoShape</td><td>name</td><td>[[constante]]</td><td>"BAG vlakgeometrie"</td></tr>
-  <tr><td></td><td>polygon</td><td>Pand</td><td>geometrie</td></tr>
-  <tr><td></td><td>wasDerivedFrom</td><td>Pand</td><td>identificatie</td></tr>
-  <tr><td>Place</td><td>additionalType</td><td>[[constante]]</td><td>Pand</td></tr>
-  <tr><td></td><td></td><td>Verblijfsobject</td><td>gebruiksdoel</td></tr>
-  <tr><td></td><td>address</td><td>{{PostalAddress}}</td><td></td></tr>
-  <tr><td></td><td>containedInPlace</td><td>{{AdministrativeArea</td><td></td></tr>
-  <tr><td></td><td>dateCreated</td><td>Pand</td><td>bouwjaar</td></tr>
-  <tr><td></td><td>floorSize</td><td>Verblijfsobject</td><td>oppervlakte</td></tr>
-  <tr><td></td><td>geo</td><td>{{GeoCoordinates}}</td><td></td></tr>
-  <tr><td></td><td></td><td>{{GeoShape}}</td><td></td></tr>
-  <tr><td></td><td>name</td><td>Nummeraanduiding</td><td>postcode</td></tr>
-  <tr><td></td><td></td><td>OpenbareRuimte</td><td>naam</td></tr>
-  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
-  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
-  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
-  <tr><td></td><td></td><td>Woonplaats</td><td>naam</td></tr>
-  <tr><td></td><td>wasDerivedFrom</td><td>Pand</td><td>identificatie</td></tr>
-  <tr><td></td><td></td><td>Verblijfsobject</td><td>identificatie</td></tr>
-  <tr><td>PostalAddress</td><td>addressCountry</td><td>[[constante]]</td><td>"Nederland"</td></tr>
-  <tr><td></td><td>addressLocality</td><td>Woonplaats</td><td>naam</td></tr>
-  <tr><td></td><td>name</td><td>Nummeraanduiding</td><td>postcode</td></tr>
-  <tr><td></td><td></td><td>OpenbareRuimte</td><td>naam</td></tr>
-  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
-  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
-  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
-  <tr><td></td><td></td><td>Woonplaats</td><td>naam</td></tr>
-  <tr><td></td><td>postalCode</td><td>Nummeraanduiding</td><td>postcode</td></tr>
-  <tr><td></td><td>straatAddress</td><td>OpenbareRuimte</td><td>naam</td></tr>
-  <tr><td></td><td></td><td>Nummeraanduiding</td><td>huisnummer</td></tr>
-  <tr><td></td><td></td><td></td><td>huisnummertoevoeging</td></tr>
-  <tr><td></td><td></td><td></td><td>huisletter</td></tr>
-  <tr><td></td><td>wasDerivedFrom</td><td>Nummeraanduiding</td><td>identificatie</td></tr>
-</table>
-
-<p>Een interactieve visualisatie van deze LD View is <a href="https://kadaster.wvr.io/ld-view-bag-pand">hier</a> beschikbaar.</p>
                 
               
               
