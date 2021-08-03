@@ -476,25 +476,19 @@
     Knowledge Graph datamodel
   </a>
   
-    <nav class="md-nav" aria-label="Knowledge Graph datamodel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#schemaorg" class="md-nav__link">
     Schema.org
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#data-lineage" class="md-nav__link">
     Data lineage
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -513,9 +507,22 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#technische-implementatie" class="md-nav__link">
     Technische implementatie
+  </a>
+  
+    <nav class="md-nav" aria-label="Technische implementatie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technische-implementatie-bag-pand" class="md-nav__link">
+    Technische implementatie BAG Pand
   </a>
   
 </li>
@@ -766,25 +773,19 @@
     Knowledge Graph datamodel
   </a>
   
-    <nav class="md-nav" aria-label="Knowledge Graph datamodel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#schemaorg" class="md-nav__link">
     Schema.org
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#data-lineage" class="md-nav__link">
     Data lineage
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -803,9 +804,22 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#technische-implementatie" class="md-nav__link">
     Technische implementatie
+  </a>
+  
+    <nav class="md-nav" aria-label="Technische implementatie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technische-implementatie-bag-pand" class="md-nav__link">
+    Technische implementatie BAG Pand
   </a>
   
 </li>
@@ -837,16 +851,16 @@
 <h2 id="knowledge-graph-datamodel">Knowledge Graph datamodel</h2>
 <p>In de praktijk praten gebruikers vaak niet in termen als <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Nummeraanduiding">nummeraanduiding</a>, <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Verblijfsobject">verblijfsobject</a> of bestuurlijk gebied, maar over adressen, gebouwen en wijken. Gebruikers denken in termen van hun fysieke leefomgeving (Figuur 1).</p>
 <figure>
-  <img src="images/fysieke-werkelijkheid.png">
+  <img src="../images/fysieke-werkelijkheid.png">
   <ficaption>
     Figuur 1. Een visuele weergave van de fysieke werkelijkheid zoals veel gebruikers deze vanuit hun dagelijks leven ervaren.
   </figcaption>
 </figure>
 
-<h3 id="schemaorg">Schema.org</h3>
+<h2 id="schemaorg">Schema.org</h2>
 <p>In het maken van een gebruiksvriendelijk datamodel kan ervoor gekozen worden om termen uit de basisregistraties te hergebruiken (zoals <a href="https://bag2.basisregistraties.overheid.nl/bag/def/Pand">Pand</a> of Perceel). Er kan ook voor gekozen worden om de data naar een nog meer generiek en open standaard te brengen, zoals <a href="https://schema.org/docs/documents.html">Schema.org</a>. Deze standaard is geïntrodueerd door Google en behelst een manier van data omschrijving waarmee moderne zoekmachines goed aan de slag kunnen. Objecten, pagina's en websites die met deze standaard zijn omschreven zijn dan ook over het algemeen goed vindbaar op het web. In Figuur 2 wordt een voorbeeld van een datamodel in Schema.org gegeven.</p>
 <figure>
-  <img src="images/mermaid-sdo-model.PNG">
+  <img src="../images/mermaid-sdo-model.PNG">
   <figcaption>
     Figuur 2. Een voorbeeld van een datamodel dat gebruik maakt van Schema.org.  Merk op dat dit model dicht in de buurt zit van de fysieke werkelijk zoals de meeste mensen deze ervaren ("stad", "plaats", "adres").
   </figcaption>
@@ -865,12 +879,13 @@
 <li>Voor een aantal object typen is maar weinig informatie bekend (bijvoorbeeld een Bak).  Je hebt dan alleen de geometrie en de bronhouder.  Het is niet duidelijk of deze informatie nuttig is voor veel gebruikers.</li>
 <li>Een aantal object typen worden op een te laag niveau ontsloten in de bron (bijvoorbeeld Wegdeel, Waterdeele).  Om voor de gebruiker nuttig te zijn zouden deze gegroepeerd ontsloten moeten worden.  Bijvoorbeeld 1 water i.p.v. 100 losse waterdelen.</li>
 </ol>
-<h3 id="data-lineage">Data lineage</h3>
-<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C. Zo is in bovenstaande SPARQL construct query een aantal keer de term <code>prov:wasDerivedFrom</code> te zien. Deze triple geeft dus - op een specifiek gegeven - aan waar deze vandaan komt.</p>
+<h2 id="data-lineage">Data lineage</h2>
+<p>Essentieel uitgangspunt bij het transformeren van de data naar de Knowledge Graph is dat de data lineage herleidbaar blijft. Attributen en objecten komen uit een bepaalde dataset en een bepaald gegeven binnen deze dataset. Deze lineage houden we traceerbaar middels de <a href="https://www.w3.org/TR/prov-overview/">prov standaard</a> zoals gestandaardiseerd door het W3C.</p>
+<p>Een specifiek voorbeeld van hoe data lineage automatisch wordt bijgehouden is te vinden in Tabel 2.  Dit betreft de cellen met waarde "wasDerivedFrom". Deze zelfde relatie is ook te vinden in de implementatie bevraging die aan het einde van deze pagina is opgenomen.</p>
 <h2 id="ld-views">LD Views</h2>
 <p>Om technisch tot een invulling te komen van een Knowledge Graph bovenop onze registratieve Linked Data, maken wij gebruik van zgn. LD Views. LD Views zijn geautomatiseerde afbeeldingen van registratieve datasets naar een geïntegreerde kennisgraaf. Met deze aanpak transformeren we de registratieve laag naar een additionele laag dat gebruik maakt van bovengenoemd datamodel.</p>
 <figure>
-  <img src="images/architectuur-ld-views.png">
+  <img src="../images/architectuur-ld-views.png">
   <figcaption>
     Figuur 3. Architectuur overzicht van de werking van LD Views.
   </figcaption>
@@ -960,40 +975,184 @@
   </figcaption>
 </figure>
 
-<p>Een interactieve visualisatie van deze LD View is <a href="https://kadaster.wvr.io/ld-view-bag-pand">hier</a> beschikbaar.</p>
-<h3 id="technische-implementatie">Technische implementatie</h3>
+<p>Naast de transformaties in Tabel 2 worden ook nog een aantal filters toegepast.</p>
+<dl>
+  <dt>Nummeraanduiding</dt>
+  <dd>Nummeraanduidingen waarvan de registratie is afgesloten worden niet meegenomen in de LD View.  Nummeraanduidngen met status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/naamgevingIngetrokken">naamgeving ingetrokken</a> worden niet meegenomen in de LD View.</dd>
+  <dt>Openbare ruimte</dt>
+  <dd>Openbare ruimtes waarvan de registratie is afgesloten worden niet meegenomen in de LD View.  Openbare ruimtes met status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/naamgevingIngetrokken">naamgeving ingetrokken</a> worden niet meegenomen in de LD View.</dd>
+  <dt>Verblijfsobject</dt>
+  <dd>Verblijfsobjecten met status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/nietGerealiseerdVerblijfsobject">niet geraliseerd verblijfsobject</a>, <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectIngetrokken">verblijfsobject ingetrokken</a> of <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/verblijfsobjectTenOnrechteOpgevoerd">verblijfsobject ten onrechte opgevoerd</a> worden niet meegenomen in de LD View.  Verblijfsobjecten waarvan de registratie is afgesloten worden niet meegenomen in de LD View.</dd>
+  <dt>Pand</dt>
+  <dd>Panden met status <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/nietGerealiseerdPand">niet gerealiseerd pand</a>, <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/pandGesloopt">pand gesloopt</a> of <a href="https://bag2.basisregistraties.overheid.nl/bag/id/status/pandTenOnrechteOpgevoerd">pand ten onrechte opgevoerd</a> worden niet meegenomen in de LD View.  Panden aarvan de registratie is afgesloten worden niet meegenomen in de LD View.</dd>
+</dl>
+
+<p>Een interactieve visualisatie van deze LD View is <a href="https://kadaster.wvr.io/ld-view-bag-pand">hier</a> beschikbaar (zie ook Figuur 4 voor een indruk).</p>
+<p><figuur>
+  <a href="https://kadaster.wvr.io/ld-view-bag-pand">
+    <img src="../images/ld-view-visueel.png">
+  </a>
+<br />
+<figcaption>
+    Figuur 4. Voorbeeld van een visuele weergave van de LD View voor BAG pand.
+  </figcaption></p>
+<p></figuur></p>
+<h2 id="technische-implementatie">Technische implementatie</h2>
 <p>Voor de technische implementatie van LD Views wordt gebruik gemaakt van de open standaarden SPARQL construct en SHACL Rules.</p>
-<p>SPARQL construct wordt gebruikt om transformaties in uit te drukken.  Deze transformaties corresponderen met LD View tabellen zoals Tabel X.  nom de data om te zetten naar het Knowlegde Graph datamodel. Dit is een combinatie van SPARQL Construct queries waarmee de bestaande data wordt getransformeerd naar het nieuwe model. Een voorbeeld van een dergelijke query is:</p>
-<p>SHACL Rules worden gebruikt om de SPARQL construct queries op te slaan are linked data, en worden ook gebruikt om de volgorde waarin de tra</p>
+<dl>
+  <dt>SPARQL construct</dt>
+  <dd>Wordt gebruikt om inhoudelijke transformaties in uit te drukken.  Deze transformaties corresponderen met LD View tabellen zoals Tabel 1 en 2.  De met Tabel 2 corresponderende bevraging is hieronder opgenomen.</dd>
+  <dt>SHACL Rules</dt>
+  <dd>worden gebruikt om de SPARQL construct queries op te slaan als linked data.  Deze worden ook gebruikt om de volgorde waarin de transformaties moeten worden uitgevoerd vast te leggen.</dd>
+</dl>
+
+<h3 id="technische-implementatie-bag-pand">Technische implementatie BAG Pand</h3>
 <div class="highlight"><pre><span></span><code><span class="k">prefix</span> <span class="nn">bag</span><span class="p">:</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/def/&gt;</span>
-<span class="k">prefix</span> <span class="nn">dct</span><span class="p">:</span> <span class="nl">&lt;http://purl.org/dc/terms/&gt;</span>
 <span class="k">prefix</span> <span class="nn">foaf</span><span class="p">:</span> <span class="nl">&lt;http://xmlns.com/foaf/0.1/&gt;</span>
-<span class="k">prefix</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
+<span class="k">prefix</span> <span class="nn">nen3610</span><span class="p">:</span> <span class="nl">&lt;http://definities.geostandaarden.nl/def/nen3610#&gt;</span>
 <span class="k">prefix</span> <span class="nn">prov</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/ns/prov#&gt;</span>
 <span class="k">prefix</span> <span class="nn">sdo</span><span class="p">:</span> <span class="nl">&lt;https://schema.org/&gt;</span>
 <span class="k">prefix</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
+<span class="k">prefix</span> <span class="nn">status</span><span class="p">:</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/id/status/&gt;</span>
+<span class="k">prefix</span> <span class="nn">tfg</span><span class="p">:</span> <span class="nl">&lt;https://triplydb.com/Triply/functions/geo/&gt;</span>
+<span class="k">prefix</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
+
 <span class="k">construct</span> <span class="p">{</span>
-  <span class="nv">?city</span>
-    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">City</span><span class="p">;</span>
-    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span> <span class="nv">?woonplaatsRegistratie</span><span class="p">;</span>
-    <span class="nn">sdo</span><span class="p">:</span><span class="nt">geo</span> <span class="nv">?shape</span><span class="p">;</span>
-    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="nv">?name</span><span class="p">.</span>
-  <span class="nv">?shape</span> <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">GeoShape</span><span class="p">;</span>
+  <span class="nv">?administrativeArea</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">containsPlace</span> <span class="nv">?place</span><span class="p">.</span>
+  <span class="nv">?geoCoordinates</span>
+    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">GeoCoordinates</span><span class="p">;</span>
+    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span> <span class="nv">?verblijfsobjectRegistratie</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">latitude</span> <span class="nv">?latitude</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">longitude</span> <span class="nv">?longitude</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="s">&#39;BAG puntgeometrie&#39;</span><span class="p">.</span>
+  <span class="nv">?geoShape</span>
+    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">GeoShape</span><span class="p">;</span>
+    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span> <span class="nv">?pandRegistratie</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="s">&#39;BAG vlakgeometrie&#39;</span><span class="p">;</span>
     <span class="nn">sdo</span><span class="p">:</span><span class="nt">polygon</span> <span class="nv">?polygon</span><span class="p">.</span>
-<span class="p">}</span> <span class="k">where</span> <span class="p">{</span>
-  <span class="nv">?woonplaatsRegistratie</span>
-    <span class="k">a</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">WoonplaatsRegistratie</span><span class="p">;</span>
-    <span class="nn">bag</span><span class="p">:</span><span class="nt">geometrie</span> <span class="nv">?polygon</span><span class="p">;</span>
-    <span class="nn">dct</span><span class="p">:</span><span class="nt">identifier</span> <span class="nv">?id</span><span class="p">;</span>
-    <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?woonplaats</span><span class="p">;</span>
-    <span class="nn">skos</span><span class="p">:</span><span class="nt">prefLabel</span> <span class="nv">?name</span><span class="p">.</span>
-  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?woonplaatsRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
-  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&quot;https://data.labs.kadaster.nl/kadaster/kg/id/city/&quot;</span><span class="p">,</span><span class="nf">str</span><span class="p">(</span><span class="nv">?id</span><span class="p">)))</span> <span class="k">as</span> <span class="nv">?city</span><span class="p">)</span>
-  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&quot;https://data.labs.kadaster.nl/kadaster/kg/id/geo-shape/&quot;</span><span class="p">,</span><span class="nf">str</span><span class="p">(</span><span class="nv">?id</span><span class="p">)))</span> <span class="k">as</span> <span class="nv">?shape</span><span class="p">)</span>
+  <span class="nv">?place</span>
+    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">Place</span><span class="p">;</span>
+    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span>
+      <span class="nv">?pandRegistratie</span><span class="p">,</span>
+      <span class="nv">?verblijfsobjectRegistratie</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">additionalType</span>
+      <span class="nn">bag</span><span class="p">:</span><span class="nt">Pand</span><span class="p">,</span>
+      <span class="nv">?gebruiksdoel</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">address</span> <span class="nv">?postalAddress</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">containedInPlace</span> <span class="nv">?administrativeArea</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">dateCreated</span> <span class="nv">?dateCreated</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">floorSize</span> <span class="nv">?oppervlakte</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">geo</span>
+      <span class="nv">?geoCoordinates</span><span class="p">,</span>
+      <span class="nv">?geoShape</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="nv">?placeName</span><span class="p">.</span>
+  <span class="nv">?postalAddress</span>
+    <span class="k">a</span> <span class="nn">sdo</span><span class="p">:</span><span class="nt">PostalAddress</span><span class="p">;</span>
+    <span class="nn">prov</span><span class="p">:</span><span class="nt">wasDerivedFrom</span> <span class="nv">?nummeraanduidingRegistratie</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">addressCountry</span> <span class="s">&#39;Nederland&#39;</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">addressLocality</span> <span class="nv">?woonplaatsNaam</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">name</span> <span class="nv">?postalAddressName</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">postalCode</span> <span class="nv">?postcode</span><span class="p">;</span>
+    <span class="nn">sdo</span><span class="p">:</span><span class="nt">streetAddress</span> <span class="nv">?streetAddress</span><span class="p">.</span>
 <span class="p">}</span>
-<span class="k">limit</span> <span class="mi">1</span>
+
+<span class="k">from named</span> <span class="nl">&lt;https://bag2.basisregistraties.overheid.nl/bag/graphs/instanties&gt;</span>
+
+<span class="k">where</span> <span class="p">{</span>
+  <span class="c"># BAG nummeraanduiding: identity</span>
+  <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">postcode</span> <span class="nv">?postcode</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">status</span> <span class="nv">?nummeraanduidingStatus</span><span class="p">.</span>
+  <span class="k">filter</span><span class="p">(</span><span class="nv">?nummeraanduidingStatus</span> <span class="k">not in</span> <span class="p">(</span><span class="nn">status</span><span class="p">:</span><span class="nt">naamgevingIngetrokken</span><span class="p">))</span>
+  <span class="c"># BAG nummeraanduiding: connections</span>
+  <span class="nv">?nummeraanduidingRegistratie</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">ligtAan</span> <span class="nv">?openbareRuimte</span><span class="p">;</span>
+    <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?nummeraanduiding</span><span class="p">.</span>
+  <span class="c"># BAG nummeraanduiding: the rest</span>
+  <span class="nv">?nummeraanduiding</span> <span class="nn">nen3610</span><span class="p">:</span><span class="nt">identificatie</span><span class="o">/</span><span class="nn">nen3610</span><span class="p">:</span><span class="nt">lokaalID</span> <span class="nv">?postalAddressId</span><span class="p">.</span>
+  <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">huisnummer</span> <span class="nv">?huisnummer</span><span class="p">.</span>
+  <span class="k">optional</span> <span class="p">{</span> <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">huisletter</span> <span class="nv">?huisletter</span><span class="p">.</span> <span class="p">}</span>
+  <span class="k">optional</span> <span class="p">{</span> <span class="nv">?nummeraanduidingRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">huisnummertoevoeging</span> <span class="nv">?huisnummertoevoeging</span><span class="p">.</span> <span class="p">}</span>
+
+  <span class="c"># BAG openbare ruimte: identity</span>
+  <span class="nv">?openbareRuimteRegistratie</span> <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?openbareRuimte</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?openbareRuimteRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="nv">?openbareRuimteRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">status</span> <span class="nv">?openbareRuimteStatus</span><span class="p">.</span>
+  <span class="k">filter</span><span class="p">(</span><span class="nv">?openbareRuimteStatus</span> <span class="k">not in</span> <span class="p">(</span><span class="nn">status</span><span class="p">:</span><span class="nt">naamgevingIngetrokken</span><span class="p">))</span>
+  <span class="c"># BAG openbare ruimte: connections</span>
+  <span class="nv">?openbareRuimteRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">ligtIn</span> <span class="nv">?woonplaats</span><span class="p">.</span>
+  <span class="c"># BAG openbare ruimte: the rest</span>
+  <span class="nv">?openbareRuimteRegistratie</span> <span class="nn">skos</span><span class="p">:</span><span class="nt">prefLabel</span> <span class="nv">?openbareRuimteNaam</span><span class="p">.</span>
+
+  <span class="c"># BAG verblijfsobject: identity</span>
+  <span class="nv">?verblijfsobjectRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">hoofdadres</span> <span class="nv">?nummeraanduiding</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?verblijfsobjectRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="nv">?verblijfsobjectRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">status</span> <span class="nv">?verblijfsobjectStatus</span><span class="p">.</span>
+  <span class="k">filter</span><span class="p">(</span><span class="nv">?verblijfsobjectStatus</span> <span class="k">not in</span> <span class="p">(</span><span class="nn">status</span><span class="p">:</span><span class="nt">nietGerealiseerdVerblijfsobject</span><span class="p">,</span>
+                                        <span class="nn">status</span><span class="p">:</span><span class="nt">verblijfsobjectIngetrokken</span><span class="p">,</span>
+                                        <span class="nn">status</span><span class="p">:</span><span class="nt">verblijfsobjectTenOnrechteOpgevoerd</span><span class="p">))</span>
+  <span class="c"># BAG verblijfsobject: connections</span>
+  <span class="nv">?verblijfsobjectRegistratie</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">maaktDeelUitVan</span> <span class="nv">?pand</span><span class="p">;</span>
+    <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?verblijfsobject</span><span class="p">.</span>
+  <span class="c"># BAG verblijfsobject: the rest</span>
+  <span class="nv">?verblijfsobject</span> <span class="nn">nen3610</span><span class="p">:</span><span class="nt">identificatie</span><span class="o">/</span><span class="nn">nen3610</span><span class="p">:</span><span class="nt">lokaalID</span> <span class="nv">?verblijfsobjectId</span><span class="p">.</span>
+  <span class="nv">?verblijfsobjectRegistratie</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">gebruiksdoel</span> <span class="nv">?gebruiksdoel</span><span class="p">;</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">geometrie</span> <span class="nv">?puntRd</span><span class="p">;</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">oppervlakte</span> <span class="nv">?oppervlakte</span><span class="p">.</span>
+
+  <span class="c"># BAG pand: identity</span>
+  <span class="nv">?pandRegistratie</span> <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?pand</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?pandRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="nv">?pandRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">status</span> <span class="nv">?pandStatus</span><span class="p">.</span>
+  <span class="k">filter</span><span class="p">(</span><span class="nv">?pandStatus</span> <span class="k">not in</span> <span class="p">(</span><span class="nn">status</span><span class="p">:</span><span class="nt">nietGerealiseerdPand</span><span class="p">,</span>
+                             <span class="nn">status</span><span class="p">:</span><span class="nt">pandGesloopt</span><span class="p">,</span>
+                             <span class="nn">status</span><span class="p">:</span><span class="nt">pandTenOnrechteOpgevoerd</span><span class="p">))</span>
+  <span class="c"># BAG pand: the rest</span>
+  <span class="nv">?pand</span> <span class="nn">nen3610</span><span class="p">:</span><span class="nt">identificatie</span><span class="o">/</span><span class="nn">nen3610</span><span class="p">:</span><span class="nt">lokaalID</span> <span class="nv">?pandId</span><span class="p">.</span>
+  <span class="nv">?pandRegistratie</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">bouwjaar</span> <span class="nv">?bouwjaar</span><span class="p">;</span>
+    <span class="nn">bag</span><span class="p">:</span><span class="nt">geometrie</span> <span class="nv">?vlakRd</span><span class="p">.</span>
+
+  <span class="c"># BAG woonplaats: identity</span>
+  <span class="nv">?woonplaatsRegistratie</span> <span class="nn">foaf</span><span class="p">:</span><span class="nt">primaryTopic</span> <span class="nv">?woonplaats</span><span class="p">.</span>
+  <span class="k">filter</span> <span class="nf">not exists</span> <span class="p">{</span> <span class="nv">?woonplaatsRegistratie</span> <span class="nn">prov</span><span class="p">:</span><span class="nt">invalidatedAtTime</span> <span class="p">[].</span> <span class="p">}</span>
+  <span class="nv">?woonplaatsRegistratie</span> <span class="nn">bag</span><span class="p">:</span><span class="nt">status</span> <span class="nv">?woonplaatsStatus</span><span class="p">.</span>
+  <span class="k">filter</span><span class="p">(</span><span class="nv">?woonplaatsStatus</span> <span class="k">not in</span> <span class="p">(</span><span class="nn">status</span><span class="p">:</span><span class="nt">woonplaatsIngetrokken</span><span class="p">))</span>
+  <span class="c"># BAG woonplaats: the rest</span>
+  <span class="nv">?woonplaats</span> <span class="nn">nen3610</span><span class="p">:</span><span class="nt">identificatie</span><span class="o">/</span><span class="nn">nen3610</span><span class="p">:</span><span class="nt">lokaalID</span> <span class="nv">?administrativeAreaId</span><span class="p">.</span>
+  <span class="nv">?woonplaatsRegistratie</span> <span class="nn">skos</span><span class="p">:</span><span class="nt">prefLabel</span> <span class="nv">?woonplaatsNaam</span><span class="p">.</span>
+
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&#39;https://data.labs.kadaster.nl/kadaster/kg/id/place/&#39;</span><span class="p">,</span>
+                  <span class="nv">?administrativeAreaId</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?administrativeArea</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">integer</span><span class="p">(</span><span class="nf">str</span><span class="p">(</span><span class="nv">?bouwjaar</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?dateCreated</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&#39;https://data.labs.kadaster.nl/kadaster/kg/id/geo-coordinates/bag-&#39;</span><span class="p">,</span>
+                  <span class="nv">?verblijfsobjectId</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?geoCoordinates</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&#39;https://data.labs.kadaster.nl/kadaster/kg/id/geo-shape/bag-&#39;</span><span class="p">,</span>
+                  <span class="nv">?pandId</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?geoShape</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">double</span><span class="p">(</span><span class="nn">tfg</span><span class="p">:</span><span class="nt">latitude</span><span class="p">(</span><span class="nv">?punt</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?latitude</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">double</span><span class="p">(</span><span class="nn">tfg</span><span class="p">:</span><span class="nt">longitude</span><span class="p">(</span><span class="nv">?punt</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?longitude</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&#39;https://data.labs.kadaster.nl/kadaster/kg/id/place/&#39;</span><span class="p">,</span>
+                  <span class="nv">?verblijfsobjectId</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?place</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nn">tfg</span><span class="p">:</span><span class="nt">project</span><span class="p">(</span><span class="nn">tfg</span><span class="p">:</span><span class="nt">2d</span><span class="p">(</span><span class="nv">?vlakRd</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?polygon</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">iri</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="s">&#39;https://data.labs.kadaster.nl/kadaster/kg/id/postal-address/&#39;</span><span class="p">,</span>
+                  <span class="nv">?postalAddressId</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?postalAddress</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nn">tfg</span><span class="p">:</span><span class="nt">project</span><span class="p">(</span><span class="nv">?puntRd</span><span class="p">)</span> <span class="k">as</span> <span class="nv">?punt</span><span class="p">)</span>
+
+  <span class="k">bind</span><span class="p">(</span><span class="nf">if</span><span class="p">(</span><span class="nf">bound</span><span class="p">(</span><span class="nv">?placeName</span><span class="p">),</span>
+          <span class="nf">concat</span><span class="p">(</span><span class="s">&#39;Adres van &#39;</span><span class="p">,</span><span class="nv">?placeName</span><span class="p">),</span>
+          <span class="s">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nv">?postalAddressName</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">if</span><span class="p">(</span><span class="nf">bound</span><span class="p">(</span><span class="nv">?streetAddress</span><span class="p">),</span>
+          <span class="nf">concat</span><span class="p">(</span><span class="nv">?streetAddress</span><span class="p">,</span><span class="s">&#39;, &#39;</span><span class="p">,</span><span class="nv">?postcode</span><span class="p">,</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="nv">?woonplaatsNaam</span><span class="p">),</span>
+          <span class="s">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nv">?placeName</span><span class="p">)</span>
+  <span class="k">bind</span><span class="p">(</span><span class="nf">concat</span><span class="p">(</span><span class="nv">?openbareRuimteNaam</span><span class="p">,</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="nf">str</span><span class="p">(</span><span class="nv">?huisnummer</span><span class="p">),</span>
+              <span class="nf">if</span><span class="p">(</span><span class="nf">bound</span><span class="p">(</span><span class="nv">?huisletter</span><span class="p">),</span><span class="nv">?huisletter</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">),</span>
+              <span class="nf">if</span><span class="p">(</span><span class="nf">bound</span><span class="p">(</span><span class="nv">?huisnummertoevoeging</span><span class="p">),</span>
+                 <span class="nf">concat</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">,</span><span class="nv">?huisnummertoevoeging</span><span class="p">),</span>
+                 <span class="s">&#39;&#39;</span><span class="p">))</span> <span class="k">as</span> <span class="nv">?streetAddress</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>Uitgangspunt is deshalve dat de data origineel beschikbaar is gemaakt in de registratieve Linked Data laag. Daarna kan er op - op basis van deze brondata - een View worden gegenereerd met SPARQL queries. Deze nieuwe Knowledge Graph bevat een provenance (i.e. data lineage) naar de originele brondata.</p>
                 
               
               
