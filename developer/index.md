@@ -48,9 +48,9 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
             <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bag2/">Basisregistratie Adressen en Gebouwen</a></div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">https://bag2.basisregistraties.overheid.nl/sparql</a></div>
+    <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/bag2/sparql/default">Sandbox</a></div>
+    <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -61,9 +61,9 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
             <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bgt">Basisregistratie Grootschalige Topografie</a></div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://bgt.basisregistraties.overheid.nl/sparql</a></div>
+    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/bgt/sparql/bgt">Sandbox</a></div>
+    <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
