@@ -221,6 +221,10 @@
       "@type": "@id"
     },
     "value": "rdf:value",
+    "volgnummer": {
+      "@id": "prov:order",
+      "@type": "xsd:positiveInteger"
+    },
     "wegdeelOpTalud": "talud",
     "wijkcode": {
       "@id": "wijkCode",
