@@ -25,7 +25,7 @@ Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de servic
 
 Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutorial (PDF) van het gebruik van GraphQL.
 
-Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>    
+Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>
 
 <img class="developerpageIcon" src="/assets/images/elastic-search-logo.png">
 ## Elastic Search
@@ -64,6 +64,19 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
     <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
+</div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">
+        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
+        <div>
+            <div class="endpointContainerTitle_maintext">BRK</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brk">Basisregistratie Kadaster (open deel)</a></div>
+        </div>
+    </div>
+    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brk/services/brk/sparql</a></div>
+    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data Model (WIP)</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/brk">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
