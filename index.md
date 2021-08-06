@@ -51,6 +51,14 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Hier besteden we aandacht aan onze aanpak om met oa. Linked Data laagdrempelig een knowledge Graph te maken.</div>
     </div>
   </a>
+  <a href="/cases/brk-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
+      <div class="card-title">Basisregistratie Kadaster</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
+    </div>
+  </a>
   <a href="/cases/bag-ld">
     <div class="card">
       <div class="card-type">Use Case</div>
