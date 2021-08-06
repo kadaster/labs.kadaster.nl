@@ -133,7 +133,7 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
 
 In dit overzicht willen we een doorkijk bieden naar het mogelijke toekomstige design van de ‘integrale gebruiksoplossing’. Welke componenten vinden we hierin en hoe kan het eruit gaan zien? Browse door onderstaand Adobe XD bestand om een beeld te krijgen van de design gedachten voor de toekomst.
 
-<iframe height="920" width="100%" src="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<iframe height="920" width="100%" src="https://xd.adobe.com/embed/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ " frameborder="0" marginheight="0" marginwidth="0"></iframe>
 
-<div>Iframe link to Adobe XD, mocht het niet getoond worden bezoek dan: <a href="https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/">https://xd.adobe.com/embed/05d2d443-eabf-4bd5-bc20-c3d375fe7207-5081/</a></div>
+<div>Iframe link to Adobe XD, mocht het niet getoond worden bezoek dan: <a href="https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ ">https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/</a></div>
 <br />
