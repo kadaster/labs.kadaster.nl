@@ -50,7 +50,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basis
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">
       <div class="card-title">SPARQL Endpoint</div>
-      <div class="card-description">Het SPARQL endpoint van de BRT.</div>
+      <div class="card-description">Het SPARQL endpoint van de BRK.</div>
     </div>
   </a>
 </div>
