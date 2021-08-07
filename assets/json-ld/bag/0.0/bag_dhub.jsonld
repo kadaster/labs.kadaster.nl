@@ -80,7 +80,6 @@
       "@type": "@id"
     },
     "inonderzoek": null,
-    "ligtAan": "@nest",
     "ligtaan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -88,7 +87,6 @@
       "@id": "ligtAan",
       "@type": "@id"
     },
-    "ligtIn": "@nest",
     "ligtin": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
