@@ -80,6 +80,7 @@
       "@type": "@id"
     },
     "inonderzoek": null,
+    "ligtAan": "@nest",
     "ligtaan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -87,6 +88,7 @@
       "@id": "ligtAan",
       "@type": "@id"
     },
+    "ligtIn": "@nest",
     "ligtin": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -101,6 +103,10 @@
       },
       "@id": "maaktDeelUitVan",
       "@type": "@id"
+    },
+    "naam": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
     },
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
