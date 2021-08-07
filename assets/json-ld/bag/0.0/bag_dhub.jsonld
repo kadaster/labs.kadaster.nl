@@ -3,10 +3,6 @@
     "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
-    "jsonldid": "@id",
-    "jsonldtype": "@type",
-    "_id": "@id",
-    "_type": "@type",
     "asWKT": {
       "@id" : "geometrie",
       "@type": "geo:wktLiteral"
