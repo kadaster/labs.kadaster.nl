@@ -62,6 +62,7 @@
       "@type": "geo:wktLiteral"
     },
     "gml_id": null,
+    "heeftAlsHoofdAdres": "@nest",
     "heeftalshoofdadres" : {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -69,6 +70,7 @@
       "@id": "hoofdadres",
       "@type": "@id"
     },
+    "heeftAlsNevenAdres": "@nest",
     "heeftalsnevenadres" : {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
