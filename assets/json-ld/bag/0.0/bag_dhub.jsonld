@@ -11,7 +11,7 @@
       "@id" : "geometrie",
       "@type": "geo:wktLiteral"
     },
-    "begingeldigheid": {
+    "beginGeldigheid": {
       "@id": "nen3610:beginGeldigheid",
       "@type": "xsd:date"
     },
@@ -30,11 +30,11 @@
     "documentnummer": {
       "@id": "dct:identifier"
     },
-    "eindgeldigheid": {
+    "eindGeldigheid": {
       "@id": "nen3610:eindGeldigheid",
       "@type": "xsd:date"
     },
-    "eindregistratie": {
+    "tijdstipEindRegistratie": {
       "@id": "eindRegistratie",
       "@type": "xsd:dateTime"
     },
@@ -149,15 +149,15 @@
       "@id": "status",
       "@type": "@id"
     },
-    "tijdstipeindregistratielv": {
+    "tijdstipEindRegistratieLV": {
       "@id": "prov:invalidatedAtTime",
       "@type": "xsd:dateTime"
     },
-    "tijdstipregistratie": {
+    "tijdstipRegistratie": {
       "@id": "beginRegistratie",
       "@type": "xsd:dateTime"
     },
-    "tijdstipregistratielv": {
+    "tijdstipRegistratieLV": {
       "@id": "prov:generatedAtTime",
       "@type": "xsd:dateTime"
     },
