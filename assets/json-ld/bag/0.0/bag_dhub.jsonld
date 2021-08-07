@@ -57,7 +57,7 @@
       "@type": "xsd:boolean"
     },
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geometrie": "@nest",
+    "Geometrie": "@nest",
     "geometrie_vlak": {
       "@type": "geo:wktLiteral"
     },
