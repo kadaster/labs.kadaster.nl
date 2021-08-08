@@ -91,6 +91,7 @@
       "@type": "@id"
     },
     "lokaalID": "nen3610:lokaalID",
+    "maaktDeelUitVan" : "@nest",
     "maaktdeeluitvan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
