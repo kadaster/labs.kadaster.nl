@@ -76,6 +76,8 @@
       "@type": "@id"
     },
     "inonderzoek": null,
+    "inPlaats": "@nest",
+    "inStraat": "@nest",
     "ligtaan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -91,7 +93,6 @@
       "@type": "@id"
     },
     "lokaalID": "nen3610:lokaalID",
-    "maaktDeelUitVan" : "@nest",
     "maaktdeeluitvan": {
       "@context": {
         "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
@@ -106,6 +107,7 @@
     "namespace": "nen3610:namespace",
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "ogc_fid": null,
+    "onderdeelVan" : "@nest",
     "oorspronkelijkbouwjaar": {
       "@id": "bouwjaar",
       "@type": "xsd:gYear"
