@@ -25,7 +25,7 @@ Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de servic
 
 Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutorial (PDF) van het gebruik van GraphQL.
 
-Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>    
+Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>
 
 <img class="developerpageIcon" src="/assets/images/elastic-search-logo.png">
 ## Elastic Search
@@ -34,8 +34,9 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
 <br/>
 
 <div class="endpointContainer mobileHidden">
-    <div>Name:</div>
-    <div>Endpoint:</div>
+    <div><b>Name</b>:</div>
+    <div><b>Endpoint</b>:</div>
+    <div></div>
     <div></div>
     <div></div>
 </div>
@@ -49,6 +50,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql</a></div>
+    <div class="endpointContainer_center"><a href="/cases/bag-ld">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
 </div>
@@ -62,8 +64,23 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql</a></div>
+    <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
+</div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">
+        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
+        <div>
+            <div class="endpointContainerTitle_maintext">BRK</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brk">Basisregistratie Kadaster (open deel)</a></div>
+        </div>
+    </div>
+    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brk/services/brk/sparql</a></div>
+    <div class="endpointContainer_center"><a href="/cases/brk-ld">Use case</a></div>
+    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data Model (WIP)</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/brk">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -75,6 +92,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
+    <div class="endpointContainer_center"><a href="/cases/brt-ld">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">Sandbox</a></div>
 </div>
@@ -89,6 +107,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
     <div class="endpointContainer_center">-</div>
+    <div class="endpointContainer_center">-</div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">Sandbox</a></div>
 </div>
 
@@ -101,6 +120,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
+    <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">Sandbox</a></div>
 </div>
@@ -114,6 +134,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
+    <div class="endpointContainer_center">-</div>
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div>
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
@@ -124,10 +145,32 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         <img class="endpointContainerTitle_image" src="/assets/images/elastic-search-logo.png">
         <div>
             <div class="endpointContainerTitle_maintext">Elastic Search</div>
-            <div class="endpointContainerTitle_subtext">Knowledge Graph</div>
+            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
         </div>
     </div>
     <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">https://data.labs.kadaster.nl/kadaster/kg/search/search</a></div>
+    <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">Sandbox</a></div>
+</div>
+
+## Additionele resources
+
+Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala aan voorbeeld queries en andere resources beschikbaar die jullie kunnen helpen om snel met onze data aan de slag te gaan. Kijk daarom ook eens in de resources hieronder:
+
+<div class="cards-wrapper">
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik">
+    <div class="card">
+      <div class="card-type">Data Story</div>
+      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
+      <div class="card-description">In deze data story nemen we je aan de hand om je eerste SPARQL query op onze Knowledge Graph op te stellen!</div>
+    </div>
+  </a>
+    <a href="/demonstrators/architectuur-selfservice/KnowledgeGraph/">
+    <div class="card">
+      <div class="card-type">Architectuur</div>
+      <img class="card-image" src="/assets/images/architectuur-icon.png" alt="Architectuur Knowledge Graph">
+      <div class="card-description">Benieuwd naar hoe we de Knowledge Graph hebben opgebouwd vanuit de basisregistratie? Lees dan hier verder.</div>
+    </div>
+  </a>
 </div>
