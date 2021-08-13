@@ -120,7 +120,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
         </div>
     </div>
     <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
-    <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">Sandbox</a></div>
 </div>
