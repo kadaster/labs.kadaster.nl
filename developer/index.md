@@ -133,7 +133,7 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
             <div class="endpointContainerTitle_subtext">Open databronnen van het Kadaster</div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse</a></div>
+    <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse/graphql</a></div>
     <div class="endpointContainer_center">-</div>
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div>
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
@@ -152,6 +152,24 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
     <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
     <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">Sandbox</a></div>
+</div>
+
+<div class="textbox" markdown="1">
+## Actualiteit van databronnen
+
+De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
+
+- **Basisadministratie Adressen en Gebouwen** (kwartaallijks vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
+- **Basisadministratie Grootschalige Topografie** (kwartaallijks vernieuwd) - *Laatst vernieuwd met data van 2021-08-03*.
+- **Basisregistratie Topografie** (kwartaallijks vernieuwd) - *Laatst vernieuwd met data van 2021-05-01*.
+- **Digitale Kadastrale Kaart** (kwartaallijks vernieuwd) - *Laatst vernieuwd met data van 2021-07-01*.
+- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
+- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
+
+Specifieke details over de wijzigingen tussen leveringen kunnen worden geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit kleine quality-of-life verbeteringen of fixes op basis van observaties van gebruikers.
+
+De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is deshalve qua actualiteit een afgeleide van bovenstaande sets.
+
 </div>
 
 ## Additionele resources
