@@ -14,7 +14,7 @@ title: Use Case ― Integrale Gebruiksoplossing
 
 <h1>Welkom!</h1>
 
-Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om Geo-data gecombineerd te bevragen  en is ontworpen voor algemene gebruikers, geo-professionals en ontwikkelaars. Bekijk de toepassingen die bij u passen en ga er mee aan de slag. Het is de eerste versie van de integrale gebruiksoplossing, dus we horen graag wat u er van vindt!
+Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om geo-data uit verschillende geo-basisregistraties gecombineerd te bevragen en is ontworpen voor algemene gebruikers, geo-professionals en ontwikkelaars. Middels een Knowledge Graph wordt data ontsloten uit de BAG, BGT, BRT, Kadastrale Percelen (DKK), WKPB, CBS wijken en buurten en daarnaast kunnen eigen databestanden worden toegevoegd. Bekijk de toepassingen die bij u passen en ga er mee aan de slag. De integrale gebruiksoplossing is als Proof of Concept ontwikkeld voor het programma DiS-Geo. Onderaan deze pagina is een feedbackformulier beschikbaar, we horen graag wat u ervan vindt!
 
 <h1>Kijk en vraag</h1>
 <div class="description">
@@ -84,7 +84,7 @@ Welkom op de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om G
   </a>
 </div>
 
-## Van de makers
+## Project uitleg door de makers
 Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
 <div class="cards-wrapper">
