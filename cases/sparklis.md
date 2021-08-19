@@ -6,7 +6,7 @@ title: Sparklis
 # Use Case: Sparklis 
 
 ## Introductie
-Sparklis is een query-builder in natuurlijke taal waarmee mensen SPARQL-eindpunten kunnen verkennen en bevragen met alle kracht van SPARQL en zonder enige kennis van SPARQL, noch van het eindpuntvocabulaire. Het is een open-source client-side applicatie ontwikkeld door [Sébastien Ferré](http://people.irisa.fr/Sebastien.Ferre/).
+Sparklis is een query-builder in natuurlijke taal waarmee mensen SPARQL-eindpunten kunnen verkennen en bevragen met alle kracht van SPARQL en zonder enige kennis van SPARQL, noch van het eindpuntvocabulaire. Het is een open-source client-side applicatie ontwikkeld door [Sébastien Ferré](http://people.irisa.fr/Sebastien.Ferre/). 
 
 <div class="cards-wrapper">
   <a href="https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09BAG%0A%09%09%09%09%09%09%09&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/bag/services/bag/sparql&max_increment_samples=100">
@@ -61,7 +61,32 @@ Sparklis is een query-builder in natuurlijke taal waarmee mensen SPARQL-eindpunt
     <div class="textbox" markdown="1">
     give me every kasteel
     </div>      
-    
 
+### Tutorial
+Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. 
+
+#### Video 1
+<figure id="1">
+  <video controls loop poster="/assets/images/sparklis.png" width="1200">
+	<source src="/assets/videos/sparklis_demo_1.webm" type="video/webm">
+		Helaas, uw browser kan deze webm video niet weergeven.
+	</source>
+  </video>
+  <figcaption>
+	Figuur 1 ― Video tutorial 1 voor het gebruik van Sparklis.
+  </figcaption>
+</figure>
+
+#### Video 2
+<figure id="2">
+  <video controls loop poster="/assets/images/sparklis.png" width="1200">
+	<source src="/assets/videos/sparklis_demo_2.webm" type="video/webm">
+		Helaas, uw browser kan deze webm video niet weergeven.
+	</source>
+  </video>
+  <figcaption>
+	Figuur 2 ― Video tutorial 2 voor het gebruik van Sparklis.
+  </figcaption>
+</figure>
    
 
