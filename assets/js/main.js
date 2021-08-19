@@ -63,6 +63,7 @@ var inputs = document.getElementsByTagName("input");
 contextItems.push("buildingBlockMenu");
 contextItems.push("mobileNav");
 contextItems.push("educationMenu");
+contextItems.push("developerMenu");
 document.addEventListener("click", closeContextMenu, true);
 
 highlightCurrentPage();
