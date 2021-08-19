@@ -153,6 +153,21 @@
     "Naamgeving Ingetrokken": "https://bag2.basisregistraties.overheid.nl/bag/def/naamgevingIngetrokken",
     "Verblijfsobject Gevormd": "https://bag2.basisregistraties.overheid.nl/bag/def/verblijfsobjectGevormd",
     "Verblijfsobject Buiten gebruik": "https://bag2.basisregistraties.overheid.nl/bag/def/verblijfsobjectGevormd",
+    "Niet gerealiseerd verblijfsobject": "https://bag2.basisregistraties.overheid.nl/bag/def/nietgerealiseerdVerblijfsobject",
++ Verblijfsobject in gebruik (niet ingemeten)
++ Verblijfsobject in gebruik
++ Verbouwing verblijfsobject
++ Verblijfsobject ingetrokken
++ Verblijfsobject buiten gebruik
+  + Bouwvergunning verleend
++ Niet gerealiseerd pand
++ Bouw gestart
++ Pand in gebruik (niet ingemeten)
++ Pand in gebruik
++ Verbouwing pand
++ Sloopvergunning verleend
++ Pand gesloopt
++ Pand buiten gebruik
     },
     "tijdstipEindRegistratieLV": {
       "@id": "prov:invalidatedAtTime",
