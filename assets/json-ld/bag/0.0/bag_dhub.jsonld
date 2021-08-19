@@ -142,11 +142,17 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "status": {
-      "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
-      },
-      "@id": "status",
-      "@type": "@id"
+      "@id": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+      "@type": "@vocab"
+    },
+    "Plaats Aangewezen": "https://bag2.basisregistraties.overheid.nl/bag/def/plaatsAangewezen",
+    "Plaats Ingetrokken": "https://bag2.basisregistraties.overheid.nl/bag/def/plaatsIngetrokken",
+    "Woonplaats Aangewezen": "https://bag2.basisregistraties.overheid.nl/bag/def/woonplaatsAangewezen", 
+    "Woonplaats Ingetrokken": "https://bag2.basisregistraties.overheid.nl/bag/def/woonplaatsIngetrokken", 
+    "Naamgeving Uitgegeven": "https://bag2.basisregistraties.overheid.nl/bag/def/naamgevingUitgegeven",
+    "Naamgeving Ingetrokken": "https://bag2.basisregistraties.overheid.nl/bag/def/naamgevingIngetrokken",
+    "Verblijfsobject Gevormd": "https://bag2.basisregistraties.overheid.nl/bag/def/verblijfsobjectGevormd",
+    "Verblijfsobject Buiten gebruik": "https://bag2.basisregistraties.overheid.nl/bag/def/verblijfsobjectGevormd",
     },
     "tijdstipEindRegistratieLV": {
       "@id": "prov:invalidatedAtTime",
