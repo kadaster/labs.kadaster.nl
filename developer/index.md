@@ -8,188 +8,24 @@ title: Developer
 # Developer resources
 
 Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegevens uit onze basisregistraties ontsloten kunnen worden. In de basis bieden wij Linked Data en GraphQL endpoints aan.
-
-<br/>
-
+<br>
 <img class="developerpageIcon" src="/assets/images/linked-data_icon.png"> 
 ## Linked Data (SPARQL)
 Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeeld de dataset van de Basisregistratie Adressen en Gebouwen (BAG) met andere datasets. Omdat veel informatie via een adres gelinkt kan worden, leent de BAG zich hier goed voor. De querytaal van Linked Data heet SPARQL.
 
-Voor meer informatie, kijk bij de <a href="/demonstrators/architectuur-selfservice/">Use Case: Aanpak en Architectuur van de (Kadaster) Knowledge Graph</a>
-
-Klik <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">hier</a> voor een SPARQL Tutorial en <a href="/dissemination/Kadaster-SPARQL-Webinar.html">hier</a> voor een SPARQL Webinar.
+Voor meer informatie over SPARQL klik <a href="/developer/sparql">hier</a>
 
 <img class="developerpageIcon" src="/assets/images/graphql_icon.svg">
 ## GraphQL
 Met GraphQL ondervangen we een aantal vaak gestelde tekortkomingen van de services die we op onze basisregistraties leveren. De levering van data is vraaggestuurd in plaats van aanbodgestuurd, en daardoor kan de data beter op de gebruiker worden aangeboden. Verschillende datasets kunnen met een administratieve connectie integraal bevraagd worden.
 
-Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutorial (PDF) van het gebruik van GraphQL.
-
-Voor meer informatie, kijk bij de <a href="/cases/graphql-endpoint">Use Case: GraphQL Open endpoint</a>
+Voor meer informatie over Graphql klik <a href="/developer/graphql">hier</a>
 
 <img class="developerpageIcon" src="/assets/images/elastic-search-logo.png">
 ## Elastic Search
 Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen doorzoekbaar met natuurlijke tekst. Denk aan het doorzoeken van straatnamen, postcodes of de namen van meren, rivieren en bekende gebouwen. Om deze doorzoekbaarheid bovenop onze Linked Data beschikbaar te maken gebruiken wij Elastic Search. Middels deze techniek stellen wij een endpoint beschikbaar waar een zoekterm in kan worden ingevoerd en op basis van de beschikbare data de meest relevante objecten worden geretourneerd.
 
-<br/>
+Voor meer informatie over Elastic Search klik <a href="/developer/elasticsearch">hier</a>
 
-<div class="endpointContainer mobileHidden">
-    <div><b>Name</b>:</div>
-    <div><b>Endpoint</b>:</div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">BAG</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bag2/">Basisregistratie Adressen en Gebouwen</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql</a></div>
-    <div class="endpointContainer_center"><a href="/cases/bag-ld">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">BGT</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bgt">Basisregistratie Grootschalige Topografie</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql</a></div>
-    <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">BRK</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brk">Basisregistratie Kadaster (open deel)</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brk/services/brk/sparql</a></div>
-    <div class="endpointContainer_center"><a href="/cases/brk-ld">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data Model (WIP)</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/brk">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">BRT</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brt-2">Basisregistratie Topografie</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
-    <div class="endpointContainer_center"><a href="/cases/brt-ld">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">CBS KWB</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/cbs/wbk/">CBS Kerncijfers Wijken- en Buurten</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
-    <div class="endpointContainer_center">-</div>
-    <div class="endpointContainer_center">-</div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">KG</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/graphql_icon.svg">
-        <div>
-            <div class="endpointContainerTitle_maintext">GraphQL</div>
-            <div class="endpointContainerTitle_subtext">Open databronnen van het Kadaster</div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse/graphql</a></div>
-    <div class="endpointContainer_center">-</div>
-    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div>
-    <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
-    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
-</div>
-
-<div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">
-        <img class="endpointContainerTitle_image" src="/assets/images/elastic-search-logo.png">
-        <div>
-            <div class="endpointContainerTitle_maintext">Elastic Search</div>
-            <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
-        </div>
-    </div>
-    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">https://data.labs.kadaster.nl/kadaster/kg/search/search</a></div>
-    <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
-    <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">Sandbox</a></div>
-</div>
-
-<div class="textbox" markdown="1">
-## Actualiteit van databronnen
-
-De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
-
-
-- **Basisadministratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
-- **Basisadministratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-08-03*.
-- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-05-01*.
-- **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-01*.
-- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
-- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
-
-Specifieke details over de wijzigingen tussen leveringen kunnen worden geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit kleine quality-of-life verbeteringen of fixes op basis van observaties van gebruikers.
-
-De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.
-
-</div>
-
-## Additionele resources
-
-Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala aan voorbeeld queries en andere resources beschikbaar die jullie kunnen helpen om snel met onze data aan de slag te gaan. Kijk daarom ook eens in de resources hieronder:
-
-<div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik">
-    <div class="card">
-      <div class="card-type">Data Story</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-      <div class="card-description">In deze data story nemen we je aan de hand om je eerste SPARQL query op onze Knowledge Graph op te stellen!</div>
-    </div>
-  </a>
-    <a href="/demonstrators/architectuur-selfservice/KnowledgeGraph/">
-    <div class="card">
-      <div class="card-type">Architectuur</div>
-      <img class="card-image" src="/assets/images/architectuur-icon.png" alt="Architectuur Knowledge Graph">
-      <div class="card-description">Benieuwd naar hoe we de Knowledge Graph hebben opgebouwd vanuit de basisregistratie? Lees dan hier verder.</div>
-    </div>
-  </a>
-</div>
+## Databronnen en architectuur
+Voor meer informatie over de databronnen en architectuur klik <a href="/developer/architectuur">hier</a>

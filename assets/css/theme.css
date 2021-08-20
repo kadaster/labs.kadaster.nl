@@ -199,6 +199,12 @@ code.hightlight {
 #educationMenu:checked + .navbar-title::after {
   transform: rotate(180deg);
 }
+#developerMenu:checked + .navbar-title + .dropdown-items {
+  display: block;
+}
+#developerMenu:checked + .navbar-title::after {
+  transform: rotate(180deg);
+}
 
 .flex {
   display: flex;
