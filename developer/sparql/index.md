@@ -15,6 +15,17 @@ Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegeve
 ## Linked Data (SPARQL)
 Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeeld de dataset van de Basisregistratie Adressen en Gebouwen (BAG) met andere datasets. Omdat veel informatie via een adres gelinkt kan worden, leent de BAG zich hier goed voor. De querytaal van Linked Data heet SPARQL. SPARQL is een RDF-zoektaal (querytaal) die gebruikt wordt om RDF-gebaseerde data te bevragen door middel van zoekopdrachten (queries). Met deze zoektaal is het mogelijk om informatie op te vragen voor applicaties op het semantisch web. Onderaan deze pagina vindt u een link naar een tutorial om stapsgewijs je eerste SPARQL query op te stellen.
 
+<div class="textbox" markdown="1">
+## SPARQL Tutorial
+
+- [Stap 0 - Introductie](/developer/sparql/tutorial/0-Introductie)
+- [Stap 1 - Exploreer het datamodel](/developer/sparql/tutorial/1-Exploreer-het-datamodel)
+- [Stap 2 - SPARQL en de YasGUI Playground](/developer/sparql/tutorial/2-SPARQL-en-YasGUI)
+- [Stap 3 - Registratie vs. Knowledge Graph](/developer/sparql/tutorial/3-Registratie-vs-Knowledge-Graph)
+- [Stap 4 - Gebruik van eigen programmeertaal](/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal)
+
+</div>
+
 Klik <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">hier</a> voor een SPARQL Tutorial en <a href="/dissemination/Kadaster-SPARQL-Webinar.html">hier</a> voor een SPARQL Webinar.
 
 <br/>

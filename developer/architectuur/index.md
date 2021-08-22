@@ -16,7 +16,6 @@ Op deze pagina is de architectuur visie van de integrale gebruiksoplossing verde
 
 De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
 
-
 - **Basisadministratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
 - **Basisadministratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-08-03*.
 - **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-05-01*.
