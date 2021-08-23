@@ -9,9 +9,9 @@ title: SPARQL Tutorial Stap 0 - Introductie
 
 ***
 
-Welkom! Deze tutorial begeleid je door het eerste gebruik van de Linked Data die wij als Data Science Team van het Kadaster ontsluiten. In deze tutorial nemen we je mee in de basics van Linked Data en diens querytaal SPARQL, en begeleiden we je door de resources die wij bieden om het gebruik voor de developers te vergemakkelijken.
+Welkom! Deze tutorial begeleid je door het eerste gebruik van de Linked Data die wij als Data Science Team van het Kadaster ontsluiten. In deze tutorial nemen we je mee in de basics van Linked Data en diens querytaal SPARQL en begeleiden we je door de resources die wij bieden om het gebruik voor de developers te vergemakkelijken.
 
-Om jullie als developers zo snel mogelijk het gevoel te geven waarde te kunnen toevoegen met onze data, slaan we de typische "Hello World" tutorial over en duiken we meteen in concrete toepassingen op onze eigen datasets. De belangrijkste zaken die we in de volledige tutorial bespreken zijn:
+Om jullie als developers zo snel mogelijk het gevoel te geven waarde te kunnen creëren met onze data, slaan we de typische "Hello World" tutorial over en duiken we meteen in concrete toepassingen op onze eigen datasets. De belangrijkste zaken die we in de volledige tutorial bespreken zijn:
 
 - Wat is Linked Data? En hoe kijken we hier als Kadaster Data Science Team naar?
 - Hoe krijg ik als developer inzicht in het datamodel van een Linked Data set?
@@ -48,7 +48,7 @@ Na deze module, stap 0 van de tutorial, kun je aan je collega's uitleggen:
 
 ## Wat is Linked Data?
 
-In 2006 werd de term Linked Data als eerst geöpperd door Tim Berners-Lee, door velen bekend als de bedenker van het internet. [bron](https://www.w3.org/DesignIssues/LinkedData.html). De termen Linked Data en het *Semantic Web* zijn onlosmakelijk met elkaar verbonden. In deze tutorial zullen we voornamelijk de term Linked Data toepassen. Hierbij focussen we op ons de volgende kernprincipes achter Linked Data:
+In 2006 werd de term Linked Data als eerst geöpperd door Tim Berners-Lee, door velen bekend als de bedenker van het internet. [bron](https://www.w3.org/DesignIssues/LinkedData.html). De termen Linked Data en het *Semantic Web* zijn onlosmakelijk met elkaar verbonden. In deze tutorial zullen we voornamelijk de term Linked Data toepassen. Hierbij focussen we ons op de volgende kernprincipes achter Linked Data:
 
 - Data is beschreven in het [Resource Description Framework (RDF)](https://www.w3.org/RDF/).
 - De beschreven data bevat Uniform Resource Identifiers (URIs).
