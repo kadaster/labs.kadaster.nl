@@ -7,6 +7,13 @@ title: Developer
 
 # Developer resources
 
+<div class="textbox" markdown="1">
+## Onderhoud
+
+Momenteel (24/08/2021 22:38) vindt er onderhoud plaats aan onze endpoints. Wij verwachten dat dit tot in de ochtend van 25/08 aanhoud. Onze excuses voor het ongemak.
+
+</div>
+
 Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegevens uit onze basisregistraties ontsloten kunnen worden. Op deze pagina is de verdere toelichting bij het gebruik van Linked Data (SPARQL) uitgewerkt.
 
 <br/>
