@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: story
 title: SPARQL Tutorial Stap 3 - Registrative vs Knowledge Graph
 ---
 
@@ -50,9 +50,61 @@ Daarvoor maken we in deze tutorial gebruik van de [Kadaster Knowledge Graph geba
 
 Uiteraard is er ook voor de Schema.Org knowledge graph een datamodel beschikbaar. Deze is [visueel beschikbaar in Weaver](https://kadaster.wvr.io/kg-kadaster/home). Zoals je in deze interface kunt zien is een plaats (sdo:Place) de centrale plek in dit model. Places zijn vervolgens weer onderverdeeld in wat vanuit [de Integrale Gebruiksoplossing](/cases/integralegebruiksoplossing) de belangrijkste objecten zijn in de basisregistraties, zoals Waterdelen, Wegdelen en Gebouwen.
 
-Deze hierarchie in de verschillende places is ook terug te vinden in de named graphs van de dataset.
+Deze hierarchie in de verschillende places is ook terug te vinden in de named graphs van de dataset, waar op basis van verschillende invalshoeken de data in verschillende graven is opgedeeld.
 
-**Deze tutorial wordt nog aangevuld. Nog enkele daagjes geduld.**
+![Graphs schema.org](/assets/images/graphs-kkg.PNG)
+
+Hoe we tot deze verschillende invalshoeken zijn gekomen is uitgebreid vastgelegd in [deze documenterende pagina over de Knowledge Graph](/demonstrators/architectuur-selfservice/KnowledgeGraph/). Daar beschrijven we ook de hoe de nieuwe objecten (gebaseerd op schema.org) terug relateren naar de originele basisregistraties. Neem als voorbeeld de transformatie die wij toepassen om Places te genereren op basis van adressen, panden en gebouwen. Op basis van deze translatie creëren wij op basis van ieder Verblijfsobject in Nederland een place volgens de transformatie vastgelegd in [deze documentatie](https://labs.kadaster.nl/demonstrators/architectuur-selfservice/KnowledgeGraph/#41-van-gebouwpand-naar-schemaorg-place-visuele-weergave).
+
+Om een beter beeld te krijgen van zo'n Place, kijken we naar [onderstaand resultaat](https://data.labs.kadaster.nl/kadaster/kg/id/place/0307010000402601):
+
+![Voorbeeld Adres Place](/assets/images/Voorbeeld-place-kkg.PNG)
+
+Een gevonden plaats heeft deshalve een aantal belangrijke kenmerken:
+
+- De registraties uit de originele registraties waar deze van zijn afgeleid.
+- Additionele types die verwijzen naar typeringen uit de bron, maar waar Schema.org niet expressief genoeg voor is.
+- Verwijzingen naar geografische objecten in een gestandaardiseerd formaat.
+- Attributen uit de objecten waarvan dit nieuwe object is opgebouwd.
+
+**Tip:** Wil je weten hoe een place in jouw omgeving is opgenomen in de data? Kijk dan eens in onze [Objectviewer](https://labs.kadaster.nl/demonstrators/objectviewer) en klik op het object waarnaar jij op zoek bent. Of zoek eens rechtstreeks [in onze Elastic Search ingang](https://data.labs.kadaster.nl/kadaster/kg/search/search) naar het object van jouw interesse.
+
+<div class="textbox" markdown="2">
+    <b>Uitdaging 1</b>: Places afgeleid van gebouwen zijn direct gerelateerd aan (verschillende) AdministrativeAreas. Kun jij een dergelijk Administrative Area naar boven halen in de Triple store?
+</div>
+
+## Gebruik van SPARQL
+
+Nu we een beetje een beeld hebben van de Knowledge Graph en hoe deze is opgebouwd, kunnen we het endpoint ook gaan bevragen middels SPARQL. Om te beginnen met een simpele query proberen we in eerste instantie om met adresgegevens (de postcode) alle objecten op te halen.
+
+<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial3-KnowledgeGraph-Adresgegevens/4">
+</query>
+
+- In tegenstelling tot de registratieve endpoints hoeven we nu geen rekening te houden met historie. Deze versie van de Knowledge Graph heeft alleen de actuele situatie weer. Datzelfde geldt voor inactieve statussen.
+- Er hoeven slechts drie objecten bij elkaar te komen om de geometrie, adresgegevens en objectgegevens respectievelijk te benaderen. In de reguliere combinatie tussen BAG, BRT en BGT zouden dit er vele malen meer zijn om dezelfde informatie op te halen.
+- We hoeven niet zelf te zoeken naar connecties over datasets heen. Objecten die direct te integreren zijn zijn in deze weergave van de data reeds samengebracht.
+
+Meer dergelijke eenvoudige queries hebben we voor de geïnteresseerde lezer samengracht in een [Data Story](https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik).
+
+We kunnen de query ook nog iets complexer maken. Veel vragen die men wil beantwoorden vanuit een bepaalde (geografische afkadering). Daarbij gaat de voorkeur uit naar het gebruiken van administratieve links zoals deze in de data liggen.
+
+<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial3-KnowledgeGraph-ComplexeQuery/2">
+</query>
+
+In deze query:
+
+- Maken we sprongetjes heen en weer tussen Places en Administrative area om te demonstreren hoe deze objecten verschillend, maar toch te onderscheiden zijn.
+- Filteren we binnen een bepaalde woonplaats om alle adressen op te halen met een bepaalde typering (hier: Politiebureau)
+- Grouperen we de resultaten op het onderliggende BRT polygoon zodat adressen worden geaggregeerd tot één object.
+
+**Tip:** Wil je geholpen worden met je eerste query en deze op basis van natuurlijke taal opstellen? Probeer dan ook eens de [Sparklis omgeving die we daarvoor hebben klaargezet](https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=%0A%09%09%09%09%09%09%09%09%20%20SDO%20Knowledge%20Graph%0A%09%09%09%09%09%09%09%20%20&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl).
+
+<div class="textbox" markdown="2">
+    <b>Uitdaging 2</b>: Kun jij alle places achterhalen binnen de buurt "De Spaanse Polder" in Rotterdam met een industriefunctie en een oppervlakte groter dan 200 vierkante meter?
+</div>
+
+## Herleiden naar de bron
+
 
 ***
 

@@ -117,6 +117,8 @@ We moeten een aantal stappen zetten om de geometrie uit de data te kunnen ophale
 - Standaard krijgen we de geometrie terug als string met daarin onder andere het gebruikte coordinatensysteem en de geometrie. Tevens zien we daarbij dat de geometrie in de BAG soms een Z-component heeft (hoogte). Omdat deze coördinaat in de praktijk op 0 staat filteren we deze eruit in de query.
 - Door de functie SF_transform toe te passen transformeren we de resultaten meteen naar het WGS-84 coördinatenstelsel. Wanneer je dit niet nodig hebt en liever het rijksdriehoeksysteem gebruikt, hoef je deze stap niet toe te voegen. Alternatief kan je ervoor kiezen dergelijke data transformaties aan de client-side op te lossen.
 
+Deze functionaliteit is benoemd in de open standaard [GeoSPARQL](https://www.ogc.org/standards/geosparql) als de taal waarmee geografische data kan worden bevraagd. Hiermee bieden wij de mogelijkheid om geografische benaderingen te combineren met administratieve verbindingen aanwezig in de data.
+
 ## Federatie en gebruik over bronnen heen
 
 Bovenstaande queries relateerden zich nog voor 100% enkel en alleen op de BAG. Alhoewel dit goed is om een basisbegrip te krijgen van SPARQL en de manier waarop we de data beschikbaar stellen, worden echte relevante vragen pas goed te beantwoorden wanneer vershillende bronnen te combineren vallen. Bij Linked Data is het goed mogelijk om verschillende bronnen met elkaar te combineren.
