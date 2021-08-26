@@ -34,7 +34,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 <h1>Combineer en selecteer</h1>
 <div class="description">
   Toepassingen voor de professionele gebruiker:
-  Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. We realiseren ons dat het gebruik van deze tools enige oefening vereist. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="/assets/videos/sparklis_demo_1.webm">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.webm">Video 2</a>
+  Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. We realiseren ons dat het gebruik van deze tools enige oefening vereist. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="/assets/videos/sparklis_demo_1.mp4">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.mp4">Video 2</a>
 </div>
 
 <div class="cards-wrapper">

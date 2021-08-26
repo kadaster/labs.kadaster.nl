@@ -78,8 +78,8 @@ Het eerste voorbeeld is een korte gebruikssessie van gegevens uit deze case die 
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
-	<source src="/assets/videos/voyager.webm" type="video/webm">
-		Helaas, uw browser kan deze webm video niet weergeven.
+	<source src="/assets/videos/voyager.mp4" type="video/mp4">
+		Helaas, uw browser kan deze mp4 video niet weergeven.
 	</source>
   </video>
   <figcaption>
@@ -93,8 +93,8 @@ Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruf
 
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
-    <source src="/assets/videos/gruff.webm" type="video/webm">
-      Helaas, uw browser kan deze webm video niet weergeven.
+    <source src="/assets/videos/gruff.mp4" type="video/mp4">
+      Helaas, uw browser kan deze mp4 video niet weergeven.
     </source>
   </video>
   <figcaption>

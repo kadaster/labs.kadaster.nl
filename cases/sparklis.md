@@ -68,8 +68,8 @@ Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaa
 #### Video 1
 <figure id="1">
   <video controls loop poster="/assets/images/sparklis.png" width="1200">
-	<source src="/assets/videos/sparklis_demo_1.webm" type="video/webm" codecs="vp8, vorbis" >
-		Helaas, uw browser kan deze webm video niet weergeven.
+	<source src="/assets/videos/sparklis_demo_1.mp4" type="video/mp4">
+		Helaas, uw browser kan deze mp4 video niet weergeven.
 	</source>
   </video>
   <figcaption>
@@ -80,8 +80,8 @@ Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaa
 #### Video 2
 <figure id="2">
   <video controls loop poster="/assets/images/sparklis.png" width="1200">
-	<source src="/assets/videos/sparklis_demo_2.webm" type="video/webm" codecs="vp8, vorbis">
-		Helaas, uw browser kan deze webm video niet weergeven.
+	<source src="/assets/videos/sparklis_demo_2.mp4" type="video/mp4">
+		Helaas, uw browser kan deze mp4 video niet weergeven.
 	</source>
   </video>
   <figcaption>

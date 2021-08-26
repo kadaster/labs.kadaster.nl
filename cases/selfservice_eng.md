@@ -85,8 +85,8 @@ The first example is a short usage session of a data from this case loaded into 
 
 <figure id="1">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
-	<source src="/assets/videos/voyager.webm" type="video/webm">
-		Helaas, uw browser kan deze webm video niet weergeven.
+	<source src="/assets/videos/voyager.mp4" type="video/mp4">
+		Helaas, uw browser kan deze mp4 video niet weergeven.
 	</source>
   </video>
   <figcaption>
@@ -99,8 +99,8 @@ The second example demonstrators the browsing and querying of BAG data within Gr
 
 <figure id="2">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
-    <source src="/assets/videos/gruff.webm" type="video/webm">
-      Helaas, uw browser kan deze webm video niet weergeven.
+    <source src="/assets/videos/gruff.mp4" type="video/mp4">
+      Helaas, uw browser kan deze mp4 video niet weergeven.
     </source>
   </video>
   <figcaption>

@@ -165,8 +165,8 @@ zoals CSV, JSON, XML, en RDF worden ondersteund.)
 
 <figure id="4">
   <video controls loop poster="/assets/images/voyager.png" width="1200">
-    <source src="/assets/videos/voyager.webm" type="video/webm">
-      Helaas, uw browser kan deze webm video niet weergeven.
+    <source src="/assets/videos/voyager.mp4" type="video/mp4">
+      Helaas, uw browser kan deze mp4 video niet weergeven.
     </source>
   </video>
   <figcaption>

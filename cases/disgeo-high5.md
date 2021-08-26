@@ -81,7 +81,7 @@ en uit eerdere trajecten beschikbaar zijn gesteld. Het resultaat is in video vor
  <figure id="figuur-4">
   <video controls loop width="1200">
     <source src="/assets/videos/disgeo.mp4" type="video/mp4">
-      Helaas, uw browser kan deze webm video niet weergeven.
+      Helaas, uw browser kan deze mp4 video niet weergeven.
     </source>
   </video>
   <figcaption>
