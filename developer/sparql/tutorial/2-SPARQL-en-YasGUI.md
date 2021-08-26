@@ -44,7 +44,7 @@ Laten we met een simpele query beginnen. We willen graag iedere triple opvragen 
 
 Wat je terugkrijgt zijn 3 records van verschillende registraties die allen een prefLabel relatie hebben met als waarde "Apeldoorn @nl". Wat opvalt is dat in deze resultaten alleen URIs terugkomen. Alhoewel dit gewenst gedrag is vanuit een Linked Data perspectief, maakt het de resultaten wel lastig te lezen. Om die reden staat SPARQL toe om bepaalde prefixes toe te voegen aan je bevraging. Deze PREFIX kan vervolgens zowel in de query als in de resultaten worden teruggezien. Laten we prefixes toevoegen voor de skos standaard en een prefix voor een BAG registratie. Note: Klik de editor open voor een gewijzigd resultaat.
 
-<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Apeldoorn-prefix/1">
+<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Apeldoorn-prefix/2">
 </query>
 
 We zien dat de resultaten nu een stuk korter en transparanter zijn! Wanneer je deze query opstelt vanuit de YasGUI playground omgeving zul je tevens zien dat bepaalde prefixes (waaronder skos en registratie, maar ook bekende standaarden als rdf en rdfs) automatisch worden aangevuld. Dit helpt bij het snel kunnen opstellen van een correcte query.
@@ -96,7 +96,7 @@ In bovenstaand voorbeeld maakten we slechts gebruik van twee verschillende objec
 
 Laten we eens alle informatie opvragen die de BAG over één specifiek adres weet (gedefiniëerd door de combinatie postcode-huisnummer). Daarvoor moeten we over een flink aantal objecten heen bewegen.
 
-<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Adresgegevens/3">
+<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Adresgegevens/4">
 </query>
 
 Wat je moet opvallen in deze query (en diens resultaten) is het volgende:
@@ -109,7 +109,7 @@ Wat je moet opvallen in deze query (en diens resultaten) is het volgende:
 
 Bij geometrische datasets is het vaak van belang om de geometriën van de verschillende objecten op te halen. Laten we dat doen. Door YasGUI als playground te gebruiken zijn deze resultaten tevens meteen te zien op de kaart.
 
-<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Geometrien/1">
+<query data-config-ref="https://data.labs.kadaster.nl/dst/-/queries/Tutorial2-SPARQL-Geometrien/3">
 </query>
 
 We moeten een aantal stappen zetten om de geometrie uit de data te kunnen ophalen:
