@@ -1972,7 +1972,7 @@ shp:WoonplaatsRegistratie_geometrie <http://www.w3.org/2004/02/skos/core#definit
     <http://www.w3.org/ns/shacl#path> bag:geometrie;
     <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal>;
     <http://www.w3.org/ns/shacl#datatype> <http://www.opengis.net/ont/geosparql#wktLiteral>;
-    <http://www.w3.org/ns/shacl#pattern> "^<[^<>]*>\\sPOLYGON\\s\\(\\((\\d*.\\d*\\s\\d*.\\d*\\,)+\\d*.\\d*\\s\\d*.\\d*\\)\\)$";
+    <http://www.w3.org/ns/shacl#pattern> "^<[^<>]*>\\sPOLYGON\\(\\((\\d*.\\d*\\s\\d*.\\d*\\,)+\\d*.\\d*\\s\\d*.\\d*\\)\\)$";
     <http://www.w3.org/ns/shacl#flags> "i".
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_materiëleLevensduur> a <http://www.w3.org/ns/shacl#PropertyShape>;
     rdfs:label "heeft vorige geldige versie"@nl;
