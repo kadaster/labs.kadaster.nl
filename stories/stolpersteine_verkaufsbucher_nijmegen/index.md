@@ -49,5 +49,3 @@ title: WOII in Nijmegen
 <li>Verkaufsbucher – Nationaal Archief Nederland</li>
 <li>Verkaufsbucher Nijmegen - www.oorloginnijmegen.nl (Willen Oosterbaan en Leo van den Munkhof)
 </ul>
-
-

@@ -42,6 +42,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Een Data Story waarin de Basisregistratie Adressen en Gebouwen (BAG) op verschillende manieren bevraagd wordt.</div>
     </div>
   </a>
+  <!--
   <a href="./bgt-high3/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -50,6 +51,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
     </div>
   </a>
+  -->
   <a href="./evacuatie/index.html">
     <div class="card">
       <div class="card-type">Story</div>
