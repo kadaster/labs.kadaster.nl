@@ -1873,26 +1873,6 @@ shp:Woonplaats_identificatie <http://www.w3.org/2004/02/skos/core#definition> "D
     <http://www.w3.org/ns/shacl#path> nen3610:identificatie;
     <http://www.w3.org/ns/shacl#class> nen3610:Identificatie;
     <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI>.
-shp:Woonplaats_identificatie_lokaalID <http://www.w3.org/2004/02/skos/core#definition> "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl;
-    a <http://www.w3.org/ns/shacl#PropertyShape>;
-    rdfs:comment "De unieke aanduiding van een woonplaats, zoals opgenomen in de landelijke woonplaatsentabel."@nl;
-    rdfs:isDefinedBy <https://bag2.basisregistraties.overheid.nl/bag/def/>;
-    <http://purl.org/dc/terms/source> "Grondslagen Basis Registratie Adressen versie 3.0"@nl;
-    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#711-identificatie"^^<http://www.w3.org/2001/XMLSchema#anyURI>;
-    <http://www.w3.org/ns/shacl#description> "Een natuurlijk getal tussen 0001 en 9999."@nl;
-    <http://www.w3.org/ns/shacl#maxCount> 1;
-    <http://www.w3.org/ns/shacl#minCount> 1;
-    <http://www.w3.org/ns/shacl#path> <https://bag2.basisregistraties.overheid.nl/bag/.well-known/genid/379dc1c43fd8428f6cb77c9e75c82c36>;
-    <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal>;
-    <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string>;
-    <http://www.w3.org/ns/shacl#minLength> 1;
-    <http://www.w3.org/ns/shacl#pattern> "^\\d{4}$".
-<https://bag2.basisregistraties.overheid.nl/bag/.well-known/genid/379dc1c43fd8428f6cb77c9e75c82c36> a rdf:List;
-    rdf:first nen3610:identificatie;
-    rdf:rest bnode:e7e15397ea3c9f8a0c9fc87cbcbf6b7d.
-bnode:e7e15397ea3c9f8a0c9fc87cbcbf6b7d a rdf:List;
-    rdf:first nen3610:lokaalID;
-    rdf:rest rdf:nil.
 shp:WoonplaatsRegistratie a <http://www.w3.org/ns/shacl#NodeShape>;
     rdfs:label "Woonplaats registratie"@nl;
     rdfs:comment "\n<section lang=\"nl\">\n  <p>Een registratie van een <a href=\"https://bag2.basisregistraties.overheid.nl/bag/def/Woonplaats\">woonplaats</a>.</p>\n</section>"^^rdf:HTML;
