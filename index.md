@@ -67,7 +67,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
     </div>
   </a>
-    <a href="/cases/brt-ld">
+  <a href="/cases/brt-ld">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
@@ -83,7 +83,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
     </div>
   </a>
-    <a href="/cases/3d-demonstrator">
+  <a href="/cases/3d-demonstrator">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/3d-logo.jpg" alt="3D Kaart">
@@ -91,6 +91,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
     </div>
   </a>
+  <!--
   <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -99,7 +100,8 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
     </div>
   </a>
-    <a href="/cases/graphql-endpoint">
+  -->
+  <a href="/cases/graphql-endpoint">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">
@@ -107,7 +109,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Middels dit endpoint bevraag je de (open) databronnen van het Kadaster met GraphQL.</div>
     </div>
   </a>
-    <a href="/cases/hackalittle2020">
+  <a href="/cases/hackalittle2020">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/hackaLOD2020.jpg" alt="hackaLOD2020">
@@ -115,7 +117,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Resultaten van het Hack-a-Little evenement</div>
     </div>
   </a>
-    <a href="/cases/disgeo-high5">
+  <a href="/cases/disgeo-high5">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/disgeo-logo.jpg" alt="DiS-Geo logo">
@@ -123,7 +125,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
-    <a href="/cases/selfservice_dutch">
+  <a href="/cases/selfservice_dutch">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
@@ -131,21 +133,21 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
-   <a href="/cases/SelfServiceGISPortal">
-      <div class="card">
-        <div class="card-type">Use Case</div>
-        <img class="card-image" src="/assets/images/selfserviceGIS.jpg" alt="Self service GIS">
-        <div class="card-title">Self-Service GIS Portaal</div>
-        <div class="card-description">In deze case wordt een voorbeeld gegeven van een Self-Service GIS platform.</div>
-      </div>
-    </a>
-    <a href="/cases/sparklis">
-      <div class="card">
-        <div class="card-type">Use Case</div>
-        <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
-        <div class="card-title">Sparklis</div>
-        <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
-      </div>
+  <a href="/cases/SelfServiceGISPortal">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/selfserviceGIS.jpg" alt="Self service GIS">
+      <div class="card-title">Self-Service GIS Portaal</div>
+      <div class="card-description">In deze case wordt een voorbeeld gegeven van een Self-Service GIS platform.</div>
+    </div>
+  </a>
+  <a href="/cases/sparklis">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
+      <div class="card-title">Sparklis</div>
+      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
+    </div>
   </a>
   <a href="/cases/akte-ocr">
     <div class="card">
@@ -155,7 +157,7 @@ Dit is de Labs omgeving van het van het Kadaster. Deze Labs website gebruiken wi
       <div class="card-description">In dit onderzoek bespreken we de kwaliteit van akteteksten resulterend uit OCR toegepast op de akten van het Kadaster.</div>
     </div>
   </a>
-    <a href="/cases/geodata-voor-iedereen">
+  <a href="/cases/geodata-voor-iedereen">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Integrale explorer logo">
