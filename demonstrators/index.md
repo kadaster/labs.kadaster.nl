@@ -8,6 +8,14 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
+<a href="/demonstrators/gruff/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/gruff.png">
+      <div class="card-title">Gruff</div>
+      <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
+    </div>
+  </a>
 <a href="/demonstrators/geodatavisitor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
