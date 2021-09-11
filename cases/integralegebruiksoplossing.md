@@ -139,6 +139,13 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
+  <a href="/demonstrators/gruff/index.html">
+    <div class="card">
+      <div class="card-type">Gruff</div>
+      <img class="card-image" src="/assets/images/gruff.png" alt="Gruff">
+      <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren.</div>
+    </div>
+  </a>
 </div>
 
 ## Feedback
