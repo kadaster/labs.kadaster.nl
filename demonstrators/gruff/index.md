@@ -51,7 +51,7 @@ Met de voorbeeld query's die door het tool worden geleverd, kan de gebruiker sne
 
 <figure id="1">
   <video controls loop poster="/assets/images/gruff.png" width="1200">
-	<source src="/assets/videos/gruff.mp4" type="video/mp4">
+	<source src="/assets/videos/grufdemo_kg.mp4" type="video/mp4">
 		Helaas, uw browser kan deze mp4 video niet weergeven.
 	</source>
   </video>
