@@ -69,7 +69,7 @@ Herleidbaar naar de bron van informatie in de view garanderen wij door gebruik t
 Een voorbeeld van een dergelijke omzetting is zichtbaar in de volgende data story:
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kkg/-/stories/ld-views">
+  <a href="https://data.labs.kadaster.nl/experiment/-/stories/ld-views">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
