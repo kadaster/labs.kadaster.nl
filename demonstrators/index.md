@@ -32,6 +32,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
     </div>
   </a>
+  <a href="/demonstrators/bimdemo">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bimdemo.PNG">
+      <div class="card-title">BIM Demo</div>
+      <div class="card-description">Bekijk een 3D BIM model en diens relaties naar de basisregistraties. </div>
+    </div>
+  </a>
   <a href="/demonstrators/objectviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
