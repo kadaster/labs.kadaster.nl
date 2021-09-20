@@ -1,0 +1,144 @@
+prefix dct: <http://purl.org/dc/terms/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prefix bag: <https://bag2.basisregistraties.overheid.nl/bag/def/>
+
+bag: {
+  bag:beginRegistratie
+    rdfs:range xsd:dateTime;
+    skos:definition "Wordt gebruikt om de formele historie aan bronhouder zijde mee aan de duiden."@nl;
+    skos:prefLabel "heeft begin registratie"@nl.
+
+  bag:bouwjaar
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:range xsd:gYear;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#743-oorspronkelijk-bouwjaar"^^xsd:anyURI;
+    skos:definition "De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd."@nl;
+    skos:prefLabel "heeft oorspronkelijk bouwjaar"@nl;
+    skos:scopeNote "Bij het initieel opvoeren van een PAND wordt door de gemeente een reële inschatting gemaakt van het waarschijnlijke bouwjaar van het PAND. Bij het bouwkundig gereed opleveren van het PAND wordt deze waarde in voorkomende gevallen aangepast. Indien in latere jaren wijzigingen aan een pand worden aangebracht, leidt dit niet tot wijziging van het bouwjaar."@nl.
+
+  bag:eindRegistratie
+    rdfs:range xsd:dateTime;
+    skos:definition "Wordt gebruikt om de formele historie aan bronhouder zijde mee aan de duiden."@nl;
+    skos:prefLabel "heeft eind registratie"@nl.
+
+  bag:gebruiksdoel
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:range bag:Gebruiksdoel;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#783-gebruiksdoel"^^xsd:anyURI;
+    skos:definition "Een categorisering van de gebruiksdoelen van het betreffende verblijfsobject zoals in de vergunning is opgenomen of bij constatering is vastgesteld."@nl;
+    skos:prefLabel "heeft gebruiksdoel"@nl;
+    skos:scopeNote "Het gebruiksdoel zal initieel worden afgeleid uit de bouwkundige gebruiksfunctie conform de categorisering van het Bouwbesluit 2012 zoals deze in de bouwvergunning als zodanig is aangemerkt. Het gebruiksdoel dient niet te worden verward met de planologische bestemming en het feitelijk gebruik."@nl.
+
+  bag:geconstateerd
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 4.0"@nl;
+    rdfs:domain foaf:Document;
+    rdfs:range xsd:boolean;
+    skos:definition "Een aanduiding waarmee kan worden aangegeven dat een object in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname."@nl;
+    skos:prefLabel "is geconstateerd"@nl.
+
+  bag:geometrie
+    rdfs:domain
+      [ owl:unionOf
+          ( bag:PandRegistratie
+            bag:VerblijfsobjectRegistratie
+            bag:WoonplaatsRegistratie ) ];
+    rdfs:range geo:wktLiteral;
+    skos:definition "De geometrische representatie die in deze registratie wordt vastgelegd."@nl;
+    skos:prefLabel "heeft geometrie"@nl.
+
+  bag:hoofdadres
+    rdfs:range bag:Nummeraanduiding;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#751-relatie-heeft-als-hoofdadres-hoofdadres"^^xsd:anyURI;
+    skos:definition "De unieke aanduiding van de Nummeraanduiding die in het kader van de Basisregistratie Adressen en Gebouwen is aangemerkt als het hoofdadres van een adresseerbaar object."@nl;
+    skos:prefLabel "heeft hoofdadres"@nl.
+
+  bag:huisletter
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#733-huisletter"^^xsd:anyURI;
+    skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken."@nl;
+    skos:prefLabel "heeft huisletter"@nl.
+
+  bag:huisnummer
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#732-huisnummer"^^xsd:anyURI;
+    skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nummering."@nl;
+    skos:prefLabel "heeft huisnummer"@nl.
+
+  bag:huisnummertoevoeging
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#734-huisnummertoevoeging"^^xsd:anyURI;
+    skos:definition "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter."@nl;
+    skos:prefLabel "heeft huisnummertoevoeging"@nl.
+
+  bag:ligtAan
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:range bag:OpenbareRuimte;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#7312-relatie-ligt-aan-gerelateerde-openbare-ruimte"^^xsd:anyURI;
+    skos:altLabel "heeft gerelateerde openbare ruimte"@nl;
+    skos:definition "De unieke aanduiding van een Openbare ruimte waaraan een adresseerbaar object is gelegen."@nl;
+    skos:prefLabel "ligt aan"@nl;
+    skos:scopeNote "Een adresseerbaar object ligt in een woonplaats."@nl.
+
+  bag:ligtIn
+    rdfs:seeAlso
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#728-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI,
+      "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#7311-relatie-ligt-in-gerelateerde-woonplaats"^^xsd:anyURI;
+    rdfs:domain
+      [ owl:unionOf
+          ( bag:AdresseerbaarObjectRegistratie
+            bag:OpenbareRuimteRegistratie ) ];
+    rdfs:range bag:Woonplaats;
+    skos:altLabel "heeft gerelateerde woonplaats"@nl;
+    skos:definition "Een adresseerbaar object of openbare ruimte ligt in een woonplaats."@nl;
+    skos:prefLabel "ligt in"@nl.
+
+  bag:maaktDeelUitVan
+    dct:source "Grondslagen Basis Gebouwen Registratie versie 2.3"@nl;
+    rdfs:range bag:Pand;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#789-relatie-maakt-deel-uit-van-gerelateerd-pand"^^xsd:anyURI;
+    skos:altLabel "gerelateerd pand"@nl;
+    skos:definition "De unieke aanduiding van een Pand waarvan het Verblijfsobject onderdeel uitmaakt."@nl;
+    skos:prefLabel "maakt deel uit van"@nl;
+    skos:scopeNote "Ten aanzien van elk in de BAG opgenomen verblijfsobject wordt aangegeven, welke identificatiecodes zijn toegekend aan de panden waarbinnen het verblijfsobject is gelegen. In de meeste gevallen zal dit een enkel pand betreffen. In een aantal gevallen zal het verblijfsobject zijn gelegen in meer dan een pand. In dat geval worden hier de identificatiecodes opgenomen van de verschillende panden waarbinnen het verblijfsobject is gelegen. Bij het relateren van het verblijfsobject aan het pand of de panden waarvan het verblijfsobject onderdeel uitmaakt, wordt gebruik gemaakt van de identificatie van een pand, zoals deze eveneens in de BAG is opgenomen."@nl.
+
+  bag:nevenadres
+    rdfs:range bag:Nummeraanduiding;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#752-relatie-heeft-als-nevenadres-nevenadres"^^xsd:anyURI;
+    skos:definition "De unieke aanduiding van de Nummeraanduiding die in het kader van de Basisregistratie Adressen en Gebouwen is aangemerkt als het nevenadres van een adresseerbaar object."@nl;
+    skos:prefLabel "heeft als nevenadres"@nl.
+
+  bag:oppervlakte
+    dct:source "http://wetten.overheid.nl/jci1.3:c:BWBR0023466&hoofdstuk=3&paragraaf=3&artikel=23&lid=1"^^xsd:anyURI;
+    rdfs:range xsd:positiveInteger;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#784-oppervlakte"^^xsd:anyURI;
+    skos:definition "De gebruiksoppervlakte van een verblijfsobject in gehele vierkante meters."@nl;
+    skos:prefLabel "heeft oppervlakte"@nl;
+    skos:scopeNote "De exacte wijze van bepalen van de gebruiksoppervlakte wordt beschreven in NEN 2580.  In essentie komt dit erop neer dat de gebruiksoppervlakte van een Verblijfsobject wordt bepaald door hetgeen op vloerniveau wordt gemeten uitgaande van de binnenzijde van de omhullende scheidingsconstructies.  Vides en schalmgaten van meer dan 4 m² blijven buiten beschouwing, evenals inspringingen en uitspringingen langs de omtrekken van minder dan 0,5 m².  Gebroken positieve waarden waardoor decimalen achter de komma ontstaan, vormen geen natuurlijke getallen.  Om een natuurlijk getal te verkrijgen, zal in die gevallen afronding op de nabijgelegen gehele waarde moeten plaatsvinden.  Oppervlakten kleiner dan 1 m² worden altijd afgerond op 1 m²."@nl.
+
+  bag:postcode
+    dct:source "Ontleend aan Logisch Ontwerp GBA versie 3.0"@nl;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#735-postcode"^^xsd:anyURI;
+    skos:definition "De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een straatnaam en een huisnummer."@nl;
+    skos:prefLabel "heeft postcode"@nl.
+
+  bag:status
+    rdfs:domain foaf:Document;
+    rdfs:range bag:Status;
+    skos:definition "De fase van de levenscyclus van een object waarin het betreffende object zich bevindt."@nl;
+    skos:prefLabel "heeft status"@nl.
+
+  bag:type
+    dct:source "Grondslagen Basis Registratie Adressen versie 2.0"@nl;
+    rdfs:range bag:TypeOpenbareRuimte;
+    rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#723-type"^^xsd:anyURI;
+    skos:definition "De aard van de als zodanig benoemde openbare ruimte."@nl;
+    skos:prefLabel "heeft type"@nl;
+    skos:scopeNote "Een typering van de openbare ruimten kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen.  De oorsprong van deze waarden is gelegen in NEN 3610."@nl.
+}
