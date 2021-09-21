@@ -907,7 +907,7 @@ bag: {
     sh:maxCount 1;
     sh:minCount 1;
     sh:path bag:geometrie;
-    sh:pattern "^<[^<>]*>\\spolygon(\\sz)?\\s\\(\\((\\d*.\\d*\\s\\d*.\\d*(\\s\\d*.\\d*)?\\,)+\\d*.\\d*\\s\\d*.\\d*(\\s\\d*.\\d)*\\)\\)$";
+    sh:pattern  "^<[^<>]*>\\sPOLYGON\\(\\((\\d*.\\d*\\s\\d*.\\d*\\,)+\\d*.\\d*\\s\\d*.\\d*\\)\\)$";
     skos:definition "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl.
 
   shp:WoonplaatsRegistratie_materiëleLevensduur
