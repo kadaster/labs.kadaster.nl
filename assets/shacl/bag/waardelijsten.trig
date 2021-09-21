@@ -82,7 +82,7 @@ bag: {
         bag:StatusPlaats
         bag:StatusVerblijfsobject
         bag:StatusWoonplaats );
-    rdfs:subClassOf rdfs:Resource;
+    rdfs:subClassOf foaf:Document;
     skos:definition "TODO"@nl;
     skos:prefLabel "Status"@nl.
 
