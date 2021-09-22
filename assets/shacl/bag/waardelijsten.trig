@@ -178,7 +178,7 @@ bag: {
     skos:prefLabel "Plaats status"@nl;
     skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
 
-  status:plaatsAangewezen
+  status:plaatsAangewezen1
     skos:definition "Plaats is aangewezen door het bevoegd gezag of geconstateerd."@nl;
     skos:prefLabel "Plaats aangewezen"@nl.
 
@@ -241,18 +241,18 @@ bag: {
 
   bag:StatusWoonplaats
     owl:oneOf
-      ( status:woonplaatsAangewezen
-        status:woonplaatsIngetrokken );
+      ( status:woonplaatsAangewezen1
+        status:woonplaatsIngetrokken1 );
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#83-statuswoonplaats"^^xsd:anyURI;
     skos:definition "Een aanduiding van alle waarden die de status van een woonplaats kan aannemen."@nl;
     skos:prefLabel "Status woonplaats"@nl;
     skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
 
-  status:woonplaatsAangewezen
+  status:woonplaatsAangewezen1
     skos:definition "Woonplaats is aangewezen door het bevoegd gezag of geconstateerd."@nl;
     skos:prefLabel "woonplaats aangewezen"@nl.
 
-  status:woonplaatsIngetrokken
+  status:woonplaatsIngetrokken1
     skos:definition "Woonplaats is ingetrokken door het bevoegd gezag."@nl;
     skos:prefLabel "woonplaats ingetrokken"@nl.
 
