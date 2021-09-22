@@ -11,7 +11,7 @@ prefix gebruiksdoel: <https://bag2.basisregistraties.overheid.nl/bag/id/gebruiks
 prefix list: <https://bag2.basisregistraties.overheid.nl/bag/id/list/>
 prefix status: <https://bag2.basisregistraties.overheid.nl/bag/id/status/>
 
-bag: {
+
   bag:Gebruiksdoel
     owl:oneOf
       ( gebruiksdoel:bijeenkomstfunctie
@@ -241,10 +241,11 @@ bag: {
 
   bag:StatusWoonplaats
     owl:oneOf
-      ( status:woonplaatsAangewezen1
-        status:woonplaatsIngetrokken1 );
+      ( status:woonplaatsAangewezen
+        status:woonplaatsIngetrokken );
     rdfs:seeAlso "https://imbag.github.io/catalogus/hoofdstukken/domeinwaarden#83-statuswoonplaats"^^xsd:anyURI;
     skos:definition "Een aanduiding van alle waarden die de status van een woonplaats kan aannemen."@nl;
+    rdfs:subClassOf bag:Status;
     skos:prefLabel "Status woonplaats"@nl;
     skos:scopeNote "Een statusaanduiding kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen."@nl.
 
@@ -290,4 +291,3 @@ bag: {
 </section>"""^^rdf:HTML;
     skos:prefLabel "Type openbare ruimte"@nl;
     skos:scopeNote "Een typering van de openbare ruimten kent een limitatief karakter en kan uitsluitend een van de genoemde waarden aannemen. De oorsprong van deze waarden is gelegen in NEN 3610."@nl.
-}
