@@ -1,0 +1,69 @@
+{
+    "@context": {
+      "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
+      "@version": 1.1,
+      "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
+      "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+      "begingeldigheid": {
+        "@type": "xsd:dateTime",
+        "@id": "nen3610:beginGeldigheid"
+      },
+      "data": "@nest",
+      "eindgeldigheid": {
+        "@type": "xsd:dateTime",
+        "@id": "nen3610:eindGeldigheid"
+      },
+      "eindregistratie": {
+        "@type": "xsd:dateTime",
+        "@id": "prov:invalidatedAtTime"
+      },
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "historiestatuscode": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+        },
+        "@id": "brk:statusHistorie",
+        "@type": "@id"
+      },
+      "historievolgnummer": {
+        "@type": "xsd:nonNegativeInteger",
+        "@id": "prov:order"
+      },
+      "identificatie": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
+        },
+        "@id": "nen3610:identificatie",
+        "@type": "@id"
+      },
+      "lokaalID": {
+        "@type": "xsd:string",
+        "@id": "nen3610:lokaalID"
+      },
+      "namespace": {
+        "@type": "xsd:string",
+        "@id": "nen3610:namespace"
+      },
+      "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
+      "ogc_fid": null,
+      "primaryTopic": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        },
+        "@id": "foaf:primaryTopic",
+        "@type": "@id"
+      },
+      "prov": "http://www.w3.org/ns/prov#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "sh": "http://www.w3.org/ns/shacl#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "tijdstipregistratie": {
+        "@type": "xsd:dateTime",
+        "@id": "prov:generatedAtTime"
+      },
+      "value": "rdf:value",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  }
+  
