@@ -84,6 +84,10 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
   </a>
 </div>
 
+## Video
+
+<iframe width="100%" height="920" src="https://www.youtube.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Overzicht van de (afgelopen) iGO-workshops
 
 <br>

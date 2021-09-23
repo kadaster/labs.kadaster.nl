@@ -26,7 +26,7 @@ Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeel
 
 </div>
 
-Klik <a href="/dissemination/Kadaster-SPARQL-Tutorial.html">hier</a> voor een SPARQL Tutorial en <a href="/dissemination/Kadaster-SPARQL-Webinar.html">hier</a> voor een SPARQL Webinar.
+Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de developers die gebruik kunnen maken van de data in de [Integrale Gebruiksoplossing](/cases/integralegebruiksoplossing). Deze sessie is opgenomen. Meer informatie en een link naar de video kun je vinden op [deze link](https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/08/26/integrale-gebruiksoplossing-workshop-voor-developers).
 
 <br/>
 
