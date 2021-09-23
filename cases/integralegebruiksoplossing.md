@@ -84,6 +84,38 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
   </a>
 </div>
 
+## Overzicht van de (afgelopen) iGO-workshops
+
+<br>
+
+<figure id="figuur-1">
+  <a href="/assets/images/agenda-sept-okt-igo-evenementen.png">
+    <img src="/assets/images/agenda-sept-okt-igo-evenementen.png" alt="Agenda evenementen">
+  </a>
+</figure>
+
+<br>
+
+Ga mee de diepte in en kom naar een van de (online) sectorevenementen over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de IGO per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt en ervaar je live de voordelen voor jouw sector. In workshops tonen we de mogelijkheden van de iGO én tonen we opplossingen voor een concrete praktijk casus.
+
+### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
+
+Op 23 September 2021 om 11:30 staat er een workshop gepland voor de nutsbedrijven. Deze sessie wordt opgenomen. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-nutsbedrijven-166794541965">hier</a> om je aan te melden.
+
+Er is voor de toepassingen van een nutsbedrijf ook een data story opgeleverd. In deze <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">data story nemen</a> nemen we je mee in de problematiek van de nutsbedrijven en hoe de data uit de iGO hierin kan voorzien.
+
+### Integrale Gebruiksoplossing: workshop voor ruimtelijke ordening
+
+De workshop over de Integrale Gebruiksoplossing voor ruimtelijke ordening vond plaats op 16 september 2021.  Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie.
+
+Er zijn voor de toepassingen van een planoloog twee data stories opgeleverd. In een data story <a href="https://data.labs.kadaster.nl/kadaster/-/stories/planologen">over de woonplaats</a> en een data story <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Planologen-per-buurt">over de buurt</a> nemen we je mee in het werk van een planoloog.
+
+### Integrale Gebruiksoplossing: workshop voor developers
+
+De developersworkshop over de Integrale Gebruiksoplossing vond plaats op 26 augustus 2021 om 15:30. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/08/26/integrale-gebruiksoplossing-workshop-voor-developers">hier</a> voor meer informatie.
+
+<br>
+
 ## Project uitleg door de makers
 Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk tegelijk te kunnen gebruiken.
 
@@ -147,6 +179,7 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
     </div>
   </a>
 </div>
+
 
 ## Feedback
 
