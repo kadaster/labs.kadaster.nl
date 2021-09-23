@@ -52,7 +52,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
         <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je dezegecombineerd met onze data kan bevragen!</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">
+  <a href="/cases/integralegebruiksoplossing_stories">
     <div class="card">
       <div class="card-type">Data Story</div>
       <img class="card-image" src="/assets/images/data-story-igo.PNG">
