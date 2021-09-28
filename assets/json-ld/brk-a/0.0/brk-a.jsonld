@@ -4,6 +4,13 @@
       "@version": 1.1,
       "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
       "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+      "bag_id": {
+        "@id": "brk:betreft",
+        "@type": "@id",
+        "@context": {
+          "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        } 
+      },
       "begingeldigheid": {
         "@type": "xsd:dateTime",
         "@id": "nen3610:beginGeldigheid"
@@ -29,6 +36,23 @@
       "historievolgnummer": {
         "@type": "xsd:nonNegativeInteger",
         "@id": "prov:order"
+      },
+      "kbia_id": {
+        "@id": "brk:betreft",
+        "@type": "@id",
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        } 
+      },
+      "koppelingswijze": "https://brk.basisregistraties.overheid.nl/brk/id/koppelingswijze/",
+      "locatie": "@nest",
+      "logischtijdstip_ontstaan": {
+        "@id": "nen3610:beginGeldigheid",
+        "@type": "xsd:dateTime"
+      },
+      "logischtijdstip_vervallen": {
+        "@id": "nen3610:eindGeldigheid",
+        "@type": "xsd:dateTime"
       },
       "identificatie": {
         "@context": {
@@ -58,11 +82,28 @@
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "sh": "http://www.w3.org/ns/shacl#",
       "skos": "http://www.w3.org/2004/02/skos/core#",
+      "status_geldigheid": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+        },
+        "@id": "brk:statusHistorie",
+        "@type": "@id"
+      },
+      "stukdeel_id": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        },
+        "@id": "brk:isVermeldIn",
+        "@type": "@id"
+      },
+      "technischtijdstip_ontstaan": "prov:generatedAtTime",
+      "technischtijdstip_vervallen": "prov:invalidatedAtTime",
       "tijdstipregistratie": {
         "@type": "xsd:dateTime",
         "@id": "prov:generatedAtTime"
       },
       "value": "rdf:value",
+      "volgnummer": "nen3610:versie",
       "xsd": "http://www.w3.org/2001/XMLSchema#"
     }
   }
