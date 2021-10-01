@@ -37,6 +37,13 @@
         "@type": "xsd:nonNegativeInteger",
         "@id": "prov:order"
       },
+      "kadastraal_id": {
+        "@id": "brk:heeft",
+        "@type": "@id",
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        } 
+      },
       "kbia_id": {
         "@id": "brk:betreft",
         "@type": "@id",
@@ -44,7 +51,13 @@
           "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
         } 
       },
-      "koppelingswijze": "https://brk.basisregistraties.overheid.nl/brk/id/koppelingswijze/",
+      "koppelingswijze": {
+        "@context": {
+          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/koppelingswijze/"
+        },
+        "@id": "brk:koppelingswijze",
+        "@type": "@id"
+      },
       "locatie": "@nest",
       "logischtijdstip_ontstaan": {
         "@id": "nen3610:beginGeldigheid",
