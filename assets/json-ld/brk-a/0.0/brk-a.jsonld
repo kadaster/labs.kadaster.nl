@@ -102,6 +102,7 @@
         "@id": "brk:statusHistorie",
         "@type": "@id"
       },
+      "status_audit": null,
       "stukdeel_id": {
         "@context": {
           "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
