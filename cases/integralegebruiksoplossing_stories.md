@@ -32,6 +32,14 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
       <div class="card-description">De nutsbedrijven staan voor grote uitdagingen om hun netten in een steeds voller wordende gebouwde omgeving in te passen.</div>
     </div>
   </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">
+    <div class="card">
+      <div class="card-type">Data Story</div>
+      <img class="card-image" src="/assets/images/BRK.jpg" alt="BRK">
+      <div class="card-title">Openbare orde en veiligheid</div>
+      <div class="card-description">Bekijk hier hoe we geodata inzetten ten behoeve van het verbeteren van de openbare orde & veiligheid.</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">
     <div class="card">
       <div class="card-type">Data Story</div>

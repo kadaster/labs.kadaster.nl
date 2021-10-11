@@ -102,9 +102,19 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 Ga mee de diepte in en kom naar een van de (online) sectorevenementen over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de IGO per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt en ervaar je live de voordelen voor jouw sector. In workshops tonen we de mogelijkheden van de iGO én tonen we opplossingen voor een concrete praktijk casus.
 
+### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
+
+Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte-166800206909">hier</a> om je aan te melden.
+
+### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
+
+Op donderdag 14 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Openbare Orde & Veiligheid. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-openbare-orde-veiligheid-166798762589">hier</a> om je aan te melden.
+
+Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">deze link</a>.
+
 ### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
 
-Op 23 September 2021 om 11:30 staat er een workshop gepland voor de nutsbedrijven. Deze sessie wordt opgenomen. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-nutsbedrijven-166794541965">hier</a> om je aan te melden.
+Op 23 September 2021 om 11:30 staat er een workshop gepland voor de nutsbedrijven. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie.
 
 Er is voor de toepassingen van een nutsbedrijf ook een data story opgeleverd. In deze <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">data story nemen</a> nemen we je mee in de problematiek van de nutsbedrijven en hoe de data uit de iGO hierin kan voorzien.
 
@@ -143,6 +153,7 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
 - **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-05-01*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-01*.
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
+- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-10-07*.
 - **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
 
 De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.
@@ -184,10 +195,9 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
   </a>
 </div>
 
-
 ## Feedback
 
-<iframe width="100%" height="920" src="https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Laden..</iframe> 
+We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
 
 ## Overall UI/UX Design
 
