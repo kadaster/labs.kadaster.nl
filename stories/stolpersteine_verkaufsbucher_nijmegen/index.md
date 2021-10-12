@@ -30,7 +30,7 @@ title: WOII in Nijmegen
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/besteedgeld/">
 </query>
 
-<p>In de Verkaufsbücher staan bij de verkoopbedragen de namen van de 'oorspronkelijke' en dus onteigende bezitters.  Het verkoopbedrag betaalden de kopers via de ANBO aan de Grundstückverwaltung. Voor meer informatie over de duiding van de Verkaufsbucher zie:  <a href="https//www.oorloginnijmegen.nl" target="_blank">www.oorloginnijmegen.nl</a></p>
+<p>In de Verkaufsbücher staan bij de verkoopbedragen de namen van de 'oorspronkelijke' en dus onteigende bezitters.  Het verkoopbedrag betaalden de kopers via de ANBO aan de Grundstückverwaltung. Voor meer informatie over de duiding van de Verkaufsbucher zie:  <a href="https://oorloginnijmegen.nl/" target="_blank">https://oorloginnijmegen.nl/</a></p>
 
 <query data-config-ref="https://data.pldn.nl/GeoDataWizard/-/queries/verdiendaanverkoop/">
 </query>

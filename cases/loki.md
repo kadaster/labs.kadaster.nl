@@ -26,14 +26,6 @@ Na dit experiment ontstond de wens voor een testbare versie voor de eindgebruike
 Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de [Kadaster Knowledge Graph](/cases/kadaster-knowledge-graph.html), ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
 
 <div class="cards-wrapper">
-  <!-- <a href="/demonstrators/loki/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-      <div class="card-title">Loki voor Geo Informatieverstrekking</div>
-      <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
-    </div>
-  </a> -->
   <a href="/cases/pdok-knowledge-graph.html">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -129,16 +121,7 @@ Na 5 iteraties van twee weken kijken we waar Loki momenteel staat en bereiden we
 
 En gebruik onderstaande link om meteen te gaan testen!
 
-<div class="cards-wrapper">
-  <a href="/demonstrators/loki/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-      <div class="card-title">Loki voor Geo Informatieverstrekking</div>
-      <div class="card-description">Gebruik spraak en tekst om de databronnen van het Kadaster te bevragen.</div>
-    </div>
-  </a>
-</div>
+**Helaas is deze oude versie van de demonstrator niet meer beschikbaar**
 
 
 ## Loki 1.0

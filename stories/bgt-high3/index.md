@@ -5,6 +5,8 @@ title: BGT High3
 
 # BGT High3
 
+Let op: Veel van deze resultaten zijn niet langer beschikbaar. De BGT is wel inmiddels als officiële linked data set beschikbaar is. Kijk daarvoor ook eens op [https://bgt.basisregistraties.overheid.nl/](https://bgt.basisregistraties.overheid.nl/).
+
 ## De BGT als Linked Data
 
 De BGT is de enige geo Basisregistratie die begin 2020 niet als Linked Data beschikbaar was. Daarmee was de BGT ook niet integraal bevraagbaar in combinatie met andere datasets. Het Kadaster Data Science Team, Provincie Noord-Holland, CROW en CGI, hebben daarom in 3 dagen (High3 week) een experiment uitgevoerd om de BGT eenmalig om te zetten naar Linked Data, en door middel van een Data Story (deze pagina) wat inzicht te bieden in de mogelijkheden.
@@ -12,7 +14,7 @@ De BGT is de enige geo Basisregistratie die begin 2020 niet als Linked Data besc
 Allereerst zijn we gestart met het omzetten van de BGT naar Linked Data. <a href="#bgt-klasse-histogram">Figuur 1</a> geeft een overzicht van de omvang en het soort objecten dat door ons is omgezet.
 
 <figure id="bgt-klasse-histogram">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bgt-klasse-histogram">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/bgt-klasse-histogram">
   </query>
   <figcaption>
     Figuur 1 ― Object types die voorkomen in de Linked Data BGT.
@@ -38,7 +40,7 @@ We hebben de Linked Data versie van de BGT voorzien van een semantisch model.  D
 <a href="#bgt-klasse-hierarchie">Figuur 2</a> toont een klein deel van dit model, zoals weergegeven in de Linked Data BGT.
 
 <figure id="bgt-klasse-hierarchie">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bgt-klasse-hierarchie">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/bgt-klasse-hierarchie">
   </query>
   <figcaption>
     Figuur 2 ― De BGT is voorzien van semantiek volgens de <a href="https://www.geonovum.nl/geo-standaarden/bgt-imgeo/gegevenscatalogus-imgeo-versie-211" target="_blank">IMGeo gegevenscatalogus</a>: onderverdeling wegdeel.
@@ -70,7 +72,7 @@ Nu we de BGT als Linked Data voorhanden hebben, is het eenvoudig om deze te comb
 Laten we eens kijken naar een voorbeeld van hoe de 3 basisregistraties hetzelfde object beschrijven.  <a href="#bag-bgt-brt">Figuur 4</a> toont hetzelfde pand volgens de BAG, BGT, en BRT.  Door op de 3 verschillende geometriën te klikken kunnen we naar de respectievelijke basisregistraties doorklikken.  De informatie op één object wordt zo geïntegreerd getoond.
 
 <figure id="bag-bgt-brt">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bgt-bag-brt">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/bgt-bag-brt">
   </query>
   <figcaption>
     Figuur 4 ― Drie Basisregistraties: drie weergaves van hetzelfde gebouw.
@@ -104,22 +106,22 @@ De BGT wordt gebruikt in een groot aantal datasets.  <a href="#links" target="_b
 Een voorbeeld van zo'n dataset is de IMBOR.  Hierin wordt opgeslagen wat de kwaliteit van provinciale wegdelen is.  De IMBOR dataset is geen open data.  De bevraging in <a href="#kwaliteit-wegdek" target="_blank">Figuur 6</a> kan live worden uitgevoerd door op de afbeelding te klikken, maar alleen als men middels een login-account toegang tot de Linked Data IMBOR heeft.
 
 <figure id="kwaliteit-wegdek">
-  <a href="https://data.labs.kadaster.nl/bgt-high3/-/queries/kwaliteit-wegdek" target="_blank">
+  <a href="https://data.labs.kadaster.nl/archief/-/queries/kwaliteit-wegdek/1" target="_blank">
     <img src="/assets/images/noord-holland-kwaliteit-wegdek.png" height="500">
   </a>
   <figcaption>
-    Figuur 6 ― Kwaliteit van het wegdek in Noord-Holland.  Bron: Linked Data versie van <a href="https://data.labs.kadaster.nl/bgt-high3/imbor" target="_blank">imbor</a>.
+    Figuur 6 ― Kwaliteit van het wegdek in Noord-Holland.  Bron: Linked Data versie van <a href="https://data.labs.kadaster.nl/archief/imbor" target="_blank">imbor</a>.
   </figcaption>
 </figure>
 
 Naast de kwaliteit van het wegdek wordt in de IMBOR ook opgeslagen wat wanneer wegen zijn aangelegd en wanneer het wegdek voor het laatst vervangen is.  Dit laatste zien we in <a href="#deklaag-vervanging-per-jaar" target="_blank">Figuur 7</a>.
 
 <figure id="deklaag-vervanging-per-jaar">
-  <a href="https://data.labs.kadaster.nl/bgt-high3/-/queries/deklaag-vervanging-per-jaar" target="_blank">
+  <a href="https://data.labs.kadaster.nl/archief/-/queries/deklaag-vervanging-per-jaar/1" target="_blank">
     <img src="/assets/images/noord-holland-wegdek.png">
   </a>
   <figcaption>
-    Figuur 7 ― Aanleg en onderhoud aan het wegdek in Noord-Holland.  Brond: Linked Data versie van <a href="https://data.labs.kadaster.nl/bgt-high3/imbor" target="_blank">imbor</a>.
+    Figuur 7 ― Aanleg en onderhoud aan het wegdek in Noord-Holland.  Brond: Linked Data versie van <a href="https://data.labs.kadaster.nl/archief/imbor" target="_blank">imbor</a>.
   </figcaption>
 </figure>
 
@@ -130,7 +132,7 @@ Een andere dataset die met de BGT in verband kan worden gebracht is de NDW.  Hie
 <a href="#intensiteit">Figuur 8</a> geeft een overzicht van enkele wegen in Noord-Holland, waarbij de kleurcode de gemiddelde rijsnelheid om 8 uur 's ochtends aangeeft.  Merk op dat de wegvlakken afkomstig zijn uit de basisregistraties (BGT/BRT).
 
 <figure id="intensiteit">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/ndw">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/ndw">
   </query>
   <figcaption>
     Figuur 8 ― De gemiddelde rijsnelheid op wegen in Noord-Holland om 8 uur 's ochtends.
@@ -144,7 +146,7 @@ Omdat de BGT nu als Linked Data beschikbaar is, kunnen we de kwaliteit van de we
 Op basis van het combineren van Linked Data kunnen we vaststellen dat het wegdeel in <a href="#werkzaamheden-kaart">Figuur 9</a> moet worden vervangen.  We kunnen vervolgens de wettelijke norm hanteren voor het op de hoogte brengen van omwonenden.  In de figuur is te zien welke adressen bij werkzaamheden moeten worden aangeschreven.
 
 <figure id="werkzaamheden-kaart">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/adressen-aanschrijven-kaart">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/adressen-aanschrijven-kaart">
   </query>
   <figcaption>
     Figuur 9 ― Overzicht van de adressen (BAG) die moeten worden aangeschreven wanneer het geïdentificeerde wegdeel (BGT/BRT) moet worden vervangen.
@@ -154,7 +156,7 @@ Op basis van het combineren van Linked Data kunnen we vaststellen dat het wegdee
 Naast de kaart weergave kunnen we ook een tabel weergave maken (<a href="#werkzaamheden-tabel">Tabel 1</a>).  Deze kan direct naar de post afdeling worden gestuurd.
 
 <figure id="werkzaamheden-tabel">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/adressen-aanschrijven-tabel">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/adressen-aanschrijven-tabel">
   </query>
   <figcaption>
     Tabel 1 ― Overzicht van de adressen (BAG) die moeten worden aangeschreven wanneer het geïdentificeerde wegdeel (BGT/BRT) moet worden vervangen.
@@ -166,7 +168,7 @@ Naast de kaart weergave kunnen we ook een tabel weergave maken (<a href="#werkza
 Data verlinken gaat niet alleen met data uit de basis registraties. Maar het is ook mogelijk om de data te verrijken met verbindingen uit andere domeinen. In <a href="#bier">Figuur 10</a> zoeken we de dichtstbijzijnde brouwerij op waar na de werkzaamheden het (alcoholvrije)-biertje kan worden gedronken.
 
 <figure id="bier">
-  <query data-config-ref="https://data.labs.kadaster.nl/bgt-high3/-/queries/bier">
+  <query data-config-ref="https://data.labs.kadaster.nl/archief/-/queries/bier">
   </query>
   <figcaption>
     Figuur 10 ― dichtstbijzijnde brouwerij van de werkzaamheden
