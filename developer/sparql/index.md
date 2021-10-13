@@ -77,7 +77,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
     <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brk/services/brk/sparql</a></div>
     <div class="endpointContainer_center"><a href="/cases/brk-ld">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data Model (WIP)</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/brk">Sandbox</a></div>
+    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/default">Sandbox</a></div>
 </div>
 
 <div class="endpointContainer">
