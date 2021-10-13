@@ -20,14 +20,6 @@ Het eerste doel van dit project is aan te tonen dat het mogelijk is om deze basi
       <div class="card-description">Data Story die toont wat er mogelijk is wanneer de Basisregistratie Grootschalige Topografie (BGT) als Linked Data beschikbaar wordt gemaakt.</div>
     </div>
   </a>
-  <a href="/browsers/areaal">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
-      <div class="card-title">Areaal data browser</div>
-      <div class="card-description">Data browser waarin de Areaal dataset van provincie Noord-Holland doorzoekbaar wordt gemaakt.  De dataset bevat o.a. wegdelen en kunstwerken.</div>
-    </div>
-  </a>
   <a href="https://data.labs.kadaster.nl/bgt-high3">
     <div class="card">
       <div class="card-type">Dataset</div>
