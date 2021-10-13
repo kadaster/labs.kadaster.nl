@@ -21,7 +21,7 @@ Het self-service portaal zal gebruik maken van data in de vorm van Linked Data. 
 zijn in deze vorm, moet er een tool komen die van data sets linked data kan maken. Deze tool is ontwikkeld door het data 
 science team en heet LDWizard.
 <div class="cards-wrapper">
-   <a href="/demonstrators/spatialwizard/index.html">
+   <a href="/demonstrators/geodatawizard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/spatial_wizard_logo.png" alt="Spatial Wizard logo">

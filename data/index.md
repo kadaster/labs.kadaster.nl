@@ -8,7 +8,7 @@ title: Data
 Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan. Op deze pagina wordt een overzicht van deze datasets gegeven. Datasets die door het Data Science team als Linked Data worden aangeboden zijn te vinden op <https://data.labs.kadaster.nl>.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/agentschap-telecom/graafschades">
+  <a href="https://data.labs.kadaster.nl/agentschap-telecom/graafschades-2019">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/graafschades.webp">
@@ -54,14 +54,6 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
       <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
       <div class="card-title">BAG in de LOD Cloud</div>
       <div class="card-description">Officiële registratie van de Basisregistratie Adressen en Gebouwen (BAG) in de Linked Open Data (LOD) Cloud.</div>
-    </div>
-  </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/grondmarkt">
-    <div class="card">
-      <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg">
-      <div class="card-title">Dataset Grondmarkt</div>
-      <div class="card-description">Dataset met informatie over percelen.</div>
     </div>
   </a>
   <a href="https://data.labs.kadaster.nl/bgt-high3">
