@@ -29,4 +29,9 @@ Onder de gegevens die wij beschikbaar stellen zijn verschillende attributen door
 Voor meer informatie over Elastic Search klik <a href="/developer/elasticsearch">hier</a>
 
 ## <a href="/developer/architectuur">Databronnen en architectuur</a>
-Voor meer informatie over de databronnen en architectuur klik <a href="/developer/architectuur">hier</a>
+
+Voor meer informatie over de databronnen en architectuur klik <a href="/developer/architectuur">hier</a>.
+
+## <a href="/status">Status</a>
+
+Incidenteel komt het voor dat er een endpoint onbeschikbaar raakt wegens een storing of (gepland) onderhoud. Bekende problemen en aankomend onderhoud wordt bijgehouden op  <a href="/status">deze pagina</a>.

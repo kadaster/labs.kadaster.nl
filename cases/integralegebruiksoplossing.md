@@ -143,6 +143,10 @@ Lees hier hoe we (de makers) de gegevens in samenhang brengen om ze makkelijk te
   </a>
 </div>
 
+## Status
+
+Incidenteel komt het voor dat er een endpoint of demonstrator onbeschikbaar raakt wegens een storing of (gepland) onderhoud. Bekende problemen en aankomend onderhoud wordt bijgehouden op <a href="/status">deze pagina</a>.
+
 <div class="textbox" markdown="1">
 ## Actualiteit van databronnen
 
