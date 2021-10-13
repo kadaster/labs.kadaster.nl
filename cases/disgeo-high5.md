@@ -75,7 +75,7 @@ Speel bijvoorbeeld zelf ook eens in de Graph Browsers met de URI's van het <a hr
 
 Alhoewel deze eerste visualisatie de eerste informatie verschaft voor een meldkamer, is het niet direct de meest gebruikersvriendelijke manier om naar de data te kijken. Om het nut van een goed informatiefundament 
 daadwerkelijk te laten landen in een operationeel proces zijn er specifieke toepassingen gewenst die de informatie simpel en laagdrempelig beschikbaar stellen. Zo hebben we in deze High 5 gewerkt aan een 3D Demonstrator,
-waarbij 3D data van de <a href="https://www.kadaster.nl/-/actueel-3d-basisbestand-van-heel-nederland-beschikbaar">3D Basisregistratie</a> gelinked is aan de verschillende bronnen die tijdens deze High 5 en 
+waarbij 3D data van de <a href="https://www.kadaster.nl/zakelijk/producten/geo-informatie/3d-producten/3d-basisvoorziening>3D Basisregistratie</a> gelinked is aan de verschillende bronnen die tijdens deze High 5 en 
 en uit eerdere trajecten beschikbaar zijn gesteld. Het resultaat is in video vorm beschikbaar gesteld in Figuur 4. In de toekomst zal deze demonstrator ook als live demonstrator beschikbaar worden gesteld op deze website.
 
  <figure id="figuur-4">
