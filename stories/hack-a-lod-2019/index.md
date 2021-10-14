@@ -61,7 +61,7 @@ De slachtoffers van de razzia's wiens huizen werden verkocht en wie reeds worden
 Alle data is als Linked Data beschikbaar gesteld in de Kadaster Labs
 omgeving.  Hierbij worden de volgende datasets gebruikt:
 
-  - [Basisregistratie Adressen en Gebouwen (BAG)](https://data.labs.kadaster.nl/kadaster/bag2) (Kadaster)
+  - [Basisregistratie Adressen en Gebouwen (BAG)](https://data.labs.kadaster.nl/archief/bag) (Kadaster)
   - [Verkaufsbücher](https://data.labs.kadaster.nl/hack-a-lod/verkaufsbucher) (Nationaal Archief)
   - [Stolpersteine](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner) (Hack-a-LOD)
   - [Linkset Stolpersteine ↔ BAG](https://data.labs.kadaster.nl/hack-a-lod/stolpersteiner-bag) (Hack-a-LOD)
