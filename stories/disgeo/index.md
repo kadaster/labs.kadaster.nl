@@ -16,7 +16,7 @@ naar een CSV en gebruikt kan worden in een (open-source) BI Tool zoals <a href="
 [Figuur 1](#1) toont de linked data bevraging waarmee de 3D omgeving
 kan worden opgevraagd op basis van gegevens uit de [Basisregistratie
 Adressen en Gebouwen
-(BAG)](https://data.labs.kadaster.nl/kadaster/bag2/).  De kleurcode
+(BAG)](https://data.labs.kadaster.nl/archief/bag).  De kleurcode
 geeft de voor dat gebouw meest voorkomende gebruiksfunctie weer.  Voor
 alle BAG panden in Nederland is een gedetailleerde omtrek bekend, en
 voor de meeste BAG panden is ook de hoogste hoogte bekend.  Vooralsnog
