@@ -26,9 +26,14 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 </div>
 
 <div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">15-10-2021 17:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a> service</div>
+    <div class="mobileSpan">Verwachte downtime +- 1 tot 2 uur</div>
+</div>
+<div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">14-10-2021 17:00</div>
-    <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a> en <a href="https://data.labs.kadaster.nl/kadaster/bgt">BGT</a> services</div>
-    <div class="mobileSpan">Verwachte downtime +- 1 uur</div>
+    <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/kadaster/bgt">BGT</a> service</div>
+    <div class="mobileSpan">&#x2714; Uitgevoerd</div>
 </div>
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">12-10-2021 14:30</div>
