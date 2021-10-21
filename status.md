@@ -18,12 +18,6 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 </div>
 
 <div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">18-10-2021 13:00</div>
-    <div class="mobileSpan"> <a href="https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">Sparklis</a> kent momenteel wat issues rondom het tonen van de juiste data. We werken momenteel aan een fix.</div>
-    <div class="mobileSpan">Verwachte downtime nog onbekend.</div>
-</div>
-
-<div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">18-10-2021 09:00</div>
     <div class="mobileSpan"> Elasticsearch is offline, hierdoor kunt u problemen ondervinden met de zoekfunctionaliteit in de <a href="https://labs.kadaster.nl/demonstrators/objectviewer">objectviewer</a></div>
     <div class="mobileSpan">Verwachte downtime nog onbekend.</div>
@@ -59,4 +53,10 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
     <div><b>Datum en tijd</b>:</div>
     <div><b>Omschrijving</b>:</div>
     <div>Status</div>
+</div>
+
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">18-10-2021 13:00</div>
+    <div class="mobileSpan"> <a href="https://labs.kadaster.nl/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">Sparklis</a> kent wat issues rondom het tonen van de juiste data</div>
+    <div class="mobileSpan">&#x2714; Opgelost</div>
 </div>
