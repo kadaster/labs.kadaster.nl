@@ -75,7 +75,7 @@ Voorbeelden van recente stageopdrachten bij het GEC
 -	Amiranti, Arsha Yuditha (2020) Investigating 3D input data for solar photovoltaic potentials in The Netherlands.
 
 ### Interesse?
-Ben jij een enthousiaste HBO- of WO student met een GEO gerelateerde of Artificial Intelligence achtergrond en heb je interesse in een stage- of afstudeeropdracht bij het Geo Expertise Center? Stuur dan een e-mail naar <ahref="mailto:diede.nijmeijer@kadaster.nl">Diede Nijmeijer</a> of <ahref="mailto:marieke.kuijer@kadaster.nl@kadaster.nl"> Marieke Kuijer</a>. Graag formuleren we samen met jou een opdracht die aansluit bij jouw wensen en die tevens relevant is voor ons!
+Ben jij een enthousiaste HBO- of WO student met een GEO gerelateerde of Artificial Intelligence achtergrond en heb je interesse in een stage- of afstudeeropdracht bij het Geo Expertise Center? Stuur dan een e-mail naar <a href="mailto:diede.nijmeijer@kadaster.nl">Diede Nijmeijer</a> of <a href="mailto:marieke.kuijer@kadaster.nl@kadaster.nl"> Marieke Kuijer</a>. Graag formuleren we samen met jou een opdracht die aansluit bij jouw wensen en die tevens relevant is voor ons!
 
 ## Hackathon
 
