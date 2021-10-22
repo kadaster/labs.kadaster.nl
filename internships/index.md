@@ -70,9 +70,9 @@ We zetten deze techniek in voor het automatisch vinden van objecten of wijzingen
 ### Recente stages
 
 Voorbeelden van recente stageopdrachten bij het GEC
--	Sun, Xiaoyu (2021) Deep learning-based building extraction using aerial images and digital surface models.
--	Shi, Shan (2020) Detection of Potential Micro Land Grabbing in the Netherlands using Deep Learning.
--	Amiranti, Arsha Yuditha (2020) Investigating 3D input data for solar photovoltaic potentials in The Netherlands.
+-	Sun, Xiaoyu (2021) [Deep learning-based building extraction using aerial images and digital surface models](https://library.itc.utwente.nl/papers_2021/msc/gfm/sun.pdf).
+-	Shi, Shan (2020) [Detection of Potential Micro Land Grabbing in the Netherlands using Deep Learning](http://essay.utwente.nl/85138/1/shan.pdf).
+-	Amiranti, Arsha Yuditha (2020) [Investigating 3D input data for solar photovoltaic potentials in The Netherlands](https://essay.utwente.nl/85178/1/amiranti.pdf).
 
 ### Interesse?
 Ben jij een enthousiaste HBO- of WO student met een GEO gerelateerde of Artificial Intelligence achtergrond en heb je interesse in een stage- of afstudeeropdracht bij het Geo Expertise Center? Stuur dan een e-mail naar <a href="mailto:diede.nijmeijer@kadaster.nl">Diede Nijmeijer</a> of <a href="mailto:marieke.kuijer@kadaster.nl@kadaster.nl"> Marieke Kuijer</a>. Graag formuleren we samen met jou een opdracht die aansluit bij jouw wensen en die tevens relevant is voor ons!
