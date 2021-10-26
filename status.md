@@ -20,7 +20,7 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">18-10-2021 09:00</div>
     <div class="mobileSpan"> Elasticsearch is offline, hierdoor kunt u problemen ondervinden met de zoekfunctionaliteit in de <a href="https://labs.kadaster.nl/demonstrators/objectviewer">objectviewer</a></div>
-    <div class="mobileSpan">Verwachte downtime nog onbekend.</div>
+    <div class="mobileSpan">Bug bekend bij leverancier. Er wordt gewerkt aan een fix. Nieuwe update op 29 oktober.</div>
 </div>
 
 ## Gepland Onderhoud
@@ -31,6 +31,11 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
     <div>Status</div>
 </div>
 
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">29-10-2021 17:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/brt-2/">BRT</a> SPARQL en Elastic Search services</div>
+    <div class="mobileSpan"> - </div>
+</div>
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">15-10-2021 17:00</div>
     <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a> service</div>
