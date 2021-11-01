@@ -104,11 +104,13 @@ Ga mee de diepte in en kom naar een van de (online) sectorevenementen over de In
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte-166800206909">hier</a> om je aan te melden.
+Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/doorontwikkeling-in-samenhang/inspirerend-gebruik">hier</a> voor meer informatie.
+
+Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">deze link</a>.
 
 ### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
 
-Op donderdag 14 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Openbare Orde & Veiligheid. Klik <a href="https://www.eventbrite.nl/e/tickets-integrale-gebruiksoplossing-workshop-voor-openbare-orde-veiligheid-166798762589">hier</a> om je aan te melden.
+Op donderdag 14 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Openbare Orde & Veiligheid. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie.
 
 Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">deze link</a>.
 
