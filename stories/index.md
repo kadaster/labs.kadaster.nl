@@ -157,16 +157,12 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Combineren van gegevensbronnen in de afvalwaterketen.</div>
     </div>
   </a>
-  <!--
   <a href="./nationaal-archief/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/nationaal-archief-logo.jpg">
       <div class="card-title">Nationaal Archief + BAG</div>
-      <div class="card-description">Deze Data Story gaat over de
-      Beeldbank van het Nationaal Archief in combinatie met de
-      Basisregistratie Adressen en Gebouwen (BAG).</div>
+      <div class="card-description">Deze Data Story gaat over de Beeldbank van het Nationaal Archief in combinatie met de Basisregistratie Adressen en Gebouwen (BAG).</div>
     </div>
   </a>
-  -->
 </div>
