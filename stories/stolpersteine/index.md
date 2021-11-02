@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: tdb
 title: WOII in Nijmegen
 ---
 

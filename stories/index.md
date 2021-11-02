@@ -160,7 +160,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
   <a href="./nationaal-archief/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/nationaal-archief-logo.jpg">
+      <img class="card-image" src="/assets/images/nationaal-archief-logo.png">
       <div class="card-title">Nationaal Archief + BAG</div>
       <div class="card-description">Deze Data Story gaat over de Beeldbank van het Nationaal Archief in combinatie met de Basisregistratie Adressen en Gebouwen (BAG).</div>
     </div>

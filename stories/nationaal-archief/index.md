@@ -1,6 +1,5 @@
 ---
-layout: story
-published: true
+layout: tdb
 title: Nationaal Archief Beeldbank
 ---
 

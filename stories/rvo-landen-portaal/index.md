@@ -1,6 +1,5 @@
 ---
-description: Demonstratie van het gebruik van SPARQL ten behoeve van het RVO Landenportaal Internationaal Ondernemen.
-layout: story
+layout: tdb
 published: false
 ---
 
