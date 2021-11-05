@@ -20,7 +20,7 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">18-10-2021 09:00</div>
     <div class="mobileSpan"> Elasticsearch is offline, hierdoor kunt u problemen ondervinden met de zoekfunctionaliteit in de <a href="https://labs.kadaster.nl/demonstrators/objectviewer">objectviewer</a></div>
-    <div class="mobileSpan">Door een technisch probleem bij onze leverancier is deze fout ontstaan. De fix wordt uiterlijk 12 november verwacht.</div>
+    <div class="mobileSpan">Oorzaak bekend. De fix wordt uiterlijk 12 november verwacht.</div>
 </div>
 
 ## Gepland Onderhoud
