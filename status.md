@@ -32,7 +32,7 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 </div>
 
 <div class="endpointContainer">
-    <div class="endpointContainer_title mobileSpan">01-01-2021 17:00</div>
+    <div class="endpointContainer_title mobileSpan">01-11-2021 17:00</div>
     <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/brt-2/">BRT</a> SPARQL en Elastic Search services</div>
     <div class="mobileSpan"> &#x2714; Uitgevoerd </div>
 </div>
