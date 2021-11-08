@@ -20,4 +20,6 @@ Het project omvat niet alleen de technische ontwikkeling van het sensorenregiste
 De organisatie van de wet- en regelgeving, de rolverdeling, de governance en de financiering van het register spelen ook een belangrijke rol. 
 Deze aspecten zijn onderdeel van het project in totaal. 
 
-Zie voor verdere technische informatie onze [GitHub](https://github.com/kadaster-labs/sensrnet-home/)
+Zie voor meer informatie onze [GitHub](https://kadaster-labs.github.io/sensrnet-home/)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
