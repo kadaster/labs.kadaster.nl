@@ -16,14 +16,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
     </div>
   </a>
-<a href="/demonstrators/geodatavisitor">
+<!-- <a href="/demonstrators/geodatavisitor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/geodatavisitor.png">
       <div class="card-title">Geo Data Visitor</div>
       <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard.</div>
     </div>
-  </a>
+  </a> -->
 <a href="/demonstrators/pandbrigade">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -48,7 +48,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
     </div>
   </a>
-  <a href="/demonstrators/geodatavisitor-ggc">
+  <a href="/demonstrators/geodatavisitor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
