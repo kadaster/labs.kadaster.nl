@@ -16,7 +16,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
     </div>
   </a>
-<!-- <a href="/demonstrators/geodatavisitor">
+<!-- <a href="/demonstrators/geodatavisitor-ggc">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/geodatavisitor.png">
