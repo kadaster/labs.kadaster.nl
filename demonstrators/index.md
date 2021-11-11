@@ -48,6 +48,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
     </div>
   </a>
+  <a href="/demonstrators/geodatavisitor">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/pandviewer.png">
+      <div class="card-title">Geodatavisitor</div>
+      <div class="card-description">Zoek via deze functionaliteit zelf met de geodatavisitor.</div>
+    </div>
+  </a>
   <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
