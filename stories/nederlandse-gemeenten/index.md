@@ -1,39 +1,14 @@
 ---
 description: Wat zijn de Nederlandse gemeenten met de grootste oppervlakte?  En welke gemeenten hebben de meeste inwoners?
-layout: story
+layout: tbd
 title: Nederlandse gemeenten
 ---
 
-<h1>Nederlandse gemeenten</h1>
-
-<p>Deze data story geeft een overzicht van de grootste Nederlandse gemeenten (op basis van oppervlakte), en de meest dichtbevolkte Nederlandse gemeenten.</p>
-
-<h2>De grootste Nederlandse gemeente</h2>
-
-<p>De gemeenten kunnen gesorteerd worden op basis van hun oppervlakte.  Hieronder volgt een overzicht van de 25 grootste gemeenten.  Omdat water wordt meegerekend is Zeewolde groter dan Amsterdam!</p>
-
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
-       data-query-ref="grootste-gemeente.rq"
-       data-output="gchart"
-       data-config="http://0.0.0.0:4000/stories/gemeente/#query=prefix%20bag%3A%20%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fdef%2Fbag%23%3E%0Aprefix%20begrip%3A%20%3Chttp%3A%2F%2Fbag.basisregistraties.overheid.nl%2Fid%2Fbegrip%2F%3E%0Aprefix%20geo%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Font%2Fgeosparql%23%3E%0Aprefix%20geof%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Ffunction%2Fgeosparql%2F%3E%0Aprefix%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix%20uom%3A%20%3Chttp%3A%2F%2Fwww.opengis.net%2Fdef%2Fuom%2FOGC%2F1.0%2F%3E%0Aselect%20%3FgemeenteOppervlakte%20%3FgemeenteNaam%20%7B%0A%20%20%7B%0A%20%20%20%20select%20*%20%7B%0A%20%20%20%20%20%20%3Fgemeente%20bag%3AnaamWoonplaats%20%3FgemeenteNaam%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20bag%3Astatus%20begrip%3AWoonplaatsAangewezen%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20geo%3AhasGeometry%2Fgeo%3AasWKT%20%3FgemeenteWkt%20.%0A%20%20%20%20%20%20filter%20not%20exists%20%7B%0A%20%20%20%20%20%20%20%20%3Fgemeente%20rdfs%3AisDefinedBy%2Fbag%3AeindGeldigheid%20%3Feind%20%20.%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20bind(geof%3Aenvelope(%3FgemeenteWkt)%20as%20%3FgemeenteBoundingBox)%0A%20%20bind('%5EPOLYGON%5C%5Cs%5C%5C(%5C%5C((%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5C%2C%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5C%2C%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5C%2C%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*)%5C%5Cs(%5B0-9%5D*%5C%5C.%5B0-9%5D*).*%5C%5C)%5C%5C)%24'%20as%20%3Fregex)%0A%20%20bind(replace(str(%3FgemeenteBoundingBox)%2C%20%3Fregex%2C%20'%241')%20as%20%3Fx1)%0A%20%20bind(replace(str(%3FgemeenteBoundingBox)%2C%20%3Fregex%2C%20'%242')%20as%20%3Fy1)%0A%20%20bind(replace(str(%3FgemeenteBoundingBox)%2C%20%3Fregex%2C%20'%245')%20as%20%3Fx2)%0A%20%20bind(replace(str(%3FgemeenteBoundingBox)%2C%20%3Fregex%2C%20'%244')%20as%20%3Fy2)%0A%20%20bind(geof%3Adistance(%0A%20%20%20%20strdt(concat('Point%20('%2Cstr(%3Fx1)%2C'%20'%2Cstr(%3Fy1)%2C')')%2C%20geo%3AwktLiteral)%2C%0A%20%20%20%20strdt(concat('Point%20('%2Cstr(%3Fx2)%2C'%20'%2Cstr(%3Fy1)%2C')')%2C%20geo%3AwktLiteral)%2C%0A%20%20%20%20uom%3Ametre)%20as%20%3Fx)%0A%20%20bind(geof%3Adistance(%0A%20%20%20%20strdt(concat('Point%20('%2Cstr(%3Fx1)%2C'%20'%2Cstr(%3Fy1)%2C')')%2C%20geo%3AwktLiteral)%2C%0A%20%20%20%20strdt(concat('Point%20('%2Cstr(%3Fx1)%2C'%20'%2Cstr(%3Fy2)%2C')')%2C%20geo%3AwktLiteral)%2C%0A%20%20%20%20uom%3Ametre)%20as%20%3Fy)%0A%20%20bind(%3Fx%20*%20%3Fy%20as%20%3FgemeenteOppervlakte)%0A%7D%0Aorder%20by%20desc(%3FgemeenteOppervlakte)%0Alimit%2025%0A&endpoint=https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=gchart&outputSettings=%7B%22chartConfig%22%3A%7B%22dataTable%22%3A%7B%22cols%22%3A%5B%7B%22id%22%3A%22%22%2C%22label%22%3A%22gemeenteOppervlakte%22%2C%22pattern%22%3A%22%22%2C%22type%22%3A%22number%22%7D%2C%7B%22id%22%3A%22%22%2C%22label%22%3A%22gemeenteNaam%22%2C%22pattern%22%3A%22%22%2C%22type%22%3A%22string%22%7D%5D%2C%22rows%22%3A%5B%7B%22c%22%3A%5B%7B%22v%22%3A1241609138.6910195%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Lelystad%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A749256816.3050085%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Harlingen%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A680653363.5754341%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Almere%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A606767588.3636124%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Vlieland%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A589730519.004331%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22West-Terschelling%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A549248804.8456281%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Warffum%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A472269682.7869555%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Zeewolde%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A406865507.9866302%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Amsterdam%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A394100325.89137703%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Oosterend%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A387189677.60611784%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Formerum%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A346992815.50879306%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Den%20Oever%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A342494390.1822642%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Wieringerwerf%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A327759246.02269155%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Makkum%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A324564980.982055%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Schiermonnikoog%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A318867910.3229161%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Dronten%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A288101004.6983224%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Medemblik%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A272727792.0836211%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22De%20Cocksdorp%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A264575460.0930603%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Biddinghuizen%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A256128916.84254858%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Urk%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A249696807.28376466%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Delfzijl%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A241866059.98799965%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Swifterbant%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A231111417.17486167%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Zwolle%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A226168940.8365932%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Rotterdam%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A221961228.838857%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Dordrecht%22%7D%5D%7D%2C%7B%22c%22%3A%5B%7B%22v%22%3A213153529.26633477%2C%22p%22%3A%7B%7D%7D%2C%7B%22v%22%3A%22Enschede%22%7D%5D%7D%5D%7D%2C%22options%22%3A%7B%22annotations%22%3A%7B%22domain%22%3A%7B%7D%7D%2C%22legacyScatterChartLabels%22%3Atrue%2C%22isStacked%22%3Afalse%2C%22booleanRole%22%3A%22certainty%22%2C%22vAxes%22%3A%5B%7B%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22viewWindow%22%3Anull%2C%22viewWindowMode%22%3Anull%2C%22useFormatFromData%22%3Atrue%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D%2C%22hAxis%22%3A%7B%22viewWindow%22%3A%7B%22max%22%3Anull%2C%22min%22%3Anull%7D%2C%22minValue%22%3Anull%2C%22maxValue%22%3Anull%2C%22useFormatFromData%22%3Atrue%7D%2C%22series%22%3A%7B%220%22%3A%7B%22hasAnnotations%22%3Atrue%7D%7D%2C%22legend%22%3A%22top%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D%2C%22state%22%3A%7B%7D%2C%22view%22%3A%7B%22columns%22%3A%5B%7B%22calc%22%3A%22emptyString%22%2C%22sourceColumn%22%3A0%2C%22type%22%3A%22string%22%7D%2C0%2C%7B%22sourceColumn%22%3A1%2C%22properties%22%3A%7B%22role%22%3A%22annotation%22%7D%2C%22label%22%3A%22gemeenteNaam%22%7D%5D%2C%22rows%22%3Anull%7D%2C%22isDefaultVisualization%22%3Afalse%2C%22chartType%22%3A%22BarChart%22%7D%7D">
-</query>
-
-<p>Hetzelfde resultaat kan ook op een kaart getoond worden.  Merk op
-dat de grootste gemeenten inderdaad vaak een groot wateroppervlak
-bezitten.</p>
-
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
-       data-output="geo"
-       data-query-ref="grootste-gemeente-geo.rq">
-</query>
-
-<h2>Nederlandse gemeenten in DBpedia</h2>
-
-<p>Door gebruik te maken van SPARQL federatie kunnen we dynamisch
-informatie over gemeenten opvragen uit andere datasets.  Hieronder
-tonen we voor 25 gemeenten een externe identifier in DBpedia.</p>
-
-<query data-endpoint="https://api.labs.kadaster.nl/datasets/kadaster/knowledge-graph/services/knowledge-graph/sparql"
-       data-output="geo"
-       data-query-ref="meest-dichtbevolkte-gemeente.rq">
-</query>
+<iframe
+  id="Gemeenten-Nederland"
+  src="https://data.labs.kadaster.nl/kadaster/-/stories/Gemeenten-Nederland?embed"
+  width="100%"
+  height="100%"
+  frameborder="0"
+></iframe>
+<script src="https://data.labs.kadaster.nl/resizeIframe.js" iframeId="Gemeenten-Nederland"></script>
