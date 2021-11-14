@@ -21,7 +21,7 @@ title: PDOK Knowledge Graph
   <p>Op deze kaart zijn de kandidaat buurten gegroepeerd weergegeven.  Door op de met getallen aangeduide groepen te klikken worden de buurten binnen die groepering zichtbaar gemaakt.  Op het laagste niveau worden de individuele buurten zichtbaar.  Door op deze buurten te klikken kan de naam van de buurten getoond worden.</p>
 </div>
 
-<query  data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/pdok-kg-1">
+<query  data-config-ref="https://data.labs.kadaster.nl/cbs/-/queries/pdok-kg-1/3">
 </query>
 
 <h3>Bevraging 1B: Voeg meer criteria toe</h3>
