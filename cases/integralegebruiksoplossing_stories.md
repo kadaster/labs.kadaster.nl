@@ -40,6 +40,14 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
       <div class="card-description">Bekijk hier hoe we geodata inzetten ten behoeve van het verbeteren van de openbare orde & veiligheid.</div>
     </div>
   </a>
+    <a href="https://data.labs.kadaster.nl/igo/-/stories/Kwaliteitstoezicht-en-Handhaving">
+    <div class="card">
+      <div class="card-type">Data Story</div>
+      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="BAG-BGT kwaliteit">
+      <div class="card-title">Kwaliteitstoezicht & Handhaving</div>
+      <div class="card-description">Bekijk hier hoe we de iGO kunnen inzetten tbv kwaliteitsverbetering van de geobasisregistraties</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">
     <div class="card">
       <div class="card-type">Data Story</div>

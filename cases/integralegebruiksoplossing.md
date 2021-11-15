@@ -104,7 +104,7 @@ Ga mee de diepte in en kom naar een van de (online) sectorevenementen over de In
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/doorontwikkeling-in-samenhang/inspirerend-gebruik">hier</a> voor meer informatie.
+Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie.
 
 Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">deze link</a>.
 
@@ -183,6 +183,13 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-type">Searchdata</div>
       <img class="card-image" src="/assets/images/searchdata-screenshot.PNG" alt="Searchdata">
       <div class="card-description">Valuecare heeft deze applicatie ontwikkeld om op basis van natuurlijke tekst door onze data te kunnen zoeken.</div>
+    </div>
+  </a>
+    <a href="https://qanswer-frontend.univ-st-etienne.fr/?kb=kg&user=kadaster/">
+    <div class="card">
+      <div class="card-type">QAnswer</div>
+      <img class="card-image" src="/assets/images/qanswer.PNG" alt="qanswer">
+      <div class="card-description">Met deze demonstrator wordt het mogelijk in natuurlijke taal de Knowledge graph te bevragen.</div>
     </div>
   </a>
   <a href="https://kadaster.github.io/datascience-comunica-client/">
