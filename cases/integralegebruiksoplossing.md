@@ -185,7 +185,7 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-description">Valuecare heeft deze applicatie ontwikkeld om op basis van natuurlijke tekst door onze data te kunnen zoeken.</div>
     </div>
   </a>
-    <a href="https://qanswer-frontend.univ-st-etienne.fr/?kb=kg&user=kadaster/">
+    <a href="https://qanswer-frontend.univ-st-etienne.fr/?kb=kg&user=kadaster">
     <div class="card">
       <div class="card-type">QAnswer</div>
       <img class="card-image" src="/assets/images/qanswer.PNG" alt="qanswer">
