@@ -29,7 +29,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basis
       <div class="card-description">De officiële publicatie van de Basisregistratie Kadaster (BRK) als linked data.</div>
     </div>
   </a>
-    <a href="https://kadaster.wvr.io/brkpb-ld">
+    <a href="https://kadaster.wvr.io/brk-pb">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/weaver.png" alt="Weaver weergave">
