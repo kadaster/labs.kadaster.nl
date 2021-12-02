@@ -20,7 +20,7 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
     <div class="card">
       <div class="card-type">Data Story</div>
       <img class="card-image" src="/assets/images/planologen-screenshot.PNG">
-      <div class="card-title">Planologen</div>
+      <div class="card-title">Ruimtelijke ordening</div>
       <div class="card-description">Planologen en stedenbouwers houden zich bezig met wat mensen waar kunnen doen en hoe dat kan veranderen.</div>
     </div>
   </a>
