@@ -60,8 +60,8 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
     <div class="card">
       <div class="card-type">Data Story</div>
       <img class="card-image" src="/assets/images/data-story-igo.PNG">
-      <div class="card-title">Waarom iGO?</div>
-      <div class="card-description">De eerste toepassingen op de iGO zijn mogelijk. Maar wat kunnen we ermee?</div>
+      <div class="card-title">Algemene voorbeelden</div>
+      <div class="card-description">Voorbeelden die laten zien wat er mogelijk ise met de iGO</div>
     </div>
   </a>
     <a href="https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik">
