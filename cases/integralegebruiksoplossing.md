@@ -16,9 +16,9 @@ title: Use Case ― Integrale Gebruiksoplossing
 
 Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om geo-data uit verschillende geo-basisregistraties gecombineerd te bevragen en is ontworpen voor algemene gebruikers, geo-professionals en ontwikkelaars. Middels een Knowledge Graph wordt data ontsloten uit de BAG, BGT, BRT, Kadastrale Percelen (DKK), WKPB, CBS wijken en buurten en daarnaast kunnen eigen databestanden worden toegevoegd. Bekijk de toepassingen die bij u passen en ga er mee aan de slag. De integrale gebruiksoplossing is als Proof of Concept ontwikkeld voor het programma DiS-Geo. Onderaan deze pagina is een feedbackformulier beschikbaar, we horen graag wat u ervan vindt!
 
-<h1>Kijk en vraag</h1>
+<h1>Algemene gebruiker</h1>
 <div class="description">
-  Toepassingen voor de algemene gebruiker: Bekijk en bevraag informatie uit verschillende basisregistraties over een object, zoals een gebouw, weg of terrein.
+  Voor de algemene gebruiker: Bekijk en bevraag met de objectviewer informatie uit de BAG, BGT en BRT over een object, zoals een gebouw, weg of terrein.
 </div>
 
 <div class="cards-wrapper">
@@ -26,15 +26,15 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Objectviewer</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
-      <div class="card-description">Zoek in de Objectviewer door informatie uit de BAG, BGT en BRT. Deze demonstrator geeft een invulling aan integrale bevraging.</div>
+      <div class="card-description"> </div>
     </div>
   </a>
 </div>
 
-<h1>Combineer en selecteer</h1>
+<h1>Professionele gebruiker</h1>
 <div class="description">
-  Toepassingen voor de professionele gebruiker:
-  Voeg data samen en selecteer gegevens om inzicht te krijgen met data over jouw omgeving uit basis- en andere registraties. We realiseren ons dat het gebruik van deze tools enige oefening vereist. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="/assets/videos/sparklis_demo_1.mp4">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.mp4">Video 2</a>
+  Voor de professionele gebruiker:
+  Voeg data samen en selecteer gegevens om inzicht te krijgen in uw vraagstukken. Voor het gebruik van deze tools is echter wel enige oefening vereist, om daarbij te helpen zijn er tutorials.Zie <a href="/assets/videos/sparklis_demo_1.mp4">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.mp4">Video 2</a> voor Sparklis.
 </div>
 
 <div class="cards-wrapper">
@@ -42,28 +42,28 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Sparklis</div>
       <img class="card-image" src="/assets/images/sparklis.png">
-      <div class="card-description">Een querybuilder in natuurlijke taal waarmee professionele gebruikers SPARQL-endpoints kunnen verkennen en doorzoeken.</div>
+      <div class="card-description">Met sparklis kunnen selecties worden gemaakt om geïntegreerde linked data te bevragen.</div>
     </div>
   </a>
   <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">GeoDataWizard</div>
         <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
-        <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data, zodat je dezegecombineerd met onze data kan bevragen!</div>
+        <div class="card-description">Met de GeoDataWizzard kunnen eigen datasets worden omgezet in linked data en wordt de toegevoegde data onderdeel van de integrale bevraging</div>
     </div>
   </a>
   <a href="/cases/integralegebruiksoplossing_stories">
     <div class="card">
       <div class="card-type">Data Story</div>
       <img class="card-image" src="/assets/images/data-story-igo.PNG">
-      <div class="card-description">Bekijk hier hoe we SPARQL gebruiken om een aantal use cases van gebruikers te beantwoorden.</div>
+      <div class="card-description">Bekijk hier hoe vraagstukken uit verschilende sectoren worden beantwoord met behulp van de Integrale Gebruiksoplossing.</div>
     </div>
   </a>
 </div>
 
-<h1>Ontwikkel en Analyseer</h1>
+<h1>Developer</h1>
 <div class="description">
-  Toepassingen voor de ontwikkelaar:
+  Voor de ontwikkelaar:
   Bouw eigen toepassingen met geodata op basis van de Knowledge Graph, GraphQL- en SPARQL-endpoints.
 </div>
 
@@ -86,49 +86,31 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 ## Video
 
-<iframe width="100%" height="920" src="https://www.youtube.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Overzicht van de (afgelopen) iGO-workshops
+##  Integrale Gebruiksoplossing workshops voor specifieke sectoren
 
-<br>
-
-<figure id="figuur-1">
-  <a href="/assets/images/agenda-sept-okt-igo-evenementen.png">
-    <img src="/assets/images/agenda-sept-okt-igo-evenementen.png" alt="Agenda evenementen">
-  </a>
-</figure>
-
-<br>
-
-Ga mee de diepte in en kom naar een van de (online) sectorevenementen over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de IGO per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt en ervaar je live de voordelen voor jouw sector. In workshops tonen we de mogelijkheden van de iGO én tonen we opplossingen voor een concrete praktijk casus.
+Ga mee de diepte in en bekijk een van de (online) sectorworkshops over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de Integrale Gebruiksoplossing per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt, zie je concrete oplossingen en ervaar je de voordelen voor verschillende sectoren. 
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-Op donderdag 28 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Beheer Openbare Ruimte. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie.
-
-Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">deze link</a>.
+De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">hier</a> voor de data. 
 
 ### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
 
-Op donderdag 14 oktober 2021 om 11:30 staat er een workshop gepland in het kader van Openbare Orde & Veiligheid. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie.
-
-Voor dit toepassingsgebied is ook een data story beschikbaar. Deze kun je vinden op <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">deze link</a>.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">hier</a> voor de data. 
 
 ### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
 
-Op 23 September 2021 om 11:30 staat er een workshop gepland voor de nutsbedrijven. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie.
-
-Er is voor de toepassingen van een nutsbedrijf ook een data story opgeleverd. In deze <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">data story nemen</a> nemen we je mee in de problematiek van de nutsbedrijven en hoe de data uit de iGO hierin kan voorzien.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">hier</a> voor de data. 
 
 ### Integrale Gebruiksoplossing: workshop voor ruimtelijke ordening
 
-De workshop over de Integrale Gebruiksoplossing voor ruimtelijke ordening vond plaats op 16 september 2021.  Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie.
-
-Er zijn voor de toepassingen van een planoloog twee data stories opgeleverd. In een data story <a href="https://data.labs.kadaster.nl/kadaster/-/stories/planologen">over de woonplaats</a> en een data story <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Planologen-per-buurt">over de buurt</a> nemen we je mee in het werk van een planoloog.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 16 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Planologen-per-buurt">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor developers
 
-De developersworkshop over de Integrale Gebruiksoplossing vond plaats op 26 augustus 2021 om 15:30. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/08/26/integrale-gebruiksoplossing-workshop-voor-developers">hier</a> voor meer informatie.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 26 augustus 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/08/26/integrale-gebruiksoplossing-workshop-voor-developers">hier</a> voor meer informatie.
 
 <br>
 
