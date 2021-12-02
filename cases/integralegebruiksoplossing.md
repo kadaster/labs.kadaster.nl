@@ -26,7 +26,6 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Objectviewer</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
-      <div class="card-description"> </div>
     </div>
   </a>
 </div>
