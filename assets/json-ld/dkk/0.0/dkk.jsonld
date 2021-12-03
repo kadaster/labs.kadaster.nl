@@ -3,6 +3,8 @@
     "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
     "@version": 1.1,
     "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "jsonldid": "@id",
+    "jsonldtype": "@type",
     "akrgemeente": "brk:akrAanduiding",
     "akrgemeentecode": null,
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
