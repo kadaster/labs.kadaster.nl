@@ -90,8 +90,8 @@
       "@type": "geo:wktLiteral",
       "@id": "brk:plaatscoordinaten"
     },
-    "perceelLinks": "@nest",
-    "perceelRechts": "@nest",
+    "perceellinks": "@nest",
+    "perceelrechts": "@nest",
     "perceellinkslokaalid": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
