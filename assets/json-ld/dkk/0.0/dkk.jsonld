@@ -49,6 +49,7 @@
       "@type": "xsd:nonNegativeInteger",
       "@id": "prov:order"
     },
+    "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
