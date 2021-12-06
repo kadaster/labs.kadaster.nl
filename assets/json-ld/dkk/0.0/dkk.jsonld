@@ -136,7 +136,7 @@
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/typeGrens/"
       },
-      "@id": "brk:typeGrens",
+      "@id": "brk:type",
       "@type": "@id"
     },
     "value": "rdf:value",
