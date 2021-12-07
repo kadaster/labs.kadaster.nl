@@ -84,61 +84,12 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
     </div>
   </a>
-  <a href="./hack-a-lod-2019/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/hack-a-lod.jpg">
-      <div class="card-title">Stolpersteine</div>
-      <div class="card-description">Hier bouwen we verder op ons werk met de verkaufsbucher en koppelen we het aan zgn. Stolpersteine.</div>
-    </div>
-  </a>
-  <a href="./vind-een-gebouw/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/huis.png">
-      <div class="card-title">Vind een gebouw</div>
-      <div class="card-description">Vind een of meerdere BAG panden (bv. uw huis) door de bevraging aan te passen.</div>
-    </div>
-  </a>
-  <a href="./pdok-knowledge-graph/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png">
-      <div class="card-title">PDOK Knowledge Graph</div>
-      <div class="card-description">In deze Data Story bevragen we combinaties van datasets.  Hiermee laten we de toegevoegde waarde van een Knowledge Graph zien.
-      </div>
-    </div>
-  </a>
-  <a href="./haal-centraal/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/voetbal.jpg">
-      <div class="card-title">Haal Centraal</div>
-      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
-    </div>
-  </a>
   <a href="./cbs/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
       <div class="card-title">CBS/Kadaster</div>
       <div class="card-description">Data Story waarin data van CBS en het Kadaster gecombineerd wordt.</div>
-    </div>
-  </a>
-  <a href="./energiebesparing/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/groene-stroom.png">
-      <div class="card-title">CBS energiebesparingspotentie</div>
-      <div class="card-description">Data Story over de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
-    </div>
-  </a>
-  <a href="./bier/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Bier Data Story</div>
-      <div class="card-description">In deze Data Story behandelen we vragen rond bier brouwerijen in Nederland, op basis van verschillende datasets.</div>
     </div>
   </a>
   <a href="./digitaal-erfgoed/index.html">
