@@ -133,14 +133,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
-  <a href="/cases/SelfServiceGISPortal">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/selfserviceGIS.jpg" alt="Self service GIS">
-      <div class="card-title">Self-Service GIS Portaal</div>
-      <div class="card-description">In deze case wordt een voorbeeld gegeven van een Self-Service GIS platform.</div>
-    </div>
-  </a>
   <a href="/cases/sparklis">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -189,14 +181,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
     </div>
   </a>
-  <a href="/cases/hackalod2019">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/hackalod2018.jpg" alt="Hackalod team">
-      <div class="card-title">Hackalod</div>
-      <div class="card-description">Tijdens de HackaLOD ging een team van Kadaster & Friends aan de slag met Erfgoed Linked Open Data. Zie hier hun resultaten.</div>
-    </div>
-  </a>
   <a href="/cases/3d-maptable">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -221,14 +205,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
   </a>
-  <a href="/cases/live-data-in-een-bi-toepassing">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/tableau-logo.jpg" alt="Tableau logo">
-      <div class="card-title">Live data in een BI Toepassing</div>
-      <div class="card-description">Hoe we een API aanspreken als bron in een standaard BI toepassing.</div>
-    </div>
-  </a>
   <a href="/cases/bag-voorspellingen">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -245,14 +221,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze case bekijken we hoe we data van het CBS laagdrempelig beschikbaar kunnen stellen mbv Linked Open Data.</div>
     </div>
   </a>
-  <a href="/cases/uw-huis">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/huis.png" alt="Huis">
-      <div class="card-title">Uw huis</div>
-      <div class="card-description">In deze Use Case staat een huis centraal, en bevragingen naar de BAG.</div>
-    </div>
-  </a>
   <a href="/cases/rotterdam-grondgebied">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -261,15 +229,7 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
-  <a href="/cases/haal-centraal">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/voetbal.png" alt="Voetbal">
-      <div class="card-title">Haal Centraal</div>
-      <div class="card-description">Overzicht van de resultaten van de Haal Centraal High5.</div>
-    </div>
-  </a>
-  <!--
+    <!--
   <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -279,22 +239,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
     </div>
   </a>
   -->
-  <a href="/cases/energielabels">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/energielabels.png" alt="Energie labels">
-      <div class="card-title">Energielabels en Machine Learning</div>
-      <div class="card-description">Voor het Geo Gebruikersfestival 2018 ontwikkelde het Kadaster een demo-applicatie voor het voorspellen van energielabels van panden.</div>
-    </div>
-  </a>
-  <a href="/cases/pdok-knowledge-graph">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png" alt="Knowledge Graph voorbeeld">
-      <div class="card-title">PDOK Knowledge Graph</div>
-      <div class="card-description">In deze use case zijn verschillende PDOK datasets experimenteel met elkaar verbonden in een Knowledge Graph.</div>
-    </div>
-  </a>
   <!--
   <a href="/cases/hoogspanning-onderzoek">
     <div class="card">
@@ -319,14 +263,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/nederland-provincies.jpg" alt="Provincies Nederland op de kaart">
       <div class="card-title">Basisregistratie Topografie (BRT)</div>
       <div class="card-description">De BRT is beschikbaar als Linked Open Data. Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
-    </div>
-  </a>
-  <a href="/cases/linked-bier">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bier.jpg" alt="Bier pullen">
-      <div class="card-title">Linked Bier</div>
-      <div class="card-description">Een Use Case rond een ludiek thema (bier) gemaakt tijdens de Hack-a-LOD.  Deze Use Case bevat de resultaten.</div>
     </div>
   </a>
 </div>
