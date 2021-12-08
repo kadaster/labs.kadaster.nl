@@ -125,14 +125,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
-  <a href="/cases/selfservice_dutch">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
-      <div class="card-title">Self-Service GIS</div>
-      <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
-    </div>
-  </a>
   <a href="/cases/sparklis">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -211,14 +203,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
       <div class="card-title">Missende waarden voorspellen in de BAG</div>
       <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
-    </div>
-  </a>
-  <a href="/cases/cbs-lod-demo">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kwb.jpg" alt="Verdeling wijken op de kaart">
-      <div class="card-title">Kerncijfers Wijken- en Buurten (CBS) toegankelijk middels LOD</div>
-      <div class="card-description">In deze case bekijken we hoe we data van het CBS laagdrempelig beschikbaar kunnen stellen mbv Linked Open Data.</div>
     </div>
   </a>
   <a href="/cases/rotterdam-grondgebied">
