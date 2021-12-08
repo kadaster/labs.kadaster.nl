@@ -72,12 +72,4 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
     </div>
   </a>
-  <a href="dbeerpedia">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/bier.jpg">
-      <div class="card-title">Linked Bier Browser</div>
-      <div class="card-description">Zoek naar in Nederland vervaardigde biertjes door de zoekcriteria in te stellen. Zoek tevens naar bier brouwerijen die in Nederland gevestigd zijn.</div>
-    </div>
-  </a>
 </div>
