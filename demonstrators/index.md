@@ -24,14 +24,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard.</div>
     </div>
   </a>
-<a href="/demonstrators/pandbrigade">
+<!-- <a href="/demonstrators/pandbrigade">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
       <div class="card-title">Pandbrigade</div>
       <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/bimdemo">
     <div class="card">
       <div class="card-type">Demonstrator</div>
