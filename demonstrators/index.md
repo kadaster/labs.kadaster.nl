@@ -155,7 +155,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description"> In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
   </a>
-  <a href="/demonstrators/verkaufsbucher-zoeken">
+  <a href="/demonstrators/verkaufsbucher-zoeken/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
