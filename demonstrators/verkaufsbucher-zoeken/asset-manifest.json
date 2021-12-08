@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/demonstrators/verkaufsbucher-zoeken/static/css/main.7c64e881.chunk.css",
-    "main.js": "/demonstrators/verkaufsbucher-zoeken/static/js/main.f17f5496.chunk.js",
-    "main.js.map": "/demonstrators/verkaufsbucher-zoeken/static/js/main.f17f5496.chunk.js.map",
-    "runtime-main.js": "/demonstrators/verkaufsbucher-zoeken/static/js/runtime-main.3cc159c2.js",
-    "runtime-main.js.map": "/demonstrators/verkaufsbucher-zoeken/static/js/runtime-main.3cc159c2.js.map",
-    "static/css/2.d1800115.chunk.css": "/demonstrators/verkaufsbucher-zoeken/static/css/2.d1800115.chunk.css",
-    "static/js/2.bcfa304c.chunk.js": "/demonstrators/verkaufsbucher-zoeken/static/js/2.bcfa304c.chunk.js",
-    "static/js/2.bcfa304c.chunk.js.map": "/demonstrators/verkaufsbucher-zoeken/static/js/2.bcfa304c.chunk.js.map",
-    "index.html": "/demonstrators/verkaufsbucher-zoeken/index.html",
-    "precache-manifest.9a4d06afafd1614a5f7fd8d1b1b4de0c.js": "/demonstrators/verkaufsbucher-zoeken/precache-manifest.9a4d06afafd1614a5f7fd8d1b1b4de0c.js",
-    "service-worker.js": "/demonstrators/verkaufsbucher-zoeken/service-worker.js",
-    "static/css/2.d1800115.chunk.css.map": "/demonstrators/verkaufsbucher-zoeken/static/css/2.d1800115.chunk.css.map",
-    "static/css/main.7c64e881.chunk.css.map": "/demonstrators/verkaufsbucher-zoeken/static/css/main.7c64e881.chunk.css.map",
-    "static/media/Logo-NA.png": "/demonstrators/verkaufsbucher-zoeken/static/media/Logo-NA.ebed2b1b.png"
+    "main.css": "/verkaufsbucher-zoeken/static/css/main.2e3a2c72.chunk.css",
+    "main.js": "/verkaufsbucher-zoeken/static/js/main.da51d5a3.chunk.js",
+    "main.js.map": "/verkaufsbucher-zoeken/static/js/main.da51d5a3.chunk.js.map",
+    "runtime-main.js": "/verkaufsbucher-zoeken/static/js/runtime-main.acefbc85.js",
+    "runtime-main.js.map": "/verkaufsbucher-zoeken/static/js/runtime-main.acefbc85.js.map",
+    "static/css/2.db01a406.chunk.css": "/verkaufsbucher-zoeken/static/css/2.db01a406.chunk.css",
+    "static/js/2.be152427.chunk.js": "/verkaufsbucher-zoeken/static/js/2.be152427.chunk.js",
+    "static/js/2.be152427.chunk.js.map": "/verkaufsbucher-zoeken/static/js/2.be152427.chunk.js.map",
+    "index.html": "/verkaufsbucher-zoeken/index.html",
+    "precache-manifest.749f5d76fe6c851f01f23d8bffe20f8d.js": "/verkaufsbucher-zoeken/precache-manifest.749f5d76fe6c851f01f23d8bffe20f8d.js",
+    "service-worker.js": "/verkaufsbucher-zoeken/service-worker.js",
+    "static/css/2.db01a406.chunk.css.map": "/verkaufsbucher-zoeken/static/css/2.db01a406.chunk.css.map",
+    "static/css/main.2e3a2c72.chunk.css.map": "/verkaufsbucher-zoeken/static/css/main.2e3a2c72.chunk.css.map",
+    "static/media/Logo-NA.png": "/verkaufsbucher-zoeken/static/media/Logo-NA.ebed2b1b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3cc159c2.js",
-    "static/css/2.d1800115.chunk.css",
-    "static/js/2.bcfa304c.chunk.js",
-    "static/css/main.7c64e881.chunk.css",
-    "static/js/main.f17f5496.chunk.js"
+    "static/js/runtime-main.acefbc85.js",
+    "static/css/2.db01a406.chunk.css",
+    "static/js/2.be152427.chunk.js",
+    "static/css/main.2e3a2c72.chunk.css",
+    "static/js/main.da51d5a3.chunk.js"
   ]
 }
