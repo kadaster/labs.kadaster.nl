@@ -101,14 +101,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
     </div>
   </a>
   -->
-  <a href="/cases/graphql-endpoint">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/graphql-logo.png" alt="GraphQL logo">
-      <div class="card-title">GraphQL endpoint </div>
-      <div class="card-description">Middels dit endpoint bevraag je de (open) databronnen van het Kadaster met GraphQL.</div>
-    </div>
-  </a>
   <a href="/cases/hackalittle2020">
     <div class="card">
       <div class="card-type">Use Case</div>

@@ -55,16 +55,3 @@ Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutori
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
 </div>
 
-## Additionele resources
-
-Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala aan voorbeeld queries en andere resources beschikbaar die jullie kunnen helpen om snel met onze data aan de slag te gaan. Kijk daarom ook eens in de resources hieronder:
-
-<div class="cards-wrapper">
-  <a href="/cases/graphql-endpoint">
-    <div class="card">
-      <div class="card-type">Data Story</div>
-      <img class="card-image" src="/assets/images/graphql-logo.png" alt="Knowledge Graph">
-      <div class="card-description">In deze data story nemen we je aan de hand om je eerste GraphQL query op te stellen!</div>
-    </div>
-  </a>
-</div>
