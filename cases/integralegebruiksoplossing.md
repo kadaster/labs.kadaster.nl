@@ -26,6 +26,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Objectviewer</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
+      <div class="card-description">Bevraag informatie uit de BAG, BGT en BRT over een object.</div>
     </div>
   </a>
 </div>
@@ -86,6 +87,10 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 ## Video
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Feedback
+
+We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
 
 ##  Integrale Gebruiksoplossing workshops voor specifieke sectoren
 
@@ -188,10 +193,6 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
     </div>
   </a>
 </div>
-
-## Feedback
-
-We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
 
 ## Overall UI/UX Design
 
