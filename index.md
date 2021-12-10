@@ -101,14 +101,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
-  <a href="/cases/sparklis">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
-      <div class="card-title">Sparklis</div>
-      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
-    </div>
-  </a>
   <a href="/cases/akte-ocr">
     <div class="card">
       <div class="card-type">Use Case</div>

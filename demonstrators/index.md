@@ -66,12 +66,12 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
   </a>
-  <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+  <a href="/cases/sparklis">
     <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/sparklis.png">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
       <div class="card-title">Sparklis</div>
-      <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-eindpunten kunnen verkennen en doorzoeken.</div>
+      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
   <a href="/demonstrators/LDMaps_BGT/index.html">
