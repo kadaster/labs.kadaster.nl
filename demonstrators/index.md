@@ -8,7 +8,7 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
-<a href="/demonstrators/gruff/index.html">
+  <a href="/demonstrators/gruff/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/gruff.png">
@@ -16,7 +16,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
     </div>
   </a>
-<a href="/demonstrators/geodatavisitor">
+  <a href="/demonstrators/geodatavisitor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/geodatavisitor.png">
@@ -24,14 +24,24 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard.</div>
     </div>
   </a>
-<!-- <a href="/demonstrators/pandbrigade">
+  <!--
+  <a href="/demonstrators/pandbrigade">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
       <div class="card-title">Pandbrigade</div>
       <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
     </div>
-  </a> -->
+  </a>
+  -->
+  <a href="/cases/3d-demonstrator">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/3d-logo.jpg" alt="3D Kaart">
+      <div class="card-title">3D Demonstrator</div>
+      <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
+    </div>
+  </a>
   <a href="/demonstrators/bimdemo">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -155,4 +165,4 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
   </a>
-
+</div>

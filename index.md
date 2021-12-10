@@ -75,22 +75,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
     </div>
   </a>
-  <a href="/cases/3d-demonstrator">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/3d-logo.jpg" alt="3D Kaart">
-      <div class="card-title">3D Demonstrator</div>
-      <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
-    </div>
-  </a>
-    <a href="/cases/bimdemo">
-    <div class="card">
-      <div class="card-type">Use case</div>
-      <img class="card-image" src="/assets/images/bimdemo.PNG">
-      <div class="card-title">BIM Demo</div>
-      <div class="card-description">Bekijk een 3D BIM model en diens relaties naar de basisregistraties. </div>
-    </div>
-  </a>
   <!--
   <a href="/cases/loki">
     <div class="card">
