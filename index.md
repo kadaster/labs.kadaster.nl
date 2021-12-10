@@ -117,14 +117,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
     </div>
   </a>
-  <a href="/cases/covid-19">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Covid-19 virus weergave">
-      <div class="card-title">Corona (COVID-19)</div>
-      <div class="card-description">Het gebruik van open data, inclusief Kadaster data, om de verspreiding van het Corona virus inzichtelijk te maken.</div>
-    </div>
-  </a>
   <a href="/tech-radar/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
