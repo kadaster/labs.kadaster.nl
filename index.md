@@ -149,14 +149,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
     </div>
   </a>
-  <a href="/cases/grondmarkt">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg" alt="Grondmarkt">
-      <div class="card-title">Grondmarkt</div>
-      <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
-    </div>
-  </a>
   <a href="/cases/bag-voorspellingen">
     <div class="card">
       <div class="card-type">Use Case</div>

@@ -40,14 +40,6 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Met deze browser kan de Beeldbank van het Nationaal Archief doorzocht worden.  Afbeeldingen kunnen worden gevonden op basis van hun onderwerp en locatie.</div>
     </div>
   </a>
-  <a href="grondmarkt">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg">
-      <div class="card-title">Grondmarkt Browser</div>
-      <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
-    </div>
-  </a>
   <a href="voorzieningen">
     <div class="card">
       <div class="card-type">Browser</div>
