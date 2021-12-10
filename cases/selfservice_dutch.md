@@ -37,37 +37,6 @@ Om de technologische benadering van deze use case te ontwerpen, moeten we eerst 
 
 De tooling voorbeelden zijn onderverdeeld in drie hieronder genoemde categorieën. Waar mogelijk zijn voorbeelden voor elke categorie opgenomen om de functionaliteiten die voor ons onderzoek van belang zijn, te demonstreren.
 
-### Data Browsers en Viewers
-
-Hieronder volgen voorbeelden van browsers en viewers die door het Kadaster zijn ontwikkeld voor het browsen en bekijken van Linked Data. Deze drie voorbeelden benadrukken de reeks visualisatie- en interactiefuncties die beschikbaar zijn voor de eindgebruiker voor het bladeren door gegevens.
-
-<div class="cards-wrapper">
-  <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png" alt="Linked data vowl">
-      <div class="card-title">LD-VOWL</div>
-      <div class="card-description">Het datamodel van de Basisregistratie Adressen en Gebouwen (BAG) in de online visualisatietool LD-VOWL.</div>
-	</div>
-  </a>
-  <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
-      <div class="card-title">Kadaster's Knowledge Graph</div>
-      <div class="card-description">Beweeg door alle Linked Data die wij integraal ontsluiten en ontdek relaties tussen de verschillende bronnen.</div>
-	</div>
-  </a>
-  <a href="https://labs.kadaster.nl/demonstrators/namen-app/#/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Screenshot Toponamenzoeker">
-      <div class="card-title">Toponamenzoeker</div>
-      <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
-	</div>
-  </a>
-</div>
-  
 ### Analytics Dashboards
 
 Hieronder volgen voorbeelden van meer geavanceerde toolingvoorbeelden of dashboards die de gebruiker een bepaald niveau van analytische functionaliteit bieden.
@@ -106,12 +75,12 @@ Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruf
 Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen van Linked Data. We laten het gebruik van deze klanten het beste zien in onze Data Stories. Bekijk enkele van de onderstaande voorbeelden.
 
 <div class="cards-wrapper">
-  <a href="/stories/covid-19/">
+  <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Weergave Covid-19 virus">
-      <div class="card-title">Corona (COVID-19) Data Story</div>
-      <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">BAG Data Story</div>
+      <div class="card-description">Een Data Story waarin de Basisregistratie Adressen en Gebouwen (BAG) op verschillende manieren bevraagd wordt.</div>
 	</div>
   </a>
   <a href="/stories/digitaal-erfgoed/index.html">
@@ -122,12 +91,12 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
       <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
 	</div>
   </a>
-  <a href="/stories/pdok-knowledge-graph/index.html">
+ <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png" alt="PDOK logo">
-      <div class="card-title">PDOK Knowledge Graph</div>
-      <div class="card-description">In deze Data Story bevragen we combinaties van datasets. Hiermee laten we de toegevoegde waarde van een Knowledge Graph zien.</div>
+      <img class="card-image" src="/assets/images/sint-jan.jpg">
+      <div class="card-title">Religieuze gebouwen in Nederland</div>
+      <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
 	</div>
   </a>
 </div>
@@ -145,6 +114,3 @@ Bij het Kadaster werken we aan de ontwikkeling van onze Knowledge Graph door de 
     Figuur 3 ― Self-Service GIS Architectuur. 
   </figcaption>
  </figure>
-
-## Het Resultaat
-Voor meer informatie over de voortgang van het Kadaster met het realiseren van selfservice GIS, zie <a href="/cases/SelfServiceGISPortal">onze voortgangspagina.</a>
