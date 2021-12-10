@@ -80,7 +80,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/ld-maps.png">
       <div class="card-title">LDMaps voor de BGT</div>
-      <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
+      <div class="card-description">LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
     </div>
   </a>
   -->
@@ -141,7 +141,8 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">ETC Tech Radar</div>
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
-    <!--
+  </a>
+  <!--
   <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -156,7 +157,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
       <div class="card-title">Toponamenzoeker</div>
-      <div class="card-description"> In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
+      <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
   </a>
   <a href="/demonstrators/verkaufsbucher-zoeken/">
@@ -165,6 +166,13 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
       <div class="card-title">Verkaufsbücher zoeker</div>
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/comunica">
+    <div class="card">
+      <div class="card-type">Comunica</div>
+      <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
+      <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
 </div>
