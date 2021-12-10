@@ -75,22 +75,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
     </div>
   </a>
-  <a href="/cases/3d-demonstrator">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/3d-logo.jpg" alt="3D Kaart">
-      <div class="card-title">3D Demonstrator</div>
-      <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
-    </div>
-  </a>
-    <a href="/cases/bimdemo">
-    <div class="card">
-      <div class="card-type">Use case</div>
-      <img class="card-image" src="/assets/images/bimdemo.PNG">
-      <div class="card-title">BIM Demo</div>
-      <div class="card-description">Bekijk een 3D BIM model en diens relaties naar de basisregistraties. </div>
-    </div>
-  </a>
   <!--
   <a href="/cases/loki">
     <div class="card">
@@ -117,14 +101,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
     </div>
   </a>
-  <a href="/cases/sparklis">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
-      <div class="card-title">Sparklis</div>
-      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
-    </div>
-  </a>
   <a href="/cases/akte-ocr">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -139,14 +115,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Integrale explorer logo">
       <div class="card-title">GEO data voor iedereen</div>
       <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
-    </div>
-  </a>
-  <a href="/cases/covid-19">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Covid-19 virus weergave">
-      <div class="card-title">Corona (COVID-19)</div>
-      <div class="card-description">Het gebruik van open data, inclusief Kadaster data, om de verspreiding van het Corona virus inzichtelijk te maken.</div>
     </div>
   </a>
   <a href="/tech-radar/index.html">
@@ -179,14 +147,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/weiland.jpg" alt="Weiland">
       <div class="card-title">Routering Landbouwverkeer</div>
       <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
-    </div>
-  </a>
-  <a href="/cases/grondmarkt">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg" alt="Grondmarkt">
-      <div class="card-title">Grondmarkt</div>
-      <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
     </div>
   </a>
   <a href="/cases/bag-voorspellingen">

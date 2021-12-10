@@ -8,7 +8,7 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken.
 
 <div class="cards-wrapper">
-<a href="/demonstrators/gruff/index.html">
+  <a href="/demonstrators/gruff/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/gruff.png">
@@ -16,7 +16,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
     </div>
   </a>
-<a href="/demonstrators/geodatavisitor">
+  <a href="/demonstrators/geodatavisitor">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/geodatavisitor.png">
@@ -24,14 +24,24 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard.</div>
     </div>
   </a>
-<!-- <a href="/demonstrators/pandbrigade">
+  <!--
+  <a href="/demonstrators/pandbrigade">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
       <div class="card-title">Pandbrigade</div>
       <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
     </div>
-  </a> -->
+  </a>
+  -->
+  <a href="/cases/3d-demonstrator">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/3d-logo.jpg" alt="3D Kaart">
+      <div class="card-title">3D Demonstrator</div>
+      <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
+    </div>
+  </a>
   <a href="/demonstrators/bimdemo">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -56,22 +66,24 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
     </div>
   </a>
-  <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+  <a href="/cases/sparklis">
     <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/sparklis.png">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
       <div class="card-title">Sparklis</div>
-      <div class="card-description">Een querybuilder in natuurlijke taal waarmee niet-ervaren gebruikers SPARQL-eindpunten kunnen verkennen en doorzoeken.</div>
+      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
+  <!--
   <a href="/demonstrators/LDMaps_BGT/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/ld-maps.png">
       <div class="card-title">LDMaps voor de BGT</div>
-      <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
+      <div class="card-description">LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
     </div>
   </a>
+  -->
   <!--
   <a href="/demonstrators/loki/index.html">
     <div class="card">
@@ -129,7 +141,8 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-title">ETC Tech Radar</div>
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
-    <!--
+  </a>
+  <!--
   <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -144,7 +157,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
       <div class="card-title">Toponamenzoeker</div>
-      <div class="card-description"> In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
+      <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
   </a>
   <a href="/demonstrators/verkaufsbucher-zoeken/">
@@ -155,4 +168,11 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
   </a>
-
+  <a href="/demonstrators/comunica">
+    <div class="card">
+      <div class="card-type">Comunica</div>
+      <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
+      <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
+    </div>
+  </a>
+</div>

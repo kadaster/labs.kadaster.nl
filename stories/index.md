@@ -26,14 +26,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Overzicht van alle graafschades die in 2019 veroorzaakt zijn aan kabels en leidingen in Nederland.  De gegevens zijn afkomstig van het Agentschap Telecom.</div>
     </div>
   </a>
-  <a href="/stories/covid-19/">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg">
-      <div class="card-title">Corona (COVID-19) Data Story</div>
-      <div class="card-description">Deze Data Story geeft een overzicht van de Nederlandse Corona statistieken in combinatie met Kadaster data.</div>
-    </div>
-  </a>
   <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -42,16 +34,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Een Data Story waarin de Basisregistratie Adressen en Gebouwen (BAG) op verschillende manieren bevraagd wordt.</div>
     </div>
   </a>
-  <!--
-  <a href="./bgt-high3/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/bgt.jpg">
-      <div class="card-title">Basisregistratie Topografie Datastory</div>
-      <div class="card-description">Data Story voor de BGT High3 week. Deze datastory geeft aan wat er mogelijk is wanneer de BGT als linked data beschikbaar is.</div>
-    </div>
-  </a>
-  -->
   <a href="./evacuatie/index.html">
     <div class="card">
       <div class="card-type">Story</div>
@@ -106,14 +88,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Rioleringsgebieden</div>
       <div class="card-description">Combineren van gegevensbronnen in de afvalwaterketen.</div>
-    </div>
-  </a>
-  <a href="./nationaal-archief/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/nationaal-archief-logo.png">
-      <div class="card-title">Nationaal Archief + BAG</div>
-      <div class="card-description">Deze Data Story gaat over de Beeldbank van het Nationaal Archief in combinatie met de Basisregistratie Adressen en Gebouwen (BAG).</div>
     </div>
   </a>
 </div>

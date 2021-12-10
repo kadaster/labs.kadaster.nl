@@ -40,36 +40,12 @@ Het Data Science team geeft je middels de Browsers de mogelijkheid om zelfstandi
       <div class="card-description">Met deze browser kan de Beeldbank van het Nationaal Archief doorzocht worden.  Afbeeldingen kunnen worden gevonden op basis van hun onderwerp en locatie.</div>
     </div>
   </a>
-  <a href="grondmarkt">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/grondmarkt.jpg">
-      <div class="card-title">Grondmarkt Browser</div>
-      <div class="card-description">Voer live SPARQL queries uit op een combinatie van basisregistraties en kom tot meer inzicht in de eigenschappen van kadastrale percelen.</div>
-    </div>
-  </a>
   <a href="voorzieningen">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/cbs-logo.png">
       <div class="card-title">Voorzieningen Browser</div>
       <div class="card-description">Een overzicht van de afstand tot verschillende voorzieningen.  Op basis van actuele statistieken van het Centraal Bureau voor de Statistiek (CBS).</div>
-    </div>
-  </a>
-  <a href="transport">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/transport.jpg">
-      <div class="card-title">Transport Browser</div>
-      <div class="card-description">In welke buurt is het autobezit het hoogst?  En waar rijden de meeste oude auto's rond?  Deze vragen worden beantwoord in de Transport Browser.</div>
-    </div>
-  </a>
-  <a href="brt">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">BRT Browser</div>
-      <div class="card-description">Met deze browser kunnen gebouwen in de Basisregistratie Topografie op basis van hoogteklasse, status en gebouwsoort doorzocht worden.</div>
     </div>
   </a>
 </div>

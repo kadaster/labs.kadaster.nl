@@ -26,6 +26,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Objectviewer</div>
       <img class="card-image" src="/assets/images/pandviewer.png">
+      <div class="card-description">Bevraag informatie uit de BAG, BGT en BRT over een object.</div>
     </div>
   </a>
 </div>
@@ -87,21 +88,25 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Feedback
+
+We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
+
 ##  Integrale Gebruiksoplossing workshops voor specifieke sectoren
 
-Ga mee de diepte in en bekijk een van de (online) sectorworkshops over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de Integrale Gebruiksoplossing per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt, zie je concrete oplossingen en ervaar je de voordelen voor verschillende sectoren. 
+Ga mee de diepte in en bekijk een van de (online) sectorworkshops over de Integrale Gebruiksoplossing. Hierin worden de werking en mogelijkheden van de Integrale Gebruiksoplossing per sector toegelicht en gedemonstreerd. Zo maak je nader kennis met hoe de oplossing voor jou het beste werkt, zie je concrete oplossingen en ervaar je de voordelen voor verschillende sectoren.
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">hier</a> voor de data. 
+De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">hier</a> voor de data. 
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">hier</a> voor de data. 
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor ruimtelijke ordening
 
@@ -135,8 +140,8 @@ Incidenteel komt het voor dat er een endpoint of demonstrator onbeschikbaar raak
 
 De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Voor detailinformatie en links naar alle databronnen verwijzen we de gebruiker naar [onze developer pagina](/developer/). Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
 
-- **Basisadministratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
-- **Basisadministratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-10-07*.
+- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
+- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-10-07*.
 - **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-08-25*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-01*.
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
@@ -152,14 +157,14 @@ De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze ond
 Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag gegaan om componenten te ontwikkelen op onze data. Deze dienen als inspiratie voor de mogelijkheden met deze ontsluiting.
 
 <div class="cards-wrapper">
-    <a href="/browsers/kkg-gebouw/">
+    <a href="/browsers/kkg-gebouw">
     <div class="card">
       <div class="card-type">Data Browser</div>
       <img class="card-image" src="/assets/images/browser-screenshot.PNG" alt="Facet Check">
       <div class="card-description">Gebruik de Facet Check Browser - ontwikkeld door Triply - om door de gebouwen in de Knowledge Graph te zoeken.</div>
     </div>
   </a>
-  <a href="https://searchdata.com/">
+  <a href="https://searchdata.com">
     <div class="card">
       <div class="card-type">Searchdata</div>
       <img class="card-image" src="/assets/images/searchdata-screenshot.PNG" alt="Searchdata">
@@ -173,14 +178,21 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-description">Met deze demonstrator wordt het mogelijk in natuurlijke taal de Knowledge graph te bevragen.</div>
     </div>
   </a>
-  <a href="https://kadaster.github.io/datascience-comunica-client/">
+  <a href="https://kadaster.github.io/datascience-comunica-client">
     <div class="card">
       <div class="card-type">Comunica</div>
       <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
-  <a href="/demonstrators/gruff/index.html">
+  <a href="/demonstrators/comunica">
+    <div class="card">
+      <div class="card-type">Comunica</div>
+      <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
+      <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/gruff">
     <div class="card">
       <div class="card-type">Gruff</div>
       <img class="card-image" src="/assets/images/gruff.png" alt="Gruff">
@@ -189,15 +201,11 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
   </a>
 </div>
 
-## Feedback
-
-We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
-
 ## Overall UI/UX Design
 
 In dit overzicht willen we een doorkijk bieden naar het mogelijke toekomstige design van de ‘integrale gebruiksoplossing’. Welke componenten vinden we hierin en hoe kan het eruit gaan zien? Browse door onderstaand Adobe XD bestand om een beeld te krijgen van de design gedachten voor de toekomst.
 
-<iframe height="920" width="100%" src="https://xd.adobe.com/embed/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ " frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<iframe height="920" width="100%" src="https://xd.adobe.com/embed/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ " frameborder="0" marginheight="0" marginwidth="0">
+</iframe>
 
-<div>Iframe link to Adobe XD, mocht het niet getoond worden bezoek dan: <a href="https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ ">https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/</a></div>
-<br />
+<p>Iframe link to Adobe XD, mocht het niet getoond worden bezoek dan: <a href="https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/ ">https://xd.adobe.com/view/a6d6d70a-3a3b-44d4-af6a-7a985632e630-f385/</a></p>
