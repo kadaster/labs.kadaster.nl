@@ -233,6 +233,14 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">De resultaten van het omzetten van de BGT naar Linked Data, uitgevoerd i.s.m. provincie Noord-Holland.</div>
     </div>
   </a>
+  <a href="/cases/selfservice_dutch">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
+      <div class="card-title">Self-Service GIS</div>
+      <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
+    </div>
+  </a>
   <a href="/cases/brt">
     <div class="card">
       <div class="card-type">Use Case</div>
