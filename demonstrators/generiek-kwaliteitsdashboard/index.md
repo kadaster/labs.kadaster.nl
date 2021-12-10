@@ -11,7 +11,7 @@ Eén van deze demonstrators betreft de visie van het Kadaster over een generiek 
 één van de belangrijkste speerpunten van het Kadaster. Wij proberen de bronhouders en gebruikers van de data die wij beheren hierbij zo goed mogelijk te assisteren om de data 
 zo kwalitatief mogelijk te brengen en houden. 
 
-Een belangrijke tool hierbij zijn de kwaliteitsdashboards op de verschillende registraties, zoals die op de <a href = "https://zakelijk.kadaster.nl/bag-kwaliteitszorg">BAG</a> en 
+Een belangrijke tool hierbij zijn de kwaliteitsdashboards op de verschillende registraties, zoals die op de <a href = "https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-kwaliteitszorg">BAG</a> en 
 de <a href = "https://zakelijk.kadaster.nl/bgt">BGT</a>. Een voorbeeld vind je in Figuur 1. Hier melden we op basis van business regels op onze data mogelijke fouten terug richting de verscheidene bronhouders. 
 We zien ook dat sinds de introductie van deze kwaliteitsdashboards, de kwaliteit van de registraties significant omhoog is geschoten. Toch zien we ook enkele tekortkomingen aan de 
 huidige aanpak rondom deze kwaliteitsdashboards, namelijk:
