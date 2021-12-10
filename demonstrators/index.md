@@ -74,6 +74,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
+  <!--
   <a href="/demonstrators/LDMaps_BGT/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -82,6 +83,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description"> LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
     </div>
   </a>
+  -->
   <!--
   <a href="/demonstrators/loki/index.html">
     <div class="card">
