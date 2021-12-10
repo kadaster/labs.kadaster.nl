@@ -45,37 +45,6 @@ Our investigation take us beyond GIS specific tooling and also looks at other ex
 
 The tooling examples are divided into three categories as below. Where possible, demonstrators for each category have been included to showcase the functionalities of interest in our investigation. 
 
-### Data Browsers and Viewers
-
-The following are examples of browsers and viewers developed by Kadaster for browsing and viewing Linked Data. These three examples highlight the range of visualisation and interactivity features available to the end user for data browsing. 
-
-<div class="cards-wrapper">
-  <a href="http://vowl.visualdataweb.org/ldvowl/#/graph?endpointURL=https:%2F%2Fapi.labs.kadaster.nl%2Fdatasets%2Fkadaster%2Fbag%2Fservices%2Fbag%2Fsparql">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-vowl.png" alt="Linked data vowl">
-      <div class="card-title">LD-VOWL</div>
-      <div class="card-description">The data model of the Key Register of Addresses and Buildings (BAG) in the online visualization tool LD-VOWL.</div>
-	</div>
-  </a>
-  <a href="/demonstrators/graph-browser/ontodia-knowledge-graph">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge graph">
-      <div class="card-title">Kadaster's Knowledge Graph</div>
-      <div class="card-description">Move through all the Linked Data store integrally as open data and discover the relationships between the different sources.</div>
-	</div>
-  </a>
-  <a href="https://labs.kadaster.nl/demonstrators/namen-app/#/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/namen-app-tegel-image.png" alt="Toponamenzoeker">
-      <div class="card-title">Toponamenzoeker</div>
-      <div class="card-description">In the toponamenzoeker you can search all the names contained within the topography database and maps that Kadaster maintains.</div>
-	</div>
-  </a>
-</div>
-  
 ### Analytics Dashboards
 
 The following are examples of more advanced tooling examples or dashboards which offer the user some level of analytical functionality. 
@@ -112,12 +81,12 @@ The second example demonstrators the browsing and querying of BAG data within Gr
 There are a range of SPARQL clients available to the end user for the purpose of querying Linked Data. We best showcase the use of these clients in our data stories. Please look at some of the examples below. 
 
 <div class="cards-wrapper">
-  <a href="/stories/covid-19/">
+ <a href="./bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/covid-19.jpg" alt="Weergave Covid-19 virus">
-      <div class="card-title">Corona (COVID-19) Data Story</div>
-      <div class="card-description">This data story provides an overview of the Dutch Corona statistics in combination with Kadaster data.</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">BAG Data Story</div>
+      <div class="card-description">This data story provides an overview of the Basisregistratie Adressen en Gebouwen (BAG).</div>
 	</div>
   </a>
   <a href="/stories/digitaal-erfgoed/index.html">
@@ -128,12 +97,12 @@ There are a range of SPARQL clients available to the end user for the purpose of
       <div class="card-description">A data story about Oud Lisse made by the PLDN working group Digital Heritage.</div>
 	</div>
   </a>
-  <a href="/stories/pdok-knowledge-graph/index.html">
+ <a href="./religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/pdok-logo-text.png" alt="PDOK logo">
-      <div class="card-title">PDOK Knowledge Graph</div>
-      <div class="card-description">In this data story we question combinations of datasets. With this we show the added value of a Knowledge Graph.</div>
+      <img class="card-image" src="/assets/images/sint-jan.jpg">
+      <div class="card-title">Religieuze gebouwen in Nederland</div>
+      <div class="card-description">>In this data story we question religious buildings in the Basisregistratie Topografie (BRT) beschreven worden.</div>
 	</div>
   </a>
 </div>
@@ -149,7 +118,3 @@ At Kadaster, we are working on the development of our Knowledge Graph by integra
     Figure 3 ― Self-Service GIS Architecture. 
   </figcaption>
  </figure>
-
-
-## The Result
-For more information on Kadaster's progress with achieving self-service GIS, see <a href="/cases/SelfServiceGISPortal">our progress page.</a>
