@@ -40,6 +40,14 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brt.basis
       <div class="card-description">Data Story die een overzicht van de BRT-LD geeft.</div>
     </div>
   </a>
+  <a href="https://labs.kadaster.nl/stories/religieuze-gebouwen/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/sint-jan.jpg">
+      <div class="card-title">Religieuze gebouwen in Nederland</div>
+      <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
+    </div>
+  </a>
       <a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">
     <div class="card">
       <div class="card-type">Endpoint</div>
