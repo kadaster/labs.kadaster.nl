@@ -1,5 +1,5 @@
 ---
-layout: tbd
+layout: tdb
 logo: /stories/OpenELS/logo.png
 title: OpenELS
 ---
