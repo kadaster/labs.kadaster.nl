@@ -7,11 +7,11 @@ title: Use Case ― 3D Demonstrator
 
 ## Introductie
 
-Sinds Juni 2020 stelt Kadaster als onderdeel van zijn service de <a href="https://www.kadaster.nl/-/actueel-3d-basisbestand-van-heel-nederland-beschikbaar">3D basisregistratie voor heel Nederland</a> beschikbaar. Voor deze registratie wordt op basis van puntenwolken technologie in combinatie met dense matching een 3D representatie van Nederland gegenereerd. Hierbij combineren we de Topografie uit de Basisregistratie Grootschalige Topografie (bijv. water en wegen) met gebouwen uit de Basisregistratie Adressen & Gebouwen.
+Sinds Juni 2020 stelt Kadaster als onderdeel van zijn service de 3D basisregistratie voor heel Nederland</a> beschikbaar. Voor deze registratie wordt op basis van puntenwolken technologie in combinatie met dense matching een 3D representatie van Nederland gegenereerd. Hierbij combineren we de Topografie uit de Basisregistratie Grootschalige Topografie (bijv. water en wegen) met gebouwen uit de Basisregistratie Adressen & Gebouwen.
 
 Recent zijn ook deze twee basisregistratie als Linked Data gepubliceerd (<a href="/cases/bag-ld">BAG</a> en <a href="/cases/bgt-ld">BGT</a>). Dit betekent dat de 3D modellen die eerder door het Kadaster besteld zijn gesteld verrijkt kunnen worden met deze linked data bronnen en de Knowledge Graph die hier aan vast hangt.
 
-In dit kader hebben Kadaster, NDW (Nationaal Dataportaal Wegverkeer) en CGI een samenwerking gestart om te laten zien wat er mogelijk is als verschillende databronnen vanuit verschillende domeinen in combinatie met 3D wordt gebruikt. Dit uit zich in een demonstrator die wij ook wel de 3D (mobiliteits-)demonstrator noemen. Een eerdere versie hiervan deelden wij ook reeds tijdens <a href="/cases/disgeo-high5">de DisGeo High 5</a> rondom Linked Data.
+In dit kader hebben Kadaster, NDW (Nationaal Dataportaal Wegverkeer) en CGI een samenwerking gestart om te laten zien wat er mogelijk is als verschillende databronnen vanuit verschillende domeinen in combinatie met 3D wordt gebruikt. Dit uit zich in een demonstrator die wij ook wel de 3D (mobiliteits-)demonstrator noemen. 
 
 ## Aanpak & Uitdagingen
 

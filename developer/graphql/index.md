@@ -50,7 +50,7 @@ Download <a href="/assets/pdf/20210510 GraphQL Tutorial.pdf">hier</a> een tutori
     </div>
     <div class="mobileSpan"><a href="https://labs.kadaster.nl/haalcentraalanalyse">https://labs.kadaster.nl/haalcentraalanalyse/graphql</a></div>
     <div class="endpointContainer_center">-</div>
-    <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div>
+      <!--  <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/cases/graphql-endpoint#graphql-introspection">-</a></div> -->
     <!-- previous Data Model was reached on https://labs.kadaster.nl/voyager but is currently disabled -->
     <div class="endpointContainer_center"><a href="https://labs.kadaster.nl/haalcentraalanalyse">Sandbox</a></div>
 </div>

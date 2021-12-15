@@ -85,22 +85,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
     </div>
   </a>
   -->
-  <a href="/cases/hackalittle2020">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/hackaLOD2020.jpg" alt="hackaLOD2020">
-      <div class="card-title">Hack-a-Little 2020</div>
-      <div class="card-description">Resultaten van het Hack-a-Little evenement</div>
-    </div>
-  </a>
-  <a href="/cases/disgeo-high5">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/disgeo-logo.jpg" alt="DiS-Geo logo">
-      <div class="card-title">DiS-Geo High 5</div>
-      <div class="card-description">In deze innovatiesprint / High 5 laten we de kracht zien van Linked Data voor het DiS-Geo project.</div>
-    </div>
-  </a>
   <a href="/cases/akte-ocr">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -131,14 +115,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png" alt="Nationaal Archief logo">
       <div class="card-title">Verkaufsbucher</div>
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
-    </div>
-  </a>
-  <a href="/cases/3d-maptable">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/augmented-reality.jpeg" alt="Voorbeeld augmented reality">
-      <div class="card-title">3DMaptable</div>
-      <div class="card-description">Bekijk hoe we middels Augmented Reality een 3D overzicht geven over uw buurt!</div>
     </div>
   </a>
   <a href="/cases/landbouwverkeer">
@@ -185,14 +161,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
     </div>
   </a>
   -->
-  <a href="/cases/bgtHigh3">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bgt.jpg" alt="kaart BGT">
-      <div class="card-title">Basisregistratie Grootschalige Topografie (BGT)</div>
-      <div class="card-description">De resultaten van het omzetten van de BGT naar Linked Data, uitgevoerd i.s.m. provincie Noord-Holland.</div>
-    </div>
-  </a>
   <a href="/cases/selfservice_dutch">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -201,12 +169,3 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
-  <a href="/cases/brt">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/nederland-provincies.jpg" alt="Provincies Nederland op de kaart">
-      <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">De BRT is beschikbaar als Linked Open Data. Je vindt hier de verschillende Data Science initiatieven waarbij BRT data is gebruikt.</div>
-    </div>
-  </a>
-</div>
