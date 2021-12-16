@@ -21,7 +21,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/geodatavisitor.png">
       <div class="card-title">Geo Data Visitor</div>
-      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard.</div>
+      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard. Voor een tutorial, zie: <a href="/assets/videos/geodata-visitor.mp4">Video 1</a></div> .
     </div>
   </a>
   <!--
