@@ -34,7 +34,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 <h1>Professionele gebruiker</h1>
 <div class="description">
   Voor de professionele gebruiker:
-  Voeg data samen en selecteer gegevens om inzicht te krijgen in uw vraagstukken. Voor het gebruik van deze tools is echter wel enige oefening vereist, om daarbij te helpen zijn er tutorials.Zie <a href="/assets/videos/sparklis_demo_1.mp4">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.mp4">Video 2</a> voor Sparklis.
+  Voeg data samen en selecteer gegevens om inzicht te krijgen in uw vraagstukken. Voor het gebruik van deze tools is echter wel enige oefening vereist, om daarbij te helpen zijn er tutorials. Zie <a href="/assets/videos/sparklis_demo_1.mp4">Video 1</a> en <a href="/assets/videos/sparklis_demo_2.mp4">Video 2</a>. Voor de GeoDataWizard tutorials zie <a href="/assets/videos/GeoData Wizard Tutorial 1_ Van Tabel naar Linked Data.mp4">Video 1: Van Tabel naar Linked Data</a>, <a href="/assets/videos/GeoData Wizard Tutorial 2_ Linked Data Configuratie.mp4">Video 2: Linked Data Configuratie</a>, <a href="/assets/videos/GeoData Wizard Tutorial 3_ Geografische en Kadastrale Configuratie.mp4">Video 3:Geografische en Kadastrale Configuratie</a>, <a href="/assets/videos/GeoData Wizard Tutorial 4_ Publiceren in een Triple Store.mp4">Video 4: Publiceren in een Triple Store</a>.
 </div>
 
 <div class="cards-wrapper">
@@ -42,7 +42,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
     <div class="card">
       <div class="card-type">Sparklis</div>
       <img class="card-image" src="/assets/images/sparklis.png">
-      <div class="card-description">Met sparklis kunnen selecties worden gemaakt om geïntegreerde linked data te bevragen.</div>
+      <div class="card-description">Met sparklis kunnen selecties worden gemaakt om geïntegreerde linked data te bevragen. </div>
     </div>
   </a>
   <a href="/demonstrators/geodatawizard">
