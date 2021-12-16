@@ -65,6 +65,10 @@
       },
       "@type": "@id"
     },
+    "kadastraleGrootte": {
+      "@id": "brk:kadastraleGrootte",
+      "@type": "xsd:nonNegativeInteger"
+    },
     "kadgemeente": "skos:prefLabel",
     "kadgemeentecode": {
       "@context": {
