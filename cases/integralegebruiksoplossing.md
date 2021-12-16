@@ -84,6 +84,12 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
   </a>
 </div>
 
+<div class="textbox" markdown="1">
+## Event iGO Knowledge Graph 13 januari 2021
+Op 13 januari hebben van 14:00 - 15:00 een online event gepland staan over de ontwikkeling van de iGO Knowledge Graph. Tijdens deze online bijeenkomst neemt het Kadaster Datascience Team je mee in het project. We staan stil bij de uitdagingen en gaan in op de gekozen architectuur bij de ontwikkeling van de iGO Knowledge Graph. Aanmelden kan via de volgende <a href="https://formulieren.kadaster.nl/aanmelden_bijeenkomst_igo_knowledge_graph">link</a>
+
+</div>
+
 ## Video
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
