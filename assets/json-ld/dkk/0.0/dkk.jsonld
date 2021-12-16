@@ -18,11 +18,11 @@
     },
     "data": "@nest",
     "deltax": {
-      "@type": "xsd:float",
+      "@type": "xsd:double",
       "@id": "brk:perceelnummerVerschuivingX"
     },
     "deltay": {
-      "@type": "xsd:float",
+      "@type": "xsd:double",
       "@id": "brk:perceelnummerVerschuivingY"
     },
     "eindgeldigheid": {
@@ -110,7 +110,7 @@
       "@id": "brk:perceelnummer"
     },
     "perceelnummerrotatie": {
-      "@type": "xsd:float",
+      "@type": "xsd:double",
       "@id": "brk:perceelnummerRotatie"
     },
     "perceelrechtslokaalid": {
