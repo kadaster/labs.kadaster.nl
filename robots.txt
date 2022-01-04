@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /datasets/
+
+Sitemap: https://labs.kadaster.nl/sitemap.xml
