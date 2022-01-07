@@ -59,6 +59,13 @@
       "@id": "nen3610:identificatie",
       "@type": "@id"
     },
+    "kadastraleAanduiding": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@id": "brk:kadastraleAanduiding",
+      "@type": "@id"
+    },
     "KadastraleGemeente": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
@@ -70,9 +77,9 @@
       "@type": "xsd:nonNegativeInteger"
     },
     "kadgemeente": "skos:prefLabel",
-    "kadgemeentecode": {
+    "kadastraleGemeente": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/kadastraleGemeente/"
       },
       "@id": "brk:kadastraleGemeente",
       "@type": "@id"
