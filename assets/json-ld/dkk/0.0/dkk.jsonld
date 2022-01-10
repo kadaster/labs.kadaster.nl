@@ -5,6 +5,7 @@
     "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
     "jsonldid": "@id",
     "jsonldtype": "@type",
+    "aanduidingLabel": "skos:prefLabel",
     "akrgemeente": "brk:akrAanduiding",
     "akrgemeentecode": null,
     "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
@@ -70,7 +71,6 @@
       "@id": "brk:kadastraleGrootte",
       "@type": "xsd:nonNegativeInteger"
     },
-    "kadgemeente": "skos:prefLabel",
     "kadastraleGemeente": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/kadastraleGemeente/"
