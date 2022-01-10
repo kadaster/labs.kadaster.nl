@@ -59,17 +59,11 @@
       "@id": "nen3610:identificatie",
       "@type": "@id"
     },
-    "kadastraleAanduiding": {
+    "kadastraleaanduiding": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
       },
       "@id": "brk:kadastraleAanduiding",
-      "@type": "@id"
-    },
-    "KadastraleGemeente": {
-      "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
-      },
       "@type": "@id"
     },
     "kadastraleGrootte": {
