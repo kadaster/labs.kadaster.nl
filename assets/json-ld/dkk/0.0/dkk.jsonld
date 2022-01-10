@@ -90,7 +90,7 @@
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "ogc_fid": null,
     "oppervlakte": {
-      "@type": "xsd:positiveInteger",
+      "@type": "xsd:nonNegativeInteger",
       "@id": "brk:kadastraleGrootte"
     },
     "plaatscoordinaten": {
