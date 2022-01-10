@@ -121,6 +121,13 @@
       "@id": "brk:perceelRechts",
       "@type": "@id"
     },
+    "perceelnummerVerschuiving": {
+      "@context": {
+        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+      },
+      "@id": "brk:perceelnummerVerschuiving",
+      "@type": "@id"
+    },
     "primaryTopic": {
       "@context": {
         "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
