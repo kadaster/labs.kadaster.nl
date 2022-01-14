@@ -20,11 +20,11 @@
     "data": "@nest",
     "deltax": {
       "@type": "xsd:double",
-      "@id": "brk:perceelnummerVerschuivingX"
+      "@id": "brk:deltaX"
     },
     "deltay": {
       "@type": "xsd:double",
-      "@id": "brk:perceelnummerVerschuivingY"
+      "@id": "brk:deltaY"
     },
     "eindgeldigheid": {
       "@type": "xsd:dateTime",
