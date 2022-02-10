@@ -96,7 +96,7 @@ Op 13 januari hebben van 14:00 - 15:00 een online event gepland staan over de on
 
 ## Feedback
 
-We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:evi.vandermeer@ictu.nl) worden opgenomen.
+We zijn continu op zoek naar feedback op deze oplossing en de toepassingen die jullie (de gebruikers) zien. Voor deze feedback hebben we onder andere een [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSeSTbWGwQywPOmiJ_WVVIL1OjNp33eUsnzWsHYfyVAa6EEgIw/viewform) beschikbaar. Alternatief kan er contact [via de mail](mailto:erwin.folmer@kadaster.nl) worden opgenomen.
 
 ##  Integrale Gebruiksoplossing workshops voor specifieke sectoren
 
@@ -148,7 +148,7 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
 
 - **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
 - **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-18*.
-- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-08-25*.
+- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-11-02*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-14*.
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
 - **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-10-07*.
