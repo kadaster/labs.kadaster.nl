@@ -28,7 +28,7 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">10-02-2022 17:00</div>
     <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/kadaster/brt-2">BRT</a> SPARQL service</div>
-    <div class="mobileSpan"></div>
+    <div class="mobileSpan"> &#x2714; Uitgevoerd </div>
 </div>
 <div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">21-01-2022 17:00</div>
