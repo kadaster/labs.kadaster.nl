@@ -94,6 +94,22 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     </div>
   </a>
   -->
+  <a href="https://labs.kadaster.nl/skosmos">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/rdf.png" alt="RDF logo">
+      <div class="card-title">Skosmos</div>
+      <div class="card-description">Deze applicatie geeft een overzicht van SKOS-gebaseerde data modellen.</div>
+    </div>
+  </a>
+  <a href="https://labs.kadaster.nl/vocbench3">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/vocbench.png" alt="VocBench logo">
+      <div class="card-title">VocBench</div>
+      <div class="card-description">Deze applicatie maakt het mogelijk om data modellen binnen een grafische omgeving in te zien en te bewerken.</div>
+    </div>
+  </a>
   <a href="/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
