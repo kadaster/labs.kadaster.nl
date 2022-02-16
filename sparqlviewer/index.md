@@ -1,1 +1,46 @@
-Dit is een placenolder
+---
+layout: page
+title: sparqlviewer
+---
+# Sparqlviewer
+<div class="textbox">
+  Work in progress
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div id="yasgui"></div>
+        <script type="text/javascript">
+            var config = { "endpoint": "https://bag.basisregistraties.overheid.nl/sparql/now", "catalogueEndpoints": [ 
+{ "endpoint": "https://bag.basisregistraties.overheid.nl/sparql/now", "title": "Basisregistratie Adressen en Gebouwen (Nu geldige voorkomens)" },
+{ "endpoint": "https://bag.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Adressen en Gebouwen (Alle voorkomens)" },
+{ "endpoint": "https://brt.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Topografie - Top10NL" },
+{ "endpoint": "https://brk.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Kadaster - Digitale Kadastrale Kaart" },
+{ "endpoint": "https://lod.onderwijsregistratie.nl/sparql", "title": "Onderwijsinstellingen" },
+{ "endpoint": "https://linkeddata.cultureelerfgoed.nl/sparql", "title": "Cultuurhistorische objecten" } 
+] };
+            
+                    Yasgui.defaults.catalogueEndpoints = [];
+                
+            var yasgui = new Yasgui(document.getElementById("yasgui"), config);
+            Yasr.plugins.geo.defaults.defaults.map = 'nlmaps';
+            Yasr.plugins.geo3d.defaults.defaults.map = 'nlmaps';
+            
+                var currTab = yasgui.addTab("Bunkers_in_Nederland");
+                currTab.setName("Bunkers_in_Nederland");
+                currTab.setQuery("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX brt: <http://brt.basisregistraties.overheid.nl/def/top10nl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nSELECT  ?geo (?x as ?geoLabel) WHERE {\n\t?x a brt:Bunker;\n\tgeo:hasGeometry/geo:asWKT ?geo.\n}");
+                currTab.setEndpoint("https://brt.basisregistraties.overheid.nl/sparql", false);
+                
+                var currTab = yasgui.addTab("BAG_panden_die_in_1923_gebouwd_zijn");
+                currTab.setName("BAG_panden_die_in_1923_gebouwd_zijn");
+                currTab.setQuery("prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>\nSELECT ?x WHERE {\n\t?x a bag:Pand.\n\t?x bag:oorspronkelijkBouwjaar ?bouwjaar.\n\tFILTER (?bouwjaar = 1923)\n}\nlimit 100");
+                currTab.setEndpoint("https://bag.basisregistraties.overheid.nl/sparql/now", false);
+                
+                var currTab = yasgui.addTab("Cultuurhistorische_objecten_RCE");
+                currTab.setName("Cultuurhistorische_objecten_RCE");
+                currTab.setQuery("prefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>\nprefix gsp: <http://www.opengis.net/ont/geosparql#>\nprefix owl: <http://www.w3.org/2002/07/owl#>\nprefix skos: <http://www.w3.org/2004/02/skos/core#>\nselect\n?shape\n(\n\tconcat(\n\t\t'<h1>',if(bound(?naam),str(?naam),'Geen naam'),'</h1>',\n\t\t'<dl>',\n\t\tif(bound(?type),\n\t\t\tconcat('<dt>Type</dt>',\n\t\t\t\t'<dd>',str(?type),'</dd>'\n\t\t\t),\n\t\t\t''\n\t\t),\n\t\t'<dt>Functies</dt>',\n\t\t'<dd>',str(?functies),'</dd>',\n\t\t'<dt>Nummer</dt>',\n\t\t'<dd><a href=\"',str(?monument),'\" target=\"_blank\">',str(?nummer),'</a></dd>',\n\t\t'</dl>'\n\t) as ?shapeLabel\n)\n{\n\t{\n\t\tselect\n\t\t(group_concat(distinct ?functie;\n\t\t\t\tseparator=', ') as ?functies)\n\t\t?monument\n\t\t?naam\n\t\t?nummer\n\t\t?shape\n\t\t?type\n\t\t{\n\t\t\t?monument\n\t\t\t\tceo:rijksmonumentnummer ?nummer;\n\t\t\t\tceo:heeftLocatieAanduiding/ceo:heeftLocatieAdres/ceo:heeftGemeente <http://standaarden.overheid.nl/owms/terms/Lisse_(gemeente)>;\n\t\t\t\tceo:heeftGeometrie/gsp:asWKT ?shape;\n\t\t\t\tceo:heeftOorspronkelijkeFunctie/ceo:heeftFunctieNaam/skos:prefLabel ?functie.\n\t\t\toptional\n\t\t\t{\n\t\t\t\t?monument ceo:heeftNaam/ceo:naam ?naam.\n\t\t\t}\n\t\t\toptional\n\t\t\t{\n\t\t\t\t?monument ceo:heeftType/ceo:heeftTypeNaam/skos:prefLabel ?type.\n\t\t\t}\n\t\t}\n\t\tgroup by ?monument ?naam ?nummer ?shape ?type\n\t}\n}\nlimit 100");
+                currTab.setEndpoint("https://linkeddata.cultureelerfgoed.nl/sparql", false);
+                
+        </script>
+    </div>
+</div>
