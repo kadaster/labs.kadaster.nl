@@ -14,9 +14,9 @@
     <div class="col-12">
         <div id="yasgui"></div>
         <script type="text/javascript">
-            var config = { "endpoint": "https://bag.basisregistraties.overheid.nl/sparql/now", "catalogueEndpoints": [ 
-{ "endpoint": "https://bag.basisregistraties.overheid.nl/sparql/now", "title": "Basisregistratie Adressen en Gebouwen (Nu geldige voorkomens)" },
-{ "endpoint": "https://bag.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Adressen en Gebouwen (Alle voorkomens)" },
+            var config = { "endpoint": "https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql", "catalogueEndpoints": [ 
+{ "endpoint": "https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql", "title": "Basisregistratie Adressen en Gebouwen (Nu geldige voorkomens)" },
+{ "endpoint": "https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql", "title": "Basisregistratie Adressen en Gebouwen (Alle voorkomens)" },
 { "endpoint": "https://brt.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Topografie - Top10NL" },
 { "endpoint": "https://brk.basisregistraties.overheid.nl/sparql", "title": "Basisregistratie Kadaster - Digitale Kadastrale Kaart" },
 { "endpoint": "https://lod.onderwijsregistratie.nl/sparql", "title": "Onderwijsinstellingen" },
@@ -36,8 +36,8 @@
                 
                 var currTab = yasgui.addTab("BAG_panden_die_in_1923_gebouwd_zijn");
                 currTab.setName("BAG_panden_die_in_1923_gebouwd_zijn");
-                currTab.setQuery("prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>\nSELECT ?x WHERE {\n\t?x a bag:Pand.\n\t?x bag:oorspronkelijkBouwjaar ?bouwjaar.\n\tFILTER (?bouwjaar = 1923)\n}\nlimit 100");
-                currTab.setEndpoint("https://bag.basisregistraties.overheid.nl/sparql/now", false);
+                currTab.setQuery("prefix bag: <https://bag2.basisregistraties.overheid.nl/def/bag/>\nSELECT ?x WHERE {\n\t?x a bag:PandRegistratie.\n\t?x bag:bouwjaar ?bouwjaar.\n\tFILTER (?bouwjaar = 1923)\n}\nlimit 100");
+                currTab.setEndpoint("hhttps://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql", false);
                 
                 var currTab = yasgui.addTab("Cultuurhistorische_objecten_RCE");
                 currTab.setName("Cultuurhistorische_objecten_RCE");
