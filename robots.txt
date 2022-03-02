@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /datasets/
+Allow: /
 
 Sitemap: https://labs.kadaster.nl/sitemap.xml
