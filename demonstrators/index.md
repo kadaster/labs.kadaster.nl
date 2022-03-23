@@ -94,6 +94,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
     </div>
   </a>
   -->
+  <!-- Tijdelijk offline gezet.
   <a href="https://labs.kadaster.nl/skosmos">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -102,6 +103,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Deze applicatie geeft een overzicht van SKOS-gebaseerde data modellen.</div>
     </div>
   </a>
+  -->
   <a href="https://labs.kadaster.nl/vocbench3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
