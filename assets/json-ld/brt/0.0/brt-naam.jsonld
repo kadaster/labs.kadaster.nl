@@ -37,7 +37,7 @@
       "@type": "xsd:string"
     },
     "bronnauwkeurigheid": {
-      "@type": "xsd:float"
+      "@type": "xsd:double"
     },
     "brontype": {
       "@context": {
