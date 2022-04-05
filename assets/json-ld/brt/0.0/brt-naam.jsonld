@@ -137,7 +137,7 @@
       "@type": "xsd:positiveInteger"
     },
     "hoogte_HO": {
-      "@type": "xsd:positiveInteger"
+      "@type": "xsd:double"
     },
     "hoogte_IE": {
       "@type": "xsd:positiveInteger"

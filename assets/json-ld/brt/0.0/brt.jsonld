@@ -98,12 +98,6 @@
       },
       "@type": "@id"
     },
-    "functie_WA": {
-      "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
-      },
-      "@type": "@id"
-    },
     "gebruiksdoel": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebruiksdoel/"
@@ -164,7 +158,7 @@
       "@type": "xsd:float"
     },
     "hoogte_HO": {
-      "@type": "xsd:float"
+      "@type": "xsd:double"
     },
     "hoogte_IE": {
       "@type": "xsd:float"
