@@ -125,7 +125,7 @@
       "@type": "xsd:positiveInteger"
     },
     "hoogteHoogte": {
-      "@type": "xsd:float"
+      "@type": "xsd:double"
     },
     "hoogteInrichtingselement": {
       "@type": "xsd:positiveInteger"

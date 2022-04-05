@@ -164,7 +164,7 @@
       "@type": "xsd:float"
     },
     "hoogteHoogte": {
-      "@type": "xsd:float"
+      "@type": "xsd:double"
     },
     "hoogteInrichtingselement": {
       "@type": "xsd:float"
