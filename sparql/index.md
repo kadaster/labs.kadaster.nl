@@ -17,9 +17,9 @@ title: Kadaster SPARQL Endpoint
         getData: () => {
           return [
             { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql' },
-            { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/default/sparql' },
+            { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql' },
             { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brk/services/default/sparql' },
-            { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/default/sparql' },
+            { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql' },
             { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql' },
             { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/Kadaster-Registratieve-Linked-Data/services/registraties/sparql' },
           ]
