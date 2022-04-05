@@ -62,13 +62,13 @@
       "@type": "xsd:boolean"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "fysiekVoorkomen_GE": {
+    "fysiekVoorkomenGebouw": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenGebouw/"
       },
       "@type": "@id"
     },
-    "fysiekVoorkomen_WE": {
+    "fysiekVoorkomenWegdeel": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
       },
@@ -97,7 +97,7 @@
       "@type": "geo:wktLiteral"
     },
     "gescheidenRijbaan": {
-      "@type": "xsd:boolean"
+      "@type": "xsd:string"
     },
     "getijdeinvloed": {
       "@type": "xsd:boolean"
@@ -121,25 +121,25 @@
       },
       "@type": "@id"
     },
-    "hoogteklasse_GE": {
+    "hoogteklasseGebouw": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
       },
       "@type": "@id"
     },
-    "hoogteklasse_RE": {
+    "hoogteklasseRelief": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
       },
       "@type": "@id"
     },
-    "hoogte_GE": {
+    "hoogteGebouw": {
       "@type": "xsd:positiveInteger"
     },
-    "hoogte_HO": {
+    "hoogteHoogte": {
       "@type": "xsd:positiveInteger"
     },
-    "hoogte_IE": {
+    "hoogteInrichtingselement": {
       "@type": "xsd:positiveInteger"
     },
     "hoogteniveau": {
@@ -260,13 +260,13 @@
       },
       "@type": "@id"
     },
-    "typeInfrastructuur_SP": {
+    "typeInfrastructuurSpoorbaan": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurSpoorbaandeel/"
       },
       "@type": "@id"
     },
-    "typeInfrastructuur_WE": {
+    "typeInfrastructuurWegdeel": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurWegdeel/"
       },
