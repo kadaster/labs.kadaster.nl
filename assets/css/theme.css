@@ -71,7 +71,7 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: transparent url(/assets/images/gradient-topbanner-repetitive-horizontal.png) repeat-x 50% 100%;
+  background: transparent url(/assets/images/blur.png) repeat-x 100% 100%;
   background-size: auto 270px;
   z-index: 9;
 }
