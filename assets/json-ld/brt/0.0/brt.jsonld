@@ -65,25 +65,25 @@
       "@type": "xsd:boolean"
     },
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "fysiekVoorkomenSpoorbaandeel": {
+    "fysiekVoorkomen_SP": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenSpoorbaandeel/"
       },
       "@type": "@id"
     },
-    "fysiekvoorkomenTerrein": {
+    "fysiekVoorkomen_TE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenTerrein/"
       },
       "@type": "@id"
     },
-    "fysiekVoorkomenWaterdeel": {
+    "fysiekVoorkomen_WA": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWaterdeel/"
       },
       "@type": "@id"
     },
-    "fysiekVoorkomenWegdeel": {
+    "fysiekVoorkomen_WE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
       },
@@ -92,13 +92,7 @@
     "geconstateerd": {
       "@type": "xsd:boolean"
     },
-    "functieWaterdeel": {
-      "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
-      },
-      "@type": "@id"
-    },
-    "functieWaterdeel": {
+    "functie_WA": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
       },
@@ -148,25 +142,25 @@
       },
       "@type": "@id"
     },
-    "hoogteklasseGebouw": {
+    "hoogteklasse_GE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
       },
       "@type": "@id"
     },
-    "hoogteklasseRelief": {
+    "hoogteklasse_RE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
       },
       "@type": "@id"
     },
-    "hoogteGebouw": {
+    "hoogte_GE": {
       "@type": "xsd:float"
     },
-    "hoogteHoogte": {
+    "hoogte_HO": {
       "@type": "xsd:double"
     },
-    "hoogteInrichtingselement": {
+    "hoogte_IE": {
       "@type": "xsd:float"
     },
     "hoogteniveau": {
@@ -296,13 +290,13 @@
       },
       "@type": "@id"
     },
-    "typeInfrastructuurSpoorbaan": {
+    "typeInfrastructuur_SP": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurSpoorbaandeel/"
       },
       "@type": "@id"
     },
-    "typeInfrastructuurWegdeel": {
+    "typeInfrastructuur_WE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurWegdeel/"
       },
@@ -403,13 +397,13 @@
       },
       "@type": "@id"
     },
-    "voorkomenTerrein": {
+    "voorkomen_TE": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
       },
       "@type": "@id"
     },
-    "voorkomenWaterdeel": {
+    "voorkomen_WA": {
       "@context": {
         "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
       },
