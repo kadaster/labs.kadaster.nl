@@ -339,6 +339,10 @@ ul li:before {
   margin-left: -1em; /*change margin to move dash around*/
   position: absolute;
 }
+.yasgui ul li:before {
+  content: none;
+  margin-left: none;
+}
 
 .space {
   flex-grow: 1;
