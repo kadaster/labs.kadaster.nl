@@ -5,6 +5,8 @@ title: Developer
 
 <link rel="stylesheet" href="/assets/css/developer.css">
 
+Ga naar <https://labs.kadaster.nl/sparql> voor de publieke Kadaster SPARQL endpoint.
+
 # Developer resources
 
 Het Kadaster Data Science Team onderhoudt verscheidene services waarin de gegevens uit onze basisregistraties ontsloten kunnen worden. Op deze pagina is de verdere toelichting bij het gebruik van Linked Data (SPARQL) uitgewerkt.

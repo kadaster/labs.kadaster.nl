@@ -31,6 +31,7 @@ title: Kadaster SPARQL Endpoint
       },
       resizeable: true,
     })
+    yasgui.yasr.pluginOrder = ["response", "table"]
     const tab1 = yasgui.addTab(false, {
       //endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql',
       name: '3D gebouw',
