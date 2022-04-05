@@ -124,7 +124,7 @@
       "@type": "geo:wktLiteral"
     },
     "gescheidenRijbaan": {
-      "@type": "xsd:string"
+      "@type": "xsd:boolean"
     },
     "getijdeinvloed": {
       "@type": "xsd:boolean"
