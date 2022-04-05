@@ -18,7 +18,7 @@ const yasgui = new Yasgui(document.getElementById('yasgui'), {
   },
   resizeable: true
 })
-yasgui.addTab(false, {
+yasgui.addTab(true, {
   id: '3d-gebouw',
   name: '3D gebouw',
   requestConfig: {
@@ -64,7 +64,7 @@ limit 1`
     }
   }
 })
-yasgui.addTab(false, {
+yasgui.addTab(true, {
   id: 'bunkers-in-nl',
   name: 'Bunkers in NL',
   requestConfig: {
@@ -93,7 +93,7 @@ select ?pointOfInterest ?wgs ('red' as ?wgsColor) {
     }
   }
 })
-yasgui.addTab(false, {
+yasgui.addTab(true, {
   id: 'taxonomie',
   name: 'Taxonomie',
   requestConfig: {
@@ -184,7 +184,7 @@ select ?childLabel ?parentLabel {
     }
   }
 })
-yasgui.addTab(false, {
+yasgui.addTab(true, {
   id: 'federatief',
   name: 'Federatief (Wikidata)',
   requestConfig: {
