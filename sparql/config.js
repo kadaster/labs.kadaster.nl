@@ -208,7 +208,7 @@ select * {
     bound(?image),
     concat('<figure><img src="',str(?image),'"><figcaption>',str(?label),'</figcaption></figure>'),
     str(?label)) as ?content)
-  bind('''<a href="{{windfarm}}" target="_blank">{{content}}</a>'''^^rdf:HTML as ?shapeLabel)
+  bind(strdt(concat('<a href="',str(?windfarm),'" target="_blank">',str(?content),'</a>'),rdf:HTML) as ?shapeLabel)
 }`
   },
   yasr: {
