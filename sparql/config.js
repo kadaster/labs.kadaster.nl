@@ -63,8 +63,8 @@ limit 1`
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'bunkers-in-nl',
   name: 'Bunkers in NL',
   requestConfig: {
@@ -92,8 +92,8 @@ select ?pointOfInterest ?wgs ('red' as ?wgsColor) {
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'taxonomie',
   name: 'Taxonomie',
   requestConfig: {
@@ -183,8 +183,8 @@ select ?childLabel ?parentLabel {
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'federatief',
   name: 'Federatief (Wikidata)',
   requestConfig: {
@@ -221,4 +221,4 @@ select * {
       }
     }
   }
-})
+}).query()
