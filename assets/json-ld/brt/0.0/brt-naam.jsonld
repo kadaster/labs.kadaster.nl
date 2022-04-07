@@ -171,8 +171,7 @@
       "@type": "@id"
     },
     "naam": {
-      "@id": "skos:prefLabel",
-      "@language": "nl"
+      "@id": "skos:prefLabel"
     },
     "naamFries": {
       "@id": "skos:altLabel",
