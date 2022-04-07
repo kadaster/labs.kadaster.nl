@@ -63,8 +63,8 @@ limit 1`
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'bunkers-in-nl',
   name: 'Bunkers in NL',
   requestConfig: {
@@ -92,8 +92,8 @@ select ?pointOfInterest ?wgs ('red' as ?wgsColor) {
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'taxonomie',
   name: 'Taxonomie',
   requestConfig: {
@@ -183,8 +183,8 @@ select ?childLabel ?parentLabel {
       }
     }
   }
-})
-yasgui.addTab(true, {
+}).query()
+yasgui.addTab(false, {
   id: 'federatief',
   name: 'Federatief (Wikidata)',
   requestConfig: {
@@ -208,7 +208,7 @@ select * {
     bound(?image),
     concat('<figure><img src="',str(?image),'"><figcaption>',str(?label),'</figcaption></figure>'),
     str(?label)) as ?content)
-  bind('''<a href="{{windfarm}}" target="_blank">{{content}}</a>'''^^rdf:HTML as ?shapeLabel)
+  bind(strdt(concat('<a href="',str(?windfarm),'" target="_blank">',str(?content),'</a>'),rdf:HTML) as ?shapeLabel)
 }`
   },
   yasr: {
@@ -221,4 +221,4 @@ select * {
       }
     }
   }
-})
+}).query()
