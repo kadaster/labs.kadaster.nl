@@ -17,7 +17,7 @@ title: Kadaster SPARQL Endpoint
 </head>
 <body>
   <h1>SPARQL Endpoint Kadaster</h1>
-  <p>Op deze pagina kunnen de SPARQL endpoints van het Kadaster bevraagd worden.  Zie de vooraf opgestelde bevragingen in de onderstaande tabs voor voorbeelden.  De volgende bronnen verschaffen meer informatie over de SPARQL endpoints van Kadaster: <a href="/developer/sparql">SPARQL informatie</a>, <a href="https://kadaster.wvr.io/kg-kadaster/home">Data modellen</a>.
+  <p>Op deze pagina kunnen de SPARQL endpoints van het Kadaster bevraagd worden.  Zie de vooraf opgestelde bevragingen in de onderstaande tabs voor voorbeelden.  De volgende bronnen verschaffen meer informatie over de SPARQL endpoints van Kadaster: <a href="/developer/sparql">SPARQL informatie</a>, <a href="https://kadaster.wvr.io/kg-kadaster/home">Data modellen</a>.</p>
   <br>
   <div id="yasgui"></div>
   <script src="./config.js"></script>
