@@ -13,7 +13,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Data Waarde Dashboard</div>
-      <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een bepaalde dataset vanuit een sociaal en bruikbaarheidsperspectief. Deze demonstrator is voor de BAG.</div>
+      <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
     </div>
   </a>
   <a href="/demonstrators/gruff/index.html">
