@@ -21,7 +21,7 @@ De eerste oplossing die voor de hackathon werd ontwikkeld, was gebaseerd op het 
       <div class="card-description">Live Weaver demonstrator voor de eerste oplossing geproduceerd voor de NEN hackathon</div>
     </div>
   </a>
-    <a href="https://data.labs.kadaster.nl/nen/-/stories/semantic-search">
+    <a href="https://data.labs.kadaster.nl/nen-hackathon/-/stories/semantic-search">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/network.jpg" alt="Network">
@@ -36,7 +36,7 @@ De eerste oplossing die voor de hackathon werd ontwikkeld, was gebaseerd op het 
 De tweede oplossing is een recommender system die de gebruiker ondersteunt bij het vinden van normen die samenhangen met een reeds bekende norm. In vergelijking met de eerste oplossing ondersteunt deze oplossing een gebruiker die al bekend is met een bepaalde norm bij het vinden van andere normen die inhoud delen en ook relevant kunnen zijn voor de gebruiker in kwestie; een oplossing die erg lijkt op de aanbevelingen van bol.com voor 'Ook andere klanten kochten'. Deze oplossing wordt geïmplementeerd door verschillende SPARQL-query's die worden uitgevoerd op de gekoppelde data-inhoud van NEN-normen die beschikbaar zijn gesteld als onderdeel van de hackathon. Deze oplossing wordt gedemonstreerd in het Recommender System data story dat beschikbaar is via de onderstaande link. 
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/nen/-/stories/recommendations">
+  <a href="https://data.labs.kadaster.nl/nen-hackathon/-/stories/recommendations">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/network.jpg" alt="NEN Serendipity Search">
@@ -51,7 +51,7 @@ De tweede oplossing is een recommender system die de gebruiker ondersteunt bij h
 De onbewerkte linked data en het SPARQL-eindpunt voor deze gegevens zijn beschikbaar via de onderstaande tegel.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/nen/catalog">
+  <a href="https://data.labs.kadaster.nl/nen-hackathon/catalog">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/nen-logo.webp" alt="NEN logo">
@@ -59,7 +59,7 @@ De onbewerkte linked data en het SPARQL-eindpunt voor deze gegevens zijn beschik
       <div class="card-description">De NEN-dataset die gebruikt is voor de hackathon, beschikbaar als Linked Data.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/nen/catalog/sparql/default">
+  <a href="https://data.labs.kadaster.nl/nen-hackathon/catalog/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/sparql-nen.png" alt="SPARQL Endpoint">
