@@ -48,7 +48,7 @@ De tweede oplossing is een recommender system die de gebruiker ondersteunt bij h
 
 ## Data en SPARQL Endpoint
 
-De onbewerkte gekoppelde gegevens en het SPARQL-eindpunt voor deze gegevens zijn beschikbaar via de onderstaande tegel.
+De onbewerkte linked data en het SPARQL-eindpunt voor deze gegevens zijn beschikbaar via de onderstaande tegel.
 
 <div class="cards-wrapper">
   <a href="https://data.labs.kadaster.nl/nen/catalog">
