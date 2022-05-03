@@ -93,6 +93,14 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In dit onderzoek bespreken we de kwaliteit van akteteksten resulterend uit OCR toegepast op de akten van het Kadaster.</div>
     </div>
   </a>
+  <a href="/cases/nen-hackathon-2022">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/nen-logo.webp" alt="NEN logo">
+      <div class="card-title">NEN Hackathon 2022: Resultaten</div>
+      <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
+    </div>
+  </a>
   <a href="/cases/geodata-voor-iedereen">
     <div class="card">
       <div class="card-type">Use Case</div>
