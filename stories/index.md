@@ -18,6 +18,14 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Comparing Dutch railway information.</div>
     </div>
   </a>
+  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/praktijkhandleiding">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/geo.jpg">
+      <div class="card-title">Datastory BAG Praktijkhandleiding</div>
+      <div class="card-description">Overzicht van de Schema.org verrijking van de BAG Praktijkhandleiding.</div>
+    </div>
+  </a>
   <a href="./stolpersteine/index.html">
     <div class="card">
       <div class="card-type">Story</div>
