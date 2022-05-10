@@ -6,7 +6,11 @@ title: Use Case ― BRT-LD Basisregistratie Topografie als Linked Data
 # NEN Hackathon 2022: Resultaten
 
 # Introductie
-De <a href='https://www.nen.nl/hackathon'>NEN Hackathon 2022</a>, is een tweedaags evenement met teams uit binnen- en buitenland, georganiseerd door NEN (Stichting Koninklijk Nederlands Normalisatie Instituut). Doel van de NEN Hackaton 2022 is nieuwe en innovatieve manieren te vinden om slim gebruik te maken van de gegevens van NEN, om de ambitie waar te maken om gebruikers van standaarden in staat te stellen eenvoudig de juiste informatie voor de juiste situatie te vinden en te integreren. Het Kadaster Data Science Team heeft deelgenomen aan de hackathon met als idee een generieke oplossing te ontwikkelen om de doorzoekbaarheid en vindbaarheid van NEN-normen te optimaliseren. Daarmee kunnen we gebruikers ondersteunen bij het vinden en gebruiken van de juiste normgegevens voor hun situatie. De oplossing van het Kadaster Datascience Team is volledig gebaseerd op de principes van open standaarden en Linked Data en heeft twee verschillende oplossingen opgeleverd.
+De [NEN Hackathon 2022](https://www.nen.nl/hackathon), is een tweedaags evenement met teams uit binnen- en buitenland, georganiseerd door NEN (Stichting Koninklijk Nederlands Normalisatie Instituut). Doel van de NEN Hackaton 2022 is nieuwe en innovatieve manieren te vinden om slim gebruik te maken van de gegevens van NEN, om de ambitie waar te maken om gebruikers van standaarden in staat te stellen eenvoudig de juiste informatie voor de juiste situatie te vinden en te integreren.
+
+Het Kadaster Data Science Team heeft deelgenomen aan de hackathon met als idee een generieke oplossing te ontwikkelen om de doorzoekbaarheid en vindbaarheid van NEN-normen te optimaliseren. Daarmee kunnen we gebruikers ondersteunen bij het vinden en gebruiken van de juiste normgegevens voor hun situatie. De oplossing van het Kadaster Datascience Team is volledig gebaseerd op de principes van open standaarden en Linked Data en heeft twee verschillende oplossingen opgeleverd.
+
+De eindpresentatie van het Kadaster team is te vinden onder [deze link](https://docs.google.com/presentation/d/15pJ9hKdr6RZOW4lX6TLxtOti8ndvFEiIZonsboEhFeA/edit#slide=id.p1).
 
 ## Oplossing 1: Serendipity Search
 
