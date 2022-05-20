@@ -784,15 +784,6 @@
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_formeleLevensduur> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_formeleLevensduur> <http://www.w3.org/ns/shacl#name> "vorige geregistreerde versie"@nl .
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_formeleLevensduur> <http://www.w3.org/ns/shacl#path> <http://definities.geostandaarden.nl/def/nen3610#vorigeGeregistreerdeVersie> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://purl.org/dc/terms/source> "https://imbag.github.io/catalogus/hoofdstukken/attributen--relaties#713-geometrie"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#datatype> <http://www.opengis.net/ont/geosparql#wktLiteral> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#description> "De tweedimensionale geometrische representatie van het vlak dat wordt gevormd door de omtrekken van een woonplaats."@nl .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#flags> "i" .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#path> <https://bag2.basisregistraties.overheid.nl/bag/def/geometrie> .
-<https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_geometrie> <http://www.w3.org/ns/shacl#pattern> "^<[^<>]*>\\spolygon(\\sz)?\\s\\(\\((\\d*.\\d*\\s\\d*.\\d*(\\s\\d*.\\d*)?\\,)+\\d*.\\d*\\s\\d*.\\d*(\\s\\d*.\\d)*\\)\\)$" .
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_materi\u00EBleLevensduur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_materi\u00EBleLevensduur> <http://www.w3.org/ns/shacl#class> <https://bag2.basisregistraties.overheid.nl/bag/def/WoonplaatsRegistratie> .
 <https://bag2.basisregistraties.overheid.nl/bag/shp/WoonplaatsRegistratie_materi\u00EBleLevensduur> <http://www.w3.org/ns/shacl#description> "Wordt gebruikt om de materi\u00EBle levensduur mee aan de duiden."@nl .
