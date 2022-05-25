@@ -9,7 +9,7 @@ title: Sparklis
 Sparklis is een query-builder in natuurlijke taal waarmee mensen SPARQL-eindpunten kunnen verkennen en bevragen met alle kracht van SPARQL en zonder enige kennis van SPARQL, noch van het eindpuntvocabulaire. Het is een open-source client-side applicatie ontwikkeld door [Sébastien Ferré](http://people.irisa.fr/Sebastien.Ferre/).
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+  <a href="/demonstrators/sparklis/osparklis.html?title=Kadaster%20Knowledge%20Graph&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kkg-sparklis-demo/services/kkg-sparklis-demo/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/sparklis.png">
