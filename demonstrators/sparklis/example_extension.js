@@ -95,10 +95,7 @@ sparklis_extension.hookResults =
 		if(column.includes('polygon')){
 			columnname = column;
 		}
-		if(column.includes('as WKT')){
-			columnname = column;
-		}
-		if(column.includes('as wkt')){
+		if(column.includes('point')){
 			columnname = column;
 		}
 		if(column.includes('latitude')){
