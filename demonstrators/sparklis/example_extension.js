@@ -95,6 +95,9 @@ sparklis_extension.hookResults =
 		if(column.includes('polygon')){
 			columnname = column;
 		}
+		if(column.includes('asWKT_74')){
+			columnname = column;
+		}
 		if(column.includes('latitude')){
 			lat_long.push(column);
 		}
@@ -146,7 +149,7 @@ sparklis_extension.hookResults =
 		}
 	}
 
-	if (columnname.includes('polygon')){
+	if (columnname.includes('polygon') || columnname.includes('asWKT_74')){
 		let polygonid = results.columns.indexOf(columnname);
 		let coordinates = []
 		results.rows.forEach((row) => {
