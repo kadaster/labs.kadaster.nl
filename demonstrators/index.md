@@ -204,7 +204,7 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
   <a href="/demonstrators/datagedreven-werken/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screenshot_velocity.png">
+      <img class="card-image" src="/assets/images/screenshot_velocity.PNG">
       <div class="card-title">Datagedreven werken dashboard</div>
       <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
     </div>

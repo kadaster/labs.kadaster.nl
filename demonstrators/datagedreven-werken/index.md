@@ -27,8 +27,8 @@ De tool 'SAP analytics cloud' is gebruikt om de JIRA data uit de database te vis
 ## Screenshots SAP analytics cloud dashboard
 
 <figure id="figuur-1">
-  <a href="/assets/images/screenshot_velocity.png">
-    <img src="/assets/images/screenshot_velocity.png">
+  <a href="/assets/images/screenshot_velocity.PNG">
+    <img src="/assets/images/screenshot_velocity.PNG">
   </a>
   <figcaption>
     Figuur 1 ― Screenshot van de Velocity pagina. Inclusief storypoints en tickets visuals (forecast vs. actual) over geselecteerde sprint. 
@@ -38,8 +38,8 @@ De tool 'SAP analytics cloud' is gebruikt om de JIRA data uit de database te vis
 
 
 <figure id="figuur-2">
-  <a href="/assets/images/screenshot_epic.png">
-    <img src="/assets/images/screenshot_epic.png">
+  <a href="/assets/images/screenshot_epic.PNG">
+    <img src="/assets/images/screenshot_epic.PNG">
   </a>
   <figcaption>
     Figuur 2 ― Screenshot van de Epic pagina. Inclusief burn-up visual van de geselecteerde epic. 
