@@ -18,11 +18,11 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <div class="card-description">Comparing Dutch railway information.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/praktijkhandleiding">
+  <a href="./praktijkhandleiding/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/geo.jpg">
-      <div class="card-title">Datastory BAG Praktijkhandleiding</div>
+      <div class="card-title">BAG Praktijkhandleiding</div>
       <div class="card-description">Overzicht van de Schema.org verrijking van de BAG Praktijkhandleiding.</div>
     </div>
   </a>
@@ -30,7 +30,7 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/stolpersteine_nijmegen.png">
-      <div class="card-title">Datastory Stolpersteine / Verkaufsbucher WOII Nijmegen</div>
+      <div class="card-title">Stolpersteine / Verkaufsbucher WOII Nijmegen</div>
       <div class="card-description">Overzicht van stolpersteine- en verkaufsbucherlocaties in de stad Nijmegen.</div>
     </div>
   </a>
@@ -96,14 +96,6 @@ Elk inzicht en/of visualisatie maakt technisch gezien gebruik van één of meer 
       <img class="card-image" src="/assets/images/Lisse_logo_tile.jpg">
       <div class="card-title">Digitaal Erfgoed</div>
       <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
-    </div>
-  </a>
-  <a href="./rioleringsgebieden/index.html">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Rioleringsgebieden</div>
-      <div class="card-description">Combineren van gegevensbronnen in de afvalwaterketen.</div>
     </div>
   </a>
 </div>
