@@ -21,7 +21,7 @@ Om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gemaakt van 
 Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basisregistraties.overheid.nl domein. Deze dataset heeft momenteel nog de status van een Minimum Viable Product (MVP) status. Een BRK URI gaat dus ook nog niet resolven.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/brk">
+  <a href="https://data.labs.kadaster.nl/brk/registratie">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/dkk.png" alt="BRK LD">
@@ -37,7 +37,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basis
       <div class="card-description">Data browser waarin het BRK-LD data model kan worden opgezocht.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/basisregistratie-kadaster">
+  <a href="https://data.labs.kadaster.nl/brk/-/stories/overzicht">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/BRK.jpg" alt="BRK">
@@ -45,7 +45,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basis
       <div class="card-description">Data Story die een overzicht van de BRK-LD geeft.</div>
     </div>
   </a>
-      <a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/default">
+      <a href="https://data.labs.kadaster.nl/brk/registratie/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">

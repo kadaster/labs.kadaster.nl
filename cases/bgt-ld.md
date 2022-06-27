@@ -15,7 +15,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
 
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/bgt">
+  <a href="https://data.labs.kadaster.nl/bgt/lv">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/bgt-ld.png" alt="Screenshot informatie BGT LD">
@@ -31,7 +31,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data browser waarin het BGT-LD data model kan worden opgezocht.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bgt-overzicht">
+  <a href="https://data.labs.kadaster.nl/bgt/-/stories/overzicht">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/geo.jpg" alt="Geo">
@@ -39,6 +39,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data Story die een overzicht van de BGT-LD geeft.</div>
     </div>
   </a>
+  <!--
   <a href="https://data.labs.kadaster.nl/kadaster/-/stories/windturbines">
     <div class="card">
       <div class="card-type">Story</div>
@@ -55,7 +56,8 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data Story die laat zien hoe de BGT de planning van wegwerkzaamheden kan ondersteunen.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bgt-plustype-bomen-gemeenten" >
+  -->
+  <a href="https://data.labs.kadaster.nl/bgt/-/stories/bomen-in-gemeenten" >
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bomen.jpg" alt="BomenPlusData">

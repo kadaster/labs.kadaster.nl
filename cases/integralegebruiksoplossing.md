@@ -38,7 +38,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 </div>
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+  <a href="/demonstrators/sparklis/osparklis.html?endpoint=https%3A//api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql&lang=nl&title=Kadaster%20Kennisgraaf">
     <div class="card">
       <div class="card-type">Sparklis</div>
       <img class="card-image" src="/assets/images/sparklis.png">

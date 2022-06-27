@@ -75,7 +75,7 @@ Het tweede voorbeeld toont het bladeren en opvragen van BAG-gegevens binnen Gruf
 Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen van Linked Data. We laten het gebruik van deze klanten het beste zien in onze Data Stories. Bekijk enkele van de onderstaande voorbeelden.
 
 <div class="cards-wrapper">
-  <a href="./bag/index.html">
+  <a href="/stories/bag/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
@@ -91,7 +91,7 @@ Er is een reeks SPARQL-clients beschikbaar voor de end user voor het opvragen va
       <div class="card-description">Een Data Story over Oud Lisse gemaakt door de PLDN werkgroep Digitaal Erfgoed.</div>
 	</div>
   </a>
- <a href="./religieuze-gebouwen/index.html">
+ <a href="/stories/religieuze-gebouwen/index.html">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/sint-jan.jpg">
