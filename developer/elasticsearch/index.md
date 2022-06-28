@@ -36,9 +36,7 @@ Klik <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/se
             <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
         </div>
     </div>
-    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">https://data.labs.kadaster.nl/kadaster/kg/search/search</a></div>
+    <div class="mobileSpan"><a href="https://data.labs.kadaster.nl/kadaster/kg/elasticsearch/search/query">Endpoint</a></div>
     <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing">Use case</a></div>
     <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/sdo-target-model/home">Data Model</a></div>
-    <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/search/search">Sandbox</a></div>
 </div>
-
