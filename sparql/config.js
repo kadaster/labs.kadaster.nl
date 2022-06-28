@@ -4,17 +4,16 @@ const yasgui = new Yasgui(document.getElementById('yasgui'), {
   endpointCatalogueOptions: {
     getData: () => {
       return [
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql' },
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql' },
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brk/services/default/sparql' },
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql' },
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql' },
-        { endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/Kadaster-Registratieve-Linked-Data/services/registraties/sparql' }
+        { endpoint: 'https://api.labs.kadaster.nl/datasets/bag/lv/services/default/sparql' },
+        { endpoint: 'https://api.labs.kadaster.nl/datasets/bgt/lv/services/default/sparql' },
+        { endpoint: 'https://api.labs.kadaster.nl/datasets/brk/registratie/services/default/sparql' },
+        { endpoint: 'https://api.labs.kadaster.nl/datasets/brt/top10nl/services/default/sparql' },
+        { endpoint: 'https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql' }
       ]
     }
   },
   requestConfig: {
-    endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/Kadaster-Registratieve-Linked-Data/services/registraties/sparql'
+    endpoint: 'https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql'
   },
   resizeable: true
 })
@@ -68,7 +67,7 @@ yasgui.addTab(false, {
   id: 'bunkers-in-nl',
   name: 'Bunkers in NL',
   requestConfig: {
-    endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql'
+    endpoint: 'https://api.labs.kadaster.nl/datasets/brt/top10nl/services/default/sparql'
   },
   yasqe: {
     value: `prefix bif: <http://www.openlinksw.com/schemas/bif#>
@@ -97,7 +96,7 @@ yasgui.addTab(false, {
   id: 'taxonomie',
   name: 'Taxonomie',
   requestConfig: {
-    endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql'
+    endpoint: 'https://api.labs.kadaster.nl/datasets/bgt/lv/services/default/sparql'
   },
   yasqe: {
     value: `prefix bgt: <https://data.labs.kadaster.nl/kadaster/bgt/def/>
@@ -188,7 +187,7 @@ yasgui.addTab(false, {
   id: 'federatief',
   name: 'Federatief (Wikidata)',
   requestConfig: {
-    endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/Kadaster-Registratieve-Linked-Data/services/registraties/sparql'
+    endpoint: 'https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql'
   },
   yasqe: {
     value: `prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
