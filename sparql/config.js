@@ -1,6 +1,7 @@
 const yasgui = new Yasgui(document.getElementById('yasgui'), {
   autofocus: true,
   copyEndpointOnNewTab: false,
+  persistenceId: () => "yasgui2", // change this to a different string to bust the yasgui cache for all users
   endpointCatalogueOptions: {
     getData: () => {
       return [
