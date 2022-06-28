@@ -24,33 +24,32 @@ yasgui.addTab(true, {
     endpoint: 'https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql'
   },
   yasqe: {
-    value: `prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-prefix sdo: <https://schema.org/>
-select * {
-  ?place sdo:name 'Laan van Westenenk 701, 7334DP Apeldoorn'.
+    value: `prefix bag: <http://bag.basisregistraties.overheid.nl/def/bag#>
+prefix bgt: <http://bgt.basisregistraties.overheid.nl/def/bgt#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sor: <https://data.kkg.kadaster.nl/sor/model/def/>
+select
+  ?brt ('grey' as ?brtColor) ('BRT geometrie: luchtfoto' as ?brtLabel) (0 as ?brtZ) (10 as ?brtHeight)
+  ?bag ('red' as ?bagColor) ('BAG geometrie: bovenaanzicht' as ?bagLabel) (10 as ?bagZ) (20 as ?bagHeight)
+  ?bgt ('green' as ?bgtColor) ('BGT geometrie: maaiveld' as ?bgtLabel) (20 as ?bgtZ) (30 as ?bgtHeight)
+{
+  ?gebouw
+    geo:hasGeometry
+      [ geo:asWKT ?bag; rdfs:isDefinedBy bag: ],
+      [ geo:asWKT ?bgt; rdfs:isDefinedBy bgt: ].
+  ?nummeraanduiding
+    sor:postcode ?postcode.
+  ?verblijfsobject
+    sor:hoofdadres ?nummeraanduiding;
+    sor:maaktDeelUitVan ?gebouw.
   optional {
-    ?place sdo:geo [ sdo:name "BAG vlakgeometrie"@nl; sdo:polygon ?bag ].
-    bind('#FF202080' as ?bagColor)
-    bind('6' as ?bagZ)
-    bind('12' as ?bagHeight)
-    bind(strdt(concat('<h3><a href="',str(?place),'">BAG</a></h3>'),rdf:HTML) as ?bagLabel)
-  }
-  optional {
-    ?place sdo:geo [ sdo:name "BGT maaiveld geometrie"@nl; sdo:polygon ?bgt ].
-    bind('#00FF2080' as ?bgtColor)
-    bind('0' as ?bgtZ)
-    bind('6' as ?bgtHeight)
-    bind(strdt(concat('<h3><a href="',str(?place),'">BGT</a></h3>'),rdf:HTML) as ?bgtLabel)
-  }
-  optional {
-    ?place sdo:geo [ sdo:name "BRT geometrie"@nl; sdo:polygon ?brt ].
-    bind('#F0FF0080' as ?brtColor)
-    bind('12' as ?brtZ)
-    bind('18' as ?brtHeight)
-    bind(strdt(concat('<h3><a href="',str(?place),'">BRT</a></h3>'),rdf:HTML) as ?brtLabel)
+    ?gebouwzone
+      geo:hasGeometry/geo:asWKT ?brt;
+      sor:hoortBij ?verblijfsobject.
   }
 }
-limit 1`
+limit 100`
   },
   yasr: {
     settings: {
