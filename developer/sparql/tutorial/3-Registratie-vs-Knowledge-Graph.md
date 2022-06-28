@@ -16,7 +16,7 @@ In deze tutorial nemen we je mee in het idee van de Kadaster Knowledge Graph en 
 
 - [Stap 0 - Introductie](/developer/sparql/tutorial/0-Introductie)
 - [Stap 1 - Exploreer het datamodel](/developer/sparql/tutorial/1-Exploreer-het-datamodel)
-- [Stap 2 - SPARQL en de YasGUI Playground](/developer/sparql/tutorial/2-SPARQL-en-YasGUI)
+- [Stap 2 - SPARQL bevragingstaal](/developer/sparql/tutorial/2-SPARQL)
 - **[Stap 3 - Registratie vs. Knowledge Graph](/developer/sparql/tutorial/3-Registratie-vs-Knowledge-Graph) (dit artikel)**
 - [Stap 4 - Gebruik van eigen programmeertaal](/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal)
 
@@ -32,7 +32,7 @@ Na deze module, stap 3 van de tutorial, kun je aan je collega's uitleggen:
 
 ## Introductie
 
-Zoals je in de [vorige tutorial](/developer/sparql/tutorial/2-SPARQL-en-YasGUI) hebt kunnen ervaren is er redelijk veel domeinkennis benodigd om te achterhalen hoe je de juiste query moet opstellen op de onderliggende basisregistraties.
+Zoals je in de [vorige tutorial](/developer/sparql/tutorial/2-SPARQL) hebt kunnen ervaren is er redelijk veel domeinkennis benodigd om te achterhalen hoe je de juiste query moet opstellen op de onderliggende basisregistraties.
 Zo hebben we onder andere:
 
 - Rekening moeten houden met lege Z-coördinaten in de BAG.
@@ -109,8 +109,8 @@ In deze query:
 ***
 
 <div style="text-align: left">
-    <a href="/developer/sparql/tutorial/2-SPARQL-en-YasGUI">
-        &#10094; Vorige stap: SPARQL en YasGUI
+    <a href="/developer/sparql/tutorial/2-SPARQL">
+        &#10094; Vorige stap: SPARQL bevragingstaal
     </a>
 </div>
 <div style="text-align: right">
