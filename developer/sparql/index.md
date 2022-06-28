@@ -134,7 +134,7 @@ De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze ond
 Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala aan voorbeeld queries en andere resources beschikbaar die jullie kunnen helpen om snel met onze data aan de slag te gaan. Kijk daarom ook eens in de resources hieronder:
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik">
+  <a href="https://data.labs.kadaster.nl/dst/-/stories/algemene-queries-voor-kkg-gebruik">
   <div class="card">
     <div class="card-type">Data Story</div>
     <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
