@@ -17,7 +17,7 @@ Een webapplicatie ontwikkeld in Angular (Objectviewer) waarbij de gebruiker een 
 
 ### Startpunt
 
-Het Kadaster heeft twee andere Object Viewers ontwikkeld. Een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op [GraphQL] (https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
+Het Kadaster heeft twee andere Object Viewers ontwikkeld. Een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op [GraphQL](https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
 
 ### Inspiratie
 
@@ -34,7 +34,7 @@ Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de
 
 ### User interface
 
-De Kadaster huisstijl en Angular Material zijn gebruikt voor de styling van de applicatie.  In eerste instantie was ervoor gekozen om een dashboard te bouwen met drie panelen filter-menu, kaart, en resultaten lijst. Zie de onderstaande scherm afbeelding.
+De Kadaster huisstijl en Angular Material zijn gebruikt voor de styling van de applicatie. In eerste instantie was ervoor gekozen om een dashboard te bouwen met drie panelen filter-menu, kaart, en resultaten lijst. Zie de onderstaande scherm afbeelding.
 
 <figure id="figuur-2">
   <a href="/assets/images/graphqltijdreizen/user-interface-1.png">
