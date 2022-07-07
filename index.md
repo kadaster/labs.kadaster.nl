@@ -149,7 +149,15 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
-    <!--
+    <a href="/cases/graphqltijdreizen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/graphqltijdreizen/query-uitkomst.png" alt="Loki logo">
+      <div class="card-title">Tijdreizen met GraphQL</div>
+      <div class="card-description">GraphQLTijdreizen is een applicatie die gebruikers instaat stelt om een visuele tijdreis te maken over verschillende basisregistraties.</div>
+    </div>
+  </a>
+  <!--
   <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
