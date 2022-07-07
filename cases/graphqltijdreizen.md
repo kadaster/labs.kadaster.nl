@@ -5,9 +5,9 @@ De applicatie is momenteel zichtbaar op [https://labs.kadaster.nl/demonstrators/
 
 ## Introductie
 
-Het Kadaster beheert en is bronhouder van verschillende geobasisregistraties. Het afgelopen jaar heeft het team stappen genomen om deze data integraal beschikbaar te krijgen in een Knowledge Graph. Het team is nu bezig met het uitvoeren van data-analyses en het ontwikkelen van applicaties van boven op deze Knowledge Graph om hier de meerwaarde van aan te kunnen aantonen voor meer toelichting zie het architectuur plaatje [hier](https://labs.kadaster.nl/demonstrators/architectuur-selfservice/Architecture/). Tevens heeft het team stappen genomen om deze data integraal opvraagbaar te maken door middel van [GraphQL](https://labs.kadaster.nl/developer/graphql/).
+Het Kadaster beheert en is bronhouder van verschillende geobasisregistraties. Het afgelopen jaar heeft het team stappen genomen om deze data integraal beschikbaar te krijgen in een Knowledge Graph. Het team is nu bezig met het uitvoeren van data-analyses en het ontwikkelen van applicaties boven op deze Knowledge Graph om hier de meerwaarde van aan te kunnen tonen. Voor meer toelichting zie het architectuur plaatje [hier](https://labs.kadaster.nl/demonstrators/architectuur-selfservice/Architecture/). Tevens heeft het team stappen genomen om deze data integraal opvraagbaar te maken door middel van [GraphQL](https://labs.kadaster.nl/developer/graphql/).
 
-Het concept is/was om een tijdreis applicatie te ontwikkelen op een kaart. Die de gebruiker instaat stelt om objecten uit verschillende basisregistraties over de tijd heen te visualiseren. 
+Het concept was om een tijdreis applicatie te ontwikkelen op een kaart. Die de gebruiker instaat stelt om objecten uit verschillende basisregistraties over de tijd heen te visualiseren. 
 
 ## Het doel
 
@@ -17,11 +17,11 @@ Een webapplicatie ontwikkeld in Angular (Objectviewer) waarbij de gebruiker een 
 
 ### Startpunt
 
-Het Kadaster heeft twee andere Object Viewers ontwikkeld een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op [GraphQL] (https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
+Het Kadaster heeft twee andere Object Viewers ontwikkeld. Een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op [GraphQL] (https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
 
 ### Inspiratie
 
-Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de ontwikkeling van de applicatie. Deze applicatie heeft een soortgelijke use case de gebruiker kan een tijdreis maken over de topografische kaarten van Nederland. Het grootste verschil tussen Topotijdreis en Tijdreizen met GraphQL zit in de databronnen die worden gebruikt. In Topotijdreis zijn dit statische afbeeldingen en Tijdreizen met GraphQL is dit dynamische geografische informatie. Desondanks is vooral de werking van de slider in Topotijdreis heel waardevol gebleken voor de ontwikkeling van de applicatie.
+Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de ontwikkeling van de applicatie. Deze applicatie heeft een soortgelijke use case. De gebruiker kan een tijdreis maken over de topografische kaarten van Nederland. Het grootste verschil tussen Topotijdreis en Tijdreizen met GraphQL zit in de databronnen die worden gebruikt. In Topotijdreis zijn dit statische afbeeldingen en Tijdreizen met GraphQL is dit dynamische geografische informatie. Desondanks is vooral de werking van de slider in Topotijdreis heel waardevol gebleken voor de ontwikkeling van de applicatie.
 
 <figure id="figuur-1">
   <a href="/assets/images/graphqltijdreizen/topotijdreis.png">
@@ -47,7 +47,7 @@ De Kadaster huisstijl en Angular Material zijn gebruikt voor de styling van de a
 
 
 
-Dit zorgde echter voor een onoverzichtelijke gebruikerservaring zodoende is er uiteindelijk voor gekozen om de kaart hoogste prioriteit te geven in de user interface dit resulteerde in de volgende uitwerking:
+Dit zorgde echter voor een onoverzichtelijke gebruikerservaring zodoende is er uiteindelijk voor gekozen om de kaart de hoogste prioriteit te geven in de user interface. Dit resulteerde in de volgende uitwerking:
 
 <figure id="figuur-3">
   <a href="/assets/images/graphqltijdreizen/dashlegend.png">
@@ -60,7 +60,7 @@ Dit zorgde echter voor een onoverzichtelijke gebruikerservaring zodoende is er u
 
 
 
-In het huidige ontwerp is het filter-menu uitschuifbaar en zit verscholen achter een knop, het resultaat scherm is verwijderd er is ervoor gekozen om het object informatie te weergeven in de legenda links onderin het scherm.  
+In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter een knop, het resultaat scherm is verwijderd en er is ervoor gekozen om het object informatie te weergeven in de legenda links onderin het scherm.  
 
 <figure id="figuur-4">
   <a href="/assets/images/graphqltijdreizen/legenda.png">
@@ -74,7 +74,7 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verscholen achter
 ### Toelichting data
 
 - Momenteel kunnen alle objecten die NEN3610 compliant zijn en een geometrie hebben worden gevisualiseerd.
-- Aanvankelijk werd er in de eerste instantie een end point aangesproken dat extern bereikbaar was: https://labs.kadaster.nl/haalcentraalanalyse.
+- Aanvankelijk werd er in de eerste instantie een endpoint aangesproken dat extern bereikbaar was: https://labs.kadaster.nl/haalcentraalanalyse.
 - Hierbij werden de volgende bronnen aangesproken
   - BAG (Basisregistratie Adressen en Gebouwen)
   - BGT (Basisregistratie Grootschalige Topografie)
@@ -110,7 +110,6 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verscholen achter
 4. De slider doet een subscriptie op de Apollo service op het minimale bouwjaar om de startwaarde te bepalen
 5. De kaart doet een subscriptie op de Apollo service voor de teruggezonden features
 6. De kaart luistert ook naar de min en max waarde van de slider om de juiste objecten te kunnen tonen wanneer de slider begint af te spelen of handmatig van waarde veranderd. (De componenten hebben een Parent, Child relatie).
-6. 
 
 <figure id="figuur-6">
   <a href="/assets/images/graphqltijdreizen/tijdreizen-clear.png">
