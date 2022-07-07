@@ -1,11 +1,11 @@
 # Tijdreizen met GraphQL
 
 ## Status
-De applicatie is momenteel zichtbaar op (https://labs.kadaster.nl/demonstrators/graphqltijdreizen/).
+De applicatie is momenteel zichtbaar op [https://labs.kadaster.nl/demonstrators/graphqltijdreizen/](https://labs.kadaster.nl/demonstrators/graphqltijdreizen/).
 
 ## Introductie
 
-Het Kadaster beheert en is bronhouder van verschillende geobasisregistraties. Het afgelopen jaar heeft het team stappen genomen om deze data integraal beschikbaar te krijgen in een Knowledge Graph. Het team is nu bezig met het uitvoeren van data-analyses en het ontwikkelen van applicaties van boven op deze Knowledge Graph om hier de meerwaarde van aan te kunnen aantonen voor meer toelichting zie het architectuur plaatje hier (https://labs.kadaster.nl/demonstrators/architectuur-selfservice/Architecture/). Tevens heeft het team stappen genomen om deze data integraal opvraagbaar te maken door middel van GraphQL (https://labs.kadaster.nl/developer/graphql/).
+Het Kadaster beheert en is bronhouder van verschillende geobasisregistraties. Het afgelopen jaar heeft het team stappen genomen om deze data integraal beschikbaar te krijgen in een Knowledge Graph. Het team is nu bezig met het uitvoeren van data-analyses en het ontwikkelen van applicaties van boven op deze Knowledge Graph om hier de meerwaarde van aan te kunnen aantonen voor meer toelichting zie het architectuur plaatje [hier](https://labs.kadaster.nl/demonstrators/architectuur-selfservice/Architecture/). Tevens heeft het team stappen genomen om deze data integraal opvraagbaar te maken door middel van [GraphQL](https://labs.kadaster.nl/developer/graphql/).
 
 Het concept is/was om een tijdreis applicatie te ontwikkelen op een kaart. Die de gebruiker instaat stelt om objecten uit verschillende basisregistraties over de tijd heen te visualiseren. 
 
@@ -17,7 +17,7 @@ Een webapplicatie ontwikkeld in Angular (Objectviewer) waarbij de gebruiker een 
 
 ### Startpunt
 
-Het Kadaster heeft twee andere Object Viewers ontwikkeld een gebaseerd op SPARQL (https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op GraphQL (https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
+Het Kadaster heeft twee andere Object Viewers ontwikkeld een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer)  en de andere op [GraphQL] (https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
 
 ### Inspiratie
 
