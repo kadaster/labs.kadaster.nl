@@ -1,5 +1,8 @@
 # Tijdreizen met GraphQL
 
+## Status
+De applicatie is momenteel zichtbaar op (https://labs.kadaster.nl/demonstrators/graphqltijdreizen/).
+
 ## Introductie
 
 Het Kadaster beheert en is bronhouder van verschillende geobasisregistraties. Het afgelopen jaar heeft het team stappen genomen om deze data integraal beschikbaar te krijgen in een Knowledge Graph. Het team is nu bezig met het uitvoeren van data-analyses en het ontwikkelen van applicaties van boven op deze Knowledge Graph om hier de meerwaarde van aan te kunnen aantonen voor meer toelichting zie het architectuur plaatje hier (https://labs.kadaster.nl/demonstrators/architectuur-selfservice/Architecture/). Tevens heeft het team stappen genomen om deze data integraal opvraagbaar te maken door middel van GraphQL (https://labs.kadaster.nl/developer/graphql/).
