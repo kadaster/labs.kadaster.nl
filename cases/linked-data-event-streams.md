@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/ocr-header.jpg
 layout: page
 title: Use Case ― Akte OCR
 ---
