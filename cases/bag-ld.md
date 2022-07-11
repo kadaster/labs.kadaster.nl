@@ -16,7 +16,7 @@ Neem dan even een kijkje bij de tegels hieronder, allereerst vind je daar BAG al
 Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gemaakt van hoe de BAG 2.0 linked data gebruikt kan worden in interactieve Data Stories, met voorbeeld SPARQL queries. Tevens beschrijven we hierin in meer detail de metadata van de opgeleverde publicatie.
 
 <div class="cards-wrapper">
-  <a href="http://bag2.basisregistraties.overheid.nl/">
+  <a href="https://data.labs.kadaster.nl/bag/lv">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/kadaster-logo-full.png">
@@ -24,7 +24,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">De landingspagina van de publicatie van de Basisregistratie Adressen & Gebouwen (2.0) als linked data.</div>
     </div>
   </a>
-    <a href="https://data.labs.kadaster.nl/kadaster/bag2/sparql/default">
+    <a href="https://data.labs.kadaster.nl/bag/lv/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">
@@ -40,7 +40,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data browser waarin het BAG 2.0 data model kan worden opgezocht.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/bag-20">
+  <a href="https://data.labs.kadaster.nl/bag/-/stories/bag-20">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bag.png" alt="BAG">

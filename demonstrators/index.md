@@ -8,6 +8,14 @@ title: Demonstrators
 Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken. Voor een tutorial van tweede demonstrator de Geeodatavisitor, zie deze: <a href="/assets/videos/geodata-visitor.mp4">Video 1</a>
 
 <div class="cards-wrapper">
+  <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Data Waarde Dashboard</div>
+      <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
+    </div>
+  </a>
   <a href="/demonstrators/gruff/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -191,6 +199,14 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-type">Comunica</div>
       <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/datagedreven-werken/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/screenshot_velocity.PNG">
+      <div class="card-title">Datagedreven werken dashboard</div>
+      <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
     </div>
   </a>
 </div>

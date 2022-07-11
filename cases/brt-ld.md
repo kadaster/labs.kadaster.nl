@@ -16,7 +16,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
 Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brt.basisregistraties.overheid.nl domein. Deze dataset heeft momenteel nog de status van een Minimum Viable Product (MVP) status. Een BRT URI gaat dus ook nog niet resolven.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/brt-2">
+  <a href="https://data.labs.kadaster.nl/brt/top10nl">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/brt-ld.png" alt="BRT LD">
@@ -32,15 +32,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brt.basis
       <div class="card-description">Data browser waarin het BRT-LD data model kan worden opgezocht.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/brt2-overview">
-    <div class="card">
-      <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/geo.jpg" alt="Geo">
-      <div class="card-title">BRT-LD Overzicht</div>
-      <div class="card-description">Data Story die een overzicht van de BRT-LD geeft.</div>
-    </div>
-  </a>
-  <a href="https://labs.kadaster.nl/stories/religieuze-gebouwen/index.html">
+  <a href="https://data.labs.kadaster.nl/brt/-/stories/religieuze-gebouwen">
     <div class="card">
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/sint-jan.jpg">
@@ -48,7 +40,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brt.basis
       <div class="card-description">In deze Data Story kijken we naar religieuze gebouwen die in de Basisregistratie Topografie (BRT) beschreven worden.</div>
     </div>
   </a>
-      <a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">
+      <a href="https://data.labs.kadaster.nl/brt/top10nl/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">

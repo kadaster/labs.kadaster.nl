@@ -5,7 +5,7 @@
 }
 .endpointContainer{
     display: grid;
-    grid-template-columns: 25% 50% 8% 9% 8%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     align-items: center;
     padding: 5px;
     column-gap: 5px;

@@ -42,20 +42,46 @@
   <body>
 	  <nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
-		
-			  <div class="collapse navbar-collapse" id="myNavbar">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand">Sparklis</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
   
 				  <ul class="nav navbar-nav navbar-left">
 					  <li class="dropdown">
-
+						<a class="dropdown-toggle" data-toggle="dropdown">
+						<span class="tooltiped">
+							<span class="tooltip lang-en">Select a SPARQL endpoint from a short list</span>
+							<span class="tooltip lang-fr">Sélectionner un point d'accès SPARQL dans cette liste</span>
+							<span class="tooltip lang-es">Seleccionar un SPARQL endpoint de la lista</span>
+							<span class="tooltip lang-nl">Selecteer een SPARQL endpoint uit de lijst</span>
+							<span class="texte lang-en">SPARQL endpoint</span>
+							<span class="texte lang-fr">Point d'accès SPARQL</span>
+							<span class="texte lang-es">SPARQL endpoint</span>
+							<span class="texte lang-nl">SPARQL endpoint</span>
+						</span>
+						<span class="caret"></span>
+						</a>
 						  <ul class="dropdown-menu">
-							  <li>
-								  <a
-								  	href="osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
-								  	KG Demo Sparklis
-								  </a>
-							  </li>
-						  </ul>
+							<li>
+								<a
+								href="osparklis.html?title=%0A%09%09%09%09%09%09%09%09%20%20Kadaster%20Knowledge%20Graph%0A%09%09%09%09%09%09%09%20%20&endpoint=https%3A//api.labs.kadaster.nl/datasets/sparklis/kkg-sparklis-configuratie/services/kkg-sparklis-configuratie/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+								Kadaster Knowledge Graph
+								</a>
+							</li>
+							<li>
+								<a
+								href="osparklis.html?title=Kadasterdagen%20KG&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadasterdagen/nl/services/nl/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+								Kadasterdagen KG
+							</a>
+							</li>
+						</ul>
 					  </li>
   
 					  <li class="dropdown">
@@ -70,10 +96,15 @@
 						  </a>
 						  <ul class="dropdown-menu">
 							  <li>
-								  <a href="https://kadaster.wvr.io/kg-demo-sparklis/home" target="_blank">
-									  KG Demo Sparklis
+								  <a href="https://kadaster.wvr.io/kadaster-knowledge-graph?tab=home&branch=main" target="_blank">
+									  Kadaster Knowledge Graph
 								  </a>
 							  </li>
+							  <li>
+								<a href="https://kadaster.wvr.io/kadasterdagen?tab=home&branch=main" target="_blank">
+									Kadasterdagen Data Model
+								</a>
+							</li>
 						  </ul>
   
 					  <li>
@@ -86,7 +117,7 @@
 								  <span class="tooltip lang-es">Ingrese aquí la URL del SPARQL endpoint requerido</span>
 								  <span class="tooltip lang-nl">Vul hier de URL van de gewenste SPARQL endpoint in</span>
 								  <input id="sparql-endpoint-input" class="form-control no-padding" type="url"
-									  value="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql"> <!-- default endpoint -->
+									  value="https://api.labs.kadaster.nl/datasets/sparklis/kkg-sparklis-configuratie/services/kkg-sparklis-configuratie/sparql"> <!-- default endpoint -->
 							  </span>
 							  <span class="tooltiped">
 								  <span class="tooltip lang-en">Click to connect to the entered SPARQL endpoint</span>
@@ -107,7 +138,7 @@
 							  <span class="tooltip lang-es">Haga clic aquí para editar el título de el endpoint</span>
 							  <span class="tooltip lang-nl">Klik hier om de titel van het endpoint te bewerken</span>
 							  <span id="sparql-endpoint-title" class="navbar-text" contenteditable="true">
-								  SDO Knowledge Graph
+								  Kadaster Knowledge Graph
 							  </span> <!-- default title -->
 						  </span>
 					  </li>
@@ -263,7 +294,7 @@
 	  <!-- <h2 class="texte lang-en">Sparklis - <small><em>Complex queries and exploratory search on SPARQL endpoints at your fingertips!</em></small></h2>
 	  <h2 class="texte lang-fr">Sparklis - <small><em>Requêtes complexes et recherche exploratoire du bout des doigts!</em></small></h2>
 	  <h2 class="texte lang-es">Sparklis - <small><em>Consultas complejas y búsqueda exploratoria sobre SPARQL endpoints en la punta de tus dedos!</em></small></h2> -->
-	  <h2 class="texte lang-nl">Sparklis - <small><em>Sparklis is een open source tool die je kunt gebruiken om geïntegreerde linked data te bevragen, op deze pagina kan dat worden toegepast op overheidsdata. In de sparklis user interface kunnen selecties worden gemaakt en wordt, in de bovenste balk, de commando opgebouwd in natuurlijke taal. Om de verdieping in te gaan klik dan op de YASGUI tabblad. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="https://labs.kadaster.nl/assets/videos/sparklis_demo_1.mp4" target="_blank">Video 1</a> en <a href="https://labs.kadaster.nl/assets/videos/sparklis_demo_2.mp4" target="_blank">Video 2</a>.</em></small></h2>
+	  <h3 class="texte lang-nl">Sparklis - <small><em>Sparklis is een open source tool die je kunt gebruiken om geïntegreerde linked data te bevragen, op deze pagina kan dat worden toegepast op overheidsdata. In de sparklis user interface kunnen selecties worden gemaakt en wordt, in de bovenste balk, de commando opgebouwd in natuurlijke taal. Om de verdieping in te gaan klik dan op de YASGUI tabblad. Om jullie hiermee op weg te helpen hebben wij twee tutorials voor Sparklis gemaakt. <a href="https://labs.kadaster.nl/assets/videos/sparklis_demo_1.mp4" target="_blank">Video 1</a> en <a href="https://labs.kadaster.nl/assets/videos/sparklis_demo_2.mp4" target="_blank">Video 2</a>.</em></small></h3>
 
   
 		<!-- <span class="texte lang-en">NEW in 2016: nested aggregations, and computation/filtering expressions !!</span>

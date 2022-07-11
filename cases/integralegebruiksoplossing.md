@@ -38,7 +38,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 </div>
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/sparklis/osparklis.html?title=KG-demo-Sparklis&endpoint=https%3A//api.labs.kadaster.nl/datasets/kadaster/kg-demo-sparklis/services/default/sparql&avoid_lengthy_queries=true&concept_lexicons_select=http%3A//www.w3.org/2000/01/rdf-schema%23label&lang=nl">
+  <a href="/demonstrators/sparklis/osparklis.html?endpoint=https%3A//api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql&lang=nl&title=Kadaster%20Kennisgraaf">
     <div class="card">
       <div class="card-type">Sparklis</div>
       <img class="card-image" src="/assets/images/sparklis.png">
@@ -98,19 +98,19 @@ Ga mee de diepte in en bekijk een van de (online) sectorworkshops over de Integr
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/beheer-openbare-ruimte">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/openbare-orde-en-veiligheid">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/nutsbedrijven">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor ruimtelijke ordening
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 16 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Planologen-per-buurt">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 16 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-per-buurt">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor developers
 
@@ -140,12 +140,12 @@ Incidenteel komt het voor dat er een endpoint of demonstrator onbeschikbaar raak
 
 De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Voor detailinformatie en links naar alle databronnen verwijzen we de gebruiker naar [onze developer pagina](/developer/). Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
 
-- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-07-08*.
-- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-18*.
-- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-02-24*.
+- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-20*.
+- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-04-30*.
+- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-04-21*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-14*.
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
-- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2021-10-07*.
+- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-04*.
 - **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
 
 De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.

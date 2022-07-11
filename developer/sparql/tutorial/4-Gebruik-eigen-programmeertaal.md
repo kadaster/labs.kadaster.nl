@@ -16,7 +16,7 @@ In deze tutorial leggen we je uit hoe je ons endpoint kunt gebruiken vanuit je e
 
 - [Stap 0 - Introductie](/developer/sparql/tutorial/0-Introductie)
 - [Stap 1 - Exploreer het datamodel](/developer/sparql/tutorial/1-Exploreer-het-datamodel)
-- [Stap 2 - SPARQL en de YasGUI Playground](/developer/sparql/tutorial/2-SPARQL-en-YasGUI)
+- [Stap 2 - SPARQL bevragingstaal](/developer/sparql/tutorial/2-SPARQL)
 - [Stap 3 - Registratie vs. Knowledge Graph](/developer/sparql/tutorial/3-Registratie-vs-Knowledge-Graph)
 - **[Stap 4 - Gebruik van eigen programmeertaal](/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal) (dit artikel)**
 
