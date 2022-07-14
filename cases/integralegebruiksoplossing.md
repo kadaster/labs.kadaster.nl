@@ -98,19 +98,19 @@ Ga mee de diepte in en bekijk een van de (online) sectorworkshops over de Integr
 
 ### Integrale Gebruiksoplossing: workshop voor beheer openbare ruimte
 
-De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/Beheer-Openbare-Ruimte">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor beheer openbare ruimte vond plaats op 28 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/29/integrale-gebruiksoplossing-workshop-voor-beheer-openbare-ruimte">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/beheer-openbare-ruimte">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor openbare orde & veiligheid
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Openbare-orde--Veiligheid">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 24 oktober 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/10/14/integrale-gebruiksoplossing-workshop-voor-openbare-orde-en-veiligheid">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/openbare-orde-en-veiligheid">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor nutsbedrijven
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/igo/-/stories/nutsbedrijven">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 23 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/23/integrale-gebruiksoplossing-workshop-voor-nutsbedrijven">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/nutsbedrijven">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor ruimtelijke ordening
 
-De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 16 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/kadaster/-/stories/Planologen-per-buurt">hier</a> voor de data.
+De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid vond plaats op 16 september 2021. Deze sessie is opgenomen. Klik <a href="https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/09/16/integrale-gebruiksoplossing-workshop-voor-ruimtelijke-ordening">hier</a> voor meer informatie en klik <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-per-buurt">hier</a> voor de data.
 
 ### Integrale Gebruiksoplossing: workshop voor developers
 

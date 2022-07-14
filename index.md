@@ -35,6 +35,15 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze usecase worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
     </div>
   </a>
+    <a href="/cases/linked-data-event-streams">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/ldes4.png" alt="BAG terugmeldingen">
+      <div class="card-title">Linked Data Event Streams</div>
+      <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
+    </div>
+  </a>
+
   <a href="/cases/bag_terugmeldingen">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -149,7 +158,15 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
-    <!--
+    <a href="/cases/graphqltijdreizen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/graphqltijdreizen/query-uitkomst.png" alt="Loki logo">
+      <div class="card-title">Tijdreizen met GraphQL</div>
+      <div class="card-description">GraphQLTijdreizen is een applicatie die gebruikers instaat stelt om een visuele tijdreis te maken over verschillende basisregistraties.</div>
+    </div>
+  </a>
+  <!--
   <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
