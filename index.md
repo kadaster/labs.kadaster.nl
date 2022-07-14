@@ -38,7 +38,7 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
     <a href="/cases/linked-data-event-streams">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/ldes2.jpg" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/ldes4.png" alt="BAG terugmeldingen">
       <div class="card-title">Linked Data Event Streams</div>
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
