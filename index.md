@@ -43,7 +43,14 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
   </a>
-
+  <a href="/cases/locatiebepaling_appartementsrecht.md">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/outline.png" alt="BAG terugmeldingen">
+      <div class="card-title">Linked Data Event Streams</div>
+      <div class="card-description">Deze data story geeft een overzicht van de resultaten rondom het onderzoek naar de locatiebepaling van appartementsrechten.  </div>
+    </div>
+  </a>
   <a href="/cases/bag_terugmeldingen">
     <div class="card">
       <div class="card-type">Use Case</div>
