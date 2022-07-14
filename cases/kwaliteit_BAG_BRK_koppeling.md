@@ -1,5 +1,5 @@
 ---
-banner: /assets/images/BRKBAG_BANNER.png
+banner: /assets/images/BRKBAG_BANNER.PNG
 layout: page
 title: Use Case ― Kwaliteit BAG-BRK koppeling
 ---
@@ -61,8 +61,8 @@ Een voorbeeld is een adres in Wijk bij Duurstede waar bij zoeken in KOL (Kadaste
 De regels voor het vinden van een dergelijke situatie zijn inzichtelijk gemaakt in het volgende diagram. Op deze wijze worden de incorrecte koppelingen tussen perceel en adres als lijst teruggegeven. Deze gaat uit van de termen uit het datamodel. Dus een adres wordt gezien als een 'nummeraanduiding', de koppeling kan net zoals bij de KBI adressen een ADMIN, GEO of ADMIN_GEO kwaliteit hebben en en kadastraal ID kan worden gezien als een perceelnummer.
 
 <figure id="figuur-4">
-  <a href="/assets/images/BRKBAG_VMV_FLOWCHART.png">
-    <img src="/assets/images/BRKBAG_VMV_FLOWCHART.png" alt="logica">
+  <a href="/assets/images/BRKBAG_VMV_FLOWCHART.PNG">
+    <img src="/assets/images/BRKBAG_VMV_FLOWCHART.PNG" alt="logica">
   </a>
   <figcaption>
     Figuur 4 ― Logica voor het vinden van vermenigvuldigingsproblemen
