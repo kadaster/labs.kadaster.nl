@@ -212,7 +212,7 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
   <a href="/cases/kwaliteit_BAG_BRK_koppeling">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/BRKBAG_BANNER.png" alt="BAG">
+      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
       <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
       <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
     </div>

@@ -1,4 +1,5 @@
 ---
+banner: /assets/images/BRKBAG_BANNER.png
 layout: page
 title: Use Case ― Kwaliteit BAG-BRK koppeling
 ---
