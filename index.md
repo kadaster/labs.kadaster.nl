@@ -32,7 +32,7 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
       <div class="card-title">Integrale Gebruiksoplossing</div>
-      <div class="card-description">In deze usecase worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
+      <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
     </div>
   </a>
     <a href="/cases/linked-data-event-streams">
