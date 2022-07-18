@@ -19,6 +19,11 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
 
 ## Gepland Onderhoud
 
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">18-07-2022 17:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/bgt/lv">BGT</a> SPARQL service</div>
+    <div class="mobileSpan">&#x2714; Uitgevoerd</div>
+</div>
 <div class="endpointContainer mobileHidden">
     <div><b>Datum en tijd</b>:</div>
     <div><b>Omschrijving</b>:</div>
