@@ -55,7 +55,7 @@ De tweede oplossing is een "Recommender System" die de gebruiker ondersteunt bij
 De onbewerkte linked data en het SPARQL-endpoint voor deze gegevens zijn beschikbaar via de onderstaande link.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/nen/catalogus">
+  <a href="https://data.labs.kadaster.nl/nen/catalog">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/nen-logo.webp" alt="NEN logo">
@@ -63,7 +63,7 @@ De onbewerkte linked data en het SPARQL-endpoint voor deze gegevens zijn beschik
       <div class="card-description">De NEN-dataset die gebruikt is voor de hackathon, beschikbaar als Linked Data.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/nen/catalogus/sparql/default">
+  <a href="https://data.labs.kadaster.nl/nen/catalog/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/sparql-nen.png" alt="SPARQL Endpoint">
