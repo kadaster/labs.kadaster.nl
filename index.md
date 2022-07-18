@@ -209,7 +209,15 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
     </div>
   </a>
-  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
+  <a href="/cases/kganalyse">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/image_dashboard_dash.png" alt="BAG">
+      <div class="card-title">Kwaliteit Knowledge Graph</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de knowledge graph.</div>
+    </div>
+  </a>
+    <a href="/cases/kwaliteit_BAG_BRK_koppeling">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
