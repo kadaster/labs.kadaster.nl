@@ -201,14 +201,14 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
-  <a href="/cases/koppeling_bag">
+  <!-- <a href="/cases/koppeling_bag">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
       <div class="card-title">Basisregistratie Kadaster</div>
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/cases/kganalyse">
     <div class="card">
       <div class="card-type">Use Case</div>
