@@ -128,14 +128,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Bekijk de resultaten van een voorspellend model over de missende bouwjaren uit de BAG in een interactief dashboard!</div>
     </div>
   </a>
-  <a href="/demonstrators/integrale-explorer/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/logoexplorer.PNG">
-      <div class="card-title">Integrale Explorer</div>
-      <div class="card-description">Deze demonstrator laat zien hoe met een integrale data ontsluiting een volledig beeld van een object kan worden gerealiseerd.</div>
-    </div>
-  </a>
   <a href="/demonstrators/sensrnet/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
