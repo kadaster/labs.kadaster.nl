@@ -35,7 +35,7 @@ De onbewerkte SPARQL-query's die voor de voorbeeldquery's zijn gebruikt, zijn te
   1. [Query 1](https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/queries/igo-iets-in-de-buurt/1): Waar is 'iets' in de buurt?
   In het volgende voorbeeld kunnen gebruikers zoeken naar objecten met een specifieke functie binnen een bepaald gebied en hun adres retourneren. Een voorbeeldvraag hier zou zijn: "Waar zijn alle kerken in Rotterdam en wat zijn hun adressen?". Dit soort vragen zijn eenvoudig te veranderen in alternatieve vragen over de locaties van specifieke bedrijven of diensten binnen een bepaalde geografische regio.
 
-  2. [Query 2](https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/queries/oppervlakte-kg/1): Beleidsmaker woningbouwlocaties?
+  2. [Query 2](https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/queries/igo-oppervlakte/1): Beleidsmaker woningbouwlocaties?
   De tool kan gebruikers, zoals beleidsmedewerkers, ook helpen bij het beantwoorden van vragen over de soorten landgebruik en het gebied dat ze bestrijken. Een voorbeeld van dergelijke vragen zijn de volgende: 
   - Waar ligt grasland? Reden: is het goedkoopste soort grond en het scheelt NOx uitstoot van 5 koeien per km2.
   - Wat is de oppervlakte van het grasland in vierkante kilometers? Reden: 20 woningen per ha, want wijk moet ruim opgezet zijn. 

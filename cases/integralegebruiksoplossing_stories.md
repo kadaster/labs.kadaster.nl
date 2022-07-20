@@ -16,7 +16,7 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
 ## Alle data stories op een rij
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/planologen">
+  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-1">
     <div class="card">
       <div class="card-type">Ruimtelijke ordening</div>
       <img class="card-image" src="/assets/images/planologen-screenshot.PNG">
@@ -37,13 +37,13 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
       <div class="card-description">Bekijk hier hoe we geodata inzetten ten behoeve van het verbeteren van de openbare orde & veiligheid.</div>
     </div>
   </a>
-    <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/Kwaliteitstoezicht-en-Handhaving">
+    <!-- <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/Kwaliteitstoezicht-en-Handhaving">
     <div class="card">
       <div class="card-type">Kwaliteitstoezicht & Handhaving</div>
       <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="BAG-BGT kwaliteit">
       <div class="card-description">Bekijk hier hoe we de iGO kunnen inzetten tbv kwaliteitsverbetering van de geobasisregistraties</div>
     </div>
-  </a>
+  </a> -->
   <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/beheer-openbare-ruimte">
     <div class="card">
       <div class="card-type">Beheer Openbare Ruimte</div>
