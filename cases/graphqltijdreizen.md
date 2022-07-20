@@ -92,7 +92,7 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter 
 - De service wordt gebruikt om query's te maken naar de back-end (GraphQL gateway, en de gekoppelde databronnen) voor de visualisatie van de data.
 
 <figure id="figuur-5">
-  <a href="/assets/imagesgraphqltijdreizen/application-architecture.jpg">
+  <a href="/assets/images/graphqltijdreizen/application-architecture.jpg">
     <img src="/assets/images/graphqltijdreizen/application-architecture.jpg" alt="applicatie architectuur">
   </a>
   <figcaption>

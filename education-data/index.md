@@ -11,7 +11,7 @@ Dit betreft een dataset met bedrijfstransacties in de gemeente Apeldoorn. Het is
 Vanwege de wet Algemene Verordening Gegevensbescherming (AVG) zijn sommige namen geanonimiseerd tot “X”.
 
 Disclaimer:
-Specifiek voor Educatief gebruik hebben we de Bedrijfstransacties Dataset beschikbaar gesteld, zowel als <a href="https://data.labs.kadaster.nl/experiment/bedrijfstransacties/assets/5db157f6e7b6140355957470">download</a> en als <a href="https://data.labs.kadaster.nl/experiment/bedrijfstransacties/">linked data</a>.
+Specifiek voor Educatief gebruik hebben we de Bedrijfstransacties Dataset beschikbaar gesteld als <a href="https://data.labs.kadaster.nl/dst/bedrijfstransacties">linked data</a>.
 
 <div class="textbox">
 Belangrijk: Alleen te gebruiken voor Educatieve doeleinden en door onderwijsinstellingen. Wilt u deze toepassingen gebruiken voor Demonstrators/Hackathons, neemt u dan even contact met ons op.

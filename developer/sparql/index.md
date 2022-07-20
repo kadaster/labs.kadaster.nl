@@ -38,7 +38,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
     </div>
   </div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/kkg/sparql">Endpoint</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/-/stories/openbare-orde-en-veiligheid">Use case</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/openbare-orde-en-veiligheid">Use case</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kadaster-knowledge-graph">Data Model</a></div>
 </div>
 
