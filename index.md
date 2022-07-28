@@ -91,6 +91,14 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
     </div>
   </a>
+  <a href="/cases/kkg">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/red.jpg" alt="Kadaster Knowledge Graph (KKG)">
+      <div class="card-title">Kadaster Knowledge Graph (KKG)</div>
+      <div class="card-description">Integrale ontsluiting van Kadaster bronnen.  Met verschillende use cases tonen de meerwaarde van het combineren van gegevens aan.</div>
+    </div>
+  </a>
   <!--
   <a href="/cases/loki">
     <div class="card">
