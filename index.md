@@ -35,10 +35,10 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
     </div>
   </a>
-    <a href="/cases/linked-data-event-streams">
+  <a href="/cases/linked-data-event-streams">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/ldes4.png" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/ldes4.png" alt="Linked Data Event Streams">
       <div class="card-title">Linked Data Event Streams</div>
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
@@ -46,7 +46,7 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
   <a href="/cases/locatiebepaling_appartementsrecht">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/side_precision.png" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/side_precision.png" alt="Locatiebepaling appartementsrecht">
       <div class="card-title">Locatiebepaling appartementsrecht</div>
       <div class="card-description">Deze data story geeft een overzicht van de resultaten rondom het onderzoek naar de locatiebepaling van appartementsrechten.  </div>
     </div>
@@ -201,14 +201,16 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
-  <!-- <a href="/cases/koppeling_bag">
+  <!--
+  <a href="/cases/koppeling_bag">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
       <div class="card-title">Basisregistratie Kadaster</div>
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
     </div>
-  </a> -->
+  </a>
+  -->
   <a href="/cases/kganalyse">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -224,4 +226,5 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
       <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
     </div>
-  </a>  
+  </a>
+</div>
