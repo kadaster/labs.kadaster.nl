@@ -299,3 +299,9 @@ Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala 
     </div>
   </a>
 </div>
+
+## Integrale Gebruiksoplossing (IGO)
+
+De Kadaster Knowledge Graph is gebaseerd op dezelfde aanpak die is verkend tijdens het traject van de Integrale Gebruiksoplossing (IGO).  De Integrale Gebruiksoplossing is een Proof of Concept dat binnen het DiS-Geo programma tot stand is gebracht in samenwerking met het Kadaster Data Science Team.  Het doel van de IGO is het combineren en integreren van geospatiële gegevensbronnen ten behoeve van innovatieve nieuwe use cases.  De IGO bevat naast Kadastrale bronnen ook een aantal niet-Kadastrale bronnen (bijvoorbeeld CBS wijken en buurten).  Bekijk onderstaande video om meer te weten te komen over de IGO.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
