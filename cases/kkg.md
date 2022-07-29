@@ -22,7 +22,7 @@ Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
 
 ## Use cases
 
-De Kadaster Knowledge Graph wordt gebruikt in een toenemen aantal use
+De Kadaster Knowledge Graph wordt gebruikt in een toenemend aantal use
 cases, waarmee gegevens op een nieuwe manier gekoppeld, bevraagd, en
 inzichtelijk gemaakt worden.
 
@@ -97,7 +97,7 @@ technisch geïnteresseerd publiek bedoeld.
     <div class="card">
       <div class="card-type">Tutorial</div>
       <img class="card-image" src="/assets/images/colors.jpg">
-      <div class="card-description"><b>Deel 1: Intro Kadaster Knowledge Graph</b><br>Wat is de Kadaster Knowledge Graph en wat kan ik er mee als ontwikelaar?  Wat is linked data en waarom gebruikt het Kadaster open standaarden?</div>
+      <div class="card-description"><b>Deel 1: Intro Kadaster Knowledge Graph</b><br>Wat is de Kadaster Knowledge Graph en wat kan ik er mee als ontwikkelaar?  Wat is linked data en waarom gebruikt het Kadaster open standaarden?</div>
     </div>
   </a>
   <a href="https://data.labs.kadaster.nl/edu/-/stories/tutorial-verken-data-model">
@@ -213,7 +213,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">SPARQL editor</a></div>
 </div>
 
-## Databronen en actualiteit
+## Data bronen en actualiteit
 
 De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende
 open data bronnen.  De gegevens in de Kadaster Knowledge Graph worden
