@@ -110,14 +110,14 @@ technisch geïnteresseerd publiek bedoeld.
   <a href="https://data.labs.kadaster.nl/edu/-/stories/tutorial-sparql">
     <div class="card">
       <div class="card-type">Tutorial</div>
-      <img class="card-image" src="/assets/images/white.jpg">
+      <img class="card-image" src="/assets/images/green.jpg">
       <div class="card-description"><b>Deel 3: SPARQL Bevragingstaal</b><br>Deze tutorial maakt je wegwijs in de SPARQL bevragingstaal. Hiermee kun je snel je eerste queries uitvoeren over de Kadaster Knowledge Graph.</div>
     </div>
   </a>
   <a href="/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal">
     <div class="card">
       <div class="card-type">Tutorial</div>
-      <img class="card-image" src="/assets/images/green.jpg">
+      <img class="card-image" src="/assets/images/white.jpg">
       <div class="card-description"><b>Deel 4: Gebruik een programmeertaal</b><br>Deze tutorial legt uit hoe je een applicatie kunt ontwikkelen in een programmeertaal, waarbij gebruik wordt gemaakt van de gegevens in de Kadaster Knowledge Graph.</div>
     </div>
   </a>
