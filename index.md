@@ -27,14 +27,6 @@ Het Kadaster vindt het belangrijk om samen met publieke en private partners te o
 Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de resultaten van de verschillende initiatieven te delen. Dit dient als inspiratie voor toekomstige initiatieven en stimuleert hergebruik van onze (deel)producten. Wij werken hier vanuit een Use Case. De Use Case van een initiatief/experiment bestaat uit één of meer bouwblokken namelijk Data Stories, Browsers, Demonstrators en/of Datasets. De bouwblokken kun je ook direct via de menu balk benaderen. Bij Dissemination vind je verwijzingen naar onze publicaties en evenementen. In het onderdeel Internships vind je onze (afstudeer)opdrachten en onderzoeken.
 
 <div class="cards-wrapper">
-  <a href="/cases/integralegebruiksoplossing">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
-      <div class="card-title">Integrale Gebruiksoplossing</div>
-      <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
-    </div>
-  </a>
   <a href="/cases/linked-data-event-streams">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -49,6 +41,22 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/side_precision.png" alt="Locatiebepaling appartementsrecht">
       <div class="card-title">Locatiebepaling appartementsrecht</div>
       <div class="card-description">Deze data story geeft een overzicht van de resultaten rondom het onderzoek naar de locatiebepaling van appartementsrechten.  </div>
+    </div>
+  </a>
+  <a href="/cases/kkg">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/red.jpg" alt="Kadaster Knowledge Graph (KKG)">
+      <div class="card-title">Kadaster Knowledge Graph (KKG)</div>
+      <div class="card-description">Integrale ontsluiting van Kadaster bronnen.  Met verschillende use cases tonen de meerwaarde van het combineren van gegevens aan.</div>
+    </div>
+  </a>
+  <a href="/cases/integralegebruiksoplossing">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
+      <div class="card-title">Integrale Gebruiksoplossing</div>
+      <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
     </div>
   </a>
   <a href="/cases/bag_terugmeldingen">
@@ -89,14 +97,6 @@ Dit is de Labs omgeving van het Kadaster. Deze Labs website gebruiken wij om de 
       <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
       <div class="card-title">Basisregistratie Grootschalige Topografie </div>
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
-    </div>
-  </a>
-  <a href="/cases/kkg">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/red.jpg" alt="Kadaster Knowledge Graph (KKG)">
-      <div class="card-title">Kadaster Knowledge Graph (KKG)</div>
-      <div class="card-description">Integrale ontsluiting van Kadaster bronnen.  Met verschillende use cases tonen de meerwaarde van het combineren van gegevens aan.</div>
     </div>
   </a>
   <!--

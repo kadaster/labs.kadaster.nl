@@ -111,7 +111,7 @@ technisch geïnteresseerd publiek bedoeld.
     <div class="card">
       <div class="card-type">Tutorial</div>
       <img class="card-image" src="/assets/images/white.jpg">
-      <div class="card-description"><b>Deel 3: SPARQL Bevragindstaal</b><br>Deze tutorial maakt je wegwijs in de SPARQL bevragingstaal. Hiermee kun je snel je eerste queries uitvoeren over de Kadaster Knowledge Graph.</div>
+      <div class="card-description"><b>Deel 3: SPARQL Bevragingstaal</b><br>Deze tutorial maakt je wegwijs in de SPARQL bevragingstaal. Hiermee kun je snel je eerste queries uitvoeren over de Kadaster Knowledge Graph.</div>
     </div>
   </a>
   <a href="/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal">
