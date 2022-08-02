@@ -27,7 +27,7 @@ cases, waarmee gegevens op een nieuwe manier gekoppeld, bevraagd, en
 inzichtelijk gemaakt worden.
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-1">
+  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-per-buurt">
     <div class="card">
       <div class="card-type">Ruimtelijke ordening</div>
       <img class="card-image" src="/assets/images/planologen-screenshot.PNG">
@@ -62,25 +62,12 @@ inzichtelijk gemaakt worden.
       <div class="card-description">Bekijk hier hoe we geodata inzetten ten behoeve van het verbeteren van het beheer openbare ruimte.</div>
     </div>
   </a>
-  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories">
-    <div class="card">
-      <div class="card-type">Algemene voorbeelden</div>
-      <img class="card-image" src="/assets/images/data-story-igo.PNG">
-      <div class="card-description">Voorbeelden die laten zien wat er mogelijk is met de iGO</div>
-    </div>
   </a>
     <a href="https://data.labs.kadaster.nl/dst/-/stories/algemene-queries-voor-kkg-gebruik">
     <div class="card">
       <div class="card-type">Ontwikkelaar</div>
       <img class="card-image" src="/assets/images/eerste-igo.PNG">
       <div class="card-description">Hoe gebruik ik als ontwikkelaar zelf de Knowledge Graph? En hoe stel ik mijn eerste query op?</div>
-    </div>
-  </a>
-    <a href="https://data.labs.kadaster.nl/brk/-/stories/overzicht">
-    <div class="card">
-      <div class="card-type">Basisregistratie Kadaster</div>
-      <img class="card-image" src="/assets/images/BRK.jpg" alt="BRK">
-      <div class="card-description">Data Story die een overzicht van de BRK als Linked Data geeft.</div>
     </div>
   </a>
 </div>
