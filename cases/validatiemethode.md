@@ -36,8 +36,8 @@ De straatfoto’s van supermarkten halen we op via Cyclomedia en gebruiken we bi
 Een gedeelte van de straatbeelden labelen we vervolgens in 2 klassen; 1 – supermarkt; 2 geen supermarkt. In figuur 2 is een overzicht weergegeven van verschillende straatfoto’s per klasse. De straatfoto’s, waarvan duidelijk te zien is dat het een supermarkt is zoals een foto van de ingang of waar het logo of naam duidelijk in beeld is, labelen we in de klasse ‘supermarkt’. Foto’s waarvan het minder duidelijk is of het een supermarkt is zoals de achterkant van het gebouw of waar een grote vrachtwagen voor staat, labelen we in de klasse ‘geen supermarkt. Uiteindelijk bestaat de gelabelde dataset uit 1800 foto’s uit de klasse ‘supermarkt’, 429 foto’s uit de klasse ‘geen supermarkt’ en vullen we de klasse aan met 1371 foto’s van andere gebouwtypes. 
 
 <figure id="figuur-2">
-  <a href="/assets/images/validatiemethode/voorbeeldklassen.PNG">
-    <img src="/assets/images/validatiemethode/voorbeeldklassen.PNG" alt="Voorbeeld foto's per klasse">
+  <a href="/assets/images/validatiemethode/voorbeeldklassen.png">
+    <img src="/assets/images/validatiemethode/voorbeeldklassen.png" alt="Voorbeeld foto's per klasse">
   </a>
   <figcaption>
     Figuur 2 ― Overzicht van de verschillende afbeeldingen die aanwezig zijn in de invoer.
@@ -53,8 +53,8 @@ De gelabelde dataset splitsen we vervolgens in 3 sets:
 Om het aantal gelabelde foto’s in de trainset te verhogen, maken we gebruik van data augmentatie. Data augmentatie is een techniek die gebruikt wordt om de dataset te vergroten voor het trainen van het model zonder daadwerkelijk nieuwe data te verzamelen. Augmentatie technieken zoals inzoomen, herschalen, roteren en verschuiven zijn toegepast op de beelden die gebruikt zijn voor het trainen van het model. In figuur 3 is weergegeven hoe de data augmentatie strategie voor de traindataset eruit ziet. Uiteindelijk bestaat de traindataset uit 4200 foto’s per klasse, validatieset uit 360 foto's per klasse en de testset uit 360 foto's per klasse.
 
 <figure id="figuur-3">
-  <a href="/assets/images/validatiemethode/voorbeeldaugmentatie.PNG">
-    <img src="/assets/images/validatiemethode/voorbeeldaugmentatie.PNG" alt="Voorbeeld augmentatie">
+  <a href="/assets/images/validatiemethode/voorbeeldaugmentatie.png">
+    <img src="/assets/images/validatiemethode/voorbeeldaugmentatie.png" alt="Voorbeeld augmentatie">
   </a>
   <figcaption>
     Figuur 3 ― Voorbeeld van het augmenteren van een straatfoto. Linksboven is de originele straatfoto en op de overige drie foto’s zijn verschillende augmentatie technieken gebruikt.
