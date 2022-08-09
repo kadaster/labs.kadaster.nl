@@ -13,7 +13,6 @@ ENTRYPOINT [ "jekyll" ]
 
 CMD [ "--help" ]
 
-
 FROM jekyll
 
 COPY docker-entrypoint.sh /usr/local/bin/

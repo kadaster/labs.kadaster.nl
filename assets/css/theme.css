@@ -75,7 +75,21 @@ a:hover {
   background-size: auto 270px;
   z-index: 9;
 }
-
+.card-home {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: white;
+  flex-basis: 333px;
+  max-width: 333px;
+  min-width: 333px;
+  /* border: #f8f8f8 5px solid; */
+  box-shadow: 0.5px 1px 5px 2px #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 250px;
+  max-height: 250px;
+}
 .card {
   display: flex;
   flex-direction: column;

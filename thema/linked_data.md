@@ -1,13 +1,59 @@
 ---
 layout: page
-title: Demonstrators
+title: Linked Data
 ---
 
-# Demonstrators
-
-Het Data Science team ontwikkelt samen met haar partners als onderdeel van een Use Case ook frequent concrete toepassingen die je via de Demonstrators kunt benaderen. Je kunt de demonstrators gebruiken als inspiratie voor het bedenken van bijvoorbeeld nieuwe toepassingen. Het Data Science team gebruikt een breed scala aan technologieën voor het ontwikkelen van een demonstrator. Het team heeft in het kader van innovatie gedurende de fasen herkennen, verkennen en experimenteren de ruimte en vrijheid om met iedere technologie te werken. Voor een tutorial van tweede demonstrator de Geeodatavisitor, zie deze: <a href="/assets/videos/geodata-visitor.mp4">Video 1</a>
+# Linked Data
 
 <div class="cards-wrapper">
+  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
+      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
+    </div>
+  </a>  
+  <a href="/cases/koppeling_bag">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
+      <div class="card-title">Basisregistratie Kadaster</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
+    </div>
+  </a> 
+  <a href="/cases/brk-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
+      <div class="card-title">Basisregistratie Kadaster</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
+    </div>
+  </a>
+    <a href="/cases/bag-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
+      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+    </div>
+  </a>
+  <a href="/cases/brt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
+      <div class="card-title">Basisregistratie Topografie</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
+    </div>
+  </a>
+  <a href="/cases/bgt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
+      <div class="card-title">Basisregistratie Grootschalige Topografie </div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
+    </div>
+  </a>
   <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -32,16 +78,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard </div>
     </div>
   </a>
-  <!--
-  <a href="/demonstrators/pandbrigade">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/pandviewer.png">
-      <div class="card-title">Pandbrigade</div>
-      <div class="card-description">Zoek zelf in de viewer van de pandbrigade op locatie en analyseer de data van de panden. </div>
-    </div>
-  </a>
-  -->
   <a href="/cases/3d-demonstrator">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -82,36 +118,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
-  <!--
-  <a href="/demonstrators/LDMaps_BGT/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/ld-maps.png">
-      <div class="card-title">LDMaps voor de BGT</div>
-      <div class="card-description">LDMaps is een applicatie die objecten uit de BGT laat zien op de kaart van Nederland.</div>
-    </div>
-  </a>
-  -->
-  <!--
-  <a href="/demonstrators/loki/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg">
-      <div class="card-title">Loki voor Geo Informatieverstrekking</div>
-      <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
-    </div>
-  </a>
-  -->
-  <!-- Tijdelijk offline gezet.
-  <a href="https://labs.kadaster.nl/skosmos">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/rdf.png" alt="RDF logo">
-      <div class="card-title">Skosmos</div>
-      <div class="card-description">Deze applicatie geeft een overzicht van SKOS-gebaseerde data modellen.</div>
-    </div>
-  </a>
-  -->
   <a href="https://labs.kadaster.nl/vocbench3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -152,24 +158,6 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a>
-  <a href="/tech-radar/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/radar-banner.png">
-      <div class="card-title">ETC Tech Radar</div>
-      <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
-    </div>
-  </a>
-  <!--
-  <a href="http://www.visualdataweb.de/webvowl/#iri=https://data.labs.kadaster.nl/kadaster/bag-vocab/download.trig.gz">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/webvowl.png">
-      <div class="card-title">Vocabulaire visualisatie met WebVOWL</div>
-      <div class="card-description">Met deze demo laten we zien dat onze datamodellen ook te visualiseren zijn met tools op het Web.</div>
-    </div>
-  </a>
-  -->
   <a href="/demonstrators/namen-app">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -201,4 +189,60 @@ Het Data Science team ontwikkelt samen met haar partners als onderdeel van een U
       <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
     </div>
   </a>
+  <a href="/cases/verkaufsbucher">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png" alt="Nationaal Archief logo">
+      <div class="card-title">Verkaufsbucher</div>
+      <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
+    </div>
+  </a>
+  <a href="/cases/landbouwverkeer">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/weiland.jpg" alt="Weiland">
+      <div class="card-title">Routering Landbouwverkeer</div>
+      <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
+    </div>
+  </a>
+  <a href="/cases/bag-voorspellingen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
+      <div class="card-title">Missende waarden voorspellen in de BAG</div>
+      <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
+    </div>
+  </a>
+  <a href="/cases/rotterdam-grondgebied">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/rotterdam-skyline.jpg" alt="Skyline Rotterdam">
+      <div class="card-title">Big Data Evaluatie Rotterdam</div>
+      <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
+    </div>
+  </a>
+  <a href="/cases/cbs-nieuwbouw">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/cbs-logo.png" alt="CBS logo">
+      <div class="card-title">CBS Nieuwbouw Analyse</div>
+      <div class="card-description">Voor het CBS wordt gekeken of de nieuwbouw van woningen zelfbouw of projectbouw is.  Dit wordt gedaan o.b.v. Machine Learning over aktes.</div>
+    </div>
+  </a>
+  <a href="/cases/hoogspanning-onderzoek">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/hoogspanning.jpg" alt="Hoogspanning">
+      <div class="card-title">Hoogspanning Onderzoek</div>
+      <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
+    </div>
+  </a>
+  <a href="/cases/selfservice_dutch">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
+      <div class="card-title">Self-Service GIS</div>
+      <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
+    </div>
+  </a> 
 </div>
