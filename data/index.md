@@ -8,36 +8,44 @@ title: Data
 Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook nieuwe datasets aan. Op deze pagina wordt een overzicht van deze datasets gegeven. Datasets die door het Data Science team als Linked Data worden aangeboden zijn te vinden op <https://data.labs.kadaster.nl>.
 
 <div class="cards-wrapper">
+<a href="/cases/brk-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
+      <div class="card-title">Basisregistratie Kadaster</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
+    </div>
+  </a>
+    <a href="/cases/bag-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
+      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+    </div>
+  </a>
+  <a href="/cases/brt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
+      <div class="card-title">Basisregistratie Topografie</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
+    </div>
+  </a>
+  <a href="/cases/bgt-ld">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
+      <div class="card-title">Basisregistratie Grootschalige Topografie </div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/agentschap-telecom/graafschades-2019">
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/graafschades.webp">
       <div class="card-title">Graafschades 2019</div>
       <div class="card-description">Overzicht van alle graafschades die in 2019 veroorzaakt zijn aan kabels en leidingen in Nederland.  De gegevens zijn afkomstig van het Agentschap Telecom.</div>
-    </div>
-  </a>
-  <a href="https://www.pdok.nl/introductie/-/article/basisregistratie-topografie-brt-topnl">
-    <div class="card">
-      <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/nederland-provincies.jpg">
-      <div class="card-title">Basisregistratie Topografie (BRT)</div>
-      <div class="card-description">De Datasets van de BRT is toegankelijk via PDOK. Je vindt hier de TOPNL bestanden. Deze  informatie kun je bekijken en bewerken.</div>
-    </div>
-  </a>
-  <a href="https://data.pldn.nl/cbs/energiebesparing">
-    <div class="card">
-      <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/cbs-logo.png">
-      <div class="card-title">CBS energiebesparingspotentie</div>
-      <div class="card-description">De Linked Dataset met de gemiddelde energiebesparingspotentie voor koopwoningen in Nederland, zoals berekend door het CBS.</div>
-    </div>
-  </a>
-  <a href="https://lod-cloud.net/dataset/bag">
-    <div class="card">
-      <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/bag-in-lod-cloud.png">
-      <div class="card-title">BAG in de LOD Cloud</div>
-      <div class="card-description">Officiële registratie van de Basisregistratie Adressen en Gebouwen (BAG) in de Linked Open Data (LOD) Cloud.</div>
     </div>
   </a>
 </div>

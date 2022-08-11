@@ -9,17 +9,9 @@ title: Data Browsers
   <a href="kkg-gebouw">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <img class="card-image" src="/assets/images/knowledge_graph.png">
       <div class="card-title">Kadaster Knowledge Graph: Gebouw</div>
       <div class="card-description">Met deze browser kunnen gebouwen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
-    </div>
-  </a>
-  <a href="kkg-terrein">
-    <div class="card">
-      <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Kadaster Knowledge Graph: Terrein</div>
-      <div class="card-description">Met deze browser kunnen terreinen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
     </div>
   </a>
   <a href="bevolking">
@@ -28,6 +20,14 @@ title: Data Browsers
       <img class="card-image" src="/assets/images/cbs-logo.png">
       <div class="card-title">Bevolkingsbrowser</div>
       <div class="card-description">Met de bevolkingsbrowser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
+    </div>
+  </a>
+    <a href="kkg-terrein">
+    <div class="card">
+      <div class="card-type">Browser</div>
+      <img class="card-image" src="/assets/images/knowledge_graph.png">
+      <div class="card-title">Kadaster Knowledge Graph: Terrein</div>
+      <div class="card-description">Met deze browser kunnen terreinen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
     </div>
   </a>
   <a href="nationaal-archief">

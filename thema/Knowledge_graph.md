@@ -3,6 +3,8 @@ layout: page
 title: Kadaster Knowledge Graph
 ---
 
+<link rel="stylesheet" href="/assets/css/developer.css">
+
 # Kadaster Knowledge Graph
 
 De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en

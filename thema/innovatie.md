@@ -46,14 +46,14 @@ title: Innovatie
       <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
     </div>
   </a>
-    <a href="/cases/geodata-voor-iedereen">
+    <!-- <a href="/cases/geodata-voor-iedereen">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/logoexplorer.PNG" alt="Integrale explorer logo">
+      <img class="card-image" src="/assets/images/logoexplorer.jpg" alt="Integrale explorer logo">
       <div class="card-title">GEO data voor iedereen</div>
       <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
     </div>
-  </a>
+  </a> -->
   <a href="/tech-radar/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>

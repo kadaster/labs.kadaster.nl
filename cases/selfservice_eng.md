@@ -1,5 +1,4 @@
 ---
-banner: /assets/images/handen.jpg
 layout: page
 title: Self Service GIS
 ---

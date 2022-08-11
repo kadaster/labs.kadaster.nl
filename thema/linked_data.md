@@ -22,38 +22,6 @@ title: Linked Data
       <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
     </div>
   </a> 
-  <a href="/cases/brk-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
-      <div class="card-title">Basisregistratie Kadaster</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
-    </div>
-  </a>
-    <a href="/cases/bag-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
-      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
-    </div>
-  </a>
-  <a href="/cases/brt-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
-      <div class="card-title">Basisregistratie Topografie</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
-    </div>
-  </a>
-  <a href="/cases/bgt-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
-      <div class="card-title">Basisregistratie Grootschalige Topografie </div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
-    </div>
-  </a>
   <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -197,14 +165,14 @@ title: Linked Data
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
     </div>
   </a>
-  <a href="/cases/landbouwverkeer">
+  <!-- <a href="/cases/landbouwverkeer">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/weiland.jpg" alt="Weiland">
       <div class="card-title">Routering Landbouwverkeer</div>
       <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/cases/bag-voorspellingen">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -213,14 +181,14 @@ title: Linked Data
       <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
     </div>
   </a>
-  <a href="/cases/rotterdam-grondgebied">
+  <!-- <a href="/cases/rotterdam-grondgebied">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/rotterdam-skyline.jpg" alt="Skyline Rotterdam">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
