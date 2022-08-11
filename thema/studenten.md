@@ -33,7 +33,7 @@ title: Data Browsers
     <a href="/cases/validatiemethode">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/validatiemethode/proces.jpg" alt="Proces">
+      <img class="card-image" src="/assets/images/brt-ld.png" alt="Proces">
       <div class="card-title">Validatiemethode verrijking BRT</div>
       <div class="card-description">In deze use case ontwikkelen we een validatiemethode door middel van machine learning technieken.</div>
     </div>
