@@ -9,7 +9,7 @@ title: Innovatie
     <a href="/cases/linked-data-event-streams">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/ldes4.png" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/ldes-tegel.png" alt="BAG terugmeldingen">
       <div class="card-title">Linked Data Event Streams</div>
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
@@ -17,7 +17,7 @@ title: Innovatie
     <a href="/cases/bag_terugmeldingen">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/tekstanalyse-tegel.png" alt="BAG terugmeldingen">
       <div class="card-title">BAG terugmeldingen tekst analyse</div>
       <div class="card-description">Deze data story geeft een overzicht van de analyse van BAG terugmeldingen die gekwalificeerd zijn door middel van topic -en attribuut extractie. </div>
     </div>
