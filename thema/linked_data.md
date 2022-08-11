@@ -94,14 +94,14 @@ title: Linked Data
       <div class="card-description">Deze applicatie maakt het mogelijk om data modellen binnen een grafische omgeving in te zien en te bewerken.</div>
     </div>
   </a>
-  <a href="/demonstrators/bagdemonstrator/">
+  <!-- <a href="/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Kaart Amsterdam met markers">
       <div class="card-title">R Shiny Dashboard</div>
       <div class="card-description">Bekijk de resultaten van een voorspellend model over de missende bouwjaren uit de BAG in een interactief dashboard!</div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/sensrnet/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -134,14 +134,6 @@ title: Linked Data
       <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
     </div>
   </a>
-  <a href="/demonstrators/verkaufsbucher-zoeken/">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/verkaufsbucher-app-tegel-img.png">
-      <div class="card-title">Verkaufsbücher zoeker</div>
-      <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
-    </div>
-  </a>
   <a href="/demonstrators/comunica">
     <div class="card">
       <div class="card-type">Comunica</div>
@@ -149,18 +141,11 @@ title: Linked Data
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
-  <a href="/demonstrators/datagedreven-werken/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screenshot_velocity.PNG">
-      <div class="card-title">Datagedreven werken dashboard</div>
-      <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
-    </div>
-  </a>
-  <a href="/cases/verkaufsbucher">
+
+  <a href="/stories/verkaufsbucher/index.html">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/Logo_Nationaal_Archief_2018.png" alt="Nationaal Archief logo">
+      <img class="card-image" src="/assets/images/nationaal-archief-logo.png" alt="Nationaal Archief logo">
       <div class="card-title">Verkaufsbucher</div>
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
     </div>
@@ -173,14 +158,14 @@ title: Linked Data
       <div class="card-description">Hoe rijdt een boer van zijn boerderij naar zijn perceel, zonder daarbij water of ander onbegaanbaar gebied te trotseren.</div>
     </div>
   </a> -->
-  <a href="/cases/bag-voorspellingen">
+  <!-- <a href="/cases/bag-voorspellingen">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
       <div class="card-title">Missende waarden voorspellen in de BAG</div>
       <div class="card-description">In deze use case bekijken we hoe met het Machine Learning missende waarden uit de BAG kunnen voorspellen.</div>
     </div>
-  </a>
+  </a> -->
   <!-- <a href="/cases/rotterdam-grondgebied">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -205,12 +190,4 @@ title: Linked Data
       <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
     </div>
   </a>
-  <a href="/cases/selfservice_dutch">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png" alt="Kadaster logo">
-      <div class="card-title">Self-Service GIS</div>
-      <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
-    </div>
-  </a> 
 </div>
