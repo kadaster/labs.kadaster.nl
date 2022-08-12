@@ -164,13 +164,13 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-description">Gebruik de Facet Check Browser - ontwikkeld door Triply - om door de gebouwen in de Knowledge Graph te zoeken.</div>
     </div>
   </a>
-  <a href="https://searchdata.com">
+  <!-- <a href="https://searchdata.com">
     <div class="card">
       <div class="card-type">Searchdata</div>
       <img class="card-image" src="/assets/images/searchdata-screenshot.PNG" alt="Searchdata">
       <div class="card-description">Valuecare heeft deze applicatie ontwikkeld om op basis van natuurlijke tekst door onze data te kunnen zoeken.</div>
     </div>
-  </a>
+  </a> -->
     <a href="https://qanswer-frontend.univ-st-etienne.fr/?kb=kg&user=kadaster">
     <div class="card">
       <div class="card-type">QAnswer</div>
@@ -178,20 +178,20 @@ Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag 
       <div class="card-description">Met deze demonstrator wordt het mogelijk in natuurlijke taal de Knowledge graph te bevragen.</div>
     </div>
   </a>
-  <a href="https://kadaster.github.io/datascience-comunica-client">
+  <!-- <a href="https://kadaster.github.io/datascience-comunica-client">
     <div class="card">
       <div class="card-type">Comunica</div>
       <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
-  </a>
-  <a href="/demonstrators/comunica">
+  </a> -->
+  <!-- <a href="/demonstrators/comunica">
     <div class="card">
       <div class="card-type">Comunica</div>
       <img class="card-image" src="/assets/images/comunica-logo.PNG" alt="Comunica">
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/gruff">
     <div class="card">
       <div class="card-type">Gruff</div>

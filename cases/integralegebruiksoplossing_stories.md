@@ -16,7 +16,7 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
 ## Alle data stories op een rij
 
 <div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-1">
+  <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-per-buurt">
     <div class="card">
       <div class="card-type">Ruimtelijke ordening</div>
       <img class="card-image" src="/assets/images/planologen-screenshot.PNG">

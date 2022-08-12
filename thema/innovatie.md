@@ -14,28 +14,12 @@ title: Innovatie
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
     </a>
-    <a href="/cases/bag_terugmeldingen">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/tekstanalyse-tegel.png" alt="BAG terugmeldingen">
-      <div class="card-title">BAG terugmeldingen tekst analyse</div>
-      <div class="card-description">Deze data story geeft een overzicht van de analyse van BAG terugmeldingen die gekwalificeerd zijn door middel van topic -en attribuut extractie. </div>
-    </div>
-  </a>
     <a href="/cases/loki">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
       <div class="card-title">Loki voor GEO Informatieverstrekking</div>
       <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
-    </div>
-  </a>
-  <a href="/cases/akte-ocr">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/ocr-header.jpg" alt="Akte OCR">
-      <div class="card-title">Akte OCR</div>
-      <div class="card-description">In dit onderzoek bespreken we de kwaliteit van akteteksten resulterend uit OCR toegepast op de akten van het Kadaster.</div>
     </div>
   </a>
     <a href="/cases/nen-hackathon-2022">
@@ -62,30 +46,22 @@ title: Innovatie
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
   </a>
-  <a href="/demonstrators/datagedreven-werken/index.html">
+  <a href="/cases/bim">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Datagedreven werken dashboard</div>
-      <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
+      <img class="card-image" src="/assets/images/bimdemo.PNG">
+      <div class="card-title">BIM</div>
+      <div class="card-description">Bekijk een 3D BIM model en data story inclusief de relaties naar de basisregistraties. </div>
     </div>
   </a>
-  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
-      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
-      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/sensrnet/index.html">
+  <!-- <a href="/demonstrators/sensrnet/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/SensRNet-logo.png">
       <div class="card-title">Ontwikkeling Sensorenregister</div>
       <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/verkaufsbucher-zoeken/">
     <div class="card">
       <div class="card-type">Demonstrator</div>

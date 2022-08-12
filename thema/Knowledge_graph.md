@@ -124,7 +124,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
       <div class="endpointContainerTitle_maintext">BAG</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bag2/">Basisregistratie Adressen en Gebouwen</a></div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bag/lv">Basisregistratie Adressen en Gebouwen</a></div>
     </div>
   </div>
   <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">endpoint</a></div>
@@ -137,7 +137,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
       <div class="endpointContainerTitle_maintext">BGT</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bgt">Basisregistratie Grootschalige Topografie</a></div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bgt/lv">Basisregistratie Grootschalige Topografie</a></div>
     </div>
   </div>
   <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
@@ -150,7 +150,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
       <div class="endpointContainerTitle_maintext">BRK</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brk">Basisregistratie Kadaster (open deel)</a></div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/brk/registratie">Basisregistratie Kadaster (open deel)</a></div>
     </div>
   </div>
   <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
@@ -163,7 +163,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
       <div class="endpointContainerTitle_maintext">BRT</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brt-2">Basisregistratie Topografie</a></div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/brt/top10nl">Basisregistratie Topografie</a></div>
     </div>
   </div>
   <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">endpoint</a></div>
@@ -182,14 +182,14 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
   <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">endpoint</a></div>
   <div class="endpointContainer_center">-</div>
   <div class="endpointContainer_center">-</div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/default">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
       <div class="endpointContainerTitle_maintext">KG</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/dst/kkg">Knowledge Graph</a></div>
     </div>
   </div>
   <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">endpoint</a></div>
@@ -215,52 +215,22 @@ kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden.
 
 De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
 
-<table>
-  <thead>
-    <tr>
-      <th>Dataset</th>
-      <th>Verversingsfrequentie</th>
-      <th>Huidige versie</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Basisadministratie Adressen en Gebouwen</td>
-      <td>Kwartaal</td>
-      <td>2022-07-27</td>
-    </tr>
-    <tr>
-      <td>Basisadministratie Grootschalige Topografie</td>
-      <td>Kwartaal</td>
-      <td>2022-07-13</td>
-    </tr>
-    <tr>
-      <td>Basisregistratie Topografie</td>
-      <td>Kwartaal</td>
-      <td>2022-07-13</td>
-    </tr>
-    <tr>
-      <td>Digitale Kadastrale Kaart</td>
-      <td>Kwartaal</td>
-      <td>2022-07-18</td>
-    </tr>
-    <tr>
-      <td>Basisregistratie Kadaster - Publieksrechtelijke Beperkingen</td>
-      <td>Geen</td>
-      <td>2021-03-16</td>
-    </tr>
-    <tr>
-      <td>Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)</td>
-      <td>Kwartaal</td>
-      <td>2022-07-13</td>
-    </tr>
-    <tr>
-      <td>CBS Wijk- en buurtkaart</td>
-      <td>Jaarlijks</td>
-      <td>2019-11-01</td>
-    </tr>
-  </tbody>
-</table>
+<div class="textbox" markdown="1">
+## Actualiteit van databronnen
+
+De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Voor detailinformatie en links naar alle databronnen verwijzen we de gebruiker naar [onze developer pagina](/developer/). Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
+
+- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-20*.
+- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
+- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
+- **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-14*.
+- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
+- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-04*.
+- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
+
+De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.
+
+</div>
 
 Specifieke details over de wijzigingen tussen leveringen kunnen worden
 geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit
@@ -271,22 +241,19 @@ De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik
 van deze onderliggende datasets en is daarmee qua actualiteit een
 afgeleide van bovenstaande sets.
 
-## Additionele resources
-
-Om jullie als developer een beetje op weg te helpen stellen wij reeds een scala aan voorbeeld queries en andere resources beschikbaar die jullie kunnen helpen om snel met onze data aan de slag te gaan. Kijk daarom ook eens in de resources hieronder:
-
-<div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik">
-    <div class="card">
-      <div class="card-type">Data Story</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
-      <div class="card-description">In deze data story nemen we je aan de hand om je eerste SPARQL query op onze Knowledge Graph op te stellen!</div>
-    </div>
-  </a>
-</div>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Integrale Gebruiksoplossing (IGO)
 
 De Kadaster Knowledge Graph is gebaseerd op dezelfde aanpak die is verkend tijdens het traject van de Integrale Gebruiksoplossing (IGO).  De Integrale Gebruiksoplossing is een Proof of Concept dat binnen het DiS-Geo programma tot stand is gebracht in samenwerking met het Kadaster Data Science Team.  Het doel van de IGO is het combineren en integreren van geospatiële gegevensbronnen ten behoeve van innovatieve nieuwe use cases.  De IGO bevat naast Kadastrale bronnen ook een aantal niet-Kadastrale bronnen (bijvoorbeeld CBS wijken en buurten).  Bekijk onderstaande video om meer te weten te komen over de IGO.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="cards-wrapper">
+  <a href="/cases/integralegebruiksoplossing">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
+      <div class="card-title">Integrale Gebruiksoplossing</div>
+      <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
+    </div>
+  </a>
+</div>

@@ -84,7 +84,7 @@ Nu we een beetje een beeld hebben van de Knowledge Graph en hoe deze is opgebouw
 - Er hoeven slechts drie objecten bij elkaar te komen om de geometrie, adresgegevens en objectgegevens respectievelijk te benaderen. In de reguliere combinatie tussen BAG, BRT en BGT zouden dit er vele malen meer zijn om dezelfde informatie op te halen.
 - We hoeven niet zelf te zoeken naar connecties over datasets heen. Objecten die direct te integreren zijn zijn in deze weergave van de data reeds samengebracht.
 
-Meer dergelijke eenvoudige queries hebben we voor de geïnteresseerde lezer samengracht in een [Data Story](https://data.labs.kadaster.nl/kadaster/-/stories/algemene-queries-voor-kg-gebruik).
+Meer dergelijke eenvoudige queries hebben we voor de geïnteresseerde lezer samengebracht in een [Data Story](https://data.labs.kadaster.nl/dst/-/stories/algemene-queries-voor-kkg-gebruik).
 
 We kunnen de query ook nog iets complexer maken. Veel vragen die men wil beantwoorden vanuit een bepaalde (geografische afkadering). Daarbij gaat de voorkeur uit naar het gebruiken van administratieve links zoals deze in de data liggen.
 

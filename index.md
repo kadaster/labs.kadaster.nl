@@ -37,10 +37,10 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
     </div>
   </a>
-    <a href="/thema/graphql">
+    <a href="/thema/data_analyse">
     <div class="card-home">
-      <div class="card-type">Graphql</div>
-      <img class="card-image" src="/assets/images/graphql-logo.png" alt="Graphql">
+      <div class="card-type">Data Analyse</div>
+      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="Graphql">
     </div>
   </a>
     <a href="/thema/studenten">
