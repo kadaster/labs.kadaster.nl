@@ -31,7 +31,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
       <img class="card-image" src="/assets/images/handen.jpg" alt="innovatie">
     </div>
   </a>
-  <a href="/thema/knowledge_graph">
+  <a href="/thema/Knowledge_graph">
     <div class="card-home">
       <div class="card-type">Knowledge Graph</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
