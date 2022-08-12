@@ -6,55 +6,39 @@ title: Linked Data
 # Linked Data
 
 <div class="cards-wrapper">
-  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
+  <a href="/geodata/bag">
     <div class="card">
-      <div class="card-type">Use Case</div>
+      <div class="card-type">Geodata</div>
       <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
-      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
-      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
+      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
+      <div class="card-description">In deze map besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data en gerelateerde use-cases.</div>
     </div>
   </a>  
-  <a href="/cases/koppeling_bag">
+  <a href="/geodata/brk">
     <div class="card">
-      <div class="card-type">Use Case</div>
+      <div class="card-type">Geodata</div>
       <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
       <div class="card-title">Basisregistratie Kadaster</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
-    </div>
-  </a> 
-  <a href="/cases/brk-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
-      <div class="card-title">Basisregistratie Kadaster</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
+      <div class="card-description">In deze map besteden we aandacht aan de publicatie van de BRK als Linked Data en alle gerelateerde use-cases.</div>
     </div>
   </a>
-    <a href="/cases/bag-ld">
+    <a href="/geodata/bgt">
     <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
-      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+      <div class="card-type">Geodata</div>
+      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
+      <div class="card-title">Basisregistratie Grootschalige Topografie</div>
+      <div class="card-description">In deze map besteden we aandacht aan de publicatie van de BGT als Linked Data en alle gerelateerde use-cases.</div>
     </div>
   </a>
-  <a href="/cases/brt-ld">
+  <a href="/geodata/brt">
     <div class="card">
-      <div class="card-type">Use Case</div>
+      <div class="card-type">Geodata</div>
       <img class="card-image" src="/assets/images/brt-ld.png" alt="Kaart BRT">
       <div class="card-title">Basisregistratie Topografie</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
+      <div class="card-description">In deze geodata  besteden we aandacht aan de publicatie van de BRT als Linked Data.</div>
     </div>
   </a>
-  <a href="/cases/bgt-ld">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bgt.jpg" alt="Kaart BGT">
-      <div class="card-title">Basisregistratie Grootschalige Topografie </div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BGT als Linked Data, en wat de mogelijkheden zijn.</div>
-    </div>
-  </a>
-  <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
+   <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
