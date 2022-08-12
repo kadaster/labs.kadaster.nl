@@ -61,7 +61,6 @@ inzichtelijk gemaakt worden.
       <div class="card-description">Bekijk hier hoe we geodata inzetten ten behoeve van het verbeteren van het beheer openbare ruimte.</div>
     </div>
   </a>
-  </a>
     <a href="https://data.labs.kadaster.nl/dst/-/stories/algemene-queries-voor-kkg-gebruik">
     <div class="card">
       <div class="card-type">Ontwikkelaar</div>
@@ -128,7 +127,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bag2/">Basisregistratie Adressen en Gebouwen</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql"><code>https://api.labs.kadaster.nl/datasets/kadaster/bag2/services/default/sparql</code></a></div>
+  <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bag-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data model</a></div>
   <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">SPARQL editor</a></div>
@@ -141,7 +140,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/bgt">Basisregistratie Grootschalige Topografie</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/bgt/services/bgt/sparql</a></div>
+  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data model</a></div>
   <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">SPARQL editor</a></div>
@@ -154,7 +153,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brk">Basisregistratie Kadaster (open deel)</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brk/services/brk/sparql</a></div>
+  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brk-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data model (WIP)</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/default">SPARQL editor</a></div>
@@ -167,7 +166,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brt-2">Basisregistratie Topografie</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brt-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data model</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">SPARQL editor</a></div>
@@ -180,7 +179,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/cbs/wbk/">CBS Kerncijfers Wijken- en Buurten</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">endpoint</a></div>
   <div class="endpointContainer_center">-</div>
   <div class="endpointContainer_center">-</div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/wbk">SPARQL editor</a></div>
@@ -193,7 +192,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/kg/">Knowledge Graph</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/igo/-/stories/user-story">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data model</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">SPARQL editor</a></div>
@@ -228,32 +227,32 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
     <tr>
       <td>Basisadministratie Adressen en Gebouwen</td>
       <td>Kwartaal</td>
-      <td>2022-05-20</td>
+      <td>2022-07-27</td>
     </tr>
     <tr>
       <td>Basisadministratie Grootschalige Topografie</td>
       <td>Kwartaal</td>
-      <td>2022-04-30</td>
+      <td>2022-07-13</td>
     </tr>
     <tr>
       <td>Basisregistratie Topografie</td>
       <td>Kwartaal</td>
-      <td>2022-04-21</td>
+      <td>2022-07-13</td>
     </tr>
     <tr>
       <td>Digitale Kadastrale Kaart</td>
       <td>Kwartaal</td>
-      <td>2022-01-14</td>
+      <td>2022-07-18</td>
     </tr>
     <tr>
       <td>Basisregistratie Kadaster - Publieksrechtelijke Beperkingen</td>
-      <td>geen reguliere vernieuwing</td>
+      <td>Geen</td>
       <td>2021-03-16</td>
     </tr>
     <tr>
       <td>Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)</td>
       <td>Kwartaal</td>
-      <td>2022-05-04</td>
+      <td>2022-07-13</td>
     </tr>
     <tr>
       <td>CBS Wijk- en buurtkaart</td>

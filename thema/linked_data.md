@@ -5,29 +5,13 @@ title: Linked Data
 
 # Linked Data
 
-<div class="cards-wrapper">
-  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
-      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
-      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
-    </div>
-  </a>  
-  <a href="/cases/koppeling_bag">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/dkk.png" alt="Kaart DKK">
-      <div class="card-title">Basisregistratie Kadaster</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BRK als Linked Data.</div>
-    </div>
-  </a> 
-  <a href="https://labs.kadaster.nl/demonstrators/datawaardedashboard/">
+<div class="cards-wrapper">  
+<a href="/cases/ar-applicatie">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Data Waarde Dashboard</div>
-      <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
+      <div class="card-title">AR Applicatie</div>
+      <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
     </div>
   </a>
   <a href="/demonstrators/gruff/index.html">
@@ -36,6 +20,14 @@ title: Linked Data
       <img class="card-image" src="/assets/images/gruff.png">
       <div class="card-title">Gruff</div>
       <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
+    </div>
+  </a>
+  <a href="/demonstrators/datawaardedashboard">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Data Waarde Dashboard</div>
+      <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
     </div>
   </a>
   <a href="/demonstrators/geodatavisitor">
@@ -65,7 +57,7 @@ title: Linked Data
   <a href="/demonstrators/objectviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/pandviewer.png">
+      <img class="card-image" src="/assets/images/bag.png">
       <div class="card-title">Objectviewer</div>
       <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
     </div>
@@ -86,14 +78,14 @@ title: Linked Data
       <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
-  <a href="https://labs.kadaster.nl/vocbench3">
+  <!-- <a href="https://labs.kadaster.nl/vocbench3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/vocbench.png" alt="VocBench logo">
       <div class="card-title">VocBench</div>
       <div class="card-description">Deze applicatie maakt het mogelijk om data modellen binnen een grafische omgeving in te zien en te bewerken.</div>
     </div>
-  </a>
+  </a> -->
   <!-- <a href="/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -102,14 +94,7 @@ title: Linked Data
       <div class="card-description">Bekijk de resultaten van een voorspellend model over de missende bouwjaren uit de BAG in een interactief dashboard!</div>
     </div>
   </a> -->
-  <a href="/demonstrators/sensrnet/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/SensRNet-logo.png">
-      <div class="card-title">Ontwikkeling Sensorenregister</div>
-      <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
-    </div>
-  </a>
+
   <a href="/demonstrators/generiek-kwaliteitsdashboard/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -118,14 +103,14 @@ title: Linked Data
       <div class="card-description">Deze demonstrator laat zien hoe een ge-uniformeerde data ontsluiting kunnen leiden tot verbeterde kwaliteit in de landelijke basisregistraties.</div>
     </div>
   </a>
-  <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
+  <!-- <a href="https://kadata.maps.arcgis.com/apps/MapJournal/index.html?appid=e8adf6cd1dae4d42ad907ddcb29c64d3">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/rotterdam-skyline.jpg">
       <div class="card-title">Big Data Evaluatie Rotterdam</div>
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
-  </a>
+  </a> -->
   <a href="/demonstrators/namen-app">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -141,15 +126,14 @@ title: Linked Data
       <div class="card-description">Met deze implementatie van het open-source component Comunica van de universiteit Gent kunnen we de Knowledge Graph met GraphQL en SPARQL bevragen.</div>
     </div>
   </a>
-
-  <a href="/stories/verkaufsbucher/index.html">
+  <!-- <a href="/stories/verkaufsbucher/index.html">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/nationaal-archief-logo.png" alt="Nationaal Archief logo">
       <div class="card-title">Verkaufsbucher</div>
       <div class="card-description">Tijdens de Tweede Wereldoorlog worden door de Duitsers panden verkocht waarvan de eigenaren veelal Joods zijn.</div>
     </div>
-  </a>
+  </a> -->
   <!-- <a href="/cases/landbouwverkeer">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -174,7 +158,7 @@ title: Linked Data
       <div class="card-description">Een interactieve en data-gedreven rapportage over het effect van ingrepen in twee Rotterdamse natuur- en recreatiegebieden.</div>
     </div>
   </a> -->
-  <a href="/cases/cbs-nieuwbouw">
+  <!-- <a href="/cases/cbs-nieuwbouw">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/cbs-logo.png" alt="CBS logo">
@@ -189,5 +173,5 @@ title: Linked Data
       <div class="card-title">Hoogspanning Onderzoek</div>
       <div class="card-description">Wat staat er in de buurt van Hoogspanning lijnen en verdeel/transformator kasten.</div>
     </div>
-  </a>
+  </a> -->
 </div>

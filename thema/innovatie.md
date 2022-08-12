@@ -70,6 +70,22 @@ title: Innovatie
       <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
     </div>
   </a>
+  <a href="/cases/kwaliteit_BAG_BRK_koppeling">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
+      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/sensrnet/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/SensRNet-logo.png">
+      <div class="card-title">Ontwikkeling Sensorenregister</div>
+      <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
+    </div>
+  </a>
   <a href="/demonstrators/verkaufsbucher-zoeken/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
