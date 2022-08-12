@@ -2,22 +2,6 @@
 layout: page
 title: Dissemination
 ---
-# Presentaties
-
-[Metadata 2.0](./2019-11-26-Metadata-2-0/index.html)
-: Erwin Folmer & Wouter Beek, 26 november 2019.
-
-[Adding 3D Visualization to the SPARQL Query Loop](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html)
-: Erwin Folmer & Wouter Beek, 30 augustus 2019.
-
-[Kadaster SPARQL Tutorial](./Kadaster-SPARQL-Tutorial.html)
-: Wouter Beek, 18 juni 2019.
-
-[Kadaster SPARQL Webinar](./Kadaster-SPARQL-Webinar.html)
-: Erwin Folmer & Wouter Beek
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oyH8YFVy37Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
 
 # Publicaties
 Business Rationale for Linked Data at Governments: a case study at the Netherlands’ Kadaster Data Platform
@@ -52,19 +36,3 @@ GeoYASGUI: The GeoSPARQL Query Editor and Result Set Visualizer
 
 Towards Self-Service GIS - Combining the Best of the Semantic Web and Web GIS
 : Alexandra Rowland, Erwin Folmer, Wouter Beek. In: _ISPRS International Journal of Geo-Information_, Vol 9, No. 12, 2020, [online toegang](https://www.mdpi.com/2220-9964/9/12/753).  
-
-# Applicaties
-
-## LinkDaLe
-
-Voor zijn afstudeerstage ontwierp [Gerwin Bosch](http://gerwinbosch.nl) een applicatie genaamd [LinkDaLe](http://linkdale.org).  LinkdaLe staat voor ‘Linked Data Learning Environment’, en maakt het mogelijk om mensen op laagdrempelige manier kennis te laten maken met Linked Data door data te transformeren naar Linked Data.  De getransformeerde data kan vervolgens worden opgeslagen in een publiek beschikbaar SPARQL endpoint.  Stan Ronhzin leverde bijdragen in de vorm van begeleidende teksten.
-
-## Common Sense demo
-
-TNO heeft een faceted browser ontwikkeld waarmee een demo-applicatie is opgezet voor het Kadaster.  Met deze webapplicatie wordt een kaartgebaseerde visualisatie van de vergunningenafhandeling in Eindhoven gedemonstreerd.
-
-- Op YouTube is een demonstratie video te zien:
-
-<iframe style="max-width:560px" width="100%" height="315" src="https://www.youtube.com/embed/EGTMvd5jYd4"  frameborder="0" allowfullscreen></iframe>
-
-

@@ -48,4 +48,12 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Data Story die laat zien hoe je de BAG 2.0 als LD kunt gebruiken.</div>
     </div>
   </a>
+    <a href="/stories/evacuatie/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/lucht-alarm.jpg">
+      <div class="card-title">Evacuatie datastory</div>
+      <div class="card-description">Welke huizen vallen binnen de radius van de calamiteit? vind het uit in deze evacuatie datastory.</div>
+    </div>
+  </a>
 </div>
