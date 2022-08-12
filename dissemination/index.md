@@ -41,7 +41,7 @@ Adding 3D GIS Visualization and Navigation to the SPARQL Query Loop
 : Wouter Beek, Erwin Folmer, Laurens Rietveld, Tony Baving, Vincent Van Altena.  In: _International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences_, Vol. 42, 2018, [online toegang](https://research.utwente.nl/files/76803170/isprs_archives_XLII_4_W8_11_2018.pdf), [presentatie](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html).
 
 ## 2017
-Kadaster Data Platform ― Overview Archicture
+Kadaster Data Platform ― Overview Architecture
 : Erwin Folmer, Wouter Beek.  In: _Free and Open Source Software for Geospatial (FOSS4G) Conference Proceedings_, Vol. 17, No. 1, 2017, [online toegang](https://scholarworks.umass.edu/foss4g/vol17/iss1/23).
 
 An Integrated Approach for Linked Data Browsing
