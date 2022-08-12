@@ -13,7 +13,6 @@ Collega's van het Datascience Team, team ODR/GEV en team DGV/Research, met onder
 ### Screenshots
 Onderstaande screenshots geven inzicht in wat een gebruiker van de applicatie op zijn scherm ziet. Ze hoeven alleen maar voor een gebouw te gaan staan, de aanvraag voor dat gebouw te houden en er wordt informatie over dat gebouw gegeven vanuit de KKG.
 
-<div class="cards-wrapper">
 <figure id="1">
 	<a href="/assets/images/ar-applicatie1.jpg">
 		<img src="/assets/images/ar-applicatie1.jpg" alt="Augmented Reality Applicatie">
@@ -22,7 +21,6 @@ Onderstaande screenshots geven inzicht in wat een gebruiker van de applicatie op
     Figuur 1 - Gebruikersscherm bij het voor het eerst scannen van een gebouw . 
   </figcaption>
  </figure>
-
 <figure id="2">
 	<a href="/assets/images/ar-applicatie2.jpg">
 		<img src="/assets/images/ar-applicatie2.jpg" alt="Augmented Reality Applicatie">
@@ -33,13 +31,12 @@ Onderstaande screenshots geven inzicht in wat een gebruiker van de applicatie op
  </figure>
 <figure id="3">
 	<a href="/assets/images/ar-applicatie3.jpg">
-		<img src="/assets/images/ar-applicatie3.jpg" alt="Augmented Reality Applicatie">
+		<img src="/assets/images/ar-applicatie3.jpg" alt="Augmented Reality Applicatie" width="300">
 	</a>
   <figcaption>
     Figuur 3 - Wanneer er veel huisnummers aan een gebouw zijn gekoppeld, kunt je met een applicatie het huisnummer kiezen waarin je geïnteresseerd bent. 
   </figcaption>
  </figure>
-</div>
 
 ### Mogelijke Volgende Stappen
 Het volgende is een lijst met volgende stappen die we willen nemen met de AR-applicatie.
