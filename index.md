@@ -61,17 +61,23 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
       <img class="card-image" src="/assets/images/kg-banner.webp" alt="Linked Data">
     </div>
   </a>
+<<<<<<< HEAD
 </div>
 
 
 <!-- <!-- <div class="cards-wrapper">
   <a href="/cases/integralegebruiksoplossing">
+=======
+  <!--
+  <a href="/cases/koppeling_bag">
+>>>>>>> 5b3b561e67c6c4523d0c9de31a4881e0336c851c
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
       <div class="card-title">Integrale Gebruiksoplossing</div>
       <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
     </div>
+<<<<<<< HEAD
   </a> -->
 
 
@@ -85,3 +91,24 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
   
 
 
+=======
+  </a>
+  -->
+  <a href="/cases/kganalyse">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/image_dashboard_dash.png" alt="BAG">
+      <div class="card-title">Kwaliteit Knowledge Graph</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de knowledge graph.</div>
+    </div>
+  </a>
+    <a href="/cases/kwaliteit_BAG_BRK_koppeling">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
+      <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
+    </div>
+  </a>
+</div>
+>>>>>>> 5b3b561e67c6c4523d0c9de31a4881e0336c851c
