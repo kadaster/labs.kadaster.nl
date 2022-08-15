@@ -73,7 +73,7 @@ a:hover {
   right: 0;
   background: transparent url(/assets/images/blur.png) repeat-x 0% 100%;
   background-size: auto;
-  z-index: 10;
+  z-index: 9;
 }
 .card-home {
   display: flex;
