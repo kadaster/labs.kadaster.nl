@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: page
 title: SPARQL Tutorial Stap 3 - Registrative vs Knowledge Graph
 ---
 

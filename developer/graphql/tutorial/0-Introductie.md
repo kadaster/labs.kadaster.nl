@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: page
 title: GraphQL Tutorial Stap 0 - Introductie
 ---
 

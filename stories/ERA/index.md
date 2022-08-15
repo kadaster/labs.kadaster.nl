@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Comparing Dutch railway information - European Union Agency for Railways (ERA) and the Dutch Cadastre (Kadaster)
 ---
 

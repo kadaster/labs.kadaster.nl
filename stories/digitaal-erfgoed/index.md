@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 

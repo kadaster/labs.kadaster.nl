@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
+<div class="banner">
+  <span class="banner-overlay">
+  </span>
+  <picture>
+    <img class="banner-image" src="{{ page.banner }}" alt="{{ page.banner-alt | default:page.title }}">
+  </picture>
+</div>
 <div class="flex">
   <div class="flex-content">
     {{ content }}
   </div>
-<div>
+</div>

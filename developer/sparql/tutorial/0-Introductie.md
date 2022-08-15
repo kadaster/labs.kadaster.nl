@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: SPARQL Tutorial Stap 0 - Introductie
 ---
 

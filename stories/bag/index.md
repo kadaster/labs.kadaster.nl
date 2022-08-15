@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Basisregistratie Adressen en Gebouwen (BAG) 2.0
 ---
 

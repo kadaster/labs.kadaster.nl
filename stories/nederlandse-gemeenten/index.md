@@ -1,6 +1,6 @@
 ---
 description: Wat zijn de Nederlandse gemeenten met de grootste oppervlakte?  En welke gemeenten hebben de meeste inwoners?
-layout: tbd
+layout: default
 title: Nederlandse gemeenten
 ---
 

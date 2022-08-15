@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: SPARQL Tutorial Stap 1 - Exploreer het datamodel
 ---
 

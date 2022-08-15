@@ -1,5 +1,5 @@
 ---
-layout: story
+layout: page
 title: GraphQL Tutorial Stap 2 - Maken van een GraphQL query
 ---
 
