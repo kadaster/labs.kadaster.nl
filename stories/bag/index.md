@@ -1,5 +1,5 @@
 ---
-layout: tdb
+layout: page
 title: Basisregistratie Adressen en Gebouwen (BAG) 2.0
 ---
 

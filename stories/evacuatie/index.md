@@ -1,5 +1,5 @@
 ---
-layout: tdb
+layout: page
 title: Evacuatie datastory
 ---
 

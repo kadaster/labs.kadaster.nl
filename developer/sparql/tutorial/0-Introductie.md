@@ -1,5 +1,5 @@
 ---
-layout: tdb
+layout: page
 title: SPARQL Tutorial Stap 0 - Introductie
 ---
 

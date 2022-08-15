@@ -1,5 +1,5 @@
 ---
-layout: tdb
+layout: page
 title: PLDN-Werkgroep Digitaal Erfgoed
 ---
 
