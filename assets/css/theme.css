@@ -57,11 +57,11 @@ a:hover {
 }
 .banner {
   position: relative;
-  height: 400px;
+  height: 575px;
   width: 100%;
 }
 .banner-image {
-  height: 400px;
+  height: 575px;
   width: 100%;
   object-fit: cover;
 }
@@ -71,9 +71,9 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: transparent url(/assets/images/blur.png) repeat-x 100% 100%;
-  background-size: auto 270px;
-  z-index: 9;
+  background: transparent url(/assets/images/blur.png) repeat-x 0% 100%;
+  background-size: auto;
+  z-index: 10;
 }
 .card-home {
   display: flex;
@@ -230,7 +230,7 @@ code.hightlight {
   padding: 20px;
 }
 .flex-content h1 {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .flex-content h2 {
   margin-top: 1rem;
@@ -251,6 +251,7 @@ code.hightlight {
 
 .navbar {
   background: white;
+  border-bottom: .313rem solid #008296;
   box-shadow: 0.5px 1px 5px 2px #ccc;
   padding: 24px 0;
   line-height: 1.5;
