@@ -19,22 +19,11 @@ Deze oude versie van Loki is gedeactiveerd. De pagina met de demonstrator is nie
 
 ## Introductie
 
-Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.  De [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) is het kloppend hart van Loki. 
+Loki is een experiment waarbij we de toegevoegde waarde aantonen van een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking.  Loki maakt gebruik van natuurlijke taalverwerking voor het beantwoorden van vragen.
 
 Na dit experiment ontstond de wens voor een testbare versie voor de eindgebruiker. Deze versie zou Loki 1.0 heette en is door een student als afstudeeropdracht ontwikkeld. Loki 1.0 is te gebruiken door op het chat-icoon rechts onderaan het scherm te klikken. Meer informatie over Loki 1.0 is onderaan deze pagina te lezen.
 
 Met de opkomst van virtual assistents, zoals Siri, Alexa & de Google Assistent en de ontwikkelingen omtrent de [Kadaster Knowledge Graph](/cases/kadaster-knowledge-graph.html), ontstaan er nieuwe inzichten over hoe de data van de toekomst moet worden ontsloten.  Het resultaat van deze innovatie vind je door op onderstaande demonstrator te klikken! Voor een uitgebreid verhaal over hoe en waarom Loki ontwikkeld is nodigen we de lezer van harte uit om verder te lezen.
-
-<div class="cards-wrapper">
-  <a href="/cases/pdok-knowledge-graph.html">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/pdok-kg-simplified.jpg" alt="Knowledge graph">
-      <div class="card-title">PDOK Knowledge Graph</div>
-      <div class="card-description">Loki gebruikt de PDOK knowledge graph om de juiste antwoorden bij jouw vraag te zoeken!</div>
-    </div>
-  </a>
-</div>
 
 ## Aanpak
 
@@ -75,7 +64,7 @@ Bij het Kadaster Data Science team werken we volgens het Scrum/Agile proces.  Do
 
 ### Iteratie 1: Framework en adressen verificatie
 
-We begonnen de eerste sprint door een framework neer te zetten voor een chatbot aangesloten op de relevante databronnen.  De chatbot is gebaseerd op het Open-Source Python platform [Rasa](https://rasa.com/).  Eerste databron in scope is de BAG, een bron die centraal staat in de [PDOK Knowledge Graph](/cases/pdok-knowledge-graph.html) en voor Locatie-gebaseerde Kadaster Informatie (LOKI) een onmisbaar uitgangspunt biedt.  Na de eerste iteratie was het mogelijk om simpele vragen over een adres uit de BAG te stellen (bijv. wat is mijn oppervlakte?).  Adressen en de desbetreffende informatie verifiëren we via de [PDOK Locatieserver](https://github.com/PDOK/locatieserver/wiki/API-Locatieserver).
+We begonnen de eerste sprint door een framework neer te zetten voor een chatbot aangesloten op de relevante databronnen. De chatbot is gebaseerd op het Open-Source Python platform [Rasa](https://rasa.com/). Na de eerste iteratie was het mogelijk om simpele vragen over een adres uit de BAG te stellen (bijv. wat is mijn oppervlakte?).  Adressen en de desbetreffende informatie verifiëren we via de [PDOK Locatieserver](https://github.com/PDOK/locatieserver/wiki/API-Locatieserver).
 
 <div class="textbox" markdown="1">
 ## PDOK Locatieserver
@@ -89,7 +78,7 @@ Nu we de mogelijkheid hebben om 'simpele' vragen aan Loki te stellen breiden we 
 
 ### Iteratie 3: BRT, WOZ en doorverwijzingen
 
-Eén van de belangrijkste vragen die burgers hebben relateren zich tot de Wet waardering Onroerende Zaken (WOZ) waarde.  De WOZ is momenteel te bevragen via het <a href="https://www.wozwaardeloket.nl/">WOZ Waardeloket</a> en is verder niet als open data beschikbaar.  Door verwijzingen toe te voegen naar WOZ categoriën, waarmee we je een globaal beeld geven van je WOZ waarde, voorzien we gedeeltelijk aan deze behoefte.  Ook voegen we verwijzingen toe naar vragen die we niet direct kunnen beantwoorden uit onze open databronnen.  Daarnaast voegen we de een geometrische link met de [Basisregistratie Topografie (BRT)](https://labs.kadaster.nl/cases/brt.html) toe, waarmee we de gebruiker in staat stellen afstanden tot de objecten in de BRT te bevragen.
+Eén van de belangrijkste vragen die burgers hebben relateren zich tot de Wet waardering Onroerende Zaken (WOZ) waarde.  De WOZ is momenteel te bevragen via het <a href="https://www.wozwaardeloket.nl/">WOZ Waardeloket</a> en is verder niet als open data beschikbaar.  Door verwijzingen toe te voegen naar WOZ categoriën, waarmee we je een globaal beeld geven van je WOZ waarde, voorzien we gedeeltelijk aan deze behoefte.  Ook voegen we verwijzingen toe naar vragen die we niet direct kunnen beantwoorden uit onze open databronnen.  Daarnaast voegen we de een geometrische link met de BRT toe, waarmee we de gebruiker in staat stellen afstanden tot de objecten in de BRT te bevragen.
 
 <div class="textbox" markdown="1">
 ## Geometrische links en de BRT

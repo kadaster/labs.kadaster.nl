@@ -156,7 +156,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
   <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brk-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data model (WIP)</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brk/sparql/default">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/registratie/sparql/default">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
@@ -169,7 +169,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
   <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brt-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brt/top10nl/sparql/default">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
