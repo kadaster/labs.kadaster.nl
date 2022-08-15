@@ -6,7 +6,7 @@ title: Data Browsers
 # Data Browsers
 
 <div class="cards-wrapper">
-  <a href="kkg-gebouw">
+  <a href="/browsers/kkg-gebouw">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png">
@@ -22,7 +22,7 @@ title: Data Browsers
       <div class="card-description">Met de bevolkingsbrowser kunnen Nederlandse gemeenten, wijken en buurten op basis van bevolkingsstatistieken worden doorzocht.</div>
     </div>
   </a> -->
-    <a href="kkg-terrein">
+    <a href="/browsers/kkg-terrein">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/knowledge_graph.png">
@@ -30,7 +30,7 @@ title: Data Browsers
       <div class="card-description">Met deze browser kunnen terreinen in Nederland op basis van verschillende eigenschappen geselecteerd worden.</div>
     </div>
   </a>
-  <a href="nationaal-archief">
+  <a href="/browsers/nationaal-archief">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/nationaal-archief-logo.png">
