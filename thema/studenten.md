@@ -49,7 +49,7 @@ title: Data Browsers
   <a href="/cases/cases/bag-voorspellingen">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/bag-bronhouder.jpg" alt="Voorspellingen">
+      <img class="card-image" src="bag-voorspellingen-shiny.PNG" alt="Voorspellingen">
       <div class="card-title">Self-Service GIS</div>
       <div class="card-description">Missende BAG bouwjaren voorspellen.</div>
     </div>
