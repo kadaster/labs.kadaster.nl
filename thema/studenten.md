@@ -46,4 +46,12 @@ title: Data Browsers
       <div class="card-description">Hier presenteren we onze visie over Self-Service GIS en de mogelijkheden die hier reeds zijn.</div>
     </div>
   </a>
+  <a href="/cases/cases/bag-voorspellingen">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag-bronhouder.jpg" alt="Voorspellingen">
+      <div class="card-title">Self-Service GIS</div>
+      <div class="card-description">Missende BAG bouwjaren voorspellen.</div>
+    </div>
+  </a>
 </div>
