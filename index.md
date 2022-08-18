@@ -40,7 +40,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
     <a href="/thema/data_analyse">
     <div class="card-home">
       <div class="card-type">Data Analyse</div>
-      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="Graphql">
+      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="data analyse">
     </div>
   </a>
     <a href="/thema/studenten">
