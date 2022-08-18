@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #00387d;
+  color: #008296;
 }
 ul,
 ol {
@@ -134,7 +134,7 @@ a:hover {
 }
 .card-title {
   border-top: 1px #ccc solid;
-  color: #00387d;
+  color: #008296;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.75rem;
@@ -143,7 +143,7 @@ a:hover {
 }
 .card-type {
   border-bottom: 1px #ccc solid;
-  color: #00387d;
+  color: #008296;
   padding: 0.4rem;
   font-size: 1.2rem;
   font-weight: bold;
