@@ -168,7 +168,7 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/kadaster/brt-2">Basisregistratie Topografie</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/brt-2/services/brt/sparql">https://api.labs.kadaster.nl/datasets/brt/top10nl/services/default/sparql</a></div>
   <div class="endpointContainer_center"><a href="/cases/brt-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data model</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/brt-2/sparql/brt">SPARQL editor</a></div>
