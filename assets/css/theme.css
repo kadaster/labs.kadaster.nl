@@ -55,6 +55,17 @@ p > a{
 a:hover {
   text-decoration: none;
 }
+.button {
+  background-color: #008296;
+  border: none;
+  color: white;
+  margin-top: 1%;
+  margin-right: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 .banner {
   position: relative;
   height: 575px;
