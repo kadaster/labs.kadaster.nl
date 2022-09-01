@@ -1,0 +1,118 @@
+<html>
+<header>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+</header>
+
+<body style="margin: 0">
+<div style="height: 30vh; max-height: 30vh; overflow-y: auto">
+    <span style="padding: .5rem">
+        ## “Het Perceeltje”
+Het Perceeltje is een unieke collab (samenwerking) brouwsel van het Kadaster en de Brouwtoren. Hier zullen we het hoe en waarom van deze samenwerking uitleggen, en veel meer informatie over het bier zelf geven. 
+
+## Het ontstaan
+Het initiatief is ontstaan bij het Kadaster Data Science Team, waarin veel Data, IT en AI kennis is verenigd binnen het Kadaster. Op basis van het artikel op [Medium](https://medium.com/@koenvandenheuvel/how-to-brew-a-beer-with-artificial-intelligence-6c742f5fd843) en de door het Uiltje gebrouwen [data-driven-neipa](https://www.uiltjebrewing.com/en/product/data-driven-neipa/) kwam de gedachte: Dat kunnen wij ook….en beter…in ieder geval meer data-gedreven! Daarbij zochten we nog naar een mogelijkheid van een team-uitje, en was er ook behoefte aan een origineel relatiegeschenk. Samenvattend als Data Science Team willen we zelf eenmalig bier gaan brouwen op basis van een recept automatisch gegenereerd dat lekker is en voldoet aan moderne waardes, en we kunnen gebruiken als relatie-geschenk.
+
+
+## Wat betekent dat nou een automatisch gegeneerd recept?
+Of in andere woorden: data gedreven bier, en de inzet van kunstmatige intelligentie?
+Zoals in het [artikel](https://medium.com/@koenvandenheuvel/how-to-brew-a-beer-with-artificial-intelligence-6c742f5fd843) beschreven zijn de Brewdog recepten open beschikbaar. Helaas zijn ze 1 van de weinige brouwers die dit doen. Daarnaast weten we de scores van drinkers van dit biertje op basis van Untappd beoordelingen. Op basis hiervan kunnen we een AI model trainen, en een miljoen recepten genereren en daarbij een voorspelling doen van een potentiele untappd score. De recepten van de hoogste scores hebben we meegenomen naar de Brouwer.
+
+Maar we hebben nog meer AI toegepast op het Etiket. Het plaatje op de voorkant van het etiket is gegenereerd middels [DALL-E-2](https://openai.com/dall-e-2/). Een nieuw AI-systeem dat realistische afbeeldingen en kunst kan maken van een beschrijving in natuurlijke taal.
+
+
+## Meer Kadaster inbreng
+Daarnaast hadden we ook andere Kadaster gerelateerde uitgangspunten:
+
+•	Duurzaam: Een lage emissie voetafdruk door de inzet van lokale grondstoffen. We hebben de ingedrienten uit het recept vertaald naar         Nederlandse equivalenten. Zodat we ook kunnen spreken van een Lokaal Nederlands bier.
+
+•	Transparantie, openheid: We zijn volledig open en transparant over het bier. Ook het recept is open beschikbaar, en we nodigen iedereen uit om dit recept verder te verbeteren.
+
+•	Herkomst transparantie: De voedselketen zou volledig transparant moeten zijn; dat zijn we dus ook over de herkomst van de ingedrienten.
+
+•	Innovatief: Door samen te werken met een jonge innovatieve brouwerij.
+
+
+## De rol van Brouwtoren
+Brouwtoren heeft geholpen om het idee verder uit te werken, en belangrijker om op basis van hun vakmanschap het recept fijn te slijpen naar een lekker drinkbaar bier. Bij deze jonge en innovatieve brouwer konden we de Data/IT wereld van het Kadaster laten samensmelten met het vakmanschap van een bierbrouwerij. Brouwtoren heeft de leiding genomen in het proces om doormiddel van een proefbrouwsel, een proeverij met scores, en vervolgens in het productieproces te komen tot dit biertje.
+
+
+## De ingredienten: 
+
+## Het recept: 
+
+## Untappd 
+
+## Map applicatie
+    </span>
+</div>
+<div id="map-holder"></div>
+
+<script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(postPosition);
+      } else {
+        console.error("Geolocation is not supported by this browser.");
+      }
+    }
+  
+    function postPosition(position) {
+      const lat = position.coords.latitude;  
+      const long = position.coords.longitude;
+      
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", 'http://localhost:3000/insertlocations', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify({lat, long}));
+    }
+
+    function main() {
+        const mapHolder = document.getElementById('map-holder');
+        mapHolder.style.height = '70vh';
+
+        const map = L.map('map-holder', {
+            // Set latitude and longitude of the map center (required)
+            center: [52.370216, 4.895168],
+            // Set the initial zoom level, values 0-18, where 0 is most zoomed-out (required)
+            zoom: 8,
+        });
+
+        L.control.scale().addTo(map);
+
+        L.tileLayer('https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?service=WMTS&request=GetTile&version=1.0.0&layer=standaard&style=default&tilematrixset=EPSG%3A3857&format=image%2Fpng&height=256&width=256&tilematrix={z}&tilecol={x}&tilerow={y}').addTo(map);
+
+        let clusterGroup;
+        function getData() {
+            try {
+                fetch('http://localhost:3000/getlocations')
+                .then(response => response.json())
+                .then(locations => {
+                    if (clusterGroup) map.removeLayer(clusterGroup);
+                    clusterGroup = L.markerClusterGroup();
+                    for (const location of locations) {
+                        clusterGroup.addLayer(L.marker(new L.LatLng(location.Latitude, location.Longitude)));
+                    }
+                    map.addLayer(clusterGroup);
+                })
+            } finally {
+                setTimeout(getData, 10000);
+            }
+        }
+        
+        getData();
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('location') === 'qr') {
+            getLocation();
+        }
+    }
+
+    window.onload = main;
+  </script>
+</body>
+</html>
