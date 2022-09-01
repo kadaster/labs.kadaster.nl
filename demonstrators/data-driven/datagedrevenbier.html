@@ -66,7 +66,7 @@ Brouwtoren heeft geholpen om het idee verder uit te werken, en belangrijker om o
       const long = position.coords.longitude;
       
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", 'http://localhost:3000/insertlocations', true);
+      xhr.open("POST", 'https://labs.kadaster.nl/bier/insertlocations', true);
       xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send(JSON.stringify({lat, long}));
     }
@@ -89,7 +89,7 @@ Brouwtoren heeft geholpen om het idee verder uit te werken, en belangrijker om o
         let clusterGroup;
         function getData() {
             try {
-                fetch('http://localhost:3000/getlocations')
+                fetch('https://labs.kadaster.nl/bier/getlocations')
                 .then(response => response.json())
                 .then(locations => {
                     if (clusterGroup) map.removeLayer(clusterGroup);
