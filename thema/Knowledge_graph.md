@@ -188,14 +188,14 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
   <div class="endpointContainer_title mobileSpan">
     <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
     <div>
-      <div class="endpointContainerTitle_maintext">KG</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/dst/kkg">Knowledge Graph</a></div>
+      <div class="endpointContainerTitle_maintext">KKG</div>
+      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/dst/kkg">Kadaster Knowledge Graph</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/kadaster/kg/services/default/sparql">endpoint</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing_stories">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kg-kadaster/home">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/kadaster/kg/sparql/default">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kadaster-knowledge-graph">Data model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/kkg/sparql/default">SPARQL editor</a></div>
 </div>
 
 ## Data bronen en actualiteit
