@@ -62,9 +62,7 @@
              <br>
              Het recept: 
              <br>
-             Untappd 
-             <br>
-             Map applicatie
+             Untappd: 
             
         </div>
         <div class="modal-footer">
