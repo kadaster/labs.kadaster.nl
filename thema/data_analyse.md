@@ -35,7 +35,7 @@ title: Data Analyse
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/BRKBAG_BANNER.PNG" alt="BAG">
       <div class="card-title">Kwaliteit BAG-BRK koppeling</div>
-      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwalitiet van de koppeling tussen de BAG en de BRK.</div>
+      <div class="card-description">In deze use case besteden we aandacht aan issues rond de kwaliteit van de koppeling tussen de BAG en de BRK.</div>
     </div>
   </a>
 </div>
