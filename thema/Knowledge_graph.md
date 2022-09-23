@@ -127,10 +127,10 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bag/lv">Basisregistratie Adressen en Gebouwen</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bag2.basisregistraties.overheid.nl/sparql">endpoint</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/bag/lv/services/default/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bag-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bag/lv/sparql">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
@@ -140,10 +140,10 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bgt/lv">Basisregistratie Grootschalige Topografie</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/bgt/lv/services/default/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bgt/lv/sparql">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
@@ -153,10 +153,10 @@ De volgende tabel bevat de linked datasets die door het Kadaster worden ontslote
       <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/brk/registratie">Basisregistratie Kadaster (open deel)</a></div>
     </div>
   </div>
-  <div class="mobileSpan"><a href="https://bgt.basisregistraties.overheid.nl/sparql">endpoint</a></div>
+  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/brk/registratie/services/default/sparql">endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brk-ld">Use cases</a></div>
   <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data model (WIP)</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/registratie/sparql/default">SPARQL editor</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/registratie/sparql">SPARQL editor</a></div>
 </div>
 <div class="endpointContainer">
   <div class="endpointContainer_title mobileSpan">
