@@ -56,4 +56,12 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Welke huizen vallen binnen de radius van de calamiteit? vind het uit in deze evacuatie datastory.</div>
     </div>
   </a>
+      <a href="/stories/kwaliteit/index.html">
+    <div class="card">
+      <div class="card-type">Story</div>
+      <img class="card-image" src="/assets/images/bag-bronhouder.jpg">
+      <div class="card-title">BAG kwaliteit</div>
+      <div class="card-description">Welke objecten zitten in verschillende rapportages? Vind het uit in deze bag kwaliteit datastory.</div>
+    </div>
+  </a>
 </div>
