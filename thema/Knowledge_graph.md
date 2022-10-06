@@ -6,18 +6,53 @@ title: Kadaster Knowledge Graph
 <link rel="stylesheet" href="/assets/css/developer.css">
 
 # Kadaster Knowledge Graph
+De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen (BAG) opgeslagen. Dat gebouw staat op een perceel, en dat perceel heeft ook een oppervlakte, maar die wordt in Basisregistratie Kadaster (BRK) opgeslagen. In de Kadaster Knowledge Graph zijn deze, en heel veel andere, gegevens met elkaar verbonden. Voor deze verbindingen (of ‘links’) wordt linked data gebruikt. Linked data is een ecosysteem van nationale en internationale open standaarden en de Kadaster Knowledge Graph maakt gebruik van linked data standaarden, en kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden. Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
 
-De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en
-Gebouwen (BAG) opgeslagen.  Dat gebouw staat op een perceel, en dat
-perceel heeft ook een oppervlakte, maar die wordt in Basisregistratie
-Kadaster (BRK) opgeslagen.
+## Buttons/Tegels: Data Model, SPARQL Editor, Developers
+Kunnen we alsjeblieft drie verschillende knoppen of tegels maken:
+1. data model met een link naar weaver: https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home 
+2. SPARQL editor met een link naar: https://data.labs.kadaster.nl/dst/kkg/sparql/default
+3. Developers met een link naar: https://labs.kadaster.nl/developer
 
-In de Kadaster Knowledge Graph zijn deze, en heel veel andere,
-gegevens met elkaar verbonden.  Voor deze verbindingen (of ‘links’)
-wordt linked data gebruikt.  Linked data is een ecosysteem van
-nationale en internationale open standaarden.
+## Bronnen en Actualiteit
+De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende open data bronnen. De gegevens in de Kadaster Knowledge Graph worden regelmatig ververst. Op dit moment 4 keer per jaar.
 
-Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
+- De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG).
+- De Landelijke Voorziening van de Basisregistratie Grootschalige Topografie (BGT).
+- De Top10NL van de Basisregistratie Topografie (BRT).
+- Het open deel van de Basisregistratie Kadaster (BRK).
+- De Publiekrechtelijke Beperkingen (PB).
+
+Voor een compleet overzicht van alle onderliggende datasets en toegang tot hun respectievelijke endpoints, bezoek de volgende pagina: [linked data bronnen overzicht](https://labs.kadaster.nl/developer/sparql/)
+
+De data die beschikbaar wordt gesteld op een regelmatige basis ververst. Hieronder vindt u een overzicht van hoe vaak de gegevenssets worden vernieuwd en wanneer de laatste update is uitgevoerd:
+
+<div class="textbox" markdown="1">
+## Actualiteit van databronnen
+
+- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-20*.
+- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
+- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
+- **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-14*.
+- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
+- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-04*.
+- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
+
+De Kadaster Knowledge Graph maakt gebruik van deze datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets. Voor een compleet overzicht van alle onderliggende datasets en toegang tot hun respectievelijke endpoints werwijzen we de gebruiker naar onze [developer portaal](/developer/sparql/). Voor use cases en data stories specifiek voor een specifiek datasets verwijzen we de gebruiker naar [onze data pagina](/data/).
+
+</div>
+
+Specifieke details over de wijzigingen tussen leveringen kunnen worden geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit kleine quality-of-life verbeteringen of fixes op basis van observaties van gebruikers.
+
+## Demonstrators
+Voeg de volgende demonstranten toe (deze staat nu in de Linked Data Thema pagina maar moet echter hier komen):
+1. AR applicatie
+2. Gruff
+3. GeoDataVisitor
+4. Objectviewer
+5. Sparklis
+
+Laten we dit van de pagina met gekoppelde gegevens verwijderen. 
 
 ## Use cases
 
@@ -68,186 +103,6 @@ inzichtelijk gemaakt worden.
       <div class="card-description">Hoe gebruik ik als ontwikkelaar zelf de Knowledge Graph? En hoe stel ik mijn eerste query op?</div>
     </div>
   </a>
-</div>
-
-## Tutorials
-
-Deze tutorials zorgen er voor dat je snel zelf aan de slag kunt gaan
-met de Kadaster Knowledge Graph.  De tutorials zijn gericht op
-ontwikkelaars, maar met name het eerste deel is ook voor een breder
-technisch geïnteresseerd publiek bedoeld.
-
-<div class="cards-wrapper">
-  <a href="https://data.labs.kadaster.nl/edu/-/stories/tutorial-introductie">
-    <div class="card">
-      <div class="card-type">Tutorial</div>
-      <img class="card-image" src="/assets/images/colors.jpg">
-      <div class="card-description"><b>Deel 1: Intro Kadaster Knowledge Graph</b><br>Wat is de Kadaster Knowledge Graph en wat kan ik er mee als ontwikkelaar?  Wat is linked data en waarom gebruikt het Kadaster open standaarden?</div>
-    </div>
-  </a>
-  <a href="https://data.labs.kadaster.nl/edu/-/stories/tutorial-verken-data-model">
-    <div class="card">
-      <div class="card-type">Tutorial</div>
-        <img class="card-image" src="/assets/images/red.jpg">
-        <div class="card-description"><b>Deel 2: Verken het data model</b><br>Hoe exploreer ik een data model? Hoe verkrijg ik inzicht in de beschikbare data en de potentiële vragen die ik over de data kan stellen?</div>
-    </div>
-  </a>
-  <a href="https://data.labs.kadaster.nl/edu/-/stories/tutorial-sparql">
-    <div class="card">
-      <div class="card-type">Tutorial</div>
-      <img class="card-image" src="/assets/images/green.jpg">
-      <div class="card-description"><b>Deel 3: SPARQL Bevragingstaal</b><br>Deze tutorial maakt je wegwijs in de SPARQL bevragingstaal. Hiermee kun je snel je eerste queries uitvoeren over de Kadaster Knowledge Graph.</div>
-    </div>
-  </a>
-  <a href="/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal">
-    <div class="card">
-      <div class="card-type">Tutorial</div>
-      <img class="card-image" src="/assets/images/white.jpg">
-      <div class="card-description"><b>Deel 4: Gebruik een programmeertaal</b><br>Deze tutorial legt uit hoe je een applicatie kunt ontwikkelen in een programmeertaal, waarbij gebruik wordt gemaakt van de gegevens in de Kadaster Knowledge Graph.</div>
-    </div>
-  </a>
-</div>
-
-## Overzicht
-
-De volgende tabel bevat de linked datasets die door het Kadaster worden ontsloten.  Voor iedere dataset zijn links opgenomen naar het SPARQL endpoint, de use cases, het data model en de SPARQL editor.
-
-<div class="endpointContainer mobileHidden">
-  <div><b>Dataset</b></div>
-  <div><b>SPARQL endpoint</b></div>
-  <div><b>Use cases</b></div>
-  <div><b>Data model</b></div>
-  <div><b>SPARQL editor</b></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">BAG</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bag/lv">Basisregistratie Adressen en Gebouwen</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/bag/lv/services/default/sparql">endpoint</a></div>
-  <div class="endpointContainer_center"><a href="/cases/bag-ld">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bag/lv/sparql">SPARQL editor</a></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">BGT</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/bgt/lv">Basisregistratie Grootschalige Topografie</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/bgt/lv/services/default/sparql">endpoint</a></div>
-  <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bgt/lv/sparql">SPARQL editor</a></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">BRK</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/brk/registratie">Basisregistratie Kadaster (open deel)</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/brk/registratie/services/default/sparql">endpoint</a></div>
-  <div class="endpointContainer_center"><a href="/cases/brk-ld">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data model (WIP)</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/registratie/sparql">SPARQL editor</a></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">BRT</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/brt/top10nl">Basisregistratie Topografie</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/brt/top10nl/services/default/sparql">endpoint</a></div>
-  <div class="endpointContainer_center"><a href="/cases/brt-ld">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brt/top10nl/sparql/default">SPARQL editor</a></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">CBS KWB</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/cbs/wbk/">CBS Kerncijfers Wijken- en Buurten</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/cbs/wbk/services/wbk/sparql">endpoint</a></div>
-  <div class="endpointContainer_center">-</div>
-  <div class="endpointContainer_center">-</div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/cbs/wbk/sparql/default">SPARQL editor</a></div>
-</div>
-<div class="endpointContainer">
-  <div class="endpointContainer_title mobileSpan">
-    <img class="endpointContainerTitle_image" src="/assets/images/linked-data_icon.png">
-    <div>
-      <div class="endpointContainerTitle_maintext">KKG</div>
-      <div class="endpointContainerTitle_subtext"><a href="https://data.labs.kadaster.nl/dst/kkg">Kadaster Knowledge Graph</a></div>
-    </div>
-  </div>
-  <div class="mobileSpan"><a href="https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql">endpoint</a></div>
-  <div class="endpointContainer_center"><a href="/cases/integralegebruiksoplossing_stories">Use cases</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kadaster-knowledge-graph">Data model</a></div>
-  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/kkg/sparql/default">SPARQL editor</a></div>
-</div>
-
-## Data bronen en actualiteit
-
-De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende
-open data bronnen.  De gegevens in de Kadaster Knowledge Graph worden
-regelmatig ververst.  Op dit moment 4 keer per jaar.
-
-- De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG).
-- De Landelijke Voorziening van de Basisregistratie Grootschalige Topografie (BGT).
-- De Top10NL van de Basisregistratie Topografie (BRT).
-- Het open deel van de Basisregistratie Kadaster (BRK).
-- De Publiekrechtelijke Beperkingen (PB).
-
-De Kadaster Kennisgraaf maakt gebruik van linked data standaarden, en
-kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden.
-
-De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
-
-<div class="textbox" markdown="1">
-## Actualiteit van databronnen
-
-De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst. Voor detailinformatie en links naar alle databronnen verwijzen we de gebruiker naar [onze developer pagina](/developer/). Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
-
-- **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-20*.
-- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
-- **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-13*.
-- **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-01-14*.
-- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
-- **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-05-04*.
-- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
-
-De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.
-
-</div>
-
-Specifieke details over de wijzigingen tussen leveringen kunnen worden
-geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit
-kleine quality-of-life verbeteringen of fixes op basis van observaties
-van gebruikers.
-
-De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik
-van deze onderliggende datasets en is daarmee qua actualiteit een
-afgeleide van bovenstaande sets.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IEsmV4q2Ai0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Integrale Gebruiksoplossing (IGO)
-
-De Kadaster Knowledge Graph is gebaseerd op dezelfde aanpak die is verkend tijdens het traject van de Integrale Gebruiksoplossing (IGO).  De Integrale Gebruiksoplossing is een Proof of Concept dat binnen het DiS-Geo programma tot stand is gebracht in samenwerking met het Kadaster Data Science Team.  Het doel van de IGO is het combineren en integreren van geospatiële gegevensbronnen ten behoeve van innovatieve nieuwe use cases.  De IGO bevat naast Kadastrale bronnen ook een aantal niet-Kadastrale bronnen (bijvoorbeeld CBS wijken en buurten).  Bekijk onderstaande video om meer te weten te komen over de IGO.
-
-<div class="cards-wrapper">
   <a href="/cases/integralegebruiksoplossing">
     <div class="card">
       <div class="card-type">Use Case</div>
