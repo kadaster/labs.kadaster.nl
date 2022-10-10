@@ -6,36 +6,12 @@ title: Linked Data
 # Linked Data
 
 <div class="cards-wrapper">  
-<a href="/cases/ar-applicatie">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">AR Applicatie</div>
-      <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/gruff/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/gruff.png">
-      <div class="card-title">Gruff</div>
-      <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
-    </div>
-  </a>
   <a href="/demonstrators/datawaardedashboard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/kadaster-logo.png">
       <div class="card-title">Data Waarde Dashboard</div>
       <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
-    </div>
-  </a>
-  <a href="/demonstrators/geodatavisitor">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/geodatavisitor.png">
-      <div class="card-title">Geo Data Visitor</div>
-      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard </div>
     </div>
   </a>
   <a href="/cases/3d-demonstrator">
@@ -46,28 +22,12 @@ title: Linked Data
       <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
     </div>
   </a>
-  <a href="/demonstrators/objectviewer">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag.png">
-      <div class="card-title">Objectviewer</div>
-      <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
-    </div>
-  </a>
   <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
       <div class="card-title">GeoDataWizard</div>
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
-    </div>
-  </a>
-  <a href="/cases/sparklis">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
-      <div class="card-title">Sparklis</div>
-      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
   <!-- <a href="https://labs.kadaster.nl/vocbench3">

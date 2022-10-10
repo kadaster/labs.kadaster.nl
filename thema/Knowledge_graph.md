@@ -6,13 +6,20 @@ title: Kadaster Knowledge Graph
 <link rel="stylesheet" href="/assets/css/developer.css">
 
 # Kadaster Knowledge Graph
-De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen (BAG) opgeslagen. Dat gebouw staat op een perceel, en dat perceel heeft ook een oppervlakte, maar die wordt in Basisregistratie Kadaster (BRK) opgeslagen. In de Kadaster Knowledge Graph zijn deze, en heel veel andere, gegevens met elkaar verbonden. Voor deze verbindingen (of ‘links’) wordt linked data gebruikt. Linked data is een ecosysteem van nationale en internationale open standaarden en de Kadaster Knowledge Graph maakt gebruik van linked data standaarden, en kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden. Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
+De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen (BAG) opgeslagen. Dat gebouw staat op een perceel, en dat perceel heeft ook een oppervlakte, maar die wordt in de Basisregistratie Kadaster (BRK) opgeslagen. In de Kadaster Knowledge Graph zijn deze, en heel veel andere, gegevens met elkaar verbonden. Voor deze verbindingen (of ‘links’) wordt linked data gebruikt. Linked data is een ecosysteem van nationale en internationale open standaarden en de Kadaster Knowledge Graph maakt gebruik van linked data standaarden, en kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden. Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
 
-## Buttons/Tegels: Data Model, SPARQL Editor, Developers
-Kunnen we alsjeblieft drie verschillende knoppen of tegels maken:
-1. data model met een link naar weaver: https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home 
-2. SPARQL editor met een link naar: https://data.labs.kadaster.nl/dst/kkg/sparql/default
-3. Developers met een link naar: https://labs.kadaster.nl/developer
+<div class="cards-wrapper">
+  <a href="https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home">
+      <div class="card-type">Data model</div>
+  </a>
+    <a href="https://data.labs.kadaster.nl/dst/kkg/sparql/default">
+      <div class="card-type">SPARQL Editor</div>
+  </a>
+    <a href="https://labs.kadaster.nl/developer">
+      <div class="card-type">Developers</div>
+  </a>
+</div>
+
 
 ## Bronnen en Actualiteit
 De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende open data bronnen. De gegevens in de Kadaster Knowledge Graph worden regelmatig ververst. Op dit moment 4 keer per jaar.
@@ -25,7 +32,7 @@ De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende open data
 
 Voor een compleet overzicht van alle onderliggende datasets en toegang tot hun respectievelijke endpoints, bezoek de volgende pagina: [linked data bronnen overzicht](https://labs.kadaster.nl/developer/sparql/)
 
-De data die beschikbaar wordt gesteld op een regelmatige basis ververst. Hieronder vindt u een overzicht van hoe vaak de gegevenssets worden vernieuwd en wanneer de laatste update is uitgevoerd:
+De data die beschikbaar wordt gesteld wordt op een regelmatige basis ververst. Hieronder vindt u een overzicht van hoe vaak de gegevenssets worden vernieuwd en wanneer de laatste update is uitgevoerd:
 
 <div class="textbox" markdown="1">
 ## Actualiteit van databronnen
@@ -44,16 +51,6 @@ De Kadaster Knowledge Graph maakt gebruik van deze datasets en is daarmee qua ac
 
 Specifieke details over de wijzigingen tussen leveringen kunnen worden geraadpleegd vanuit de individuele dataset pagina's. Vaak betreft dit kleine quality-of-life verbeteringen of fixes op basis van observaties van gebruikers.
 
-## Demonstrators
-Voeg de volgende demonstranten toe (deze staat nu in de Linked Data Thema pagina maar moet echter hier komen):
-1. AR applicatie
-2. Gruff
-3. GeoDataVisitor
-4. Objectviewer
-5. Sparklis
-
-Laten we dit van de pagina met gekoppelde gegevens verwijderen. 
-
 ## Use cases
 
 De Kadaster Knowledge Graph wordt gebruikt in een toenemend aantal use
@@ -61,6 +58,46 @@ cases, waarmee gegevens op een nieuwe manier gekoppeld, bevraagd, en
 inzichtelijk gemaakt worden.
 
 <div class="cards-wrapper">
+  <a href="/demonstrators/objectviewer">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag.png">
+      <div class="card-title">Objectviewer</div>
+      <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
+    </div>
+  </a>
+    <a href="/cases/sparklis">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
+      <div class="card-title">Sparklis</div>
+      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/geodatavisitor">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/geodatavisitor.png">
+      <div class="card-title">Geo Data Visitor</div>
+      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard </div>
+    </div>
+  </a>
+ <a href="/cases/ar-applicatie">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">AR Applicatie</div>
+      <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/gruff/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/gruff.png">
+      <div class="card-title">Gruff</div>
+      <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
+    </div>
+  </a>
   <a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/planologen-per-buurt">
     <div class="card">
       <div class="card-type">Ruimtelijke ordening</div>
