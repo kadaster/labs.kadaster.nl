@@ -10,13 +10,13 @@ De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen 
 
 <div class="cards-wrapper">
   <a href="https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home">
-      <div class="card-type">Data model</div>
+      <div class="card-type" style="padding-right: 10%;">Data model</div>
   </a>
     <a href="https://data.labs.kadaster.nl/dst/kkg/sparql/default">
-      <div class="card-type">SPARQL Editor</div>
+      <div class="card-type" style="padding-right: 10%;">SPARQL Editor</div>
   </a>
     <a href="https://labs.kadaster.nl/developer">
-      <div class="card-type">Developers</div>
+      <div class="card-type" style="padding-right: 10%;">Developers</div>
   </a>
 </div>
 
