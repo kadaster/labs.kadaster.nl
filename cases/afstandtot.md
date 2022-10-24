@@ -20,7 +20,7 @@ Het doel was een technisch experiment om te beproeven of we in staat zijn om een
 Als basis hebben we een topologisch netwerk gemaakt op basis van de BRT. Objecttypes om de afstand naar te bepalen, kunnen we uit verschillende bronnen halen, zoals de BRT (Ziekenhuizen), of overheids-opendata (Scholen - DUO), of community open data (Supermarkten - Open Street Map). Het gebruikte algoritme is pgRouting, een open source extensie op PostGIS.  
 
 <figure id="figuur-1">
-    <img src="/assets/images/schema_afstandtot.png" alt="afstandtot1">
+    <img src="/assets/images/schema_afstand tot verbeterd.png" alt="afstandtot1">
 </figure>
 
 ## Resultaten 
