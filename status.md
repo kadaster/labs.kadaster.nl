@@ -25,6 +25,11 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
     <div>Status</div>
 </div>
 <div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">27-10-2022 14:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/brt/top10nl">BRT</a> SPARQL service</div>
+    <div class="mobileSpan"> &#x2714; Uitgevoerd </div>
+</div>
+<div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">02-08-2022 7:30</div>
     <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/brk/dkk">DKK</a> SPARQL service</div>
     <div class="mobileSpan">&#x2714; Uitgevoerd</div>
