@@ -6,7 +6,7 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
-  <a href="/cases/Solid-Pods/">
+  <a href="/cases/Solid-Pods">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/solid-emblem.svg">
