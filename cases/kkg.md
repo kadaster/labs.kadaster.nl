@@ -229,22 +229,22 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
     <tr>
       <td>Basisadministratie Adressen en Gebouwen</td>
       <td>Kwartaal</td>
-      <td>2022-05-20</td>
+      <td>2022-07-27</td>
     </tr>
     <tr>
       <td>Basisadministratie Grootschalige Topografie</td>
       <td>Kwartaal</td>
-      <td>2022-04-30</td>
+      <td>2022-11-01</td>
     </tr>
     <tr>
       <td>Basisregistratie Topografie</td>
       <td>Kwartaal</td>
-      <td>2022-04-21</td>
+      <td>2022-10-27</td>
     </tr>
     <tr>
       <td>Digitale Kadastrale Kaart</td>
       <td>Kwartaal</td>
-      <td>2022-01-14</td>
+      <td>2022-07-14=8</td>
     </tr>
     <tr>
       <td>Basisregistratie Kadaster - Publieksrechtelijke Beperkingen</td>
@@ -254,7 +254,7 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
     <tr>
       <td>Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)</td>
       <td>Kwartaal</td>
-      <td>2022-05-04</td>
+      <td>2022-07-13</td>
     </tr>
     <tr>
       <td>CBS Wijk- en buurtkaart</td>

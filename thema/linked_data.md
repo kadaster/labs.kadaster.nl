@@ -5,15 +5,7 @@ title: Linked Data
 
 # Linked Data
 
-<div class="cards-wrapper"> 
-<a href="https://data.labs.kadaster.nl/high2x2-energie/-/stories/Energie-High2x2">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/kadaster-logo.png">
-      <div class="card-title">Hi2x2 #Energie Knowledge Graph</div>
-      <div class="card-description">Tijdens een High2 is de Energie Knowledge Graph gebouwd met informatie over windturbines uit verschillende basisregis.</div>
-    </div>
-  </a> 
+<div class="cards-wrapper">  
 <a href="/cases/ar-applicatie">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -38,14 +30,6 @@ title: Linked Data
       <div class="card-description">Een dashboard dat gebruikers ondersteunt bij het begrijpen van de waarde van een dataset vanuit een sociaal en bruikbaarheidsperspectief.</div>
     </div>
   </a>
-  <a href="/demonstrators/geodatavisitor">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/geodatavisitor.png">
-      <div class="card-title">Geo Data Visitor</div>
-      <div class="card-description">Een applicatie om de visualisatie van externe datasets op de kaart mogelijk te maken nadat deze zijn verrijkt door de geodatawizard </div>
-    </div>
-  </a>
   <a href="/cases/3d-demonstrator">
     <div class="card">
       <div class="card-type">Use Case</div>
@@ -54,28 +38,12 @@ title: Linked Data
       <div class="card-description">In deze case bespreken we hoe 3D en Knowledge Graph samen ongelimiteerde mogelijkheden biedt.</div>
     </div>
   </a>
-  <a href="/demonstrators/objectviewer">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag.png">
-      <div class="card-title">Objectviewer</div>
-      <div class="card-description">Zoek zelf in de objectviewer op locatie. De informatie is afkomstig uit de knowledge graph.</div>
-    </div>
-  </a>
   <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
       <div class="card-title">GeoDataWizard</div>
       <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
-    </div>
-  </a>
-  <a href="/cases/sparklis">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/sparklis.png" alt="sparklis">
-      <div class="card-title">Sparklis</div>
-      <div class="card-description">Introductie en voorbeeldvragen van Sparklis.</div>
     </div>
   </a>
   <!-- <a href="https://labs.kadaster.nl/vocbench3">
