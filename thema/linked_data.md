@@ -6,6 +6,14 @@ title: Linked Data
 # Linked Data
 
 <div class="cards-wrapper">  
+<a href="https://data.labs.kadaster.nl/high2x2-energie/-/stories/Energie-High2x2">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Hi2x2 #Energie Knowledge Graph</div>
+      <div class="card-description">Tijdens een High2 is de Energie Knowledge Graph gebouwd met informatie over windturbines uit verschillende basisregistraties.</div>
+    </div>
+  </a>
 <a href="/cases/ar-applicatie">
     <div class="card">
       <div class="card-type">Demonstrator</div>
