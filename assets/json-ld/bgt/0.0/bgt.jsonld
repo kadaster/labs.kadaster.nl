@@ -1,46 +1,46 @@
 {
   "@context": {
-    "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/",
+    "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt/def/",
+    "@vocab": "https://bgt.basisregistraties.overheid.nl/bgt2/def/",
     "begroeidTerreindeelOpTalud": "talud",
     "bgt_functie": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "functie",
       "@type": "@id"
     },
     "bgtpand_nummeraanduiding": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/object/"
       },
       "@type": "@id"
     },
     "bgt_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/status/"
       },
       "@id": "status",
       "@type": "@id"
     },
     "bgt_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "type",
       "@type": "@id"
     },
     "bgt_fysiekVoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/fysiek-voorkomen/"
       },
       "@id": "fysiekVoorkomen",
       "@type": "@id"
     },
     "bronhouder": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/bronhouder/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/bronhouder/"
       },
       "@type": "@id"
     },
@@ -78,7 +78,7 @@
     },
     "hoortbijtypeoverbrugging": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "hoortBijTypeOverbrugging",
       "@type": "@id"
@@ -86,35 +86,35 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/identificatie/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/identificatie/"
       },
       "@id": "nen3610:identificatie",
       "@type": "@id"
     },
     "identificatiebagopr": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "bagOpenbareRuimte",
       "@type": "@id"
     },
     "identificatiebagpnd": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "bagPand",
       "@type": "@id"
     },
     "identificatiebagvbohoogstehuisnummer": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "bagVerblijfsobjectHoogsteHuisnummer",
       "@type": "@id"
     },
     "identificatiebagvbolaagstehuisnummer": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "bagVerblijfsobjectLaagsteHuisnummer",
       "@type": "@id"
@@ -136,7 +136,7 @@
     "nen3610": "http://definities.geostandaarden.nl/def/nen3610#",
     "nummeraanduidingreeks": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/object/"
       },
       "@id": "nummeraanduidingreeks",
       "@type": "@id"
@@ -154,7 +154,7 @@
     "ondersteunendWegdeelOpTalud": "talud",
     "openbareruimtetype": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/openbare-ruimte/"
       },
       "@id": "openbareRuimteType",
       "@type": "@id"
@@ -163,35 +163,35 @@
     "peilDatum": null,
     "plus_functie": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "plusFunctie",
       "@type": "@id"
     },
     "plus_status": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/status/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/status/"
       },
       "@id": "plusStatus",
       "@type": "@id"
     },
     "plus_type": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "plusType",
       "@type": "@id"
     },
     "plus_fysiekVoorkomen": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/fysiek-voorkomen/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/fysiek-voorkomen/"
       },
       "@id": "plusFysiekVoorkomen",
       "@type": "@id"
     },
     "primaryTopic": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/object/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/object/"
       },
       "@id": "foaf:primaryTopic",
       "@type": "@id"
@@ -201,7 +201,7 @@
     "Registratie": "IMGeoObjectRegistratie",
     "registratie": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/id/registratie/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/id/registratie/"
       }
     },
     "relatieveHoogteligging": {
@@ -215,7 +215,7 @@
     },
     "typeoverbruggingsdeel": {
       "@context": {
-        "@base": "https://bgt.basisregistraties.overheid.nl/bgt/def/"
+        "@base": "https://bgt.basisregistraties.overheid.nl/bgt2/def/"
       },
       "@id": "typeOverbruggingsdeel",
       "@type": "@id"
