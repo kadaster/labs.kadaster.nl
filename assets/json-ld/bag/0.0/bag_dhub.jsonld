@@ -1,8 +1,8 @@
 {
   "@context": {
-    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
+    "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
+    "@vocab": "https://bag.basisregistraties.overheid.nl/bag2/def/",
     "asWKT": {
       "@id" : "geometrie",
       "@type": "geo:wktLiteral"
@@ -13,7 +13,7 @@
     },
     "bronhouder": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/bronhouder/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/bronhouder/"
       },
       "@type": "@id"
     },
@@ -37,7 +37,7 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "gebruiksdoel": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/gebruiksdoel/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/gebruiksdoel/"
       },
       "@id": "gebruiksdoel",
       "@type": "@id"
@@ -51,7 +51,7 @@
     "heeftAlsHoofdAdres": "@nest",
     "heeftalshoofdadres" : {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "hoofdadres",
       "@type": "@id"
@@ -59,7 +59,7 @@
     "heeftAlsNevenAdres": "@nest",
     "heeftalsnevenadres" : {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "nevenadres",
       "@type": "@id"
@@ -70,7 +70,7 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/identificatie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/identificatie/"
       },
       "@id": "nen3610:identificatie",
       "@type": "@id"
@@ -80,14 +80,14 @@
     "inStraat": "@nest",
     "ligtaan": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "ligtAan",
       "@type": "@id"
     },
     "ligtin": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "ligtIn",
       "@type": "@id"
@@ -95,7 +95,7 @@
     "lokaalID": "nen3610:lokaalID",
     "maaktdeeluitvan": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "maaktDeelUitVan",
       "@type": "@id"
@@ -133,7 +133,7 @@
     "peilDatum": null,
     "primaryTopic": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
       },
       "@id": "foaf:primaryTopic",
       "@type": "@id"
@@ -143,7 +143,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "status": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/status/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/status/"
       },
       "@id": "status",
       "@type": "@id"
@@ -177,14 +177,14 @@
     },
     "vorigeGeldigeVersie": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/"
       },
       "@id": "nen3610:vorigeGeldigeVersie",
       "@type": "@id"
     },
     "vorigeGeregistreerdeVersie": {
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/"
       },
       "@id": "nen3610:vorigeGeregistreerdeVersie",
       "@type": "@id"
