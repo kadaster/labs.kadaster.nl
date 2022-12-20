@@ -1,14 +1,14 @@
 {
   "@context": {
-    "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
+    "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "@vocab": "https://brk.basisregistraties.overheid.nl/brk2/def/",
     "jsonldid": "@id",
     "jsonldtype": "@type",
     "aanduidingLabel": "skos:prefLabel",
     "akrgemeente": "brk:akrAanduiding",
     "akrgemeentecode": null,
-    "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+    "brk": "https://brk.basisregistraties.overheid.nl/brk2/def/",
     "begingeldigheid": {
       "@type": "xsd:dateTime",
       "@id": "nen3610:beginGeldigheid"
@@ -43,7 +43,7 @@
     },
     "historiestatuscode": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/statusHistorie/"
       },
       "@id": "brk:statusHistorie",
       "@type": "@id"
@@ -55,14 +55,14 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/identificatie/"
       },
       "@id": "nen3610:identificatie",
       "@type": "@id"
     },
     "kadastraleaanduiding": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
       },
       "@id": "brk:kadastraleAanduiding",
       "@type": "@id"
@@ -73,7 +73,7 @@
     },
     "kadastraleGemeente": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/kadastraleGemeente/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/kadastraleGemeente/"
       },
       "@id": "brk:kadastraleGemeente",
       "@type": "@id"
@@ -101,7 +101,7 @@
     "perceelrechts": "@nest",
     "perceellinkslokaalid": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
       },
       "@id": "brk:perceelLinks",
       "@type": "@id"
@@ -116,21 +116,21 @@
     },
     "perceelrechtslokaalid": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
       },
       "@id": "brk:perceelRechts",
       "@type": "@id"
     },
     "perceelnummerVerschuiving": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
       },
       "@id": "brk:perceelnummerVerschuiving",
       "@type": "@id"
     },
     "primaryTopic": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
       },
       "@id": "foaf:primaryTopic",
       "@type": "@id"
@@ -146,7 +146,7 @@
     },
     "typegrens": {
       "@context": {
-        "@base": "https://brk.basisregistraties.overheid.nl/brk/id/typeGrens/"
+        "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/typeGrens/"
       },
       "@id": "brk:type",
       "@type": "@id"
