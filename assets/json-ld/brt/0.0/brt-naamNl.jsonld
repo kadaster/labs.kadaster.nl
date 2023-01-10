@@ -362,7 +362,7 @@
     },
     "vorigeGeregistreerdeVersie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nltop10nl2brt/id/registratie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/registratie/"
       },
       "@id": "nen3610:vorigeGeregistreerdeVersie",
       "@type": "@id"
