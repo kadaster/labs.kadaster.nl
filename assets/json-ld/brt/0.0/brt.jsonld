@@ -1,8 +1,8 @@
 {
   "@context": {
-    "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/",
+    "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://brt.basisregistraties.overheid.nl/brt/def/",
+    "@vocab": "https://brt.basisregistraties.overheid.nl/top10nl2/def/",
     "aantalInwoners": {
       "@type": "xsd:nonNegativeInteger"
     },
@@ -14,7 +14,7 @@
     },
     "aantalSporen": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/aantalSporen/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/aantalSporen/"
       },
       "@type": "@id"
     },
@@ -29,7 +29,7 @@
     },
     "breedteklasse": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/breedteklasse/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/breedteklasse/"
       },
       "@type": "@id"
     },
@@ -44,7 +44,7 @@
     },
     "brontype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/brontype/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/brontype/"
       },
       "@type": "@id"
     },
@@ -67,25 +67,25 @@
     "foaf": "http://xmlns.com/foaf/0.1/",
     "fysiekVoorkomen_SP": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenSpoorbaandeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/fysiekVoorkomenSpoorbaandeel/"
       },
       "@type": "@id"
     },
     "fysiekVoorkomen_TE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenTerrein/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/fysiekVoorkomenTerrein/"
       },
       "@type": "@id"
     },
     "fysiekVoorkomen_WA": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWaterdeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/fysiekVoorkomenWaterdeel/"
       },
       "@type": "@id"
     },
     "fysiekVoorkomen_WE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/fysiekVoorkomenWegdeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/fysiekVoorkomenWegdeel/"
       },
       "@type": "@id"
     },
@@ -94,13 +94,13 @@
     },
     "functie_WA": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/functieWaterdeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/functieWaterdeel/"
       },
       "@type": "@id"
     },
     "gebruiksdoel": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/gebruiksdoel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/gebruiksdoel/"
       },
       "@type": "@id"
     },
@@ -138,19 +138,19 @@
     },
     "hoofdverkeersgebruik": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoofdverkeersgebruik/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/hoofdverkeersgebruik/"
       },
       "@type": "@id"
     },
     "hoogteklasse_GE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseGebouw/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/hoogteklasseGebouw/"
       },
       "@type": "@id"
     },
     "hoogteklasse_RE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/hoogteklasseReliëf/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/hoogteklasseReliëf/"
       },
       "@type": "@id"
     },
@@ -169,7 +169,7 @@
     "Identificatie": "nen3610:Identificatie",
     "identificatie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/identificatie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/identificatie/"
       },
       "@id": "nen3610:identificatie",
       "@type": "@id"
@@ -187,7 +187,7 @@
     "lokaalID": "nen3610:lokaalID",
     "mutatietype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/mutatietype/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/mutatietype/"
       },
       "@type": "@id"
     },
@@ -227,7 +227,7 @@
     "peilDatum": null,
     "primaryTopic": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/object/"
       },
       "@id": "foaf:primaryTopic",
       "@type": "@id"
@@ -236,20 +236,20 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "referentievlak": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/referentievlak/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/referentievlak/"
       },
       "@type": "@id"
     },
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "spoorbreedte": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/spoorbreedte/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/spoorbreedte/"
       },
       "@type": "@id"
     },
     "status": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/status/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/status/"
       },
       "@type": "@id"
     },
@@ -262,128 +262,128 @@
     },
     "typeFunctioneelGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeFunctioneelGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeFunctioneelGebied/"
       },
       "@type": "@id"
     },
     "typeGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeGebied/"
       },
       "@type": "@id"
     },
     "typeGebouw": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGebouw/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeGebouw/"
       },
       "@type": "@id"
     },
     "typeGeografischGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeGeografischGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeGeografischGebied/"
       },
       "@type": "@id"
     },
     "typeHoogte": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeHoogte/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeHoogte/"
       },
       "@type": "@id"
     },
     "typeInfrastructuur_SP": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurSpoorbaandeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeInfrastructuurSpoorbaandeel/"
       },
       "@type": "@id"
     },
     "typeInfrastructuur_WE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInfrastructuurWegdeel/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeInfrastructuurWegdeel/"
       },
       "@type": "@id"
     },
     "typeInrichtingselement": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeInrichtingselement/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeInrichtingselement/"
       },
       "@type": "@id"
     },
     "typeLandgebruik": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeLandgebruik/"
       },
       "@type": "@id"
     },
     "typeObject": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeObject/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeObject/"
       },
       "@type": "@id"
     },
     "typePlaats": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeLandgebruik/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeLandgebruik/"
       },
       "@type": "@id"
     },
     "typePlantopografie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typePlantopografie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typePlantopografie/"
       },
       "@type": "@id"
     },
     "typeRegistratiefGebied": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeRegistratiefGebied/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeRegistratiefGebied/"
       },
       "@type": "@id"
     },
     "typeReliëf": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeReliëf/"
       },
       "@type": "@id"
     },
     "typeRelief": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeReliëf/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeReliëf/"
       },
       "@type": "@id"
     },
     "typeSpoorbaan": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeSpoorbaan/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeSpoorbaan/"
       },
       "@type": "@id"
     },
     "typeWater": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWater/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeWater/"
       },
       "@type": "@id"
     },
     "typeWeg": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/typeWeg/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/typeWeg/"
       },
       "@type": "@id"
     },
     "vaarwegklasse": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/vaarwegklasse/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/vaarwegklasse/"
       },
       "@type": "@id"
     },
     "value": "rdf:value",
     "verhardingsbreedteklasse": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/verhardingsbreedteklasse/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/verhardingsbreedteklasse/"
       },
       "@type": "@id"
     },
     "verhardingstype": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/verhardingstype/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/verhardingstype/"
       },
       "@type": "@id"
     },
@@ -393,19 +393,19 @@
     },
     "vervoerfunctie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/vervoerfunctie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/vervoerfunctie/"
       },
       "@type": "@id"
     },
     "voorkomen_TE": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/voorkomen/"
       },
       "@type": "@id"
     },
     "voorkomen_WA": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/voorkomen/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/voorkomen/"
       },
       "@type": "@id"
     },
@@ -415,14 +415,14 @@
     },
     "vorigeGeldigeVersie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/registratie/"
       },
       "@id": "nen3610:vorigeGeldigeVersie",
       "@type": "@id"
     },
     "vorigeGeregistreerdeVersie": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/registratie/"
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/registratie/"
       },
       "@id": "nen3610:vorigeGeregistreerdeVersie",
       "@type": "@id"
