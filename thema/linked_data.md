@@ -6,6 +6,30 @@ title: Linked Data
 # Linked Data
 
 <div class="cards-wrapper">  
+<a href="https://data.labs.kadaster.nl/high2x2-energie/-/stories/Energie-High2x2">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">Hi2x2 #Energie Knowledge Graph</div>
+      <div class="card-description">Tijdens een High2 is de Energie Knowledge Graph gebouwd met informatie over windturbines uit verschillende basisregistraties.</div>
+    </div>
+  </a>
+<a href="/cases/ar-applicatie">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/kadaster-logo.png">
+      <div class="card-title">AR Applicatie</div>
+      <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
+    </div>
+  </a>
+  <a href="/demonstrators/gruff/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/gruff.png">
+      <div class="card-title">Gruff</div>
+      <div class="card-description">Een applicatie waarmee u de knowledge graph van Kadaster kunt visualiseren en doorbladeren</div>
+    </div>
+  </a>
   <a href="/demonstrators/datawaardedashboard">
     <div class="card">
       <div class="card-type">Demonstrator</div>

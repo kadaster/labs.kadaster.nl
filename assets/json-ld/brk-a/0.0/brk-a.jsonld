@@ -1,14 +1,14 @@
 {
     "@context": {
-      "@base": "https://brk.basisregistraties.overheid.nl/brk/id/registratie/",
+      "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/registratie/",
       "@version": 1.1,
-      "@vocab": "https://brk.basisregistraties.overheid.nl/brk/def/",
-      "brk": "https://brk.basisregistraties.overheid.nl/brk/def/",
+      "@vocab": "https://brk.basisregistraties.overheid.nl/brk2/def/",
+      "brk": "https://brk.basisregistraties.overheid.nl/brk2/def/",
       "bag_id": {
         "@id": "brk:betreft",
         "@type": "@id",
         "@context": {
-          "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/object/"
+          "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/object/"
         } 
       },
       "begingeldigheid": {
@@ -28,7 +28,7 @@
       "geo": "http://www.opengis.net/ont/geosparql#",
       "historiestatuscode": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/statusHistorie/"
         },
         "@id": "brk:statusHistorie",
         "@type": "@id"
@@ -41,19 +41,19 @@
         "@id": "brk:heeft",
         "@type": "@id",
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
         } 
       },
       "kbia_id": {
         "@id": "brk:betreft",
         "@type": "@id",
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
         } 
       },
       "koppelingswijze": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/koppelingswijze/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/koppelingswijze/"
         },
         "@id": "brk:koppelingswijze",
         "@type": "@id"
@@ -69,7 +69,7 @@
       },
       "identificatie": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/identificatie/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/identificatie/"
         },
         "@id": "nen3610:identificatie",
         "@type": "@id"
@@ -86,7 +86,7 @@
       "ogc_fid": null,
       "primaryTopic": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
         },
         "@id": "foaf:primaryTopic",
         "@type": "@id"
@@ -97,7 +97,7 @@
       "skos": "http://www.w3.org/2004/02/skos/core#",
       "status_geldigheid": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/statusHistorie/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/statusHistorie/"
         },
         "@id": "brk:statusHistorie",
         "@type": "@id"
@@ -105,7 +105,7 @@
       "status_audit": null,
       "stukdeel_id": {
         "@context": {
-          "@base": "https://brk.basisregistraties.overheid.nl/brk/id/object/"
+          "@base": "https://brk.basisregistraties.overheid.nl/brk2/id/object/"
         },
         "@id": "brk:isVermeldIn",
         "@type": "@id"
