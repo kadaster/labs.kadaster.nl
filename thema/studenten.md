@@ -14,7 +14,16 @@ title: Data Browsers
       <div class="card-description">Deze data story geeft een overzicht van de resultaten rondom het onderzoek naar de locatiebepaling van appartementsrechten.  </div>
     </div>
   </a>
-    <a href="/cases/graphqltijdreizen">
+    <a href="/cases/bagbouwjaren">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Voorspellingen">
+      <div class="card-title">BAG bouwjaren voorspellen</div>
+      <div class="card-description"> Vervolgonderzoek gedaan door Joyce op het generiek voorspellen van foutieve BAG bouwjaren over meerdere gemeentes</div>
+    </div>
+  </a> 
+
+  <a href="/cases/graphqltijdreizen">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/graphql-logo.png" alt="Loki logo">
