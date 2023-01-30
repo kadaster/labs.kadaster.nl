@@ -22,8 +22,14 @@
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Lees meer..
   </button>
+    <button onclick="location.href='https://untp.beer/375ecb09fc'" type="button" class="btn btn-primary">
+    Untappd
+  </button>
+  <button onclick="getLocation()" type="button" class="btn btn-primary">
+    Deel mijn drink locatie..
+  </button>
   <p>
-  <br /> 
+  <br/> 
   Onderstaande visualtie toont de locaties waar Het Perceeltje is gedronken. Locaties worden toegevoegd door middel van het scannen van de QR code op het etiket van Het Perceeltje.
   </p>
 
@@ -134,9 +140,7 @@
         getData();
 
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('location') === 'qr') {
-            getLocation();
-        }
+        
     }
 
     window.onload = main;
