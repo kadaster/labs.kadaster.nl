@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <h2>“Het Perceeltje”</h2>
+    <h2>“'t Perceeltje”</h2>
     <p>
     ‘t Perceeltje is een unieke collab (samenwerking) brouwsel van het Kadaster Data Science Team en de brouwers van Brouwtoren. Een modern bier in vele opzichten.
     </p>
@@ -116,7 +116,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
     function main() {
 
       var greenIcon = L.icon({
-          iconUrl: 'leafpointer.jpg',
+          iconUrl: 'leafpointer.png',
 
           iconSize:     [38, 95], // size of the icon
           shadowSize:   [50, 64], // size of the shadow
@@ -136,9 +136,13 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
         });
 
         L.control.scale().addTo(map);
-        L.marker([51.66580, 5.76812], {icon: greenIcon}).addTo(map).bindPopup("Brabanthop, de hopleverancier.");
-        L.marker([51.99501, 6.78765], {icon: greenIcon}).addTo(map).bindPopup("Vloermouterij Masterveld, de moutleverancier.");
-        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("De brouwerij");
+        L.marker([51.66580, 5.76812], {icon: greenIcon}).addTo(map).bindPopup("Brabanthop, de hopleverancier. <br> https://www.brabanthop.nl/");
+        L.marker([51.99501, 6.78765], {icon: greenIcon}).addTo(map).bindPopup("Vloermouterij Masterveld, de moutleverancier. <br> https://www.vloermouterijmasterveld.nl/");
+        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("De Brouwtoren. <br> https://www.brouwtoren.nl/");
+        L.marker([52.17980, 5.96026], {icon: greenIcon}).addTo(map).bindPopup("De bedenkers van 't Perceeltje. <br> https://labs.kadaster.nl/");
+
+
+
 
         L.tileLayer('https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0?service=WMTS&request=GetTile&version=1.0.0&layer=standaard&style=default&tilematrixset=EPSG%3A3857&format=image%2Fpng&height=256&width=256&tilematrix={z}&tilecol={x}&tilerow={y}').addTo(map);
 
