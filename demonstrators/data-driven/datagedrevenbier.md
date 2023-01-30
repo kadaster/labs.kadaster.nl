@@ -30,7 +30,7 @@
   </button>
   <p>
   <br/> 
-  Onderstaande visualtie toont de locaties waar Het Perceeltje is gedronken. Locaties worden toegevoegd door middel van de deel mijn drink locatie knop.
+Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de herkomst van ingrediënten. Drink locaties worden toegevoegd door middel van de “Deel mijn drink locatie” knop.
   </p>
 
   <!-- Modal -->
