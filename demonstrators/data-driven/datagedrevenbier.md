@@ -107,7 +107,10 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        Sfeerimpressie foto's 
+        <img src="impressie1.jpg" style="height: 50%"/>
+        <img src="impressie2.jpg" style="height: 50%"/>
+        <img src="impressie3.jpg" style="height: 50%"/>
+        <img src="impressie4.jpg" style="height: 50%"/>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
