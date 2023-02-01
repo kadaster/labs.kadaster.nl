@@ -146,7 +146,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
       var greenIcon = L.icon({
           iconUrl: 'leafpointer.png',
 
-          iconSize:     [38, 95], // size of the icon
+          iconSize:     [30, 65], // size of the icon
           shadowSize:   [50, 64], // size of the shadow
           iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
           shadowAnchor: [4, 62],  // the same for the shadow
@@ -166,7 +166,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
         L.control.scale().addTo(map);
         L.marker([51.66580, 5.76812], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.brabanthop.nl/'>Brabanthop</a>, de hopleverancier");
         L.marker([51.99501, 6.78765], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.vloermouterijmasterveld.nl/'>Vloermouterij Masterveld</a>, de moutleverancier");
-        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.brouwtoren.nl/'>de Brouwtoren</a>");
+        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.brouwtoren.nl/'>de Brouwtoren</a>, de brouwerij");
         L.marker([52.17980, 5.96026], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://labs.kadaster.nl/'>de bedenkers</a> van 't Perceeltje");
 
 
