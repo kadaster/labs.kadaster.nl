@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <h2>“'t Perceeltje”</h2>
+    <h2>'t Perceeltje</h2>
     <p>
     ‘t Perceeltje is een unieke collab (samenwerking) brouwsel van het Kadaster Data Science Team en de brouwers van Brouwtoren. Een modern bier in vele opzichten.
     </p>
@@ -22,23 +22,26 @@
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Lees meer
   </button>
-    <button onclick="location.href='https://untp.beer/375ecb09fc'" type="button" class="btn btn-primary">
-    Untappd Check-in
-  </button>
-  <button onclick="getLocation()" type="button" class="btn btn-primary">
-    Deel mijn drink locatie
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+    Sfeerimpressie
   </button>
   <p>
   <br/> 
 Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de herkomst van ingrediënten. Drink locaties worden toegevoegd door middel van de “Deel mijn drink locatie” knop.
   </p>
-
+  <button onclick="location.href='https://untp.beer/375ecb09fc'" type="button" class="btn btn-primary">
+    Untappd Check-in
+  </button>
+  <button onclick="getLocation()" type="button" class="btn btn-primary">
+    Deel mijn drink locatie
+  </button>
+  <br>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">“Het Perceeltje”</h5>
+          <h5 class="modal-title" id="exampleModalLabel">'t Perceeltje</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -93,6 +96,28 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
   <br>
   
   <div id="map-holder"></div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">'t Perceeltje</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Sfeerimpressie foto's 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <div id="map-holder"></div>
   
   <script>
     function getLocation() {
@@ -136,10 +161,10 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
         });
 
         L.control.scale().addTo(map);
-        L.marker([51.66580, 5.76812], {icon: greenIcon}).addTo(map).bindPopup("Brabanthop, de hopleverancier. <br> https://www.brabanthop.nl/");
-        L.marker([51.99501, 6.78765], {icon: greenIcon}).addTo(map).bindPopup("Vloermouterij Masterveld, de moutleverancier. <br> https://www.vloermouterijmasterveld.nl/");
-        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("De Brouwtoren. <br> https://www.brouwtoren.nl/");
-        L.marker([52.17980, 5.96026], {icon: greenIcon}).addTo(map).bindPopup("De bedenkers van 't Perceeltje. <br> https://labs.kadaster.nl/");
+        L.marker([51.66580, 5.76812], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.brabanthop.nl/'>Brabanthop</a>, de hopleverancier");
+        L.marker([51.99501, 6.78765], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.vloermouterijmasterveld.nl/'>Vloermouterij Masterveld</a>, de moutleverancier");
+        L.marker([51.84160, 5.86958], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://www.brouwtoren.nl/'>de Brouwtoren</a>");
+        L.marker([52.17980, 5.96026], {icon: greenIcon}).addTo(map).bindPopup("<a href='https://labs.kadaster.nl/'>de bedenkers</a> van 't Pereeltje");
 
 
 
