@@ -147,9 +147,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           iconUrl: 'leafpointer.png',
 
           iconSize:     [30, 65], // size of the icon
-          shadowSize:   [50, 64], // size of the shadow
-          iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-          shadowAnchor: [4, 62],  // the same for the shadow
+          iconAnchor:   [30, 65], // point of the icon which will correspond to marker's location
           popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
 
