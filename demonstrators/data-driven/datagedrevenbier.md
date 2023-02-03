@@ -174,11 +174,11 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           iconAnchor:   [30, 65], // point of the icon which will correspond to marker's location
           popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
-            var label = L.icon({
+          var label = L.icon({
           iconUrl: 'label.png',
 
-          iconSize:     [30, 65], // size of the icon
-          iconAnchor:   [30, 65], // point of the icon which will correspond to marker's location
+          iconSize:     [30, 50], // size of the icon
+          iconAnchor:   [30, 50], // point of the icon which will correspond to marker's location
           popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
       });
             var wheat = L.icon({
