@@ -22,7 +22,7 @@ De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen 
 
 
 ## Bronnen en Actualiteit
-De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende open data bronnen. De gegevens in de Kadaster Knowledge Graph worden regelmatig ververst. Op dit moment 4 keer per jaar.
+De Kadaster Knowledge Graph bevat gegevens afkomstig uit verschillende open data bronnen. De gegevens in de Kadaster Knowledge Graph worden regelmatig ververst. Op dit moment 4 keer per jaar. Dit geldt voor de BAG, BGT, BRT, BRK.
 
 - De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG).
 - De Landelijke Voorziening van de Basisregistratie Grootschalige Topografie (BGT).
@@ -37,13 +37,14 @@ De data die beschikbaar wordt gesteld wordt op een regelmatige basis ververst. H
 <div class="textbox" markdown="1">
 ## Actualiteit van databronnen
 
+- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
+- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
 - **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-27*.
 - **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-11-01*.
 - **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-10-27*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-12-01*.
-- **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
 - **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-11-21*.
-- **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
+
 
 De Kadaster Knowledge Graph maakt gebruik van deze datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets. Voor een compleet overzicht van alle onderliggende datasets en toegang tot hun respectievelijke endpoints werwijzen we de gebruiker naar onze [developer portaal](/developer/sparql/). Voor use cases en data stories specifiek voor een specifiek datasets verwijzen we de gebruiker naar [onze data pagina](/data/).
 
