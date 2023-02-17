@@ -118,7 +118,7 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
 - **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
 - **Basisregistratie Adressen en Gebouwen** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-07-27*.
-- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-11-01*.
+- **Basisregistratie Grootschalige Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2023-02-17*.
 - **Basisregistratie Topografie** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-10-27*.
 - **Digitale Kadastrale Kaart** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-12-01*.
 - **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2022-11-21*.
