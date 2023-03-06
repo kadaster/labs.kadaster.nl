@@ -3,14 +3,14 @@ layout: page
 title: Kadaster Data Science
 ---
 
-<script src="/demonstrators/loki-1.0/assets/js/iframeResizer.min.js">
+<script src="/demonstrators/lokiv3/assets/js/iframeResizer.min.js">
 </script>
 <iframe
   allowtransparency="true"
   frameborder="0"
   id="loki-chat"
   scrolling="no"
-  src="/demonstrators/loki-1.0/index.html"
+  src="/demonstrators/lokiv3/index.html"
   style="z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;">
   title="Loki"
 </iframe>
