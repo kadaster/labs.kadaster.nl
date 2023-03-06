@@ -53,7 +53,69 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           <br>
           <b>Het recept:</b>
           <br>
-          Als je bier wilt maken, heb je een recept nodig, en daar ligt een kans voor het toepassen van AI. Dat is mooi beschreven in dit <a href="https://medium.com/@koenvandenheuvel/how-to-brew-a-beer-with-artificial-intelligence-6c742f5fd843">artikel</a>, onze inspiratiebron.  Het startpunt zijn de 201 recepten van de Schotse brouwer Brewdog die open beschikbaar zijn (helaas zijn ze 1 van de weinige brouwers die dit doen). Daarnaast weten we de scores van deze biertjes op basis van Untappd beoordelingen. Dit is de basis waarop we het AI model trainen, en daarbij een miljoen recepten genereren met daarbij een voorspelling van de potentiële Untappd score. De recepten van de hoogste scores hebben we meegenomen naar de brouwers van Brouwtoren. Want naast AI komt er toch ook wel wat vakmanschap kijken bij het maken van bier: we hadden bijvoorbeeld wel de ingrediënten en de hoeveelheden maar nog niet op welk moment welke hop toegevoegd moest worden. Dat hebben de brouwers bepaald.
+          Als je bier wilt maken, heb je een recept nodig, en daar ligt een kans voor het toepassen van AI. Dat is mooi beschreven in dit <a href="https://medium.com/@koenvandenheuvel/how-to-brew-a-beer-with-artificial-intelligence-6c742f5fd843">artikel</a>, onze inspiratiebron.  Het startpunt zijn de 201 recepten van de Schotse brouwer Brewdog die open beschikbaar zijn (helaas zijn ze 1 van de weinige brouwers die dit doen). Daarnaast weten we de scores van deze biertjes op basis van Untappd beoordelingen. Dit is de basis waarop we het AI model trainen, en daarbij een miljoen recepten genereren met daarbij een voorspelling van de potentiële Untappd score. De recepten van de hoogste scores hebben we meegenomen naar de brouwers van Brouwtoren. Want naast AI komt er toch ook wel wat vakmanschap kijken bij het maken van bier: we hadden bijvoorbeeld wel de ingrediënten en de hoeveelheden maar nog niet op welk moment welke hop toegevoegd moest worden. Dat hebben de brouwers bepaald. Het recept is hieronder terug te vinden: 
+    	    <br>
+          <br>
+          <b>Recept Perceeltje:</b>
+          <br>
+          <br>
+          <b>Algemeen</b>
+          <br>
+          - EBC: 30,2
+          <br>
+          - IBU: 77,5
+          <br>
+          - Stamwortgehalte: 13,1 °P (1,053 SG)
+          <br>
+          - Start water: 575 liter
+          <br>
+          <br>
+          <b>Mouten</b>
+
+          <b>|kg|Mout|EBC|</b>
+          <br>
+          |12|Tarwemout|9|
+          <br>
+          |12|Munich|15|
+          <br>
+          |8,4|Maïsvlokken|0|
+          <br>
+          |2,4|Chocomout|600|
+          <br>
+          |1,2|Gebrande mout|1300|
+          <br>
+          |84|Pilsmout|4|
+          <br>
+          <br>
+          <b>Maisschema |Stap|°C|Minuten|</b>
+          <br>
+          |1|68|63|
+          <br>
+          |2|78|5|
+          <br>
+          <br>
+          <b>Kookschema</b>
+          <br>
+          - Temperatuur: 100 °C
+          <br>
+          - Kooktijd: 60 minuten
+          <br>
+          <br>
+          <b> Hopgiften Min. voor einde koken|kg|Hop|% Alfazuur|</b>
+          <br>
+          |55|0,5|Chinook|7,3|
+          <br>
+          |20|1,5|Cascade|5,5|
+          <br>
+          |10|3|Centennial|7,9|
+
+          <br>
+          <br>
+          <b>Vergisting</b>
+          <br>  
+          - Gist: Safbrew S-33
+          <br>
+          - Temperatuur: 22 °C``
           <br>
           <br>
           <b>Proefbrouw - meer data:</b>
@@ -145,7 +207,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
     function main() {
 
       var beer = L.icon({
-          iconUrl: 'beer.png',
+          iconUrl: 'brouwtoren.png',
 
           iconSize:     [30, 65], // size of the icon
           iconAnchor:   [30, 65], // point of the icon which will correspond to marker's location
