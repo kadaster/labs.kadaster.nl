@@ -169,10 +169,26 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        <img src="impressie1.jpg" style="width: 40%"/>
-        <img src="impressie3.jpg" style="width: 40%"/>
-        <img src="impressie2.jpg" style="width: 40%"/>
-        <img src="impressie4.jpg" style="width: 40%"/>
+        <img src="images/1.jpg" style="width: 40%"/>
+        <img src="images/9.jpg" style="width: 40%"/>
+        <img src="images/3.jpg" style="width: 40%"/>
+        <img src="images/4.jpg" style="width: 40%"/>
+        <img src="images/5.jpg" style="width: 40%"/>
+        <img src="images/2.jpg" style="width: 40%"/>
+        <img src="images/13.png" style="width: 40%"/>
+        <img src="images/14.png" style="width: 40%"/>
+        <img src="images/12.png" style="width: 40%"/>
+        <img src="images/19.jpg" style="width: 40%"/>
+        <img src="images/11.png" style="width: 40%"/>
+        <img src="images/15.jpg" style="width: 40%"/>
+        <img src="images/16.jpg" style="width: 40%"/>
+        <img src="images/17.jpg" style="width: 40%"/>
+        <img src="images/18.jpg" style="width: 40%"/>
+        <img src="images/10.jpg" style="width: 40%"/>
+        <img src="images/20.jpg" style="width: 40%"/>
+        <img src="images/21.jpg" style="width: 40%"/>
+        <img src="images/23.jpg" style="width: 40%"/>
+        <img src="images/22.jpg" style="width: 40%"/>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
