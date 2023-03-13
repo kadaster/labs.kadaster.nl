@@ -60,7 +60,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
           Als je bier wilt maken, heb je een recept nodig, en daar ligt een kans voor het toepassen van AI. Dat is mooi beschreven in dit <a href="https://medium.com/@koenvandenheuvel/how-to-brew-a-beer-with-artificial-intelligence-6c742f5fd843">artikel</a>, onze inspiratiebron.  Het startpunt zijn de 201 recepten van de Schotse brouwer Brewdog die open beschikbaar zijn (helaas zijn ze 1 van de weinige brouwers die dit doen). Daarnaast weten we de scores van deze biertjes op basis van Untappd beoordelingen. Dit is de basis waarop we het AI model trainen, en daarbij een miljoen recepten genereren met daarbij een voorspelling van de potentiële Untappd score. De recepten van de hoogste scores hebben we meegenomen naar de brouwers van Brouwtoren. Want naast AI komt er toch ook wel wat vakmanschap kijken bij het maken van bier: we hadden bijvoorbeeld wel de ingrediënten en de hoeveelheden maar nog niet op welk moment welke hop toegevoegd moest worden. Dat hebben de brouwers bepaald. Het recept is <a href="https://labs.kadaster.nl/demonstrators/data-driven/recept">hier</a> te vinden. 
     	    <br>
           <br>
-        ] <b>Proefbrouw - meer data:</b>
+          <b>Proefbrouw - meer data:</b>
           <br>
           Vervolgens hebben we als Data Science Team het recept gebrouwen onder begeleiding van de Brouwtoren brouwers. Het resultaat hiervan is op de tap gekomen in het Proeflokaal van Brouwtoren. Met behulp van evaluatieformulieren is meer data verzameld en op basis daarvan is het recept nog licht bijgesteld, met name om de nasmaak minder bitter te maken.
           <br>
