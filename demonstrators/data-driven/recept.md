@@ -1,5 +1,5 @@
 ---
-banner: images/bannerperceeltje.png
+banner: images/banner.jpg
 ---
 # Recept Perceeltje
 ## Algemeen
