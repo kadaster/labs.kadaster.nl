@@ -66,13 +66,14 @@ a:hover {
   display: inline-block;
   font-size: 16px;
 }
+
 .banner {
   position: relative;
-  height: 575px;
+  max-height: 575px;
   width: 100%;
 }
 .banner-image {
-  height: 575px;
+  max-height: 575px;
   width: 100%;
   object-fit: cover;
 }
@@ -86,6 +87,7 @@ a:hover {
   background-size: auto;
   z-index: 9;
 }
+
 .card-home {
   display: flex;
   flex-direction: column;
