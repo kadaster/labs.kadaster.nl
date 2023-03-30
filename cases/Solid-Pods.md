@@ -4,7 +4,7 @@ layout: page
 title: Demonstrator - Solid Pods
 ---
 
-# Demonstrator Solid Pods binnen Zorgeloos Vastgoed
+# Solid Quest
 
 De Nederlandse overheid heeft de [Werkagenda Waardengedreven Digitaliseren](https://www.digitaleoverheid.nl/kabinetsbeleid-digitalisering/werkagenda/) opgesteld. Eén van de programmalijnen luidt: "Iedereen heeft regie op het digitale leven." *Daarvoor is regelgeving en beleid nodig, rond wallets en andere basisvoorzieningen.* [Solid](https://solidproject.org/) is een specificatie die het mogelijk maakt om je data op een veilige manier, decentraal, op te slaan in PODs, Personal Online Datastores. Als Kadaster bereiden wij ons voor op deze ontwikkelingen. Het begrijpen van de technologie is hiervoor randvoorwaardelijk. Daarom bouwen wij aan een demonstrator, met als voorbeeldusecase het opstellen van een koopovereenkomst, om de (on)mogelijkheden van Solid PODs te onderzoeken en begrijpen.
 
