@@ -52,8 +52,8 @@ title: BGT terugmeldingen
 <br>
 <br>
 <figure id="figuur-2">
-  <a href="meldingen_gemeente.png">
-    <img src="meldingen_gemeente.png">
+  <a href="meldingen_gemeente.PNG">
+    <img src="meldingen_gemeente.PNG">
   </a>
   <figcaption>
     Figuur 2 ― Veel voorkomende gemeentes in BGT terugmeldingen. 
@@ -65,8 +65,8 @@ title: BGT terugmeldingen
 <br>
 <br>
 <figure id="figuur-3">
-  <a href="bron.png">
-    <img src="bron.png">
+  <a href="bron.PNG">
+    <img src="bron.PNG">
   </a>
   <figcaption>
     Figuur 3 ― aantal BGT terugmeldingen per bron. 
@@ -78,8 +78,8 @@ title: BGT terugmeldingen
 <br>
 <br>
 <figure id="figuur-4">
-  <a href="status.png">
-    <img src="status.png">
+  <a href="status.PNG">
+    <img src="status.PNG">
   </a>
   <figcaption>
     Figuur 4 ― status van BGT terugmeldingen. 
