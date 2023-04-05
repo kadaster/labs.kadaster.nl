@@ -25,9 +25,10 @@ title: BGT terugmeldingen
 | overbruggingsdeel             | 383   |
 | kunstwerkdeel                 | 287   |
 | scheiding                     | 211   |
-| spoor                         | 73    |
+| spoor                         | 73    |'
+| ondersteunend waterdeel       | 62    |
 | tunneldeel                    | 35    |
-| ondersteunend waterdeel       | 0     |
+
 
 
 <br>
@@ -107,4 +108,5 @@ title: BGT terugmeldingen
 | vegetatieobject             | 122 |
 | waterdeel                   | 163 |
 | wegdeel                     | 157 |
+| ondersteunend waterdeel     | 132 |
 
