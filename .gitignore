@@ -1,7 +1,6 @@
 .bundle
 _site/
 Gemfile.lock
-vendor
 
 package.json
 package-lock.json
