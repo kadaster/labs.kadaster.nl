@@ -59,6 +59,16 @@ cases, waarmee gegevens op een nieuwe manier gekoppeld, bevraagd, en
 inzichtelijk gemaakt worden.
 
 <div class="cards-wrapper">
+
+  <!-- <a href="/demonstrators/KKG-Light/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/bag.png">
+      <div class="card-title">Sparnatural</div>
+      <div class="card-description">Maak je eigen SparQL queries door middel van Sparnatural</div>
+    </div>
+  </a> -->
+
   <a href="/demonstrators/objectviewer">
     <div class="card">
       <div class="card-type">Demonstrator</div>
