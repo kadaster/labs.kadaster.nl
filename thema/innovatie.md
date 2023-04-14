@@ -6,6 +6,47 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
+
+  <a href="">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/Tactiele_kaart.jpg">
+      <div class="card-title">Tactiele kaart</div>
+      <div class="card-description">Een samenwerking om de geautomatiseerde productie van tactiele (voelbare) topografische kaarten te ontwikkelen.</div>
+    </div>
+  </a>
+    <a href="https://www.kadaster.nl/over-ons/beleid/algoritmeregister">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/Algoritmeregister.JPG">
+      <div class="card-title">Algoritmeregister</div>
+      <div class="card-description">De Nederlandse overheid heeft een algoritmeregister opengesteld waarop overheidsorganisaties de algoritmes publiceren die zij gebruiken in hun werk.</div>
+    </div>
+  </a>
+    <a href="/cases/akte-ocr">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/OCR.jpg">
+      <div class="card-title">Akte OCR</div>
+      <div class="card-description">Om erfdienstbaarheden in akten te kunnen herkennen, is een onderzoek gedaan om op de gedigitaliseerde bestanden OCR toe te passen.</div>
+    </div>
+  </a>
+  <a href="https://www.kadaster.nl/-/bim-legal-maakt-vuistdikke-ordners-overbodig">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/BIM_Legal.jpg">
+      <div class="card-title">BIM Legal</div>
+      <div class="card-description">Het doel van BIM Legal: iedereen kan direct zien welke juridische afspraken van toepassing zijn op percelen en hun bebouwing.</div>
+    </div>
+  </a>
+    <a href="https://www.zorgeloosvastgoed.nl/ministerie-bzk-neemt-afsprakenstelsel-zorgeloos-vastgoed-in-ontvangst/%C2%A0">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/zorgeloosvastgoed.png">
+      <div class="card-title">Zorgeloos Vastgoed</div>
+      <div class="card-description">Een samenwerking in de vorm van de stichting Zorgeloos Vastgoed.</div>
+    </div>
+  </a>
   <a href="/cases/Solid-Pods">
     <div class="card">
       <div class="card-type">Demonstrator</div>
