@@ -60,14 +60,14 @@ inzichtelijk gemaakt worden.
 
 <div class="cards-wrapper">
 
-  <!-- <a href="/demonstrators/KKG-Light/index.html">
+   <a href="/demonstrators/querybuilder/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/bag.png">
-      <div class="card-title">Sparnatural</div>
-      <div class="card-description">Maak je eigen SparQL queries door middel van Sparnatural</div>
+      <img class="card-image" src="/assets/images/querybuilder.png">
+      <div class="card-title">Querybuilder</div>
+      <div class="card-description">Maak je eigen SparQL queries op de KKG-Light</div>
     </div>
-  </a> -->
+  </a> 
 
   <a href="/demonstrators/objectviewer">
     <div class="card">
