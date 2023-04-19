@@ -1,0 +1,86 @@
+.nice-select ul.list li.selected, .nice-select ul.list li.focus, .nice-select ul.list li:hover {
+    background:#0b47d4;
+    color: #fff;
+}
+#header.header-scrolled {
+    background: linear-gradient(45deg, #0b47d4, #19b6e6);
+}
+#header {
+    
+    background: linear-gradient(45deg, #0b47d4, #19b6e6);
+  }
+
+  .link-and-bottom {
+
+    background-color:  #0b47d4;
+  }
+  .ActionWhere a {
+    
+    background: #fff;
+    border: 2px solid  #0b47d4;
+    fill: #0b47d4 !important;
+  }
+  .link-and-bottom span {
+   
+    border: 2px solid #0b47d4;
+  }
+  .EndClassGroup .EditComponents .edit-num {
+   
+    border: 3px solid #0b47d4;
+  }
+  .WidgetWrapper .or {
+    color: #0b47d4;
+  }
+  .nb-choice-2 .WidgetWrapper {
+    border-left: 3px solid#0b47d4;
+  }
+
+  .EndClassGroup .EditComponents .edit-trait {
+   
+    border-top: 3px solid #0b47d4;
+  }
+  span.unselect svg {
+    fill:  #0b47d4;
+    width: 18px;
+  }
+  .variablesSelection .VariableSelectorDisplay a {
+
+    background: #0b47d4;
+  }
+
+  .EndClassGroup .EditComponents .edit-num {
+    
+    border: 3px solid  #0b47d4;
+  }
+  .submitSection {
+   
+    background: #0b47d4;
+  }
+  .variablesSelection .VariableSelectorDisplay {
+    background: #19b6e6;
+  }
+}
+
+.submitSection a {
+    
+    background: #797979;
+}
+
+.back-to-top {
+    position: fixed;
+    background: linear-gradient(45deg, #0b47d4, #19b6e6);
+}
+
+.ClassTypeId.Highlited.VariableSelected .nice-select {
+    border-color: #19b6e6;
+}
+
+.CriteriaGroup span.unselect {
+   
+    color: #0b47d4;
+}
+.submitSection a {
+   
+    background: #aeb6b3;
+}
+
