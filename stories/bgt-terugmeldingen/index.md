@@ -77,8 +77,8 @@ In onderstaande figuur zijn de resultaten van de eerste twee onderzoeksvragen ge
 
 <br> 
 
-| objecttypen                   |aantal |doorlooptijd |
-|-------------------------------|------:|---:|
+| objecttypen| aantal -| doorlooptijd |
+|:------------------------------|------|--- |
 | pand                          | 11649 |159 |
 | wegdeel                       | 10852 |157 |
 | begroeid terreindeel          | 3590  |154 |
