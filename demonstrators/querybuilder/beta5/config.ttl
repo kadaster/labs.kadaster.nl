@@ -117,12 +117,12 @@ def:wijkNaam a owl:ObjectProperty, owl:DatatypeProperty;
   sparnatural-config-core:isMultilingual true .
 
 def:ligtIn a owl:ObjectProperty;
-  rdfs:domain def:Woonplaats, _:node6984;
-  rdfs:range _:node6991;
+  rdfs:domain def:Woonplaats, _:node7112;
+  rdfs:range _:node7119;
   rdfs:label "ligt in"@nl .
 
 def:statistieken a owl:ObjectProperty;
-  rdfs:domain _:node6996;
+  rdfs:domain _:node7124;
   rdfs:range def:Observatie;
   rdfs:label "statistieken"@nl .
 
@@ -175,10 +175,15 @@ def:Straat a owl:Class;
   sparnatural-config-core:faIcon "far fa-road";
   sparnatural-config-core:tooltip "selecteer een Straat" .
 
-def:straatNaam a owl:DatatypeProperty;
+def:straatNaam a owl:ObjectProperty, owl:DatatypeProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
   rdfs:domain def:Straat;
-  rdfs:range rdf:langString;
-  rdfs:label "straatnaam"@nl .
+  rdfs:range rdf:langString, <http://www.labs.kadaster.nl/sparnatural/Text61>;
+  rdfs:seeAlso def:straatNaam;
+  rdfs:label "straatnaam"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:isMultilingual true .
 
 def:Gemeente a owl:Class;
   rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
@@ -435,11 +440,6 @@ def:ligtIn7 a owl:ObjectProperty;
   sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
   sparnatural-config-datasources:datasource def:wijkNaam_datasource8 .
 
-def:straatNaam_datasource12 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
-  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
-  sparnatural-config-datasources:labelProperty def:straatNaam;
-  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains .
-
 def:ligtIn9 a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
   rdfs:domain def:Woonplaats;
@@ -456,7 +456,7 @@ def:ligtIn11 a owl:ObjectProperty;
   rdfs:seeAlso def:ligtIn;
   rdfs:label "ligt in"@nl, "bevat"@nl;
   sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
-  sparnatural-config-datasources:datasource def:straatNaam_datasource12 .
+  sparnatural-config-datasources:datasource def:straatNaamGemeenteNaam_datasource12 .
 
 def:ligtIn13 a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
@@ -540,9 +540,9 @@ def:observatieNaam_datasource38 a owl:NamedIndividual, sparnatural-config-dataso
 
 <http://www.labs.kadaster.nl/sparnatural/Text53> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
-  rdfs:label "gemeente naam"@nl, "gemeente naam"@en;
+  rdfs:label "gemeentenaam"@nl, "gemeentenaam"@en;
   sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:tooltip "gemeente naam"@nl, "gemeente naam"@en .
+  sparnatural-config-core:tooltip "gemeentenaam"@nl, "gemeentenaam"@en .
 
 def:ligtIn5 a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
@@ -555,27 +555,27 @@ def:ligtIn5 a owl:ObjectProperty;
 
 <http://www.labs.kadaster.nl/sparnatural/Text55> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
-  rdfs:label "woonplaats naam"@en, "woonplaats naam"@nl;
+  rdfs:label "woonplaatsnaam"@nl, "woonplaatsnaam"@en;
   sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:tooltip "woonplaats naam"@en, "woonplaats naam"@nl .
+  sparnatural-config-core:tooltip "woonplaatsnaam"@nl, "woonplaatsnaam"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text57> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
-  rdfs:label "wijk naam"@en, "wijk naam"@nl;
+  rdfs:label "wijknaam"@nl, "wijknaam"@en;
   sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:tooltip "wijk naam"@en, "wijk naam"@nl .
+  sparnatural-config-core:tooltip "wijknaam"@nl, "wijknaam"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text59> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
-  rdfs:label "perceel naam"@en, "perceel naam"@nl;
+  rdfs:label "perceelnaam"@en, "perceelnaam"@nl;
   sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:tooltip "perceel naam"@en, "perceel naam"@nl .
+  sparnatural-config-core:tooltip "perceelnaam"@en, "perceelnaam"@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text61> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
-  rdfs:label "straat naam"@en, "straat naam"@nl;
+  rdfs:label "straatnaam"@nl, "straatnaam"@en;
   sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:tooltip "straat naam"@en, "straat naam"@nl .
+  sparnatural-config-core:tooltip "straatnaam"@nl, "straatnaam"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text63> a owl:Class;
   rdfs:subClassOf rdfs:Literal;
@@ -605,15 +605,10 @@ def:Monument a owl:Class;
   owl:imports <https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/>;
   owl:versionInfo "Created with TopBraid Composer" .
 
-def:straatNaamGemeenteNaam a owl:ObjectProperty, owl:DatatypeProperty;
-  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
-  rdfs:subClassOf rdf:literal;
+def:straatNaamGemeenteNaam a owl:DatatypeProperty;
   rdfs:domain def:Straat;
-  rdfs:range rdf:langString, <http://www.labs.kadaster.nl/sparnatural/Text61>;
-  rdfs:seeAlso def:straatNaamGemeenteNaam;
-  rdfs:label "straatnaam (gemeentenaam)"@nl;
-  sparnatural-config-core:faIcon "far fa-map";
-  sparnatural-config-core:isMultilingual true .
+  rdfs:range rdf:langString;
+  rdfs:label "straatnaam"@nl, "straatnaam (gemeentenaam)"@nl .
 
 def:gemeenteNaam_datasource10 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
   rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
@@ -693,12 +688,7 @@ def:ligtAan25 a owl:ObjectProperty;
   rdfs:seeAlso def:ligtAan;
   rdfs:label "ligt aan"@nl;
   sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtAan>";
-  sparnatural-config-datasources:datasource def:straatNaam_datasource26 .
-
-def:straatNaam_datasource26 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
-  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
-  sparnatural-config-datasources:labelProperty def:straatNaam;
-  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains .
+  sparnatural-config-datasources:datasource def:straatNaamGemeenteNaam_datasource26 .
 
 def:heeftBeperking27 a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
@@ -928,14 +918,24 @@ def:observatieJaar83 a owl:ObjectProperty;
   sparnatural-config-core:faIcon "far fa-calendar";
   sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/observatieJaar>" .
 
-_:node6984 a owl:Class;
-  owl:unionOf _:node6985 .
+def:straatNaamGemeenteNaam_datasource26 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:labelProperty def:straatNaamGemeenteNaam;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains .
 
-_:node6991 a owl:Class;
-  owl:unionOf _:node6992 .
+def:straatNaamGemeenteNaam_datasource12 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:labelProperty def:straatNaamGemeenteNaam;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains .
 
-_:node6996 a owl:Class;
-  owl:unionOf _:node6997 .
+_:node7112 a owl:Class;
+  owl:unionOf _:node7113 .
+
+_:node7119 a owl:Class;
+  owl:unionOf _:node7120 .
+
+_:node7124 a owl:Class;
+  owl:unionOf _:node7125 .
 
 <https://data.kkg.kadaster.nl/kad/model/def/Gebouwtype> rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
   rdfs:label "gebouwtype"@nl;
@@ -953,41 +953,41 @@ def:Gebruiksdoel rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
 
 skos:prefLabel rdfs:label "preflabel"@nl .
 
-_:node6985 rdf:first def:Straat;
-  rdf:rest _:node6986 .
+_:node7113 rdf:first def:Straat;
+  rdf:rest _:node7114 .
 
-_:node6986 rdf:first def:Perceel;
-  rdf:rest _:node6987 .
+_:node7114 rdf:first def:Perceel;
+  rdf:rest _:node7115 .
 
-_:node6987 rdf:first def:Gebouw;
-  rdf:rest _:node6988 .
+_:node7115 rdf:first def:Gebouw;
+  rdf:rest _:node7116 .
 
-_:node6988 rdf:first def:Buurt;
-  rdf:rest _:node6989 .
+_:node7116 rdf:first def:Buurt;
+  rdf:rest _:node7117 .
 
-_:node6989 rdf:first def:Wijk;
-  rdf:rest _:node6990 .
+_:node7117 rdf:first def:Wijk;
+  rdf:rest _:node7118 .
 
-_:node6990 rdf:first def:Gemeente;
+_:node7118 rdf:first def:Gemeente;
   rdf:rest rdf:nil .
 
-_:node6992 rdf:first def:Woonplaats;
-  rdf:rest _:node6993 .
+_:node7120 rdf:first def:Woonplaats;
+  rdf:rest _:node7121 .
 
-_:node6993 rdf:first def:Buurt;
-  rdf:rest _:node6994 .
+_:node7121 rdf:first def:Buurt;
+  rdf:rest _:node7122 .
 
-_:node6994 rdf:first def:Wijk;
-  rdf:rest _:node6995 .
+_:node7122 rdf:first def:Wijk;
+  rdf:rest _:node7123 .
 
-_:node6995 rdf:first def:Gemeente;
+_:node7123 rdf:first def:Gemeente;
   rdf:rest rdf:nil .
 
-_:node6997 rdf:first def:Buurt;
-  rdf:rest _:node6998 .
+_:node7125 rdf:first def:Buurt;
+  rdf:rest _:node7126 .
 
-_:node6998 rdf:first def:Gemeente;
-  rdf:rest _:node6999 .
+_:node7126 rdf:first def:Gemeente;
+  rdf:rest _:node7127 .
 
-_:node6999 rdf:first def:Wijk;
+_:node7127 rdf:first def:Wijk;
   rdf:rest rdf:nil .

@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chenfengyuan/datepicker@1.0.9/dist/datepicker.min.css">
 
     <!-- Sparnatural CSS -->
-    <link href="sparnatural.css" rel="stylesheet" />
+    <link href="sparnaturalKadaster.css" rel="stylesheet" />
     <!-- Timeline CSS -->
     <link rel="stylesheet" href="assets/css/timeline.css" />
     <link rel="stylesheet" href="kadaster.css" />
@@ -112,6 +112,7 @@
                   <option value="none" data-i18n="example.placeholder" selected></option>
                   <option value="example.1" data-i18n="example.1.title"></option>
                   <option value="example.2" data-i18n="example.2.title"></option>
+                  <option value="example.3" data-i18n="example.3.title"></option>
                 </select>
               </div>
             </form>
@@ -340,8 +341,9 @@ window.Yasqe=YASGUI.YASQE;
             'import.modal.title': 'Query as JSON',
             'import.modal.import': 'Import',
             'example.placeholder': 'Load example query...',
-            'example.1.title': 'example 1',
-            'example.2.title': 'example 2'
+            'example.1.title': 'winkels in Den Bosch',
+            'example.2.title': 'industrie in een bepaald gebied',
+            'example.3.title': 'kerken in Apeldoorn voor 1950'
           },
           'nl': {
             'page.title': 'Kadaster querybuilder',
@@ -361,8 +363,9 @@ window.Yasqe=YASGUI.YASQE;
             'import.modal.title': 'JSON laden',
             'import.modal.import': 'Importeren',
             'example.placeholder': 'voorbeelden',
-            'example.1.title': 'voorbeeld 1',
-            'example.2.title': 'voorbeeld 2'
+            'example.1.title': 'winkels in Den Bosch',
+            'example.2.title': 'industrie in een bepaald gebied',
+            'example.3.title': 'kerken in Apeldoorn voor 1950'
           }
       } );  
       $('body').i18n();
@@ -395,6 +398,10 @@ window.Yasqe=YASGUI.YASQE;
               if ((par.includes("?Monument_")) || (par.includes("?Gebouw_")))
               {
                 extra=" optional {"+par+" <https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebouwNaam> ?geometryLabel2 } bind (if(bound(?geometryLabel2),?geometryLabel2,'geen label gevonden') as ?geometryLabel) bind (?geometryLabel as ?geometryTooltip)"
+              } 
+              if ((par.includes("?Woonplaats_")) || (par.includes("?Woonplaats_")))
+              {
+                extra=" optional {"+par+" <https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/woonplaatsNaam> ?geometryLabel2 } bind (if(bound(?geometryLabel2),?geometryLabel2,'geen label gevonden') as ?geometryLabel) bind (?geometryLabel as ?geometryTooltip)"
               } 
                if ((par.includes("?Wijk_")) || (par.includes("?Wijk_")))
               {

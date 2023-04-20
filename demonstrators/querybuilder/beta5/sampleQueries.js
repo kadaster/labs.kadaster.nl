@@ -100,5 +100,63 @@ var sampleQueries = {
 			"children": []
 		  }
 		]
+	  },
+	  "example.3":{
+		"distinct": true,
+		"variables": [
+		  "Gebouw_1"
+		],
+		"order": null,
+		"branches": [
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bouwjaar81",
+			  "o": "?Text81_2",
+			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text81",
+			  "values": [
+				{
+				  "label": "Until 1950",
+				  "start": null,
+				  "stop": "1950-12-31T22:59:59.000Z"
+				}
+			  ]
+			},
+			"children": []
+		  },
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/typeGebouw49",
+			  "o": "?Gebouwtype_4",
+			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
+			  "oType": "https://data.kkg.kadaster.nl/kad/model/def/Gebouwtype",
+			  "values": [
+				{
+				  "label": "kerk",
+				  "uri": "https://data.kkg.kadaster.nl/kad/model/con/kerk"
+				}
+			  ]
+			},
+			"children": []
+		  },
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn43",
+			  "o": "?Gemeente_6",
+			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
+			  "oType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gemeente",
+			  "values": [
+				{
+				  "label": "Apeldoorn",
+				  "uri": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/0200"
+				}
+			  ]
+			},
+			"children": []
+		  }
+		]
 	  }
 };

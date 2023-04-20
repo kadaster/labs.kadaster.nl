@@ -1,3 +1,9 @@
+.list
+{
+z-index: 1000!important;
+}
+
+
 .nice-select ul.list li.selected, .nice-select ul.list li.focus, .nice-select ul.list li:hover {
     background:#0b47d4;
     color: #fff;
