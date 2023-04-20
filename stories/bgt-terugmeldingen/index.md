@@ -59,8 +59,8 @@ Het veld "omschrijving" is gebruikt voor de tekstanalyse. De omschrijving bestaa
 </figure>
 <br>
 <figure id="figuur-5">
-  <a href="geen_class.png">
-    <img src="geen_class.png">
+  <a href="geen_class.PNG">
+    <img src="geen_class.PNG">
   </a>
   <figcaption>
     Figuur 4 ― wordcloud van veel voorkomende woorden in de BGT terugmeldingen die niet geclassificeerd zijn bij een objecttypen. 
