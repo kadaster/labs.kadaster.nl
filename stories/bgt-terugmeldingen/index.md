@@ -65,7 +65,7 @@ Het veld "omschrijving" is gebruikt voor de tekstanalyse. De omschrijving bestaa
 Voor de volgende stap hebben we een lijst met BGT-objecttypen ontvangen. In dit bestand staan onder andere veelgebruikte afkortingen en synoniemen van de objecttypen. Een voorbeeld hiervan is het objecttype pand; deze wordt ook vaak geschreven als huis, gebouw, woning etc. Met deze lijst hebben wij doormiddel van reguliere expressie gekeken of de woorden voorkomen in het “vrije tekstveld” en zodoende er een objecttype aan gekoppeld. Indien er meerdere woorden in een vrij tekstveld voorkomen, pakt het model op dat moment het objecttype met de hoogste hiërarchie.
 <br>
 <br>
-Niet redelijk veel gevallen is er in het “vrije tekstveld” geen objecttype of synoniem gevonden. In de tabel onder Hoofdstuk 4 staat dan ‘geen classificatie’.  Van deze terugmeldingen hebben we een speciale wordcloud gemaakt; figuur 4. Dit is gedaan om te beoordelen of er toch nog informatie uit die terugmeldingen gehaald kan worden.
+In een behoorlijk aantal terugmeldingen is er in het “vrije tekstveld” geen objecttype of synoniem gevonden. In de tabel onder Hoofdstuk 4 staat dan ‘geen classificatie’.  Van deze terugmeldingen hebben we een speciale wordcloud gemaakt; figuur 4. Dit is gedaan om te beoordelen of er toch nog informatie uit die terugmeldingen gehaald kan worden.
 <br>
 <br>
 <figure id="figuur-5">
