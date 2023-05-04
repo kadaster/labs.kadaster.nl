@@ -6,7 +6,14 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
-
+  <a href="/cases/geodataplein">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/assets/images/3d-logo.jpg">
+      <div class="card-title">Geodataplein</div>
+      <div class="card-description">Geodataplein van de toekomst. Een programma waarin data integraal beschikbaar wordt gesteld en data eenduidig wordt ontsloten. </div>
+    </div>
+  </a>
   <a href="">
     <div class="card">
       <div class="card-type">Demonstrator</div>
