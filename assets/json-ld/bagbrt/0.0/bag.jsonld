@@ -10,7 +10,7 @@
       "@id": "geo:sfWithin",
       "@type": "@id" 
     },
-    "geo": "https://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "data": "@nest"
   }
 }
