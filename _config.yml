@@ -4,6 +4,7 @@ description: Kadaster research lab
 repository: kadaster/labs.kadaster.nl
 port: 5000
 host: 127.0.1.1
+exclude: [docker-compose.yml]
 defaults:
   - scope:
       path: ""
