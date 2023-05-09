@@ -1,16 +1,16 @@
 {
   "@context": {
-    "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/",
+    "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/",
     "@version": 1.1,
-    "@vocab": "https://bag2.basisregistraties.overheid.nl/bag/def/",
+    "@vocab": "https://bag.basisregistraties.overheid.nl/bag2/def/",
     "brtPandID": {
       "@context": {
-        "@base": "https://brt.basisregistraties.overheid.nl/brt/id/object/" 
+        "@base": "https://brt.basisregistraties.overheid.nl/top10nl2/id/object/" 
       },
       "@id": "geo:sfWithin",
       "@type": "@id" 
     },
-    "geo": "https://www.opengis.net/ont/geosparql#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "data": "@nest"
   }
 }
