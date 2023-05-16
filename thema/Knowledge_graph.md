@@ -8,6 +8,8 @@ title: Kadaster Knowledge Graph
 # Kadaster Knowledge Graph
 De oppervlakte van een gebouw wordt in de Basisregistratie Adressen en Gebouwen (BAG) opgeslagen. Dat gebouw staat op een perceel, en dat perceel heeft ook een oppervlakte, maar die wordt in de Basisregistratie Kadaster (BRK) opgeslagen. In de Kadaster Knowledge Graph zijn deze, en heel veel andere, gegevens met elkaar verbonden. Voor deze verbindingen (of ‘links’) wordt linked data gebruikt. Linked data is een ecosysteem van nationale en internationale open standaarden en de Kadaster Knowledge Graph maakt gebruik van linked data standaarden, en kan door ontwikkelaars met de SPARQL bevragingstaal gebruikt worden. Op deze pagina vindt u informatie over de Kadaster Knowledge Graph.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HiuHTMy-A-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div class="cards-wrapper">
   <a href="https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home">
       <div class="card-type" style="padding-right: 10%;">Data model</div>

@@ -14,6 +14,14 @@ title: Innovatie
       <div class="card-description">Geodataplein van de toekomst. Een programma waarin data integraal beschikbaar wordt gesteld en data eenduidig wordt ontsloten. </div>
     </div>
   </a>
+    <a href="https://labs.kadaster.nl/demonstrators/sensrnet/index.html">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/SensRNet-logo.png">
+      <div class="card-title">Sensrnet</div>
+      <div class="card-description">Het register geeft inzicht in waar sensoren zich bevinden in de openbare ruimte, welke data ze verzamelen en wie de eigenaar is.</div>
+    </div>
+  </a>
   <a href="">
     <div class="card">
       <div class="card-type">Demonstrator</div>
