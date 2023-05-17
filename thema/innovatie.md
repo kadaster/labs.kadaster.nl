@@ -22,7 +22,7 @@ title: Innovatie
       <div class="card-description">Het register geeft inzicht in waar sensoren zich bevinden in de openbare ruimte, welke data ze verzamelen en wie de eigenaar is.</div>
     </div>
   </a>
-  <a href="">
+  <a href="/cases/tactielekaart">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/Tactiele_kaart.jpg">
