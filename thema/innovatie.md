@@ -30,7 +30,7 @@ title: Innovatie
       <div class="card-description">Een samenwerking om de geautomatiseerde productie van tactiele (voelbare) topografische kaarten te ontwikkelen.</div>
     </div>
   </a>
-    <a href="https://www.kadaster.nl/over-ons/beleid/algoritmeregister">
+  <a href="https://www.kadaster.nl/over-ons/beleid/algoritmeregister">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/Algoritmeregister.JPG">
