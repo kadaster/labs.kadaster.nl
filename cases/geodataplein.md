@@ -8,7 +8,7 @@ title: Geodataplein
 Welkom op de themapagina voor het Geodataplein. Op deze pagina introduceren we drie analyse toepassingen voor verschillende doelgroepen in het kader van de Geodataplein ambitie: Data Analyse voor verschillende doelgroepen mogelijk maken.
 
 <div class="cards-wrapper">
-  <a href="/demonstrators/lokiv3">
+  <a href="/cases/lokiv3">
     <div class="card">
       <div class="card-type">Loki</div>
       <img class="card-image" src="/assets/images/loki-logo.jpg">
