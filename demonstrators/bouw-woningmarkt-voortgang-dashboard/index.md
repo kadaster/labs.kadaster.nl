@@ -32,47 +32,47 @@ https://labs.dst.kadaster.nl/bouwvoortgang/
 Voortgang gemeente niveau op basis van aantal verblijfsobjecten:
 
 <figure id="figuur-3">
-  <a href="/assets/images/bwv_Voortgang_Gemeente_objecten.png">
-    <img src="/assets/images/bwv_Voortgang_Gemeente_objecten.png">
+  <a href="/assets/images/bwv_Voortgang_Gemeente_objecten.PNG">
+    <img src="/assets/images/bwv_Voortgang_Gemeente_objecten.PNG">
   </a>
 </figure>
 
 Voortgang project niveau op basis van aantal verblijfsobjecten:
 
 <figure id="figuur-5">
-  <a href="/assets/images/bwv_Voortgang_Leeuwesteyn_objecten.png">
-    <img src="/assets/images/bwv_Voortgang_Leeuwesteyn_objecten.png">
+  <a href="/assets/images/bwv_Voortgang_Leeuwesteyn_objecten.PNG">
+    <img src="/assets/images/bwv_Voortgang_Leeuwesteyn_objecten.PNG">
   </a>
 </figure>
 
 Visualisatie op map:
 
 <figure id="figuur-7">
-  <a href="/assets/images/bwv_map_leeuwensteyn.png">
-    <img src="/assets/images/bwv_map_leeuwensteyn.png">
+  <a href="/assets/images/bwv_map_leeuwensteyn.PNG">
+    <img src="/assets/images/bwv_map_leeuwensteyn.PNG">
   </a>
 </figure>
 
 Extra informatie berekening prognose: 
 
 <figure id="figuur-8">
-  <a href="/assets/images/bwv_Tabel_1_Leeuwesteyn.png">
-    <img src="/assets/images/bwv_Tabel_1_Leeuwesteyn.png">
+  <a href="/assets/images/bwv_Tabel_1_Leeuwesteyn.PNG">
+    <img src="/assets/images/bwv_Tabel_1_Leeuwesteyn.PNG">
   </a>
 </figure>
 
 Extra informatie berekening prognose (gefilterd): 
 <figure id="figuur-9">
-  <a href="/assets/images/bwv_Tabel_1_Leeuwesteyn_selectie.png">
-    <img src="/assets/images/bwv_Tabel_1_Leeuwesteyn_selectie.png">
+  <a href="/assets/images/bwv_Tabel_1_Leeuwesteyn_selectie.PNG">
+    <img src="/assets/images/bwv_Tabel_1_Leeuwesteyn_selectie.PNG">
   </a>
 </figure>
 
 Opgehaalde BAG data:
 
 <figure id="figuur-10">
-  <a href="/assets/images/bwv_Tabel_2_Leeuwesteyn.png">
-    <img src="/assets/images/bwv_Tabel_2_Leeuwesteyn.png">
+  <a href="/assets/images/bwv_Tabel_2_Leeuwesteyn.PNG">
+    <img src="/assets/images/bwv_Tabel_2_Leeuwesteyn.PNG">
   </a>
 </figure>
 
@@ -80,26 +80,26 @@ Opgehaalde BAG data:
 ## Aanpak:
 
 <figure id="figuur-11">
-  <a href="/assets/images/bwv_Aanpak_1.png">
-    <img src="/assets/images/bwv_Aanpak_1.png">
+  <a href="/assets/images/bwv_Aanpak_1.PNG">
+    <img src="/assets/images/bwv_Aanpak_1.PNG">
   </a>
 </figure>
 <figure id="figuur-12">
-  <a href="/assets/images/bwv_Aanpak_2.png">
-    <img src="/assets/images/bwv_Aanpak_2.png">
+  <a href="/assets/images/bwv_Aanpak_2.PNG">
+    <img src="/assets/images/bwv_Aanpak_2.PNG">
   </a>
 </figure>
 <figure id="figuur-13">
-  <a href="/assets/images/bwv_Aanpak_3.png">
-    <img src="/assets/images/bwv_Aanpak_3.png">
+  <a href="/assets/images/bwv_Aanpak_3.PNG">
+    <img src="/assets/images/bwv_Aanpak_3.PNG">
   </a>
 </figure>
 
 ## Uitdagingen:
 
 <figure id="figuur-14">
-  <a href="/assets/images/bwv_Uitdagingen.png">
-    <img src="/assets/images/bwv_Uitdagingen.png">
+  <a href="/assets/images/bwv_Uitdagingen.PNG">
+    <img src="/assets/images/bwv_Uitdagingen.PNG">
   </a>
 </figure>
 
