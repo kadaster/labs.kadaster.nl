@@ -145,7 +145,7 @@ title: Innovatie
   <a href="/demonstrators/bouw-woningmarkt-voortgang-dashboard/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/map_leeuwensteyn.png">
+      <img class="card-image" src="/assets/images/map_leeuwensteyn.PNG">
       <div class="card-title">Bouw-Woningmarkt-Voortgang</div>
       <div class="card-description">Een dashboard voor bestuurders waarin de plannen en afspraken worden vergeleken met de actuele voortgang van de bouw.</div>
     </div>
