@@ -52,101 +52,144 @@ Liever een gesprek starten met spraak? Zet rechts boven het geluid aan via de dr
 Loki kan vragen in een breed scala van onderwerpen beantwoorden, waarbij de focus ligt op het bevragen van data uit de leefomgeving. Benieuwd welke vragen Loki kan beantwoorden? Denk aan vragen over deze onderwerpen: 
 
  
-
-## Woning  
-
+<details>
+<summary> Woning </summary>
+<br>
 Hoe groot is mijn perceel? 
-
+<br>
 Hoeveel is mijn huis waard? 
-
+<br>
 Woningwaarde berekenen 
-
+<br>
 Wat is de WOZ waarde van mijn woning? 
-
+<br>
 Wat is de koopsom van adres? 
-
+<br>
 Wat is de woonoppervlakte van mijn huis? 
-
+<br>
 Wat is het bouwjaar van mijn huis? 
-
+<br>
 Wat is het dichtstbijzijnde ziekenhuis? 
-
+<br>
 Welke huizen hebben een vloeroppervlakte groter dan 150m2 en perceeloppervlakte groter dan 500m2 in Warnsveld? 
-
+<br>
 Wat is de oudste kerk in Gelderland? 
+<br>
+<br>
+</details>
 
- 
-
-## Woonwijken  
+<details>
+<summary> Woonwijken </summary>
+<br>
 
 Wat is de gemiddelde woningwaarde in mijn wijk? 
-
+<br>
 Geef mij de hypotheekakte van adres 
-
+<br>
 In welke buurt staat mijn huis? 
-
+<br>
 Wat is het aantal huizen in mijn straat? 
-
+<br>
 Hoe is de criminaliteit in mijn wijk? 
-
+<br>
 Wat is de verhouding tussen gezinnen met of zonder kinderen? 
-
+<br>
 Wie is eigenaar van adres 
-
+<br>
 Wat is het energielabel in deze wijk? 
+<br>
+<br>
+</details>
 
- 
-
-## Vastgoedinformatie 
-
+<details>
+<summary> Vastgoedinformatie  </summary>
+<br>
 Geef me informatie over de woningmarkt 
-
+<br>
 Wat is de gemiddelde koopsom in mijn provincie? 
-
+<br>
 Wat is het aantal verkochte woningen per provincie? 
+<br>
+Geef mij een overzicht met woningtransacties
+<br> 
+<br>
+</details>
 
-Geef mij een overzicht met woningtransacties 
-
- 
-
-## Vergunningen 
-
+<details>
+<summary> Vergunningen  </summary>
+<br>
 Welke vergunningen zijn er verstrekt in mijn wijk? 
-
+<br>
 Welke vergunningaanvragen zijn er? 
-
+<br>
 Welke aanvragen voor milieuvergunningen zijn er? 
+<br>
+<br>
+</details>
 
- 
-
-## Topo tijdreis  
+<details>
+<summary> Topo tijdreis  </summary>
+<br>
 
 Hoe zag mijn buurt er vroeger uit? 
-
+<br>
 Hoe zag mijn woonplaats er vroeger uit? 
+<br>
+<br>
+</details>
 
- 
-
-## Kadaster terminologie 
-
+<details>
+<summary> Kadaster terminologie  </summary>
+<br>
 Wat is een Kadastrale grens? 
-
+<br>
 Wat is een perceel? 
-
+<br>
 Wat is een koopovereenkomst? 
-
+<br>
 Wat is een recht van overpad? 
-
+<br>
 Wat is een erfpachtcanon? 
-
+<br>
 Wat is vruchtgebruik? 
-
+<br>
 Wat is een verblijfsobject? 
+<br>
+<br>
+</details>
 
- 
-
-## Kadaster 
+ <details>
+<summary> Kadaster   </summary>
+<br>
 
 Wat is de ambitie van het Kadaster? 
-
+<br>
 Wat is de Kadaster Knowledge Graph? 
+<br>
+<br>
+</details>
+
+ 
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
