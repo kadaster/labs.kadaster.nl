@@ -142,4 +142,12 @@ title: Innovatie
       <div class="card-description">Zoek zelf in de Verkaufsbücher op locatie, koper en oorspronkelijke eigenaar.</div>
     </div>
   </a>
+  <a href="/demonstrators/bouw-woningmarkt-voortgang-dashboard/">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/assets/images/map_leeuwensteyn.png">
+      <div class="card-title">Bouw-Woningmarkt-Voortgang</div>
+      <div class="card-description">Een dashboard voor bestuurders waarin de plannen en afspraken worden vergeleken met de actuele voortgang van de bouw.</div>
+    </div>
+  </a>
 </div>
