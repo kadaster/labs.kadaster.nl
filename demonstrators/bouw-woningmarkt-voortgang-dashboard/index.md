@@ -25,7 +25,7 @@ Het doel van dit prototype is om te laten zien wat er wel en niet mogelijk is, w
 ## Link (alleen beschikbaar binnen Kadaster)
 https://labs.dst.kadaster.nl/bouwvoortgang/
 
-# Screenshots dashboard: deze bevat de voortgang, aanpak en uitdagingen.
+# Screenshots dashboard:
 
 ## Voortgang:
 
