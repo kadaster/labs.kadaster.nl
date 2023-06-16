@@ -73,7 +73,7 @@ Wat is het dichtstbijzijnde ziekenhuis?
 <br>
 Welke huizen hebben een vloeroppervlakte groter dan 150m2 en perceeloppervlakte groter dan 500m2 in Warnsveld? 
 <br>
-Wat is de oudste kerk in Gelderland? 
+Wat is de oudste kerk in provincie Gelderland? 
 <br>
 <br>
 </details>
