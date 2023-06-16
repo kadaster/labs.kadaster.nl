@@ -6,7 +6,13 @@ title: Data Browsers
 # Studenten
 
 <div class="cards-wrapper">
-  <a href="/cases/locatiebepaling_appartementsrecht">
+  <a href="/cases/recreatiewoningen">
+   <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/figuur1.png" alt="Recreatiewoningen">
+      <div class="card-title">Recreatiewoningen detecteren</div>
+      <div class="card-description">Een objectdetectiemodel voor het herkennen van recreatiewoningen uit luchtfoto’s in Zeeland. </div>
+    </div>
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/locatiebepaling.jpg" alt="BAG terugmeldingen">
