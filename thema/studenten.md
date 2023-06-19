@@ -13,14 +13,15 @@ title: Data Browsers
       <div class="card-title">Recreatiewoningen detecteren</div>
       <div class="card-description">Een objectdetectiemodel voor het herkennen van recreatiewoningen uit luchtfoto’s in Zeeland. </div>
     </div>
+    <a href="/cases/locatiebepaling_appartementsrecht">
     <div class="card">
       <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/locatiebepaling.jpg" alt="BAG terugmeldingen">
+      <img class="card-image" src="/assets/images/locatiebepaling.jpg" alt="Locatiebepaling">
       <div class="card-title">Locatiebepaling appartementsrecht</div>
       <div class="card-description">Deze data story geeft een overzicht van de resultaten rondom het onderzoek naar de locatiebepaling van appartementsrechten.  </div>
     </div>
   </a>
-    <a href="/cases/bagbouwjaren">
+  <a href="/cases/bagbouwjaren">
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Voorspellingen">
