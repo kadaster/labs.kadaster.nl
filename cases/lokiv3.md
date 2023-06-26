@@ -21,10 +21,9 @@ banner: /assets/images/bannerloki.png
 
 ## Wat wil jij Chatbot Loki vragen? 
 <br>
-Help mee geo-informatie voor iedereen nog toegankelijker te maken 
+<em> Help mee geo-informatie voor iedereen nog toegankelijker te maken. </em>
 
 Welkom bij Loki, de chatbot van het Kadaster. Loki beantwoordt eenvoudige vragen op basis van informatie van de open datasets die het Kadaster beheert en andere geo-informatie. Je kunt je vraag stellen in je eigen woorden. Loki gaat met jou in gesprek om te zorgen dat jij het antwoord krijgt dat je zoekt. Door vragen stellen in ‘natuurlijke taal’ ook digitaal mogelijk te maken, wil Kadaster met Loki geo-informatie voor iedereen nog toegankelijker maken. 
-De doorontwikkeling van Loki
 
 ## Hoe leert Loki? 
 <br>
