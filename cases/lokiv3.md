@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kadaster Data Science
-banner: /assets/images/bannerloki.PNG
+banner: /assets/images/bannerloki.png 
 ---
 
 <script src="/demonstrators/lokiv3/assets/js/iframeResizer.min.js">
