@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Kadaster Data Science
+banner: /assets/images/bannerloki.PNG
 ---
 
 <script src="/demonstrators/lokiv3/assets/js/iframeResizer.min.js">
@@ -18,12 +19,20 @@ title: Kadaster Data Science
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
 </script>
 
-## Chatbot Loki 
+## Wat wil jij Chatbot Loki vragen? 
+<br>
+Help mee geo-informatie voor iedereen nog toegankelijker te maken 
 
-Loki is de chatbot van het Kadaster en beantwoordt eenvoudige vragen met Kadaster open datasets en andere geo-informatie.  
+Welkom bij Loki, de chatbot van het Kadaster. Loki beantwoordt eenvoudige vragen op basis van informatie van de open datasets die het Kadaster beheert en andere geo-informatie. Je kunt je vraag stellen in je eigen woorden. Loki gaat met jou in gesprek om te zorgen dat jij het antwoord krijgt dat je zoekt. Door vragen stellen in ‘natuurlijke taal’ ook digitaal mogelijk te maken, wil Kadaster met Loki geo-informatie voor iedereen nog toegankelijker maken. 
+De doorontwikkeling van Loki
 
-## Bevragen open data bronnen 
-Met Loki kan je informatie uit de volgende open data bronnen bevragen: 
+## Hoe leert Loki? 
+<br>
+Loki leert net als zijn Kadaster collega’s elke dag weer bij. Als chatbot Loki het antwoord niet weet, koppel je dit terug via een klik op het duimpje. Er verschijnt een feedbackformulier waar je je vraag/opmerking aan toe kan voegen. Verzoeken en verbeteringen worden maandelijks doorgevoerd. We hopen dat na de zomer de chatbot zo succesvol is, dat we Loki ook door klanten willen laten beoordelen. 
+
+## Wat heeft Loki al geleerd? 
+<br>
+We hebben de chatbot gevoed met informatie uit de volgende open databronnen: 
 - De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG) 
 - De Top10NL van de Basisregistratie Topografie (BRT) 
 - Digitale Kadastrale Kaart (DKK) 
@@ -31,25 +40,11 @@ Met Loki kan je informatie uit de volgende open data bronnen bevragen:
 - Publiekrechtelijke Beperkingen (BRK-PB) 
 - De Landelijke Voorziening van de Basisregistratie Grootschalige Topografie (BGT) 
  
-Daar zijn CBS wijken en buurten datasets en RuimtelijkePlannen.nl aan toegevoegd. Vragen kunnen gesteld worden op straat, buurt, wijk, gemeente, provinciaal of landelijk niveau. Naast het bevragen van deze datasets, kan Loki ook doorverwijzen naar webpagina’s op o.a. Kadaster.nl en tot slot is Loki gevoed met documenten zoals het jaarverslag van het Kadaster. 
+Daar zijn CBS wijken en buurten datasets en RuimtelijkePlannen.nl aan toegevoegd. Vragen kunnen gesteld worden op straat, buurt, wijk, gemeente, provinciaal of landelijk niveau. Naast het bevragen van deze datasets, verwijst Loki ook doorverwijzen naar webpagina’s op o.a. Kadaster.nl en tot slot is Loki gevoed met documenten zoals het jaarverslag van het Kadaster. 
 
-## Loki in ontwikkeling 
-
-Loki leert net als zijn Kadaster collega’s elke dag weer bij. Als chatbot Loki het antwoord niet weet kan dit teruggekoppeld worden via een klik op het duimpje. Er verschijnt een feedbackformulier waar je je vraag/opmerking aan toe kan voegen. Verzoeken en verbeteringen worden maandelijks doorgevoerd. 
-
-## Start een chatgesprek	 
-
-Rechtsonder kan je via de chatbutton een gesprek starten. Loki geeft al een aantal suggesties via de blauwe blokjes waar je vragen over kan stellen. Antwoorden kunnen gevisualiseerd worden op o.a. de kaart, grafiek of dashboard.   
-
-Mocht je een nieuwe conversatie willen starten. Klik rechts bovenin via de drie puntjes op ‘chat resetten’. 
-
-Liever een gesprek starten met spraak? Zet rechts boven het geluid aan via de drie puntjes ‘spraak aanzetten’. Je kan vervolgens je vraag inspreken. 
-
- 
-
-## Onderwerpen Loki 
-
-Loki kan vragen in een breed scala van onderwerpen beantwoorden, waarbij de focus ligt op het bevragen van data uit de leefomgeving. Benieuwd welke vragen Loki kan beantwoorden? Denk aan vragen over deze onderwerpen: 
+## Welk type vragen beantwoordt Loki? 
+<br>
+Loki wil vragen beantwoorden met de focus op data uit de leefomgeving. Benieuwd welke vragen Loki kan beantwoorden? Denk aan vragen over deze onderwerpen: 
 
  
 <details>
