@@ -25,12 +25,24 @@ banner: /assets/images/bannerloki.png
 
 Welkom bij Loki, de chatbot van het Kadaster. Loki beantwoordt eenvoudige vragen op basis van informatie van de open datasets die het Kadaster beheert en andere geo-informatie. Je kunt je vraag stellen in je eigen woorden. Loki gaat met jou in gesprek om te zorgen dat jij het antwoord krijgt dat je zoekt. Door vragen stellen in ‘natuurlijke taal’ ook digitaal mogelijk te maken, wil Kadaster met Loki geo-informatie voor iedereen nog toegankelijker maken. 
 
+## Wij hebben jouw hulp nodig!
+<br>
+Na de zomer willen we Loki inzetten om klanten te helpen snel een antwoord te vinden op vragen over hun leefomgeving. Daarvoor willen we Loki verder testen en trainen. Help jij ons mee? Rechtsonderin vind je het chatvenster van Loki en stel je vragen. 
+
 ## Hoe leert Loki? 
 <br>
 Loki leert net als zijn Kadaster collega’s elke dag weer bij. Als chatbot Loki het antwoord niet weet, koppel je dit terug via een klik op het duimpje. Er verschijnt een feedbackformulier waar je je vraag/opmerking aan toe kan voegen. Verzoeken en verbeteringen worden maandelijks doorgevoerd. We hopen dat na de zomer de chatbot zo succesvol is, dat we Loki ook door klanten willen laten beoordelen. 
 
+## Geef na het testen je feedback en maak kans op een prijs
+<br>
+Wat vind je van chatbot Loki? We zijn benieuwd naar jouw mening en tips. Vul via [deze](https://q.crowdtech.com/BFejOOndzk67qlWOdRQZLQ) link de vragenlijst in. De gouden tip wordt beloond met een Google Nest. 
+
+
 ## Wat heeft Loki al geleerd? 
 <br>
+
+Loki kan vragen in een breed scala van onderwerpen beantwoorden, waarbij de focus ligt op vragen over je eigen woning of woonwijk, ontwikkelingen van je woonomgeving, vergunningen die zijn verleend in je woonwijk, maar ook termen die het Kadaster gebruikt of ambities van onze organisatie. Loki geeft al een aantal suggesties via de blauwe blokjes waar je vragen over kan stellen.
+
 We hebben de chatbot gevoed met informatie uit de volgende open databronnen: 
 - De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG) 
 - De Top10NL van de Basisregistratie Topografie (BRT) 
