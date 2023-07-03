@@ -41,7 +41,7 @@ Wat vind je van chatbot Loki? We zijn benieuwd naar jouw mening en tips. Vul via
 ## Wat heeft Loki al geleerd? 
 <br>
 
-Loki kan vragen in een breed scala van onderwerpen beantwoorden, waarbij de focus ligt op vragen over je eigen woning of woonwijk, ontwikkelingen van je woonomgeving, vergunningen die zijn verleend in je woonwijk, maar ook termen die het Kadaster gebruikt of ambities van onze organisatie. Loki geeft al een aantal suggesties via de blauwe blokjes waar je vragen over kan stellen.
+Loki kan vragen in een breed scala van onderwerpen beantwoorden, waarbij de focus ligt op vragen over je eigen woning of woonwijk, ontwikkelingen van je woonomgeving, vergunningen die zijn verleend in je woonwijk, maar ook termen die het Kadaster gebruikt. Loki geeft al een aantal suggesties via de blauwe blokjes waar je vragen over kan stellen.
 
 We hebben de chatbot gevoed met informatie uit de volgende open databronnen: 
 - De Landelijke Voorziening van de Basisregistratie Adressen en Gebouwen (BAG) 
