@@ -91,103 +91,148 @@ In onderstaande figuur zijn de resultaten van de eerste twee onderzoeksvragen ge
   <tr>
     <th style="padding-right: 120px;">objecttypen</th>
     <th style="padding-right: 120px;">aantal</th>
-    <th style="padding-right: 120px;">doorlooptijd in dagen </th>
+    <th style="padding-right: 120px;">gemiddelde doorlooptijd in dagen </th>
+    <th style="padding-right: 120px;">maximale doorlooptijd </th>
     <th>actualiteitseis in maanden</th>
+
   </tr>
   <tr>
     <td>pand</td>
     <td>16069</td>
     <td>159</td>
+    <td>2078</td>
     <td>6</td>
   </tr>
   <tr>
     <td>wegdeel</td>
     <td>14257</td>
     <td>157</td>
+    <td>1937</td>
     <td>6</td>
   </tr>
     <tr>
     <td> geen classificatie</td>
     <td>12788</td>
     <td>192</td>
+    <td>2119</td>
     <td>6</td>
   </tr>
     <tr>
     <td>waterdeel</td>
     <td>4312</td>
     <td>163</td>
+    <td>1809</td>
     <td>18</td>
   </tr>
     <tr>
     <td>begroeid terreindeel</td>
     <td>4153</td>
     <td>154</td>
+    <td>1584</td>
     <td>18</td>
   </tr>
    <tr>
     <td>vegetatieobject</td>
     <td>1670</td>
     <td>122</td>
+    <td>1504</td>
     <td>18</td>
   </tr>
     <tr>
     <td>overig bouwwerk</td>
     <td>1494</td>
     <td>155</td>
+    <td>1571</td>
     <td>18</td>
   </tr>
     <tr>
     <td>ondersteunend wegdeel</td>
     <td>987</td>
     <td>69</td>
+    <td>1184</td>
     <td>18</td>
   </tr>
     <tr>
     <td>onbegroeid terreindeel</td>
     <td>969</td>
     <td>128</td>
+    <td>724</td>
     <td>18</td>
   </tr>
     <tr>
     <td>overbruggingsdeel</td>
     <td>520</td>
     <td>169</td>
+    <td>1497</td>
     <td>6</td>
   </tr>
     <tr>
     <td>kunstwerkdeel</td>
     <td>421</td>
     <td>262</td>
+    <td>1337</td>
     <td>18</td>
   </tr>
     <tr>
     <td>scheiding</td>
     <td>281</td>
     <td>170</td>
+    <td>1349</td>
     <td>18</td>
   </tr>
     <tr>
     <td>spoor</td>
     <td>104</td>
     <td>121</td>
+    <td>1349</td>
     <td>18</td>
   </tr>
     <tr>
     <td>ondersteunend waterdeel  </td>
     <td>62</td>
     <td>132</td>
+    <td>838</td>
     <td>18</td>
   </tr>
    <tr>
     <td>tunneldeel</td>
     <td>51</td>
     <td>294</td>
+    <td>1067</td>
     <td>6</td>
   </tr>
 </table>
 
 
 <br>
+<h2> 5.	Uitschieters doorlooptijd </h2>
+<em>is geen ondersteunend waterdeel, maar begroeid terreindeel</em> - <b>Begroeid terreindeel</b>
+<br>
+<em>passantensteiger</em> - <b> Kunstwerkdeel</b>
+<br>
+<em>pastorietuin 6 t/m 16 en 7 t/m 15</em> - <b> Onbegroeid terreindeel</b>
+<br>
+<em>natuurvriendelijke oever aangelegd</em>- <b> Ondersteunend waterdeel</b>
+<br>
+<em>dit is geen berm maar een begroeid terreindeel groenvoorziening.</em> - <b> Ondersteunend wegdeel</b>
+<br>
+<em>overbrugging staat niet goed in bgt</em> - <b> Overbruggingsdeel</b>
+<br>
+<em>bebouwing van it butlân 3 (ook nr. 1) te heeg ligt op de kaart ongeveer 4 meter te veel naar het zuid westen.</em> - <b> Overig bouwwerk</b>
+<br>
+<em>pand is gesloopt. nieuw pand met parkeerterrein ontbreken</em> - <b> Pand</b>
+<br>
+<em>niet actueel. werken in kader ruimte voor rivier op deze plek inmiddels voltooid. verbreding rivier, kademuur, steiger.</em> - <b> Scheiding</b>
+<br>
+<em>spoorvak stopt/ontbreekt</em> - <b> Spoor</b>
+<br>
+<em>verschuiving tunnel 1e en 2e ibispport</em> - <b> Tunneldeel</b>
+<br>
+<em>bomen en lichtmasten en dergelijke ontbreken in de kaart</em> - <b> Vegetatieobject</b>
+<br>
+<em>deze waterschapsloot moet één object worden. bestaat nu nog uit twee aparte objecten, die liggen in de gemeente heerenveen en de gemeente opsterland.</em> - <b> Waterdeel</b>
+<br>
+<em>vanaf de locatie loop een voetpad naar de hamerstraat</em> - <b> Wegdeel</b>
 </div>
 
 
