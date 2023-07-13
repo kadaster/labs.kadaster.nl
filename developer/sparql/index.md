@@ -21,11 +21,11 @@ Door linked data kunt u als developer datasets met elkaar verbinden. Bijvoorbeel
 ## SPARQL Tutorial
 Deze tutorials zorgen er voor dat je snel zelf aan de slag kunt gaan met de Kadaster Knowledge Graph. De tutorials zijn gericht op ontwikkelaars, maar met name het eerste deel is ook voor een breder technisch geïnteresseerd publiek bedoeld.
 
-- [Introductie](/developer/sparql/tutorial/0-Introductie)
-- [Verken het data model](/developer/sparql/tutorial/1-Exploreer-het-datamodel)
-- [SPARQL bevragingstaal](/developer/sparql/tutorial/2-SPARQL)
-- [Registratie vs. Knowledge Graph](/developer/sparql/3-Registratie-vs-Knowledge-Graph)
-- [Gebruik een programmeertaal](/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal)
+- [Stap 0 - Introductie](/developer/sparql/tutorial/0-Introductie)
+- [Stap 1 - Exploreer het datamodel](/developer/sparql/tutorial/1-Exploreer-het-datamodel)
+- [Stap 2 - SPARQL bevragingstaal](/developer/sparql/tutorial/2-SPARQL)
+- [Stap 3 - Registratie vs. Knowledge Graph](/developer/sparql/tutorial/3-Registratie-vs-Knowledge-Graph)
+- [Stap 4 - Gebruik van eigen programmeertaal](/developer/sparql/tutorial/4-Gebruik-eigen-programmeertaal)
 </div>
 
 Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de developers die gebruik kunnen maken van de data in de [Integrale Gebruiksoplossing](/cases/integralegebruiksoplossing). Deze sessie is opgenomen. Meer informatie en een link naar de video kun je vinden op [deze link](https://www.geobasisregistraties.nl/basisregistraties/documenten/publicatie/2021/08/26/integrale-gebruiksoplossing-workshop-voor-developers).

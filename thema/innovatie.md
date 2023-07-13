@@ -150,4 +150,12 @@ title: Innovatie
       <div class="card-description">Een dashboard voor bestuurders waarin de plannen en afspraken worden vergeleken met de actuele voortgang van de bouw.</div>
     </div>
   </a>
+  <a href="https://data.labs.kadaster.nl/dst/-/stories/inzichten-bouwlagen">
+    <div class="card">
+      <div class="card-type">Data Story</div>
+      <img class="card-image" src="/assets/images/bouwlagen.PNG">
+      <div class="card-title">Voorspellingen Bouwlagen</div>
+      <div class="card-description">Demonstratie van voorspelmodellen en resultaten voor twee vraagstukken: bouwlaag van een verblijfsobject en aantal bouwlagen van een pand.</div>
+    </div>
+  </a>
 </div>
