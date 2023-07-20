@@ -233,6 +233,19 @@ In onderstaande figuur zijn de resultaten van de eerste twee onderzoeksvragen ge
 <em>deze waterschapsloot moet één object worden. bestaat nu nog uit twee aparte objecten, die liggen in de gemeente heerenveen en de gemeente opsterland.</em> - <b> Waterdeel</b>
 <br>
 <em>vanaf de locatie loop een voetpad naar de hamerstraat</em> - <b> Wegdeel</b>
+
+
+<br>
+<h2> 6.	Verdeling doorlooptijd </h2>
+<figure id="figuur-5">
+  <a href="outliers_doorlooptijd.png">
+    <img src="outliers_doorlooptijd.png">
+  </a>
+  <figcaption>
+    Figuur 5 ― verdeling van de doorlooptijd. 
+  </figcaption>
+</figure>
+
 </div>
 
 
