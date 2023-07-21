@@ -158,7 +158,7 @@ title: Innovatie
       <div class="card-description">Demonstratie van voorspelmodellen en resultaten voor twee vraagstukken: bouwlaag van een verblijfsobject en aantal bouwlagen van een pand.</div>
     </div>
   </a>
-    <a href="/cases/metadata-infrastructure/metadata-infrastructure">
+    <a href="/cases/metadata-infrastructure">
     <div class="card">
       <div class="card-type">EngD Research</div>
       <img class="card-image" src="/assets/images/data-vs-metadata.png">

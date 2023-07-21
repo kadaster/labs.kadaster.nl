@@ -54,7 +54,7 @@ The Praktijkandleiding is not a new concept within the Kadaster. The machine-rea
     <div class="card-description">A dashboard which supports users in understanding the value of a data asset from a social and usability perspective</div>
   </div>
 </a>
-<a href="/cases/metadata-infrastructure/metadata-begrippenkader">
+<a href="/cases/metadata-begrippenkader">
   <div class="card">
     <div class="card-type">Begrippenkader</div>
     <img class="card-image" src="/assets/images/loki-logo.jpg">
