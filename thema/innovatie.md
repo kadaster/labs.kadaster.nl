@@ -158,4 +158,12 @@ title: Innovatie
       <div class="card-description">Demonstratie van voorspelmodellen en resultaten voor twee vraagstukken: bouwlaag van een verblijfsobject en aantal bouwlagen van een pand.</div>
     </div>
   </a>
+    <a href="/cases/metadata-infrastructure">
+    <div class="card">
+      <div class="card-type">EngD Research</div>
+      <img class="card-image" src="/assets/images/data-vs-metadata.png">
+      <div class="card-title">Kadaster's Metadata Infrastructure</div>
+      <div class="card-description">Kadaster's metadata infrastructure of the future. The EngD research presents the results of a two year design project.</div>
+    </div>
+  </a>
 </div>
