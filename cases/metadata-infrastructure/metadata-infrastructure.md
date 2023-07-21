@@ -54,12 +54,12 @@ The Praktijkandleiding is not a new concept within the Kadaster. The machine-rea
     <div class="card-description">A dashboard which supports users in understanding the value of a data asset from a social and usability perspective</div>
   </div>
 </a>
-<a href="/cases/lokiv3">
+<a href="/cases/metadata-infrastructure/metadata-begrippenkader">
   <div class="card">
-    <div class="card-type">Loki</div>
+    <div class="card-type">Begrippenkader</div>
     <img class="card-image" src="/assets/images/loki-logo.jpg">
     <div class="card-title">Begrippenkader, AI/ML and the chatbot Loki</div>
-    <div class="card-description">Chatbot that answers questions based on the (geo)(meta)data assets of the Kadaster. Test the chatbot here! 
+    <div class="card-description">This demonstrator explains how the Kadaster Begrippenkader is used by AI/ML models to train Loki.  
 </div>
   </div>
 </a>
