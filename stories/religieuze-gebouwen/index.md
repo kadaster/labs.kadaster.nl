@@ -7,7 +7,7 @@ title: Religieuze gebouwen in Nederland
   id="religieuze-gebouwen"
   src="https://data.labs.kadaster.nl/brt/-/stories/religieuze-gebouwen?embed"
   width="100%"
-  height="100%"
+  style="min-height:calc(99vh - 200px)"
   frameborder="0"
 ></iframe>
 <script src="https://data.labs.kadaster.nl/resizeIframe.js" iframeId="religieuze-gebouwen"></script>
