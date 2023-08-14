@@ -34,7 +34,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
   <a href="/thema/Knowledge_graph">
     <div class="card-home">
       <div class="card-type">Knowledge Graph</div>
-      <img class="card-image" src="/assets/images/knowledge_graph.png" alt="Knowledge Graph">
+      <img class="card-image" src="/assets/images/kadaster-knowledge-graph.png" alt="Knowledge Graph">
     </div>
   </a>
     <a href="/thema/data_analyse">

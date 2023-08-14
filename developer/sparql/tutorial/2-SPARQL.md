@@ -7,7 +7,7 @@ title: Tutorial - SPARQL bevragingstaal
   id="tutorial-sparql"
   src="https://data.labs.kadaster.nl/edu/-/stories/tutorial-sparql?embed"
   width="100%"
-  height="100%"
+  style="min-height:calc(100vh - 259px)"
   frameborder="0"
 ></iframe>
 <script src="https://data.labs.kadaster.nl/resizeIframe.js" iframeId="tutorial-sparql"></script>
