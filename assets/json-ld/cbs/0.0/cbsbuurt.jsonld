@@ -10,14 +10,14 @@
       "@id" : "geo:sfContains",
       "@type": "@id",
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/"
       }
     },
     "pandInBuurt": {
       "@id" : "geo:sfContains",
       "@type": "@id",
       "@context": {
-        "@base": "https://bag2.basisregistraties.overheid.nl/bag/id/registratie/"
+        "@base": "https://bag.basisregistraties.overheid.nl/bag2/id/registratie/"
       }
     }
   }
