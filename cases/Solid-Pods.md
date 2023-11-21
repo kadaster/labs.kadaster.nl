@@ -15,6 +15,10 @@ Het is een (emerging) technologie waar we nog geen of nauwelijks ervaring mee he
 -	Blockchain 
 -	Data Spaces 
 
+Kijk hier onze webinar waarin wij jullie meenemen in onze Solid Quest en onze demonstrator demonstreren!
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/poD0qvUgPoM?si=91XmQl7iQP9orROo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 **#DataMinimalisatie #RegieOpGegevens #PrivacyEnhancingTechnologies #SOLID #VerifiableCredentials #EmergingTech #Cloud #Security #LinkedData**
 
 Op onze [Github pagina](https://github.com/kadaster-labs/solid-quest) vind je de laatste informatie en de demonstrator. 

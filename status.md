@@ -25,6 +25,26 @@ Op deze website worden verschillende datasets en demonstrators gehost. Het kan s
     <div>Status</div>
 </div>
 <div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">26-10-2023 10:30</div>
+    <div class="mobileSpan">Herstart en vernieuwing van <a href="https://data.labs.kadaster.nl/brt/top10nl">BRT</a> SPARQL service</div>
+    <div class="mobileSpan"> &#x2714; Uitgevoerd </div>
+</div>
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">22-10-2023 12:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/bag/lv">BAG</a> SPARQL service</div>
+    <div class="mobileSpan">&#x2714; Uitgevoerd</div>
+</div>
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">23-10-2023 10:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/brk/registratie">BRK</a> SPARQL service</div>
+    <div class="mobileSpan">&#x2714; Uitgevoerd</div>
+</div>
+<div class="endpointContainer">
+    <div class="endpointContainer_title mobileSpan">23-10-2023 10:00</div>
+    <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/brk/dkk">DKK</a> SPARQL service</div>
+    <div class="mobileSpan">&#x2714; Uitgevoerd</div>
+</div>
+<div class="endpointContainer">
     <div class="endpointContainer_title mobileSpan">22-06-2023 14:00</div>
     <div class="mobileSpan">Herstart en vernieuwing van de <a href="https://data.labs.kadaster.nl/bgt/lv">BGT</a> SPARQL service</div>
     <div class="mobileSpan">&#x2714; Uitgevoerd</div>

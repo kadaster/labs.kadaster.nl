@@ -1,0 +1,440 @@
+<html>
+<head>
+    <title>Uploader</title>
+    <link rel="stylesheet" type="text/css" href="../w2ui/js/w2ui.min.css" />
+  
+    <link rel="stylesheet" href="css/spinner.css">
+ 
+ 
+     <script type="text/javascript" src="./js/jquery/jquery.min.js"></script>
+      <script type="text/javascript" src="./js/utils/downloadplugin.js"></script>
+    <!-- Fine Uploader Gallery CSS file
+    ====================================================================== -->
+    <link href="./js/external/fineuploader/fine-uploader-gallery.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  
+    <!-- Fine Uploader JS file
+    ====================================================================== -->
+    <script src="./js/external/fineuploader/fine-uploader.js"></script>
+
+    <!-- Fine Uploader Gallery template
+    ====================================================================== -->
+      
+   <div id="ccuploadtoolbar"></div>
+ 
+   
+     <script type="text/javascript" src="../w2ui/js/w2ui.min.js"></script>
+     <script type="text/javascript" src="js/IFace.js"></script>
+     <script type="text/javascript" src="js/MyCommand.js"></script>
+     <script type="text/javascript" src="js/downloadutils.js"></script>
+     <script type="text/template" id="qq-template-gallery">
+
+        <div  style="min-height: -webkit-fill-available" class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
+            <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+                <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+            </div>
+            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+                <span class="qq-upload-drop-area-text-selector"></span>
+            </div>
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Upload a file</div>
+            </div>
+          
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+            <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals">
+                <li>
+                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                    <div class="qq-progress-bar-container-selector qq-progress-bar-container">
+                        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                    </div>
+                    <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                    <div class="qq-thumbnail-wrapper">
+                        <img class="qq-thumbnail-selector" qq-max-size="120" qq-server-scale>
+                    </div>
+
+                    
+                    <button type="button" class="qq-upload-cancel-selector qq-upload-cancel">X</button>
+                    <button type="button" class="qq-upload-retry-selector qq-upload-retry">
+                        <span class="qq-btn qq-retry-icon" aria-label="Retry"></span>
+                        Retry
+                    </button>
+
+                    <div class="qq-file-info">
+                        <div class="qq-file-name">
+                            <span class="qq-upload-file-selector qq-upload-file"></span>
+                           
+                        </div>
+                        <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                        <span class="qq-upload-size-selector qq-upload-size"></span>
+                        <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">
+                            <span class="qq-btn qq-delete-icon" aria-label="Delete"></span>
+                        </button>
+                        <button type="button" class="qq-btn qq-upload-pause-selector qq-upload-pause">
+                            <span class="qq-btn qq-pause-icon" aria-label="Pause"></span>
+                        </button>
+                        <button type="button" class="qq-btn qq-upload-continue-selector qq-upload-continue">
+                            <span class="qq-btn qq-continue-icon" aria-label="Continue"></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+           
+
+            <dialog class="qq-alert-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Close</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-confirm-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">No</button>
+                    <button type="button" class="qq-ok-button-selector">Yes</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-prompt-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <input type="text">
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                    <button type="button" class="qq-ok-button-selector">Ok</button>
+                </div>
+            </dialog>
+            <button id="sendITButton"  onclick="sendIT()" class=" qq-upload-button">
+                <div>Upload</div>
+            </button>
+        </div>
+       
+    </script>
+
+    <title> COINS Container uploader </title>
+</head>
+<body style=" display: -webkit-flex;   display: flex;  flex-direction: column;overflow-y: hidden">
+     
+   <div id="pre" ></div> 
+    <!-- Fine Uploader DOM Element
+    ====================================================================== -->
+     <div id="uploader" style="flex-grow : 1;overflow-y: hidden;height:100%" ></div>
+     <div id="qq-form2"> </div>
+    <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
+    ====================================================================== -->
+ 
+    <div id="post"></div> 
+  
+       
+    <script>
+    
+    
+    window.top.isOK=function()
+    {
+        console.log("is ok called ");
+
+       
+       // downloadResults();
+
+        return true;
+    }
+    
+    
+    function downloadResults()
+    {
+      
+	   iface.evalParent("downloadResults()");
+    }
+ 
+    var uploadUri='/BloodBee/cgi/upload';
+ 
+  
+    function guid() {
+	  function s4() {
+	    return Math.floor((1 + Math.random()) * 0x10000)
+	      .toString(16)
+	      .substring(1);
+	  }
+	  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+	    s4() + '-' + s4() + s4() + s4();
+	}
+  
+    
+    function sendIT()
+    {
+
+	
+	//console.log("send it called",  Singleton.getInstance().parameters);
+	  try {
+	    
+	      if (!window.top.isOK()){return;}
+		  
+	  }
+	  
+	  catch(error){console.log(error);}
+	  
+	
+	  var galleryUploader=Singleton.getInstance().galleryUploader;
+	  galleryUploader.setParams(Singleton.getInstance().parameters);
+     
+      galleryUploader.setCustomHeaders({ "authorization": `Bearer ${window.getCurrentUserToken()}`});
+      
+	  try {galleryUploader.uploadStoredFiles();} catch(eee){}
+	  
+	 // console.log("send it executed");
+	  
+	  
+	 // galleryUploader.reset(); // causes a cancellation
+	 
+	  try{iface.lock();}catch(er){} 
+	 
+    }
+    
+    window.top.sendIt=function(){sendIT();}
+    
+    
+     
+
+    var fileExtensions= ['ccr'];
+    var waitingPath='../css/img/bimlogo.png';
+    var notAvailablePath='../css/img/bimlogo.png';
+    var multiple=false;
+    var command="uploadContainer";
+    var autoUpload=false;
+    var succesText="Uploaden gelukt. De container wordt op de server verwerkt. Dit kan enkele minuten duren. Log SVP later opnieuw in";
+    var succesEval="";
+    
+       
+       
+    
+    
+      function createUploaderWidget()
+      {
+	// console.log("create uploader widget");
+        var me =this;
+        if (Singleton.getInstance.parameters==null)
+            {
+            Singleton.getInstance().parameters={command:command,rd:true};
+            }
+        else
+            {
+            Singleton.getInstance().parameters.command=command;
+            Singleton.getInstance().parameters.rd=true;
+            
+            }
+      //  console.log("setting parameters");
+        me.parameters= Singleton.getInstance().parameters;
+        
+        var galleryUploader = new qq.FineUploader({
+            //element: document.getElementById("fine-uploader-gallery"),
+           
+            request: {      endpoint: uploadUri   },
+           element: document.getElementById("uploader"),
+            template: 'qq-template-gallery',
+            thumbnails: {
+                placeholders: {
+                    waitingPath: waitingPath,
+                    notAvailablePath: notAvailablePath
+                }
+            },
+            validation: {
+                allowedExtensions: fileExtensions,
+                sizeLimit: 512000000, // 50 kB = 50 * 1024 bytes,
+                minSizeLimit:1
+            
+            },
+            multiple: multiple,
+            autoUpload: autoUpload,
+            callbacks: {
+                onError: function(id, name, errorReason, xhrOrXdr) {
+                    try{iface.unlock();}catch(er){}
+                    alert(qq.format("Error on file number {} - {}.  Reason: {}", id, name, errorReason));
+                },
+               // onTotalProgress:function(bytes,total){console.log(bytes,total);},
+                //onComplete:function(id,name,respons,xhr){console.log("complete:",response);},
+               // onUpload:function(id,name){console.log("start upload:"+name);},
+                onStatusChange: function(id,status,newStatus){
+                 
+                   // console.log(id,status,newStatus);
+                   if (newStatus=="submitted")
+                       {
+                       //console.log(autoUpload);
+                       if ((autoUpload==true)||(autoUpload=="true"))
+                       {
+                	   // console.log("auto submit sending via submitstatus");
+                	         setTimeout(sendIT,200);
+                	   }
+                       }
+                   
+                    },
+                onSubmit: function(id,name){                Singleton.getInstance().galleryUploader.ok=true;},
+                onError: function(id,name,err,xhr){ 
+                    try{iface.unlock();}catch(er){};
+                  //  console.log("onError event", Singleton.getInstance().galleryUploader.ok);   
+                  Singleton.getInstance().galleryUploader.ok=false;  
+                    parseResponse(xhr,err);
+                  //  console.log("onError end", Singleton.getInstance().galleryUploader.ok);     
+                  },
+                onAllComplete: function(succ,err){   try{iface.unlock();}catch(er){};
+             // console.log("all complete event",succ,err);
+                if (Singleton.getInstance().galleryUploader.ok){
+                    if (succesText!=null)
+                	{
+                	 if (succesText.length>1)
+                	     {
+                	        //  alert(succesText);
+                	     }
+                	}
+                   
+                   console.log("succes evaluting endprocess",succesEval);
+                try{eval(succesEval);}
+                catch(err){}}
+                else{
+                    alert("upload not successful");}; 
+                
+                     Singleton.getInstance().galleryUploader.reset();
+                }
+                
+                //Singleton.getInstance().iface.widget.eval("location.reload();");
+                
+            }
+           
+           
+        });
+        
+        Singleton.getInstance().galleryUploader=galleryUploader;
+      }
+      
+  
+      function parseResponse(xhr,er)
+      {
+	  if ((xhr==null) && (er=="No files to upload.")) {return;} 
+//	  console.log("parseResponse",xhr,er);
+	  var pok=Singleton.getInstance().galleryUploader.ok;
+	  //Singleton.getInstance().galleryUploader.ok=false;
+	    if (xhr==null) {alert(er);return;}
+	    var jo=JSON.parse(xhr.response);
+	    if (jo==null) {alert(er);return;}
+	    
+	    if (jo.confirmation!=null)
+		{
+			w2confirm(jo.confirmation, function btn(answer) {
+			 //   console.log(answer); // Yes or No -- case-sensitive
+			    if (answer=="Yes")
+				{
+				      //console.log("do iets extra's",jo.command);
+				      MyCommand.sendCommand( {nofile:true,command:jo.command,confirmation:true} );
+				      
+				}
+			});
+			return;
+		  
+		}
+	    if (jo.message!=null)
+		{
+		  w2alert(jo.message);
+		}
+	    
+	    //Singleton.getInstance().galleryUploader.ok=pok;
+         
+	  
+      }
+
+      function setParams(widget)
+{
+    var ha = getQueryParams();
+   
+    for (var key in ha)
+    {
+        
+        var value = ha[key];
+        if (value.includes("@@")){value=value.replaceAll("@@","||");}
+        if (value.includes("!@!@")){value=value.replaceAll("!@!@","{{");}
+        if (value.includes("@!@!")){value=value.replaceAll("@!@!","}}");}
+        if (key=="expandLevel"){try{value=parseInt(value);}catch(e){}}
+        widget[V2+key]=value;
+         if (value!=null)
+         {
+                if (key=="command"){command=value;}
+                if (key=="multiple"){if (value=="true"){multiple=true;}else{multiple=false;}}
+                if (key=="fileExtensions"){fileExtensions=value.split(",");}
+                if (key=="waitingPath"){waitingPath=value;}
+                if (key=="serverUrl") {uploadUri=value;}
+                if (key=="successEval") {succesEval=value;}
+                
+
+         }
+       
+        console.log(key,value);
+    }
+}
+
+
+
+
+function getQueryParams() {
+
+    var qs=document.location.href;
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+
+
+
+var V2="";
+this.dao={};
+setParams(this.dao);
+                 
+     var iface =new Iface();
+     Singleton.getInstance().iface=iface;
+     try
+     {
+     window.top.Singleton.getInstance().iframes[window.frameElement.id].call(this,iface);
+     }
+     catch(e)
+     {
+         console.log(e);
+     }
+
+     createUploaderWidget();
+
+
+
+     function downloadResults(key)
+{
+   
+
+    var bu= window.location;
+    bu = bu .protocol + "//" + bu.host + "/";
+   var url=uploadUri.replace("upload","download"); 
+console.log(url);
+     var o={fileToDownload:key};
+
+     
+   var r=$.fileDownload(url,{   httpMethod: "POST",data:o});
+   r.done(function () {console.log("done"); });
+   r.fail(function (e) { console.log("not yet ready",e); alert('File download failed. Not yet ready. please try again later');console.log(e); });   
+ // r.always(function(e){console.log("aweasy ",e)});
+
+
+}
+
+    
+ 
+    </script>
+
+</body>
+</html>

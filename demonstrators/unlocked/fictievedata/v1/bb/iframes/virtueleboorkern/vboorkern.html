@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="scrolling:no;overflow:hidden;background-color:#AAAAAA;" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Wegopbouw</title>
+
+<!-- CSS Files -->
+<link type="text/css" href="js/jit/base.css" rel="stylesheet" />
+<link type="text/css" href="js/jit/BarChart.css" rel="stylesheet" />
+
+<link type="text/css" href="vboorkern.css" rel="stylesheet" />
+
+<!--[if IE]><script language="javascript" type="text/javascript" src="../../Extras/excanvas.js"></script><![endif]-->
+
+<!-- JIT Library File -->
+<script language="javascript" type="text/javascript" src="js/jit/jitHS.js"></script>
+
+<!-- Example File -->
+<script language="javascript" type="text/javascript" src="js/boorkern.js"></script>
+<script language="javascript" type="text/javascript" src="js/integrator.js"></script>
+</head>
+
+<body onload="init();" onresize="onResize()">
+ <script>
+function onResize()
+{
+    
+   if (document.latestJSON!=null)
+   {
+       document.getElementById("infovis-canvaswidget").style.height="100%";
+         document.getElementById("infovis-canvas").style.height="100%";
+        update(document.latestJSON)   ;
+    }
+} 
+ </script>
+ 
+<div id="container2">
+
+
+<div id="left-container">
+ <h3 style="margin-left: 5px;"> </h3>
+       <h3  id = "legenda" style="margin-left: 5px;">legenda </h3> 
+        <ul id="id-list" style="margin-left: 5px;"></ul>
+        <a id="update"  ></a>
+           
+</div>
+
+<div id="center-container">
+    <div style="height:100%" id="infovis"></div>    
+</div>
+
+<div id="right-container">
+
+<div id="inner-details"></div>
+
+</div>
+
+<div id="log"></div>
+</div>
+</body>
+</html>

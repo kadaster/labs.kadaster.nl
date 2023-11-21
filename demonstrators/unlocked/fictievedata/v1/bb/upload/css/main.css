@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin:0;
+}
+.w2ui-layout>div .w2ui-panel .w2ui-panel-title {
+    text-align: left;
+    font-size: 20px;
+    text-align: center;
+    color:#2fa4ea;
+    background-image: none;
+    border: none;
+}
+.w2ui-layout>div .w2ui-panel .w2ui-panel-tabs {
+    background: none;
+    margin-top: 0;
+}
+.w2ui-tab:hover {
+    cursor: pointer;
+}
+.w2ui-tabs .w2ui-tab {
+    background-color:#2fa4ea ;
+    font-weight: 400;
+    transition: background-color 500ms;
+    color: #fff;
+}
+.w2ui-tab.active {
+    transition: background-color 500ms;
+    background-color: #1585c8;
+    color: #1585c8 !important;
+}
+.w2ui-layout>div .w2ui-panel .w2ui-panel-content {
+    background: #fff;
+}
+table {
+    background: #fff;
+}
+.w2ui-sidebar .w2ui-sidebar-div .w2ui-selected {
+    transition: all 200ms;
+    opacity: 0.8;
+    background: #2fa4ea;
+    outline: none;
+}
+.w2ui-grid-data {
+    font-size: 15px;
+}
+.w2ui-sidebar:hover .w2ui-sidebar-div:hover .w2ui-selected:hover {
+    transition: all 200ms;
+    background: #2fa4ea;
+    opacity: 1;
+}
+.w2ui-col-header {
+    background: #2fa4ea;
+    color: #fff;
+    font-weight: 700;
+}
+.w2ui-expand {
+    font-weight: 700;
+}
+.icon {
+    width: 32px !important;
+    height: 32px !important;
+}
+.qq-gallery
+{
+
+  height:100%;
+}
+.qq-gallery .qq-upload-list li {
+  
+    max-width: 220px;
+    min-width: 220px;
+  
+    
+}
+
