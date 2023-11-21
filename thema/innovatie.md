@@ -6,6 +6,14 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
+  <a href="/cases/lockunlock">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/assets/images/lockunlock.jpg">
+      <div class="card-title">Lock - Unlock</div>
+      <div class="card-description">Lock de data, unlock het potentieel! Een verkenning naar autorisatie binnen Linked Data. </div>
+    </div>
+  </a>
   <a href="/cases/geodataplein">
     <div class="card">
       <div class="card-type">Project</div>
