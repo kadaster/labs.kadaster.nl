@@ -9,7 +9,7 @@
     "akrgemeente": "brk:akrAanduiding",
     "akrgemeentecode": null,
     "brk": "https://brk.basisregistraties.overheid.nl/brk2/def/",
-    "begingeldigheid": {
+    "beginGeldigheid": {
       "@type": "xsd:dateTime",
       "@id": "nen3610:beginGeldigheid"
     },
@@ -26,11 +26,11 @@
       "@type": "xsd:double",
       "@id": "brk:deltaY"
     },
-    "eindgeldigheid": {
+    "eindGeldigheid": {
       "@type": "xsd:dateTime",
       "@id": "nen3610:eindGeldigheid"
     },
-    "eindregistratie": {
+    "eindRegistratie": {
       "@type": "xsd:dateTime",
       "@id": "prov:invalidatedAtTime"
     },
@@ -140,7 +140,7 @@
     "sectie": "brk:sectie",
     "sh": "http://www.w3.org/ns/shacl#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "tijdstipregistratie": {
+    "tijdstipRegistratie": {
       "@type": "xsd:dateTime",
       "@id": "prov:generatedAtTime"
     },
