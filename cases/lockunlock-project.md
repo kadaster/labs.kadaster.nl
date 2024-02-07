@@ -7,7 +7,7 @@ title: Lock - Unlock
 ## Project Achtergrond
 Het Lock – Unlock project is uitgevoerd in opdracht van het [Federatief Datastelsel](https://realisatieibds.pleio.nl/cms/view/8852ee2a-a28a-4b91-9f3e-aab229bbe07f/federatief-datasysteem), programmaonderdeel van [Realisatie IBDS](https://realisatieibds.pleio.nl/). Binnen het Federatief Datastelsel is het kunnen delen van data uiteraard de kern, maar dit moet ook op een verantwoorde manier gebeuren, waarbij bescherming van data en autorisatie belangrijk zijn.
 
-Lock-Unlock richt zich op Linked Data, voortbouwend op de [Integrale Gebruiksoplossing (IGO)](https://labs.kadaster.nl/cases/integraleutilizationsolution) en de [Kadaster Knowledge Graph (KKG)](https://labs .kadaster.nl/thema/Kennis_grafiek) ontwikkeld door het Kadaster. Er zijn weinig gestandaardiseerde mogelijkheden voor autorisatie van data in het Linked Data domein. Dit project is uitgevoerd om de (on)mogelijkheden te onderzoeken en te testen.
+Lock-Unlock richt zich op Linked Data, voortbouwend op de [Integrale Gebruiksoplossing (IGO)](https://labs.kadaster.nl/cases/integraleutilizationsolution) en de [Kadaster Knowledge Graph (KKG)](https://labs.kadaster.nl/thema/Kennis_grafiek) ontwikkeld door het Kadaster. Er zijn weinig gestandaardiseerde mogelijkheden voor autorisatie van data in het Linked Data domein. Dit project is uitgevoerd om de (on)mogelijkheden te onderzoeken en te testen.
 
 ### Praatplaat
 !TODO short summary
@@ -20,7 +20,7 @@ Lock-Unlock richt zich op Linked Data, voortbouwend op de [Integrale Gebruiksopl
 ## Resultaten
 
 <div class="cards-wrapper">
-<a href="https://data.labs.kadaster.nl/lock-unlock/-/stories/user-stories">
+<a href="https://data.labs.kadaster.nl/lock-unlock/-/stories/gebruikers-context">
   <div class="card">
     <div class="card-type">Use Case</div>
     <img class="card-image" src="/assets/images/user-context-lock-unlock.png">
