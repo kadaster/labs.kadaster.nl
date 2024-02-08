@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%" width="100%" height="100%">
+
+<head>
+  <link rel="stylesheet" href="../css/fa/css/all.min.css" />
+  <link rel="stylesheet" href="js/w2ui.min.css" />
+  <link rel="stylesheet" href="table.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/w2ui.min.js"></script>
+
+  <script src="js/Sparql.js"></script>
+
+  <script src="js/W2uiIntegrator.js"></script>
+
+  <script src="js/MySparql.js"></script>
+
+  <script src="js/Table.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <style>
+    body.wraptext .w2ui-grid .w2ui-grid-body table td.w2ui-grid-data *>div {
+      white-space: normal;
+      line-height: 150%;
+    }
+  </style>
+</head>
+
+<body style="height: 100%; width: 100%; overflow-y: hidden; margin: 0px" style2="display:flex;flex:1 1 auto ">
+  <div id="layout" style="height: 100%; width: 100%"></div>
+</body>
+<script>
+
+  var pstyle = 'background-color: #F5F6F7; border: 0px solid #dfdfdf; padding: 0px;'
+  var layout = $('#layout').w2layout({
+    name: 'layout',
+    panels: [{ type: 'main', style: pstyle, content: 'main' }],
+  })
+
+  var root = 'true'
+  var widget = {
+    connect: function (a, b) {
+      console.log('connecting mockup propertypanel')
+    },
+  }
+  //widget[V2+"createRoot"]=root;
+  //widget[V2+"icon"]="box";
+  //widget[V2+"title"]="kenmerken";
+  widget[V2 + 'useNormalSparqlInput'] = 'true'
+
+  /*
+widget[V2+"altQuery1"]=null;
+widget[V2+"altQuery2"]=null;
+widget[V2+"altQuery3"]=null;
+widget[V2+"altPresentationName0"]=null;
+widget[V2+"altPresentationName1"]=null;
+widget[V2+"altPresentationName2"]=null;
+
+
+
+widget[V2+"addButton"]="true";
+widget[V2+"editButton"]="true";
+widget[V2+"removeButton"]="true";
+widget[V2+"createOrphansItem"]="true";
+widget[V2+"groupByPropertyValue"]=null;
+*/
+
+  var panel = 'main'
+  //var rv=function(){console.log("RV mockup BBTREE")};
+
+  var tree = new TableWidget('layout', panel, widget, null)
+
+  const wrapText = (new URLSearchParams(window.location.search)).get('wraptext') === "true"
+  if (wrapText) {
+    document.body.classList.add('wraptext')
+    tree.recordHeight = Infinity
+  }
+
+  Iface.prototype.setBeginSparqlResults = function (results, sparql) {
+    try {
+      var replaceText = this.me.props.childParameterText
+      if (replaceText != null) {
+        tree.childParameterText = replaceText
+      }
+    } catch (e) {
+      console.log(e)
+    }
+    //
+
+    // from connection
+    // console.log("BB proeprtypanel widget set sparql results  ",results,tree);
+    tree.setSparqlResults(results, sparql)
+    //console.log("BBTREE READY");
+    // tree.refresh();
+    // setTimeout(function(){tree.expandUpToLevel(1);},2500);
+  }
+  Iface.prototype.selectUri = function (uri) {
+   // console.log('fire selection event ', uri)
+    tree.fireEvent('singleSelection', uri)
+  }
+//console.log ("table start integration");
+  startIntegration(tree)
+</script>
+
+</html>

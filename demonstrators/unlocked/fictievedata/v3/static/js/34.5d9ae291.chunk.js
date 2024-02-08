@@ -1,2 +1,0 @@
-(this["webpackJsonpviewer-builder-client"]=this["webpackJsonpviewer-builder-client"]||[]).push([[34],{1292:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return a}));var r=n(5),i=n(6),u=n(7),c=n(8),a=function(e){Object(u.a)(n,e);var t=Object(c.a)(n);function n(){return Object(r.a)(this,n),t.apply(this,arguments)}return Object(i.a)(n,[{key:"getUrl",value:function(){return"/bb/w2ui/wegselector.html"}}]),n}(n(28).a)}}]);
-//# sourceMappingURL=34.5d9ae291.chunk.js.map
