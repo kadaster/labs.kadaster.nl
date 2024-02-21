@@ -1,0 +1,20 @@
+<svg width="100.00000000000001" height="100.00000000000001" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Earth</title>
+  <line fill="none" stroke="#000" x1="49.32282" y1="-0.56259" x2="49.54854" y2="99.88541" id="svg_7" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line stroke="#000" id="svg_4" y2="39.67742" x2="45.80645" y1="39.67742" x1="49.35484" fill="none"/>
+  <line stroke="#000" id="svg_10" y2="84.51612" x2="22.90322" y1="76.12903" x1="45.16129" fill="none"/>
+  <g id="svg_15">
+   <line id="svg_5" y2="89.03225" x2="7.09677" y1="84.19354" x1="7.09677" stroke="#000" fill="none"/>
+   <line id="svg_11" y2="90.96773" x2="9.03226" y1="80.32257" x1="9.03226" stroke="#000" fill="none"/>
+   <line id="svg_12" y2="94.19354" x2="11.93548" y1="76.45161" x1="11.6129" stroke="#000" fill="none"/>
+  </g>
+  <line id="svg_16" y2="84.8387" x2="13.54839" y1="84.8387" x1="23.54838" stroke="#000" fill="none"/>
+  <ellipse stroke="#000" ry="9.83871" rx="10.29303" id="svg_1" cy="39.83871" cx="35.19084" fill="none"/>
+  <ellipse stroke="#000" ry="9.83871" rx="10.29303" id="svg_19" cy="39.83871" cx="19.32529" fill="none"/>
+  <line stroke="#000" id="svg_21" y2="39.67742" x2="45.80645" y1="39.67742" x1="49.35484" fill="none"/>
+  <line id="svg_22" y2="40" x2="5.16129" y1="40" x1="8.3871" stroke="#000" fill="none"/>
+  <line id="svg_23" y2="50.64516" x2="81.29031" y1="50.96774" x1="80.96773" stroke="#000" fill="none"/>
+ </g>
+
+</svg>

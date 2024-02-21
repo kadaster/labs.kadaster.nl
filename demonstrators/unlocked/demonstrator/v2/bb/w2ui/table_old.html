@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html >
+<head>
+        <link rel="stylesheet" href="js/w2ui.min.css" />
+        <script src="js/jquery.min.js"></script>
+<script src="js/w2ui.min.js"></script>
+
+<script src="js/W2uiIntegrator.js"></script>
+
+
+</head>
+    <body >
+            <div id="main" ></div>
+        
+    </body>
+    <script>
+    
+    
+
+   getHashedResults=function(results,cols)    {
+    var recid=0;
+	var data=[];
+	var hash={};
+	
+try
+	{
+	    	for (var n in results.results.bindings)
+	    	    {
+	    	    	
+	    	    	var o =results.results.bindings[n];
+	    	    	var id=o[me.hash].value;
+	    	
+	    	    	var oo=hash[id];
+	    	    	if (oo==null)
+	    	    	    {
+	    	    	    	recid++;
+	    	    	    	var oo={recid:recid};
+	    	    	    	hash[id]=oo;
+	    	    	data.push(oo);
+	    	    	    }
+	    	    	
+	    	    	for (var i in cols)
+	    	    	    {
+	    	    		try{ 
+	    	    		    var value=o[cols[i].field].value;
+	    	    		//if ((oo[cols[i].field]=="-") || (oo[cols[i].field]==null))
+	    	    			{
+	    	    				oo[cols[i].field]=value;
+	    	    			}
+	    	    		    }catch(error){}
+	    	             
+	    	    	    }
+	    	    	
+	    	   
+	    	    		
+	    	    }
+	}
+	catch(e){console.log(e);}
+return data;
+}
+
+
+
+getNormalResults=function(results,cols)    {
+    var recid=0;
+	var data=[];
+try
+	{
+	    	for (var n in results.results.bindings)
+	    	    {
+	    	    	recid++
+	    	    	var o =results.results.bindings[n];
+	    	    	var oo={recid:recid};
+	    	    	for (var i in cols)
+	    	    	    {
+	    	    		try{ 
+	    	    		    oo[cols[i].field]=o[cols[i].field].value;
+	    	    		    }catch(error){oo[cols[i].field]="-";}
+	    	             
+	    	    	    }
+	    	    	data.push(oo);
+	    	   
+	    	    		
+	    	    }
+	}
+	catch(e){console.log(e);}
+return data;
+}
+
+
+
+
+
+
+Iface.prototype.setBeginSparqlResults=function(results,sparql)
+{
+   
+    
+     // from connection
+      
+       
+   var me=this;
+   me.toolbarViz=true;
+
+  // console.log("table widget set sparql results 24 ",results);
+       // pipe this through to the iframe.
+      
+     
+        if (results==null) {return;}
+		//console.log("table widget set sparql results 25 ",results,sparql);
+		try{
+      if (sparql==null){
+          if (DEBUG){   console.log("geen sparql query voor tree gevonden! ");}
+		//  return;
+		}
+	}
+	catch(e){}
+	//	console.log("table 22222 widget set sparql results 22 ",results,sparql);
+      try
+      {
+     
+    	var nodes=[];
+    	
+    	// cols
+    	var cols=[];
+    	
+     	for (var n in results.head.vars)
+    	    {
+     	        var col=results.head.vars[n];
+     	        if (col!=me.hash)
+     	            {
+     	            cols.push({field: col, caption: col, size: '30%',sortable:true });
+     	            }
+     	        
+    	    }
+     	
+     	
+     	var data=[];
+     	if (me.hash==null)
+     	    {
+     	    data=getNormalResults(results,cols);
+     	    }
+     	else
+     	    {
+     	 data=getHashedResults(results,cols);
+     	    }
+     	
+     	
+     	
+     	var tgrid={ 
+    	        name: "mijngrid", 
+    	        columns: cols,
+    	        records:data,
+    	        
+    	        
+    	    };
+     	if (me.header!=null)
+     	    {
+     	      tgrid.header=me.header;
+     	      tgrid.show={header:true}
+     	    }
+     	
+     	if (me.toolbarViz==true)
+     	    {
+         	    var show=tgrid.show;
+         	    if (show==null){show={};}
+         	     show.toolbar= true;
+         	     show.footer= true;
+         	     show.toolbarSave= false;
+         	      tgrid.show=show;
+    	       }
+     
+			
+    	  if (this.grid!=null){this.grid.destroy();}
+
+		  let layoutConfig = {
+        name: 'layout',
+        padding: 4,
+        panels: [
+            { type: 'main', minSize: 300 }
+        ]
+        };
+
+          if (this.layout==null) {	 console.log("creating layout"); this.layout=$('#main').w2layout(layoutConfig); }
+		 
+        var grid=$().w2grid(tgrid);
+		w2ui.layout.html('main', grid);
+
+
+
+
+    	//  var grid=$("#main").w2grid(tgrid); 
+    	  
+    	  this.grid=grid;
+    	// this.grid.fixedBody = true;
+       // this.grid.refresh();
+      
+       // this.grid.fixedBody = false;
+        this.grid.refresh();
+		this.layout.refresh();
+      
+    	
+      }
+      catch(error){console.log(error);}
+   
+
+}
+
+startIntegration();
+    
+    
+    </script>
+    </html>
+

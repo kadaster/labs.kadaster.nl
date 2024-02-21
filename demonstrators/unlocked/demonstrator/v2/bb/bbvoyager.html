@@ -1,0 +1,168 @@
+<html style="min-height: 500px; height:700px">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/react@16/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/graphql-voyager/dist/voyager.css" />
+    <script src="https://cdn.jsdelivr.net/npm/graphql-voyager/dist/voyager.min.js"></script>
+      <script src="voyager/voyager.js"></script>
+      <script type="text/javascript" src="integrator.js" ></script> 
+    
+  </head>
+  <body>
+    <div id="voyager" >Loading...</div>
+    <script>
+
+Iface.prototype.setBeginSparqlResults=function(results,sparql)
+{
+   // set conifig
+   
+      //console.log("voyager nieuwe resultaten");
+
+
+   if (results==null){return ;}
+//   if (document.yasr==null){return;}
+   document.results=results;
+   document.sparql=sparql;
+  
+GraphQLVoyager.init(document.getElementById('voyager'), {
+        introspection:function(a){ return introspectionProvider2(a,results);},displayOptions:{skipRelay :false,hideRoot:true} ,hideSettings:true,hideDocs:true
+      });
+  
+   
+}
+
+
+      
+
+      function getJSON() {
+    return new Promise(function(resolve) {
+             resolve(d)          ;
+          
+    });
+}
+function introspectionProvider2(introspectionQuery,results) 
+      {
+         //console.log($(""));
+
+        var def =null;
+        var root=null;
+        var n=0;
+        var d_o = {};
+        var subClassRelaties={};//id:childparent{child:,parent:} 
+        for (var n in results.results.bindings)
+        {
+          var b =results.results.bindings[n];
+          if (def==null)
+          {
+           // def =new Definitions(b.selectie.value);
+            def =new Definitions("Root");
+            root = new DefClass("Root","jaja");
+            root.addField("class","uri","tja");
+            def.addDefClass(root);
+          }
+
+          var cls = d_o[b.domainName.value];
+          if (cls==null)
+          {
+            // create class
+            var cls = new DefClass(b.domainName.value,"jaja");
+            d_o[b.domainName.value]=cls;
+            cls.addField("class","uri","tja");
+            n++;
+            root.addRelField("label"+n,b.domainName.value,"tja");
+            def.addDefClass(cls);
+
+          }
+          var range = b.rangeName.value;
+          
+          if (range.startsWith("http://www.w3.org/2001/XMLSchema#"))
+          {
+            //add datatype
+            cls.addField(b.propName.value,b.rangeName.value,"tja");
+          }
+          else
+          {
+            // add relation
+            cls.addRelField(b.propName.value,b.rangeName.value,"tja");
+           
+            var tcls = d_o[b.rangeName.value];
+            if (tcls==null)
+            {
+              
+              var tcls = new DefClass(b.rangeName.value,"jaja");
+              tcls.addField("class","uri","tja");
+              n++;
+              root.addRelField("label"+n,b.rangeName.value,"tja");
+              d_o[b.rangeName.value]=tcls;
+              def.addDefClass(tcls);
+            }
+          }
+
+          // subclass relation
+          if (b.rangeIssubClass!=null)
+          {
+            var rangeIsSubClass=b.rangeIssubClass.value;
+            var subclass={parent:rangeIsSubClass,child:b.rangeName.value};
+            var id=rangeIsSubClass+"_"+b.rangeName.value;
+            subClassRelaties[id]=subclass;
+                       
+          }
+          
+         
+
+        } // end for
+        //process subclasses
+        for (var id in subClassRelaties)
+        {
+           var s=subClassRelaties[id];
+          var parent =d_o[s.parent];
+         // console.log("adding subclass of relationship ",s.child,child);
+        
+          parent.addRelField("subClassOf",s.child,"sub class relationship");
+        //  console.log(child);
+        }
+
+
+        if (def==null)
+        {
+          console.log("geen diagram");
+           def =new Definitions("GeenDiagram");
+           root = new DefClass("Root","jaja");
+            root.addField("class","uri","tja");
+            def.addDefClass(root);
+           var cls = new DefClass("GeenDiagram","jaja");
+            cls.addField("guid","string","tja");
+            console.log(root);
+            try {            def.addDefClass(cls); } catch(e){}
+        }
+
+      return def.getPromise();
+
+      }
+
+    function introspectionProvider(introspectionQuery,results) 
+      {
+
+      var def =new Definitions("Nothing_Selected");
+      var cls = new DefClass("Nothing_Selected","jaja");
+      cls.addField("class","uri","tja");
+      def.addDefClass(cls);
+
+
+        return def.getPromise(); 
+        
+      }
+
+      // Render <Voyager />
+      var s=GraphQLVoyager.init(document.getElementById('voyager'), {
+        introspection: introspectionProvider,hideSettings:true,hideDocs:true
+      });
+    
+
+
+      startIntegration();
+
+    </script>
+  </body>
+</html>
