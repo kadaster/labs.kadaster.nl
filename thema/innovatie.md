@@ -6,7 +6,7 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
-  <a href="/cases/lockunlock">
+  <a href="/cases/lockunlock-project">
     <div class="card">
       <div class="card-type">Project</div>
       <img class="card-image" src="/assets/images/lockunlock.jpg">
