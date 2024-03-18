@@ -18,7 +18,7 @@ Bij de subgraph methode wordt er eerst een selectie gemaakt van de data waar de 
 <a href="https://labs.kadaster.nl/demonstrators/unlocked/demonstrator/">
   <div class="card">
     <div class="card-type">Demonstrators</div>
-    <img class="card-image" src="/assets/images/kadaster-logo.png">
+    <img class="card-image" src="/assets/images/lockunlock.jpg">
     <div class="card-title">SPARQL Rewrite Demonstrator</div>
     <div class="card-description">Deze demonstrator beveiligt gegevens op basis van herschrijven SPARQL-query's op basis van gedefinieerde gebruikersautorisaties.</div>
   </div>
@@ -27,12 +27,12 @@ Bij de subgraph methode wordt er eerst een selectie gemaakt van de data waar de 
   <div class="card">
     <div class="card-type">Demonstrators</div>
     <img class="card-image" src="/assets/images/lockunlock.jpg">
-    <div class="card-title">subgraph Demonstrator</div>
+    <div class="card-title">Subgraph Demonstrator</div>
     <div class="card-description">Deze demonstrator beveiligt gegevens op basis van het genereren van een subgrah van gegevens waartoe een gebruiker toegang heeft op basis van gedefinieerde autorisatieregels.</div>
   </div>
 </a>
 </div>
 
 ## Documentatie
-Bezoek deze [pagina]() om de volledige documentatie van beide aanpakken te lezen.
+Bezoek deze [pagina](https://kadaster-labs.github.io/lock-unlock-docs/) en de [Github repo](https://github.com/kadaster-labs/lock-unlock-docs) om de volledige documentatie van beide aanpakken te lezen. 
 
