@@ -9,7 +9,42 @@ Het Lock – Unlock project is uitgevoerd in opdracht van het [Federatief Datast
 
 Lock-Unlock richt zich op Linked Data, voortbouwend op de [Integrale Gebruiksoplossing (IGO)](https://labs.kadaster.nl/cases/integraleutilizationsolution) en de [Kadaster Knowledge Graph (KKG)](https://labs.kadaster.nl/thema/Kennis_grafiek) ontwikkeld door het Kadaster. Er zijn weinig gestandaardiseerde mogelijkheden voor autorisatie van data in het Linked Data domein. Dit project is uitgevoerd om de (on)mogelijkheden te onderzoeken en te testen.
 
+## Resultaten
+
+<div class="cards-wrapper">
+<a href="/cases/lockunlock-demonstrators">
+  <div class="card">
+    <div class="card-type">Demonstrators</div>
+    <img class="card-image" src="/assets/images/lockunlock.jpg">
+    <div class="card-title">Autorisatie Als Linked Data</div>
+    <div class="card-description">Er zijn hier twee autorisatie-implementaties beschikbaar als demonstrators.</div>
+  </div>
+</a>
+<a href="https://kadaster-labs.github.io/lock-unlock-docs/"> 
+  <div class="card">
+    <div class="card-type">Documentatie</div>
+    <img class="card-image" src="/assets/images/documentatie.png">
+    <div class="card-title">Voor Geïnteresseerden</div>
+    <div class="card-description">De volledige documentatie voor het project is hier beschikbaar.</div>
+  </div>
+</a>
+<a href="https://github.com/kadaster-labs/lock-unlock-docs"> 
+  <div class="card">
+    <div class="card-type">Repository</div>
+    <img class="card-image" src="/assets/images/github.png">
+    <div class="card-title">Lock-Unlock GitHub Repository</div>
+    <div class="card-description">De broncode voor de testgegevens en demonstrators is hier beschikbaar.</div>
+  </div>
+</a>
+</div>
+
 ### Lock-Unlock Infographic 
+
+<figure id="figuur-1">
+  <a href="/assets/images/lockunlock-infographic.png">
+    <img src="/assets/images/lockunlock-infographic.png">
+  </a>
+</figure>
 
 Het Lock-Unlock-project bestaat uit drie bouwstenen:
 
@@ -26,41 +61,6 @@ Binnen een federatief datastelsel zullen er ook gesloten/afgeschermde datasets z
 Op basis van die requirements zijn we tot het Autorisatie als Linked Data concept gekomen. Dit houdt in dat de autorisatie zelf als Linked Data wordt uitgedrukt. Daarvoor zijn twee onderdelen nodig: een autorisatie ontologie en een autorisatie configuratie. De autorisatie ontologie is een "woordenboek" welke de autorisatie terminologie bevat. Deze hebben wij gebaseerd op XACML. De autorisatie configuratie bevat de specifieke autorisatie regels voor een resource. Op basis hiervan zijn 2 implementaties bedacht en getest: de subset implementatie en de SPARQL rewrite implementatie (zie [demonstrators](/cases/lockunlock-demonstrators.md) tegel voor meer informatie hierover).
   - Bij de subset methode wordt op basis van de autorisatie configuratie on demand een subset gecreëerd. Op deze subset wordt vervolgens de query van de gebruiker uitgevoerd.
   - Bij de SPARQL rewrite methode wordt de binnengekomen query gecontroleerd en herschreven (meestal uitgebreid) op basis van de autorisatie configuratie en vervolgens naar de onderliggende data gestuurd zodanig dat de resultaten worden beperkt tot de data waartoe de gebruiker toegang heeft.
-  
-<figure id="figuur-1">
-  <a href="/assets/images/lockunlock-infographic.png">
-    <img src="/assets/images/lockunlock-infographic.png">
-  </a>
-</figure>
-
-## Resultaten
-
-<div class="cards-wrapper">
-<a href="/cases/lockunlock-demonstrators">
-  <div class="card">
-    <div class="card-type">Demonstrators</div>
-    <img class="card-image" src="/assets/images/lockunlock.jpg">
-    <div class="card-title">Autorisatie Als Linked Data</div>
-    <div class="card-description">Er zijn hier twee autorisatie-implementaties beschikbaar als demonstrators.</div>
-  </div>
-</a>
-<a href="https://kadaster-labs.github.io/lock-unlock-docs/"> 
-  <div class="card">
-    <div class="card-type">Documentatie</div>
-    <img class="card-image" src="/assets/images/documentatie.png">
-    <div class="card-title">Voor De Ontwikkelaars</div>
-    <div class="card-description">De volledige documentatie voor het project is hier beschikbaar.</div>
-  </div>
-</a>
-<a href="https://github.com/kadaster-labs/lock-unlock-docs"> 
-  <div class="card">
-    <div class="card-type">Repository</div>
-    <img class="card-image" src="/assets/images/github.png">
-    <div class="card-title">Lock-Unlock GitHub Repository</div>
-    <div class="card-description">De broncode voor de testgegevens en demonstrators is hier beschikbaar.</div>
-  </div>
-</a>
-</div>
 
 <!-- ## Dissemintation
 !TODO
