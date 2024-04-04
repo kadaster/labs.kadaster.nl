@@ -1,0 +1,987 @@
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix : <https://data.labs.kadaster.nl/kadaster/kkg-light/sparnatural/config/generated#> .
+@prefix def: <https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix Example: <https://metadata.kadaster.nl/kadaster/ontotbc/model/def/Example#> .
+@prefix sparnatural-config-datasources: <http://data.sparna.fr/ontologies/sparnatural-config-datasources#> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix rulesV2: <http://www.buildingbits.nl/2021/rulesV2#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sparnaturaldatasources: <https://data.labs.kadaster.nl/imx/sparnaturaldatasources#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix tbc: <https://metadata.kadaster.nl/kadaster/ontotbc/model/def/> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix schema: <http://schema.org/> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gis: <http://www.opengis.net/ont/geosparql#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vocab: <https://data.labs.kadaster.nl/cbs/wbk/vocab#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix sparnatural-config-core: <http://data.sparna.fr/ontologies/sparnatural-config-core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.labs.kadaster.nl/sparnatural/Map> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Map selection "@en, "Kaartselectie "@nl;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+<https://data.kkg.kadaster.nl/kad/model/def/Gebouwtype> a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "gebouwtype"@nl;
+  sparnatural-config-core:faIcon "far fa-file-spreadsheet";
+  sparnatural-config-core:tooltip "selecteer een gebouwtype" .
+
+def:Buurt a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Buurt"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "selecteer een buurt" .
+
+def:Wijk a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Wijk"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "selecteer een Wijk" .
+
+def:Gebouw a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Gebouw"@nl;
+  sparnatural-config-core:faIcon "far fa-building";
+  sparnatural-config-core:tooltip "selecteer een gebouw" .
+
+def:Perceel a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Perceel"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "selecteer een Perceel" .
+
+def:Straat a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Straat"@nl;
+  sparnatural-config-core:faIcon "far fa-road";
+  sparnatural-config-core:tooltip "selecteer een Straat" .
+
+def:Gemeente a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Gemeente"@nl;
+  sparnatural-config-core:faIcon "far fa-city";
+  sparnatural-config-core:tooltip "selecteer een Gemeente" .
+
+def:Monument a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Monument"@nl;
+  sparnatural-config-core:faIcon "far fa-building";
+  sparnatural-config-core:tooltip "selecteer een Monument" .
+
+def:Observatie a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Statistische Observatie"@nl;
+  sparnatural-config-core:faIcon "far fa-file-spreadsheet";
+  sparnatural-config-core:tooltip "selecteer een observatie" .
+
+def:heeftBeperking a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:BooleanProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:domain def:Perceel;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text105>;
+  rdfs:label "heeft beperking"@nl;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "heeft beperking";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/heeftBeperking>";
+  rdfs:seeAlso def:heeftBeperking;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:PubliekrechtelijkeBeperking a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Publiekrechtelijke Beperking"@nl;
+  sparnatural-config-core:faIcon "far fa-gavel";
+  sparnatural-config-core:tooltip "selecteer een PubliekrechtelijkeBeperking" .
+
+def:Woonplaats a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "Woonplaats"@nl;
+  sparnatural-config-core:faIcon "far fa-city";
+  sparnatural-config-core:tooltip "selecteer een Woonplaats" .
+
+def:gebruiksdoel a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:ListProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text48>;
+  rdfs:label "gebruiksdoel", "gebruiksdoel"@nl;
+  sparnatural-config-datasources:datasource skos:prefLabel_datasource49;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel>";
+  rdfs:seeAlso def:gebruiksdoel;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:straatNaam a owl:DatatypeProperty;
+  rdfs:domain def:Straat;
+  rdfs:range xsd:string;
+  rdfs:label "straatnaam"@nl, "Straatnaam" .
+
+def:typeGebouw a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:ListProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text51>;
+  rdfs:label "type gebouw"@nl, "type gebouw";
+  sparnatural-config-datasources:datasource skos:prefLabel_datasource52;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/typeGebouw>";
+  rdfs:seeAlso def:typeGebouw;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/kadaster/kkg-light/sparnatural/config/generated> a
+    owl:Ontology;
+  owl:imports <http://data.sparna.fr/ontologies/sparnatural-config-core>, <http://data.sparna.fr/ontologies/sparnatural-config-datasources> .
+
+def:Gebruiksdoel a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "selecteer een doel" .
+
+<https://data.kkg.kadaster.nl/sor/model/def/Gebruiksdoel> a owl:Class;
+  rdfs:subClassOf sparnatural-config-core:SparnaturalClass;
+  rdfs:label "gebruiksdoel"@nl;
+  sparnatural-config-core:faIcon "far fa-file-spreadsheet";
+  sparnatural-config-core:tooltip "selecteer een gebruiksdoel" .
+
+def:ligtIn1 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Straat;
+  rdfs:range def:Woonplaats;
+  rdfs:label "ligt in"@nl;
+  sparnatural-config-datasources:datasource def:woonplaatsNaam_datasource2;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:woonplaatsNaam_datasource2 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:woonplaatsNaam .
+
+def:ligtIn3 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range def:Buurt;
+  rdfs:label "ligt in"@nl;
+  sparnatural-config-datasources:datasource def:buurtNaam_datasource4;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:buurtNaam_datasource4 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:buurtNaam .
+
+def:ligtIn5 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Wijk;
+  rdfs:range def:Gemeente;
+  rdfs:label "ligt in"@nl;
+  sparnatural-config-datasources:datasource def:gemeenteNaam_datasource6;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gemeenteNaam_datasource6 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:gemeenteNaam .
+
+def:ligtIn7 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Buurt;
+  rdfs:range def:Wijk;
+  rdfs:label "ligt in"@nl;
+  sparnatural-config-datasources:datasource def:wijkNaam_datasource8;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:wijkNaam_datasource8 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:wijkNaam .
+
+def:ligtIn9 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Woonplaats;
+  rdfs:range def:Gemeente;
+  rdfs:label "ligt in"@nl;
+  sparnatural-config-datasources:datasource def:gemeenteNaam_datasource10;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gemeenteNaam_datasource10 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:gemeenteNaam .
+
+def:ligtIn11 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Woonplaats;
+  rdfs:range def:Straat;
+  rdfs:label "ligt in"@nl, "bevat"@nl;
+  sparnatural-config-datasources:datasource def:straatNaamGemeenteNaam_datasource12;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:straatNaamGemeenteNaam_datasource12 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:straatNaamGemeenteNaam .
+
+def:ligtIn13 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Buurt;
+  rdfs:range def:Gebouw;
+  rdfs:label "ligt in"@nl, "bevat"@nl;
+  sparnatural-config-datasources:datasource def:gebouwNaam_datasource14;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gebouwNaam_datasource14 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:gebouwNaam .
+
+def:ligtIn15 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gemeente;
+  rdfs:range def:Wijk;
+  rdfs:label "ligt in"@nl, "bevat"@nl;
+  sparnatural-config-datasources:datasource def:wijkNaam_datasource16;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:wijkNaam_datasource16 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:wijkNaam .
+
+def:ligtIn17 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Wijk;
+  rdfs:range def:Buurt;
+  rdfs:label "ligt in"@nl, "bevat"@nl;
+  sparnatural-config-datasources:datasource def:buurtNaam_datasource18;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:buurtNaam_datasource18 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:buurtNaam .
+
+def:ligtIn19 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gemeente;
+  rdfs:range def:Woonplaats;
+  rdfs:label "ligt in"@nl, "bevat"@nl;
+  sparnatural-config-datasources:datasource def:woonplaatsNaam_datasource20;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  rdfs:seeAlso def:ligtIn;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:woonplaatsNaam_datasource20 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:woonplaatsNaam .
+
+def:bijbehorendePerceel21 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range def:Perceel;
+  rdfs:label "bijbehorende perceel"@nl;
+  sparnatural-config-datasources:datasource def:perceelNaam_datasource22;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bijbehorendePerceel>";
+  rdfs:seeAlso def:bijbehorendePerceel;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:perceelNaam_datasource22 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:perceelNaam .
+
+def:bijbehorendePerceel23 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Perceel;
+  rdfs:range def:Gebouw;
+  rdfs:label "bevat gebouw"@nl, "bijbehorende perceel"@nl;
+  sparnatural-config-datasources:datasource def:perceelNaam_datasource24;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bijbehorendePerceel>";
+  rdfs:seeAlso def:bijbehorendePerceel;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:perceelNaam_datasource24 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:perceelNaam .
+
+def:ligtAan25 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range def:Straat;
+  rdfs:label "ligt aan"@nl;
+  sparnatural-config-datasources:datasource def:straatNaamGemeenteNaam_datasource26;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtAan>";
+  rdfs:seeAlso def:ligtAan;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:straatNaamGemeenteNaam_datasource26 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:straatNaamGemeenteNaam .
+
+def:heeftBeperking27 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Perceel;
+  rdfs:range def:PubliekrechtelijkeBeperking;
+  rdfs:label "heeft beperking"@nl;
+  sparnatural-config-datasources:datasource def:publiekrechtelijkeBeperkingNaam_datasource28;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/heeftBeperking>";
+  rdfs:seeAlso def:heeftBeperking;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:publiekrechtelijkeBeperkingNaam_datasource28 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:publiekrechtelijkeBeperkingNaam .
+
+def:heeftBeperking29 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range def:PubliekrechtelijkeBeperking;
+  rdfs:label "heeft beperking"@nl;
+  sparnatural-config-datasources:datasource def:publiekrechtelijkeBeperkingNaam_datasource30;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/heeftBeperking>";
+  rdfs:seeAlso def:heeftBeperking;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:publiekrechtelijkeBeperkingNaam_datasource30 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:publiekrechtelijkeBeperkingNaam .
+
+def:statistieken31 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Buurt;
+  rdfs:range def:Observatie;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource32;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource32 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:statistieken33 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gemeente;
+  rdfs:range def:Observatie;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource34;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource34 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:statistieken35 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Wijk;
+  rdfs:range def:Observatie;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource36;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource36 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:statistieken37 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range def:Buurt;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource38;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource38 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:statistieken39 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range def:Gemeente;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource40;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource40 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:statistieken41 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range def:Wijk;
+  rdfs:label "statistieken"@nl, "bevat observatie"@nl;
+  sparnatural-config-datasources:datasource def:observatieNaam_datasource42;
+  sparnatural-config-core:sparqlString "^<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/statistieken>";
+  rdfs:seeAlso def:statistieken;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieNaam_datasource42 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:observatieNaam .
+
+def:ligtIn43 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range def:Gemeente;
+  rdfs:label "Ligt in"@nl;
+  sparnatural-config-datasources:datasource def:gemeenteNaam_datasource44;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>/<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>/<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gemeenteNaam_datasource44 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:gemeenteNaam .
+
+def:ligtIn45 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty;
+  rdfs:domain def:Monument;
+  rdfs:range def:Gemeente;
+  rdfs:label "Ligt in"@nl;
+  sparnatural-config-datasources:datasource def:gemeenteNaam_datasource46;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>/<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>/<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/ligtIn>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gemeenteNaam_datasource46 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
+  sparnatural-config-datasources:labelProperty def:gemeenteNaam .
+
+def:geometrie84 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Woonplaats;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map86>;
+  rdfs:label "geometrie"@nl, "geometry woonplaats"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:geometrie86 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Perceel;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map88>;
+  rdfs:label "geometry perceel"@nl, "geometrie"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+skos:prefLabel_datasource49 a owl:NamedIndividual, sparnatural-config-datasources:SparqlListDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_list_label_alpha;
+  sparnatural-config-datasources:labelProperty skos:prefLabel .
+
+skos:prefLabel_datasource52 a owl:NamedIndividual, sparnatural-config-datasources:SparqlListDatasource;
+  rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en;
+  sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_list_label_alpha;
+  sparnatural-config-datasources:labelProperty skos:prefLabel .
+
+def:gebouwNaam53 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text53>;
+  rdfs:label "gebouwnaam"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebouwNaam>";
+  sparnatural-config-core:isMultilingual true;
+  rdfs:seeAlso def:gebouwNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:gemeenteNaam55 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text55>;
+  rdfs:label "gemeentenaam"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gemeenteNaam>";
+  sparnatural-config-core:isMultilingual true;
+  rdfs:seeAlso def:gemeenteNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:woonplaatsNaam57 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text57>;
+  rdfs:label "woonplaatsnaam"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/woonplaatsNaam>";
+  sparnatural-config-core:isMultilingual true;
+  rdfs:seeAlso def:woonplaatsNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:wijkNaam59 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text59>;
+  rdfs:label "wijknaam"@nl;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/wijkNaam>";
+  sparnatural-config-core:isMultilingual true;
+  rdfs:seeAlso def:wijkNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:perceelNaam61 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text61>;
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/perceelNaam>";
+  sparnatural-config-core:isMultilingual true;
+  rdfs:seeAlso def:perceelNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:straatNaam63 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:domain def:Straat;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text63>;
+  rdfs:label "straatnaam"@nl;
+  sparnatural-config-core:faIcon "straat naam";
+  sparnatural-config-core:tooltip "far fa-map";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/straatNaam>";
+  rdfs:seeAlso def:straatNaam;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:perceelNummer65 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text65>;
+  rdfs:label "perceelnummer"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/perceelNummer>";
+  rdfs:seeAlso def:perceelNummer;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:sectie67 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text67>;
+  rdfs:label "sectie"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/sectie>";
+  rdfs:seeAlso def:sectie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Map88> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry perceel"@nl, "Map selection geometry perceel"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Map86> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry woonplaats"@nl, "Map selection geometry woonplaats"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+def:postcode69 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text69>;
+  rdfs:label "postcode"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/postcode>";
+  rdfs:seeAlso def:postcode;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:geometrie76 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Gemeente;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map78>;
+  rdfs:label "geometrie"@nl, "geometry gemeente"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Map78> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry gemeente"@nl, "Map selection geometry gemeente"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+def:geometrie78 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map80>;
+  rdfs:label "geometry gebouw"@nl, "geometrie"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Map80> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry gebouw"@nl, "Map selection geometry gebouw"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+def:geometrie80 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Wijk;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map82>;
+  rdfs:label "geometry wijk"@nl, "geometrie"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Map82> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry wijk"@nl, "Map selection geometry wijk"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+def:geometrie82 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:MapProperty;
+  rdfs:domain def:Buurt;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map84>;
+  rdfs:label "geometry buurt"@nl, "geometrie"@nl;
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie>";
+  rdfs:seeAlso def:geometrie;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Map84> a owl:Class;
+  rdfs:subClassOf rdfs:Literal;
+  rdfs:label "Kaartselectie geometry buurt"@nl, "Map selection geometry buurt"@en;
+  sparnatural-config-core:faIcon "fad fa-map";
+  sparnatural-config-core:tooltip "Position on a map, expressed as WKT datatype, queried in GeoSPARQL"@en,
+    "Positie op de kaart als een WKT datatype"@nl .
+
+def:publiekrechtelijkeBeperking71 a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
+  rdfs:subClassOf rdf:literal;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text71>;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/publiekrechtelijkeBeperking>";
+  rdfs:seeAlso def:publiekrechtelijkeBeperking;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:huisnummer rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text91>;
+  rdfs:label "huisnummer"@nl;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "huisnummer";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/huisnummer>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:perceelOppervlakte rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Perceel;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text89>;
+  rdfs:label "perceeloppervlakte"@nl;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "perceeloppervlakte in meter2";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/perceelOppervlakte>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:vloerOppervlakte rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text93>;
+  rdfs:label "vloer oppervlakte"@nl;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "vloer oppervlakte";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/vloerOppervlakte>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/cbs/wbk/vocab/bevolkingsdichtheid> rdfs:subPropertyOf
+    sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text97>;
+  rdfs:label "bevolkingsdichtheid"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "bevolkingsdichtheid";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/cbs/wbk/vocab/bevolkingsdichtheid>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/cbs/wbk/vocab/gehuwd> rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text95>;
+  rdfs:label "gehuwd"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "gehuwd";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/cbs/wbk/vocab/gehuwd>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/cbs/wbk/vocab/gescheiden> rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text99>;
+  rdfs:label "gescheiden"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "gescheiden";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/cbs/wbk/vocab/gescheiden>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/cbs/wbk/vocab/huishoudenGrootte> rdfs:subPropertyOf
+    sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text101>;
+  rdfs:label "huishoudenGrootte"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "huishoudenGrootte";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/cbs/wbk/vocab/huishoudenGrootte>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<https://data.labs.kadaster.nl/cbs/wbk/vocab/huishoudens> rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text103>;
+  rdfs:label "huishoudens"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "huishoudens";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/cbs/wbk/vocab/huishoudens>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:bouwjaar73 rdfs:subPropertyOf sparnatural-config-core:TimeProperty-Year;
+  rdfs:domain def:Gebouw;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text73>;
+  rdfs:label "bouwjaar", "bouwjaar"@en, "bouwjaar"@nl;
+  sparnatural-config-core:faIcon "far fa-calendar";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bouwjaar>";
+  rdfs:seeAlso def:bouwjaar;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+def:observatieJaar75 rdfs:subPropertyOf sparnatural-config-core:TimeProperty-Year;
+  rdfs:domain def:Observatie;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text75>;
+  rdfs:label "observatiejaar"@nl, "observatie jaar"@en, "observatie jaar"@nl, "observatie jaar";
+  sparnatural-config-core:faIcon "far fa-calendar";
+  sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/observatieJaar>";
+  rdfs:seeAlso def:observatieJaar;
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Text51> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "type gebouw"@nl, "type gebouw", "type gebouw"@en;
+  sparnatural-config-core:faIcon "";
+  sparnatural-config-core:tooltip "no idea"@en, "no idea"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text53> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "gebouw naam"@en, "gebouw naam"@nl, "gebouw naam";
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "gebouw naam"@en, "gebouw naam"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text55> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "gemeentenaam"@en, "gemeentenaam"@nl, "gemeentenaam";
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "gemeentenaam"@en, "gemeentenaam"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text57> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "woonplaatsnaam"@en, "woonplaatsnaam"@nl, "woonplaatsnaam";
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "woonplaatsnaam"@en, "woonplaatsnaam"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text59> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "wijknaam"@nl, "wijknaam"@en, "wijknaam";
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "wijknaam"@nl, "wijknaam"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text61> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "perceelnaam"@en, "perceelnaam"@nl, "perceelnaam";
+  sparnatural-config-core:faIcon "far fa-map";
+  sparnatural-config-core:tooltip "perceelnaam"@en, "perceelnaam"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text63> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "straatnaam", "straatnaam"@nl, "straatnaam"@en;
+  sparnatural-config-core:faIcon "straat naam";
+  sparnatural-config-core:tooltip "far fa-map"@en, "far fa-map"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text65> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "perceelnummer"@nl, "perceelnummer"@en, "perceelnummer";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "perceelnummer"@nl, "perceelnummer"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text67> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "sectie"@nl, "sectie"@en, "sectie";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "sectie"@nl, "sectie"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text69> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "postcode", "postcode"@en, "postcode"@nl;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "postcode"@en, "postcode"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text71> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "grondslag"@nl, "grondslag", "grondslag"@en;
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "grondslag"@nl, "grondslag"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text73> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "bouwjaar", "bouwjaar"@en, "bouwjaar"@nl;
+  sparnatural-config-core:faIcon "far fa-calendar";
+  sparnatural-config-core:tooltip "100-10000 something"@en, "100-10000 something"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text75> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "observatie jaar"@en, "observatie jaar"@nl, "observatie jaar";
+  sparnatural-config-core:faIcon "far fa-calendar";
+  sparnatural-config-core:tooltip "100-10000 something"@en, "100-10000 something"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text48> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "gebruiksdoel", "gebruiksdoel"@nl, "gebruiksdoel"@en;
+  sparnatural-config-core:faIcon "";
+  sparnatural-config-core:tooltip "no idea"@en, "no idea"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text89> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "perceeloppervlakte"@nl, "perceeloppervlakte", "perceeloppervlakte"@en;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "perceel oppervlakte in meter2"@en, "perceel oppervlakte in meter2"@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text91> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "huisnummer", "huisnummer"@nl, "huisnummer"@en;
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "huisnummer"@nl, "huisnummer"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text93> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "vloer oppervlakte"@nl, "vloer oppervlakte"@en, "vloer oppervlakte";
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "vloer oppervlakte"@nl, "vloer oppervlakte"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text97> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "bevolkingsdichtheid"@nl, "bevolkingsdichtheid"@en, "bevolkingsdichtheid";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "bevolkingsdichtheid"@nl, "bevolkingsdichtheid"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text99> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "gescheiden"@nl, "gescheiden"@en, "gescheiden";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "gescheiden"@nl, "gescheiden"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text105> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "heeft beperking"@nl, "heeft beperking"@en, "heeft beperking";
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "heeft beperking"@nl, "heeft beperking"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text101> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "huishoudenGrootte"@nl, "huishoudenGrootte"@en, "huishoudenGrootte";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "huishoudenGrootte"@nl, "huishoudenGrootte"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text95> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "gehuwd"@nl, "gehuwd"@en, "gehuwd";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "gehuwd"@nl, "gehuwd"@en .
+
+<http://www.labs.kadaster.nl/sparnatural/Text103> rdfs:subClassOf rdfs:Literal;
+  rdfs:label "huishoudens"@nl, "huishoudens"@en, "huishoudens";
+  sparnatural-config-core:faIcon "far fa-hashtag";
+  sparnatural-config-core:tooltip "huishoudens"@nl, "huishoudens"@en .
+
+skos:prefLabel rdfs:label "preflabel"@nl .
