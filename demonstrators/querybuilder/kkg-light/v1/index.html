@@ -247,8 +247,9 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+  
   <!-- Template Main JS File -->
   <script src="assets/js/demo.js"></script>
   <script src="sampleQueries.js"></script>
@@ -261,7 +262,7 @@
       jQuery.ajaxSettings.type="POST";
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src33="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/@chenfengyuan/datepicker@1.0.9/dist/datepicker.min.js"></script>
@@ -382,6 +383,7 @@ window.Yasqe=YASGUI.YASQE;
 
       sparnatural.addEventListener("queryUpdated", (event) => {
       // console.log(event.detail.queryString);
+      sparnatural.enablePlayBtn();
         queryString = sparnatural.expandSparql(event.detail.queryString);
           var qs =queryString;
         if (true)
@@ -444,7 +446,8 @@ window.Yasqe=YASGUI.YASQE;
 
       sparnatural.addEventListener("submit", (event) => {
         // enable loader on button
-        sparnatural.disablePlayBtn() ; 
+        console.log("submit",event);
+        sparnatural.disablePlayBtn(); 
         // trigger the query from YasQE
       //  console.log("querying ",yasqe);
         yasqe.query({  reqMethod: "POST",endpoint:$('#endpoint').text() });
@@ -452,6 +455,7 @@ window.Yasqe=YASGUI.YASQE;
       });
 
       sparnatural.addEventListener("reset", (event) => {
+        sparnatural.enablePlayBtn();
         yasqe.setValue("");
       });
 
@@ -505,8 +509,9 @@ window.Yasqe=YASGUI.YASQE;
 
       // link yasqe and yasr
       yasqe.on("queryResponse", function(_yasqe, response, duration) {
-        yasr.setResponse(response, duration);
         sparnatural.enablePlayBtn();
+        yasr.setResponse(response, duration);
+      
       });
 
       document.getElementById('sparql-toggle').onclick = function() {
@@ -555,6 +560,7 @@ window.Yasqe=YASGUI.YASQE;
       } 
 
       document.getElementById('select-examples').onchange = function() {
+        sparnatural.enablePlayBtn();
         var key = $('#select-examples option:selected').val();
         if(sampleQueries.hasOwnProperty(key)) {
           window.query=sampleQueries[key];

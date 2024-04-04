@@ -3,6 +3,24 @@
 z-index: 1000!important;
 }
 
+.awesomplete {
+  height: 35px;
+  box-sizing: border-box;
+}
+.awesomplete ul.componentsListe, ul.componentsListe ul {
+  z-index: 999;
+  box-sizing: border-box;
+  line-height: 18px;
+  background: #fff;
+  position: relative;
+  border: 1px solid black;
+  padding: 1px;
+  margin:1px;
+}
+
+
+
+
 
 .nice-select ul.list li.selected, .nice-select ul.list li.focus, .nice-select ul.list li:hover {
     background:#0b47d4;

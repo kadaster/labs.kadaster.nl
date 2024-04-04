@@ -137,6 +137,7 @@ def:gebruiksdoel a owl:ObjectProperty;
   rdfs:domain def:Gebouw;
   rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text48>;
   rdfs:label "gebruiksdoel", "gebruiksdoel"@nl;
+  sparnatural-config-core:tooltip "gebruiksdoel";
   sparnatural-config-datasources:datasource skos:prefLabel_datasource49;
   sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel>";
   rdfs:seeAlso def:gebruiksdoel;
@@ -153,6 +154,7 @@ def:typeGebouw a owl:ObjectProperty;
   rdfs:domain def:Gebouw;
   rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text51>;
   rdfs:label "type gebouw"@nl, "type gebouw";
+  sparnatural-config-core:tooltip "type gebouw";
   sparnatural-config-datasources:datasource skos:prefLabel_datasource52;
   sparnatural-config-core:sparqlString "<https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/typeGebouw>";
   rdfs:seeAlso def:typeGebouw;
@@ -871,8 +873,8 @@ def:observatieJaar75 rdfs:subPropertyOf sparnatural-config-core:TimeProperty-Yea
 
 <http://www.labs.kadaster.nl/sparnatural/Text51> rdfs:subClassOf rdfs:Literal;
   rdfs:label "type gebouw"@nl, "type gebouw", "type gebouw"@en;
-  sparnatural-config-core:faIcon "";
-  sparnatural-config-core:tooltip "no idea"@en, "no idea"@nl .
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "type gebouw"@nl, "type gebouw"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text53> rdfs:subClassOf rdfs:Literal;
   rdfs:label "gebouw naam"@en, "gebouw naam"@nl, "gebouw naam";
@@ -936,8 +938,8 @@ def:observatieJaar75 rdfs:subPropertyOf sparnatural-config-core:TimeProperty-Yea
 
 <http://www.labs.kadaster.nl/sparnatural/Text48> rdfs:subClassOf rdfs:Literal;
   rdfs:label "gebruiksdoel", "gebruiksdoel"@nl, "gebruiksdoel"@en;
-  sparnatural-config-core:faIcon "";
-  sparnatural-config-core:tooltip "no idea"@en, "no idea"@nl .
+  sparnatural-config-core:faIcon "fa fa-star";
+  sparnatural-config-core:tooltip "gebruiksdoel"@nl, "gebruiksdoel"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text89> rdfs:subClassOf rdfs:Literal;
   rdfs:label "perceeloppervlakte"@nl, "perceeloppervlakte", "perceeloppervlakte"@en;

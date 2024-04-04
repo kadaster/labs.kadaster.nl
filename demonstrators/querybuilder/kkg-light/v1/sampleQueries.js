@@ -9,14 +9,17 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel47",
-			  "o": "?Gebruiksdoel_2",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel",
+			  "o": "?Text48_2",
 			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
-			  "oType": "https://data.kkg.kadaster.nl/sor/model/def/Gebruiksdoel",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text48",
 			  "values": [
 				{
 				  "label": "winkelfunctie",
-				  "uri": "https://data.kkg.kadaster.nl/sor/model/con/winkelfunctie"
+				  "rdfTerm": {
+					"type": "uri",
+					"value": "https://data.kkg.kadaster.nl/sor/model/con/winkelfunctie"
+				  }
 				}
 			  ]
 			},
@@ -32,7 +35,10 @@ var sampleQueries = {
 			  "values": [
 				{
 				  "label": "'s-Hertogenbosch",
-				  "uri": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/0796"
+				  "rdfTerm": {
+					"type": "uri",
+					"value": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/0796"
+				  }
 				}
 			  ]
 			},
@@ -51,33 +57,17 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie85",
-			  "o": "?Map_2",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel",
+			  "o": "?Text48_2",
 			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Map",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text48",
 			  "values": [
 				{
-				  "label": "AreaSelected",
-				  "coordinates": [
-					[
-					  {
-						"lat": 52.1709418062932,
-						"lng": 5.959565163357184
-					  },
-					  {
-						"lat": 52.17936350875696,
-						"lng": 5.959565163357184
-					  },
-					  {
-						"lat": 52.17936350875696,
-						"lng": 5.98239612649195
-					  },
-					  {
-						"lat": 52.1709418062932,
-						"lng": 5.98239612649195
-					  }
-					]
-				  ]
+				  "label": "industriefunctie",
+				  "rdfTerm": {
+					"type": "uri",
+					"value": "https://data.kkg.kadaster.nl/sor/model/con/industriefunctie"
+				  }
 				}
 			  ]
 			},
@@ -86,14 +76,33 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/gebruiksdoel47",
-			  "o": "?Gebruiksdoel_4",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/geometrie78",
+			  "o": "?Map80_4",
 			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
-			  "oType": "https://data.kkg.kadaster.nl/sor/model/def/Gebruiksdoel",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Map80",
 			  "values": [
 				{
-				  "label": "industriefunctie",
-				  "uri": "https://data.kkg.kadaster.nl/sor/model/con/industriefunctie"
+				  "label": "AreaSelected",
+				  "coordinates": [
+					[
+					  {
+						"lat": 52.17877020367248,
+						"lng": 5.956606864929199
+					  },
+					  {
+						"lat": 52.18766401412979,
+						"lng": 5.956606864929199
+					  },
+					  {
+						"lat": 52.18766401412979,
+						"lng": 5.973687171936035
+					  },
+					  {
+						"lat": 52.17877020367248,
+						"lng": 5.973687171936035
+					  }
+					]
+				  ]
 				}
 			  ]
 			},
@@ -111,15 +120,17 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bouwjaar81",
-			  "o": "?Text81_2",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/typeGebouw",
+			  "o": "?Text51_2",
 			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text81",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text51",
 			  "values": [
 				{
-				  "label": "Until 1950",
-				  "start": null,
-				  "stop": "1950-12-31T22:59:59.000Z"
+				  "label": "kerk",
+				  "rdfTerm": {
+					"type": "uri",
+					"value": "https://data.kkg.kadaster.nl/kad/model/con/kerk"
+				  }
 				}
 			  ]
 			},
@@ -128,16 +139,11 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/typeGebouw49",
-			  "o": "?Gebouwtype_4",
+			  "p": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/bouwjaar73",
+			  "o": "?Text73_4",
 			  "sType": "https://data.labs.kadaster.nl/kadaster/kkg-light/model/def/Gebouw",
-			  "oType": "https://data.kkg.kadaster.nl/kad/model/def/Gebouwtype",
-			  "values": [
-				{
-				  "label": "kerk",
-				  "uri": "https://data.kkg.kadaster.nl/kad/model/con/kerk"
-				}
-			  ]
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text73",
+			  "values": []
 			},
 			"children": []
 		  },
@@ -151,7 +157,10 @@ var sampleQueries = {
 			  "values": [
 				{
 				  "label": "Apeldoorn",
-				  "uri": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/0200"
+				  "rdfTerm": {
+					"type": "uri",
+					"value": "https://data.labs.kadaster.nl/cbs/wbk/id/gemeente/0200"
+				  }
 				}
 			  ]
 			},
