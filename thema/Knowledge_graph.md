@@ -53,7 +53,7 @@ De gegevens in de KKG worden regelmatig ververst. Op dit moment 4 keer per jaar 
 
 - **Basisregistratie Adressen en Gebouwen (BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2024-01-14*.
 - **Basisregistratie Grootschalige Topografie (BGT)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2024-02-19*.
-- **Basisregistratie Topografie (BRT)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2023-10-26*.
+- **Basisregistratie Topografie (BRT)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2024-04-16*.
 - **Digitale Kadastrale Kaart (DKK)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2024-01-29*.
 - **Basisregistratie Kadaster - BRK Adressen (koppeling BRK-BAG)** (per kwartaal vernieuwd) - *Laatst vernieuwd met data van 2024-02-23*.
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen (BRK-PB)** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
