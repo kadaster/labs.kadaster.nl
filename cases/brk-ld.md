@@ -45,7 +45,7 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brk.basis
       <div class="card-description">Data Story die een overzicht van de BRK-LD geeft.</div>
     </div>
   </a>
-      <a href="https://data.labs.kadaster.nl/brk/registratie/sparql/default">
+      <a href="https://data.labs.kadaster.nl/brk/registratie/sparql">
     <div class="card">
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">
