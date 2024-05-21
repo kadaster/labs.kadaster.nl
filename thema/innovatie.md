@@ -6,6 +6,14 @@ title: Innovatie
 # Innovatie
 
 <div class="cards-wrapper">
+  <a href="/cases/voorspelmodellen">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/assets/images/voorspelmodellen1.PNG">
+      <div class="card-title">Voorspelmodellen</div>
+      <div class="card-description"> </div>
+    </div>
+  </a>
   <a href="/cases/lockunlock-project">
     <div class="card">
       <div class="card-type">Project</div>
