@@ -8,7 +8,7 @@ Het Kadaster probeert het werkaanbod van akten zo nauwkeurig mogelijk te voorspe
 ### Kunnen we het aanbod aan aktes accuraat en realtime voorspellen om zo de bemensing goed te plannen? 
 
 ### Context 
-Binnen het RrRechtszekerheid domein worden dagelijks honderden aktes verwerkt. De aktes vallen onder 30 segmenten die worden verwerkt in onze basisregistraties. De verwerking van aktes is grotendeels geautomatiseerd (o.a. met Akte AI) maar de wat complexere aktes worden altijd nog handmatig verwerkt door juridische medewerkers die hier speciaal voor zijn opgeleid. 
+Binnen het Rechtszekerheid domein worden dagelijks honderden aktes verwerkt. De aktes vallen onder 30 segmenten die worden verwerkt in onze basisregistraties. De verwerking van aktes is grotendeels geautomatiseerd (o.a. met Akte AI) maar de wat complexere aktes worden altijd nog handmatig verwerkt door juridische medewerkers die hier speciaal voor zijn opgeleid. 
 
 ### Voorheen konden we 5 dagen vooruit voorspellen met Excel. Met AI kunnen we minimaal 5 weken vooruit voorspellen. 
 
@@ -22,8 +22,6 @@ Het doel van de inzet van AI is het beter voorspellen van de aantallen per segme
 
 Het toevoegen van marktscenario's maakt het model nog krachtiger. Bijvoorbeeld o.b.v. externe factoren zoals de rente-ontwikkeling en het BBP wordt de voorspelling bijgesteld.   
 
-  
-
 ### Taak AI model  
 
 - Het zo accuraat mogelijk voorspellen van akten en hypotheken. Uitgangspunten hierbij zijn:  
@@ -31,8 +29,6 @@ Het toevoegen van marktscenario's maakt het model nog krachtiger. Bijvoorbeeld o
 - Er is een onderzoek gedaan naar AI-architecturen zoals sarimax / lstm/ transformer modellen. Voor de beste resultaten hebben we een neuraal netwerk o.b.v. een time2vec en LSTM- architectuur gekozen. 
 - Flexibel inzetbaar voor de verschillende segmenten  
 - Vanuit de voorspellingen wordt kan de bemensing worden afgeleid  
-
-  
 
 ### Wat is een tijdsreeks?  
 
