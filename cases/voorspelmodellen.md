@@ -5,12 +5,12 @@
 ### Introductie 
 Het Kadaster probeert het werkaanbod van akten zo nauwkeurig mogelijk te voorspellen, zodat de planning van werkzaamheden hierop afgestemd kan worden. Tot 2023 werd die voorspelling uitgevoerd met excel modellen. Het Data Science Team heeft onderzocht of de voorspelling verbeterd kan worden met behulp van AI. 
  
-### Kunnen we het aanbod aan aktes accuraat en realtime voorspellen om zo de bemensing goed te plannen? 
+>"Kunnen we het aanbod aan aktes accuraat en realtime voorspellen om zo de bemensing goed te plannen?" 
 
 ### Context 
 Binnen het Rechtszekerheid domein worden dagelijks honderden aktes verwerkt. De aktes vallen onder 30 segmenten die worden verwerkt in onze basisregistraties. De verwerking van aktes is grotendeels geautomatiseerd (o.a. met Akte AI) maar de wat complexere aktes worden altijd nog handmatig verwerkt door juridische medewerkers die hier speciaal voor zijn opgeleid. 
 
-### Voorheen konden we 5 dagen vooruit voorspellen met Excel. Met AI kunnen we minimaal 5 weken vooruit voorspellen. 
+>"Voorheen konden we 5 dagen vooruit voorspellen met Excel. Met AI kunnen we minimaal 5 weken vooruit voorspellen." 
 
 Het voorspellen van akten en hypotheken is al langer een wens van het RZ domeinvanuit de business. Het voorspellen gebeurde al wel met allerlei ingewikkelde modellen in Excel die dagelijks aangevuld moest worden met historische aantallen per dag en waarbij de formules met variabelen handmatig gefinetuned moest worden. Dit handmatige werk resulteerde in een voorspelling voor de komende vijf dagen. Hiermee konden alleen geaggregeerde totalen voorspeld worden voor hypotheken en akten en niet afzonderlijk per segment. Dit was lastig en tijdrovend om dagelijks te onderhouden. 
 
@@ -52,7 +52,7 @@ Indien beter voorspeld kan worden hoeveel en wat voor soort aktes er de komende 
   </a>
 </figure>
  
-Maandelijkse seizoenspatronen binnen het segment hypotheekakte. 
+*Maandelijkse seizoenspatronen binnen het segment hypotheekakte* 
 
 ### Resultaat 
 
@@ -64,5 +64,6 @@ In het afgelopen jaar zijn de uitkomsten van het AI-voorspellingsmodel naast die
   </a>
 </figure>
 
-Voorspelling van het werkaanbod voor de komende 30 dagen 
+*Voorspelling van het werkaanbod voor de komende 30 dagen* 
+
  
