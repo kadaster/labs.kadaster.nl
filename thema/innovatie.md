@@ -9,7 +9,7 @@ title: Innovatie
   <a href="/cases/voorspelmodellen">
     <div class="card">
       <div class="card-type">Project</div>
-      <img class="card-image" src="/assets/images/voorspelmodellen1.PNG">
+      <img class="card-image" src="/assets/images/voorspelmodellen_tegel.PNG">
       <div class="card-title">Voorspelmodellen</div>
       <div class="card-description"> </div>
     </div>
