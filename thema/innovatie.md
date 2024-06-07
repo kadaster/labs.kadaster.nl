@@ -11,7 +11,7 @@ title: Innovatie
       <div class="card-type">Project</div>
       <img class="card-image" src="/assets/images/voorspelmodellen_tegel.PNG">
       <div class="card-title">Voorspelmodellen</div>
-      <div class="card-description"> </div>
+      <div class="card-description">Hoe kunnen we het akteaanbod nauwkeuriger voorspellen met AI? </div>
     </div>
   </a>
   <a href="/cases/lockunlock-project">
