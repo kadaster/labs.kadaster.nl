@@ -32,7 +32,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-description">Het officiële SPARQL endpoint van de BAG 2.0.</div>
     </div>
   </a>
-    <a href="https://kadaster.wvr.io/bag2-0/home">
+    <a href="https://data.labs.kadaster.nl/bag/lv/schema">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/weaver.png" alt="Weaver weergave">

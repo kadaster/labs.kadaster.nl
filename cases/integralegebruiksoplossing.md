@@ -75,7 +75,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
       <div class="card-description">Voor een lijst van al onze endpoints en services gebaseerd op Linked Data en GraphQL en benodigde resources, kijk hier en ga ermee aan de slag.</div>
     </div>
   </a>
-  <a href="https://kadaster.wvr.io/kg-kadaster/home">
+  <a href="https://data.labs.kadaster.nl/dst/kkg/schema">
     <div class="card">
       <div class="card-type">Datamodellen</div>
       <img class="card-image" src="/assets/images/sdo-model.PNG" alt="Knowledge Graph">

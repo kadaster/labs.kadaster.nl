@@ -24,10 +24,10 @@ Helaas kunnen we op dit moment nog geen redirects aanbieden binnen het brt.basis
       <div class="card-description">De officiële publicatie van de Basisregistratie Topografie (BRT) als linked data.</div>
     </div>
   </a>
-    <a href="https://kadaster.wvr.io/brt-ld">
+    <a href="https://data.labs.kadaster.nl/brt/top10nl/schema">
     <div class="card">
       <div class="card-type">Browser</div>
-      <img class="card-image" src="/assets/images/weaver.png" alt="Weaver weergave">
+      <img class="card-image" src="/assets/images/weaver.png" alt="Triply Insights weergave">
       <div class="card-title">BRT data model browser</div>
       <div class="card-description">Data browser waarin het BRT-LD data model kan worden opgezocht.</div>
     </div>

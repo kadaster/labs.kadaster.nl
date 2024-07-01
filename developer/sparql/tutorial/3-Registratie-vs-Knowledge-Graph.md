@@ -48,7 +48,7 @@ Daarvoor maken we in deze tutorial gebruik van de [Kadaster Knowledge Graph geba
 
 ## Datamodel en mapping
 
-Uiteraard is er ook voor de Schema.Org knowledge graph een datamodel beschikbaar. Deze is [visueel beschikbaar in Weaver](https://kadaster.wvr.io/kg-kadaster/home). Zoals je in deze interface kunt zien is een plaats (sdo:Place) de centrale plek in dit model. Places zijn vervolgens weer onderverdeeld in wat vanuit [de Integrale Gebruiksoplossing](/cases/integralegebruiksoplossing) de belangrijkste objecten zijn in de basisregistraties, zoals Waterdelen, Wegdelen en Gebouwen.
+Uiteraard is er ook voor de Schema.Org knowledge graph een datamodel beschikbaar. Deze is [visueel beschikbaar in Triply Insights](https://data.labs.kadaster.nl/dst/kkg/schema). Zoals je in deze interface kunt zien is een plaats (sdo:Place) de centrale plek in dit model. Places zijn vervolgens weer onderverdeeld in wat vanuit [de Integrale Gebruiksoplossing](/cases/integralegebruiksoplossing) de belangrijkste objecten zijn in de basisregistraties, zoals Waterdelen, Wegdelen en Gebouwen.
 
 Deze hierarchie in de verschillende places is ook terug te vinden in de named graphs van de dataset, waar op basis van verschillende invalshoeken de data in verschillende graven is opgedeeld.
 

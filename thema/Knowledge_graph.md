@@ -32,7 +32,7 @@ Voor een meer gedetailleerd inzicht in de KKG kunt u gebruik maken van de volgen
   }
 </style>
 <div class="class-wrapper" align="center">
-  <a href="https://kadaster.wvr.io/kadaster-knowledge-graph?branch=main&tab=home"><button type="button" name="documentatieButton">Data Model</button></a>
+  <a href="https://data.labs.kadaster.nl/dst/kkg/schema"><button type="button" name="documentatieButton">Data Model</button></a>
   <a href="https://data.labs.kadaster.nl/dst/kkg/sparql/default"><button type="button" name="documentatieButton">SPARQL Editor</button></a>
   <a href="https://labs.kadaster.nl/developer"><button type="button" name="documentatieButton">Developers</button></a>
 </div>

@@ -42,7 +42,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
   </div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/kkg/sparql">Endpoint</a></div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/integrale-gebruiksoplossing-igo/-/stories/openbare-orde-en-veiligheid">Use case</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/kadaster-knowledge-graph">Data Model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/dst/kkg/schema">Data Model</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -55,7 +55,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
   </div>
   <div class="endpointContainer_center"><a href="https://bag2.basisregistraties.overheid.nl/sparql">Endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bag-ld">Use case</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bag2-0">Data Model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bag/lv/schema">Data Model</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -68,7 +68,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
   </div>
   <div class="endpointContainer_center"><a href="https://bgt.basisregistraties.overheid.nl/sparql">Endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/bgt-ld">Use case</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/bgt">Data Model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/bgt/lv/schema">Data Model</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -81,7 +81,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
   </div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/registratie/sparql">Endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brk-ld">Use case</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brk-pb/home">Data Model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brk/pb/schema">Data Model</a></div>
 </div>
 
 <div class="endpointContainer">
@@ -94,7 +94,7 @@ Op 26 augustus 2021 heeft er een workshop plaatsgevonden specifiek voor de devel
   </div>
   <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brt/top10nl/sparql">Endpoint</a></div>
   <div class="endpointContainer_center"><a href="/cases/brt-ld">Use case</a></div>
-  <div class="endpointContainer_center"><a href="https://kadaster.wvr.io/brt-ld">Data Model</a></div>
+  <div class="endpointContainer_center"><a href="https://data.labs.kadaster.nl/brt/top10nl/schema">Data Model</a></div>
 </div>
 
 <div class="endpointContainer">

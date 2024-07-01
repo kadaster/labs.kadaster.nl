@@ -14,17 +14,9 @@ De eindpresentatie van het Kadaster team is te vinden onder [deze link](https://
 
 ## Oplossing 1: Serendipity Search
 
-De eerste oplossing die voor de hackathon is ontwikkeld, is gebaseerd op het concept van 'serendipity search', een deel van semantic search functionaliteit, waarbij een gebruiker simpelweg de beschikbaarheid van normen en standaarden verkent die bij een bepaalde term horen. Dit is gebaseerd op getagde termen of trefwoorden die zijn gedefinieerd in een bepaalde norm of standaard en maakt het mogelijk een verband te leggen tussen normen die een gemeenschappelijke tag of trefwoord delen. Deze oplossing is ontwikkeld om een gebruiker te ondersteunen bij het verkennen van de beschikbaarheid van normen over een bepaald onderwerp, maar kent niet noodzakelijk een specifieke norm bij het begin. Deze oplossing is zowel gedemonstreerd in de Weaver-omgeving waar gebruikers kunnen zoeken op termen of interactie met de grafiek om bijbehorende normen te vinden op basis van trefwoorden of thema's, als in de Serendipity Search data story die beschikbaar is via de onderstaande link.
+De eerste oplossing die voor de hackathon is ontwikkeld, is gebaseerd op het concept van 'serendipity search', een deel van semantic search functionaliteit, waarbij een gebruiker simpelweg de beschikbaarheid van normen en standaarden verkent die bij een bepaalde term horen. Dit is gebaseerd op getagde termen of trefwoorden die zijn gedefinieerd in een bepaalde norm of standaard en maakt het mogelijk een verband te leggen tussen normen die een gemeenschappelijke tag of trefwoord delen. Deze oplossing is ontwikkeld om een gebruiker te ondersteunen bij het verkennen van de beschikbaarheid van normen over een bepaald onderwerp, maar kent niet noodzakelijk een specifieke norm bij het begin. De Serendipity Search data story is beschikbaar via de onderstaande link.
 
 <div class="cards-wrapper">
-  <a href="https://kadaster.wvr.io/nen-hackathon-22?branch=main&tab=home">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/nen-serendipity.jpg" alt="NEN Serendipity Search">
-      <div class="card-title">Weaver: Serendipity Search</div>
-      <div class="card-description">Live Weaver demonstrator voor de eerste oplossing ontwikkeld voor de NEN hackathon</div>
-    </div>
-  </a>
     <a href="https://data.labs.kadaster.nl/nen/-/stories/semantic-search">
     <div class="card">
       <div class="card-type">Story</div>
