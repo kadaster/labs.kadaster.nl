@@ -5,7 +5,14 @@ title: Data Browsers
 
 # Studenten
 
-<div class="cards-wrapper">
+<div class="cards-wrapper">'
+  <a href="/cases/woningmarktonderzoek">
+   <div class="card">
+      <div class="card-type">Stage</div>
+      <img class="card-image" src="/assets/images/woningmarktonderzoek.png" alt="woningmarktonderzoek">
+      <div class="card-title">Woningmarktonderzoek</div>
+      <div class="card-description">Onderzoek naar het gebruik van ruimtelijke componenten om transacties en prijzen op de woningmarkt te voorspellen. </div>
+    </div>
   <a href="/cases/recreatiewoningen">
    <div class="card">
       <div class="card-type">Use Case</div>
