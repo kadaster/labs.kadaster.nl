@@ -14,8 +14,8 @@ Initially, a spatial autocorrelation test was conducted at three spatial scales 
 For house prices, the spatial autocorrelation test revealed moderate correlations, with the COROP areas showing higher spatial autocorrelation than provinces and municipalities. The Granger causality test indicated significant inter-area relationships, identifying many market-leading and market-lagging regions. The forecasting models showed varying performance, with the MTGNN model outperforming others with a MAPE of 2.58%, MAE of €10077, and RMSE of €11975, compared to (up to 2 times) higher error metrics for the Baseline and Single-Output LSTMs. Area-wise performance analysis revealed that the MTGNN model significantly improved forecasting accuracy in most areas, particularly for regions with higher transaction volumes, though it underperformed in some regions like Oost-Groningen. 
 
 <figure id="figuur-1">
-  <a href="/assets/images/resultaten_gebieden_koopsom.PNG">
-    <img src="/assets/images/resultaten_gebieden_koopsom.PNG" alt="Proces">
+  <a href="/assets/images/resultaten_gebieden_koopsom.png">
+    <img src="/assets/images/resultaten_gebieden_koopsom.png" alt="Proces">
   </a>
 </figure>
 
@@ -23,8 +23,8 @@ For transaction volumes, the spatial autocorrelation test showed lower and many 
 Limitations of the results included missing data for some months on the municipal scale, limited hyperparameter tuning, and the use of a fixed random state for model runs, which might affect the generalizability of the results. 
 
 <figure id="figuur-2">
-  <a href="/assets/images/resultaten_gebieden_transactievolume.PNG">
-    <img src="/assets/images/resultaten_gebieden_transactievolume.PNG" alt="Proces">
+  <a href="/assets/images/resultaten_gebieden_transactievolume.png">
+    <img src="/assets/images/resultaten_gebieden_transactievolume.png" alt="Proces">
   </a>
 </figure>
 
@@ -36,12 +36,12 @@ This research advances previous efforts by successfully implementing a nationwid
 This research aimed to enhance housing market forecasting techniques and evaluate a nationwide spatial approach for regional predictions. The analysis confirmed spatial dependencies in the Dutch housing market, with stronger effects for house prices than transaction volumes. Granger causality tests identified different market-leading and market-lagging areas. A spatial perspective, particularly using a multi-output graph neural network (GNN) model, significantly improved forecasting accuracy over single-output Long Short-Term Memory (LSTM) models, achieving a MAPE of 2.58% (± 1.50%) for house prices and 5.61% (± 3.19%) for transaction volumes across the 40 COROP areas. The study demonstrates the feasibility of regional housing market forecasting and suggests that accuracy will further improve with more data and advanced models.  
 
 <figure id="figuur-3">
-  <a href="/assets/images/resultaten_gemiddeld_koopsom.PNG">
-    <img src="/assets/images/resultaten_gemiddeld_koopsom.PNG" alt="Results">
+  <a href="/assets/images/resultaten_gemiddeld_koopsom.png">
+    <img src="/assets/images/resultaten_gemiddeld_koopsom.png" alt="Results">
   </a>
 </figure>
 <figure id="figuur-4">
-  <a href="/assets/images/resultaten_gemiddeld_transactievolume.PNG">
-    <img src="/assets/images/resultaten_gemiddeld_transactievolume.PNG" alt="Results">
+  <a href="/assets/images/resultaten_gemiddeld_transactievolume.png">
+    <img src="/assets/images/resultaten_gemiddeld_transactievolume.png" alt="Results">
   </a>
 </figure>
