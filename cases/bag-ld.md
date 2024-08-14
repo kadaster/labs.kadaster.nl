@@ -1,11 +1,11 @@
 ---
 banner: /assets/images/bag-bronhouder.jpg
 layout: page
-title: Use Case ― BAG LD Basisregistratie Adressen & Gebouwen (2.0) als Linked Data
+title: Use Case ― BAG LD Basisregistratie Adressen & Gebouwen als Linked Data
 
 ---
 
-# BAG LD: Basisregistratie Adressen & Gebouwen (2.0) als Linked Data
+# BAG LD: Basisregistratie Adressen & Gebouwen als Linked Data
 
 ## Introductie
 De Basisregistratie Adressen & Gebouwen (BAG) versie is beschikbaar als Linked Open Data. Deze data wordt per kwartaal vernieuwd en mogelijk in de toekomst meer real-time, afhankelijk van de gebruikerswensen. Met deze publicatie verwachten we het gebruik van geodata een stimulans te geven, en we zijn dan ook zeer benieuwd naar gebruikerservaringen en toepassingen.
