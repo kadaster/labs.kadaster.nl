@@ -8,12 +8,12 @@ title: Use Case ― BAG LD Basisregistratie Adressen & Gebouwen (2.0) als Linked
 # BAG LD: Basisregistratie Adressen & Gebouwen (2.0) als Linked Data
 
 ## Introductie
-De Basisregistratie Adressen & Gebouwen (BAG) versie 2.0 is beschikbaar als Linked Open Data. Met de ingang van <a href='https://www.kadaster.nl/documents/1953498/2762071/BAG+Extract+2.0+Productbeschrijving.pdf/1e8310b9-9431-2cbe-7204-45cef7de4824?t=1644331446757'>BAG 2.0</a> zijn er een aantal zaken gewijzigd aan de BAG en hiermee ook de Linked Open Data variant van deze basisregistratie. Deze data wordt per kwartaal vernieuwd en mogelijk in de toekomst meer real-time, afhankelijk van de gebruikerswensen. Met deze publicatie verwachten we het gebruik van geodata een stimulans te geven, en we zijn dan ook zeer benieuwd naar gebruikerservaringen en toepassingen.
+De Basisregistratie Adressen & Gebouwen (BAG) versie is beschikbaar als Linked Open Data. Deze data wordt per kwartaal vernieuwd en mogelijk in de toekomst meer real-time, afhankelijk van de gebruikerswensen. Met deze publicatie verwachten we het gebruik van geodata een stimulans te geven, en we zijn dan ook zeer benieuwd naar gebruikerservaringen en toepassingen.
 
 Heb je verbeterpunten, vragen of suggesties? Neem dan gerust contact met ons op via <a href='https://geoforum.nl/'>het geoforum</a> en <a href='mailto:erwin.folmer@kadaster.nl'>e-mail</a>. Meteen geïnteresseerd? Of gewoon simpelweg benieuwd naar de mogelijkheden met deze dataset?
-Neem dan even een kijkje bij de tegels hieronder, allereerst vind je daar BAG als linked data (dataset met SPARQL endpoint), en een viewer (browser) op het BAG datamodel voor het verkennen van de mogelijkheden van de BAG. Deze twee producten vormen samen de publicatie van BAG 2.0 als Linked Data.
+Neem dan even een kijkje bij de tegels hieronder, allereerst vind je daar BAG als linked data (dataset met SPARQL endpoint), en een viewer (browser) op het BAG datamodel voor het verkennen van de mogelijkheden van de BAG. Deze twee producten vormen samen de publicatie van BAG als Linked Data.
 
-Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gemaakt van hoe de BAG 2.0 linked data gebruikt kan worden in interactieve Data Stories, met voorbeeld SPARQL queries. Tevens beschrijven we hierin in meer detail de metadata van de opgeleverde publicatie.
+Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gemaakt van hoe de BAG linked data gebruikt kan worden in interactieve Data Stories, met voorbeeld SPARQL queries. Tevens beschrijven we hierin in meer detail de metadata van de opgeleverde publicatie.
 
 <div class="cards-wrapper">
   <a href="https://data.labs.kadaster.nl/bag/lv">
