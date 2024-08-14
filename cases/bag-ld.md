@@ -20,8 +20,8 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
     <div class="card">
       <div class="card-type">Dataset</div>
       <img class="card-image" src="/assets/images/kadaster-logo-full.png">
-      <div class="card-title">Basisregistratie Adressen & Gebouwen (2.0) als Linked Data</div>
-      <div class="card-description">De landingspagina van de publicatie van de Basisregistratie Adressen & Gebouwen (2.0) als linked data.</div>
+      <div class="card-title">Basisregistratie Adressen & Gebouwen als Linked Data</div>
+      <div class="card-description">De landingspagina van de publicatie van de Basisregistratie Adressen & Gebouwen als linked data.</div>
     </div>
   </a>
     <a href="https://data.labs.kadaster.nl/bag/lv/sparql/default">
@@ -29,15 +29,15 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-type">Endpoint</div>
       <img class="card-image" src="/assets/images/yasgui-screenshot.PNG" alt="SPARQL Endpoint">
       <div class="card-title">SPARQL Endpoint</div>
-      <div class="card-description">Het officiële SPARQL endpoint van de BAG 2.0.</div>
+      <div class="card-description">Het officiële SPARQL endpoint van de BAG.</div>
     </div>
   </a>
     <a href="https://data.labs.kadaster.nl/bag/lv/schema">
     <div class="card">
       <div class="card-type">Browser</div>
       <img class="card-image" src="/assets/images/weaver.png" alt="Weaver weergave">
-      <div class="card-title">BAG 2.0 data model browser</div>
-      <div class="card-description">Data browser waarin het BAG 2.0 data model kan worden opgezocht.</div>
+      <div class="card-title">BAG data model browser</div>
+      <div class="card-description">Data browser waarin het BAG data model kan worden opgezocht.</div>
     </div>
   </a>
   <a href="https://data.labs.kadaster.nl/bag/-/stories/bag-20">
@@ -45,7 +45,7 @@ Echter, om meer inzicht te bieden in de mogelijkheden hebben we voorbeelden gema
       <div class="card-type">Story</div>
       <img class="card-image" src="/assets/images/bag.png" alt="BAG">
       <div class="card-title">Veel voorkomende BAG Bevragingen</div>
-      <div class="card-description">Data Story die laat zien hoe je de BAG 2.0 als LD kunt gebruiken.</div>
+      <div class="card-description">Data Story die laat zien hoe je de BAG als LD kunt gebruiken.</div>
     </div>
   </a>
     <a href="/stories/evacuatie/index.html">
