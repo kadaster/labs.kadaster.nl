@@ -20,8 +20,8 @@ Het Data Science team maakt gebruik van verschillende datasets en biedt zelf ook
     <div class="card">
       <div class="card-type">Use Case</div>
       <img class="card-image" src="/assets/images/bag.png" alt="Kaart BAG">
-      <div class="card-title">Basisregistratie Adressen & Gebouwen 2.0</div>
-      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG 2.0 als Linked Data.</div>
+      <div class="card-title">Basisregistratie Adressen & Gebouwen</div>
+      <div class="card-description">In deze use case besteden we aandacht aan de publicatie van de BAG als Linked Data.</div>
     </div>
   </a>
   <a href="/cases/brt-ld">
