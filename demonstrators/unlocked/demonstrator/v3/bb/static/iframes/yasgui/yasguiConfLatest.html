@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YASGUI</title>
+  <link rel="icon"  type="image/png" href="doc/imgs/favicon.png">
+  <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+  
+  </head>
+  <body>
+  
+    <div id='showcase'></div>
+	<div id='yasgui'></div>
+     <script src2222="js/jquery/jquery-3.2.1.min.js"></script>
+     <script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+
+   <script src="js/bb/LeafletPlugin.js"></script>
+  <script src="js/bb/CesiumPlugin.js"></script>
+  <script src="js/bb/IFCPlugin.js"></script>
+  <script src="js/bb/W2UITablePlugin.js"></script>
+   <script src="js/bb/IFCJSPlugin.js"></script>
+
+  
+ <script type="text/javascript" src="./../../../integrator.js" ></script> 
+
+
+
+<script type="text/javascript">
+
+ //Yasgui.Yasr.registerPlugin("2DMap", startMap);
+ //Yasgui.Yasr.registerPlugin("3DMap", startMapCesium);
+ //YASGUI.YASR.registerPlugin("IFCJS", startIFCJS);
+ //Yasgui.Yasr.registerPlugin("IFC", startIFC);
+ 
+    // YASGUI.YASR.registerOutput("W2Table", startW2Table);
+	 
+
+  //want to change the config? use the config file in the ./server directory (this gets automatically inserted below)
+  function beforeSend(a,b)
+  {
+   
+    let query=b.data;
+    for (let key in getIface().me.props.pubsub)
+    {
+         let value = encodeURI(getIface().me.props.pubsub[key]);
+
+         if (value!=null)
+         {
+           let keyword=encodeURI("{{"+key+"}}");
+           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+                       b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+                       b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+                       b.data=b.data.replace(keyword,value);
+        		           b.data=b.data.replace(keyword,value);
+         }
+    }
+ 
+  }
+  
+  
+  function start(endpoint)
+  {
+    if (document.alreadyStarted!=null){return;}
+     document.alreadyStarted=true;
+   
+     var config = {requestConfig:{endpoint:endpoint},catalogueEndpoints:[],"api":{"corsProxy":"/proxy/","urlShortener":"/shorten"}};
+  
+
+
+if (endpoint==null) {  var endpoint="http://www.buildingbits.nl";} 
+
+
+ 
+  Yasgui.Yasqe.defaults.createShareLink = null;
+
+  Yasqe.defaults.requestConfig.endpoint=endpoint;
+
+
+
+  //console.log("setting execute query");
+  /*
+  Yasgui.Yasqe.executeQuery = function(yasqe, callbackOrConfig) 
+  {
+   // console.log(yasqe,callbackOrConfig);
+    callbackOrConfig.callbacks.beforeSend=beforeSend;
+    Yasgui.Yasqe.signal(yasqe, "query", yasqe, callbackOrConfig);
+    Yasgui.Yasqe.updateQueryButton(yasqe, "busy");
+      yasqe.setBackdrop(true);
+      let c=Yasgui.Yasqe.getAjaxConfig(yasqe, callbackOrConfig);
+      c.xhrFields= {     withCredentials: true    };
+      yasqe.xhr = Yasgui.$.ajax(c);
+  };
+  */
+
+  var yasgui = new Yasgui(document.getElementById("yasgui"),{requestConfig:{endpoint:endpoint}});
+  document.yasgui= yasgui;
+  //yasgui.options.catalogueEndpoints=[{endpoint:endpoint,title: "iets "}];
+ // yasgui.options.yasqe.sparql.endpoint=endpoint;
+   
+    for (var tab in yasgui.tabs)
+   {
+       yasgui.closeTab(tab);
+   }
+
+
+
+
+
+if (getIface().me.props.queryOnly)
+     {
+     //  console.log("wis yasre. werkt niet goed");
+       document.getElementsByClassName("yasr")[0].style.visibility="hidden";
+      document.getElementsByClassName("yasqe_buttons")[0].style.visibility="hidden";
+
+      
+
+      //return; 
+     }
+
+}
+
+	
+
+   
+  
+</script>
+
+
+<script>
+
+  getOptions=function()
+  {
+    var o=document.yasgui.current().yasr.plugins.gchart.options;
+    return JSON.stringify(o);
+
+  }
+  
+Iface.prototype.setBeginSparqlResults=function(results,sparql)
+{
+ 
+  if (this.onlyOnce==null)
+  {
+     this.onlyOnce="done";
+  
+    var uri=this.me.props.repoURL;
+    if (!uri.startsWith("http"))
+    {
+       // console.log("localuri ");
+        uri="http://localhost:7200/"+uri;
+    }
+    start(uri);
+    
+  }
+            
+      
+        //document.yasgui.addTab(true,{name:"query "+l});
+          this.results =results;
+          this.sparql=sparql;
+          this.setSparqlIntoYasgui();
+        
+   
+
+
+
+
+  try
+  {
+
+  var options=results.results.bindings[0].options;
+  if (options!=null)
+  {
+    //console.log(options);
+     options=JSON.parse(options.value);
+     //console.log(options);
+     document.yasgui.current().yasr.options.output="gchart";
+     document.yasgui.current().yasr.plugins.gchart.options=options;
+     document.yasgui.current().yasr.draw();
+
+  }
+     
+  }
+  catch(e){console.log(e);}
+ 
+ 
+}
+Iface.prototype.setSparqlIntoYasgui=function(pubsub)
+{
+
+  try
+  {
+       var tab=document.yasgui.getTab();
+
+ 
+  sparql=this.results.results.bindings[0].sparql.value;
+
+
+  if (this.latestorgsparql==sparql){return;}
+  this.latestorgsparql=sparql;
+ if (sparql!=null)
+ {
+      if (sparql.includes("#replace"))
+        {
+          
+            if (pubsub!=null)
+            {
+              for (var id in pubsub)
+              {
+                  for (var n=0;n<10;n++)
+                  {
+                    sparql= sparql.replace("{{"+id+"}}",pubsub[id]);
+                  }
+                
+              }
+            }
+       }
+ }
+  tab.setQuery(sparql);
+  }
+  catch(e){}
+
+}
+
+Iface.prototype.setPubSub=function(pubsub)
+{
+
+    this.setSparqlIntoYasgui(pubsub);
+}
+
+
+Iface.prototype.afterIntegration=function()
+{
+  const { repoURL } = this.me.props
+  var url = (() => {
+    if (repoURL.startsWith("http")) return repoURL
+    if (repoURL.startsWith("/")) return window.location.origin + repoURL
+    return `${window.location.origin}/${repoURL}`
+  })()
+  start(url);
+
+   //getIface().w
+   try
+   {
+    if (getIface().me.props.queryOnly)
+    {
+      $(".yasr")[0].style.display="none";
+      $(".mainTabs")[0].style.display="none";
+      $(".controlbar")[0].style.display="none";
+
+      $(".yasr")[0].remove();
+     
+
+      $(".yasqe")[0].children[0].style.height="100%";
+
+
+
+
+
+    }
+  }catch(e){console.log(e);}
+
+  const removeElement = (el) => el.parentElement.removeChild(el)
+  removeElement(document.querySelector('.yasgui .controlbar'))
+}
+
+//console.log("yasgui startIntegration");
+startIntegration();
+</script>  
+
+
+
+  </body>
+</html>
+
