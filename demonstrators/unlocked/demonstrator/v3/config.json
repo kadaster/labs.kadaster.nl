@@ -246,7 +246,7 @@
 
                                                                 "syncWithUserActionsDisabled": true,
 
-                                                               "voteForUserActionsDisabledWhenLoading": true,
+                                                                "voteForUserActionsDisabledWhenLoading": true,
 
                                                                 "widget": "BBEChart",
 
@@ -806,7 +806,7 @@
 
                                                 "gradientColors": true,
 
-                                                "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix fn:<http://www.w3.org/2017/xpath-functions>\nprefix xsd: <http://www.w3.org/2001/XMLSchema#>\n\n\nselect  ?koopsom ?jaar \n \n from  <https://data.labs.kadaster.nl/lock-unlock/koopsom>  \n\nwhere\n{\n    service<{{brk}}{{user}}>\n  {\n   graph <https://data.labs.kadaster.nl/lock-unlock/koopsom>\n{\n   <{{perceel}}><http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?koopsom.\n   <{{perceel}}> <http://modellen.geostandaarden.nl/def/imx-geo#year> ?jaar.\n}\n  \n  \n \n  #<{{perceel}}> <http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?koopsom3.\n  #bind (xsd:int(?koopsom3/1000000) as ?m)\n  #bind (xsd:int((?koopsom3-(?m*1000000))/1000) as ?d)\n  #bind (if (?m=0,concat(str(?d),\".000 euro\"),concat(str(?m),\".\",str(?d),\".000 euro\")) as ?koopsom)\n\n  \n}\n   \n}\n",
+                                                "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix fn:<http://www.w3.org/2017/xpath-functions>\nprefix xsd: <http://www.w3.org/2001/XMLSchema#>\n\n\nselect  ?koopsom ?jaar \n \n\n\nwhere\n{\n    service<{{brk}}{{user}}>\n  {\n   graph <https://data.labs.kadaster.nl/lock-unlock/koopsom>\n{\n   <{{perceel}}><http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?koopsom.\n   <{{perceel}}> <http://modellen.geostandaarden.nl/def/imx-geo#year> ?jaar.\n}\n  \n  \n   \n}\n   \n}\n",
 
                                                 "charttype": "Pie",
 
@@ -832,7 +832,7 @@
 
                                             },
 
-                                            {
+                                           {
 
                                                 "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona.",
 
@@ -856,7 +856,7 @@
 
                                                 "widget": "BBEChart",
 
-                                               "voteForUserActionsDisabledWhenLoading": false,
+                                                "voteForUserActionsDisabledWhenLoading": false,
 
                                                 "syncWithUserActionsDisabled": true,
 
@@ -1004,7 +1004,7 @@
 
                                                 "horizontal": true,
 
-                                                "options": "100,100,1000,1000,10000,10k,25000,25k,100000,100k",
+                                                "options": "500,500,1000,1000,10000,10k,25000,25k,100000,100k",
 
                                                 "infoMenubar": "Maak een keuze hoeveel percelen je wilt ophalen voor de kaart."
 
@@ -1098,7 +1098,7 @@
 
                                                 "publishVariable": "surl",
 
-                                               "publishVariableLabel": ""
+                                                "publishVariableLabel": ""
 
                                             },
 
@@ -1116,7 +1116,7 @@
 
                                                 ],
 
-                                               "links": [
+                                                "links": [
 
                                                     "{{surl}}"
 
@@ -1336,7 +1336,7 @@
 
                                                                                                 "voteForUserActionsDisabledWhenLoading": true,
 
-                                                                                               "widget": "Table",
+                                                                                                "widget": "Table",
 
                                                                                                 "showLoadingOverlay": true
 
@@ -1554,7 +1554,7 @@
 
                                                                 "syncWithUserActionsDisabled": false,
 
-                                                                "showLoadingOverlay": false,
+                                                               "showLoadingOverlay": false,
 
                                                                 "panelstyle": "paper2",
 
@@ -1724,7 +1724,7 @@
 
                                         "showLoadingOverlay": true,
 
-                                       "syncWithUserActionsDisabled": true,
+                                        "syncWithUserActionsDisabled": true,
 
                                         "voteForUserActionsDisabledWhenLoading": true,
 
@@ -2122,7 +2122,7 @@
 
     },
 
-    "repoURL": "https://anbi-lock-unlock.apps.digilab.network/anbi/sparql?persona=system",
+    "repoURL": "https://api.labs.kadaster.nl/datasets/dst/kkg/sparql",
 
     "logoURL": "https://avatars.githubusercontent.com/u/11940613?s=200&v=4",
 
@@ -2132,7 +2132,7 @@
 
     "pageWidth": "99%",
 
-    "parameterValues": "{\"surl\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\",\"limit\":\"1000\",\"tnv\":\"http://www.buildingbits.nl/reset\",\"locked\":\"locked\",\"brp\":\"https://brp-lock-unlock.apps.digilab.network/brp/sparql\",\"nhr\":\"https://nhr-lock-unlock.apps.digilab.network/nhr/sparql\",\"anbi\":\"https://anbi-lock-unlock.apps.digilab.network/anbi/sparql\",\"brk\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\"}",
+    "parameterValues": "{\"surl\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\",\"limit\":\"500\",\"tnv\":\"http://www.buildingbits.nl/reset\",\"locked\":\"locked\",\"brp\":\"https://brp-lock-unlock.apps.digilab.network/brp/sparql\",\"nhr\":\"https://nhr-lock-unlock.apps.digilab.network/nhr/sparql\",\"anbi\":\"https://anbi-lock-unlock.apps.digilab.network/anbi/sparql\",\"brk\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\"}",
 
     "public": true,
 
@@ -2148,7 +2148,7 @@
 
     "notShowTop": false,
 
-    "subtitle": "v1.01",
+    "subtitle": "v1.02",
 
     "infoMessage": "Deze experimentele applicatie is onderdeel van het project Lock-Unlock. Dit project wordt uitgevoerd in opdracht van het Federatief Datastelsel (FDS). Deze applicatie laat zien dat SPARQL queries on-the-fly herschreven kunnen worden zodat er geen toegang verleend wordt tot beveiligde data. Voor deze demonstrator wordt (op de percelen na) fictieve data gebruikt. ",
 
@@ -2159,6 +2159,8 @@
     "triggers": [],
 
     "id": "650c0ad8348dea0024a3fd7b",
+
+    "new": false,
 
     "layout": {
 
