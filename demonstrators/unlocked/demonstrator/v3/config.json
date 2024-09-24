@@ -76,21 +76,43 @@
 
                     {
 
-                        "label": "Persona",
+                        "areaSizes": [
 
-                        "publishVariable": "user",
+                            "1",
 
-                        "query": "select ?uri ?user\nwhere\n{\n  values (?user ?uri) {\n     (\"Geen beveiliging\" \"?persona=system\")\n    (\"Anonieme gebruiker\" \"?persona=anonymous\")\n    #  (\"anoniem2\" \"\")\n   \n    \n      (\"Gemeente Zeewolde\" \"?persona=zeewolde\")\n    (\"Gemeente Almere\" \"?persona=almere\")\n    \n      (\"Kadaster Koopsom\" \"?persona=koopsom\") \n    (\"Admin-users\" \"?persona=admin_users\") \n    (\"Admin-auth\" \"?persona=admin_auth\")\n   (\"Auditor\" \"?persona=auditor\")\n  } \n\n\n}",
+                            "1"
 
-                        "preSelectFirstItem": true,
+                        ],
 
-                        "showLoadingOverlay": true,
+                        "areas": [
 
-                        "syncWithUserActionsDisabled": true,
+                            {
 
-                        "voteForUserActionsDisabledWhenLoading": true,
+                                "label": "Persona",
 
-                        "widget": "SelectBox"
+                                "publishVariable": "user",
+
+                                "query": "select ?uri ?user\nwhere\n{\n  {\n  values (?user ?uri) {\n     (\"Geen beveiliging\" \"?persona=system\")\n    (\"Anonieme gebruiker\" \"?persona=anonymous\")\n    #  (\"anoniem2\" \"\")\n   \n    \n      (\"Gemeente Zeewolde\" \"?persona=zeewolde\")\n    (\"Gemeente Almere\" \"?persona=almere\")\n    \n      (\"Kadaster Koopsom\" \"?persona=koopsom\") \n    (\"Admin-users\" \"?persona=admin_users\") \n    (\"Admin-auth\" \"?persona=admin_auth\")\n   (\"Auditor\" \"?persona=auditor\")\n  } \n  }\n  union\n  {    service<{{brp}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n     union\n  {    service<{{nhr}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n       union\n  {    service<{{anbi}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n\n\n}",
+
+                                "preSelectFirstItem": true,
+
+                                "showLoadingOverlay": true,
+
+                                "syncWithUserActionsDisabled": true,
+
+                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                "widget": "SelectBox"
+
+                            },
+
+                            null
+
+                        ],
+
+                        "direction": "row",
+
+                        "widget": "SplitLayout"
 
                     },
 
@@ -234,7 +256,7 @@
 
                                                                 "stringToColor": false,
 
-                                                                "gradientColors": true,
+                                                               "gradientColors": true,
 
                                                                 "charttype": "Col",
 
@@ -426,7 +448,7 @@
 
                                                         "widget": "SplitLayout"
 
-                                                    }
+                                                   }
 
                                                 ],
 
@@ -456,7 +478,7 @@
 
                                                         "widget": "Table",
 
-                                                        "voteForUserActionsDisabledWhenLoading": false,
+                                                       "voteForUserActionsDisabledWhenLoading": false,
 
                                                         "syncWithUserActionsDisabled": false,
 
@@ -566,7 +588,7 @@
 
                                                         "showLoadingOverlay": true,
 
-                                                        "query": "PREFIX xds: <http://www.w3.org/2001/XMLSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd:<http://www.w3.org/2001/XMLSchema#>\n\nSELECT distinct ?uri ?geometry (\"Perceel\" as ?color)\n\nWHERE {\n\nservice<{{brk}}?persona=system>\n{\n        {select ?uri ?geometry where {\n graph <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen> {\n \n  ?uri <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n    }\n}\n   limit 500\n}  \n\n \n    }\n    }\n\n#title:500 Percelen"
+                                                        "query": "PREFIX xds: <http://www.w3.org/2001/XMLSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd:<http://www.w3.org/2001/XMLSchema#>\n\nSELECT distinct ?uri ?geometry (\"Perceel\" as ?color)\n\nWHERE {\n\nservice<{{brk}}?persona=system>\n{\n        {select ?uri ?geometry where {\n graph <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen> {\n \n  ?uri <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n    }\n}\n   limit 1500\n}  \n\n \n    }\n    }\n\n#title:1500 Percelen"
 
                                                     }
 
@@ -686,7 +708,7 @@
 
                                                             "1",
 
-                                                            "1"
+                                                           "1"
 
                                                         ]
 
@@ -832,7 +854,7 @@
 
                                             },
 
-                                           {
+                                            {
 
                                                 "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona.",
 
@@ -862,7 +884,7 @@
 
                                                 "titleMenubar": "Federatief BRK-BRP-NHR",
 
-                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\nselect ?naam ?teller \n    \n     \nwhere\n{\n  {\n  select ?persoon ?persoon2\n  {\n   service<{{brk}}{{user}}>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?tn brk:van/brk:rustOp <{{perceel}}>.\n       ?tn brk:tenNameVan ?persoon2.\n   \n}\n    \n  }\n    }\n    }\n      \n  {\n    service<{{brp}}{{user}}>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n              #?persoonBRP rdfs:label ?naam.\n  \t#\t\t\t{\n      ?persoon2 rdfs:label ?naam.\n    #} \n           #union { ?persoon rdfs:label ?naam.}\n            }\n\n       }\n  }\n   union\n     {\n        service <{{nhr}}{{user}}>\n        {\n          graph <https://data.federatief.datastelsel.nl/lock-unlock/nhr>\n          {\n            {  ?persoon2 rdfs:label ?naam.}\n       #union { ?persoon rdfs:label ?naam.}\n          }\n         }\n     }\n \n        \n}\n      ",
+                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\nselect ?naam ?teller \n    \n     \nwhere\n{\n  {\n  select ?persoon ?persoon2\n  {\n   service<{{brk}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";      \n      </script>>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?tn brk:van/brk:rustOp <{{perceel}}>.\n       ?tn brk:tenNameVan ?persoon2.\n   \n}\n    \n  }\n    }\n    }\n      \n  {\n    service<{{brp}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n              #?persoonBRP rdfs:label ?naam.\n  \t#\t\t\t{\n      ?persoon2 rdfs:label ?naam.\n    #} \n           #union { ?persoon rdfs:label ?naam.}\n            }\n\n       }\n  }\n   union\n     {\n        service <{{nhr}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n          graph <https://data.federatief.datastelsel.nl/lock-unlock/nhr>\n          {\n            {  ?persoon2 rdfs:label ?naam.}\n       #union { ?persoon rdfs:label ?naam.}\n          }\n         }\n     }\n \n        \n}\n      ",
 
                                                 "charttype": "SmallPie",
 
@@ -890,7 +912,7 @@
 
                                                     {
 
-                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect ?bsn ?voornaam ?achternaam ?gender\n    \n     \nwhere\n{\n  {\n  select  ?persoon2\n  {\n      service<{{brk}}{{user}}>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?eigendom brk:rustOp <{{perceel}}>.\n       ?tn brk:van ?eigendom.\n       ?tn brk:aandeelTeller ?teller.\n      ?tn brk:tenNameVan ?persoon2.\n    #   ?persoon ^owl:sameAs|owl:sameAs ?persoon2\n}\n    \n  }\n    }\n    } # eind select\n      \n\n    service<{{brp}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n            \n    \t\t\t\t#  ?persoon2 rdfs:label ?naam.\n       ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/bsn> ?bsn.\n              ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/voornaam> ?voornaam.\n\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?achternaam.\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n\n#  optional\n#  {\n#   ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gehuwd> ?gehuwdMet.\n#  }\n#bind (if(bound(?gehuwdMet),true,false) as ?gehuwd)\n   \n      \n      \n    \t\t\t\n            } #graph\n\n       } #service\n    \n}\n        #hoi",
+                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect ?bsn ?voornaam ?achternaam ?gender\n    \n     \nwhere\n{\n  {\n  select  ?persoon2\n  {\n      service<{{brk}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?eigendom brk:rustOp <{{perceel}}>.\n       ?tn brk:van ?eigendom.\n       ?tn brk:aandeelTeller ?teller.\n      ?tn brk:tenNameVan ?persoon2.\n    #   ?persoon ^owl:sameAs|owl:sameAs ?persoon2\n}\n    \n  }\n    }\n    } # eind select\n      \n\n    service<{{brp}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n            \n    \t\t\t\t#  ?persoon2 rdfs:label ?naam.\n       ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/bsn> ?bsn.\n              ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/voornaam> ?voornaam.\n\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?achternaam.\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n\n#  optional\n#  {\n#   ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gehuwd> ?gehuwdMet.\n#  }\n#bind (if(bound(?gehuwdMet),true,false) as ?gehuwd)\n   \n      \n      \n    \t\t\t\n            } #graph\n\n       } #service\n    \n}\n        #hoi",
 
                                                         "showLoadingOverlay": true,
 
@@ -1554,7 +1576,7 @@
 
                                                                 "syncWithUserActionsDisabled": false,
 
-                                                               "showLoadingOverlay": false,
+                                                                "showLoadingOverlay": false,
 
                                                                 "panelstyle": "paper2",
 
@@ -2148,7 +2170,7 @@
 
     "notShowTop": false,
 
-    "subtitle": "v1.02",
+    "subtitle": "v1.03",
 
     "infoMessage": "Deze experimentele applicatie is onderdeel van het project Lock-Unlock. Dit project wordt uitgevoerd in opdracht van het Federatief Datastelsel (FDS). Deze applicatie laat zien dat SPARQL queries on-the-fly herschreven kunnen worden zodat er geen toegang verleend wordt tot beveiligde data. Voor deze demonstrator wordt (op de percelen na) fictieve data gebruikt. ",
 
@@ -2159,8 +2181,6 @@
     "triggers": [],
 
     "id": "650c0ad8348dea0024a3fd7b",
-
-    "new": false,
 
     "layout": {
 
