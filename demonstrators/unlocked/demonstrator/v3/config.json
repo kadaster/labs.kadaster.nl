@@ -14,20 +14,7 @@
 
     "user": {
 
-        "name": "Hans Schevers",
-
-        "email": "hans.schevers@buildingbits.nl",
-
-        "role": "superadmin",
-
-        "createdAt": "2024-05-06T13:15:23.684Z",
-
-        "updatedAt": "2024-05-06T13:15:23.684Z",
-
-        "hashedPassword": "$2b$10$Jkbx6JgWcmzPVjzXDl.0wOBVrp87dSUWlhgptwWHLzgxuX0853rMm",
-
-        "id": "62278ad6be3c2900303ad8e1"
-
+      
     },
 
     "createdAt": "2023-09-21T09:20:24.528Z",

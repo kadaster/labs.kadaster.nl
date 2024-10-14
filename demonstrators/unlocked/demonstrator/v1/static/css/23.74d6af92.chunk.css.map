@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/widgets/bb/BBCheckboxTree.module.css"],"names":[],"mappings":"AAAA,GACI,oBACF,CAEA,iCACE,gBACF","file":"23.74d6af92.chunk.css","sourcesContent":["ol{\r\n    list-style-type: none;\r\n  }\r\n\r\n  .rct-title {\r\n    margin-left: 13px;\r\n  }"]}
