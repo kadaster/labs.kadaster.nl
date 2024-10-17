@@ -31,7 +31,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
       <img class="card-image" src="/assets/images/handen.jpg" alt="innovatie">
     </div>
   </a>
-  <a href="/thema/Knowledge_graph">
+  <a href="https://data.kkg.kadaster.nl/">
     <div class="card-home">
       <div class="card-type">Knowledge Graph</div>
       <img class="card-image" src="/assets/images/kadaster-knowledge-graph.png" alt="Knowledge Graph">
