@@ -1,0 +1,2180 @@
+{
+
+    "project": {
+
+        "createdAt": "2023-03-15T15:32:19.811Z",
+
+        "title": "Kadaster",
+
+        "path": "kadaster",
+
+        "id": "6411e5038986f00024b17390"
+
+    },
+
+    "user": {
+
+      
+    },
+
+    "createdAt": "2023-09-21T09:20:24.528Z",
+
+    "title": "Lock Unlock Authorisation demo",
+
+    "mainArea": {
+
+        "panelstyleExtra": "noScrollBars",
+
+        "widget": "SplitLayout",
+
+        "direction": "column",
+
+        "areas": [
+
+            {
+
+                "panelstyle": "paper2",
+
+                "widget": "RadioBox",
+
+                "voteForUserActionsDisabledWhenLoading": true,
+
+                "syncWithUserActionsDisabled": true,
+
+                "options": "locked),locked (not yet implemented),unlocked,unlocked",
+
+                "horizontal": true,
+
+                "showLoadingOverlay": true
+
+            },
+
+            {
+
+                "areaSizes": [
+
+                    "50px",
+
+                    "auto"
+
+                ],
+
+                "areas": [
+
+                    {
+
+                        "widget": "SplitLayout",
+
+                        "direction": "row",
+
+                        "areas": [
+
+                            {
+
+                                "widget": "SelectBox",
+
+                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                "syncWithUserActionsDisabled": true,
+
+                                "showLoadingOverlay": true,
+
+                                "preSelectFirstItem": true,
+
+                                "query": "select ?uri ?user\nwhere\n{\n  {\n  values (?user ?uri) {\n     (\"Geen beveiliging\" \"?persona=system\")\n    (\"Anonieme gebruiker\" \"?persona=anonymous\")\n    #  (\"anoniem2\" \"\")\n   \n    \n      (\"Gemeente Zeewolde\" \"?persona=zeewolde\")\n    (\"Gemeente Almere\" \"?persona=almere\")\n    \n      (\"Kadaster Koopsom\" \"?persona=koopsom\") \n    (\"Admin-users\" \"?persona=admin_users\") \n    (\"Admin-auth\" \"?persona=admin_auth\")\n   (\"Auditor\" \"?persona=auditor\")\n  } \n  }\n  union\n  {    service<{{brp}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n     union\n  {    service<{{nhr}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n       union\n  {    service<{{anbi}}?persona=system>     {    {select ?a ?b ?c where {?a ?b ?c}limit 1}  }    \n    \n  }\n\n\n}",
+
+                                "publishVariable": "user",
+
+                                "label": "Persona"
+
+                            },
+
+                            null
+
+                        ],
+
+                        "areaSizes": [
+
+                            "1",
+
+                            "1"
+
+                        ]
+
+                    },
+
+                    {
+
+                        "startCollapsed": true,
+
+                        "syncWithUserActionsDisabled": true,
+
+                        "voteForUserActionsDisabledWhenLoading": true,
+
+                        "tabs": [
+
+                            "Silos",
+
+                            "FDS",
+
+                            "Authorisation",
+
+                            "Log",
+
+                            "Sparql"
+
+                        ],
+
+                        "widget": "BBSideMenu",
+
+                        "areas": [
+
+                            {
+
+                                "widget": "SplitLayout",
+
+                                "direction": "column",
+
+                                "areas": [
+
+                                    {
+
+                                        "showLoadingOverlay": false,
+
+                                        "syncWithUserActionsDisabled": false,
+
+                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                        "areas": [
+
+                                            {
+
+                                                "areaSizes": [
+
+                                                    "1",
+
+                                                    "275px"
+
+                                                ],
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "titleMenubar": "BRP data (fictief)",
+
+                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n      \n#id\n\nselect  ?voornaam ?achternaam ?bsn ?gender   ?plaats\n\nwhere\n{\n  \n  \n  service<{{brp}}?persona=system>\n        {\n  {\n     select   ?voornaam ?achternaam ?bsn ?gender   ?plaats where {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n\n              ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/bsn> ?bsn.\n              ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/voornaam> ?voornaam.\n\n             ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?achternaam.\n             ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n\n#  optional\n#  {\n#   ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gehuwd>/<https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?gehuwdMet.\n#  }\n# bind (if(bound(?gehuwdMet),true,false) as ?gehuwd)\n#\n  \n \t\n?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/heeftGeboorteplaats> ?plaats2.\n    graph <https://data.federatief.datastelsel.nl/lock-unlock/gemeentenamen>\n    {\n    ?plaats2 rdfs:label ?plaats\n    }\n   \n} #graph\n}\n  limit 100\n}\n  \n} #service\n\n    \n}\n \n \n",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "Table",
+
+                                                        "hasNumberedRows": true,
+
+                                                        "infoMenubar": "Deze query is afhankelijk van de gekozen persona"
+
+                                                    },
+
+                                                    {
+
+                                                        "areaSizes": [
+
+                                                            "1",
+
+                                                            "0",
+
+                                                            "1"
+
+                                                        ],
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "infoMenubar": "Deze query is afhankelijk van de gekozen persona",
+
+                                                                "titleMenubar": "Man vs Vrouw",
+
+                                                                "widget": "BBEChart",
+
+                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n      \n#id\n\nselect  ?gender ?aantal\n\nwhere\n{\n  \n  service<{{brp}}?persona=system>\n        {\n  {select distinct ?gender (count( ?persoon) as ?aantal) \n  where {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n\n               ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n\n \n}   #graph\n}\n  group by ?gender\n}\n} #service\n \n    \n}\n \n \n",
+
+                                                                "charttype": "Col",
+
+                                                                "gradientColors": true,
+
+                                                                "stringToColor": false,
+
+                                                                "defaultMenu": true,
+
+                                                                "color": [
+
+                                                                    "V",
+
+                                                                    "#ff4444",
+
+                                                                    "M",
+
+                                                                    "#0000ff"
+
+                                                                ],
+
+                                                                "popupLabelExtension": "personen"
+
+                                                            },
+
+                                                            null,
+
+                                                            {
+
+                                                                "titleMenubar": "Geboorteplaats (totale dataset)",
+
+                                                                "gradientColors": true,
+
+                                                                "stringToColor": true,
+
+                                                                "defaultMenu": true,
+
+                                                                "charttype": "DoughnutSmall",
+
+                                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n      \nselect  ?plaats ?aantal\n\nwhere\n{\n  \n service<{{brp}}?persona=system>\n        {\n \n  \n  {\n  select distinct ?plaats2 (count( ?persoon) as ?aantal) \n \n \n  where {\n          \ngraph  <https://data.federatief.datastelsel.nl/lock-unlock/brp> {\n  ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/heeftGeboorteplaats>?plaats2\n}\n\n\n}  group by ?plaats2\n}\n  \n   graph <https://data.federatief.datastelsel.nl/lock-unlock/gemeentenamen>{\n  ?plaats2 rdfs:label ?plaats\n}\n\n  \n    \n} \n\n}\n\n \n",
+
+                                                                "panelstyle": "paper2",
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "widget": "BBEChart",
+
+                                                                "enableZoom": true,
+
+                                                                "infoMenubar": "Deze query is niet afhankelijk van het persona"
+
+                                                            }
+
+                                                        ],
+
+                                                        "direction": "row",
+
+                                                        "widget": "SplitLayout"
+
+                                                    }
+
+                                                ],
+
+                                                "direction": "column",
+
+                                                "widget": "SplitLayout"
+
+                                            },
+
+                                            {
+
+                                                "widget": "SplitLayout",
+
+                                                "direction": "column",
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "infoMenubar": "Deze query is afhankelijk van de gekozen persona",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "query": "\nPREFIX  geo:  <http://www.opengis.net/ont/geosparql#>\nPREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX kvk:\t<https://data.federatief.datastelsel.nl/lock-unlock/nhr/def/>\n\nSELECT DISTINCT  ?KVKNummer ?rechtsvorm ?bedrijfsnaam ?rsinNummer ?leiNummer ?stichtingsjaar\n\n#FROM <https://data.federatief.datastelsel.nl/lock-unlock/gemeentenamen>\nWHERE\n  { \n  service<{{nhr}}?persona=system> {\n    { \n  SELECT DISTINCT  ?KVKNummer ?rechtsvorm ?bedrijfsnaam ?rsinNummer ?leiNummer ?stichtingsjaar\n    where\n  {\n\n  \n  graph  <https://data.federatief.datastelsel.nl/lock-unlock/nhr> {\n  ?inschrijving kvk:kvkNummer ?KVKNummer.\n  ?inschrijving kvk:rechtsvorm ?rechtsvorm.\n  ?inschrijving kvk:bedrijsnaam|kvk:bedrijfsnaam ?bedrijfsnaam.\n  ?inschrijving kvk:rsinNummer ?rsinNummer.\n \n  ?inschrijving kvk:leiNummer ?leiNummer.\n  ?inschrijving kvk:stichtingsjaar ?stichtingsjaar.\n  \n  #?inschrijving kvk:UBO ?ubo.\n}\n}\n  limit 100\n}\n}\n  \n}\n",
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "Table",
+
+                                                        "titleMenubar": "KVK Handelsregister data (fictief)"
+
+                                                    },
+
+                                                    {
+
+                                                        "widget": "SplitLayout",
+
+                                                        "direction": "row",
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "widget": "BBEChart",
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "titleMenubar": "Rechtsvormen",
+
+                                                                "charttype": "Col",
+
+                                                                "defaultMenu": true,
+
+                                                                "legend": true,
+
+                                                                "stringToColor": true,
+
+                                                                "gradientColors": true,
+
+                                                                "enableZoom": true,
+
+                                                                "query": "\nPREFIX  geo:  <http://www.opengis.net/ont/geosparql#>\nPREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX kvk:\t<https://data.federatief.datastelsel.nl/lock-unlock/nhr/def/>\n\nSELECT DISTINCT  ?rechtsvorm ?aantal\n\n\nWHERE\n  { \n  service<{{nhr}}?persona=system> {\n  {select distinct ?rechtsvorm (count(distinct ?inschrijving) as ?aantal) where\n  {\n  graph  <https://data.federatief.datastelsel.nl/lock-unlock/nhr> {\n  #?inschrijving kvk:kvkNummer ?KVKNummer.\n  ?inschrijving kvk:rechtsvorm ?rechtsvorm.\n  #?inschrijving kvk:stichtingsjaar ?stichtingsjaar.\n   }\n  \n}\n  group by ?rechtsvorm\n}\n}\n  \n}\nLIMIT   110",
+
+                                                                "infoMenubar": "Deze query is afhankelijk van de gekozen persona"
+
+                                                            },
+
+                                                            {
+
+                                                                "infoMenubar": "Deze query is afhankelijk van de gekozen persona",
+
+                                                                "widget": "BBEChart",
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "titleMenubar": "Stichtingsjaar",
+
+                                                                "query": "\nPREFIX  geo:  <http://www.opengis.net/ont/geosparql#>\nPREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>\nPREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX kvk:\t<https://data.federatief.datastelsel.nl/lock-unlock/nhr/def/>\n\nSELECT DISTINCT  ?stichtingsjaar ?aantal\n\n\nWHERE\n  { \n  service<{{nhr}}?persona=system> {\n  {select distinct ?stichtingsjaar (count(distinct ?inschrijving) as ?aantal) where\n  {\n  graph  <https://data.federatief.datastelsel.nl/lock-unlock/nhr> {\n  #?inschrijving kvk:kvkNummer ?KVKNummer.\n  #?inschrijving kvk:rechtsvorm ?rechtsvorm.\n  ?inschrijving kvk:stichtingsjaar ?stichtingsjaar.\n   }\n  \n}\n  group by ?stichtingsjaar\n  order by asc(?stichtingsjaar)\n}\n}\n  \n}\nLIMIT   110",
+
+                                                                "charttype": "Col",
+
+                                                                "defaultMenu": false,
+
+                                                                "stringToColor": true,
+
+                                                                "gradientColors": true,
+
+                                                                "enableZoom": true
+
+                                                            }
+
+                                                        ],
+
+                                                        "areaSizes": [
+
+                                                            "1",
+
+                                                            "1"
+
+                                                        ]
+
+                                                    }
+
+                                                ],
+
+                                                "areaSizes": [
+
+                                                    "1",
+
+                                                    "275px"
+
+                                                ]
+
+                                            },
+
+                                            {
+
+                                                "widget": "SplitLayout",
+
+                                                "direction": "column",
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "query": "select distinct  ?dossierNummer ?fiscaalNummer ?rsin ?vestigingsPlaats\nwhere\n{\n    \n  service<{{anbi}}?persona=system> \n  {\n  {select distinct ?dossierNummer ?fiscaalNummer ?rsin ?vestigingsPlaats\n  where \n  {\n     graph <https://data.federatief.datastelsel.nl/lock-unlock/anbi>\n  \t\t{\n             ?instelling a <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/Instelling>.\n  \n  ?instelling   <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/dossierNummer> ?dossierNummer. \n?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/fiscaalNummer>  ?fiscaalNummer.\n?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/rsin> ?rsin.\n  {\n?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/vestigingsPlaats> <https://brk.basisregistraties.overheid.nl/brk2/id/kadastraleGemeente/1156>.\n  bind (\"Zeewolde\" as ?vestigingsPlaats)\n}\n  union\n  {\n  ?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/vestigingsPlaats> <https://brk.basisregistraties.overheid.nl/brk2/id/kadastraleGemeente/25>.\n   bind (\"Almere\" as ?vestigingsPlaats)\n  }\n  \n\t\t} #graph\n  }\n  limit 100\n}\n}\n}\n  limit 100",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "showLoadingOverlay": false,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "Table",
+
+                                                        "titleMenubar": "ANBI data (fictief)",
+
+                                                        "infoMenubar": "Deze info is publiek dus alle info wordt getoond onafhankelijk van de gekozen persona"
+
+                                                    },
+
+                                                    {
+
+                                                        "areaSizes": [
+
+                                                            "1",
+
+                                                            "1"
+
+                                                        ],
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "gradientColors": true,
+
+                                                                "defaultMenu": true,
+
+                                                                "optionOptions": "{\"series\" :[   {       \"type\": \"gauge\",  \"center\": [\"50%\", \"70%\"],       \"startAngle\": 200,       \"endAngle\": -20,       \"min\": 0,       \"max\": 8000,       \"splitNumber\": 8,       \"itemStyle\": {         \"color\": \"#FFAB91\"       },     \"progress\": {         \"show\": true,         \"width\": 10       },  \"pointer\": {         \"show\": false       }, \"axisLine\": {         \"lineStyle\": {           \"width\": 10         }       }, \"axisTick\": {         \"distance\": -45,         \"splitNumber\": 1000,         \"lineStyle\": {           \"width\": 1,           \"color\": \"#999\"         }       }, \"splitLine\": {         \"distance\": -52,         \"length\": 5,         \"lineStyle\": {           \"width\": 1,           \"color\": \"#999\"         }       },  \"axisLabel\": {         \"distance\": -20,         \"color\": \"#999\",         \"fontSize\": 10       } ,       \"anchor\": {         \"show\": false       }, \"title\": {         \"show\": false       },  \"detail\": {         \"valueAnimation\": true,         \"width\": \"80%\",         \"lineHeight\": 20,         \"borderRadius\": 8,         \"offsetCenter\": [0, \"-15%\"],         \"fontSize\": 10,         \"fontWeight\": \"bolder\",    \"formatter\": \"{value}  stuks\", \"color\": \"inherit\" }}] }",
+
+                                                                "widget": "BBEChart",
+
+                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "titleMenubar": "Aantal ANBI's",
+
+                                                                "charttype": "gauge",
+
+                                                                "query": "select distinct  (\"aantal\" as ?stichting) ?aantal\nwhere\n{\n    \n  service<{{anbi}}?persona=system> \n  {\n  { select distinct (count(distinct ?instelling) as ?aantal)  where { \n     graph <https://data.federatief.datastelsel.nl/lock-unlock/anbi>\n  \t\t{\n             ?instelling a <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/Instelling>.\n  \n           }\n     }\n} \n  \n\t  } #service\n}\n  limit 100",
+
+                                                                "infoMenubar": "Deze info is publiek dus alle info wordt getoond onafhankelijk van de gekozen persona"
+
+                                                            },
+
+                                                            {
+
+                                                                "infoMenubar": "Deze info is publiek dus alle info wordt getoond onafhankelijk van de gekozen persona",
+
+                                                                "query": "select distinct  ?vestigingsPlaats ?aantal\nwhere\n{\n    \n  service<{{anbi}}?persona=system> \n  {\n  { select distinct ?vestigingsPlaats (count(distinct ?instelling) as ?aantal)  where { \n     graph <https://data.federatief.datastelsel.nl/lock-unlock/anbi>\n  \t\t{\n             ?instelling a <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/Instelling>.\n  {\n?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/vestigingsPlaats> <https://brk.basisregistraties.overheid.nl/brk2/id/kadastraleGemeente/1156>.\n  bind (\"Zeewolde\" as ?vestigingsPlaats)\n}\n  union\n  {\n  ?instelling <https://data.federatief.datastelsel.nl/lock-unlock/anbi/def/vestigingsPlaats> <https://brk.basisregistraties.overheid.nl/brk2/id/kadastraleGemeente/25>.\n   bind (\"Almere\" as ?vestigingsPlaats)\n  }\n           }\n     }\n  group by ?vestigingsPlaats\n} \n  \n\t  } #service\n}\n  limit 100",
+
+                                                                "charttype": "SmallPie",
+
+                                                                "panelstyle": "paper2",
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                "widget": "BBEChart",
+
+                                                                "titleMenubar": "Vestigingsplaats"
+
+                                                            }
+
+                                                        ],
+
+                                                        "direction": "row",
+
+                                                        "widget": "SplitLayout"
+
+                                                    }
+
+                                                ],
+
+                                                "areaSizes": [
+
+                                                    "1",
+
+                                                    "275px"
+
+                                                ]
+
+                                            },
+
+                                            {
+
+                                                "query": "PREFIX xds: <http://www.w3.org/2001/XMLSchema#>\n  PREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd:<http://www.w3.org/2001/XMLSchema#>\n\n{{user}}\nSELECT distinct ?perceel ?geometry\n\n #from <https://data.labs.kadaster.nl/lock-unlock/brk>\nfrom <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen>\n\n   # from <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n  \n\nWHERE {\n\n  ?perceel a <http://modellen.geostandaarden.nl/def/imx-geo#Perceel> .\n  ?perceel <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n \n}  \n\n  limit 10\n\n#title:Laatste koopsom;",
+
+                                                "panelstyle": "paper2",
+
+                                                "widget": "Tab",
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "syncWithUserActionsDisabled": false,
+
+                                                "showLoadingOverlay": false,
+
+                                                "tabs": [
+
+                                                    "tab1"
+
+                                                ],
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "query": "PREFIX xds: <http://www.w3.org/2001/XMLSchema#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd:<http://www.w3.org/2001/XMLSchema#>\n\nSELECT distinct ?uri ?geometry (\"Perceel\" as ?color)\n\nWHERE {\n\nservice<{{brk}}?persona=system>\n{\n        {select ?uri ?geometry where {\n graph <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen> {\n \n  ?uri <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n    }\n}\n   limit 1500\n}  \n\n \n    }\n    }\n\n#title:1500 Percelen",
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "syncWithUserActionsDisabled": true,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "BBMap",
+
+                                                        "infoMenubar": "Deze info is publiek dus alle info wordt getoond onafhankelijk van de gekozen persona",
+
+                                                        "titleMenubar": "Openbare perceel informatie"
+
+                                                    }
+
+                                                ],
+
+                                                "appearance": "CAROUSEL_WITH_BUTTONS"
+
+                                            },
+
+                                            {
+
+                                                "widget": "SplitLayout",
+
+                                                "direction": "column",
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "infoMenubar": "Deze query is afhankelijk van de gekozen persona",
+
+                                                        "titleMenubar": "BRK fictief",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect  ?id ?domein ?teller ?noemer #?perceel\n    #\n     \nwhere\n{\n  \n   service<{{brk}}?persona=system>\n  {\n  {select  ?id ?domein ?teller ?noemer where \n  {\n  \n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?eigendom brk:rustOp ?perceel.\n       ?tn brk:van ?eigendom.\n       ?tn brk:aandeelTeller ?teller.\n      ?tn brk:aandeelNoemer ?noemer.\n       ?tn brk:tenNameVan ?persoon.\n  ?persoon <http://modellen.geostandaarden.nl/def/nen3610-2022#identificatie> ?id.\n  ?persoon <http://modellen.geostandaarden.nl/def/nen3610-2022#domein> ?domein.\n # ?tn ?b ?c\n  #?eigendom ?b ?c\n    #  ?persoon ?b ?c\n    #   ?persoon ^owl:sameAs|owl:sameAs ?persoon2\n}\n    \n  }\n  limit 100\n} \n}\n    }\n  order by ?perceel\n  \n      limit 100\n   ",
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "Table",
+
+                                                        "hasNumberedRows": true
+
+                                                    },
+
+                                                    {
+
+                                                        "areaSizes": [
+
+                                                            "1",
+
+                                                            "1"
+
+                                                        ],
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "titleMenubar": "Percelen en eigenaren",
+
+                                                                "charttype": "Col",
+
+                                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect  (\"aantal\" as ?x)  ?aantalPercelen ?aantalPersonenMetEigendom\n   \n     \nwhere\n{\n  \n   service<{{brk}}?persona=system>\n  {\n{\n  {select (count(DISTINCT ?perceel) as ?aantalPercelen) where {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n\t\t\t{\n  [] brk:rustOp ?perceel.\n       \t\t\t\t#?tn brk:van ?eigendom.\n       \t\t\t\t#?tn brk:aandeelTeller ?teller.\n       \t\t\t\t#?tn brk:tenNameVan ?persoon.\n            }\n    \n         }\n        }\n     }\nunion\n{select (count(DISTINCT ?persoon) as ?aantalPersonenMetEigendom) where {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n\t\t\t{\n       \t\t\t\t#?eigendom brk:rustOp ?perceel.\n       \t\t\t\t#?tn brk:van ?eigendom.\n       \t\t\t\t#?tn brk:aandeelTeller ?teller.\n  [] brk:tenNameVan ?persoon.\n            }\n    \n     }\n}\n  \n}\n}\n  \n      limit 100\n   ",
+
+                                                                "panelstyle": "paper2",
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "widget": "BBEChart",
+
+                                                                "infoMenubar": "Deze query is afhankelijk van de gekozen persona"
+
+                                                            },
+
+                                                            {
+
+                                                                "infoMenubar": "Deze query is afhankelijk van de gekozen persona",
+
+                                                                "widget": "BBEChart",
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect  *     \nwhere\n{\n  \n   service<{{brk}}?persona=system>\n  {\n{\nselect ?cls (count(distinct ?persoon) as ?aantal) where {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n     \n  [] brk:tenNameVan ?persoon.\n  #?persoon <http://modellen.geostandaarden.nl/def/nen3610-2022#identificatie> ?id.\n # ?persoon <http://modellen.geostandaarden.nl/def/nen3610-2022#domein> ?domein.\n ?persoon a ?cls2.\n  bind (strafter(STR(?cls2),\"def/\") as ?cls)\n  filter (?cls!=\"Persoon\")\n}\n    \n  }\ngroup by ?cls\n}\n    }\n}\n\n  \n      limit 100\n   ",
+
+                                                                "charttype": "SmallPie",
+
+                                                               "gradientColors": true,
+
+                                                                "titleMenubar": "Eigendom"
+
+                                                            }
+
+                                                        ],
+
+                                                        "direction": "row",
+
+                                                        "widget": "SplitLayout"
+
+                                                    }
+
+                                                ],
+
+                                                "areaSizes": [
+
+                                                    "1",
+
+                                                    "275px"
+
+                                                ]
+
+                                            },
+
+                                            {
+
+                                                "widget": "Tab",
+
+                                                "tabs": [
+
+                                                    "Tab 1",
+
+                                                    "Tab 2"
+
+                                                ],
+
+                                                "areas": [
+
+                                                    null,
+
+                                                    {
+
+                                                        "titleMenubar": "Combinatie van datasets (fictief)",
+
+                                                        "query": "PREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\n\nSELECT (?perceel as ?uri)  ?geometry (\"perceel\" as ?color) (concat( \"koopsom:\", STR(?koopsom) ,\"  van \",?voornaam,\" \",?achternaam) as ?label)\n#(concat(?voornaam,\" \",?achternaam,\" bsn:\",STR(?bsn),\" koopsom:\",STR(?koopsom),\" \",?teller,\" \",?noemer) as ?label)\n\nfROM  <https://data.labs.kadaster.nl/lock-unlock/koopsom>\n from <https://data.labs.kadaster.nl/lock-unlock/brk>\n    from <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n from <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen>\n  \t#from <https://data.federatief.datastelsel.nl/lock-unlock/anbi>\n#from <https://data.federatief.datastelsel.nl/lock-unlock/nhr>\n\nWHERE {\n  \n\n     \n  \n  ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/bsn> ?bsn.\n  ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/voornaam> ?voornaam.\n  ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?achternaam.\n ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gender>|<https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n    optional {\n       ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/heeftGeboorteplaats> ?plaats.\n    }\n  \n  optional\n  {\n   ?persoon <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gehuwd>/<https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?gehuwdMet.\n  }\n     \n  ?tn <https://data.labs.kadaster.nl/lock-unlock/brk/def/tenNameVan>/owl:sameAs ?persoon.\n     ?perceel a <http://modellen.geostandaarden.nl/def/imx-geo#Perceel> .\n  ?perceel <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n   ?eigendom <https://data.labs.kadaster.nl/lock-unlock/brk/def/rustOp> ?perceel.\n   ?tn <https://data.labs.kadaster.nl/lock-unlock/brk/def/van> ?eigendom.\n   ?tn <https://data.labs.kadaster.nl/lock-unlock/brk/def/teller> ?teller.\n    ?tn <https://data.labs.kadaster.nl/lock-unlock/brk/def/noemer> ?noemer.\n   \n ?perceel <http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?koopsom\n  \n  \n  \n} \nLIMIT 100\n",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "showLoadingOverlay": false,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "BBMap"
+
+                                                    }
+
+                                                ],
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "syncWithUserActionsDisabled": false,
+
+                                                "showLoadingOverlay": false,
+
+                                                "appearance": "CAROUSEL_WITH_BUTTONS"
+
+                                            }
+
+                                        ],
+
+                                        "tabs": [
+
+                                            "BRP",
+
+                                            "KVK",
+
+                                            "ANBI",
+
+                                            "Percelen",
+
+                                            "BRK"
+
+                                        ],
+
+                                        "widget": "Tab",
+
+                                        "icons": [
+
+                                            "person",
+
+                                            "briefcase",
+
+                                            "hands-helping",
+
+                                            "landmark",
+
+                                            "gavel"
+
+                                        ]
+
+                                    },
+
+                                    null
+
+                                ],
+
+                                "areaSizes": [
+
+                                    "1"
+
+                                ],
+
+                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                "syncWithUserActionsDisabled": true,
+
+                                "showLoadingOverlay": true
+
+                            },
+
+                            {
+
+                                "widget": "SplitLayout",
+
+                                "areas": [
+
+                                    {
+
+                                        "panelstyleExtra": "noScrollBars",
+
+                                        "areaSizes": [
+
+                                            "00px",
+
+                                            "115px",
+
+                                            "250px",
+
+                                            "1"
+
+                                        ],
+
+                                        "areas": [
+
+                                            null,
+
+                                            {
+
+                                                "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona.",
+
+                                                "showLoadingOverlay": false,
+
+                                                "renderEmpty": false,
+
+                                                "htmlgeenresultaat": "niets geselecteerd",
+
+                                                "html": "<H4> Koopsom : {{koopsom}} </H4> <H4> jaar: {{jaar}} </H4> ",
+
+                                                "title": "",
+
+                                                "widget": "Table2",
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "syncWithUserActionsDisabled": false,
+
+                                                "panelstyle": "paper2",
+
+                                                "charttype": "Pie",
+
+                                                "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix fn:<http://www.w3.org/2017/xpath-functions>\nprefix xsd: <http://www.w3.org/2001/XMLSchema#>\n\n\nselect  ?koopsom ?jaar \n \n\n\nwhere\n{\n    service<{{brk}}{{user}}>\n  {\n   graph <https://data.labs.kadaster.nl/lock-unlock/koopsom>\n{\n   <{{perceel}}><http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?koopsom.\n   <{{perceel}}> <http://modellen.geostandaarden.nl/def/imx-geo#year> ?jaar.\n}\n  \n  \n   \n}\n   \n}\n",
+
+                                                "gradientColors": true,
+
+                                                "titleMenubar": "BRK data",
+
+                                                "centerContent": true,
+
+                                                "panelstyleExtra": "noScrollBars",
+
+                                                "isFirstItemBold": true
+
+                                            },
+
+                                            {
+
+                                                "title": "eigenaren",
+
+                                                "showLoadingOverlay": true,
+
+                                                "panelstyle": "paper2",
+
+                                                "gradientColors": true,
+
+                                                "charttype": "SmallPie",
+
+                                                "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\nselect ?naam ?teller \n    \n     \nwhere\n{\n  {\n  select ?persoon ?persoon2\n  {\n   service<{{brk}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";      \n      </script>>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?tn brk:van/brk:rustOp <{{perceel}}>.\n       ?tn brk:tenNameVan ?persoon2.\n   \n}\n    \n  }\n    }\n    }\n      \n  {\n    service<{{brp}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n              #?persoonBRP rdfs:label ?naam.\n  \t#\t\t\t{\n      ?persoon2 rdfs:label ?naam.\n    #} \n           #union { ?persoon rdfs:label ?naam.}\n            }\n\n       }\n  }\n   union\n     {\n        service <{{nhr}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n          graph <https://data.federatief.datastelsel.nl/lock-unlock/nhr>\n          {\n            {  ?persoon2 rdfs:label ?naam.}\n       #union { ?persoon rdfs:label ?naam.}\n          }\n         }\n     }\n \n        \n}\n      ",
+
+                                                "titleMenubar": "Federatief BRK-BRP-NHR",
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "widget": "BBEChart",
+
+                                                "stringToColor": false,
+
+                                                "labelsInChart": false,
+
+                                                "popupLabelFixedFormat": "",
+
+                                                "legend": true,
+
+                                                "defaultMenu": false,
+
+                                                "height": "100%",
+
+                                                "width": "99%",
+
+                                                "panelstyleExtra": "noScrollBars",
+
+                                                "enableZoom": true,
+
+                                                "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona."
+
+                                            },
+
+                                            {
+
+                                                "widget": "SplitLayout",
+
+                                                "direction": "column",
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona.",
+
+                                                        "zeroResult": "Geen resultaten",
+
+                                                        "titleMenubar": "Federatief BRK-BRP",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "widget": "Table",
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "syncWithUserActionsDisabled": true,
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\n\n\nselect ?bsn ?voornaam ?achternaam ?gender\n    \n     \nwhere\n{\n  {\n  select  ?persoon2\n  {\n      service<{{brk}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n       ?eigendom brk:rustOp <{{perceel}}>.\n       ?tn brk:van ?eigendom.\n       ?tn brk:aandeelTeller ?teller.\n      ?tn brk:tenNameVan ?persoon2.\n    #   ?persoon ^owl:sameAs|owl:sameAs ?persoon2\n}\n    \n  }\n    }\n    } # eind select\n      \n\n    service<{{brp}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n           graph <https://data.federatief.datastelsel.nl/lock-unlock/brp>\n            {\n            \n    \t\t\t\t#  ?persoon2 rdfs:label ?naam.\n       ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/bsn> ?bsn.\n              ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/voornaam> ?voornaam.\n\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/achternaam> ?achternaam.\n             ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/geslacht> ?gender.\n\n#  optional\n#  {\n#   ?persoon2 <https://data.federatief.datastelsel.nl/lock-unlock/brp/def/gehuwd> ?gehuwdMet.\n#  }\n#bind (if(bound(?gehuwdMet),true,false) as ?gehuwd)\n   \n      \n      \n    \t\t\t\n            } #graph\n\n       } #service\n    \n}\n        #hoi"
+
+                                                    },
+
+                                                    {
+
+                                                        "zeroResult": "Geen resultaten",
+
+                                                        "titleMenubar": "Federatief BRK-NHR",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "query": "PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix brk:<https://data.labs.kadaster.nl/lock-unlock/brk/def/>\nPREFIX kvk:\t<https://data.federatief.datastelsel.nl/lock-unlock/nhr/def/>\n\nselect ?KVKNummer  ?bedrijfsnaam  ?rechtsvorm ?stichtingsjaar ?rsinNummer ?leiNummer\n    \n     \nwhere\n{\n  {\n  select ?persoon  #?persoon2\n  {\n   service<{{brk}}{{user}}>\n  {\n     graph <https://data.labs.kadaster.nl/lock-unlock/brk>\n{\n        ?tn brk:van/brk:rustOp <{{perceel}}>.\n     #  ?tn brk:aandeelTeller ?teller.\n       ?tn brk:tenNameVan ?persoon.\n      # ?persoon ^owl:sameAs|owl:sameAs ?persoon2\n}\n    \n  }\n    }\n    }\n      \n\n    \n        service <{{nhr}}<script>\n      if(\"{{user}}\"==\"?persona=almere\") return \"?persona=system\";\n        if(\"{{user}}\"==\"?persona=zeewolde\") return \"?persona=system\";\n      return \"{{user}}\";\n      \n      </script>>\n        {\n          graph <https://data.federatief.datastelsel.nl/lock-unlock/nhr>\n          {\n     \n    \n       ?persoon kvk:kvkNummer ?KVKNummer.\n  ?persoon kvk:rechtsvorm ?rechtsvorm.\n  #?persoon kvk:bedrijsnaam|kvk:bedrijfsnaam ?bedrijfsnaam.\n      ?persoon rdfs:label ?bedrijfsnaam.\n  ?persoon kvk:rsinNummer ?rsinNummer.\n \n  ?persoon kvk:leiNummer ?leiNummer.\n  ?persoon kvk:stichtingsjaar ?stichtingsjaar.\n   \n          }\n         }\n    \n \n        \n}\n        #hoi",
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "syncWithUserActionsDisabled": true,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "Table",
+
+                                                        "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona."
+
+                                                    }
+
+                                                ],
+
+                                                "areaSizes": [
+
+                                                    "auto",
+
+                                                    "auto"
+
+                                                ]
+
+                                            }
+
+                                        ],
+
+                                        "direction": "column",
+
+                                        "widget": "SplitLayout",
+
+                                        "showLoadingOverlay": true
+
+                                    },
+
+                                    {
+
+                                        "widget": "SplitLayout",
+
+                                        "direction": "column",
+
+                                        "areas": [
+
+                                            {
+
+                                                "infoMenubar": "Maak een keuze hoeveel percelen je wilt ophalen voor de kaart.",
+
+                                                "options": "500,500,1000,1000,10000,10k,25000,25k,100000,100k",
+
+                                                "horizontal": true,
+
+                                                "startMin": false,
+
+                                                "publishStartValue": false,
+
+                                                "label": "aantal limiet",
+
+                                                "tick": "",
+
+                                                "publishVariable": "limit",
+
+                                                "query": "",
+
+                                                "showLoadingOverlay": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "widget": "RadioBox",
+
+                                                "panelstyle": "paper2",
+
+                                                "titleMenubar": "Limieten"
+
+                                            },
+
+                                            {
+
+                                                "fitbounds": true,
+
+                                                "colorPrimaryAction": false,
+
+                                                "showLoadingOverlay": true,
+
+                                                "publishVariable": "perceel",
+
+                                                "query": "PREFIX xds: <http://www.w3.org/2001/XMLSchema#>\n  PREFIX geo: <http://www.opengis.net/ont/geosparql#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX xsd:<http://www.w3.org/2001/XMLSchema#>\n\nSELECT   (?perceel as ?uri) ?geometry (xds:float(?color2) as ?color)  (concat(\"laatste koopsom \",str(?color2)) as ?label)   where\n{\n  service<{{brk}}{{user}}>\n  {\n   {select * where {\n  \n     graph <https://data.labs.kadaster.nl/Unlock/unlock/rkkgpercelen>{\n\n ?perceel <http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>/geo:asWKT ?geometry.\n \n}\n\n    graph <https://data.labs.kadaster.nl/lock-unlock/koopsom>\n{\n    ?perceel<http://modellen.geostandaarden.nl/def/imx-geo#laatsteKoopsom>/rdf:value ?color2.\n# filter (?color2>100000)\n#filter (?color2<3000000)\n}\n}\n  limit {{limit}}\n}\n\n  }\n}\n\n\n \n\n\n#title:Laatste koopsom;",
+
+                                                "panelstyle": "paper2",
+
+                                                "syncWithUserActionsDisabled": false,
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "widget": "BBMap",
+
+                                                "titleMenubar": "BRK Data",
+
+                                                "infoMenubar": "Deze getoonde resultaten zijn afhankelijk van de gekozen persona."
+
+                                            }
+
+                                        ],
+
+                                        "areaSizes": [
+
+                                            "80px",
+
+                                            "1"
+
+                                        ],
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "showLoadingOverlay": true
+
+                                    },
+
+                                    null
+
+                                ],
+
+                                "areaSizes": [
+
+                                    "1",
+
+                                    "2"
+
+                                ],
+
+                                "direction": "row",
+
+                                "showLoadingOverlay": true
+
+                            },
+
+                            {
+
+                                "areaSizes": [
+
+                                    "60px",
+
+                                    "auto"
+
+                                ],
+
+                                "areas": [
+
+                                    {
+
+                                        "widget": "SplitLayout",
+
+                                        "direction": "row",
+
+                                        "areas": [
+
+                                            {
+
+                                                "publishVariableLabel": "",
+
+                                                "publishVariable": "surl",
+
+                                                "options": "https://brp-lock-unlock.apps.digilab.network/brp/sparql,brp,https://brk.dst.test.cloud.kadaster.nl/brk/sparql,brk,https://nhr-lock-unlock.apps.digilab.network/nhr/sparql,nhr,https://anbi-lock-unlock.apps.digilab.network/anbi/sparql,ambi",
+
+                                                "horizontal": true,
+
+                                                "label": "Endpoint",
+
+                                                "showLoadingOverlay": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "widget": "RadioBox",
+
+                                                "panelstyle": "paper2"
+
+                                            },
+
+                                            {
+
+                                                "hasButtonShadow": false,
+
+                                                "endIcons": [
+
+                                                    "link"
+
+                                                ],
+
+                                                "widget": "BBLinkButtons",
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "showLoadingOverlay": true,
+
+                                                "query": "",
+
+                                                "html": "<a> {{surl}}</a>",
+
+                                                "htmlgeenresultaat": "<a> Geen endpoint geselecteerd ></a>",
+
+                                                "links": [
+
+                                                    "{{surl}}"
+
+                                                ],
+
+                                                "labels": [
+
+                                                    "{{surl}}"
+
+                                                ],
+
+                                                "beginIcons": [
+
+                                                    ""
+
+                                                ]
+
+                                            }
+
+                                        ],
+
+                                        "areaSizes": [
+
+                                            "1",
+
+                                            "1"
+
+                                        ],
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "showLoadingOverlay": true
+
+                                    },
+
+                                    {
+
+                                        "widget": "Tab",
+
+                                        "tabs": [
+
+                                            "User",
+
+                                            "Log"
+
+                                        ],
+
+                                        "areas": [
+
+                                            {
+
+                                                "areaSizes": [
+
+                                                    "1"
+
+                                                ],
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "areaSizes": [
+
+                                                            "30%",
+
+                                                            "70%"
+
+                                                        ],
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "resetValues": "groep,rule,role",
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "titleMenubar": "Users",
+
+                                                                "widget": "List",
+
+                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                "syncWithUserActionsDisabled": true,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "query": "select distinct  ?label ?uri\nwhere\n{\n  #\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/users>\n  {\n    ?uri a <https://data.federatief.datastelsel.nl/lock-unlock/authentication/model/def/User>.\n    ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label\n  }\n}\n\n\n}",
+
+                                                                "publishVariable": "user2"
+
+                                                            },
+
+                                                            {
+
+                                                                "showLoadingOverlay": true,
+
+                                                                "panelstyleExtra": "noScrollBars",
+
+                                                                "widget": "SplitLayout",
+
+                                                                "direction": "row",
+
+                                                                "areas": [
+
+                                                                    {
+
+                                                                        "showLoadingOverlay": true,
+
+                                                                        "areaSizes": [
+
+                                                                            "1",
+
+                                                                            "1",
+
+                                                                            "1"
+
+                                                                        ],
+
+                                                                        "areas": [
+
+                                                                            {
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect distinct ?username ?psw\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/users>\n  {\n  <{{user2}}> rdfs:label ?username.\n  bind (\"******\" as ?psw)\n  }\n}\n}",
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "widget": "Table2",
+
+                                                                                "titleMenubar": "Info"
+
+                                                                            },
+
+                                                                            {
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "titleMenubar": "Roles",
+
+                                                                                "widget": "Table",
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect distinct (?uri as ?rolURI)  ?rol\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/auth>\n  {\n  <{{user2}}> <https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/has_role> ?uri.\n#  bind (STR(?uri) as ?rol)\n  ?uri rdfs:label ?rol\n  }\n}\n}",
+
+                                                                                "publishVariable": "role",
+
+                                                                                "panelstyle": "paper2",
+
+                                                                                "panelstyleExtra": "",
+
+                                                                                "resetValues": "rule,groep"
+
+                                                                            },
+
+                                                                            {
+
+                                                                                "titleMenubar": "groep",
+
+                                                                                "showLoadingOverlay": true,
+
+                                                                                "hasButtonShadow": true,
+
+                                                                                "customStyling": false,
+
+                                                                                "popupTitle": "Role info",
+
+                                                                                "widget": "Table",
+
+                                                                                "direction": "column",
+
+                                                                                "areas": [
+
+                                                                                    {
+
+                                                                                        "showLoadingOverlay": true,
+
+                                                                                        "syncWithUserActionsDisabled": true,
+
+                                                                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                                        "areaSizes": [
+
+                                                                                            "200px",
+
+                                                                                            "1"
+
+                                                                                        ],
+
+                                                                                        "areas": [
+
+                                                                                            {
+
+                                                                                                "showLoadingOverlay": true,
+
+                                                                                                "widget": "Table",
+
+                                                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                                                "syncWithUserActionsDisabled": true,
+
+                                                                                                "panelstyle": "paper2",
+
+                                                                                                "query": "select distinct ?prop ?value\nwhere\n{\n  <{{role}}> ?prop ?value \n}"
+
+                                                                                            }
+
+                                                                                        ],
+
+                                                                                        "direction": "column",
+
+                                                                                        "widget": "SplitLayout"
+
+                                                                                    }
+
+                                                                                ],
+
+                                                                                "areaSizes": [
+
+                                                                                    "200px",
+
+                                                                                    "1"
+
+                                                                                ],
+
+                                                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                                                "syncWithUserActionsDisabled": true,
+
+                                                                                "popupMinWidth": "600px",
+
+                                                                                "popupMaxWidth": "100vw",
+
+                                                                                "popupMinHeight": "0",
+
+                                                                                "popupMaxHeight": "100vh",
+
+                                                                                "popupCloseOnBackdropClick": true,
+
+                                                                                "popupCloseOnEscapeKey": true,
+
+                                                                                "autoOpenOnParameter": "role2",
+
+                                                                                "disable": "",
+
+                                                                                "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect distinct (?uri as ?groepURI)  ?groep\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/auth>\n  {\n  <{{role}}> <https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/belongs_to_group> ?uri.\n\n  ?uri rdfs:label ?groep\n  }\n}\n}",
+
+                                                                                "publishVariable": "groep",
+
+                                                                                "panelstyle": "paper2"
+
+                                                                            }
+
+                                                                        ],
+
+                                                                        "direction": "column",
+
+                                                                        "widget": "SplitLayout",
+
+                                                                        "panelstyleExtra": "NoScrollBars"
+
+                                                                    },
+
+                                                                    {
+
+                                                                        "widget": "SplitLayout",
+
+                                                                        "direction": "column",
+
+                                                                        "areas": [
+
+                                                                            {
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "titleMenubar": "rules",
+
+                                                                                "html": "<image src=\"{{image}}\" />",
+
+                                                                                "query": "\n\n\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect distinct (?uri as ?ruleURI)  ?rule ?ruleType ?graphsInDataset\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/auth>\n  {\n  \n  <{{groep}}> <https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/has_rule> ?uri.\n\n  ?uri rdfs:label ?rule.\n   ?uri a  ?ruleType2.\n  bind (replace(STR(?ruleType2),\"https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/\",\"\") as ?ruleType)\n  \n  \n  optional\n  {\n    ?uri <https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/dataset>/^<https://data.federatief.datastelsel.nl/lock-unlock/authorisation/model/def/part_of_dataset> ?graphsInDataset\n}\n  }\n}\n}",
+
+                                                                                "widget": "Table2",
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "panelstyle": "paper2",
+
+                                                                                "panelstyleExtra": "noScrollBars",
+
+                                                                                "publishVariable": "rule"
+
+                                                                            },
+
+                                                                            {
+
+                                                                                "query": "\n\n\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect distinct (?label as ?property) ?value ?literal ?pred\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\ngraph <https://data.federatief.datastelsel.nl/lock-unlock/auth>\n  {\n  <{{rule}}> ?pred ?value.\n  ?pred rdfs:label ?label.\n  bind(isLITERAL(?value) as ?literal)\n  }\n}\n}",
+
+                                                                                "titleMenubar": "Rule details",
+
+                                                                                "panelstyle": "paper2",
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "widget": "BBPropertyPanel",
+
+                                                                                "childParameterText": "{{rule}}"
+
+                                                                            }
+
+                                                                        ],
+
+                                                                        "areaSizes": [
+
+                                                                            "auto",
+
+                                                                            "auto"
+
+                                                                        ]
+
+                                                                    }
+
+                                                                ],
+
+                                                                "areaSizes": [
+
+                                                                    "50%",
+
+                                                                    "50%"
+
+                                                                ]
+
+                                                            }
+
+                                                        ],
+
+                                                        "direction": "row",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "widget": "SplitLayout",
+
+                                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                                        "syncWithUserActionsDisabled": true,
+
+                                                        "query": ""
+
+                                                    }
+
+                                                ],
+
+                                                "direction": "column",
+
+                                                "widget": "SplitLayout"
+
+                                            },
+
+                                            {
+
+                                                "widget": "SplitLayout",
+
+                                                "direction": "row",
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "titleMenubar": "Users with logs",
+
+                                                        "publishVariable": "luser",
+
+                                                        "query": "\nselect distinct ?label ?uri\n\nwhere\n{\nservice<{{surl}}{{user}}>{\n  \t\n\ngraph <http://labs.kadaster.nl/logging>\n{\n\t?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> ?uri.\n\tbind (STRAFTER(STR(?uri),\"#\") as ?label)\n}\n}\n}",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "showLoadingOverlay": false,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "List"
+
+                                                    },
+
+                                                    {
+
+                                                        "widget": "Tab",
+
+                                                        "tabs": [
+
+                                                            "charts",
+
+                                                            "sparql"
+
+                                                        ],
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "charttype": "Col",
+
+                                                                "query": "select distinct ?key (count(distinct ?log) as ?aantal)\n\nwhere\n{\n  service<{{surl}}{{user}}>{\n  graph <http://labs.kadaster.nl/logging> {\n?log<https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> <{{luser}}>.\n?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/startDate> ?date.\n # bind (concat(Str(YEAR(?date)),\" \"+str(Month(?date))) as ?key)\nbind (STRBEFORE(STR(?date),\"-\") as ?year)\nbind (STRBEFORE(STRAFTER(STR(?date),\"-\"),\"-\") as ?month)\nbind (concat(STR(?year),\"-\",?month) as ?key)\n\n}\n}}\ngroup by ?key\norder by ?key",
+
+                                                                "panelstyle": "paper2",
+
+                                                                "showLoadingOverlay": false,
+
+                                                                "syncWithUserActionsDisabled": false,
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "widget": "BBEChart",
+
+                                                                "titleMenubar": "Amount of queries per user"
+
+                                                            },
+
+                                                            {
+
+                                                                "widget": "SplitLayout",
+
+                                                                "direction": "row",
+
+                                                                "areas": [
+
+                                                                    {
+
+                                                                        "widget": "List",
+
+                                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                        "syncWithUserActionsDisabled": false,
+
+                                                                        "showLoadingOverlay": false,
+
+                                                                        "panelstyle": "paper2",
+
+                                                                        "query": "\nselect distinct (STR(?date) as ?label) (?log as ?uri)\n\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\n  graph <http://labs.kadaster.nl/logging>\n  {\n  \n?log<https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> <{{luser}}>.\n?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/startDate> ?date.\n # bind (concat(Str(YEAR(?date)),\" \"+str(Month(?date))) as ?key)\n\n}\n}\n}\norder by desc(?date)\nlimit 100\n",
+
+                                                                        "publishVariable": "log",
+
+                                                                        "titleMenubar": "Sparql select queries"
+
+                                                                    },
+
+                                                                    {
+
+                                                                        "widget": "SplitLayout",
+
+                                                                        "direction": "column",
+
+                                                                        "areas": [
+
+                                                                            {
+
+                                                                                "titleMenubar": "original query",
+
+                                                                                "query": "\nselect distinct ?sparql\n\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\n  graph <http://labs.kadaster.nl/logging>\n  {\n<{{log}}><https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/sparqlquery> ?sparql\n}}\n\n}\n\n",
+
+                                                                                "panelstyle": "paper2",
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "widget": "BBYasgui"
+
+                                                                            },
+
+                                                                            {
+
+                                                                                "query": "\nselect distinct ?sparql\n\nwhere\n{\n service<{{surl}}{{user}}>\n  {\ngraph <http://labs.kadaster.nl/logging> {\n<{{log}}><https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/executedQuery> ?sparql\n}}\n\n}\n\n",
+
+                                                                                "showLoadingOverlay": false,
+
+                                                                                "syncWithUserActionsDisabled": false,
+
+                                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                                "widget": "BBYasgui",
+
+                                                                                "titleMenubar": "executed sparql query"
+
+                                                                            }
+
+                                                                        ],
+
+                                                                        "areaSizes": [
+
+                                                                            "50%",
+
+                                                                            "50%"
+
+                                                                        ],
+
+                                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                        "syncWithUserActionsDisabled": false,
+
+                                                                        "showLoadingOverlay": false
+
+                                                                    }
+
+                                                                ],
+
+                                                                "areaSizes": [
+
+                                                                    "300px",
+
+                                                                    "1"
+
+                                                                ]
+
+                                                            }
+
+                                                        ],
+
+                                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                                        "syncWithUserActionsDisabled": true,
+
+                                                        "showLoadingOverlay": true,
+
+                                                        "appearance": "CAROUSEL_WITH_BUTTONS"
+
+                                                    }
+
+                                                ],
+
+                                                "areaSizes": [
+
+                                                    "200px",
+
+                                                    "1"
+
+                                                ],
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "showLoadingOverlay": true
+
+                                            }
+
+                                        ],
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "showLoadingOverlay": true,
+
+                                        "icons": [
+
+                                            "user",
+
+                                            "table"
+
+                                        ]
+
+                                    }
+
+                                ],
+
+                                "direction": "column",
+
+                                "widget": "SplitLayout"
+
+                            },
+
+                            {
+
+                                "showLoadingOverlay": true,
+
+                                "syncWithUserActionsDisabled": true,
+
+                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                "areaSizes": [
+
+                                    "100px",
+
+                                    "1"
+
+                                ],
+
+                                "areas": [
+
+                                    {
+
+                                        "widget": "SplitLayout",
+
+                                        "direction": "row",
+
+                                        "areas": [
+
+                                            {
+
+                                                "widget": "RadioBox",
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "showLoadingOverlay": true,
+
+                                                "label": "Endpoint",
+
+                                                "horizontal": true,
+
+                                                "options": "https://brp-lock-unlock.apps.digilab.network/brp/sparql,brp,https://brk.dst.test.cloud.kadaster.nl/brk/sparql,brk,https://nhr-lock-unlock.apps.digilab.network/nhr/sparql,nhr,https://anbi-lock-unlock.apps.digilab.network/anbi/sparql,ambi",
+
+                                                "publishVariable": "surl",
+
+                                                "publishVariableLabel": "",
+
+                                                "panelstyle": "paper2"
+
+                                            },
+
+                                            {
+
+                                                "beginIcons": [
+
+                                                    "link"
+
+                                                ],
+
+                                                "labels": [
+
+                                                    "{{surl}}"
+
+                                                ],
+
+                                                "links": [
+
+                                                    "{{surl}}"
+
+                                                ],
+
+                                                "htmlgeenresultaat": "<a> Geen endpoint geselecteerd ></a>",
+
+                                                "html": "<a> {{surl}}</a>",
+
+                                                "query": "",
+
+                                                "showLoadingOverlay": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "widget": "BBLinkButtons"
+
+                                            }
+
+                                        ],
+
+                                       "areaSizes": [
+
+                                            "1",
+
+                                            "1"
+
+                                        ],
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "showLoadingOverlay": true
+
+                                    },
+
+                                    {
+
+                                        "widget": "SplitLayout",
+
+                                        "direction": "row",
+
+                                        "areas": [
+
+                                            {
+
+                                                "titleMenubar": "Users with logs",
+
+                                                "publishVariable": "luser",
+
+                                                "query": "\nselect distinct ?label ?uri\n\nwhere\n{\nservice<{{surl}}{{user}}>{\n  \t\n\ngraph <http://labs.kadaster.nl/logging>\n{\n\t?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> ?uri.\n\tbind (STRAFTER(STR(?uri),\"#\") as ?label)\n}\n}\n}",
+
+                                                "panelstyle": "paper2",
+
+                                                "showLoadingOverlay": false,
+
+                                                "syncWithUserActionsDisabled": false,
+
+                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                "widget": "List"
+
+                                            },
+
+                                            {
+
+                                                "widget": "Tab",
+
+                                                "tabs": [
+
+                                                    "charts",
+
+                                                    "sparql"
+
+                                                ],
+
+                                                "areas": [
+
+                                                    {
+
+                                                        "charttype": "Col",
+
+                                                        "query": "select distinct ?key (count(distinct ?log) as ?aantal)\n\nwhere\n{\n  service<{{surl}}{{user}}>{\n  graph <http://labs.kadaster.nl/logging> {\n?log<https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> <{{luser}}>.\n?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/startDate> ?date.\n # bind (concat(Str(YEAR(?date)),\" \"+str(Month(?date))) as ?key)\nbind (STRBEFORE(STR(?date),\"-\") as ?year)\nbind (STRBEFORE(STRAFTER(STR(?date),\"-\"),\"-\") as ?month)\nbind (concat(STR(?year),\"-\",?month) as ?key)\n\n}\n}}\ngroup by ?key\norder by ?key",
+
+                                                        "panelstyle": "paper2",
+
+                                                        "showLoadingOverlay": false,
+
+                                                        "syncWithUserActionsDisabled": false,
+
+                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                        "widget": "BBEChart",
+
+                                                        "titleMenubar": "Amount of queries per user"
+
+                                                    },
+
+                                                    {
+
+                                                        "widget": "SplitLayout",
+
+                                                        "direction": "row",
+
+                                                        "areas": [
+
+                                                            {
+
+                                                                "widget": "List",
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "syncWithUserActionsDisabled": false,
+
+                                                                "showLoadingOverlay": false,
+
+                                                                "panelstyle": "paper2",
+
+                                                                "query": "\nselect distinct (STR(?date) as ?label) (?log as ?uri)\n\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\n  graph <http://labs.kadaster.nl/logging>\n  {\n  \n?log<https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/by_user> <{{luser}}>.\n?log <https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/startDate> ?date.\n # bind (concat(Str(YEAR(?date)),\" \"+str(Month(?date))) as ?key)\n\n}\n}\n}\norder by desc(?date)\nlimit 100\n",
+
+                                                                "publishVariable": "log",
+
+                                                                "titleMenubar": "Sparql select queries"
+
+                                                            },
+
+                                                            {
+
+                                                                "widget": "SplitLayout",
+
+                                                                "direction": "column",
+
+                                                                "areas": [
+
+                                                                    {
+
+                                                                        "titleMenubar": "original query",
+
+                                                                        "query": "\nselect distinct ?sparql\n\nwhere\n{\n  service<{{surl}}{{user}}>\n  {\n  graph <http://labs.kadaster.nl/logging>\n  {\n<{{log}}><https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/sparqlquery> ?sparql\n}}\n\n}\n\n",
+
+                                                                        "panelstyle": "paper2",
+
+                                                                        "showLoadingOverlay": false,
+
+                                                                        "syncWithUserActionsDisabled": false,
+
+                                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                        "widget": "BBYasgui"
+
+                                                                    },
+
+                                                                    {
+
+                                                                        "query": "\nselect distinct ?sparql\n\nwhere\n{\n service<{{surl}}{{user}}>\n  {\ngraph <http://labs.kadaster.nl/logging> {\n<{{log}}><https://data.federatief.datastelsel.nl/lock-unlock/logging/model/def/executedQuery> ?sparql\n}}\n\n}\n\n",
+
+                                                                        "showLoadingOverlay": false,
+
+                                                                        "syncWithUserActionsDisabled": false,
+
+                                                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                        "widget": "BBYasgui",
+
+                                                                        "titleMenubar": "executed sparql query"
+
+                                                                    }
+
+                                                                ],
+
+                                                                "areaSizes": [
+
+                                                                    "50%",
+
+                                                                    "50%"
+
+                                                                ],
+
+                                                                "voteForUserActionsDisabledWhenLoading": false,
+
+                                                                "syncWithUserActionsDisabled": false,
+
+                                                                "showLoadingOverlay": false
+
+                                                            }
+
+                                                        ],
+
+                                                        "areaSizes": [
+
+                                                            "300px",
+
+                                                            "1"
+
+                                                        ]
+
+                                                    }
+
+                                                ],
+
+                                                "voteForUserActionsDisabledWhenLoading": true,
+
+                                                "syncWithUserActionsDisabled": true,
+
+                                                "showLoadingOverlay": true,
+
+                                                "appearance": "CAROUSEL_WITH_BUTTONS"
+
+                                            }
+
+                                        ],
+
+                                        "areaSizes": [
+
+                                            "400px",
+
+                                            "1"
+
+                                        ],
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "showLoadingOverlay": true
+
+                                    }
+
+                                ],
+
+                                "direction": "column",
+
+                                "widget": "SplitLayout"
+
+                            },
+
+                            {
+
+                                "areaSizes": [
+
+                                    "400px",
+
+                                   "1"
+
+                                ],
+
+                                "areas": [
+
+                                    {
+
+                                        "publishVariable": "sparql",
+
+                                        "panelstyle": "paper2",
+
+                                        "showLoadingOverlay": true,
+
+                                        "syncWithUserActionsDisabled": true,
+
+                                        "voteForUserActionsDisabledWhenLoading": true,
+
+                                        "widget": "List",
+
+                                        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nselect distinct ?label ?uri\nfrom <http://labs.kadaster.nl/lock-unlock/examplequeries>\nwhere\n{\n  service<{{brk}}?persona=system>\n  {\n graph <http://labs.kadaster.nl/lock-unlock/examplequeries>\n  {\n?uri a <http://labs.kadaster.nl/lock-unlock/examplequeries#SparqlQuery>.\n  ?uri rdfs:label ?label\n}\n}\n\n\n}",
+
+                                        "titleMenubar": "Sparql queries"
+
+                                    },
+
+                                    {
+
+                                        "panelstyle": "paper2",
+
+                                        "widget": "BBYasgui",
+
+                                        "voteForUserActionsDisabledWhenLoading": false,
+
+                                        "syncWithUserActionsDisabled": false,
+
+                                        "showLoadingOverlay": false,
+
+                                        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nselect distinct ?sparql\nfrom <http://labs.kadaster.nl/lock-unlock/examplequeries>\nwhere\n{\n  service<{{brk}}?persona=system>\n  {\n\n graph <http://labs.kadaster.nl/lock-unlock/examplequeries>\n  {\n  \n  <{{sparql}}> <http://labs.kadaster.nl/lock-unlock/examplequeries#query> ?sparql\n  }\n  \n}\n\n\n}"
+
+                                    }
+
+                                ],
+
+                                "direction": "row",
+
+                                "widget": "SplitLayout"
+
+                            },
+
+                            null
+
+                        ],
+
+                        "areaSizes": [
+
+                            "0",
+
+                            "1"
+
+                       ],
+
+                        "direction": "column",
+
+                        "icons": [
+
+                            "database",
+
+                            "sitemap",
+
+                            "user",
+
+                            "gavel",
+
+                            "info"
+
+                        ],
+
+                        "panelstyle": "paper2",
+
+                        "showLoadingOverlay": false
+
+                    }
+
+                ],
+
+                "direction": "column",
+
+                "widget": "SplitLayout"
+
+            }
+
+        ],
+
+        "areaSizes": [
+
+            "0px",
+
+            "auto"
+
+        ],
+
+        "showLoadingOverlay": true
+
+    },
+
+    "repoURL": "https://api.labs.kadaster.nl/datasets/dst/kkg/sparql",
+
+    "logoURL": "https://avatars.githubusercontent.com/u/11940613?s=200&v=4",
+
+    "sparqlErrorMessage": "\"errors connecting to the server\"",
+
+    "css": "{\"height\":\"100%\"}",
+
+    "pageWidth": "99%",
+
+    "parameterValues": "{\"surl\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\",\"limit\":\"500\",\"tnv\":\"http://www.buildingbits.nl/reset\",\"locked\":\"locked\",\"brp\":\"https://brp-lock-unlock.apps.digilab.network/brp/sparql\",\"nhr\":\"https://nhr-lock-unlock.apps.digilab.network/nhr/sparql\",\"anbi\":\"https://anbi-lock-unlock.apps.digilab.network/anbi/sparql\",\"brk\":\"https://brk.dst.test.cloud.kadaster.nl/brk/sparql\"}",
+
+    "public": true,
+
+    "path": "gGiOb",
+
+    "layoutName": "CUSTOM",
+
+    "notShowBottom": true,
+
+    "prejs": "document.withCredentials=false;//http://localhost:7200/repositories/locked //https://anbi-lock-unlock.apps.digilab.network/anbi/sparql?persona=system https://brk.dst.test.cloud.kadaster.nl/brk/sparql?persona=system // https://sparql.gwsw.nl/repositories/Almere",
+
+    "logoutbutton": false,
+
+    "notShowTop": false,
+
+    "subtitle": "v1.04",
+
+    "infoMessage": "Deze experimentele applicatie is onderdeel van het project Lock-Unlock. Dit project wordt uitgevoerd in opdracht van het Federatief Datastelsel (FDS). Deze applicatie laat zien dat SPARQL queries on-the-fly herschreven kunnen worden zodat er geen toegang verleend wordt tot beveiligde data. Voor deze demonstrator wordt (op de percelen na) fictieve data gebruikt.    Het project is afgelopen waardoor de servers automatisch slapen maar wel opgewekt worden bij gebruik van deze app. Helaas kan dit tot 10 minuten duren. Mocht de app in eerste instantie niet werken (loading icoontjes verdwijnen niet) probeer het dan svp 5-10 minuten later nog eens. ",
+
+    "popupInfoAtStart": true,
+
+    "bbsparqlendpoint": "",
+
+    "triggers": [],
+
+    "id": "650c0ad8348dea0024a3fd7b",
+
+    "new": false,
+
+    "layout": {
+
+        "showFooter": false
+
+    }
+
+}
