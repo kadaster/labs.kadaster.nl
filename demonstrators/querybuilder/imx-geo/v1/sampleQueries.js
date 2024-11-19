@@ -9,33 +9,77 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#hasDefaultGeometry70",
-			  "o": "?Map72_2",
+			  "p": "https://modellen.kkg.kadaster.nl/def/imxgeo-ext#gebouwType__128__",
+			  "o": "?Text128_2",
 			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Map72",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text128",
 			  "values": [
 				{
-				  "label": "AreaSelected",
-				  "coordinates": [
-					[
-					  {
-						"lat": 52.09689371475378,
-						"lng": 4.255785996485796
-					  },
-					  {
-						"lat": 52.11355271328238,
-						"lng": 4.255785996485796
-					  },
-					  {
-						"lat": 52.11355271328238,
-						"lng": 4.281878528436947
-					  },
-					  {
-						"lat": 52.09689371475378,
-						"lng": 4.281878528436947
-					  }
-					]
-				  ]
+				  "label": "kerk",
+				  "rdfTerm": {
+					"type": "literal",
+					"value": "kerk"
+				  }
+				}
+			  ]
+			},
+			"children": []
+		  },
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#bevindtZichOpPerceel__90__",
+			  "o": "?Perceel_4",
+			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
+			  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+			  "values": []
+			},
+			"children": [
+			  {
+				"line": {
+				  "s": "?Perceel_4",
+				  "p": "http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__464__",
+				  "o": "?Gemeentegebied_6",
+				  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+				  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied",
+				  "values": []
+				},
+				"children": [
+				  {
+					"line": {
+					  "s": "?Gemeentegebied_6",
+					  "p": "http://modellen.geostandaarden.nl/def/imx-geo#naam__75__",
+					  "o": "?Text75_8",
+					  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied",
+					  "oType": "http://www.labs.kadaster.nl/sparnatural/Text75",
+					  "values": [
+						{
+						  "label": "Apeldoorn",
+						  "rdfTerm": {
+							"type": "literal",
+							"value": "Apeldoorn"
+						  }
+						}
+					  ]
+					},
+					"children": []
+				  }
+				]
+			  }
+			]
+		  },
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#bouwjaar",
+			  "o": "?Text5_10",
+			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text5",
+			  "values": [
+				{
+				  "label": "Until 1950",
+				  "start": null,
+				  "stop": "1950-12-31T22:59:59.000Z"
 				}
 			  ]
 			},
@@ -54,15 +98,17 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#bouwjaar111",
-			  "o": "?Text111_2",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#gebruiksdoel__122__",
+			  "o": "?Text122_2",
 			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text111",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text122",
 			  "values": [
 				{
-				  "label": "from 1985 to 1995",
-				  "start": "1984-12-31T23:00:01.000Z",
-				  "stop": "1995-12-31T22:59:59.000Z"
+				  "label": "winkelfunctie",
+				  "rdfTerm": {
+					"type": "literal",
+					"value": "winkelfunctie"
+				  }
 				}
 			  ]
 			},
@@ -71,86 +117,62 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#gebruiksdoel",
-			  "o": "?Text113_4",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#bevindtZichOpPerceel__90__",
+			  "o": "?Perceel_4",
 			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text113",
-			  "values": [
-				{
-				  "label": "celfunctie",
-				  "rdfTerm": {
-					"type": "literal",
-					"value": "celfunctie",
-					"xml:lang": "nl"
-				  }
-				}
-			  ]
+			  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+			  "values": []
 			},
-			"children": []
+			"children": [
+			  {
+				"line": {
+				  "s": "?Perceel_4",
+				  "p": "http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__471__",
+				  "o": "?Gemeentegebied_6",
+				  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+				  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied",
+				  "values": []
+				},
+				"children": []
+			  }
+			]
 		  }
 		]
 	  },
 	  "example.3":{
 		"distinct": true,
 		"variables": [
-		  "Gebouw_1"
+		  "Buurt_1"
 		],
 		"order": null,
 		"branches": [
 		  {
 			"line": {
-			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#gebruiksdoel",
-			  "o": "?Text113_4",
-			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text113",
-			  "values": [
-				{
-				  "label": "kantoorfunctie",
-				  "rdfTerm": {
-					"type": "literal",
-					"value": "kantoorfunctie",
-					"xml:lang": "nl"
-				  }
-				}
-			  ]
+			  "s": "?Buurt_1",
+			  "p": "https://modellen.kkg.kadaster.nl/def/imxgeo-ext#regio__450__",
+			  "o": "?Observation_2",
+			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Buurt",
+			  "oType": "http://purl.org/linked-data/cube#Observation",
+			  "values": []
 			},
-			"children": []
-		  },
-		  {
-			"line": {
-			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#hasDefaultGeometry70",
-			  "o": "?Map72_6",
-			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Map72",
-			  "values": [
-				{
-				  "label": "AreaSelected",
-				  "coordinates": [
-					[
-					  {
-						"lat": 52.17824263924946,
-						"lng": 5.955951350271325
-					  },
-					  {
-						"lat": 52.182518782666996,
-						"lng": 5.955951350271325
-					  },
-					  {
-						"lat": 52.182518782666996,
-						"lng": 5.963611739997115
-					  },
-					  {
-						"lat": 52.17824263924946,
-						"lng": 5.963611739997115
-					  }
-					]
+			"children": [
+			  {
+				"line": {
+				  "s": "?Observation_2",
+				  "p": "https://modellen.kkg.kadaster.nl/cbs/wijken-buurten/def/kerncijfers#grote_supermarkt_gemiddeld_aantal_binnen_5_km",
+				  "o": "?Text285_4",
+				  "sType": "http://purl.org/linked-data/cube#Observation",
+				  "oType": "http://www.labs.kadaster.nl/sparnatural/Text285",
+				  "values": [
+					{
+					  "label": "greater than 3",
+					  "min": 3
+					}
 				  ]
-				}
-			  ]
-			},
-			"children": []
+				},
+				"children": []
+			  }
+			]
 		  }
 		]
 	  },
@@ -164,55 +186,74 @@ var sampleQueries = {
 		  {
 			"line": {
 			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#heeftAlsAdres7",
-			  "o": "?Adres_2",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#gebruiksdoel__122__",
+			  "o": "?Text122_2",
 			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Adres",
-			  "values": []
-			},
-			"children": [
-			  {
-				"line": {
-				  "s": "?Adres_2",
-				  "p": "http://modellen.geostandaarden.nl/def/imx-geo#plaatsnaam",
-				  "o": "?Text102_4",
-				  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Adres",
-				  "oType": "http://www.labs.kadaster.nl/sparnatural/Text102",
-				  "values": [
-					{
-					  "label": "Schiphol",
-					  "rdfTerm": {
-						"type": "literal",
-						"value": "Schiphol",
-						"xml:lang": "nl"
-					  }
-					}
-				  ]
-				},
-				"children": []
-			  }
-			]
-		  },
-		  {
-			"line": {
-			  "s": "?Gebouw_1",
-			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#gebruiksdoel",
-			  "o": "?Text113_6",
-			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
-			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text113",
+			  "oType": "http://www.labs.kadaster.nl/sparnatural/Text122",
 			  "values": [
 				{
 				  "label": "kantoorfunctie",
 				  "rdfTerm": {
 					"type": "literal",
-					"value": "kantoorfunctie",
-					"xml:lang": "nl"
+					"value": "kantoorfunctie"
 				  }
 				}
 			  ]
 			},
 			"children": [],
 			"notExists": true
+		  },
+		  {
+			"line": {
+			  "s": "?Gebouw_1",
+			  "p": "http://modellen.geostandaarden.nl/def/imx-geo#bevindtZichOpPerceel__90__",
+			  "o": "?Perceel_4",
+			  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Gebouw",
+			  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+			  "values": []
+			},
+			"children": [
+			  {
+				"line": {
+				  "s": "?Perceel_4",
+				  "p": "http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__472__",
+				  "o": "?Buurt_6",
+				  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Perceel",
+				  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Buurt",
+				  "values": []
+				},
+				"children": [
+				  {
+					"line": {
+					  "s": "?Buurt_6",
+					  "p": "http://www.opengis.net/ont/geosparql#sfWithin__460__",
+					  "o": "?Wijk_8",
+					  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Buurt",
+					  "oType": "http://modellen.geostandaarden.nl/def/imx-geo#Wijk",
+					  "values": []
+					},
+					"children": [
+					  {
+						"line": {
+						  "s": "?Wijk_8",
+						  "p": "http://modellen.geostandaarden.nl/def/imx-geo#naam__71__",
+						  "o": "?Text71_10",
+						  "sType": "http://modellen.geostandaarden.nl/def/imx-geo#Wijk",
+						  "oType": "http://www.labs.kadaster.nl/sparnatural/Text71",
+						  "values": [
+							{
+							  "label": "Schiphol",
+							  "regex": "Schiphol"
+							}
+						  ]
+						},
+						"children": []
+					  }
+					]
+				  }
+				]
+			  }
+			]
 		  }
 		]
 	  }

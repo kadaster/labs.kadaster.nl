@@ -136,17 +136,18 @@
         <!-- This is where Sparnatural is inserted -->
         <div class="row">
 
-          <spar-natural 
+          <spar-natural id="sparnatural"
             src="config.ttl"
-            endpoint2="https://api.labs.kadaster.nl/datasets/kkg-light/KKG-Light-results-v2/services/KKG-Light-results-v2/sparql"
-            endpoint3="https://api.labs.kadaster.nl/datasets/wau/IM-X-data-version-zeewolde/services/IM-X-data-version-zeewolde/sparql"
-           endpoint4="https://api.labs.kadaster.nl/datasets/staging/imxgeo/sparql"
-           endpoint5="https://api.labs.kadaster.nl/datasets/staging/imxgeo/services/imxgeo/sparql"
-		   endpoint="https://api.labs.kadaster.nl/datasets/staging/imxgeofull/sparql"
+            endpointLokaal="http://localhost:7200/repositories/qbproxy"
+            endpoint2="http://localhost:7200/repositories/qbproxy"
+            endpointvirtuoso="https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql"
+            endpointSpeedy="https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql"
+            endpoint="https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql"
             lang="nl"
             distinct="true"
-            limit="100000"
-            debug="false"
+            limit="1000"
+            debug="true",          
+            
           ></spar-natural>
 
           <input type="hidden" id="query-json"></input>
@@ -345,9 +346,9 @@ window.Yasqe=YASGUI.YASQE;
             'import.modal.title': 'Query as JSON',
             'import.modal.import': 'Import',
             'example.placeholder': 'Load example query...',
-            'example.1.title': 'Selectie gebouwen in Scheveningen',
-            'example.2.title': 'Selectie gebouwen met cellfunctie vanaf 1985-1990',
-            'example.3.title': 'Kantoorgebouw map selectie Apeldoorn',
+            'example.1.title': 'Kerkgebouwen met bouwjaar voor 1950 in Apeldoorn',
+            'example.2.title': 'Winkels in Den Bosch',
+            'example.3.title': 'Gemeentegebieden met grote supermarkten in de buurt',
             'example.4.title': 'Schiphol gebouwen zonder kantoorfunctie'
           },
           'nl': {
@@ -368,32 +369,55 @@ window.Yasqe=YASGUI.YASQE;
             'import.modal.title': 'JSON laden',
             'import.modal.import': 'Importeren',
             'example.placeholder': 'voorbeelden',
-            'example.1.title': 'Selectie gebouwen in Scheveningen',
-            'example.2.title': 'Selectie gebouwen met cellfunctie vanaf 1985-1990',
-            'example.3.title': 'Kantoorgebouw map selectie Apeldoorn',
+            'example.1.title': 'Kerken voor 1950 in Apeldoorn',
+            'example.2.title': 'Winkels in Den Bosch',
+            'example.3.title': 'Gemeentegebieden in Noord-Brabant met meer dan 5 attracties in de omgeving',
             'example.4.title': 'Schiphol gebouwen zonder kantoorfunctie'
           }
       } );  
       $('body').i18n();
 
+      function getEndpoint()
+      {
+        return document.querySelector("spar-natural").attributes.endpointvirtuoso.value;
+      }
       const sparnatural = document.querySelector("spar-natural");
+      var spel =document.getElementById("sparnatural");
+      document.endpoint = getEndpoint();
+      
+   
 
       if(lang == "en") { 
         sparnatural.setAttribute("lang", "en");
       }
 
       // prints the endpoint
-      $('#endpoint').attr("href", sparnatural.getAttribute("endpoint"));
-      $('#endpoint').html(sparnatural.getAttribute("endpoint"));
+     // $('#endpoint').attr("href", sparnatural.getAttribute("endpointvirtuoso"));
+     // $('#endpoint').html(sparnatural.getAttribute("endpointvirtuoso"));
 
       sparnatural.addEventListener("queryUpdated", (event) => {
-      // console.log(event.detail.queryString);
+       //console.log(event.detail.queryString);
+       queryString=null;
+       try {
         queryString = sparnatural.expandSparql(event.detail.queryString);
+       }
+       catch(e){}
+       if (queryString==null)queryString=event.detail.queryString;
+
           var qs =queryString;
+          
         if (true)
         {
            try{
-                  var par = queryString.split("SELECT DISTINCT ")[1].split("WHERE {")[0].split(" ")[0];
+                var pattern = /__\d+__/g; 
+                queryString=queryString.replaceAll(pattern,"")
+                pattern = /__WKT\d+__>/g; 
+
+                queryString=queryString.replaceAll(pattern,">/<http://www.opengis.net/ont/geosparql#asWKT>")
+                queryString=queryString.replace("_WKT>",">/<http://www.opengis.net/ont/geosparql#asWKT>" )
+
+
+                var par = queryString.split("SELECT DISTINCT ")[1].split("WHERE {")[0].split(" ")[0];
                 
                   var s=queryString.split(" WHERE {");
                   queryString=s[0]+" ?geometry ?geometryLabel ?geometryTooltip \r\n WHERE \r\n { \r\n ";
@@ -418,7 +442,7 @@ window.Yasqe=YASGUI.YASQE;
               //queryString= queryString.replace("<http://modellen.geostandaarden.nl/def/imx-geo#geometrie>","<http://modellen.geostandaarden.nl/def/imx-geo#bovenaanzichtgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#maaiveldgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#geometrie>");
               //    queryString+=rr[0]+"\r\n optional {"+par+" (<http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>|<http://modellen.geostandaarden.nl/def/imx-geo#bovenaanzichtgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#maaiveldgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#geometrie>)/<http://www.opengis.net/ont/geosparql#asWKT> ?geometry"+extra+"} \r\n}\r\n LIMIT "+rr[1];
 
-              queryString+=rr[0]+"\r\n optional {"+par+" (<http://www.opengis.net/ont/geosparql#hasGeometry>|<http://modellen.geostandaarden.nl/def/imx-geo#hasDefaultGeometry>|<http://modellen.geostandaarden.nl/def/imx-geo#maaiveldgeometrie>)/<http://www.opengis.net/ont/geosparql#asWKT> ?geometry"+extra+"} \r\n}\r\n LIMIT "+rr[1];
+              queryString+=rr[0]+"\r\n optional {"+par+" (<http://www.opengis.net/ont/geosparql#hasGeometry>|<https://modellen.kkg.kadaster.nl/def/imxgeo-ext#bovenaanzichtgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#geometrie>|<https://modellen.kkg.kadaster.nl/def/imxgeo-ext#maaiveldgeometrie>|<http://modellen.geostandaarden.nl/def/imx-geo#begrenzing>)/<http://www.opengis.net/ont/geosparql#asWKT> ?geometry"+extra+"} \r\n}\r\n LIMIT "+rr[1];
 
 
            }
@@ -450,7 +474,8 @@ window.Yasqe=YASGUI.YASQE;
         sparnatural.disablePlayBtn() ; 
         // trigger the query from YasQE
       //  console.log("querying ",yasqe);
-        yasqe.query({  reqMethod: "POST",endpoint:$('#endpoint').text() });
+      var endpoint = getEndpoint();
+        yasqe.query({  reqMethod: "POST",endpoint: endpoint  });
        
       });
 
@@ -469,11 +494,12 @@ window.Yasqe=YASGUI.YASQE;
         });
       }      
       if (window.Yasqe==null) window.Yasqe=Yasgui.Yasqe;
-      Yasgui.defaults.endpoint=$('#endpoint').text();
-      Yasgui.defaults.endpointsCatalogue=[{  reqMethod: "POST",endpoint:$('#endpoint').text()}];
+      var endpoint=  getEndpoint()
+      Yasgui.defaults.endpoint= endpoint ;
+      Yasgui.defaults.endpointsCatalogue=[{  reqMethod: "POST",endpoint: endpoint }];
       const yasqe = new Yasqe(document.getElementById("yasqe"), {
         requestConfig: { 
-          endpoint: $('#endpoint').text(),
+          endpoint:  endpoint ,
           method: "POST",
           reqMethod: "POST",
           header: {}
