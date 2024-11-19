@@ -142,11 +142,11 @@
             endpoint2="http://localhost:7200/repositories/qbproxy"
             endpointvirtuoso="https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql"
             endpointSpeedy="https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql"
-            endpoint="https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql"
+            endpoint="https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql"
             lang="nl"
             distinct="true"
             limit="1000"
-            debug="true",          
+            debug="false",          
             
           ></spar-natural>
 
@@ -329,7 +329,7 @@ window.Yasqe=YASGUI.YASQE;
       $.i18n( { locale: lang } );  
       $.i18n().load( {
           'en': {
-            'page.title': 'Querybuilder IMX-GEO',
+            'page.title': 'Querybuilder KKG',
             'menu.home': 'Sparnatural',
             'menu.lang': 'Lang.',
             'menu.github': 'Github',
@@ -352,7 +352,7 @@ window.Yasqe=YASGUI.YASQE;
             'example.4.title': 'Schiphol gebouwen zonder kantoorfunctie'
           },
           'nl': {
-            'page.title': 'Kadaster IMX-GEO querybuilder',
+            'page.title': 'Kadaster Knowledgegraph querybuilder',
             'menu.home': 'Sparnatural',
             'menu.lang': 'Lang.',
             'menu.github': 'Github',
@@ -371,7 +371,7 @@ window.Yasqe=YASGUI.YASQE;
             'example.placeholder': 'voorbeelden',
             'example.1.title': 'Kerken voor 1950 in Apeldoorn',
             'example.2.title': 'Winkels in Den Bosch',
-            'example.3.title': 'Gemeentegebieden in Noord-Brabant met meer dan 5 attracties in de omgeving',
+            'example.3.title': 'Gemeentegebieden in Noord-Brabant met veel grote supermarkten in de omgeving',
             'example.4.title': 'Schiphol gebouwen zonder kantoorfunctie'
           }
       } );  

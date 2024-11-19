@@ -2,6 +2,11 @@
 {
 z-index: 1000!important;
 }
+.awesomplete
+{
+  background: whitesmoke;
+
+}
 
 
 .nice-select ul.list li.selected, .nice-select ul.list li.focus, .nice-select ul.list li:hover {
