@@ -30,13 +30,64 @@ Beide benaderingen worden [hier](pipeline.md) uitgebreider uitgelegd.
 
 De onderstaande tabel geeft een overzicht van alle bronnen die zijn gebruikt bij het genereren van de KKG en bevat informatie over de bron van de gegevens.
 
-| Registratie | Bron | Type bestand | URL |
-| ----- | ---- | ---- | ---- |
-| Basisregistratie Adressen en Gebouwen (BAG) | Databricks DataHUB catalog | Unity catalog table | 
-| Basisregistratie Grootschalige Topografie (BGT) | PDOK | GML | [PDOK API](https://api.pdok.nl/lv/bgt/download/v1_0/full/predefined/bgt-citygml-nl-nopbp.zip) |
-| Bestuurlijkge gebieden (BG) | Databricks DataHUB catalog | Unity catalog table |
-| Basisregistratie Topografie (BRT) | Databricks DataHUB catalog | Unity catalog table |
-| Basisregistratie Kadaster - Publieksrechtelijke Beperkingen (BRK-PB) | PDOK | GPKG | [PDOK Service](https://service.pdok.nl/kadaster/wkpb/atom/v1_0/downloads/wkpb.zip) |
-| Digitale Kadastrale Kaart (DKK) | PDOK | GML | [PDOK API](https://api.pdok.nl/kadaster/kadastralekaart/download/v5_0/delta/predefined/kadastralekaart-gml-nl.zip) |
-| CBS Wijk- en buurtcijfers (CBS) | PDOK | GPKG | [PDOK Service](https://service.pdok.nl/cbs/wijkenbuurten/2023/atom/downloads/wijkenbuurten_2023_v1.gpkg) |
-| Nationaal Wegen Bestand (NWB) | PDOK | GPKG | [PDOK Service](https://service.pdok.nl/rws/nwbwegen/atom/downloads/nwb_wegen.gpkg) |
+<table border="1">
+  <thead>
+    <tr>
+      <th>Registratie</th>
+      <th>Bron</th>
+      <th>Type bestand</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basisregistratie Adressen en Gebouwen (BAG)</td>
+      <td>Databricks DataHUB catalog</td>
+      <td>Unity catalog table</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Basisregistratie Grootschalige Topografie (BGT)</td>
+      <td>PDOK</td>
+      <td>GML</td>
+      <td><a href="https://api.pdok.nl/lv/bgt/download/v1_0/full/predefined/bgt-citygml-nl-nopbp.zip">PDOK API</a></td>
+    </tr>
+    <tr>
+      <td>Bestuurlijkge gebieden (BG)</td>
+      <td>Databricks DataHUB catalog</td>
+      <td>Unity catalog table</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Basisregistratie Topografie (BRT)</td>
+      <td>Databricks DataHUB catalog</td>
+      <td>Unity catalog table</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Basisregistratie Kadaster - Publiekrechtelijke Beperkingen (BRK-PB)</td>
+      <td>PDOK</td>
+      <td>GPKG</td>
+      <td><a href="https://service.pdok.nl/kadaster/wkpb/atom/v1_0/downloads/wkpb.zip">PDOK Service</a></td>
+    </tr>
+    <tr>
+      <td>Digitale Kadastrale Kaart (DKK)</td>
+      <td>PDOK</td>
+      <td>GML</td>
+      <td><a href="https://api.pdok.nl/kadaster/kadastralekaart/download/v5_0/delta/predefined/kadastralekaart-gml-nl.zip">PDOK API</a></td>
+    </tr>
+    <tr>
+      <td>CBS Wijk- en buurtcijfers (CBS)</td>
+      <td>PDOK</td>
+      <td>GPKG</td>
+      <td><a href="https://service.pdok.nl/cbs/wijkenbuurten/2023/atom/downloads/wijkenbuurten_2023_v1.gpkg">PDOK Service</a></td>
+    </tr>
+    <tr>
+      <td>Nationaal Wegen Bestand (NWB)</td>
+      <td>PDOK</td>
+      <td>GPKG</td>
+      <td><a href="https://service.pdok.nl/rws/nwbwegen/atom/downloads/nwb_wegen.gpkg">PDOK Service</a></td>
+    </tr>
+  </tbody>
+</table>
+
