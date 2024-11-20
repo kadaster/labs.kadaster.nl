@@ -24,7 +24,7 @@ Om tot deze solution architecture te komen zijn een aantal kernprincipes van bel
 
 De volgende afbeelding geeft een overzicht van de totale solution architectuur voor de KKG. 
 
-![solution-architecture-kkg.png](./assets/images/solution-architecture-kkg.png)
+![solution-architecture-kkg.png](../assets/images/solution-architecture-kkg.png)
 
 De oplossingsarchitectuur die wordt toegepast op de Kadaster Knowledge Graph is gelaagd. In de eerste laag worden brongegevens beschikbaar gesteld in een Databricks-instantie via DataHub, een centrale gegevensprovider voor gegevens die door Kadaster worden onderhouden, of via PDOK. Een meer gedetailleerde beschrijving van dit proces vindt u [hier](./etl-architectuur/brondata.md)
 
