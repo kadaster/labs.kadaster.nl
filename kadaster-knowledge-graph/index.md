@@ -1,7 +1,6 @@
 ---
-layout: home
+layout: page
 title: Kadaster Knowledge Graph Documentatie
-nav_order: 1
 ---
 
 # Kadaster Knowledge Graph Technische Documentatie
