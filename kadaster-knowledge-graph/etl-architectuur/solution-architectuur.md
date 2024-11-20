@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Solution Architectuur KKG
-nav_order: 2
 ---
 
 # Solution Architecture
