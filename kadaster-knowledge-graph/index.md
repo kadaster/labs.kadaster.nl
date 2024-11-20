@@ -26,7 +26,7 @@ De volgende afbeelding geeft een overzicht van de totale solution architectuur v
 
 ![solution-architecture-kkg.png](../assets/images/solution-architecture-kkg.png)
 
-De oplossingsarchitectuur die wordt toegepast op de Kadaster Knowledge Graph is gelaagd. In de eerste laag worden brongegevens beschikbaar gesteld in een Databricks-instantie via DataHub, een centrale gegevensprovider voor gegevens die door Kadaster worden onderhouden, of via PDOK. Een meer gedetailleerde beschrijving van dit proces vindt u [hier](./etl-architectuur/brondata.md)
+De oplossingsarchitectuur die wordt toegepast op de Kadaster Knowledge Graph is gelaagd. In de eerste laag worden brongegevens beschikbaar gesteld in een Databricks-instantie via DataHub, een centrale gegevensprovider voor gegevens die door Kadaster worden onderhouden, of via PDOK. Een meer gedetailleerde beschrijving van dit proces vindt u [hier](./etl-architectuur/brondata.md).
 
 Zodra alle vereiste bronnen beschikbaar zijn in een Databricks-catalogus, worden View-tabellen gedefinieerd. Deze tabellen bevatten de logica die nodig is om de relationele gegevens van afzonderlijke sleutelregisters te projecteren en/of te aggregeren in één tabel ter voorbereiding op de transformatie van deze geaggregeerde gegevens naar gekoppelde gegevens. De projectie-/aggregatielogica wordt gedefinieerd op basis van de logica die is gedefinieerd door het IMX-Geo-mappingmodel. Zodra deze zijn gedefinieerd, wordt een transformatie- en laadproces uitgevoerd om deze informatie als triples in TriplyDB te laden. Meer informatie vindt u [hier](./etl-architectuur/generatie-proces.md).
 
