@@ -69,11 +69,11 @@ a:hover {
 
 .banner {
   position: relative;
-  max-height: 575px;
+  max-height: 250px;
   width: 100%;
 }
 .banner-image {
-  max-height: 575px;
+  max-height: 250px;
   width: 100%;
   object-fit: cover;
 }
