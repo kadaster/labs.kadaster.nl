@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Brondata
-nav_order: 2
 ---
 
 # Brondata
