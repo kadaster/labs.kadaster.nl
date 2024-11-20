@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Generatie Pipeline
-nav_order: 2
 ---
 
 # KKG Generatie Proces
