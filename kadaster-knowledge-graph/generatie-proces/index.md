@@ -101,9 +101,9 @@ Tasks:
 
 ## Visualisatie flows
 
-### Flow 1: Lezen bronnen en verplaatsen naar Databricks unity catalog tables.
-
 De onderstaande diagrammen visualiseren de hierboven beschreven flows.
+
+### Flow 1: Lezen bronnen en verplaatsen naar Databricks unity catalog tables.
 
 <div>
   <img height='600' src="/assets/images/virtualisatie_ld_etl.jpg" alt="etl">
