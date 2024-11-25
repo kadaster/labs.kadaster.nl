@@ -31,7 +31,7 @@
 
 gis:sfWithin a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:ListProperty;
-  rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied>, <http://modellen.geostandaarden.nl/def/imx-geo#Provincie> .
+  rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied> .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#Weg> a owl:Class;
   rdfs:subClassOf sparnatural-config-core:SparnaturalClass .
@@ -159,7 +159,7 @@ sparnatural-config-datasources:forceSort a owl:DatatypeProperty;
   rdfs:domain sparnatural-config-datasources:SparqlDatasource .
 
 sparnatural-config-datasources:queryString a owl:DatatypeProperty;
-  rdfs:domain _:node334 .
+  rdfs:domain _:node355 .
 
 sparnatural-config-datasources:sparqlEndpointUrl a owl:DatatypeProperty;
   rdfs:domain sparnatural-config-datasources:SparqlDatasource .
@@ -413,8 +413,7 @@ sparnatural-config-datasources:tree_root_skostopconcept_with_count a owl:NamedIn
 
 <http://modellen.geostandaarden.nl/def/imx-geo#naam__71__> a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
-  rdfs:subClassOf rdf:literal;
-  rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Weg> .
+  rdfs:subClassOf rdf:literal .
 
 <http://modellen.geostandaarden.nl/def/nen3610#identificatie__43__> a owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:SearchProperty;
@@ -705,9 +704,6 @@ gis:sfWithin__453__ a owl:ObjectProperty;
 <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource453> a owl:NamedIndividual,
     sparnatural-config-datasources:SparqlSearchDatasource .
 
-gis:sfWithin__455__ a owl:ObjectProperty;
-  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty .
-
 <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource455> a owl:NamedIndividual,
     sparnatural-config-datasources:SparqlSearchDatasource .
 
@@ -717,22 +713,30 @@ gis:sfWithin__457__ a owl:ObjectProperty;
 <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource457> a owl:NamedIndividual,
     sparnatural-config-datasources:SparqlSearchDatasource .
 
-gis:sfWithin__459__ a owl:ObjectProperty;
-  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty .
-
 <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource459> a owl:NamedIndividual,
     sparnatural-config-datasources:SparqlSearchDatasource .
-
-<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__> a owl:ObjectProperty;
-  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty .
-
-rdfs:label_datasource467 a owl:NamedIndividual, sparnatural-config-datasources:SparqlSearchDatasource .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__468__> a
     owl:ObjectProperty;
   rdfs:subPropertyOf sparnatural-config-core:NonSelectableProperty .
 
-_:node334 a owl:Class .
+<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__466__> a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:NonSelectableProperty .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__455__> a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin> a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:ListProperty .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__459__> a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:AutocompleteProperty .
+
+<http://INVERSEmodellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__>
+  a owl:ObjectProperty;
+  rdfs:subPropertyOf sparnatural-config-core:NonSelectableProperty .
+
+_:node355 a owl:Class .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#huisnummer> rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
   rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Adres> .
@@ -1721,8 +1725,7 @@ gis:hasMetricArea rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
 <http://www.labs.kadaster.nl/sparnatural/Text440> rdfs:subClassOf rdfs:Literal;
   rdfs:label "Afstand tot treinstation [km]", "Afstand tot treinstation [km]"@nl, "Afstand tot treinstation [km]"@en .
 
-<http://www.labs.kadaster.nl/sparnatural/Text442> rdfs:subClassOf rdfs:Literal;
-  rdfs:label "Aantal scholen VMBO binnen 10km" .
+<http://www.labs.kadaster.nl/sparnatural/Text442> rdfs:subClassOf rdfs:Literal .
 
 <http://www.labs.kadaster.nl/sparnatural/Text444> rdfs:subClassOf rdfs:Literal .
 
@@ -1761,6 +1764,10 @@ gis:hasMetricArea rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
 <http://www.labs.kadaster.nl/sparnatural/Text220> rdfs:subClassOf rdfs:Literal .
 
 <http://www.labs.kadaster.nl/sparnatural/Text226> rdfs:subClassOf rdfs:Literal .
+
+<http://modellen.geostandaarden.nl/def/imx-geo#naam__71__> rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Weg>;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text71>;
+  rdfs:label "naam" .
 
 <http://modellen.geostandaarden.nl/def/nen3610#identificatie__43__> rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Water>;
   rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text43>;
@@ -1923,8 +1930,7 @@ gis:hasMetricArea rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
 
 <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#maaiveldgeometrie__WKT93__> rdfs:domain
     <http://modellen.geostandaarden.nl/def/imx-geo#Gebouw>;
-  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map95>;
-  rdfs:label "maaiveldgeometrie"@nl .
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Map95> .
 
 <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#bovenaanzichtgeometrie__WKT95__>
   rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Gebouw>;
@@ -1983,25 +1989,32 @@ gis:hasMetricArea rdfs:subPropertyOf sparnatural-config-core:NumberProperty;
 gis:sfWithin__453__ rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Wijk>;
   rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied> .
 
-gis:sfWithin__455__ rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied>;
-  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Wijk> .
-
 gis:sfWithin__457__ rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Buurt>;
   rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Wijk> .
-
-gis:sfWithin__459__ rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Wijk>;
-  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Buurt> .
-
-<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__> rdfs:domain
-    <http://modellen.geostandaarden.nl/def/imx-geo#Perceel>;
-  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Beperking> .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__468__> rdfs:domain
     <http://modellen.geostandaarden.nl/def/imx-geo#Perceel>;
   rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied> .
 
-gis:sfWithin rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text461>, <http://www.labs.kadaster.nl/sparnatural/Text464>;
-  rdfs:label "ligt in Provincie"@nl, "ligt in Provincie", "bevat "@nl, "bevat " .
+<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__466__> rdfs:domain
+    <http://modellen.geostandaarden.nl/def/imx-geo#Beperking>;
+  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Perceel> .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__455__> rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Gemeentegebied>;
+  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Wijk> .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin> rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Provincie>;
+  rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text461> .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__459__> rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Wijk>;
+  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Buurt> .
+
+<http://INVERSEmodellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__>
+  rdfs:domain <http://modellen.geostandaarden.nl/def/imx-geo#Perceel>;
+  rdfs:range <http://modellen.geostandaarden.nl/def/imx-geo#Beperking> .
+
+gis:sfWithin rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text464>;
+  rdfs:label "ligt in Provincie"@nl, "ligt in Provincie" .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#huisnummer> rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text19> .
 
@@ -2523,13 +2536,10 @@ sparnatural-config-datasources:sparqlEndpointUrl rdfs:range xsd:anyURI;
 <http://modellen.geostandaarden.nl/def/imx-geo#naam__67__> rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text67>;
   rdfs:label "naam" .
 
-<http://modellen.geostandaarden.nl/def/imx-geo#naam__71__> rdfs:range <http://www.labs.kadaster.nl/sparnatural/Text71>;
-  rdfs:label "naam" .
+_:node356 rdf:first sparnatural-config-datasources:SPARQLQuery;
+  rdf:rest _:node357 .
 
-_:node335 rdf:first sparnatural-config-datasources:SPARQLQuery;
-  rdf:rest _:node336 .
-
-_:node336 rdf:first sparnatural-config-datasources:SparqlDatasource;
+_:node357 rdf:first sparnatural-config-datasources:SparqlDatasource;
   rdf:rest rdf:nil .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#Weg> rdfs:label "Weg" .
@@ -3132,8 +3142,8 @@ sparnatural-config-datasources:SparqlTreeRootDatasource rdfs:label "SPARQL tree 
 <http://www.labs.kadaster.nl/sparnatural/Text432> rdfs:label "Huishoudens totaal [aantal]",
     "Huishoudens totaal [aantal]"@nl, "Huishoudens totaal [aantal]"@en .
 
-<http://www.labs.kadaster.nl/sparnatural/Text442> rdfs:label "Aantal scholen VMBO binnen 10km"@nl,
-    "Aantal scholen VMBO binnen 10km"@en .
+<http://www.labs.kadaster.nl/sparnatural/Text442> rdfs:label "Aantal scholen VMBO binnen 10km",
+    "Aantal scholen VMBO binnen 10km"@nl, "Aantal scholen VMBO binnen 10km"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text444> rdfs:label "Ongehuwd [%]", "Ongehuwd [%]"@nl,
     "Ongehuwd [%]"@en .
@@ -3178,6 +3188,9 @@ sparnatural-config-datasources:SparqlTreeRootDatasource rdfs:label "SPARQL tree 
     "Aantal scholen voortgezet onderwijs binnen 10km"@nl, "Aantal scholen voortgezet onderwijs binnen 10km"@en .
 
 <http://www.labs.kadaster.nl/sparnatural/Text78> rdfs:label "naam", "naam"@nl, "naam"@en .
+
+<https://modellen.kkg.kadaster.nl/def/imxgeo-ext#maaiveldgeometrie__WKT93__> rdfs:label
+    "maaiveldgeometrie"@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Map95> rdfs:label "Kaartselectie maaiveldgeometrie"@nl,
     "Map selection maaiveldgeometrie"@en;
@@ -3254,17 +3267,22 @@ sparnatural-config-datasources:SparqlTreeRootDatasource rdfs:label "SPARQL tree 
 
 gis:sfWithin__453__ rdfs:label "ligt in"@nl .
 
-gis:sfWithin__455__ rdfs:label "bevat"@nl .
-
 gis:sfWithin__457__ rdfs:label "ligt in"@nl .
-
-gis:sfWithin__459__ rdfs:label "bevat"@nl .
-
-<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__> rdfs:label
-    "heeft beperking"@nl .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__468__> rdfs:label
     "ligt in", "ligt in"@nl .
+
+<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__466__> rdfs:label
+    "op perceel", "op perceel"@nl .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__455__> rdfs:label "bevat"@nl .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin> rdfs:label "bevat "@nl, "bevat " .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__459__> rdfs:label "bevat"@nl .
+
+<http://INVERSEmodellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__>
+  rdfs:label "heeft beperking"@nl, "heeft beperking" .
 
 sparnatural-config-datasources:SparqlListDatasource rdfs:comment """A datasource to populate a list widget, implemented as a SPARQL query.
 
@@ -3487,9 +3505,7 @@ rdfs:label_datasource447 rdfs:comment "Searches for entities by looking up the p
 
 <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource459> rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en .
 
-rdfs:label_datasource467 rdfs:comment "Searches for entities by looking up the provided $key inside their rdfs:label using the CONTAINS SPARQL function."@en .
-
-_:node334 owl:unionOf _:node335 .
+_:node355 owl:unionOf _:node356 .
 
 <https://data.labs.kadaster.nl/kadaster/imx/sparnatural/config/generated> owl:imports
     <http://data.sparna.fr/ontologies/sparnatural-config-core>, <http://data.sparna.fr/ontologies/sparnatural-config-datasources> .
@@ -4710,13 +4726,11 @@ huisnummer."""@nl .
   sparnatural-config-core:tooltip ""@en, ""@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text340> sparnatural-config-core:faIcon "far fa-star-o";
-  sparnatural-config-core:tooltip ""@en, ""@nl .
+  sparnatural-config-core:tooltip ""@en .
 
-<http://www.labs.kadaster.nl/sparnatural/Text342> sparnatural-config-core:faIcon "far fa-star";
-  sparnatural-config-core:tooltip ""@en, ""@nl .
+<http://www.labs.kadaster.nl/sparnatural/Text342> sparnatural-config-core:faIcon "far fa-star" .
 
-<http://www.labs.kadaster.nl/sparnatural/Text344> sparnatural-config-core:faIcon "far fa-star-o";
-  sparnatural-config-core:tooltip ""@en, ""@nl .
+<http://www.labs.kadaster.nl/sparnatural/Text344> sparnatural-config-core:faIcon "far fa-star-o" .
 
 <http://www.labs.kadaster.nl/sparnatural/Text346> sparnatural-config-core:faIcon "far fa-star-o" .
 
@@ -4732,7 +4746,8 @@ huisnummer."""@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text358> sparnatural-config-core:faIcon "far fa-star-o" .
 
-<http://www.labs.kadaster.nl/sparnatural/Text360> sparnatural-config-core:faIcon "far fa-star" .
+<http://www.labs.kadaster.nl/sparnatural/Text360> sparnatural-config-core:faIcon "far fa-star";
+  sparnatural-config-core:tooltip ""@en, ""@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text362> sparnatural-config-core:faIcon "far fa-star-o";
   sparnatural-config-core:tooltip ""@en, ""@nl .
@@ -5030,12 +5045,20 @@ huisnummer.""";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
 
-gis:sfWithin sparnatural-config-core:tooltip "ligt in Provincie", "bevat ";
+gis:sfWithin sparnatural-config-core:tooltip "ligt in Provincie";
   rdfs:seeAlso gis:sfWithin;
-  sparnatural-config-core:sparqlString "^<http://www.opengis.net/ont/geosparql#sfWithin>",
-    "<http://www.opengis.net/ont/geosparql#sfWithin>";
+  sparnatural-config-core:sparqlString "<http://www.opengis.net/ont/geosparql#sfWithin>";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
+
+<http://www.labs.kadaster.nl/sparnatural/Text340> sparnatural-config-core:tooltip
+    ""@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text342> sparnatural-config-core:tooltip
+    ""@en, ""@nl .
+
+<http://www.labs.kadaster.nl/sparnatural/Text344> sparnatural-config-core:tooltip
+    ""@en, ""@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text346> sparnatural-config-core:tooltip
     ""@en, ""@nl .
@@ -5056,9 +5079,6 @@ gis:sfWithin sparnatural-config-core:tooltip "ligt in Provincie", "bevat ";
     ""@en, ""@nl .
 
 <http://www.labs.kadaster.nl/sparnatural/Text358> sparnatural-config-core:tooltip
-    ""@en, ""@nl .
-
-<http://www.labs.kadaster.nl/sparnatural/Text360> sparnatural-config-core:tooltip
     ""@en, ""@nl .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__469__> sparnatural-config-core:tooltip
@@ -5175,6 +5195,27 @@ gis:sfWithin sparnatural-config-core:tooltip "ligt in Provincie", "bevat ";
 <http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte__468__> sparnatural-config-core:tooltip
     "ligt in gemeentegebied";
   sparnatural-config-core:sparqlString "http://modellen.geostandaarden.nl/def/imx-geo#ligtInRegistratieveRuimte";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true;
+  sparnatural-config-core:isMultilingual false .
+
+<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__466__> sparnatural-config-core:tooltip
+    "is beperking op perceel";
+  sparnatural-config-core:sparqlString "http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true;
+  sparnatural-config-core:isMultilingual false .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin> sparnatural-config-core:tooltip
+    "bevat ";
+  rdfs:seeAlso <http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>;
+  sparnatural-config-core:sparqlString "<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>";
+  sparnatural-config-core:enableOptional true;
+  sparnatural-config-core:enableNegation true .
+
+<http://INVERSEmodellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__>
+  sparnatural-config-core:tooltip "heeft beperking ";
+  sparnatural-config-core:sparqlString "http://INVERSEmodellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true;
   sparnatural-config-core:isMultilingual false .
@@ -5435,24 +5476,18 @@ gis:sfWithin__453__ rdfs:seeAlso gis:sfWithin;
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
 
-gis:sfWithin__455__ rdfs:seeAlso gis:sfWithin;
-  sparnatural-config-core:sparqlString "^<http://www.opengis.net/ont/geosparql#sfWithin>";
-  sparnatural-config-core:enableOptional true;
-  sparnatural-config-core:enableNegation true .
-
 gis:sfWithin__457__ rdfs:seeAlso gis:sfWithin;
   sparnatural-config-core:sparqlString "<http://www.opengis.net/ont/geosparql#sfWithin>";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
 
-gis:sfWithin__459__ rdfs:seeAlso gis:sfWithin;
-  sparnatural-config-core:sparqlString "^<http://www.opengis.net/ont/geosparql#sfWithin>";
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__455__> rdfs:seeAlso <http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>;
+  sparnatural-config-core:sparqlString "<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
 
-<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__> rdfs:seeAlso
-    <http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel>;
-  sparnatural-config-core:sparqlString "^<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel>";
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__459__> rdfs:seeAlso <http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>;
+  sparnatural-config-core:sparqlString "<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin>";
   sparnatural-config-core:enableOptional true;
   sparnatural-config-core:enableNegation true .
 
@@ -6494,11 +6529,7 @@ rdfs:label_datasource447 sparnatural-config-datasources:queryTemplate sparnatura
     sparnatural-config-datasources:query_search_label_contains;
   sparnatural-config-datasources:labelProperty <http://modellen.geostandaarden.nl/def/imx-geo#naam> .
 
-rdfs:label_datasource467 sparnatural-config-datasources:queryTemplate sparnatural-config-datasources:query_search_label_contains;
-  sparnatural-config-datasources:labelProperty rdfs:label .
-
-gis:sfWithin sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource462>,
-    <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource465> .
+gis:sfWithin sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource465> .
 
 <http://modellen.geostandaarden.nl/def/imx-geo#naam__81__> sparnatural-config-datasources:datasource
     <http://modellen.geostandaarden.nl/def/imx-geo#naam__81__83_datasource83> .
@@ -6562,14 +6593,16 @@ gis:sfWithin sparnatural-config-datasources:datasource <http://modellen.geostand
 
 gis:sfWithin__453__ sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource453> .
 
-gis:sfWithin__455__ sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource455> .
-
 gis:sfWithin__457__ sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource457> .
 
-gis:sfWithin__459__ sparnatural-config-datasources:datasource <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource459> .
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__455__> sparnatural-config-datasources:datasource
+    <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource455> .
 
-<http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel__467__> sparnatural-config-datasources:datasource
-    rdfs:label_datasource467 .
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin> sparnatural-config-datasources:datasource
+    <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource462> .
+
+<http://INVERSEwww.opengis.net/ont/geosparql#sfWithin__459__> sparnatural-config-datasources:datasource
+    <http://modellen.geostandaarden.nl/def/imx-geo#naam_datasource459> .
 
 sparnatural-config-datasources:query_list_URI_or_literal_count sparnatural-config-datasources:noSort
     true;

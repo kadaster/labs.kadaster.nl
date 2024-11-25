@@ -119,7 +119,7 @@
             </form>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6" hidden>
             <div style="text-align:right;">
               <span style="font-size:90%; font-style: italic;"> 
                 <span data-i18n="endpoint.querying"></span> <a id="endpoint" href="...">...</a> 
@@ -142,7 +142,9 @@
             endpoint2="http://localhost:7200/repositories/qbproxy"
             endpointvirtuoso="https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql"
             endpointSpeedy="https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql"
+            endpointOfficial="https://data.kkg.kadaster.nl/service/sparql"
             endpoint="https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql"
+            
             lang="nl"
             distinct="true"
             limit="1000"
@@ -379,7 +381,9 @@ window.Yasqe=YASGUI.YASQE;
 
       function getEndpoint()
       {
-        return document.querySelector("spar-natural").attributes.endpointvirtuoso.value;
+        //return document.querySelector("spar-natural").attributes.endpointvirtuoso.value;
+        return document.querySelector("spar-natural").attributes.endpointOfficial.value;
+        
       }
       const sparnatural = document.querySelector("spar-natural");
       var spel =document.getElementById("sparnatural");
@@ -415,6 +419,11 @@ window.Yasqe=YASGUI.YASQE;
 
                 queryString=queryString.replaceAll(pattern,">/<http://www.opengis.net/ont/geosparql#asWKT>")
                 queryString=queryString.replace("_WKT>",">/<http://www.opengis.net/ont/geosparql#asWKT>" )
+
+
+                queryString=queryString.replaceAll(/<http:\/\/INVERSE/g,"^<http://")
+                queryString=queryString.replaceAll(/<https:\/\/INVERSE/g,"^<https://")
+
 
 
                 var par = queryString.split("SELECT DISTINCT ")[1].split("WHERE {")[0].split(" ")[0];
