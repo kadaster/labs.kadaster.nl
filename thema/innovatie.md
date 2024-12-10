@@ -62,14 +62,14 @@ title: Innovatie
       <div class="card-description">Om erfdienstbaarheden in akten te kunnen herkennen, is een onderzoek gedaan om op de gedigitaliseerde bestanden OCR toe te passen.</div>
     </div>
   </a>
-  <a href="https://www.kadaster.nl/-/bim-legal-maakt-vuistdikke-ordners-overbodig">
+      <!-- <a href="https://www.kadaster.nl/-/bim-legal-maakt-vuistdikke-ordners-overbodig">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/BIM_Legal.jpg">
       <div class="card-title">BIM Legal</div>
       <div class="card-description">Het doel van BIM Legal: iedereen kan direct zien welke juridische afspraken van toepassing zijn op percelen en hun bebouwing.</div>
     </div>
-  </a>
+  </a> -->
     <a href="https://www.zorgeloosvastgoed.nl/ministerie-bzk-neemt-afsprakenstelsel-zorgeloos-vastgoed-in-ontvangst/%C2%A0">
     <div class="card">
       <div class="card-type">Demonstrator</div>
