@@ -1,0 +1,395 @@
+{
+    "project": {
+        "createdAt": "2023-03-09T15:40:47.665Z",
+        "title": "Kadaster",
+        "path": "kadaster",
+        "id": "6409fdff269c860931e661d0"
+    },
+    "user": {
+        
+    },
+    "createdAt": "2023-03-15T15:32:36.335Z",
+    "title": "Kadaster KKG demonstrator",
+    "mainArea": {
+        "direction": "column",
+        "areaSizes": [
+            "30%",
+            "70%"
+        ],
+        "areas": [
+            {
+                "direction": "column",
+                "areaSizes": [
+                    "30%",
+                    "70%"
+                ],
+                "areas": [
+                    {
+                        "areaSizes": [
+                            "1",
+                            "1",
+                            "1",
+                            "1"
+                        ],
+                        "areas": [
+                            {
+                                "publishVariable": "provincie",
+                                "height": "100%",
+                                "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n\nselect distinct ?uri ?geometry ?color (?color as ?label)\n#noLegend;\n#minimal;\n#baselayer:PDOK grijs;\nwhere\n{\n \n          ?uri a imx:Provincie.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n        #  ?uri rdfs:label ?color.\n    ?uri imx:naam ?color\n\n     \n}\nlimit 12\n\n#title: Provincie;\n#baselayer:PDOK grijs;\n \n\n",
+                                "showLoadingOverlay": true,
+                                "syncWithUserActionsDisabled": true,
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "widget": "BBMap",
+                                "panelstyle": "paper2",
+                                "titleMenubar": "Provincies",
+                                "infoMenubar": "selecteer een provincie",
+                                "startWithBase": "PDOK grijs"
+                            },
+                            {
+                                "startWithBase": "PDOK grijs",
+                                "infoMenubar": "Selecteer een gemeente",
+                                "titleMenubar": "Gemeenten",
+                                "widget": "BBMap",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLegend;\n#minimal;\nselect distinct ?uri ?geometry ?color (?color as ?label)\nwhere\n{\n          ?uri geo:sfWithin <{{provincie}}>.\n          ?uri a imx:Gemeentegebied.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n         # ?uri rdfs:label ?color.\n        ?uri imx:naam ?color\n     \n}\n\n#baselayer:PDOK grijs;\n#title: Gemeente;\n\n \n\n",
+                                "panelstyle": "paper2",
+                                "publishVariable": "gemeente"
+                            },
+                            {
+                                "infoMenubar": "selecteer een Wijk",
+                                "titleMenubar": "Wijk",
+                                "widget": "BBMap",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLegend;\n#minimal;\n#baselayer:PDOK grijs;\nselect distinct ?uri ?geometry ?color (?color as ?label)\nwhere\n{\n          ?uri geo:sfWithin <{{gemeente}}>.\n          ?uri a imx:Wijk.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n          ?uri imx:naam ?color\n     \n}\n\n\n#title: Wijk;\n\n \n\n",
+                                "panelstyle": "paper2",
+                                "publishVariable": "wijk",
+                                "startWithGreyBase": true,
+                                "startWithBase": "PDOK grijs"
+                            },
+                            {
+                                "publishVariable": "buurt",
+                                "panelstyle": "paper2",
+                                "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLegend;\n#minimal;\n#baselayer:PDOK grijs;\nselect distinct ?uri ?geometry ?color (?color as ?label)\nwhere\n{\n          ?uri geo:sfWithin <{{wijk}}>.\n          ?uri a imx:Buurt.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n         # ?uri rdfs:label ?color.\n        ?uri imx:naam ?color\n     \n}\n\n\n#title: Buurt;\n\n \n\n",
+                                "showLoadingOverlay": true,
+                                "syncWithUserActionsDisabled": true,
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "widget": "BBMap",
+                                "titleMenubar": "Buurt",
+                                "infoMenubar": "selecteer een Buurt"
+                            }
+                        ],
+                        "direction": "row",
+                        "widget": "SplitLayout"
+                    },
+                    {
+                        "widget": "SplitLayout",
+                        "direction": "row",
+                        "areas": [
+                            {
+                                "areaSizes": [
+                                    "90px",
+                                    "auto",
+                                    "auto"
+                                ],
+                                "areas": [
+                                    {
+                                        "infoMenubar": "CBS gegevens van de geselecteerde gemeente,wijk of buurt",
+                                        "titleMenubar": "CBS data",
+                                        "panelstyle": "paper2",
+                                        "widget": "RadioBox",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "options": "buurt,buurt,wijk,wijk,gemeente,gemeente",
+                                        "horizontal": true,
+                                        "publishVariable": "keuze"
+                                    },
+                                    {
+                                        "panelstyleExtra": "noScrollBars",
+                                        "popupLabelFixedFormat": "2",
+                                        "labelsInChart": false,
+                                        "width": "95%",
+                                        "charttype": "Bar",
+                                        "widget": "BBEChart",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect distinct ?property ?value\nwhere\n{\n  { ?obj imx-ext:regio <{{buurt}}> .filter (\"{{keuze}}\"=\"buurt\")}\n  union\n  { ?obj imx-ext:regio <{{wijk}}> .filter (\"{{keuze}}\"=\"wijk\")}\n  union\n  { ?obj imx-ext:regio <{{gemeente}}> .filter (\"{{keuze}}\"=\"gemeente\")}\n        \n \n          ?obj ?pred ?value.\n            filter (ISLITERAL(?value))\n            bind (STRAFTER(STR(?pred),\"#\") as ?property1)\n            filter (?value!=\"-99999999\")\n            filter (strstarts(?property1,\"aantal_bedrijven_\"))\n             bind (replace(?property1,\"aantal_bedrijven_\",\"\") as ?property)\n\n}\n\n\n\n \n\n",
+                                        "panelstyle": "paper2",
+                                        "gradientColors": true,
+                                        "enableZoom": false,
+                                        "stringToColor": true,
+                                        "defaultMenu": false,
+                                        "legend": false,
+                                        "height": "90%",
+                                        "titleMenubar": "Industrie"
+                                    },
+                                    {
+                                        "enableZoom": true,
+                                        "gradientColors": true,
+                                        "stringToColor": true,
+                                        "charttype": "Bar",
+                                        "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\nselect distinct ?property ?value\nwhere\n{ \n  { ?obj imx-ext:regio <{{buurt}}> .filter (\"{{keuze}}\"=\"buurt\")}\n  union\n  { ?obj imx-ext:regio <{{wijk}}> .filter (\"{{keuze}}\"=\"wijk\")}\n  union\n  { ?obj imx-ext:regio <{{gemeente}}> .filter (\"{{keuze}}\"=\"gemeente\")}\n          ?obj ?pred ?value.\n            filter (ISLITERAL(?value))\n            bind (STRAFTER(STR(?pred),\"#\") as ?property1)\n            filter (?value!=\"-99999999\")\n            filter (strstarts(?property1,\"percentage_personen_\"))\n            bind (replace(?property1,\"percentage_personen_\",\"\") as ?property)\n\n  \n}\n\n\n\n \n\n",
+                                        "showLoadingOverlay": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "widget": "BBEChart",
+                                        "panelstyle": "paper2",
+                                        "panelstyleExtra": "noScrollBars",
+                                        "titleMenubar": "Leeftijden"
+                                    }
+                                ],
+                                "direction": "column",
+                                "widget": "SplitLayout"
+                            },
+                            {
+                                "startWithGreyBase": true,
+                                "publishVariable": "selection",
+                                "panelstyle": "paper2",
+                                "widget": "Tab",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\nwhere\n{\n{\n  <{{buurt}}> imx:bevatPerceel ?uri .     \n  ?uri geo:hasGeometry/geo:asWKT ?geometry.\n  ?uri imx-ext:perceelnummer ?label.\n    \n  bind (\"Perceel\" as ?color)\n\n    }\n\n        union\n        {\n  \n   <{{buurt}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri imx:type ?color3}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    {?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n   optional {\n  ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n  }\n    \n    union {\n    \n  ?uri geo:hasGeometry/geo:asWKT ?geometry }\n  }\n  \n      \n     \n}\n\n\n#title: Objecten in de Buurt;\n#color:RGBA(175,175,175,1)@\"Perceel\"\n#color:RGBA(175,0,0,1)@\"kunstwerkdeel\"\n \n\n",
+                                "titleMenubar": "",
+                                "infoMenubar": "",
+                                "tabs": [
+                                    "IMX-Geo",
+                                    "Gebouwtypes"
+                                ],
+                                "areas": [
+                                    {
+                                        "startWithGreyBase": true,
+                                        "publishVariable": "selection",
+                                        "panelstyle": "paper2",
+                                        "widget": "BBMap",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\nwhere\n{\n{\n  <{{buurt}}> imx:bevatPerceel ?uri .     \n  ?uri geo:hasGeometry/geo:asWKT ?geometry.\n  ?uri imx-ext:perceelnummer ?label.\n    \n  bind (\"Perceel\" as ?color)\n\n    }\n\n        union\n        {\n  \n   <{{buurt}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri imx:type ?color3}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    {?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n   optional {\n  ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n  }\n    \n    union {\n    \n  ?uri geo:hasGeometry/geo:asWKT ?geometry }\n  }\n  \n      \n     \n}\n\n\n#title: Objecten in de Buurt;\n#color:RGBA(175,175,175,1)@\"Perceel\"\n#color:RGBA(175,0,0,1)@\"kunstwerkdeel\"\n    #minimal;\n \n\n",
+                                        "titleMenubar": "Buurt gegevens",
+                                        "infoMenubar": "Interactieve kaart. Selecteer een gebouw, bouwwerk of perceel",
+                                        "startWithBase": "PDOK grijs"
+                                    },
+                                    {
+                                        "titleMenubar": "Gebouw types",
+                                        "publishVariable": "selection",
+                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\nwhere\n{\n\n      \n  \n   <{{buurt}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#gebouwType> ?color3}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    {?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n   optional {\n  ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n  }\n    \n      \n     \n}\n\n\n#title: Gebouwtypes in de Buurt;\n\n \n\n",
+                                        "showLoadingOverlay": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "widget": "BBMap"
+                                    }
+                                ],
+                                "carouselClickNavigation": false,
+                                "appearance": "CAROUSEL_WITH_BUTTONS"
+                            },
+                            {
+                                "widget": "SplitLayout",
+                                "direction": "column",
+                                "areas": [
+                                    {
+                                        "infoMenubar": "adres gegevens van het geselecteerde object",
+                                        "widget": "Table",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\n\nselect distinct ?omschrijving\n\nwhere\n\n{\n\n  {?geb <http://modellen.geostandaarden.nl/def/imx-geo#bevindtZichOpPerceel> <{{selection}}>.}\n        union {\n        bind (<{{selection}}> as ?geb)}\n      ?geb <http://modellen.geostandaarden.nl/def/imx-geo#heeftAlsAdres>/<http://modellen.geostandaarden.nl/def/imx-geo#omschrijving> ?omschrijving.\n    \n  \n      \n\n\n}\n\n        limit 100",
+                                        "panelstyle": "paper2",
+                                        "titleMenubar": "Adressen"
+                                    },
+                                    {
+                                        "panelstyle": "paper2",
+                                        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\n\nselect distinct ?grondslag\n\nwhere\n\n{\n {\n    <{{selection}}> <http://modellen.geostandaarden.nl/def/imx-geo#bevindtZichOpPerceel> ?perceel  }\n     union \n    {\n        bind (<{{selection}}> as ?perceel)\n     }\n    \n  ?bep <http://modellen.geostandaarden.nl/def/imx-geo#isBeperkingOpPerceel>?perceel.\n  ?bep <http://modellen.geostandaarden.nl/def/imx-geo#grondslag> ?grondslag\n      \n\n\n}\n\n        limit 100",
+                                        "showLoadingOverlay": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "widget": "Table",
+                                        "titleMenubar": "Beperking",
+                                        "infoMenubar": "evt beperkingen op het geselecteerde perceel of bouwwerk"
+                                    },
+                                    {
+                                        "infoMenubar": "Algemene kenmerken van het geselecteerd object",
+                                        "titleMenubar": "Kenmerken",
+                                        "panelstyle": "paper2",
+                                        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect distinct ?property ?value ?literal ?pred\nwhere\n{\n  \n  {\n     <{{selection}}> a/rdfs:label ?value.\n    bind (\"type\" as ?property)\n    bind (\"true\" as ?literal)\n    bind (rdf:type as ?pred)\n   \n  }\n  union\n  {\n     \n  <{{selection}}> ?pred ?value.\n    bind (STR(ISLITERAL(?value)) as ?literal)\n   # filter (?literal=true)\n            filter (?value!=\"-99999999\")\n  ?pred rdfs:label ?property.\n    optional {?pred rdfs:comment ?beschrijving}\n  filter (?property not in (\"domein\",\"identificatie\"))\n  \n # bind (coalesce(?label,?property2) as ?property)\n  }\n \n}\n  \n\n",
+                                        "showLoadingOverlay": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "widget": "BBPropertyPanel",
+                                        "childParameterText": "{{selection}}"
+                                    }
+                                ],
+                                "areaSizes": [
+                                    "33%",
+                                    "33%",
+                                    "auto"
+                                ]
+                            }
+                        ],
+                        "areaSizes": [
+                            "40%",
+                            "45%",
+                            "15%"
+                        ]
+                    }
+                ],
+                "widget": "SplitLayout"
+            },
+            {
+                "widget": "SplitLayout",
+                "direction": "column",
+                "areas": [
+                    {
+                        "widget": "SearchAutocomplete",
+                        "voteForUserActionsDisabledWhenLoading": true,
+                        "syncWithUserActionsDisabled": true,
+                        "showLoadingOverlay": true,
+                        "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\nselect distinct  ?label  ?uri \nwhere\n{\n        \n           ?uri a imx:Gemeentegebied.\n           ?uri imx:naam ?label.\n   \n}\n\n\n\n",
+                        "panelstyle": "paper2",
+                        "publishVariable": "gem",
+                        "textbefore": "Gemeente",
+                        "nullSelectionResetVariable": true,
+                        "alignItems": "flex-start",
+                        "placeholderText": "selecteer een gemeente"
+                    },
+                    {
+                        "areaSizes": [
+                            "50%",
+                            "50%"
+                        ],
+                        "areas": [
+                            {
+                                "widget": "SplitLayout",
+                                "direction": "column",
+                                "areas": [
+                                    {
+                                        "basequery": "",
+                                        "infoMenubar": "selecteer een Wijk",
+                                        "titleMenubar": "Wijk",
+                                        "widget": "BBMap",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLeffgend;\n#minimal;\n#baselayer:PDOK grijs;\nselect distinct ?uri ?geometry ?label  (xsd:float(count (distinct ?gebouw))  as ?color)\nwhere\n{\n     \n  ?uri geo:sfWithin <{{gem}}>.\n          ?uri a imx:Wijk.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n       \n          ?uri imx:naam ?label.\n       optional\n      { ?buurt geo:sfWithin ?uri.\n       ?buurt imx:bevatPerceel/^imx:bevindtZichOpPerceel ?gebouw.\n       ?gebouw <http://modellen.geostandaarden.nl/def/imx-geo#status> \"Sloopvergunning verleend\"\n     }\n     \n}\n   group by ?uri ?geometry ?label\n\n\n#title: Aantal sloop vergunningen;\n\n \n\n",
+                                        "panelstyle": "paper2",
+                                        "publishVariable": "wijk2",
+                                        "startWithGreyBase": true,
+                                        "startWithBase": "PDOK grijs"
+                                    },
+                                    {
+                                        "startWithBase": "PDOK grijs",
+                                        "startWithGreyBase": true,
+                                        "publishVariable": "buurt2",
+                                        "panelstyle": "paper2",
+                                        "query": "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLefgend;\n#minimal;\n#baselayer:PDOK grijs;\nselect distinct ?uri ?geometry ?label (xsd:float(count (distinct ?gebouw) ) as ?color)\nwhere\n{\n  \n          ?uri geo:sfWithin <{{wijk2}}>.\n          ?uri a imx:Buurt.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n          ?uri imx:naam ?label.\n       optional\n      { \n       ?uri imx:bevatPerceel/^imx:bevindtZichOpPerceel ?gebouw.\n       ?gebouw <http://modellen.geostandaarden.nl/def/imx-geo#status> \"Sloopvergunning verleend\"\n     }\n     \n}\n      group by ?uri ?geometry ?label\n\n\n#title: Aantal sloop vergunningen;\n\n \n\n",
+                                        "showLoadingOverlay": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "widget": "BBMap",
+                                        "titleMenubar": "aantal sloopvergunningen",
+                                        "infoMenubar": "selecteer een Wijk"
+                                    }
+                                ],
+                                "areaSizes": [
+                                    "1",
+                                    "1"
+                                ]
+                            },
+                            {
+                                "widget": "SplitLayout",
+                                "direction": "column",
+                                "areas": [
+                                    {
+                                        "startWithBase": "PDOK grijs",
+                                        "startWithGreyBase": true,
+                                        "publishVariable": "selection2",
+                                        "panelstyle": "paper2",
+                                        "widget": "BBMap",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\n#procent;\n#minimal;\nwhere\n{\n\n  \n   <{{buurt2}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <http://modellen.geostandaarden.nl/def/imx-geo#status> ?color3.filter (?color3=\"Sloopvergunning verleend\")}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    ?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n#   optional {\n # ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n \n   \n  \n      \n     \n}\n\n\n#title: Objecten in de Buurt;\n#color:RGBA(175,175,175,1)@\"Perceel\"\n#color:RGBA(175,0,0,1)@\"kunstwerkdeel\"\n \n\n",
+                                        "titleMenubar": "Sloop vergunning",
+                                        "infoMenubar": "Interactieve kaart. Selecteer een gebouw, bouwwerk of perceel"
+                                    },
+                                    {
+                                        "panelstyleExtra": "noScrollBars",
+                                        "popupLabelFixedFormat": "2",
+                                        "labelsInChart": false,
+                                        "width": "95%",
+                                        "charttype": "Bar",
+                                        "widget": "BBEChart",
+                                        "voteForUserActionsDisabledWhenLoading": true,
+                                        "syncWithUserActionsDisabled": true,
+                                        "showLoadingOverlay": true,
+                                        "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect distinct?status (count(distinct ?uri) as ?aantal)\nwhere\n{\n  \n   <{{buurt2}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    ?uri <http://modellen.geostandaarden.nl/def/imx-geo#status> ?status.\n  filter (?status!=\"bestaand\")\n  filter (?status!=\"Pand in gebruik\")\n    \n    \n}\n  group by ?status\n\n\n \n\n",
+                                        "panelstyle": "paper2",
+                                        "gradientColors": true,
+                                        "enableZoom": false,
+                                        "stringToColor": true,
+                                        "defaultMenu": false,
+                                        "legend": false,
+                                        "height": "90%",
+                                        "titleMenubar": "Status pand/bouwwerk",
+                                        "infoMenubar": "aantallen mbt status zonder \"bestaand\" en \"Pand in gebruik\""
+                                    }
+                                ],
+                                "areaSizes": [
+                                    "50%",
+                                    "50%"
+                                ],
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true
+                            }
+                        ],
+                        "direction": "row",
+                        "widget": "SplitLayout"
+                    }
+                ],
+                "areaSizes": [
+                    "70px",
+                    "1"
+                ],
+                "voteForUserActionsDisabledWhenLoading": true,
+                "syncWithUserActionsDisabled": true,
+                "showLoadingOverlay": true
+            }
+        ],
+        "widget": "BBSideMenu",
+        "tabs": [
+            "IMX-Geo",
+            "Sloop vergunningen"
+        ],
+        "voteForUserActionsDisabledWhenLoading": true,
+        "syncWithUserActionsDisabled": true,
+        "showLoadingOverlay": true,
+        "icons": [
+            "map",
+            "box"
+        ]
+    },
+    "repoURL": "https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql",
+    "logoURL": "/logos/kadaster.png",
+    "public": true,
+    "path": "d2jgM",
+    "layoutName": "ORIGINAL",
+    "css": "{\"height\":\"100%\"}",
+    "pageWidth": "99%",
+    "bbsparqlendpoint": "",
+    "parameterValues": "{\"imgeo\":\"http://www.buildingbits.nl/coins2/draft/IMGEO.rdf\",\"keuze\":\"buurt\",\"keuze2\":\"buurt\"}",
+    "prejs": "document.withCredentials=false; //https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql",
+    "sparqlErrorMessage": "\"errors connecting to the server\"",
+    "subtitle": "",
+    "triggers": [],
+    "id": "6411e4d1a1c97837a8698d26",
+    "new": false,
+    "layout": {
+        "showFooter": true
+    }
+}

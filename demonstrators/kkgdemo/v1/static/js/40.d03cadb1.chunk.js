@@ -1,0 +1,2 @@
+(this["webpackJsonpviewer-builder-client"]=this["webpackJsonpviewer-builder-client"]||[]).push([[40],{1523:function(e,t,n){"use strict";n.r(t);var r=n(5),i=n(4),a=n(11),c=n(12),s=(n(67),function(e){Object(a.a)(n,e);var t=Object(c.a)(n);function n(){var e;return Object(i.a)(this,n),(e=t.call(this)).getUrl=function(){return"/".concat(window.bbFolderName,"/static/iframes/svgeditor/index.html")},e.scrolling="no",e.noEvents=!1,e.usesParameters=!1,e}return Object(r.a)(n)}(n(35).a));t.default=s}}]);
+//# sourceMappingURL=40.d03cadb1.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpviewer-builder-client"]=this["webpackJsonpviewer-builder-client"]||[]).push([[39],{1496:function(e,t,r){"use strict";r.r(t);var n=r(5),i=r(4),a=r(11),c=r(12),u=(r(67),function(e){Object(a.a)(r,e);var t=Object(c.a)(r);function r(){var e;return Object(i.a)(this,r),(e=t.call(this)).getUrl=function(){return"/".concat(window.bbFolderName,"/w2ui/propertypanel.html")},e.scrolling="true",e.noEvents=!1,e.usesParameters=!1,e}return Object(n.a)(r)}(r(35).a));t.default=u}}]);
+//# sourceMappingURL=39.186e169f.chunk.js.map

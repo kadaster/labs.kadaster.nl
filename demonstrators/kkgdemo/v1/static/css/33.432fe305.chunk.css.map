@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/widgets/bb/editor/BBDForm.module.css"],"names":[],"mappings":"AAGA,qBAEI,eAEJ,CACA,wBAEI,WAAW,CAEX,0BACJ","file":"33.432fe305.chunk.css","sourcesContent":["\r\n\r\n\r\n.grid\r\n{\r\n    margin-top: 10px;\r\n\r\n}\r\n.bbdform\r\n{\r\n    margin:20px;\r\n\r\n    box-sizing: unset!important;\r\n}"]}

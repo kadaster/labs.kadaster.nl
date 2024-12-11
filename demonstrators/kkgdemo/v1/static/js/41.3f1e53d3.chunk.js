@@ -1,0 +1,2 @@
+(this["webpackJsonpviewer-builder-client"]=this["webpackJsonpviewer-builder-client"]||[]).push([[41],{1508:function(e,t,r){"use strict";r.r(t);var n=r(5),a=r(4),i=r(11),c=r(12),s=(r(0),function(e){Object(i.a)(r,e);var t=Object(c.a)(r);function r(){var e;return Object(a.a)(this,r),(e=t.call(this)).getUrl=function(){return"/".concat(window.bbFolderName,"/sparnatural/indexWistor.html")},e.scrolling="true",e.noEvents=!1,e.usesParameters=!1,e}return Object(n.a)(r)}(r(35).a));t.default=s}}]);
+//# sourceMappingURL=41.3f1e53d3.chunk.js.map

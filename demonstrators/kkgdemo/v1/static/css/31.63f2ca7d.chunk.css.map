@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/widgets/bb/BBEChart.module.css"],"names":[],"mappings":"AAAA,iCACI,SAAY,CACZ,WAAY,CACZ,YAAa,CACb,kBAAmB,CACnB,WACF","file":"31.63f2ca7d.chunk.css","sourcesContent":[".widgetContainer {\n    padding: 0px;\n    flex-grow: 1;\n    display: flex;\n    align-items: center;\n    height: 100%;\n  }"]}
