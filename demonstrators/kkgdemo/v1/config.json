@@ -385,11 +385,12 @@
     "parameterValues": "{\"imgeo\":\"http://www.buildingbits.nl/coins2/draft/IMGEO.rdf\",\"keuze\":\"buurt\",\"keuze2\":\"buurt\"}",
     "public": true,
     "path": "dfzqR",
-    "layoutName": "ORIGINAL",
+    "layoutName": "CUSTOM",
     "prejs": "document.withCredentials=false; //https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql",
     "triggers": [],
     "id": "66b0acd36d9ab30025159b1a",
+    "new": false,
     "layout": {
-        "showFooter": true
+        "showFooter": false
     }
 }
