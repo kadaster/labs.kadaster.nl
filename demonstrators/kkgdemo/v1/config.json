@@ -1,15 +1,16 @@
 {
     "project": {
-        "createdAt": "2023-03-09T15:40:47.665Z",
+        "createdAt": "2023-03-15T15:32:19.811Z",
         "title": "Kadaster",
         "path": "kadaster",
-        "id": "6409fdff269c860931e661d0"
+        "id": "6411e5038986f00024b17390"
     },
     "user": {
-        
+       
     },
-    "createdAt": "2023-03-15T15:32:36.335Z",
+    "createdAt": "2024-08-05T10:43:31.778Z",
     "title": "Kadaster KKG demonstrator",
+    "subtitle": "",
     "mainArea": {
         "direction": "column",
         "areaSizes": [
@@ -71,6 +72,7 @@
                                 "startWithBase": "PDOK grijs"
                             },
                             {
+                                "startWithBase": "PDOK grijs",
                                 "publishVariable": "buurt",
                                 "panelstyle": "paper2",
                                 "query": "prefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\n\n#noLegend;\n#minimal;\n#baselayer:PDOK grijs;\nselect distinct ?uri ?geometry ?color (?color as ?label)\nwhere\n{\n          ?uri geo:sfWithin <{{wijk}}>.\n          ?uri a imx:Buurt.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n         # ?uri rdfs:label ?color.\n        ?uri imx:naam ?color\n     \n}\n\n\n#title: Buurt;\n\n \n\n",
@@ -178,7 +180,7 @@
                                     {
                                         "titleMenubar": "Gebouw types",
                                         "publishVariable": "selection",
-                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\nwhere\n{\n\n      \n  \n   <{{buurt}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#gebouwType> ?color3}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    {?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n   optional {\n  ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n  }\n    \n      \n     \n}\n\n\n#title: Gebouwtypes in de Buurt;\n\n \n\n",
+                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color (?color as ?label)\n#baselayer:PDOK grijs;\nwhere\n{\n\n      \n  \n   <{{buurt}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#gebouwType> ?color3}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    {?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n   optional {\n  ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n  }\n    \n      \n     \n}\n\n\n#title: Gebouwtypes in de Buurt;\n\n \n\n",
                                         "showLoadingOverlay": true,
                                         "syncWithUserActionsDisabled": true,
                                         "voteForUserActionsDisabledWhenLoading": true,
@@ -313,7 +315,7 @@
                                         "voteForUserActionsDisabledWhenLoading": true,
                                         "syncWithUserActionsDisabled": true,
                                         "showLoadingOverlay": true,
-                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color ?label\n#baselayer:PDOK grijs;\n#procent;\n#minimal;\nwhere\n{\n\n  \n   <{{buurt2}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <http://modellen.geostandaarden.nl/def/imx-geo#status> ?color3.filter (?color3=\"Sloopvergunning verleend\")}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    ?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n#   optional {\n # ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n \n   \n  \n      \n     \n}\n\n\n#title: Objecten in de Buurt;\n#color:RGBA(175,175,175,1)@\"Perceel\"\n#color:RGBA(175,0,0,1)@\"kunstwerkdeel\"\n \n\n",
+                                        "query": "PREFIX igeo: <http://rdf.insee.fr/def/geo#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX im: <http://imgpedia.dcc.uchile.cl/resource/>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix imx:<http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix imx-ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\nselect ?uri ?geometry ?color (?color as ?label)\n#baselayer:PDOK grijs;\n#procent;\n#minimal;\nwhere\n{\n\n  \n   <{{buurt2}}> imx:bevatPerceel/^imx:bevindtZichOpPerceel ?uri.\n    bind (strbefore(strafter(str(?uri),\"/id/\"),\"/\")  as ?color2)\n    optional {?uri <http://modellen.geostandaarden.nl/def/imx-geo#status> ?color3.filter (?color3=\"Sloopvergunning verleend\")}\n    bind (coalesce(?color3,?color2) as ?color)\n   \n    ?uri imx-ext:maaiveldgeometrie/geo:asWKT ?geometrymv. \n#   optional {\n # ?uri imx-ext:bovenaanzichtgeometrie/geo:asWKT ?geometrybo }\n    bind (coalesce (?geometrybo,?geometrymv) as ?geometry)\n \n   \n  \n      \n     \n}\n\n\n#title: Objecten in de Buurt;\n#color:RGBA(175,175,175,1)@\"Perceel\"\n#color:RGBA(175,0,0,1)@\"kunstwerkdeel\"\n \n\n",
                                         "titleMenubar": "Sloop vergunning",
                                         "infoMenubar": "Interactieve kaart. Selecteer een gebouw, bouwwerk of perceel"
                                     },
@@ -374,21 +376,19 @@
             "box"
         ]
     },
+    "bbsparqlendpoint": "",
     "repoURL": "https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql",
-    "logoURL": "/logos/kadaster.png",
-    "public": true,
-    "path": "d2jgM",
-    "layoutName": "ORIGINAL",
+    "logoURL": "./logos/kadaster.png",
+    "sparqlErrorMessage": "\"errors connecting to the server\"",
     "css": "{\"height\":\"100%\"}",
     "pageWidth": "99%",
-    "bbsparqlendpoint": "",
     "parameterValues": "{\"imgeo\":\"http://www.buildingbits.nl/coins2/draft/IMGEO.rdf\",\"keuze\":\"buurt\",\"keuze2\":\"buurt\"}",
+    "public": true,
+    "path": "dfzqR",
+    "layoutName": "ORIGINAL",
     "prejs": "document.withCredentials=false; //https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql https://api.labs.kadaster.nl/datasets/kadaster/kkg/services/kkg/sparql",
-    "sparqlErrorMessage": "\"errors connecting to the server\"",
-    "subtitle": "",
     "triggers": [],
-    "id": "6411e4d1a1c97837a8698d26",
-    "new": false,
+    "id": "66b0acd36d9ab30025159b1a",
     "layout": {
         "showFooter": true
     }
