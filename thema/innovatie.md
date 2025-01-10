@@ -9,7 +9,7 @@ title: Innovatie
   <a href="/cases/handgeschreven-aktes-ai">
     <div class="card">
       <div class="card-type">Project</div>
-      <img class="card-image" src="/assets/images/haai-tegel.png">
+      <img class="card-image" src="/assets/images/handgeschreven_aktes_ai/tegel.png">
       <div class="card-title">Handgeschreven Aktes AI</div>
       <div class="card-description">Onderzoek naar hoe we handgeschreven aktes leesbaarder en doorzoekbaar kunnen maken, om bijvoorbeeld sneller erfdienstbaarheden te vinden</div>
     </div>
