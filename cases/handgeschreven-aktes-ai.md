@@ -5,7 +5,7 @@ layout: page
 
 # Handgeschreven Aktes AI
 
-De handgeschreven aktes van het Kadaster bevatten een schat aan historische informatie, maar zijn lastig doorzoekbaar en vaak moeilijk leesbaar. In dit onderzoek bekijken we hoe nieuwe technieken, zoals Handwritten Text Recognition (HTR), kunnen helpen om deze aktes beter toegankelijk te maken. Dit biedt kansen om onderzoek efficiënter en minder tijdrovend te maken.
+De handgeschreven aktes van het Kadaster bevatten een schat aan historische informatie, maar zijn lastig doorzoekbaar en vaak moeilijk leesbaar. Dit onderzoek richt zich op twee vragen: hoe kunnen nieuwe technieken zoals Handwritten Text Recognition (HTR) helpen om deze aktes machineleesbaar te maken, en in hoeverre kunnen erfdienstbaarheden automatisch worden gedetecteerd? Door deze technieken in te zetten, kunnen we onderzoek efficiënter en minder tijdrovend maken.
 
 ## Archiefonderzoek
 
@@ -20,11 +20,13 @@ Om dit proces te verbeteren, zou het Kadaster deze handgeschreven aktes kunnen o
 
 ### Erfdienstbaarheden
 
-Eén soort onderzoek waarbij de handgeschreven aktes worden geraadpleegd is het [Erfdienstbaarhedenonderzoek](https://www.kadaster.nl/producten/woning/erfdienstbaarhedenonderzoek). In het volledige onderzoek worden aktes gelezen tot aan het start van de Kadastrale registratie, omdat elke akte waarin het perceel waar het onderzoek over gaat in genoemd wordt, moet worden gecontroleerd op de vermelding van erfdienstbaarheden, zoals het recht van overpad. Een deel van het werk is het bij elkaar vinden van alle relevante aktes, om vervolgens de aktes te moeten controleren op vermelding van erfdienstbaarheden. Hoewel in hedendaagse akte de erfdienstbaarheden onder een aparte kopje duidelijk aangegeven zijn, moet dat in de oude aktes uit de context opgemaakt worden.
+Eén soort onderzoek waarbij de handgeschreven aktes worden geraadpleegd is het [Erfdienstbaarhedenonderzoek](https://www.kadaster.nl/producten/woning/erfdienstbaarhedenonderzoek). Hierbij worden aktes gelezen tot aan het begin van de Kadastrale registratie. Elke akte waarin het betreffende perceel wordt genoemd, moet worden gecontroleerd op erfdienstbaarheden, zoals het recht van overpad.
+
+Het onderzoek bestaat uit twee stappen: eerst worden alle relevante aktes verzameld, daarna worden deze gecontroleerd op erfdienstbaarheden. Dit is een tijdrovend proces, zeker omdat in oude aktes erfdienstbaarheden niet in aparte kopjes staan. In plaats daarvan moet de informatie uit de context van de tekst worden afgeleid.
 
 ## Vraagstuk
 
-In dit onderzoek willen een beeld krijgen van hoe we met nieuwe technieken het werkproces met de handgeschreven aktes kunnen ondersteunen. De vragen die we willen beantwoorden zijn:
+Dit onderzoek richt zich op hoe nieuwe technieken het werkproces met handgeschreven aktes kunnen ondersteunen. De onderzoeksvragen zijn:
 
 1. Kunnen de handgeschreven aktes herkend worden?
 
@@ -38,15 +40,13 @@ In dit onderzoek willen een beeld krijgen van hoe we met nieuwe technieken het w
 
 Voor het halen van tekst uit scans te halen bestaat de OCR techniek, Optical Character Recognition. Hiervan zijn veel standaardoplossingen beschikbaar, zoals tesseract of ABBYY finereader. Deze technieken onderzochten we al eerder in ons [Akte OCR onderzoek](/cases/akte-ocr/), waarin scans na 1950 werden verwerkt. Anders dan de handgeschreven aktes waren deze met de typmachine opgeschreven.
 
-Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze technieken een stuk slechter bij de handgeschreven aktes. Dit komt doordat zulke tools vaak niet getraind zijn voor handschrift, maar ook doordat de scankwaliteit van de handgeschreven aktes lager is. Voor dit onderzoek is daarom gekozen om subveld van OCR te onderzoeken, de zogenaamde Handwritten Text Recognition (HTR) technieken, welke zich specifiek richt op handgeschreven teksten.
+Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze technieken een stuk slechter bij de handgeschreven aktes. Dit komt doordat zulke tools vaak niet getraind zijn voor handschrift, maar ook doordat de scankwaliteit van de handgeschreven aktes lager is. Voor dit onderzoek is daarom gekozen om subveld van OCR te onderzoeken, de HTR technieken, welke zich specifiek richt op handgeschreven teksten.
 
 ### Dataverzameling
 
-Om HTR optimaal te laten werken helpt het om de modellen af te stemmen op je eigen data. Het verzamelen van een hoogwaardige dataset is echter een tijdrovend proces en daardoor vaak een bottleneck bij AI projecten. Er is echter een [openbare dataset](https://zenodo.org/records/6414086) waar we gebruik van kunnen maken. Zo zijn er namelijk eerder al 6000 documenten, 17de en 18de -eeuwse VOC aktes en 19de -eeuwse notariële aktes, overgetypt tijdens het Crowd Leert Computer Lezen project ([link](https://www.amsterdam.nl/stadsarchief/organisatie/blog-bronnen-bytes/tekstherkenning-%284%29-crowd-leerde-ai/)).
+Om HTR optimaal te laten werken, is een hoogwaardige dataset essentieel. Het Kadaster maakt gebruik van een bestaande [openbare dataset](https://zenodo.org/records/6414086) met duizenden overgetypte VOC- en notariële aktes. Deze is aangevuld met eigen annotaties om de modellen af te stemmen op onze specifieke archiefdata.
 
-Daarnaast hebben we gekozen om die dataset aan te vullen eigen annotaties. Zodoende kunnen we de algoritmes verder finetunen en de uiteindelijke modellen evalueren op performance. De annotaties hebben we door interne collega’s die dagelijks met de handgeschreven aktes werken laten maken. Voor de annotaties hebben we gebruik gemaakt van [eScriptorium](https://escriptorium.inria.fr/) v0.14.0.
-
-Er zijn verschillende dingen gedaan tijdens de dataverzameling. Een eerste stap is al het verzamelen van een diverse en representatieve set aktes. We hebben hier gekozen voor aktes uit verschillende decennia, de periode beslaat ruim 100 jaar en layouts en schrijfstijlen kunnen verschillen, en aktes uit verschillende bewaringen (de oorspronkelijke Kadasterlocaties waar de aktes werden ingeschreven in de registers). Ook is er gekeken naar aktes die opnieuw gescand zijn. Als medewerkers tijdens een onderzoek naar erfdienstbaarheden een akte niet kunnen lezen door té slechte scankwaliteit, kunnen de collega’s van het archief een nieuwe scan maken. Door voorbeelden van deze opnieuw gescande aktes toe te voegen weten we in hoeverre het nodig is het hele archief opnieuw te scannen, of dat de huidige scankwaliteit voldoende is. Tot slot hebben we ook gelet op dat er een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
+Bij de dataverzameling hebben we een diverse en representatieve set aktes samengesteld. Hierbij kozen we voor aktes uit verschillende decennia (de periode beslaat ruim 100 jaar) en uit verschillende bewaringen. Ook namen we aktes mee die opnieuw gescand zijn om te bepalen of de huidige scankwaliteit voldoende is of herhaling nodig is. Tot slot hebben we gelet op dat er een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_herscan.png"
@@ -56,7 +56,8 @@ Tijdens het annoteren van de verzamelde aktes zijn er drie dingen vastgelegd. Zo
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_textRegions.png"
-   caption="Annoteren van de tekstregio’s in de scans. Hiermee kunnen we bepalen wat er op de scan staat en de rol van de tekst in de akte" %}
+   caption="Annoteren van de tekstregio’s in de scans. Hiermee kunnen we bepalen wat er op de scan staat en de rol van de tekst in de akte"
+   width="650px" %}
 
 Het tweede wat is aangegeven is waar de tekst precies is in de scan. Dit doen we met het aangeven van de tekstregels. Hoewel er op kleinere schaal (kassabonnetjes bijvoorbeeld) wel AI modellen zijn die de hele foto in één keer kunnen omzetten naar een lap tekst, zijn deze modellen nog niet krachtig genoeg zijn om dat voor een scan van een handgeschreven document te doen. Dat wordt eigenlijk altijd per tekstregel gedaan, waarvoor het dus nodig is om eerst deze tekstregels te vinden. Het is hiervoor mogelijk om de gewenste uitsnede al te annoteren, maar het is eenvoudiger en sneller om alleen een lijntje onder de tekstregel te zetten en achteraf met heuristieken een uitsnede te maken, hierbij gaat geen performance verloren.
 
@@ -96,9 +97,9 @@ Net als de vorige stap is het hiervoor nodig om een AI model te trainen op veel 
    path="/assets/images/handgeschreven_aktes_ai/results_ocr.png"
    caption="Uitsnede van een gevonden tekstregel. De uitkomst van het HTR model geeft de herkende tekst terug met een confidence score" %}
 
-De tekstherkenningsstap valideren we op een aantal van de overgetypte Kadaster aktes, die geen onderdeel waren van de trainingsset. Over deze modellen wordt een voorspelling gedaan door de getrainde modellen, waarna we naar het verschil meten tussen de voorspelde tekst, en de gemaakte transcriptie. Elke letter die tussen beide verschilt is een fout. We halen daarmee een uiteindelijke foutmarge van zo’n 5%.
+De tekstherkenningsstap valideren we op een aantal van de overgetypte Kadaster aktes, die geen onderdeel waren van de trainingsset. Over deze modellen wordt een voorspelling gedaan door de getrainde modellen, waarna we naar het verschil meten tussen de voorspelde tekst, en de gemaakte transcriptie. Elke letter die tussen beide verschilt is een fout.
 
-In de praktijk betekent dit dat hoewel de voorspelde teksten niet perfect zijn, goed te volgen is wat er in de tekst besproken wordt. Ook is het een gemiddelde en zijn er sommige aktes met goede scankwaliteit en leesbaar handschrift die bijna foutloos omgezet worden.
+We behalen hiermee een foutmarge van slechts 5%. Dit maakt de teksten goed begrijpelijk en versnelt het onderzoek aanzienlijk. Onderzoekers kunnen nu sneller kerninformatie uit aktes halen en zijn minder afhankelijk van handmatige transcripties. Ook is het een gemiddelde en zijn er sommige aktes met goede scankwaliteit en leesbaar handschrift die bijna foutloos omgezet worden.
 
 ## Vraag 2: Vinden van Erfdienstbaarheden
 
@@ -119,20 +120,26 @@ Tegenwoordig staan erfdienstbaarheden netjes onder een eigen kopje vermeld, maar
 
 Simpelweg zoeken in de HTR resultaten werkt niet heel goed, omdat die fouten bevatten. Er worden dan misschien erfdienstbaarheden gevonden die er niet zijn, maar vooral erfdienstbaarheden gemist. Er zijn twee technieken waarmee we slimmer kunnen zoeken.
 
-### Technieken
+### Techniek: Fuzzy search
 
-De eerste onderzochte techniek is een “fuzzy search”. Bij een fuzzy search staan we toe dat er verschillen tussen de zoekterm en de akte mogen zitten, “rech van vveg” kan gevonden worden als we op “recht van weg” zoeken. Dit gaat op basis van de Levenshteinafstand, waarbij elke toevoeging, wijziging en verwijdering van tekens worden opgeteld. Door dit af te laten hangen van de lengte van het woord wordt hier meer verschil in toegestaan dan bij korte woorden. Zodoende voorkomen we teveel foutpositieven, zonder dat langere zoektermen onnodig wegvallen. Op deze manier zoeken geeft goede initiële resultaten, zo wordt in goed leesbare aktes 98% van de omschrijvingen gevonden.
+De eerste onderzochte techniek is een “fuzzy search”. Hiermee staan we toe dat er verschillen tussen de zoekterm en de tekst mogen zitten. Bijvoorbeeld: “rech van vveg” kan gevonden worden als we op “recht van weg” zoeken. Dit werkt op basis van de Levenshteinafstand, waarbij elke toevoeging, wijziging en verwijdering van tekens wordt opgeteld. Door deze foutmarge afhankelijk te maken van de lengte van het woord, minimaliseren we foutpositieven zonder dat langere zoektermen worden gemist.
 
-De tweede techniek is het creëren van embeddings. Hierbij wordt de tekst omgezet naar een vector van getallen, die de semantiek van de tekst vat. Het grote voordeel hiervan is dat je vergelijkbare, maar verschillende, omschrijven toch bij elkaar kunt vinden. Zo liggen bijvoorbeeld “vennootschap” en “bedrijf” dicht bij elkaar, en kan ons dit helpen bij het vinden van omschrijvingen van erfdienstbaarheden. Eerste tests geven een percentage van 71%, waardoor het niet beter werkt dan de simpelere fuzzy search. Mogelijke verklaringen voor het lagere percentage zijn de HTR errors als het gebruik van oud-Nederlands in de teksten.
-
-De technieken kunnen elkaar nog wel aanvullen. Bij een aantal lagere kwaliteit akten konden op basis van de embeddings een paar omschrijvingen gevonden worden die werder gemist met de fuzzy search. Deze aantallen waren echter klein.
+Fuzzy search presteert uitstekend op goed leesbare aktes. In deze gevallen wordt 98% van de relevante passages correct gevonden. Dit maakt het een effectieve techniek, vooral bij aktes met een hoge scankwaliteit en een leesbaar handschrift.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/results_search.png"
-   caption="De omgezette tekst met de gevonden erfdienstbaarheden gehighlight" %}
+   caption="De omgezette tekst met de gevonden erfdienstbaarheden gemarkeerd" %}
+
+### Techniek: Embeddings
+
+De tweede techniek is het zoeken in embeddings. Hierbij wordt de tekst omgezet naar een vector van getallen, die de betekenis (semantiek) van de tekst vastlegt. Het voordeel hiervan is dat vergelijkbare woorden of zinnen toch bij elkaar worden gevonden. Bijvoorbeeld: “vennootschap” en “bedrijf” liggen in een embeddingsruimte dicht bij elkaar. Dit kan helpen bij het vinden van erfdienstbaarheden, zelfs als de exacte zoekterm niet aanwezig is.
+
+De eerste tests met embeddings geven een succespercentage van 71%. Hoewel dit lager ligt dan bij fuzzy search, blijft het een interessante techniek. De lagere score is vermoedelijk te verklaren door de HTR-fouten en het gebruik van oud-Nederlands in de teksten. Toch kan deze techniek passages vinden die fuzzy search soms mist, vooral in aktes van lagere kwaliteit.
 
 ## Conclusie
 
-Het is mogelijk om in het HTR resultaat te zoeken op bepaalde zoekwoorden, daarmee worden indicaties gevonden voor erfdienstbaarheden. Wat na dit onderzoek nog niet kan zijn de details van de erfdienstbaarheid extraheren, bijvoorbeeld het heersende en dienende perceel. Een volledig erfdienstbaarhedenonderzoek bestaat tevens uit meer dan alleen het raadplegen van de aktetekst: het is een complex onderzoek waarbij een web van verschillende bronnen geraadpleegd worden. Automatisering van het hele proces is daardoor nog een paar stappen te ver.
+Het is mogelijk om in het HTR resultaat te zoeken op bepaalde zoekwoorden, daarmee worden indicaties gevonden voor erfdienstbaarheden. Wat na dit onderzoek nog niet kan zijn de details van de erfdienstbaarheden extraheren, bijvoorbeeld het heersende en dienende perceel. Een volledig erfdienstbaarhedenonderzoek bestaat tevens uit meer dan alleen het raadplegen van de aktetekst: het is een complex onderzoek waarbij een web van verschillende bronnen geraadpleegd worden. Automatisering van het hele proces is daardoor nog een paar stappen te ver.
 
 Toch bieden de onderzochte technieken voldoende voordelen om hier mee verder te gaan. Zo helpen de HTR resultaten al erg met het lezen van de akten, wat daarmee minder vermoeiend wordt. Daarnaast helpen de indicatoren om snel naar de relevante sectie van een akte te gaan. Al met al zien we dit als een waardevolle ondersteuning bij de werkzaamheden. Daarnaast kan de techniek nog verder ingezet worden: zo kunnen we voorspellen welke scans voldoende leesbaar zijn en welke onvoldoende en dus opnieuw gescand moeten worden. Ook kan de datum van inschrijving geëxtraheerd worden.
+
+Dit onderzoek laat zien dat HTR-technieken een enorme verbetering bieden bij het verwerken van handgeschreven aktes. Met een foutmarge van slechts 5% wordt het mogelijk om sneller en efficiënter door het historische archief te zoeken. Daarnaast maken slimme zoektechnieken zoals fuzzy search het vinden van erfdienstbaarheden een stuk eenvoudiger. In de toekomst kunnen verdere ontwikkelingen in AI en machine learning, zoals verbeterde taalmodellen en grotere datasets, de nauwkeurigheid en toepasbaarheid verder vergroten.
