@@ -9,7 +9,7 @@ De handgeschreven aktes van het Kadaster bevatten een schat aan historische info
 
 ## Archiefonderzoek
 
-Het Kadaster beheert een groot archief met oude aktes, waaronder zo’n 5 miljoen handgeschreven exemplaren uit de periode 1838 tot 1950. Deze aktes worden regelmatig gebruikt voor onderzoek, maar omdat ze niet doorzoekbaar zijn, moeten scans stuk voor stuk geopend en gelezen worden. Dit is tijdrovend en vraagt veel expertise, omdat het handschrift vaak lastig te ontcijferen is. Dit maakt het werken met deze aktes niet alleen arbeidsintensief, maar ook vermoeiend.
+Het Kadaster beheert een groot archief met oude aktes, waaronder zo'n 5 miljoen handgeschreven exemplaren uit de periode 1838 tot 1950. Deze aktes worden regelmatig gebruikt voor onderzoek, maar omdat ze niet doorzoekbaar zijn, moeten scans stuk voor stuk geopend en gelezen worden. Dit is tijdrovend en vraagt veel expertise, omdat het handschrift vaak lastig te ontcijferen is. Dit maakt het werken met deze aktes niet alleen arbeidsintensief, maar ook vermoeiend.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_example-scan.png"
@@ -28,7 +28,7 @@ Het onderzoek bestaat uit twee stappen: eerst worden alle relevante aktes verzam
 
 Dit onderzoek richt zich op hoe nieuwe technieken het werkproces met handgeschreven aktes kunnen ondersteunen. De onderzoeksvragen zijn:
 
-1. Kunnen de handgeschreven aktes herkend worden?
+1. Kunnen de handgeschreven aktes machineleesbaar gemaakt worden?
 
    De leesbaarheid van een akte hangt af van het handschrift en de scankwaliteit van de akte. Beide kunnen in sommige gevallen tegenvallen en het lastig maken de relevante informatie uit de akte te halen. Door de teksten machineleesbaar te maken kunnen de aktes enerzijds in een goed leesbare font getoond worden en anderzijds doorzocht worden op zoektermen.
 
@@ -38,30 +38,30 @@ Dit onderzoek richt zich op hoe nieuwe technieken het werkproces met handgeschre
 
 ## Vraag 1: Handgeschreven tekstherkenning
 
-Voor het halen van tekst uit scans te halen bestaat de OCR techniek, Optical Character Recognition. Hiervan zijn veel standaardoplossingen beschikbaar, zoals tesseract of ABBYY finereader. Deze technieken onderzochten we al eerder in ons [Akte OCR onderzoek](/cases/akte-ocr/), waarin scans na 1950 werden verwerkt. Anders dan de handgeschreven aktes waren deze met de typmachine opgeschreven.
+Voor het halen van tekst uit scans bestaat de OCR techniek, Optical Character Recognition. Hiervan zijn veel standaardoplossingen beschikbaar, zoals tesseract of ABBYY finereader. Deze technieken onderzochten we al eerder in ons [Akte OCR onderzoek](/cases/akte-ocr/), waarin scans na 1950 werden verwerkt. Anders dan de handgeschreven aktes waren deze met de typmachine opgeschreven.
 
-Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze technieken een stuk slechter bij de handgeschreven aktes. Dit komt doordat zulke tools vaak niet getraind zijn voor handschrift, maar ook doordat de scankwaliteit van de handgeschreven aktes lager is. Voor dit onderzoek is daarom gekozen om subveld van OCR te onderzoeken, de HTR technieken, welke zich specifiek richt op handgeschreven teksten.
+Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze technieken een stuk slechter bij de handgeschreven aktes. Dit komt doordat zulke tools vaak niet getraind zijn voor handschrift, maar ook doordat de scankwaliteit van de handgeschreven aktes lager is. Voor dit onderzoek is daarom gekozen om een subveld van OCR te onderzoeken, de HTR techniek, welke zich specifiek richt op handgeschreven teksten.
 
 ### Dataverzameling
 
 Om HTR optimaal te laten werken, is een hoogwaardige dataset essentieel. Het Kadaster maakt gebruik van een bestaande [openbare dataset](https://zenodo.org/records/6414086) met duizenden overgetypte VOC- en notariële aktes. Deze is aangevuld met eigen annotaties om de modellen af te stemmen op onze specifieke archiefdata.
 
-Bij de dataverzameling hebben we een diverse en representatieve set aktes samengesteld. Hierbij kozen we voor aktes uit verschillende decennia (de periode beslaat ruim 100 jaar) en uit verschillende bewaringen. Ook namen we aktes mee die opnieuw gescand zijn om te bepalen of de huidige scankwaliteit voldoende is of herhaling nodig is. Tot slot hebben we gelet op dat er een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
+Bij de dataverzameling hebben we een diverse en representatieve set aktes samengesteld. Hierbij kozen we voor aktes uit verschillende decennia (de periode beslaat ruim 100 jaar) en uit verschillende bewaringen. Ook namen we aktes mee die opnieuw gescand zijn om te bepalen of de huidige scankwaliteit voldoende is of herhaling nodig is. Tot slot hebben we er op gelet op dat een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_herscan.png"
    caption="Oude en nieuwe scankwaliteit, waarbij de tape opnieuw gedigitaliseerd is in hogere kwaliteit" %}
 
-Tijdens het annoteren van de verzamelde aktes zijn er drie dingen vastgelegd. Zo zijn van 771 scans de tekstregio’s en tekstregels aangegeven. De tekstregio’s laten ons weten wat er semantisch in de scan staat. Niet alleen kunnen we zodoende bijgevoegde tekeningen uit de scan halen, maar ook bepalen wat de rol van tekst is in de akte. Voorbeelden zijn paginanummers, volgnummers of paragrafen. Hoewel dat allemaal tekst is, is de functie zeer verschillend. Door de verschillen aan te geven kunnen we uiteindelijk het zoeken in aktes bijvoorbeeld beperken tot enkel de aktetekst. Gezien aktes achter elkaar door werden geschreven in de boekdelen kunnen aktes halverwege de pagina starten of eindigen. De volgnummer van de akte staat in de kantlijn en geeft aan welke akte het precies is, vooral wel zo handig als er meerdere aktes op één pagina staan.
+Tijdens het annoteren van de verzamelde aktes zijn er drie dingen vastgelegd. Zo zijn van 771 scans de tekstregio's en tekstregels aangegeven. De tekstregio's laten ons weten wat er semantisch in de scan staat. Niet alleen kunnen we zodoende bijgevoegde tekeningen uit de scan halen, maar ook bepalen wat de rol van tekst is in de akte. Voorbeelden zijn paginanummers, volgnummers of paragrafen. Hoewel dat allemaal tekst is, is de functie zeer verschillend. Door de verschillen aan te geven kunnen we uiteindelijk het zoeken in aktes bijvoorbeeld beperken tot enkel de aktetekst. Gezien aktes achter elkaar door werden geschreven in de boekdelen kunnen aktes halverwege de pagina starten of eindigen. De volgnummer van de akte staat in de kantlijn en geeft aan welke akte het precies is, vooral wel zo handig als er meerdere aktes op één pagina staan.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_textRegions.png"
-   caption="Annoteren van de tekstregio’s in de scans. Hiermee kunnen we bepalen wat er op de scan staat en de rol van de tekst in de akte"
+   caption="Annoteren van de tekstregio's in de scans. Hiermee kunnen we bepalen wat er op de scan staat en de rol van de tekst in de akte"
    width="650px" %}
 
-Het tweede wat is aangegeven is waar de tekst precies is in de scan. Dit doen we met het aangeven van de tekstregels. Hoewel er op kleinere schaal (kassabonnetjes bijvoorbeeld) wel AI modellen zijn die de hele foto in één keer kunnen omzetten naar een lap tekst, zijn deze modellen nog niet krachtig genoeg zijn om dat voor een scan van een handgeschreven document te doen. Dat wordt eigenlijk altijd per tekstregel gedaan, waarvoor het dus nodig is om eerst deze tekstregels te vinden. Het is hiervoor mogelijk om de gewenste uitsnede al te annoteren, maar het is eenvoudiger en sneller om alleen een lijntje onder de tekstregel te zetten en achteraf met heuristieken een uitsnede te maken, hierbij gaat geen performance verloren.
+Het tweede wat is aangegeven, is waar de tekst precies is in de scan. Dit doen we met het aangeven van de tekstregels. Hoewel er op kleinere schaal (kassabonnetjes bijvoorbeeld) wel AI modellen zijn die de hele foto in één keer kunnen omzetten naar een lap tekst, zijn deze modellen nog niet krachtig genoeg zijn om dat voor een scan van een handgeschreven document te doen. Dat wordt eigenlijk altijd per tekstregel gedaan, waarvoor het dus nodig is om eerst deze tekstregels te vinden. Het is hiervoor mogelijk om de gewenste uitsnede al te annoteren, maar het is eenvoudiger en sneller om alleen een lijntje onder de tekstregel te zetten en achteraf met heuristieken een uitsnede te maken, hierbij gaat geen performance verloren.
 
-Het derde wat tijdens de annotatie aangegeven wordt is het transcriberen van de tekst zelf. Dit was meest tijdsintensieve deel, en kan ook alleen gedaan kon worden door domein experts die daadwerkelijk de scans goed kunnen lezen. Zij hebben uiteindelijk van 54 scans de volledige transcriptie geproduceerd.
+Het derde wat tijdens de annotatie aangegeven wordt is het transcriberen van de tekst zelf. Dit was het meest tijdsintensieve deel, en kan ook alleen gedaan kon worden door domein experts die daadwerkelijk de scans goed kunnen lezen. Zij hebben uiteindelijk van 54 scans de volledige transcriptie geproduceerd.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_transcribing.png"
@@ -71,13 +71,13 @@ Het derde wat tijdens de annotatie aangegeven wordt is het transcriberen van de 
 
 Voor de HTR tooling hebben we de open-source [Loghi](https://github.com/knaw-huc/loghi) van het KNAW als een startpunt gebruikt. In die tooling zijn reeds getrainde modellen beschikbaar die al gebruik maken van eerdergenoemde openbare dataset, al gebruiken we de tooling vooral voor de pipeline en werkmethode en trainen we de modellen opnieuw voor betere performance.
 
-Eén van de problemen waar we tegenaan liepen is dat de data die gebruikt is om de standaardmodellen te creëren onvoldoende lijkt op onze data, met als gevolg dat de performance achter blijft. Wel kunnen we die data gebruiken om de modellen verder te trainen, maar dan de data te verrijken met augmentaties. Zodoende lijkt het trainingsmateriaal meer op de scans in onze archieven. Dit komt de performance van de modellen op onze data ten goede.
+Eén van de problemen waar we tegenaan liepen is dat de data die gebruikt is om de standaardmodellen te creëren onvoldoende lijkt op onze data, met als gevolg dat de performance achter blijft. Wel kunnen we die data gebruiken om de modellen verder te trainen, maar dan moet de data verrijkt worden met augmentaties. Zodoende lijkt het trainingsmateriaal meer op de scans in onze archieven. Dit komt de performance van de modellen op onze data ten goede.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/data_augmentation.png"
    caption="Het toepassen van data augmentaties om de openbare dataset meer op onze data te laten lijken. V.l.n.r.: het origineel, ruis, thresholding, gecombineerd" %}
 
-De tooling bestaat uit twee stappen om de scans om te zetten naar doorzoekbare tekst: 1) layout analyse en 2) tekstherkenning. Voor beide stappen zijn zowel de openbare dataset gebruikt.
+De Loghi tooling bestaat uit twee stappen om de scans om te zetten naar doorzoekbare tekst: 1) layout analyse en 2) tekstherkenning. Voor beide stappen zijn de openbare dataset met data augmentaties gebruikt.
 
 ### Stap 1: Layout analyse
 
@@ -89,25 +89,25 @@ Om de tekst te kunnen herkennen, moet je eerst weten waar de tekst precies in de
 
 ### Stap 2: Tekstherkenning
 
-Op basis van de gevonden tekstregels kunnen we uitsneden maken. Het is niet nodig om deze verder op te knippen in losse letters, de AI modellen kunnen een volledige zin in één keer omzetten. Van de uitsnede wordt als afbeelding dan door het HTR model gehaald.
+Op basis van de gevonden tekstregels kunnen we uitsneden maken. Het is niet nodig om deze verder op te knippen in losse letters, de AI modellen kunnen een volledige zin in één keer omzetten. De uitsnede wordt dan als afbeelding door het HTR model gehaald.
 
-Net als de vorige stap is het hiervoor nodig om een AI model te trainen op veel voorbeelden. Vanuit de gelabelde zijn de tekstregels uitgesneden met daarbij de overgetypte tekst. Dit vormen paren van inputdata en ground truth, de gewenste uitkomst van het systeem. Dit stelt ons in staat om andere scans die niet handmatig overgeschreven zijn ook om te zetten naar tekst.
+Net als de vorige stap is het hiervoor nodig om een AI model te trainen op veel voorbeelden. Vanuit de gelabelde data zijn de tekstregels uitgesneden met daarbij de overgetypte tekst. Dit vormen paren van inputdata en ground truth, de gewenste uitkomst van het systeem. Dit stelt ons in staat om andere scans die niet handmatig overgeschreven zijn ook om te zetten naar tekst.
 
 {% include figure.html
    path="/assets/images/handgeschreven_aktes_ai/results_ocr.png"
    caption="Uitsnede van een gevonden tekstregel. De uitkomst van het HTR model geeft de herkende tekst terug met een confidence score" %}
 
-De tekstherkenningsstap valideren we op een aantal van de overgetypte Kadaster aktes, die geen onderdeel waren van de trainingsset. Over deze modellen wordt een voorspelling gedaan door de getrainde modellen, waarna we naar het verschil meten tussen de voorspelde tekst, en de gemaakte transcriptie. Elke letter die tussen beide verschilt is een fout.
+De tekstherkenningsstap valideren we op een aantal van de overgetypte Kadaster aktes, die geen onderdeel waren van de trainingsset. Over deze modellen wordt een voorspelling gedaan door de getrainde modellen, waarna we het verschil meten tussen de voorspelde tekst, en de gemaakte transcriptie. Elke letter die tussen beide verschilt is een fout.
 
-We behalen hiermee een foutmarge van slechts 5%. Dit maakt de teksten goed begrijpelijk en versnelt het onderzoek aanzienlijk. Onderzoekers kunnen nu sneller kerninformatie uit aktes halen en zijn minder afhankelijk van handmatige transcripties. Ook is het een gemiddelde en zijn er sommige aktes met goede scankwaliteit en leesbaar handschrift die bijna foutloos omgezet worden.
+We behalen hiermee een foutmarge van 5%. Dit maakt de teksten goed begrijpelijk en versnelt het onderzoek aanzienlijk. Onderzoekers kunnen nu sneller kerninformatie uit aktes halen en zijn minder afhankelijk van handmatige transcripties. Ook is het een gemiddelde en zijn er sommige aktes met goede scankwaliteit en leesbaar handschrift die bijna foutloos omgezet worden.
 
 ## Vraag 2: Vinden van Erfdienstbaarheden
 
-Eén van de toepassingen waarvoor de handgeschreven aktes is het vinden van erfdienstbaarheden. In hoeverre kunnen we erfdienstbaarheden geautomatiseerd vinden?
+Eén van de toepassingen waarvoor de handgeschreven aktes geraadpleegd worden is het vinden van erfdienstbaarheden. In hoeverre kunnen we erfdienstbaarheden geautomatiseerd vinden?
 
 ### Passages
 
-Wanneer een erfdienstbaarhedenonderzoeken wordt uitgevoerd, worden de relevante passages uit de akte overgetypt die het erfdienstbaarheid omschrijven. Dit kan één zijn per akte, of meerdere. Voor dit onderzoek hebben we 167 passages uit 162 aktes gepakt en met de getrainde AI modellen de tekst geëxtraheerd.
+Wanneer een erfdienstbaarhedenonderzoeken wordt uitgevoerd, worden de relevante passages uit de akte overgetypt die het erfdienstbaarheid omschrijven. Dit kan er één zijn per akte, of meerdere. Voor dit onderzoek hebben we 167 passages uit 162 aktes gepakt en met de getrainde AI modellen de tekst geëxtraheerd.
 
 Tegenwoordig staan erfdienstbaarheden netjes onder een eigen kopje vermeld, maar dat was niet altijd zo. In dat geval moet het recht afgeleid worden aan de hand van de omschrijving in de aktetekst. Zo kunnen we een lijstje van zoektermen opstellen:
 
@@ -130,7 +130,7 @@ Fuzzy search presteert uitstekend op goed leesbare aktes. In deze gevallen wordt
    path="/assets/images/handgeschreven_aktes_ai/results_search.png"
    caption="De omgezette tekst met de gevonden erfdienstbaarheden gemarkeerd" %}
 
-### Techniek: Embeddings
+### Techniek: zoeken in embeddings
 
 De tweede techniek is het zoeken in embeddings. Hierbij wordt de tekst omgezet naar een vector van getallen, die de betekenis (semantiek) van de tekst vastlegt. Het voordeel hiervan is dat vergelijkbare woorden of zinnen toch bij elkaar worden gevonden. Bijvoorbeeld: “vennootschap” en “bedrijf” liggen in een embeddingsruimte dicht bij elkaar. Dit kan helpen bij het vinden van erfdienstbaarheden, zelfs als de exacte zoekterm niet aanwezig is.
 
