@@ -6,7 +6,7 @@ title: Internships and Student Assignments
 
 ## Stage- en afstudeeropdrachten
 If you are interested in internships/assignments at Kadaster, but Dutch is not your native language, please contact <a
-href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a> for possibilities or see <a href="/assets/pdf/Internships_2023.pdf">this document</a> for a short summary of topics.
+href="mailto:janneke.michielsen@kadaster.nl">Janneke Michielsen</a> for possibilities or see <a href="/assets/pdf/Internships_2023.pdf">this document</a> for a short summary of topics.
 
 ## Data Science bij het Kadaster
 Een belangrijke voedingsbodem voor nieuwe initiatieven op onze labs omgeving is de samenwerking met Universiteiten en Hogescholen. Het Data Science team bestaat uit Kadaster medewerkers, medewerkers van partners en studenten. Als Data Science team hebben wij tal van aantrekkelijke opdrachten op het gebied van Data Science die Kadaster helpen bij het slimmer maken van de organisatie en onze dienstverlening. 
@@ -19,7 +19,7 @@ Maar jouw stage is maatwerk. Heb je een wens of idee op het gebied van data scie
 Ben jij student op hbo- of wo -niveau en studeer je in de richting van data science, computer science, artificial intelligence, toegepaste wiskunde of een andere richting die goed aansluit op onze werkzaamheden? Maak je interesse bij ons kenbaar! Laat dan jouw profiel en interesses bij ons achter via <a href="https://www.werkenbijhetkadaster.nl/job/Apeldoorn-De-Brug-Stage-in-het-Data-Science-Team-open-sollicitatie/991931701/">deze pagina</a>.   
 
 Voor (technische) inhoudelijke vragen over data science of een stageopdracht, neem contact op met Erwin Folmer van het Data Science team, via <a
-href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a>
+href="mailto:janneke.michielsen@kadaster.nl">Janneke Michielsen</a>
 
 ## Geo Expertise Center
 Het Data Science team werkt samen met andere afdelingen binnen het Kadaster. Het Geo Expertise Center is één van de drie clusters die valt onder de afdeling Geodata Services. Wij maken geo-informatie toepasbaar voor maatschappelijke vraagstukken gericht op een duurzame en leefbare samenleving. Binnen het GEC-cluster ontwikkelen wij nieuwe en bestaande geo-producten en tools, met name op het gebied van 3D, nationale en internationale topografie, digital twin en objectherkenning door middel van Deep Learning. Onze kracht zit in het onderzoeken en toepasbaar maken van nieuwe mogelijkheden (innovaties) in data, technieken en processen in samenwerking met de wetenschap en het bedrijfsleven. De kennis die wij opdoen delen wij proactief in Nederland en, omdat geo-informatie niet stopt bij de grens, ook daarbuiten.
@@ -49,4 +49,4 @@ href="mailto:Marieke.Kuijer@kadaster.nl">Marieke Kuijer</a>
 
 ## Hackathon
 Elk jaar in december organiseert het Kadaster Data Science team ― in samenwerking met Universiteit Twente ― een hackathon rondom open kadastrale data. Neem contact op met <a
-href="mailto:Erwin.Folmer@kadaster.nl">Erwin Folmer</a> als je hieraan wil deelnemen.
+href="mailto:janneke.michielsen@kadaster.nl">Janneke Michielsen</a> als je hieraan wil deelnemen.
