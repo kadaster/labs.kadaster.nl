@@ -15,7 +15,7 @@ Voor dit onderzoek is gebruikgemaakt van de BAG met koopsommen en coördinaten t
 - **TVAE**: Een variational autoencoder die latente structuren in de data leert en reproduceert.
 - **PATEGAN**: Een privacygericht generatief model dat gebruikmaakt van differentiële privacytechnieken.
 
-![Methodologie](../assets/images/synthetische_data/image006.jpg)  
+![Methodologie](/assets/images/synthetische_data/image006.jpg)  
 *Figuur 1 - Vergelijking synthetische datageneratie-modellen.*
 
 ## Evaluatiemetrieken
@@ -45,12 +45,12 @@ Uit de evaluatie blijkt dat synthetische data gebruikerswaarde behoudt, maar dat
 - **TVAE** presteerde het best op de modellen: met een lage RMSE en een relatief hoge Adjusted R²-score, wat duidt op een sterke overeenkomst met echte data.
 - **PATEGAN** presteerde goed op foutmarges (MAPE en RMSE), maar Adjusted R² was laag, wat betekent dat de onderlinge relaties in de dataset minder goed worden gerepresenteerd.
 
-![Modelprestaties](../assets/images/synthetische_data/image001.jpg)  
+![Modelprestaties](/assets/images/synthetische_data/image001.jpg)  
 *Figuur 2 - Vergelijking van de modelprestaties.*
 
 De visualisaties van de lineaire regressie geven een duidelijk beeld van hoe dicht de synthetisch gegenereerde data (CTAB-GAN+, TVAE en PATE) bij de oorspronkelijke dataset ligt. Zo wordt ook visueel duidelijk waarom PATE bij sommige modellen een relatief lage R² behaalt: in de grafieken is zichtbaar dat de voorspellingen verder afwijken van de werkelijke waarden dan bij andere methoden.
 
-![Modelprestaties](../assets/images/synthetische_data/image010.jpg)  
+![Modelprestaties](/assets/images/synthetische_data/image010.jpg)  
 *Figuur 3 - Lineaire Regressie plots.*
 
 Daarnaast valt op dat de schaal van plot (e), iets afwijkt van de andere plots. Dit komt door enkele grote uitschieters in de originele data. Het is interessant om te zien hoe de synthetische datageneratiemethoden met deze outliers omgaan: sommige modellen lijken robuuster en weten de extreme waarden beter te benaderen, terwijl andere juist meer spreiding in de voorspellingen laten zien. Hiermee wordt direct zichtbaar hoe sterk (of minder sterk) elk model met uitzonderlijke data kan omgaan en hoe die uitschieters het algemene voorspellingstraject beïnvloeden.
@@ -65,7 +65,7 @@ Privacy is een cruciaal aspect bij synthetische data. De tabel hieronder toont d
 - **TVAE** scoorde het laagst op K-anonimiteit, maar biedt nog steeds een acceptabel beschermingsniveau.
 - **CTAB-GAN+** heeft een betere privacybescherming dan TVAE, maar scoort minder goed dan PATEGAN.
 
-![Privacybescherming](../assets/images/synthetische_data/image002.jpg)  
+![Privacybescherming](/assets/images/synthetische_data/image002.jpg)  
 *Figuur 4 - Vergelijking van privacybescherming tussen modellen.*
 
 ### Ruimtelijke Analyse van de Synthetische Data
@@ -77,17 +77,17 @@ Voor woningmarktanalyses is de ruimtelijke verdeling van woningen essentieel. In
 
 Echter, wanneer we de statistische verdeling van de coördinaten bekijken, blijkt dat de synthetische data wel de juiste spreiding heeft.
 <p align="center">
-  <img src="../assets/images/synthetische_data/image009.jpg" width="45%">
-  <img src="../assets/images/synthetische_data/image007.jpg" width="45%">
+  <img src="/assets/images/synthetische_data/image009.jpg" width="45%">
+  <img src="/assets/images/synthetische_data/image007.jpg" width="45%">
 </p>
 *Figuur 6 - verdeling van de coordinaten.*
 
 Dit komt doordat de algemene datageneratiemethoden goed zijn in het nabootsen van de dataspreiding, maar moeite hebben met het vastleggen van de relatie tussen x- en y-coördinaten. Hierin presteert het GeoPointGAN-model aanzienlijk beter, zoals te zien is aan de bijgevoegde plots.
 
 <p align="center">
-  <img src="../assets/images/synthetische_data/image003.jpg" width="32%">
-  <img src="../assets/images/synthetische_data/image004.jpg" width="32%">
-  <img src="../assets/images/synthetische_data/image005.jpg" width="32%">
+  <img src="/assets/images/synthetische_data/image003.jpg" width="32%">
+  <img src="/assets/images/synthetische_data/image004.jpg" width="32%">
+  <img src="/assets/images/synthetische_data/image005.jpg" width="32%">
 </p>
 *Figuur 7 - Ruimtelijke verdeling van de echte en synthetische dataset GeoPointGan.*
 
