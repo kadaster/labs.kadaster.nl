@@ -6,6 +6,13 @@ title: Data Browsers
 # Studenten
 
 <div class="cards-wrapper">'
+  <a href="/cases/synthetische_data">
+   <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/assets/images/synthetische_data/tile.jpg" alt="Synthetische data">
+      <div class="card-title">Synthetische data</div>
+      <div class="card-description">Synthetische data en privacy in de woningmarkt, een onderzoek naar CTAB-GAN+, TVAE en PATEGAN.</div>
+    </div>
   <a href="/cases/woningmarktonderzoek">
    <div class="card">
       <div class="card-type">Stage</div>
