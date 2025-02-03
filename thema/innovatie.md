@@ -94,14 +94,6 @@ title: Innovatie
       <div class="card-description">Deze data story geeft een overzicht van de high 5 die is uitgevoerd omtrent linked data event streams.  </div>
     </div>
     </a>
-    <a href="/cases/loki">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/loki-logo.jpg" alt="Loki logo">
-      <div class="card-title">Loki voor GEO Informatieverstrekking</div>
-      <div class="card-description">Loki is een chatbot voor Locatie-gebaseerde Kadaster Informatieverstrekking. Vraag Loki en krijg eenvoudig antwoord van Kadaster.</div>
-    </div>
-  </a>
     <a href="/cases/nen-hackathon-2022">
     <div class="card">
       <div class="card-type">Use Case</div>
