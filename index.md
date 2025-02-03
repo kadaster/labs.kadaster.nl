@@ -55,12 +55,6 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
       <img class="card-image" src="/assets/images/bag.png" alt="Browsers">
     </div>
   </a>
-    <a href="/thema/linked_data">
-    <div class="card-home">
-      <div class="card-type">Linked Data</div>
-      <img class="card-image" src="/assets/images/kg-banner.webp" alt="Linked Data">
-    </div>
-  </a>
 </div>
 
 

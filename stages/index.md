@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Internships and Student Assignments
+title: Stage- en afstudeeropdrachten
 ---
 # Stage- en afstudeeropdrachten
 

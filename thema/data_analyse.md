@@ -22,14 +22,6 @@ title: Data Analyse
       <div class="card-description">In dit onderzoek bespreken we de kwaliteit van akteteksten resulterend uit OCR toegepast op de akten van het Kadaster.</div>
     </div>
   </a>
-    <a href="/demonstrators/datagedreven-werken/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/screenshot_velocity.png">
-      <div class="card-title">Datagedreven werken dashboard</div>
-      <div class="card-description">Dashboard in SAP analytics cloud, deze biedt inzichten door bedrijfsvoering data te combineren en te analyseren.</div>
-    </div>
-  </a>
   <a href="/cases/kwaliteit_BAG_BRK_koppeling">
     <div class="card">
       <div class="card-type">Use Case</div>

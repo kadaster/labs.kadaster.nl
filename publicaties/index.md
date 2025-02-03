@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dissemination
+title: Publicaties
 ---
 
 # Publicaties

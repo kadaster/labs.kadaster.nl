@@ -70,14 +70,6 @@ title: Innovatie
       <div class="card-description">Om erfdienstbaarheden in akten te kunnen herkennen, is een onderzoek gedaan om op de gedigitaliseerde bestanden OCR toe te passen.</div>
     </div>
   </a>
-      <!-- <a href="https://www.kadaster.nl/-/bim-legal-maakt-vuistdikke-ordners-overbodig">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/BIM_Legal.jpg">
-      <div class="card-title">BIM Legal</div>
-      <div class="card-description">Het doel van BIM Legal: iedereen kan direct zien welke juridische afspraken van toepassing zijn op percelen en hun bebouwing.</div>
-    </div>
-  </a> -->
     <a href="https://www.zorgeloosvastgoed.nl/ministerie-bzk-neemt-afsprakenstelsel-zorgeloos-vastgoed-in-ontvangst/%C2%A0">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -118,14 +110,6 @@ title: Innovatie
       <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
     </div>
   </a>
-    <!-- <a href="/cases/geodata-voor-iedereen">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/logoexplorer.jpg" alt="Integrale explorer logo">
-      <div class="card-title">GEO data voor iedereen</div>
-      <div class="card-description">Middels twee demonstrators geven wij concreet handen en voeten aan ons speerpunt geo data voor iedereen. </div>
-    </div>
-  </a> -->
   <a href="/tech-radar/index.html">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -142,14 +126,6 @@ title: Innovatie
       <div class="card-description">Bekijk een 3D BIM model en data story inclusief de relaties naar de basisregistraties. </div>
     </div>
   </a>
-  <!-- <a href="/demonstrators/sensrnet/index.html">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/SensRNet-logo.png">
-      <div class="card-title">Ontwikkeling Sensorenregister</div>
-      <div class="card-description">SensRNet is een netwerkoplossing om in samenwerking met andere overheden tot een nationaal sensorenregister te komen.</div>
-    </div>
-  </a> -->
   <a href="/demonstrators/verkaufsbucher-zoeken/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
