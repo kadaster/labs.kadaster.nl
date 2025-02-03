@@ -28,7 +28,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
   <a href="/thema/innovatie">
     <div class="card-home">
       <div class="card-type">Innovatie</div>
-      <img class="card-image" src="/assets/images/handen.jpg" alt="innovatie">
+      <img class="card-image" src="/assets/images/handen.jpg" alt="Innovatie">
     </div>
   </a>
   <a href="https://data.kkg.kadaster.nl/">
@@ -40,7 +40,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
     <a href="/thema/data_analyse">
     <div class="card-home">
       <div class="card-type">Data Analyse</div>
-      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="data analyse">
+      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="Data Analyse">
     </div>
   </a>
     <a href="/thema/studenten">
@@ -56,17 +56,6 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
     </div>
   </a>
 </div>
-
-
-<!-- <!-- <div class="cards-wrapper">
-  <a href="/cases/integralegebruiksoplossing">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/assets/images/igo-design.PNG" alt="Integraal Bevragen">
-      <div class="card-title">Integrale Gebruiksoplossing</div>
-      <div class="card-description">In deze use case worden verschillende use cases gecombineerd naar een geheel dat meer waarde bied dan de som van zijn onderdelen</div>
-    </div>
-  </a> -->
 
 
 

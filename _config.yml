@@ -23,10 +23,6 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: "sparqlviewer"
-    values:
-      sitemap: false
-  - scope:
       path: "google2789079383a16a17.html"
     values:
       sitemap: false
