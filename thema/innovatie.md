@@ -30,6 +30,30 @@ title: Innovatie
       <div class="card-description">Lock de data, unlock het potentieel! Een verkenning naar autorisatie binnen Linked Data. </div>
     </div>
   </a>
+  <a href="/cases/ar-applicatie">
+  <div class="card">
+    <div class="card-type">Use Case</div>
+    <img class="card-image" src="/assets/images/kadaster-logo.png">
+    <div class="card-title">AR Applicatie</div>
+    <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
+  </div>
+  </a>
+  <a href="/demonstrators/geodatawizard">
+  <div class="card">
+    <div class="card-type">Demonstrator</div>
+    <img class="card-image" src="/assets/images/spatial_wizard_logo.png">
+    <div class="card-title">GeoDataWizard</div>
+    <div class="card-description">Ga zelf aan de slag met het omzetten van uw datasets naar Linked Data</div>
+  </div>
+  </a>
+  <a href="/demonstrators/namen-app">
+  <div class="card">
+    <div class="card-type">Demonstrator</div>
+    <img class="card-image" src="/assets/images/namen-app-tegel-image.png">
+    <div class="card-title">Toponamenzoeker</div>
+    <div class="card-description">In de toponamenzoeker kun je zoeken op alle namen die in de topografische bestanden en kaarten van het Kadaster aanwezig zijn.</div>
+  </div>
+  </a>
   <a href="/cases/geodataplein">
     <div class="card">
       <div class="card-type">Project</div>
