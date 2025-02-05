@@ -72,7 +72,7 @@ Privacy is een cruciaal aspect bij synthetische data. De tabel hieronder toont d
 
 Voor woningmarktanalyses is de ruimtelijke verdeling van woningen essentieel. In de scatterplot hieronder lijkt de synthetische data niet overeen te komen met de echte data.
 
-![Scatterplot Synthetische Data](../assets/images/synthetische_data/image008.jpg)  
+![Scatterplot Synthetische Data](/assets/images/synthetische_data/image008.jpg)  
 *Figuur 5 - Ruimtelijke verdeling van de synthetische dataset.*
 
 Echter, wanneer we de statistische verdeling van de coördinaten bekijken, blijkt dat de synthetische data wel de juiste spreiding heeft.
