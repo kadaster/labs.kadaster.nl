@@ -70,12 +70,12 @@ title: Innovatie
       <div class="card-description">Het register geeft inzicht in waar sensoren zich bevinden in de openbare ruimte, welke data ze verzamelen en wie de eigenaar is.</div>
     </div>
   </a>
-  <a href="/cases/tactielekaart">
+  <a href="/cases/voelbare_kaarten">
     <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/Tactiele_kaart.jpg">
-      <div class="card-title">Tactiele kaart</div>
-      <div class="card-description">Een samenwerking om de geautomatiseerde productie van tactiele (voelbare) topografische kaarten te ontwikkelen.</div>
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/assets/images/voelbare_kaarten/tile.jpg">
+      <div class="card-title">Voelbare Kaarten</div>
+      <div class="card-description">Een samenwerking om een geautomatiseerd proces te ontwikkelen voor de productie van voelbare (tactiele) kaarten. </div>y
     </div>
   </a>
   <a href="https://www.kadaster.nl/over-ons/beleid/algoritmeregister">
