@@ -19,7 +19,7 @@ Elke organisatie brengt haar eigen expertise in op het gebied van topografie, GI
 
 <figure id="figuur-1">
   <a href="/assets/images/aanpak.png">
-    <img src="/assets/images/aanpak.png" alt="aanpak">
+    <img src="/assets/images/aanpak.png" alt="Proces">
   </a>
 </figure>
 
@@ -32,19 +32,19 @@ De eerste kaarten die we hebben ontwikkeld zijn buurtkaarten die hoofdzakelijk z
 
 <figure id="figuur-2">
   <a href="/assets/images/resultaten_1.png">
-    <img src="/assets/images/resultaten_1.png" alt="resultaten_1">
+    <img src="/assets/images/resultaten_1.png" alt="Proces">
   </a>
 </figure>
 
 <figure id="figuur-3">
   <a href="/assets/images/resultaten_2.png">
-    <img src="/assets/images/resultaten_2.png" alt="resultaten_2">
+    <img src="/assets/images/resultaten_2.png" alt="Proces">
   </a>
 </figure>
 
 <figure id="figuur-4">
   <a href="/assets/images/resultaten_3.png">
-    <img src="/assets/images/resultaten_3.png" alt="resultaten_3">
+    <img src="/assets/images/resultaten_3.png" alt="Proces">
   </a>
 </figure>
 
