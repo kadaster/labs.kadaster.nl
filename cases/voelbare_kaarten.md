@@ -17,9 +17,11 @@ De belangrijkste doelen van onze samenwerking zijn: (1) het ontwikkelen van voel
 ## Aanpak
 Elke organisatie brengt haar eigen expertise in op het gebied van topografie, GIS, tactiele kaarten, toegankelijkheid en ervaringsdeskundigheid. Daarnaast vinden wij het heel belangrijk dat we niet vóór, maar juist samen mét de blinde en slechtziende gebruikers ontwikkelen. Door hen een belangrijke stem te geven, sluit het eindproduct zo goed mogelijk aan bij hun wensen en behoeften. Daarnaast hebben wij internationale samenwerking gezocht om kennis uit te wisselen en te zorgen voor standaardisatie en werken we regelmatig samen met onderwijsinstellingen en studenten.
 
-{% include figure.html
-   path="/assets/images/voelbare_kaarten/aanpak.png"
-%}
+<figure id="figuur-1">
+  <a href="/assets/images/aanpak.png">
+    <img src="/assets/images/aanpak.png" alt="aanpak">
+  </a>
+</figure>
 
 We maken gebruik van open data, waaronder de BRT (Basisregistratie Topografie) en OSM (Open Street Map). Daardoor zijn de voelbare kaarten schaalbaar voor elke locatie in Nederland én wereldwijd. We gebruiken GIS-software (Geografische Informatie Systemen) om bestaande topografische data om te zetten naar kaarten met speciale symbolen en braille. We generaliseren de data sterk omdat de symbolen anders niet goed te voelen en onderscheiden zijn.  
  
@@ -28,13 +30,23 @@ De kaarten worden gemaakt op zogenaamd zwelpapier. Dit is een warmtegevoelig pap
 ## Resultaten
 De eerste kaarten die we hebben ontwikkeld zijn buurtkaarten die hoofdzakelijk zijn gebaseerd op TOP10NL data. We maken hiervoor gebruik van ArcGIS Pro. De voelbare kaarten worden aangeboden in een pakket dat bestaat uit 3 verschillende kaarten, een legenda en een kaartbeschrijving. De kaarten worden afgedrukt op A3 formaat en zijn standaard voorzien van een titel, schaalbalk en noordpijl die ook voelbaar zijn.
 
-{% include figure.html
-   path="/assets/images/voelbare_kaarten/resultaten_1.png"
-%}
+<figure id="figuur-2">
+  <a href="/assets/images/resultaten_1.png">
+    <img src="/assets/images/resultaten_1.png" alt="resultaten_1">
+  </a>
+</figure>
 
-{% include figure.html
-   path="/assets/images/voelbare_kaarten/resultaten_2.png"
-%}
+<figure id="figuur-3">
+  <a href="/assets/images/resultaten_2.png">
+    <img src="/assets/images/resultaten_2.png" alt="resultaten_2">
+  </a>
+</figure>
+
+<figure id="figuur-4">
+  <a href="/assets/images/resultaten_3.png">
+    <img src="/assets/images/resultaten_3.png" alt="resultaten_3">
+  </a>
+</figure>
 
 Omdat veel mensen met een visuele beperking niet volledig blind zijn (restvisie), kunnen we kleur aanbrengen zodat zij de kaarten makkelijker kunnen gebruiken.
 
