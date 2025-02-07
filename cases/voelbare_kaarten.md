@@ -18,8 +18,8 @@ De belangrijkste doelen van onze samenwerking zijn: (1) het ontwikkelen van voel
 Elke organisatie brengt haar eigen expertise in op het gebied van topografie, GIS, tactiele kaarten, toegankelijkheid en ervaringsdeskundigheid. Daarnaast vinden wij het heel belangrijk dat we niet vóór, maar juist samen mét de blinde en slechtziende gebruikers ontwikkelen. Door hen een belangrijke stem te geven, sluit het eindproduct zo goed mogelijk aan bij hun wensen en behoeften. Daarnaast hebben wij internationale samenwerking gezocht om kennis uit te wisselen en te zorgen voor standaardisatie en werken we regelmatig samen met onderwijsinstellingen en studenten.
 
 <figure id="figuur-1">
-  <a href="/assets/images/aanpak.png">
-    <img src="/assets/images/aanpak.png" alt="Proces">
+  <a href="/assets/images/voelbare_kaarten/aanpak.png">
+    <img src="/assets/images/voelbare_kaarten/aanpak.png" alt="Proces">
   </a>
 </figure>
 
@@ -31,20 +31,20 @@ De kaarten worden gemaakt op zogenaamd zwelpapier. Dit is een warmtegevoelig pap
 De eerste kaarten die we hebben ontwikkeld zijn buurtkaarten die hoofdzakelijk zijn gebaseerd op TOP10NL data. We maken hiervoor gebruik van ArcGIS Pro. De voelbare kaarten worden aangeboden in een pakket dat bestaat uit 3 verschillende kaarten, een legenda en een kaartbeschrijving. De kaarten worden afgedrukt op A3 formaat en zijn standaard voorzien van een titel, schaalbalk en noordpijl die ook voelbaar zijn.
 
 <figure id="figuur-2">
-  <a href="/assets/images/resultaten_1.png">
-    <img src="/assets/images/resultaten_1.png" alt="Proces">
+  <a href="/assets/images/voelbare_kaarten/resultaten_1.png">
+    <img src="/assets/images/voelbare_kaarten/resultaten_1.png" alt="Proces">
   </a>
 </figure>
 
 <figure id="figuur-3">
-  <a href="/assets/images/resultaten_2.png">
-    <img src="/assets/images/resultaten_2.png" alt="Proces">
+  <a href="/assets/images/voelbare_kaarten/resultaten_2.png">
+    <img src="/assets/images/voelbare_kaarten/resultaten_2.png" alt="Proces">
   </a>
 </figure>
 
 <figure id="figuur-4">
-  <a href="/assets/images/resultaten_3.png">
-    <img src="/assets/images/resultaten_3.png" alt="Proces">
+  <a href="/assets/images/voelbare_kaarten/resultaten_3.png">
+    <img src="/assets/images/voelbare_kaarten/resultaten_3.png" alt="Proces">
   </a>
 </figure>
 
