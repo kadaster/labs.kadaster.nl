@@ -17,7 +17,7 @@ Welkom op de themapagina voor het Geodataplein. Op deze pagina introduceren we d
 </div>
     </div>
   </a>
-  <a href="/demonstrators/querybuilder">
+  <a href="/demonstrators/querybuilder/imx-geo">
     <div class="card">
       <div class="card-type">Query Builder</div>
       <img class="card-image" src="/assets/images/linked-data_icon.png">

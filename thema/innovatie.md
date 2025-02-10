@@ -94,14 +94,6 @@ title: Innovatie
       <div class="card-description">Om erfdienstbaarheden in akten te kunnen herkennen, is een onderzoek gedaan om op de gedigitaliseerde bestanden OCR toe te passen.</div>
     </div>
   </a>
-    <a href="https://www.zorgeloosvastgoed.nl/ministerie-bzk-neemt-afsprakenstelsel-zorgeloos-vastgoed-in-ontvangst/%C2%A0">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/assets/images/zorgeloosvastgoed.png">
-      <div class="card-title">Zorgeloos Vastgoed</div>
-      <div class="card-description">Een samenwerking in de vorm van de stichting Zorgeloos Vastgoed.</div>
-    </div>
-  </a>
   <a href="/cases/Solid-Pods">
     <div class="card">
       <div class="card-type">Demonstrator</div>
