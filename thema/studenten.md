@@ -57,6 +57,5 @@ title: Data Browsers
       <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Voorspellingen">
       <div class="card-title">BAG voorspellingen</div>
       <div class="card-description">Missende BAG bouwjaren voorspellen.</div>
-    </div>
   </a>
 </div>

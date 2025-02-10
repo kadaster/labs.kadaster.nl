@@ -5,7 +5,7 @@ title: Use Case ― Missende BAG-waarden voorspellen
 ---
 # Use Case: Missende BAG-waarden voorspellen
 <div class="cards-wrapper">
-  <a href="/demonstrators/bagdemonstrator/">
+  <a href="https://labs.kadaster.nl/demonstrators/bagdemonstrator/">
     <div class="card">
       <div class="card-type">Demonstrator</div>
       <img class="card-image" src="/assets/images/bag-voorspellingen-shiny.PNG" alt="Kaart Amsterdam met markers">
