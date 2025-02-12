@@ -10,20 +10,11 @@ defaults:
       path: ""
       type: pages
     values:
-      banner: /assets/images/banner-placeholder-3.jpg
-  # won't work as array:  'no implicit conversion of Array into String (TypeError)'
-  - scope:
-      path: "demonstrators/unlocked"
-    values:
-      sitemap: false
+      banner: /navigatiebalk/banner.jpg
   - scope:
       # this is maybe too general: in future maybe we have access to img / pdf input in LLM api
       # also excluding some LD data
       path: "assets"
-    values:
-      sitemap: false
-  - scope:
-      path: "google2789079383a16a17.html"
     values:
       sitemap: false
 
