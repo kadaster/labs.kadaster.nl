@@ -41,7 +41,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 <div class="cards-wrapper">
 
-  <a href="/innovatie/geodatawizard/geodata_wizard">
+  <a href="/demonstrators/geodatawizard">
     <div class="card">
       <div class="card-type">GeoDataWizard</div>
         <img class="card-image" src="/innovatie/geodatawizard/geodata_wizard.png">
@@ -52,7 +52,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
   <a href="/innovatie/igo/integrale_gebruiksoplossing_stories">
     <div class="card">
       <div class="card-type">Data Story</div>
-      <img class="card-image" src="/innovatie/integrale_gebruiksoplossing_stories.png">
+      <img class="card-image" src="/innovatie/igo/integrale_gebruiksoplossing_stories.png">
       <div class="card-description">Bekijk hier hoe vraagstukken uit verschilende sectoren worden beantwoord met behulp van de Integrale Gebruiksoplossing.</div>
     </div>
   </a>
