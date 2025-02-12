@@ -24,8 +24,8 @@ Het Kadaster heeft twee andere Object Viewers ontwikkeld. Een gebaseerd op [SPAR
 Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de ontwikkeling van de applicatie. Deze applicatie heeft een soortgelijke use case. De gebruiker kan een tijdreis maken over de topografische kaarten van Nederland. Het grootste verschil tussen Topotijdreis en Tijdreizen met GraphQL zit in de databronnen die worden gebruikt. In Topotijdreis zijn dit statische afbeeldingen en Tijdreizen met GraphQL is dit dynamische geografische informatie. Desondanks is vooral de werking van de slider in Topotijdreis heel waardevol gebleken voor de ontwikkeling van de applicatie.
 
 <figure id="figuur-1">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/topotijdreis.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/topotijdreis.png" alt="Topotijdreis">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/topotijdreis.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/topotijdreis.png" alt="Topotijdreis">
   </a>
   <figcaption>
     Figuur 1 ― Topotijdreis.
@@ -37,8 +37,8 @@ Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de
 De Kadaster huisstijl en Angular Material zijn gebruikt voor de styling van de applicatie. In eerste instantie was ervoor gekozen om een dashboard te bouwen met drie panelen filter-menu, kaart, en resultaten lijst. Zie de onderstaande scherm afbeelding.
 
 <figure id="figuur-2">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/user-interface-1.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/user-interface-1.png" alt="UI iteratie 1">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/user-interface-1.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/user-interface-1.png" alt="UI iteratie 1">
   </a>
   <figcaption>
     Figuur 2 ― User interface eerste iteratie.
@@ -50,8 +50,8 @@ De Kadaster huisstijl en Angular Material zijn gebruikt voor de styling van de a
 Dit zorgde echter voor een onoverzichtelijke gebruikerservaring zodoende is er uiteindelijk voor gekozen om de kaart de hoogste prioriteit te geven in de user interface. Dit resulteerde in de volgende uitwerking:
 
 <figure id="figuur-3">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/dashlegend.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/dashlegend.png" alt="UI iteratie 1">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/dashlegend.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/dashlegend.png" alt="UI iteratie 1">
   </a>
   <figcaption>
     Figuur 3 ― User interface iteratie 2.
@@ -63,8 +63,8 @@ Dit zorgde echter voor een onoverzichtelijke gebruikerservaring zodoende is er u
 In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter een knop, het resultaat scherm is verwijderd en er is ervoor gekozen om het object informatie te weergeven in de legenda links onderin het scherm.  
 
 <figure id="figuur-4">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/legenda.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/legenda.png" alt="legenda">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/legenda.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/legenda.png" alt="legenda">
   </a>
   <figcaption>
     Figuur 4 ― Legenda met object info van een pand.
@@ -92,8 +92,8 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter 
 - De service wordt gebruikt om query's te maken naar de back-end (GraphQL gateway, en de gekoppelde databronnen) voor de visualisatie van de data.
 
 <figure id="figuur-5">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/application-architecture.jpg">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/application-architecture.jpg" alt="applicatie architectuur">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/application-architecture.jpg">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/application-architecture.jpg" alt="applicatie architectuur">
   </a>
   <figcaption>
     Figuur 5 ― Applicatie architectuur.
@@ -112,8 +112,8 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter 
 6. De kaart luistert ook naar de min en max waarde van de slider om de juiste objecten te kunnen tonen wanneer de slider begint af te spelen of handmatig van waarde veranderd. (De componenten hebben een Parent, Child relatie).
 
 <figure id="figuur-6">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/tijdreizen-clear.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/tijdreizen-clear.png" alt="werking slider">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/tijdreizen-clear.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/tijdreizen-clear.png" alt="werking slider">
   </a>
   <figcaption>
     Figuur 6 ― Werking slider.
@@ -125,8 +125,8 @@ In het huidige ontwerp is het filter-menu uitschuifbaar en zit verborgen achter 
 In de applicatie worden momenteel de volgende twaalf kleuren gebruikt (zie onderstaande figuur) om de polygonen van de Features een kleur te geven.
 
 <figure id="figuur-7">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/kleuren.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/kleuren.png" alt="kleuren">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/kleuren.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/kleuren.png" alt="kleuren">
   </a>
   <figcaption>
     Figuur 7 ― Kleur palette polygonen.
@@ -189,8 +189,8 @@ De applicatie stelt de gebruiker instaat om op een visuele manier GraphQL query'
 Bijvoorbeeld een simpel BAG pand verzoek met pand status in gebruik kan in de applicatie op de volgende manier uitgevoerd worden:
 
 <figure id="figuur-8">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/basis-query.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/basis-query.png" alt="basis query">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/basis-query.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/basis-query.png" alt="basis query">
   </a>
   <figcaption>
     Figuur 8 ― Basis verzoek BAG panden.
@@ -220,8 +220,8 @@ In de GraphQL playground zou de query er zo uitzien:
 Zie de onderstaande afbeelding voor de uitkomst van dit verzoek.
 
 <figure id="figuur-9">
-  <a href="/menutegels/studenten/graphqltijdreizen/afbeeldingen/query-uitkomst.png">
-    <img src="/menutegels/studenten/graphqltijdreizen/afbeeldingen/query-uitkomst.png" alt="query uitkomst">
+  <a href="/studenten/graphqltijdreizen/afbeeldingen/query-uitkomst.png">
+    <img src="/studenten/graphqltijdreizen/afbeeldingen/query-uitkomst.png" alt="query uitkomst">
   </a>
   <figcaption>
     Figuur 9 ― Resultaat van de aanvraag nadat de slider helemaal afgespeeld is.

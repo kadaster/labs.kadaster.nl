@@ -19,8 +19,8 @@ Momenteel wordt er bij de BRT weinig gebruik gemaakt van community data bij het 
 De ontwikkelde validatiemethode bestaat uit het classificeren van een gebouwtype aan de hand van straatfoto's door middel van een Convolutioneel Neuraal Netwerk model. De structuur van het onderzoek en de stappen die worden genomen worden afgebeeld in figuur 1.
 
 <figure id="figuur-1">
-  <a href="/menutegels/studenten/validatiemethode/afbeeldingen/proces.jpg">
-    <img src="/menutegels/studenten/validatiemethode/afbeeldingen/proces.jpg" alt="Proces">
+  <a href="/studenten/validatiemethode/afbeeldingen/proces.jpg">
+    <img src="/studenten/validatiemethode/afbeeldingen/proces.jpg" alt="Proces">
   </a>
   <figcaption>
     Figuur 1 ― Het proces van het ontwikkelen van een model.
@@ -36,8 +36,8 @@ De straatfoto’s van supermarkten halen we op via Cyclomedia en gebruiken we bi
 Een gedeelte van de straatbeelden labelen we vervolgens in 2 klassen; 1 – supermarkt; 2 geen supermarkt. In figuur 2 is een overzicht weergegeven van verschillende straatfoto’s per klasse. De straatfoto’s, waarvan duidelijk te zien is dat het een supermarkt is zoals een foto van de ingang of waar het logo of naam duidelijk in beeld is, labelen we in de klasse ‘supermarkt’. Foto’s waarvan het minder duidelijk is of het een supermarkt is zoals de achterkant van het gebouw of waar een grote vrachtwagen voor staat, labelen we in de klasse ‘geen supermarkt. Uiteindelijk bestaat de gelabelde dataset uit 1800 foto’s uit de klasse ‘supermarkt’, 429 foto’s uit de klasse ‘geen supermarkt’ en vullen we de klasse aan met 1371 foto’s van andere gebouwtypes. 
 
 <figure id="figuur-2">
-  <a href="/menutegels/studenten/validatiemethode/afbeeldingen/voorbeeldklassen.png">
-    <img src="/menutegels/studenten/validatiemethode/afbeeldingen/voorbeeldklassen.png" alt="Voorbeeld foto's per klasse">
+  <a href="/studenten/validatiemethode/afbeeldingen/voorbeeldklassen.png">
+    <img src="/studenten/validatiemethode/afbeeldingen/voorbeeldklassen.png" alt="Voorbeeld foto's per klasse">
   </a>
   <figcaption>
     Figuur 2 ― Overzicht van de verschillende afbeeldingen die aanwezig zijn in de invoer.
@@ -53,8 +53,8 @@ De gelabelde dataset splitsen we vervolgens in 3 sets:
 Om het aantal gelabelde foto’s in de trainset te verhogen, maken we gebruik van data augmentatie. Data augmentatie is een techniek die gebruikt wordt om de dataset te vergroten voor het trainen van het model zonder daadwerkelijk nieuwe data te verzamelen. Augmentatie technieken zoals inzoomen, herschalen, roteren en verschuiven zijn toegepast op de beelden die gebruikt zijn voor het trainen van het model. In figuur 3 is weergegeven hoe de data augmentatie strategie voor de traindataset eruit ziet. Uiteindelijk bestaat de traindataset uit 4200 foto’s per klasse, validatieset uit 360 foto's per klasse en de testset uit 360 foto's per klasse.
 
 <figure id="figuur-3">
-  <a href="/menutegels/studenten/validatiemethode/afbeeldingen/voorbeeldaugmentatie.png">
-    <img src="/menutegels/studenten/validatiemethode/afbeeldingen/voorbeeldaugmentatie.png" alt="Voorbeeld augmentatie">
+  <a href="/studenten/validatiemethode/afbeeldingen/voorbeeldaugmentatie.png">
+    <img src="/studenten/validatiemethode/afbeeldingen/voorbeeldaugmentatie.png" alt="Voorbeeld augmentatie">
   </a>
   <figcaption>
     Figuur 3 ― Voorbeeld van het augmenteren van een straatfoto. Linksboven is de originele straatfoto en op de overige drie foto’s zijn verschillende augmentatie technieken gebruikt.
@@ -74,8 +74,8 @@ Na het analyseren van het probleem, verkrijgen van de data en het ontwikkelen va
 Het beste model is gebaseerd op de Convolutioneel Neuraal Netwerk (CNN) tutorial van TensorFlow waarbij enkele aanpassingen zijn gemaakt. In de figuur 4a & b is de prestatie van het model geëvalueerd. 
 
 <figure id="figuur-4a">
-  <a href="/menutegels/studenten/validatiemethode/afbeeldingen/accuracyplot.png">
-    <img src="/menutegels/studenten/validatiemethode/afbeeldingen/accuracyplot.png" alt="Accuracy plot">
+  <a href="/studenten/validatiemethode/afbeeldingen/accuracyplot.png">
+    <img src="/studenten/validatiemethode/afbeeldingen/accuracyplot.png" alt="Accuracy plot">
   </a>
   <figcaption>
     Figuur 4a ― De accuracy grafiek voor train- en validatiedata van het beste model.
@@ -85,8 +85,8 @@ Het beste model is gebaseerd op de Convolutioneel Neuraal Netwerk (CNN) tutorial
 Zoals te zien is in figuur 14a, stijgt de accuracy van de trainingsdata geleidelijk over de 15 epochs en blijft de curve ook stijgen. Hoewel de curve in dit model blijft stijgen en niet vlakker wordt, heeft het verhogen van de epochs geresulteerd tot overfitting. Net als de accuracy grafiek uit model 1, is de accuracy curve van de validatiedata hoger dan de accuracy van de trainingsdata. Wat wel opvalt is dat de curve van de validatiedata fluctueert over de epochs heen. Een verklaring hiervoor kan zijn dat de grootte van de validatie set te klein is, dit kan resulteren in het schommelen van de validatie accuracy. Dit kan voor deze Use Case het geval zijn aangezien de verhouding tussen de trainingsdata en validatiedata groot is (91,4% train vs. 4,3% validatie). Dit heeft over het algemeen geen invloed op de prestaties van het model als de accuracy curve van de validatiedata mee stijgt met de curve van de trainingsdata. 
 
 <figure id="figuur-4b">
-  <a href="/menutegels/studenten/validatiemethode/afbeeldingen/lossplot.png">
-    <img src="/menutegels/studenten/validatiemethode/afbeeldingen/lossplot.png" alt="Loss plot">
+  <a href="/studenten/validatiemethode/afbeeldingen/lossplot.png">
+    <img src="/studenten/validatiemethode/afbeeldingen/lossplot.png" alt="Loss plot">
   </a>
   <figcaption>
     Figuur 4b ― De loss grafiek voor train- en validatiedata van het beste model.
