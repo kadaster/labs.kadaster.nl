@@ -25,24 +25,6 @@ title: Innovatie
     </div>
   </a>
 
-  <a href="/innovatie/querybuilder/demonstrator/imxgeo/v3">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/innovatie/querybuilder/query_builder.png">
-      <div class="card-title">Query Builder</div>
-      <div class="card-description">Met de Kadaster Query Builder is het mogelijk om visueel/grafisch queries (analyses met SPARQL) te genereren en de resultaten te visualiseren.</div>
-    </div>
-  </a>
-
-  <a href="/demonstrators/overheiddatadirect">
-    <div class="card">
-      <div class="card-type">Demonstrator</div>
-      <img class="card-image" src="/innovatie/overheiddatadirect/overheid_data_direct.jpg">
-      <div class="card-title">Node Editor</div>
-      <div class="card-description">De Node Editor is een geadvanceerde hulpmiddel voor het maken en visualiseren van queries (zowel GraphQL als SPARQL)</div>
-    </div>
-  </a>
-
   <a href="/innovatie/voorspelmodellen/voorspel_modellen">
     <div class="card">
       <div class="card-type">Project</div>
@@ -52,15 +34,6 @@ title: Innovatie
     </div>
   </a>
 
-  <a href="/innovatie/arapplicatie/ar_applicatie">
-  <div class="card">
-    <div class="card-type">Use Case</div>
-    <img class="card-image" src="/innovatie/arapplicatie/ar_applicatie.png">
-    <div class="card-title">AR Applicatie</div>
-    <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
-  </div>
-  </a>
-  
   <a href="/innovatie/techradar/etc_tech_radar">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -69,7 +42,7 @@ title: Innovatie
       <div class="card-description">Emerging Technology Center van Kadaster Tech Radar: welke techs zijn bij ons in beeld en waar positioneren wij deze techs?</div>
     </div>
   </a>
-   
+
   <a href="/innovatie/voelbarekaarten/voelbare_kaarten">
     <div class="card">
       <div class="card-type">Project</div>
@@ -86,6 +59,33 @@ title: Innovatie
       <div class="card-title">Lock - Unlock</div>
       <div class="card-description">Lock de data, unlock het potentieel! Een verkenning naar autorisatie binnen Linked Data.</div>
     </div>
+  </a>
+
+  <a href="/innovatie/querybuilder/demonstrator/imxgeo/v3">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/innovatie/querybuilder/query_builder.jpg">
+      <div class="card-title">Query Builder</div>
+      <div class="card-description">Met de Kadaster Query Builder is het mogelijk om visueel/grafisch queries (analyses met SPARQL) te genereren en de resultaten te visualiseren.</div>
+    </div>
+  </a>
+
+  <a href="/demonstrators/overheiddatadirect">
+    <div class="card">
+      <div class="card-type">Demonstrator</div>
+      <img class="card-image" src="/innovatie/overheiddatadirect/overheid_data_direct.jpg">
+      <div class="card-title">Node Editor</div>
+      <div class="card-description">De Node Editor is een geadvanceerde hulpmiddel voor het maken en visualiseren van queries (zowel GraphQL als SPARQL)</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/arapplicatie/ar_applicatie">
+  <div class="card">
+    <div class="card-type">Use Case</div>
+    <img class="card-image" src="/innovatie/arapplicatie/ar_applicatie.png">
+    <div class="card-title">AR Applicatie</div>
+    <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
+  </div>
   </a>
 
   <a href="/innovatie/datagedrevenbier/data_gedreven_bier">
@@ -196,15 +196,6 @@ title: Innovatie
     </div>
   </a>
 
-  <a href="/innovatie/nenhackathon/nen_hackathon_2022">
-    <div class="card">
-      <div class="card-type">Use Case</div>
-      <img class="card-image" src="/innovatie/nenhackathon/nen_hackathon_2022.webp" alt="NEN logo">
-      <div class="card-title">NEN Hackathon 2022: Resultaten</div>
-      <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
-    </div>
-  </a>
-
   <a href="/innovatie/3ddemonstrator/3d_demonstrator">
     <div class="card">
       <div class="card-type">Demonstrator</div>
@@ -220,6 +211,15 @@ title: Innovatie
       <img class="card-image" src="/innovatie/igo/integrale_gebruiksoplossing.jpg">
       <div class="card-title">Integrale Gebruiksoplossing</div>
       <div class="card-description">De voorloper van de Kadaster Knowledge Graph.</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/nenhackathon/nen_hackathon_2022">
+    <div class="card">
+      <div class="card-type">Use Case</div>
+      <img class="card-image" src="/innovatie/nenhackathon/nen_hackathon_2022.webp" alt="NEN logo">
+      <div class="card-title">NEN Hackathon 2022: Resultaten</div>
+      <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
     </div>
   </a>
 
