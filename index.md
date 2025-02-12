@@ -36,7 +36,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
   <a href="https://data.kkg.kadaster.nl/">
     <div class="card-home">
       <div class="card-type">Kadaster Knowledge Graph</div>
-      <img class="card-image" src="/innovatie/kkg/kadaster_knowledge_graph.png" alt="Kadaster Knowledge Graph">
+      <img class="card-image" src="/kkg/kadaster_knowledge_graph.png" alt="Kadaster Knowledge Graph">
     </div>
   </a>
   
