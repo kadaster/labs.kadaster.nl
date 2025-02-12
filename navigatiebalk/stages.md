@@ -6,13 +6,13 @@ title: Stage- en afstudeeropdrachten
 
 ## Stage- en afstudeeropdrachten
 If you are interested in internships/assignments at Kadaster, but Dutch is not your native language, please contact <a
-href="mailto:janneke.michielsen@kadaster.nl">Janneke Michielsen</a> for possibilities or see <a href="/assets/pdf/Internships_2023.pdf">this document</a> for a short summary of topics.
+href="mailto:janneke.michielsen@kadaster.nl">Janneke Michielsen</a> for possibilities or see <a href="/navigatiebalk/stages_2023_en.pdf">this document</a> for a short summary of topics.
 
 ## Data Science bij het Kadaster
 Een belangrijke voedingsbodem voor nieuwe initiatieven op onze labs omgeving is de samenwerking met Universiteiten en Hogescholen. Het Data Science team bestaat uit Kadaster medewerkers, medewerkers van partners en studenten. Als Data Science team hebben wij tal van aantrekkelijke opdrachten op het gebied van Data Science die Kadaster helpen bij het slimmer maken van de organisatie en onze dienstverlening. 
 
 ## Stagelopen in het Data Science team?
-Dat kan! Een impressie van inhoudelijke thema’s die de aandacht hebben van ons Data Science team en de basis vormen voor afstudeeropdrachten is te vinden in <a href="/assets/pdf/stage_opdrachten_2023.pdf">dit document</a>. Zit hier iets tussen, reageer dan via <a href="https://www.werkenbijhetkadaster.nl/job/Apeldoorn-De-Brug-Stage-in-het-Data-Science-Team-open-sollicitatie/991931701/">deze link</a>
+Dat kan! Een impressie van inhoudelijke thema’s die de aandacht hebben van ons Data Science team en de basis vormen voor afstudeeropdrachten is te vinden in <a href="/navigatiebalk/stages_2023_nl.pdf">dit document</a>. Zit hier iets tussen, reageer dan via <a href="https://www.werkenbijhetkadaster.nl/job/Apeldoorn-De-Brug-Stage-in-het-Data-Science-Team-open-sollicitatie/991931701/">deze link</a>
 
 Maar jouw stage is maatwerk. Heb je een wens of idee op het gebied van data science? Wij staan open voor jouw initiatieven!
 

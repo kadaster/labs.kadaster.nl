@@ -67,6 +67,7 @@ title: Studenten
       <img class="card-image" src="/studenten/bagvoorspellingen/bag_voorspellingen.png" alt="BAG voorspellingen">
       <div class="card-title">BAG voorspellingen</div>
       <div class="card-description">Missende BAG bouwjaren voorspellen.</div>
+    </div>
   </a>
 
 </div>
