@@ -23,7 +23,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 <div class="cards-wrapper">
 
-  <a href="/demonstrators/objectviewer">
+  <a href="/innovatie/objectviewer/demonstrator">
     <div class="card">
       <div class="card-type">Objectviewer</div>
       <img class="card-image" src="/innovatie/objectviewer/object_viewer.png">
