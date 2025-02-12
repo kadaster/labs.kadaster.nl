@@ -33,13 +33,6 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
     </div>
   </a>
     
-  <a href="/demonstrators/demonstrators">
-    <div class="card-home">
-      <div class="card-type">Demonstrators</div>
-      <img class="card-image" src="/demonstrators/demonstrators.jpg" alt="Demonstrators">
-    </div>
-  </a>
-  
   <a href="https://data.kkg.kadaster.nl/">
     <div class="card-home">
       <div class="card-type">Kadaster Knowledge Graph</div>
@@ -50,7 +43,7 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
   <a href="/dataanalyse/data_analyse">
     <div class="card-home">
       <div class="card-type">Data Analyse</div>
-      <img class="card-image" src="/dataanalyse/data_analyse" alt="Data Analyse">
+      <img class="card-image" src="/dataanalyse/data_analyse.png" alt="Data Analyse">
     </div>
   </a>
   
