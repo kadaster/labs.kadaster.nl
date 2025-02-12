@@ -20,7 +20,7 @@ De eerste oplossing die voor de hackathon is ontwikkeld, is gebaseerd op het con
     <a href="https://data.labs.kadaster.nl/nen/-/stories/semantic-search">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/network.jpg" alt="Network">
+      <img class="card-image" src="/innovatie/nenhackathon/afbeeldingen/nen-serendipity.jpg" alt="Network">
       <div class="card-title">Semantic Search met NEN Metadata</div>
       <div class="card-description">Deze data story maakt gebruik van de linked NEN-normmetadata en laat zien hoe deze gebruikt kan worden voor semantische zoekfunctionaliteit.</div>
     </div>
@@ -35,7 +35,7 @@ De tweede oplossing is een "Recommender System" die de gebruiker ondersteunt bij
   <a href="https://data.labs.kadaster.nl/nen/-/stories/recommender-system">
     <div class="card">
       <div class="card-type">Story</div>
-      <img class="card-image" src="/assets/images/network.jpg" alt="NEN Serendipity Search">
+      <img class="card-image" src="/innovatie/nenhackathon/afbeeldingen/network.jpg" alt="NEN Serendipity Search">
       <div class="card-title">Recommender System met Open Standards</div>
       <div class="card-description">Demonstratie van de recommender system ontwikkeld als onderdeel van de NEN Hackathon 2022.</div>
     </div>
@@ -50,7 +50,7 @@ De onbewerkte linked data en het SPARQL-endpoint voor deze gegevens zijn beschik
   <a href="https://data.labs.kadaster.nl/nen/catalog">
     <div class="card">
       <div class="card-type">Dataset</div>
-      <img class="card-image" src="/assets/images/nen-logo.webp" alt="NEN logo">
+      <img class="card-image" src="/innovatie/nenhackathon/nen_hackathon_2022.webp" alt="NEN logo">
       <div class="card-title">NEN Catalog als Linked Data</div>
       <div class="card-description">De NEN-dataset die gebruikt is voor de hackathon, beschikbaar als Linked Data.</div>
     </div>
@@ -58,7 +58,7 @@ De onbewerkte linked data en het SPARQL-endpoint voor deze gegevens zijn beschik
   <a href="https://data.labs.kadaster.nl/nen/catalog/sparql/default">
     <div class="card">
       <div class="card-type">Endpoint</div>
-      <img class="card-image" src="/assets/images/sparql-nen.png" alt="SPARQL Endpoint">
+      <img class="card-image" src="/innovatie/nenhackathon/afbeeldingen/sparql-nen.png" alt="SPARQL Endpoint">
       <div class="card-title">SPARQL Endpoint</div>
       <div class="card-description">Het SPARQL endpoint van de NEN Hackathon data.</div>
     </div>

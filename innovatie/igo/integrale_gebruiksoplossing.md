@@ -67,7 +67,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 <div class="cards-wrapper">
 
-  <a href="https://data.labs.kadaster.nl/dst/kkg/schema">
+  <a href="https://data.labs.kadaster.nl/kadaster/kkg/schema">
     <div class="card">
       <div class="card-type">Datamodellen</div>
       <img class="card-image" src="/innovatie/igo/afbeeldingen/sdo-model.PNG" alt="Knowledge Graph">
