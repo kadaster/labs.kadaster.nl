@@ -25,36 +25,49 @@ De technologische ontwikkelingen gaan razendsnel, om deze reden is het voor het 
 # Thema's 
 
 <div class="cards-wrapper">
-  <a href="/thema/innovatie">
+    
+  <a href="/innovatie/innovatie">
     <div class="card-home">
       <div class="card-type">Innovatie</div>
-      <img class="card-image" src="/assets/images/handen.jpg" alt="Innovatie">
+      <img class="card-image" src="/innovatie/innovatie.jpg" alt="Innovatie">
     </div>
   </a>
+    
+  <a href="/demonstrators/demonstrators">
+    <div class="card-home">
+      <div class="card-type">Demonstrators</div>
+      <img class="card-image" src="/demonstrators/demonstrators.jpg" alt="Demonstrators">
+    </div>
+  </a>
+  
   <a href="https://data.kkg.kadaster.nl/">
     <div class="card-home">
-      <div class="card-type">Knowledge Graph</div>
-      <img class="card-image" src="/assets/images/kadaster-knowledge-graph.png" alt="Knowledge Graph">
+      <div class="card-type">Kadaster Knowledge Graph</div>
+      <img class="card-image" src="/innovatie/kkg/kadaster_knowledge_graph.png" alt="Kadaster Knowledge Graph">
     </div>
   </a>
-    <a href="/thema/data_analyse">
+  
+  <a href="/dataanalyse/data_analyse">
     <div class="card-home">
       <div class="card-type">Data Analyse</div>
-      <img class="card-image" src="/assets/images/bag-bgt-tooltip.PNG" alt="Data Analyse">
+      <img class="card-image" src="/dataanalyse/data_analyse" alt="Data Analyse">
     </div>
   </a>
-    <a href="/thema/studenten">
+  
+  <a href="/studenten/studenten">
     <div class="card-home">
       <div class="card-type">Studenten</div>
-      <img class="card-image" src="/assets/images/stage.jpeg" alt="Studenten">
+      <img class="card-image" src="/studenten/studenten.jpg" alt="Studenten">
     </div>
   </a>
-    <a href="/thema/browsers">
+  
+  <a href="/browsers/browsers">
     <div class="card-home">
       <div class="card-type">Browsers</div>
-      <img class="card-image" src="/assets/images/bag.png" alt="Browsers">
+      <img class="card-image" src="/browsers/browsers.png" alt="Browsers">
     </div>
   </a>
+
 </div>
 
 
