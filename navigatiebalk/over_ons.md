@@ -9,7 +9,7 @@ Data is de motor van het Kadaster.  Daarom is het Kadaster sinds jaar en dag con
 Voor meer informatie over deze Kadaster Labs of over het Data Science team kunt u contact opnemen met Janneke Michielsen ([janneke.michielsen@kadaster.nl](mailto:janneke.michielsen@kadaster.nl)).
 
 <figure id="figuur-1">
-  <img src="/assets/images/data-science-process.jpg">
+  <img src="/navigatiebalk/over_ons.jpg">
   <figcaption>
     Figuur 1 ― Schematisch overzicht van het Data Science Process.
   </figcaption>

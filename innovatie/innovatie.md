@@ -82,7 +82,7 @@ title: Innovatie
   <a href="/innovatie/arapplicatie/ar_applicatie">
   <div class="card">
     <div class="card-type">Use Case</div>
-    <img class="card-image" src="/innovatie/arapplicatie/ar_applicatie.png">
+    <img class="card-image" src="/innovatie/arapplicatie/ar_applicatie.jpg">
     <div class="card-title">AR Applicatie</div>
     <div class="card-description">Een AR applicatie waarmee gebruikers op een laagdrempelige manier toegang hebben tot en interactie hebben met Kadastergegevens.</div>
   </div>
@@ -220,15 +220,6 @@ title: Innovatie
       <img class="card-image" src="/innovatie/nenhackathon/nen_hackathon_2022.webp" alt="NEN logo">
       <div class="card-title">NEN Hackathon 2022: Resultaten</div>
       <div class="card-description">Onze deelname aan de NEN Hackthon 2022 heeft mooie resultaten opgeleverd. Dit use case demonstreert deze en geeft enkele geleerde lessen voor het Kadaster.</div>
-    </div>
-  </a>
-
-  <a href="/innovatie/geodataplein/geodata_plein">
-    <div class="card">
-      <div class="card-type">Project</div>
-      <img class="card-image" src="/innovatie/geodataplein/geodata_plein.jpg">
-      <div class="card-title">Geodataplein</div>
-      <div class="card-description">Geodataplein van de toekomst. Een programma waarin data integraal beschikbaar wordt gesteld en data eenduidig wordt ontsloten.</div>
     </div>
   </a>
 
