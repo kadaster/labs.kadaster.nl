@@ -76,6 +76,13 @@ must not contain more than 130 characters (including whitespace).
 Longer texts may be used as introductory text on the page that the
 tile links to.
 
+### Structure
+
+When placing something on the website, please keep true to its structure.
+Maintenance is easier when every demonstrator or use case has its own folder,
+where every required file is available within for example '/innovation/demonstratorname/'.
+Avoid using the folder 'assets' for anything else than CSS, fonts, and general website JavaScript.
+
 ## Tips & tricks
 
 ### Refer to Figures
