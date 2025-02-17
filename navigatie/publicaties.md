@@ -38,7 +38,7 @@ Linked Data Viewing as part of the Spatial Data Platform of the Future
 : Erwin Folmer, Wouter Beek, Laurens Rietveld.  In: _International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences_, Vol. 42, No. 4, 2018, pp. 49-52, [online toegang](https://ris.utwente.nl/ws/portalfiles/portal/76803233/isprs_archives_XLII_4_W8_49_2018.pdf).
 
 Adding 3D GIS Visualization and Navigation to the SPARQL Query Loop
-: Wouter Beek, Erwin Folmer, Laurens Rietveld, Tony Baving, Vincent Van Altena.  In: _International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences_, Vol. 42, 2018, [online toegang](https://research.utwente.nl/files/76803170/isprs_archives_XLII_4_W8_11_2018.pdf), [presentatie](./Adding-3D-Visualization-to-the-SPARQL-Query-Loop.html).
+: Wouter Beek, Erwin Folmer, Laurens Rietveld, Tony Baving, Vincent Van Altena.  In: _International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences_, Vol. 42, 2018, [online toegang](https://research.utwente.nl/files/76803170/isprs_archives_XLII_4_W8_11_2018.pdf).
 
 ## 2017
 Kadaster Data Platform ― Overview Architecture
