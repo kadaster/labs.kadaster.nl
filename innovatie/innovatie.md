@@ -48,7 +48,16 @@ title: Innovatie
       <div class="card-type">Project</div>
       <img class="card-image" src="/innovatie/voelbarekaarten/voelbare_kaarten.jpg">
       <div class="card-title">Voelbare Kaarten</div>
-      <div class="card-description">Een samenwerking om een geautomatiseerd proces te ontwikkelen voor de productie van voelbare (tactiele) kaarten. </div>y
+      <div class="card-description">Een samenwerking om een geautomatiseerd proces te ontwikkelen voor de productie van voelbare (tactiele) kaarten. </div>
+    </div>
+  </a>
+
+  <a href="/innovatie/opslagtanks/opslagtanks">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/opslagtanks/opslagtanks.png">
+      <div class="card-title">Opslagtanks</div>
+      <div class="card-description">Een manier om met AI opslagtanks te vinden in luchtfoto's</div>
     </div>
   </a>
    
