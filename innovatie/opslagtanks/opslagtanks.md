@@ -15,8 +15,17 @@ Het onderzoek richtte zich op het gebruik van AI om opslagtanks in luchtfoto's o
 ## Aanpak
 In eerste instantie werd geprobeerd om opslagtanks te detecteren op basis van bestaande opslagtanks in topografische kaarten, en werd alleen onderscheid gemaakt tussen waterzuiveringsinstallaties en andere opslagtanks.
 
-![alt text](afbeeldingen/opslagtanks_1.png)
-![alt text](afbeeldingen/opslagtanks_2.png)
+<figure id="figuur-1">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_1.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_1.png" alt="Waterzuivering">
+  </a>
+</figure>
+   
+<figure id="figuur-2">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_2.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_2.png" alt="Overige opslagtanks">
+  </a>
+</figure>
    
 De eerste experimenten toonden aan dat het nodig was om meerdere typen opslagtanks te onderscheiden vanwege de grote visuele variatie. Bovendien werden objecten die geen opslagtanks waren vaak onterecht als zodanig gedetecteerd, zoals rotondes, grasvelden, en voedersilo's. Dit probleem werd deels opgelost door meer voorbeeldfoto's aan te bieden en aan te geven dat het geen opslagtank was. Voor objecten die visueel erg op opslagtanks leken, zijn aparte categorieën gemaakt en is extra trainingsmateriaal ontwikkeld om het model te verbeteren.
 Uiteindelijk zijn de volgende categorieën of klassen voor het model getraind:
@@ -31,14 +40,39 @@ Uiteindelijk zijn de volgende categorieën of klassen voor het model getraind:
 -	Drafmolens (loopmolens voor paarden)
 -	Longeercirkels (voor trainen van paarden)
 
-![alt text](afbeeldingen/opslagtanks_3.png)
-![alt text](afbeeldingen/opslagtanks_4.png) 
+   
+<figure id="figuur-3">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_3.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_3.png" alt="Industriele opslagtanks">
+  </a>
+</figure>
+<figure id="figuur-4">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_4.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_4.png" alt="Watertanks">
+  </a>
+</figure>
 
-![alt text](afbeeldingen/opslagtanks_5.png)
-![alt text](afbeeldingen/opslagtanks_6.png)
+<figure id="figuur-5">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_5.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_5.png" alt="Voedersilo's">
+  </a>
+</figure>
+<figure id="figuur-6">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_6.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_6.png" alt="Thermische opslag">
+  </a>
+</figure>
 
-![alt text](afbeeldingen/opslagtanks_7.png) 
-![alt text](afbeeldingen/opslagtanks_8.png)
+<figure id="figuur-7">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_7.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_7.png" alt="Liggende tanks">
+  </a>
+</figure>
+<figure id="figuur-8">
+  <a href="/innovatie/opslagtanks/afbeeldingen/opslagtanks_8.png">
+    <img src="/innovatie/opslagtanks/afbeeldingen/opslagtanks_8.png" alt="Drafmolen">
+  </a>
+</figure>
           
 ## Resultaten
 Een YOLOv8-model is gebruikt om objecten te detecteren, door hun locatie en vorm op foto’s aan te duiden.
