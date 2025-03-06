@@ -4,23 +4,24 @@ Displays an image with a caption while maintaining WCAG compliance.
 Created to standardize image presentation across the site.
 
 Usage example:
-{% include figure.html path="/path/to/image.jpg" caption="Your caption here" width="800px" %}
+{% include figure.html path="/path/to/image.jpg" caption="Your caption here" width="800px" shadow="true" %}
 
 Parameters:
 - path: (required) Path to the image file
 - caption: (required) Caption text for the image
 - width: (optional) Maximum width of the image, defaults to 800px
+- shadow: (optional) Add box-shadow to the image when set to "true"
 {% endcomment %}
 
-<figure 
-  style="text-align: center; margin: 20px 0;"
+<figure
+  style="text-align: center; margin: 20px 0 40px;"
   role="group">
-  <img src="{{ include.path }}" 
+  <img src="{{ include.path }}"
        alt="{{ include.caption }}"
-       style="width: 100%; max-width: {{ include.width | default: '800px' }}; height: auto;"
+       style="width: 100%; max-width: {{ include.width | default: '800px' }}; height: auto; {% if include.shadow == 'true' %}box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);{% endif %}"
        loading="lazy">
   <figcaption
-    style="text-align: center; margin: 10px auto 0; max-width: 80%; font-style: italic;">
+    style="text-align: center; margin: 10px auto; max-width: 80%; font-style: italic;">
     {{ include.caption }}
   </figcaption>
 </figure>
