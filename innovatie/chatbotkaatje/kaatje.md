@@ -4,172 +4,79 @@ layout: page
 
 # Chatbot Kaatje
 
-De afgelopen periode heeft Generatieve AI een vlucht genomen en zijn er bij het Data Science Team verschillende verzoeken gekomen voor de ontwikkeling van een chatbot. Om de uniformiteit en standaardisatie te verhogen is er middels een technische verkenning onderzocht of er een generieke chatbot ontwikkeld kan worden die verschillende use cases kan ondersteunen. Binnen deze verkenning is ook een prototype van zo’n generieke chatbot opgeleverd: chatbot Kaatje.
+De afgelopen periode heeft Generatieve AI een vlucht genomen en zijn er bij het Data Science Team verschillende verzoeken gekomen voor de ontwikkeling van een chatbot. Om de uniformiteit en standaardisatie te verhogen is er middels een technische verkenning onderzocht of er een generieke chatbot ontwikkeld kan worden die verschillende use cases kan ondersteunen. Binnen deze verkenning is een prototype van een generieke chatbot opgeleverd: Kaatje.
 
 ## Werking van Kaatje
 
-![Technisch overzicht Kaatje](assets/gc_technical-overview.png)
-
-### Buckets / RAG
-
-Onze aanpak voor het gronden van de LLM met Kadaster data is gebaseerd op Retrieval Augmented Generation (RAG):
-
-- **Buckets:**  We hebben meerdere buckets, afzonderlijk bevraagbare sets aan data, ingericht waarin tekstfragmenten uit diverse brondocumenten (bijvoorbeeld de Kadaster Wiki, de Kadaster-website en de ServicePortal Kennisbank) worden opgeslagen.
-- **Inladen van Data:**  De brondocumenten worden eerst omgezet van HTML naar Markdown. Hierdoor behouden we de structuur (zoals koppen en tabellen) en zorgen we voor heldere, contextuele tekstchunks. Deze chunks worden niet met een standaard sliding window gemaakt, maar op basis van Markdown-koppen, zodat elk fragment inhoudelijk homogeen blijft.
-- **Vectorisatie & Hybrid Search:** Met behulp van embedding modellen (zoals text-embedding-3-small en -large via Azure AI Foundry) zetten we de tekst om in vectoren. Vervolgens passen we een hybride zoekmethode toe, waarbij we zowel vector search combineren met traditionele keyword search (bijvoorbeeld BM25).
-- **Reranking:** Om de meest relevante documenten te identificeren, wordt er een extra reranking stap uitgevoerd met een tool als de Cohere reranker. Dit zorgt voor een geoptimaliseerde selectie van de bronnen die als context aan de LLM worden meegegeven.
-- **Beveiligde Data Toegang:**  Dankzij Row-level security (RLS) heeft elke gebruiker alleen toegang tot de buckets waar hij of zij toestemming voor heeft.
-
-### Function Calling
-
-Naast het ophalen van relevante documenten hebben we de functionaliteit voor het aanroepen van externe tools geïntegreerd, oftewel 'function calling'. Dit is als volgt geïmplementeerd:
-
-- **Dynamische Tool Selectie:**  Afhankelijk van de vraag van de gebruiker kan de chatbot besluiten dat extra, actuele informatie nodig is. Hiervoor worden vooraf gedefinieerde functies of tools aangeroepen.
-- **Voorbeelden van Functies:**
-  - **Websearch:** Met behulp van de Bing API haalt de chatbot actuele informatie op voor onderwerpen als wetgeving of marktontwikkelingen.
-  - **CBS-tool:** Voor statistische en demografische gegevens wordt er data opgevraagd via de CBS API.
-  - **Kadaster & PDOK Tools:** Voor vastgoed- en geografische data worden specifieke tools ingezet, die op basis van de gebruikersvraag de relevante data uit de Kadaster databases of PDOK-datasets ophalen.
-- **Integratie & Transparantie:**  De stappen en resultaten van deze function calls worden duidelijk weergegeven in de chat omgeving en verwerkt door de LLM in het antwoord. Deze bronvermelding stelt de gebruiker in staat de herkomst van de data te kunnen verifiëren en vergroot het vertrouwen in het systeem.
-- **Beheer van Toegang:**  Ook de toegang tot deze externe tools wordt geregeld via dezelfde autorisatie mechanismen als bij de buckets, zodat alleen geautoriseerde gebruikers de functies kunnen activeren.
-
-### Authenticatie en Autorisatie
-
-Voor een veilige en schaalbare toegang tot de chatbot hebben we een centrale OAuth2-oplossing via Kadaster MAP ingezet. Hierbij verloopt alle inkomende communicatie via een OAuth2-proxy, die:
-
-- **Token Validatie**: Alle binnenkomende verzoeken controleert op een geldige OAuth2-token.
-- **Gebruikersinformatie Injectie**: Na succesvolle validatie worden de gebruikersgegevens – zoals e-mailadres en bijbehorende rollen – toegevoegd aan de HTTP-request headers.
-- **Rechtenbeheer**: Op basis van deze rollen bepaalt de chatbot welke data en functies beschikbaar zijn. Hierdoor krijgen gebruikers alleen toegang tot de buckets en functionaliteiten waarvoor zij geautoriseerd zijn, zonder dat zij aparte accounts hoeven aan te maken.
-
-## Evaluatie
-
-Wij hebben de RAG-functionaliteit systematisch geëvalueerd met behulp van [Ragas](https://docs.ragas.io/en/stable/). Hiervoor hebben we een synthetische vraag-antwoord dataset ontwikkeld, om de antwoorden van de chatbot op te testen. De dataset is gebaseerd op 50 willekeurige documenten per bucket (totaal 150 paren), de vraag en antwoorden zijn gegenereerd met DeepEval [Synthesizer](https://docs.confident-ai.com/docs/synthesizer-introduction). De dataset stelde ons in staat om de output van de chatbot te vergelijken en zo een indicatie te krijgen hoe goed de juiste brondocumenten worden gevonden, en hoe goed het gegeneerde antwoord is.
-
-In onze experimenten hebben we verschillende configuraties getest, zoals het effect van de eerdergenoemde hybrid search en reranking. Ook verschillende embedding modellen en generative modellen. De evaluatieresultaten gaven aan dat het toepassen van reranking in combinatie met hybrid search een bescheiden verbetering (ongeveer 2 %) opleverde. Tevens bleek dat GPT-4o-mini vergelijkbare prestaties leverde als GPT-4o en dat er geen doorslaggevend verschil werd waargenomen tussen small en large embeddings.
-
-Hoewel GPT-4o-mini het op de RAG-benchmark even goed doet als GPT-4o, merken we in de praktijk wel een verschil in beleving tussen beide modellen. Vooral met complexere vragen, of vragen die niet direct door brondocumenten beantwoord kunnen worden. Dit is momenteel nog een limitatie van de testopstellen, gezien de evaluatie dataset alleen de RAG test voor wanneer er een enkel en eenduidig antwoord te vinden is. De dataset kan nog worden uitgebreid met complexere vragen. Ook willen we nog guardrails onderzoeken om te zorgen dat de chatbot alleen binnen zijn domein blijft.
-
-## Conclusie
-
-Middels het prototype “Kaatje” is aangetoond dat er een generieke chatbot ontwikkeld kan worden die de basis kan bieden voor diverse use cases. Bij de ontwikkeling van Kaatje is gekozen voor een eigen chatbot opzet, maar met gebruik van OpenAI modellen die gehost worden door Azure .
-
-Kaatje is een interface waarbinnen gebruikers antwoord krijgen op een breed scala aan vragen. Documenten uit verschillende bronnen kunnen worden ingeladen en afzonderlijk worden bevraagd. Ook is de chatbot uitbreidbaar met verschillende functionaliteiten en kan deze gekoppeld worden met andere systemen middels APIs. Hoewel door het gebruik van generatieve taalmodellen en het open domein onjuistheden en hallucinaties mogelijk zijn, worden die geminimaliseerd door het raadplegen van de verschillende buckets en het toevoegen van bronvermelding.
-
-Het huidige prototype leent zich daarmee voor doorontwikkeling tot volledig product. Deze generieke dienst zou dan ingezet en geconfigureerd kunnen worden voor verschillende producten en diensten binnen en buiten het Kadaster.
-
-## Showcase Prototype
-
-### Chat Pagina
+Kaatje werkt op basis van taalmodellen. Door een generatief taalmodel te gebruiken kan een chatbot goed praten over allerlei verschillende onderwerpen. Ze zijn echter niet waarheidsgetrouw, het genereert antwoorden die taalkundig goed klinken. Zo kan het zijn dat er antwoorden terugkomen die weliswaar goed klinken, maar feitelijk onjuist zijn. Er zijn verschillende manieren om wel een chatbot op basis van een taalmodel te ontwerpen, maar die bronnen kan gebruiken om antwoorden op te baseren (het zogenoemde "gronden"). Hierdoor zijn minder foutieve antwoorden en kan je een chatbot inzetten voor verschillende use cases.
 
 {% include figure.html
    path="/innovatie/chatbotkaatje/assets/startscherm_met_chat.png"
-   caption="Het startscherm, met het chat-window en de recept, bucket en functie selectors"
+   caption="Een chatgesprek met Kaatje over Kadasteronderwerpen. Rechts zien we de huidige selectie van het gekozen recept en de gekozen buckets en functies"
    width="1100px"
    shadow="true" %}
 
----
+## Het gronden van antwoorden
 
-### Bronvermelding RAG
+### RAG
+
+Onze aanpak voor het gronden van het taalmodel met Kadasterdata is gebaseerd op Retrieval Augmented Generation (RAG). Dit komt erop neer dat brondocumenten met behulp van een "embedding model" worden omgezet naar hun semantische betekenis (embedding vector). Als van een gestelde vraag ook de embedding vector wordt berekend, kan het meest relevante document worden gevonden door de documenten met de hoogste similarity te vinden.
+
+Hoewel dit al aardig werkt, hebben we nog additionele technieken toegevoegd om het vinden van de relevante brondocument nog verder te verbeteren:
+
+- **Hybrid Search:** Hierbij combineren we zowel vector similarity search traditionele keyword search (bijvoorbeeld [BM25](https://learn.microsoft.com/en-us/azure/search/index-similarity-and-scoring)).
+- **Reranking:** Om de meest relevante documenten te identificeren, wordt er een extra reranking stap uitgevoerd met een tool als de [Cohere reranker](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/deploy-models-cohere-rerank?tabs=cohere-rerank-3-5#cohere-rerank-models).
 
 {% include figure.html
    path="/innovatie/chatbotkaatje/assets/bronvermelding.png"
-   caption="Bronvermelding van opgehaalde tekststukken"
-   width="600px"
+   caption="Bronvermelding van opgehaalde bronnen met de similarity score."
+   width="500px"
    shadow="true" %}
 
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/bronvermelding_uitgeklapt.png"
-   caption="Bronvermelding uitgeklapt"
-   width="600px"
-   shadow="true" %}
+Het gebruik van RAG met de extra toevoegen stelt Kaatje in staat om vragen goed op basis van bronnen te beantwoorden.
 
----
+### Functies
 
-### Bronvermelding Functies
+Naast het ophalen van relevante documenten middels RAG ondersteunen we een andere functionaliteit: het aanroepen van gereedschappen of tools (functies), oftewel 'function calling'. In principe kan dit gereedschap vanalles zijn, zolang het in code is uit te drukken. In de praktijk betekent dit meestal het doorzoeken van het internet, of gebruik maken van een specifieke API. Een taalmodel kan bijvoorbeeld nooit uit zichzelf het huidige weer weten, maar door gebruik te maken van een Weer API kan er real-time informatie opgehaald worden. Zodoende kan Kaatje toch communiceren over informatie niet in haar trainingsdata voorkomt, of heel recent is.
 
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/status_messages_funcs.gif"
-   caption="Status berichten over het uitvoeren van functies"
-   width="1100px"
-   shadow="true" %}
+Voor Kaatje hebben we als eerste stap toegevoegd dat er een tool selectie gedaan kan worden. Op basis van de vraag wordt ingeschat of het antwoord direct te beantwoorden is, informatie daarvoor in een brondocument kan worden gevonden, of dat er een extra tool nodig is. We hebben de volgende functies daarvoor als test toegevoegd:
+
+- **Zoeken op het web:** Met behulp van de [Bing API](https://learn.microsoft.com/en-gb/bing/search-apis/bing-web-search/overview) haalt Kaatje actuele informatie op voor onderwerpen als wetgeving of marktontwikkelingen.
+- **Kadasterdata:** Voor vastgoed- en geografische data worden specifieke tools ingezet, die op basis van de gebruikersvraag de relevante data uit de Kadaster Knowledge Graph (KKG) via de [KKG GraphQL API](https://data.kkg.kadaster.nl) of Publieke Dienstverlening Op de Kaart (PDOK) datasets ophalen via de [PDOK APIs](https://api.pdok.nl).
+- **CBS data:** Voor statistische en demografische gegevens wordt er data opgevraagd via de [CBS API](https://www.cbs.nl/nl-nl/onze-diensten/open-data/statline-als-open-data).
 
 {% include figure.html
    path="/innovatie/chatbotkaatje/assets/bronvermelding_loki_func.gif"
-   caption="Bronvermelding van API calls"
+   caption="Animatie van het gegeneren API verzoek. De gestelde vraag is omgezet naar een GraphQL query voor de KKG"
    width="1100px"
    shadow="true" %}
 
----
+## Ondersteunen van verschillende use cases
 
-### Multimodaliteit
+Met RAG en functies kunnen antwoorden gegrond worden en door verschillende documenten en functies toe te voegen kan de chatbot al op een breed scala aan vragen antwoord geven. Om verschillende use cases verder te kunnen ondersteunen maken we gebruik van twee concepten: buckets en recepten.
 
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/multimodality.gif"
-   caption="Support voor afbeeldingen"
-   width="1100px"
-   shadow="true" %}
+### Buckets en recepten
 
----
-
-### UI Overig
-
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/a_b_test.gif"
-   caption="A/B tests voor evaluatie verschillende settings"
-   width="1100px"
-   shadow="true" %}
-
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/advanced_settings.png"
-   caption="Geavanceerde instellingen voor de chatbot"
-   width="600px"
-   shadow="true" %}
-
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/toegankelijkheid.png"
-   caption="Toegankelijkheid opties"
-   width="600px"
-   shadow="true" %}
+Kaatje beschikt over verschillende "buckets", afzonderlijk bevraagbare sets aan data. Deze sets zijn embedding vectors (die als bron voor RAG gebruikt worden) waarin tekstfragmenten uit diverse brondocumenten worden opgeslagen. Dit kunnen bijvoorbeeld de Kadaster website of de interne Kadaster Wiki en Kennisbank. Door authorisaties toe te passen op de buckets en functies kunnen we er ook voor zorgen dat alleen specifieke groepen toegang hebben tot informatiebronnen.
 
 {% include figure.html
    path="/innovatie/chatbotkaatje/assets/plugin_info.png"
-   caption="Info over de buckets en functies"
-   width="600px"
+   caption="Info in de UI over de selecteerbare buckets en functies"
+   width="500px"
    shadow="true" %}
 
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/tooltips.png"
-   caption="Tooltips"
-   width="600px"
-   shadow="true" %}
+Je kunt zelf ook kiezen welke bronnen (waar je recht toe hebt) wilt raadplegen en de voorkeursselectie opslaan als een "recept". Dit ondersteund verder het naast elkaar laten bestaan van verschillende toepassingen, met mogelijk verschillende databronnen.
 
----
+### Verdere ontwikkeling
 
-### Admin Page
+Met Kaatje hebben we geprobeerd een generieke onderlaag te ontwerpen, waarop verschillende toepassingen ontwikkeld kunnen worden. Zoals hiervoor getoond kan Kaatje ingezet worden als vraagbaak voor verschillende databronnen, of als verstrekker van (geo-)informatie met de verschillende functies. Hoewel de demoversie geen kaartmateriaal kan genereren, is het wel in staat om vragen over kaarten te beantwoorden. Al is dit nog wel in rudimentaire vorm en heeft dat nog meer werk nodig. Het laat mooi de brede scala aan mogelijke toepassingen zien.
+
+Een mogelijke use cases voor Kaatje zijn het beantwoorden van eerder gestelde vragen van (interne) support teams over domein-specifieke vragen of het bevragen van werkinstructies. Ook bekijken we of [Chatbot Loki](https://labs.kadaster.nl/innovatie/lokiv3/loki_v3/) hierop kan landen, of dat de twee chatbots naast elkaar blijven bestaan.
 
 {% include figure.html
-   path="/innovatie/chatbotkaatje/assets/admin_recipes.png"
-   caption="Aanmaak van en inzicht in globale recepten"
+   path="/innovatie/chatbotkaatje/assets/multimodality.gif"
+   caption="Bevragen van afbeeldingen, zo kan je vragen stellen over een bepaalde kaartvisualisatie van een data analyse"
    width="1100px"
    shadow="true" %}
 
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/admin_users.png"
-   caption="Aanmaak van en inzicht autorisaties gebruikers"
-   width="1100px"
-   shadow="true" %}
-
----
-
-### User Setting Page
-
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/user_settings.png"
-   caption="Aanmaak van persoonlijke recepten"
-   width="1100px"
-   shadow="true" %}
-
-{% include figure.html
-   path="/innovatie/chatbotkaatje/assets/model_settings.png"
-   caption="Aanpassen instellingen voor RAG en LLM"
-   width="1100px"
-   shadow="true" %}
+Meer weten over de onderliggende techniek van Kaatje? Op [Over ons](https://labs.kadaster.nl/navigatie/over_ons/) kun je lezen hoe je contact kunt opnemen.
