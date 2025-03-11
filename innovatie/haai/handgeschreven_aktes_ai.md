@@ -46,11 +46,11 @@ Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze t
 
 Om HTR optimaal te laten werken, is een hoogwaardige dataset essentieel. Het Kadaster maakt gebruik van een bestaande [openbare dataset](https://zenodo.org/records/6414086) met duizenden overgetypte VOC- en notariële aktes. Deze is aangevuld met eigen annotaties om de modellen af te stemmen op onze specifieke archiefdata.
 
-Bij de dataverzameling hebben we een diverse en representatieve set aktes samengesteld. Hierbij kozen we voor aktes uit verschillende decennia (de periode beslaat ruim 100 jaar) en uit verschillende bewaringen. Ook namen we aktes mee die opnieuw gescand zijn om te bepalen of de huidige scankwaliteit voldoende is of herhaling nodig is. Tot slot hebben we er op gelet op dat een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
+Bij de dataverzameling hebben we een diverse en representatieve set aktes samengesteld. Hierbij kozen we voor aktes uit verschillende decennia (de periode beslaat ruim 100 jaar) en uit verschillende bewaringen. Ook namen we aktes mee die opnieuw gescand zijn (zie onderstaand figuur) om te bepalen of de huidige scankwaliteit voldoende is of herhaling nodig is. Tot slot hebben we er op gelet op dat een deel van de aktes erfdienstbaarheden in de tekst bevatten, zodat we daar ook op kunnen testen voor de tweede deelvraag van het onderzoek.
 
 {% include figure.html
    path="/innovatie/haai/afbeeldingen/data_herscan.png"
-   caption="Oude en nieuwe scankwaliteit, waarbij de tape opnieuw gedigitaliseerd is in hogere kwaliteit" %}
+   caption="“Op heden den vijftienden Januari negentienhonderd compareerden voor mij Johan”" %}
 
 Tijdens het annoteren van de verzamelde aktes zijn er drie dingen vastgelegd. Zo zijn van 771 scans de tekstregio's en tekstregels aangegeven. De tekstregio's laten ons weten wat er semantisch in de scan staat. Niet alleen kunnen we zodoende bijgevoegde tekeningen uit de scan halen, maar ook bepalen wat de rol van tekst is in de akte. Voorbeelden zijn paginanummers, volgnummers of paragrafen. Hoewel dat allemaal tekst is, is de functie zeer verschillend. Door de verschillen aan te geven kunnen we uiteindelijk het zoeken in aktes bijvoorbeeld beperken tot enkel de aktetekst. Gezien aktes achter elkaar door werden geschreven in de boekdelen kunnen aktes halverwege de pagina starten of eindigen. De volgnummer van de akte staat in de kantlijn en geeft aan welke akte het precies is, vooral wel zo handig als er meerdere aktes op één pagina staan.
 

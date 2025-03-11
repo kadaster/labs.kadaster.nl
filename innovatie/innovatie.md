@@ -7,6 +7,15 @@ title: Innovatie
 
 <div class="cards-wrapper">
     
+  <a href="/innovatie/chatbotkaatje/kaatje">
+    <div class="card">
+      <div class="card-type">Onderzoek</div>
+      <img class="card-image" src="/innovatie/chatbotkaatje/kaatje_dark_no_bg_tile.png">
+      <div class="card-title">Chatbot Kaatje</div>
+      <div class="card-description">Een technische verkenning naar een generiek chatbot die voor diverse use cases ingezet kan worden.</div>
+    </div>
+  </a>
+
   <a href="/innovatie/haai/handgeschreven_aktes_ai">
     <div class="card">
       <div class="card-type">Project</div>
