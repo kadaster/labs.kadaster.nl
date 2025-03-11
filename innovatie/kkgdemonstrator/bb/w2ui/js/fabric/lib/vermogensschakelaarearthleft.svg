@@ -1,0 +1,21 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <line fill="none" x1="50.2584" y1="99.69885" x2="50.2584" y2="72.56713" id="svg_14" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#000"/>
+  <line fill="none" stroke="#000" x1="29.84501" y1="0.73267" x2="51.55038" y2="0.73267" id="svg_15" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#000" x1="28.29463" y1="99.44045" x2="50" y2="99.44045" id="svg_16" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <g id="svg_20">
+   <line fill="none" x1="43.74927" y1="44.63253" x2="56.15234" y2="55.48522" id="svg_17" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#000"/>
+   <line fill="none" x1="44.52446" y1="55.74361" x2="56.41074" y2="44.11573" id="svg_19" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#000"/>
+  </g>
+  <path id="svg_21" d="m24.45597,40.62032l26.31922,-24.82881" opacity="undefined" stroke-linecap="undefined" stroke-linejoin="undefined" stroke="#000" fill="none"/>
+  <line stroke="#000" fill="none" x1="50.2584" y1="99.69885" x2="50.2584" y2="50.3914" id="svg_22" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line stroke="#000" fill="none" x1="51.03359" y1="0.38771" x2="50.98439" y2="15.6807" id="svg_23" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="61.68847" x2="11.76467" y1="76.47709" x1="11.76467" fill="none"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="65.66336" x2="7.99898" y1="73.54822" x1="7.99898" fill="none"/>
+  <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="59.59642" x2="15.73957" y1="80.24278" x1="15.73957" fill="none"/>
+  <path stroke="#000" id="svg_5" d="m16.50618,70.74584l15.23135,-0.14261" opacity="undefined" stroke-linecap="undefined" stroke-linejoin="undefined" fill="none"/>
+  <path stroke="#000" id="svg_6" d="m46.6317,87.27303l-15.10337,-16.6698" opacity="undefined" stroke-linecap="undefined" stroke-linejoin="undefined" fill="none"/>
+ </g>
+
+</svg>

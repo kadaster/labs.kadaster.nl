@@ -1,0 +1,180 @@
+{
+    "project": {
+        "createdAt": "2023-03-15T15:32:19.811Z",
+        "title": "Kadaster",
+        "path": "kadaster",
+        "id": "6411e5038986f00024b17390"
+    },
+   
+    "createdAt": "2025-03-04T07:57:12.572Z",
+    "title": "RCE en KKG Demo",
+    "subtitle": "",
+    "mainArea": {
+        "widget": "SplitLayout",
+        "areas": [
+            {
+                "widget": "SplitLayout",
+                "direction": "row",
+                "areas": [
+                    {
+                        "areaSizes": [
+                            "0px",
+                            "auto"
+                        ],
+                        "areas": [
+                            {
+                                "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nprefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\n\n#procent;\nselect distinct?label  ?uri\nwhere {\n  \n  service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/services/cho/sparql>\n  {\n    {select distinct ?uri  ?label where {\n  ?uri a ceo:Rijksmonument.\n \n  ?uri ceo:cultuurhistorischObjectnummer ?label.\n\n  }\n    }}\n  \n}\n",
+                                "widget": "SearchAutocomplete",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "panelstyle": "paper2",
+                                "textbefore": "monumentnr",
+                                "publishVariable": "monument",
+                                "panelstyleExtra": "noScrollBars",
+                                "placeholderText": "14948"
+                            },
+                            {
+                                "subscribeVariable": "monument",
+                                "widget": "BBMap",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "panelstyle": "paper2",
+                                "query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nprefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\n\n#procent;\nselect distinct ?uri ?geometry ?label  ?color \nwhere {\n  \n  service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/services/cho/sparql>\n  {\n    {select distinct ?uri ?geometry ?label  ?color  where {\n  ?uri a ceo:Rijksmonument.\n  ?uri ceo:heeftGeometrie/geo:asWKT ?geometry.\n  filter (!STRstarts(STR(?geometry),\"POINT\"))\n  ?uri ceo:naam ?label.\n  optional {?uri ceo:heeftCategorieGroenaanlegLegenda/skos:prefLabel ?color1}\n  bind (coalesce(?color1,\"onbekend\") as ?color)\n  }\n    }}\n  \n  \n  \n}\n#title:Rijksmonumenten;\n#limit 1000",
+                                "publishVariable": "monument",
+                                "titleMenubar": "Monumenten (RCE)"
+                            }
+                        ],
+                        "direction": "column",
+                        "widget": "SplitLayout"
+                    },
+                    {
+                        "subscribeVariable": "",
+                        "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nprefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\n prefix nen3610: <http://modellen.geostandaarden.nl/def/nen3610#>\nprefix prov: <http://www.w3.org/ns/prov#>\nprefix imxgeo: <http://modellen.geostandaarden.nl/def/imx-geo#>\nprefix ext: <https://modellen.kkg.kadaster.nl/def/imxgeo-ext#>\n\n\n\nselect distinct ?uri ?geometry ?color ?label\n\nwhere\n\n{\n   service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql>\n  {\n    {select distinct ?uri ?geometry ?label ?color where \n      {\n  <{{monument}}> ceo:isOnderdeelVanComplex*/ceo:heeftRijksmonument*/ceo:heeftBasisregistratieRelatie/ceo:heeftBAGRelatie/ceo:pandIdentificatie ?nummer.\n     \n        service<https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql>\n    {\n   \n     ?pand prov:wasDerivedFrom/nen3610:identificatie ?nummer.\n        {\n  \n         ?pand imxgeo:bevindtZichOpPerceel ?uri.\n          ?uri geo:hasGeometry/geo:asWKT ?geometry.\n        bind (\"Perceel\" as ?color)\n        ?uri geo:hasMetricArea ?area.\n        bind (concat( \"oppervlakte is \",str(?area),\" m2\") as ?label)\n        \n        }\n        union\n        {\n  \n        optional {?pand imxgeo:gebruiksdoel ?color1.}\n        bind (coalesce(?color1,\"onbekend\") as ?color)\n        bind (?pand as ?uri)\n        optional {?pand imxgeo:heeftAlsAdres/imxgeo:omschrijving ?label1}\n        bind (coalesce(?label1,\"geen adres gevonden\") as ?label)\n        \n\n        ?pand ext:bovenaanzichtgeometrie/geo:asWKT ?geometry.  \n       }\n  \n  \n\n    }\n        \n        \n        \n        \n      \n  }\n      limit 12}}\n        \n        \n        \n    \n#        \n#        {\n#        bind (?pand as ?uri) \n#        bind (?pgeometry as ?geometry)\n#        bind (?pcolor as ?color)\n#      }\n#       union\n#        {}\n#        {  bind (<{{monument}}> as ?uri) \n#        bind (?rgeometry as ?geometry)\n#        bind (\"Monument\" as ?color)\n#      }\n        \n\n}\n#title:RCE en KKG;\n\n      ",
+                        "widget": "BBMap",
+                        "voteForUserActionsDisabledWhenLoading": true,
+                        "syncWithUserActionsDisabled": true,
+                        "showLoadingOverlay": true,
+                        "panelstyle": "paper2",
+                        "charttype": "gauge",
+                        "titleMenubar": "Panden RCE gevonden in KKG (KKG Kadaster)",
+                        "publishVariable": "kkg"
+                    }
+                ],
+                "areaSizes": [
+                    "50%",
+                    "50%"
+                ]
+            },
+            {
+                "widget": "SplitLayout",
+                "direction": "row",
+                "areas": [
+                    {
+                        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nselect  distinct ?property ?pred ?value ?literal #?beschrijving  ?icon ?iconColor\nwhere\n\n{ \n  service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql>\n  {\n    {select  distinct ?property ?pred ?value ?literal where {\n  <{{monument}}> ?pred ?value.\n\n  filter(?pred!=rdf:type).\n  filter (?pred!=<http://www.opengis.net/ont/geosparql#asWKT>)\n  bind (strafter(StR(?pred),\"#\") as ?property)\n    bind (ISLITERAL(?value) as ?literal)\n  \n  bind (\"fa fa-star\" as ?icon)\n  bind (\"#aa00aa\" as ?iconColor)\n  bind (\"een beschrijving\" as ?beschrijving)\n  # bind (\\\"een beschrijving 2\\\" as ?beschrijvingValue)\n}\n        limit 200\n      }\n      }\n  }",
+                        "panelstyle": "paper2",
+                        "showLoadingOverlay": true,
+                        "syncWithUserActionsDisabled": true,
+                        "voteForUserActionsDisabledWhenLoading": true,
+                        "widget": "BBPropertyPanel",
+                        "childParameterText": "{{monument}}",
+                        "titleMenubar": "Kenmerken (RCE)"
+                    },
+                    {
+                        "areaSizes": [
+                            "50%",
+                            "50%"
+                        ],
+                        "areas": [
+                            {
+                                "titleMenubar": "Picture (RCE)",
+                                "src": "{{plaatje}}",
+                                "panelstyle": "paper2",
+                                "query": "prefix foaf: <http://xmlns.com/foaf/0.1/>\nselect distinct ?plaatje\nwhere\n{\n   service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql>\n  {\n  <{{monument}}> foaf:depiction/<http://www.europeana.eu/schemas/edm/isShownBy> ?plaatje\n  }\n\n}\n  limit 1",
+                                "showLoadingOverlay": true,
+                                "syncWithUserActionsDisabled": true,
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "widget": "BBHTML",
+                                "title": "",
+                                "htmlgeenresultaat": "geen plaatje gevonden",
+                                "html": "<img src=\"{{plaatje}}\"/> "
+                            },
+                            {
+                                "height": "150%",
+                                "width": "150%",
+                                "stringToColor": true,
+                                "popupLabelExtension": " stuks",
+                                "widget": "BBEChart",
+                                "voteForUserActionsDisabledWhenLoading": true,
+                                "syncWithUserActionsDisabled": true,
+                                "showLoadingOverlay": true,
+                                "panelstyle": "paper2",
+                                "query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nprefix ceo: <https://linkeddata.cultureelerfgoed.nl/def/ceo#>\nprefix geo: <http://www.opengis.net/ont/geosparql#>\n\n\nselect distinct (count(distinct ?nummer) as ?aantal)\n\nwhere\n\n{\n   service<https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql>\n  {\n  <{{monument}}> ceo:isOnderdeelVanComplex*/ceo:heeftRijksmonument*/ceo:heeftBasisregistratieRelatie/ceo:heeftBAGRelatie/ceo:pandIdentificatie ?nummer\n  }\n\n}\n\n      ",
+                                "charttype": "gauge",
+                                "gradientColors": true,
+                                "enableZoom": true,
+                                "titleMenubar": "Aantal gebouwen (RCE)",
+                                "panelstyleExtra": "noScrollBars"
+                            }
+                        ],
+                        "direction": "column",
+                        "widget": "SplitLayout"
+                    },
+                    {
+                        "titleMenubar": "Kenmerken (KKG Kadaster)",
+                        "popupLabelExtension": "",
+                        "gradientColors": false,
+                        "stringToColor": false,
+                        "defaultMenu": false,
+                        "legend": false,
+                        "charttype": "gauge",
+                        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nselect  distinct ?property ?pred ?value ?literal #?beschrijving  ?icon ?iconColor\nwhere\n\n{ \n   service<https://api.labs.kadaster.nl/datasets/kadaster/kkg/sparql>\n  {\n    {select  distinct ?property ?pred ?value ?literal where {\n  <{{kkg}}> ?pred ?value.\n\n  filter(?pred!=rdf:type).\n  filter (?pred!=<http://www.opengis.net/ont/geosparql#asWKT>)\n  bind (strafter(StR(?pred),\"#\") as ?property)\n    bind (ISLITERAL(?value) as ?literal)\n  \n  bind (\"fa fa-star\" as ?icon)\n  bind (\"#aa00aa\" as ?iconColor)\n  bind (\"een beschrijving\" as ?beschrijving)\n  # bind (\\\"een beschrijving 2\\\" as ?beschrijvingValue)\n}\n        limit 200 }\n      }\n  }",
+                        "showLoadingOverlay": true,
+                        "syncWithUserActionsDisabled": true,
+                        "voteForUserActionsDisabledWhenLoading": true,
+                        "widget": "BBPropertyPanel",
+                        "panelstyle": "paper2",
+                        "childParameterText": "{{kkg}}"
+                    }
+                ],
+                "areaSizes": [
+                    "33%",
+                    "33%",
+                    "33%"
+                ]
+            }
+        ],
+        "areaSizes": [
+            "45%",
+            "55%"
+        ],
+        "direction": "column"
+    },
+    "bbsparqlendpoint": "",
+    "repoURL": "https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql",
+    "logoURL": "./logos/logo-wistor.png",
+    "sparqlErrorMessage": "\"errors connecting to the server\"",
+    "css": "{\"height\":\"100%\"}",
+    "pageWidth": "99%",
+    "parameterValues": "{\"imgeo\":\"http://www.buildingbits.nl/coins2/draft/IMGEO.rdf\",\"cb23\":\"http://rotterdam.nl/data/CB23\"}",
+    "public": true,
+    "path": "rkUb1",
+    "layoutName": "ORIGINAL",
+    "localRepoURL": "",
+    "prejs": "document.withCredentials=false;  //https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/sparql//https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/services/cho/sparql //",
+    "triggers": [
+        {
+            "id": "a95825c1-1f6e-4364-aad1-154bdf163004",
+            "label": "plaatje",
+            "sparqlQuery": "prefix foaf: <http://xmlns.com/foaf/0.1/>\nselect distinct ?plaatje\nwhere\n{\n  <{{monument}}> foaf:depiction/<http://www.europeana.eu/schemas/edm/isShownBy> ?plaatje\n\n}\n  limit 1",
+            "voteForUserActionsDisabledWhenLoading": false,
+            "_id": "67c6c1fc4aacb0002422de7a"
+        }
+    ],
+    "id": "67c6b2584aacb0002422de79",
+    "new": false,
+    "layout": {
+        "showFooter": true
+    }
+}
