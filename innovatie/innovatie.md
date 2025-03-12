@@ -133,7 +133,7 @@ title: Innovatie
     </div>
   </a>
   
-  <a href="/demonstrators/geodatawizard">
+  <a href="/innovatie/geodatawizard/demonstrator">
   <div class="card">
     <div class="card-type">Demonstrator</div>
     <img class="card-image" src="/innovatie/geodatawizard/geodata_wizard.png">
