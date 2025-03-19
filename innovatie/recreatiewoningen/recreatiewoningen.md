@@ -23,7 +23,7 @@ Voor dit project is het model eerst gebruikt om recreatiewoningen in heel Nederl
 </figure>
 
 ## Resultaten
-Het model dat vervolgens met deze date getraind is bleek voldoende nauwkeurig te zijn om te combineren met een aantal basisregistraties (BAG en BGT) en hiermee op de kaart te visualiseren waar de registraties gebreken vertonen. Wel werden nog de nodige objecten door het model gemist, of normale huizen door het model verward met een recreatiewoning. Maar omdat gemiddeld de kwaliteit van de voorspellingen redelijk tot goed was bleken de uitkomsten geschikt om de kaart visualisatie mee op te zetten. Vooral zichtbaar is dat in de BAG verschillen zijn in hoe gemeentes omgaan met standplaatsen. Vanuit de visualisatie konden al diverse terugmeldingen gemaakt worden voor de BAG. Verder is goed te zien waar de BRT nog bijgewerkt kan worden om de grenzen van recreatieparken verder te verbeteren.
+Het model dat vervolgens met deze data getraind is bleek voldoende nauwkeurig te zijn om te combineren met een aantal basisregistraties (BAG en BGT) en hiermee op de kaart te visualiseren waar de registraties gebreken vertonen. Wel werden nog de nodige objecten door het model gemist, of normale huizen door het model verward met een recreatiewoning. Maar omdat gemiddeld de kwaliteit van de voorspellingen redelijk tot goed was bleken de uitkomsten geschikt om de kaart visualisatie mee op te zetten. Vooral zichtbaar is dat in de BAG verschillen zijn in hoe gemeentes omgaan met standplaatsen. Vanuit de visualisatie konden al diverse terugmeldingen gemaakt worden voor de BAG. Verder is goed te zien waar de BRT nog bijgewerkt kan worden om de grenzen van recreatieparken verder te verbeteren.
  
   
 <figure id="figuur-2">
