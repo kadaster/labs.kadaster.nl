@@ -69,6 +69,15 @@ title: Innovatie
       <div class="card-description">Een manier om met AI opslagtanks te vinden in luchtfoto's</div>
     </div>
   </a>
+
+  <a href="/innovatie/recreatiewoningen/recreatiewoningen">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/recreatiewoningen/recreatiewoningen.png">
+      <div class="card-title">Recreatiewoningen</div>
+      <div class="card-description">Met AI recreatiewoningen vinden in luchtfoto's</div>
+    </div>
+  </a>
    
   <a href="/innovatie/lockunlock/lock_unlock">
     <div class="card">
