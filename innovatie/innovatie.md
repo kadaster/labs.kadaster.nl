@@ -78,6 +78,15 @@ title: Innovatie
       <div class="card-description">Met AI recreatiewoningen vinden in luchtfoto's</div>
     </div>
   </a>
+
+  <a href="/innovatie/3d-appartementen/3d-appartementen">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/3d-appartementen/3d-appartementen.png">
+      <div class="card-title">3D Appartementen</div>
+      <div class="card-description">3D Appartementen reconstrueren uit splitsingstekeningen</div>
+    </div>
+  </a>
    
   <a href="/innovatie/lockunlock/lock_unlock">
     <div class="card">
