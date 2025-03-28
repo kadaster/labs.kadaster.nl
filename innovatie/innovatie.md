@@ -87,6 +87,15 @@ title: Innovatie
       <div class="card-description">3D Appartementen reconstrueren uit splitsingstekeningen</div>
     </div>
   </a>
+
+  <a href="/innovatie/cloud-processing-for-ai/cloud-processing-for-ai">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/cloud-processing-for-ai/cloud-processing-for-ai.png">
+      <div class="card-title">Cloud processing for AI</div>
+      <div class="card-description">Grote datasets met AI verwerken in de cloud</div>
+    </div>
+  </a>
    
   <a href="/innovatie/lockunlock/lock_unlock">
     <div class="card">
