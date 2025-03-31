@@ -96,6 +96,15 @@ title: Innovatie
       <div class="card-description">Grote datasets met AI verwerken in de cloud</div>
     </div>
   </a>
+
+  <a href="/innovatie/open_maps_for_europe_2/open_maps_for_europe_2">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/open_maps_for_europe_2/open_maps_for_europe_2.png">
+      <div class="card-title">Open Maps for Europe 2</div>
+      <div class="card-description">Naadloze topografische 1:10.000 data voor Europa</div>
+    </div>
+  </a>
    
   <a href="/innovatie/lockunlock/lock_unlock">
     <div class="card">
