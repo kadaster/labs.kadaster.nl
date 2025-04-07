@@ -36,5 +36,5 @@ Het model dat vervolgens met deze data getraind is bleek voldoende nauwkeurig te
 De resultaten van het model zijn al geschikt om samen met de BAG/BRT te visualiseren en zo afwijkingen in deze registraties te duiden. Om een volledig overzicht van alle recreatiewoningen in Nederland te leveren zal het model nog wel verder verbeterd moeten worden. Dit kan door niet alleen de locatie (boundingbox) maar de vorm (segmentatie) te detecteren. Mogelijk kan het model ook verbeterd door meer soorten vakantiewoningen te onderscheiden. 
 
 ## Vragen over dit project? 
-Voor meer informatie kun je terecht bij Simone Wanning (ODR/GEC).
+Voor meer informatie kun je terecht bij Simone Waning (ODR/GEC).
 
