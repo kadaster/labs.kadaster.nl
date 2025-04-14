@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/widgets/ImageGallery/styles.module.css"],"names":[],"mappings":"AAAA,2BACI,6CAAqE,CAArE,iEACF","file":"29.e34128e3.chunk.css","sourcesContent":[".custom-grid {\n    grid-template-columns: repeat(var(--column-count, 3), minmax(0, 1fr));\n  }\n"]}

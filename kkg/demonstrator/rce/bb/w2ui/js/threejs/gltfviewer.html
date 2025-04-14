@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GLTF Viewer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		
+		
+		<link rel="stylesheet" href="../w2ui.min.css" />
+<script src="../jquery.min.js"></script>
+<script src="../w2ui.min.js"></script>
+<script src="../Sparql.js"></script>
+
+<script src="../W2uiIntegrator.js"></script>
+
+<script src="../MySparql.js"></script>
+<script src="../InputExecutor.js"></script>
+
+  
+  
+  <script src="../ThreeJSViewer.js"></script>
+		
+		
+		
+	</head>
+
+	<body>
+		
+
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./build/three.module.js"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import { OrbitControls } from './jsm/controls/OrbitControls.js';
+			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+			import { RGBELoader } from './jsm/loaders/RGBELoader.js';
+			import { FlyControls } from './jsm/controls/FlyControls.js';
+
+			let camera, scene, renderer;
+
+			init();
+			render();
+
+			function init() {
+
+				const container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
+				camera.position.set( - 1.8, 0.6, 2.7 );
+
+				scene = new THREE.Scene();
+				const ambientLight = new THREE.AmbientLight('white', 2);
+
+				scene.add(ambientLight);
+				var directionalLight = new THREE.DirectionalLight();
+        directionalLight.position.set(40, 40, 20);
+        scene.add(directionalLight);
+				render();
+
+				if (false) {new RGBELoader()
+					.setPath( 'textures/equirectangular/' )
+					.load( 'royal_esplanade_1k.hdr', function ( texture ) {
+
+						texture.mapping = THREE.EquirectangularReflectionMapping;
+
+						scene.background = texture;
+						scene.environment = texture;
+
+						render();
+
+						// model
+
+						
+
+					} );
+				}
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			//	renderer.toneMapping = THREE.ACESFilmicToneMapping;
+			//	renderer.toneMappingExposure = 1;
+			//	renderer.outputEncoding = THREE.sRGBEncoding;
+				container.appendChild( renderer.domElement );
+
+				const controls = new OrbitControls( camera, renderer.domElement );
+				controls.addEventListener( 'change', render ); // use if there is no animation loop
+				controls.minDistance = 0;
+				controls.maxDistance = 10000;
+				//controls.target.set( 0, 0, - 0.2 );
+				controls.update();
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				render();
+
+			}
+
+			//
+
+			function render() {
+                if (renderer==null) return;
+				renderer.render( scene, camera );
+
+			}
+			
+			function loadtest()
+			{
+			
+			const loader = new GLTFLoader().setPath( 'models/gltf/DamagedHelmet/glTF/' );
+						loader.load( 'DamagedHelmet.gltf', function ( gltf ) {
+
+							scene.add( gltf.scene );
+
+							render();
+
+						} );
+			
+			}
+			document.loadtest=loadtest;
+			console.log("setting document functions");
+			document.getScene=function(){return scene;}
+			document.getLoader=function(){return new GLTFLoader();}
+			document.render=render;
+			document.getCamera=function() {return camera;}
+			document.getBox=function(){return new THREE.Box3();}
+
+
+			
+
+
+	
+
+
+var pstyle = 'background-color: #F5F6F7; border: 0px solid #dfdfdf; padding: 0px;';
+var layout=$('#layout').w2layout({
+    name: 'layout',
+    panels: [
+        { type: 'main', style: pstyle, content: 'main' },
+    ]
+});
+
+ var widget={connect:function(a,b){ console.log("connecting mockup Vistree");}};
+
+
+ var panel= "main";
+ var viewer = new ThreeJSViewer("layout",panel,widget,null);
+
+ Iface.prototype.setBeginSparqlResults=function(results,sparql,a1,a2,a3)
+{
+    
+        
+   this.tranferProps(viewer);
+   
+   viewer.setSparqlResults(results,sparql);
+   this.orgSparql=sparql;
+   this.sparql=sparql;
+}
+
+Iface.prototype.setPubSub2=function(pubsub)
+{
+    //this.tranferProps(visgraph);
+  
+    var sparql = this.orgSparql;
+    if (pubsub!=null)
+  {
+    for (var id in pubsub)
+    {
+        for (var n=0;n<10;n++)
+        {
+          sparql= sparql.replace("{{"+id+"}}",pubsub[id]);
+        }
+      
+    }
+  }
+ 
+}
+ 
+
+startIntegration(viewer);
+</script>
+		
+		
+
+	</body>
+</html>

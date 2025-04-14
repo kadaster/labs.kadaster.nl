@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <title>Map</title>
+ 
+  <head>
+      <meta charset="ISO-8859-1">
+  
+    <style type="text/css">
+  
+.circle {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin-top: 3 px;
+}
+
+
+.leaflet-layer
+{
+    z-index: 10!important; 
+}
+
+
+
+
+.legend {
+    padding: 0px 0px;
+    font: 12px/14px Arial, Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    opacity:0.7;
+}
+.legend h4 {
+    margin: 0 0 2px;
+    color: #777;
+}
+body
+{
+ margin:0px;
+}
+
+.legendtable tr {
+ height:10px;
+}
+
+   
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+
+
+
+  
+  </style>
+   
+    
+ <link22 rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="js/leaflet194/leaflet.css" />
+<link rel="stylesheet" href="js/vt2/leafletOverride.css" />
+<link rel="stylesheet" href="js/leaflet-pulse-icon/src/L.Icon.Pulse.css" />
+<link rel="stylesheet" href="js/leaflet-minimap/dist/Control.MiniMap.min.css" />
+<link rel="stylesheet" href="js/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<link rel="stylesheet" href="js/leaflet-draw/dist/leaflet.draw.css" />
+<link rel="stylesheet" href="js/leaflet-measurements/Leaflet.PolylineMeasure.css" />
+<link rel="stylesheet" href="js/leaflet-easybutton/easy-button.css" /> 
+<link rel="stylesheet" href="js/layerwidgetV171/css/leaflet.auto-layers.css" />
+<link rel="stylesheet" href="js/leafletLocationList/leaflet.locationlist.css" />
+<link rel="stylesheet" href="js/utils/lineairmeasurements.css" />
+<link rel="stylesheet" href="js/leaflet-contextmenu/leaflet.contextmenu.min.css" />
+<link rel="stylesheet" href="js/leaflet-credits/leaflet-control-credits.css" />
+
+      <link rel="stylesheet" href="js/w2ui/w2ui.min.css" />
+      
+     
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>   
+              
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="js/bbs/util/legend.css" />
+             <style>
+      
+        
+        
+        </style>          
+
+</head>
+ 
+  <body style="margin:0px" >
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    
+    
+        
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script src="js/bbs/util/LegendSlider.js"></script>
+      
+      
+    <div id="map"></div>
+    
+    <script>L_PREFER_CANVAS = true;</script>
+   <script src="js/leaflet194/leaflet.js"></script>
+   <script src="js/pdok/nlmaps.iife.js"></script>
+  <script src="js/esri/esri-leaflet.js"></script>
+  
+    <script src="js/leaflet-omnivore/leaflet-omnivore.min.js"></script>
+  
+    <script src="js/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+    <script src="js/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="js/leaflet-draw/dist/leaflet.draw.js"></script>
+<script src="js/leaflet-measurements/Leaflet.PolylineMeasure.js"></script>
+     <script src="js/leaflet-easybutton/easy-button.js"></script>
+     
+             <script src="js/bbs/AddButton.js" ></script>
+             
+             
+<script src="js/layerwidgetV171/leaflet-autolayers.js"></script>
+       <script src="js/proj4j/proj4.js"></script>
+       <script src="js/proj4j/proj4leaflet.js"></script>
+            <script src="js/w2ui/w2ui.min.js"></script>
+            
+            
+            
+                <script src="js/leaflet-contextmenu/leaflet.contextmenu.min.js"></script>
+       
+           <script src="js/print/print.js"></script>
+
+       <link href='js/utils/leafletfullscreen.css' rel='stylesheet' />
+       <script src='js/utils/leafletfullscreen.js'></script>
+       
+      
+       
+        <link href='js/utils/zoomhome.css' rel='stylesheet' />
+       <script src='js/utils/zoomhome.js'></script>
+  
+        <script src="js/utils/lineairmeasurements.js"></script>
+        
+          <script src="js/utils/plain-overlay.min.js"></script>
+ 
+    <script src="js/leafletLocationList/leaflet.locationlist.js"></script>
+<script src="js/bbs/Locations.js"></script>
+    
+    
+     <script src="js/leaflet-credits/leaflet-control-credits.js" ></script>
+       <script src="js/leafletSlider/LSlider.js" ></script>
+       
+       
+         <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+       <script src="https://unpkg.com/deck.gl-leaflet@latest/dist/deck.gl-leaflet.min.js"></script>
+     
+       
+ 
+       
+       
+    
+    <!-- //
+      <script src="https://cdn.jsdelivr.net/npm/jsts@2.0.2/dist/jsts.min.js"></script>
+    <script src='js/utils/smoothzoom.js'></script>
+
+<script src="http://cdn.osmbuildings.org/OSMBuildings-Leaflet.js"></script>
+ <script src="js/vt/GeoJSONVT.js"></script>
+// -->
+    
+    
+    
+     <script src="js/tippy/core.min.js"></script>
+ <script src="js/tippy/tippy.min.js"></script>
+ 
+    
+   
+     <script src="js/bbs/util/Timer.js"></script>
+              
+     
+     <script src="js/bbs/Layerwidget.js"></script>
+     <script src="js/bbs/PropertyPanel.js"></script>
+     <script src="js/bbs/Legend2.js"></script>
+     <script src="js/bbs/LeafLetMap.js"></script>
+     <script src="js/bbs/SparqlLeafletUtils.js"></script>
+
+     <script src="js/bbs/SparqlLeaflet.js"></script>
+      
+            <script src="js/bbs/util/PointSymbols.js"></script>
+              <script src="js/bbs/util/download.js"></script>
+            
+     <script src="js/vt2/BBVectorTileGrid.js"></script>
+    <script src="js/vt2/GeoJSONVT.js"></script>
+     <script src="js/vt2/BBVectorTileGridUtils.js"></script>
+
+ 
+       <script src="js/jsts/jsts.js"></script>
+       
+     
+       
+           
+     <script src="js/bbs/IntegratorPlugin.js"></script>
+
+
+
+     
+     
+  </body>
+</html>
+
+
+

@@ -157,7 +157,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
       const long = position.coords.longitude;
       
       var xhr = new XMLHttpRequest();
-      xhr.open("POST", 'https://labs.kadaster.nl/bier/insertlocations', true);
+      xhr.open("POST", 'https://labs.kadaster.nl/demonstrators/datadrivenrecipe/insertlocations', true);
       xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send(JSON.stringify({lat, long}));
     }
@@ -240,7 +240,7 @@ Onderstaande kaart toont de locaties waar ‘t Perceeltje is gedronken, en de he
         let clusterGroup;
         function getData() {
             try {
-                fetch('https://labs.kadaster.nl/bier/getlocations')
+                fetch('https://labs.kadaster.nl/demonstrators/datadrivenrecipe/getlocations')
                 .then(response => response.json())
                 .then(locations => {
                     if (clusterGroup) map.removeLayer(clusterGroup);

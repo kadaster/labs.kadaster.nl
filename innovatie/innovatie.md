@@ -7,6 +7,15 @@ title: Innovatie
 
 <div class="cards-wrapper">
     
+  <a href="/innovatie/chatbotkaatje/kaatje">
+    <div class="card">
+      <div class="card-type">Onderzoek</div>
+      <img class="card-image" src="/innovatie/chatbotkaatje/kaatje_dark_no_bg_tile.png">
+      <div class="card-title">Chatbot Kaatje</div>
+      <div class="card-description">Een technische verkenning naar een generiek chatbot die voor diverse use cases ingezet kan worden.</div>
+    </div>
+  </a>
+
   <a href="/innovatie/haai/handgeschreven_aktes_ai">
     <div class="card">
       <div class="card-type">Project</div>
@@ -48,7 +57,52 @@ title: Innovatie
       <div class="card-type">Project</div>
       <img class="card-image" src="/innovatie/voelbarekaarten/voelbare_kaarten.jpg">
       <div class="card-title">Voelbare Kaarten</div>
-      <div class="card-description">Een samenwerking om een geautomatiseerd proces te ontwikkelen voor de productie van voelbare (tactiele) kaarten. </div>y
+      <div class="card-description">Een samenwerking om een geautomatiseerd proces te ontwikkelen voor de productie van voelbare (tactiele) kaarten. </div>
+    </div>
+  </a>
+
+  <a href="/innovatie/opslagtanks/opslagtanks">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/opslagtanks/opslagtanks.png">
+      <div class="card-title">Opslagtanks</div>
+      <div class="card-description">Een manier om met AI opslagtanks te vinden in luchtfoto's</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/recreatiewoningen/recreatiewoningen">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/recreatiewoningen/recreatiewoningen.png">
+      <div class="card-title">Recreatiewoningen</div>
+      <div class="card-description">Met AI recreatiewoningen vinden in luchtfoto's</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/3d-appartementen/3d-appartementen">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/3d-appartementen/3d-appartementen.png">
+      <div class="card-title">3D Appartementen</div>
+      <div class="card-description">3D Appartementen reconstrueren uit splitsingstekeningen</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/cloud-processing-for-ai/cloud-processing-for-ai">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/cloud-processing-for-ai/cloud-processing-for-ai.png">
+      <div class="card-title">Cloud processing for AI</div>
+      <div class="card-description">Grote datasets met AI verwerken in de cloud</div>
+    </div>
+  </a>
+
+  <a href="/innovatie/open_maps_for_europe_2/open_maps_for_europe_2">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/open_maps_for_europe_2/open_maps_for_europe_2.png">
+      <div class="card-title">Open Maps for Europe 2</div>
+      <div class="card-description">Naadloze topografische 1:10.000 data voor Europa</div>
     </div>
   </a>
    
@@ -115,7 +169,7 @@ title: Innovatie
     </div>
   </a>
   
-  <a href="/demonstrators/geodatawizard">
+  <a href="/innovatie/geodatawizard/demonstrator">
   <div class="card">
     <div class="card-type">Demonstrator</div>
     <img class="card-image" src="/innovatie/geodatawizard/geodata_wizard.png">

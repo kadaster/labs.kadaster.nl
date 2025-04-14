@@ -9,4 +9,4 @@ radar: https://kadaster-labs.github.io/tech-radar/?documentId=https%3A%2F%2Fraw.
 Dit is de Tech Radar van het Kadaster Emerging Technology Center.
 Hierin zijn nieuwe technologieën, ontwikkelingen en innovaties ingedeeld in hoe het ETC verwacht dat deze het Kadaster raken en/of relevant zijn. Heb je vragen, opmerkingen of suggesties? Stuur ons dan een mail naar [etc@kadaster.nl](mailto:etc@kadaster.nl).
 
-_Laatst bijgewerkt op 05 februari 2024_
+_Laatst bijgewerkt op 12 maart 2025_
