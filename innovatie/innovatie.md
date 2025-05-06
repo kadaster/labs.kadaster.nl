@@ -151,7 +151,7 @@ title: Innovatie
   </div>
   </a>
 
-  <a href="/innovatie/toponamenzoeker/demonstrator">
+  <a href="/demonstrators/toponamenzoeker">
   <div class="card">
     <div class="card-type">Demonstrator</div>
     <img class="card-image" src="/innovatie/toponamenzoeker/topo_namen_zoeker.png">
