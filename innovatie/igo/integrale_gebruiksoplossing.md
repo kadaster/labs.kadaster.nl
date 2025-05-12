@@ -4,7 +4,7 @@ title: Use Case ― Integrale Gebruiksoplossing
 ---
 
 <iframe style=" z-index: 9999; position: fixed; right: 0; bottom: 0; height: 0px; width: 0px;" id="loki-chat"
-  scrolling="no" frameborder="0" allowtransparency="true" src="/demonstrators/loki-1.0/index.html" title="Loki">
+  scrolling="no" frameborder="0" allowtransparency="true" src="/innovatie/lokiv3/loki_v3/index.html" title="Loki">
 </iframe>
 <script>
   iFrameResize({ sizeHeight: true, sizeWidth: true, autoResize: false, checkOrigin: false,  heightCalculationMethod: 'grow' }, '#loki-chat')
@@ -41,7 +41,7 @@ Welkom bij de integrale gebruiksoplossing. Deze oplossing maakt het mogelijk om 
 
 <div class="cards-wrapper">
 
-  <a href="/demonstrators/geodatawizard">
+  <a href="/innovatie/geodatawizard/demonstrator">
     <div class="card">
       <div class="card-type">GeoDataWizard</div>
         <img class="card-image" src="/innovatie/geodatawizard/geodata_wizard.png">
@@ -111,14 +111,10 @@ De workshop over de Integrale Gebruiksoplossing voor openbare orde & veiligheid 
 
 <br>
 
-## Status
-
-Incidenteel komt het voor dat er een endpoint of demonstrator onbeschikbaar raakt wegens een storing of (gepland) onderhoud. Bekende problemen en aankomend onderhoud wordt bijgehouden op <a href="/status">deze pagina</a>.
-
 <div class="textbox" markdown="1">
 ## Actualiteit van databronnen
 
-De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst, dit geldt voor de BAG, BGT, BRT, BRK.. Voor detailinformatie en links naar alle databronnen verwijzen we de gebruiker naar [onze developer pagina](/developer/). Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
+De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing wordt op een regelmatige basis ververst, dit geldt voor de BAG, BGT, BRT, BRK. Momenteel bevat de integrale gebruiksoplossing de volgende datasets:
 
 - **Basisregistratie Kadaster - Publieksrechtelijke Beperkingen** (geen reguliere vernieuwing) - *Laatst vernieuwd met data van 2021-03-16*.
 - **CBS Wijk- en buurtkaart** (jaarlijks vernieuwd) - *Laatst vernieuwd met data van 2019-11-01*.
@@ -130,32 +126,6 @@ De data die beschikbaar wordt gesteld vanuit de Integrale Gebruiksoplossing word
 
 
 De Kadaster Knowledge Graph (op basis van Schema.org) maakt gebruik van deze onderliggende datasets en is daarmee qua actualiteit een afgeleide van bovenstaande sets.
-
-</div>
-
-## Van de gebruikers
-
-Nu onze Knowledge Graph beschikbaar is zijn de eerste gebruikers al aan de slag gegaan om componenten te ontwikkelen op onze data. Deze dienen als inspiratie voor de mogelijkheden met deze ontsluiting.
-
-<div class="cards-wrapper">
-
-  <a href="/browsers/kkggebouw/kkg_gebouw">
-    <div class="card">
-      <div class="card-type">Data Browser</div>
-      <img class="card-image" src="/browsers/kkggebouw/kkg_gebouw.png" alt="Facet Check">
-      <div class="card-description">Gebruik de Facet Check Browser - ontwikkeld door Triply - om door de gebouwen in de Knowledge Graph te zoeken.</div>
-    </div>
-  </a>
-  
-  <a href="https://qanswer-frontend.univ-st-etienne.fr/?kb=kg&user=kadaster">
-    <div class="card">
-      <div class="card-type">QAnswer</div>
-      <img class="card-image" src="/innovatie/igo/afbeeldingen/qanswer.PNG" alt="QAnswer">
-      <div class="card-description">Met deze demonstrator wordt het mogelijk in natuurlijke taal de Knowledge graph te bevragen.</div>
-    </div>
-  </a>
-
-</div>
 
 ## Overall UI/UX Design
 

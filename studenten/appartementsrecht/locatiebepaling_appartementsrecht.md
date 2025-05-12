@@ -30,9 +30,7 @@ Kwa interpolatie worden de huisnummers afwisselend met de klok mee en tegen de k
 - De afstand tot het startpunt (0 tot 100) wordt genormaliseerd om binnen het toegestane bereik van 0 en 1 te passen en geeft de kans weer dat een appartement verder op de omtrek van het gebouw ligt.
 - De kans dat het appartement aan de straatkant ligt. Een output van 1 vertegenwoordigt de straatkant en een output van 0 vertegenwoordigt de andere kant.
 
-De labels voor de CatBoost modellen worden automatisch uit splitsingsaktes/tekingen gehaald en de features worden gevormd aan de hand van openbaar beschikbare gebouw- en adresinformatie uit de Basisregistratie Adressen en Gebouwen (BAG). De afbeelding hieronder geeft een indicatie van de stappen die genomen worden tijdens de automatische verwerking van de splitsingsdocumenten naar labels.
-
-![proces](/assets/images/proces.png)
+De labels voor de CatBoost modellen worden automatisch uit splitsingsaktes/tekingen gehaald en de features worden gevormd aan de hand van openbaar beschikbare gebouw- en adresinformatie uit de Basisregistratie Adressen en Gebouwen (BAG). 
 
 ## Resultaten
 ### Verdieping voorspelling

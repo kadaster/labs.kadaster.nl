@@ -14,7 +14,7 @@ Within the boundaries of these two roles, responsibility for the generation and 
 
 **Figure 7.3** Target Business Layer: Metadata Infrastructure System 
 <figure id="figuur-3">
-  <a href="/innovatie/metadata/afbeeldingen/metadatainfrastructure/engd1.png">
+  <a href="/innovatie/metadata/afbeeldingen/engd1.png">
     <img src="/innovatie/metadata/afbeeldingen/engd1.png">
   </a>
 </figure>

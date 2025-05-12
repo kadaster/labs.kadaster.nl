@@ -38,7 +38,7 @@ Dit onderzoek richt zich op hoe nieuwe technieken het werkproces met handgeschre
 
 ## Vraag 1: Handgeschreven tekstherkenning
 
-Voor het halen van tekst uit scans bestaat de OCR techniek, Optical Character Recognition. Hiervan zijn veel standaardoplossingen beschikbaar, zoals tesseract of ABBYY finereader. Deze technieken onderzochten we al eerder in ons [Akte OCR onderzoek](/cases/akte-ocr/), waarin scans na 1950 werden verwerkt. Anders dan de handgeschreven aktes waren deze met de typmachine opgeschreven.
+Voor het halen van tekst uit scans bestaat de OCR techniek, Optical Character Recognition. Hiervan zijn veel standaardoplossingen beschikbaar, zoals tesseract of ABBYY finereader.
 
 Hoewel de resultaten voor de getypte akte goed bruikbaar waren, presteren deze technieken een stuk slechter bij de handgeschreven aktes. Dit komt doordat zulke tools vaak niet getraind zijn voor handschrift, maar ook doordat de scankwaliteit van de handgeschreven aktes lager is. Voor dit onderzoek is daarom gekozen om een subveld van OCR te onderzoeken, de HTR techniek, welke zich specifiek richt op handgeschreven teksten.
 

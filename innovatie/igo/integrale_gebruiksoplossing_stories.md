@@ -56,15 +56,6 @@ Hieronder kun je de data stories vinden zoals deze zijn opgeleverd voor verschil
       <div class="card-description">Voorbeelden die laten zien wat er mogelijk is met de iGO</div>
     </div>
   </a>
-  
-  <a href="https://data.labs.kadaster.nl/dst/-/stories/algemene-queries-voor-kkg-gebruik">
-    <div class="card">
-      <div class="card-type">Developers</div>
-      <img class="card-image" src="/innovatie/igo/afbeeldingen/eerste-igo.PNG">
-      <div class="card-description">Hoe gebruik ik als developer zelf de Knowledge Graph? En hoe stel ik mijn eerste query op?</div>
-    </div>
-  </a>
-  
   <a href="https://data.labs.kadaster.nl/brk/-/stories/overzicht">
     <div class="card">
       <div class="card-type">Basisregistratie Kadaster</div>

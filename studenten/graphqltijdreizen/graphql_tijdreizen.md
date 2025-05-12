@@ -15,10 +15,6 @@ Een webapplicatie ontwikkeld in Angular (Objectviewer) waarbij de gebruiker een 
 
 ## Aanpak
 
-### Startpunt
-
-Het Kadaster heeft twee andere Object Viewers ontwikkeld. Een gebaseerd op [SPARQL](https://labs.kadaster.nl/demonstrators/objectviewer) en de andere op [GraphQL](https://labs.kadaster.nl/demonstrators/graphqlviewer/) respectievelijk. Deze viewers hadden andere use cases maar vormde de basis voor het ontwikkelen van deze applicatie.
-
 ### Inspiratie
 
 Topotijdreis (https://www.topotijdreis.nl/) heeft als inspiratie gediend voor de ontwikkeling van de applicatie. Deze applicatie heeft een soortgelijke use case. De gebruiker kan een tijdreis maken over de topografische kaarten van Nederland. Het grootste verschil tussen Topotijdreis en Tijdreizen met GraphQL zit in de databronnen die worden gebruikt. In Topotijdreis zijn dit statische afbeeldingen en Tijdreizen met GraphQL is dit dynamische geografische informatie. Desondanks is vooral de werking van de slider in Topotijdreis heel waardevol gebleken voor de ontwikkeling van de applicatie.
