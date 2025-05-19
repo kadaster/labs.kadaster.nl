@@ -61,6 +61,15 @@ title: Innovatie
     </div>
   </a>
 
+  <a href="/innovatie/brt-next/brt-next">
+    <div class="card">
+      <div class="card-type">Project</div>
+      <img class="card-image" src="/innovatie/brt-next/brt-next.png">
+      <div class="card-title">BRT.Next</div>
+      <div class="card-description">Een nieuwe productieomgeving voor een nieuwe BRT</div>
+    </div>
+  </a>
+
   <a href="/innovatie/opslagtanks/opslagtanks">
     <div class="card">
       <div class="card-type">Project</div>
