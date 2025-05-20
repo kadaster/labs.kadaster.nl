@@ -29,8 +29,8 @@ Het canvasprincipe gaat uit van de bron, met name voor wat betreft het gebruik v
 Voor de ontwikkeling worden virtuele machines (AVD) gebruikt. De overall procesflow ligt vast in Esri Workflow Manager in combinatie met ArcGIS Enterprise en FME Flow. De data wordt opgeslagen in een PostGIS database. Geautomatiseerde bewerkingen worden gedaan via combinaties van FME, Python en ArcPy. Interacties (handmatige stappen) worden gedaan binnen Esri Sweet. 
  
 <figure id="figuur-1">
-  <a href="/innovatie/brt-next_1/afbeeldingen/brt-next_1.png">
-    <img src="/innovatie/brt-next_1/afbeeldingen/brt-next_1.png" alt="Voorlopige visualisatie van kaartproduct 1:10.000">
+  <a href="/innovatie/brt-next/afbeeldingen/brt-next_1.png">
+    <img src="/innovatie/brt-next/afbeeldingen/brt-next_1.png" alt="Voorlopige visualisatie van kaartproduct 1:10.000">
   </a>
 </figure>
 Figuur 1. Voorlopige visualisatie van kaartproduct 1:10.000
@@ -41,8 +41,8 @@ Inmiddels heeft een proefrun plaatsgevonden waarin voor een aantal proefgebieden
 
    
 <figure id="figuur-2">
-  <a href="/innovatie/brt-next_1/afbeeldingen/brt-next_2.png">
-    <img src="/innovatie/brt-next_1/afbeeldingen/brt-next_2.png" alt="Voorlopige visualiatie van de BRT-achtergrondkaart">
+  <a href="/innovatie/brt-next/afbeeldingen/brt-next_2.png">
+    <img src="/innovatie/brt-next/afbeeldingen/brt-next_2.png" alt="Voorlopige visualiatie van de BRT-achtergrondkaart">
   </a>
 </figure>
 Figuur 2. Voorlopige visualiatie van de BRT-achtergrondkaart
