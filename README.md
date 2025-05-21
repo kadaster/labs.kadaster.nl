@@ -1,3 +1,5 @@
+# LET OP: Deze is uitgefaseerd, vanaf nu wordt Gitea gebruikt als bron voor labs.kadaster.nl!
+
 # Local installation
 
 ## Prerequisites
@@ -124,3 +126,5 @@ The above Markdown is translated into the following HTML:
   <dt>Hoe kunnen we met gamification principes volledigheid en/of kwaliteit van Kadaster data verbeteren?</dt>
 </dl>
 ```
+
+# LET OP: Deze is uitgefaseerd, vanaf nu wordt Gitea gebruikt als bron voor labs.kadaster.nl!
